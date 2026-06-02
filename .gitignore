@@ -1,0 +1,10 @@
+.git/
+.venv/
+temp/
+temp_/
+temp__/
+arch/
+arch_/
+arch__/
+*.sh
+*.7z
