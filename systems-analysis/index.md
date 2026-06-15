@@ -1,8 +1,7 @@
 The idea is simple: anything true of a human system fits into one of ten domains — its physical setting, its bodies and health, its economy, its social fabric, its politics, its information flows, its rules, its knowledge, its culture, and its beliefs.
 
-## How to use 
 
-1. Basic Use:
+## 1. Basic Use:
 
 
 ### Example 1: Assess <a href="articles/human-framework-example-1.html">Chiang Mai as a destination for a digital nomad</a>
@@ -30,7 +29,7 @@ You will get a response <a href="articles/human-framework-example-3.html">like t
 
 
 
-1. Advanced Use:
+## 2. Advanced Use:
 
 Some specialisation modules are provided, to obtain a more detailed result depending on the system : a city, an organization, a person, a human society, ...
 
@@ -52,11 +51,11 @@ You will get a response <a href="articles/human-society-example.html">like this<
 
 
 
-### Example 3: Analyse <a href="articles/human-organisation-example.html">the Medici Bank in 1450</a>
+### Example 3: Analyse <a href="articles/human-organization-example.html">the Medici Bank in 1450</a>
 
-You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-organisation-module.html">Human organisation</a> in the prompt of an AI, and you add : "Apply the framework and the module to the Medici Bank in 1450".
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-organization-module.html">Human organization</a> in the prompt of an AI, and you add : "Apply the framework and the module to the Medici Bank in 1450".
 
-You will get a response <a href="articles/human-organisation-example.html">like this</a>.
+You will get a response <a href="articles/human-organization-example.html">like this</a>.
 
 
 

@@ -56,7 +56,18 @@ def build_nav_article(articles, current_stem=None):
     items.append('<li><a href="../contact.html">Contact</a></li>')
     return "\n      ".join(items)
 
-articles = sorted(ARTICLES_DIR.glob("*.md"))
+def article_sort_key(p):
+    name = p.stem.lower()
+    if "framework" in name:
+        group = 0
+    elif "module" in name:
+        group = 1
+    else:
+        group = 2
+    return (group, name)
+
+articles = sorted(ARTICLES_DIR.glob("*.md"), key=article_sort_key)
+nav_articles = [p for p in articles if "example" not in p.stem.lower()]
 if not articles:
     print("No md files found in articles/. Add some and re-run.")
     exit(0)
@@ -80,7 +91,7 @@ for f in articles:
     html = (TEMPLATE
         .replace("{title}",      meta.get("title", label_from_stem(f.stem)))
         .replace("{coordinate}", meta.get("coordinate", ""))
-        .replace("{nav}",        build_nav_article(articles, current_stem=f.stem))
+        .replace("{nav}",        build_nav_article(nav_articles, current_stem=f.stem))
         .replace("{body}",       body_html)
     )
     (DEPLOY_ART / f"{f.stem}.html").write_text(html)
@@ -101,8 +112,8 @@ def build_root_page(md_path, out_name, articles):
     else:
         print(f"Warning: {md_path.name} not found at {md_path}")
 
-build_root_page(SRC / "index.md",      "index.html",      articles)
-build_root_page(SRC / "disclaimer.md", "disclaimer.html", articles)
-build_root_page(SRC / "contact.md",    "contact.html",    articles)
+build_root_page(SRC / "index.md",      "index.html",      nav_articles)
+build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
+build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
 print("Done.")
