@@ -1,5 +1,5 @@
 
-This framework analyses a human system — a person, an organization, a city, a society — across ten domains: 1. Physical, 2. Biological, 3. Economic, 4. Social, 5. Emotional, 6. Informational, 7. Moral, 8. Intellectual, 9. Cultural, 10. Spiritual.
+This framework analyses a human system — a person, an organization, a city, a society — across ten domains: D01. Physical, D02. Biological, D03. Economic, D04. Social, D05. Emotional, D06. Informational, D07. Moral, D08. Intellectual, D09. Cultural, D10. Spiritual.
 
 The ten domains are built to be complete: anything that doesn't clearly belong to one gets routed to one by a placement rule, rather than dropped. The domains are the core of it; the framework also fixes who or what is being analysed, and the where, when, and why.
 
