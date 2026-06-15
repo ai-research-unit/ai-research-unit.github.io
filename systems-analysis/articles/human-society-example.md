@@ -3,7 +3,7 @@
 
 __Summary:__ Athens fought as a sea power whose strength and its fatal weakness were the same fact: food, tribute, and the fleet all moved by water. No Spartan army could reach that lifeline by land, so the war stalemated for years — but it left Athens dependent on holding the Hellespont grain route and on the cash and trained crews that kept up to 300 triremes at sea. The plague (430–426) cut the population, the Sicilian disaster (415–413) drained the crews and the treasury, and Persian gold finally bought Sparta a fleet. When that fleet cut the grain route at Aegospotami (405), the city starved and surrendered (404). The binding constraint throughout was the sea-lifeline: unbeatable until the crews, the cash, and the command of the water that held it were spent.
 
-## D01. Physical Dimension
+## D01. Physical Domain
 
 __Geography & Spatial Friction:__ Attica was rocky and thin-soiled, unable to feed the city; Athens' real territory was the sea. The Long Walls tied the city to its port at Piraeus, making it effectively an island a land army could not starve out.
 
@@ -15,7 +15,7 @@ __Resource & Energy Endowment:__ The Laurium silver mines funded the fleet, but 
 
 __Waste Absorption & Sink Capacity:__ Packing the rural population behind the walls overwhelmed the city's sanitation and seeded the plague — a saturated sink looping straight back as mass death rather than sitting inert. Decelea's occupation left Attic farmland and the silver workings degraded and abandoned, not cleared.
 
-## D02. Biological Dimension
+## D02. Biological Domain
 
 __Pathogen Load & Mortality Baseline:__ The plague of 430–426, striking the wall-crowded city in waves, killed perhaps a quarter to a third of the population. It was the single largest demographic blow of the war and took Pericles with it in 429.
 
@@ -29,7 +29,7 @@ __Demographic Renewal & Density:__ Plague, hoplite losses, and above all the Sic
 
 __Attrition & Dependency Overhang:__ The cycle left a heavy overhang of widows, orphans, and the maimed on a shrunken productive base, and a manpower deficit the city could not close — drained and never refilled, so that each later defeat fell on fewer shoulders.
 
-## D03. Economic Dimension
+## D03. Economic Domain
 
 __Subsistence & Provisioning Floor:__ The city lived on grain shipped from the Black Sea through the Hellespont. This was the provisioning floor and the war's true jugular: hold the straits and Athens ate; cut them and it starved.
 
@@ -51,7 +51,7 @@ __Wealth Distribution & Asset Defense:__ The rich funded triremes and festivals 
 
 __Byproducts & Waste Routing:__ The lasting byproduct was financial — reserves spent, sacred offerings melted down, the debased emergency coinage of 406. The mispricing and exhaustion sat on the books, never cleared, as the war outran every source of money.
 
-## D04. Social Dimension
+## D04. Social Domain
 
 __Kinship, Family & Inheritance:__ The household (oikos) and descent governed citizenship and the transfer of property; Pericles' 451 law made both parents' Athenian birth the test of membership. War losses strained inheritance lines as heirs died faster than estates could pass.
 
@@ -67,7 +67,7 @@ __Coercive Apparatus & Means of Force:__ The trireme fleet — up to 300 ships c
 
 __Discharge, Disorder & Decay:__ The pressures the fabric could not absorb broke out as civil strife — the paranoid prosecutions after the Herms affair (415), the oligarchic coup of the Four Hundred (411), and the Spartan-imposed Thirty Tyrants (404), whose terror was the apparatus's final collapse. Left to fester, not contained.
 
-## D05. Emotional Dimension
+## D05. Emotional Domain
 
 __Public Sentiment & Behavioral Temper:__ The Assembly's mood swung hard and fast — the vote to massacre Mytilene, then reverse it the next day (427); despair and lawlessness after the plague; shock after Sicily. Trust beyond kin thinned as informers and suspicion spread.
 
@@ -81,7 +81,7 @@ __External Relations & Posture:__ The posture was aggressive imperialism — the
 
 __Disaffection, Apathy & Spent Will:__ Post-plague anomie, post-Sicily exhaustion, and oligarchic disillusion left a standing reservoir of spent will and estrangement. That disaffection fed directly into the civil strife on the social side, hollowing consent before the final defeats — never re-anchored.
 
-## D06. Informational Dimension
+## D06. Informational Domain
 
 __Communication Accessibility:__ Greek was the shared tongue and political life was overwhelmingly oral, conducted face-to-face in Assembly, court, and theatre. Persuasion turned on spoken rhetoric; the man who could sway a crowd held power, and that skill was unevenly held.
 
@@ -95,7 +95,7 @@ __Reception, Attention & Amplification:__ The Assembly crowd and the theatre aud
 
 __Signal Integrity & Noise Load:__ Deliberation was corrupted by demagogic distortion, informers, and rumour — Thucydides' theme that words lost their fixed meaning under the strife. Verification never kept pace with the noise, and the bad signal was left to drive decisions.
 
-## D07. Moral Dimension
+## D07. Moral Domain
 
 __Moral Foundations & Sense of Justice:__ Traditional civic justice and the unwritten norms underwrote the formal law, but the war corroded them. The Melian Dialogue stated the imperial creed plainly — the strong take what they can — stripping the older justifications away.
 
@@ -107,7 +107,7 @@ __Rights, Protections & Compliance Burden:__ Citizen men held real protected sta
 
 __Impunity & Unredressed Wrong:__ War licensed atrocity with no redress — the massacres at Melos and Scione, the Thirty's murders that went unpunished until the regime fell. The gap between justice owed and delivered widened across the war and was left open.
 
-## D08. Intellectual Dimension
+## D08. Intellectual Domain
 
 __Inquiry, Theory & Paradigm:__ Athens was the intellectual centre of Greece — the sophists Protagoras and Gorgias teaching, Socrates questioning, Thucydides inventing critical history, Hippocratic medicine, and tragedy at its height in Sophocles and Euripides. Rationalist inquiry was pushing against inherited belief.
 
@@ -117,7 +117,7 @@ __Education, Knowledge Stock & Skill Distribution:__ There was no state schoolin
 
 __Obsolescence & Knowledge Decay:__ The decisive loss was human skill — the experienced crews destroyed at Sicily could not be replaced in kind, and their replacements rowed worse. The plague and a generation of war deaths shed trained men faster than the city could school new ones.
 
-## D09. Cultural Dimension
+## D09. Cultural Domain
 
 __Mythos, Memory & Foundational Identity:__ Athens told itself it was sprung from its own soil (autochthony), guarded by Athena, and the savior of Greece at Marathon and Salamis. That memory of Persian-War glory underwrote both its democratic pride and its claim to lead.
 
@@ -127,7 +127,7 @@ __Artistic Expression & Material Culture:__ The Parthenon and the Periclean Acro
 
 __Form Exhaustion & Meaning Decay:__ The civic self-image curdled as reality diverged from it. Euripides' bleak late plays — the Trojan Women of 415, written in the shadow of Melos — turned the heroic forms toward cynicism and grief, the old confident symbols hollowing out.
 
-## D10. Spiritual Dimension
+## D10. Spiritual Domain
 
 __Cosmology & Existential Outlook:__ Olympian polytheism framed reality, but sophistic rationalism and natural philosophy were pressing on it, opening a gap between traditional piety and a new doubt that fed accusations of impiety against intellectuals.
 

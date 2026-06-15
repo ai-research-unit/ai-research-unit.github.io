@@ -1,4 +1,7 @@
-The idea is simple: anything true of a human system fits into one of ten domains — its physical setting, its bodies and health, its economy, its social fabric, its politics, its information flows, its rules, its knowledge, its culture, and its beliefs.
+
+This framework analyses a human system — a person, an organization, a city, a society — across ten domains: 1. Physical, 2. Biological, 3. Economic, 4. Social, 5. Emotional, 6. Informational, 7. Moral, 8. Intellectual, 9. Cultural, 10. Spiritual.
+
+The ten domains are built to be complete: anything that doesn't clearly belong to one gets routed to one by a placement rule, rather than dropped. The domains are the core of it; the framework also fixes who or what is being analysed, and the where, when, and why.
 
 
 ## 1. Basic Use:
@@ -6,15 +9,15 @@ The idea is simple: anything true of a human system fits into one of ten domains
 
 ### Example 1: Assess <a href="articles/human-framework-example-1.html">Chiang Mai as a destination for a digital nomad</a>
 
-You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Chiang Mai Mai as a destination for a digital nomad in 2026".
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Chiang Mai as a destination for a digital nomad in 2026".
 
 You will get a response <a href="articles/human-framework-example-1.html">like this</a>.
 
 
 
-### Example 2: Describe <a href="articles/human-framework-example-2.html">Athens during the Peloponnese War</a>
+### Example 2: Describe <a href="articles/human-framework-example-2.html">Athens during the Peloponnesian War</a>
 
-You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Athens during the Peloponnese War".
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Athens during the Peloponnesian War".
 
 You will get a response <a href="articles/human-framework-example-2.html">like this</a>.
 
@@ -36,15 +39,15 @@ Some specialisation modules are provided, to obtain a more detailed result depen
 
 ### Example 1: Assess <a href="articles/human-city-example.html">Chiang Mai as a destination for a digital nomad</a>
 
-You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-city-module.html">Human city</a> in the prompt of an AI, and you add : "Apply the framework and the module to Chiang Mai Mai as a destination for a digital nomad in 2026".
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-city-module.html">Human city</a> in the prompt of an AI, and you add : "Apply the framework and the module to Chiang Mai as a destination for a digital nomad in 2026".
 
 You will get a response <a href="articles/human-city-example.html">like this</a>.
 
 
 
-### Example 2: Describe <a href="articles/human-society-example.html">Athens during the Peloponnese War</a>
+### Example 2: Describe <a href="articles/human-society-example.html">Athens during the Peloponnesian War</a>
 
-You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-society-module.html">Human society</a> in the prompt of an AI, and you add : "Apply the framework and the module to Athens during the Peloponnese War".
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-society-module.html">Human society</a> in the prompt of an AI, and you add : "Apply the framework and the module to Athens during the Peloponnesian War".
 
 You will get a response <a href="articles/human-society-example.html">like this</a>.
 
@@ -56,10 +59,6 @@ You will get a response <a href="articles/human-society-example.html">like this<
 You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-organization-module.html">Human organization</a> in the prompt of an AI, and you add : "Apply the framework and the module to the Medici Bank in 1450".
 
 You will get a response <a href="articles/human-organization-example.html">like this</a>.
-
-
-
-
 
 
 

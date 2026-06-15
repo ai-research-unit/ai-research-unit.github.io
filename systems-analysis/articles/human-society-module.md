@@ -1,8 +1,8 @@
 # Human Society — Specialisation Module
 
-Reads with the Human Framework, never alone. Adds specialised aspects to each dimension.
+Reads with the Human Framework, never alone. Adds specialised aspects to each domain.
 
-## D01. Physical Dimension
+## D01. Physical Domain
 
 __Geography & Spatial Friction:__ The fixed topography, transit corridors and chokepoints, hydrological networks, and soil mechanics — the slow-moving spatial arena and the baseline friction it imposes on movement, settlement, and defense before any human modification.
 
@@ -14,7 +14,7 @@ __Resource & Energy Endowment:__ The availability, accessibility, and concentrat
 
 __Waste Absorption & Sink Capacity:__ The saturation of the air, water, and soil that must absorb the system's heat, effluent, and discards, the degradation already imprinted on the landscape, and how much absorptive capacity remains against the loads arriving — the sink side; and the feedback a saturated sink returns, degradation past a threshold looping back into the system as scarcity, rising cost, or a trigger of unrest rather than sitting inert.
 
-## D02. Biological Dimension
+## D02. Biological Domain
 
 __Pathogen Load & Mortality Baseline:__ Endemic and epidemic disease vectors, sanitary exposure, and the background death rate they impose, including the direction in which that rate is trending and how close it sits to outrunning renewal.
 
@@ -28,7 +28,7 @@ __Demographic Renewal & Density:__ Birth-to-death replacement ratios, age struct
 
 __Attrition & Dependency Overhang:__ The standing stock of dependents the demographic cycle leaves in its wake — orphaned, widowed, aged, chronically infirm — and whether the productive cohort can absorb that load or is dragged below replacement by it.
 
-## D03. Economic Dimension
+## D03. Economic Domain
 
 __Subsistence & Provisioning Floor:__ Baseline material survival — food, water, shelter, fuel — how close the population sits to the carrying-capacity edge, and the household pooling strategies that buffer it.
 
@@ -50,7 +50,7 @@ __Wealth Distribution & Asset Defense:__ The concentration of property, land, ca
 
 __Byproducts & Waste Routing:__ The volume and toxicity of the waste, effluent, and discards production throws off, and the routing decision — dispersed, recycled, sequestered, or dumped — that sends them toward the physical sink or back onto the resource base. On the financial side, the accumulated mispricing surplus leaves behind — malinvestment, bad debt, price-drift — cleared or left to accrete.
 
-## D04. Social Dimension
+## D04. Social Domain
 
 __Kinship, Family & Inheritance:__ The constructs governing marriage, household formation, and kin alliance, and the rules of inheritance and property transfer across generations — the slow-changing scaffold of who is bound to whom.
 
@@ -66,7 +66,7 @@ __Coercive Apparatus & Means of Force:__ The organized capacity for violence —
 
 __Discharge, Disorder & Decay:__ The channels — mediation, mobility, charity, ritual release — that absorb and dissipate social friction before it hardens, and the friction and dysfunction left when they fail: the grievance unmetabolized and the excluded the fabric casts out; the breakdown of public order the apparatus cannot contain — crime, theft, banditry, riot, vendetta, factional violence, predation, and rebellion; and the sclerosis or wreckage of spent and ossified apparatus — cleared or left to accrete.
 
-## D05. Emotional Dimension
+## D05. Emotional Domain
 
 __Public Sentiment & Behavioral Temper:__ Prevailing public emotions, shared anxieties or confidence, the radius of interpersonal trust and the willingness to rely on others beyond kin, the baseline risk perception and behavioral temper, and whether the mood and that reach of trust are darkening or lifting, widening or contracting.
 
@@ -80,7 +80,7 @@ __External Relations & Posture:__ The system's directed will toward other powers
 
 __Disaffection, Apathy & Spent Will:__ The standing distrust, estrangement, apathy, and exhaustion the affective drive leaves when it is spent or thwarted — the collapse of collective will, and the disaffection that, uncontained, feeds the disorder in Social — re-anchored or left to settle.
 
-## D06. Informational Dimension
+## D06. Informational Domain
 
 __Communication Accessibility:__ The existence and breadth of a shared communicative code — imitative gesture, vocalization, speech, sign, symbol, or script — and the mutual intelligibility it affords: who can encode and decode it, who is excluded by incapacity, foreignness, or disability, and whether the shared ground is widening or fragmenting.
 
@@ -94,7 +94,7 @@ __Reception, Attention & Amplification:__ Audience consumption patterns, the dyn
 
 __Signal Integrity & Noise Load:__ The mechanisms for clearing obsolete, corrupted, or contradictory data; the prevailing signal-to-noise condition; the reach of surveillance and the watched; and whether verification capacity keeps pace with information volume.
 
-## D07. Moral Dimension
+## D07. Moral Domain
 
 __Moral Foundations & Sense of Justice:__ The society's baseline notions of right and wrong, fair and legitimate — the shared conscience that underwrites or undermines the formal code.
 
@@ -106,7 +106,7 @@ __Rights, Protections & Compliance Burden:__ The scope of individual autonomy an
 
 __Impunity & Unredressed Wrong:__ The standing gap between justice formally owed and actually delivered — impunity for the powerful, unenforced judgments, backlog, wrongful outcomes — and whether redress capacity clears the deficit or lets it accumulate.
 
-## D08. Intellectual Dimension
+## D08. Intellectual Domain
 
 __Inquiry, Theory & Paradigm:__ Formal investigation of the natural and human world, the reigning explanatory paradigms, and the location of the active discovery frontier.
 
@@ -116,7 +116,7 @@ __Education, Knowledge Stock & Skill Distribution:__ Schooling frameworks, liter
 
 __Obsolescence & Knowledge Decay:__ The shedding of superseded theory and dead technique, the rate at which accumulated knowledge is lost through decayed records, broken transmission, or skill attrition, and whether error and untested dogma are cleared or left to accrete.
 
-## D09. Cultural Dimension
+## D09. Cultural Domain
 
 __Mythos, Memory & Foundational Identity:__ Deep worldviews, ancestral symbols, origin narratives, and the historic traumas and triumphs that shape the collective sense of who a people are — the slow bedrock beneath the era's surface mood.
 
@@ -126,7 +126,7 @@ __Artistic Expression & Material Culture:__ The visual and material surface of t
 
 __Form Exhaustion & Meaning Decay:__ The hollowing of once-potent symbols, rituals, and styles into cliché or dead convention, the build-up of anomie where shared meaning has eroded, and whether forms are renewed, repurposed, or left as inert residue.
 
-## D10. Spiritual Dimension
+## D10. Spiritual Domain
 
 __Cosmology & Existential Outlook:__ The metaphysical model of reality and the human place within it, and the shifting balance among fatalism, piety, doubt, and secularism.
 

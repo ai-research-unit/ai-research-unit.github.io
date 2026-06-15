@@ -1,8 +1,8 @@
 # Human City — Specialisation Module
 
-Reads with the Human Framework, never alone. Adds specialised aspects to each dimension.
+Reads with the Human Framework, never alone. Adds specialised aspects to each domain.
 
-## D01. Physical Dimension
+## D01. Physical Domain
 
 __Site & Setting:__ The terrain, waterfront, climate, and hazards of the ground the city sits on, and the regional hinterland the dense core draws food, water, and energy from — the founding site and what it imposes.
 
@@ -12,7 +12,7 @@ __Infrastructure Networks:__ The trunk systems as standing built stock — water
 
 __Saturation & Decay:__ The load density concentrates and the surroundings have not cleared — air and water pollution, accumulated waste, heat — and the decaying fabric: deferred repair, dereliction, ruin; cleared or left to accrete.
 
-## D02. Biological Dimension
+## D02. Biological Domain
 
 __Population Body & Density:__ The inhabitants as bodies — headcount, residential density, age and health profile — the living mass the city concentrates, read at the grain a city is analysed.
 
@@ -24,7 +24,7 @@ __Migration-Driven Renewal:__ How the population is sustained and grown — natu
 
 __Decline & Dependency:__ The standing load the life-cycle leaves concentrated here — the aged, infirm, and indigent — and the mortality density imposes; carried or left to accrete.
 
-## D03. Economic Dimension
+## D03. Economic Domain
 
 __Economic Base & Function:__ What the city produces and exports to the wider system — its specialisation and role in the regional and national division of labour.
 
@@ -36,7 +36,7 @@ __Municipal Finance:__ The city's own fiscal base — what it raises and what it
 
 __Vacancy & Misallocation:__ The financial residue density leaves — stranded and vacant property, malinvested development, fiscal shortfall — and the material discard the city routes to its sinks; cleared or left to accrete.
 
-## D04. Social Dimension
+## D04. Social Domain
 
 __Spatial Stratification:__ How class, ethnicity, and status sort across districts — the segregation and mixing the city's geography produces, and whether the lines are hardening or dissolving.
 
@@ -48,7 +48,7 @@ __Daily Flux & the Transient City:__ The commuter inflow and visitor presence th
 
 __Disorder & the Excluded:__ The friction the fabric throws off and the order the apparatus fails to hold — crime, the segregated outcast, the unhoused — cleared or left to accrete.
 
-## D05. Emotional Dimension
+## D05. Emotional Domain
 
 __Civic Will & Leadership:__ The drive to govern and direct the city — the leadership and machine that concentrate it, the appetite to build, reform, or coast — read off what the city pursues, not what it proclaims.
 
@@ -56,7 +56,7 @@ __Public Mood & Trust:__ The ambient temper of the populace — confidence or gr
 
 __Civic Disaffection:__ The estrangement, apathy, and spent will the populace carries — the alienation density and inequality leave behind — re-anchored or left to settle, feeding the disorder in Social.
 
-## D06. Informational Dimension
+## D06. Informational Domain
 
 __Civic Channels & Media:__ How word moves through the city — local press, signage, wayfinding, addressing and notification systems — the reach and speed of the public information layer across districts.
 
@@ -66,7 +66,7 @@ __Surveillance & Records:__ The monitoring a dense city accumulates — cameras,
 
 __Noise & Stale Record:__ The rumour, misinformation, and decayed or contradictory municipal records the channels throw off — cleared or left to accrete.
 
-## D07. Moral Dimension
+## D07. Moral Domain
 
 __Inherited Law & Municipal Ordinance:__ The codified order the city runs on — the national and regional law it inherits, plus its own bylaws, zoning, and ordinances — and what the municipal layer adds or constrains atop the inherited floor.
 
@@ -74,7 +74,7 @@ __Enforcement & Adjudication:__ How the code is actually applied — policing, c
 
 __Impunity & the Unredressed:__ The gap between justice owed and delivered — uneven enforcement, the protected, the unpunished and the over-punished — feeding the Social grievance stock; cleared or left to accrete.
 
-## D08. Intellectual Dimension
+## D08. Intellectual Domain
 
 __Knowledge Institutions & Talent Pool:__ The universities, research bodies, and skilled-labour concentration the city holds — the stock of expertise agglomeration draws and produces — and how widely competence spreads across the population.
 
@@ -84,7 +84,7 @@ __Innovation Frontier:__ The active frontier of method and craft the talent dens
 
 __Brain Drain & Obsolete Craft:__ The skilled outflow that hollows the talent pool and the trades the economy no longer needs — knowledge decayed or departed, cleared or left to accrete.
 
-## D09. Cultural Dimension
+## D09. Cultural Domain
 
 __Civic Identity & Origin:__ The story the city tells about itself — its founding, its self-image, the character it claims — the bedrock identity beneath the surface mood.
 
@@ -94,7 +94,7 @@ __Built Character & Landmark:__ The architectural idiom and the landmarks, monum
 
 __Heritage Hollowed:__ The heritage and symbols worn into cliché or kitsch — the commodified quarter, the stale civic brand, the anomie where shared character has eroded — renewed or left as inert residue.
 
-## D10. Spiritual Dimension
+## D10. Spiritual Domain
 
 __Religious Presence & Plurality:__ The faiths the city concentrates and their institutions, sacred sites, and reach — the plurality density gathers and the relations among them.
 
