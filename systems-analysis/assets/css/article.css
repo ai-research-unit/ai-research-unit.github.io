@@ -53,7 +53,7 @@
 }
 .article-body h2[id^="p0"],
 .article-body h2[id^="p1"] {
-  font-size: var(--size-xs);
+  font-size: var(--size-base);
   font-weight: 700;
   color: var(--color-accent);
   text-transform: uppercase;

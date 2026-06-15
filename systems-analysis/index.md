@@ -2,28 +2,67 @@ The idea is simple: anything true of a human system fits into one of ten domains
 
 ## How to use 
 
-
-### Example 1: Assess <a href="articles/digital-nomad-example.html">Chiang Mai as a destination for a digital nomad</a>
-
-You just copy the full page <a href="articles/digital-nomad-framework.html">Digital Nomad Framework</a> in the prompt of an AI, and you add : "apply the framework to Chiang Mai".
-
-You will get a response <a href="articles/digital-nomad-example.html">like this</a>.
+1. Basic Use:
 
 
+### Example 1: Assess <a href="articles/human-framework-example-1.html">Chiang Mai as a destination for a digital nomad</a>
 
-### Example 2: Describe <a href="articles/historical-context-example.html">Athens during the Peloponnesian War</a>
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Chiang Mai Mai as a destination for a digital nomad in 2026".
 
-You just copy the full page <a href="articles/historical-context-framework.html">Historical Context Framework</a> in the prompt of an AI, and you add : "apply the framework to Athens during the Peloponnesian War".
-
-You will get a response <a href="articles/historical-context-example.html">like this</a>.
+You will get a response <a href="articles/human-framework-example-1.html">like this</a>.
 
 
 
+### Example 2: Describe <a href="articles/human-framework-example-2.html">Athens during the Peloponnese War</a>
 
-### Example 3: Create <a href="articles/cultural-entity-example.html">a Sci Fi world on an oceanic planet</a>
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to Athens during the Peloponnese War".
 
-You just copy the full page <a href="articles/cultural-entity-framework.html">Cultural Entity Framework</a> in the prompt of an AI, and you add : "apply the framework to a Sci Fi world on an oceanic planet".
+You will get a response <a href="articles/human-framework-example-2.html">like this</a>.
 
-You will get a response <a href="articles/cultural-entity-example.html">like this</a>.
 
+
+
+### Example 3: Analyse <a href="articles/human-framework-example-3.html">the Medici Bank in 1450</a>
+
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> in the prompt of an AI, and you add : "Apply the framework to the Medici Bank in 1450".
+
+You will get a response <a href="articles/human-framework-example-3.html">like this</a>.
+
+
+
+1. Advanced Use:
+
+Some specialisation modules are provided, to obtain a more detailed result depending on the system : a city, an organization, a person, a human society, ...
+
+
+### Example 1: Assess <a href="articles/human-city-example.html">Chiang Mai as a destination for a digital nomad</a>
+
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-city-module.html">Human city</a> in the prompt of an AI, and you add : "Apply the framework and the module to Chiang Mai Mai as a destination for a digital nomad in 2026".
+
+You will get a response <a href="articles/human-city-example.html">like this</a>.
+
+
+
+### Example 2: Describe <a href="articles/human-society-example.html">Athens during the Peloponnese War</a>
+
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-society-module.html">Human society</a> in the prompt of an AI, and you add : "Apply the framework and the module to Athens during the Peloponnese War".
+
+You will get a response <a href="articles/human-society-example.html">like this</a>.
+
+
+
+
+### Example 3: Analyse <a href="articles/human-organisation-example.html">the Medici Bank in 1450</a>
+
+You just copy the full page <a href="articles/human-framework.html">Human Framework</a> and the module <a href="articles/human-organisation-module.html">Human organisation</a> in the prompt of an AI, and you add : "Apply the framework and the module to the Medici Bank in 1450".
+
+You will get a response <a href="articles/human-organisation-example.html">like this</a>.
+
+
+
+
+
+
+
+If you want a formatted result, just add "Display the whole study inside a single fenced markdown block (four backticks)."
 
