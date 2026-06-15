@@ -68,8 +68,6 @@ __Discharge, Disorder & Decay:__ The channels — mediation, mobility, charity, 
 
 ## D05. Emotional Domain
 
-__Public Sentiment & Behavioral Temper:__ Prevailing public emotions, shared anxieties or confidence, the radius of interpersonal trust and the willingness to rely on others beyond kin, the baseline risk perception and behavioral temper, and whether the mood and that reach of trust are darkening or lifting, widening or contracting.
-
 __Leadership & Personal Authority:__ The leaders and the personal authority, pull, or charisma through which they concentrate and direct will — the figures who command allegiance.
 
 __Legitimacy as Lived Allegiance:__ The actually-held belief in the right of rulers and the order to command — allegiance versus disaffection, how deeply felt, and whether it is eroding; the standing reservoir of consent the active will draws on.
@@ -77,6 +75,8 @@ __Legitimacy as Lived Allegiance:__ The actually-held belief in the right of rul
 __Political Will & Collective Resolve:__ The system's capacity for unified willed action and the contest to direct it — the struggle for power and over succession, whether the ruling group itself coheres or fractures and how open or contested the handover of power is, who holds ultimate authority and how firmly, the drive to govern and act, and the readiness to mobilise, rally, strike, or fight.
 
 __External Relations & Posture:__ The system's directed will toward other powers — alignment and antagonism, the appetite for expansion, deterrence, or retreat, the felt rivalry and ambition that set its stance abroad, and the leverage each side holds over the other — the economic or coercive hold that dependency confers.
+
+__Public Sentiment & Behavioral Temper:__ Prevailing public emotions, shared anxieties or confidence, the radius of interpersonal trust and the willingness to rely on others beyond kin, the baseline risk perception and behavioral temper, and whether the mood and that reach of trust are darkening or lifting, widening or contracting.
 
 __Disaffection, Apathy & Spent Will:__ The standing distrust, estrangement, apathy, and exhaustion the affective drive leaves when it is spent or thwarted — the collapse of collective will, and the disaffection that, uncontained, feeds the disorder in Social — re-anchored or left to settle.
 

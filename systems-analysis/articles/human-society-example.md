@@ -69,8 +69,6 @@ __Discharge, Disorder & Decay:__ The pressures the fabric could not absorb broke
 
 ## D05. Emotional Domain
 
-__Public Sentiment & Behavioral Temper:__ The Assembly's mood swung hard and fast — the vote to massacre Mytilene, then reverse it the next day (427); despair and lawlessness after the plague; shock after Sicily. Trust beyond kin thinned as informers and suspicion spread.
-
 __Leadership & Personal Authority:__ Pericles' personal authority held the defensive strategy together until his death in 429. After him came rival demagogues — the aggressive Cleon, the cautious and superstitious Nicias, the brilliant and treacherous Alcibiades — none commanding the same steady pull.
 
 __Legitimacy as Lived Allegiance:__ The democracy held deep allegiance among citizens, but the empire's hold on its subjects was thin — obedience by fear, which Pericles himself called a tyranny. Subject loyalty was claimed; it dissolved into revolt whenever Athens looked weak.
@@ -78,6 +76,8 @@ __Legitimacy as Lived Allegiance:__ The democracy held deep allegiance among cit
 __Political Will & Collective Resolve:__ Resolve ran extraordinarily deep — Athens rebuilt whole fleets after losing one at Sicily. But the will fractured into factional and succession struggles, oligarch against democrat, and the demagogues' contest to direct the demos pulled policy in lurches.
 
 __External Relations & Posture:__ The posture was aggressive imperialism — the Melian massacre (416), the reach for Sicily (415) — until disaster forced it onto the defensive. Both sides courted Persia for money; Persia's choice to fund Sparta handed the enemy the leverage that decided the war.
+
+__Public Sentiment & Behavioral Temper:__ The Assembly's mood swung hard and fast — the vote to massacre Mytilene, then reverse it the next day (427); despair and lawlessness after the plague; shock after Sicily. Trust beyond kin thinned as informers and suspicion spread.
 
 __Disaffection, Apathy & Spent Will:__ Post-plague anomie, post-Sicily exhaustion, and oligarchic disillusion left a standing reservoir of spent will and estrangement. That disaffection fed directly into the civil strife on the social side, hollowing consent before the final defeats — never re-anchored.
 
