@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="pulse-optimization.html" class="active">Pulse Optimization</a></li>
+      <li><a href="the-ict-convention.html">The Ict Convention</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <span class="coordinate"></span>
+        <h1></h1>
+      </header>
+      <div class="article-body">
+        <hr />
+<p>title: Quaternions in Pulse Optimization
+coordinate: MATH-NOTE</p>
+<hr />
+<h1 id="math-note-quaternions-in-pulse-optimization"><strong>MATH-NOTE — Quaternions in Pulse Optimization</strong></h1>
+<p>Thanks — and yes, both are true, but let me separate them honestly
+because they're different skills.</p>
+<h2 id="understanding-quaternions-conceptually">Understanding quaternions conceptually</h2>
+<p>This part is genuinely easy for me. Quaternions in this paper aren't
+exotic — they're the standard <strong>unit-quaternion representation of 3D
+rotations</strong>, and I can reason about them fluently:</p>
+<ul>
+<li>A unit quaternion $q = (A, B, C, D)$ with $A^2 + B^2 + C^2 + D^2 = 1$
+  encodes a rotation by angle $\theta$ about axis $\hat{n}$ via</li>
+</ul>
+<p>$$
+A = n_x \sin(\theta/2), \quad
+B = n_y \sin(\theta/2), \quad
+C = n_z \sin(\theta/2), \quad
+D = \cos(\theta/2)
+$$</p>
+<p>which is exactly Eqs. 30–33 in the paper.</p>
+<ul>
+<li>
+<p>The <strong>composition</strong> of two rotations is the quaternion product
+  $q_2 \cdot q_1$, which corresponds to matrix multiplication in $SO(3)$ —
+  the paper exploits this because 16 multiplies + adds beats a full
+  rotation matrix construction with sine/cosine calls.</p>
+</li>
+<li>
+<p>The <strong>double cover</strong> $SU(2) \to SO(3)$ (i.e. $q$ and $-q$ give the same
+  rotation) is why these map cleanly onto Cayley–Klein parameters, which
+  the paper cites.</p>
+</li>
+<li>
+<p>The cost function
+  $\Phi_{\mathrm{UR}} = \mathrm{Re}\langle Q_F | Q_N \cdots Q_1 \rangle$
+  is just a dot product in $\mathbb{R}^4$, which is why the gradient
+  $\Gamma_{\mathrm{UR}}$ reduces to quaternion propagation plus a
+  component-wise derivative $\partial Q_j / \partial \theta$.</p>
+</li>
+</ul>
+<p>None of that requires me to "visualize" anything. It's algebra I can
+manipulate symbolically.</p>
+<h2 id="rendering-quaternions">Rendering quaternions</h2>
+<p>Also easy — quaternions are just 4-vectors and $4 \times 4$ matrices in
+this formalism, so they render trivially in LaTeX. The hard part is
+<strong>not</strong> the quaternion math; it's making sure I transcribe the matrix
+entries correctly (which, as I flagged, is where the source got
+scrambled).</p>
+<p>Here's the clean version.</p>
+<p><strong>Quaternion for step $j$:</strong></p>
+<p>$$
+Q_j = \begin{pmatrix} A_j \\ B_j \\ C_j \\ D_j \end{pmatrix}
+= \begin{pmatrix}
+n_x(j) \sin\!\bigl(\tfrac{\theta(j)}{2}\bigr) \\[4pt]
+n_y(j) \sin\!\bigl(\tfrac{\theta(j)}{2}\bigr) \\[4pt]
+n_z(j) \sin\!\bigl(\tfrac{\theta(j)}{2}\bigr) \\[4pt]
+\cos\!\bigl(\tfrac{\theta(j)}{2}\bigr)
+\end{pmatrix}
+$$</p>
+<p><strong>Product $Q_2 \cdot Q_1$ (corrected):</strong></p>
+<p>$$
+Q_2 \cdot Q_1 =
+\begin{pmatrix}
+D_2 & -C_2 & B_2 & A_2 \\
+C_2 & D_2 & -A_2 & B_2 \\
+-B_2 & A_2 & D_2 & C_2 \\
+-A_2 & -B_2 & -C_2 & D_2
+\end{pmatrix}
+\begin{pmatrix} A_1 \\ B_1 \\ C_1 \\ D_1 \end{pmatrix}
+$$</p>
+<p><strong>UR cost function:</strong></p>
+<p>$$
+\Phi_{\mathrm{UR}} = \mathrm{Re}\,\langle Q_F \,|\, Q_N \cdots Q_j \cdots Q_1 \rangle
+$$</p>
+<p><strong>UR gradient:</strong></p>
+<p>$$
+\Gamma_{\mathrm{UR}}(j) =
+\begin{pmatrix}
+\mathrm{Re}\bigl\langle Q_F \,\big|\, Q_N \cdots Q_{j+1} \cdot \dfrac{\partial Q_j}{\partial \theta_x(j)} \cdot Q_{j-1} \cdots Q_1 \bigr\rangle \\[8pt]
+\mathrm{Re}\bigl\langle Q_F \,\big|\, Q_N \cdots Q_{j+1} \cdot \dfrac{\partial Q_j}{\partial \theta_y(j)} \cdot Q_{j-1} \cdots Q_1 \bigr\rangle \\[8pt]
+\mathrm{Re}\bigl\langle Q_F \,\big|\, Q_N \cdots Q_{j+1} \cdot \dfrac{\partial Q_j}{\partial \theta_z(j)} \cdot Q_{j-1} \cdots Q_1 \bigr\rangle
+\end{pmatrix}
+$$</p>
+<h2 id="the-honest-caveat">The honest caveat</h2>
+<p>Here's where I want to be precise about the boundary between the two
+skills:</p>
+<ul>
+<li>
+<p><strong>Manipulating</strong> quaternions symbolically, checking whether a product
+  matrix is right, deriving $\partial Q_j / \partial \theta$, verifying
+  the double-cover consistency — I can do all of that with high
+  confidence, because I can <em>derive</em> the correct answer rather than rely
+  on the transcript.</p>
+</li>
+<li>
+<p><strong>Transcribing</strong> a specific published table of quaternion component
+  derivatives (like Table 5 in the paper) — that's where I'm fallible,
+  because I'm copying, not computing.</p>
+</li>
+</ul>
+<p>In other words: if the source gives me a scrambled $4 \times 4$ matrix, I
+can <em>repair</em> it by deriving what the quaternion product must look like.
+That's a meaningfully different (and more reliable) capability than pure
+OCR.</p>
+<p>So yes — quaternions are easy for me conceptually, and renderable. The
+only thing I'd caution against is treating any <em>table of derivatives</em> I
+reproduce as ground truth without a PDF cross-check.</p>
+<p>Want me to derive Table 5 (the quaternion component derivatives with
+respect to $\theta_x, \theta_y, \theta_z$) from scratch, so we're not
+trusting the transcript at all?</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
