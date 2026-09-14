@@ -9,17 +9,20 @@
   --color-border: #ddd;
   --font-body: 'Georgia', serif;
   --font-ui: system-ui, -apple-system, sans-serif;
-  --size-base: 1.5rem;
-  --size-sm: 1.375rem;
-  --size-xs:   0.8125rem;  /* 13px — small labels, coordinates */
-  --size-sm:   0.9375rem;  /* 15px — sidebar, secondary text */
-  --size-base: 1.0625rem;  /* 17px — body text (comfortable long-form) */
-  --size-h3:   1.25rem;    /* 20px */
-  --size-h2:   1.5rem;     /* 24px */
-  --size-h1:   2rem;       /* 32px */
+
+  /* ── Type scale (enlarged) ───────────────────────────── */
+  --size-xs:   1.4rem;     /* ~22px @ 16px root — coordinate tag */
+  --size-sm:   1.6rem;     /* ~26px — sidebar, secondary text */
+  --size-base: 1.75rem;    /* ~28px — body text */
+  --size-h3:   1.9rem;     /* ~30px */
+  --size-h2:   2.25rem;    /* ~36px */
+  --size-h1:   2.75rem;    /* ~44px */
+
   --line-height: 1.7;
 }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
   background: var(--color-bg);
   color: var(--color-text);
@@ -27,6 +30,7 @@ body {
   font-size: var(--size-base);
   line-height: var(--line-height);
 }
+
 a { color: var(--color-accent); text-decoration: none; }
 a:hover { text-decoration: underline; }
 p { margin-bottom: 1rem; }
