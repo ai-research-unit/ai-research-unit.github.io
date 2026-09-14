@@ -66,11 +66,12 @@ WHY pins what the subject is analysed for — which study the output is. The ans
 
 - Neutral — every domain analysed evenly, privileging nothing. The default; WHEN as induced (E03).
 - Formation-genealogy — every domain analysed for what produced the subject's present state. WHEN defaults to a Long-Term Trend, past → now.
+- Stress-audit — every domain analysed for the load it currently bears, the heaviest named in the Summary. WHEN defaults to a Static Snapshot of the present.
 - Fragility-audit — every domain analysed for what could break the subject, the chief fault named in the Summary. WHEN defaults forward.
 - Potential-audit — every domain analysed for what could lift the subject, the chief opening named in the Summary. WHEN defaults forward.
 - Strategic-outlook — every domain analysed for the subject's trajectory and its standing against others, and what that implies for an outside party. WHEN defaults forward, WHERE often open.
 
-Bare forecast is not a purpose: the undirected forward projection is the neutral study at a forward WHEN (E03), since it selects no direction. A purpose must fit its single line — no sub-divisions, scoring, or excluded matters of its own; the five above all fit.
+Bare forecast is not a purpose: the undirected forward projection is the neutral study at a forward WHEN (E03), since it selects no direction. Stress-audit and fragility-audit are distinct, not duplicates: stress reads the load a domain bears now, fragility reads what could break it — a domain can carry heavy load without breaking, or break under light load if brittle, so the most stressed domain need not be the most fragile. A purpose must fit its single line — no sub-divisions, scoring, or excluded matters of its own; the six above all fit.
 
 The WHY is induced from the input, or set to its defaults where the input is silent. Where WHEN or WHERE is fixed by more than one of these at once, precedence runs highest-first: an explicit instruction, then what the input induces, then the purpose's own default, then the base default of E02–E03.
 
@@ -129,9 +130,7 @@ A complex characterisation — an individual's personality, a collective's chara
 ## E06. Output
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 
-Adapt the style of the study to the subject: if it is academic, you can use an academic style. But if the subject is from everyday life, for example assessing one city nowadays, use plain, everyday words, not academic style. 
-
-Match the style to the subject and the reader, not to the source material. Everyday subjects get plain, everyday words, even if the material I'm working from is academic. Use an academic style only when the subject is technical and I've asked for it.
+Adapt the style of the study to the subject and the reader, not to the source material: if it is academic, you can use an academic style. But if the subject is from everyday life, for example assessing one city nowadays, use plain, everyday words, not academic style. 
 
 NO OVER-ENGINEERING, NO over-confidence, NO verbiage, NO jargon, NO metaphors.
 
@@ -144,6 +143,8 @@ Line 2 is: Summary — a summary of the study, highlighting the single element d
 Section lines begin ## DXX. Title. In the neutral study each domain holds a single unlabelled description, its residue last, separated from the next by a blank line; under a loaded module each domain instead holds that module's labelled aspect-lines (E07), residue last, in the same blank-line-separated layout.
 
 No line-number prefixes, square-bracket metadata tags, or domain cross-reference codes appear in a description. Where a description must mark a boundary, it names the neighbouring domain in prose, never its DXX code, which appears only at the head of its own section line. A filled study line runs roughly 20–40 words, a benchmark for compression, not a hard limit; the generic domain definitions in the template below run longer, since each enumerates a whole domain's scope, and the Summary of line 2 is exempt, running as long as it needs. Do not insert manual line breaks within a paragraph or description; let prose run to its natural length and break only at sentence ends or explicit paragraph breaks.
+
+Also display the whole study in a md file if you can.
 
 Completeness is by domain: all ten present, in order, each closed on its residue. The bottom of this document gives the template in exactly this form — one unlabelled description per domain, closing on its residue. Filled in for an actual subject, it is the neutral study. A named purpose keeps this format and changes only what each description reports (E04); a loaded specialisation module instead replaces each domain's single description with that module's labelled aspect-lines, the form set out in E07 — the header and Summary unchanged.
 
