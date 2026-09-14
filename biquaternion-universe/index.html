@@ -52,19 +52,57 @@
 <h2 id="core-proposal">Core Proposal</h2>
 <p>The fundamental arena of physics is not real Minkowski space $\mathbb{R}^{3,1}$, but a <strong>complexified spacetime</strong> $\mathbb{C}^4$ whose coordinates are</p>
 <p>$$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad \mu = 0,1,2,3,
+Z^\mu = x^\mu + i\,x'^\mu, \qquad \mu = 0,1,2,3.
 $$</p>
-<p>with the time component carrying the $ict$ convention explicitly:</p>
+<p>Here $x^\mu$ and $x'^\mu$ are both <strong>real</strong> coordinates. Each complex coordinate $Z^\mu$ pairs a real coordinate with a second real coordinate through the imaginary unit.</p>
+<h3 id="the-time-component">The Time Component</h3>
+<p>The time component carries the $ict$ convention explicitly. We set</p>
 <p>$$
-x^0 = ict, \qquad x'^0 = ict'.
+x^0 = ict, \qquad x'^0 = ict',
 $$</p>
-<p>In components, the full set of coordinates is</p>
+<p>where $t \in \mathbb{R}$ is the ordinary real time and $t' \in \mathbb{R}$ is a second real parameter associated with the imaginary sector. The complex time coordinate is therefore</p>
 <p>$$
-\bigl(ict - ct',\; x + i x',\; y + i y',\; z + i z'\bigr),
+Z^0 = x^0 + i\,x'^0 = ict + i(ict') = ict - ct'.
 $$</p>
-<p>or equivalently, in a uniform index notation,</p>
+<p>So the complex time coordinate has the explicit form</p>
 <p>$$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad x^0 = ict, \quad x'^0 = ict'.
+Z^0 = ict - ct'.
+$$</p>
+<p>The real part of $Z^0$ is $0$ when written in this way — the "real" content of $Z^0$ is $ict$, which is purely imaginary as a number, and the "imaginary" content is $-ct'$, which is real. This is a deliberate feature of the $ict$ convention: the imaginary unit is factored into the definition of the coordinate itself, not left as an external multiplier.</p>
+<h3 id="the-spatial-components">The Spatial Components</h3>
+<p>For the spatial directions $a = 1,2,3$, we set</p>
+<p>$$
+x^1 = x, \qquad x'^1 = x',
+$$
+$$
+x^2 = y, \qquad x'^2 = y',
+$$
+$$
+x^3 = z, \qquad x'^3 = z'.
+$$</p>
+<p>So the complex spatial coordinates are</p>
+<p>$$
+Z^1 = x + i x',
+$$
+$$
+Z^2 = y + i y',
+$$
+$$
+Z^3 = z + i z'.
+$$</p>
+<p>Here $x, y, z \in \mathbb{R}$ are the ordinary real spatial coordinates, and $x', y', z' \in \mathbb{R}$ are second real coordinates associated with the imaginary sector.</p>
+<h3 id="summary-of-the-coordinates">Summary of the Coordinates</h3>
+<p>In components, the full set of complex coordinates is</p>
+<p>$$
+\bigl(ict - ct',\; x + i x',\; y + i y',\; z + i z'\bigr).
+$$</p>
+<p>Equivalently, in a uniform index notation,</p>
+<p>$$
+Z^\mu = x^\mu + i\,x'^\mu, \qquad x^0 = ict, \quad x'^0 = ict',
+$$</p>
+<p>with</p>
+<p>$$
+x^1 = x, \quad x^2 = y, \quad x^3 = z, \qquad x'^1 = x', \quad x'^2 = y', \quad x'^3 = z'.
 $$</p>
 <p>The real part $x^\mu$ describes the observable Minkowski sector. The imaginary part $x'^\mu$ is hypothesized to describe an <strong>informational sector</strong> — a space in which information is organized rather than dispersed.</p>
 <h2 id="the-metric">The Metric</h2>
