@@ -7,25 +7,79 @@
 The fundamental arena of physics is not real Minkowski space $\mathbb{R}^{3,1}$, but a **complexified spacetime** $\mathbb{C}^4$ whose coordinates are
 
 $$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad \mu = 0,1,2,3,
+Z^\mu = x^\mu + i\,x'^\mu, \qquad \mu = 0,1,2,3.
 $$
 
-with the time component carrying the $ict$ convention explicitly:
+Here $x^\mu$ and $x'^\mu$ are both **real** coordinates. Each complex coordinate $Z^\mu$ pairs a real coordinate with a second real coordinate through the imaginary unit.
+
+### The Time Component
+
+The time component carries the $ict$ convention explicitly. We set
 
 $$
-x^0 = ict, \qquad x'^0 = ict'.
+x^0 = ict, \qquad x'^0 = ict',
 $$
 
-In components, the full set of coordinates is
+where $t \in \mathbb{R}$ is the ordinary real time and $t' \in \mathbb{R}$ is a second real parameter associated with the imaginary sector. The complex time coordinate is therefore
 
 $$
-\bigl(ict - ct',\; x + i x',\; y + i y',\; z + i z'\bigr),
+Z^0 = x^0 + i\,x'^0 = ict + i(ict') = ict - ct'.
 $$
 
-or equivalently, in a uniform index notation,
+So the complex time coordinate has the explicit form
 
 $$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad x^0 = ict, \quad x'^0 = ict'.
+Z^0 = ict - ct'.
+$$
+
+The real part of $Z^0$ is $0$ when written in this way — the "real" content of $Z^0$ is $ict$, which is purely imaginary as a number, and the "imaginary" content is $-ct'$, which is real. This is a deliberate feature of the $ict$ convention: the imaginary unit is factored into the definition of the coordinate itself, not left as an external multiplier.
+
+### The Spatial Components
+
+For the spatial directions $a = 1,2,3$, we set
+
+$$
+x^1 = x, \qquad x'^1 = x',
+$$
+$$
+x^2 = y, \qquad x'^2 = y',
+$$
+$$
+x^3 = z, \qquad x'^3 = z'.
+$$
+
+So the complex spatial coordinates are
+
+$$
+Z^1 = x + i x',
+$$
+$$
+Z^2 = y + i y',
+$$
+$$
+Z^3 = z + i z'.
+$$
+
+Here $x, y, z \in \mathbb{R}$ are the ordinary real spatial coordinates, and $x', y', z' \in \mathbb{R}$ are second real coordinates associated with the imaginary sector.
+
+### Summary of the Coordinates
+
+In components, the full set of complex coordinates is
+
+$$
+\bigl(ict - ct',\; x + i x',\; y + i y',\; z + i z'\bigr).
+$$
+
+Equivalently, in a uniform index notation,
+
+$$
+Z^\mu = x^\mu + i\,x'^\mu, \qquad x^0 = ict, \quad x'^0 = ict',
+$$
+
+with
+
+$$
+x^1 = x, \quad x^2 = y, \quad x^3 = z, \qquad x'^1 = x', \quad x'^2 = y', \quad x'^3 = z'.
 $$
 
 The real part $x^\mu$ describes the observable Minkowski sector. The imaginary part $x'^\mu$ is hypothesized to describe an **informational sector** — a space in which information is organized rather than dispersed.
@@ -89,7 +143,6 @@ This is a **frontier hypothesis**, not established physics. The key open questio
 4. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics?
 
 The hypothesis is offered as a structural intuition: that the imaginary directions of a complexified spacetime have physical meaning as an informational sector, even if that meaning is not yet well understood.
-
 
 
 
