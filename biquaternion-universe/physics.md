@@ -34,16 +34,28 @@
 
 ## Biquaternion Quantum Theory
 
+### <a href="articles/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
+
+### <a href="articles/quantum-mechanics-in-biquaternionic-form.html">Quantum Mechanics in Biquaternionic Form</a>
+
+
+
 ### <a href="articles/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
 
 ### <a href="articles/spin-1-2-quantum-mechanics-in-biquaternionic-form.html">Spin-1/2 Quantum Mechanics in Biquaternionic Form</a>
 
 ### <a href="articles/spin-and-spinors.html">Spin and Spinors</a>
 
+### <a href="articles/the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>
+
+
 
 
 ### <a href="articles/.html"></a>
 
 ### <a href="articles/.html"></a>
 
+### <a href="articles/.html"></a>
+
+### <a href="articles/.html"></a>
 
