@@ -1,148 +1,115 @@
 
-
-# __Complexified Spacetime with an Informational Imaginary Sector__
+# __Complexified Spacetime with a Local Complex Structure__
 
 ## Core Proposal
 
-The fundamental arena of physics is not real Minkowski space $\mathbb{R}^{3,1}$, but a **complexified spacetime** $\mathbb{C}^4$ whose coordinates are
+The fundamental arena of physics is **not** the Minkowski space $\mathbb{R}^{3,1}$, but the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$. A **point in the complexified spacetime** is an element of $\mathbb{B}$, written as a biquaternionic coordinate
 
 $$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad \mu = 0,1,2,3.
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$
 
-Here $x^\mu$ and $x'^\mu$ are both **real** coordinates. Each complex coordinate $Z^\mu$ pairs a real coordinate with a second real coordinate through the imaginary unit.
+where $e_0 = 1$ and $e_1, e_2, e_3$ are the quaternion units. The four coefficients $Q_\mu$ are complex numbers, and they split naturally into two sectors, as described below. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point. This is the central proposal of this article.
 
-### The Time Component
+## Two Sectors: Material and Informational
 
-The time component carries the $ict$ convention explicitly. We set
-
-$$
-x^0 = ict, \qquad x'^0 = ict',
-$$
-
-where $t \in \mathbb{R}$ is the ordinary real time and $t' \in \mathbb{R}$ is a second real parameter associated with the imaginary sector. The complex time coordinate is therefore
+The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces, the fixed-point sets of the Hermitian and anti-Hermitian conjugations:
 
 $$
-Z^0 = x^0 + i\,x'^0 = ict + i(ict') = ict - ct'.
+\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+.
 $$
 
-So the complex time coordinate has the explicit form
+These two subspaces have distinct physical roles:
+
+- **$\mathbb{M}_-$ is the material sector.** Its coordinates are **$ict$** (an imaginary temporal coordinate, c being the speed of light) and **$x, y, z$** (three real spatial coordinates). This is the home of the four-vectors of relativistic physics. The imaginary time coordinate reflects a simple fact: time can be measured, but it cannot be touched, held, or moved through. The companion article *$\mathbb{M}_-$ as the Material Space* develops this sector.
+- **$\mathbb{M}_+$ is the informational sector.** Its coordinates are **$ct'$** (a real temporal coordinate) and **$ix', iy', iz'$** (three imaginary spatial coordinates). This is the home of the Hermitian operators that act on the material sector — the boost biquaternions, the pure-state projectors, the observables. The imaginary spatial directions reflect a mirror fact: they are the directions of a space that is *organised* rather than *extended*. The companion article *$\mathbb{M}_+$ as the Informational Space* develops this sector.
+
+The complex structure makes the two sectors complementary: the material sector has three real spatial directions and one imaginary temporal direction; the informational sector has three imaginary spatial directions and one real temporal direction.
+
+## The Complex Coordinates
+
+Writing the biquaternion coordinate in terms of its material and informational parts,
 
 $$
-Z^0 = ict - ct'.
+\tilde{Q} = \underbrace{(ict)\,e_0 + (x\,e_1 + y\,e_2 + z\,e_3)}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + (ix'\,e_1 + iy'\,e_2 + iz'\,e_3)}_{\in\,\mathbb{M}_+},
 $$
 
-The real part of $Z^0$ is $0$ when written in this way — the "real" content of $Z^0$ is $ict$, which is purely imaginary as a number, and the "imaginary" content is $-ct'$, which is real. This is a deliberate feature of the $ict$ convention: the imaginary unit is factored into the definition of the coordinate itself, not left as an external multiplier.
-
-### The Spatial Components
-
-For the spatial directions $a = 1,2,3$, we set
+the coefficients $Q_0, Q_1, Q_2, Q_3$ take the explicit form
 
 $$
-x^1 = x, \qquad x'^1 = x',
-$$
-$$
-x^2 = y, \qquad x'^2 = y',
-$$
-$$
-x^3 = z, \qquad x'^3 = z'.
+Q_0 = ct' + ict, \qquad Q_1 = x + i x', \qquad Q_2 = y + i y', \qquad Q_3 = z + i z'.
 $$
 
-So the complex spatial coordinates are
+The **real parameters** $(t, x, y, z)$ describe the material sector, and the **real parameters** $(t', x', y', z')$ describe the informational sector. Each sector is four-dimensional, and the full complexified spacetime is the direct sum of the two.
 
-$$
-Z^1 = x + i x',
-$$
-$$
-Z^2 = y + i y',
-$$
-$$
-Z^3 = z + i z'.
-$$
+### The Vacuum Limit
 
-Here $x, y, z \in \mathbb{R}$ are the ordinary real spatial coordinates, and $x', y', z' \in \mathbb{R}$ are second real coordinates associated with the imaginary sector.
-
-### Summary of the Coordinates
-
-In components, the full set of complex coordinates is
-
-$$
-\bigl(ict - ct',\; x + i x',\; y + i y',\; z + i z'\bigr).
-$$
-
-Equivalently, in a uniform index notation,
-
-$$
-Z^\mu = x^\mu + i\,x'^\mu, \qquad x^0 = ict, \quad x'^0 = ict',
-$$
-
-with
-
-$$
-x^1 = x, \quad x^2 = y, \quad x^3 = z, \qquad x'^1 = x', \quad x'^2 = y', \quad x'^3 = z'.
-$$
-
-The real part $x^\mu$ describes the observable Minkowski sector. The imaginary part $x'^\mu$ is hypothesized to describe an **informational sector** — a space in which information is organized rather than dispersed.
+In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 t$ — the familiar $ict$ form with the vacuum speed of light. The $ict$ convention is therefore the vacuum limit of the more general local structure. In a material medium, the complex structure uses $c$, the local speed of light, and varies from point to point. This makes the complex structure **local**, in the same spirit as the metric in general relativity.
 
 ## The Metric
 
-The natural quadratic form on $\mathbb{C}^4$ is the complex bilinear form
+The natural quadratic form on the biquaternion algebra is the complex bilinear form
 
 $$
-ds^2 = \sum_{\mu=0}^{3} (dZ^\mu)^2.
+d\tilde{Q} \circ d\tilde{Q} = \sum_{\mu=0}^{3} (dQ_\mu)^2,
 $$
 
-Expanding in real and imaginary parts,
+where $\circ$ is the biquaternion product. Expanding in real and imaginary parts,
 
 $$
-(dZ^\mu)^2 = (dx^\mu)^2 - (dx'^\mu)^2 + 2i\,dx^\mu\,dx'^\mu.
+(dQ_\mu)^2 = (dq_\mu)^2 - (dq'_\mu)^2 + 2i\,dq_\mu\,dq'_\mu.
 $$
 
-The **real part** of $ds^2$ reproduces the Lorentzian interval on the real slice $x'^\mu = 0$. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in $x^0 = ict$, not from an independently postulated metric signature. The **imaginary part** couples the real and imaginary sectors through cross terms.
+The **real part** of $d\tilde{Q} \circ d\tilde{Q}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms, and is where the physical content of the hypothesis resides.
 
 ## The Informational Hypothesis
 
-The imaginary spatial directions
+The informational sector is not merely a mathematical mirror of the material one. Its algebraic structure is **exactly** that of the operator algebra of a two-state quantum system — the spin-1/2 system. The idempotents of $\mathbb{M}_+$ are pure-state projectors; the Hermitian elements are observables; the unitary elements are reversible transformations; the trace formula gives the Born rule. This identification is not an analogy: it is the same mathematics, expressed in the biquaternion algebra, and it is developed in detail in the companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*.
 
-$$
-i x'^1,\; i x'^2,\; i x'^3
-$$
+The hypothesis of this blog is that this structural identification reflects a **physical fact** about the world: that beyond the material sector of observable physics there is an informational sector, whose elements are the operators acting on the material sector, and whose structure is the quantum-informational structure we have just described.
 
-are conjectured to constitute an **informational space**, with the following tentative properties:
+The informational sector is conjectured to carry the following three properties:
 
-1. **Organization rather than dispersion.** Where the real time direction is associated with entropy increase, the imaginary directions are associated with information organization — possibly a decrease in entropy, or an increase in structural complexity.
+1. **Organization rather than dispersion.** Where the imaginary time direction $ict$ is associated with entropy increase, the real time direction $ct'$ is associated with information organization — possibly a decrease in entropy, or an increase in structural complexity.
 
-2. **Negentropy sector.** The imaginary sector may carry the "negative entropy" that balances the dispersive tendency of the real sector, so that the full complexified system conserves a suitable information-theoretic quantity.
+2. **Phase-like character.** The imaginary spatial directions $ix', iy', iz'$ are naturally phase-like, in the same sense that imaginary time in Wick-rotated quantum field theory is thermodynamic and statistical in character.
 
-3. **Phase-like character.** The imaginary directions are naturally phase-like, in the same sense that imaginary time in Wick-rotated quantum field theory is thermodynamic and statistical in character.
-
-4. **Coupling to the real sector.** The cross terms $2i\,dx^\mu\,dx'^\mu$ in the metric encode the coupling between observable spacetime and the informational sector. This coupling is where the physical content of the hypothesis would reside.
-
-## Structural Motivation
-
-The hypothesis is motivated by several independent lines of thought:
-
-- **Wick rotation.** The analytic continuation $t \to -i\tau$ connects Lorentzian quantum field theory to Euclidean statistical mechanics. Imaginary time is already known to carry thermodynamic meaning; the proposal extends this to all coordinates.
-
-- **The second law.** If entropy increases along the real time direction, a symmetric complexified structure suggests a complementary direction along which organization increases.
-
-- **Holography.** In AdS/CFT and related frameworks, geometric directions in the bulk are dual to information-theoretic quantities on the boundary. The imaginary directions may play an analogous role.
-
-- **Geometric phase.** Kassandrov's biquaternionic program introduces a geometric phase that may be responsible for quantum properties; the imaginary sector may be its natural home.
+3. **Coupling to the material sector.** The cross terms $2i\,dq_\mu\,dq'_\mu$ in the metric encode the coupling between the material and informational sectors. This coupling is where the physical content of the hypothesis would reside.
 
 ## Status and Open Questions
 
 This is a **frontier hypothesis**, not established physics. The key open questions are:
 
-1. **Dimensionality.** Why are the imaginary directions not observed? A compactification or hiding mechanism is required.
+1. **Dimensionality.** Why are the imaginary spatial directions of $\mathbb{M}_+$ not observed? A compactification or hiding mechanism is required.
 
-2. **Causality.** How does causal structure in the real sector interact with the informational character of the imaginary sector?
+2. **Causality.** How does causal structure in the material sector interact with the informational character of $\mathbb{M}_+$?
 
-3. **Coupling.** What is the precise dynamical coupling between the real and imaginary sectors? This is where observable predictions would arise.
+3. **Coupling.** What is the precise dynamical coupling between the two sectors? The Lorentz coupling via the boost biquaternion is established, but a genuinely new coupling would be needed to give the informational sector physical content.
 
-4. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics?
+4. **Dynamics of the informational sector.** Does $\mathbb{M}_+$ have its own dynamics? The biquaternion operators $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, and $\Box$ are available, but it is not clear which (if any) governs $\mathbb{M}_+$-valued fields.
 
-The hypothesis is offered as a structural intuition: that the imaginary directions of a complexified spacetime have physical meaning as an informational sector, even if that meaning is not yet well understood.
+5. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics?
 
+The hypothesis is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the informational subspace is the natural arena for the operator algebra of quantum mechanics. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention a vacuum approximation of a more general local structure, in the same way that special relativity is a local approximation of general relativity.
 
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $i$ | Scalar imaginary, $i^2 = -1$ |
+| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternionic coordinate |
+| $\mathbb{M}_-$ | Material sector: coordinates $(ict, x, y, z)$ |
+| $\mathbb{M}_+$ | Informational sector: coordinates $(ct', x', y', z')$ |
+| $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
+| $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
+| $v$ | Particle or frame velocity |
+
+## Further Reading
+
+- Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
+- Roger Penrose, *The Road to Reality* (Knopf, 2004), for the complex structure of spacetime.
+- Edward Witten, "Anti-de Sitter Space and Holography" (1998), for the geometric interpretation of information.
+- Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to complexified geometry.
 

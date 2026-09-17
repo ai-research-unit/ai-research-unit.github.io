@@ -2,15 +2,19 @@ body { display: flex; min-height: 100vh; }
 
 .sidebar {
   width: var(--sidebar-width);
-  min-height: 100vh;
+  height: 100vh;           /* Changed from min-height: 100vh */
+  max-height: 100vh;       /* Keeps sidebar contained to screen window */
   background: var(--color-surface);
   border-right: 1px solid var(--color-border);
   padding: 1.5rem 1rem;
   position: fixed;
   top: 0; left: 0;
-  overflow-y: auto;
+  overflow-y: auto;        /* Enables vertical scrollbar inside menu */
   flex-shrink: 0;
+  box-sizing: border-box;  /* Prevents padding from breaking 100vh height */
 }
+
+
 .sidebar-header {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
@@ -43,7 +47,7 @@ body { display: flex; min-height: 100vh; }
   margin-left: var(--sidebar-width);
   flex: 1;
   padding: 2.5rem 3rem;
-  max-width: 860px;
+  max-width: 100%;
 }
 
 @media (max-width: 768px) {

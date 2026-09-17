@@ -78,17 +78,16 @@ def label_from_stem(stem):
 # ── CHANGED: Disclaimer now comes *before* Contact, both at the end ──
 def build_nav_index(articles):
     items = []
-    for f in articles:
-        items.append(f'<li><a href="articles/{f.stem}.html">{label_from_stem(f.stem)}</a></li>')
+    items.append('<li><a href="maths.html">Maths</a></li>')
+    items.append('<li><a href="physics.html">Physics</a></li>')
     items.append('<li><a href="disclaimer.html">Disclaimer</a></li>')
     items.append('<li><a href="contact.html">Contact</a></li>')
     return "\n      ".join(items)
 
 def build_nav_article(articles, current_stem=None):
     items = []
-    for f in articles:
-        active = ' class="active"' if f.stem == current_stem else ""
-        items.append(f'<li><a href="{f.stem}.html"{active}>{label_from_stem(f.stem)}</a></li>')
+    items.append('<li><a href="../maths.html">Maths</a></li>')
+    items.append('<li><a href="../physics.html">Physics</a></li>')
     items.append('<li><a href="../disclaimer.html">Disclaimer</a></li>')
     items.append('<li><a href="../contact.html">Contact</a></li>')
     return "\n      ".join(items)
@@ -106,7 +105,7 @@ def article_sort_key(p):
     return (group, name)
 
 articles = sorted(ARTICLES_DIR.glob("*.md"), key=article_sort_key)
-nav_articles = [p for p in articles if "example" not in p.stem.lower()]
+nav_articles = [p for p in articles if "zexample" not in p.stem.lower()]
 if not articles:
     print("No md files found in articles/. Add some and re-run.")
     exit(0)
@@ -156,6 +155,8 @@ def build_root_page(md_path, out_name, articles):
         print(f"Warning: {md_path.name} not found at {md_path}")
 
 build_root_page(SRC / "index.md",      "index.html",      nav_articles)
+build_root_page(SRC / "maths.md", "maths.html", nav_articles)
+build_root_page(SRC / "physics.md", "physics.html", nav_articles)
 build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
 build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
