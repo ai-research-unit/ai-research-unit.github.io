@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article introduces the integration theory of biquaternion-valued functions. It follows the article on biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace $V \subset \mathbb{B}$. The goal here is to define the integral of a biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences in complex analysis.
+This article introduces the integration theory of biquaternion-valued functions. It follows the article on biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace of $\mathbb{B}$. The goal here is to define the integral of a biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences in complex analysis.
 
-The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
@@ -15,10 +15,10 @@ The biquaternion algebra $\mathbb{B}$, its conjugations, its four fixed-point su
 
 ### Definition
 
-Let $V$ be a four-dimensional real subspace of $\mathbb{B}$, with coordinates $x_0, x_1, x_2, x_3$. Let $\tilde{F} : V \to \mathbb{B}$ be a biquaternion-valued function, written in components as
+Let $V$ be a four-dimensional real subspace of $\mathbb{B}$, with the complex coefficients $Q_0, Q_1, Q_2, Q_3$ of a general element $\tilde{Q} \in V$ taking the specific forms appropriate to that subspace (as described in the analysis article). Let $\tilde{F} : V \to \mathbb{B}$ be a biquaternion-valued function, written in components as
 
 $$
-\tilde{F}(\tilde{X}) = \sum_{\mu=0}^{3} F_\mu(x_0, x_1, x_2, x_3) e_\mu, \qquad F_\mu \in \mathbb{C}.
+\tilde{F}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(Q_0, Q_1, Q_2, Q_3) e_\mu, \qquad F_\mu \in \mathbb{C}.
 $$
 
 Let $\Omega \subset V$ be a domain. The **integral** of $\tilde{F}$ over $\Omega$ is
@@ -27,7 +27,7 @@ $$
 \int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
 $$
 
-where each $F_\mu$ is a complex-valued function on $\Omega$ and the integral is the ordinary Lebesgue integral with respect to the Lebesgue measure on $V \cong \mathbb{R}^4$.
+where each $F_\mu$ is a complex-valued function on $\Omega$ and the integral is the ordinary Lebesgue integral with respect to the Lebesgue measure on the four real parameters that parametrize $V$.
 
 The integral is defined component-wise. It exists whenever each of the four complex-valued functions $F_\mu$ is integrable over $\Omega$.
 
@@ -84,7 +84,7 @@ So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidea
 **Theorem (integration by parts).** Let $\phi$ be a scalar function and $\tilde{F}$ a biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
 
 $$
-\int_\Omega (\partial_\mu \phi) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi (\partial_\mu \tilde{F}) \, dV,
+\int_\Omega \left(\frac{\partial \phi}{\partial Q_\mu}\right) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi \left(\frac{\partial \tilde{F}}{\partial Q_\mu}\right) dV,
 $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
@@ -116,13 +116,13 @@ where $\tilde{n} = \sum_{\mu=0}^{3} n_\mu e_\mu$ is the biquaternion-valued outw
 **Proof.** The gradient $\tilde{\nabla}\tilde{F}$ is a biquaternion-valued function with components
 
 $$
-(\tilde{\nabla}\tilde{F})_\nu = \sum_{\mu=0}^{3} (\partial_\mu F_\nu) e_\mu e_\nu.
+(\tilde{\nabla}\tilde{F})_\nu = \sum_{\mu=0}^{3} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
 $$
 
 Integrating each component over $\Omega$ and applying the ordinary divergence theorem in $\mathbb{R}^4$ gives
 
 $$
-\int_\Omega \partial_\mu F_\nu \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
+\int_\Omega \frac{\partial F_\nu}{\partial Q_\mu} \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
 $$
 
 Multiplying by $e_\mu e_\nu$ and summing gives the result. $\square$
@@ -154,10 +154,10 @@ $$
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{F} \tilde{n} \bar{\tilde{G}} \right] dS.
+\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
 $$
 
-The precise form of the second Green's formula depends on the choice of the differential operators and the boundary terms; the version above is the one that follows from the first formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.
+**Proof.** This follows from the first Green's formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting. $\square$
 
 ### Green's Formula for the d'Alembertian
 
@@ -167,9 +167,9 @@ $$
 \int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
 $$
 
-where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
+where $\Box = \partial^2/\partial Q_0^2 + \Delta_Q$ is the four-dimensional Laplacian in the coordinates $Q_0, Q_1, Q_2, Q_3$.
 
-**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$ and $\bar{\tilde{G}}$ replaced by $\bar{\tilde{G}}$, and use the definition of $\Box$. $\square$
+**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$. $\square$
 
 ## The Fundamental Solution
 
@@ -178,40 +178,40 @@ where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
 The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the biquaternion-valued function
 
 $$
-\tilde{G}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4},
+\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4},
 $$
 
-where $\bar{\tilde{X}}$ is the quaternion conjugate of $\tilde{X}$ and $\|\tilde{X}\|_E^4 = (\|\tilde{X}\|_E^2)^2$ is the fourth power of the Euclidean norm.
+where $\bar{\tilde{Q}}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
 
-The function $\tilde{G}$ is defined for $\tilde{X} \neq 0$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{X}) = \lambda^{-3} \tilde{G}(\tilde{X})$ for $\lambda > 0$.
+The function $\tilde{G}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{Q}) = \lambda^{-3} \tilde{G}(\tilde{Q})$ for $\lambda > 0$.
 
 ### The Gradient of the Fundamental Solution
 
-**Theorem.** For $\tilde{X} \neq 0$,
+**Theorem.** For $\tilde{Q} \neq 0$,
 
 $$
-\tilde{\nabla} \tilde{G}(\tilde{X}) = 0.
+\tilde{\nabla} \tilde{G}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{X} = \sum_\mu x_\mu e_\mu$ and $\|\tilde{X}\|_E^2 = \sum_\mu x_\mu^2$. The quaternion conjugate is $\bar{\tilde{X}} = x_0 e_0 - \sum_k x_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \sum_k Q_k e_k$. So
 
 $$
-\tilde{G}(\tilde{X}) = \frac{x_0 e_0 - \sum_k x_k e_k}{(\sum_\mu x_\mu^2)^2}.
+\tilde{G}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu |Q_\mu|^2)^2}.
 $$
 
 A direct computation gives
 
 $$
-\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \partial_\mu \left( \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{X}}}{\|\tilde{X}\|_E^4} + \bar{\tilde{X}} \tilde{\nabla} \left( \frac{1}{\|\tilde{X}\|_E^4} \right).
+\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \frac{\partial}{\partial Q_\mu} \left( \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} + \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
 $$
 
-The first term is $\sum_\mu e_\mu \partial_\mu \bar{\tilde{X}} = \sum_\mu e_\mu \bar{e}_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
+The first term is $\sum_\mu e_\mu \bar{e}_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = 4 e_0$. The second term is
 
 $$
-\bar{\tilde{X}} \tilde{\nabla} \left( \frac{1}{\|\tilde{X}\|_E^4} \right) = \bar{\tilde{X}} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{X}\|_E^4} \right) = \bar{\tilde{X}} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{X}\|_E^6} \right) = -\frac{4 \bar{\tilde{X}} \tilde{X}}{\|\tilde{X}\|_E^6}.
+\bar{\tilde{Q}} \sum_\mu e_\mu \frac{\partial}{\partial Q_\mu} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \left( -\frac{4 \bar{Q}_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \bar{\tilde{Q}} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
 $$
 
-Since $\bar{\tilde{X}} \tilde{X} = \|\tilde{X}\|_E^2 e_0$, the second term is $-4 \|\tilde{X}\|_E^2 / \|\tilde{X}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{X}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$. $\square$
+Since $\bar{\tilde{Q}} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$. $\square$
 
 ### The Distributional Gradient
 
@@ -226,25 +226,25 @@ where $\delta_0$ is the Dirac delta at the origin and $2\pi^2$ is the surface ar
 **Proof.** The function $\tilde{G}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde{\nabla} \tilde{G}, \phi \rangle$ is defined by integration by parts:
 
 $$
-\langle \tilde{\nabla} \tilde{G}, \phi \rangle = -\int_{\mathbb{R}^4} \tilde{G} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{X}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV.
+\langle \tilde{\nabla} \tilde{G}, \phi \rangle = -\int_{\mathbb{R}^4} \tilde{G} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{Q}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV.
 $$
 
-Applying the divergence theorem to the domain $\|\tilde{X}\|_E > \varepsilon$ and using $\tilde{\nabla} \tilde{G} = 0$ away from the origin gives
+Applying the divergence theorem to the domain $\|\tilde{Q}\|_E > \varepsilon$ and using $\tilde{\nabla} \tilde{G} = 0$ away from the origin gives
 
 $$
-\int_{\|\tilde{X}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{X}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
+\int_{\|\tilde{Q}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{Q}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
 $$
 
-On the sphere $\|\tilde{X}\|_E = \varepsilon$, the outward unit normal is $\tilde{n} = \tilde{X}/\varepsilon$, and $\tilde{G} = \bar{\tilde{X}}/\varepsilon^4$. So
+On the sphere $\|\tilde{Q}\|_E = \varepsilon$, the outward unit normal is $\tilde{n} = \tilde{Q}/\varepsilon$, and $\tilde{G} = \bar{\tilde{Q}}/\varepsilon^4$. So
 
 $$
-\tilde{G} \tilde{n} = \frac{\bar{\tilde{X}}}{\varepsilon^4} \cdot \frac{\tilde{X}}{\varepsilon} = \frac{\|\tilde{X}\|_E^2}{\varepsilon^5} e_0 = \frac{\varepsilon^2}{\varepsilon^5} e_0 = \frac{1}{\varepsilon^3} e_0.
+\tilde{G} \tilde{n} = \frac{\bar{\tilde{Q}}}{\varepsilon^4} \cdot \frac{\tilde{Q}}{\varepsilon} = \frac{\|\tilde{Q}\|_E^2}{\varepsilon^5} e_0 = \frac{1}{\varepsilon^3} e_0.
 $$
 
 So
 
 $$
-\int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS = \frac{1}{\varepsilon^3} \int_{\|\tilde{X}\|_E = \varepsilon} \phi \, dS \cdot e_0.
+\int_{\|\tilde{Q}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS = \frac{1}{\varepsilon^3} \int_{\|\tilde{Q}\|_E = \varepsilon} \phi \, dS \cdot e_0.
 $$
 
 As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $2\pi^2 \phi(0) e_0$. Therefore
@@ -259,10 +259,10 @@ which is the distributional identity $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_
 
 ### Statement
 
-**Theorem (Cauchy integral formula).** Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{X}_0$ be an interior point of $\Omega$. Then
+**Theorem (Cauchy integral formula).** Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
 
 $$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV(\tilde{X}),
+\tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV(\tilde{Q}),
 $$
 
 where $\tilde{G}$ is the fundamental solution defined above, $\tilde{n}$ is the biquaternion-valued outward unit normal, and $dS$ is the surface measure.
@@ -272,37 +272,37 @@ where $\tilde{G}$ is the fundamental solution defined above, $\tilde{n}$ is the 
 **Theorem (Cauchy integral formula for regular functions).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on $\Omega$ (the biquaternion analogue of the Cauchy–Riemann equations), then
 
 $$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}).
+\tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}).
 $$
 
 ### Proof of the Cauchy Integral Formula
 
-Apply the divergence theorem to the product $\tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X})$ on the domain $\Omega_\varepsilon = \Omega \setminus B(\tilde{X}_0, \varepsilon)$, where $B(\tilde{X}_0, \varepsilon)$ is the ball of radius $\varepsilon$ centered at $\tilde{X}_0$. The boundary of $\Omega_\varepsilon$ consists of $\partial \Omega$ and the sphere $\partial B(\tilde{X}_0, \varepsilon)$.
+Apply the divergence theorem to the product $\tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{F}(\tilde{Q})$ on the domain $\Omega_\varepsilon = \Omega \setminus B(\tilde{Q}_0, \varepsilon)$, where $B(\tilde{Q}_0, \varepsilon)$ is the ball of radius $\varepsilon$ centered at $\tilde{Q}_0$. The boundary of $\Omega_\varepsilon$ consists of $\partial \Omega$ and the sphere $\partial B(\tilde{Q}_0, \varepsilon)$.
 
 By the divergence theorem,
 
 $$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X}) \right) dV = \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS + \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS.
+\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{F}(\tilde{Q}) \right) dV = \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS + \int_{\partial B(\tilde{Q}_0, \varepsilon)} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS.
 $$
 
-On the small sphere, $\tilde{n} = (\tilde{X} - \tilde{X}_0)/\varepsilon$ (pointing inward toward $\tilde{X}_0$, so with a sign), and the computation of the boundary term gives
+On the small sphere, $\tilde{n} = (\tilde{Q} - \tilde{Q}_0)/\varepsilon$ (pointing inward toward $\tilde{Q}_0$, so with a sign), and the computation of the boundary term gives
 
 $$
-\int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS \to -2\pi^2 \tilde{F}(\tilde{X}_0) \quad \text{as } \varepsilon \to 0.
+\int_{\partial B(\tilde{Q}_0, \varepsilon)} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS \to -2\pi^2 \tilde{F}(\tilde{Q}_0) \quad \text{as } \varepsilon \to 0.
 $$
 
 The volume integral on the left is
 
 $$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X}) \right) dV = \int_{\Omega_\varepsilon} \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV,
+\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{F}(\tilde{Q}) \right) dV = \int_{\Omega_\varepsilon} \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV,
 $$
 
-using the product rule and the fact that $\tilde{\nabla}\tilde{G} = 0$ away from $\tilde{X}_0$.
+using the product rule and the fact that $\tilde{\nabla}\tilde{G} = 0$ away from $\tilde{Q}_0$.
 
 Combining and taking the limit $\varepsilon \to 0$, we obtain
 
 $$
-\int_\Omega \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV = \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS - 2\pi^2 \tilde{F}(\tilde{X}_0).
+\int_\Omega \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV = \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS - 2\pi^2 \tilde{F}(\tilde{Q}_0).
 $$
 
 Rearranging gives the stated formula. $\square$
@@ -311,27 +311,27 @@ Rearranging gives the stated formula. $\square$
 
 ### The Mean Value Property
 
-**Theorem (mean value property).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{X}_0, r)$, then
+**Theorem (mean value property).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{Q}_0, r)$, then
 
 $$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde{X}_0, r)} \tilde{F}(\tilde{X}) \, dS(\tilde{X}),
+\tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde{Q}_0, r)} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}),
 $$
 
 where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\mathbb{R}^4$.
 
-**Proof.** Apply the Cauchy integral formula to the ball $B(\tilde{X}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere. $\square$
+**Proof.** Apply the Cauchy integral formula to the ball $B(\tilde{Q}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere. $\square$
 
 ### The Maximum Principle
 
 **Theorem (maximum principle).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ and $\|\tilde{F}\|_E$ attains its maximum at an interior point of $\Omega$, then $\tilde{F}$ is constant on $\Omega$.
 
-**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{X}_0$, then the mean value over a small sphere around $\tilde{X}_0$ equals $\tilde{F}(\tilde{X}_0)$, which is only possible if $\tilde{F}$ is constant on the sphere. Iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
+**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{Q}_0$, then the mean value over a small sphere around $\tilde{Q}_0$ equals $\tilde{F}(\tilde{Q}_0)$, which is only possible if $\tilde{F}$ is constant on the sphere. Iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
 
 ### Liouville's Theorem
 
 **Theorem (Liouville).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $V$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.
 
-**Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{X}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{X} - \tilde{X}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $\tilde{F}$), so $\tilde{F}(\tilde{X}_0)$ is independent of $\tilde{X}_0$. $\square$
+**Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero, so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$. $\square$
 
 ### The Identity Theorem
 
@@ -341,15 +341,15 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### The Cauchy Estimates
 
-**Theorem (Cauchy estimates).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{X}_0, R)$ and $\|\tilde{F}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,
+**Theorem (Cauchy estimates).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|\tilde{F}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,
 
 $$
-\|\partial^\alpha \tilde{F}(\tilde{X}_0)\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
+\left\|\frac{\partial^{|\alpha|} \tilde{F}}{\partial Q^\alpha}(\tilde{Q}_0)\right\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
 $$
 
 where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.
 
-**Proof.** Differentiate the Cauchy integral formula with respect to $\tilde{X}_0$ and estimate the resulting integral using the bound on $\tilde{F}$. $\square$
+**Proof.** Differentiate the Cauchy integral formula with respect to $\tilde{Q}_0$ and estimate the resulting integral using the bound on $\tilde{F}$. $\square$
 
 ## The Residue Theory
 
@@ -357,25 +357,25 @@ where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total
 
 The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{B}$ makes the definition of the residue more delicate than in the complex case.
 
-**Definition (isolated singularity).** A point $\tilde{X}_0$ is an **isolated singularity** of $\tilde{F}$ if $\tilde{F}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{X} - \tilde{X}_0\|_E < r$ of $\tilde{X}_0$.
+**Definition (isolated singularity).** A point $\tilde{Q}_0$ is an **isolated singularity** of $\tilde{F}$ if $\tilde{F}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < r$ of $\tilde{Q}_0$.
 
-**Definition (residue).** The **residue** of $\tilde{F}$ at an isolated singularity $\tilde{X}_0$ is the biquaternion
+**Definition (residue).** The **residue** of $\tilde{F}$ at an isolated singularity $\tilde{Q}_0$ is the biquaternion
 
 $$
-\mathrm{Res}(\tilde{F}, \tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}),
+\mathrm{Res}(\tilde{F}, \tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial B(\tilde{Q}_0, \varepsilon)} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}),
 $$
 
 where $\varepsilon$ is small enough that the sphere does not enclose any other singularity.
 
 ### The Residue Theorem
 
-**Theorem (residue theorem).** Let $\tilde{F}$ be regular on a domain $\Omega$ except at isolated singularities $\tilde{X}_1, \dots, \tilde{X}_n$. Then
+**Theorem (residue theorem).** Let $\tilde{F}$ be regular on a domain $\Omega$ except at isolated singularities $\tilde{Q}_1, \dots, \tilde{Q}_n$. Then
 
 $$
-\frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}) = \sum_{k=1}^{n} \mathrm{Res}(\tilde{F}, \tilde{X}_k)
+\frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}) = \sum_{k=1}^{n} \mathrm{Res}(\tilde{F}, \tilde{Q}_k)
 $$
 
-for any $\tilde{X}_0$ outside the singularities.
+for any $\tilde{Q}_0$ outside the singularities.
 
 **Proof.** Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue. $\square$
 
@@ -383,7 +383,7 @@ for any $\tilde{X}_0$ outside the singularities.
 
 The integration theory developed in this article is the biquaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
 
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The biquaternion analogue uses the kernel $\tilde{G}(\tilde{X} - \tilde{X}_0) = \bar{\tilde{X}} - \bar{\tilde{X}}_0 / \|\tilde{X} - \tilde{X}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
+**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The biquaternion analogue uses the kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0) = (\bar{\tilde{Q}} - \bar{\tilde{Q}}_0)/\|\tilde{Q} - \tilde{Q}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The biquaternion case is the generalization to complex coefficients, with the additional structure of the four conjugations.
 
@@ -407,9 +407,9 @@ The following questions are not answered in this article and are left for later 
 
 ## Summary
 
-The integral of a biquaternion-valued function on a four-dimensional subspace $V \subset \mathbb{B}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
+The integral of a biquaternion-valued function on a four-dimensional subspace of $\mathbb{B}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
 
-The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions.
+The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions.
 
 The **Cauchy integral formula** expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}\tilde{F} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.
 
@@ -418,6 +418,22 @@ The Cauchy integral formula implies the **mean value property**, the **maximum p
 The **residue theory** for biquaternion-valued functions is more delicate than in the complex case, because of the non-commutativity of the algebra. The residue at an isolated singularity is defined as a boundary integral, and the residue theorem expresses the integral over the boundary of a domain in terms of the residues at the singularities inside.
 
 The integration theory is related to complex analysis, Fueter's quaternionic analysis, and the general Clifford analysis. The biquaternion case is the case of four dimensions with complex coefficients, which enriches the structure with the four conjugations and the two polar forms.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}$ | Biquaternion algebra |
+| $V$ | Four-dimensional real subspace of $\mathbb{B}$ |
+| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Point in $V$ |
+| $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient, taking the specific form appropriate to the subspace |
+| $\partial/\partial Q_\mu$ | Partial derivative with respect to $Q_\mu$ (with $-i$ factor on imaginary coordinates) |
+| $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
+| $\Box = \partial^2/\partial Q_0^2 + \Delta_Q$ | d'Alembertian |
+| $\tilde{n}$ | Biquaternion-valued outward unit normal |
+| $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Fundamental solution of the gradient |
+| $d\tilde{Q}$ | Lebesgue measure on the four real parameters of $V$ |
 
 ## Further Reading
 

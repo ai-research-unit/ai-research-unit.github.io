@@ -12,6 +12,9 @@
 
 ### <a href="articles/m-plus-as-the-informational-space.html">M+ as the Informational Space</a>
 
+### <a href="articles/the-wick-rotation-in-the-biquaternion-universe.html">The Wick Rotation in the Biquaternion Universe</a>
+
+
 
 
 ## Biquaternion Electromagnetism

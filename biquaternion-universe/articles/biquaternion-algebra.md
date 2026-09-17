@@ -19,7 +19,33 @@ $$
 \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}.
 $$
 
-As a real vector space, $\mathbb{B}$ has dimension $8$. As a complex vector space, it has dimension $4$. A general biquaternion is written in developed form as
+### Two Views: Over $\mathbb{C}$ and Over $\mathbb{R}$
+
+The biquaternion algebra can be viewed in two equivalent ways, depending on which scalars we allow.
+
+**As a $\mathbb{C}$-algebra.** The tensor product $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is naturally a module over $\mathbb{C}$, with the complex scalars acting on the first factor. In this view, $\mathbb{B}$ is a **four-dimensional algebra over $\mathbb{C}$**: its complex basis is $\{e_0, e_1, e_2, e_3\}$, and every element is a $\mathbb{C}$-linear combination of these four basis elements. The multiplication is $\mathbb{C}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The center of this $\mathbb{C}$-algebra is $\mathbb{C}$.
+
+**As an $\mathbb{R}$-algebra.** Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is also naturally a **real vector space of dimension $8$**, with real basis $\{e_0, e_1, e_2, e_3, i e_0, i e_1, i e_2, i e_3\}$. In this view, $\mathbb{B}$ is an **eight-dimensional algebra over $\mathbb{R}$**. The multiplication is $\mathbb{R}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The scalar imaginary $i$ is now an element of the algebra itself, not a scalar, and it lies in the center.
+
+The two views are related by a change of base ring: passing from the $\mathbb{R}$-algebra to the $\mathbb{C}$-algebra is the operation of **extension of scalars** from $\mathbb{R}$ to $\mathbb{C}$, and passing back is the operation of **restriction of scalars**. The dimension changes as follows:
+
+$$
+\dim_{\mathbb{R}} \mathbb{B} = 2 \cdot \dim_{\mathbb{C}} \mathbb{B},
+$$
+
+because each complex dimension contributes two real dimensions (the real and imaginary parts of each complex coefficient).
+
+**Which view to use.** The two views are complementary, and both are used in the literature.
+
+- The **$\mathbb{C}$-algebra view** is the natural one when the biquaternions are studied as a complex algebra, for instance in the context of complex representations, complex Lie algebras, or the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices. In this view, the algebra is four-dimensional and its structure is relatively simple: it is isomorphic to $M_2(\mathbb{C})$.
+
+- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real representations, real Clifford algebras, or applications to physics. In this view, the algebra is eight-dimensional, and the four real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
+
+In this article we use both views, and we indicate which one is in force whenever it matters. When we say "$\mathbb{B}$ is four-dimensional," we mean over $\mathbb{C}$. When we say "$\mathbb{B}$ is eight-dimensional," we mean over $\mathbb{R}$. The context will make the field clear.
+
+### Developed Form
+
+A general biquaternion is written in developed form as
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
@@ -47,11 +73,13 @@ $$
 
 The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with all quaternion units: $i e_k = e_k i$.
 
+When $\mathbb{B}$ is viewed as a real vector space of dimension 8, the eight real coordinates of $\tilde{Q}$ are $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3)$. When $\mathbb{B}$ is viewed as a complex vector space of dimension 4, the four complex coordinates are $(Q_0, Q_1, Q_2, Q_3)$.
+
 ### The Algebra Structure
 
-The algebra $\mathbb{B}$ is a four-dimensional algebra over $\mathbb{C}$. It is non-commutative and associative. It is not a division algebra: it has zero divisors, and the study of these is the subject of the divisibility article.
+The algebra $\mathbb{B}$ is a four-dimensional algebra over $\mathbb{C}$, and simultaneously an eight-dimensional algebra over $\mathbb{R}$. In both views it is non-commutative and associative. It is not a division algebra: it has zero divisors, and the study of these is the subject of the divisibility article.
 
-The **center** of $\mathbb{B}$ is $\mathbb{C}$. Indeed, an element $\tilde{Q}$ is central iff it commutes with every quaternion unit, and the only elements with this property are the complex scalars $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$.
+The **center** of $\mathbb{B}$ is $\mathbb{C}$ in both views, but with a subtlety. As a $\mathbb{C}$-algebra, the center is the scalar copy of $\mathbb{C}$ spanned by $e_0$: an element $\tilde{Q}$ is central iff it commutes with every quaternion unit, and the only such elements are the complex scalars $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. As an $\mathbb{R}$-algebra, the same center $\mathbb{C}$ is a real vector space of dimension 2, spanned by $e_0$ and $i e_0$.
 
 ### Multiplication
 
@@ -249,7 +277,7 @@ $$
 
 where $i\mathbb{H}_{\mathbb{B}}$ is the set of biquaternions of the form $i \tilde{Q}$ with $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$. Both are real vector spaces of dimension 4, and their direct sum is the full algebra $\mathbb{B}$ of real dimension 8.
 
-This is the **quaternion decomposition** of a biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the scalar imaginary times another quaternion. It is the natural decomposition when we think of $\mathbb{B}$ as the complexification of $\mathbb{H}$.
+This is the **quaternion decomposition** of a biquaternion. It expresses $\tilde{Q}$ as a quaternion plus the scalar imaginary times another quaternion. It is the natural decomposition when we think of $\mathbb{B}$ as the complexification of $\mathbb{H}$: the first summand is the "real part" and the second is the "imaginary part" of the complexification.
 
 ## Hermitian Decomposition
 
