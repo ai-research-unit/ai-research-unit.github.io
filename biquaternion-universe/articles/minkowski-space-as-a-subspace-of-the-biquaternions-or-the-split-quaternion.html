@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="minkowski-space-as-a-subspace-of-the-biquaternions-or-the-split-quaternions">Minkowski Space as a Subspace of the Biquaternions or the Split Quaternions</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the embedding of Minkowski space $\mathbb{R}^{1,3}$ as a real subspace of two eight-dimensional real algebras: the biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ and the split quaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$. The goal is to describe the embeddings precisely, to compare them, and to identify the structural features that distinguish them.</p>
+<p>The treatment is purely mathematical. The identification with physical spacetime is left for a later article; here, Minkowski space is simply the four-dimensional real vector space equipped with an indefinite quadratic form of signature $(1, 3)$ or $(3, 1)$.</p>
+<p>Every claim is either proved or stated as a definition. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its four conjugations and its four fixed-point subspaces. The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its four conjugations and its four fixed-point subspaces.</p>
+<p>Throughout, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$. In the biquaternion algebra, the scalar imaginary is $i$, with $i^2 = -1$, commuting with the quaternion units. In the split quaternion algebra, the split complex unit is $j$, with $j^2 = +1$, commuting with the quaternion units.</p>
+<h2 id="minkowski-space">Minkowski Space</h2>
+<h3 id="definition">Definition</h3>
+<p><strong>Minkowski space</strong> $\mathbb{R}^{1,3}$ is the four-dimensional real vector space $\mathbb{R}^4$ equipped with the indefinite quadratic form</p>
+<p>$$
+\eta(x, x) = x_0^2 - x_1^2 - x_2^2 - x_3^2.
+$$</p>
+<p>The form has signature $(1, 3)$ in the convention where one direction is timelike and three are spacelike. With the opposite sign convention, the form is</p>
+<p>$$
+\eta(x, x) = -x_0^2 + x_1^2 + x_2^2 + x_3^2,
+$$</p>
+<p>which has signature $(3, 1)$. Both conventions are used in the literature, and the choice is a matter of sign.</p>
+<h3 id="the-light-cone">The Light Cone</h3>
+<p>The <strong>light cone</strong> of Minkowski space is the set of vectors $x$ with $\eta(x, x) = 0$:</p>
+<p>$$
+x_0^2 = x_1^2 + x_2^2 + x_3^2.
+$$</p>
+<p>The light cone is a three-dimensional double cone in $\mathbb{R}^4$. Its nonzero elements are <strong>null vectors</strong>.</p>
+<h3 id="the-lorentz-group">The Lorentz Group</h3>
+<p>The <strong>Lorentz group</strong> is the group of linear transformations of $\mathbb{R}^{1,3}$ that preserve the quadratic form $\eta$:</p>
+<p>$$
+O(1, 3) = \{ \Lambda \in \mathrm{GL}(4, \mathbb{R}) : \eta(\Lambda x, \Lambda x) = \eta(x, x) \text{ for all } x \}.
+$$</p>
+<p>The <strong>proper orthochronous Lorentz group</strong> $SO^+(1, 3)$ is the connected component of the identity.</p>
+<h2 id="minkowski-space-in-the-biquaternion-algebra">Minkowski Space in the Biquaternion Algebra</h2>
+<h3 id="the-anti-hermitian-subspace-math27">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<p>In the biquaternion algebra $\mathbb{B}$, the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat = -\bar{\cdot}^*$. An element of $\mathbb{M}_-$ has the form</p>
+<p>$$
+\tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>This is a four-dimensional real subspace of $\mathbb{B}$. The norm form restricts to</p>
+<p>$$
+N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>which is the Minkowski quadratic form of signature $(3, 1)$. The identification is</p>
+<p>$$
+(x_0, x_1, x_2, x_3) \in \mathbb{R}^{1,3} \longleftrightarrow i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3 \in \mathbb{M}_- \subset \mathbb{B}.
+$$</p>
+<p>The timelike direction is the imaginary scalar part $i e_0$, and the spacelike directions are the real vector part $e_1, e_2, e_3$.</p>
+<h3 id="the-hermitian-subspace-math39">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<p>In the biquaternion algebra $\mathbb{B}$, the <strong>Hermitian subspace</strong> $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation $\dagger = \bar{\cdot}^*$. An element of $\mathbb{M}_+$ has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+$$</p>
+<p>This is also a four-dimensional real subspace of $\mathbb{B}$. The norm form restricts to</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
+$$</p>
+<p>which is the Minkowski quadratic form of signature $(1, 3)$. The identification is</p>
+<p>$$
+(x_0, x_1, x_2, x_3) \in \mathbb{R}^{1,3} \longleftrightarrow x_0 e_0 + i x_1 e_1 + i x_2 e_2 + i x_3 e_3 \in \mathbb{M}_+ \subset \mathbb{B}.
+$$</p>
+<p>The timelike direction is the real scalar part $e_0$, and the spacelike directions are the imaginary vector parts $i e_1, i e_2, i e_3$.</p>
+<h3 id="the-two-embeddings-are-mirror-images">The Two Embeddings Are Mirror Images</h3>
+<p>The two subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ are related by the quaternion conjugation:</p>
+<p>$$
+\overline{\mathbb{M}_+} = \mathbb{M}_-, \qquad \overline{\mathbb{M}_-} = \mathbb{M}_+.
+$$</p>
+<p>So they are mirror images of each other. The two embeddings of Minkowski space in $\mathbb{B}$ are therefore equivalent up to the quaternion conjugation, and the choice between them is a convention.</p>
+<h3 id="the-light-cone_1">The Light Cone</h3>
+<p>In both cases, the light cone of Minkowski space is the intersection of the subspace with the zero divisor set of $\mathbb{B}$:</p>
+<p>$$
+\mathbb{M}_- \cap \mathcal{Z}_\mathbb{B} = \text{light cone of signature } (3, 1),
+$$</p>
+<p>$$
+\mathbb{M}_+ \cap \mathcal{Z}_\mathbb{B} = \text{light cone of signature } (1, 3).
+$$</p>
+<p>The nonzero elements of the light cone are zero divisors of $\mathbb{B}$. This is a general feature: the light cone is the set of spacetime points that are zero divisors in the algebra.</p>
+<h2 id="minkowski-space-in-the-split-quaternion-algebra">Minkowski Space in the Split Quaternion Algebra</h2>
+<h3 id="the-hermitian-subspace-math59">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<p>In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the <strong>Hermitian subspace</strong> $\mathbb{M}_+$ is the fixed-point set of the Hermitian conjugation $\dagger = \bar{\cdot}^*$. An element of $\mathbb{M}_+$ has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+$$</p>
+<p>This is a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$. The norm form restricts to</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
+$$</p>
+<p>which is the Minkowski quadratic form of signature $(1, 3)$. The identification is</p>
+<p>$$
+(x_0, x_1, x_2, x_3) \in \mathbb{R}^{1,3} \longleftrightarrow x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3 \in \mathbb{M}_+ \subset \mathbb{H}_{\mathbb{D}}.
+$$</p>
+<p>The timelike direction is the real scalar part $e_0$, and the spacelike directions are the split-imaginary vector parts $j e_1, j e_2, j e_3$.</p>
+<h3 id="the-anti-hermitian-subspace-math71">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<p>In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation $\flat = -\bar{\cdot}^*$. An element of $\mathbb{M}_-$ has the form</p>
+<p>$$
+\tilde{Q} = j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>This is also a four-dimensional real subspace. The norm form restricts to</p>
+<p>$$
+N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>which is the Minkowski quadratic form of signature $(3, 1)$. The identification is</p>
+<p>$$
+(x_0, x_1, x_2, x_3) \in \mathbb{R}^{1,3} \longleftrightarrow j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3 \in \mathbb{M}_- \subset \mathbb{H}_{\mathbb{D}}.
+$$</p>
+<p>The timelike direction is the split-imaginary scalar part $j e_0$, and the spacelike directions are the real vector part $e_1, e_2, e_3$.</p>
+<h3 id="the-two-embeddings-are-mirror-images_1">The Two Embeddings Are Mirror Images</h3>
+<p>The two subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ in $\mathbb{H}_{\mathbb{D}}$ are related by the quaternion conjugation:</p>
+<p>$$
+\overline{\mathbb{M}_+} = \mathbb{M}_-, \qquad \overline{\mathbb{M}_-} = \mathbb{M}_+.
+$$</p>
+<p>So they are mirror images of each other, exactly as in the biquaternion case. The two embeddings of Minkowski space in $\mathbb{H}_{\mathbb{D}}$ are equivalent up to the quaternion conjugation, and the choice between them is a convention.</p>
+<h3 id="the-light-cone_2">The Light Cone</h3>
+<p>In both cases, the light cone of Minkowski space is the intersection of the subspace with the zero divisor set of $\mathbb{H}_{\mathbb{D}}$:</p>
+<p>$$
+\mathbb{M}_+ \cap \mathcal{Z}_{\mathbb{H}_{\mathbb{D}}} = \text{light cone of signature } (1, 3),
+$$</p>
+<p>$$
+\mathbb{M}_- \cap \mathcal{Z}_{\mathbb{H}_{\mathbb{D}}} = \text{light cone of signature } (3, 1).
+$$</p>
+<p>The nonzero elements of the light cone are zero divisors of $\mathbb{H}_{\mathbb{D}}$.</p>
+<h2 id="comparison-of-the-two-algebras">Comparison of the Two Algebras</h2>
+<p>The two algebras $\mathbb{B}$ and $\mathbb{H}_{\mathbb{D}}$ are both eight-dimensional real algebras, and both contain copies of Minkowski space as four-dimensional real subspaces. But the embeddings are different in character, and the differences are structural.</p>
+<h3 id="the-extra-unit">The Extra Unit</h3>
+<p>The fundamental difference is the sign of the square of the extra unit:</p>
+<ul>
+<li>In $\mathbb{B}$, the extra unit is $i$ with $i^2 = -1$.</li>
+<li>In $\mathbb{H}_{\mathbb{D}}$, the extra unit is $j$ with $j^2 = +1$.</li>
+</ul>
+<p>This sign change has consequences for the structure of the algebra and for the embeddings of Minkowski space.</p>
+<h3 id="the-timelike-direction">The Timelike Direction</h3>
+<p>In $\mathbb{B}$, the timelike direction of $\mathbb{M}_-$ is the <strong>imaginary</strong> scalar part $i e_0$, and the timelike direction of $\mathbb{M}_+$ is the <strong>real</strong> scalar part $e_0$.</p>
+<p>In $\mathbb{H}_{\mathbb{D}}$, the timelike direction of $\mathbb{M}_+$ is the <strong>real</strong> scalar part $e_0$, and the timelike direction of $\mathbb{M}_-$ is the <strong>split-imaginary</strong> scalar part $j e_0$.</p>
+<p>So the timelike direction is imaginary in one embedding and real in the other. The choice between the embeddings is a choice of which direction is timelike.</p>
+<h3 id="the-zero-divisor-structure">The Zero Divisor Structure</h3>
+<p>The zero divisor sets of the two algebras are different:</p>
+<ul>
+<li>In $\mathbb{B}$, the zero divisor set is a <strong>seven-dimensional complex cone</strong>.</li>
+<li>In $\mathbb{H}_{\mathbb{D}}$, the zero divisor set is the <strong>union of two four-dimensional linear subspaces</strong> $Z_+$ and $Z_-$.</li>
+</ul>
+<p>The intersection of the zero divisor set with the embedded Minkowski space is the light cone in both cases, but the structure of the intersection is different. In $\mathbb{B}$, the intersection is a three-dimensional cone, and it is a subset of the seven-dimensional complex cone. In $\mathbb{H}_{\mathbb{D}}$, the intersection is a three-dimensional cone, and it is a subset of the union of the two four-dimensional linear subspaces.</p>
+<h3 id="the-idempotent-decomposition">The Idempotent Decomposition</h3>
+<p>The split quaternion algebra has the <strong>idempotent decomposition</strong> $\mathbb{H}_{\mathbb{D}} = \mathbb{H} e_+ \oplus \mathbb{H} e_-$, where $e_\pm = \tfrac{1}{2}(1 \pm j)$. The biquaternion algebra does not have a comparable idempotent decomposition, because the scalar imaginary $i$ is not an idempotent.</p>
+<p>The idempotent decomposition is what makes the split quaternion algebra semisimple, and it is what makes the embeddings of Minkowski space in $\mathbb{H}_{\mathbb{D}}$ decomposable into two quaternion components. Specifically, an element of $\mathbb{M}_+$ or $\mathbb{M}_-$ decomposes as a pair of quaternions satisfying a conjugation condition, as described in the article on split quaternion analysis on subspaces.</p>
+<h3 id="the-quaternion-decomposition">The Quaternion Decomposition</h3>
+<p>The biquaternion algebra has the <strong>quaternion decomposition</strong> $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}$, where $\mathbb{H}_{\mathbb{B}}$ is the quaternion subspace. This is the decomposition into the real and imaginary parts with respect to the scalar imaginary $i$.</p>
+<p>The quaternion decomposition is what makes the biquaternion algebra a complexification of the quaternion algebra. An element of $\mathbb{M}_-$ decomposes as a pure real quaternion plus an imaginary scalar, as described in the article on biquaternion analysis on subspaces.</p>
+<h3 id="the-algebra-structure">The Algebra Structure</h3>
+<p>The two algebras have different algebraic structures:</p>
+<ul>
+<li>$\mathbb{B}$ is <strong>simple</strong>: it is isomorphic to $M_2(\mathbb{C})$, and it has no nontrivial two-sided ideals.</li>
+<li>$\mathbb{H}_{\mathbb{D}}$ is <strong>semisimple but not simple</strong>: it is isomorphic to $\mathbb{H} \oplus \mathbb{H}$, and it has two nontrivial two-sided ideals $Z_+$ and $Z_-$.</li>
+</ul>
+<p>This difference is reflected in the zero divisor structure and in the idempotent decomposition. In $\mathbb{B}$, the zero divisors form a single cone; in $\mathbb{H}_{\mathbb{D}}$, they form the union of two linear subspaces, corresponding to the two ideals.</p>
+<h2 id="which-embedding-is-the-standard-one">Which Embedding Is the Standard One?</h2>
+<p>Both embeddings are used in the literature, and the choice depends on the context.</p>
+<p><strong>Biquaternion embedding.</strong> The embedding of Minkowski space in the anti-Hermitian subspace $\mathbb{M}_-$ of the biquaternion algebra is the standard one in the <strong>complexified-spacetime program</strong>. In this program, the biquaternion algebra is the complexification of the quaternion algebra, and the anti-Hermitian subspace is the real spacetime. The timelike direction is the imaginary scalar part, and the spacelike directions are the real vector part. This embedding is used in the study of the Dirac equation, in the theory of twistors, and in the algebraic formulation of special relativity.</p>
+<p><strong>Split quaternion embedding.</strong> The embedding of Minkowski space in the Hermitian subspace $\mathbb{M}_+$ or the anti-Hermitian subspace $\mathbb{M}_-$ of the split quaternion algebra is used in the study of the <strong>Lorentz group</strong> and in <strong>twistor theory</strong>. The split quaternion algebra is the split form of the biquaternion algebra, and its indefinite subspaces are the natural home for the Lorentzian structure. The timelike direction is the real scalar part in $\mathbb{M}_+$ and the split-imaginary scalar part in $\mathbb{M}_-$.</p>
+<h2 id="comparison-table">Comparison Table</h2>
+<p>The following table summarizes the embeddings of Minkowski space in the two algebras.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$\mathbb{B}$</th>
+<th>$\mathbb{H}_{\mathbb{D}}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extra unit</td>
+<td>$i$, $i^2 = -1$</td>
+<td>$j$, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>Spacetime subspace</td>
+<td>$\mathbb{M}_-$ or $\mathbb{M}_+$</td>
+<td>$\mathbb{M}_+$ or $\mathbb{M}_-$</td>
+</tr>
+<tr>
+<td>Timelike direction in $\mathbb{M}_-$</td>
+<td>$i e_0$</td>
+<td>$j e_0$</td>
+</tr>
+<tr>
+<td>Timelike direction in $\mathbb{M}_+$</td>
+<td>$e_0$</td>
+<td>$e_0$</td>
+</tr>
+<tr>
+<td>Spacelike directions in $\mathbb{M}_-$</td>
+<td>$e_1, e_2, e_3$</td>
+<td>$e_1, e_2, e_3$</td>
+</tr>
+<tr>
+<td>Spacelike directions in $\mathbb{M}_+$</td>
+<td>$i e_1, i e_2, i e_3$</td>
+<td>$j e_1, j e_2, j e_3$</td>
+</tr>
+<tr>
+<td>Norm form signature</td>
+<td>$(3, 1)$ or $(1, 3)$</td>
+<td>$(1, 3)$ or $(3, 1)$</td>
+</tr>
+<tr>
+<td>Zero divisor set</td>
+<td>Seven-dimensional cone</td>
+<td>Union of two four-dimensional subspaces</td>
+</tr>
+<tr>
+<td>Light cone</td>
+<td>Three-dimensional cone</td>
+<td>Three-dimensional cone</td>
+</tr>
+<tr>
+<td>Algebra structure</td>
+<td>Simple ($M_2(\mathbb{C})$)</td>
+<td>Semisimple ($\mathbb{H} \oplus \mathbb{H}$)</td>
+</tr>
+<tr>
+<td>Primary decomposition</td>
+<td>Quaternion decomposition</td>
+<td>Idempotent decomposition</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-role-of-the-light-cone">The Role of the Light Cone</h2>
+<p>In both algebras, the light cone of Minkowski space is the intersection of the embedded spacetime with the zero divisor set. This is a general feature, and it is the reason the light cone plays a distinguished role in the algebraic structure.</p>
+<p><strong>In $\mathbb{B}$.</strong> The light cone is the set of nonzero elements $\tilde{Q} \in \mathbb{M}_-$ with $N(\tilde{Q}) = 0$. These are the zero divisors of $\mathbb{B}$ that lie in the spacetime subspace. The zero divisors of $\mathbb{B}$ outside the light cone are the non-pure zero divisors, which are complex multiples of idempotents.</p>
+<p><strong>In $\mathbb{H}_{\mathbb{D}}$.</strong> The light cone is the set of nonzero elements $\tilde{Q} \in \mathbb{M}_+$ or $\mathbb{M}_-$ with $N(\tilde{Q}) = 0$. These are the zero divisors of $\mathbb{H}_{\mathbb{D}}$ that lie in the spacetime subspace. The zero divisors of $\mathbb{H}_{\mathbb{D}}$ outside the light cone are the elements with a vanishing idempotent component, which form the union of the two linear subspaces $Z_+$ and $Z_-$.</p>
+<p>So the light cone is the intersection of the spacetime subspace with the zero divisor set in both algebras, and the structure of the zero divisor set outside the light cone is different in the two cases.</p>
+<h2 id="the-lorentz-group_1">The Lorentz Group</h2>
+<p>The Lorentz group acts naturally on the spacetime subspace in both algebras. The action is by conjugation by the unit elements of the algebra.</p>
+<p><strong>In $\mathbb{B}$.</strong> The unit elements of $\mathbb{B}$ that preserve the spacetime subspace $\mathbb{M}_-$ form a group isomorphic to the double cover of the Lorentz group. The action is by conjugation:</p>
+<p>$$
+\tilde{Q} \mapsto \tilde{U} \tilde{Q} \tilde{U}^{-1}, \qquad \tilde{U} \in \mathbb{B}, \quad |\tilde{U}| = 1.
+$$</p>
+<p>The subgroup that preserves $\mathbb{M}_-$ is the group of unit biquaternions whose conjugate acts on $\mathbb{M}_-$ as a Lorentz transformation.</p>
+<p><strong>In $\mathbb{H}_{\mathbb{D}}$.</strong> The unit elements of $\mathbb{H}_{\mathbb{D}}$ that preserve the spacetime subspace $\mathbb{M}_+$ or $\mathbb{M}_-$ form a group isomorphic to the double cover of the Lorentz group. The action is by conjugation, as in the biquaternion case.</p>
+<p>So the Lorentz group is realized as a group of unit elements acting by conjugation on the spacetime subspace in both algebras. The realization is the same in character, but the specific group elements are different because the algebras are different.</p>
+<h2 id="summary">Summary</h2>
+<p>Minkowski space $\mathbb{R}^{1,3}$ can be embedded as a four-dimensional real subspace of both the biquaternion algebra $\mathbb{B}$ and the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$:</p>
+<ul>
+<li><strong>In $\mathbb{B}$:</strong> Minkowski space is either the anti-Hermitian subspace $\mathbb{M}_-$ (timelike direction $i e_0$, spacelike directions $e_1, e_2, e_3$) or the Hermitian subspace $\mathbb{M}_+$ (timelike direction $e_0$, spacelike directions $i e_1, i e_2, i e_3$). The two are mirror images under quaternion conjugation. The standard choice for physics is $\mathbb{M}_-$.</li>
+<li><strong>In $\mathbb{H}_{\mathbb{D}}$:</strong> Minkowski space is either the Hermitian subspace $\mathbb{M}_+$ (timelike direction $e_0$, spacelike directions $j e_1, j e_2, j e_3$) or the anti-Hermitian subspace $\mathbb{M}_-$ (timelike direction $j e_0$, spacelike directions $e_1, e_2, e_3$). The two are mirror images under quaternion conjugation.</li>
+</ul>
+<p>In both algebras, the norm form restricts to the Minkowski quadratic form on the subspace, and the light cone is the intersection of the subspace with the zero divisor set. The Lorentz group is realized as the group of unit elements acting by conjugation.</p>
+<p>The two algebras differ in their structure: $\mathbb{B}$ is simple, and its zero divisor set is a seven-dimensional cone; $\mathbb{H}_{\mathbb{D}}$ is semisimple, and its zero divisor set is the union of two four-dimensional linear subspaces. This difference is reflected in the embeddings and in the structure of the spacetime subspace.</p>
+<p>The choice between the two algebras and between the two subspaces within each algebra is a matter of convention and of the algebraic structure that one wishes to emphasize. The biquaternion embedding is natural when the complexification of the quaternion algebra is the primary structure; the split quaternion embedding is natural when the indefinite form and the idempotent decomposition are the primary structure.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation.</li>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra perspective.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic structure of biquaternions and split quaternions.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis with split signature.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
