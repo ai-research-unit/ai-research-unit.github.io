@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="the-kms-condition-and-the-biquaternion-framework">The KMS Condition and the Biquaternion Framework</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The <strong>KMS condition</strong> — named after Kubo, Martin, and Schwinger — is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic thermal states, and it is the reason the imaginary-time (Matsubara) formalism works.</p>
+<p>The KMS condition has imaginary time built into its structure. The analytic continuation $t \to t + i\beta$ is not a convenience; it is the content of the condition. This suggests that a framework in which imaginary time is <strong>intrinsic</strong> — not an analytic continuation, but the natural coordinate — might be a natural setting for the condition.</p>
+<p>The material sector $\mathbb{M}_-$ of the biquaternion algebra is such a framework. Its time coordinate is $ict$, which is imaginary by construction. The purpose of this article is to make this structural fit explicit, to state the KMS condition in the biquaternion language, and to flag what is established and what remains to be developed.</p>
+<p>The article is organized as follows. First the KMS condition is recalled as established physics, for both bosons and fermions. Then the role of imaginary time in the condition is made explicit. Then the material sector $\mathbb{M}_-$ is recalled, and the naturalness of imaginary time in this sector is discussed. Then the KMS condition is stated in the biquaternion language, and the structural fit is analyzed. The article closes with the status of the reading and with directions for future work.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the three subspaces $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$. Throughout, $c$ denotes the speed of light in the medium, and $\hbar$ and $k_B$ are the reduced Planck constant and Boltzmann's constant.</p>
+<h2 id="the-kms-condition">The KMS Condition</h2>
+<h3 id="statement">Statement</h3>
+<p>Consider a quantum system at inverse temperature $\beta = \hbar/(k_B T)$, described by a state $\omega_\beta$ and a one-parameter group of time translations $\alpha_t$ (the Heisenberg evolution). For any two operators $A, B$ in the algebra of observables, define the thermal correlation function</p>
+<p>$$
+F_{AB}(t) = \omega_\beta\big(A\, \alpha_t(B)\big).
+$$</p>
+<p>The <strong>KMS condition</strong> at inverse temperature $\beta$ states that:</p>
+<ol>
+<li>
+<p>The function $F_{AB}(t)$ extends analytically from the real axis to the strip
+$$
+0 < \mathrm{Im}(t) < \beta,
+$$
+and is continuous on its closure.</p>
+</li>
+<li>
+<p>On the boundary of the strip, the boundary values are related by
+$$
+F_{AB}(t + i\beta) = \omega_\beta\big(\alpha_t(B)\, A\big) = F_{BA}(t).
+$$</p>
+</li>
+</ol>
+<p>So the value of the correlation function at imaginary time $t + i\beta$ equals the correlation function of the reversed pair at real time $t$. The condition is the <strong>twisted periodicity</strong> of the correlation function in imaginary time.</p>
+<h3 id="why-it-characterizes-thermal-equilibrium">Why It Characterizes Thermal Equilibrium</h3>
+<p>The KMS condition is not merely a property of thermal states. Under suitable technical conditions, it <strong>characterizes</strong> them: if a state satisfies the KMS condition at inverse temperature $\beta$, then it is the thermal state at that temperature. This is the content of the Haag–Hugenholtz–Winnink theorem (1976), which establishes that the KMS condition is the correct abstract formulation of the zeroth law of thermodynamics.</p>
+<p>The KMS condition therefore plays a role in thermal physics analogous to the role the vacuum state plays in zero-temperature QFT: it is the structural characterization of a distinguished state, defined by an analytic property rather than by a specific density matrix.</p>
+<h3 id="bosons-and-fermions">Bosons and Fermions</h3>
+<p>For <strong>bosonic</strong> operators, the KMS condition takes the form stated above: the correlation function is periodic in imaginary time with period $\beta$, in the twisted sense.</p>
+<p>For <strong>fermionic</strong> operators, the correlation function is <strong>antiperiodic</strong> in imaginary time with period $\beta$:</p>
+<p>$$
+F_{AB}(t + i\beta) = -\,F_{BA}(t).
+$$</p>
+<p>Equivalently, the fermionic correlation functions are periodic with period $2\beta$ after a twist by the fermion number. This is the origin of the <strong>antiperiodic Matsubara frequencies</strong>: the Fourier modes of fermionic fields in the compact imaginary time direction are $(2n+1)\pi/\beta$, whereas for bosons they are $2\pi n/\beta$.</p>
+<p>The distinction between the bosonic and fermionic cases is not an accident. It follows from the spin–statistics theorem: bosons are described by integer-spin fields (whose correlation functions are periodic in imaginary time), and fermions are described by half-integer-spin fields (whose correlation functions are antiperiodic). The twist in the fermionic case is the reflection of the spin structure of the field.</p>
+<h3 id="the-origin-of-the-imaginary-time-formalism">The Origin of the Imaginary-Time Formalism</h3>
+<p>The KMS condition is the reason the imaginary-time (Matsubara) formalism works. The analyticity of the correlation functions in the strip $0 < \mathrm{Im}(t) < \beta$ means that the Fourier transform in imaginary time has a discrete spectrum: the Matsubara frequencies. The partition function at temperature $T$ can be expressed as a functional integral over fields defined on a Euclidean spacetime with the imaginary time direction compactified on a circle of circumference $\beta$.</p>
+<p>So the KMS condition is the algebraic origin of the imaginary-time formalism. It is what makes the Euclidean formulation of thermal field theory well-defined, and it is the reason the Matsubara frequencies appear.</p>
+<h3 id="the-role-of-imaginary-time">The Role of Imaginary Time</h3>
+<p>The KMS condition has imaginary time built into it in a specific way. The condition is not a statement about the thermal state on real time; it is a statement about the <strong>analytic continuation</strong> of the correlation function to imaginary time.</p>
+<p>The imaginary time $t \to t + i\beta$ is not a coordinate change or a Wick rotation. It is the <strong>shift</strong> along the imaginary direction of the complex time plane, and the KMS condition is the boundary condition at the edge of the strip. The temperature $\beta$ is the <strong>width</strong> of the strip.</p>
+<p>So the KMS condition is intrinsically an imaginary-time statement. Without imaginary time, there is no KMS condition.</p>
+<h2 id="the-material-sector-and-its-intrinsic-imaginary-time">The Material Sector and Its Intrinsic Imaginary Time</h2>
+<p>The material sector $\mathbb{M}_-$ is the four-dimensional real subspace of $\mathbb{B}$ of elements of the form</p>
+<p>$$
+\tilde{Q}_- = i q'_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The first coefficient is <strong>imaginary</strong> ($i q'_0$), and the three remaining coefficients are <strong>real</strong>. In the physical identification, $q'_0 = c t$ where $t$ is time, so the first coefficient is $i c t$.</p>
+<p>The imaginary character of the time coordinate is <strong>intrinsic</strong> to the material sector. It is not introduced by analytic continuation, and it is not the result of a Wick rotation. It is the algebraic structure of the subspace: the time coordinate multiplies the imaginary unit $i$, which is the fundamental scalar of the biquaternion algebra.</p>
+<p>The d'Alembertian on $\mathbb{M}_-$ is</p>
+<p>$$
+\Box_{\mathbb{M}_-} = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \Delta,
+$$</p>
+<p>which is the ordinary Lorentzian wave operator. The wave operator has the same form as in standard relativistic physics, but the imaginary time is now an algebraic feature of the framework, not a computational device.</p>
+<h2 id="the-kms-condition-in-the-biquaternion-framework">The KMS Condition in the Biquaternion Framework</h2>
+<h3 id="statement_1">Statement</h3>
+<p>Let $\tilde{A}$ and $\tilde{B}$ be biquaternion-valued operators on the material sector, and let $\omega_\beta$ be a thermal state at inverse temperature $\beta$. Define the biquaternion-valued thermal correlation function</p>
+<p>$$
+\tilde{F}_{\tilde{A}\tilde{B}}(t) = \omega_\beta\big(\tilde{A}\, \alpha_t(\tilde{B})\big),
+$$</p>
+<p>where $\alpha_t$ is the Heisenberg evolution in the time direction of $\mathbb{M}_-$.</p>
+<p>The <strong>KMS condition</strong> in the biquaternion framework states that:</p>
+<ol>
+<li>
+<p>The function $\tilde{F}_{\tilde{A}\tilde{B}}(t)$ extends analytically to the strip
+$$
+0 < \mathrm{Im}(t) < \beta,
+$$
+with values in the complexification of the algebra.</p>
+</li>
+<li>
+<p>On the boundary of the strip,
+$$
+\tilde{F}_{\tilde{A}\tilde{B}}(t + i\beta) = \omega_\beta\big(\alpha_t(\tilde{B})\, \tilde{A}\big) = \tilde{F}_{\tilde{B}\tilde{A}}(t).
+$$</p>
+</li>
+</ol>
+<p>This is the same condition as in the standard formulation, but stated for biquaternion-valued operators. It holds for both bosonic and fermionic biquaternion-valued fields, with the appropriate twist in the fermionic case.</p>
+<h3 id="the-structural-fit">The Structural Fit</h3>
+<p>The KMS condition fits naturally in the material sector for three reasons.</p>
+<p><strong>First, the imaginary time is intrinsic.</strong> The time coordinate of $\mathbb{M}_-$ is $ict$, which is imaginary by construction. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_0 = c t$ by an imaginary amount: $q'_0 \to q'_0 + i c \beta$. Since the coefficient is a real parameter, the shift moves it into the complexification of the parameter space. The KMS condition is a statement about this complexification, and the material sector provides the natural setting.</p>
+<p><strong>Second, the complexification of $\mathbb{M}_-$ is the full algebra.</strong> The complexification of $\mathbb{M}_-$ as a real subspace of $\mathbb{B}$ is $\mathbb{B}$ itself:</p>
+<p>$$
+\mathbb{M}_- \oplus i\,\mathbb{M}_- = \mathbb{M}_- \oplus \mathbb{M}_+ = \mathbb{B}.
+$$</p>
+<p>So the analytic continuation of functions on $\mathbb{M}_-$ in the time direction naturally takes values in the full algebra, with the real part in $\mathbb{M}_-$ and the imaginary part in $\mathbb{M}_+$. The KMS condition is a statement about this extension.</p>
+<p><strong>Third, the modular Hamiltonian lives in $\mathbb{M}_+$.</strong> In the algebraic formulation of the KMS condition, the modular Hamiltonian (the logarithm of the modular operator) is a Hermitian operator. In the biquaternion framework, Hermitian operators live in the Hermitian subspace $\mathbb{M}_+$. So the modular Hamiltonian is a natural element of $\mathbb{M}_+$. This connects the KMS condition to the informational sector: the temperature, the modular evolution, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields.</p>
+<h3 id="the-fermionic-case-and-the-structure-of-the-algebra">The Fermionic Case and the Structure of the Algebra</h3>
+<p>The fermionic case deserves a separate note. In the standard formulation, the antiperiodicity of fermionic correlation functions in imaginary time is a consequence of the spin–statistics theorem, and it is tied to the spin structure of the fermionic field.</p>
+<p>In the biquaternion framework, fermionic fields are spinors: they lie in the fundamental module of the algebra, which is a two-dimensional complex representation. The twist by $(-1)^F$ that produces the antiperiodicity is an automorphism of the algebra, and it might be expressible as a specific operation on the spinor module.</p>
+<p>This is a direction for future work. The fermionic KMS condition might be readable as a statement about the spin structure of the algebra, with the antiperiodicity corresponding to a specific transformation of the spinor representation.</p>
+<h2 id="what-is-established-and-what-is-interpretation">What Is Established and What Is Interpretation</h2>
+<p><strong>Established.</strong></p>
+<ul>
+<li>The KMS condition: the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory.</li>
+<li>Its analytic structure: the extension of correlation functions to a strip of width $\beta$ in the complex time plane.</li>
+<li>Its equivalence to the Gibbs formula under suitable technical conditions (the Haag–Hugenholtz–Winnink theorem).</li>
+<li>Its satisfaction by both bosonic and fermionic states, with the appropriate twist in the fermionic case.</li>
+<li>Its role as the origin of the imaginary-time (Matsubara) formalism.</li>
+<li>The material sector $\mathbb{M}_-$ of the biquaternion algebra and its intrinsic imaginary time.</li>
+<li>The complexification of $\mathbb{M}_-$ as the full algebra $\mathbb{B}$.</li>
+<li>The identification of Hermitian operators with the informational sector $\mathbb{M}_+$.</li>
+</ul>
+<p><strong>Interpretation.</strong></p>
+<ul>
+<li>That the KMS condition fits naturally in the material sector because the imaginary time is intrinsic to the sector.</li>
+<li>That the modular Hamiltonian of the KMS condition is naturally an element of $\mathbb{M}_+$.</li>
+<li>That the fermionic antiperiodicity is related to the spin structure of the biquaternion algebra.</li>
+</ul>
+<p><strong>Open.</strong></p>
+<ul>
+<li>Whether the reformulation of the KMS condition in the biquaternion framework leads to new results.</li>
+<li>Whether the fermionic twist has a specific interpretation in terms of the spinor representation.</li>
+<li>Whether the KMS condition connects to the informational hypothesis in a substantive way (e.g., whether the modular Hamiltonian has a physical interpretation as an informational quantity).</li>
+</ul>
+<h2 id="directions-for-future-work">Directions for Future Work</h2>
+<p>The following directions seem promising.</p>
+<p><strong>1. The modular Hamiltonian in $\mathbb{M}_+$.</strong> In the algebraic formulation, the modular Hamiltonian $K$ (defined by the modular operator $\Delta = e^{-K}$) generates the modular evolution. In the biquaternion framework, $K$ is a Hermitian operator, hence an element of $\mathbb{M}_+$. What is its physical interpretation in the informational reading of $\mathbb{M}_+$?</p>
+<p><strong>2. The KMS condition for biquaternion-valued fields.</strong> The KMS condition is usually stated for scalar or spinor fields. What is the correct statement for biquaternion-valued fields, which are neither? Do the additional degrees of freedom (the four complex coefficients) introduce new structure?</p>
+<p><strong>3. The fermionic twist.</strong> The antiperiodicity of fermionic correlation functions in imaginary time is tied to the spin–statistics theorem. In the biquaternion framework, fermions are spinors, which lie in a specific module over the algebra. Does the twist have a natural formulation in terms of the module structure?</p>
+<p><strong>4. The relation to the Unruh and Hawking effects.</strong> The KMS condition is the fundamental structure behind the Unruh effect (an accelerated observer sees a thermal bath) and the Hawking temperature of black holes. Does the biquaternion framework provide a cleaner or more unified treatment of these phenomena?</p>
+<p><strong>5. The relation to the Wick rotation.</strong> The Wick rotation is the transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$, as developed in the companion article. The KMS condition is what makes this transfer work in thermal field theory. So the KMS condition and the Wick rotation are aspects of the same structure: the imaginary time is intrinsic to $\mathbb{M}_-$, and the Euclidean formulation is the transfer to the quaternion subspace. What is the precise relation?</p>
+<p><strong>6. Numerical methods.</strong> The imaginary-time formalism is the basis of lattice gauge theory and Monte Carlo computations. If the biquaternion framework provides a cleaner formulation of the KMS condition, might it suggest new numerical methods for finite-temperature QFT?</p>
+<h2 id="summary">Summary</h2>
+<p>The KMS condition is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic states, with a twist in the fermionic case.</p>
+<p>The KMS condition has imaginary time built into it. The analytic continuation $t \to t + i\beta$ is not a convenience; it is the content of the condition.</p>
+<p>The material sector $\mathbb{M}_-$ of the biquaternion algebra has imaginary time intrinsically: its time coordinate is $ict$, which is imaginary by construction. The KMS condition, which is stated in terms of the imaginary time, fits naturally in this sector. The shift $t \to t + i\beta$ is a shift in the coefficient $q'_0 = ct$ by an imaginary amount, and the complexification of the parameter space is the full algebra $\mathbb{B}$.</p>
+<p>The modular Hamiltonian of the KMS condition is a Hermitian operator, and Hermitian operators live in the informational sector $\mathbb{M}_+$. So the modular evolution, the temperature, and the imaginary-time shift are all encoded in $\mathbb{M}_+$-valued operators acting on $\mathbb{M}_-$-valued fields. This provides a natural structural reading of the KMS condition, in which the material and informational sectors are connected through the thermal structure.</p>
+<p>The reformulation is an interpretation, not a derivation. The KMS condition is established physics; the biquaternion framework provides a natural setting for it, but does not derive it. Whether the reformulation leads to new results is an open question.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Material sector: imaginary time, real space</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Informational sector: real time, imaginary space</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Speed of light in the medium</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>Time coordinate</td>
+</tr>
+<tr>
+<td>$\beta = \hbar/(k_B T)$</td>
+<td>Inverse temperature</td>
+</tr>
+<tr>
+<td>$\omega_\beta$</td>
+<td>Thermal state at inverse temperature $\beta$</td>
+</tr>
+<tr>
+<td>$\alpha_t$</td>
+<td>Heisenberg evolution</td>
+</tr>
+<tr>
+<td>$F_{AB}(t)$</td>
+<td>Thermal correlation function</td>
+</tr>
+<tr>
+<td>$F_{AB}(t + i\beta) = F_{BA}(t)$</td>
+<td>KMS condition</td>
+</tr>
+<tr>
+<td>$\omega_n = 2\pi n/\beta$</td>
+<td>Bosonic Matsubara frequencies</td>
+</tr>
+<tr>
+<td>$\omega_n = (2n+1)\pi/\beta$</td>
+<td>Fermionic Matsubara frequencies</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Kubo, "Statistical-mechanical theory of irreversible processes. I," <em>Journal of the Physical Society of Japan</em> <strong>12</strong> (1957) 570–586, for the original formulation.</li>
+<li>P. C. Martin and J. Schwinger, "Theory of many-particle systems. I," <em>Physical Review</em> <strong>115</strong> (1959) 1342–1373, for the derivation of the condition.</li>
+<li>R. Haag, N. M. Hugenholtz, and M. Winnink, "On the equilibrium states in quantum statistical mechanics," <em>Communications in Mathematical Physics</em> <strong>5</strong> (1967) 215–236, for the characterization of thermal equilibrium.</li>
+<li>R. Haag, <em>Local Quantum Physics: Fields, Particles, Algebras</em> (Springer, 1996), for the algebraic formulation.</li>
+<li>M. Takesaki, <em>Tomita's Theory of Modular Hilbert Algebras and Its Applications</em> (Springer, 1970), for the modular theory of von Neumann algebras.</li>
+<li>M. Le Bellac, <em>Thermal Field Theory</em> (Cambridge, 1996), for the imaginary-time formalism and its applications.</li>
+<li>J. I. Kapusta and C. Gale, <em>Finite-Temperature Field Theory: Principles and Applications</em> (Cambridge, 2006), for the modern treatment.</li>
+<li>W. G. Unruh, "Notes on black-hole evaporation," <em>Physical Review D</em> <strong>14</strong> (1976) 870–892, for the Unruh effect.</li>
+<li>S. W. Hawking, "Particle creation by black holes," <em>Communications in Mathematical Physics</em> <strong>43</strong> (1975) 199–220, for the Hawking temperature.</li>
+</ul>
+<hr />
+<h2 id="notes-on-the-article">Notes on the article</h2>
+<p><strong>What this article does:</strong></p>
+<ol>
+<li>Recalls the KMS condition as established physics, for both bosons and fermions, with the appropriate twist in the fermionic case.</li>
+<li>States the condition precisely, with the analytic continuation and the boundary condition.</li>
+<li>Explains the role of imaginary time in the condition.</li>
+<li>Recalls the material sector $\mathbb{M}_-$ and its intrinsic imaginary time.</li>
+<li>States the KMS condition in the biquaternion language.</li>
+<li>Analyzes the structural fit: the intrinsic imaginary time, the complexification of $\mathbb{M}_-$ as the full algebra, and the modular Hamiltonian as an element of $\mathbb{M}_+$.</li>
+<li>Distinguishes what is established from what is interpretation.</li>
+<li>Lists directions for future work.</li>
+</ol>
+<p><strong>What is emphasized:</strong></p>
+<ul>
+<li>The KMS condition is established physics. The biquaternion framework provides a natural setting, but does not derive the condition.</li>
+<li>The imaginary time is intrinsic to $\mathbb{M}_-$; the analytic continuation of the KMS condition becomes a structural property of the algebra.</li>
+<li>The modular Hamiltonian is Hermitian, hence in $\mathbb{M}_+$.</li>
+<li>The fermionic case deserves a separate treatment, tied to the spin structure of the algebra.</li>
+</ul>
+<p><strong>What is deliberately not claimed:</strong></p>
+<ul>
+<li>That the biquaternion framework explains or derives the KMS condition.</li>
+<li>That the reformulation leads to new results.</li>
+<li>That the informational interpretation of $\mathbb{M}_+$ is confirmed by the KMS condition.</li>
+</ul>
+<p><strong>Length:</strong> medium, comparable to the other physics articles.</p>
+<p><strong>Cross-references:</strong> the article references the companion articles on the algebra, on the two sectors, on the Wick rotation, and on the informational hypothesis.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
