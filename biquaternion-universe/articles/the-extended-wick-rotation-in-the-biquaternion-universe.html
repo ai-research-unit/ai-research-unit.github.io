@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="the-extended-wick-rotation-in-the-biquaternion-universe">The Extended Wick Rotation in the Biquaternion Universe</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The companion article described the <strong>standard Wick rotation</strong> as it is used in physics: the analytic continuation $t \to -i\tau$ of the time coordinate, which converts the Lorentzian structure of spacetime into a Euclidean one and turns the Feynman path integral into a statistical-mechanical partition function. The companion article presented this rotation as a <strong>trick</strong> — a contour deformation in the complex time plane, justified by Cauchy's theorem when the fields extend analytically, but not a theorem of quantum field theory.</p>
+<p>This article is about a <strong>different</strong> operation. In the biquaternion algebra $\mathbb{B}$, the two complementary four-dimensional subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ are exchanged by multiplication by the scalar imaginary $i$:</p>
+<p>$$
+i\,\mathbb{M}_- = \mathbb{M}_+, \qquad i\,\mathbb{M}_+ = \mathbb{M}_-.
+$$</p>
+<p>This multiplication by $i$ is a <strong>global algebraic operation</strong> on the biquaternion coordinate: it acts on all four coefficients, not just on the time component. We call it the <strong>extended Wick rotation</strong>.</p>
+<p>The extended Wick rotation is not the standard Wick rotation. The two operations share the same scalar factor $i$, but they act differently: the standard rotation is a change of a single coordinate within a sector (or within Minkowski space), while the extended rotation is a switch between the two sectors of the biquaternion algebra. The purpose of this article is to define the extended rotation, to describe what changes under it, and to state the hypothesis that it has physical content.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the three subspaces $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$. Throughout, $c$ denotes the speed of light in the medium.</p>
+<h2 id="a-brief-recap-of-the-standard-trick">A Brief Recap of the Standard Trick</h2>
+<p>The standard Wick rotation is the substitution</p>
+<p>$$
+t \to -i\tau, \qquad \tau \in \mathbb{R},
+$$</p>
+<p>in the time coordinate of relativistic field theory. It is applied to convert oscillatory path integrals into convergent Euclidean ones. The justification is analytic continuation of the integrand in the complex time plane, valid when the fields extend holomorphically in a suitable domain. It is a <strong>trick</strong>: it works in a large class of physically relevant problems, but it is not derived from first principles, and its validity is not guaranteed in general.</p>
+<p>The key feature of the standard trick is that <strong>only the time coordinate is rotated</strong>. The spatial coordinates $x, y, z$ are unchanged.</p>
+<h2 id="the-extended-wick-rotation">The Extended Wick Rotation</h2>
+<p>We now define a different operation.</p>
+<h3 id="definition">Definition</h3>
+<p>Let $\tilde{Q}$ be a biquaternion. The <strong>extended Wick rotation</strong> is the multiplication of $\tilde{Q}$ by the scalar imaginary $i$:</p>
+<p>$$
+\tilde{Q} \;\longmapsto\; i\,\tilde{Q}.
+$$</p>
+<p>The operation acts on the whole biquaternion, not on a single coordinate.</p>
+<h3 id="the-exchange-of-sectors">The Exchange of Sectors</h3>
+<p>Multiplication by $i$ exchanges the two complementary subspaces:</p>
+<p>$$
+i\,\mathbb{M}_- = \mathbb{M}_+, \qquad i\,\mathbb{M}_+ = \mathbb{M}_-.
+$$</p>
+<p>So the extended Wick rotation sends a point of the material sector $\mathbb{M}_-$ to a point of the informational sector $\mathbb{M}_+$, and vice versa.</p>
+<h3 id="concretely">Concretely</h3>
+<p>Take a point of the material sector with physical coordinates</p>
+<p>$$
+\tilde{Q}_- = i c t\, e_0 + x\, e_1 + y\, e_2 + z\, e_3 \in \mathbb{M}_-.
+$$</p>
+<p>Applying the extended Wick rotation gives</p>
+<p>$$
+i\,\tilde{Q}_- = -c t\, e_0 + i x\, e_1 + i y\, e_2 + i z\, e_3 \in \mathbb{M}_+.
+$$</p>
+<p>Writing the result in the standard form of $\mathbb{M}_+$, whose general element is $q_0\, e_0 + i q'_1\, e_1 + i q'_2\, e_2 + i q'_3\, e_3$ with real $q_0, q'_k$, we identify:</p>
+<p>$$
+q_0 = -c t, \qquad q'_1 = x, \qquad q'_2 = y, \qquad q'_3 = z.
+$$</p>
+<p>So the extended Wick rotation acts on the coordinates by:</p>
+<ul>
+<li>$i c t \;\longmapsto\; c t'$ with $t' = -t$ (the time coefficient changes from imaginary to real, with a sign flip),</li>
+<li>$x\,e_k \;\longmapsto\; i x'\, e_k$ with $x' = x$ (each spatial coefficient changes from real to imaginary, with the numerical value unchanged).</li>
+</ul>
+<p>The <strong>algebraic character</strong> of the coordinates changes: what was imaginary on $\mathbb{M}_-$ becomes real on $\mathbb{M}_+$, and what was real becomes imaginary. This is the content of the exchange of the two sectors.</p>
+<h2 id="the-inverse-operation">The Inverse Operation</h2>
+<p>The extended Wick rotation is a bijection from $\mathbb{M}_-$ to $\mathbb{M}_+$, and from $\mathbb{M}_+$ to $\mathbb{M}_-$. Its inverse is not the same operation: multiplication by $i$ applied twice gives</p>
+<p>$$
+i\,(i\,\tilde{Q}) = -\tilde{Q}.
+$$</p>
+<p>So the square of the extended Wick rotation is $-\mathrm{id}$. The operation is <strong>not involutive</strong>: applying it twice does not return the original element, but its negative.</p>
+<p>The inverse operation is multiplication by $-i$:</p>
+<p>$$
+\tilde{Q} \;\longmapsto\; -i\,\tilde{Q}.
+$$</p>
+<p>This sends $\mathbb{M}_-$ to $\mathbb{M}_+$ (via $-i$) and $\mathbb{M}_+$ to $\mathbb{M}_-$ (via $-i$), and it is the inverse of the extended Wick rotation.</p>
+<h2 id="difference-from-the-standard-wick-rotation">Difference from the Standard Wick Rotation</h2>
+<p>The extended Wick rotation and the standard Wick rotation share the scalar factor $i$, but they act differently.</p>
+<p><strong>Standard Wick rotation.</strong>
+- Acts on <strong>one coordinate</strong>: the time coordinate.
+- The spatial coordinates are left unchanged.
+- The rotation is a <strong>change of the coordinate system</strong> within a fixed sector (or within Minkowski space).
+- The justification is <strong>analytic continuation</strong>: the integrand of the path integral is deformed in the complex time plane.
+- The operation is a <strong>trick</strong>.</p>
+<p><strong>Extended Wick rotation.</strong>
+- Acts on the <strong>entire biquaternion coordinate</strong>.
+- All four coordinates are affected: the time coefficient changes from imaginary to real, and the three spatial coefficients change from real to imaginary.
+- The rotation is a <strong>switch between two sectors</strong> of the biquaternion algebra: $\mathbb{M}_-$ and $\mathbb{M}_+$.
+- The operation is purely <strong>algebraic</strong>: it is multiplication by $i$, with no analyticity conditions.</p>
+<p>The extended Wick rotation is <strong>not</strong> the standard Wick rotation, and it is <strong>not</strong> a reformulation of it. It is a different operation that acts on a different object.</p>
+<h2 id="the-physical-reading">The Physical Reading</h2>
+<p>The extended Wick rotation is a well-defined algebraic operation. Its physical interpretation is the hypothesis of this article.</p>
+<h3 id="the-material-sector-and-the-informational-sector">The Material Sector and the Informational Sector</h3>
+<p>The two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ have complementary structures:</p>
+<ul>
+<li><strong>$\mathbb{M}_-$ (material sector).</strong> The first coordinate is imaginary ($ict$), the three remaining coordinates are real ($x, y, z$). The signature of the quadratic form is $(3, 1)$.</li>
+<li><strong>$\mathbb{M}_+$ (informational sector).</strong> The first coordinate is real ($ct'$), the three remaining coordinates are imaginary ($i x', i y', i z'$). The signature of the quadratic form is $(1, 3)$.</li>
+</ul>
+<p>The two signatures are mirror images. The extended Wick rotation exchanges them.</p>
+<h3 id="the-hypothesis">The Hypothesis</h3>
+<p>The hypothesis of this article is that the extended Wick rotation has <strong>physical content</strong>: that it corresponds to a genuine transformation between the material sector of physical spacetime and the informational sector, and that the informational sector is not merely a mathematical complement of the material sector but a physical arena with its own structure.</p>
+<p>This hypothesis is motivated by the structural complementarity of the two sectors, and by the earlier observation that the informational sector carries the algebraic structure of a quantum-informational system (the spin-1/2 identification developed in the companion article). It is <strong>not</strong> derived from established physics.</p>
+<h3 id="what-the-hypothesis-does-and-does-not-claim">What the Hypothesis Does and Does Not Claim</h3>
+<p><strong>It does claim:</strong></p>
+<ul>
+<li>The extended Wick rotation is a well-defined algebraic operation on the biquaternion algebra.</li>
+<li>It exchanges the two complementary sectors $\mathbb{M}_-$ and $\mathbb{M}_+$.</li>
+<li>Its square is $-\mathrm{id}$, and its inverse is multiplication by $-i$.</li>
+<li>Its physical interpretation as a switch between material and informational sectors is a hypothesis, motivated by the structural complementarity of the two sectors.</li>
+</ul>
+<p><strong>It does not claim:</strong></p>
+<ul>
+<li>That the extended Wick rotation is the standard Wick rotation.</li>
+<li>That the Euclidean sector of the standard formulation is the informational sector.</li>
+<li>That the informational sector has been observed.</li>
+<li>That the extended Wick rotation has any empirical content.</li>
+<li>That the informational sector has a specified dynamics.</li>
+</ul>
+<h2 id="applications">Applications</h2>
+<p>The standard Wick rotation is applied to a wide range of problems: the Euclidean path integral, finite-temperature field theory, lattice gauge theory, instantons, and the correspondence between quantum field theory and statistical mechanics. The extended Wick rotation can be applied to the same problems, but each application is a <strong>research direction</strong>, not an established result. We describe the biquaternion reading for each, and flag what would need to be studied.</p>
+<p>Each of the following deserves its own in-depth treatment. The present article only states the direction.</p>
+<h3 id="the-euclidean-path-integral">The Euclidean Path Integral</h3>
+<p><strong>Standard treatment.</strong> The Lorentzian path integral</p>
+<p>$$
+Z = \int \mathcal{D}\phi\; e^{iS[\phi]/\hbar}
+$$</p>
+<p>is oscillatory and not absolutely convergent. The standard Wick rotation $t \to -i\tau$ converts it to the Euclidean path integral</p>
+<p>$$
+Z_E = \int \mathcal{D}\phi\; e^{-S_E[\phi]/\hbar},
+$$</p>
+<p>which is convergent (at least formally). The Euclidean formulation is the basis of constructive quantum field theory, lattice gauge theory, and finite-temperature field theory.</p>
+<p><strong>Biquaternion reading.</strong> In the biquaternion framework, the Lorentzian path integral is an integral over fields on the material sector $\mathbb{M}_-$. The extended Wick rotation sends this to an integral over fields on the informational sector $\mathbb{M}_+$: the fields, defined as functions on the material sector, are transported to the informational sector, and the action $S$ becomes an action $S_+$ on $\mathbb{M}_+$.</p>
+<p><strong>Direction for future study.</strong> How does the Lorentzian path integral transform under the extended Wick rotation? What is the structure of the resulting integral over the informational sector? Is the resulting integral convergent, oscillatory, or of some other character? These questions require the development of field theory on the informational sector, which does not yet exist.</p>
+<p><strong>What is unknown.</strong> The physical interpretation of the action $S_+$ on the informational sector, and the relation between the Lorentzian path integral and its image under the extended Wick rotation.</p>
+<h3 id="finite-temperature-field-theory">Finite-Temperature Field Theory</h3>
+<p><strong>Standard treatment.</strong> At finite temperature $T$, quantum field theory is formulated on a Euclidean spacetime that is periodic in the imaginary time direction, with period $\beta = \hbar/(k_B T)$. The thermal partition function is</p>
+<p>$$
+Z(\beta) = \mathrm{Tr}\,e^{-\beta H} = \int \mathcal{D}\phi\; e^{-S_E[\phi]/\hbar},
+$$</p>
+<p>with the imaginary time variable ranging over $[0, \beta)$. The periodicity in the imaginary time gives the <strong>Matsubara frequencies</strong>: discrete Fourier modes in the compact time direction.</p>
+<p><strong>Biquaternion reading.</strong> In the biquaternion framework, the periodicity of the material sector in the imaginary time $ict$ becomes, under the extended Wick rotation, a periodicity of the informational sector in the real time $ct'$, with $t' = -t$. The thermal state of the material sector would be the counterpart of a periodic state in the informational sector.</p>
+<p><strong>Direction for future study.</strong> What is the precise form of the periodicity condition on the informational sector? Does the period of the informational time have a thermodynamic interpretation? What are the analogues of the Matsubara frequencies on the informational sector?</p>
+<p><strong>What is unknown.</strong> Whether the informational sector admits a natural notion of temperature, and whether the periodicity in the informational time direction corresponds to a thermodynamic state.</p>
+<h3 id="lattice-gauge-theory">Lattice Gauge Theory</h3>
+<p><strong>Standard treatment.</strong> Non-perturbative computations in QCD and other gauge theories are performed on a Euclidean lattice in $\mathbb{R}^4$. The lattice discretization is introduced in the Euclidean setting, where the path integral is a convergent integral over the lattice fields. The continuum limit is taken by sending the lattice spacing to zero. At finite temperature, the lattice has a finite extent in the Euclidean time direction, identified with $\beta$.</p>
+<p><strong>Biquaternion reading.</strong> The lattice is naturally a discretization of a four-dimensional subspace in its Euclidean coordinates. Under the extended Wick rotation, the lattice is transported to the informational sector $\mathbb{M}_+$.</p>
+<p><strong>Direction for future study.</strong> What is the correct lattice formulation of the informational sector? Is there a natural discretization of the imaginary spatial coordinates? What is the continuum limit of such a discretization? Does the resulting structure have a natural interpretation, perhaps analogous to a spin network or a tensor-network structure?</p>
+<p><strong>What is unknown.</strong> Whether the informational sector admits a natural lattice formulation, and whether it would be computationally useful.</p>
+<h3 id="instantons-and-tunneling">Instantons and Tunneling</h3>
+<p><strong>Standard treatment.</strong> In quantum mechanics and quantum field theory, tunneling phenomena are described by <strong>instantons</strong>: classical solutions of the Euclidean equations of motion. The tunneling amplitudes are obtained from the Euclidean action of these solutions. Examples include the double-well potential in quantum mechanics, the $\theta$-vacuum of QCD, and the anomalous breaking of chiral symmetry.</p>
+<p><strong>Biquaternion reading.</strong> An instanton is a solution of the field equations in a Euclidean setting. Under the extended Wick rotation, such a solution is transported to the informational sector.</p>
+<p><strong>Direction for future study.</strong> What are the analogues of instantons on the informational sector? Do the field equations on $\mathbb{M}_+$ have classical solutions? If so, what is the physical interpretation of their action?</p>
+<p><strong>What is unknown.</strong> Whether the informational sector admits a natural notion of tunneling, and whether the "informational instantons" have a physical interpretation.</p>
+<h3 id="the-correspondence-between-qft-and-statistical-mechanics">The Correspondence Between QFT and Statistical Mechanics</h3>
+<p><strong>Standard treatment.</strong> The Euclidean path integral is formally identical to the partition function of a statistical-mechanical system, with the Euclidean action playing the role of the energy functional. A quantum field theory in $d$ spacetime dimensions is equivalent (in the Euclidean formulation) to a statistical-mechanical system in $d$ dimensions. This correspondence is the basis of the Wilsonian approach to effective field theory, of the renormalization group, and of the theory of critical phenomena.</p>
+<p><strong>Biquaternion reading.</strong> The correspondence is between fields on the material sector and statistical-mechanical systems on the informational sector. The "energy functional" of the statistical-mechanical system is the action $S_+$ on the informational sector.</p>
+<p><strong>Direction for future study.</strong> What is the precise form of the correspondence in the biquaternion framework? Is there a natural interpretation of the "informational action" $S_+$ in terms of entropy, Fisher information, or another information-theoretic quantity?</p>
+<p><strong>What is unknown.</strong> Whether the informational sector has a natural interpretation in terms of statistical mechanics.</p>
+<h3 id="stochastic-quantization">Stochastic Quantization</h3>
+<p><strong>Standard treatment.</strong> The Euclidean path integral is equivalent to a stochastic differential equation (the Langevin equation) with a noise term, whose stationary distribution is $e^{-S_E}$. This is the basis of stochastic quantization.</p>
+<p><strong>Biquaternion reading.</strong> The stochastic process is naturally formulated on a Euclidean setting. Under the extended Wick rotation, it is transported to the informational sector, where the stationary distribution describes the material sector.</p>
+<p><strong>Direction for future study.</strong> What is the precise form of the stochastic process on the informational sector? Does the informational sector admit a natural notion of noise or stochasticity?</p>
+<p><strong>What is unknown.</strong> Whether the stochastic interpretation of the informational sector has physical content.</p>
+<h2 id="summary-of-the-status">Summary of the Status</h2>
+<p><strong>Established.</strong></p>
+<ul>
+<li>The biquaternion algebra and its two complementary four-dimensional subspaces.</li>
+<li>The exchange $i\,\mathbb{M}_- = \mathbb{M}_+$ and $i\,\mathbb{M}_+ = \mathbb{M}_-$.</li>
+<li>The specific form of the exchange on the coordinates: $ict \mapsto ct'$ with $t' = -t$, and $x_k \mapsto i x_k$.</li>
+<li>The square of the operation: $(i)^2 = -1$.</li>
+<li>The inverse: multiplication by $-i$.</li>
+<li>The mirror signatures of the two subspaces: $(3, 1)$ and $(1, 3)$.</li>
+<li>The standard Wick rotation, its applications, and its status as a trick.</li>
+</ul>
+<p><strong>Hypothesis.</strong></p>
+<ul>
+<li>That the extended Wick rotation has physical content, i.e., that it corresponds to a genuine physical transformation.</li>
+<li>That the informational sector is a physical arena, not only a mathematical construction.</li>
+<li>That the structural complementarity of the two sectors has physical significance.</li>
+</ul>
+<p><strong>Open directions.</strong></p>
+<ul>
+<li>The development of field theory on the informational sector.</li>
+<li>The interpretation of the action $S_+$ on $\mathbb{M}_+$.</li>
+<li>The applications listed above, each of which deserves its own study.</li>
+<li>The question of whether the extended Wick rotation has any empirical content.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The extended Wick rotation is the multiplication by the scalar imaginary $i$ of the entire biquaternion coordinate. It exchanges the two complementary four-dimensional subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, converting the imaginary time and real space of the material sector into real time and imaginary space in the informational sector.</p>
+<p>The extended Wick rotation is not the standard Wick rotation. The standard rotation acts on the time coordinate only and is justified by analytic continuation; it is a trick. The extended rotation acts on all four coordinates, is a purely algebraic operation, and corresponds to a switch between the two sectors of the biquaternion algebra.</p>
+<p>The extended Wick rotation is a well-defined algebraic operation with the following properties: its square is $-\mathrm{id}$; its inverse is multiplication by $-i$; it exchanges the two sectors; it exchanges the two signatures $(3, 1)$ and $(1, 3)$.</p>
+<p>The hypothesis of this article is that the extended Wick rotation has physical content — that it corresponds to a genuine physical transformation between the material and the informational sectors, and that the informational sector is a physical arena, not only a mathematical construction. This hypothesis is motivated by the structural complementarity of the two sectors and by the spin-1/2 identification of the informational sector, but it is not derived from established physics.</p>
+<p>The applications of the extended Wick rotation — to the Euclidean path integral, finite-temperature field theory, lattice gauge theory, instantons, and stochastic quantization — are <strong>directions for future study</strong>. Each deserves its own treatment. The present article has only stated the operation and its structural content.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Material sector: imaginary time, real space</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Informational sector: real time, imaginary space</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>Speed of light in the medium</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>Time on the material sector</td>
+</tr>
+<tr>
+<td>$t'$</td>
+<td>Time on the informational sector, with $t' = -t$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_- = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$</td>
+<td>Material-sector biquaternion</td>
+</tr>
+<tr>
+<td>$i\tilde{Q}_- = ct'\,e_0 + i x'\,e_1 + i y'\,e_2 + i z'\,e_3$</td>
+<td>Informational-sector biquaternion</td>
+</tr>
+<tr>
+<td>$\tilde{Q} \mapsto i\tilde{Q}$</td>
+<td>Extended Wick rotation</td>
+</tr>
+<tr>
+<td>$\tilde{Q} \mapsto -i\tilde{Q}$</td>
+<td>Inverse extended Wick rotation</td>
+</tr>
+<tr>
+<td>$(i)^2 = -1$</td>
+<td>Square of the operation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>G. C. Wick, "Properties of Bethe-Salpeter wave functions," <em>Physical Review</em> <strong>96</strong> (1954) 1124–1134, for the original introduction of the standard Wick rotation.</li>
+<li>J. Schwinger, "On the Euclidean structure of relativistic field theory," <em>Proceedings of the National Academy of Sciences</em> <strong>44</strong> (1958) 956–965, for the Euclidean formulation of field theory.</li>
+<li>J. Glimm and A. Jaffe, <em>Quantum Physics: A Functional Integral Point of View</em> (Springer, 1987), for the rigorous Euclidean approach to constructive quantum field theory.</li>
+<li>M. Le Bellac, <em>Thermal Field Theory</em> (Cambridge, 1996), for the finite-temperature imaginary-time formalism.</li>
+<li>M. Creutz, <em>Quarks, Gluons and Lattices</em> (Cambridge, 1983), for lattice gauge theory.</li>
+<li>A. M. Polyakov, <em>Gauge Fields and Strings</em> (Harwood, 1987), for instantons and non-perturbative effects.</li>
+<li>Roger Penrose, <em>The Road to Reality</em> (Knopf, 2004), Chapters 18 and 33, for the complex structure of spacetime.</li>
+<li>V. V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to complexified geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
