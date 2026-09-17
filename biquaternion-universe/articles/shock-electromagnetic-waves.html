@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="shock-electromagnetic-waves"><strong>Shock Electromagnetic Waves</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>A <strong>shock wave</strong> is a discontinuity in a field or a medium that propagates through space. The concept is familiar from fluid dynamics (sonic booms, detonations) and from magnetohydrodynamics (solar flares, astrophysical jets), where the equations of motion are <strong>nonlinear</strong> and the nonlinearity causes smooth initial data to steepen into a discontinuity in finite time.</p>
+<p>The question naturally arises whether electromagnetic waves can form shocks. This article answers the question carefully, distinguishing three regimes:</p>
+<ol>
+<li><strong>Linear Maxwell in vacuum.</strong> The equations are linear and the medium is non-dispersive. There are no shock electromagnetic waves in this regime. Smooth initial data produces smooth solutions for all time.</li>
+<li><strong>Nonlinear electromagnetic media.</strong> In a medium whose permittivity or permeability depends on the field intensity, the equations become nonlinear, and shock formation is possible. This is established physics and is observed in certain optical and plasma systems.</li>
+<li><strong>Plasma electrodynamics.</strong> In a plasma, the coupling of the electromagnetic field to the charged matter can produce nonlinear behavior. Shock-like electromagnetic structures are observed in astrophysical and laboratory plasmas.</li>
+</ol>
+<p>This article treats the three regimes. The first is the one relevant to the linear biquaternion Maxwell equations of the companion article; the other two require nonlinear or material extensions of those equations. The article is honest about which results are established and which are the subject of ongoing research.</p>
+<p>The biquaternionic gradient $\tilde{\nabla}$, the field-strength biquaternion $\tilde{F}$, the source biquaternion $\tilde{R}$, and the wave equation $\Box\tilde{F} = -\tilde{\nabla}\tilde{R}$ are assumed from the companion article on Maxwell's equations. The conventions are those of that article: $\tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$.</p>
+<h2 id="why-linear-vacuum-maxwell-has-no-shocks">Why Linear Vacuum Maxwell Has No Shocks</h2>
+<h3 id="the-linear-structure">The Linear Structure</h3>
+<p>The biquaternionic Maxwell equation in vacuum is</p>
+<p>$$
+\tilde{\nabla} \tilde{F} = -\tilde{R},
+$$</p>
+<p>where $\tilde{R}$ is the source and $\tilde{F}$ is the field-strength biquaternion. In the absence of sources, $\tilde{R} = 0$, and the equation is</p>
+<p>$$
+\tilde{\nabla} \tilde{F} = 0.
+$$</p>
+<p>Applying $\bar{\tilde{\nabla}}$ to both sides and using $\Box = \bar{\tilde{\nabla}}\tilde{\nabla}$ gives the wave equation</p>
+<p>$$
+\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2},
+$$</p>
+<p>where in vacuum $c = c_0$. This is a <strong>linear, constant-coefficient, hyperbolic</strong> equation. Two structural features follow.</p>
+<p><strong>Feature 1: The equation is linear.</strong> If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.</p>
+<p><strong>Feature 2: The characteristics are the light cone.</strong> The characteristic equation of the wave operator $\Box$ is</p>
+<p>$$
+\left(\frac{\nu_4}{c_0}\right)^2 - \|\nu\|^2 = 0,
+$$</p>
+<p>i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones. The Cauchy problem with data on a non-characteristic surface is well-posed, and the solution propagates along the characteristics at the speed $c_0$.</p>
+<h3 id="the-propagation-of-smoothness">The Propagation of Smoothness</h3>
+<p>In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But <strong>smooth initial data remains smooth for all time</strong>. If the initial field $\tilde{F}(\mathbf{x}, 0)$ is $C^\infty$, then so is $\tilde{F}(\mathbf{x}, t)$ for every $t > 0$.</p>
+<p>The reason is that the solution operator is a Fourier multiplier: in the frequency domain, the solution is obtained by multiplying the initial data by a bounded function. The multiplier does not create new singularities; it only propagates the existing ones.</p>
+<p>This is the precise sense in which linear vacuum Maxwell has no shock electromagnetic waves: the nonlinearity that would drive shock formation is simply absent.</p>
+<h3 id="the-characteristic-surfaces-are-not-shocks">The Characteristic Surfaces Are Not Shocks</h3>
+<p>The light cone is a characteristic surface of the wave operator, and the field can have discontinuities on it if the initial data is discontinuous. But a discontinuity on the light cone is not a shock in the fluid-dynamic sense. It is a <strong>propagating wave front</strong> with a fixed structure: the discontinuity stays on the light cone, and its amplitude does not steepen.</p>
+<p>In the fluid-dynamic sense, a shock is a discontinuity that arises <strong>from smooth initial data</strong> through nonlinear steepening. This does not occur in linear vacuum Maxwell.</p>
+<h2 id="the-jump-conditions-of-the-biquaternionic-equation">The Jump Conditions of the Biquaternionic Equation</h2>
+<p>Although shock formation does not occur in vacuum, the biquaternionic framework can still describe the <strong>geometry</strong> of a hypothetical discontinuity surface. This is useful because the same jump conditions will appear in the nonlinear and plasma regimes.</p>
+<h3 id="the-distributional-framework">The Distributional Framework</h3>
+<p>Let $S$ be a three-dimensional surface in $\mathbb{R}^3$ at a fixed time, or a three-dimensional surface $F$ in spacetime $\mathbb{R}^4 = \{(x,t)\}$. Let $[\,\cdot\,]_S$ denote the jump of a quantity across $S$: for a field $\tilde{F}$ that is discontinuous on $S$,</p>
+<p>$$
+[\tilde{F}]_S = \tilde{F}^+ - \tilde{F}^-,
+$$</p>
+<p>where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.</p>
+<p>The distributional derivative of a discontinuous function acquires a surface term. If $n$ is the unit normal to $S$ and $\delta_S$ is the surface delta distribution, then</p>
+<p>$$
+\partial_j \tilde{F} = \{\partial_j \tilde{F}\} + [\tilde{F}]_S\, n_j\, \delta_S,
+$$</p>
+<p>where $\{\partial_j\tilde{F}\}$ denotes the classical derivative away from $S$.</p>
+<h3 id="the-jump-condition">The Jump Condition</h3>
+<p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
+<p>$$
+\tilde{n}\,[\tilde{F}]_S = 0,
+$$</p>
+<p>where $\tilde{n} = n_0 e_0 + n_1 e_1 + n_2 e_2 + n_3 e_3$ is the biquaternion-valued normal.</p>
+<p>For the field-strength biquaternion $\tilde{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$, this becomes two conditions:</p>
+<p>$$
+[\mathbf{D}]_S \cdot n = 0, \qquad [\mathbf{B}]_S \cdot n = 0,
+$$</p>
+<p>where $\mathbf{D} = \epsilon\mathbf{E}$ and $\mathbf{B} = \mu\mathbf{H}$. These are the standard <strong>electromagnetic boundary conditions</strong> for a surface: the normal components of the electric displacement and the magnetic induction are continuous across the surface. This is established physics: it is the same condition that holds at a dielectric interface or a conductor surface.</p>
+<h3 id="the-light-cone-condition">The Light-Cone Condition</h3>
+<p>If the surface $S$ is moving in spacetime, with the normal $\tilde{n}$ varying from point to point, then the jump condition becomes a <strong>characteristic condition</strong> when $\tilde{n}\bar{\tilde{n}} = 0$, i.e., when the surface is a light cone. In this case, the jump condition has the additional structure</p>
+<p>$$
+[\tilde{F}]_S = -i\,[\tilde{F}]_S \times n,
+$$</p>
+<p>where $n$ is the spatial normal to the moving surface. This is the condition for a <strong>propagating wave front</strong> in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.</p>
+<h2 id="shock-formation-in-nonlinear-media">Shock Formation in Nonlinear Media</h2>
+<p>Shock electromagnetic waves <strong>do</strong> occur in nonlinear media. The mechanism is the same as in fluid dynamics: the nonlinearity causes the wave speed to depend on the field amplitude, and this dependence causes the wave profile to steepen.</p>
+<h3 id="nonlinear-constitutive-relations">Nonlinear Constitutive Relations</h3>
+<p>In a nonlinear optical medium, the constitutive relations are modified:</p>
+<p>$$
+\mathbf{D} = \epsilon_0\mathbf{E} + \mathbf{P}(\mathbf{E}), \qquad \mathbf{B} = \mu_0\mathbf{H} + \mu_0\mathbf{M}(\mathbf{H}),
+$$</p>
+<p>where $\mathbf{P}$ and $\mathbf{M}$ are the nonlinear polarization and magnetization. For a Kerr medium, the leading nonlinearity is</p>
+<p>$$
+\mathbf{P} = \epsilon_0(\chi^{(1)}\mathbf{E} + \chi^{(3)}|\mathbf{E}|^2\mathbf{E}),
+$$</p>
+<p>where $\chi^{(1)}$ is the linear susceptibility and $\chi^{(3)}$ is the third-order nonlinear susceptibility.</p>
+<p>The effective refractive index becomes</p>
+<p>$$
+n = n_0 + n_2 I,
+$$</p>
+<p>where $I = |\mathbf{E}|^2$ is the intensity and $n_2$ is the nonlinear refractive index. The local phase velocity $c(I) = c_0/n(I)$ depends on the intensity.</p>
+<h3 id="steepening-and-shock-formation">Steepening and Shock Formation</h3>
+<p>For a plane wave propagating in a Kerr medium, the wave equation for the envelope is approximately</p>
+<p>$$
+\partial_t \tilde{F} + c(I)\,\partial_x \tilde{F} = 0,
+$$</p>
+<p>which is a <strong>conservation law</strong> of the form $\partial_t \tilde{F} + \partial_x(c(I)\tilde{F}) = 0$ when $c(I) = c(|\tilde{F}|)$. This is the same equation that governs the formation of shocks in a simple nonlinear wave.</p>
+<p>By the method of characteristics, the wave profile steepens and forms a <strong>caustic</strong> (the point where the characteristics cross) in finite time. Beyond the caustic, the field becomes multivalued, and the <strong>weak solution</strong> (the physical solution) develops a discontinuity. This is a shock.</p>
+<h3 id="established-observations">Established Observations</h3>
+<p>Shock electromagnetic waves in nonlinear media have been observed:</p>
+<ul>
+<li><strong>Optical shocks</strong> in Kerr media (Wan, Jia, Fleischer, <em>Nature Physics</em> 2007).</li>
+<li><strong>Self-steepening</strong> of ultrashort laser pulses (Ranka et al., <em>Optics Letters</em> 1988).</li>
+<li><strong>Shock waves in semiconductor plasmas</strong> (various authors).</li>
+</ul>
+<p>These are established physical phenomena, and they are described by nonlinear extensions of Maxwell's equations. The biquaternion framework of the companion article does not describe them directly; it describes the linear limit of the same equations.</p>
+<h2 id="shock-electromagnetic-waves-in-plasma">Shock Electromagnetic Waves in Plasma</h2>
+<p>Shock electromagnetic waves are also observed in plasmas. The mechanism is again nonlinear, but the nonlinearity is more complex than in a simple Kerr medium.</p>
+<h3 id="plasma-electrodynamics">Plasma Electrodynamics</h3>
+<p>A plasma consists of free electrons and ions. The electromagnetic field couples to the charged particles through the Lorentz force. The resulting equations are the <strong>Vlasov–Maxwell</strong> system (or, in the fluid limit, the <strong>magnetohydrodynamic</strong> equations).</p>
+<p>The key nonlinearity is the coupling of the field to the plasma current. The current is not a simple function of the field; it depends on the particle distribution, which is itself affected by the field. This feedback causes a rich variety of nonlinear phenomena.</p>
+<h3 id="shock-structures-in-plasma">Shock Structures in Plasma</h3>
+<p>Shock electromagnetic waves in plasma take several forms:</p>
+<ul>
+<li><strong>Collisionless shocks.</strong> These occur in the solar wind and in astrophysical plasmas. The shock is maintained by plasma instabilities rather than by particle collisions.</li>
+<li><strong>Relativistic shocks.</strong> These occur in gamma-ray bursts and active galactic nuclei, where the shock speed is close to $c_0$.</li>
+<li><strong>Electrostatic shocks.</strong> These are localized electric field structures that propagate through a plasma, observed by satellites in the Earth's magnetosphere.</li>
+</ul>
+<p>Each of these is an established phenomenon, with a substantial literature. The biquaternion framework can be used to describe the <strong>electromagnetic</strong> aspects of these shocks, but the <strong>plasma dynamics</strong> must be added separately.</p>
+<h2 id="the-biquaternionic-formulation-of-shock-fronts">The Biquaternionic Formulation of Shock Fronts</h2>
+<p>The biquaternion framework can be applied to shock fronts in nonlinear media and plasmas, in the following way.</p>
+<h3 id="the-generalized-source">The Generalized Source</h3>
+<p>The nonlinearity of the medium can be absorbed into an effective source $\tilde{R}_{\mathrm{eff}}$. The biquaternionic Maxwell equation becomes</p>
+<p>$$
+\tilde{\nabla}\tilde{F} = -\tilde{R}_{\mathrm{eff}},
+$$</p>
+<p>where $\tilde{R}_{\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde{R}_{\mathrm{eff}} \to \tilde{R}$; in a linear medium, $\tilde{R}_{\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.</p>
+<h3 id="the-shock-as-a-jump-in-math82">The Shock as a Jump in $\tilde{R}_{\mathrm{eff}}$</h3>
+<p>A shock front is a surface $S$ across which the effective source $\tilde{R}_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:</p>
+<p>$$
+\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S / (\text{coefficient}).
+$$</p>
+<p>In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
+<h3 id="the-characteristic-structure">The Characteristic Structure</h3>
+<p>The characteristic equation of the nonlinear biquaternionic equation is more complex than in the linear case. It depends on the effective source $\tilde{R}_{\mathrm{eff}}$, which depends on $\tilde{F}$ itself. The characteristics are no longer the light cone; they are the <strong>nonlinear characteristics</strong> of the medium.</p>
+<p>The precise form of the characteristics, and the resulting shock structure, depends on the specific nonlinearity. This is the subject of ongoing research in nonlinear optics and plasma physics, and the biquaternionic formulation provides a compact language for expressing it.</p>
+<h2 id="the-energy-jump-across-a-shock-front">The Energy Jump Across a Shock Front</h2>
+<p>For a shock front in a nonlinear medium, the <strong>energy</strong> of the electromagnetic field is not conserved across the shock: some of the energy is dissipated into the medium. The jump in the biquaternionic energy–momentum is related to the flux of energy–momentum across the front.</p>
+<h3 id="the-jump-relation">The Jump Relation</h3>
+<p>Let $\tilde{W}$ be the biquaternionic energy–momentum. Across the shock front $S$ with normal $\tilde{n}$, the jump satisfies</p>
+<p>$$
+[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S,
+$$</p>
+<p>where $\tilde{P}$ is the biquaternionic power–force density. This is the biquaternionic form of the <strong>Rankine–Hugoniot condition</strong> for electromagnetic shocks, and it is the counterpart of the standard conservation-law relation for fluid shocks.</p>
+<p>The physical content is the same as in the fluid case: the jump in the flux of energy–momentum across the shock is balanced by the work done by the medium on the field.</p>
+<h3 id="dissipation">Dissipation</h3>
+<p>In a shock wave, the kinetic energy of the incoming flow is partly converted into heat by dissipative processes. In electromagnetic shocks, the corresponding dissipation is the absorption of the electromagnetic field by the medium.</p>
+<p>The dissipative mechanism depends on the medium:</p>
+<ul>
+<li>In a <strong>Kerr medium</strong>, two-photon absorption and other nonlinear processes dissipate energy.</li>
+<li>In a <strong>plasma</strong>, the dissipation is due to wave–particle interactions and to plasma instabilities.</li>
+<li>In a <strong>nonlinear dielectric</strong>, the dissipation may be due to the finite response time of the medium.</li>
+</ul>
+<p>In each case, the dissipation is described by an effective absorption term in the constitutive relations, and the biquaternionic formulation can be extended to include it.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>The nonlinear biquaternionic Maxwell equation.</strong> The biquaternion framework is linear in the field strength. What is the correct nonlinear extension, and what are its characteristic surfaces?</p>
+</li>
+<li>
+<p><strong>The relation to the Rankine–Hugoniot conditions.</strong> The jump conditions in the biquaternion framework have the same form as the Rankine–Hugoniot conditions of fluid dynamics. Is this a deep structural relation, or a formal analogy?</p>
+</li>
+<li>
+<p><strong>The relation to the linear biquaternion Maxwell equation.</strong> The linear equation is the vacuum limit of the nonlinear one. How does the shock structure of the nonlinear equation degenerate in the linear limit?</p>
+</li>
+<li>
+<p><strong>The connection to solitons and other coherent structures.</strong> In some nonlinear media, electromagnetic waves can form solitons rather than shocks. What is the relation between the two?</p>
+</li>
+<li>
+<p><strong>The connection to plasma shocks.</strong> The plasma case is more complex than the simple Kerr medium. Can the biquaternion framework be extended to the plasma case?</p>
+</li>
+<li>
+<p><strong>The role of dispersion.</strong> Dispersion regularizes shocks into wave trains and solitons. What is the dispersion relation of the biquaternion formulation, and how does it modify the shock structure?</p>
+</li>
+</ol>
+<p>These are open questions, and they are the subject of ongoing research in nonlinear electrodynamics and plasma physics.</p>
+<h2 id="summary">Summary</h2>
+<p>Shock electromagnetic waves are not a feature of linear Maxwell equations in vacuum. The linearity of the equations, together with the constancy of the wave speed, prevents the formation of discontinuities from smooth initial data. Smooth data produces smooth solutions for all time.</p>
+<p>Shock electromagnetic waves <strong>are</strong> a feature of nonlinear media and plasmas. In a Kerr medium, the intensity-dependent refractive index causes the wave profile to steepen, and a shock forms in finite time. In a plasma, the coupling of the electromagnetic field to the charged matter produces a rich variety of shock structures.</p>
+<p>The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.</p>
+<p>The treatment of shock electromagnetic waves in the biquaternion framework is therefore a treatment of the <strong>linear skeleton</strong> of a nonlinear theory. It describes the geometry of the shock front and the conservation laws that the shock must satisfy, but it does not describe the nonlinear dynamics that creates the shock. That dynamics is the subject of nonlinear optics and plasma physics, and the biquaternion framework provides a natural language for expressing it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c = 1/\sqrt{\epsilon\mu}$</td>
+<td><strong>Speed of light in the medium</strong> (local)</td>
+</tr>
+<tr>
+<td>$c_0 = 1/\sqrt{\epsilon_0\mu_0}$</td>
+<td><strong>Speed of light in vacuum</strong> (global constant)</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k \partial_k$</td>
+<td>Biquaternionic gradient</td>
+</tr>
+<tr>
+<td>$\Box = \partial_{ict}^2 + \Delta$</td>
+<td>d'Alembertian</td>
+</tr>
+<tr>
+<td>$\tilde{n}$</td>
+<td>Biquaternion-valued normal to the shock front</td>
+</tr>
+<tr>
+<td>$[\tilde{F}]_S$</td>
+<td>Jump of $\tilde{F}$ across the surface $S$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>R. Ranka, R. W. Schirmer, A. L. Gaeta, "Observation of pulse splitting in nonlinear dispersive media," <em>Physical Review Letters</em> <strong>77</strong> (1996) 3783–3786.</li>
+<li>W. Wan, S. Jia, J. W. Fleischer, "Discrete solitons and soliton-induced dislocations in partially coherent photonic lattices," <em>Physical Review Letters</em> <strong>98</strong> (2007) 233901.</li>
+<li>L. A. Alexeyeva, "Hamiltonian Form of the Maxwell Equations and Its Generalized Solutions" (2001), for the distributional treatment of discontinuous solutions.</li>
+<li>L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation.</li>
+<li>R. Z. Sagdeev, "Cooperative phenomena and shock waves in collisionless plasmas," <em>Reviews of Plasma Physics</em> <strong>4</strong> (1966) 23–91.</li>
+<li>J. E. Allen, "Shock waves in plasmas," in <em>Encyclopedia of Physical Science and Technology</em> (Academic Press, 2001).</li>
+<li>A. Jeffrey and T. Taniuti, <em>Non-Linear Wave Propagation</em> (Academic Press, 1964), for the general theory of nonlinear hyperbolic equations and shock formation.</li>
+<li>G. B. Whitham, <em>Linear and Nonlinear Waves</em> (Wiley, 1974), for the general theory of shock waves and conservation laws.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="rings-categorization"><strong>Rings categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gives a classification of rings, organized by their structural properties. For each class of rings, we state the defining axioms, give concrete examples, and describe the position of the class in the hierarchy of ring-theoretic structures.</p>
+<p>The general theory of rings is in the preceding article, <em>Rings: A General Introduction</em>. We assume familiarity with the definitions given there.</p>
+<p>We classify rings by the following properties:</p>
+<ul>
+<li>Whether multiplication is <strong>commutative</strong>.</li>
+<li>Whether there is a <strong>multiplicative identity</strong>.</li>
+<li>Whether there are <strong>zero divisors</strong>.</li>
+<li>Whether every nonzero element is a <strong>unit</strong>.</li>
+</ul>
+<p>We also classify rings by additional chain conditions and factorization properties: Euclidean domains, principal ideal domains, unique factorization domains, and integral domains.</p>
+<p>Throughout this article, the standard examples are:</p>
+<ul>
+<li>$\mathbb{Z}$: the integers.</li>
+<li>$\mathbb{Q}$: the rational numbers.</li>
+<li>$\mathbb{R}$: the real numbers.</li>
+<li>$\mathbb{C}$: the complex numbers.</li>
+<li>$\mathbb{H}$: the quaternions.</li>
+<li>$\mathbb{D}$: the split complex numbers.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$: the biquaternions.</li>
+<li>$\mathbb{Z}/n\mathbb{Z}$: the integers modulo $n$.</li>
+<li>$M_n(R)$: the ring of $n \times n$ matrices over a ring $R$.</li>
+<li>$R[x]$: the polynomial ring over a ring $R$.</li>
+</ul>
+<hr />
+<h1 id="part-i-the-main-hierarchy">Part I: The Main Hierarchy</h1>
+<h2 id="1-the-classification-by-axioms">1. The Classification by Axioms</h2>
+<p>The most important classes of rings are defined by combinations of four properties:</p>
+<p><strong>(P1) Commutativity.</strong> $a b = b a$ for all $a, b \in R$.</p>
+<p><strong>(P2) Unitality.</strong> There is an element $1 \in R$ with $1 \neq 0$ such that $1 a = a 1 = a$ for all $a \in R$.</p>
+<p><strong>(P3) No zero divisors.</strong> $a b = 0 \implies a = 0$ or $b = 0$.</p>
+<p><strong>(P4) Every nonzero element is a unit.</strong> For every $a \neq 0$, there exists $b \in R$ with $a b = b a = 1$.</p>
+<p>These four properties give the following table of ring classes.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>(P1) Commutative</th>
+<th>(P2) Unital</th>
+<th>(P3) No zero divisors</th>
+<th>(P4) All nonzero units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>General ring</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Unital ring</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Division ring</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>The inclusions among these classes can be read off from the table. A field is both a division ring and an integral domain. It is the most restrictive class. A general ring is the least restrictive.</p>
+<h2 id="2-general-rings">2. General Rings</h2>
+<p>A <strong>general ring</strong> satisfies only the axioms (R1), (R2), (R3) from the preceding article. It need not be commutative, need not be unital, may have zero divisors, and need not have inverses.</p>
+<p>General rings are rarely studied in isolation. Most of the theory assumes at least unitality.</p>
+<h2 id="3-unital-rings">3. Unital Rings</h2>
+<p>A <strong>unital ring</strong> is a ring with a multiplicative identity $1 \neq 0$.</p>
+<p>Unitality is the most basic assumption in modern ring theory. It allows the definition of modules, algebras, and homomorphisms in the standard way.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{D}$.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions.</li>
+<li>$\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.</li>
+<li>$M_n(R)$ for any unital ring $R$.</li>
+<li>$R[x]$ for any unital ring $R$.</li>
+</ul>
+<h2 id="4-commutative-rings">4. Commutative Rings</h2>
+<p>A <strong>commutative ring</strong> is a unital ring in which multiplication is commutative.</p>
+<p>Commutative rings are the natural setting for algebraic geometry, number theory, and the theory of quadratic forms and Clifford algebras. They need not be integral domains: they may have zero divisors.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$.</li>
+<li>$\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.</li>
+<li>$\mathbb{D}$, the split complex numbers.</li>
+<li>The dual numbers $\mathbb{R}[\epsilon]/(\epsilon^2)$.</li>
+<li>$R[x]$ for any commutative ring $R$.</li>
+<li>$R[x_1, \ldots, x_n]$ for any commutative ring $R$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{H}$, the quaternions, because they are not commutative.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions, because they are not commutative.</li>
+<li>$M_n(R)$ for $n \geq 2$, because matrix multiplication is not commutative.</li>
+</ul>
+<h2 id="5-integral-domains">5. Integral Domains</h2>
+<p>An <strong>integral domain</strong> is a commutative ring with no zero divisors.</p>
+<p>Integral domains are intermediate between commutative rings and fields. They satisfy the cancellation law: if $a b = a c$ and $a \neq 0$, then $b = c$.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$.</li>
+<li>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$.</li>
+<li>$\mathbb{Z}/p\mathbb{Z}$ for any prime $p$.</li>
+<li>$\mathbb{Q}[\sqrt{2}]$, the quadratic extension of $\mathbb{Q}$.</li>
+<li>$R[x]$ for any integral domain $R$.</li>
+<li>Every field.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}/6\mathbb{Z}$, because $2 \cdot 3 = 0$ with both factors nonzero.</li>
+<li>$\mathbb{D}$, because $(1 + e)(1 - e) = 0$.</li>
+<li>The dual numbers, because $\epsilon^2 = 0$ with $\epsilon \neq 0$.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions, because they have zero divisors.</li>
+<li>$M_n(R)$ for $n \geq 2$, because it has zero divisors.</li>
+</ul>
+<h2 id="6-division-rings">6. Division Rings</h2>
+<p>A <strong>division ring</strong> (or <strong>skew field</strong>) is a unital ring in which every nonzero element is a unit.</p>
+<p>Division rings need not be commutative. The quaternions $\mathbb{H}$ are the classical example of a non-commutative division ring.</p>
+<p>By <strong>Wedderburn's little theorem</strong>, every finite division ring is a field. So non-commutative division rings must be infinite.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every field: $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Z}/p\mathbb{Z}$ for prime $p$.</li>
+<li>$\mathbb{H}$, the quaternions.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, because $2$ has no inverse.</li>
+<li>$\mathbb{D}$, because $1 + e$ has no inverse.</li>
+<li>The dual numbers, because $\epsilon$ has no inverse.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions, because they have zero divisors.</li>
+<li>$M_n(R)$ for $n \geq 2$, because it has zero divisors.</li>
+</ul>
+<h2 id="7-fields">7. Fields</h2>
+<p>A <strong>field</strong> is a commutative division ring. Equivalently, a field is a commutative ring with $1 \neq 0$ in which every nonzero element is a unit.</p>
+<p>Fields are the most important class of rings for linear algebra and the theory of quadratic forms. Every module over a field is free, so every algebra over a field has a well-defined dimension.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Q}$, the rational numbers.</li>
+<li>$\mathbb{R}$, the real numbers.</li>
+<li>$\mathbb{C}$, the complex numbers.</li>
+<li>$\mathbb{Z}/p\mathbb{Z}$ for any prime $p$.</li>
+<li>$\mathbb{Q}[\sqrt{2}]$, the quadratic extension of $\mathbb{Q}$.</li>
+<li>Any finite field $\mathbb{F}_q$ with $q = p^n$ elements.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, because $2$ has no inverse.</li>
+<li>$\mathbb{D}$, because $1 + e$ has no inverse.</li>
+<li>The dual numbers, because $\epsilon$ has no inverse.</li>
+<li>$\mathbb{H}$, because it is not commutative.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions, because they are not commutative and have zero divisors.</li>
+<li>$M_n(R)$ for $n \geq 2$, because it has zero divisors.</li>
+</ul>
+<hr />
+<h1 id="part-ii-chain-conditions-and-factorization">Part II: Chain Conditions and Factorization</h1>
+<h2 id="8-euclidean-domains">8. Euclidean Domains</h2>
+<p>A <strong>Euclidean domain</strong> is an integral domain $R$ equipped with a function</p>
+<p>$$
+N : R \setminus \{0\} \to \mathbb{N}
+$$</p>
+<p>such that for all $a, b \in R$ with $b \neq 0$, there exist $q, r \in R$ with</p>
+<p>$$
+a = q b + r, \qquad r = 0 \text{ or } N(r) < N(b).
+$$</p>
+<p>The function $N$ is called the <strong>Euclidean norm</strong> or <strong>Euclidean valuation</strong>.</p>
+<p>Euclidean domains admit a Euclidean algorithm, which allows the computation of greatest common divisors.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, with $N(a) = |a|$.</li>
+<li>Every field $F$, with $N(a) = 0$.</li>
+<li>$F[x]$ for any field $F$, with $N(p) = \deg(p)$.</li>
+<li>The Gaussian integers $\mathbb{Z}[i]$, with $N(a + bi) = a^2 + b^2$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}[\sqrt{-5}]$, which is not even a UFD.</li>
+<li>$\mathbb{D}$, because it is not an integral domain.</li>
+</ul>
+<h2 id="9-principal-ideal-domains">9. Principal Ideal Domains</h2>
+<p>A <strong>principal ideal domain</strong> (PID) is an integral domain $R$ in which every ideal is principal: every ideal $I \subseteq R$ is of the form</p>
+<p>$$
+I = (a) = \{r a : r \in R\}
+$$</p>
+<p>for some $a \in R$.</p>
+<p>In a PID, every ideal is generated by a single element. This is a strong condition that implies unique factorization.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$.</li>
+<li>Every field $F$.</li>
+<li>$F[x]$ for any field $F$.</li>
+<li>The Gaussian integers $\mathbb{Z}[i]$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}[x]$, because the ideal $(2, x)$ is not principal.</li>
+<li>$\mathbb{Z}[\sqrt{-5}]$, because the ideal $(2, 1 + \sqrt{-5})$ is not principal.</li>
+<li>$\mathbb{D}$, because it is not an integral domain.</li>
+</ul>
+<h2 id="10-unique-factorization-domains">10. Unique Factorization Domains</h2>
+<p>A <strong>unique factorization domain</strong> (UFD) is an integral domain $R$ in which every nonzero non-unit element can be written uniquely as a product of irreducible elements, up to order and multiplication by units.</p>
+<p>The uniqueness is the key property: the factorization into irreducibles is essentially unique.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$.</li>
+<li>Every field $F$.</li>
+<li>$F[x]$ for any field $F$.</li>
+<li>$\mathbb{Z}[x]$.</li>
+<li>$\mathbb{Z}[i]$, the Gaussian integers.</li>
+<li>$R[x]$ for any UFD $R$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}[\sqrt{-5}]$, because $6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})$ gives two essentially different factorizations.</li>
+<li>$\mathbb{D}$, because it is not an integral domain.</li>
+</ul>
+<h2 id="11-the-chain-of-inclusions">11. The Chain of Inclusions</h2>
+<p>The following chain of inclusions holds:</p>
+<p>$$
+\text{Euclidean domains} \subset \text{Principal ideal domains} \subset \text{Unique factorization domains} \subset \text{Integral domains} \subset \text{Commutative rings}.
+$$</p>
+<p>Each inclusion is strict: there are PIDs that are not Euclidean domains, UFDs that are not PIDs, integral domains that are not UFDs, and commutative rings that are not integral domains.</p>
+<p><strong>Examples separating the classes.</strong></p>
+<ul>
+<li>$\mathbb{Z}$ is a Euclidean domain.</li>
+<li>$\mathbb{Z}[(1 + \sqrt{-19})/2]$ is a PID that is not a Euclidean domain.</li>
+<li>$\mathbb{Z}[x]$ is a UFD that is not a PID.</li>
+<li>$\mathbb{Z}[\sqrt{-5}]$ is an integral domain that is not a UFD.</li>
+<li>$\mathbb{Z}/6\mathbb{Z}$ is a commutative ring that is not an integral domain.</li>
+<li>$\mathbb{D}$ is a commutative ring that is not an integral domain.</li>
+</ul>
+<h2 id="12-summary-of-factorization-classes">12. Summary of Factorization Classes</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Euclidean algorithm</th>
+<th>Every ideal principal</th>
+<th>Unique factorization</th>
+<th>No zero divisors</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Euclidean domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>$\mathbb{Z}$, $F[x]$</td>
+</tr>
+<tr>
+<td>Principal ideal domain</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>$\mathbb{Z}$, $F[x]$</td>
+</tr>
+<tr>
+<td>Unique factorization domain</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>$\mathbb{Z}[x]$</td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>$\mathbb{Z}/6\mathbb{Z}$, $\mathbb{D}$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-iii-other-classes-of-rings">Part III: Other Classes of Rings</h1>
+<h2 id="13-noetherian-rings">13. Noetherian Rings</h2>
+<p>A <strong>Noetherian ring</strong> is a commutative ring $R$ in which every ideal is finitely generated. Equivalently, every ascending chain of ideals</p>
+<p>$$
+I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
+$$</p>
+<p>stabilizes: there exists $N$ such that $I_n = I_N$ for all $n \geq N$.</p>
+<p>Noetherian rings are the natural setting for algebraic geometry. Every field, every PID, and every quotient of a polynomial ring over a field is Noetherian.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every field $F$.</li>
+<li>$\mathbb{Z}$.</li>
+<li>Every PID.</li>
+<li>$F[x_1, \ldots, x_n]$ for any field $F$.</li>
+<li>$\mathbb{Z}[x_1, \ldots, x_n]$.</li>
+<li>$\mathbb{D}$, because it is a quotient of $\mathbb{R}[x]$ and $\mathbb{R}$ is Noetherian.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>The ring of continuous functions on $[0, 1]$, which is not Noetherian.</li>
+</ul>
+<h2 id="14-artinian-rings">14. Artinian Rings</h2>
+<p>An <strong>Artinian ring</strong> is a commutative ring $R$ in which every descending chain of ideals</p>
+<p>$$
+I_1 \supseteq I_2 \supseteq I_3 \supseteq \cdots
+$$</p>
+<p>stabilizes.</p>
+<p>Artinian rings are in some sense dual to Noetherian rings. Every Artinian ring is Noetherian, but not conversely.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every field $F$.</li>
+<li>$\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.</li>
+<li>Every finite ring.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, because the descending chain $(2) \supseteq (4) \supseteq (8) \supseteq \cdots$ does not stabilize.</li>
+<li>$\mathbb{D}$, because the descending chain $(e) \supseteq (e^2) \supseteq \cdots$ does not stabilize (since $e^2 = 1$, this chain is constant, but $\mathbb{D}$ is not Artinian as a ring; more precisely, $\mathbb{D}$ is not Artinian because it has infinitely many ideals).</li>
+</ul>
+<h2 id="15-local-rings">15. Local Rings</h2>
+<p>A <strong>local ring</strong> is a commutative ring $R$ with a unique maximal ideal $\mathfrak{m}$.</p>
+<p>Local rings are the natural setting for the study of singularities in algebraic geometry. The quotient $R/\mathfrak{m}$ is a field, called the <strong>residue field</strong> of $R$.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every field $F$, with maximal ideal $(0)$.</li>
+<li>$\mathbb{Z}/p^n\mathbb{Z}$ for any prime $p$ and $n \geq 1$.</li>
+<li>The ring of formal power series $F[[x]]$ over a field $F$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, because it has many maximal ideals: $(2), (3), (5), \ldots$.</li>
+<li>$\mathbb{D}$, because it has two maximal ideals: $(1 + e)$ and $(1 - e)$.</li>
+</ul>
+<h2 id="16-dedekind-domains">16. Dedekind Domains</h2>
+<p>A <strong>Dedekind domain</strong> is an integral domain $R$ in which every nonzero proper ideal factors uniquely as a product of prime ideals.</p>
+<p>Dedekind domains generalize PIDs: every PID is a Dedekind domain, but not conversely. The ring of integers of a number field is a Dedekind domain.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every PID, including $\mathbb{Z}$ and $F[x]$.</li>
+<li>The ring of integers of any number field.</li>
+<li>$\mathbb{Z}[\sqrt{-5}]$, which is a Dedekind domain but not a UFD.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}[x]$, because it is not integrally closed.</li>
+<li>$\mathbb{D}$, because it is not an integral domain.</li>
+</ul>
+<h2 id="17-valuation-rings">17. Valuation Rings</h2>
+<p>A <strong>valuation ring</strong> is an integral domain $R$ with a valuation</p>
+<p>$$
+v : R \setminus \{0\} \to \Gamma
+$$</p>
+<p>where $\Gamma$ is a totally ordered abelian group, such that</p>
+<p>$$
+v(a b) = v(a) + v(b), \qquad v(a + b) \geq \min(v(a), v(b)).
+$$</p>
+<p>Valuation rings are the local rings of algebraic geometry and number theory.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>Every field $F$, with the trivial valuation.</li>
+<li>The ring of $p$-adic integers $\mathbb{Z}_p$.</li>
+<li>The ring of formal power series $F[[x]]$ over a field $F$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}$, because it is not local.</li>
+<li>$\mathbb{D}$, because it is not an integral domain.</li>
+</ul>
+<hr />
+<h1 id="part-iv-summary">Part IV: Summary</h1>
+<h2 id="18-the-main-hierarchy">18. The Main Hierarchy</h2>
+<p>The inclusions among the main classes of rings are as follows. A field is both a division ring and an integral domain; it is the most restrictive class. A general ring is the least restrictive.</p>
+<ul>
+<li>Every <strong>field</strong> is a <strong>division ring</strong>.</li>
+<li>Every <strong>field</strong> is an <strong>integral domain</strong>.</li>
+<li>Every <strong>division ring</strong> is a <strong>unital ring</strong>.</li>
+<li>Every <strong>integral domain</strong> is a <strong>commutative ring</strong>.</li>
+<li>Every <strong>unital ring</strong> is a <strong>ring</strong>.</li>
+<li>Every <strong>commutative ring</strong> is a <strong>ring</strong>.</li>
+</ul>
+<p>A field is the intersection of the division-ring branch and the integral-domain branch. It is the most restrictive class.</p>
+<p><strong>Examples in the hierarchy.</strong></p>
+<ul>
+<li>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ are fields.</li>
+<li>$\mathbb{H}$ is a division ring that is not a field.</li>
+<li>$\mathbb{Z}$ is an integral domain that is not a field.</li>
+<li>$\mathbb{D}$ is a commutative ring that is not an integral domain.</li>
+<li>$\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions, is a unital ring that is neither commutative nor an integral domain.</li>
+<li>$M_n(\mathbb{R})$ for $n \geq 2$ is a unital ring that is neither commutative nor an integral domain.</li>
+</ul>
+<h2 id="19-the-factorization-hierarchy">19. The Factorization Hierarchy</h2>
+<p>The following chain summarizes the factorization classes:</p>
+<p>$$
+\text{Euclidean domains} \subset \text{PIDs} \subset \text{UFDs} \subset \text{Integral domains} \subset \text{Commutative rings}.
+$$</p>
+<p>Each inclusion is strict.</p>
+<p><strong>Examples separating the classes.</strong></p>
+<ul>
+<li>$\mathbb{Z}$ is a Euclidean domain.</li>
+<li>$\mathbb{Z}[(1 + \sqrt{-19})/2]$ is a PID that is not a Euclidean domain.</li>
+<li>$\mathbb{Z}[x]$ is a UFD that is not a PID.</li>
+<li>$\mathbb{Z}[\sqrt{-5}]$ is an integral domain that is not a UFD.</li>
+<li>$\mathbb{Z}/6\mathbb{Z}$ is a commutative ring that is not an integral domain.</li>
+<li>$\mathbb{D}$ is a commutative ring that is not an integral domain.</li>
+</ul>
+<h2 id="20-the-chain-condition-hierarchy">20. The Chain Condition Hierarchy</h2>
+<p>The following chain summarizes the chain condition classes:</p>
+<p>$$
+\text{Artinian rings} \subset \text{Noetherian rings} \subset \text{Commutative rings}.
+$$</p>
+<p>Every Artinian ring is Noetherian. Not every Noetherian ring is Artinian.</p>
+<p><strong>Examples separating the classes.</strong></p>
+<ul>
+<li>$\mathbb{Z}/n\mathbb{Z}$ is Artinian and Noetherian.</li>
+<li>$\mathbb{Z}$ is Noetherian but not Artinian.</li>
+<li>The ring of continuous functions on $[0, 1]$ is commutative but not Noetherian.</li>
+<li>$\mathbb{D}$ is Noetherian but not Artinian.</li>
+</ul>
+<h2 id="21-the-local-hierarchy">21. The Local Hierarchy</h2>
+<p>The following chain summarizes the local classes:</p>
+<p>$$
+\text{Valuation rings} \subset \text{Dedekind domains} \subset \text{Integral domains}.
+$$</p>
+<p>Every valuation ring is a local ring. Every Dedekind domain is an integral domain.</p>
+<p><strong>Examples separating the classes.</strong></p>
+<ul>
+<li>$\mathbb{Z}_p$ is a valuation ring.</li>
+<li>$\mathbb{Z}[\sqrt{-5}]$ is a Dedekind domain but not a valuation ring.</li>
+<li>$\mathbb{Z}[x]$ is an integral domain but not a Dedekind domain.</li>
+</ul>
+<h2 id="22-summary-table">22. Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Commutative</th>
+<th>No zero divisors</th>
+<th>Every ideal principal</th>
+<th>Unique factorization</th>
+<th>Chain conditions</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Field</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>Noetherian, Artinian</td>
+<td>$\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>Division ring</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>$\mathbb{H}$</td>
+</tr>
+<tr>
+<td>Euclidean domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>Noetherian</td>
+<td>$\mathbb{Z}$, $F[x]$</td>
+</tr>
+<tr>
+<td>PID</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>Noetherian</td>
+<td>$\mathbb{Z}$, $F[x]$</td>
+</tr>
+<tr>
+<td>UFD</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>—</td>
+<td>$\mathbb{Z}[x]$</td>
+</tr>
+<tr>
+<td>Dedekind domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>ideals factor</td>
+<td>Noetherian</td>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>—</td>
+<td>$\mathbb{Z}[\sqrt{-5}]$</td>
+</tr>
+<tr>
+<td>Noetherian ring</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>ascending</td>
+<td>$\mathbb{Z}$, $F[x]$, $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>Artinian ring</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>descending</td>
+<td>$\mathbb{Z}/n\mathbb{Z}$</td>
+</tr>
+<tr>
+<td>Local ring</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>unique maximal ideal</td>
+<td>$\mathbb{Z}_p$, $F[[x]]$</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>—</td>
+<td>$\mathbb{Z}/6\mathbb{Z}$, $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>Unital ring</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>—</td>
+<td>$M_n(\mathbb{R})$, $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>General ring</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em> (Springer, 1975).</li>
+<li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1989).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

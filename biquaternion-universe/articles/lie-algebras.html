@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="lie-algebras-a-general-introduction"><strong>Lie Algebras: A General Introduction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces Lie algebras. The treatment is introductory and purely mathematical. The goal is to explain what a Lie algebra is, why it is a natural construction, and how it relates to the associative algebras studied in the preceding articles.</p>
+<p>We assume familiarity with modules and linear maps. No prior knowledge of Lie algebras is required.</p>
+<p>In the preceding articles, an <strong>algebra</strong> was defined as a module over a commutative ring $R$ equipped with a bilinear product. No further assumptions were made. We then studied <strong>associative algebras</strong>, in which the product satisfies $(uv)w = u(vw)$. In this article, we study a different specialization: algebras whose product is antisymmetric and satisfies an identity called the <strong>Jacobi identity</strong>. These are called <strong>Lie algebras</strong>.</p>
+<p>This article treats the general theory over a <strong>commutative ring</strong>. A separate article, <em>Lie Algebras: Categorization</em>, gives a classification organized by ring.</p>
+<p>A word on the base structure. The classical theory of Lie algebras assumes that the scalars form a field. But many of the constructions and theorems carry over to the more general setting where the scalars form a <strong>commutative ring</strong>. This is the setting we adopt here. The main differences from the field case are:</p>
+<ul>
+<li>Modules over a commutative ring need not be free, whereas vector spaces over a field always are.</li>
+<li>The classical structure theory (solvable, nilpotent, simple Lie algebras) is cleanest over fields of characteristic zero, and requires care over general commutative rings.</li>
+<li>The classification of simple Lie algebras by Dynkin diagrams requires the base ring to be a field of characteristic zero.</li>
+</ul>
+<p>We indicate where these differences matter.</p>
+<hr />
+<h2 id="part-i-why-lie-algebras">Part I: Why Lie Algebras?</h2>
+<h3 id="the-failure-of-associativity">The Failure of Associativity</h3>
+<p>In the preceding articles, we studied associative algebras. But not every algebra of interest is associative. Two important examples are:</p>
+<p><strong>The cross product on $\mathbb{R}^3$.</strong> For $u, v \in \mathbb{R}^3$, the cross product $u \times v$ is bilinear and antisymmetric, but it is not associative:</p>
+<p>$$
+(u \times v) \times w \neq u \times (v \times w).
+$$</p>
+<p><strong>The commutator on matrices.</strong> For $A, B \in M_n(R)$, the commutator $[A, B] = AB - BA$ is bilinear and antisymmetric, but it is not associative:</p>
+<p>$$
+[[A, B], C] \neq [A, [B, C]].
+$$</p>
+<p>These two examples share a common structure. Both are bilinear, antisymmetric, and satisfy a certain identity that replaces associativity. That identity is the <strong>Jacobi identity</strong>. Algebras with this structure are called <strong>Lie algebras</strong>.</p>
+<h3 id="the-motivating-question">The Motivating Question</h3>
+<p>The question that motivates Lie algebras is:</p>
+<blockquote>
+<p>What structure do the cross product and the commutator share, and what can we do with it?</p>
+</blockquote>
+<p>The answer is that they are both Lie brackets. A Lie algebra is a module equipped with a bilinear, antisymmetric product satisfying the Jacobi identity. The cross product and the commutator are two examples; there are many others.</p>
+<hr />
+<h2 id="part-ii-the-definition">Part II: The Definition</h2>
+<h3 id="bilinear-and-antisymmetric-products">Bilinear and Antisymmetric Products</h3>
+<p>Let $M$ be a module over a commutative ring $R$. A <strong>bilinear product</strong> on $M$ is a function</p>
+<p>$$
+[\cdot, \cdot] : M \times M \to M
+$$</p>
+<p>that is linear in each argument separately:</p>
+<p>$$
+[u + v, w] = [u, w] + [v, w], \qquad [r u, v] = r [u, v],
+$$</p>
+<p>$$
+[u, v + w] = [u, v] + [u, w], \qquad [u, r v] = r [u, v].
+$$</p>
+<p>The product is <strong>antisymmetric</strong> if</p>
+<p>$$
+[u, v] = -[v, u]
+$$</p>
+<p>for all $u, v \in M$. In particular, taking $u = v$, we get</p>
+<p>$$
+[u, u] = 0
+$$</p>
+<p>for all $u \in M$, provided that $2$ is not a zero divisor in $R$. Over a general commutative ring, the antisymmetry condition $[u, v] = -[v, u]$ implies $[u, u] = 0$ only if $2$ is invertible or at least not a zero divisor. We assume this throughout.</p>
+<h3 id="the-jacobi-identity">The Jacobi Identity</h3>
+<p>The product satisfies the <strong>Jacobi identity</strong> if</p>
+<p>$$
+[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0
+$$</p>
+<p>for all $u, v, w \in M$.</p>
+<p>The Jacobi identity is the replacement for associativity. It says that the failure of the bracket to be associative is controlled: the three nested brackets sum to zero.</p>
+<h3 id="the-definition">The Definition</h3>
+<p>A <strong>Lie algebra</strong> over a commutative ring $R$ is an $R$-module $\mathfrak{g}$ equipped with a bilinear, antisymmetric product $[\cdot, \cdot]$ satisfying the Jacobi identity.</p>
+<p>The product $[\cdot, \cdot]$ is called the <strong>Lie bracket</strong>. The elements of $\mathfrak{g}$ are called <strong>Lie algebra elements</strong>, or simply <strong>elements</strong> when the context is clear.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, every Lie algebra is a vector space, so it has a well-defined dimension. Over a general commutative ring, a Lie algebra is a module, which need not be free. When the module is free of rank $n$, we say that the Lie algebra has <strong>rank</strong> $n$. The classical structure theory assumes the module is free and finitely generated.</p>
+<h3 id="why-the-jacobi-identity">Why the Jacobi Identity?</h3>
+<p>The Jacobi identity is not arbitrary. It has several equivalent formulations, each of which reveals a different aspect of its meaning.</p>
+<p><strong>Formulation 1: The sum of cyclic permutations.</strong> The identity as stated above:</p>
+<p>$$
+[u, [v, w]] + [v, [w, u]] + [w, [u, v]] = 0.
+$$</p>
+<p><strong>Formulation 2: The adjoint action is a derivation.</strong> For each $u \in \mathfrak{g}$, define the <strong>adjoint action</strong> $\mathrm{ad}_u : \mathfrak{g} \to \mathfrak{g}$ by</p>
+<p>$$
+\mathrm{ad}_u(v) = [u, v].
+$$</p>
+<p>The Jacobi identity is equivalent to</p>
+<p>$$
+\mathrm{ad}_u([v, w]) = [\mathrm{ad}_u(v), w] + [v, \mathrm{ad}_u(w)].
+$$</p>
+<p>In words: the adjoint action $\mathrm{ad}_u$ is a <strong>derivation</strong> of the bracket. This is the precise sense in which the Jacobi identity replaces associativity: it says that the bracket behaves like a derivative with respect to itself.</p>
+<p><strong>Formulation 3: The bracket is a representation.</strong> The map $u \mapsto \mathrm{ad}_u$ is a <strong>representation</strong> of $\mathfrak{g}$ on itself: it is linear, and it satisfies</p>
+<p>$$
+\mathrm{ad}_{[u, v]} = [\mathrm{ad}_u, \mathrm{ad}_v],
+$$</p>
+<p>where the bracket on the right is the commutator of linear maps. This is the <strong>adjoint representation</strong> of $\mathfrak{g}$.</p>
+<p>The Jacobi identity is what makes the adjoint action a derivation, and it is what makes the adjoint representation a representation. Without it, the bracket would not have these properties, and the theory would be much poorer.</p>
+<hr />
+<h2 id="part-iii-the-relationship-with-associative-algebras">Part III: The Relationship with Associative Algebras</h2>
+<h3 id="the-commutator-bracket">The Commutator Bracket</h3>
+<p>Every associative algebra is a Lie algebra when equipped with the commutator bracket. This is a general fact, and it is worth stating explicitly.</p>
+<p>Let $A$ be an associative algebra over a commutative ring $R$, with product written $xy$. Define</p>
+<p>$$
+[x, y] = xy - yx.
+$$</p>
+<p>This bracket is bilinear, antisymmetric, and satisfies the Jacobi identity. So $A$, equipped with this bracket, is a Lie algebra.</p>
+<p>This construction applies in particular to the Clifford algebras studied in the later articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.</p>
+<p>The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ and the Heisenberg Lie algebra are examples of Lie algebras that do not arise from associative algebras. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.</p>
+<h3 id="the-subspace-of-bivectors">The Subspace of Bivectors</h3>
+<p>Inside a Clifford algebra, the subspace of bivectors forms a Lie subalgebra under the commutator bracket. This Lie subalgebra is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(V, Q)$.</p>
+<p>This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra.</p>
+<hr />
+<h2 id="part-iv-basic-properties">Part IV: Basic Properties</h2>
+<h3 id="subalgebras-and-ideals">Subalgebras and Ideals</h3>
+<p>A <strong>Lie subalgebra</strong> of a Lie algebra $\mathfrak{g}$ is a submodule $\mathfrak{h} \subseteq \mathfrak{g}$ such that</p>
+<p>$$
+[u, v] \in \mathfrak{h}
+$$</p>
+<p>for all $u, v \in \mathfrak{h}$. In other words, $\mathfrak{h}$ is closed under the bracket.</p>
+<p>A <strong>Lie ideal</strong> of $\mathfrak{g}$ is a submodule $\mathfrak{i} \subseteq \mathfrak{g}$ such that</p>
+<p>$$
+[u, v] \in \mathfrak{i}
+$$</p>
+<p>for all $u \in \mathfrak{g}$ and $v \in \mathfrak{i}$. In other words, $\mathfrak{i}$ is closed under bracketing with any element of $\mathfrak{g}$.</p>
+<p>Every ideal is a subalgebra, but not every subalgebra is an ideal. The distinction is the same as in ring theory.</p>
+<h3 id="homomorphisms">Homomorphisms</h3>
+<p>A <strong>Lie algebra homomorphism</strong> from a Lie algebra $\mathfrak{g}$ to a Lie algebra $\mathfrak{h}$ is an $R$-linear map $\varphi : \mathfrak{g} \to \mathfrak{h}$ that preserves the bracket:</p>
+<p>$$
+\varphi([u, v]) = [\varphi(u), \varphi(v)]
+$$</p>
+<p>for all $u, v \in \mathfrak{g}$.</p>
+<p>An <strong>isomorphism</strong> is a bijective homomorphism. If there is an isomorphism from $\mathfrak{g}$ to $\mathfrak{h}$, we say that $\mathfrak{g}$ and $\mathfrak{h}$ are <strong>isomorphic</strong>, written $\mathfrak{g} \cong \mathfrak{h}$.</p>
+<p>The kernel of a homomorphism is an ideal, and every ideal is the kernel of some homomorphism (the quotient map). This is the content of the first isomorphism theorem for Lie algebras.</p>
+<h3 id="quotients">Quotients</h3>
+<p>Let $\mathfrak{g}$ be a Lie algebra and let $\mathfrak{i}$ be an ideal of $\mathfrak{g}$. The <strong>quotient Lie algebra</strong> $\mathfrak{g}/\mathfrak{i}$ is the set of cosets $\{u + \mathfrak{i} : u \in \mathfrak{g}\}$ with addition, scalar multiplication, and bracket defined by</p>
+<p>$$
+(u + \mathfrak{i}) + (v + \mathfrak{i}) = (u + v) + \mathfrak{i},
+$$</p>
+<p>$$
+r(u + \mathfrak{i}) = (r u) + \mathfrak{i},
+$$</p>
+<p>$$
+[u + \mathfrak{i}, v + \mathfrak{i}] = [u, v] + \mathfrak{i}.
+$$</p>
+<p>These operations are well-defined precisely because $\mathfrak{i}$ is an ideal.</p>
+<hr />
+<h2 id="part-v-the-structure-of-lie-algebras">Part V: The Structure of Lie Algebras</h2>
+<h3 id="the-center">The Center</h3>
+<p>The <strong>center</strong> of a Lie algebra $\mathfrak{g}$ is the set of elements that bracket to zero with every element of $\mathfrak{g}$:</p>
+<p>$$
+Z(\mathfrak{g}) = \{z \in \mathfrak{g} : [z, v] = 0 \text{ for all } v \in \mathfrak{g}\}.
+$$</p>
+<p>The center is always an abelian ideal of $\mathfrak{g}$.</p>
+<h3 id="the-derived-subalgebra">The Derived Subalgebra</h3>
+<p>The <strong>derived subalgebra</strong> of a Lie algebra $\mathfrak{g}$ is the submodule spanned by all brackets:</p>
+<p>$$
+[\mathfrak{g}, \mathfrak{g}] = \mathrm{span}\{[u, v] : u, v \in \mathfrak{g}\}.
+$$</p>
+<p>The derived subalgebra is always an ideal of $\mathfrak{g}$. It measures how far $\mathfrak{g}$ is from being abelian: $\mathfrak{g}$ is abelian if and only if $[\mathfrak{g}, \mathfrak{g}] = 0$.</p>
+<h3 id="solvable-and-nilpotent-lie-algebras">Solvable and Nilpotent Lie Algebras</h3>
+<p>A Lie algebra $\mathfrak{g}$ is <strong>solvable</strong> if the sequence</p>
+<p>$$
+\mathfrak{g}^{(0)} = \mathfrak{g}, \qquad \mathfrak{g}^{(k+1)} = [\mathfrak{g}^{(k)}, \mathfrak{g}^{(k)}],
+$$</p>
+<p>eventually reaches zero.</p>
+<p>A Lie algebra $\mathfrak{g}$ is <strong>nilpotent</strong> if the sequence</p>
+<p>$$
+\mathfrak{g}_0 = \mathfrak{g}, \qquad \mathfrak{g}_{k+1} = [\mathfrak{g}, \mathfrak{g}_k],
+$$</p>
+<p>eventually reaches zero.</p>
+<p>Every nilpotent Lie algebra is solvable, but not every solvable Lie algebra is nilpotent.</p>
+<p><strong>Key difference from the field case.</strong> The notions of solvable and nilpotent Lie algebras are defined over any commutative ring, but the classical structure theory (Levi decomposition, classification of semisimple Lie algebras) requires the base ring to be a field of characteristic zero. Over a general commutative ring, the theory is more subtle.</p>
+<h3 id="simple-lie-algebras">Simple Lie Algebras</h3>
+<p>A Lie algebra $\mathfrak{g}$ is <strong>simple</strong> if it is non-abelian and has no nontrivial ideals.</p>
+<p>Simple Lie algebras are the building blocks of the theory. Every finite-dimensional Lie algebra over a field of characteristic zero is a semidirect product of a solvable Lie algebra and a semisimple Lie algebra, and every semisimple Lie algebra is a direct sum of simple Lie algebras. This is the <strong>Levi decomposition</strong>.</p>
+<h3 id="the-classification-of-simple-lie-algebras">The Classification of Simple Lie Algebras</h3>
+<p>Over the complex numbers, the simple Lie algebras are classified by their <strong>root systems</strong>, which are combinatorial objects called <strong>Dynkin diagrams</strong>. The classification was achieved by Killing and Cartan in the late nineteenth century. The simple Lie algebras fall into four infinite families</p>
+<p>$$
+A_n, \quad B_n, \quad C_n, \quad D_n,
+$$</p>
+<p>and five exceptional algebras</p>
+<p>$$
+G_2, \quad F_4, \quad E_6, \quad E_7, \quad E_8.
+$$</p>
+<p>This classification is one of the great achievements of nineteenth-century mathematics, and it is the foundation of much of modern representation theory and mathematical physics.</p>
+<p><strong>Key difference from the field case.</strong> This classification requires the base ring to be a field of characteristic zero. Over a general commutative ring, the classification does not apply, and the theory of Lie algebras is more complicated.</p>
+<hr />
+<h2 id="part-vi-representations">Part VI: Representations</h2>
+<h3 id="the-definition_1">The Definition</h3>
+<p>A <strong>representation</strong> of a Lie algebra $\mathfrak{g}$ on an $R$-module $V$ is a Lie algebra homomorphism</p>
+<p>$$
+\rho : \mathfrak{g} \to \mathfrak{gl}(V),
+$$</p>
+<p>where $\mathfrak{gl}(V)$ is the Lie algebra of $R$-linear endomorphisms of $V$ with the commutator bracket.</p>
+<p>In other words, it is an $R$-linear map that preserves the bracket:</p>
+<p>$$
+\rho([u, v]) = [\rho(u), \rho(v)] = \rho(u)\rho(v) - \rho(v)\rho(u).
+$$</p>
+<p>The module $V$ is called the <strong>representation space</strong>. The representation is <strong>faithful</strong> if $\rho$ is injective.</p>
+<h3 id="examples">Examples</h3>
+<p><strong>The trivial representation.</strong> The map $\rho(u) = 0$ for all $u \in \mathfrak{g}$.</p>
+<p><strong>The adjoint representation.</strong> The map $\mathrm{ad} : \mathfrak{g} \to \mathfrak{gl}(\mathfrak{g})$ defined by $\mathrm{ad}_u(v) = [u, v]$.</p>
+<p><strong>The standard representation of $\mathfrak{sl}(n, R)$.</strong> The natural action of $\mathfrak{sl}(n, R)$ on $R^n$ by matrix multiplication.</p>
+<h3 id="why-representations-matter">Why Representations Matter</h3>
+<p>Representations are the way Lie algebras act on other mathematical objects. In physics, representations of Lie algebras describe the possible states of a quantum system.</p>
+<p>The classification of representations of a given Lie algebra is one of the central problems of representation theory. For simple Lie algebras over a field of characteristic zero, the finite-dimensional representations are classified by their <strong>highest weights</strong>.</p>
+<hr />
+<h2 id="part-vii-lie-algebras-and-lie-groups">Part VII: Lie Algebras and Lie Groups</h2>
+<h3 id="the-relationship">The Relationship</h3>
+<p>Lie algebras are the infinitesimal versions of <strong>Lie groups</strong>. A Lie group is a group that is also a smooth manifold, with the group operations being smooth maps.</p>
+<p>Every Lie group $G$ has an associated Lie algebra $\mathfrak{g}$, which is the tangent space to $G$ at the identity element. The bracket on $\mathfrak{g}$ is derived from the group commutator. The Lie algebra captures the local structure of the group.</p>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>The Lie algebra is often easier to study than the Lie group. It is a linear object (a module with a bracket), while the group is a nonlinear object (a manifold with a group structure). Many questions about Lie groups can be reduced to questions about their Lie algebras.</p>
+<p>This is the reason Lie algebras were introduced in the first place. Sophus Lie, in the late nineteenth century, found that the local structure of continuous groups of symmetries could be captured by a linear object: the Lie algebra.</p>
+<hr />
+<h2 id="part-viii-summary">Part VIII: Summary</h2>
+<p>Let me summarize the main points.</p>
+<p><strong>A Lie algebra</strong> is a module over a commutative ring equipped with a bilinear, antisymmetric product satisfying the Jacobi identity.</p>
+<p><strong>The Jacobi identity</strong> is the replacement for associativity. It says that the adjoint action is a derivation, and it makes the adjoint representation a representation.</p>
+<p><strong>Every associative algebra is a Lie algebra</strong> when equipped with the commutator bracket. This applies in particular to the Clifford algebras.</p>
+<p><strong>The structure theory</strong> of Lie algebras includes subalgebras, ideals, the center, the derived subalgebra, solvable and nilpotent Lie algebras, and simple Lie algebras.</p>
+<p><strong>Representations</strong> of Lie algebras are homomorphisms into $\mathfrak{gl}(V)$. They are the way Lie algebras act on other mathematical objects.</p>
+<p><strong>Lie algebras</strong> are the infinitesimal versions of Lie groups.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Over a field, every Lie algebra is a vector space, so it has a well-defined dimension. Over a general commutative ring, a Lie algebra is a module, which need not be free.</li>
+<li>The classical structure theory (Levi decomposition, classification of semisimple Lie algebras) requires the base ring to be a field of characteristic zero.</li>
+<li>The classification of simple Lie algebras by Dynkin diagrams requires the base ring to be a field of characteristic zero.</li>
+</ul>
+<p>The next article, <em>Lie Algebras: Categorization</em>, gives a classification organized by ring.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972).</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979).</li>
+<li>Karin Erdmann and Mark J. Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006).</li>
+<li>Brian Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015).</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 1987).</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

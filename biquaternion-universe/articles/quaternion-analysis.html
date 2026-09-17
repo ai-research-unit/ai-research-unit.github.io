@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="quaternion-analysis">Quaternion Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces quaternion analysis as the study of differentiable functions of a quaternion variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is assumed from the article on quaternion algebra, and the scalar-vector decomposition is used throughout. The article is stated for the quaternion algebra over the real numbers, and the complexification is mentioned only where it clarifies the structure.</p>
+<p>Throughout this article, the quaternion algebra is denoted $\mathbb{H}$, and its basis is $e_0 = 1, e_1, e_2, e_3$. The scalar imaginary of the complex numbers is denoted $i$, so that it does not collide with the quaternion units.</p>
+<h2 id="the-quaternion-space">The Quaternion Space</h2>
+<h3 id="points-and-distance">Points and Distance</h3>
+<p>A quaternion is written</p>
+<p>$$
+q = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
+$$</p>
+<p>The real number $q_0$ is the <strong>scalar part</strong>, and the triple $(q_1, q_2, q_3)$ is the <strong>vector part</strong>. We write $q = q_0 + \mathbf{q}$ with $\mathbf{q} \in \mathbb{R}^3$.</p>
+<p>The <strong>modulus</strong> of $q$ is</p>
+<p>$$
+|q| = \sqrt{q \bar{q}} = \sqrt{q_0^2 + q_1^2 + q_2^2 + q_3^2},
+$$</p>
+<p>where $\bar{q} = q_0 - \mathbf{q}$ is the quaternion conjugate. The modulus is a genuine norm on the underlying real vector space $\mathbb{H} \cong \mathbb{R}^4$: positive-definite, subadditive, and homogeneous of degree one. It is multiplicative:</p>
+<p>$$
+|pq| = |p| |q|.
+$$</p>
+<p>The <strong>distance</strong> between two quaternions $p$ and $q$ is</p>
+<p>$$
+d(p, q) = |p - q|.
+$$</p>
+<p>This makes $\mathbb{H}$ a metric space isometric to $\mathbb{R}^4$. The topology of $\mathbb{H}$ is the ordinary Euclidean topology of four-dimensional space.</p>
+<h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
+<p>The <strong>open ball</strong> of radius $r > 0$ centered at $q_0$ is</p>
+<p>$$
+B(q_0, r) = \{q \in \mathbb{H} : |q - q_0| < r\}.
+$$</p>
+<p>It is an open ball in the quaternion space, exactly as in the real case. The topology is the ordinary Euclidean topology.</p>
+<h3 id="open-and-closed-sets">Open and Closed Sets</h3>
+<p>A set $U \subseteq \mathbb{H}$ is <strong>open</strong> if for every $q_0 \in U$ there exists $r > 0$ with $B(q_0, r) \subseteq U$.</p>
+<p>A set $F \subseteq \mathbb{H}$ is <strong>closed</strong> if its complement $\mathbb{H} \setminus F$ is open.</p>
+<p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
+<h3 id="connectedness-and-domains">Connectedness and Domains</h3>
+<p>A set $U \subseteq \mathbb{H}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty open sets. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{H}$, connectedness and path-connectedness are equivalent.</p>
+<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{H}$. Domains are the natural setting for quaternion analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
+<h3 id="compactness">Compactness</h3>
+<p>A set $K \subseteq \mathbb{H}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{H}$ is compact iff it is closed and bounded in the modulus.</p>
+<p><strong>Theorem.</strong> A continuous quaternion-valued function on a compact set is bounded and attains its maximum and minimum modulus.</p>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<h3 id="limits-of-sequences">Limits of Sequences</h3>
+<p>A sequence $(q_n)$ of quaternions <strong>converges</strong> to $L \in \mathbb{H}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+n \geq N \implies |q_n - L| < \epsilon.
+$$</p>
+<p>We write $q_n \to L$ or $\lim_{n \to \infty} q_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $q_n \to L$ and $q_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $q_n = q_{n,0} + q_{n,1} e_1 + q_{n,2} e_2 + q_{n,3} e_3$ and $L = L_0 + L_1 e_1 + L_2 e_2 + L_3 e_3$. Then</p>
+<p>$$
+q_n \to L \iff q_{n,\mu} \to L_\mu \text{ for } \mu = 0, 1, 2, 3.
+$$</p>
+<p>This is the reason quaternion convergence is no harder than real convergence: it is four real convergences in parallel.</p>
+<p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
+<p><strong>Algebra of limits.</strong> If $q_n \to L$ and $r_n \to M$, then</p>
+<p>$$
+q_n + r_n \to L + M, \qquad q_n r_n \to L M, \qquad q_n^{-1} \to L^{-1} \text{ if } L \neq 0.
+$$</p>
+<p>The quotient rule holds because $\mathbb{H}$ is a division algebra: every non-zero quaternion is invertible.</p>
+<h3 id="cauchy-sequences">Cauchy Sequences</h3>
+<p>A sequence $(q_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+m, n \geq N \implies |q_m - q_n| < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> In $\mathbb{H}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{H}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the four components.</p>
+<h3 id="limits-of-functions">Limits of Functions</h3>
+<p>Let $f : D \to \mathbb{H}$ with $D \subseteq \mathbb{H}$, and let $q_0$ be a limit point of $D$. We say</p>
+<p>$$
+\lim_{q \to q_0} f(q) = L
+$$</p>
+<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+q \in D, \; 0 < |q - q_0| < \delta \implies |f(q) - L| < \epsilon.
+$$</p>
+<p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{q \to q_0} f(q) = L$ iff for every sequence $(q_n)$ in $D \setminus \{q_0\}$ with $q_n \to q_0$, we have $f(q_n) \to L$.</p>
+<p><strong>Algebra of limits.</strong> Sums, products, and quotients (where defined) of limits are the limits of the sums, products, and quotients.</p>
+<h3 id="continuity">Continuity</h3>
+<p>A function $f : D \to \mathbb{H}$ is <strong>continuous at</strong> $q_0 \in D$ if</p>
+<p>$$
+\lim_{q \to q_0} f(q) = f(q_0).
+$$</p>
+<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+q \in D, \; |q - q_0| < \delta \implies |f(q) - f(q_0)| < \epsilon.
+$$</p>
+<p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
+<p><strong>Theorem.</strong> Sums, products, and quotients (where defined) of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
+<p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
+<p><strong>Componentwise continuity.</strong> Write $f(q) = f_0(q) + f_1(q) e_1 + f_2(q) e_2 + f_3(q) e_3$. Then $f$ is continuous at $q_0$ iff each $f_\mu$ is continuous at $q_0$. This reduces quaternion continuity to real continuity of four functions of four variables.</p>
+<h3 id="uniform-continuity">Uniform Continuity</h3>
+<p>A function $f : D \to \mathbb{H}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+p, q \in D, \; |p - q| < \delta \implies |f(p) - f(q)| < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
+<h2 id="quaternion-differentiability">Quaternion Differentiability</h2>
+<h3 id="the-derivative">The Derivative</h3>
+<p>Let $f : U \to \mathbb{H}$ with $U$ open, and let $q_0 \in U$. The <strong>derivative</strong> of $f$ at $q_0$ is</p>
+<p>$$
+f'(q_0) = \lim_{h \to 0} \frac{f(q_0 + h) - f(q_0)}{h},
+$$</p>
+<p>provided the limit exists. If it does, $f$ is <strong>quaternion differentiable</strong> at $q_0$, or <strong>holomorphic</strong> at $q_0$ in the quaternion sense.</p>
+<p>The limit is taken in the quaternion space, so $h$ can approach $0$ from any direction. This is a much stronger condition than real differentiability: the difference quotient must tend to the same limit along every path. The condition is so strong that it forces the function to be affine.</p>
+<p><strong>Theorem.</strong> Quaternion differentiability implies continuity. The converse fails.</p>
+<h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
+<p>Write $f(q) = u(q) + v_1(q) e_1 + v_2(q) e_2 + v_3(q) e_3$, where $q = x_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and $u, v_k : U \to \mathbb{R}$.</p>
+<p><strong>Theorem.</strong> $f$ is quaternion differentiable at $q_0$ iff the components $u, v_1, v_2, v_3$ are real differentiable at $q_0$ and satisfy the <strong>quaternion Cauchy–Riemann equations</strong></p>
+<p>$$
+\frac{\partial u}{\partial x_0} = \frac{\partial v_1}{\partial x_1} = \frac{\partial v_2}{\partial x_2} = \frac{\partial v_3}{\partial x_3},
+$$</p>
+<p>$$
+\frac{\partial u}{\partial x_k} = -\frac{\partial v_k}{\partial x_0}, \qquad k = 1, 2, 3,
+$$</p>
+<p>and the remaining equations obtained by cyclically permuting the indices $1, 2, 3$.</p>
+<p><strong>Proof.</strong> Write $h = h_0 + h_1 e_1 + h_2 e_2 + h_3 e_3$. The difference quotient is</p>
+<p>$$
+\frac{f(q_0 + h) - f(q_0)}{h} = \frac{\sum_\mu h_\mu \partial_\mu f}{h} + o(1).
+$$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a left multiple of $h$, and the multiplication must be consistent with the quaternion relations. This forces the equations. $\square$</p>
+<h3 id="the-liouville-theorem">The Liouville Theorem</h3>
+<p><strong>Theorem (Liouville).</strong> Every bounded quaternion differentiable function on all of $\mathbb{H}$ is constant.</p>
+<p><strong>Proof.</strong> The quaternion Cauchy–Riemann equations force the components to be harmonic and to satisfy strong constraints. The only bounded solutions on all of $\mathbb{H}$ are constants. $\square$</p>
+<p>This is the quaternion analogue of the Liouville theorem in complex analysis, and it shows that the class of quaternion differentiable functions is very rigid.</p>
+<h3 id="the-class-of-quaternion-differentiable-functions">The Class of Quaternion Differentiable Functions</h3>
+<p>The quaternion Cauchy–Riemann equations are so restrictive that the quaternion differentiable functions are exactly the functions of the form</p>
+<p>$$
+f(q) = a q + b, \qquad a, b \in \mathbb{H}.
+$$</p>
+<p>That is, the only quaternion differentiable functions are the affine functions. This is the fundamental difference from complex analysis, where the class of holomorphic functions is rich.</p>
+<p><strong>Proof.</strong> The Cauchy–Riemann equations force all second derivatives to vanish, so the function is affine. The details are a computation using the quaternion relations. $\square$</p>
+<p>So the naive notion of quaternion differentiability is too restrictive to be useful. This is the reason quaternion analysis is not the direct analogue of complex analysis.</p>
+<h2 id="the-correct-notion-monogenic-functions">The Correct Notion: Monogenic Functions</h2>
+<h3 id="definition">Definition</h3>
+<p>A function $f : U \to \mathbb{H}$ is <strong>monogenic</strong> (or <strong>regular</strong>) if it satisfies the <strong>Cauchy–Riemann–Fueter equation</strong></p>
+<p>$$
+\frac{\partial f}{\partial x_0} + e_1 \frac{\partial f}{\partial x_1} + e_2 \frac{\partial f}{\partial x_2} + e_3 \frac{\partial f}{\partial x_3} = 0.
+$$</p>
+<p>Equivalently, if $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ is the <strong>Dirac operator</strong>, then $f$ is monogenic iff $D f = 0$.</p>
+<p>The Dirac operator satisfies</p>
+<p>$$
+D^2 = \partial_{x_0}^2 + \partial_{x_1}^2 + \partial_{x_2}^2 + \partial_{x_3}^2 = \Delta,
+$$</p>
+<p>where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:</p>
+<p>$$
+\Delta f = 0.
+$$</p>
+<h3 id="properties">Properties</h3>
+<p>Monogenic functions satisfy:</p>
+<p><strong>Closure under left and right multiplication by constants.</strong> If $f$ is monogenic and $a, b \in \mathbb{H}$, then $a f$ and $f b$ are monogenic.</p>
+<p><strong>The Cauchy integral formula.</strong> If $f$ is monogenic on a domain containing a ball $B(q_0, r)$, then</p>
+<p>$$
+f(q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - q)^{-1}}{|w - q|^2} n(w) f(w) \, dS(w),
+$$</p>
+<p>where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere. This is the quaternion analogue of the Cauchy integral formula.</p>
+<p><strong>The maximum principle.</strong> If $f$ is monogenic on a domain and $|f|$ attains its maximum at an interior point, then $f$ is constant.</p>
+<p><strong>The Liouville theorem.</strong> Every bounded monogenic function on all of $\mathbb{H}$ is constant.</p>
+<p><strong>The identity theorem.</strong> If two monogenic functions agree on a set with an accumulation point in a domain, they agree on the whole domain.</p>
+<p>So monogenic functions are the correct analogue of holomorphic functions in quaternion analysis. They form a rich class, and they satisfy the standard theorems of complex analysis.</p>
+<h3 id="the-relation-to-the-dirac-operator">The Relation to the Dirac Operator</h3>
+<p>The Dirac operator $D$ is the quaternion analogue of the Cauchy–Riemann operator $\bar{\partial}$ in complex analysis. It factors the Laplacian:</p>
+<p>$$
+D^2 = \Delta,
+$$</p>
+<p>and the monogenic functions are the kernel of $D$. This is the starting point of <strong>Clifford analysis</strong>, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients.</p>
+<h3 id="the-cauchyriemannfueter-equation">The Cauchy–Riemann–Fueter Equation</h3>
+<p>The Cauchy–Riemann–Fueter equation $D f = 0$ is a first-order system of four real equations for the four components of $f$. It is elliptic, and its solutions are harmonic. The equation is the quaternion analogue of the Cauchy–Riemann equations, and it is the correct notion of differentiability in quaternion analysis.</p>
+<h2 id="integration">Integration</h2>
+<h3 id="contour-integrals">Contour Integrals</h3>
+<p>Let $\gamma : [a, b] \to \mathbb{H}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
+<p>$$
+\int_\gamma f(q) \, dq = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+$$</p>
+<p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$ for constant $a, b \in \mathbb{H}$.</p>
+<p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
+<p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
+<p><strong>Estimation.</strong> If $|f(q)| \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p>$$
+\left| \int_\gamma f(q) \, dq \right| \leq M L.
+$$</p>
+<h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
+<p><strong>Theorem (Cauchy–Goursat, quaternion version).</strong> If $f$ is monogenic on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then</p>
+<p>$$
+\oint_\gamma f(q) \, dq = 0.
+$$</p>
+<p><strong>Proof.</strong> The integral of a monogenic function over a closed surface in $\mathbb{R}^4$ vanishes by the divergence theorem, because the Dirac operator annihilates $f$. The contour case follows by approximation. $\square$</p>
+<p><strong>Corollary.</strong> On a simply connected domain, the integral of a monogenic function is path-independent. The function</p>
+<p>$$
+F(q) = \int_{q_0}^q f(w) \, dw
+$$</p>
+<p>is well-defined, monogenic, and satisfies $D F = f$ in the appropriate sense.</p>
+<h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
+<p><strong>Theorem (Cauchy Integral Formula, quaternion version).</strong> Let $f$ be monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$. Then for every $q$ in the open ball,</p>
+<p>$$
+f(q) = \frac{1}{2\pi^2} \int_{\partial B(q_0, r)} \frac{(w - q)^{-1}}{|w - q|^2} n(w) f(w) \, dS(w),
+$$</p>
+<p>where $n(w)$ is the outward unit normal and $dS$ is the surface measure on the sphere.</p>
+<p><strong>Corollary (derivatives).</strong> Under the same hypotheses, $f$ is infinitely differentiable, and the derivatives are given by differentiating the kernel.</p>
+<h3 id="liouvilles-theorem">Liouville's Theorem</h3>
+<p><strong>Theorem (Liouville).</strong> Every bounded monogenic function on all of $\mathbb{H}$ is constant.</p>
+<p><strong>Proof.</strong> Apply the Cauchy estimates to the derivatives of $f$ on a ball of radius $r$ around $q_0$. Since $f$ is bounded by $M$, the derivatives are bounded by $M/r^n$. Let $r \to \infty$ to get that all derivatives vanish. So $f$ is constant. $\square$</p>
+<h3 id="moreras-theorem">Morera's Theorem</h3>
+<p><strong>Theorem (Morera).</strong> If $f$ is continuous on a domain $U$ and $\oint_\gamma f = 0$ for every closed contour $\gamma$ in $U$, then $f$ is monogenic on $U$.</p>
+<p><strong>Proof.</strong> Define $F(q) = \int_{q_0}^q f(w) \, dw$. The hypothesis makes $F$ well-defined, and $D F = f$. Since $F$ is monogenic, $F$ is infinitely differentiable, so $f$ is monogenic. $\square$</p>
+<h2 id="power-series">Power Series</h2>
+<h3 id="definition_1">Definition</h3>
+<p>A <strong>power series</strong> centered at $q_0$ is</p>
+<p>$$
+\sum_{n=0}^\infty c_n (q - q_0)^n, \qquad c_n \in \mathbb{H}.
+$$</p>
+<p>The <strong>radius of convergence</strong> is</p>
+<p>$$
+R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
+$$</p>
+<p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|q - q_0| < R$ and diverges for $|q - q_0| > R$. On $|q - q_0| < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is monogenic on $|q - q_0| < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p>$$
+D \sum_{n=0}^\infty c_n (q - q_0)^n = \sum_{n=1}^\infty n c_n (q - q_0)^{n-1}.
+$$</p>
+<p>The differentiated series has the same radius of convergence.</p>
+<h3 id="taylor-series">Taylor Series</h3>
+<p><strong>Theorem (Taylor, quaternion version).</strong> If $f$ is monogenic on a domain containing the closed ball $\overline{B}(q_0, r)$, then $f$ has a power series expansion</p>
+<p>$$
+f(q) = \sum_{n=0}^\infty \frac{f^{(n)}(q_0)}{n!} (q - q_0)^n
+$$</p>
+<p>valid for $|q - q_0| < r$.</p>
+<p><strong>Corollary.</strong> A monogenic function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
+<p><strong>Corollary (identity theorem).</strong> If two monogenic functions on a domain $U$ agree on a set with an accumulation point in $U$, they agree on all of $U$.</p>
+<h3 id="laurent-series">Laurent Series</h3>
+<p><strong>Theorem (Laurent).</strong> If $f$ is monogenic on an annulus $r < |q - q_0| < R$, then $f$ has a unique expansion</p>
+<p>$$
+f(q) = \sum_{n=-\infty}^\infty c_n (q - q_0)^n
+$$</p>
+<p>valid on the annulus, with</p>
+<p>$$
+c_n = \frac{1}{2\pi^2} \int_{\partial B(q_0, \rho)} \frac{(w - q_0)^{-n-1}}{|w - q_0|^2} n(w) f(w) \, dS(w), \qquad r < \rho < R.
+$$</p>
+<h2 id="singularities">Singularities</h2>
+<h3 id="classification">Classification</h3>
+<p>Let $f$ be monogenic on a punctured ball $0 < |q - q_0| < R$.</p>
+<p><strong>Removable singularity.</strong> $q_0$ is removable if $f$ extends to a monogenic function on $|q - q_0| < R$. Equivalently, the Laurent expansion has $c_n = 0$ for $n < 0$.</p>
+<p><strong>Pole.</strong> $q_0$ is a pole of order $m \geq 1$ if the Laurent expansion has $c_{-m} \neq 0$ and $c_n = 0$ for $n < -m$.</p>
+<p><strong>Essential singularity.</strong> $q_0$ is an essential singularity if the Laurent expansion has infinitely many non-zero $c_n$ with $n < 0$.</p>
+<p><strong>Theorem (Riemann).</strong> $q_0$ is removable iff $f$ is bounded near $q_0$.</p>
+<p><strong>Theorem (Casorati–Weierstrass).</strong> If $q_0$ is an essential singularity, then $f$ takes values arbitrarily close to every quaternion in every neighborhood of $q_0$.</p>
+<h3 id="residues">Residues</h3>
+<p>The <strong>residue</strong> of $f$ at an isolated singularity $q_0$ is the coefficient $c_{-1}$ in the Laurent expansion:</p>
+<p>$$
+\operatorname{Res}(f, q_0) = c_{-1}.
+$$</p>
+<p><strong>Theorem (Residue Theorem).</strong> Let $f$ be monogenic on a simply connected domain except for isolated singularities $q_1, \dots, q_n$. Let $\gamma$ be a closed contour in the domain that does not pass through any $q_k$ and winds once around each. Then</p>
+<p>$$
+\oint_\gamma f(q) \, dq = 2\pi^2 \sum_{k=1}^n \operatorname{Res}(f, q_k).
+$$</p>
+<p>The factor $2\pi^2$ is the surface area of the unit sphere in $\mathbb{R}^4$, and it is the quaternion analogue of the factor $2\pi i$ in complex analysis.</p>
+<h2 id="the-dirac-operator">The Dirac Operator</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>Dirac operator</strong> is</p>
+<p>$$
+D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}.
+$$</p>
+<p>It acts on functions $f : \mathbb{H} \to \mathbb{H}$ by</p>
+<p>$$
+D f = \partial_{x_0} f + e_1 \partial_{x_1} f + e_2 \partial_{x_2} f + e_3 \partial_{x_3} f.
+$$</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Factorization of the Laplacian.</strong> $D^2 = \Delta$.</p>
+<p><strong>Ellipticity.</strong> The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.</p>
+<p><strong>Fundamental solution.</strong> The fundamental solution of $D$ is</p>
+<p>$$
+E(q) = \frac{q^{-1}}{|q|^2} = \frac{\bar{q}}{|q|^4},
+$$</p>
+<p>which satisfies $D E = \delta_0$ in the sense of distributions.</p>
+<h3 id="the-relation-to-the-cauchyriemann-operator">The Relation to the Cauchy–Riemann Operator</h3>
+<p>In complex analysis, the Cauchy–Riemann operator is</p>
+<p>$$
+\bar{\partial} = \frac{1}{2}(\partial_x + i \partial_y),
+$$</p>
+<p>and the holomorphic functions are the kernel of $\bar{\partial}$. In quaternion analysis, the Dirac operator is the analogue of $\bar{\partial}$, and the monogenic functions are the kernel of $D$. The Dirac operator is the correct generalization of the Cauchy–Riemann operator to higher dimensions.</p>
+<h2 id="applications">Applications</h2>
+<h3 id="harmonic-analysis">Harmonic Analysis</h3>
+<p>Monogenic functions are harmonic, so quaternion analysis is closely related to harmonic analysis on $\mathbb{R}^4$. The Cauchy integral formula gives a representation of monogenic functions in terms of their boundary values, and the boundary values form a Hardy space.</p>
+<h3 id="clifford-analysis">Clifford Analysis</h3>
+<p>Quaternion analysis is the case $n = 4$ of <strong>Clifford analysis</strong>, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The Dirac operator is defined for any $n$, and the monogenic functions are the kernel of the Dirac operator. The theory is used in:</p>
+<ul>
+<li>The study of the Dirac equation in physics.</li>
+<li>The theory of harmonic forms and Hodge theory.</li>
+<li>The theory of boundary value problems for elliptic systems.</li>
+<li>The theory of Hardy spaces and singular integrals.</li>
+</ul>
+<h3 id="the-dirac-equation">The Dirac Equation</h3>
+<p>The Dirac equation in physics is a first-order partial differential equation of the form</p>
+<p>$$
+(i \gamma^\mu \partial_\mu - m) \psi = 0,
+$$</p>
+<p>where the $\gamma^\mu$ are Dirac matrices and $\psi$ is a spinor. The quaternion Dirac operator is the simplest case of this equation, and the monogenic functions are the solutions of the massless Dirac equation. This is the reason quaternion analysis is used in relativistic quantum mechanics.</p>
+<h3 id="the-radon-transform">The Radon Transform</h3>
+<p>The quaternion Radon transform is the analogue of the Radon transform in complex analysis. It is defined by integrating a function over spheres in $\mathbb{R}^4$, and it is inverted by a formula involving the Dirac operator. It is used in:</p>
+<ul>
+<li>The theory of integral geometry in four dimensions.</li>
+<li>The inversion of the Radon transform for the Dirac equation.</li>
+<li>The theory of the X-ray transform in higher dimensions.</li>
+</ul>
+<h2 id="comparison-with-complex-analysis">Comparison with Complex Analysis</h2>
+<p>The differences between quaternion analysis and complex analysis are consequences of the non-commutativity of $\mathbb{H}$ and the higher dimension of the space.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Complex</th>
+<th>Quaternion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimension</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Commutative</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Cauchy–Riemann</td>
+<td>$\bar{\partial} f = 0$</td>
+<td>$D f = 0$</td>
+</tr>
+<tr>
+<td>Differentiable functions</td>
+<td>rich (holomorphic)</td>
+<td>affine only</td>
+</tr>
+<tr>
+<td>Monogenic functions</td>
+<td>—</td>
+<td>rich</td>
+</tr>
+<tr>
+<td>Cauchy integral</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Residue theory</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Liouville</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Identity theorem</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Conformality</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Factor $2\pi i$</td>
+<td>$2\pi i$</td>
+<td>$2\pi^2$</td>
+</tr>
+</tbody>
+</table>
+<p>The complex case is the case $n = 2$ of the general theory, and the quaternion case is the case $n = 4$. The general theory is Clifford analysis, and the pattern is the same: the Dirac operator replaces the Cauchy–Riemann operator, the monogenic functions replace the holomorphic functions, and the Cauchy integral formula holds with the appropriate kernel.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>Quaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$q = q_0 + \mathbf{q}$</td>
+<td>General quaternion</td>
+</tr>
+<tr>
+<td>$q_0$</td>
+<td>Scalar part</td>
+</tr>
+<tr>
+<td>$\mathbf{q}$</td>
+<td>Vector part</td>
+</tr>
+<tr>
+<td>$\bar{q} = q_0 - \mathbf{q}$</td>
+<td>Quaternion conjugate</td>
+</tr>
+<tr>
+<td>$\|q\| = \sqrt{q \bar{q}}$</td>
+<td>Modulus</td>
+</tr>
+<tr>
+<td>$B(q_0, r)$</td>
+<td>Open ball of radius $r$</td>
+</tr>
+<tr>
+<td>$D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$</td>
+<td>Dirac operator</td>
+</tr>
+<tr>
+<td>$D f = 0$</td>
+<td>Monogenic equation</td>
+</tr>
+<tr>
+<td>$\Delta = D^2$</td>
+<td>Laplacian</td>
+</tr>
+<tr>
+<td>$\int_\gamma f(q) \, dq$</td>
+<td>Contour integral</td>
+</tr>
+<tr>
+<td>$\operatorname{Res}(f, q_0)$</td>
+<td>Residue</td>
+</tr>
+<tr>
+<td>$2\pi^2$</td>
+<td>Surface area of the unit sphere in $\mathbb{R}^4$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation.</li>
+<li>Rudolf Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta \Delta u = 0$ mit vier reellen Variablen" (1935), for the origin of monogenic functions.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford theory.</li>
+<li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton, 1989), for the role of the Dirac operator in geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

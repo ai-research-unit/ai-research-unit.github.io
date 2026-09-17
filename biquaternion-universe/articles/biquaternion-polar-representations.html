@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="biquaternion-polar-representations">Biquaternion Polar Representations</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The article on biquaternion algebraic representations described four ways of writing a biquaternion using only the algebra operations, the scalar imaginary, and the underlying complex vector space structure: the four-vector representation, the $2 \times 2$ matrix representation, the spinor representation, and the Clifford algebra representation.</p>
+<p>This article describes the <strong>polar representations</strong> of the biquaternion algebra: ways of writing a biquaternion as a product of a modulus and an exponential. These representations use the exponential and the roots of $-1$, and they are therefore not algebraic in the sense of the preceding article.</p>
+<p>The word "representation" is used here in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory.</p>
+<p>For a complex number, the polar form is unique up to the sign of the modulus: $z = r e^{i\theta}$ with $r \geq 0$ and $\theta \in \mathbb{R}$. For a biquaternion, neither the modulus nor the root of $-1$ in the exponential is unique, and this is the reason there are <strong>two</strong> natural polar representations rather than one. The choice of which root of $-1$ to use in the exponential, and which factor to call the modulus, gives the two forms: the <strong>Hamilton polar form</strong> and the <strong>complex polar form</strong>. This article defines both, compares them, and describes their behavior under the four conjugations.</p>
+<p>Throughout, we use the notation of the basic algebra article: a biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The scalar imaginary is $i$, which commutes with the quaternion units. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the four fixed-point subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$.</p>
+<h2 id="why-there-are-two-polar-forms">Why There Are Two Polar Forms</h2>
+<p>The polar form of a complex number $z$ is</p>
+<p>$$
+z = r e^{i\theta}, \qquad r = |z| \geq 0, \quad \theta \in \mathbb{R}.
+$$</p>
+<p>Two features are essential:</p>
+<ul>
+<li>The modulus $r$ is a <strong>non-negative real number</strong>, and it is the unique such number with $r^2 = |z|^2$.</li>
+<li>The exponential uses the <strong>only</strong> root of $-1$ available in $\mathbb{C}$, namely $i$ (up to sign).</li>
+</ul>
+<p>For a biquaternion, neither feature survives unchanged.</p>
+<p><strong>The modulus is not necessarily real.</strong> The norm form $N(\tilde{Q})$ is a complex number in general, and its square root is a complex number, not a real number. There is no canonical way to choose a non-negative real modulus.</p>
+<p><strong>There is more than one root of $-1$.</strong> The biquaternion algebra contains a four-real-dimensional family of roots of $-1$, of which only one (up to sign), namely the scalar imaginary $i$, is central. The other roots are non-central and are classified in the article on biquaternion roots of minus one.</p>
+<p>The two polar forms arise from the two possible choices:</p>
+<ul>
+<li>The <strong>Hamilton polar form</strong> uses a <strong>non-central</strong> root $\xi$ of $-1$ in the exponential, and calls the complex scalar $R$ the modulus.</li>
+<li>The <strong>complex polar form</strong> uses the <strong>central</strong> root $i$ of $-1$ in the exponential, and calls the real quaternion $Q$ the modulus.</li>
+</ul>
+<p>The names are historical. The Hamilton form generalizes the quaternion polar form $q = r \exp(\mu \theta)$ discovered by Hamilton, in which $\mu$ is a unit pure real quaternion. The complex form generalizes the ordinary complex polar form $z = r \exp(i\theta)$.</p>
+<h2 id="the-hamilton-polar-form">The Hamilton Polar Form</h2>
+<h3 id="definition">Definition</h3>
+<p>Let $\tilde{Q}$ be a biquaternion with non-vanishing norm form. Write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ is the vector part, and suppose $\mathbf{Q} \neq 0$. The <strong>Hamilton polar form</strong> of $\tilde{Q}$ is</p>
+<p>$$
+\tilde{Q} = R \exp(\xi \Theta) = R(\cos\Theta + \xi \sin\Theta),
+$$</p>
+<p>where:</p>
+<ul>
+<li>$R = \sqrt{N(\tilde{Q})}$ is the <strong>complex modulus</strong>, a complex scalar;</li>
+<li>$\xi = \mathbf{Q}/B$ is the <strong>axis</strong>, a root of $-1$ in $\mathbb{B}$, where $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ is the complex modulus of the vector part;</li>
+<li>$\Theta$ is the <strong>complex angle</strong>, defined by $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$.</li>
+</ul>
+<p>The axis $\xi$ is a pure biquaternion satisfying $\xi^2 = -1$, and it is chosen to be <strong>parallel to the vector part</strong> of $\tilde{Q}$. It is one of the non-central roots of $-1$ when the vector part has both real and imaginary components, and it is a unit pure real quaternion when the vector part is real.</p>
+<h3 id="the-case-math55">The Case $\mathbf{Q} = 0$</h3>
+<p>If the vector part vanishes, $\tilde{Q} = Q_0 e_0$ is a complex scalar, and the Hamilton polar form is not defined (because $\xi$ cannot be normalized). In this case, the complex polar form is the appropriate one.</p>
+<h3 id="the-case-math58">The Case $N(\tilde{Q}) = 0$</h3>
+<p>If the norm form vanishes, $\tilde{Q}$ is a zero divisor, and $R = 0$. The Hamilton polar form degenerates: either $Q_0 = 0$ (pure case) or $Q_0 \neq 0$ (non-pure case), and in both cases the representation as a modulus times an exponential is not available in the same form. The zero divisors are treated in the article on biquaternion zero divisors.</p>
+<h3 id="existence-and-uniqueness">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every biquaternion $\tilde{Q}$ with $\mathbf{Q} \neq 0$ and $N(\tilde{Q}) \neq 0$ has a Hamilton polar form. The form is unique up to the sign of $R$ and the sign of $\Theta$, which are correlated: replacing $(R, \Theta)$ by $(-R, \Theta + \pi)$ gives the same $\tilde{Q}$.</p>
+<p><strong>Proof.</strong> The construction above gives $\xi$, $R$, and $\Theta$ explicitly from the components of $\tilde{Q}$. The verification that $\tilde{Q} = R(\cos\Theta + \xi \sin\Theta)$ is a direct computation:</p>
+<p>$$
+R(\cos\Theta + \xi \sin\Theta) = R \cdot \frac{Q_0}{R} + R \cdot \frac{\mathbf{Q}}{B} \cdot \frac{B}{R} = Q_0 + \mathbf{Q} = \tilde{Q}.
+$$</p>
+<p>The uniqueness follows from the fact that $\xi$ is determined by the direction of $\mathbf{Q}$, and $R$ and $\Theta$ are determined by the equations $\cos\Theta = Q_0/R$ and $\sin\Theta = B/R$, up to the correlated sign choice. $\square$</p>
+<h3 id="the-constraint-on-the-axis">The Constraint on the Axis</h3>
+<p>The axis $\xi$ is not an arbitrary root of $-1$: it is the root parallel to the vector part $\mathbf{Q}$. This is a constraint, and it is the reason the Hamilton polar form is well-defined.</p>
+<p>The roots of $-1$ that arise this way are characterized by the constraints</p>
+<p>$$
+\Re(\xi) \perp \Im(\xi), \qquad \|\Re(\xi)\| - \|\Im(\xi)\| = 1,
+$$</p>
+<p>which are stated and proved in the article on biquaternion roots of minus one. The axis of the Hamilton polar form is therefore one of the non-trivial roots of $-1$, unless the vector part $\mathbf{Q}$ happens to be a real quaternion, in which case the axis is a unit pure real quaternion (a "real root" of $-1$ in the classification of that article).</p>
+<h3 id="the-angle-is-complex">The Angle Is Complex</h3>
+<p>The angle $\Theta$ is a complex number, not a real one. This is because both $Q_0$ and $B$ are complex, and their ratio $Q_0/B$ is a complex number. There is no canonical way to choose a real angle.</p>
+<h3 id="example">Example</h3>
+<p>Take $\tilde{Q} = e_0 + e_1$. Then $Q_0 = 1$, $\mathbf{Q} = e_1$, $B = \sqrt{1} = 1$, and $N(\tilde{Q}) = 1 + 1 = 2$. So $R = \sqrt{2}$, $\xi = e_1$, $\cos\Theta = 1/\sqrt{2}$, $\sin\Theta = 1/\sqrt{2}$. So $\Theta = \pi/4$ (up to the addition of $2\pi$ in the real part, and up to the complex ambiguity), and</p>
+<p>$$
+\tilde{Q} = \sqrt{2} \exp(e_1 \pi/4) = \sqrt{2} (\cos(\pi/4) + e_1 \sin(\pi/4)) = 1 + e_1.
+$$</p>
+<p>This is the case of a quaternion with a positive real norm form, and the Hamilton polar form reduces to the ordinary quaternion polar form, with $\Theta$ real.</p>
+<h2 id="the-complex-polar-form">The Complex Polar Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $\tilde{Q}$ be a biquaternion with non-vanishing real part $Q_0$. Write $\tilde{Q} = Q_r + i Q_i$ where $Q_r, Q_i \in \mathbb{H}$ are the real and imaginary quaternion parts. The <strong>complex polar form</strong> of $\tilde{Q}$ is</p>
+<p>$$
+\tilde{Q} = Q \exp(i \Psi) = Q(\cos\Psi + i \sin\Psi),
+$$</p>
+<p>where:</p>
+<ul>
+<li>$Q$ is a <strong>quaternion</strong> (a real quaternion, element of $\mathbb{H}$);</li>
+<li>$i$ is the <strong>scalar imaginary</strong>, the central root of $-1$ that commutes with everything;</li>
+<li>$\Psi$ is the <strong>complex angle</strong>, defined by $\tan\Psi = Q_r^{-1} Q_i$, and $Q = \tilde{Q} \exp(-i\Psi)$.</li>
+</ul>
+<h3 id="the-case-math122">The Case $Q_r = 0$</h3>
+<p>If the real part vanishes, $\tilde{Q}$ is purely imaginary, and the complex polar form is not defined (because $Q_r^{-1}$ does not exist). In this case, the Hamilton polar form is the appropriate one.</p>
+<h3 id="the-case-math125">The Case $N(\tilde{Q}) = 0$</h3>
+<p>If the norm form vanishes, $\tilde{Q}$ is a zero divisor. The complex polar form is not available in general, because the quaternion $Q$ may not be invertible. The zero divisors are treated in the article on biquaternion zero divisors.</p>
+<h3 id="existence-and-uniqueness_1">Existence and Uniqueness</h3>
+<p><strong>Theorem.</strong> Every biquaternion $\tilde{Q}$ with $Q_r \neq 0$ and $N(\tilde{Q}) \neq 0$ has a complex polar form. The form is unique up to the addition of $2\pi$ to the real part of $\Psi$.</p>
+<p><strong>Proof.</strong> The construction above gives $\Psi$ and $Q$ explicitly from $\tilde{Q}$. The verification that $\tilde{Q} = Q \exp(i\Psi)$ is a direct computation:</p>
+<p>$$
+Q \exp(i\Psi) = \tilde{Q} \exp(-i\Psi) \exp(i\Psi) = \tilde{Q},
+$$</p>
+<p>where the second equality uses the fact that $i$ commutes with $\tilde{Q}$ and $\exp(-i\Psi)$ commutes with $\exp(i\Psi)$. The uniqueness follows from the fact that $\Psi$ is determined by the equation $\tan\Psi = Q_r^{-1} Q_i$, which determines $\Psi$ up to the addition of $\pi$ in the real part, with the sign of $Q$ adjusted accordingly. $\square$</p>
+<h3 id="the-angle-is-complex_1">The Angle Is Complex</h3>
+<p>As in the Hamilton polar form, the angle $\Psi$ is a complex number, not a real one. This is because $Q_r^{-1} Q_i$ is a quaternion, not a real number, and its tangent is a complex angle.</p>
+<h3 id="the-modulus-is-a-quaternion">The Modulus Is a Quaternion</h3>
+<p>The modulus $Q$ is a real quaternion, not a complex scalar. This is the essential difference from the Hamilton polar form, where the modulus is a complex scalar.</p>
+<h3 id="example_1">Example</h3>
+<p>Take $\tilde{Q} = 1 + i$, a complex scalar. Then $Q_r = 1$ and $Q_i = 1$, so $\tan\Psi = 1$, i.e., $\Psi = \pi/4$ (up to the addition of $\pi$ in the real part). And $Q = (1+i) \exp(-i\pi/4) = (1+i)(\cos(\pi/4) - i \sin(\pi/4)) = (1+i)(1/\sqrt{2} - i/\sqrt{2}) = \sqrt{2}$. So</p>
+<p>$$
+\tilde{Q} = \sqrt{2} \exp(i \pi/4).
+$$</p>
+<p>This is exactly the ordinary polar form of the complex number $1 + i$. So in the case of a scalar biquaternion, the complex polar form reduces to the ordinary complex polar form.</p>
+<h3 id="a-non-scalar-example">A Non-Scalar Example</h3>
+<p>Take $\tilde{Q} = e_0 + i e_1$. Then $Q_r = e_0$ and $Q_i = e_1$, so $\tan\Psi = e_0^{-1} e_1 = e_1$, i.e., $\Psi = \arctan(e_1)$, which is a complex angle with real part $\pi/4$ and imaginary part $0$ in the quaternion basis. The modulus is $Q = \tilde{Q} \exp(-i\Psi)$, which is a real quaternion. The exact form of $Q$ depends on the branch of the arctangent, but the representation is well-defined.</p>
+<h2 id="comparison-of-the-two-polar-forms">Comparison of the Two Polar Forms</h2>
+<p>The two polar forms differ in <strong>which root of $-1$ is used in the exponential</strong> and in <strong>which factor is the modulus</strong>:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Hamilton polar form</th>
+<th>Complex polar form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root of $-1$</td>
+<td>$\xi$, a non-central root</td>
+<td>$i$, the central root</td>
+</tr>
+<tr>
+<td>Modulus</td>
+<td>$R$, a complex scalar</td>
+<td>$Q$, a real quaternion</td>
+</tr>
+<tr>
+<td>Angle</td>
+<td>$\Theta$, a complex scalar</td>
+<td>$\Psi$, a complex scalar</td>
+</tr>
+<tr>
+<td>Existence requires</td>
+<td>$\mathbf{Q} \neq 0$</td>
+<td>$Q_r \neq 0$</td>
+</tr>
+<tr>
+<td>Reduces to</td>
+<td>Quaternion polar form (when $\tilde{Q} \in \mathbb{H}$)</td>
+<td>Complex polar form (when $\tilde{Q} \in \mathbb{C}_{\mathbb{B}}$)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-each-form-is-natural">When Each Form Is Natural</h3>
+<p>The two polar forms are complementary. The Hamilton form generalizes the quaternion polar form, with the quaternion root $\mu$ replaced by a biquaternion root $\xi$, and the modulus and angle allowed to become complex. The complex form generalizes the complex polar form, with the scalar imaginary $i$ retained as the root, and the modulus allowed to become a quaternion.</p>
+<p>The choice between the two polar forms depends on what is being computed:</p>
+<ul>
+<li>The <strong>Hamilton polar form</strong> is natural when the biquaternion is close to a quaternion, i.e., when the complexification is a small perturbation. The root $\xi$ is close to a pure real quaternion, and the exponential is close to the quaternion exponential.</li>
+<li>The <strong>complex polar form</strong> is natural when the biquaternion is close to a complex scalar, i.e., when the quaternion structure is a small perturbation. The modulus $Q$ is close to a complex scalar, and the exponential is close to the ordinary complex exponential.</li>
+</ul>
+<p>In the case of a biquaternion that is neither close to a quaternion nor close to a complex scalar, neither polar form is canonical, and the choice is a matter of convenience.</p>
+<h3 id="the-domain-of-definition">The Domain of Definition</h3>
+<p>The two polar forms are defined on overlapping but different domains:</p>
+<ul>
+<li>The Hamilton polar form is defined for $\mathbf{Q} \neq 0$ and $N(\tilde{Q}) \neq 0$.</li>
+<li>The complex polar form is defined for $Q_r \neq 0$ and $N(\tilde{Q}) \neq 0$.</li>
+</ul>
+<p>The union of the two domains covers all biquaternions with $N(\tilde{Q}) \neq 0$ except those with $\mathbf{Q} = 0$ and $Q_r = 0$ simultaneously, i.e., the purely imaginary complex scalars $\tilde{Q} = i Q'_0 e_0$. These are the only biquaternions with non-vanishing norm form for which neither polar form is defined in the standard sense.</p>
+<h2 id="the-role-of-the-roots-of-minus-one">The Role of the Roots of Minus One</h2>
+<p>The two polar forms correspond to the two classes of roots of $-1$ in $\mathbb{B}$:</p>
+<ul>
+<li>The <strong>scalar imaginary</strong> $i$ is the unique central root of $-1$ (up to sign). It is the root used in the complex polar form.</li>
+<li>The <strong>non-central roots</strong> $\xi$ of $-1$, of the form $\xi = b\mu + d i \nu$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$, are the roots used in the Hamilton polar form. They form a four-dimensional family, parametrized by a pair of perpendicular unit pure real quaternions $\mu, \nu$ and a real parameter $b$ with $b^2 - d^2 = 1$.</li>
+</ul>
+<p>The existence of the non-central roots is the reason the Hamilton polar form differs from the complex one. In the complex numbers, only the central root exists, and there is only one polar form. In the biquaternions, the central root and the non-central roots coexist, and the two polar forms reflect the two possibilities.</p>
+<p>The classification of the roots of $-1$ is the subject of the article on biquaternion roots of minus one. The results are:</p>
+<ol>
+<li><strong>Non-trivial roots:</strong> $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.</li>
+<li><strong>The trivial root:</strong> $\xi = \pm i$.</li>
+<li><strong>The real roots:</strong> $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.</li>
+</ol>
+<p>The axis of the Hamilton polar form is a real root when the vector part is a real quaternion, and a non-trivial root when the vector part has both real and imaginary components.</p>
+<h2 id="behavior-under-the-four-conjugations">Behavior Under the Four Conjugations</h2>
+<p>The three conjugations of the biquaternion algebra act on the two polar forms as follows. Throughout, the scalar imaginary $i$ is treated as a complex scalar, so it is conjugated by $^*$ and preserved by $\bar{\cdot}$.</p>
+<h3 id="quaternion-conjugation">Quaternion Conjugation</h3>
+<p><strong>Hamilton form.</strong> $\bar{R \exp(\xi \Theta)} = \bar{R} \exp(\bar{\xi} \bar{\Theta})$. Since $\bar{R} = R$ (the norm form is invariant under quaternion conjugation, so $R$ is invariant up to sign), $\bar{\xi} = -\xi$ (the quaternion conjugate of a pure biquaternion is its negative), and $\bar{\Theta} = \Theta$ (the angle is a complex scalar and is not affected by quaternion conjugation), we get</p>
+<p>$$
+\bar{R \exp(\xi \Theta)} = R \exp(-\xi \Theta).
+$$</p>
+<p>So quaternion conjugation reverses the sign of the angle in the Hamilton polar form.</p>
+<p><strong>Complex form.</strong> $\bar{Q \exp(i \Psi)} = \bar{Q} \exp(i \Psi)$. Since $i$ commutes with the quaternion conjugate, the sign of the angle is not affected, and only the quaternion modulus is conjugated.</p>
+<h3 id="complex-conjugation">Complex Conjugation</h3>
+<p><strong>Hamilton form.</strong> $(R \exp(\xi \Theta))^* = R^* \exp(\xi^* \Theta^*)$. The modulus is conjugated, and both the root and the angle are conjugated. Since the norm form transforms as $N(\tilde{Q}^*) = N(\tilde{Q})^*$, we have $R^* = \sqrt{N(\tilde{Q})^*} = \sqrt{N(\tilde{Q}^*)}$, which is consistent.</p>
+<p><strong>Complex form.</strong> $(Q \exp(i \Psi))^* = Q^* \exp(-i \Psi^*)$. Since $i^* = -i$, the sign of the exponential is reversed, and both the modulus and the angle are conjugated.</p>
+<h3 id="hermitian-conjugation">Hermitian Conjugation</h3>
+<p><strong>Hamilton form.</strong> $(R \exp(\xi \Theta))^\dagger = (R^* \exp(\xi^* \Theta^*))$ with the additional quaternion conjugation, which reverses the sign of the angle:</p>
+<p>$$
+(R \exp(\xi \Theta))^\dagger = R^* \exp(-\xi^* \Theta^*).
+$$</p>
+<p><strong>Complex form.</strong> $(Q \exp(i \Psi))^\dagger = Q^\dagger \exp(i \Psi^*)$. The quaternion modulus is Hermitian-conjugated, and the angle is complex-conjugated.</p>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Conjugation</th>
+<th>Hamilton form</th>
+<th>Complex form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quaternion $\bar{\cdot}$</td>
+<td>$\xi \to -\xi$</td>
+<td>$Q \to \bar{Q}$</td>
+</tr>
+<tr>
+<td>Complex $^*$</td>
+<td>$R \to R^*$, $\xi \to \xi^*$, $\Theta \to \Theta^*$</td>
+<td>$Q \to Q^*$, $\Psi \to -\Psi^*$</td>
+</tr>
+<tr>
+<td>Hermitian $\dagger$</td>
+<td>$R \to R^*$, $\xi \to -\xi^*$, $\Theta \to \Theta^*$</td>
+<td>$Q \to Q^\dagger$, $\Psi \to \Psi^*$</td>
+</tr>
+</tbody>
+</table>
+<p>The two polar forms respond differently to the three conjugations, and the choice of polar form determines which conjugation is "natural" for the expression.</p>
+<h2 id="the-relation-to-the-algebraic-representations">The Relation to the Algebraic Representations</h2>
+<p>The polar representations are related to the algebraic representations as follows.</p>
+<p><strong>Relation to the matrix representation.</strong> The polar form of a biquaternion is the analogue of the polar decomposition of the corresponding $2 \times 2$ complex matrix. The Hamilton form corresponds to the <strong>polar decomposition</strong> $M = U P$ where $U$ is unitary and $P$ is positive semidefinite, but with the roles of the modulus and the phase interchanged. The complex form corresponds to the <strong>Jordan decomposition</strong> of the matrix into its complex scalar and quaternion parts.</p>
+<p><strong>Relation to the four-vector representation.</strong> The Hamilton polar form separates the four-vector into a "magnitude" $R$ and a "direction" $\xi$, in analogy with the polar form of a vector. The complex polar form separates the four-vector into its "real" and "imaginary" quaternion parts, and then polar-decomposes the imaginary part relative to the real part.</p>
+<p><strong>Relation to the Clifford algebra representation.</strong> The polar forms are not naturally expressed in the Clifford algebra representation, because the Clifford algebra is a real algebra and the polar forms use the complex scalar imaginary. However, the Clifford algebra does provide a natural setting for the roots of $-1$ and for the spinor structure that underlies the polar forms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde{Q}$</td>
+<td>Biquaternion</td>
+</tr>
+<tr>
+<td>$Q_0$</td>
+<td>Complex scalar part</td>
+</tr>
+<tr>
+<td>$\mathbf{Q}$</td>
+<td>Complex vector part</td>
+</tr>
+<tr>
+<td>$B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$</td>
+<td>Complex modulus of the vector part</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$R = \sqrt{N(\tilde{Q})}$</td>
+<td>Complex modulus (Hamilton)</td>
+</tr>
+<tr>
+<td>$\xi = \mathbf{Q}/B$</td>
+<td>Axis (root of $-1$, Hamilton)</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>Complex angle (Hamilton)</td>
+</tr>
+<tr>
+<td>$Q_r, Q_i$</td>
+<td>Real and imaginary quaternion parts</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>Quaternion modulus (complex form)</td>
+</tr>
+<tr>
+<td>$\Psi$</td>
+<td>Complex angle (complex form)</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary_1">Summary</h2>
+<p>The biquaternion algebra has <strong>two</strong> natural polar representations:</p>
+<ul>
+<li>The <strong>Hamilton polar form</strong> $\tilde{Q} = R \exp(\xi \Theta)$, where $R$ is a complex scalar modulus, $\xi$ is a non-central root of $-1$ parallel to the vector part, and $\Theta$ is a complex angle.</li>
+<li>The <strong>complex polar form</strong> $\tilde{Q} = Q \exp(i \Psi)$, where $Q$ is a real quaternion modulus, $i$ is the central root of $-1$, and $\Psi$ is a complex angle.</li>
+</ul>
+<p>The two forms are complementary. The Hamilton form generalizes the quaternion polar form and is natural when the biquaternion is close to a quaternion. The complex form generalizes the ordinary complex polar form and is natural when the biquaternion is close to a complex scalar.</p>
+<p>The existence of the two forms is a consequence of the existence of two classes of roots of $-1$ in the biquaternion algebra: the central root $i$, and the four-real-dimensional family of non-central roots $\xi = b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$. The classification of these roots is the subject of the article on biquaternion roots of minus one.</p>
+<p>The two forms behave differently under the four conjugations of the algebra, and this difference is the algebraic content of the distinction between them.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation of the quaternion polar form.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), Chapter 3, for the polar representations of biquaternions.</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the two polar forms in the applied context.</li>
+<li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the classification of the roots of $-1$ on which the two polar forms depend.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra perspective.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

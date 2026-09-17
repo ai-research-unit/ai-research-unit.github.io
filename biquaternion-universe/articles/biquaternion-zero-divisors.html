@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="biquaternion-zero-divisors">Biquaternion Zero Divisors</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the zero divisors of the biquaternion algebra $\mathbb{B}$. It follows the article on biquaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{B}$. The goal here is to characterize the zero divisors, to split them into two families, and to describe their structure.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its four fixed-point subspaces. The invertibility criterion is assumed from the article on biquaternion norm and invertibility. The classification of the roots of $-1$ is assumed from the article on biquaternion roots of minus one, and it is stated here in the form in which it is used.</p>
+<p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
+$$</p>
+<p>The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is denoted $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.</p>
+<h2 id="definition-and-criterion">Definition and Criterion</h2>
+<h3 id="definition">Definition</h3>
+<p>A biquaternion $\tilde{Q}$ is a <strong>zero divisor</strong> if it is <strong>nonzero</strong> and there exists a <strong>nonzero</strong> biquaternion $\tilde{R}$ such that</p>
+<p>$$
+\tilde{Q} \circ \tilde{R} = 0 \quad \text{or} \quad \tilde{R} \circ \tilde{Q} = 0.
+$$</p>
+<p>The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is <strong>not</strong> a zero divisor, even though $0 \circ \tilde{R} = 0$ for any $\tilde{R}$.</p>
+<h3 id="criterion">Criterion</h3>
+<p><strong>Theorem.</strong> A nonzero biquaternion $\tilde{Q}$ is a zero divisor if and only if its norm form vanishes:</p>
+<p>$$
+N(\tilde{Q}) = 0.
+$$</p>
+<p><strong>Proof.</strong> Suppose $\tilde{Q} \neq 0$ and $N(\tilde{Q}) = 0$. Then $\tilde{Q} \bar{\tilde{Q}} = 0$. Since $\tilde{Q} \neq 0$, we also have $\bar{\tilde{Q}} \neq 0$. So $\tilde{R} = \bar{\tilde{Q}}$ is a nonzero biquaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.</p>
+<p>Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $N(\tilde{Q}) = 0$. $\square$</p>
+<h3 id="the-three-way-classification">The Three-Way Classification</h3>
+<p>Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{B}$ are partitioned into three classes:</p>
+<table>
+<thead>
+<tr>
+<th>Condition on $N(\tilde{Q})$</th>
+<th>Condition on $\tilde{Q}$</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde{Q}) \neq 0$</td>
+<td>(automatically $\tilde{Q} \neq 0$)</td>
+<td>$\tilde{Q}$ is invertible</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = 0$</td>
+<td>$\tilde{Q} = 0$</td>
+<td>$\tilde{Q}$ is the zero element</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = 0$</td>
+<td>$\tilde{Q} \neq 0$</td>
+<td>$\tilde{Q}$ is a zero divisor</td>
+</tr>
+</tbody>
+</table>
+<p>The zero divisors are exactly the nonzero elements on which the norm form vanishes.</p>
+<h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
+<p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible. Equivalently, an algebra is a division algebra if and only if it contains no zero divisors.</p>
+<p>The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$.</p>
+<h2 id="the-two-families-of-zero-divisors">The Two Families of Zero Divisors</h2>
+<p>The zero divisors split into two families according to the value of the scalar part $Q_0$. The distinction is structural, and it is the organizing principle of the classification.</p>
+<h3 id="the-pure-case">The Pure Case</h3>
+<p>A biquaternion is <strong>pure</strong> if its scalar part vanishes:</p>
+<p>$$
+\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_1, Q_2, Q_3 \in \mathbb{C}.
+$$</p>
+<p>The pure case is studied in the section on pure zero divisors below.</p>
+<h3 id="the-non-pure-case">The Non-Pure Case</h3>
+<p>A biquaternion is <strong>non-pure</strong> if its scalar part is nonzero:</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_0 \in \mathbb{C}, \; Q_0 \neq 0.
+$$</p>
+<p>The non-pure case is studied in the section on non-pure zero divisors below.</p>
+<h3 id="why-the-scalar-part-is-the-right-invariant">Why the Scalar Part Is the Right Invariant</h3>
+<p>The scalar part is the right invariant because the scalar imaginary $i$ is central in $\mathbb{B}$. The quaternion decomposition</p>
+<p>$$
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}
+$$</p>
+<p>exhibits $\mathbb{B}$ as two copies of $\mathbb{H}$, and the scalar part $Q_0$ is the component in the first summand. In the pure case, the element lies entirely in $i \mathbb{H}_{\mathbb{B}}$, where the norm form is negative-definite on the vector part; in the non-pure case, the element has a component in $\mathbb{H}_{\mathbb{B}}$, where the norm form is positive-definite, and the two components can cancel. This is the algebraic content of the distinction.</p>
+<h2 id="pure-zero-divisors">Pure Zero Divisors</h2>
+<h3 id="the-square-of-a-pure-biquaternion">The Square of a Pure Biquaternion</h3>
+<p>Let $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ be a pure biquaternion. Using the product formula for two pure biquaternions,</p>
+<p>$$
+\tilde{P} \tilde{Q} = -\sum_{k=1}^{3} P_k Q_k + \sum_{j,k,l=1}^{3} \epsilon_{jkl} P_j Q_k e_l,
+$$</p>
+<p>and setting $\tilde{P} = \tilde{Q}$, we get</p>
+<p>$$
+\tilde{Q}^2 = -\sum_{k=1}^{3} Q_k^2 + \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j Q_k e_l.
+$$</p>
+<p>The vector part vanishes, because $\epsilon_{jkl}$ is antisymmetric in $j, k$ while $Q_j Q_k$ is symmetric. Therefore</p>
+<p>$$
+\tilde{Q}^2 = -(Q_1^2 + Q_2^2 + Q_3^2) e_0 = -N(\tilde{Q}) e_0.
+$$</p>
+<h3 id="the-criterion">The Criterion</h3>
+<p><strong>Theorem.</strong> The following three conditions on a pure biquaternion $\tilde{Q}$ are equivalent:</p>
+<ol>
+<li>$\tilde{Q}$ is a zero divisor.</li>
+<li>$N(\tilde{Q}) = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.</li>
+<li>$\tilde{Q}^2 = 0$.</li>
+</ol>
+<p><strong>Proof.</strong> The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -N(\tilde{Q}) e_0$ vanishes if and only if $N(\tilde{Q}) = 0$. $\square$</p>
+<p>A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a <strong>nilpotent</strong>, so in the pure case, the zero divisors are exactly the nilpotents.</p>
+<h3 id="properties">Properties</h3>
+<p>A pure zero divisor $\tilde{Q}$ has the following properties.</p>
+<ul>
+<li><strong>Self-annihilation.</strong> $\tilde{Q} \circ \tilde{Q} = 0$. The annihilator of $\tilde{Q}$ contains $\tilde{Q}$ itself, and therefore contains the whole complex line spanned by $\tilde{Q}$.</li>
+<li><strong>Non-invertibility.</strong> By the criterion for invertibility, $\tilde{Q}$ has no inverse.</li>
+<li><strong>Purity preserved.</strong> The scalar part of $\tilde{Q}$ is zero by hypothesis, and the square $\tilde{Q}^2 = 0$ also has zero scalar part. So the property of being pure is preserved under squaring.</li>
+</ul>
+<h2 id="non-pure-zero-divisors">Non-Pure Zero Divisors</h2>
+<h3 id="the-square-of-a-non-pure-biquaternion">The Square of a Non-Pure Biquaternion</h3>
+<p>Let $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Using the product formula,</p>
+<p>$$
+\tilde{Q}^2 = (Q_0^2 - (\mathbf{Q}, \mathbf{Q})) e_0 + 2 Q_0 \mathbf{Q},
+$$</p>
+<p>where $(\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2$.</p>
+<h3 id="the-relation-to-the-norm-form">The Relation to the Norm Form</h3>
+<p>The norm form of $\tilde{Q}$ is</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
+$$</p>
+<p>So the condition $N(\tilde{Q}) = 0$ is equivalent to</p>
+<p>$$
+(\mathbf{Q}, \mathbf{Q}) = -Q_0^2.
+$$</p>
+<p>Substituting this into the expression for $\tilde{Q}^2$:</p>
+<p>$$
+\tilde{Q}^2 = (Q_0^2 + Q_0^2) e_0 + 2 Q_0 \mathbf{Q} = 2 Q_0^2 e_0 + 2 Q_0 \mathbf{Q} = 2 Q_0 (Q_0 e_0 + \mathbf{Q}) = 2 Q_0 \tilde{Q}.
+$$</p>
+<p>So every non-pure zero divisor satisfies</p>
+<p>$$
+\tilde{Q}^2 = 2 Q_0 \tilde{Q}.
+$$</p>
+<p>This is the key structural property of non-pure zero divisors: their square is a complex multiple of themselves, with the multiplier equal to twice the scalar part.</p>
+<h3 id="the-associated-idempotent">The Associated Idempotent</h3>
+<p>From the relation $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$, we divide by $2 Q_0$ (which is nonzero, since $Q_0 \neq 0$) and obtain</p>
+<p>$$
+\frac{\tilde{Q}^2}{2 Q_0} = \tilde{Q}.
+$$</p>
+<p>Define</p>
+<p>$$
+\tilde{P} = \frac{\tilde{Q}}{2 Q_0}.
+$$</p>
+<p>Then</p>
+<p>$$
+\tilde{P}^2 = \frac{\tilde{Q}^2}{(2 Q_0)^2} = \frac{2 Q_0 \tilde{Q}}{4 Q_0^2} = \frac{\tilde{Q}}{2 Q_0} = \tilde{P}.
+$$</p>
+<p>So $\tilde{P}$ is an <strong>idempotent</strong>: an element satisfying $\tilde{P}^2 = \tilde{P}$. And $\tilde{Q}$ is recovered from $\tilde{P}$ by</p>
+<p>$$
+\tilde{Q} = 2 Q_0 \tilde{P}.
+$$</p>
+<p>So every non-pure zero divisor is a complex multiple of an idempotent.</p>
+<h3 id="the-idempotent-classification">The Idempotent Classification</h3>
+<p>The idempotents of $\mathbb{B}$ are classified as follows. The classification depends on the roots of $-1$ in $\mathbb{B}$, which are classified in the article on biquaternion roots of minus one.</p>
+<p><strong>Theorem.</strong> Every idempotent of $\mathbb{B}$ is of the form</p>
+<p>$$
+\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+$$</p>
+<p>where $\xi \in \mathbb{B}$ is a root of $-1$, i.e. $\xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.</p>
+<p><strong>Proof.</strong> Write the idempotent in the form $\tilde{P} = A e_0 + \xi B$ with $A, B \in \mathbb{C}$ and $\xi$ a root of $-1$. Squaring and equating to $\tilde{P}$ gives</p>
+<p>$$
+\tilde{P}^2 = (A^2 - B^2) e_0 + 2 A B \xi = A e_0 + B \xi = \tilde{P}.
+$$</p>
+<p>Equating the coefficients of $e_0$ and $\xi$:</p>
+<p>$$
+A = A^2 - B^2, \qquad B = 2 A B.
+$$</p>
+<p>The second equation requires $A = \tfrac{1}{2}$ (since $B \neq 0$ for a non-trivial idempotent, and the case $B = 0$ gives only the trivial idempotents $0$ and $e_0$). Substituting into the first:</p>
+<p>$$
+\tfrac{1}{2} = \tfrac{1}{4} - B^2,
+$$</p>
+<p>so $B^2 = -\tfrac{1}{4}$. Since $B$ is complex, the only solutions are $B = \pm i/2$. Thus</p>
+<p>$$
+\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i.
+$$</p>
+<p>$\square$</p>
+<p>The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, we get $\tilde{P} = \tfrac{1}{2} e_0 - \tfrac{1}{2} e_0 = 0$; with $\xi = -i$, we get $\tilde{P} = \tfrac{1}{2} e_0 + \tfrac{1}{2} e_0 = e_0$.</p>
+<h3 id="properties_1">Properties</h3>
+<p>A non-pure zero divisor $\tilde{Q}$ has the following properties.</p>
+<ul>
+<li><strong>Form.</strong> $\tilde{Q} = 2 Q_0 \tilde{P}$ with $\tilde{P}$ idempotent. So the zero divisor is a complex multiple of an idempotent.</li>
+<li><strong>Square.</strong> $\tilde{Q}^2 = 2 Q_0 \tilde{Q}$. This is a complex multiple of $\tilde{Q}$ itself, with the multiplier being twice the scalar part.</li>
+<li><strong>Non-invertibility.</strong> By the criterion for invertibility, $\tilde{Q}$ has no inverse.</li>
+<li><strong>Nontrivial annihilator.</strong> The element $\tilde{Q} - 2 Q_0 e_0 = 2 Q_0 (\tilde{P} - e_0)$ is annihilated by $\tilde{Q}$ on the right and on the left:</li>
+</ul>
+<p>$$
+\tilde{Q} \circ (\tilde{Q} - 2 Q_0 e_0) = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0,
+$$</p>
+<p>$$
+(\tilde{Q} - 2 Q_0 e_0) \circ \tilde{Q} = \tilde{Q}^2 - 2 Q_0 \tilde{Q} = 0.
+$$</p>
+<h2 id="the-roots-of-minus-one">The Roots of Minus One</h2>
+<p>The classification of the idempotents depends on the classification of the roots of $-1$ in $\mathbb{B}$. The roots are stated here; the proof is in the article on biquaternion roots of minus one.</p>
+<p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{B}$ are exactly:</p>
+<ol>
+<li><strong>Non-trivial roots:</strong> $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.</li>
+<li><strong>The trivial root:</strong> $\xi = \pm i$.</li>
+<li><strong>The real roots:</strong> $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.</li>
+</ol>
+<p>The three families are distinguished by the value of the real and imaginary parts of $\xi$. The non-trivial roots have both parts nonzero, the trivial root has vanishing real part and imaginary part equal to $\pm i$, and the real roots have vanishing imaginary part.</p>
+<h2 id="distribution-of-the-zero-divisors">Distribution of the Zero Divisors</h2>
+<p>We now examine how the zero divisors are distributed among the four fixed-point subspaces of $\mathbb{B}$ defined in the basic algebra article.</p>
+<h3 id="the-complex-subspace-math177">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<p>An element of $\mathbb{C}_{\mathbb{B}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{C}_{\mathbb{B}}$ contains no zero divisors. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$.</p>
+<h3 id="the-quaternion-subspace-math186">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>An element of $\mathbb{H}_{\mathbb{B}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$.</p>
+<h3 id="the-hermitian-subspace-math192">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<p>An element of $\mathbb{M}_+$ has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2.
+$$</p>
+<p>This vanishes for the nonzero elements satisfying</p>
+<p>$$
+q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
+$$</p>
+<p>This is the equation of a <strong>double cone</strong> in the four-dimensional real space $\mathbb{M}_+$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_+$ is therefore a three-dimensional submanifold of $\mathbb{M}_+$.</p>
+<p>The elements of $\mathbb{M}_+$ <strong>outside</strong> the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_+$ is the complement of the cone, which has two connected components.</p>
+<h3 id="the-anti-hermitian-subspace-math203">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<p>An element of $\mathbb{M}_-$ has the form</p>
+<p>$$
+\tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This vanishes for the nonzero elements satisfying</p>
+<p>$$
+(q'_0)^2 = q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This is again the equation of a <strong>double cone</strong> in the four-dimensional real space $\mathbb{M}_-$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_-$ is therefore a three-dimensional submanifold of $\mathbb{M}_-$.</p>
+<p>The elements of $\mathbb{M}_-$ <strong>outside</strong> the cone have $N(\tilde{Q}) \neq 0$ and are invertible.</p>
+<h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
+<p>Of the four fixed-point subspaces of $\mathbb{B}$:</p>
+<ul>
+<li>$\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors. They are the maximal subalgebras of $\mathbb{B}$ that are division algebras.</li>
+<li>$\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional cone of zero divisors. The nonzero elements outside the cone are invertible, and the zero divisors form the cone itself (minus the origin).</li>
+</ul>
+<p>The two cones have the same structure: in each case, the equation is that the square of one real coordinate equals the sum of the squares of the other three. In $\mathbb{M}_+$ the special coordinate is $q_0$ (the real scalar part); in $\mathbb{M}_-$ it is $q'_0$ (the imaginary scalar part).</p>
+<h2 id="structure-of-the-zero-divisors">Structure of the Zero Divisors</h2>
+<p>We now summarize the structure of the zero divisors of $\mathbb{B}$ in terms of the pure/non-pure distinction.</p>
+<h3 id="the-pure-case_1">The Pure Case</h3>
+<p>A pure biquaternion $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ is a zero divisor if and only if</p>
+<p>$$
+Q_1^2 + Q_2^2 + Q_3^2 = 0,
+$$</p>
+<p>and in that case $\tilde{Q}^2 = 0$. So the pure zero divisors are exactly the nilpotents. They form the zero divisors whose scalar part vanishes.</p>
+<h3 id="the-non-pure-case_1">The Non-Pure Case</h3>
+<p>A non-pure biquaternion $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_0 \neq 0$ is a zero divisor if and only if $N(\tilde{Q}) = 0$, and in that case</p>
+<p>$$
+\tilde{Q}^2 = 2 Q_0 \tilde{Q}.
+$$</p>
+<p>So the non-pure zero divisors are exactly the complex multiples of the idempotents of $\mathbb{B}$. They form the zero divisors whose scalar part is nonzero.</p>
+<h3 id="the-comparison-table">The Comparison Table</h3>
+<p>The two cases are distinct in their structure:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Pure case ($Q_0 = 0$)</th>
+<th>Non-pure case ($Q_0 \neq 0$)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Form</td>
+<td>$\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+<td>$\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$</td>
+</tr>
+<tr>
+<td>Criterion</td>
+<td>$Q_1^2 + Q_2^2 + Q_3^2 = 0$</td>
+<td>$Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$</td>
+</tr>
+<tr>
+<td>Square</td>
+<td>$\tilde{Q}^2 = 0$</td>
+<td>$\tilde{Q}^2 = 2 Q_0 \tilde{Q}$</td>
+</tr>
+<tr>
+<td>Structure</td>
+<td>Nilpotent</td>
+<td>Complex multiple of an idempotent</td>
+</tr>
+<tr>
+<td>Annihilator</td>
+<td>Contains $\tilde{Q}$ itself</td>
+<td>Contains $\tilde{Q} - 2 Q_0 e_0$</td>
+</tr>
+<tr>
+<td>Idempotent</td>
+<td>None</td>
+<td>$\tilde{P} = \tilde{Q}/(2 Q_0)$</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-union">The Union</h3>
+<p>The set of zero divisors of $\mathbb{B}$ is the union of the set of pure zero divisors (the nilpotents) and the set of non-pure zero divisors (the complex multiples of the idempotents). The two sets intersect at the origin only: the origin is not a zero divisor by definition, and the pure and non-pure cases are distinguished by whether the scalar part vanishes.</p>
+<p>So the zero divisors are the union of two families, each of which is a complex cone (a union of complex lines through the origin) in $\mathbb{B}$. The pure family is the nilpotent cone, and the non-pure family is the idempotent cone. Each has real dimension $7$ (as a subset of $\mathbb{B} \cong \mathbb{R}^8$), minus the origin.</p>
+<h2 id="the-structure-of-the-zero-divisor-set">The Structure of the Zero Divisor Set</h2>
+<p>The zero divisor set $\mathcal{Z} \subset \mathbb{B}$ is</p>
+<p>$$
+\mathcal{Z} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q} \neq 0, \; N(\tilde{Q}) = 0\}.
+$$</p>
+<p>It is the complement of the invertible elements in the complement of the zero element:</p>
+<p>$$
+\mathcal{Z} = \mathbb{B} \setminus (\{0\} \cup \mathbb{B}^\times).
+$$</p>
+<p><strong>Basic properties.</strong></p>
+<ul>
+<li>$\mathcal{Z}$ is a closed subset of $\mathbb{B}$, because it is the preimage of $\{0\}$ under the continuous map $N$ minus the origin.</li>
+<li>$\mathcal{Z}$ is a cone: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C}$, then $\alpha \tilde{Q} \in \mathcal{Z}$ whenever $\alpha \neq 0$, because $N(\alpha \tilde{Q}) = \alpha^2 N(\tilde{Q}) = 0$.</li>
+<li>$\mathcal{Z}$ has real dimension $7$: it is defined by the vanishing of a complex-valued function on the eight-dimensional real space $\mathbb{B}$, which gives two real equations, so the dimension is $8 - 2 = 6$ generically, but the two equations are not independent at the origin and the dimension of $\mathcal{Z}$ is actually $7$. The reason is that the norm form is a quadratic form, and the vanishing of a quadratic form in $n$ real variables defines a cone of dimension $n - 1$.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>General biquaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + i q'_\mu$</td>
+<td>Complex coefficient</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\mathcal{Z}$</td>
+<td>Zero divisor set</td>
+</tr>
+<tr>
+<td>$\tilde{P}^2 = \tilde{P}$</td>
+<td>Idempotent equation</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^2 = 0$</td>
+<td>Nilpotent equation</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}$</td>
+<td>Complex subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary">Summary</h2>
+<p>The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:</p>
+<ul>
+<li>The <strong>pure zero divisors</strong>, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nilpotents: their square is zero, and their annihilator contains themselves.</li>
+<li>The <strong>non-pure zero divisors</strong>, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the complex multiples of the idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$.</li>
+</ul>
+<p>The idempotents are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$, the trivial root $\pm i$, and the real roots $\pm \mu$.</p>
+<p>Of the four fixed-point subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors.</p>
+<p>The zero divisor set is a complex cone of real dimension $7$ in $\mathbb{B} \cong \mathbb{R}^8$. The classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the classification of the zero divisors.</li>
+<li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the classification of the roots of $-1$.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra perspective.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

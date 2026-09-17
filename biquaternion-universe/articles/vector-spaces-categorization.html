@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="vector-spaces-categorization"><strong>Vector Spaces categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gives a classification of vector spaces and their generalizations, organized by the <strong>field or ring of scalars</strong>. For each scalar structure, we state the classification of the simplest and most important modules, and we describe the position of the class in the hierarchy of module-theoretic structures.</p>
+<p>The general theory is in the preceding article, <em>Vector Spaces over a Commutative Ring: A General Introduction</em>. We assume familiarity with the definitions given there.</p>
+<p>We consider four scalar structures, in order of increasing complexity:</p>
+<ul>
+<li>The rational numbers $\mathbb{Q}$, a field.</li>
+<li>The real numbers $\mathbb{R}$, a field.</li>
+<li>The complex numbers $\mathbb{C}$, a field.</li>
+<li>The split complex numbers $\mathbb{D}$, a commutative ring with zero divisors.</li>
+</ul>
+<p>For each scalar structure, we state the dimension of the module, the classification of finitely generated modules, and the structure of the general linear group.</p>
+<p>Throughout this article, we use $R$ for a general commutative ring, $F$ for a field, and $M$ for an $R$-module.</p>
+<hr />
+<h1 id="part-i-vector-spaces-over-math8">Part I: Vector Spaces over $\mathbb{Q}$</h1>
+<h2 id="1-the-field-math9">1. The Field $\mathbb{Q}$</h2>
+<p>The rational numbers $\mathbb{Q}$ form a field. Every nonzero rational number has a multiplicative inverse, and there are no zero divisors.</p>
+<h2 id="2-vector-spaces-over-math11">2. Vector Spaces over $\mathbb{Q}$</h2>
+<p>A <strong>vector space over $\mathbb{Q}$</strong> is a $\mathbb{Q}$-module. Since $\mathbb{Q}$ is a field, every $\mathbb{Q}$-module is free, so every vector space over $\mathbb{Q}$ has a basis.</p>
+<p>The <strong>dimension</strong> of a $\mathbb{Q}$-vector space $V$ is the cardinality of any basis. It is well-defined: every basis has the same cardinality.</p>
+<h2 id="3-classification-of-finitely-generated-vector-spaces-over-math19">3. Classification of Finitely Generated Vector Spaces over $\mathbb{Q}$</h2>
+<p>Every finitely generated $\mathbb{Q}$-vector space is isomorphic to $\mathbb{Q}^n$ for some $n \geq 0$. The integer $n$ is the dimension, and it is a complete invariant: two finitely generated $\mathbb{Q}$-vector spaces are isomorphic if and only if they have the same dimension.</p>
+<h2 id="4-the-general-linear-group-over-math25">4. The General Linear Group over $\mathbb{Q}$</h2>
+<p>The <strong>general linear group</strong> $GL(n, \mathbb{Q})$ is the group of invertible $\mathbb{Q}$-linear maps $\mathbb{Q}^n \to \mathbb{Q}^n$. It is isomorphic to the group of invertible $n \times n$ matrices with entries in $\mathbb{Q}$.</p>
+<p>A matrix $A \in M_n(\mathbb{Q})$ is invertible if and only if its determinant is nonzero.</p>
+<h2 id="5-summary-over-math32">5. Summary over $\mathbb{Q}$</h2>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar structure</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>Vector spaces</td>
+</tr>
+<tr>
+<td>Free?</td>
+<td>Always</td>
+</tr>
+<tr>
+<td>Basis?</td>
+<td>Always exists</td>
+</tr>
+<tr>
+<td>Dimension</td>
+<td>Well-defined</td>
+</tr>
+<tr>
+<td>Finitely generated modules</td>
+<td>$\mathbb{Q}^n$</td>
+</tr>
+<tr>
+<td>General linear group</td>
+<td>$GL(n, \mathbb{Q})$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-ii-vector-spaces-over-math35">Part II: Vector Spaces over $\mathbb{R}$</h1>
+<h2 id="6-the-field-math36">6. The Field $\mathbb{R}$</h2>
+<p>The real numbers $\mathbb{R}$ form a field. Every nonzero real number has a multiplicative inverse, and there are no zero divisors. Unlike $\mathbb{Q}$, the field $\mathbb{R}$ is complete with respect to the usual order.</p>
+<h2 id="7-vector-spaces-over-math40">7. Vector Spaces over $\mathbb{R}$</h2>
+<p>A <strong>vector space over $\mathbb{R}$</strong> is an $\mathbb{R}$-module. Since $\mathbb{R}$ is a field, every $\mathbb{R}$-module is free, so every vector space over $\mathbb{R}$ has a basis.</p>
+<p>The <strong>dimension</strong> of an $\mathbb{R}$-vector space $V$ is the cardinality of any basis. It is well-defined.</p>
+<h2 id="8-classification-of-finitely-generated-vector-spaces-over-math48">8. Classification of Finitely Generated Vector Spaces over $\mathbb{R}$</h2>
+<p>Every finitely generated $\mathbb{R}$-vector space is isomorphic to $\mathbb{R}^n$ for some $n \geq 0$. The integer $n$ is the dimension, and it is a complete invariant: two finitely generated $\mathbb{R}$-vector spaces are isomorphic if and only if they have the same dimension.</p>
+<h2 id="9-the-general-linear-group-over-math54">9. The General Linear Group over $\mathbb{R}$</h2>
+<p>The <strong>general linear group</strong> $GL(n, \mathbb{R})$ is the group of invertible $\mathbb{R}$-linear maps $\mathbb{R}^n \to \mathbb{R}^n$. It is isomorphic to the group of invertible $n \times n$ matrices with entries in $\mathbb{R}$.</p>
+<p>A matrix $A \in M_n(\mathbb{R})$ is invertible if and only if its determinant is nonzero.</p>
+<h2 id="10-additional-structure-over-math61">10. Additional Structure over $\mathbb{R}$</h2>
+<p>Unlike $\mathbb{Q}$, the field $\mathbb{R}$ carries a natural topology and a notion of positivity. This allows the definition of:</p>
+<ul>
+<li><strong>Inner products.</strong> A positive definite symmetric bilinear form on a real vector space.</li>
+<li><strong>Normed spaces.</strong> A vector space equipped with a norm.</li>
+<li><strong>Hilbert spaces.</strong> A complete inner product space.</li>
+<li><strong>Orthogonal and unitary groups.</strong> The groups of isometries of a real vector space with an inner product.</li>
+</ul>
+<p>These notions do not carry over to $\mathbb{Q}$ or $\mathbb{C}$ in the same way.</p>
+<h2 id="11-summary-over-math66">11. Summary over $\mathbb{R}$</h2>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar structure</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>Vector spaces</td>
+</tr>
+<tr>
+<td>Free?</td>
+<td>Always</td>
+</tr>
+<tr>
+<td>Basis?</td>
+<td>Always exists</td>
+</tr>
+<tr>
+<td>Dimension</td>
+<td>Well-defined</td>
+</tr>
+<tr>
+<td>Finitely generated modules</td>
+<td>$\mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>General linear group</td>
+<td>$GL(n, \mathbb{R})$</td>
+</tr>
+<tr>
+<td>Additional structure</td>
+<td>Inner products, norms, topology</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-iii-vector-spaces-over-math69">Part III: Vector Spaces over $\mathbb{C}$</h1>
+<h2 id="12-the-field-math70">12. The Field $\mathbb{C}$</h2>
+<p>The complex numbers $\mathbb{C}$ form a field. Every nonzero complex number has a multiplicative inverse, and there are no zero divisors. Unlike $\mathbb{R}$, the field $\mathbb{C}$ is algebraically closed: every non-constant polynomial with complex coefficients has a root in $\mathbb{C}$.</p>
+<h2 id="13-vector-spaces-over-math75">13. Vector Spaces over $\mathbb{C}$</h2>
+<p>A <strong>vector space over $\mathbb{C}$</strong> is a $\mathbb{C}$-module. Since $\mathbb{C}$ is a field, every $\mathbb{C}$-module is free, so every vector space over $\mathbb{C}$ has a basis.</p>
+<p>The <strong>dimension</strong> of a $\mathbb{C}$-vector space $V$ is the cardinality of any basis. It is well-defined.</p>
+<h2 id="14-classification-of-finitely-generated-vector-spaces-over-math83">14. Classification of Finitely Generated Vector Spaces over $\mathbb{C}$</h2>
+<p>Every finitely generated $\mathbb{C}$-vector space is isomorphic to $\mathbb{C}^n$ for some $n \geq 0$. The integer $n$ is the dimension, and it is a complete invariant: two finitely generated $\mathbb{C}$-vector spaces are isomorphic if and only if they have the same dimension.</p>
+<h2 id="15-the-general-linear-group-over-math89">15. The General Linear Group over $\mathbb{C}$</h2>
+<p>The <strong>general linear group</strong> $GL(n, \mathbb{C})$ is the group of invertible $\mathbb{C}$-linear maps $\mathbb{C}^n \to \mathbb{C}^n$. It is isomorphic to the group of invertible $n \times n$ matrices with entries in $\mathbb{C}$.</p>
+<p>A matrix $A \in M_n(\mathbb{C})$ is invertible if and only if its determinant is nonzero.</p>
+<h2 id="16-additional-structure-over-math96">16. Additional Structure over $\mathbb{C}$</h2>
+<p>Unlike $\mathbb{R}$, the field $\mathbb{C}$ does not carry a natural total order. But it carries a natural conjugation and a notion of complex modulus. This allows the definition of:</p>
+<ul>
+<li><strong>Hermitian forms.</strong> A sesquilinear form that is conjugate-symmetric.</li>
+<li><strong>Inner products.</strong> A positive definite Hermitian form on a complex vector space.</li>
+<li><strong>Hilbert spaces.</strong> A complete inner product space.</li>
+<li><strong>Unitary groups.</strong> The groups of isometries of a complex vector space with an inner product.</li>
+</ul>
+<p>These notions do not carry over to $\mathbb{Q}$ or $\mathbb{R}$ in the same way.</p>
+<h2 id="17-summary-over-math101">17. Summary over $\mathbb{C}$</h2>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar structure</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>Vector spaces</td>
+</tr>
+<tr>
+<td>Free?</td>
+<td>Always</td>
+</tr>
+<tr>
+<td>Basis?</td>
+<td>Always exists</td>
+</tr>
+<tr>
+<td>Dimension</td>
+<td>Well-defined</td>
+</tr>
+<tr>
+<td>Finitely generated modules</td>
+<td>$\mathbb{C}^n$</td>
+</tr>
+<tr>
+<td>General linear group</td>
+<td>$GL(n, \mathbb{C})$</td>
+</tr>
+<tr>
+<td>Additional structure</td>
+<td>Hermitian forms, topology</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-iv-modules-over-math104">Part IV: Modules over $\mathbb{D}$</h1>
+<h2 id="18-the-ring-math105">18. The Ring $\mathbb{D}$</h2>
+<p>The split complex numbers $\mathbb{D}$ form a commutative ring with identity, but they are <strong>not a field</strong>. They have zero divisors: $(1 + e)(1 - e) = 0$. The element $1 + e$ has no inverse.</p>
+<p>The ring $\mathbb{D}$ is isomorphic, as an $\mathbb{R}$-algebra, to the product ring $\mathbb{R} \times \mathbb{R}$:</p>
+<p>$$
+\mathbb{D} \xrightarrow{\;\sim\;} \mathbb{R} \times \mathbb{R}, \qquad a + be \mapsto (a + b, \; a - b).
+$$</p>
+<p>This isomorphism is the key to understanding modules over $\mathbb{D}$.</p>
+<h2 id="19-modules-over-math114">19. Modules over $\mathbb{D}$</h2>
+<p>A <strong>$\mathbb{D}$-module</strong> is a module over the ring $\mathbb{D}$. Since $\mathbb{D}$ is not a field, not every $\mathbb{D}$-module is free, and torsion can occur.</p>
+<p>Under the isomorphism $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$, every $\mathbb{D}$-module $M$ decomposes as a pair of $\mathbb{R}$-vector spaces:</p>
+<p>$$
+M \cong M_1 \times M_2
+$$</p>
+<p>where $M_1$ and $M_2$ are real vector spaces. The scalar multiplication by $\mathbb{D}$ acts componentwise:</p>
+<p>$$
+(a + be) \cdot (m_1, m_2) = ((a + b)m_1, (a - b)m_2).
+$$</p>
+<p>This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.</p>
+<h2 id="20-classification-of-finitely-generated-modules-over-math129">20. Classification of Finitely Generated Modules over $\mathbb{D}$</h2>
+<p>Every finitely generated $\mathbb{D}$-module is isomorphic to a pair of finitely generated $\mathbb{R}$-vector spaces:</p>
+<p>$$
+M \cong \mathbb{R}^m \times \mathbb{R}^n
+$$</p>
+<p>for some $m, n \geq 0$. The pair $(m, n)$ is a complete invariant: two finitely generated $\mathbb{D}$-modules are isomorphic if and only if they have the same pair of dimensions.</p>
+<p>Equivalently, every finitely generated $\mathbb{D}$-module is isomorphic to $\mathbb{D}^k \oplus T$ where $T$ is a torsion module. But since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ is a product of two fields, every $\mathbb{D}$-module is a direct sum of a free part and a torsion part, and the torsion part is a direct sum of copies of $\mathbb{R}$ (viewed as a $\mathbb{D}$-module via one of the two projections).</p>
+<h2 id="21-the-general-linear-group-over-math143">21. The General Linear Group over $\mathbb{D}$</h2>
+<p>The <strong>general linear group</strong> $GL(n, \mathbb{D})$ is the group of invertible $\mathbb{D}$-linear maps $\mathbb{D}^n \to \mathbb{D}^n$. It is isomorphic to the group of invertible $n \times n$ matrices with entries in $\mathbb{D}$.</p>
+<p>A matrix $A \in M_n(\mathbb{D})$ is invertible if and only if its determinant is a <strong>unit</strong> of $\mathbb{D}$. The units of $\mathbb{D}$ are the elements $a + be$ with $a^2 - b^2 \neq 0$.</p>
+<p>Under the isomorphism $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$, the group $GL(n, \mathbb{D})$ decomposes as</p>
+<p>$$
+GL(n, \mathbb{D}) \cong GL(n, \mathbb{R}) \times GL(n, \mathbb{R}).
+$$</p>
+<p>This is a product of two copies of the real general linear group.</p>
+<h2 id="22-summary-over-math157">22. Summary over $\mathbb{D}$</h2>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar structure</td>
+<td>Commutative ring with zero divisors</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>$\mathbb{D}$-modules</td>
+</tr>
+<tr>
+<td>Free?</td>
+<td>Not always</td>
+</tr>
+<tr>
+<td>Basis?</td>
+<td>May not exist</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>Well-defined for free modules</td>
+</tr>
+<tr>
+<td>Finitely generated modules</td>
+<td>$\mathbb{R}^m \times \mathbb{R}^n$</td>
+</tr>
+<tr>
+<td>General linear group</td>
+<td>$GL(n, \mathbb{R}) \times GL(n, \mathbb{R})$</td>
+</tr>
+<tr>
+<td>Additional structure</td>
+<td>Decomposition $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<h2 id="23-the-hierarchy-of-scalar-structures">23. The Hierarchy of Scalar Structures</h2>
+<p>The four scalar structures form a hierarchy of increasing complexity:</p>
+<p>$$
+\mathbb{Q} \subset \mathbb{R} \subset \mathbb{C} \quad \text{(fields)},
+$$</p>
+<p>$$
+\mathbb{D} \quad \text{(commutative ring with zero divisors)}.
+$$</p>
+<p>The first three are fields, so the theory of modules over them is the classical theory of vector spaces. The fourth is a commutative ring with zero divisors, so the theory of modules over it is more subtle.</p>
+<h2 id="24-summary-table">24. Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th>Scalar structure</th>
+<th>Type</th>
+<th>Modules free?</th>
+<th>Dimension well-defined?</th>
+<th>Finitely generated modules</th>
+<th>General linear group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>Field</td>
+<td>Always</td>
+<td>Yes</td>
+<td>$\mathbb{Q}^n$</td>
+<td>$GL(n, \mathbb{Q})$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>Field</td>
+<td>Always</td>
+<td>Yes</td>
+<td>$\mathbb{R}^n$</td>
+<td>$GL(n, \mathbb{R})$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Field</td>
+<td>Always</td>
+<td>Yes</td>
+<td>$\mathbb{C}^n$</td>
+<td>$GL(n, \mathbb{C})$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Commutative ring</td>
+<td>Not always</td>
+<td>For free modules</td>
+<td>$\mathbb{R}^m \times \mathbb{R}^n$</td>
+<td>$GL(n, \mathbb{R}) \times GL(n, \mathbb{R})$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="25-the-pattern">25. The Pattern</h2>
+<p>The pattern is clear: the scalar structure determines the structure of the module theory.</p>
+<ul>
+<li>Over $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$, the theory is the classical theory of vector spaces. Every module is free, every basis has the same cardinality, and there is no torsion.</li>
+<li>Over $\mathbb{D}$, the theory is more subtle. Not every module is free, torsion can occur, and the theory decomposes into a pair of real vector spaces via the isomorphism $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$.</li>
+</ul>
+<p>The passage from fields to commutative rings with zero divisors introduces new phenomena: torsion, non-free modules, and a more complicated classification. But the theory over $\mathbb{D}$ is still tractable, because $\mathbb{D}$ decomposes as a product of two fields.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> and <em>II</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em> (Springer, 1975).</li>
+<li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1989).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

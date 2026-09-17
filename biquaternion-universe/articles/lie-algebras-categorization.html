@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="lie-algebras-categorization"><strong>Lie Algebras categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gives a classification of Lie algebras, organized by the <strong>commutative ring of scalars</strong>. For each commutative ring, we state the classification of the simplest and most important Lie algebras over that ring.</p>
+<p>The general theory of Lie algebras is in the preceding article, <em>Lie Algebras: A General Introduction</em>. We assume familiarity with the definitions given there.</p>
+<p>We consider four commutative rings, in order of increasing complexity:</p>
+<ul>
+<li>The rational numbers $\mathbb{Q}$, a field.</li>
+<li>The real numbers $\mathbb{R}$, a field.</li>
+<li>The complex numbers $\mathbb{C}$, a field.</li>
+<li>The split complex numbers $\mathbb{D}$, a commutative ring with zero divisors.</li>
+</ul>
+<p>For each commutative ring, we state the rank of the Lie algebra over that ring, and describe its structure.</p>
+<p>A note on terminology. The first three rings are fields, so the classical theory of Lie algebras over a field applies verbatim. The fourth ring $\mathbb{D}$ is not a field: it is a commutative ring with zero divisors. The theory of Lie algebras over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element is a unit, and that the classical structure theory (solvable, nilpotent, simple Lie algebras) is cleanest over fields of characteristic zero. We indicate where this difference matters.</p>
+<p>Throughout this article, we use <strong>rank</strong> rather than <strong>dimension</strong> when speaking of Lie algebras over a general commutative ring, reserving <strong>dimension</strong> for the field case. When the ring is a field, the two notions coincide.</p>
+<hr />
+<h1 id="part-i-lie-algebras-over-math6">Part I: Lie Algebras over $\mathbb{Q}$</h1>
+<h2 id="1-the-abelian-lie-algebra-over-math7">1. The Abelian Lie Algebra over $\mathbb{Q}$</h2>
+<p>Let $\mathfrak{g}$ be any $\mathbb{Q}$-module, and define</p>
+<p>$$
+[u, v] = 0
+$$</p>
+<p>for all $u, v \in \mathfrak{g}$. This is a Lie algebra over $\mathbb{Q}$, called the <strong>abelian Lie algebra</strong>. The Jacobi identity is trivially satisfied.</p>
+<p>For example, $\mathbb{Q}$ itself with the zero bracket is a one-dimensional abelian Lie algebra over $\mathbb{Q}$.</p>
+<h2 id="2-the-general-linear-lie-algebra-math15">2. The General Linear Lie Algebra $\mathfrak{gl}(n, \mathbb{Q})$</h2>
+<p>The set $M_n(\mathbb{Q})$ of $n \times n$ matrices with rational entries is an $n^2$-dimensional Lie algebra over $\mathbb{Q}$, with the commutator bracket</p>
+<p>$$
+[A, B] = AB - BA.
+$$</p>
+<p>It is called the <strong>general linear Lie algebra over $\mathbb{Q}$</strong> and is written $\mathfrak{gl}(n, \mathbb{Q})$.</p>
+<p>The center of $\mathfrak{gl}(n, \mathbb{Q})$ is the set of scalar matrices $\{\lambda I : \lambda \in \mathbb{Q}\}$.</p>
+<h2 id="3-the-special-linear-lie-algebra-math25">3. The Special Linear Lie Algebra $\mathfrak{sl}(n, \mathbb{Q})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{Q})$ consisting of matrices with trace zero is a Lie subalgebra over $\mathbb{Q}$, written $\mathfrak{sl}(n, \mathbb{Q})$. It is $(n^2 - 1)$-dimensional over $\mathbb{Q}$.</p>
+<h2 id="4-the-orthogonal-lie-algebra-math31">4. The Orthogonal Lie Algebra $\mathfrak{so}(n, \mathbb{Q})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{Q})$ consisting of antisymmetric matrices $A^T = -A$ is a Lie subalgebra over $\mathbb{Q}$, written $\mathfrak{so}(n, \mathbb{Q})$. It is $\binom{n}{2}$-dimensional over $\mathbb{Q}$.</p>
+<hr />
+<h1 id="part-ii-lie-algebras-over-math38">Part II: Lie Algebras over $\mathbb{R}$</h1>
+<h2 id="5-the-abelian-lie-algebra-over-math39">5. The Abelian Lie Algebra over $\mathbb{R}$</h2>
+<p>Any real vector space with the zero bracket is an abelian Lie algebra over $\mathbb{R}$. For example, $\mathbb{R}$ itself is a one-dimensional abelian Lie algebra, and $\mathbb{R}^n$ is an $n$-dimensional abelian Lie algebra.</p>
+<h2 id="6-the-general-linear-lie-algebra-math44">6. The General Linear Lie Algebra $\mathfrak{gl}(n, \mathbb{R})$</h2>
+<p>The set $M_n(\mathbb{R})$ of $n \times n$ real matrices is an $n^2$-dimensional Lie algebra over $\mathbb{R}$, with the commutator bracket</p>
+<p>$$
+[A, B] = AB - BA.
+$$</p>
+<p>It is called the <strong>general linear Lie algebra</strong> and is written $\mathfrak{gl}(n, \mathbb{R})$.</p>
+<h2 id="7-the-special-linear-lie-algebra-math51">7. The Special Linear Lie Algebra $\mathfrak{sl}(n, \mathbb{R})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{R})$ consisting of matrices with trace zero is a Lie subalgebra over $\mathbb{R}$, written $\mathfrak{sl}(n, \mathbb{R})$. It is $(n^2 - 1)$-dimensional.</p>
+<p>For $n = 2$, the Lie algebra $\mathfrak{sl}(2, \mathbb{R})$ is three-dimensional. It is the Lie algebra of the group $SL(2, \mathbb{R})$ of area-preserving linear transformations of the plane.</p>
+<h2 id="8-the-orthogonal-lie-algebra-math59">8. The Orthogonal Lie Algebra $\mathfrak{so}(n, \mathbb{R})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{R})$ consisting of antisymmetric matrices $A^T = -A$ is a Lie subalgebra over $\mathbb{R}$, written $\mathfrak{so}(n, \mathbb{R})$. It is $\binom{n}{2}$-dimensional.</p>
+<p>For $n = 3$, the Lie algebra $\mathfrak{so}(3, \mathbb{R})$ is three-dimensional. It is the Lie algebra of the rotation group $SO(3)$.</p>
+<h2 id="9-the-cross-product-on-math68">9. The Cross Product on $\mathbb{R}^3$</h2>
+<p>The cross product on $\mathbb{R}^3$ is a Lie bracket. It is bilinear over $\mathbb{R}$, antisymmetric, and satisfies the Jacobi identity. The resulting Lie algebra is isomorphic to $\mathfrak{so}(3, \mathbb{R})$.</p>
+<h2 id="10-the-heisenberg-lie-algebra-over-math72">10. The Heisenberg Lie Algebra over $\mathbb{R}$</h2>
+<p>The <strong>Heisenberg Lie algebra</strong> is the three-dimensional Lie algebra over $\mathbb{R}$ with basis $X, Y, Z$ and brackets</p>
+<p>$$
+[X, Y] = Z, \qquad [X, Z] = 0, \qquad [Y, Z] = 0.
+$$</p>
+<p>The Jacobi identity is satisfied because all nested brackets vanish. The center is spanned by $Z$. The Heisenberg Lie algebra does not arise from any associative algebra over $\mathbb{R}$.</p>
+<h2 id="11-the-clifford-algebra-as-a-lie-algebra-over-math78">11. The Clifford Algebra as a Lie Algebra over $\mathbb{R}$</h2>
+<p>Every Clifford algebra $Cl(V, Q)$ over $\mathbb{R}$ is an associative algebra, hence a Lie algebra with the commutator bracket. In particular, the subspace of bivectors is a Lie subalgebra isomorphic to $\mathfrak{so}(V, Q)$.</p>
+<h2 id="12-the-quaternions-as-a-lie-algebra-over-math82">12. The Quaternions as a Lie Algebra over $\mathbb{R}$</h2>
+<p>The quaternions $\mathbb{H}$, viewed as an algebra over $\mathbb{R}$, become a Lie algebra with the commutator bracket. The subspace of pure quaternions (those with zero scalar part) is a Lie subalgebra isomorphic to $\mathfrak{so}(3, \mathbb{R})$.</p>
+<h2 id="13-the-split-complex-numbers-as-a-lie-algebra-over-math86">13. The Split Complex Numbers as a Lie Algebra over $\mathbb{R}$</h2>
+<p>The split complex numbers $\mathbb{D}$, viewed as an algebra over $\mathbb{R}$, become a Lie algebra with the commutator bracket. But since $\mathbb{D}$ is commutative, the commutator bracket is identically zero. So $\mathbb{D}$ with the commutator bracket is the abelian Lie algebra over $\mathbb{R}$.</p>
+<hr />
+<h1 id="part-iii-lie-algebras-over-math92">Part III: Lie Algebras over $\mathbb{C}$</h1>
+<h2 id="14-the-abelian-lie-algebra-over-math93">14. The Abelian Lie Algebra over $\mathbb{C}$</h2>
+<p>Any complex vector space with the zero bracket is an abelian Lie algebra over $\mathbb{C}$. For example, $\mathbb{C}$ itself is a one-dimensional abelian Lie algebra over $\mathbb{C}$, and $\mathbb{C}^n$ is an $n$-dimensional abelian Lie algebra.</p>
+<h2 id="15-the-general-linear-lie-algebra-math99">15. The General Linear Lie Algebra $\mathfrak{gl}(n, \mathbb{C})$</h2>
+<p>The set $M_n(\mathbb{C})$ of $n \times n$ complex matrices is an $n^2$-dimensional Lie algebra over $\mathbb{C}$, with the commutator bracket. It is written $\mathfrak{gl}(n, \mathbb{C})$.</p>
+<h2 id="16-the-special-linear-lie-algebra-math105">16. The Special Linear Lie Algebra $\mathfrak{sl}(n, \mathbb{C})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{C})$ consisting of matrices with trace zero is a Lie subalgebra over $\mathbb{C}$, written $\mathfrak{sl}(n, \mathbb{C})$. It is $(n^2 - 1)$-dimensional.</p>
+<p>For $n = 2$, the Lie algebra $\mathfrak{sl}(2, \mathbb{C})$ is three-dimensional. It is the smallest simple Lie algebra over $\mathbb{C}$, and it is the model for the classification of simple Lie algebras.</p>
+<h2 id="17-the-orthogonal-lie-algebra-math113">17. The Orthogonal Lie Algebra $\mathfrak{so}(n, \mathbb{C})$</h2>
+<p>The subspace of $\mathfrak{gl}(n, \mathbb{C})$ consisting of antisymmetric matrices is a Lie subalgebra over $\mathbb{C}$, written $\mathfrak{so}(n, \mathbb{C})$. It is $\binom{n}{2}$-dimensional.</p>
+<h2 id="18-the-complex-cross-product-on-math118">18. The Complex Cross Product on $\mathbb{C}^3$</h2>
+<p>The complex cross product on $\mathbb{C}^3$ is a Lie bracket over $\mathbb{C}$. It is bilinear over $\mathbb{C}$, antisymmetric, and satisfies the Jacobi identity. The resulting Lie algebra is isomorphic to $\mathfrak{so}(3, \mathbb{C})$.</p>
+<h2 id="19-the-biquaternions-as-a-lie-algebra-over-math123">19. The Biquaternions as a Lie Algebra over $\mathbb{C}$</h2>
+<p>The biquaternions $\mathbb{H} \otimes \mathbb{C}$, viewed as an algebra over $\mathbb{C}$, become a Lie algebra with the commutator bracket. They are isomorphic to $M_2(\mathbb{C})$, so the resulting Lie algebra is $\mathfrak{gl}(2, \mathbb{C})$.</p>
+<hr />
+<h1 id="part-iv-lie-algebras-over-math128">Part IV: Lie Algebras over $\mathbb{D}$</h1>
+<p>The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. The theory of Lie algebras over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element has an inverse.</p>
+<h2 id="20-the-abelian-lie-algebra-over-math131">20. The Abelian Lie Algebra over $\mathbb{D}$</h2>
+<p>Any $\mathbb{D}$-module with the zero bracket is an abelian Lie algebra over $\mathbb{D}$. For example, $\mathbb{D}$ itself is a one-dimensional abelian Lie algebra over $\mathbb{D}$.</p>
+<h2 id="21-the-general-linear-lie-algebra-math136">21. The General Linear Lie Algebra $\mathfrak{gl}(n, \mathbb{D})$</h2>
+<p>The set $M_n(\mathbb{D})$ of $n \times n$ matrices with entries in $\mathbb{D}$ is an $n^2$-dimensional Lie algebra over $\mathbb{D}$, with the commutator bracket. It is written $\mathfrak{gl}(n, \mathbb{D})$.</p>
+<h2 id="22-the-split-quaternions-as-a-lie-algebra-over-math143">22. The Split Quaternions as a Lie Algebra over $\mathbb{D}$</h2>
+<p>The split quaternions $\mathbb{H} \otimes \mathbb{D}$, viewed as an algebra over $\mathbb{D}$, become a Lie algebra with the commutator bracket. The subspace of pure split quaternions is a Lie subalgebra, analogous to the pure quaternions over $\mathbb{R}$.</p>
+<hr />
+<h1 id="summary">Summary</h1>
+<p>Let me summarize the classification in a table.</p>
+<table>
+<thead>
+<tr>
+<th>Lie algebra</th>
+<th>Ring</th>
+<th>Rank</th>
+<th>Abelian</th>
+<th>Simple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$ with zero bracket</td>
+<td>$\mathbb{Q}$</td>
+<td>1</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n, \mathbb{Q})$</td>
+<td>$\mathbb{Q}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(n, \mathbb{Q})$</td>
+<td>$\mathbb{Q}$</td>
+<td>$n^2 - 1$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n, \mathbb{Q})$</td>
+<td>$\mathbb{Q}$</td>
+<td>$\binom{n}{2}$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$ with zero bracket</td>
+<td>$\mathbb{R}$</td>
+<td>1</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n, \mathbb{R})$</td>
+<td>$\mathbb{R}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(n, \mathbb{R})$</td>
+<td>$\mathbb{R}$</td>
+<td>$n^2 - 1$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n, \mathbb{R})$</td>
+<td>$\mathbb{R}$</td>
+<td>$\binom{n}{2}$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>cross product on $\mathbb{R}^3$</td>
+<td>$\mathbb{R}$</td>
+<td>3</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Heisenberg</td>
+<td>$\mathbb{R}$</td>
+<td>3</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>pure quaternions</td>
+<td>$\mathbb{R}$</td>
+<td>3</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ with zero bracket</td>
+<td>$\mathbb{C}$</td>
+<td>1</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n, \mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}(n, \mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$n^2 - 1$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(n, \mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$\binom{n}{2}$</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>complex cross product on $\mathbb{C}^3$</td>
+<td>$\mathbb{C}$</td>
+<td>3</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$ with zero bracket</td>
+<td>$\mathbb{D}$</td>
+<td>1</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}(n, \mathbb{D})$</td>
+<td>$\mathbb{D}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>pure split quaternions</td>
+<td>$\mathbb{D}$</td>
+<td>3</td>
+<td>no</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is clear: the ring of scalars determines the structure of the Lie algebra. Over $\mathbb{Q}$, the algebras are arithmetic versions of the classical algebras. Over $\mathbb{R}$, the algebras are the Lie algebras of the classical groups. Over $\mathbb{C}$, the algebras are the complexifications, and the classification of simple Lie algebras is cleanest. Over $\mathbb{D}$, the algebras are analogous to those over $\mathbb{R}$, but with the caveat that $\mathbb{D}$ has zero divisors.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Over a field, every Lie algebra is a vector space, so it has a well-defined dimension. Over a general commutative ring, a Lie algebra is a module, which need not be free. When the module is free, we speak of its <strong>rank</strong>.</li>
+<li>The classical structure theory (solvable, nilpotent, simple Lie algebras) is cleanest over fields of characteristic zero. Over a general commutative ring, the theory is more subtle.</li>
+<li>The classification of simple Lie algebras by Dynkin diagrams requires the base ring to be a field of characteristic zero. Over $\mathbb{D}$, which has characteristic zero but has zero divisors, the classification does not apply directly.</li>
+<li>The notion of a "division algebra" is not relevant for Lie algebras, because Lie algebras are never division algebras (they are non-associative and have zero divisors: $[u, u] = 0$ for all $u$).</li>
+</ul>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>James E. Humphreys, <em>Introduction to Lie Algebras and Representation Theory</em> (Springer, 1972).</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979).</li>
+<li>Karin Erdmann and Mark J. Wildon, <em>Introduction to Lie Algebras</em> (Springer, 2006).</li>
+<li>Brian Hall, <em>Lie Groups, Lie Algebras, and Representations</em> (Springer, 2nd ed. 2015).</li>
+<li>Jean-Pierre Serre, <em>Complex Semisimple Lie Algebras</em> (Springer, 1987).</li>
+<li>V. S. Varadarajan, <em>Lie Groups, Lie Algebras, and Their Representations</em> (Springer, 1984).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

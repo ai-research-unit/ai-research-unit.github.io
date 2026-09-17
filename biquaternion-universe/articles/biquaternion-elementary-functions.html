@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="biquaternion-elementary-functions">Biquaternion Elementary Functions</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the elementary functions of a biquaternion variable. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its four fixed-point subspaces. The goal is to define the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions, and to compute them in closed form.</p>
+<p>The treatment is purely mathematical. No physics is invoked. No examples are given. The biquaternion algebra $\mathbb{B}$ is assumed from the basic algebra article, together with its scalar-vector decomposition, its norm form, and its four conjugations.</p>
+<p>The key structural fact is that the elementary functions of a biquaternion are determined by the <strong>powers</strong> of the biquaternion, and the powers simplify dramatically in two cases: when the vector part has a nonzero <strong>complex norm</strong>, and when the vector part is <strong>nilpotent</strong>. These two cases cover all possibilities, and they lead to two regimes: the <strong>oscillatory regime</strong> and the <strong>nilpotent regime</strong>. The purpose of this article is to develop the elementary functions in both regimes.</p>
+<p>The higher special functions — Bessel, hypergeometric, gamma, zeta, and the functions arising from the analysis — are treated in the companion article on biquaternion higher special functions. The polar representations are treated in the article on biquaternion polar representations; this article uses only the Hamilton polar form, which is the one that makes the elementary functions transparent.</p>
+<p>Throughout, a biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3.
+$$</p>
+<p>The scalar part is $Q_0 \in \mathbb{C}$; the vector part is $\mathbf{Q}$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, and the norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. The scalar imaginary is $i$, which commutes with the quaternion units.</p>
+<h2 id="the-complex-norm-and-the-two-regimes">The Complex Norm and the Two Regimes</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>complex norm</strong> of the vector part $\mathbf{Q}$ is</p>
+<p>$$
+\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}.
+$$</p>
+<p>It is a complex number in general. It is the square root of the norm form of the pure biquaternion $\mathbf{Q}$, and it plays the role of the "magnitude" of $\mathbf{Q}$.</p>
+<h3 id="relation-to-the-norm-form">Relation to the Norm Form</h3>
+<p>The norm form of the full biquaternion is</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = Q_0^2 + \theta^2.
+$$</p>
+<p>So the norm form is the sum of the square of the scalar part and the square of the complex norm. This is the biquaternion analogue of the identity $|z|^2 = a^2 + b^2$ for a complex number $z = a + bi$, with $a$ replaced by $Q_0$ and $b$ replaced by $\theta$.</p>
+<h3 id="the-two-regimes">The Two Regimes</h3>
+<p>The vector part $\mathbf{Q}$ is a zero divisor if and only if $N(\mathbf{Q}) = 0$, i.e., if and only if $\theta = 0$. So there are two cases:</p>
+<ul>
+<li><strong>Oscillatory regime:</strong> $\theta \neq 0$. The vector part is not a zero divisor, and it can be normalized to a square root of $-1$. The powers of $\mathbf{Q}$ alternate, as in the quaternion case.</li>
+<li><strong>Nilpotent regime:</strong> $\theta = 0$. The vector part is nilpotent, and $\mathbf{Q}^2 = 0$. The powers of $\mathbf{Q}$ truncate after the first.</li>
+</ul>
+<p>These two cases cover all possibilities for the vector part. The elementary functions are computed separately in each case, and the formulas are different in the two regimes.</p>
+<h3 id="the-case-math29">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, the biquaternion is a complex scalar $\tilde{Q} = Q_0 e_0$, and the elementary functions reduce to the ordinary complex elementary functions. This is a degenerate subcase of both regimes, since $\theta = 0$ and $\mathbf{Q} = 0$. It is treated separately in each section.</p>
+<h2 id="the-hamilton-polar-form">The Hamilton Polar Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ be a biquaternion with $\theta \neq 0$. Define the <strong>axis</strong></p>
+<p>$$
+\hat{n} = \frac{\mathbf{Q}}{\theta}.
+$$</p>
+<p>Then $\hat{n}$ is a pure biquaternion satisfying $\hat{n}^2 = -e_0$, and</p>
+<p>$$
+\mathbf{Q} = \theta \hat{n}.
+$$</p>
+<p>So the biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + \theta \hat{n} = e^{Q_0} \exp(\theta \hat{n}),
+$$</p>
+<p>where the last equality is the <strong>Hamilton polar form</strong>, and the identification of $Q_0 e_0 + \theta \hat{n}$ with $e^{Q_0} \exp(\theta \hat{n})$ is justified by the formula for the exponential proved below.</p>
+<p>The scalar $Q_0$ is the <strong>complex scalar part</strong>, the complex number $\theta$ is the <strong>complex angle</strong>, and the unit pure biquaternion $\hat{n}$ is the <strong>axis</strong>.</p>
+<h3 id="the-case-math46">The Case $\theta = 0$</h3>
+<p>If $\theta = 0$ and $\mathbf{Q} \neq 0$, the vector part is nilpotent, and the axis is not defined (the normalization $\mathbf{Q}/\theta$ involves division by zero). In this case, the polar form is not available, and the biquaternion is written in the <strong>nilpotent form</strong></p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q}^2 = 0.
+$$</p>
+<h3 id="the-case-math51">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, the biquaternion is a complex scalar, and the polar form is</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 = e^{Q_0} e_0,
+$$</p>
+<p>which is the ordinary complex polar form of the scalar $e^{Q_0}$.</p>
+<h3 id="non-uniqueness-of-the-polar-form">Non-Uniqueness of the Polar Form</h3>
+<p>The Hamilton polar form is not unique. There are three sources of ambiguity:</p>
+<ol>
+<li><strong>The axis $\hat{n}$ is defined up to sign.</strong> The equation $\mathbf{Q} = \theta \hat{n}$ determines $\hat{n}$ only up to the sign of $\theta$, and $\theta$ itself is determined only up to sign (it is a square root).</li>
+<li><strong>The angle $\theta$ is defined up to sign, correlated with the sign of $\hat{n}$.</strong> If we replace $\hat{n}$ by $-\hat{n}$, we must replace $\theta$ by $-\theta$ to keep $\mathbf{Q}$ fixed.</li>
+<li><strong>The scalar part $Q_0$ is defined up to an integer multiple of $2\pi i$.</strong> The exponential $e^{Q_0}$ is invariant under $Q_0 \mapsto Q_0 + 2\pi i n$ for $n \in \mathbb{Z}$.</li>
+</ol>
+<p>The first two ambiguities are related: the pair $(\theta, \hat{n})$ is determined only up to the simultaneous sign change $(\theta, \hat{n}) \mapsto (-\theta, -\hat{n})$. The third is independent. So the polar form is determined up to the transformations</p>
+<p>$$
+(\theta, \hat{n}) \mapsto (-\theta, -\hat{n}), \qquad Q_0 \mapsto Q_0 + 2\pi i n, \quad n \in \mathbb{Z}.
+$$</p>
+<p>The non-uniqueness of the polar form is the source of the multivaluedness of the logarithm, and it should be kept in mind throughout.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>exponential</strong> of a biquaternion $\tilde{Q}$ is defined by the power series</p>
+<p>$$
+\exp(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^n}{n!}.
+$$</p>
+<p>The series converges for every $\tilde{Q} \in \mathbb{B}$, because $\mathbb{B}$ is finite-dimensional and the Euclidean norm grows at most exponentially with $n$. So the exponential is an entire function on $\mathbb{B}$.</p>
+<h3 id="reduction-to-the-vector-part">Reduction to the Vector Part</h3>
+<p>Write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$. The scalar part $Q_0 e_0$ commutes with everything, so</p>
+<p>$$
+\exp(\tilde{Q}) = \exp(Q_0 e_0) \exp(\mathbf{Q}) = e^{Q_0} \exp(\mathbf{Q}),
+$$</p>
+<p>where $e^{Q_0}$ is the ordinary complex exponential. So it suffices to compute the exponential of the vector part $\mathbf{Q}$.</p>
+<h3 id="the-case-math86">The Case $\theta \neq 0$</h3>
+<p>If $\theta \neq 0$, write $\mathbf{Q} = \theta \hat{n}$ with $\hat{n}^2 = -e_0$. The powers of $\mathbf{Q}$ satisfy</p>
+<p>$$
+\mathbf{Q}^{2m} = (-1)^m \theta^{2m} e_0, \qquad \mathbf{Q}^{2m+1} = (-1)^m \theta^{2m+1} \hat{n}.
+$$</p>
+<p>Separating even and odd powers in the exponential,</p>
+<p>$$
+\exp(\mathbf{Q}) = \left(\sum_{m=0}^{\infty} \frac{(-1)^m \theta^{2m}}{(2m)!}\right) e_0 + \left(\sum_{m=0}^{\infty} \frac{(-1)^m \theta^{2m+1}}{(2m+1)!}\right) \hat{n}.
+$$</p>
+<p>These are the Taylor series of the complex cosine and sine:</p>
+<p>$$
+\exp(\mathbf{Q}) = \cos\theta \, e_0 + \sin\theta \, \hat{n}.
+$$</p>
+<p>So</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \sin\theta \, \hat{n}\right), \qquad \theta \neq 0.
+$$</p>
+<h3 id="the-case-math95">The Case $\theta = 0$</h3>
+<p>If $\theta = 0$, then $\mathbf{Q}^2 = 0$, so</p>
+<p>$$
+\mathbf{Q}^n = 0 \quad \text{for all } n \geq 2.
+$$</p>
+<p>The power series of the exponential truncates to</p>
+<p>$$
+\exp(\mathbf{Q}) = e_0 + \mathbf{Q}.
+$$</p>
+<p>So</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0} (e_0 + \mathbf{Q}), \qquad \theta = 0.
+$$</p>
+<p>This is the analogue of the exponential of a nilpotent matrix: $\exp(N) = I + N$.</p>
+<h3 id="the-case-math102">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, the biquaternion is a complex scalar, and both formulas reduce to</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0} e_0,
+$$</p>
+<p>which is the ordinary complex exponential.</p>
+<h3 id="summary-of-the-exponential">Summary of the Exponential</h3>
+<p>$$
+\exp(\tilde{Q}) = \begin{cases} e^{Q_0} \left(\cos\theta \, e_0 + \sin\theta \, \hat{n}\right) & \text{if } \theta \neq 0, \\ e^{Q_0} (e_0 + \mathbf{Q}) & \text{if } \theta = 0, \end{cases}
+$$</p>
+<p>where $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ and $\hat{n} = \mathbf{Q}/\theta$.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Multiplicativity.</strong> The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the exponential is not multiplicative.</p>
+<p><strong>Non-vanishing.</strong> The exponential is never zero, because $e^{Q_0} \neq 0$ and the factor $\cos\theta \, e_0 + \sin\theta \, \hat{n}$ is invertible when $\theta \neq 0$, and $e_0 + \mathbf{Q}$ is invertible when $\theta = 0$ (its inverse is $e_0 - \mathbf{Q}$).</p>
+<p><strong>Derivative.</strong> The exponential is its own derivative in the sense of the directional derivative along the scalar direction: $\partial_0 \exp(\tilde{Q}) = \exp(\tilde{Q})$. This is the reason the exponential is the fundamental solution of the scalar differential operator $\partial_0$.</p>
+<h2 id="the-trigonometric-and-hyperbolic-functions">The Trigonometric and Hyperbolic Functions</h2>
+<h3 id="definitions">Definitions</h3>
+<p>The trigonometric and hyperbolic functions are defined by the same power series as in the complex case:</p>
+<p>$$
+\sin(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{(-1)^n \tilde{Q}^{2n+1}}{(2n+1)!}, \qquad \cos(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{(-1)^n \tilde{Q}^{2n}}{(2n)!},
+$$</p>
+<p>$$
+\sinh(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^{2n+1}}{(2n+1)!}, \qquad \cosh(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^{2n}}{(2n)!}.
+$$</p>
+<h3 id="computation-via-the-exponential">Computation via the Exponential</h3>
+<p>The trigonometric and hyperbolic functions can be expressed in terms of the exponential:</p>
+<p>$$
+\sin(\tilde{Q}) = \frac{\exp(i\tilde{Q}) - \exp(-i\tilde{Q})}{2i}, \qquad \cos(\tilde{Q}) = \frac{\exp(i\tilde{Q}) + \exp(-i\tilde{Q})}{2},
+$$</p>
+<p>$$
+\sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
+$$</p>
+<p>where $i$ is the scalar imaginary. This reduces the computation to the exponential formula.</p>
+<h3 id="the-case-math124">The Case $\theta \neq 0$</h3>
+<p>For $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $\theta \neq 0$ and $\hat{n} = \mathbf{Q}/\theta$, we have</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n}),
+$$</p>
+<p>$$
+\exp(-\tilde{Q}) = e^{-Q_0}(\cos\theta \, e_0 - \sin\theta \, \hat{n}).
+$$</p>
+<p>Substituting into the formulas for the trigonometric and hyperbolic functions, we obtain</p>
+<p>$$
+\sin(\tilde{Q}) = \sin(Q_0) \cosh\theta \, e_0 + \cos(Q_0) \sinh\theta \, \hat{n},
+$$</p>
+<p>$$
+\cos(\tilde{Q}) = \cos(Q_0) \cosh\theta \, e_0 - \sin(Q_0) \sinh\theta \, \hat{n},
+$$</p>
+<p>$$
+\sinh(\tilde{Q}) = \sinh(Q_0) \cos\theta \, e_0 + \cosh(Q_0) \sin\theta \, \hat{n},
+$$</p>
+<p>$$
+\cosh(\tilde{Q}) = \cosh(Q_0) \cos\theta \, e_0 + \sinh(Q_0) \sin\theta \, \hat{n}.
+$$</p>
+<h3 id="the-case-math134">The Case $\theta = 0$</h3>
+<p>If $\theta = 0$, then $\mathbf{Q}^2 = 0$, and the powers of $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ satisfy</p>
+<p>$$
+\tilde{Q}^n = Q_0^n e_0 + n Q_0^{n-1} \mathbf{Q},
+$$</p>
+<p>for $n \geq 1$. Substituting into the power series of the trigonometric and hyperbolic functions, and using the Taylor series of the complex sine and cosine, we obtain</p>
+<p>$$
+\sin(\tilde{Q}) = \sin(Q_0) e_0 + \cos(Q_0) \mathbf{Q},
+$$</p>
+<p>$$
+\cos(\tilde{Q}) = \cos(Q_0) e_0 - \sin(Q_0) \mathbf{Q},
+$$</p>
+<p>$$
+\sinh(\tilde{Q}) = \sinh(Q_0) e_0 + \cosh(Q_0) \mathbf{Q},
+$$</p>
+<p>$$
+\cosh(\tilde{Q}) = \cosh(Q_0) e_0 + \sinh(Q_0) \mathbf{Q}.
+$$</p>
+<h3 id="the-case-math144">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, both formulas reduce to the ordinary complex trigonometric and hyperbolic functions.</p>
+<h3 id="summary-of-trigonometric-and-hyperbolic-functions">Summary of Trigonometric and Hyperbolic Functions</h3>
+<p>$$
+\sin(\tilde{Q}) = \begin{cases} \sin(Q_0) \cosh\theta \, e_0 + \cos(Q_0) \sinh\theta \, \hat{n} & \text{if } \theta \neq 0, \\ \sin(Q_0) e_0 + \cos(Q_0) \mathbf{Q} & \text{if } \theta = 0, \end{cases}
+$$</p>
+<p>$$
+\cos(\tilde{Q}) = \begin{cases} \cos(Q_0) \cosh\theta \, e_0 - \sin(Q_0) \sinh\theta \, \hat{n} & \text{if } \theta \neq 0, \\ \cos(Q_0) e_0 - \sin(Q_0) \mathbf{Q} & \text{if } \theta = 0, \end{cases}
+$$</p>
+<p>$$
+\sinh(\tilde{Q}) = \begin{cases} \sinh(Q_0) \cos\theta \, e_0 + \cosh(Q_0) \sin\theta \, \hat{n} & \text{if } \theta \neq 0, \\ \sinh(Q_0) e_0 + \cosh(Q_0) \mathbf{Q} & \text{if } \theta = 0, \end{cases}
+$$</p>
+<p>$$
+\cosh(\tilde{Q}) = \begin{cases} \cosh(Q_0) \cos\theta \, e_0 + \sinh(Q_0) \sin\theta \, \hat{n} & \text{if } \theta \neq 0, \\ \cosh(Q_0) e_0 + \sinh(Q_0) \mathbf{Q} & \text{if } \theta = 0. \end{cases}
+$$</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Pythagorean identity.</strong> In the oscillatory regime, $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ does <strong>not</strong> hold in general, because the biquaternion algebra is non-commutative and the product $\sin(\tilde{Q}) \cos(\tilde{Q})$ does not commute with $\cos(\tilde{Q}) \sin(\tilde{Q})$. The identity holds only in special cases, such as when $\tilde{Q}$ is a complex scalar.</p>
+<p><strong>Hyperbolic identity.</strong> Similarly, $\cosh^2(\tilde{Q}) - \sinh^2(\tilde{Q}) = e_0$ does not hold in general.</p>
+<p><strong>Relation to the exponential.</strong> The relations $\sin(\tilde{Q}) = (\exp(i\tilde{Q}) - \exp(-i\tilde{Q}))/(2i)$ and so on hold in general, because the scalar imaginary $i$ commutes with everything.</p>
+<h2 id="the-logarithm">The Logarithm</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>logarithm</strong> of a biquaternion $\tilde{Q}$ is defined as the inverse of the exponential:</p>
+<p>$$
+\log(\tilde{Q}) = \tilde{L} \iff \exp(\tilde{L}) = \tilde{Q}.
+$$</p>
+<p>The logarithm is multivalued in general, as in the complex case. We compute the principal branch.</p>
+<h3 id="the-case-math159">The Case $\theta \neq 0$</h3>
+<p>Write $\tilde{Q} = e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$, where $Q_0 \in \mathbb{C}$, $\theta \in \mathbb{C}$, and $\hat{n}^2 = -e_0$. We want to find $\tilde{L} = L_0 e_0 + \mathbf{L}$ such that $\exp(\tilde{L}) = \tilde{Q}$.</p>
+<p>Suppose $\mathbf{L} = \phi \hat{m}$ with $\hat{m}^2 = -e_0$ and $\phi \in \mathbb{C}$. Then</p>
+<p>$$
+\exp(\tilde{L}) = e^{L_0}(\cos\phi \, e_0 + \sin\phi \, \hat{m}).
+$$</p>
+<p>Matching with $\tilde{Q}$:</p>
+<p>$$
+e^{L_0} = e^{Q_0} \implies L_0 = Q_0 + 2\pi i n, \quad n \in \mathbb{Z},
+$$</p>
+<p>$$
+\cos\phi = \cos\theta, \qquad \sin\phi \, \hat{m} = \sin\theta \, \hat{n}.
+$$</p>
+<p>The second pair of equations gives $\phi = \pm\theta + 2\pi m$ with $m \in \mathbb{Z}$, and $\hat{m} = \pm \hat{n}$ with the sign chosen consistently with the sign of $\phi$.</p>
+<p>The principal branch of the logarithm is therefore</p>
+<p>$$
+\log(\tilde{Q}) = Q_0 e_0 + \theta \hat{n}, \qquad \theta \neq 0,
+$$</p>
+<p>and the general branch is obtained by adding $2\pi i n \, e_0$ and choosing the sign of $\phi$.</p>
+<h3 id="the-case-math180">The Case $\theta = 0$</h3>
+<p>If $\theta = 0$ and $\mathbf{Q} \neq 0$, then $\tilde{Q} = e^{Q_0}(e_0 + \mathbf{Q})$ with $\mathbf{Q}^2 = 0$. We want $\tilde{L}$ with $\exp(\tilde{L}) = \tilde{Q}$. If $\mathbf{L}^2 \neq 0$, we are back in the $\theta \neq 0$ case, which gives $\sin\theta \hat{n} = \mathbf{Q}$, but $\mathbf{Q}$ is nilpotent, so this is impossible. So we must have $\mathbf{L}^2 = 0$, i.e., $\mathbf{L}$ nilpotent. Then</p>
+<p>$$
+\exp(\tilde{L}) = e^{L_0}(e_0 + \mathbf{L}),
+$$</p>
+<p>and matching with $\tilde{Q}$:</p>
+<p>$$
+e^{L_0} = e^{Q_0} \implies L_0 = Q_0 + 2\pi i n,
+$$</p>
+<p>$$
+\mathbf{L} = \mathbf{Q}.
+$$</p>
+<p>So</p>
+<p>$$
+\log(\tilde{Q}) = Q_0 e_0 + \mathbf{Q}, \qquad \theta = 0.
+$$</p>
+<h3 id="the-case-math198">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, the biquaternion is a complex scalar, and the logarithm reduces to the ordinary complex logarithm.</p>
+<h3 id="summary-of-the-logarithm">Summary of the Logarithm</h3>
+<p>$$
+\log(\tilde{Q}) = \begin{cases} Q_0 e_0 + \theta \hat{n} & \text{if } \theta \neq 0, \\ Q_0 e_0 + \mathbf{Q} & \text{if } \theta = 0, \end{cases}
+$$</p>
+<p>where $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ and $\hat{n} = \mathbf{Q}/\theta$.</p>
+<h3 id="properties_2">Properties</h3>
+<p><strong>Multiplicativity.</strong> The logarithm satisfies $\log(\tilde{P} \tilde{Q}) = \log(\tilde{P}) + \log(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the logarithm is not multiplicative.</p>
+<p><strong>Multivaluedness.</strong> The logarithm is multivalued. The branches are parameterized by $n \in \mathbb{Z}$ (from the scalar part) and by the sign of $\phi$ (from the angle).</p>
+<h2 id="the-power-functions">The Power Functions</h2>
+<h3 id="definition_4">Definition</h3>
+<p>For $\tilde{Q} \in \mathbb{B}$ and $\alpha \in \mathbb{C}$, the <strong>power function</strong> is defined by</p>
+<p>$$
+\tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
+$$</p>
+<p>The power function inherits the multivaluedness of the logarithm: for non-integer $\alpha$, it is multivalued, and the principal branch is obtained from the principal logarithm.</p>
+<h3 id="the-case-math212">The Case $\theta \neq 0$</h3>
+<p>Using the formula for the logarithm and the exponential, we obtain</p>
+<p>$$
+\tilde{Q}^\alpha = e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n}), \qquad \theta \neq 0.
+$$</p>
+<h3 id="the-case-math214">The Case $\theta = 0$</h3>
+<p>In the nilpotent regime,</p>
+<p>$$
+\tilde{Q}^\alpha = e^{\alpha Q_0}(e_0 + \alpha \mathbf{Q}), \qquad \theta = 0.
+$$</p>
+<p>This involves the linear term $\alpha \mathbf{Q}$, which is the analogue of the expansion $(1 + x)^\alpha \approx 1 + \alpha x$ for small $x$ with $x^2 = 0$.</p>
+<h3 id="the-case-math220">The Case $\mathbf{Q} = 0$</h3>
+<p>If $\mathbf{Q} = 0$, the power function reduces to the ordinary complex power.</p>
+<h3 id="summary-of-the-power-function">Summary of the Power Function</h3>
+<p>$$
+\tilde{Q}^\alpha = \begin{cases} e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n}) & \text{if } \theta \neq 0, \\ e^{\alpha Q_0}(e_0 + \alpha \mathbf{Q}) & \text{if } \theta = 0. \end{cases}
+$$</p>
+<h3 id="properties_3">Properties</h3>
+<p><strong>Integer powers.</strong> For integer $n$, the power function is single-valued and reduces to the ordinary power $\tilde{Q}^n$.</p>
+<p><strong>Non-multiplicativity.</strong> In general, $(\tilde{P} \tilde{Q})^\alpha \neq \tilde{P}^\alpha \tilde{Q}^\alpha$, because the logarithm is not multiplicative.</p>
+<p><strong>The square root.</strong> The square root $\tilde{Q}^{1/2}$ is multivalued, and the two branches correspond to the two signs of the angle.</p>
+<h2 id="relations-to-the-quaternion-and-complex-cases">Relations to the Quaternion and Complex Cases</h2>
+<h3 id="the-quaternion-case">The Quaternion Case</h3>
+<p>The biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{B}}$, which is the fixed-point set of complex conjugation. For a quaternion $q = q_0 + \mathbf{q}$ with real coefficients, the complex norm $\theta = |\mathbf{q}|$ is real and non-negative, and the elementary functions reduce to the ordinary quaternion elementary functions:</p>
+<p>$$
+\exp(q) = e^{q_0}(\cos|\mathbf{q}| + \sin|\mathbf{q}| \, \hat{n}),
+$$</p>
+<p>$$
+\log(q) = \log|q| + \arccos(q_0/|q|) \hat{n},
+$$</p>
+<p>and so on. These are the standard formulas of quaternion analysis.</p>
+<h3 id="the-complex-case">The Complex Case</h3>
+<p>The biquaternion algebra contains the complex numbers as the subspace $\mathbb{C}_{\mathbb{B}}$, which is the fixed-point set of quaternion conjugation (the scalar part). For a complex scalar $\tilde{Q} = Q_0 e_0$, the vector part vanishes, and the elementary functions reduce to the ordinary complex elementary functions:</p>
+<p>$$
+\exp(Q_0 e_0) = e^{Q_0} e_0, \qquad \log(Q_0 e_0) = \log(Q_0) e_0,
+$$</p>
+<p>and so on. These are the standard formulas of complex analysis.</p>
+<h3 id="the-relation-between-the-two">The Relation Between the Two</h3>
+<p>The quaternion case and the complex case are the two extremes of the biquaternion case: the quaternion case is the case where $\theta$ is real, and the complex case is the case where $\mathbf{Q} = 0$. The general biquaternion case interpolates between the two, with $\theta$ complex and $\mathbf{Q}$ nonzero.</p>
+<h2 id="non-commutativity-and-the-one-variable-case">Non-Commutativity and the One-Variable Case</h2>
+<p>The elementary functions of a biquaternion variable are as simple as they are because the <strong>vector part is a single element</strong>, and it commutes with itself. The powers of $\mathbf{Q}$ are determined by the single relation $\mathbf{Q}^2 = -\theta^2 e_0$ (in the oscillatory regime) or $\mathbf{Q}^2 = 0$ (in the nilpotent regime), and the whole power series can be summed in closed form.</p>
+<p>For functions of <strong>two or more biquaternion variables</strong>, the situation is different. The powers of a sum $\tilde{P} + \tilde{Q}$ involve the products $\tilde{P} \tilde{Q}$ and $\tilde{Q} \tilde{P}$, which are not equal in general. The binomial expansion does not hold, and the exponential of a sum is not the product of the exponentials unless the two biquaternions commute. So the elementary functions of several biquaternion variables are much more complicated than the elementary functions of one variable, and their theory is largely open.</p>
+<p>This is the fundamental reason the theory of the elementary functions of a biquaternion variable is tractable, while the theory of functions of several biquaternion variables is not.</p>
+<h2 id="summary-of-formulas">Summary of Formulas</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>$\theta \neq 0$</th>
+<th>$\theta = 0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp(\tilde{Q})$</td>
+<td>$e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$</td>
+<td>$e^{Q_0}(e_0 + \mathbf{Q})$</td>
+</tr>
+<tr>
+<td>$\sin(\tilde{Q})$</td>
+<td>$\sin(Q_0) \cosh\theta \, e_0 + \cos(Q_0) \sinh\theta \, \hat{n}$</td>
+<td>$\sin(Q_0) e_0 + \cos(Q_0) \mathbf{Q}$</td>
+</tr>
+<tr>
+<td>$\cos(\tilde{Q})$</td>
+<td>$\cos(Q_0) \cosh\theta \, e_0 - \sin(Q_0) \sinh\theta \, \hat{n}$</td>
+<td>$\cos(Q_0) e_0 - \sin(Q_0) \mathbf{Q}$</td>
+</tr>
+<tr>
+<td>$\sinh(\tilde{Q})$</td>
+<td>$\sinh(Q_0) \cos\theta \, e_0 + \cosh(Q_0) \sin\theta \, \hat{n}$</td>
+<td>$\sinh(Q_0) e_0 + \cosh(Q_0) \mathbf{Q}$</td>
+</tr>
+<tr>
+<td>$\cosh(\tilde{Q})$</td>
+<td>$\cosh(Q_0) \cos\theta \, e_0 + \sinh(Q_0) \sin\theta \, \hat{n}$</td>
+<td>$\cosh(Q_0) e_0 + \sinh(Q_0) \mathbf{Q}$</td>
+</tr>
+<tr>
+<td>$\log(\tilde{Q})$</td>
+<td>$Q_0 e_0 + \theta \hat{n}$</td>
+<td>$Q_0 e_0 + \mathbf{Q}$</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\alpha$</td>
+<td>$e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n})$</td>
+<td>$e^{\alpha Q_0}(e_0 + \alpha \mathbf{Q})$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Functions of several biquaternion variables.</strong> How do the elementary functions extend to functions of two or more biquaternion variables? The non-commutativity is a serious obstruction, and the theory is largely open.</p>
+</li>
+<li>
+<p><strong>The general regime.</strong> Are there biquaternions for which neither the oscillatory formula nor the nilpotent formula applies? The two regimes cover the cases $\theta \neq 0$ and $\theta = 0$, and these are exhaustive, but the transition between them (as $\theta \to 0$) is not studied.</p>
+</li>
+<li>
+<p><strong>The complex norm.</strong> What is the geometric or algebraic meaning of the complex norm $\theta$ when it is not real? The complex norm is the square root of the norm form, and it is complex for a general biquaternion, but its interpretation is not clear.</p>
+</li>
+<li>
+<p><strong>The polar form and the polar representations.</strong> How does the Hamilton polar form used in this article relate to the complex polar form discussed in the article on biquaternion polar representations?</p>
+</li>
+<li>
+<p><strong>The relation to the analysis.</strong> How do the elementary functions interact with the differential operators of the analysis article? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general biquaternion $\tilde{Q}$?</p>
+</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of the quaternion exponential and logarithm.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), Chapter 3, for the polar representations and elementary functions of biquaternions.</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the polar forms and the exponential.</li>
+<li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the roots of $-1$ on which the polar form depends.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the zero divisors and nilpotents.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

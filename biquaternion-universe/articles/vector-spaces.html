@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="vector-spaces-a-general-introduction"><strong>Vector Spaces : A General Introduction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the theory of vector spaces over a commutative ring. The classical theory of vector spaces assumes that the scalars form a field. But many of the constructions and theorems carry over to the more general setting where the scalars form a commutative ring. The resulting objects are called <strong>modules</strong>, and they are the natural generalization of vector spaces.</p>
+<p>The treatment is introductory and purely mathematical. We assume familiarity with rings, fields, and the basic theory of vector spaces over a field.</p>
+<p>We begin with the definition of a module over a commutative ring, then introduce the notions of submodules, homomorphisms, free modules, bases, and dimension. We compare the theory over a ring with the classical theory over a field, and we indicate where the two diverge.</p>
+<hr />
+<h1 id="part-i-modules-over-a-commutative-ring">Part I: Modules over a Commutative Ring</h1>
+<h2 id="1-definition-of-a-module">1. Definition of a Module</h2>
+<p>Let $R$ be a commutative ring with identity. An <strong>$R$-module</strong> is an abelian group $(M, +)$ equipped with a scalar multiplication</p>
+<p>$$
+R \times M \to M, \qquad (r, m) \mapsto r m,
+$$</p>
+<p>satisfying the following axioms for all $r, s \in R$ and $m, n \in M$:</p>
+<p><strong>(M1)</strong> $r(m + n) = r m + r n$.</p>
+<p><strong>(M2)</strong> $(r + s)m = r m + s m$.</p>
+<p><strong>(M3)</strong> $(r s)m = r(s m)$.</p>
+<p><strong>(M4)</strong> $1 m = m$.</p>
+<p>If $R$ is a field, an $R$-module is exactly a <strong>vector space</strong> over $R$. So modules generalize vector spaces to arbitrary commutative rings.</p>
+<h2 id="2-elementary-properties">2. Elementary Properties</h2>
+<p>Let $M$ be an $R$-module. The following properties follow from the axioms.</p>
+<p><strong>(a) Multiplication by zero.</strong> For all $m \in M$,</p>
+<p>$$
+0 m = 0.
+$$</p>
+<p><strong>(b) Multiplication by zero scalar.</strong> For all $r \in R$,</p>
+<p>$$
+r 0 = 0.
+$$</p>
+<p><strong>(c) Sign rules.</strong> For all $r \in R$ and $m \in M$,</p>
+<p>$$
+(-r) m = r(-m) = -(r m), \qquad (-r)(-m) = r m.
+$$</p>
+<p><strong>(d) Distributivity over subtraction.</strong> For all $r, s \in R$ and $m, n \in M$,</p>
+<p>$$
+r(m - n) = r m - r n, \qquad (r - s)m = r m - s m.
+$$</p>
+<h2 id="3-examples-of-modules">3. Examples of Modules</h2>
+<p><strong>(a) The ring itself.</strong> Every commutative ring $R$ is an $R$-module, with scalar multiplication given by the ring multiplication.</p>
+<p><strong>(b) The free module $R^n$.</strong> The set of $n$-tuples of elements of $R$,</p>
+<p>$$
+R^n = \{(r_1, \ldots, r_n) : r_i \in R\},
+$$</p>
+<p>is an $R$-module with componentwise addition and scalar multiplication.</p>
+<p><strong>(c) Ideals.</strong> Every ideal $I \subseteq R$ is an $R$-module.</p>
+<p><strong>(d) Quotient rings.</strong> If $I \subseteq R$ is an ideal, then $R/I$ is an $R$-module.</p>
+<p><strong>(e) The polynomial ring.</strong> The polynomial ring $R[x]$ is an $R$-module.</p>
+<p><strong>(f) The matrix ring.</strong> The set $M_n(R)$ of $n \times n$ matrices over $R$ is an $R$-module.</p>
+<p><strong>(g) Abelian groups as $\mathbb{Z}$-modules.</strong> Every abelian group is a $\mathbb{Z}$-module, with scalar multiplication given by repeated addition.</p>
+<hr />
+<h1 id="part-ii-submodules-and-homomorphisms">Part II: Submodules and Homomorphisms</h1>
+<h2 id="4-submodules">4. Submodules</h2>
+<p>A subset $N \subseteq M$ of an $R$-module $M$ is a <strong>submodule</strong> if:</p>
+<p><strong>(S1)</strong> $N$ is a subgroup of $(M, +)$: for all $m, n \in N$, $m - n \in N$.</p>
+<p><strong>(S2)</strong> $N$ is closed under scalar multiplication: for all $r \in R$ and $m \in N$, $r m \in N$.</p>
+<p>A submodule of a module over a field is exactly a vector subspace.</p>
+<h2 id="5-module-homomorphisms">5. Module Homomorphisms</h2>
+<p>Let $M$ and $N$ be $R$-modules. An <strong>$R$-module homomorphism</strong> is a function</p>
+<p>$$
+\varphi : M \to N
+$$</p>
+<p>such that for all $r \in R$ and $m, n \in M$:</p>
+<p><strong>(H1)</strong> $\varphi(m + n) = \varphi(m) + \varphi(n)$.</p>
+<p><strong>(H2)</strong> $\varphi(r m) = r \varphi(m)$.</p>
+<p>An $R$-module homomorphism that is bijective is an <strong>$R$-module isomorphism</strong>. If there is an $R$-module isomorphism $M \to N$, we write $M \cong N$ and say that $M$ and $N$ are <strong>isomorphic</strong>.</p>
+<p>The <strong>kernel</strong> of an $R$-module homomorphism $\varphi : M \to N$ is</p>
+<p>$$
+\ker \varphi = \{m \in M : \varphi(m) = 0\}.
+$$</p>
+<p>The <strong>image</strong> of $\varphi$ is</p>
+<p>$$
+\operatorname{im} \varphi = \{\varphi(m) : m \in M\}.
+$$</p>
+<p>The kernel is a submodule of $M$, and the image is a submodule of $N$.</p>
+<h2 id="6-quotient-modules">6. Quotient Modules</h2>
+<p>Let $M$ be an $R$-module and $N \subseteq M$ a submodule. The <strong>quotient module</strong> $M/N$ is the set of cosets</p>
+<p>$$
+M/N = \{m + N : m \in M\}
+$$</p>
+<p>with addition and scalar multiplication defined by</p>
+<p>$$
+(m + N) + (n + N) = (m + n) + N, \qquad r(m + N) = r m + N.
+$$</p>
+<p>These operations are well-defined, and $M/N$ is an $R$-module.</p>
+<p>The <strong>first isomorphism theorem</strong> states that if $\varphi : M \to N$ is an $R$-module homomorphism, then</p>
+<p>$$
+M / \ker \varphi \cong \operatorname{im} \varphi.
+$$</p>
+<hr />
+<h1 id="part-iii-free-modules-and-bases">Part III: Free Modules and Bases</h1>
+<h2 id="7-linear-independence">7. Linear Independence</h2>
+<p>Let $M$ be an $R$-module. A subset $S \subseteq M$ is <strong>linearly independent</strong> if for every finite subset $\{m_1, \ldots, m_k\} \subseteq S$, the equation</p>
+<p>$$
+r_1 m_1 + \cdots + r_k m_k = 0
+$$</p>
+<p>with $r_i \in R$ implies $r_1 = \cdots = r_k = 0$.</p>
+<p>A subset $S \subseteq M$ <strong>spans</strong> $M$ if every element of $M$ can be written as a finite linear combination of elements of $S$.</p>
+<p>A <strong>basis</strong> of $M$ is a linearly independent spanning set.</p>
+<h2 id="8-free-modules">8. Free Modules</h2>
+<p>An $R$-module $M$ is <strong>free</strong> if it has a basis. If $M$ has a basis of cardinality $n$, then $M \cong R^n$.</p>
+<p><strong>Examples.</strong></p>
+<ul>
+<li>$R^n$ is a free $R$-module of rank $n$.</li>
+<li>Every vector space over a field is free.</li>
+<li>Over $\mathbb{Z}$, the free modules are the groups $\mathbb{Z}^n$.</li>
+<li>Over $\mathbb{D}$, the free modules are the modules $\mathbb{D}^n$.</li>
+</ul>
+<p><strong>Non-examples.</strong></p>
+<ul>
+<li>$\mathbb{Z}/n\mathbb{Z}$ is a $\mathbb{Z}$-module that is not free for $n \geq 2$.</li>
+<li>Any ideal $I \subseteq R$ that is not principal is not free as an $R$-module in general.</li>
+</ul>
+<h2 id="9-rank">9. Rank</h2>
+<p>If $M$ is a free $R$-module with a basis of cardinality $n$, we say that $M$ has <strong>rank</strong> $n$. Over a field, the rank is the dimension, and it is well-defined: every basis has the same cardinality.</p>
+<p>Over a general commutative ring, the rank of a free module is well-defined if $R$ has the <strong>invariant basis number</strong> property. Many rings of interest (including fields, $\mathbb{Z}$, and $\mathbb{D}$) have this property. But not every ring does: there are rings over which $R^m \cong R^n$ for $m \neq n$.</p>
+<h2 id="10-torsion">10. Torsion</h2>
+<p>An element $m \in M$ is a <strong>torsion element</strong> if there exists a nonzero $r \in R$ such that</p>
+<p>$$
+r m = 0.
+$$</p>
+<p>The set of torsion elements of $M$ is a submodule, called the <strong>torsion submodule</strong> of $M$. A module is <strong>torsion-free</strong> if its torsion submodule is zero.</p>
+<p>Over a field, every module is torsion-free. Over a general commutative ring, torsion is a new phenomenon.</p>
+<p><strong>Example.</strong> In $\mathbb{Z}/n\mathbb{Z}$ as a $\mathbb{Z}$-module, every element is torsion.</p>
+<hr />
+<h1 id="part-iv-comparison-with-vector-spaces">Part IV: Comparison with Vector Spaces</h1>
+<h2 id="11-what-carries-over">11. What Carries Over</h2>
+<p>Many of the basic notions of linear algebra carry over to modules over a commutative ring without change:</p>
+<ul>
+<li>Submodules, quotient modules, and homomorphisms.</li>
+<li>The first isomorphism theorem.</li>
+<li>Direct sums and direct products.</li>
+<li>Free modules and bases.</li>
+<li>Linear independence and spanning sets.</li>
+</ul>
+<h2 id="12-what-does-not-carry-over">12. What Does Not Carry Over</h2>
+<p>Several key properties of vector spaces fail for modules over a general commutative ring:</p>
+<p><strong>(a) Not every module is free.</strong> Over a field, every module is free. Over a general ring, this is false. For example, $\mathbb{Z}/n\mathbb{Z}$ is not a free $\mathbb{Z}$-module.</p>
+<p><strong>(b) Not every submodule is a direct summand.</strong> Over a field, every subspace of a vector space has a complement. Over a general ring, this is false.</p>
+<p><strong>(c) Rank may not be well-defined.</strong> Over a field, every basis has the same cardinality. Over a general ring, this may fail if the ring does not have the invariant basis number property.</p>
+<p><strong>(d) Torsion may exist.</strong> Over a field, every module is torsion-free. Over a general ring, torsion is a new phenomenon.</p>
+<p><strong>(e) Linear maps may not have a determinant.</strong> Over a field, every linear map has a determinant, and invertibility is equivalent to nonzero determinant. Over a general ring, the determinant is still defined, but invertibility is equivalent to the determinant being a <strong>unit</strong> of the ring.</p>
+<h2 id="13-the-case-of-a-field">13. The Case of a Field</h2>
+<p>When $R = F$ is a field, the theory of $F$-modules is exactly the theory of vector spaces over $F$. Every module is free, every submodule is a direct summand, every basis has the same cardinality, and there is no torsion. The classification of finitely generated $F$-modules is trivial: every finitely generated $F$-module is isomorphic to $F^n$ for some $n$.</p>
+<h2 id="14-the-case-of-math145">14. The Case of $\mathbb{Z}$</h2>
+<p>When $R = \mathbb{Z}$, the theory of $\mathbb{Z}$-modules is exactly the theory of abelian groups. Not every abelian group is free: for example, $\mathbb{Z}/n\mathbb{Z}$ is not free. The classification of finitely generated $\mathbb{Z}$-modules is the <strong>structure theorem for finitely generated abelian groups</strong>: every finitely generated abelian group is isomorphic to</p>
+<p>$$
+\mathbb{Z}^r \oplus \mathbb{Z}/n_1\mathbb{Z} \oplus \cdots \oplus \mathbb{Z}/n_k\mathbb{Z}
+$$</p>
+<p>for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.</p>
+<h2 id="15-the-case-of-math153">15. The Case of $\mathbb{D}$</h2>
+<p>When $R = \mathbb{D}$, the split complex numbers, the theory of $\mathbb{D}$-modules is more subtle because $\mathbb{D}$ has zero divisors. A $\mathbb{D}$-module need not be free, and torsion can occur. But since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{D}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:</p>
+<p>$$
+M \cong M_1 \times M_2
+$$</p>
+<p>where $M_1$ and $M_2$ are real vector spaces. This reduces the theory of $\mathbb{D}$-modules to the theory of real vector spaces.</p>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<h2 id="16-summary-of-the-theory">16. Summary of the Theory</h2>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Over a field $F$</th>
+<th>Over a commutative ring $R$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Module</td>
+<td>Vector space</td>
+<td>Module</td>
+</tr>
+<tr>
+<td>Submodule</td>
+<td>Subspace</td>
+<td>Submodule</td>
+</tr>
+<tr>
+<td>Homomorphism</td>
+<td>Linear map</td>
+<td>$R$-linear map</td>
+</tr>
+<tr>
+<td>Free module</td>
+<td>Always free</td>
+<td>Not always free</td>
+</tr>
+<tr>
+<td>Basis</td>
+<td>Always exists</td>
+<td>May not exist</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>Well-defined</td>
+<td>Well-defined if IBN holds</td>
+</tr>
+<tr>
+<td>Torsion</td>
+<td>None</td>
+<td>Possible</td>
+</tr>
+<tr>
+<td>Determinant</td>
+<td>Defined</td>
+<td>Defined, invertibility iff unit</td>
+</tr>
+<tr>
+<td>Classification</td>
+<td>Trivial for f.g. modules</td>
+<td>Structure theorem for PIDs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="17-the-role-of-commutative-rings">17. The Role of Commutative Rings</h2>
+<p>Commutative rings are the natural setting for:</p>
+<ol>
+<li><strong>Algebraic geometry.</strong> The ring of functions on an algebraic variety is a commutative ring, and the modules over it are the sheaves on the variety.</li>
+<li><strong>Number theory.</strong> The ring of integers of a number field is a commutative ring, and the modules over it are the ideals and fractional ideals of the field.</li>
+<li><strong>The theory of quadratic forms over rings.</strong> Clifford algebras can be defined over any commutative ring, and their representation theory is the theory of modules over the Clifford algebra.</li>
+<li><strong>The theory of modules.</strong> Modules over commutative rings generalize vector spaces, and their classification is a central problem in commutative algebra.</li>
+</ol>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> and <em>II</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+<li>Oscar Zariski and Pierre Samuel, <em>Commutative Algebra</em> (Springer, 1975).</li>
+<li>Hideyuki Matsumura, <em>Commutative Ring Theory</em> (Cambridge University Press, 1989).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

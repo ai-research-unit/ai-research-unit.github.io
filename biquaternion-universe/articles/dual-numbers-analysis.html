@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="dual-numbers-analysis">Dual Numbers Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces dual numbers analysis as the study of differentiable functions of a dual variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<h2 id="the-dual-number-plane">The Dual Number Plane</h2>
+<h3 id="points-and-distance">Points and Distance</h3>
+<p>A dual number is written</p>
+<p>$$
+z = x + y \varepsilon, \qquad x, y \in R,
+$$</p>
+<p>where $\varepsilon^2 = 0$. The element $x$ is the <strong>real part</strong>, and $y$ is the <strong>infinitesimal part</strong>. We write $x = \operatorname{Re} z$ and $y = \operatorname{Inf} z$.</p>
+<p>There is no Euclidean modulus intrinsic to the algebra, because the norm form $N(z) = x^2$ is degenerate and vanishes on the maximal ideal. The closest analogue is the <strong>Euclidean modulus</strong></p>
+<p>$$
+\|z\|_E = \sqrt{x^2 + y^2},
+$$</p>
+<p>which is the ordinary Euclidean norm on the underlying module $\mathbb{D}' \cong R^2$, defined when $R$ is an ordered ring. It is not multiplicative with respect to the dual product.</p>
+<p>The <strong>dual distance</strong> between two dual numbers $z$ and $w$ is</p>
+<p>$$
+d(z, w) = \|z - w\|_E.
+$$</p>
+<p>This makes $\mathbb{D}'$ a metric space when $R = \mathbb{R}$, isometric to $\mathbb{R}^2$. The topology of $\mathbb{D}'$ is the ordinary Euclidean topology of the plane.</p>
+<h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
+<p>The <strong>open ball</strong> of radius $r > 0$ centered at $z_0$ is</p>
+<p>$$
+B(z_0, r) = \{z \in \mathbb{D}' : \|z - z_0\|_E < r\}.
+$$</p>
+<p>It is an open disk in the dual plane, exactly as in the complex plane. The topology of $\mathbb{D}'$ is the ordinary Euclidean topology, because the algebra is two-dimensional over $\mathbb{R}$ and the Euclidean norm is a genuine norm on the underlying real vector space.</p>
+<h3 id="open-and-closed-sets">Open and Closed Sets</h3>
+<p>A set $U \subseteq \mathbb{D}'$ is <strong>open</strong> if for every $z_0 \in U$ there exists $r > 0$ with $B(z_0, r) \subseteq U$.</p>
+<p>A set $F \subseteq \mathbb{D}'$ is <strong>closed</strong> if its complement $\mathbb{D}' \setminus F$ is open.</p>
+<p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
+<h3 id="connectedness-and-domains">Connectedness and Domains</h3>
+<p>A set $U \subseteq \mathbb{D}'$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty open sets. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}'$, connectedness and path-connectedness are equivalent.</p>
+<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{D}'$. Domains are the natural setting for dual numbers analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
+<h3 id="compactness">Compactness</h3>
+<p>A set $K \subseteq \mathbb{D}'$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{D}'$ is compact iff it is closed and bounded in the Euclidean norm.</p>
+<p><strong>Theorem.</strong> A continuous dual-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<h3 id="limits-of-sequences">Limits of Sequences</h3>
+<p>A sequence $(z_n)$ of dual numbers <strong>converges</strong> to $L \in \mathbb{D}'$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+n \geq N \implies \|z_n - L\|_E < \epsilon.
+$$</p>
+<p>We write $z_n \to L$ or $\lim_{n \to \infty} z_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $z_n \to L$ and $z_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $z_n = x_n + y_n \varepsilon$ and $L = a + b \varepsilon$. Then</p>
+<p>$$
+z_n \to L \iff x_n \to a \text{ and } y_n \to b.
+$$</p>
+<p>This is the reason dual convergence is no harder than real convergence: it is two real convergences in parallel.</p>
+<p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
+<p><strong>Algebra of limits.</strong> If $z_n \to L$ and $w_n \to M$, then</p>
+<p>$$
+z_n + w_n \to L + M, \qquad z_n w_n \to L M.
+$$</p>
+<p>There is no quotient rule in general, because $\mathbb{D}'$ has zero divisors.</p>
+<h3 id="cauchy-sequences">Cauchy Sequences</h3>
+<p>A sequence $(z_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+m, n \geq N \implies \|z_m - z_n\|_E < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> In $\mathbb{D}'$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{D}'$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and infinitesimal parts.</p>
+<h3 id="limits-of-functions">Limits of Functions</h3>
+<p>Let $f : D \to \mathbb{D}'$ with $D \subseteq \mathbb{D}'$, and let $z_0$ be a limit point of $D$. We say</p>
+<p>$$
+\lim_{z \to z_0} f(z) = L
+$$</p>
+<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z \in D, \; 0 < \|z - z_0\|_E < \delta \implies \|f(z) - L\|_E < \epsilon.
+$$</p>
+<p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{z \to z_0} f(z) = L$ iff for every sequence $(z_n)$ in $D \setminus \{z_0\}$ with $z_n \to z_0$, we have $f(z_n) \to L$.</p>
+<p><strong>Algebra of limits.</strong> Sums and products of limits are the limits of the sums and products.</p>
+<h3 id="continuity">Continuity</h3>
+<p>A function $f : D \to \mathbb{D}'$ is <strong>continuous at</strong> $z_0 \in D$ if</p>
+<p>$$
+\lim_{z \to z_0} f(z) = f(z_0).
+$$</p>
+<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z \in D, \; \|z - z_0\|_E < \delta \implies \|f(z) - f(z_0)\|_E < \epsilon.
+$$</p>
+<p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
+<p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
+<p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
+<p><strong>Componentwise continuity.</strong> Write $f(z) = u(x, y) + v(x, y) \varepsilon$. Then $f$ is continuous at $z_0 = x_0 + y_0 \varepsilon$ iff $u$ and $v$ are continuous at $(x_0, y_0)$. This reduces dual continuity to real continuity of two functions of two variables.</p>
+<h3 id="uniform-continuity">Uniform Continuity</h3>
+<p>A function $f : D \to \mathbb{D}'$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z, w \in D, \; \|z - w\|_E < \delta \implies \|f(z) - f(w)\|_E < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
+<h2 id="dual-differentiability">Dual Differentiability</h2>
+<h3 id="the-derivative">The Derivative</h3>
+<p>Let $f : U \to \mathbb{D}'$ with $U$ open, and let $z_0 \in U$. The <strong>derivative</strong> of $f$ at $z_0$ is</p>
+<p>$$
+f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h},
+$$</p>
+<p>provided the limit exists. If it does, $f$ is <strong>dual differentiable</strong> at $z_0$, or <strong>holomorphic</strong> at $z_0$ in the dual sense.</p>
+<p>The limit is taken in the dual plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}'$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
+<p><strong>Theorem.</strong> Dual differentiability implies continuity. The converse fails.</p>
+<h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
+<p>Write $f(z) = u(x, y) + v(x, y) \varepsilon$, where $z = x + y\varepsilon$ and $u, v : U \to R$.</p>
+<p><strong>Theorem.</strong> $f$ is dual differentiable at $z_0 = x_0 + y_0 \varepsilon$ iff $u$ and $v$ are real differentiable at $(x_0, y_0)$ and satisfy the <strong>dual Cauchy–Riemann equations</strong></p>
+<p>$$
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = 0, \qquad \frac{\partial v}{\partial x} = 0.
+$$</p>
+<p><strong>Proof.</strong> Write $h = h_1 + h_2 \varepsilon$. The difference quotient is</p>
+<p>$$
+\frac{f(z_0 + h) - f(z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + (v_x h_1 + v_y h_2) \varepsilon}{h_1 + h_2 \varepsilon} + o(1).
+$$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$, $v_x = 0$, and $u_x = v_y$. $\square$</p>
+<p><strong>Corollary.</strong> If $f$ is dual differentiable, then $u$ depends only on $x$ and $v$ is constant:</p>
+<p>$$
+f(x + y\varepsilon) = u(x) + c \varepsilon,
+$$</p>
+<p>where $u$ is an ordinary differentiable function of one variable and $c$ is a constant. So the dual differentiable functions are exactly the functions that are constant in the infinitesimal direction.</p>
+<p>This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the function to be independent of the infinitesimal part, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a very restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.</p>
+<h3 id="the-wirtinger-derivatives">The Wirtinger Derivatives</h3>
+<p>Define the <strong>dual Wirtinger derivatives</strong></p>
+<p>$$
+\frac{\partial}{\partial z} = \frac{\partial}{\partial x}, \qquad \frac{\partial}{\partial \bar{z}} = \frac{\partial}{\partial x} - 2 \varepsilon \frac{\partial}{\partial y}.
+$$</p>
+<p><strong>Theorem.</strong> $f$ is dual differentiable iff $\partial f / \partial \bar{z} = 0$ in the sense that $f$ is independent of the infinitesimal direction. In that case,</p>
+<p>$$
+f'(z) = \frac{\partial f}{\partial z} = u'(x).
+$$</p>
+<h3 id="rules-of-differentiation">Rules of Differentiation</h3>
+<p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
+<p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
+<p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g$ is invertible.</p>
+<p><strong>Chain rule.</strong> $(f \circ g)'(z) = f'(g(z)) g'(z)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is dual differentiable at $z_0$ with $f'(z_0)$ invertible and $f^{-1}$ is defined near $f(z_0)$, then</p>
+<p>$$
+(f^{-1})'(f(z_0)) = \frac{1}{f'(z_0)}.
+$$</p>
+<h2 id="the-infinitesimal-direction">The Infinitesimal Direction</h2>
+<h3 id="the-maximal-ideal">The Maximal Ideal</h3>
+<p>The <strong>maximal ideal</strong> of $\mathbb{D}'$ is</p>
+<p>$$
+\mathfrak{m} = (\varepsilon) = \{y \varepsilon : y \in R\}.
+$$</p>
+<p>It is the set of elements with vanishing real part, and it is nilpotent of index two:</p>
+<p>$$
+\mathfrak{m}^2 = 0.
+$$</p>
+<p>The maximal ideal is the infinitesimal direction, and it is the obstruction to the algebra being a field.</p>
+<h3 id="the-infinitesimal-part">The Infinitesimal Part</h3>
+<p>The <strong>infinitesimal part</strong> of a dual number $z = x + y\varepsilon$ is the component $y \varepsilon$ in the maximal ideal. The projection</p>
+<p>$$
+\pi : \mathbb{D}' \to R, \qquad \pi(x + y\varepsilon) = x,
+$$</p>
+<p>is the <strong>augmentation map</strong>, and its kernel is the maximal ideal. The augmentation is a ring homomorphism, and it is the unique one from $\mathbb{D}'$ to $R$.</p>
+<h3 id="the-infinitesimal-translation">The Infinitesimal Translation</h3>
+<p>For $h \in \mathfrak{m}$, the map</p>
+<p>$$
+T_h : \mathbb{D}' \to \mathbb{D}', \qquad T_h(z) = z + h,
+$$</p>
+<p>is the <strong>infinitesimal translation</strong> by $h$. It is a bijection of $\mathbb{D}'$ onto itself, and it preserves the ring structure in the sense that $T_h(z) - T_h(w) = z - w$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.</p>
+<h2 id="integration">Integration</h2>
+<h3 id="contour-integrals">Contour Integrals</h3>
+<p>Let $\gamma : [a, b] \to \mathbb{D}'$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
+<p>$$
+\int_\gamma f(z) \, dz = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+$$</p>
+<p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
+<p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
+<p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
+<p><strong>Estimation.</strong> If $\|f(z)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p>$$
+\left\| \int_\gamma f(z) \, dz \right\|_E \leq M L.
+$$</p>
+<h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
+<p><strong>Theorem (Cauchy–Goursat, dual version).</strong> If $f$ is dual differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then</p>
+<p>$$
+\oint_\gamma f(z) \, dz = 0
+$$</p>
+<p>provided the contour does not cross the maximal ideal in a way that makes the integral diverge.</p>
+<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + c\varepsilon$ with $u$ differentiable and $c$ constant. The integral decomposes into the integral of $u(x)$ along the real projection and the integral of $c\varepsilon$ along the infinitesimal projection. The first vanishes because $u$ is a real differentiable function of one variable on a closed contour in the real line. The second vanishes because $c\varepsilon$ is constant and the total variation of the infinitesimal part along a closed contour is zero. $\square$</p>
+<p><strong>Caution.</strong> The theorem fails if the contour crosses the maximal ideal in a way that makes the integral diverge. The maximal ideal is the analogue of the branch cut in complex analysis, and it must be avoided.</p>
+<h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
+<p>There is <strong>no</strong> general Cauchy integral formula in dual numbers analysis. The reason is that the kernel $1/(w - z)$ has a singularity on the maximal ideal, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
+<p>However, if the function is written in the form $f(x + y\varepsilon) = u(x) + c\varepsilon$, then the real part $u$ has the ordinary real Cauchy integral formula, and the infinitesimal part $c$ is constant. So the dual differentiable functions are reconstructed from their real parts by the real theory, and the infinitesimal part is a constant.</p>
+<h2 id="power-series">Power Series</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>power series</strong> centered at $z_0$ is</p>
+<p>$$
+\sum_{n=0}^\infty c_n (z - z_0)^n, \qquad c_n \in \mathbb{D}'.
+$$</p>
+<p>The <strong>radius of convergence</strong> is</p>
+<p>$$
+R = \frac{1}{\limsup_{n \to \infty} \|c_n\|_E^{1/n}},
+$$</p>
+<p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $\|z - z_0\|_E < R$ and diverges for $\|z - z_0\|_E > R$. On $\|z - z_0\|_E < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is dual differentiable on $\|z - z_0\|_E < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p>$$
+\frac{d}{dz} \sum_{n=0}^\infty c_n (z - z_0)^n = \sum_{n=1}^\infty n c_n (z - z_0)^{n-1}.
+$$</p>
+<p>The differentiated series has the same radius of convergence.</p>
+<h3 id="taylor-series">Taylor Series</h3>
+<p><strong>Theorem (Taylor, dual version).</strong> If $f$ is dual differentiable on a domain containing the closed disk $\overline{B}(z_0, r)$, then $f$ has a power series expansion</p>
+<p>$$
+f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n
+$$</p>
+<p>valid for $\|z - z_0\|_E < r$.</p>
+<p><strong>Proof.</strong> Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + c\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $c$ is constant. So the expansion is the real Taylor expansion of $u$ plus the constant $c$ times the expansion of the constant function $1$. $\square$</p>
+<p><strong>Corollary.</strong> A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
+<p><strong>Caution.</strong> The identity theorem fails in general, because a dual differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the real part and the infinitesimal part are independent, and one can vanish while the other does not.</p>
+<h2 id="singularities">Singularities</h2>
+<h3 id="classification">Classification</h3>
+<p>Let $f$ be dual differentiable on a punctured disk $0 < \|z - z_0\|_E < R$.</p>
+<p><strong>Removable singularity.</strong> $z_0$ is removable if $f$ extends to a dual differentiable function on $\|z - z_0\|_E < R$.</p>
+<p><strong>Pole.</strong> $z_0$ is a pole if $f(z) \to \infty$ in Euclidean modulus as $z \to z_0$.</p>
+<p><strong>Essential singularity.</strong> $z_0$ is an essential singularity if it is neither removable nor a pole.</p>
+<p><strong>Caution.</strong> The classification is more complicated than in the complex case, because the function can behave differently on the real and infinitesimal components. A point can be removable for one component and a pole for the other, in which case it is neither removable nor a pole for the dual function.</p>
+<h3 id="residues">Residues</h3>
+<p>There is <strong>no</strong> general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(x) + c\varepsilon$, and the singularity structure is that of the real function $u$, with the constant $c$ playing no role.</p>
+<h2 id="applications">Applications</h2>
+<h3 id="automatic-differentiation">Automatic Differentiation</h3>
+<p>The dual numbers are the coefficient algebra for forward-mode automatic differentiation. A function $f : \mathbb{R} \to \mathbb{R}$ extends to a function on $\mathbb{D}'$ by the formula</p>
+<p>$$
+f(x + \varepsilon) = f(x) + f'(x) \varepsilon,
+$$</p>
+<p>which is exact because $\varepsilon^2 = 0$. This is the algebraic content of the derivative, and it is the basis of the computational technique.</p>
+<h3 id="infinitesimal-deformations">Infinitesimal Deformations</h3>
+<p>The dual numbers are the coefficients of first-order deformations. A deformation of a mathematical object over the dual numbers is a family parametrized by $\varepsilon$, with $\varepsilon^2 = 0$, and the first-order information is the derivative with respect to $\varepsilon$.</p>
+<h3 id="the-tangent-space">The Tangent Space</h3>
+<p>In algebraic geometry, the tangent space at a point $x$ of a scheme $X$ is the set of morphisms $\operatorname{Spec} \mathbb{D}' \to X$ sending the closed point to $x$. The dual numbers are the algebraic model of the infinitesimal neighborhood of a point.</p>
+<h2 id="comparison-with-complex-analysis">Comparison with Complex Analysis</h2>
+<p>The differences between dual numbers analysis and complex analysis are consequences of the sign in the multiplication rule $\varepsilon^2 = 0$ versus $i^2 = -1$.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Complex</th>
+<th>Dual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multiplication</td>
+<td>$i^2 = -1$</td>
+<td>$\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>none</td>
+<td>$\varepsilon$</td>
+</tr>
+<tr>
+<td>Cauchy–Riemann</td>
+<td>$u_x = v_y$, $u_y = -v_x$</td>
+<td>$u_x = v_y$, $u_y = v_x = 0$</td>
+</tr>
+<tr>
+<td>Harmonic equation</td>
+<td>$\Delta u = 0$</td>
+<td>$u_{xx} = 0$, $v$ constant</td>
+</tr>
+<tr>
+<td>Cauchy integral</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Residue theory</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Liouville</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Identity theorem</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Conformality</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Differentiable functions</td>
+<td>rich</td>
+<td>$u(x) + c\varepsilon$</td>
+</tr>
+</tbody>
+</table>
+<p>The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is even more rigid: differentiability forces the function to be independent of the infinitesimal direction, and the only freedom is in the real part, which is an ordinary differentiable function of one variable.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>Dual number algebra</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>Dual unit, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$z = x + y\varepsilon$</td>
+<td>General dual number</td>
+</tr>
+<tr>
+<td>$x = \operatorname{Re} z$</td>
+<td>Real part</td>
+</tr>
+<tr>
+<td>$y = \operatorname{Inf} z$</td>
+<td>Infinitesimal part</td>
+</tr>
+<tr>
+<td>$\|z\|_E = \sqrt{x^2 + y^2}$</td>
+<td>Euclidean modulus</td>
+</tr>
+<tr>
+<td>$B(z_0, r)$</td>
+<td>Open disk of radius $r$</td>
+</tr>
+<tr>
+<td>$f'(z)$</td>
+<td>Dual derivative</td>
+</tr>
+<tr>
+<td>$\partial/\partial z, \partial/\partial \bar{z}$</td>
+<td>Dual Wirtinger derivatives</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>Maximal ideal</td>
+</tr>
+<tr>
+<td>$\pi : \mathbb{D}' \to R$</td>
+<td>Augmentation map</td>
+</tr>
+<tr>
+<td>$\int_\gamma f(z) \, dz$</td>
+<td>Contour integral</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.</li>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (1903), for the geometry of dual numbers.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the theory of algebras over commutative rings.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005), for the general theory of quadratic forms.</li>
+<li>Andreas Griewank and Andrea Walther, <em>Evaluating Derivatives</em> (SIAM, 2008), for automatic differentiation with dual numbers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="orthogonal-transformations-categorization"><strong>Orthogonal Transformations categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gives the low-rank examples of orthogonal transformations, organized by commutative ring and, where applicable, by signature.</p>
+<p>The general theory is in the preceding article, <em>Orthogonal Transformations</em>. We assume familiarity with the definitions given there.</p>
+<p>We treat the fields $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, and the commutative ring $\mathbb{D}$. The part on $\mathbb{R}$ contains the signature and the classification by signature, because the signature is specific to the real numbers. The part on $\mathbb{C}$ is developed in some detail, because the complex case is where the classical number systems appear most clearly.</p>
+<p>A word on terminology. The first three rings are fields, so the classical theory of orthogonal transformations over a field applies verbatim. The fourth ring $\mathbb{D}$ is not a field: it is a commutative ring with zero divisors. The theory of orthogonal transformations over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element is a unit, and that the determinant condition "invertible if and only if determinant is nonzero" becomes "invertible if and only if determinant is a unit of $\mathbb{D}$". We indicate where this difference matters.</p>
+<p>Throughout this article, we use <strong>rank</strong> rather than <strong>dimension</strong> when speaking of orthogonal transformations over a general commutative ring, reserving <strong>dimension</strong> for the field case. When the ring is a field, the two notions coincide.</p>
+<hr />
+<h1 id="part-i-the-field-math9">Part I: The Field $\mathbb{Q}$</h1>
+<h2 id="1-rank-1">1. Rank 1</h2>
+<p>The module is $\mathbb{Q}$, with basis vector $e$. The quadratic form is $Q(e) = \lambda$ for some nonzero $\lambda \in \mathbb{Q}$.</p>
+<p>The orthogonal group $O(1, \mathbb{Q})$ consists of the linear transformations $z \mapsto az$ with $a \in \mathbb{Q}$ satisfying $a^2 = 1$. The solutions are $a = \pm 1$. So</p>
+<p>$$
+O(1, \mathbb{Q}) = \{+1, -1\}.
+$$</p>
+<p>The rotation group $SO(1, \mathbb{Q})$ is the trivial group.</p>
+<h2 id="2-rank-2">2. Rank 2</h2>
+<p>The module is $\mathbb{Q}^2$, with basis $e_1, e_2$. The quadratic form is determined by $Q(e_1)$, $Q(e_2)$, and $B(e_1, e_2)$.</p>
+<p>For example, the form $x^2 + y^2$ has orthogonal group $O(2, \mathbb{Q})$ consisting of the matrices with rational entries that preserve the form. This is a discrete group, because $\mathbb{Q}$ is discrete.</p>
+<p>The classification over $\mathbb{Q}$ requires arithmetic invariants, which we do not develop here.</p>
+<hr />
+<h1 id="part-ii-the-field-math30">Part II: The Field $\mathbb{R}$</h1>
+<h2 id="3-the-signature">3. The Signature</h2>
+<p>The <strong>signature</strong> of a real quadratic form $Q$ is the pair $(p, q)$ of positive and negative squares in a diagonal basis, as defined in the article <em>Bilinear and Quadratic Forms</em>. The rank of the module is $p + q$ for a non-degenerate form.</p>
+<p>The signature determines the structure of the orthogonal group:</p>
+<ul>
+<li><strong>Positive definite</strong> signature $(n, 0)$: the orthogonal group is compact, and $SO(n)$ is connected.</li>
+<li><strong>Indefinite</strong> signature $(p, q)$ with $p, q > 0$: the orthogonal group is non-compact, and $SO(p, q)$ may have more than one connected component.</li>
+</ul>
+<p>This is the reason the examples over $\mathbb{R}$ are organized by signature.</p>
+<h2 id="4-rank-1">4. Rank 1</h2>
+<p>The module is $\mathbb{R}$, with $Q(x) = x^2$. The signature is $(1, 0)$.</p>
+<p>The orthogonal group $O(1)$ has two elements: the identity and the reflection $x \mapsto -x$. The rotation group $SO(1)$ is the trivial group.</p>
+<h2 id="5-rank-2-positive-definite">5. Rank 2, Positive Definite</h2>
+<p>The module is $\mathbb{R}^2$, with $Q(x, y) = x^2 + y^2$. The signature is $(2, 0)$.</p>
+<p>The rotation group $SO(2)$ consists of the rotations by arbitrary angles:</p>
+<p>$$
+R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix}.
+$$</p>
+<p>This is the matrix of multiplication by the complex number $e^{i\theta}$:</p>
+<p>$$
+(x + iy) \mapsto e^{i\theta}(x + iy).
+$$</p>
+<p>So the rotation group $SO(2)$ is isomorphic to the circle group $S^1$:</p>
+<p>$$
+SO(2) \cong U(1) \cong S^1.
+$$</p>
+<h2 id="6-rank-2-indefinite">6. Rank 2, Indefinite</h2>
+<p>The module is $\mathbb{R}^2$, with $Q(x, y) = x^2 - y^2$. The signature is $(1, 1)$.</p>
+<p>The rotation group $SO(1, 1)$ consists of the hyperbolic transformations</p>
+<p>$$
+H_t = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}, \qquad t \in \mathbb{R}.
+$$</p>
+<p>The group $SO(1, 1)$ has two connected components. The identity component is isomorphic to the group of split complex numbers of norm $1$ with positive real part, which is a hyperbola.</p>
+<h2 id="7-rank-3-positive-definite">7. Rank 3, Positive Definite</h2>
+<p>The module is $\mathbb{R}^3$, with $Q(x, y, z) = x^2 + y^2 + z^2$. The signature is $(3, 0)$.</p>
+<p>The rotation group $SO(3)$ consists of the rotations about arbitrary axes. It is three-dimensional, and it is isomorphic to the group of unit quaternions modulo $\pm 1$:</p>
+<p>$$
+SO(3) \cong SU(2) / \{\pm 1\}.
+$$</p>
+<h2 id="8-rank-3-indefinite">8. Rank 3, Indefinite</h2>
+<p>The module is $\mathbb{R}^3$, with $Q(x, y, z) = x^2 + y^2 - z^2$. The signature is $(2, 1)$.</p>
+<p>The rotation group $SO(2, 1)$ is three-dimensional. It is not compact, and it has two connected components. It is isomorphic to a quotient of the group of unit split quaternions.</p>
+<h2 id="9-rank-4">9. Rank 4</h2>
+<p>The two cases are:</p>
+<p><strong>$Q(x_1, x_2, x_3, x_4) = x_1^2 + x_2^2 + x_3^2 + x_4^2$.</strong> Signature $(4, 0)$. The rotation group is</p>
+<p>$$
+SO(4) \cong (SU(2) \times SU(2)) / \{\pm 1\}.
+$$</p>
+<p><strong>$Q(x_1, x_2, x_3, x_4) = x_1^2 + x_2^2 - x_3^2 - x_4^2$.</strong> Signature $(2, 2)$. The rotation group is</p>
+<p>$$
+SO(2, 2) \cong (SL(2, \mathbb{R}) \times SL(2, \mathbb{R})) / \{\pm 1\}.
+$$</p>
+<h2 id="10-summary-for-the-field-math79">10. Summary for the Field $\mathbb{R}$</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Quadratic form</th>
+<th>Signature</th>
+<th>Rotation group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$x^2$</td>
+<td>$(1, 0)$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^2$</td>
+<td>$x^2 + y^2$</td>
+<td>$(2, 0)$</td>
+<td>$SO(2) = S^1$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^2$</td>
+<td>$x^2 - y^2$</td>
+<td>$(1, 1)$</td>
+<td>$SO(1, 1)$, $2$ components</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$</td>
+<td>$x^2 + y^2 + z^2$</td>
+<td>$(3, 0)$</td>
+<td>$SO(3) = SU(2)/\{\pm 1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$</td>
+<td>$x^2 + y^2 - z^2$</td>
+<td>$(2, 1)$</td>
+<td>$SO(2, 1)$, $2$ components</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^4$</td>
+<td>$x_1^2 + x_2^2 + x_3^2 + x_4^2$</td>
+<td>$(4, 0)$</td>
+<td>$SO(4) = (SU(2) \times SU(2))/\{\pm 1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^4$</td>
+<td>$x_1^2 + x_2^2 - x_3^2 - x_4^2$</td>
+<td>$(2, 2)$</td>
+<td>$SO(2, 2) = (SL(2, \mathbb{R}) \times SL(2, \mathbb{R}))/\{\pm 1\}$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-iii-the-field-math109">Part III: The Field $\mathbb{C}$</h1>
+<h2 id="11-classification-over-math110">11. Classification over $\mathbb{C}$</h2>
+<p>Over $\mathbb{C}$, every non-degenerate quadratic form of rank $n$ is isomorphic to the standard form. There is only one case up to isomorphism. There is no signature.</p>
+<p>The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $\mu$ to make the coefficient $1$.</p>
+<p>So over $\mathbb{C}$, there is only one isomorphism class of non-degenerate quadratic forms in each rank. The orthogonal group is a complex Lie group, and its structure is different from the real case.</p>
+<h2 id="12-rank-1">12. Rank 1</h2>
+<p>The module is $\mathbb{C}$, with $Q(z) = z^2$.</p>
+<p>The orthogonal group $O(1, \mathbb{C})$ consists of the linear transformations $z \mapsto az$ with $a \in \mathbb{C}$ satisfying $a^2 = 1$. The solutions are $a = \pm 1$. So</p>
+<p>$$
+O(1, \mathbb{C}) = \{+1, -1\}.
+$$</p>
+<p>The rotation group $SO(1, \mathbb{C})$ is the trivial group.</p>
+<h2 id="13-rank-2">13. Rank 2</h2>
+<p>The module is $\mathbb{C}^2$, with basis $e_1, e_2$. The quadratic form is</p>
+<p>$$
+Q(z_1, z_2) = z_1^2 + z_2^2
+$$</p>
+<p>after rescaling, so $Q(e_1) = +1$ and $Q(e_2) = +1$, with $B(e_1, e_2) = 0$.</p>
+<p>The Clifford algebra associated with this quadratic form is $\mathbb{C}l_2$, which is isomorphic to the biquaternions:</p>
+<p>$$
+\mathbb{C}l_2 \cong \mathbb{H} \otimes \mathbb{C} \cong M_2(\mathbb{C}).
+$$</p>
+<p>The orthogonal group $O(2, \mathbb{C})$ consists of the complex linear transformations that preserve the form. The rotation group $SO(2, \mathbb{C})$ is the subgroup with determinant $+1$.</p>
+<p>The structure of these groups is more subtle than over $\mathbb{R}$, because $\mathbb{C}$ is algebraically closed. We do not develop the details here.</p>
+<h2 id="14-rank-3">14. Rank 3</h2>
+<p>The module is $\mathbb{C}^3$, with basis $e_1, e_2, e_3$. The quadratic form is</p>
+<p>$$
+Q(z_1, z_2, z_3) = z_1^2 + z_2^2 + z_3^2
+$$</p>
+<p>after rescaling. There is only one case up to isomorphism.</p>
+<p>The Clifford algebra associated with this quadratic form is $\mathbb{C}l_3$, which is isomorphic to the direct sum of two copies of the biquaternions:</p>
+<p>$$
+\mathbb{C}l_3 \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}).
+$$</p>
+<p>The orthogonal group $O(3, \mathbb{C})$ is a complex Lie group. We do not develop the details here.</p>
+<h2 id="15-summary-for-the-field-math148">15. Summary for the Field $\mathbb{C}$</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Quadratic form</th>
+<th>Clifford algebra</th>
+<th>Rotation group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>—</td>
+<td>$\mathbb{C}$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$z^2$</td>
+<td>$\mathbb{C} \oplus \mathbb{C}$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$z_1^2 + z_2^2$</td>
+<td>$\mathbb{H} \otimes \mathbb{C}$ (biquaternions)</td>
+<td>complex orthogonal group</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$z_1^2 + z_2^2 + z_3^2$</td>
+<td>$M_2(\mathbb{C}) \oplus M_2(\mathbb{C})$</td>
+<td>complex orthogonal group</td>
+</tr>
+</tbody>
+</table>
+<p>The complex case is where the biquaternions appear naturally: they are the Clifford algebra of the two-dimensional complex quadratic form.</p>
+<hr />
+<h1 id="part-iv-the-commutative-ring-math156">Part IV: The Commutative Ring $\mathbb{D}$</h1>
+<h2 id="16-a-caveat">16. A Caveat</h2>
+<p>The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. The orthogonal group over $\mathbb{D}$ is defined as the set of $\mathbb{D}$-linear transformations that preserve the quadratic form, with the caveat that the determinant condition "invertible if and only if determinant is nonzero" becomes "invertible if and only if determinant is a unit of $\mathbb{D}$".</p>
+<h2 id="17-rank-1">17. Rank 1</h2>
+<p>The module is $\mathbb{D}$, with $Q(z) = z^2$.</p>
+<p>The orthogonal group $O(1, \mathbb{D})$ consists of the linear transformations $z \mapsto az$ with $a \in \mathbb{D}$ satisfying $a^2 = 1$. The solutions are $a = \pm 1$. So</p>
+<p>$$
+O(1, \mathbb{D}) = \{+1, -1\}.
+$$</p>
+<p>The rotation group $SO(1, \mathbb{D})$ is the trivial group.</p>
+<h2 id="18-rank-2">18. Rank 2</h2>
+<p>The module is $\mathbb{D}^2$, with basis $e_1, e_2$. In an orthogonal basis, the quadratic form is determined by $Q(e_1)$ and $Q(e_2)$.</p>
+<p><strong>$Q(e_1) = +1$, $Q(e_2) = +1$.</strong> The rotation group $SO(2, \mathbb{D})$ consists of the transformations of the form</p>
+<p>$$
+\begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}
+$$</p>
+<p>with $t \in \mathbb{D}$. These are the hyperbolic transformations over $\mathbb{D}$.</p>
+<p><strong>$Q(e_1) = +1$, $Q(e_2) = -1$.</strong> The rotation group is analogous, with the roles of the two generators exchanged.</p>
+<p><strong>$Q(e_1) = -1$, $Q(e_2) = -1$.</strong> The rotation group is again the group of hyperbolic transformations.</p>
+<p>The details depend on the zero divisors of $\mathbb{D}$, which make the group structure more subtle than over $\mathbb{R}$.</p>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<p>Let me summarize the examples in a table.</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Quadratic form</th>
+<th>Ring</th>
+<th>Rotation group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$x^2$</td>
+<td>$\mathbb{Q}$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}^2$</td>
+<td>$x^2 + y^2$</td>
+<td>$\mathbb{Q}$</td>
+<td>discrete orthogonal group</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$x^2$</td>
+<td>$\mathbb{R}$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^2$</td>
+<td>$x^2 + y^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(2) = S^1$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^2$</td>
+<td>$x^2 - y^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(1, 1)$, $2$ components</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$</td>
+<td>$x^2 + y^2 + z^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(3) = SU(2)/\{\pm 1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$</td>
+<td>$x^2 + y^2 - z^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(2, 1)$, $2$ components</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^4$</td>
+<td>$x_1^2 + x_2^2 + x_3^2 + x_4^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(4) = (SU(2) \times SU(2))/\{\pm 1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^4$</td>
+<td>$x_1^2 + x_2^2 - x_3^2 - x_4^2$</td>
+<td>$\mathbb{R}$</td>
+<td>$SO(2, 2) = (SL(2, \mathbb{R}) \times SL(2, \mathbb{R}))/\{\pm 1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$z^2$</td>
+<td>$\mathbb{C}$</td>
+<td>$\{+1, -1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^2$</td>
+<td>$z_1^2 + z_2^2$</td>
+<td>$\mathbb{C}$</td>
+<td>complex orthogonal group</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^3$</td>
+<td>$z_1^2 + z_2^2 + z_3^2$</td>
+<td>$\mathbb{C}$</td>
+<td>complex orthogonal group</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$z^2$</td>
+<td>$\mathbb{D}$</td>
+<td>$\{+1, -1\}$</td>
+</tr>
+<tr>
+<td>$\mathbb{D}^2$</td>
+<td>$z_1^2 + z_2^2$</td>
+<td>$\mathbb{D}$</td>
+<td>hyperbolic transformations over $\mathbb{D}$</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is clear: the ring of scalars and, over $\mathbb{R}$, the signature, determine the structure of the orthogonal group.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Over a field, every module is free, so the orthogonal group is a matrix group. Over a general commutative ring, the module need not be free.</li>
+<li>Over a field, invertibility is equivalent to nonzero determinant. Over a general commutative ring, invertibility requires the determinant to be a unit.</li>
+<li>Over a field of characteristic not equal to 2, the equation $\det(T)^2 = 1$ has exactly two solutions. Over a general commutative ring, it may have more.</li>
+<li>The classification of orthogonal groups over a general commutative ring is much more subtle than over a field, and requires the theory of quadratic forms over rings.</li>
+</ul>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009).</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971).</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

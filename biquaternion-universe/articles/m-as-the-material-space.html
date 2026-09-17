@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="math0-as-the-material-space"><strong>$\mathbb{M}_-$ as the Material Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains four distinguished real subspaces, characterized as the fixed-point sets of the four natural conjugations. Two of them are four-dimensional: the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ and the <strong>Hermitian subspace</strong> $\mathbb{M}_+$. This article is about $\mathbb{M}_-$.</p>
+<p>The mathematical content of this article is standard: $\mathbb{M}_-$ is isomorphic, as a real vector space with a quadratic form, to Minkowski space $\mathbb{R}^{1,3}$, and it is the natural home of the four-vectors of relativistic physics. The physical content is also standard: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current of a relativistic system all lie in $\mathbb{M}_-$.</p>
+<p>The <strong>interpretation</strong> of $\mathbb{M}_-$ as the "material" subspace is a reading of its structure, not a derivation. A general element of $\mathbb{M}_-$ has an <strong>imaginary</strong> scalar part and a <strong>real</strong> vector part. The real vector part corresponds to the three spatial dimensions — the directions in which material objects extend and move. The imaginary scalar part corresponds to the time coordinate $ict$, and its imaginary character reflects the fact that time, unlike space, is not itself a material object: it can be measured but not touched, not held, not moved through. We take this interpretation as the motivation for the name "material subspace", but the mathematics below stands on its own.</p>
+<p>The companion article, <em>$\mathbb{M}_+$ as the Informational Space</em>, treats the complementary subspace. The present article is entirely within established physics.</p>
+<p>The conventions are those of the companion articles: the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>, $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. In vacuum, $c = c_0$. The symbol $\mathbf{v}$ is reserved for particle velocities.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<h3 id="definition-and-basis">Definition and Basis</h3>
+<p>The <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ is the fixed-point set of the anti-Hermitian conjugation:</p>
+<p>$$
+\mathbb{M}_- = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
+$$</p>
+<p>where $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ and $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form</p>
+<p>$$
+\tilde{Q} = i q_0\,e_0 + q_1\,e_1 + q_2\,e_2 + q_3\,e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The scalar part is <strong>purely imaginary</strong> and the vector part is <strong>real</strong>. Equivalently, if we write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{C}$ and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$, then $\tilde{Q} \in \mathbb{M}_-$ iff $Q_0$ is purely imaginary and $Q_1, Q_2, Q_3$ are real.</p>
+<p>A natural basis of $\mathbb{M}_-$ is</p>
+<p>$$
+\{i\,e_0,\; e_1,\; e_2,\; e_3\}.
+$$</p>
+<p>As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is <strong>not</strong> a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ is not necessarily in $\mathbb{M}_-$ (for example, $(ie_0)(ie_0) = -e_0 \in \mathbb{M}_+$).</p>
+<h3 id="properties">Properties</h3>
+<p>The subspace $\mathbb{M}_-$ has the following algebraic properties, established in the basic algebra article.</p>
+<p><strong>Quadratic form.</strong> The biquaternion <strong>norm form</strong> restricts to a real quadratic form on $\mathbb{M}_-$:</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq_0)^2 + q_1^2 + q_2^2 + q_3^2 = -q_0^2 + q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This is a real quadratic form of <strong>signature</strong> $(3,1)$: three positive directions (the spatial components $q_1, q_2, q_3$) and one negative direction (the temporal component $q_0$). This is the Minkowski signature, expressed algebraically as a consequence of $i^2 = -1$.</p>
+<p><strong>Zero divisors.</strong> The norm form vanishes on the <strong>light cone</strong></p>
+<p>$$
+q_0^2 = q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>a double cone with apex at the origin. The nonzero elements of this cone are <strong>zero divisors</strong> of $\mathbb{B}$ (see the companion article on biquaternion zero divisors). The complement of the cone has two connected components, corresponding to the future and past components of the time-like region.</p>
+<p><strong>Not a division algebra.</strong> The presence of the zero divisor cone means that $\mathbb{M}_-$ is not a division algebra: there are nonzero elements of $\mathbb{M}_-$ that have no inverse. The physical significance of this is discussed below.</p>
+<p><strong>Basis of the four-dimensional real space.</strong> Every element of $\mathbb{M}_-$ is uniquely written as a linear combination of $ie_0, e_1, e_2, e_3$ with real coefficients. We may therefore identify $\mathbb{M}_-$ with $\mathbb{R}^4$, with the quadratic form $N$ corresponding to the Minkowski metric in the $(ict, x, y, z)$ convention.</p>
+<h2 id="the-four-vectors-of-physics">The Four-Vectors of Physics</h2>
+<p>The reason $\mathbb{M}_-$ is the "material subspace" is that the physical four-vectors of relativistic physics all lie in it. This is a structural fact: the four-vectors are elements of the same four-dimensional real vector space, with the same quadratic form, and the same transformation law under the Lorentz group.</p>
+<p>The following table lists the seven physical four-vectors that live in $\mathbb{M}_-$. Each is expressed as an element of $\mathbb{M}_-$ with its standard physical interpretation.</p>
+<table>
+<thead>
+<tr>
+<th>Four-vector</th>
+<th>Biquaternion form</th>
+<th>Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four-position</td>
+<td>$\tilde{X} = ic\,t\,e_0 + \mathbf{x}$</td>
+<td>$(ict, \mathbf{x})$</td>
+</tr>
+<tr>
+<td>Four-velocity</td>
+<td>$\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$</td>
+<td>$(\gamma ic, \gamma\mathbf{v})$</td>
+</tr>
+<tr>
+<td>Four-momentum</td>
+<td>$\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$</td>
+<td>$(iE/c, \mathbf{p})$</td>
+</tr>
+<tr>
+<td>Four-force</td>
+<td>$\tilde{F} = d\tilde{P}/d\tau$</td>
+<td>$(iP/c, \gamma\mathbf{f})$</td>
+</tr>
+<tr>
+<td>Four-potential</td>
+<td>$\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$</td>
+<td>$(i\phi/c, \mathbf{A})$</td>
+</tr>
+<tr>
+<td>Four-current</td>
+<td>$\tilde{J} = ic\rho\,e_0 + \mathbf{j}$</td>
+<td>$(ic\rho, \mathbf{j})$</td>
+</tr>
+<tr>
+<td>Four-wavevector</td>
+<td>$\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$</td>
+<td>$(i\omega/c, \mathbf{k})$</td>
+</tr>
+</tbody>
+</table>
+<p>In each case, the scalar part is purely imaginary and the vector part is real, matching the structure of $\mathbb{M}_-$.</p>
+<p>The formulas for these four-vectors and their mutual relations (the mass-shell relation, the conservation laws, the wave equations) are collected in the companion article on relativistic mechanics. Here we only note that <strong>they all live in the same subspace</strong>. This is the structural content of the observation that relativistic physics is naturally expressed in $\mathbb{M}_-$.</p>
+<h3 id="the-common-structure">The Common Structure</h3>
+<p>The four-vectors share the following structural features, which are the reasons they lie in $\mathbb{M}_-$.</p>
+<p><strong>1. Imaginary scalar part.</strong> The time component of each four-vector is written as $i$ times a real quantity: $ict$, $i\gamma c$, $iE/c$, $i\phi/c$, $ic\rho$, $i\omega/c$. The factor of $i$ is the marker that distinguishes the temporal component from the spatial components. This is the $ict$ convention, and it is the reason the metric on $\mathbb{M}_-$ has signature $(3,1)$ rather than being positive-definite.</p>
+<p><strong>2. Real vector part.</strong> The spatial components are real. They are the components in the three real directions $e_1, e_2, e_3$ of ordinary physical space.</p>
+<p><strong>3. Lorentz covariance.</strong> The four-vectors transform under the Lorentz group by the <strong>rotor conjugation</strong> (see the companion article on the Lorentz transformation). The rotors are elements of the complementary subspace $\mathbb{M}_+$, and their action on $\mathbb{M}_-$ is the biquaternion form of the Lorentz transformation.</p>
+<p><strong>4. Invariant norm.</strong> Each four-vector has an invariant norm under the Lorentz group, equal to the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, $0$ for the four-potential (in the Lorenz gauge), $0$ for the four-current (as a consequence of charge conservation), and $0$ for the four-wavevector (for light).</p>
+<h2 id="the-invariant-interval-and-the-minkowski-metric">The Invariant Interval and the Minkowski Metric</h2>
+<p>The <strong>invariant interval</strong> between two nearby events in spacetime is the quadratic form associated with the displacement biquaternion $d\tilde{X} \in \mathbb{M}_-$:</p>
+<p>$$
+ds^2 = d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
+$$</p>
+<p>This is the biquaternion expression of the Minkowski interval. Note that the interval uses the <strong>square</strong> $d\tilde{X} \circ d\tilde{X}$, not the norm form $d\tilde{X}\bar{d\tilde{X}}$. For an element of $\mathbb{M}_-$, the two differ by the sign of the vector part: $d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + d\mathbf{x}^2$, while $d\tilde{X}\bar{d\tilde{X}} = (ic\,dt)^2 - d\mathbf{x}^2$. The interval uses the square, giving the standard Minkowski form $-c^2 dt^2 + d\mathbf{x}^2$.</p>
+<p>The Lorentzian signature of the interval is not postulated: it arises algebraically from $i^2 = -1$ in the time component. This is the content of the $ict$ convention (see the companion article on the $ict$ convention). The biquaternion formulation makes explicit that the Lorentzian structure of spacetime is a <strong>consequence of a complex structure</strong> on the time coordinate, not an independent axiom.</p>
+<p>The interval $ds^2$ has the following three possible signs, defining the three classes of Minkowski intervals:</p>
+<ul>
+<li><strong>Timelike</strong> ($ds^2 < 0$): the events can be connected by a physical trajectory.</li>
+<li><strong>Spacelike</strong> ($ds^2 > 0$): the events are causally disconnected.</li>
+<li><strong>Null</strong> ($ds^2 = 0$): the events are connected by a light signal.</li>
+</ul>
+<p>The null interval is the <strong>light cone</strong>, which is the zero divisor set of $\mathbb{M}_-$ (as discussed above).</p>
+<h2 id="the-lorentz-transformation-on-math116">The Lorentz Transformation on $\mathbb{M}_-$</h2>
+<p>The four-vectors of physics transform under the Lorentz group by <strong>rotor conjugation</strong>:</p>
+<p>$$
+\tilde{X}' = \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger,
+$$</p>
+<p>where $\tilde{\Lambda}$ is the <strong>boost biquaternion</strong> (an element of the complementary subspace $\mathbb{M}_+$), and $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ for a pure boost. The rotor conjugation is the biquaternion form of the standard Lorentz transformation of a four-vector.</p>
+<p>The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation <strong>preserves</strong> $\mathbb{M}_-$: if $\tilde{X} \in \mathbb{M}_-$ and $\tilde{\Lambda} \in \mathbb{M}_+$ (or, more generally, $\tilde{\Lambda}$ is a unit-norm biquaternion), then $\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.</p>
+<p>This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotors themselves lie in $\mathbb{M}_+$ (for pure boosts) or in the unit-norm group of $\mathbb{B}$ (for general Lorentz transformations); the space on which they act is $\mathbb{M}_-$.</p>
+<h2 id="the-light-cone-and-the-zero-divisors">The Light Cone and the Zero Divisors</h2>
+<p>The <strong>light cone</strong> is the set of four-vectors $\tilde{X} \in \mathbb{M}_-$ with vanishing norm form:</p>
+<p>$$
+N(\tilde{X}) = 0 \quad \Longleftrightarrow \quad q_0^2 = q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>where $q_0$ is the (real) time component and $q_1, q_2, q_3$ are the spatial components. This is a double cone in $\mathbb{R}^4$ with apex at the origin.</p>
+<p>The nonzero elements of the light cone are <strong>zero divisors</strong> of the biquaternion algebra: they are nonzero elements $\tilde{X}$ for which there exists a nonzero $\tilde{Y}$ with $\tilde{X}\tilde{Y} = 0$. The zero divisor structure is intrinsic to the biquaternion algebra and reflects the fact that the light cone is the <strong>characteristic cone</strong> of the wave operator $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$.</p>
+<p>From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the <strong>null four-vectors</strong>: the four-vectors of light signals, which have zero rest mass and propagate at the speed of light. The massless particles of relativistic physics correspond to the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.</p>
+<h2 id="what-is-not-in-math139">What Is Not in $\mathbb{M}_-$</h2>
+<p>Not every physical object is a four-vector, and not every biquaternion lies in $\mathbb{M}_-$. Two important counterexamples illustrate the limits of the subspace.</p>
+<h3 id="the-field-strength-biquaternion">The Field-Strength Biquaternion</h3>
+<p>The <strong>field-strength biquaternion</strong> of the electromagnetic field is</p>
+<p>$$
+\tilde{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H},
+$$</p>
+<p>which is a biquaternion with <strong>vanishing scalar part</strong> and a <strong>mixed real/imaginary vector part</strong>. This is not an element of $\mathbb{M}_-$: the vector part is neither purely real nor purely imaginary, but a specific combination of a real part ($\sqrt{\epsilon}\mathbf{E}$) and an imaginary part ($i\sqrt{\mu}\mathbf{H}$). The field strength is not a four-vector but a <strong>rank-2 antisymmetric tensor</strong> $F^{\mu\nu}$, and it transforms under the Lorentz group by a more general rule than the four-vector rotor conjugation.</p>
+<h3 id="the-energymomentum-biquaternion">The Energy–Momentum Biquaternion</h3>
+<p>The <strong>energy–momentum biquaternion</strong> is</p>
+<p>$$
+\tilde{W} = W + \frac{1}{c}\mathbf{S},
+$$</p>
+<p>with a <strong>real</strong> scalar part (the energy density) and a <strong>real</strong> vector part (the Poynting vector). This is an element of the <strong>quaternion subspace</strong> $\mathbb{H}_\mathbb{B}$, not of $\mathbb{M}_-$ or $\mathbb{M}_+$. The energy–momentum is a component of a <strong>rank-2 symmetric tensor</strong> $T^{\mu\nu}$, and it transforms under the Lorentz group by a still more general rule.</p>
+<p>These counterexamples illustrate that $\mathbb{M}_-$ is specifically the <strong>vector representation</strong> of the Lorentz group, not the full tensor algebra. The four-vectors live in $\mathbb{M}_-$; the antisymmetric tensors (field strengths) and symmetric tensors (energy–momentum) do not.</p>
+<h2 id="the-complementary-subspace-math153">The Complementary Subspace $\mathbb{M}_+$</h2>
+<p>The subspace $\mathbb{M}_-$ is one of two four-dimensional real subspaces of $\mathbb{B}$ complementary under the Hermitian decomposition:</p>
+<p>$$
+\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-.
+$$</p>
+<p>The other subspace, $\mathbb{M}_+$, is the <strong>Hermitian subspace</strong>:</p>
+<p>$$
+\mathbb{M}_+ = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\dagger = \tilde{Q}\},
+$$</p>
+<p>with elements of the form</p>
+<p>$$
+\tilde{Q} = q_0\,e_0 + i q_1\,e_1 + i q_2\,e_2 + i q_3\,e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The scalar part is <strong>real</strong> and the vector part is <strong>purely imaginary</strong>. The norm form on $\mathbb{M}_+$ has signature $(1,3)$ (one positive, three negative), the mirror image of the signature on $\mathbb{M}_-$.</p>
+<p>The two subspaces are related by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. The quaternion conjugation swaps them: $\overline{\mathbb{M}_+} = \mathbb{M}_-$ and $\overline{\mathbb{M}_-} = \mathbb{M}_+$.</p>
+<p>The subspace $\mathbb{M}_+$ contains the <strong>boost biquaternions</strong> $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$ that act on $\mathbb{M}_-$ by rotor conjugation. It also contains the <strong>Hermitian forms</strong> $\tilde{Q}\tilde{Q}^\dagger$ for any $\tilde{Q}$, the <strong>idempotents</strong> $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ from real roots of $-1$, and the identity $e_0$. These objects are the subject of the companion article on the informational space.</p>
+<p>The structural relation between the two subspaces is:</p>
+<ul>
+<li>$\mathbb{M}_-$ is the space of <strong>states</strong> — the four-vectors that describe the configuration of a physical system.</li>
+<li>$\mathbb{M}_+$ is the space of <strong>operators</strong> — the Hermitian biquaternions that act on the states.</li>
+</ul>
+<p>The action is the rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda} \in \mathbb{M}_+$ (for pure boosts) and $\tilde{X} \in \mathbb{M}_-$.</p>
+<p>This complementarity is the algebraic content of the interpretation of $\mathbb{M}_-$ as the "material" or "state" space and $\mathbb{M}_+$ as the "informational" or "operator" space. The present article focuses on the material side; the informational side is treated in the companion article.</p>
+<h2 id="summary">Summary</h2>
+<p>The anti-Hermitian subspace $\mathbb{M}_-$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with imaginary scalar part and real vector part. Its norm form has signature $(3,1)$, matching the Minkowski metric in the $ict$ convention. The Lorentzian signature is not postulated: it arises algebraically from $i^2 = -1$ in the imaginary scalar part.</p>
+<p>The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativistic physics:</p>
+<ul>
+<li>The four-position $\tilde{X} = ict\,e_0 + \mathbf{x}$.</li>
+<li>The four-velocity $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$.</li>
+<li>The four-momentum $\tilde{P} = m\tilde{U}$.</li>
+<li>The four-force $\tilde{F} = d\tilde{P}/d\tau$.</li>
+<li>The four-potential $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$.</li>
+<li>The four-current $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$.</li>
+<li>The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$.</li>
+</ul>
+<p>Each has an imaginary scalar part (the time component) and a real vector part (the spatial components). Each transforms under the Lorentz group by rotor conjugation, with the rotor biquaternion living in the complementary subspace $\mathbb{M}_+$.</p>
+<p>The <strong>light cone</strong> of Minkowski space is the zero divisor cone of $\mathbb{M}_-$: the null four-vectors of light-like propagation are exactly the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.</p>
+<p>Not every physical object is a four-vector: the field-strength biquaternion (antisymmetric rank-2 tensor) and the energy–momentum biquaternion (symmetric rank-2 tensor) do not lie in $\mathbb{M}_-$. The subspace $\mathbb{M}_-$ is specifically the <strong>vector representation</strong> of the Lorentz group.</p>
+<p>The complementary subspace $\mathbb{M}_+$ is the Hermitian subspace, consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation. The complementarity $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the algebraic content of the interpretation of $\mathbb{M}_-$ as "material" (states) and $\mathbb{M}_+$ as "informational" (operators). The latter interpretation is the subject of the companion article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (material space): imaginary scalar, real vector</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (informational space): real scalar, imaginary vector</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$c = 1/\sqrt{\epsilon\mu}$</td>
+<td>Speed of light in the medium</td>
+</tr>
+<tr>
+<td>$c_0 = 1/\sqrt{\epsilon_0\mu_0}$</td>
+<td>Speed of light in vacuum</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$s^2 = d\tilde{X}\circ d\tilde{X}$</td>
+<td>Invariant interval</td>
+</tr>
+<tr>
+<td>$\tilde{\Lambda} \in \mathbb{M}_+$</td>
+<td>Boost biquaternion</td>
+</tr>
+<tr>
+<td>$\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$</td>
+<td>Rotor conjugation</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Hermann Minkowski, "Space and Time" (1908), reprinted in <em>The Principle of Relativity</em> (Dover), for the original four-dimensional formulation of spacetime.</li>
+<li>Albert Einstein, <em>The Meaning of Relativity</em> (Princeton, 1922), for the $ict$ formulation of special relativity.</li>
+<li>Lev Landau and Evgeny Lifshitz, <em>The Classical Theory of Fields</em> (Pergamon, 1975), for the standard four-vector formulation of relativistic physics.</li>
+<li>J. D. Jackson, <em>Classical Electrodynamics</em> (Wiley, 1999), for the four-vector and tensor formulation of electromagnetism.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection between Clifford algebras and Minkowski space.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric algebra formulation of special relativity.</li>
+<li>David Hestenes, <em>Space-Time Algebra</em> (Gordon and Breach, 1966), for the original formulation of spacetime algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="real-special-functions"><strong>Real Special Functions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the real special functions as a collection of named functions that arise repeatedly in analysis, differential equations, and mathematical physics. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No complex analysis is invoked. All functions are treated as functions of a real variable, and all integral representations are real integrals. The order of presentation follows the dependency order: elementary functions first, then functions defined from them, then functions defined from those.</p>
+<h2 id="the-exponential-and-logarithm">The Exponential and Logarithm</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>exponential function</strong> is defined for $x \in \mathbb{R}$ by</p>
+<p>$$
+\exp(x) = \sum_{n=0}^\infty \frac{x^n}{n!}.
+$$</p>
+<p>The series converges absolutely for every $x$. The function is smooth, strictly increasing, and satisfies</p>
+<p>$$
+\exp(x + y) = \exp(x) \exp(y), \qquad \exp(0) = 1, \qquad \exp'(x) = \exp(x).
+$$</p>
+<p>We write $e^x = \exp(x)$ where $e = \exp(1)$.</p>
+<h3 id="the-logarithm">The Logarithm</h3>
+<p>The <strong>natural logarithm</strong> is the inverse of the exponential:</p>
+<p>$$
+\ln x = \int_1^x \frac{dt}{t}, \qquad x > 0.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+\ln(xy) = \ln x + \ln y, \qquad \ln 1 = 0, \qquad (\ln x)' = \frac{1}{x}.
+$$</p>
+<h3 id="general-powers">General Powers</h3>
+<p>For $a > 0$ and $x \in \mathbb{R}$,</p>
+<p>$$
+a^x = \exp(x \ln a).
+$$</p>
+<p>This is consistent with integer and rational powers and extends them continuously to all real exponents.</p>
+<h2 id="the-trigonometric-functions">The Trigonometric Functions</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>sine</strong> and <strong>cosine</strong> functions are defined by</p>
+<p>$$
+\sin x = \sum_{n=0}^\infty \frac{(-1)^n x^{2n+1}}{(2n+1)!}, \qquad \cos x = \sum_{n=0}^\infty \frac{(-1)^n x^{2n}}{(2n)!}.
+$$</p>
+<p>Both series converge absolutely for every $x$. They satisfy</p>
+<p>$$
+\sin' x = \cos x, \qquad \cos' x = -\sin x,
+$$</p>
+<p>$$
+\sin(x + y) = \sin x \cos y + \cos x \sin y,
+$$</p>
+<p>$$
+\cos(x + y) = \cos x \cos y - \sin x \sin y,
+$$</p>
+<p>$$
+\sin^2 x + \cos^2 x = 1.
+$$</p>
+<h3 id="periodicity">Periodicity</h3>
+<p>The number $\pi$ is defined as twice the smallest positive zero of $\cos$. Both functions are $2\pi$-periodic:</p>
+<p>$$
+\sin(x + 2\pi) = \sin x, \qquad \cos(x + 2\pi) = \cos x.
+$$</p>
+<h3 id="the-other-trigonometric-functions">The Other Trigonometric Functions</h3>
+<p>$$
+\tan x = \frac{\sin x}{\cos x}, \qquad \cot x = \frac{\cos x}{\sin x},
+$$</p>
+<p>$$
+\sec x = \frac{1}{\cos x}, \qquad \csc x = \frac{1}{\sin x}.
+$$</p>
+<p>Each is defined wherever the denominator is non-zero.</p>
+<h3 id="inverse-trigonometric-functions">Inverse Trigonometric Functions</h3>
+<p>The <strong>arcsine</strong> is the inverse of $\sin$ on $[-\pi/2, \pi/2]$:</p>
+<p>$$
+\arcsin x = \int_0^x \frac{dt}{\sqrt{1 - t^2}}, \qquad -1 \leq x \leq 1.
+$$</p>
+<p>The <strong>arccosine</strong> is the inverse of $\cos$ on $[0, \pi]$:</p>
+<p>$$
+\arccos x = \frac{\pi}{2} - \arcsin x.
+$$</p>
+<p>The <strong>arctangent</strong> is the inverse of $\tan$ on $(-\pi/2, \pi/2)$:</p>
+<p>$$
+\arctan x = \int_0^x \frac{dt}{1 + t^2}, \qquad x \in \mathbb{R}.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+\arctan x + \arctan \frac{1}{x} = \frac{\pi}{2}, \qquad x > 0.
+$$</p>
+<h2 id="the-hyperbolic-functions">The Hyperbolic Functions</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>hyperbolic sine</strong> and <strong>hyperbolic cosine</strong> are</p>
+<p>$$
+\sinh x = \frac{e^x - e^{-x}}{2}, \qquad \cosh x = \frac{e^x + e^{-x}}{2}.
+$$</p>
+<p>They satisfy</p>
+<p>$$
+\sinh' x = \cosh x, \qquad \cosh' x = \sinh x,
+$$</p>
+<p>$$
+\cosh^2 x - \sinh^2 x = 1,
+$$</p>
+<p>$$
+\sinh(x + y) = \sinh x \cosh y + \cosh x \sinh y,
+$$</p>
+<p>$$
+\cosh(x + y) = \cosh x \cosh y + \sinh x \sinh y.
+$$</p>
+<h3 id="the-other-hyperbolic-functions">The Other Hyperbolic Functions</h3>
+<p>$$
+\tanh x = \frac{\sinh x}{\cosh x}, \qquad \coth x = \frac{\cosh x}{\sinh x},
+$$</p>
+<p>$$
+\operatorname{sech} x = \frac{1}{\cosh x}, \qquad \operatorname{csch} x = \frac{1}{\sinh x}.
+$$</p>
+<h3 id="inverse-hyperbolic-functions">Inverse Hyperbolic Functions</h3>
+<p>$$
+\operatorname{arsinh} x = \ln\left(x + \sqrt{x^2 + 1}\right), \qquad x \in \mathbb{R},
+$$</p>
+<p>$$
+\operatorname{arcosh} x = \ln\left(x + \sqrt{x^2 - 1}\right), \qquad x \geq 1,
+$$</p>
+<p>$$
+\operatorname{artanh} x = \frac{1}{2} \ln \frac{1 + x}{1 - x}, \qquad -1 < x < 1.
+$$</p>
+<h2 id="the-gamma-and-beta-functions">The Gamma and Beta Functions</h2>
+<h3 id="the-gamma-function">The Gamma Function</h3>
+<p>The <strong>gamma function</strong> is defined for $x > 0$ by</p>
+<p>$$
+\Gamma(x) = \int_0^\infty t^{x-1} e^{-t} \, dt.
+$$</p>
+<p>It satisfies the <strong>functional equation</strong></p>
+<p>$$
+\Gamma(x + 1) = x \Gamma(x),
+$$</p>
+<p>which follows from integration by parts. Since $\Gamma(1) = 1$, this gives</p>
+<p>$$
+\Gamma(n + 1) = n!
+$$</p>
+<p>for non-negative integers $n$. The gamma function is the unique logarithmically convex function on $(0, \infty)$ satisfying $\Gamma(1) = 1$ and $\Gamma(x + 1) = x \Gamma(x)$, by the Bohr–Mollerup theorem.</p>
+<p><strong>Reflection formula.</strong></p>
+<p>$$
+\Gamma(x) \Gamma(1 - x) = \frac{\pi}{\sin(\pi x)}, \qquad 0 < x < 1.
+$$</p>
+<p><strong>Duplication formula.</strong></p>
+<p>$$
+\Gamma(x) \Gamma\left(x + \tfrac{1}{2}\right) = 2^{1-2x} \sqrt{\pi} \, \Gamma(2x).
+$$</p>
+<h3 id="the-beta-function">The Beta Function</h3>
+<p>The <strong>beta function</strong> is defined for $x, y > 0$ by</p>
+<p>$$
+B(x, y) = \int_0^1 t^{x-1} (1 - t)^{y-1} \, dt.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+B(x, y) = \frac{\Gamma(x) \Gamma(y)}{\Gamma(x + y)}.
+$$</p>
+<p><strong>Proof.</strong> Substitute $t = u/(1+u)$ in the beta integral, then use the gamma integral representation for each factor. $\square$</p>
+<p>It is symmetric: $B(x, y) = B(y, x)$.</p>
+<h2 id="the-error-function-and-related-functions">The Error Function and Related Functions</h2>
+<h3 id="the-error-function">The Error Function</h3>
+<p>The <strong>error function</strong> is defined by</p>
+<p>$$
+\operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt.
+$$</p>
+<p>It is odd, strictly increasing, and satisfies</p>
+<p>$$
+\lim_{x \to \infty} \operatorname{erf}(x) = 1, \qquad \lim_{x \to -\infty} \operatorname{erf}(x) = -1.
+$$</p>
+<h3 id="the-complementary-error-function">The Complementary Error Function</h3>
+<p>$$
+\operatorname{erfc}(x) = 1 - \operatorname{erf}(x) = \frac{2}{\sqrt{\pi}} \int_x^\infty e^{-t^2} \, dt.
+$$</p>
+<h3 id="the-imaginary-error-function">The Imaginary Error Function</h3>
+<p>$$
+\operatorname{erfi}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{t^2} \, dt.
+$$</p>
+<h3 id="the-dawson-function">The Dawson Function</h3>
+<p>$$
+D(x) = e^{-x^2} \int_0^x e^{t^2} \, dt.
+$$</p>
+<p>It satisfies the differential equation</p>
+<p>$$
+D'(x) + 2x D(x) = 1.
+$$</p>
+<h3 id="the-fresnel-integrals">The Fresnel Integrals</h3>
+<p>$$
+S(x) = \int_0^x \sin\left(\frac{\pi t^2}{2}\right) dt, \qquad C(x) = \int_0^x \cos\left(\frac{\pi t^2}{2}\right) dt.
+$$</p>
+<p>Both converge as $x \to \infty$, with</p>
+<p>$$
+\lim_{x \to \infty} S(x) = \lim_{x \to \infty} C(x) = \frac{1}{2}.
+$$</p>
+<h2 id="the-incomplete-gamma-and-beta-functions">The Incomplete Gamma and Beta Functions</h2>
+<h3 id="the-incomplete-gamma-function">The Incomplete Gamma Function</h3>
+<p>The <strong>lower incomplete gamma function</strong> is</p>
+<p>$$
+\gamma(s, x) = \int_0^x t^{s-1} e^{-t} \, dt, \qquad s > 0, \; x \geq 0.
+$$</p>
+<p>The <strong>upper incomplete gamma function</strong> is</p>
+<p>$$
+\Gamma(s, x) = \int_x^\infty t^{s-1} e^{-t} \, dt, \qquad s > 0, \; x \geq 0.
+$$</p>
+<p>They satisfy</p>
+<p>$$
+\gamma(s, x) + \Gamma(s, x) = \Gamma(s).
+$$</p>
+<h3 id="the-regularized-incomplete-gamma-functions">The Regularized Incomplete Gamma Functions</h3>
+<p>$$
+P(s, x) = \frac{\gamma(s, x)}{\Gamma(s)}, \qquad Q(s, x) = \frac{\Gamma(s, x)}{\Gamma(s)}.
+$$</p>
+<p>These satisfy $P + Q = 1$ and take values in $[0, 1]$.</p>
+<h3 id="the-incomplete-beta-function">The Incomplete Beta Function</h3>
+<p>$$
+B(x; a, b) = \int_0^x t^{a-1} (1 - t)^{b-1} \, dt, \qquad 0 \leq x \leq 1, \; a, b > 0.
+$$</p>
+<p>The <strong>regularized incomplete beta function</strong> is</p>
+<p>$$
+I_x(a, b) = \frac{B(x; a, b)}{B(a, b)}.
+$$</p>
+<p>It satisfies $I_0(a, b) = 0$ and $I_1(a, b) = 1$.</p>
+<h2 id="the-riemann-zeta-function">The Riemann Zeta Function</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>Riemann zeta function</strong> is defined for $s > 1$ by</p>
+<p>$$
+\zeta(s) = \sum_{n=1}^\infty \frac{1}{n^s}.
+$$</p>
+<p>The series converges absolutely for $s > 1$ and diverges for $s \leq 1$.</p>
+<h3 id="integral-representation">Integral Representation</h3>
+<p>For $s > 1$,</p>
+<p>$$
+\zeta(s) = \frac{1}{\Gamma(s)} \int_0^\infty \frac{t^{s-1}}{e^t - 1} \, dt.
+$$</p>
+<h3 id="special-values">Special Values</h3>
+<p>$$
+\zeta(2) = \frac{\pi^2}{6}, \qquad \zeta(4) = \frac{\pi^4}{90}, \qquad \zeta(2n) = \frac{(-1)^{n+1} B_{2n} (2\pi)^{2n}}{2 (2n)!},
+$$</p>
+<p>where $B_{2n}$ are the Bernoulli numbers.</p>
+<h3 id="the-euler-product">The Euler Product</h3>
+<p>For $s > 1$,</p>
+<p>$$
+\zeta(s) = \prod_p \frac{1}{1 - p^{-s}},
+$$</p>
+<p>where the product is over all primes $p$. This is the analytic form of the fundamental theorem of arithmetic.</p>
+<h3 id="the-dirichlet-eta-function">The Dirichlet Eta Function</h3>
+<p>$$
+\eta(s) = \sum_{n=1}^\infty \frac{(-1)^{n-1}}{n^s} = (1 - 2^{1-s}) \zeta(s), \qquad s > 0.
+$$</p>
+<p>This extends $\zeta$ to $s > 0$.</p>
+<h2 id="the-bernoulli-and-euler-numbers">The Bernoulli and Euler Numbers</h2>
+<h3 id="the-bernoulli-numbers">The Bernoulli Numbers</h3>
+<p>The <strong>Bernoulli numbers</strong> $B_n$ are defined by the generating function</p>
+<p>$$
+\frac{x}{e^x - 1} = \sum_{n=0}^\infty \frac{B_n}{n!} x^n, \qquad |x| < 2\pi.
+$$</p>
+<p>They satisfy $B_0 = 1$, $B_1 = -1/2$, and $B_{2n+1} = 0$ for $n \geq 1$. The first few are</p>
+<p>$$
+B_0 = 1, \quad B_1 = -\frac{1}{2}, \quad B_2 = \frac{1}{6}, \quad B_4 = -\frac{1}{30}, \quad B_6 = \frac{1}{42}.
+$$</p>
+<h3 id="the-bernoulli-polynomials">The Bernoulli Polynomials</h3>
+<p>$$
+\frac{x e^{t x}}{e^x - 1} = \sum_{n=0}^\infty \frac{B_n(t)}{n!} x^n.
+$$</p>
+<p>They satisfy $B_n(0) = B_n$ and $B_n(1) = B_n$ for $n \neq 1$.</p>
+<h3 id="the-euler-numbers">The Euler Numbers</h3>
+<p>The <strong>Euler numbers</strong> $E_n$ are defined by</p>
+<p>$$
+\frac{2}{e^x + e^{-x}} = \sum_{n=0}^\infty \frac{E_n}{n!} x^n.
+$$</p>
+<p>They satisfy $E_{2n+1} = 0$ and</p>
+<p>$$
+E_0 = 1, \quad E_2 = -1, \quad E_4 = 5, \quad E_6 = -61.
+$$</p>
+<h2 id="the-orthogonal-polynomials">The Orthogonal Polynomials</h2>
+<h3 id="legendre-polynomials">Legendre Polynomials</h3>
+<p>The <strong>Legendre polynomials</strong> $P_n(x)$ are defined on $[-1, 1]$ by the generating function</p>
+<p>$$
+\frac{1}{\sqrt{1 - 2xt + t^2}} = \sum_{n=0}^\infty P_n(x) t^n, \qquad |t| < 1.
+$$</p>
+<p>They satisfy the recurrence</p>
+<p>$$
+(n+1) P_{n+1}(x) = (2n+1) x P_n(x) - n P_{n-1}(x),
+$$</p>
+<p>with $P_0 = 1$ and $P_1 = x$. They are orthogonal on $[-1, 1]$ with respect to the weight $1$:</p>
+<p>$$
+\int_{-1}^1 P_m(x) P_n(x) \, dx = \frac{2}{2n+1} \delta_{mn}.
+$$</p>
+<p>They satisfy Legendre's differential equation</p>
+<p>$$
+(1 - x^2) y'' - 2x y' + n(n+1) y = 0.
+$$</p>
+<h3 id="chebyshev-polynomials">Chebyshev Polynomials</h3>
+<p>The <strong>Chebyshev polynomials of the first kind</strong> $T_n(x)$ are defined on $[-1, 1]$ by</p>
+<p>$$
+T_n(\cos \theta) = \cos(n \theta).
+$$</p>
+<p>They satisfy the recurrence</p>
+<p>$$
+T_{n+1}(x) = 2x T_n(x) - T_{n-1}(x),
+$$</p>
+<p>with $T_0 = 1$ and $T_1 = x$. They are orthogonal on $[-1, 1]$ with respect to the weight $(1 - x^2)^{-1/2}$:</p>
+<p>$$
+\int_{-1}^1 \frac{T_m(x) T_n(x)}{\sqrt{1 - x^2}} \, dx = \begin{cases} \pi & m = n = 0, \\ \pi/2 & m = n \geq 1, \\ 0 & m \neq n. \end{cases}
+$$</p>
+<h3 id="hermite-polynomials">Hermite Polynomials</h3>
+<p>The <strong>Hermite polynomials</strong> $H_n(x)$ are defined on $\mathbb{R}$ by</p>
+<p>$$
+H_n(x) = (-1)^n e^{x^2} \frac{d^n}{dx^n} e^{-x^2}.
+$$</p>
+<p>They satisfy the recurrence</p>
+<p>$$
+H_{n+1}(x) = 2x H_n(x) - 2n H_{n-1}(x),
+$$</p>
+<p>with $H_0 = 1$ and $H_1 = 2x$. They are orthogonal on $\mathbb{R}$ with respect to the weight $e^{-x^2}$:</p>
+<p>$$
+\int_{-\infty}^\infty H_m(x) H_n(x) e^{-x^2} \, dx = 2^n n! \sqrt{\pi} \, \delta_{mn}.
+$$</p>
+<h3 id="laguerre-polynomials">Laguerre Polynomials</h3>
+<p>The <strong>Laguerre polynomials</strong> $L_n(x)$ are defined on $[0, \infty)$ by</p>
+<p>$$
+L_n(x) = \frac{e^x}{n!} \frac{d^n}{dx^n} (x^n e^{-x}).
+$$</p>
+<p>They satisfy the recurrence</p>
+<p>$$
+(n+1) L_{n+1}(x) = (2n+1-x) L_n(x) - n L_{n-1}(x),
+$$</p>
+<p>with $L_0 = 1$ and $L_1 = 1 - x$. They are orthogonal on $[0, \infty)$ with respect to the weight $e^{-x}$:</p>
+<p>$$
+\int_0^\infty L_m(x) L_n(x) e^{-x} \, dx = \delta_{mn}.
+$$</p>
+<h2 id="the-bessel-functions">The Bessel Functions</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>Bessel function of the first kind</strong> of order $\nu \geq 0$ is</p>
+<p>$$
+J_\nu(x) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{x}{2} \right)^{2n + \nu}.
+$$</p>
+<p>It satisfies Bessel's differential equation</p>
+<p>$$
+x^2 y'' + x y' + (x^2 - \nu^2) y = 0.
+$$</p>
+<h3 id="the-bessel-function-of-the-second-kind">The Bessel Function of the Second Kind</h3>
+<p>$$
+Y_\nu(x) = \frac{J_\nu(x) \cos(\nu \pi) - J_{-\nu}(x)}{\sin(\nu \pi)}, \qquad \nu \notin \mathbb{Z},
+$$</p>
+<p>with the limit taken for integer $\nu$. It is the second linearly independent solution of Bessel's equation.</p>
+<h3 id="modified-bessel-functions">Modified Bessel Functions</h3>
+<p>The <strong>modified Bessel function of the first kind</strong> is</p>
+<p>$$
+I_\nu(x) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{x}{2} \right)^{2n + \nu}.
+$$</p>
+<p>It satisfies</p>
+<p>$$
+x^2 y'' + x y' - (x^2 + \nu^2) y = 0.
+$$</p>
+<h3 id="asymptotics">Asymptotics</h3>
+<p>As $x \to \infty$,</p>
+<p>$$
+J_\nu(x) \sim \sqrt{\frac{2}{\pi x}} \cos\left(x - \frac{\nu \pi}{2} - \frac{\pi}{4}\right),
+$$</p>
+<p>$$
+I_\nu(x) \sim \frac{e^x}{\sqrt{2 \pi x}}.
+$$</p>
+<h2 id="the-airy-functions">The Airy Functions</h2>
+<h3 id="definition_5">Definition</h3>
+<p>The <strong>Airy function</strong> $\operatorname{Ai}(x)$ is defined by</p>
+<p>$$
+\operatorname{Ai}(x) = \frac{1}{\pi} \int_0^\infty \cos\left(\frac{t^3}{3} + x t\right) dt.
+$$</p>
+<p>It satisfies Airy's differential equation</p>
+<p>$$
+y'' - x y = 0.
+$$</p>
+<p>The second solution $\operatorname{Bi}(x)$ is defined by</p>
+<p>$$
+\operatorname{Bi}(x) = \frac{1}{\pi} \int_0^\infty \left( e^{-t^3/3 + x t} + \sin\left(\frac{t^3}{3} + x t\right) \right) dt.
+$$</p>
+<h3 id="asymptotics_1">Asymptotics</h3>
+<p>As $x \to +\infty$,</p>
+<p>$$
+\operatorname{Ai}(x) \sim \frac{1}{2 \sqrt{\pi} x^{1/4}} e^{-2 x^{3/2}/3}.
+$$</p>
+<p>As $x \to -\infty$,</p>
+<p>$$
+\operatorname{Ai}(x) \sim \frac{1}{\sqrt{\pi} |x|^{1/4}} \sin\left(\frac{2 |x|^{3/2}}{3} + \frac{\pi}{4}\right).
+$$</p>
+<h2 id="the-hypergeometric-function">The Hypergeometric Function</h2>
+<h3 id="definition_6">Definition</h3>
+<p>The <strong>Gauss hypergeometric function</strong> is defined for $|x| < 1$ by</p>
+<p>$$
+{}_2F_1(a, b; c; x) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{x^n}{n!},
+$$</p>
+<p>where $(a)_n = a(a+1) \cdots (a+n-1)$ is the Pochhammer symbol.</p>
+<p>It satisfies the hypergeometric differential equation</p>
+<p>$$
+x(1 - x) y'' + [c - (a + b + 1) x] y' - ab y = 0.
+$$</p>
+<h3 id="special-cases">Special Cases</h3>
+<p>$$
+{}_2F_1(1, 1; 2; x) = -\frac{\ln(1 - x)}{x},
+$$</p>
+<p>$$
+{}_2F_1(a, b; b; x) = (1 - x)^{-a},
+$$</p>
+<p>$$
+{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; x^2\right) = \frac{\arcsin x}{x}.
+$$</p>
+<h3 id="the-generalized-hypergeometric-function">The Generalized Hypergeometric Function</h3>
+<p>$$
+{}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; x) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{x^n}{n!}.
+$$</p>
+<p>Most special functions of mathematical physics are special cases of ${}_pF_q$.</p>
+<h2 id="the-elliptic-integrals">The Elliptic Integrals</h2>
+<h3 id="definition_7">Definition</h3>
+<p>The <strong>complete elliptic integral of the first kind</strong> is</p>
+<p>$$
+K(k) = \int_0^{\pi/2} \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}}, \qquad 0 \leq k < 1.
+$$</p>
+<p>The <strong>complete elliptic integral of the second kind</strong> is</p>
+<p>$$
+E(k) = \int_0^{\pi/2} \sqrt{1 - k^2 \sin^2 \theta} \, d\theta.
+$$</p>
+<h3 id="the-incomplete-elliptic-integrals">The Incomplete Elliptic Integrals</h3>
+<p>$$
+F(\phi, k) = \int_0^\phi \frac{d\theta}{\sqrt{1 - k^2 \sin^2 \theta}},
+$$</p>
+<p>$$
+E(\phi, k) = \int_0^\phi \sqrt{1 - k^2 \sin^2 \theta} \, d\theta.
+$$</p>
+<h3 id="relation-to-the-hypergeometric-function">Relation to the Hypergeometric Function</h3>
+<p>$$
+K(k) = \frac{\pi}{2} \, {}_2F_1\left(\frac{1}{2}, \frac{1}{2}; 1; k^2\right),
+$$</p>
+<p>$$
+E(k) = \frac{\pi}{2} \, {}_2F_1\left(-\frac{1}{2}, \frac{1}{2}; 1; k^2\right).
+$$</p>
+<h2 id="the-lambert-w-function">The Lambert W Function</h2>
+<h3 id="definition_8">Definition</h3>
+<p>The <strong>Lambert W function</strong> is the inverse of</p>
+<p>$$
+f(w) = w e^w.
+$$</p>
+<p>That is, $W(x)$ is the unique real solution of</p>
+<p>$$
+W(x) e^{W(x)} = x.
+$$</p>
+<p>For $x \geq 0$, there is a unique real solution $W_0(x) \geq 0$. For $-1/e \leq x < 0$, there are two real solutions $W_{-1}(x) \leq -1$ and $W_0(x) \geq -1$.</p>
+<h3 id="derivative">Derivative</h3>
+<p>$$
+W'(x) = \frac{W(x)}{x(1 + W(x))}, \qquad x \neq 0, \; x \neq -1/e.
+$$</p>
+<h3 id="applications">Applications</h3>
+<p>The Lambert W function solves equations of the form $a e^x + b x + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the solution of the time-dependent Schrödinger equation for certain potentials.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e^x, \ln x$</td>
+<td>Exponential, logarithm</td>
+</tr>
+<tr>
+<td>$\sin x, \cos x, \tan x$</td>
+<td>Trigonometric functions</td>
+</tr>
+<tr>
+<td>$\arcsin x, \arccos x, \arctan x$</td>
+<td>Inverse trigonometric functions</td>
+</tr>
+<tr>
+<td>$\sinh x, \cosh x, \tanh x$</td>
+<td>Hyperbolic functions</td>
+</tr>
+<tr>
+<td>$\Gamma(x)$</td>
+<td>Gamma function</td>
+</tr>
+<tr>
+<td>$B(x, y)$</td>
+<td>Beta function</td>
+</tr>
+<tr>
+<td>$\operatorname{erf}(x), \operatorname{erfc}(x)$</td>
+<td>Error function, complementary error function</td>
+</tr>
+<tr>
+<td>$\gamma(s, x), \Gamma(s, x)$</td>
+<td>Incomplete gamma functions</td>
+</tr>
+<tr>
+<td>$B(x; a, b), I_x(a, b)$</td>
+<td>Incomplete beta functions</td>
+</tr>
+<tr>
+<td>$\zeta(s)$</td>
+<td>Riemann zeta function</td>
+</tr>
+<tr>
+<td>$B_n, E_n$</td>
+<td>Bernoulli, Euler numbers</td>
+</tr>
+<tr>
+<td>$P_n, T_n, H_n, L_n$</td>
+<td>Legendre, Chebyshev, Hermite, Laguerre polynomials</td>
+</tr>
+<tr>
+<td>$J_\nu, Y_\nu, I_\nu$</td>
+<td>Bessel functions</td>
+</tr>
+<tr>
+<td>$\operatorname{Ai}, \operatorname{Bi}$</td>
+<td>Airy functions</td>
+</tr>
+<tr>
+<td>${}_pF_q$</td>
+<td>Generalized hypergeometric function</td>
+</tr>
+<tr>
+<td>$K(k), E(k)$</td>
+<td>Complete elliptic integrals</td>
+</tr>
+<tr>
+<td>$W(x)$</td>
+<td>Lambert W function</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>N. N. Lebedev, <em>Special Functions and Their Applications</em> (Dover, 1972), for a thorough treatment of the classical functions.</li>
+<li>G. E. Andrews, R. Askey, and R. Roy, <em>Special Functions</em> (Cambridge, 1999), for the modern unified approach.</li>
+<li>M. Abramowitz and I. A. Stegun, <em>Handbook of Mathematical Functions</em> (Dover, 1965), for tables and formulas.</li>
+<li>E. T. Whittaker and G. N. Watson, <em>A Course of Modern Analysis</em> (Cambridge, 1927), for the classical treatment.</li>
+<li>NIST Digital Library of Mathematical Functions, for the modern reference.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

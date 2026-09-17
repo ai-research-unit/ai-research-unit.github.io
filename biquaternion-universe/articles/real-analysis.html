@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="real-analysis"><strong>Real Analysis</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces real analysis as the study of limits, continuity, differentiation, and integration on the real line. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The order and completeness of $\mathbb{R}$ are used throughout, and every topological notion is defined in terms of them. No abstract topology is assumed.</p>
+<h2 id="the-real-line-as-a-metric-space">The Real Line as a Metric Space</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>distance</strong> between two real numbers $a$ and $b$ is</p>
+<p>$$
+d(a, b) = |a - b|.
+$$</p>
+<p>It satisfies:</p>
+<p>$$
+d(a, b) \geq 0, \qquad d(a, b) = 0 \iff a = b,
+$$</p>
+<p>$$
+d(a, b) = d(b, a),
+$$</p>
+<p>$$
+d(a, c) \leq d(a, b) + d(b, c).
+$$</p>
+<p>The pair $(\mathbb{R}, d)$ is a <strong>metric space</strong>. Every notion in real analysis is defined in terms of this metric.</p>
+<h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
+<p>The <strong>open ball</strong> of radius $r > 0$ centered at $a$ is</p>
+<p>$$
+B(a, r) = \{x \in \mathbb{R} : |x - a| < r\} = (a - r, a + r).
+$$</p>
+<p>The <strong>closed ball</strong> is</p>
+<p>$$
+\overline{B}(a, r) = \{x \in \mathbb{R} : |x - a| \leq r\} = [a - r, a + r].
+$$</p>
+<p>A <strong>neighborhood</strong> of $a$ is any set containing some $B(a, r)$.</p>
+<h3 id="open-and-closed-sets">Open and Closed Sets</h3>
+<p>A set $U \subseteq \mathbb{R}$ is <strong>open</strong> if for every $a \in U$ there exists $r > 0$ with $B(a, r) \subseteq U$.</p>
+<p>A set $F \subseteq \mathbb{R}$ is <strong>closed</strong> if its complement $\mathbb{R} \setminus F$ is open.</p>
+<p><strong>Theorem.</strong> The open sets of $\mathbb{R}$ are exactly the unions of open intervals.</p>
+<p><strong>Theorem.</strong> Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually, arbitrary intersections of closed sets are closed. Finite unions of closed sets are closed.</p>
+<p><strong>Theorem.</strong> A set $F$ is closed iff every convergent sequence in $F$ has its limit in $F$.</p>
+<h3 id="compactness">Compactness</h3>
+<p>A set $K \subseteq \mathbb{R}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{R}$ is compact iff it is closed and bounded.</p>
+<p><strong>Theorem (Bolzano–Weierstrass).</strong> Every bounded sequence in $\mathbb{R}$ has a convergent subsequence.</p>
+<p><strong>Theorem.</strong> A continuous real-valued function on a compact set is bounded and attains its maximum and minimum.</p>
+<h2 id="sequences-and-series">Sequences and Series</h2>
+<h3 id="convergence">Convergence</h3>
+<p>A sequence $(a_n)$ of real numbers <strong>converges</strong> to $L \in \mathbb{R}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+n \geq N \implies |a_n - L| < \epsilon.
+$$</p>
+<p>We write $a_n \to L$ or $\lim_{n \to \infty} a_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $a_n \to L$ and $a_n \to L'$, then $L = L'$.</p>
+<p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails: $(-1)^n$ is bounded but not convergent.</p>
+<h3 id="cauchy-sequences">Cauchy Sequences</h3>
+<p>A sequence $(a_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+m, n \geq N \implies |a_m - a_n| < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> In $\mathbb{R}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{R}$ expressed in sequence form.</p>
+<p><strong>Theorem.</strong> Every subsequence of a convergent sequence converges to the same limit.</p>
+<h3 id="monotone-convergence">Monotone Convergence</h3>
+<p>A sequence $(a_n)$ is <strong>monotone increasing</strong> if $a_{n+1} \geq a_n$ for all $n$.</p>
+<p><strong>Theorem (Monotone Convergence).</strong> Every bounded monotone sequence converges.</p>
+<p><strong>Proof.</strong> Suppose $(a_n)$ is monotone increasing and bounded above. Let $L = \sup \{a_n\}$. For $\epsilon > 0$, $L - \epsilon$ is not an upper bound, so there exists $N$ with $a_N > L - \epsilon$. By monotonicity, $n \geq N$ implies $L - \epsilon < a_n \leq L$. Hence $a_n \to L$. $\square$</p>
+<h3 id="subsequences-and-limit-points">Subsequences and Limit Points</h3>
+<p>A real number $L$ is a <strong>limit point</strong> of a sequence $(a_n)$ if some subsequence converges to $L$.</p>
+<p><strong>Theorem.</strong> $L$ is a limit point of $(a_n)$ iff for every $\epsilon > 0$ and every $N \in \mathbb{N}$ there exists $n \geq N$ with $|a_n - L| < \epsilon$.</p>
+<p><strong>Theorem (Bolzano–Weierstrass, sequence form).</strong> Every bounded sequence has a limit point.</p>
+<h3 id="limsup-and-liminf">Limsup and Liminf</h3>
+<p>The <strong>limit superior</strong> of a sequence $(a_n)$ is</p>
+<p>$$
+\limsup_{n \to \infty} a_n = \lim_{n \to \infty} \left( \sup_{k \geq n} a_k \right),
+$$</p>
+<p>and the <strong>limit inferior</strong> is</p>
+<p>$$
+\liminf_{n \to \infty} a_n = \lim_{n \to \infty} \left( \inf_{k \geq n} a_k \right).
+$$</p>
+<p>Both exist in $\mathbb{R} \cup \{-\infty, +\infty\}$ for any sequence, because the sequences $(\sup_{k \geq n} a_k)$ and $(\inf_{k \geq n} a_k)$ are monotone.</p>
+<p><strong>Theorem.</strong> $\liminf a_n \leq \limsup a_n$, with equality iff $(a_n)$ converges.</p>
+<h3 id="series">Series</h3>
+<p>A <strong>series</strong> is a formal sum $\sum_{n=1}^\infty a_n$. Its <strong>partial sums</strong> are</p>
+<p>$$
+S_N = \sum_{n=1}^N a_n.
+$$</p>
+<p>The series <strong>converges</strong> if the sequence $(S_N)$ converges. The limit is the <strong>sum</strong> of the series.</p>
+<p><strong>Theorem (Cauchy criterion).</strong> $\sum a_n$ converges iff for every $\epsilon > 0$ there exists $N$ such that</p>
+<p>$$
+m > n \geq N \implies \left| \sum_{k=n+1}^m a_k \right| < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> If $\sum a_n$ converges, then $a_n \to 0$. The converse fails: the harmonic series $\sum 1/n$ diverges even though $1/n \to 0$.</p>
+<p><strong>Theorem (Comparison).</strong> If $0 \leq a_n \leq b_n$ and $\sum b_n$ converges, then $\sum a_n$ converges.</p>
+<p><strong>Theorem (Absolute convergence).</strong> If $\sum |a_n|$ converges, then $\sum a_n$ converges.</p>
+<p><strong>Theorem (Ratio test).</strong> If $\lim |a_{n+1}/a_n| = L$, the series converges absolutely if $L < 1$ and diverges if $L > 1$. The test is inconclusive if $L = 1$.</p>
+<p><strong>Theorem (Root test).</strong> If $\lim |a_n|^{1/n} = L$, the series converges absolutely if $L < 1$ and diverges if $L > 1$. The test is inconclusive if $L = 1$.</p>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<h3 id="limits-of-functions">Limits of Functions</h3>
+<p>Let $f : D \to \mathbb{R}$ with $D \subseteq \mathbb{R}$, and let $a$ be a limit point of $D$. We say</p>
+<p>$$
+\lim_{x \to a} f(x) = L
+$$</p>
+<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+x \in D, \; 0 < |x - a| < \delta \implies |f(x) - L| < \epsilon.
+$$</p>
+<p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{x \to a} f(x) = L$ iff for every sequence $(x_n)$ in $D \setminus \{a\}$ with $x_n \to a$, we have $f(x_n) \to L$.</p>
+<h3 id="continuity">Continuity</h3>
+<p>A function $f : D \to \mathbb{R}$ is <strong>continuous at</strong> $a \in D$ if</p>
+<p>$$
+\lim_{x \to a} f(x) = f(a).
+$$</p>
+<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+x \in D, \; |x - a| < \delta \implies |f(x) - f(a)| < \epsilon.
+$$</p>
+<p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
+<p><strong>Theorem.</strong> $f$ is continuous at $a$ iff for every sequence $(x_n)$ in $D$ with $x_n \to a$, we have $f(x_n) \to f(a)$.</p>
+<p><strong>Theorem.</strong> Sums, products, and quotients (where defined) of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
+<p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
+<h3 id="the-intermediate-value-theorem">The Intermediate Value Theorem</h3>
+<p><strong>Theorem (IVT).</strong> If $f : [a, b] \to \mathbb{R}$ is continuous and $y$ lies between $f(a)$ and $f(b)$, then there exists $c \in [a, b]$ with $f(c) = y$.</p>
+<p><strong>Proof.</strong> Suppose $f(a) < y < f(b)$. Let</p>
+<p>$$
+S = \{x \in [a, b] : f(x) \leq y\}.
+$$</p>
+<p>$S$ is non-empty ($a \in S$) and bounded above (by $b$), so $c = \sup S$ exists. By continuity, $f(c) \leq y$. If $f(c) < y$, then for $x$ slightly greater than $c$, $f(x) < y$, contradicting the definition of $c$. Hence $f(c) = y$. $\square$</p>
+<p><strong>Corollary.</strong> If $f$ is continuous on $[a, b]$ and $f(a) f(b) < 0$, then $f$ has a root in $(a, b)$.</p>
+<h3 id="the-extreme-value-theorem">The Extreme Value Theorem</h3>
+<p><strong>Theorem (EVT).</strong> If $f : [a, b] \to \mathbb{R}$ is continuous, then $f$ is bounded and attains its maximum and minimum.</p>
+<p><strong>Proof.</strong> $[a, b]$ is compact. Continuous images of compact sets are compact. A compact subset of $\mathbb{R}$ is closed and bounded, hence contains its supremum and infimum. $\square$</p>
+<h3 id="uniform-continuity">Uniform Continuity</h3>
+<p>A function $f : D \to \mathbb{R}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+x, y \in D, \; |x - y| < \delta \implies |f(x) - f(y)| < \epsilon.
+$$</p>
+<p>The difference from ordinary continuity is that $\delta$ depends only on $\epsilon$, not on the point.</p>
+<p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
+<p><strong>Theorem.</strong> A uniformly continuous function on a bounded interval is bounded. A continuous function on a bounded interval need not be bounded: $1/x$ on $(0, 1)$ is continuous but unbounded.</p>
+<h2 id="differentiation">Differentiation</h2>
+<h3 id="the-derivative">The Derivative</h3>
+<p>Let $f : (a, b) \to \mathbb{R}$ and $x_0 \in (a, b)$. The <strong>derivative</strong> of $f$ at $x_0$ is</p>
+<p>$$
+f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h},
+$$</p>
+<p>provided the limit exists. If it does, $f$ is <strong>differentiable</strong> at $x_0$.</p>
+<p><strong>Theorem.</strong> Differentiable implies continuous. The converse fails: $|x|$ is continuous at $0$ but not differentiable there.</p>
+<h3 id="rules-of-differentiation">Rules of Differentiation</h3>
+<p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
+<p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
+<p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g \neq 0$.</p>
+<p><strong>Chain rule.</strong> $(f \circ g)'(x) = f'(g(x)) g'(x)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is differentiable at $x_0$ with $f'(x_0) \neq 0$ and $f^{-1}$ is defined near $f(x_0)$, then</p>
+<p>$$
+(f^{-1})'(f(x_0)) = \frac{1}{f'(x_0)}.
+$$</p>
+<h3 id="the-mean-value-theorem">The Mean Value Theorem</h3>
+<p><strong>Theorem (Rolle).</strong> If $f$ is continuous on $[a, b]$, differentiable on $(a, b)$, and $f(a) = f(b)$, then there exists $c \in (a, b)$ with $f'(c) = 0$.</p>
+<p><strong>Proof.</strong> If $f$ is constant, any $c$ works. Otherwise, $f$ attains a maximum or minimum in $(a, b)$ by the EVT, and at an interior extremum the derivative vanishes. $\square$</p>
+<p><strong>Theorem (Mean Value Theorem).</strong> If $f$ is continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists $c \in (a, b)$ with</p>
+<p>$$
+f'(c) = \frac{f(b) - f(a)}{b - a}.
+$$</p>
+<p><strong>Proof.</strong> Apply Rolle to $g(x) = f(x) - \frac{f(b) - f(a)}{b - a}(x - a)$. $\square$</p>
+<p><strong>Corollary.</strong> If $f' = 0$ on an interval, $f$ is constant there.</p>
+<p><strong>Corollary.</strong> If $f' > 0$ on an interval, $f$ is strictly increasing there.</p>
+<h3 id="taylors-theorem">Taylor's Theorem</h3>
+<p><strong>Theorem (Taylor).</strong> If $f$ is $n$ times differentiable on an interval containing $a$ and $x$, then</p>
+<p>$$
+f(x) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (x - a)^k + R_n(x),
+$$</p>
+<p>where the remainder is</p>
+<p>$$
+R_n(x) = \frac{f^{(n)}(\xi)}{n!} (x - a)^n
+$$</p>
+<p>for some $\xi$ between $a$ and $x$.</p>
+<p><strong>Corollary.</strong> If $f^{(n+1)} = 0$ on an interval, $f$ is a polynomial of degree at most $n$ there.</p>
+<h2 id="integration">Integration</h2>
+<h3 id="the-riemann-integral">The Riemann Integral</h3>
+<p>Let $f : [a, b] \to \mathbb{R}$ be bounded. A <strong>partition</strong> of $[a, b]$ is a finite set</p>
+<p>$$
+P = \{a = x_0 < x_1 < \dots < x_n = b\}.
+$$</p>
+<p>The <strong>upper sum</strong> and <strong>lower sum</strong> are</p>
+<p>$$
+U(f, P) = \sum_{i=1}^n M_i (x_i - x_{i-1}), \qquad L(f, P) = \sum_{i=1}^n m_i (x_i - x_{i-1}),
+$$</p>
+<p>where $M_i = \sup_{[x_{i-1}, x_i]} f$ and $m_i = \inf_{[x_{i-1}, x_i]} f$.</p>
+<p>The <strong>upper integral</strong> and <strong>lower integral</strong> are</p>
+<p>$$
+\overline{\int_a^b} f = \inf_P U(f, P), \qquad \underline{\int_a^b} f = \sup_P L(f, P).
+$$</p>
+<p>$f$ is <strong>Riemann integrable</strong> if the two agree. The common value is</p>
+<p>$$
+\int_a^b f.
+$$</p>
+<p><strong>Theorem (Cauchy criterion).</strong> $f$ is Riemann integrable iff for every $\epsilon > 0$ there exists a partition $P$ with $U(f, P) - L(f, P) < \epsilon$.</p>
+<p><strong>Theorem.</strong> Continuous functions on $[a, b]$ are Riemann integrable. Monotone functions on $[a, b]$ are Riemann integrable. Functions with finitely many discontinuities on $[a, b]$ are Riemann integrable.</p>
+<p><strong>Theorem (Fundamental Theorem of Calculus, I).</strong> If $f$ is continuous on $[a, b]$ and</p>
+<p>$$
+F(x) = \int_a^x f(t) \, dt,
+$$</p>
+<p>then $F$ is differentiable on $(a, b)$ and $F' = f$.</p>
+<p><strong>Theorem (Fundamental Theorem of Calculus, II).</strong> If $f$ is Riemann integrable on $[a, b]$ and $F$ is an antiderivative of $f$ on $[a, b]$, then</p>
+<p>$$
+\int_a^b f = F(b) - F(a).
+$$</p>
+<h3 id="properties-of-the-integral">Properties of the Integral</h3>
+<p><strong>Linearity.</strong> $\int_a^b (cf + g) = c \int_a^b f + \int_a^b g$.</p>
+<p><strong>Additivity.</strong> $\int_a^b f = \int_a^c f + \int_c^b f$.</p>
+<p><strong>Monotonicity.</strong> If $f \leq g$ on $[a, b]$, then $\int_a^b f \leq \int_a^b g$.</p>
+<p><strong>Absolute value.</strong> $\left| \int_a^b f \right| \leq \int_a^b |f|$.</p>
+<p><strong>Integration by parts.</strong> If $f, g$ are differentiable with continuous derivatives, then</p>
+<p>$$
+\int_a^b f g' = [f g]_a^b - \int_a^b f' g.
+$$</p>
+<p><strong>Substitution.</strong> If $\phi$ is continuously differentiable and $f$ is continuous, then</p>
+<p>$$
+\int_{\phi(a)}^{\phi(b)} f(u) \, du = \int_a^b f(\phi(x)) \phi'(x) \, dx.
+$$</p>
+<h3 id="improper-integrals">Improper Integrals</h3>
+<p>If $f$ is defined on $[a, \infty)$ and Riemann integrable on every $[a, R]$, the <strong>improper integral</strong> is</p>
+<p>$$
+\int_a^\infty f = \lim_{R \to \infty} \int_a^R f,
+$$</p>
+<p>provided the limit exists. The integral <strong>converges</strong> if the limit exists and is finite.</p>
+<p><strong>Comparison test.</strong> If $0 \leq f \leq g$ on $[a, \infty)$ and $\int_a^\infty g$ converges, then $\int_a^\infty f$ converges.</p>
+<p><strong>Example.</strong> $\int_1^\infty x^{-p} \, dx$ converges iff $p > 1$.</p>
+<h2 id="sequences-of-functions">Sequences of Functions</h2>
+<h3 id="pointwise-convergence">Pointwise Convergence</h3>
+<p>A sequence of functions $f_n : D \to \mathbb{R}$ <strong>converges pointwise</strong> to $f : D \to \mathbb{R}$ if for every $x \in D$,</p>
+<p>$$
+f_n(x) \to f(x).
+$$</p>
+<p>Pointwise convergence is weak: limits of continuous functions need not be continuous.</p>
+<p><strong>Example.</strong> $f_n(x) = x^n$ on $[0, 1]$ converges pointwise to $0$ on $[0, 1)$ and to $1$ at $x = 1$. The limit is discontinuous.</p>
+<h3 id="uniform-convergence">Uniform Convergence</h3>
+<p>A sequence $(f_n)$ <strong>converges uniformly</strong> to $f$ on $D$ if</p>
+<p>$$
+\sup_{x \in D} |f_n(x) - f(x)| \to 0.
+$$</p>
+<p><strong>Theorem.</strong> Uniform convergence implies pointwise convergence. The converse fails.</p>
+<p><strong>Theorem.</strong> If $(f_n)$ is a sequence of continuous functions converging uniformly to $f$ on $D$, then $f$ is continuous.</p>
+<p><strong>Theorem.</strong> If $(f_n)$ converges uniformly to $f$ on $[a, b]$ and each $f_n$ is Riemann integrable, then $f$ is Riemann integrable and</p>
+<p>$$
+\int_a^b f = \lim_{n \to \infty} \int_a^b f_n.
+$$</p>
+<p><strong>Theorem.</strong> If $(f_n)$ is a sequence of differentiable functions with $f_n \to f$ pointwise and $f_n' \to g$ uniformly, then $f$ is differentiable and $f' = g$.</p>
+<h3 id="series-of-functions">Series of Functions</h3>
+<p>A series of functions $\sum f_n$ <strong>converges uniformly</strong> if the sequence of partial sums does.</p>
+<p><strong>Weierstrass M-test.</strong> If $|f_n(x)| \leq M_n$ for all $x \in D$ and $\sum M_n$ converges, then $\sum f_n$ converges uniformly and absolutely on $D$.</p>
+<p><strong>Theorem.</strong> A uniformly convergent series of continuous functions has a continuous sum.</p>
+<p><strong>Theorem.</strong> A uniformly convergent series of integrable functions can be integrated term by term.</p>
+<p><strong>Theorem.</strong> A series of differentiable functions with uniformly convergent derivatives can be differentiated term by term.</p>
+<h2 id="power-series">Power Series</h2>
+<h3 id="definition_1">Definition</h3>
+<p>A <strong>power series</strong> centered at $a$ is</p>
+<p>$$
+\sum_{n=0}^\infty c_n (x - a)^n, \qquad c_n \in \mathbb{R}.
+$$</p>
+<h3 id="radius-of-convergence">Radius of Convergence</h3>
+<p>The <strong>radius of convergence</strong> is</p>
+<p>$$
+R = \frac{1}{\limsup_{n \to \infty} |c_n|^{1/n}},
+$$</p>
+<p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $|x - a| < R$ and diverges for $|x - a| > R$. On $|x - a| < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is differentiable on $|x - a| < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p>$$
+\frac{d}{dx} \sum_{n=0}^\infty c_n (x - a)^n = \sum_{n=1}^\infty n c_n (x - a)^{n-1}.
+$$</p>
+<p>The differentiated series has the same radius of convergence.</p>
+<h3 id="taylor-series">Taylor Series</h3>
+<p>If $f$ is infinitely differentiable at $a$, its <strong>Taylor series</strong> at $a$ is</p>
+<p>$$
+\sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!} (x - a)^n.
+$$</p>
+<p><strong>Theorem.</strong> If $f$ equals its Taylor series on an interval around $a$, then $f$ is <strong>analytic</strong> there.</p>
+<p><strong>Theorem.</strong> A function is analytic at $a$ iff it has a power series expansion around $a$ with positive radius of convergence.</p>
+<p><strong>Caution.</strong> A smooth function need not be analytic. The standard example is</p>
+<p>$$
+f(x) = \begin{cases} e^{-1/x^2} & x \neq 0, \\ 0 & x = 0. \end{cases}
+$$</p>
+<p>All derivatives at $0$ vanish, so the Taylor series is $0$, but $f(x) > 0$ for $x \neq 0$.</p>
+<h2 id="the-riemannstieltjes-integral">The Riemann–Stieltjes Integral</h2>
+<h3 id="definition_2">Definition</h3>
+<p>Let $f, g : [a, b] \to \mathbb{R}$ with $f$ bounded. For a partition $P = \{x_0, \dots, x_n\}$ and tags $\xi_i \in [x_{i-1}, x_i]$, the <strong>Riemann–Stieltjes sum</strong> is</p>
+<p>$$
+S(f, g, P, \xi) = \sum_{i=1}^n f(\xi_i) (g(x_i) - g(x_{i-1})).
+$$</p>
+<p>If the limit exists as the mesh of $P$ tends to $0$, it is the <strong>Riemann–Stieltjes integral</strong></p>
+<p>$$
+\int_a^b f \, dg.
+$$</p>
+<p><strong>Theorem.</strong> If $f$ is continuous and $g$ is of bounded variation, the integral exists.</p>
+<p><strong>Theorem.</strong> If $g$ is continuously differentiable, then</p>
+<p>$$
+\int_a^b f \, dg = \int_a^b f g' \, dx.
+$$</p>
+<p><strong>Theorem (Integration by parts).</strong> If $f$ is integrable with respect to $g$, then $g$ is integrable with respect to $f$ and</p>
+<p>$$
+\int_a^b f \, dg = f(b) g(b) - f(a) g(a) - \int_a^b g \, df.
+$$</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d(a, b) = \|a - b\|$</td>
+<td>Distance on $\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$B(a, r)$</td>
+<td>Open ball of radius $r$</td>
+</tr>
+<tr>
+<td>$U, F$</td>
+<td>Open, closed sets</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>Compact set</td>
+</tr>
+<tr>
+<td>$a_n \to L$</td>
+<td>Convergence of a sequence</td>
+</tr>
+<tr>
+<td>$\limsup a_n, \liminf a_n$</td>
+<td>Limit superior, limit inferior</td>
+</tr>
+<tr>
+<td>$\sum a_n$</td>
+<td>Series</td>
+</tr>
+<tr>
+<td>$\lim_{x \to a} f(x)$</td>
+<td>Limit of a function</td>
+</tr>
+<tr>
+<td>$f'(x)$</td>
+<td>Derivative</td>
+</tr>
+<tr>
+<td>$\int_a^b f$</td>
+<td>Riemann integral</td>
+</tr>
+<tr>
+<td>$\int_a^b f \, dg$</td>
+<td>Riemann–Stieltjes integral</td>
+</tr>
+<tr>
+<td>$f_n \to f$ uniformly</td>
+<td>Uniform convergence</td>
+</tr>
+<tr>
+<td>$\sum c_n (x - a)^n$</td>
+<td>Power series</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>Radius of convergence</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Richard Dedekind, <em>Stetigkeit und irrationale Zahlen</em> (1872), for the construction of $\mathbb{R}$.</li>
+<li>Karl Weierstrass, <em>Vorlesungen über die Theorie der analytischen Functionen</em> (1895), for uniform convergence.</li>
+<li>Walter Rudin, <em>Principles of Mathematical Analysis</em> (McGraw-Hill, 1976), for the standard modern treatment.</li>
+<li>Tom M. Apostol, <em>Mathematical Analysis</em> (Addison-Wesley, 1974), for the Riemann–Stieltjes integral.</li>
+<li>Stephen Abbott, <em>Understanding Analysis</em> (Springer, 2015), for a gentle but rigorous introduction.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

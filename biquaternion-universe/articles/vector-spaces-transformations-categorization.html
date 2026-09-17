@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="vector-space-transformations-categorization"><strong>Vector Space Transformations categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article describes the groups of linear transformations of the simplest vector spaces and modules, organized by the <strong>field or ring of scalars</strong>.</p>
+<p>We consider four scalar structures:</p>
+<ul>
+<li>The rational numbers $\mathbb{Q}$.</li>
+<li>The real numbers $\mathbb{R}$.</li>
+<li>The complex numbers $\mathbb{C}$.</li>
+<li>The split complex numbers $\mathbb{D}$.</li>
+</ul>
+<p>For each scalar structure, we give the simplest modules over that structure, and describe their groups of linear transformations. We treat the rational line, the real line, the complex plane, the split complex plane, and the quaternions.</p>
+<p>We do not use matrices as the primary tool. Instead, we describe each transformation by what it does geometrically: dilatation, rotation, reflection, hyperbolic transformation.</p>
+<p>We assume familiarity with modules and linear transformations. No prior knowledge of groups, quadratic forms, or Lie algebras is required.</p>
+<p>A word on terminology. We consider only <strong>linear</strong> transformations, that is, transformations that fix the origin. Translations, which move the origin, are not linear and are not part of the groups we discuss.</p>
+<p>A word on the scalar structures. The rational numbers $\mathbb{Q}$, the real numbers $\mathbb{R}$, and the complex numbers $\mathbb{C}$ are fields. The split complex numbers $\mathbb{D}$ are a commutative ring with zero divisors, not a field. When we work over $\mathbb{D}$, the theory is similar to the theory over a field, with the caveat that the "general linear group" consists of the transformations whose determinant is a <strong>unit</strong> of $\mathbb{D}$. We indicate where this difference matters.</p>
+<hr />
+<h1 id="part-i-the-field-math10">Part I: The Field $\mathbb{Q}$</h1>
+<p>In this part, the field of scalars is $\mathbb{Q}$. The modules are rational vector spaces. The linear transformations are $\mathbb{Q}$-linear, and the groups of invertible ones are the general linear groups $GL(n, \mathbb{Q})$.</p>
+<h2 id="1-the-rational-line-math14-over-math15">1. The Rational Line $\mathbb{Q}$ over $\mathbb{Q}$</h2>
+<h3 id="the-space">The space</h3>
+<p>Let $V = \mathbb{Q}$ be the rational line. It is a one-dimensional rational vector space. A point is a rational number $x$.</p>
+<h3 id="the-transformations">The transformations</h3>
+<p>A $\mathbb{Q}$-linear transformation $T : \mathbb{Q} \to \mathbb{Q}$ is determined by its value on $1$:</p>
+<p>$$
+T(x) = \lambda x
+$$</p>
+<p>for some rational number $\lambda$.</p>
+<h3 id="the-geometric-interpretation">The geometric interpretation</h3>
+<ul>
+<li>If $\lambda > 1$, the transformation <strong>stretches</strong> the line away from the origin.</li>
+<li>If $0 < \lambda < 1$, the transformation <strong>shrinks</strong> the line toward the origin.</li>
+<li>If $\lambda = 1$, the transformation is the <strong>identity</strong>.</li>
+<li>If $\lambda = -1$, the transformation is the <strong>reflection</strong> through the origin.</li>
+<li>If $\lambda < 0$ with $\lambda \neq -1$, the transformation is a reflection followed by a stretch or shrink.</li>
+</ul>
+<p>So the linear transformations of the rational line are the <strong>dilatations</strong> and the <strong>reflections</strong> through the origin. In one dimension, there are no rotations. The same geometric description applies as over $\mathbb{R}$, but the allowed scalars are only rational numbers.</p>
+<h3 id="the-groups">The groups</h3>
+<p>The group of invertible linear transformations is</p>
+<p>$$
+GL(1, \mathbb{Q}) = \mathbb{Q}^\times,
+$$</p>
+<p>the group of nonzero rational numbers under multiplication. It has two connected components: the positive rationals (dilatations) and the negative rationals (reflections composed with dilatations).</p>
+<p>The determinant is $\lambda$. The special linear group is</p>
+<p>$$
+SL(1, \mathbb{Q}) = \{1\},
+$$</p>
+<p>the trivial group.</p>
+<h2 id="2-the-rational-plane-math33-over-math34">2. The Rational Plane $\mathbb{Q}^2$ over $\mathbb{Q}$</h2>
+<h3 id="the-space_1">The space</h3>
+<p>Let $V = \mathbb{Q}^2$ be the rational plane. It is a two-dimensional rational vector space. A point is a pair $(x, y)$ of rational numbers.</p>
+<h3 id="the-transformations_1">The transformations</h3>
+<p>A $\mathbb{Q}$-linear transformation $T : \mathbb{Q}^2 \to \mathbb{Q}^2$ is determined by its values on the standard basis. In coordinates, it is given by a $2 \times 2$ matrix with rational entries.</p>
+<h3 id="the-groups_1">The groups</h3>
+<p>The group of invertible $\mathbb{Q}$-linear transformations is $GL(2, \mathbb{Q})$, the group of $2 \times 2$ matrices with rational entries whose determinant is nonzero.</p>
+<p>The determinant is a rational number. The special linear group $SL(2, \mathbb{Q})$ is the set of transformations with determinant $1$. It is the group of <strong>area-preserving</strong> rational transformations.</p>
+<p>The geometric interpretation is analogous to the real case: rotations, dilatations, reflections, and shears are all available, but only with rational parameters.</p>
+<h3 id="summary-over-math45">Summary over $\mathbb{Q}$</h3>
+<table>
+<thead>
+<tr>
+<th>Notion</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar structure</td>
+<td>Field</td>
+</tr>
+<tr>
+<td>Modules</td>
+<td>Rational vector spaces</td>
+</tr>
+<tr>
+<td>Invertibility</td>
+<td>Nonzero determinant</td>
+</tr>
+<tr>
+<td>General linear group</td>
+<td>$GL(n, \mathbb{Q})$</td>
+</tr>
+<tr>
+<td>Special linear group</td>
+<td>$SL(n, \mathbb{Q})$</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="part-ii-the-field-math48">Part II: The Field $\mathbb{R}$</h1>
+<p>In this part, the field of scalars is $\mathbb{R}$. The modules are real vector spaces. The linear transformations are $\mathbb{R}$-linear, and the groups of invertible ones are the general linear groups $GL(n, \mathbb{R})$.</p>
+<h2 id="3-the-real-line-math52-over-math53">3. The Real Line $\mathbb{R}$ over $\mathbb{R}$</h2>
+<h3 id="the-space_2">The space</h3>
+<p>Let $V = \mathbb{R}$ be the real line. It is a one-dimensional real vector space. A point is a real number $x$.</p>
+<h3 id="the-transformations_2">The transformations</h3>
+<p>An $\mathbb{R}$-linear transformation $T : \mathbb{R} \to \mathbb{R}$ is determined by its value on $1$:</p>
+<p>$$
+T(x) = \lambda x
+$$</p>
+<p>for some real number $\lambda$.</p>
+<h3 id="the-geometric-interpretation_1">The geometric interpretation</h3>
+<ul>
+<li>If $\lambda > 1$, the transformation <strong>stretches</strong> the line away from the origin.</li>
+<li>If $0 < \lambda < 1$, the transformation <strong>shrinks</strong> the line toward the origin.</li>
+<li>If $\lambda = 1$, the transformation is the <strong>identity</strong>.</li>
+<li>If $\lambda = -1$, the transformation is the <strong>reflection</strong> through the origin.</li>
+<li>If $\lambda < 0$ with $\lambda \neq -1$, the transformation is a reflection followed by a stretch or shrink.</li>
+</ul>
+<p>So the linear transformations of the real line are the <strong>dilatations</strong> and the <strong>reflections</strong> through the origin. In one dimension, there are no rotations.</p>
+<h3 id="the-groups_2">The groups</h3>
+<p>The group of invertible linear transformations is</p>
+<p>$$
+GL(1, \mathbb{R}) = \mathbb{R}^\times,
+$$</p>
+<p>the group of nonzero real numbers under multiplication. It has two connected components: the positive reals (dilatations) and the negative reals (reflections composed with dilatations).</p>
+<p>The determinant is $\lambda$. The special linear group is</p>
+<p>$$
+SL(1, \mathbb{R}) = \{1\},
+$$</p>
+<p>the trivial group.</p>
+<h2 id="4-the-complex-plane-math70-over-math71">4. The Complex Plane $\mathbb{C}$ over $\mathbb{R}$</h2>
+<h3 id="the-space_3">The space</h3>
+<p>Let $V = \mathbb{C}$ be the complex plane, viewed as a <strong>two-dimensional real vector space</strong>. A point is $z = x + iy$, with $x, y \in \mathbb{R}$.</p>
+<h3 id="the-transformations_3">The transformations</h3>
+<p>An $\mathbb{R}$-linear transformation $T : \mathbb{C} \to \mathbb{C}$ is determined by its values on the basis $\{1, i\}$. The most general such transformation can be written as</p>
+<p>$$
+T(z) = \lambda z + \mu \bar{z}
+$$</p>
+<p>for some complex numbers $\lambda, \mu$.</p>
+<h3 id="the-geometric-interpretation_2">The geometric interpretation</h3>
+<p>The transformation $T(z) = \lambda z$ with $\lambda = re^{i\theta}$ is a <strong>rotation combined with a dilatation</strong>: it rotates the plane by angle $\theta$ and dilates it by a factor of $r$. These are the <strong>complex-linear</strong> transformations, viewed as real-linear transformations.</p>
+<p>The transformation $T(z) = \bar{z}$ is the <strong>reflection</strong> across the real axis. This is real-linear but not complex-linear. More generally, if $\mu \neq 0$, the transformation includes a reflection component.</p>
+<p>So the $\mathbb{R}$-linear transformations of $\mathbb{C}$ include rotations, dilatations, reflections, and shears, and their compositions.</p>
+<h3 id="the-groups_3">The groups</h3>
+<p>The group of invertible $\mathbb{R}$-linear transformations is $GL(2, \mathbb{R})$. It is four-dimensional.</p>
+<p>The determinant is a real number. It measures the factor by which the transformation scales areas, with sign indicating orientation.</p>
+<p>The special linear group $SL(2, \mathbb{R})$ is the set of transformations with determinant $1$. These are the <strong>area-preserving</strong> transformations: rotations, shears, and hyperbolic transformations. It is three-dimensional.</p>
+<p>Inside $GL(2, \mathbb{R})$, the complex-linear transformations form a subgroup isomorphic to $\mathbb{C}^\times$. Geometrically, this is the group of <strong>rotations-dilatations</strong>: transformations of the form $z \mapsto \lambda z$ with $\lambda \neq 0$.</p>
+<h2 id="5-the-split-complex-plane-math96-over-math97">5. The Split Complex Plane $\mathbb{D}$ over $\mathbb{R}$</h2>
+<h3 id="the-space_4">The space</h3>
+<p>Let $V = \mathbb{D}$ be the split complex plane, viewed as a <strong>two-dimensional real vector space</strong> with basis $\{1, e\}$. A general element is</p>
+<p>$$
+z = a + be, \qquad a, b \in \mathbb{R}.
+$$</p>
+<h3 id="the-product">The product</h3>
+<p>The split complex numbers carry a product, defined by the single relation</p>
+<p>$$
+e^2 = +1.
+$$</p>
+<p>Combined with bilinearity, this gives</p>
+<p>$$
+(a + be)(c + de) = (ac + bd) + (ad + bc)e.
+$$</p>
+<p>The product is associative, commutative, and unital. It is not a division algebra: it has zero divisors.</p>
+<h3 id="the-transformations_4">The transformations</h3>
+<p>An $\mathbb{R}$-linear transformation $T : \mathbb{D} \to \mathbb{D}$ is determined by its values on the basis $\{1, e\}$. The most general such transformation is an arbitrary element of $GL(2, \mathbb{R})$ when invertible.</p>
+<p>A distinguished family of transformations is the set of maps of the form</p>
+<p>$$
+T(z) = \lambda z
+$$</p>
+<p>for $\lambda$ a split complex number. If $\lambda = p + qe$, the matrix in the basis $\{1, e\}$ is</p>
+<p>$$
+\begin{pmatrix} p & q \\ q & p \end{pmatrix}.
+$$</p>
+<p>The determinant is $p^2 - q^2$. So the transformation is invertible if and only if $p^2 - q^2 \neq 0$.</p>
+<h3 id="the-geometric-interpretation_3">The geometric interpretation</h3>
+<p>The condition $p^2 - q^2 \neq 0$ means that $(p, q)$ does not lie on the two <strong>isotropic lines</strong> $p = q$ or $p = -q$. These lines divide the plane into four regions, and the group of units has four connected components.</p>
+<p>Inside $SL(2, \mathbb{R})$, the family of <strong>hyperbolic transformations</strong></p>
+<p>$$
+H_t = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix}, \qquad t \in \mathbb{R},
+$$</p>
+<p>stretches the plane along the line $a = b$ by a factor of $e^t$, and shrinks it along the line $a = -b$ by a factor of $e^{-t}$. The determinant is $\cosh^2 t - \sinh^2 t = 1$, so the area is preserved.</p>
+<p>The hyperbolic transformations are the analogues, for the split complex plane, of the rotations for the complex plane. They preserve the <strong>split form</strong> $a^2 - b^2$, not the Euclidean form $a^2 + b^2$.</p>
+<p>The set of units with $p^2 - q^2 = 1$ is a <strong>hyperbola</strong> in the $(p, q)$-plane, with two connected components.</p>
+<h3 id="the-automorphisms">The automorphisms</h3>
+<p>The automorphisms of the split complex algebra are the linear maps that respect the product. There are exactly two:</p>
+<ul>
+<li>The <strong>identity:</strong> $T(a + be) = a + be$.</li>
+<li>The <strong>conjugation:</strong> $T(a + be) = a - be$.</li>
+</ul>
+<p>So the automorphism group is $\{\mathrm{id}, \mathrm{conj}\} \cong \mathbb{Z}/2\mathbb{Z}$.</p>
+<h2 id="6-the-quaternions-math132-over-math133">6. The Quaternions $\mathbb{H}$ over $\mathbb{R}$</h2>
+<h3 id="the-space_5">The space</h3>
+<p>Let $V = \mathbb{H}$ be the quaternions, viewed as a <strong>four-dimensional real vector space</strong> with basis $\{1, i, j, k\}$. A general element is</p>
+<p>$$
+q = a + bi + cj + dk, \qquad a, b, c, d \in \mathbb{R}.
+$$</p>
+<h3 id="the-product_1">The product</h3>
+<p>The quaternions carry a product, defined by the relations</p>
+<p>$$
+i^2 = j^2 = k^2 = ijk = -1.
+$$</p>
+<p>The product is associative and unital. It is not commutative. It is a division algebra: every nonzero element has an inverse.</p>
+<h3 id="the-transformations_5">The transformations</h3>
+<p>An $\mathbb{R}$-linear transformation $T : \mathbb{H} \to \mathbb{H}$ is determined by its values on the basis $\{1, i, j, k\}$. The most general such transformation is an arbitrary element of $GL(4, \mathbb{R})$ when invertible.</p>
+<p>A distinguished family of transformations is the set of maps of the form</p>
+<p>$$
+T(q) = \lambda q
+$$</p>
+<p>for $\lambda$ a quaternion. These are the <strong>quaternion-linear</strong> transformations, viewed as real-linear transformations. They form a subgroup of $GL(4, \mathbb{R})$ isomorphic to $\mathbb{H}^\times$, the group of nonzero quaternions under multiplication.</p>
+<p>The quaternion-linear transformations preserve the norm $|q|^2 = a^2 + b^2 + c^2 + d^2$, up to a scale factor. The subgroup of norm-preserving quaternion-linear transformations is the group of unit quaternions, isomorphic to $SU(2)$.</p>
+<h3 id="the-groups_4">The groups</h3>
+<p>The group of invertible $\mathbb{R}$-linear transformations is $GL(4, \mathbb{R})$. It is sixteen-dimensional.</p>
+<p>The determinant is a real number. The special linear group $SL(4, \mathbb{R})$ is the set of transformations with determinant $1$.</p>
+<p>The quaternion-linear transformations form a subgroup isomorphic to $\mathbb{H}^\times$, which is four-dimensional. The norm-preserving ones form $SU(2)$, which is three-dimensional.</p>
+<hr />
+<h1 id="part-iii-the-field-math154">Part III: The Field $\mathbb{C}$</h1>
+<p>In this part, the field of scalars is $\mathbb{C}$. The modules are complex vector spaces. The linear transformations are $\mathbb{C}$-linear, and the groups of invertible ones are the general linear groups $GL(n, \mathbb{C})$.</p>
+<h2 id="7-the-complex-line-math158-over-math159">7. The Complex Line $\mathbb{C}$ over $\mathbb{C}$</h2>
+<h3 id="the-space_6">The space</h3>
+<p>Let $V = \mathbb{C}$ be the complex line, viewed as a <strong>one-dimensional complex vector space</strong>. A point is a complex number $z$.</p>
+<h3 id="the-transformations_6">The transformations</h3>
+<p>A $\mathbb{C}$-linear transformation $T : \mathbb{C} \to \mathbb{C}$ is determined by its value on $1$:</p>
+<p>$$
+T(z) = \lambda z
+$$</p>
+<p>for some complex number $\lambda$.</p>
+<h3 id="the-geometric-interpretation_4">The geometric interpretation</h3>
+<p>Geometrically, the transformation $T(z) = \lambda z$ with $\lambda = re^{i\theta}$ is a <strong>rotation-dilatation</strong>: it rotates the plane by angle $\theta$ and dilates it by a factor of $r$.</p>
+<p>The complex-linear transformations of $\mathbb{C}$ are exactly the rotations-dilatations. They preserve angles and orientation.</p>
+<h3 id="the-groups_5">The groups</h3>
+<p>The group of invertible $\mathbb{C}$-linear transformations is</p>
+<p>$$
+GL(1, \mathbb{C}) = \mathbb{C}^\times,
+$$</p>
+<p>the group of nonzero complex numbers under multiplication.</p>
+<p>The determinant is $\lambda$. Its modulus $|\lambda|$ measures the dilatation factor, and its argument $\arg \lambda$ measures the rotation angle.</p>
+<p>The special linear group is</p>
+<p>$$
+SL(1, \mathbb{C}) = \{1\},
+$$</p>
+<p>the trivial group.</p>
+<h2 id="8-the-complex-plane-math178-over-math179">8. The Complex Plane $\mathbb{C}^2$ over $\mathbb{C}$</h2>
+<h3 id="the-space_7">The space</h3>
+<p>Let $V = \mathbb{C}^2$ be the complex plane, viewed as a <strong>two-dimensional complex vector space</strong>. A point is a pair $(z_1, z_2)$ of complex numbers.</p>
+<p>As a real vector space, this is four-dimensional. But we view it here as a complex vector space, so its complex dimension is two.</p>
+<h3 id="the-transformations_7">The transformations</h3>
+<p>A $\mathbb{C}$-linear transformation $T : \mathbb{C}^2 \to \mathbb{C}^2$ is determined by its values on the standard basis. In coordinates, it is given by a complex $2 \times 2$ matrix.</p>
+<p>Geometrically, a $\mathbb{C}$-linear transformation of $\mathbb{C}^2$ is a combination of complex rotations and complex dilatations, applied independently in two complex directions. It is more general than a single rotation-dilatation of the complex line.</p>
+<h3 id="the-groups_6">The groups</h3>
+<p>The group of invertible $\mathbb{C}$-linear transformations is $GL(2, \mathbb{C})$. It is eight-dimensional over $\mathbb{R}$ (four-dimensional over $\mathbb{C}$).</p>
+<p>The determinant is a complex number. The special linear group $SL(2, \mathbb{C})$ is the set of transformations with determinant $1$. It is six-dimensional over $\mathbb{R}$ (three-dimensional over $\mathbb{C}$).</p>
+<p>The group $GL(2, \mathbb{C})$ contains as subgroups:</p>
+<ul>
+<li>$GL(2, \mathbb{R})$, the transformations with real matrix entries, four-dimensional over $\mathbb{R}$.</li>
+<li>$U(2)$, the unitary transformations, four-dimensional over $\mathbb{R}$.</li>
+<li>$SU(2)$, the unitary transformations with determinant $1$, three-dimensional over $\mathbb{R}$.</li>
+<li>$\mathbb{C}^\times$, the scalar transformations $z \mapsto \lambda z$ with $\lambda \neq 0$, two-dimensional over $\mathbb{R}$.</li>
+</ul>
+<h3 id="summary-for-math207-over-math208">Summary for $\mathbb{C}^2$ over $\mathbb{C}$</h3>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Dimension over $\mathbb{R}$</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$GL(2, \mathbb{C})$</td>
+<td>$8$</td>
+<td>all invertible complex-linear transformations</td>
+</tr>
+<tr>
+<td>$SL(2, \mathbb{C})$</td>
+<td>$6$</td>
+<td>determinant $1$</td>
+</tr>
+<tr>
+<td>$GL(2, \mathbb{R})$</td>
+<td>$4$</td>
+<td>real matrix entries</td>
+</tr>
+<tr>
+<td>$U(2)$</td>
+<td>$4$</td>
+<td>unitary transformations</td>
+</tr>
+<tr>
+<td>$SU(2)$</td>
+<td>$3$</td>
+<td>unitary, determinant $1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^\times$</td>
+<td>$2$</td>
+<td>scalar transformations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="9-the-quaternions-math224-over-math225">9. The Quaternions $\mathbb{H}$ over $\mathbb{C}$</h2>
+<h3 id="the-space_8">The space</h3>
+<p>Let $V = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ be the quaternions complexified, also called the <strong>biquaternions</strong>. It is a <strong>four-dimensional complex vector space</strong> with basis $\{1, i, j, k\}$. A general element is</p>
+<p>$$
+q = a + bi + cj + dk, \qquad a, b, c, d \in \mathbb{C}.
+$$</p>
+<p>Equivalently, it is the algebra of quaternions with complex coefficients, or the tensor product $\mathbb{H} \otimes \mathbb{C}$.</p>
+<h3 id="the-product_2">The product</h3>
+<p>The product is defined by the same relations as for the quaternions,</p>
+<p>$$
+i^2 = j^2 = k^2 = ijk = -1,
+$$</p>
+<p>with coefficients in $\mathbb{C}$. The product is associative and unital. It is not commutative. It is not a division algebra: it has zero divisors.</p>
+<p>As a complex algebra, the biquaternions are isomorphic to the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices.</p>
+<h3 id="the-transformations_8">The transformations</h3>
+<p>A $\mathbb{C}$-linear transformation $T : \mathbb{H} \otimes \mathbb{C} \to \mathbb{H} \otimes \mathbb{C}$ is determined by its values on the basis $\{1, i, j, k\}$. The most general such transformation is an arbitrary element of $GL(4, \mathbb{C})$ when invertible.</p>
+<p>A distinguished family of transformations is the set of maps of the form</p>
+<p>$$
+T(q) = \lambda q
+$$</p>
+<p>for $\lambda$ a biquaternion. These are the <strong>biquaternion-linear</strong> transformations, viewed as complex-linear transformations.</p>
+<h3 id="the-groups_7">The groups</h3>
+<p>The group of invertible $\mathbb{C}$-linear transformations is $GL(4, \mathbb{C})$. It is sixteen-dimensional over $\mathbb{R}$ (eight-dimensional over $\mathbb{C}$).</p>
+<p>The determinant is a complex number. The special linear group $SL(4, \mathbb{C})$ is the set of transformations with determinant $1$.</p>
+<p>The biquaternion-linear transformations form a subgroup isomorphic to $(\mathbb{H} \otimes \mathbb{C})^\times$, the group of units of the biquaternions. This subgroup is not the same as the group of invertible complex-linear transformations, because the biquaternions have zero divisors.</p>
+<hr />
+<h1 id="part-iv-the-commutative-ring-math247">Part IV: The Commutative Ring $\mathbb{D}$</h1>
+<p>In this part, the scalar structure is $\mathbb{D}$, the split complex numbers. The modules are split complex modules. The linear transformations are $\mathbb{D}$-linear, and the groups of invertible ones are the general linear groups $GL(n, \mathbb{D})$.</p>
+<p>A word of caution. The split complex numbers are not a field in the strict sense: they are a commutative ring with zero divisors. They do not form a field, because not every nonzero element has an inverse. But they behave like a field in many respects, and the theory of modules over $\mathbb{D}$ is similar to the theory over a field, with the caveat that the "general linear group" consists of the transformations whose determinant is a <strong>unit</strong> of $\mathbb{D}$.</p>
+<h2 id="10-the-split-complex-line-math253-over-math254">10. The Split Complex Line $\mathbb{D}$ over $\mathbb{D}$</h2>
+<h3 id="the-space_9">The space</h3>
+<p>Let $V = \mathbb{D}$ be the split complex line, viewed as a <strong>one-dimensional module over $\mathbb{D}$</strong>. A point is a split complex number $z = a + be$.</p>
+<h3 id="the-transformations_9">The transformations</h3>
+<p>A $\mathbb{D}$-linear transformation $T : \mathbb{D} \to \mathbb{D}$ is determined by its value on $1$:</p>
+<p>$$
+T(z) = \lambda z
+$$</p>
+<p>for some split complex number $\lambda$.</p>
+<h3 id="the-geometric-interpretation_5">The geometric interpretation</h3>
+<p>If $\lambda = p + qe$, the transformation is multiplication by $\lambda$. In the basis $\{1, e\}$, the matrix is</p>
+<p>$$
+\begin{pmatrix} p & q \\ q & p \end{pmatrix}.
+$$</p>
+<p>The determinant is $p^2 - q^2$. The transformation is invertible if and only if $p^2 - q^2$ is a <strong>unit</strong> of $\mathbb{D}$, that is, if and only if $p^2 - q^2 \neq 0$.</p>
+<p>Geometrically, the transformation is a <strong>hyperbolic transformation</strong>: it stretches the plane along the line $a = b$ and shrinks it along the line $a = -b$.</p>
+<h3 id="the-groups_8">The groups</h3>
+<p>The group of invertible $\mathbb{D}$-linear transformations is the group of units of $\mathbb{D}$:</p>
+<p>$$
+GL(1, \mathbb{D}) = \mathbb{D}^\times,
+$$</p>
+<p>the group of split complex numbers with $p^2 - q^2 \neq 0$.</p>
+<p>The determinant is $\lambda = p + qe$. The special linear group is</p>
+<p>$$
+SL(1, \mathbb{D}) = \{\lambda \in \mathbb{D}^\times : p^2 - q^2 = 1\},
+$$</p>
+<p>the set of units of norm $1$. Geometrically, this is the <strong>hyperbola</strong> $p^2 - q^2 = 1$, which has two connected components.</p>
+<h2 id="11-the-split-complex-plane-math281-over-math282">11. The Split Complex Plane $\mathbb{D}^2$ over $\mathbb{D}$</h2>
+<h3 id="the-space_10">The space</h3>
+<p>Let $V = \mathbb{D}^2$ be the split complex plane, viewed as a <strong>two-dimensional module over $\mathbb{D}$</strong>. A point is a pair $(z_1, z_2)$ of split complex numbers.</p>
+<h3 id="the-transformations_10">The transformations</h3>
+<p>A $\mathbb{D}$-linear transformation $T : \mathbb{D}^2 \to \mathbb{D}^2$ is determined by its values on the standard basis. In coordinates, it is given by a $2 \times 2$ matrix with entries in $\mathbb{D}$.</p>
+<h3 id="the-groups_9">The groups</h3>
+<p>The group of invertible $\mathbb{D}$-linear transformations is $GL(2, \mathbb{D})$, the group of $2 \times 2$ matrices with entries in $\mathbb{D}$ whose determinant is a unit of $\mathbb{D}$.</p>
+<p>The determinant is a split complex number. The special linear group $SL(2, \mathbb{D})$ is the set of transformations with determinant $1$.</p>
+<h2 id="12-the-quaternions-math297-over-math298">12. The Quaternions $\mathbb{H}$ over $\mathbb{D}$</h2>
+<h3 id="the-space_11">The space</h3>
+<p>Let $V = \mathbb{H} \otimes_\mathbb{R} \mathbb{D}$ be the quaternions tensored with the split complex numbers, also called the <strong>split biquaternions</strong>. It is a <strong>four-dimensional $\mathbb{D}$-module</strong> with basis $\{1, i, j, k\}$. A general element is</p>
+<p>$$
+q = a + bi + cj + dk, \qquad a, b, c, d \in \mathbb{D}.
+$$</p>
+<h3 id="the-product_3">The product</h3>
+<p>The product is defined by the same relations as for the quaternions,</p>
+<p>$$
+i^2 = j^2 = k^2 = ijk = -1,
+$$</p>
+<p>with coefficients in $\mathbb{D}$. The product is associative and unital. It is not commutative. It is not a division algebra: it has zero divisors.</p>
+<p>As an algebra over $\mathbb{D}$, the split biquaternions are isomorphic to a subalgebra of $M_2(\mathbb{D})$. Equivalently, they are isomorphic to the algebra $M_2(\mathbb{D})$ of $2 \times 2$ matrices with entries in $\mathbb{D}$, when considered as an algebra over $\mathbb{R}$. But over $\mathbb{D}$, the structure is more subtle because $\mathbb{D}$ has zero divisors.</p>
+<h3 id="the-transformations_11">The transformations</h3>
+<p>A $\mathbb{D}$-linear transformation $T : \mathbb{H} \otimes \mathbb{D} \to \mathbb{H} \otimes \mathbb{D}$ is determined by its values on the basis $\{1, i, j, k\}$. The most general such transformation is an arbitrary element of $GL(4, \mathbb{D})$ when invertible.</p>
+<p>A distinguished family of transformations is the set of maps of the form</p>
+<p>$$
+T(q) = \lambda q
+$$</p>
+<p>for $\lambda$ a split biquaternion. These are the <strong>split biquaternion-linear</strong> transformations, viewed as $\mathbb{D}$-linear transformations.</p>
+<h3 id="the-groups_10">The groups</h3>
+<p>The group of invertible $\mathbb{D}$-linear transformations is $GL(4, \mathbb{D})$, the group of $4 \times 4$ matrices with entries in $\mathbb{D}$ whose determinant is a unit of $\mathbb{D}$.</p>
+<p>The determinant is a split complex number. The special linear group $SL(4, \mathbb{D})$ is the set of transformations with determinant $1$.</p>
+<p>The split biquaternion-linear transformations form a subgroup isomorphic to the group of units of the split biquaternions.</p>
+<hr />
+<h1 id="part-v-the-general-pattern">Part V: The General Pattern</h1>
+<h2 id="dilatations-rotations-reflections-hyperbolic-transformations">Dilatations, rotations, reflections, hyperbolic transformations</h2>
+<p>In every dimension and over every scalar structure, the linear transformations of a module can be decomposed into elementary geometric operations:</p>
+<ul>
+<li><strong>Dilatations:</strong> stretch or shrink uniformly. Present over every scalar structure.</li>
+<li><strong>Rotations:</strong> rotate around the origin. Present over $\mathbb{Q}$ (in dimension at least 2), over $\mathbb{R}$ (in dimension at least 2), and over $\mathbb{C}$.</li>
+<li><strong>Hyperbolic transformations:</strong> stretch in one direction and shrink in another. Present over $\mathbb{Q}$ (in dimension at least 2), over $\mathbb{R}$ (in dimension at least 2), and over $\mathbb{D}$.</li>
+<li><strong>Reflections:</strong> reflect across a line or hyperplane through the origin. Present over every scalar structure.</li>
+<li><strong>Shears:</strong> stretch in one direction while leaving another fixed. Present over $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$.</li>
+</ul>
+<h2 id="the-scalar-structure-matters">The scalar structure matters</h2>
+<p>The choice of scalar structure determines the structure of the transformation group.</p>
+<ul>
+<li>Over $\mathbb{Q}$, the linear transformations of $\mathbb{Q}^n$ form $GL(n, \mathbb{Q})$. The determinant is a rational number. Invertibility requires the determinant to be nonzero.</li>
+<li>Over $\mathbb{R}$, the linear transformations of $\mathbb{R}^n$ form $GL(n, \mathbb{R})$. The determinant is a real number. Invertibility requires the determinant to be nonzero.</li>
+<li>Over $\mathbb{C}$, the linear transformations of $\mathbb{C}^n$ form $GL(n, \mathbb{C})$. The determinant is a complex number. Invertibility requires the determinant to be nonzero.</li>
+<li>Over $\mathbb{D}$, the linear transformations of $\mathbb{D}^n$ form $GL(n, \mathbb{D})$. The determinant is a split complex number. Invertibility requires the determinant to be a <strong>unit</strong> of $\mathbb{D}$, not merely nonzero.</li>
+</ul>
+<h2 id="the-same-set-different-scalars">The same set, different scalars</h2>
+<p>The same set can be viewed as a module over different scalar structures. For example:</p>
+<ul>
+<li>$\mathbb{C}$ is a two-dimensional vector space over $\mathbb{R}$ and a one-dimensional vector space over $\mathbb{C}$.</li>
+<li>$\mathbb{D}$ is a two-dimensional vector space over $\mathbb{R}$ and a one-dimensional module over $\mathbb{D}$.</li>
+<li>$\mathbb{H}$ is a four-dimensional vector space over $\mathbb{R}$, a two-dimensional vector space over $\mathbb{C}$ (after complexification), and a four-dimensional module over $\mathbb{D}$ (after tensoring with $\mathbb{D}$).</li>
+</ul>
+<p>The transformation groups are different in each case. For example, the transformations of $\mathbb{C}$ over $\mathbb{R}$ form $GL(2, \mathbb{R})$, while the transformations of $\mathbb{C}$ over $\mathbb{C}$ form $GL(1, \mathbb{C}) = \mathbb{C}^\times$. These are different groups: $GL(2, \mathbb{R})$ is four-dimensional, while $\mathbb{C}^\times$ is two-dimensional.</p>
+<p>This is the reason the article is organized by scalar structure: the choice of scalars is the primary determinant of the structure of the transformation group.</p>
+<h2 id="the-determinant-and-the-special-linear-group">The determinant and the special linear group</h2>
+<p>The determinant is the factor by which the transformation scales volume. Its sign (over $\mathbb{R}$ and $\mathbb{Q}$) or argument (over $\mathbb{C}$) records whether the transformation preserves orientation.</p>
+<p>$SL(V)$ is the subgroup of volume-preserving transformations. It is the kernel of the determinant map. In one dimension, it is trivial over $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$, and it is the hyperbola over $\mathbb{D}$.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, every nonzero scalar is a unit, so invertibility is equivalent to nonzero determinant. Over a general commutative ring, the units may be a proper subset of the nonzero elements, so invertibility requires the determinant to be a unit. This is the main modification needed to extend the theory from fields to commutative rings.</p>
+<hr />
+<h1 id="summary">Summary</h1>
+<p>Let me summarize the geometric description of the transformation groups.</p>
+<p><strong>The field $\mathbb{Q}$.</strong></p>
+<ul>
+<li>$\mathbb{Q}$ over $\mathbb{Q}$: linear transformations are dilatations and reflections. The invertible ones form $GL(1, \mathbb{Q}) = \mathbb{Q}^\times$. The volume-preserving ones form the trivial group.</li>
+<li>$\mathbb{Q}^2$ over $\mathbb{Q}$: linear transformations form $GL(2, \mathbb{Q})$. The area-preserving ones form $SL(2, \mathbb{Q})$.</li>
+</ul>
+<p><strong>The field $\mathbb{R}$.</strong></p>
+<ul>
+<li>$\mathbb{R}$ over $\mathbb{R}$: linear transformations are dilatations and reflections. The invertible ones form $GL(1, \mathbb{R}) = \mathbb{R}^\times$. The volume-preserving ones form the trivial group.</li>
+<li>$\mathbb{C}$ over $\mathbb{R}$: linear transformations are rotations, dilatations, reflections, and shears. The invertible ones form $GL(2, \mathbb{R})$. The area-preserving ones form $SL(2, \mathbb{R})$.</li>
+<li>$\mathbb{D}$ over $\mathbb{R}$: linear transformations include the hyperbolic transformations. The invertible ones form $GL(2, \mathbb{R})$. The area-preserving ones form $SL(2, \mathbb{R})$.</li>
+<li>$\mathbb{H}$ over $\mathbb{R}$: linear transformations form $GL(4, \mathbb{R})$. The quaternion-linear ones form $\mathbb{H}^\times$, and the norm-preserving ones form $SU(2)$.</li>
+</ul>
+<p><strong>The field $\mathbb{C}$.</strong></p>
+<ul>
+<li>$\mathbb{C}$ over $\mathbb{C}$: linear transformations are rotations-dilatations. The invertible ones form $GL(1, \mathbb{C}) = \mathbb{C}^\times$. The volume-preserving ones form the trivial group.</li>
+<li>$\mathbb{C}^2$ over $\mathbb{C}$: linear transformations form $GL(2, \mathbb{C})$. The volume-preserving ones form $SL(2, \mathbb{C})$.</li>
+<li>$\mathbb{H} \otimes \mathbb{C}$ over $\mathbb{C}$: linear transformations form $GL(4, \mathbb{C})$. The biquaternion-linear ones form the group of units of the biquaternions.</li>
+</ul>
+<p><strong>The commutative ring $\mathbb{D}$.</strong></p>
+<ul>
+<li>$\mathbb{D}$ over $\mathbb{D}$: linear transformations are hyperbolic transformations. The invertible ones form the group of units of $\mathbb{D}$. The norm-one ones form the hyperbola.</li>
+<li>$\mathbb{D}^2$ over $\mathbb{D}$: linear transformations form $GL(2, \mathbb{D})$.</li>
+<li>$\mathbb{H} \otimes \mathbb{D}$ over $\mathbb{D}$: linear transformations form $GL(4, \mathbb{D})$.</li>
+</ul>
+<p><strong>The general pattern.</strong> The linear transformations of a module decompose into elementary geometric operations: dilatations, rotations, hyperbolic transformations, reflections, and shears. The determinant records the volume scaling, and $SL(V)$ is the subgroup of volume-preserving transformations. The choice of scalar structure determines which operations are available and the structure of the transformation group.</p>
+<p><strong>The key modification.</strong> Over a field, invertibility is equivalent to nonzero determinant. Over a commutative ring, invertibility requires the determinant to be a unit. This is the main change needed to extend the theory from fields to commutative rings.</p>
+<hr />
+<h1 id="further-reading">Further Reading</h1>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991), for an introduction to groups and transformations.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for a more advanced treatment.</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for a classic introduction.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for a modern introduction.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for a thorough treatment.</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004), for a comprehensive treatment of groups, rings, and modules.</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for a geometric treatment of both the complex and split complex numbers.</li>
+<li>F. Catoni, R. Cannata, V. Catoni, E. Nichelatti, P. Zampetti, <em>The Mathematics of Minkowski Space-Time</em> (Birkhäuser, 2008), for the split complex numbers as the algebraic model of two-dimensional Minkowski space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

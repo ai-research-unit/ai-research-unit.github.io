@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="spin-and-spinors"><strong>Spin and Spinors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces spin and spinors. The treatment is introductory and purely mathematical, with a brief discussion of the physical interpretation.</p>
+<p>The goal is to explain what the spin group is, what spinors are, and why they are not simply vectors or tensors. We assume familiarity with vector spaces, quadratic forms, orthogonal transformations, and Clifford algebras, as developed in the preceding articles.</p>
+<p>The article is organized as follows. In Part I, we explain why the rotation group has a double cover. In Part II, we construct the spin group inside the Clifford algebra. In Part III, we define spinors via a maximal isotropic subspace. In Part IV, we give an alternative construction of the spinor module via the orthogonal Lie algebra. In Part V, we compute the low-dimensional cases. In Part VI, we describe the physical interpretation. In Part VII, we address the question of where the sign of a spinor is stored.</p>
+<hr />
+<h2 id="part-i-why-the-rotation-group-has-a-double-cover">Part I: Why the Rotation Group Has a Double Cover</h2>
+<h3 id="rotations-in-three-dimensions">Rotations in three dimensions</h3>
+<p>Take an object in three-dimensional space. Rotate it by $360°$ around a fixed axis. The object is back to its original orientation. So the rotation by $360°$ is the same as no rotation at all, when we look only at the orientation of the object.</p>
+<p>But there is a topological subtlety. The path of rotations that goes from the identity to the rotation by $360°$ is a loop in the rotation group. This loop is not contractible: it cannot be continuously deformed to a point while staying in the rotation group. This is a fact about the topology of the rotation group $SO(3)$: its fundamental group is $\mathbb{Z}/2\mathbb{Z}$.</p>
+<p>The consequence is that the rotation group is not simply connected. It has a simply connected double cover, called the <strong>spin group</strong> $\mathrm{Spin}(3)$, with a two-to-one map</p>
+<p>$$
+\mathrm{Spin}(3) \to SO(3).
+$$</p>
+<p>Every rotation corresponds to exactly two elements of the spin group, and they are negatives of each other.</p>
+<h3 id="what-the-double-cover-adds">What the double cover adds</h3>
+<p>The spin group has one more element than the rotation group above each rotation. Specifically, the identity rotation in $SO(3)$ has two preimages in $\mathrm{Spin}(3)$: the identity $+1$ and the element $-1$. The element $-1$ is not the identity, but it maps to the identity rotation.</p>
+<p>So the spin group carries one extra piece of information that the rotation group does not carry: the <strong>sign</strong>. Each element of the spin group bears a rotation and a sign. The rotation is what it maps to in the rotation group. The sign is which of the two preimages it is.</p>
+<p>This is the only additional information. There is nothing else.</p>
+<h3 id="why-the-path-language-is-misleading">Why the path language is misleading</h3>
+<p>It is sometimes said that "an element of the spin group remembers the path taken to reach it." This is not accurate. An element of the spin group is a group element; it does not carry a path as data. What is true is that a loop in $SO(3)$ that is not null-homotopic lifts to a path in $\mathrm{Spin}(3)$ that starts at $+1$ and ends at $-1$. So the spin group encodes the homotopy of loops, but its elements are not paths.</p>
+<p>The correct statement is: the spin group is a double cover of the rotation group, and the additional information it carries, compared to the rotation group, is the sign $\pm 1$.</p>
+<hr />
+<h2 id="part-ii-the-spin-group-inside-the-clifford-algebra">Part II: The Spin Group Inside the Clifford Algebra</h2>
+<h3 id="the-clifford-algebra">The Clifford algebra</h3>
+<p>Let $W$ be a real vector space of dimension $n$ with a non-degenerate quadratic form $Q$. The Clifford algebra $Cl(W, Q)$ is the associative algebra generated by $W$ subject to the relation</p>
+<p>$$
+v^2 = Q(v) \cdot 1
+$$</p>
+<p>for all $v \in W$.</p>
+<h3 id="the-even-subalgebra">The even subalgebra</h3>
+<p>The Clifford algebra decomposes into an even part and an odd part:</p>
+<p>$$
+Cl(W, Q) = Cl^+(W, Q) \oplus Cl^-(W, Q).
+$$</p>
+<p>The even part $Cl^+(W, Q)$ consists of the elements of even degree: scalars, bivectors, four-vectors, and so on. It is a subalgebra of $Cl(W, Q)$.</p>
+<h3 id="the-group-of-units">The group of units</h3>
+<p>An element of $Cl^+(W, Q)$ is a <strong>unit</strong> if it has a multiplicative inverse. The set of all units forms a group under multiplication.</p>
+<h3 id="the-spin-group">The spin group</h3>
+<p>The <strong>spin group</strong> $\mathrm{Spin}(W, Q)$ is the subgroup of the group of units of $Cl^+(W, Q)$ generated by the products of an even number of unit vectors:</p>
+<p>$$
+\mathrm{Spin}(W, Q) = \{v_1 v_2 \cdots v_{2k} : v_i \in W, \, Q(v_i) = 1\}.
+$$</p>
+<p>This is a group. Every element $s \in \mathrm{Spin}(W, Q)$ defines a linear transformation of $W$ by conjugation:</p>
+<p>$$
+v \mapsto s v s^{-1}.
+$$</p>
+<p>This transformation preserves $Q$, so it is an orthogonal transformation of $W$. The map</p>
+<p>$$
+\mathrm{Spin}(W, Q) \to SO(W, Q), \qquad s \mapsto (v \mapsto s v s^{-1})
+$$</p>
+<p>is a two-to-one group homomorphism. Its kernel is $\{\pm 1\}$. So $\mathrm{Spin}(W, Q)$ is a double cover of the rotation group $SO(W, Q)$.</p>
+<h3 id="why-the-even-subalgebra">Why the even subalgebra</h3>
+<p>The spin group sits inside the even subalgebra because a product of an even number of unit vectors has even degree. This is the algebraic reason the even subalgebra is singled out: it is the part of the Clifford algebra that contains the rotations.</p>
+<hr />
+<h2 id="part-iii-spinors-via-a-maximal-isotropic-subspace">Part III: Spinors via a Maximal Isotropic Subspace</h2>
+<h3 id="the-problem">The problem</h3>
+<p>The spin group is a group. To define spinors, we need a space on which the spin group acts. This space cannot be the vector space $W$ itself, because the action of the spin group on $W$ factors through the rotation group: $s$ and $-s$ act the same way on $W$.</p>
+<p>We need a new space, on which $s$ and $-s$ act differently. Such a space is called a <strong>spin representation</strong>, and its elements are called <strong>spinors</strong>.</p>
+<h3 id="construction-using-a-maximal-isotropic-subspace">Construction using a maximal isotropic subspace</h3>
+<p>Let $W$ be a real vector space of dimension $n$ with a non-degenerate quadratic form $Q$. A <strong>maximal isotropic subspace</strong> is a subspace $U \subseteq W$ on which $Q$ vanishes identically, and which is maximal with this property.</p>
+<p>Let $U$ be a maximal isotropic subspace. The <strong>spin representation space</strong> is the exterior algebra</p>
+<p>$$
+S = \Lambda(U).
+$$</p>
+<p>The Clifford algebra $Cl(W, Q)$ acts on $S$ by a formula that involves exterior and interior multiplication. Restricting this action to the spin group gives a representation</p>
+<p>$$
+\mathrm{Spin}(W, Q) \to GL(S).
+$$</p>
+<p>The elements of $S$ are the <strong>spinors</strong>.</p>
+<h3 id="the-dimension-of-the-spin-representation">The dimension of the spin representation</h3>
+<p>The dimension of $S = \Lambda(U)$ is $2^k$, where $k = \dim U$. For a non-degenerate quadratic form on a space of dimension $n$, the maximal isotropic subspaces have dimension $\lfloor n/2 \rfloor$. So the spin representation has dimension</p>
+<p>$$
+\dim S = 2^{\lfloor n/2 \rfloor}.
+$$</p>
+<p>For $n = 3$, this is $2^1 = 2$. For $n = 4$, this is $2^2 = 4$. For $n = 5$, this is $2^2 = 4$. The dimension grows with $n$, but it is always smaller than the dimension of the Clifford algebra.</p>
+<h3 id="the-defining-property-of-a-spinor">The defining property of a spinor</h3>
+<p>The defining property of a spinor is that a rotation by $360°$ sends it to its negative, and a rotation by $720°$ sends it back to itself. A vector returns to itself after $360°$. A spinor does not.</p>
+<p>This is the observable difference between a spinor and a vector. It is the reason spinors are a genuinely new kind of object, not just vectors or tensors in disguise.</p>
+<h3 id="spinors-are-not-vectors-or-tensors">Spinors are not vectors or tensors</h3>
+<p>A vector of $W$ transforms under the rotation group $SO(W, Q)$ in the standard way. A spinor transforms under the spin group $\mathrm{Spin}(W, Q)$ in a way that does not factor through the rotation group. This is the precise sense in which spinors are new.</p>
+<p>A tensor is built from vectors and covectors by tensor products. A spinor is not built in this way. It is an element of a representation space that does not come from a representation of the rotation group.</p>
+<hr />
+<h2 id="part-iv-an-alternative-construction-of-the-spinor-module">Part IV: An Alternative Construction of the Spinor Module</h2>
+<h3 id="the-orthogonal-lie-algebra-inside-the-clifford-algebra">The orthogonal Lie algebra inside the Clifford algebra</h3>
+<p>Let $W$ be a real vector space of dimension $n$, and let $Cl(W, Q)$ be the Clifford algebra. Recall that the bivectors $M_2$ form a Lie algebra under the commutator bracket, and that this Lie algebra is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(W, Q)$:</p>
+<p>$$
+M_2 \cong \mathfrak{so}(W, Q).
+$$</p>
+<p>So the Clifford algebra contains the orthogonal Lie algebra as a subspace. This is the starting point for the alternative construction of the spinor module.</p>
+<h3 id="the-elements-math83-and-math84">The elements $u_i$ and $v_i$</h3>
+<p>Choose an orthonormal basis $e_1, \ldots, e_n$ of $W$. Inside the Clifford algebra, define the elements</p>
+<p>$$
+u_i = \frac{1}{2}\left(\sqrt{-1}\, e_{2i} e_n + e_{2i-1} e_n\right), \qquad 1 \leq i \leq l,
+$$</p>
+<p>$$
+v_i = \frac{1}{2}\left(\sqrt{-1}\, e_{2i} e_n - e_{2i-1} e_n\right), \qquad 1 \leq i \leq l,
+$$</p>
+<p>where $l = \lfloor n/2 \rfloor$. These are elements of the Clifford algebra, expressed as linear combinations of bivectors.</p>
+<p>These elements satisfy the following anticommutation relations:</p>
+<p>$$
+\{u_i, v_j\} = \delta_{ij}, \qquad \{u_i, u_j\} = 0, \qquad \{v_i, v_j\} = 0.
+$$</p>
+<p>Here $\{a, b\} = ab + ba$ is the anticommutator. The first relation says that $u_i$ and $v_i$ anticommute to the identity when $i = j$, and anticommute to zero when $i \neq j$. The second and third relations say that the $u_i$ among themselves anticommute to zero, and similarly for the $v_i$.</p>
+<p>These relations are the same as the canonical anticommutation relations for fermions in quantum mechanics. They are the algebraic content of the construction.</p>
+<h3 id="the-subalgebras-math98-and-math99">The subalgebras $U$ and $V$</h3>
+<p>Let $U$ be the subalgebra of the Clifford algebra generated by the $u_i$:</p>
+<p>$$
+U = \langle 1, u_1, \ldots, u_l \rangle.
+$$</p>
+<p>Let $V$ be the subalgebra generated by the $v_i$:</p>
+<p>$$
+V = \langle 1, v_1, \ldots, v_l \rangle.
+$$</p>
+<p>These are not the even subalgebra and the odd subalgebra. They are two different subalgebras of the Clifford algebra, each generated by half of the special elements $u_i$ and $v_i$.</p>
+<p>The elements $u_i$, $v_i$, and their commutators generate the bivectors $M_2$. Since $M_2$ is isomorphic to the orthogonal Lie algebra, the subalgebras $U$ and $V$ together generate the orthogonal Lie algebra.</p>
+<h3 id="the-spinor-module">The spinor module</h3>
+<p>The spinor module is constructed as</p>
+<p>$$
+N = U \, v_1 v_2 \cdots v_l.
+$$</p>
+<p>This is the set of all elements of the form $u \cdot v_1 v_2 \cdots v_l$, where $u \in U$. It is a subspace of the Clifford algebra.</p>
+<p>The spinor module $N$ is a module over the orthogonal Lie algebra $\mathfrak{so}(W, Q)$, under left multiplication. This means that for every element $X \in \mathfrak{so}(W, Q)$ and every spinor $\psi \in N$, the product $X \psi$ is again a spinor in $N$.</p>
+<p>The dimension of $N$ is</p>
+<p>$$
+\dim N = 2^l,
+$$</p>
+<p>where $l = \lfloor n/2 \rfloor$. This is the same dimension as the spin representation constructed via a maximal isotropic subspace, as expected.</p>
+<h3 id="why-this-construction-works">Why this construction works</h3>
+<p>The construction works because the elements $u_i$ and $v_i$ satisfy the canonical anticommutation relations. These relations are the same as the relations satisfied by creation and annihilation operators for fermions. The subalgebra $U$ plays the role of the algebra generated by the creation operators, and the subalgebra $V$ plays the role of the algebra generated by the annihilation operators.</p>
+<p>The spinor module $N = U v_1 \cdots v_l$ is the space obtained by acting on the "vacuum" element $v_1 \cdots v_l$ with the creation operators in $U$. The dimension of this space is $2^l$, since there are $l$ independent creation operators, each of which can be applied or not.</p>
+<h3 id="comparison-with-the-construction-via-a-maximal-isotropic-subspace">Comparison with the construction via a maximal isotropic subspace</h3>
+<p>The two constructions are equivalent. They give the same spinor module, of dimension $2^l$. The difference is in the presentation:</p>
+<ul>
+<li>The construction via a maximal isotropic subspace uses the exterior algebra $\Lambda(U)$ of a maximal isotropic subspace $U$. It is geometric and coordinate-free.</li>
+<li>The construction via the orthogonal Lie algebra uses the elements $u_i$ and $v_i$ and their anticommutation relations. It is algebraic and explicit.</li>
+</ul>
+<p>Both constructions are valid, and each has its advantages. The geometric construction is more conceptual; the algebraic construction is more computational.</p>
+<hr />
+<h2 id="part-v-the-low-dimensional-cases">Part V: The Low-Dimensional Cases</h2>
+<h3 id="dimension-2">Dimension 2</h3>
+<p>For $W = \mathbb{R}^2$ with the Euclidean form, the spin group is the circle group $S^1$, and the spin representation is one-dimensional over $\mathbb{C}$. The spinors transform under the spin group by multiplication by $e^{i\theta/2}$.</p>
+<p>For $W = \mathbb{R}^2$ with the split form, the spin group is the hyperbola group, and the spinors transform by multiplication by a split complex number of norm $1$.</p>
+<h3 id="dimension-3">Dimension 3</h3>
+<p>For $W = \mathbb{R}^3$ with the Euclidean form, the spin group is $SU(2)$, the group of unit quaternions. The spin representation is two-dimensional over $\mathbb{C}$. The spinors are pairs of complex numbers, and they transform under $SU(2)$ by matrix multiplication.</p>
+<p>This is the case that arises in the quantum mechanics of the electron: the electron has two spin states, "up" and "down", and these correspond to the two components of a spinor.</p>
+<h3 id="dimension-4">Dimension 4</h3>
+<p>For $W = \mathbb{R}^4$ with the Euclidean form, the spin group is $SU(2) \times SU(2)$. The spin representation is four-dimensional over $\mathbb{C}$, and it splits into two two-dimensional pieces, called the <strong>left-handed</strong> and <strong>right-handed</strong> spinors.</p>
+<p>This splitting is special to dimension 4. It is the algebraic origin of the distinction between left-handed and right-handed particles.</p>
+<h3 id="summary-of-the-low-dimensional-cases">Summary of the low-dimensional cases</h3>
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Quadratic form</th>
+<th>Spin group</th>
+<th>Spin representation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>Euclidean</td>
+<td>$S^1$</td>
+<td>$\mathbb{C}$, dim 1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>split</td>
+<td>hyperbola group</td>
+<td>$\mathbb{R} \oplus \mathbb{R}$, dim 1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Euclidean</td>
+<td>$SU(2)$</td>
+<td>$\mathbb{C}^2$, dim 2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Euclidean</td>
+<td>$SU(2) \times SU(2)$</td>
+<td>$\mathbb{C}^4$, dim 4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="part-vi-the-physical-interpretation">Part VI: The Physical Interpretation</h2>
+<h3 id="the-electron-spin">The electron spin</h3>
+<p>In quantum mechanics, the electron has an intrinsic angular momentum called <strong>spin</strong>. The spin can take two values: "up" and "down". These two values correspond to the two components of a spinor.</p>
+<p>The mathematical object that describes the electron spin is a spinor. The spin group $SU(2)$ acts on the spinor, and the two-to-one cover of the rotation group describes the fact that the electron must be rotated by $720°$ to return to its original state.</p>
+<h3 id="the-interference-experiments">The interference experiments</h3>
+<p>The sign of a spinor is not a metaphysical entity. It is a physical phase that manifests in <strong>interference experiments</strong>.</p>
+<p>If you rotate a spin-$1/2$ particle by $360°$ and then interfere it with a copy that was not rotated, you get a different interference pattern than if you had not rotated it. This was first demonstrated with neutrons by Rauch et al. in 1975, and has since been confirmed with other particles.</p>
+<p>So the sign of a spinor is a physical phase, and it is observable. It is not stored in a hidden space; it is a physical degree of freedom.</p>
+<h3 id="where-the-sign-is-stored">Where the sign is stored</h3>
+<p>The sign is stored in the <strong>phase of the quantum state</strong>. The quantum state is a vector in a Hilbert space, and the phase is a physical degree of freedom in the sense that it affects interference. So the sign is not hidden; it is a physical observable, in the same way that the phase of a wavefunction is a physical observable in interference experiments.</p>
+<p>The "hidden dimension" language is misleading. The sign is an internal degree of freedom, not a hidden spatial dimension. It is observable, and it has physical consequences.</p>
+<hr />
+<h2 id="part-vii-where-the-sign-is-stored">Part VII: Where the Sign Is Stored</h2>
+<h3 id="in-the-group-structure">In the group structure</h3>
+<p>The sign is stored in the <strong>group structure of the spin group</strong>. Specifically, the element $-1$ of the spin group maps to the identity rotation in $SO(W, Q)$ but acts as the negative of the identity on the spin representation. This element is not a direction or a coordinate; it is a symmetry.</p>
+<h3 id="in-the-topology-of-the-rotation-group">In the topology of the rotation group</h3>
+<p>The existence of the element $-1$ is a consequence of the topology of the rotation group. The rotation group is not simply connected, and its fundamental group is $\mathbb{Z}/2\mathbb{Z}$. The nontrivial loop in the rotation group lifts to a path in the spin group that ends at $-1$.</p>
+<h3 id="in-the-phase-of-the-quantum-state">In the phase of the quantum state</h3>
+<p>In the physical interpretation, the sign is stored in the phase of the quantum state. This phase is observable in interference experiments. It is a physical degree of freedom, not a hidden space.</p>
+<h3 id="what-mathematics-does-not-say">What mathematics does not say</h3>
+<p>Mathematics tells you that the sign is an element of the spin group. It does not tell you whether that element corresponds to some deeper physical or metaphysical entity. That is a question for physics or philosophy.</p>
+<p>What mathematics does say is that the sign is accounted for by the group structure of the spin group and the topology of the rotation group. No hidden space is required.</p>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Let me summarize the main points.</p>
+<p><strong>The rotation group</strong> $SO(W, Q)$ is not simply connected in dimension $n \geq 3$. It has a simply connected double cover, the <strong>spin group</strong> $\mathrm{Spin}(W, Q)$.</p>
+<p><strong>The spin group</strong> is constructed inside the Clifford algebra $Cl(W, Q)$. It is the subgroup of the group of units of the even subalgebra generated by products of an even number of unit vectors.</p>
+<p><strong>The spin group</strong> acts on $W$ by conjugation, and this gives a two-to-one map $\mathrm{Spin}(W, Q) \to SO(W, Q)$. The additional information it carries, compared to the rotation group, is the <strong>sign</strong> $\pm 1$.</p>
+<p><strong>Spinors</strong> are elements of a representation space of the spin group that does not factor through the rotation group. They can be constructed in two equivalent ways:</p>
+<ul>
+<li>Via the exterior algebra of a maximal isotropic subspace, which gives a geometric and coordinate-free construction.</li>
+<li>Via the orthogonal Lie algebra and the canonical anticommutation relations, which gives an explicit algebraic construction.</li>
+</ul>
+<p><strong>The defining property of a spinor</strong> is that a $360°$ rotation sends it to its negative, and a $720°$ rotation returns it to itself.</p>
+<p><strong>In low dimensions</strong>, the spin groups and spin representations are related to the classical number systems:</p>
+<ul>
+<li>In dimension 2 with the Euclidean form, the spin group is the circle $S^1$, and the spinors are one-dimensional.</li>
+<li>In dimension 3, the spin group is $SU(2)$, and the spinors are two-dimensional.</li>
+<li>In dimension 4, the spin group is $SU(2) \times SU(2)$, and the spinors split into left-handed and right-handed parts.</li>
+</ul>
+<p><strong>The sign of a spinor</strong> is stored in the group structure of the spin group (as the element $-1$), in the topology of the rotation group (as the nontrivial loop), and in the phase of the quantum state (as an observable phase). It is not stored in a hidden space.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for a treatment of spinors from the perspective of Clifford algebras.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the mathematical foundations of spin geometry.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for a geometric-algebra treatment of spinors.</li>
+<li>Roger Penrose and Wolfgang Rindler, <em>Spinors and Space-Time</em> (Cambridge University Press, 1984), for a comprehensive treatment of spinors.</li>
+<li>Ian R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the algebraic classification of spin representations.</li>
+<li>Johan Gijsbertus Frederik Belinfante, "Clifford Algebras and the Construction of the Basic Spinor and Semi-Spinor Modules", in <em>Clifford Algebras and their Applications in Mathematical Physics</em> (University of Chicago Press, 1999), for the construction of the spinor module via the orthogonal Lie algebra.</li>
+<li>H. Rauch, A. Zeilinger, G. Badurek, A. Wilfing, W. Bauspiess, and U. Bonse, "Verification of coherent spinor rotation", <em>Physics Letters A</em> 54 (1975), 425–427, for the neutron interference experiment demonstrating the sign of a spinor.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="clifford-algebras">Clifford Algebras</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces Clifford algebras. The treatment is introductory and purely mathematical.</p>
+<p>The goal is to explain what a Clifford algebra is, why it is a natural construction, and how it relates to the classical number systems.</p>
+<p>We assume familiarity with modules, bilinear forms, and quadratic forms, as developed in the preceding articles.</p>
+<p>This article treats the general definition, for a module over a commutative ring equipped with a quadratic form, of any rank, finite or infinite. The classification of finite-rank Clifford algebras is the subject of the following article.</p>
+<p>Three of the classical number systems are Clifford algebras over the field $\mathbb{R}$.</p>
+<ul>
+<li>The <strong>real numbers</strong> $\mathbb{R}$ are the Clifford algebra with no generators.</li>
+<li>The <strong>complex numbers</strong> $\mathbb{C}$ are the Clifford algebra with one generator squaring to $-1$.</li>
+<li>The <strong>quaternions</strong> $\mathbb{H}$ are the Clifford algebra with two generators, both squaring to $-1$ and anticommuting.</li>
+</ul>
+<p>We will verify these isomorphisms in the following article, where we compute the low-dimensional Clifford algebras explicitly.</p>
+<p>A word on the base structure. The classical theory of Clifford algebras assumes that the scalars form a field. But the definition makes sense over any <strong>commutative ring</strong>, and much of the theory carries over. This is the setting we adopt here. The main differences from the field case are:</p>
+<ul>
+<li>Modules over a commutative ring need not be free, so the Clifford algebra need not have a well-defined rank.</li>
+<li>Non-degeneracy of the quadratic form is defined via an isomorphism $M \to M^*$, which requires care over a general commutative ring.</li>
+<li>The classification of Clifford algebras over a general commutative ring is much more subtle than over a field.</li>
+</ul>
+<p>We indicate where these differences matter. When we wish to specialize to a field, we say so explicitly.</p>
+<hr />
+<h1 id="part-a-the-general-definition">Part A: The General Definition</h1>
+<h2 id="1-the-question">1. The Question</h2>
+<p>Let $M$ be a module over a commutative ring $R$, equipped with a quadratic form $Q$. We can add vectors and multiply them by scalars. We cannot, in general, multiply two vectors together.</p>
+<p>The question is:</p>
+<blockquote>
+<p>Given an $R$-module $M$ with a quadratic form $Q$, can we build an associative algebra with a unit in which the product of two vectors is defined, and in which the square of a vector $v$ equals the scalar $Q(v)$?</p>
+</blockquote>
+<p>"In the algebra we are going to build, the square of $v$ equals the scalar $Q(v)$" means: the vector $v$ becomes an element of the algebra, and $Q(v)$ is identified with the algebra element $Q(v) \cdot 1$, where $1$ is the unit. So the requirement is</p>
+<p>$$
+v^2 = Q(v) \cdot 1.
+$$</p>
+<h2 id="2-the-tensor-algebra">2. The Tensor Algebra</h2>
+<p>Let $M$ be an $R$-module. The <strong>tensor algebra</strong> $T(M)$ is the direct sum</p>
+<p>$$
+T(M) = \bigoplus_{k=0}^{\infty} M^{\otimes k},
+$$</p>
+<p>where $M^{\otimes 0} = R$ and $M^{\otimes k}$ is the $k$-fold tensor product of $M$ with itself over $R$. The product in $T(M)$ is the tensor product: if $u \in M^{\otimes m}$ and $v \in M^{\otimes n}$, then $uv \in M^{\otimes(m+n)}$.</p>
+<p>The tensor algebra is the algebra of all formal products of vectors, with no relations other than $R$-bilinearity, associativity, and the existence of a unit. It is infinite-rank unless $M = 0$. It is the largest associative unital $R$-algebra generated by $M$ with no relations imposed.</p>
+<h2 id="3-the-clifford-algebra">3. The Clifford Algebra</h2>
+<p>Let $Q$ be a quadratic form on $M$. The <strong>Clifford algebra</strong> $Cl(M, Q)$ is the quotient of the tensor algebra $T(M)$ by the two-sided ideal $I$ generated by the elements</p>
+<p>$$
+v \otimes v - Q(v) \cdot 1
+$$</p>
+<p>for all $v \in M$. That is,</p>
+<p>$$
+Cl(M, Q) = T(M) / I.
+$$</p>
+<p>In words: we start with the algebra of all formal products of vectors, and we impose the single relation</p>
+<p>$$
+v^2 = Q(v) \cdot 1
+$$</p>
+<p>for every $v \in M$. Nothing else is imposed. The quotient is the largest associative unital $R$-algebra in which this relation holds.</p>
+<p>This definition makes sense for any $R$-module $M$, of any rank, finite or infinite. No further assumptions are made at this stage.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, every module is free, so the tensor algebra is a free algebra and the Clifford algebra has a well-defined dimension. Over a general commutative ring, the module need not be free, and the Clifford algebra need not be free. In the free case, $Cl(M, Q)$ is a free $R$-module of rank $2^n$ if $M$ is free of rank $n$.</p>
+<h3 id="a-note-on-the-sign-convention">A Note on the Sign Convention</h3>
+<p>There are two conventions in the literature for the defining relation of the Clifford algebra. In this article we use</p>
+<p>$$
+v^2 = Q(v) \cdot 1.
+$$</p>
+<p>The other convention is</p>
+<p>$$
+v^2 = -Q(v) \cdot 1.
+$$</p>
+<p>The two conventions give algebras that differ by the signs of the generators. They are isomorphic under the map $v \mapsto -v$ on $M$, which extends to an algebra isomorphism. So the choice of convention does not affect the classification of Clifford algebras up to isomorphism; it only affects the signs in the formulas. We use the first convention throughout.</p>
+<h2 id="4-the-universal-property">4. The Universal Property</h2>
+<p>The construction has a universal property, which is often taken as the definition. Let $M$ be an $R$-module with quadratic form $Q$, and let $A$ be a unital associative $R$-algebra. Any $R$-linear map $f : M \to A$ such that</p>
+<p>$$
+f(v)^2 = Q(v) \cdot 1_A
+$$</p>
+<p>for all $v \in M$ extends uniquely to an algebra homomorphism</p>
+<p>$$
+\tilde{f} : Cl(M, Q) \to A.
+$$</p>
+<p>This property is what we mean when we say the Clifford algebra is the "largest" algebra in which the relation $v^2 = Q(v) \cdot 1$ holds. Every other such algebra is a quotient of the Clifford algebra.</p>
+<h2 id="5-functoriality">5. Functoriality</h2>
+<p>The Clifford algebra construction is <strong>functorial</strong>: an $R$-linear map between two modules that preserves the quadratic forms extends to an algebra homomorphism between the corresponding Clifford algebras. This is a consequence of the universal property.</p>
+<p>Let $M_1$ and $M_2$ be $R$-modules, with quadratic forms $Q_1$ and $Q_2$. Let $f : M_1 \to M_2$ be an $R$-linear map such that</p>
+<p>$$
+Q_2(f(v)) = Q_1(v) \quad \text{for all } v \in M_1.
+$$</p>
+<p>In other words, $f$ preserves the quadratic forms.</p>
+<p>View $f$ as an $R$-linear map from $M_1$ to the Clifford algebra $Cl(M_2, Q_2)$, by composing with the inclusion $M_2 \hookrightarrow Cl(M_2, Q_2)$. For any $v \in M_1$, the image $f(v)$ satisfies</p>
+<p>$$
+f(v)^2 = Q_2(f(v)) \cdot 1 = Q_1(v) \cdot 1.
+$$</p>
+<p>By the universal property of $Cl(M_1, Q_1)$, the map $f$ extends uniquely to an algebra homomorphism</p>
+<p>$$
+Cl(f) : Cl(M_1, Q_1) \to Cl(M_2, Q_2).
+$$</p>
+<p>The construction is compatible with composition: if $f : M_1 \to M_2$ and $g : M_2 \to M_3$ both preserve the quadratic forms, then</p>
+<p>$$
+Cl(g \circ f) = Cl(g) \circ Cl(f).
+$$</p>
+<p>An important special case is when $M_1 = M_2 = M$ and $f : M \to M$ is an orthogonal transformation. Then the functoriality gives an algebra automorphism $Cl(f)$ of $Cl(M, Q)$. So every orthogonal transformation of $M$ extends to an automorphism of the Clifford algebra, giving a group homomorphism</p>
+<p>$$
+O(M, Q) \to \mathrm{Aut}(Cl(M, Q)), \qquad f \mapsto Cl(f).
+$$</p>
+<p>A particularly important example is the map $f(v) = -v$. This is an orthogonal transformation of $M$, and it extends to the <strong>parity automorphism</strong> $\Pi = Cl(-1)$ of the Clifford algebra. On a product of $k$ vectors, it acts as</p>
+<p>$$
+\Pi(v_1 v_2 \cdots v_k) = (-1)^k v_1 v_2 \cdots v_k.
+$$</p>
+<p>So $\Pi$ multiplies an element of degree $k$ by $(-1)^k$. Its $+1$ eigenspace is the even subalgebra, and its $-1$ eigenspace is the odd part.</p>
+<h2 id="6-the-fundamental-relation">6. The Fundamental Relation</h2>
+<p>We now derive a relation between two different vectors $u, v \in M$. This derivation uses only the relation $v^2 = Q(v) \cdot 1$ and $R$-bilinearity. It does not require finite rank.</p>
+<p>Apply the relation to $u + v$:</p>
+<p>$$
+(u + v)^2 = Q(u + v) \cdot 1.
+$$</p>
+<p>Expand the left side using $R$-bilinearity:</p>
+<p>$$
+(u + v)^2 = u^2 + uv + vu + v^2.
+$$</p>
+<p>On the right side, use the polarization identity for quadratic forms:</p>
+<p>$$
+Q(u + v) = Q(u) + 2B(u, v) + Q(v),
+$$</p>
+<p>where $B$ is the bilinear form associated with $Q$. This requires that 2 is invertible in $R$. So</p>
+<p>$$
+u^2 + uv + vu + v^2 = Q(u) \cdot 1 + 2B(u, v) \cdot 1 + Q(v) \cdot 1.
+$$</p>
+<p>Using $u^2 = Q(u) \cdot 1$ and $v^2 = Q(v) \cdot 1$, we cancel and get</p>
+<p>$$
+uv + vu = 2B(u, v) \cdot 1.
+$$</p>
+<p>This is the <strong>fundamental relation</strong> of the Clifford algebra. It holds for all $u, v \in M$, in any rank, finite or infinite.</p>
+<p><strong>Key difference from the field case.</strong> The polarization identity requires that 2 is invertible in $R$. Over $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{Q}$, this is automatic. Over $\mathbb{Z}$, it is not: 2 is not a unit of $\mathbb{Z}$. So the fundamental relation over $\mathbb{Z}$ requires more care.</p>
+<h2 id="7-the-radical">7. The Radical</h2>
+<p>The <strong>radical</strong> of $Q$ is the submodule</p>
+<p>$$
+R = \{v \in M : B(v, w) = 0 \text{ for all } w \in M\}.
+$$</p>
+<p>It is the kernel of the linear map $M \to M^*$, $v \mapsto B(v, \cdot)$. The restriction of $Q$ to $R$ is zero, and the quotient $M/R$ carries an induced quadratic form $\bar{Q}$, which is non-degenerate when the quotient is defined and the induced form is non-degenerate.</p>
+<p><strong>Basic properties.</strong></p>
+<ul>
+<li>$R$ is the set of vectors orthogonal to every vector.</li>
+<li>$Q$ is non-degenerate iff $R = 0$ and the map $M \to M^*$ is an isomorphism.</li>
+<li>For $r, s \in R$, the fundamental relation gives $r s + s r = 2 B(r, s) \cdot 1 = 0$, so $r s = -s r$ and $r^2 = 0$.</li>
+</ul>
+<p>The radical is the obstruction to non-degeneracy, and it is the source of the nilpotent factor in the decomposition.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism, which is a stronger condition. We assume this stronger condition when we speak of non-degenerate Clifford algebras over a commutative ring.</p>
+<h2 id="8-degenerate-and-non-degenerate-clifford-algebras">8. Degenerate and Non-degenerate Clifford Algebras</h2>
+<p>The Clifford algebra $Cl(M, Q)$ is <strong>degenerate</strong> if there exists a nonzero vector $u \in M$ such that</p>
+<p>$$
+B(u, v) = 0 \quad \text{for all } v \in M.
+$$</p>
+<p>In words: there is a nonzero vector that is orthogonal to every vector. Equivalently, the radical $R$ is non-zero.</p>
+<p>If no such vector exists, the Clifford algebra is <strong>non-degenerate</strong>.</p>
+<p>If such a vector $u$ exists, then in particular $B(u, u) = 0$, so $Q(u) = 0$. Such a vector generates a nilpotent element in the Clifford algebra, which obstructs the construction of the spin group and spinors.</p>
+<p>So the two cases are:</p>
+<ul>
+<li><strong>Degenerate:</strong> there is a nonzero vector orthogonal to every vector. The Clifford algebra contains nilpotent elements that do not have inverses.</li>
+<li><strong>Non-degenerate:</strong> the only vector orthogonal to every vector is the zero vector. The Clifford algebra has a well-behaved even subalgebra, a large group of units, and a spin group that is a double cover of the rotation group.</li>
+</ul>
+<p>The simplest degenerate example is $Q = 0$, in which case the Clifford algebra is the exterior algebra $\Lambda(M)$. Every element of positive degree is nilpotent, and there is no spin group.</p>
+<p>From this point on, unless stated otherwise, we assume that $Q$ is <strong>non-degenerate</strong>.</p>
+<h2 id="9-the-tensor-product-decomposition">9. The Tensor Product Decomposition</h2>
+<p>The Clifford algebra of a direct sum of two modules with quadratic forms is the tensor product of the Clifford algebras of the summands. This is the structural reason behind the classification of Clifford algebras, because it reduces the general case to the one-dimensional cases.</p>
+<p>Let $M_1$ and $M_2$ be $R$-modules with quadratic forms $Q_1$ and $Q_2$. Consider the direct sum $M_1 \oplus M_2$ with the quadratic form</p>
+<p>$$
+Q(v_1 \oplus v_2) = Q_1(v_1) + Q_2(v_2).
+$$</p>
+<p>Then there is an isomorphism of algebras</p>
+<p>$$
+Cl(M_1 \oplus M_2, Q) \cong Cl(M_1, Q_1) \hat{\otimes} Cl(M_2, Q_2),
+$$</p>
+<p>where $\hat{\otimes}$ is the <strong>graded tensor product</strong>. In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This is what ensures that the images of $v_1 \in M_1$ and $v_2 \in M_2$ anticommute, as required by the Clifford relations.</p>
+<p>To see why the decomposition holds, note that the graded tensor product $Cl(M_1, Q_1) \hat{\otimes} Cl(M_2, Q_2)$ contains $M_1 \oplus M_2$ as a submodule, via the map</p>
+<p>$$
+v_1 \oplus v_2 \mapsto v_1 \otimes 1 + 1 \otimes v_2.
+$$</p>
+<p>The images satisfy the Clifford relations for the quadratic form $Q$ on $M_1 \oplus M_2$. By the universal property, the inclusion extends to an algebra homomorphism</p>
+<p>$$
+Cl(M_1 \oplus M_2, Q) \to Cl(M_1, Q_1) \hat{\otimes} Cl(M_2, Q_2).
+$$</p>
+<p>This map is an isomorphism in the free case, because both algebras have the same rank, namely $2^{n_1 + n_2}$ where $n_i$ is the rank of $M_i$, and the map is surjective (the images generate the tensor product).</p>
+<p>The decomposition reduces the classification of Clifford algebras to the one-dimensional cases. In the finite-rank free case, the module decomposes as an orthogonal direct sum of one-dimensional submodules, and the Clifford algebra decomposes as a graded tensor product of one-dimensional Clifford algebras. The classification of these one-dimensional cases, and the resulting periodic pattern, is the subject of the article <em>Clifford Algebras in Finite Dimensions</em>.</p>
+<h2 id="10-the-decomposition-of-a-degenerate-clifford-algebra">10. The Decomposition of a Degenerate Clifford Algebra</h2>
+<p>The tensor product decomposition of the preceding section applies to an arbitrary orthogonal direct sum, including the case where one of the summands is the radical. This gives the structural reduction of a degenerate Clifford algebra to a non-degenerate Clifford algebra tensored with an exterior algebra.</p>
+<p><strong>Theorem.</strong> Let $M$ be an $R$-module with quadratic form $Q$, radical $R$, and induced non-degenerate form $\bar{Q}$ on $M/R$. Suppose that $M$ is the direct sum of $R$ and a complement $W$ on which $Q$ is non-degenerate. Then there is an algebra isomorphism</p>
+<p>$$
+Cl(M, Q) \cong Cl(M/R, \bar{Q}) \hat{\otimes} \Lambda(R),
+$$</p>
+<p>where $\hat{\otimes}$ is the graded tensor product, and $\Lambda(R)$ is the exterior algebra on $R$.</p>
+<p><strong>Proof.</strong> Write $M = W \oplus R$ with $W$ non-degenerate. The Clifford relations split into three families:</p>
+<ul>
+<li>For $v, w \in W$: $v w + w v = 2 B(v, w) \cdot 1$.</li>
+<li>For $v \in W$, $r \in R$: $v r + r v = 2 B(v, r) \cdot 1 = 0$.</li>
+<li>For $r, s \in R$: $r s + s r = 2 B(r, s) \cdot 1 = 0$.</li>
+</ul>
+<p>The first family generates $Cl(W, Q|_W) \cong Cl(M/R, \bar{Q})$. The third family generates $\Lambda(R)$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $R$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two. $\square$</p>
+<p>The isomorphism is not canonical: it depends on the choice of complement $W$. Different complements give different isomorphisms, related by the action of the orthogonal group of $Q$.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, every module is free, so the complement always exists. Over a general commutative ring, the module need not be free, and the complement need not exist. The decomposition holds under the additional hypothesis that the radical is a direct summand.</p>
+<h3 id="the-non-degenerate-factor">The Non-Degenerate Factor</h3>
+<p>The factor $Cl(M/R, \bar{Q})$ is the ordinary Clifford algebra of a non-degenerate form. Its structure depends on the ring $R$ and on the form $\bar{Q}$.</p>
+<p>Over a general commutative ring, the non-degenerate Clifford algebra is a central simple algebra over $R$, or a product of two central simple algebras, when the relevant hypotheses hold. Its class in the Brauer group of $R$ is determined by the discriminant and the Hasse invariant of $\bar{Q}$. The algebra is $\mathbb{Z}/2$-graded, with even part $Cl^0$ and odd part $Cl^1$, and the even part is a central simple algebra over $R$ when the rank of $M/R$ is even.</p>
+<p><strong>Key difference from the field case.</strong> Over a general commutative ring, the classification of non-degenerate Clifford algebras is much more subtle than over a field. It requires the theory of quadratic forms over rings, and the Brauer group is replaced by the Brauer group of Azumaya algebras over $R$. The classification is the subject of the article <em>Clifford Algebras over Commutative Rings</em>.</p>
+<h3 id="the-nilpotent-factor">The Nilpotent Factor</h3>
+<p>The factor $\Lambda(R)$ is the <strong>exterior algebra</strong> on the radical. If $(r_i)_{i \in I}$ is a basis of $R$, then</p>
+<p>$$
+\Lambda(R) = \bigoplus_{k \geq 0} \Lambda^k(R),
+$$</p>
+<p>with basis the products $r_{i_1} \cdots r_{i_k}$ for $i_1 < \dots < i_k$ and $k$ ranging over the non-negative integers. The generators satisfy</p>
+<p>$$
+r_i^2 = 0, \qquad r_i r_j = -r_j r_i, \qquad i \neq j.
+$$</p>
+<p>So $\Lambda(R)$ is a graded-commutative algebra, and every element of positive degree is nilpotent.</p>
+<p><strong>Theorem.</strong> The algebra $\Lambda(R)$ is semisimple iff $R = 0$.</p>
+<p><strong>Proof.</strong> If $R \neq 0$, the ideal $\Lambda^{\geq 1}(R)$ is a non-zero nilpotent ideal, so the algebra is not semisimple. If $R = 0$, the algebra is $R$, which is semisimple when $R$ is a field. $\square$</p>
+<p>So the degenerate Clifford algebra is semisimple iff the quadratic form is non-degenerate, under the usual hypotheses on the base ring.</p>
+<p><strong>The structure of $\Lambda(R)$.</strong> The algebra $\Lambda(R)$ is the free graded-commutative algebra on $R$. It is generated by $R$ in degree one, subject to the relations $r^2 = 0$ and $r s = -s r$. If $R$ is free of finite rank $r$, then $\Lambda(R)$ is free of rank $2^r$, and it is local, with unique maximal ideal $\Lambda^{\geq 1}(R)$. If $R$ is free of infinite rank, $\Lambda(R)$ is the direct sum of the exterior powers $\Lambda^k(R)$ over all finite $k$, and it is not local: the maximal ideals correspond to the various quotients of $R$.</p>
+<h3 id="the-grading-and-the-filtration">The Grading and the Filtration</h3>
+<p>The tensor product decomposition is compatible with the $\mathbb{Z}/2$-grading of the Clifford algebra and with the natural filtration.</p>
+<p>The Clifford algebra $Cl(M, Q)$ is $\mathbb{Z}/2$-graded, with</p>
+<p>$$
+Cl(M, Q) = Cl^0(M, Q) \oplus Cl^1(M, Q),
+$$</p>
+<p>where $Cl^0$ is spanned by products of an even number of elements of $M$, and $Cl^1$ by products of an odd number. The grading decomposes as</p>
+<p>$$
+Cl^0(M, Q) \cong Cl^0(M/R, \bar{Q}) \otimes \Lambda^0(R) \oplus Cl^1(M/R, \bar{Q}) \otimes \Lambda^1(R),
+$$</p>
+<p>and similarly for the odd part, with the roles of $\Lambda^0$ and $\Lambda^1$ interchanged. The exterior algebra $\Lambda(R)$ is itself $\mathbb{Z}$-graded, and the $\mathbb{Z}/2$-grading of the Clifford algebra is the reduction of the $\mathbb{Z}$-grading modulo $2$ on the radical factor.</p>
+<p>The Clifford algebra also carries a natural <strong>filtration</strong></p>
+<p>$$
+F^0 \subseteq F^1 \subseteq F^2 \subseteq \cdots \subseteq Cl(M, Q),
+$$</p>
+<p>where $F^k$ is the span of products of at most $k$ elements of $M$. The associated graded algebra is the exterior algebra on $M$:</p>
+<p>$$
+\operatorname{gr} Cl(M, Q) \cong \Lambda(M).
+$$</p>
+<p>The tensor product decomposition is compatible with the filtration: the filtration on $Cl(M/R, \bar{Q})$ and the grading on $\Lambda(R)$ combine to give the filtration on $Cl(M, Q)$.</p>
+<h2 id="11-the-clifford-algebra-as-a-lie-algebra">11. The Clifford Algebra as a Lie Algebra</h2>
+<p>Every associative algebra carries a Lie bracket, defined by the commutator</p>
+<p>$$
+[x, y] = xy - yx.
+$$</p>
+<p>The commutator is bilinear and antisymmetric, and it satisfies the Jacobi identity as a consequence of associativity:</p>
+<p>$$
+[x, [y, z]] + [y, [z, x]] + [z, [x, y]] = 0.
+$$</p>
+<p>The Clifford algebra is an associative algebra, so it carries this bracket. In particular, the submodule $M$ of vectors is closed under the commutator only up to a scalar: for $u, v \in M$, the fundamental relation gives</p>
+<p>$$
+uv + vu = 2B(u, v) \cdot 1,
+$$</p>
+<p>so</p>
+<p>$$
+[u, v] = uv - vu = 2uv - 2B(u, v) \cdot 1.
+$$</p>
+<p>This is not in $M$ in general: the product $uv$ has a bivector part. So $M$ itself is not a Lie subalgebra of $Cl(M, Q)$.</p>
+<p>The submodule $M_2$ of bivectors, however, is closed under the commutator:</p>
+<p>$$
+[M_2, M_2] \subseteq M_2.
+$$</p>
+<p>So $M_2$, equipped with the commutator bracket, is a Lie subalgebra of $Cl(M, Q)$. In the non-degenerate case, $M_2$ is isomorphic to the orthogonal Lie algebra $\mathfrak{so}(M, Q)$:</p>
+<p>$$
+M_2 \cong \mathfrak{so}(M, Q).
+$$</p>
+<p>This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra. The spin group is a subgroup of the group of units of $Cl^+(M, Q)$, and its Lie algebra is the Lie algebra of bivectors with the commutator bracket.</p>
+<p>So the Clifford algebra is both an associative algebra (with the Clifford product) and a Lie algebra (with the commutator bracket). The two structures coexist on the same module, and their interaction is the source of much of the richness of the theory.</p>
+<p><strong>The degenerate case.</strong> If $Q$ is degenerate, the bivectors involving radical elements are nilpotent, and the Lie algebra $\mathfrak{so}(M, Q)$ is replaced by a more complicated object. The spin group does not exist in the usual sense, because the radical elements do not have inverses.</p>
+<p>This is the end of the general part. Everything so far holds for any module over a commutative ring equipped with a quadratic form.</p>
+<hr />
+<h1 id="part-b-the-geometric-interpretation">Part B: The Geometric Interpretation</h1>
+<h2 id="vectors-bivectors-trivectors">Vectors, Bivectors, Trivectors</h2>
+<p>The Clifford algebra $Cl(M, Q)$ can be interpreted geometrically as the algebra of the module $M$ with its quadratic form. The generators represent basis vectors. The products $g_i g_j$ ($i < j$) represent <strong>bivectors</strong> (oriented planes). The products $g_i g_j g_k$ represent <strong>trivectors</strong> (oriented volumes), and so on.</p>
+<h2 id="the-decomposition-of-a-product">The Decomposition of a Product</h2>
+<p>The product of two vectors $u, v$ decomposes as</p>
+<p>$$
+uv = B(u, v) + u \wedge v,
+$$</p>
+<p>where $B(u, v)$ is the symmetric part and $u \wedge v$ is the antisymmetric part (the outer or wedge product). The inner product measures overlap; the wedge product measures the oriented area spanned by the two vectors.</p>
+<p>This decomposition is the geometric content of the fundamental relation $uv + vu = 2B(u, v) \cdot 1$. It is the foundation of the <strong>geometric algebra</strong> tradition (Hestenes, Doran, Lasenby), which uses Clifford algebras as a coordinate-free language for geometry.</p>
+<h2 id="the-exterior-algebra-as-a-degenerate-case">The Exterior Algebra as a Degenerate Case</h2>
+<p>When $Q = 0$, the quadratic form is identically zero, and the Clifford algebra reduces to the <strong>exterior algebra</strong> $\Lambda(M)$:</p>
+<p>$$
+Cl(M, 0) = \Lambda(M).
+$$</p>
+<p>The exterior algebra is defined by the relation</p>
+<p>$$
+v^2 = 0
+$$</p>
+<p>for every $v \in M$. In other words, every vector squares to zero. From this relation, we can derive</p>
+<p>$$
+uv + vu = 0,
+$$</p>
+<p>so the product is antisymmetric:</p>
+<p>$$
+uv = -vu.
+$$</p>
+<p>The product in the exterior algebra is written $\wedge$ and is called the <strong>wedge product</strong>. So</p>
+<p>$$
+u \wedge v = -v \wedge u.
+$$</p>
+<p>The wedge product is associative, and it has a unit. So the exterior algebra is an associative unital $R$-algebra, just like the Clifford algebra. The difference is that the quadratic form is zero, so the product has no scalar part. The product of two vectors is purely antisymmetric.</p>
+<p>Geometrically, the wedge product $u \wedge v$ represents the oriented parallelogram spanned by $u$ and $v$. Its magnitude is the area of the parallelogram, and its orientation is the orientation of the plane spanned by $u$ and $v$. Higher wedge products represent higher-dimensional oriented volumes: $u \wedge v \wedge w$ represents the oriented parallelepiped spanned by $u, v, w$, and so on.</p>
+<p>So the exterior algebra is the algebra of oriented volumes. It is the special case of the Clifford algebra in which the metric is trivial, and the product reduces to the wedge product. The exterior algebra is thus a degenerate Clifford algebra: it is the case in which the quadratic form vanishes, and the scalar part of the product disappears.</p>
+<hr />
+<h1 id="summary">Summary</h1>
+<p>Let me summarize the main points.</p>
+<p><strong>The Clifford algebra</strong> $Cl(M, Q)$ is the quotient of the tensor algebra $T(M)$ by the two-sided ideal generated by the elements $v \otimes v - Q(v) \cdot 1$. It is the largest associative unital $R$-algebra in which the relation $v^2 = Q(v) \cdot 1$ holds.</p>
+<p><strong>The universal property</strong> characterizes the Clifford algebra: any $R$-linear map $f : M \to A$ satisfying $f(v)^2 = Q(v) \cdot 1$ extends uniquely to an algebra homomorphism $Cl(M, Q) \to A$.</p>
+<p><strong>Functoriality.</strong> The construction is functorial: an $R$-linear map preserving the quadratic forms extends to an algebra homomorphism. In particular, the orthogonal group $O(M, Q)$ acts on the Clifford algebra by automorphisms, and the map $f(v) = -v$ gives the parity automorphism $\Pi$.</p>
+<p><strong>The fundamental relation</strong> is</p>
+<p>$$
+uv + vu = 2B(u, v) \cdot 1,
+$$</p>
+<p>where $B$ is the bilinear form associated with $Q$. This relation holds for all $u, v \in M$, in any rank. It requires that 2 is invertible in $R$.</p>
+<p><strong>The radical</strong> is the submodule of vectors orthogonal to every vector. It is the obstruction to non-degeneracy, and it is the source of the nilpotent factor in the decomposition.</p>
+<p><strong>The Clifford algebra is degenerate</strong> if there is a nonzero vector orthogonal to every vector. In that case, it contains nilpotent elements and does not admit a spin group. Otherwise, it is non-degenerate.</p>
+<p><strong>The tensor product decomposition</strong> $Cl(M_1 \oplus M_2) \cong Cl(M_1) \hat{\otimes} Cl(M_2)$ reduces the classification of Clifford algebras to the one-dimensional cases. Applied to the decomposition $M = W \oplus R$ with $W$ non-degenerate and $R$ the radical, it gives the structural reduction of a degenerate Clifford algebra to a non-degenerate Clifford algebra tensored with an exterior algebra:</p>
+<p>$$
+Cl(M, Q) \cong Cl(M/R, \bar{Q}) \hat{\otimes} \Lambda(R).
+$$</p>
+<p>The non-degenerate factor is a central simple algebra over $R$, or a product of two such algebras. The nilpotent factor is the exterior algebra on the radical, which is semisimple iff the radical is zero.</p>
+<p><strong>The Clifford algebra is both associative and Lie.</strong> The Clifford product makes it an associative algebra; the commutator bracket makes it a Lie algebra. The bivectors form a Lie subalgebra isomorphic to the orthogonal Lie algebra $\mathfrak{so}(M, Q)$.</p>
+<p><strong>Geometrically</strong>, the Clifford algebra is the algebra of multivectors: scalars, vectors, bivectors, trivectors, and so on. The product of two vectors decomposes into an inner product part and a wedge product part.</p>
+<p><strong>The exterior algebra</strong> is the special case $Q = 0$. In the exterior algebra, every vector squares to zero, and the product is the wedge product. The exterior algebra is thus a degenerate Clifford algebra: the algebra of oriented volumes.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Over a field, every module is free, so the Clifford algebra has a well-defined dimension. Over a general commutative ring, the module need not be free, so the Clifford algebra need not have a well-defined rank.</li>
+<li>Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.</li>
+<li>The polarization identity requires that 2 is invertible in $R$. Over a field of characteristic not equal to 2, this is automatic. Over a general commutative ring, it is an assumption.</li>
+<li>The tensor product decomposition of a degenerate Clifford algebra requires the radical to be a direct summand. Over a field, this is automatic. Over a general commutative ring, it is an assumption.</li>
+<li>The classification of Clifford algebras over a general commutative ring is much more subtle than over a field, and requires the theory of quadratic forms over rings.</li>
+</ul>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995), for the definitive modern classification.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for a physics-oriented treatment.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003), for the geometric-algebra perspective.</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989), for the mathematical foundations.</li>
+<li>Klaus Gürlebeck and Wolfgang Sprössig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997), for an accessible introduction.</li>
+<li>David Hestenes and Garret Sobczyk, <em>Clifford Algebra to Geometric Calculus</em> (Reidel, 1984), for the geometric-calculus approach.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the theory of Clifford algebras over commutative rings.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005), for the field case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

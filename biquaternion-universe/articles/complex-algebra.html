@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="complex-algebra">Complex Algebra</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the complex algebra as an algebraic structure, without yet discussing its representations. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugation.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The complex algebra is defined algebraically, and its identification with the plane is left for a later article.</p>
+<h2 id="the-complex-numbers">The Complex Numbers</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>complex algebra</strong> $\mathbb{C}$ is the two-dimensional real algebra with basis</p>
+<p>$$
+e_0 = 1, \qquad e_1 = i,
+$$</p>
+<p>and multiplication rules</p>
+<p>$$
+e_0 e_0 = e_0, \qquad e_0 e_1 = e_1 e_0 = e_1, \qquad e_1 e_1 = -e_0.
+$$</p>
+<p>A general complex number is written in developed form as</p>
+<p>$$
+z = a e_0 + b e_1, \qquad a, b \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+z = a + b i, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>The real number $a$ is the <strong>real part</strong>, and the real number $b$ is the <strong>imaginary part</strong>. We also write</p>
+<p>$$
+z = a + b i, \qquad a = \operatorname{Re} z, \quad b = \operatorname{Im} z.
+$$</p>
+<p>The notation $i$ is chosen deliberately. In some of the older literature, the imaginary unit is written $j$ or $\sqrt{-1}$, which collides visually with the index $j$ or with the square root sign. This collision is a persistent source of confusion, especially when the complex algebra is tensored with other algebras. Using $i$ for the imaginary unit and reserving $j$ for indices avoids the collision entirely. This is the notation we use throughout the blog.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Commutative.</strong> Complex multiplication is commutative: $z w = w z$.</p>
+<p><strong>Associative.</strong> Complex multiplication is associative: $(z w) u = z (w u)$.</p>
+<p><strong>Division algebra.</strong> Every nonzero complex number has a multiplicative inverse. The inverse is</p>
+<p>$$
+z^{-1} = \frac{\bar{z}}{|z|^2},
+$$</p>
+<p>where</p>
+<p>$$
+\bar{z} = a - b i
+$$</p>
+<p>is the <strong>complex conjugate</strong>, and</p>
+<p>$$
+|z|^2 = z \bar{z} = a^2 + b^2
+$$</p>
+<p>is the <strong>norm squared</strong>. The norm is multiplicative: $|z w| = |z| |w|$.</p>
+<p><strong>Frobenius theorem.</strong> The complex algebra is one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{H}$. In fact, $\mathbb{C}$ is the only one that is commutative but not ordered.</p>
+<h3 id="the-imaginary-part-and-math23">The Imaginary Part and $\mathbb{R}^2$</h3>
+<p>The pair $(a, b)$ can be identified with a vector in $\mathbb{R}^2$. Under this identification, the product of two complex numbers is</p>
+<p>$$
+z w = (ac - bd) + (ad + bc) i, \qquad z = a + bi, \quad w = c + di.
+$$</p>
+<p>This is the formula for the product in the algebra, written in real coordinates. There is no dot product and no cross product in this expression, because $\mathbb{C}$ is commutative and two-dimensional. The multiplication is the only operation, and it encodes both a rotation and a scaling of the plane.</p>
+<h2 id="complex-algebra_1">Complex Algebra</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>complex algebra</strong> is the field $\mathbb{C}$ considered as a two-dimensional real vector space equipped with its field multiplication. As a real vector space, $\mathbb{C}$ has dimension $2$. As a ring, it is a field. A general element is written in developed form as</p>
+<p>$$
+z = a e_0 + b e_1, \qquad a, b \in \mathbb{R},
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+z = a + b i, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>We write</p>
+<p>$$
+z = a + b i,
+$$</p>
+<p>where $a$ is the <strong>real part</strong> and $b$ is the <strong>imaginary part</strong>. The tilde is absent because $z$ is an element of the algebra $\mathbb{C}$, not a vector in some larger space.</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>The product of two complex numbers is defined by extending the real multiplication bilinearly:</p>
+<p>$$
+z w = (a + bi)(c + di) = (ac - bd) + (ad + bc) i.
+$$</p>
+<p>In developed form,</p>
+<p>$$
+z w = \sum_{\mu=0}^{1} \sum_{\nu=0}^{1} z_\mu w_\nu \, e_\mu e_\nu,
+$$</p>
+<p>where the products $e_\mu e_\nu$ are those of the complex algebra.</p>
+<h3 id="conjugations">Conjugations</h3>
+<p>There are <strong>two</strong> natural conjugations on $\mathbb{C}$, obtained by composing the complex conjugation with itself:</p>
+<p><strong>Complex conjugation</strong> $\bar{z}$:</p>
+<p>$$
+\bar{z} = a - b i.
+$$</p>
+<p><strong>Identity conjugation</strong> $\operatorname{id}$:</p>
+<p>$$
+\operatorname{id}(z) = z.
+$$</p>
+<p>Each conjugation is an involution: applying it twice returns the original complex number. Each has a fixed-point set, which is a real vector subspace of $\mathbb{C}$. The two subspaces are described in the following sections.</p>
+<h2 id="the-two-fixed-point-subspaces">The Two Fixed-Point Subspaces</h2>
+<p>Each of the two conjugations has a fixed-point set, i.e., a set of complex numbers left invariant by the conjugation. Each fixed-point set is a real vector subspace of $\mathbb{C}$. The two subspaces are described below.</p>
+<h3 id="the-real-subspace">The Real Subspace</h3>
+<p>The fixed points of <strong>complex conjugation</strong> are the complex numbers satisfying $\bar{z} = z$. In developed form,</p>
+<p>$$
+a - b i = a + b i.
+$$</p>
+<p>Comparing the coefficients of $1$ and $i$:</p>
+<ul>
+<li>Coefficient of $1$: $a = a$, always satisfied.</li>
+<li>Coefficient of $i$: $-b = b$, so $b = 0$.</li>
+</ul>
+<p>The fixed points are complex numbers with vanishing imaginary part:</p>
+<p>$$
+z = a, \qquad a \in \mathbb{R}.
+$$</p>
+<p>This is the <strong>real subspace</strong> $\mathbb{R}_{\mathbb{C}}$, a copy of the real number line embedded in $\mathbb{C}$ as the real axis. It is a real vector space of dimension $1$. It is a subalgebra of $\mathbb{C}$ (isomorphic to $\mathbb{R}$), and it is the only one of the two fixed-point sets that is an ordered field.</p>
+<h3 id="the-complex-subspace">The Complex Subspace</h3>
+<p>The fixed points of the <strong>identity conjugation</strong> are all complex numbers. In developed form,</p>
+<p>$$
+z = z.
+$$</p>
+<p>The fixed points are</p>
+<p>$$
+z = a + b i, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>This is the <strong>complex subspace</strong> $\mathbb{C}_{\mathbb{C}}$, a copy of the complex plane embedded in $\mathbb{C}$ as the whole thing. It is a real vector space of dimension $2$. It is a subalgebra of $\mathbb{C}$, and it is a division algebra.</p>
+<h2 id="complex-decomposition">Complex Decomposition</h2>
+<p>The real subspace $\mathbb{R}_{\mathbb{C}}$ and its imaginary translate $i \mathbb{R}_{\mathbb{C}}$ are the two eigenspaces of complex conjugation. Every complex number decomposes uniquely as the sum of a real part and an imaginary part:</p>
+<p>$$
+z = z_r + i z_i, \qquad z_r \in \mathbb{R}, \quad z_i \in \mathbb{R}.
+$$</p>
+<p>The two components are obtained from the complex conjugation:</p>
+<p>$$
+z_r = \frac{1}{2}(z + \bar{z}), \qquad z_i = \frac{1}{2i}(z - \bar{z}).
+$$</p>
+<p>Indeed, $z_r$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $z_i$ is real, so $i z_i$ is fixed by complex conjugation.</p>
+<p>This gives the direct sum decomposition</p>
+<p>$$
+\mathbb{C} = \mathbb{R}_{\mathbb{C}} \oplus i \mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>where $i \mathbb{R}_{\mathbb{C}}$ is the set of complex numbers of the form $i b$ with $b \in \mathbb{R}$. Both are real vector spaces of dimension $1$, and their direct sum is the full algebra $\mathbb{C}$ of real dimension $2$.</p>
+<p>This is the <strong>complex decomposition</strong> of a complex number. It expresses $z$ as a real number plus $i$ times another real number. It is the natural decomposition when we think of $\mathbb{C}$ as the complexification of $\mathbb{R}$.</p>
+<h2 id="conjugate-decomposition">Conjugate Decomposition</h2>
+<p>The complex conjugation $\bar{\cdot}$ is an involution, so it has eigenvalues $+1$ and $-1$. Its eigenspaces are the real subspace $\mathbb{R}_{\mathbb{C}}$ (eigenvalue $+1$) and the imaginary subspace $i \mathbb{R}_{\mathbb{C}}$ (eigenvalue $-1$). Every complex number decomposes uniquely as</p>
+<p>$$
+z = z_+ + z_-, \qquad z_+ = z_r, \quad z_- = i z_i.
+$$</p>
+<p>This is the same decomposition as above, written in terms of the eigenspaces of the conjugation. It is the algebraic analogue of writing a real number as the sum of its even and odd parts under a reflection.</p>
+<h2 id="quadratic-forms-and-inner-product">Quadratic Forms and Inner Product</h2>
+<h3 id="the-norm-form">The Norm Form</h3>
+<p>The <strong>norm form</strong> of a complex number $z$ is</p>
+<p>$$
+N(z) = z \bar{z} = a^2 + b^2,
+$$</p>
+<p>where $\bar{z}$ is the complex conjugate. It is a non-negative real number, and it vanishes if and only if $z = 0$. It is a genuine positive-definite quadratic form.</p>
+<p>The norm form is <strong>multiplicative</strong>:</p>
+<p>$$
+N(z w) = N(z) N(w).
+$$</p>
+<p>This is the statement that $|z w|^2 = |z|^2 |w|^2$, which follows from the multiplicativity of the complex norm.</p>
+<h3 id="the-hermitian-form">The Hermitian Form</h3>
+<p>The <strong>Hermitian form</strong> of a complex number $z$ is</p>
+<p>$$
+z \bar{z} = a^2 + b^2.
+$$</p>
+<p>It coincides with the norm form, because $\mathbb{C}$ is commutative and the conjugation is the only non-trivial involution. It is a non-negative real number, and it vanishes if and only if $z = 0$.</p>
+<p>The corresponding <strong>Euclidean norm</strong> is</p>
+<p>$$
+\|z\|_E = \sqrt{z \bar{z}} = \sqrt{a^2 + b^2}.
+$$</p>
+<p>It is a genuine norm on the real vector space $\mathbb{C} \cong \mathbb{R}^2$: positive-definite, subadditive, and homogeneous of degree one. It <strong>is</strong> multiplicative with respect to the complex product, because $|z w| = |z| |w|$.</p>
+<h3 id="the-inner-product">The Inner Product</h3>
+<p>The <strong>inner product</strong> of two complex numbers $z$ and $w$ is</p>
+<p>$$
+\langle z, w \rangle = \bar{z} w = (a - bi)(c + di) = (ac + bd) + (ad - bc) i.
+$$</p>
+<p>In general this is a <strong>complex number</strong>, not a real one. This is a genuinely complex feature: the inner product of two complex numbers is complex, and its imaginary part measures the oriented area of the parallelogram spanned by $z$ and $w$.</p>
+<p>The inner product is linear in the second argument and anti-linear in the first:</p>
+<p>$$
+\langle \lambda z, w \rangle = \bar{\lambda} \langle z, w \rangle, \qquad \langle z, \lambda w \rangle = \lambda \langle z, w \rangle, \qquad \lambda \in \mathbb{C}.
+$$</p>
+<p>It is <strong>Hermitian</strong> in the sense that</p>
+<p>$$
+\langle z, w \rangle^* = \langle w, z \rangle,
+$$</p>
+<p>which follows from the definition.</p>
+<p>The inner product of a complex number with itself is</p>
+<p>$$
+\langle z, z \rangle = \bar{z} z = a^2 + b^2,
+$$</p>
+<p>which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.</p>
+<h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
+<p>The three quadratic objects are related as follows:</p>
+<ul>
+<li><strong>Norm form:</strong> $N(z) = z \bar{z} = a^2 + b^2$. Non-negative real, vanishes only at $z = 0$, multiplicative.</li>
+<li><strong>Hermitian form:</strong> $z \bar{z} = a^2 + b^2$. Same as the norm form, because $\mathbb{C}$ is commutative.</li>
+<li><strong>Inner product:</strong> $\langle z, w \rangle = \bar{z} w$. Complex-valued in general, Hermitian, linear in the second argument.</li>
+</ul>
+<p>The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a complex vector space.</p>
+<p>In the complex case, the norm form and the Hermitian form coincide, because the conjugation is the only non-trivial involution and the algebra is commutative. This is a degeneracy of the two-dimensional case, and it is the reason the complex numbers are often treated as a trivial example rather than as a case study.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>Complex algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1$</td>
+<td>Identity</td>
+</tr>
+<tr>
+<td>$e_1 = i$</td>
+<td>Imaginary unit, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$z = a + b i$</td>
+<td>General complex number</td>
+</tr>
+<tr>
+<td>$a = \operatorname{Re} z$</td>
+<td>Real part</td>
+</tr>
+<tr>
+<td>$b = \operatorname{Im} z$</td>
+<td>Imaginary part</td>
+</tr>
+<tr>
+<td>$\bar{z} = a - b i$</td>
+<td>Complex conjugate</td>
+</tr>
+<tr>
+<td>$\operatorname{id}(z) = z$</td>
+<td>Identity conjugation</td>
+</tr>
+<tr>
+<td>$N(z) = z \bar{z}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$z \bar{z} = a^2 + b^2$</td>
+<td>Hermitian form</td>
+</tr>
+<tr>
+<td>$\langle z, w \rangle = \bar{z} w$</td>
+<td>Inner product</td>
+</tr>
+<tr>
+<td>$\|z\|_E = \sqrt{z \bar{z}}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$</td>
+<td>Real subspace, fixed-point set of $\bar{\cdot}$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{C}}$</td>
+<td>Complex subspace, fixed-point set of $\operatorname{id}$</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the origin of the complex algebra in the quaternion program.</li>
+<li>Carl Friedrich Gauss, <em>Theoria residuorum biquadraticorum</em> (1831), for the geometric interpretation of complex numbers.</li>
+<li>Edmund Landau, <em>Grundlagen der Analysis</em> (1930), for the axiomatic treatment of the complex field.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 1987), for the standard modern treatment.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real division algebras.</li>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of fields.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="rings-a-general-introduction"><strong>Rings: A General Introduction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the theory of rings, the algebraic structures that generalize the number systems we use every day. Rings are the natural setting for addition and multiplication, and they include the integers, the rational numbers, the real numbers, the complex numbers, and many other structures.</p>
+<p>The treatment is introductory and purely mathematical. We assume familiarity with sets, functions, and basic algebraic operations.</p>
+<p>We begin with the definition of a ring, then introduce the most important classes of rings: commutative rings, integral domains, fields, and division rings. We state the basic properties that will be used in the study of modules, algebras, and Clifford algebras.</p>
+<hr />
+<h1 id="part-i-rings">Part I: Rings</h1>
+<h2 id="1-definition-of-a-ring">1. Definition of a Ring</h2>
+<p>A <strong>ring</strong> is a set $R$ equipped with two binary operations, <strong>addition</strong> $+$ and <strong>multiplication</strong> $\cdot$, satisfying the following axioms.</p>
+<p><strong>(R1) Addition is an abelian group.</strong> The pair $(R, +)$ is an abelian group. That is:</p>
+<ul>
+<li><strong>Associativity.</strong> $(a + b) + c = a + (b + c)$ for all $a, b, c \in R$.</li>
+<li><strong>Commutativity.</strong> $a + b = b + a$ for all $a, b \in R$.</li>
+<li><strong>Identity.</strong> There is an element $0 \in R$ such that $a + 0 = a$ for all $a \in R$.</li>
+<li><strong>Inverses.</strong> For every $a \in R$, there is an element $-a \in R$ such that $a + (-a) = 0$.</li>
+</ul>
+<p><strong>(R2) Multiplication is associative.</strong> $(a \cdot b) \cdot c = a \cdot (b \cdot c)$ for all $a, b, c \in R$.</p>
+<p><strong>(R3) Multiplication distributes over addition.</strong></p>
+<p>$$
+a \cdot (b + c) = a \cdot b + a \cdot c, \qquad (a + b) \cdot c = a \cdot c + b \cdot c
+$$</p>
+<p>for all $a, b, c \in R$.</p>
+<p>A ring is <strong>unital</strong> if it has a multiplicative identity $1 \in R$ such that</p>
+<p>$$
+1 \cdot a = a \cdot 1 = a
+$$</p>
+<p>for all $a \in R$. In this article, all rings are assumed to be unital, unless stated otherwise.</p>
+<p>A ring is <strong>commutative</strong> if</p>
+<p>$$
+a \cdot b = b \cdot a
+$$</p>
+<p>for all $a, b \in R$.</p>
+<p>A ring is <strong>associative</strong> if multiplication is associative, as in (R2). All rings in this article are associative.</p>
+<h2 id="2-elementary-properties">2. Elementary Properties</h2>
+<p>Let $R$ be a ring. The following properties follow from the axioms.</p>
+<p><strong>(a) Uniqueness of identity.</strong> The additive identity $0$ is unique. The multiplicative identity $1$ is unique, if it exists.</p>
+<p><strong>(b) Uniqueness of inverses.</strong> For each $a \in R$, the additive inverse $-a$ is unique.</p>
+<p><strong>(c) Multiplication by zero.</strong> For all $a \in R$,</p>
+<p>$$
+a \cdot 0 = 0 \cdot a = 0.
+$$</p>
+<p><strong>(d) Sign rules.</strong> For all $a, b \in R$,</p>
+<p>$$
+(-a) \cdot b = a \cdot (-b) = -(a \cdot b), \qquad (-a) \cdot (-b) = a \cdot b.
+$$</p>
+<p><strong>(e) The identity and zero.</strong> If $R$ is unital and $1 = 0$, then $R = \{0\}$. This is the <strong>zero ring</strong>, the only ring in which the multiplicative identity equals the additive identity.</p>
+<h2 id="3-subrings">3. Subrings</h2>
+<p>A subset $S \subseteq R$ of a ring $R$ is a <strong>subring</strong> if:</p>
+<p><strong>(S1)</strong> $S$ is a subgroup of $(R, +)$: for all $a, b \in S$, $a - b \in S$.</p>
+<p><strong>(S2)</strong> $S$ is closed under multiplication: for all $a, b \in S$, $a b \in S$.</p>
+<p><strong>(S3)</strong> $S$ contains the multiplicative identity $1$ of $R$.</p>
+<p>A subring is itself a ring under the inherited operations.</p>
+<h2 id="4-ring-homomorphisms">4. Ring Homomorphisms</h2>
+<p>Let $R$ and $S$ be rings. A <strong>ring homomorphism</strong> is a function</p>
+<p>$$
+\varphi : R \to S
+$$</p>
+<p>such that for all $a, b \in R$:</p>
+<p><strong>(H1)</strong> $\varphi(a + b) = \varphi(a) + \varphi(b)$.</p>
+<p><strong>(H2)</strong> $\varphi(a b) = \varphi(a) \varphi(b)$.</p>
+<p><strong>(H3)</strong> $\varphi(1_R) = 1_S$.</p>
+<p>A ring homomorphism that is bijective is a <strong>ring isomorphism</strong>. If there is a ring isomorphism $R \to S$, we write $R \cong S$ and say that $R$ and $S$ are <strong>isomorphic</strong>.</p>
+<p>The <strong>kernel</strong> of a ring homomorphism $\varphi : R \to S$ is</p>
+<p>$$
+\ker \varphi = \{a \in R : \varphi(a) = 0\}.
+$$</p>
+<p>The <strong>image</strong> of $\varphi$ is</p>
+<p>$$
+\operatorname{im} \varphi = \{\varphi(a) : a \in R\}.
+$$</p>
+<p>The kernel is an ideal of $R$, and the image is a subring of $S$.</p>
+<hr />
+<h1 id="part-ii-commutative-rings">Part II: Commutative Rings</h1>
+<h2 id="5-definition-of-a-commutative-ring">5. Definition of a Commutative Ring</h2>
+<p>A <strong>commutative ring</strong> is a ring $R$ in which multiplication is commutative:</p>
+<p>$$
+a \cdot b = b \cdot a
+$$</p>
+<p>for all $a, b \in R$.</p>
+<p>Commutative rings are the most important class of rings for algebraic geometry, number theory, and the theory of quadratic forms and Clifford algebras.</p>
+<h2 id="6-ideals">6. Ideals</h2>
+<p>A subset $I \subseteq R$ of a commutative ring $R$ is an <strong>ideal</strong> if:</p>
+<p><strong>(I1)</strong> $I$ is a subgroup of $(R, +)$: for all $a, b \in I$, $a - b \in I$.</p>
+<p><strong>(I2)</strong> $I$ is closed under multiplication by elements of $R$: for all $r \in R$ and $a \in I$, $r a \in I$.</p>
+<p>An ideal $I$ is <strong>proper</strong> if $I \neq R$. It is <strong>maximal</strong> if it is proper and there is no ideal strictly between $I$ and $R$. It is <strong>prime</strong> if for all $a, b \in R$,</p>
+<p>$$
+a b \in I \implies a \in I \text{ or } b \in I.
+$$</p>
+<h2 id="7-quotient-rings">7. Quotient Rings</h2>
+<p>Let $R$ be a commutative ring and $I$ an ideal. The <strong>quotient ring</strong> $R/I$ is the set of cosets</p>
+<p>$$
+R/I = \{r + I : r \in R\}
+$$</p>
+<p>with addition and multiplication defined by</p>
+<p>$$
+(r + I) + (s + I) = (r + s) + I, \qquad (r + I)(s + I) = rs + I.
+$$</p>
+<p>These operations are well-defined, and $R/I$ is a commutative ring with identity $1 + I$.</p>
+<p>The <strong>first isomorphism theorem</strong> states that if $\varphi : R \to S$ is a ring homomorphism, then</p>
+<p>$$
+R / \ker \varphi \cong \operatorname{im} \varphi.
+$$</p>
+<h2 id="8-zero-divisors">8. Zero Divisors</h2>
+<p>An element $a \in R$ is a <strong>zero divisor</strong> if there exists a nonzero $b \in R$ such that</p>
+<p>$$
+a b = 0.
+$$</p>
+<p>A commutative ring $R$ is an <strong>integral domain</strong> if it has no zero divisors and $1 \neq 0$. That is, for all $a, b \in R$,</p>
+<p>$$
+a b = 0 \implies a = 0 \text{ or } b = 0.
+$$</p>
+<h2 id="9-units">9. Units</h2>
+<p>An element $a \in R$ is a <strong>unit</strong> if there exists $b \in R$ such that</p>
+<p>$$
+a b = b a = 1.
+$$</p>
+<p>The set of units of $R$ is denoted $R^\times$. It is a group under multiplication.</p>
+<h2 id="10-fields">10. Fields</h2>
+<p>A <strong>field</strong> is a commutative ring $F$ in which every nonzero element is a unit. That is, for every $a \in F$ with $a \neq 0$, there exists $b \in F$ such that</p>
+<p>$$
+a b = 1.
+$$</p>
+<p>Equivalently, a field is a commutative ring with $1 \neq 0$ in which every nonzero element has a multiplicative inverse.</p>
+<h2 id="11-properties-of-fields">11. Properties of Fields</h2>
+<p>Fields have many special properties that make them the natural setting for linear algebra and the theory of quadratic forms.</p>
+<p><strong>(a) No zero divisors.</strong> Every field is an integral domain.</p>
+<p><strong>(b) Cancellation.</strong> If $a b = a c$ and $a \neq 0$, then $b = c$.</p>
+<p><strong>(c) Every nonzero element is a unit.</strong> This is the defining property.</p>
+<p><strong>(d) The only ideals are $0$ and $F$.</strong> A field has no proper nonzero ideals.</p>
+<p><strong>(e) Every module is free.</strong> Every vector space over a field has a basis. This is the key property that makes linear algebra work.</p>
+<p><strong>(f) Every finitely generated module is free.</strong> Over a field, every finitely generated module is a finite-dimensional vector space.</p>
+<p><strong>(g) The classification of quadratic forms is clean.</strong> Over a field, quadratic forms are classified by their rank and signature (over $\mathbb{R}$) or by arithmetic invariants (over $\mathbb{Q}$).</p>
+<h2 id="12-integral-domains">12. Integral Domains</h2>
+<p>An <strong>integral domain</strong> is a commutative ring $R$ with $1 \neq 0$ and no zero divisors.</p>
+<p>Integral domains are intermediate between general commutative rings and fields. Every field is an integral domain, but not every integral domain is a field.</p>
+<p>In an integral domain, cancellation holds: if $a b = a c$ and $a \neq 0$, then $b = c$. This is because $a(b - c) = 0$ and $a \neq 0$, so $b - c = 0$.</p>
+<h2 id="13-division-rings">13. Division Rings</h2>
+<p>A <strong>division ring</strong> (or <strong>skew field</strong>) is a ring $R$ with $1 \neq 0$ in which every nonzero element is a unit. Unlike a field, a division ring need not be commutative.</p>
+<p>By <strong>Wedderburn's little theorem</strong>, every finite division ring is a field.</p>
+<hr />
+<h1 id="part-iii-modules-over-rings">Part III: Modules over Rings</h1>
+<h2 id="14-definition-of-a-module">14. Definition of a Module</h2>
+<p>Let $R$ be a commutative ring. An <strong>$R$-module</strong> is an abelian group $(M, +)$ equipped with a scalar multiplication</p>
+<p>$$
+R \times M \to M, \qquad (r, m) \mapsto r m,
+$$</p>
+<p>satisfying the following axioms for all $r, s \in R$ and $m, n \in M$:</p>
+<p><strong>(M1)</strong> $r(m + n) = r m + r n$.</p>
+<p><strong>(M2)</strong> $(r + s)m = r m + s m$.</p>
+<p><strong>(M3)</strong> $(r s)m = r(s m)$.</p>
+<p><strong>(M4)</strong> $1 m = m$.</p>
+<p>If $R$ is a field, an $R$-module is exactly a <strong>vector space</strong> over $R$. So modules generalize vector spaces to arbitrary commutative rings.</p>
+<h2 id="15-free-modules">15. Free Modules</h2>
+<p>An $R$-module $M$ is <strong>free</strong> if it has a basis: a subset $\{e_i\}_{i \in I}$ such that every element of $M$ can be written uniquely as a finite linear combination</p>
+<p>$$
+m = \sum_{i \in I} r_i e_i
+$$</p>
+<p>with $r_i \in R$.</p>
+<p>Not every module is free. Over a general commutative ring, modules can be more complicated than vector spaces.</p>
+<h2 id="16-algebras-over-rings">16. Algebras over Rings</h2>
+<p>Let $R$ be a commutative ring. An <strong>$R$-algebra</strong> is an $R$-module $A$ equipped with a bilinear multiplication</p>
+<p>$$
+A \times A \to A, \qquad (a, b) \mapsto a b,
+$$</p>
+<p>satisfying the following axioms for all $r \in R$ and $a, b, c \in A$:</p>
+<p><strong>(A1)</strong> $r(a b) = (r a) b = a(r b)$.</p>
+<p><strong>(A2)</strong> $(a + b)c = a c + b c$ and $a(b + c) = a b + a c$.</p>
+<p>If the multiplication is associative, $A$ is an <strong>associative $R$-algebra</strong>. If it is commutative, $A$ is a <strong>commutative $R$-algebra</strong>. If there is an identity element $1_A$, $A$ is <strong>unital</strong>.</p>
+<hr />
+<h1 id="part-iv-special-classes-of-rings">Part IV: Special Classes of Rings</h1>
+<h2 id="17-principal-ideal-domains">17. Principal Ideal Domains</h2>
+<p>A <strong>principal ideal domain</strong> (PID) is an integral domain $R$ in which every ideal is principal: every ideal $I \subseteq R$ is of the form</p>
+<p>$$
+I = (a) = \{r a : r \in R\}
+$$</p>
+<p>for some $a \in R$.</p>
+<h2 id="18-unique-factorization-domains">18. Unique Factorization Domains</h2>
+<p>A <strong>unique factorization domain</strong> (UFD) is an integral domain $R$ in which every nonzero non-unit element can be written uniquely as a product of irreducible elements, up to order and multiplication by units.</p>
+<h2 id="19-euclidean-domains">19. Euclidean Domains</h2>
+<p>A <strong>Euclidean domain</strong> is an integral domain $R$ equipped with a function</p>
+<p>$$
+N : R \setminus \{0\} \to \mathbb{N}
+$$</p>
+<p>such that for all $a, b \in R$ with $b \neq 0$, there exist $q, r \in R$ with</p>
+<p>$$
+a = q b + r, \qquad r = 0 \text{ or } N(r) < N(b).
+$$</p>
+<p>The chain of inclusions is:</p>
+<p>$$
+\text{Euclidean domains} \subset \text{PIDs} \subset \text{UFDs} \subset \text{integral domains} \subset \text{commutative rings}.
+$$</p>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<h2 id="20-summary-of-ring-classes">20. Summary of Ring Classes</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Commutative</th>
+<th>Unital</th>
+<th>No zero divisors</th>
+<th>Every nonzero element is a unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ring</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Commutative ring</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Integral domain</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Field</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Division ring</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="21-the-role-of-fields">21. The Role of Fields</h2>
+<p>Fields are the most important class of rings for the theory of quadratic forms and Clifford algebras, because:</p>
+<ol>
+<li>Every module over a field is free, so every algebra has a well-defined dimension.</li>
+<li>Every nonzero element is a unit, so division algebras are possible.</li>
+<li>The classification of quadratic forms is clean and well-understood.</li>
+<li>The classical theorems (Frobenius, Wedderburn) apply.</li>
+</ol>
+<p>But fields are not the only setting. Commutative rings, integral domains, and division rings all play important roles in various areas of mathematics.</p>
+<h2 id="22-the-role-of-commutative-rings">22. The Role of Commutative Rings</h2>
+<p>Commutative rings are the natural setting for:</p>
+<ol>
+<li><strong>Algebraic geometry.</strong> The ring of functions on an algebraic variety is a commutative ring.</li>
+<li><strong>Number theory.</strong> The ring of integers of a number field is a commutative ring.</li>
+<li><strong>The theory of quadratic forms over rings.</strong> Clifford algebras can be defined over any commutative ring.</li>
+<li><strong>The theory of modules.</strong> Modules over commutative rings generalize vector spaces.</li>
+</ol>
+<p>The split complex numbers $\mathbb{D}$ are a commutative ring with zero divisors. They are not a field, but they are a perfectly good setting for the theory of quadratic forms and Clifford algebras, provided one uses the commutative-ring framework.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Thomas W. Hungerford, <em>Algebra</em> (Springer, 1974).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

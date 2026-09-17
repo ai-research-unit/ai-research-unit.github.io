@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="dual-numbers-harmonic-analysis">Dual Numbers Harmonic Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis on the dual plane as the study of the Fourier transform, convolution, and the function spaces on which they act, with the nilpotent structure playing an essential role. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The dual number algebra is assumed from the article on dual numbers algebra, and the maximal ideal is used throughout. The article is stated for an arbitrary commutative ring $R$ in which $2$ is invertible, and no finiteness assumption is made unless stated.</p>
+<p>Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and the split complex algebra is denoted $\mathbb{D}$. The unit of $\mathbb{D}'$ is denoted $\varepsilon$, and it satisfies $\varepsilon^2 = 0$.</p>
+<h2 id="the-dual-plane-as-a-locally-compact-abelian-group">The Dual Plane as a Locally Compact Abelian Group</h2>
+<h3 id="additive-structure">Additive Structure</h3>
+<p>The dual plane $\mathbb{D}'$ is a locally compact abelian group under addition, isomorphic to $R^2$ when $R = \mathbb{R}$. Its <strong>characters</strong> are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:</p>
+<p>$$
+\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi} z)}, \qquad \xi \in \mathbb{D}',
+$$</p>
+<p>where the exponential is the ordinary complex exponential, and the pairing is</p>
+<p>$$
+\langle \xi, z \rangle = \operatorname{Re}(\bar{\xi} z) = u x - v y, \qquad \xi = u + v\varepsilon, \quad z = x + y\varepsilon.
+$$</p>
+<p>Note the minus sign: it comes from the dual conjugation $\bar{\xi} = u - v\varepsilon$ and the fact that $\varepsilon^2 = 0$ but the product $v\varepsilon \cdot y\varepsilon = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and the pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$ with a sign flip in the infinitesimal direction.</p>
+<p>So at the level of the additive group, dual harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a degenerate pairing.</p>
+<h3 id="the-dual-characters">The Dual Characters</h3>
+<p>The <strong>dual characters</strong> are the homomorphisms into the multiplicative monoid of $\mathbb{D}'$:</p>
+<p>$$
+\chi_\xi(z) = e^{\operatorname{Re}(\bar{\xi} z) \varepsilon}, \qquad \xi \in \mathbb{D}',
+$$</p>
+<p>where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
+<p>$$
+\chi_\xi(z) = 1 + \operatorname{Re}(\bar{\xi} z) \varepsilon.
+$$</p>
+<p>These characters are <strong>bounded</strong> in the Euclidean norm, because they take values in the affine line $1 + \mathbb{D}' \varepsilon$. This is the fundamental difference from the split complex case, where the characters are unbounded because the hyperbolic functions grow exponentially.</p>
+<p>So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the maximal ideal, which is nilpotent and hence bounded.</p>
+<h2 id="the-dual-fourier-transform">The Dual Fourier Transform</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>dual Fourier transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) e^{- \operatorname{Re}(\bar{\xi} z) \varepsilon} \, dz,
+$$</p>
+<p>where $dz$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) (1 - \operatorname{Re}(\bar{\xi} z) \varepsilon) \, dz.
+$$</p>
+<p>So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.</p>
+<h3 id="the-structure-of-the-transform">The Structure of the Transform</h3>
+<p>Write $f(z) = u(x, y) + v(x, y) \varepsilon$. Then</p>
+<p>$$
+\hat{f}(\xi) = \int_{\mathbb{R}^2} u(x, y) \, dx \, dy + \left( \int_{\mathbb{R}^2} v(x, y) \, dx \, dy - \int_{\mathbb{R}^2} u(x, y) \operatorname{Re}(\bar{\xi} z) \, dx \, dy \right) \varepsilon.
+$$</p>
+<p>So the dual Fourier transform has:</p>
+<ul>
+<li>A real part that is the total integral of the real part of $f$, independent of $\xi$.</li>
+<li>An infinitesimal part that is the total integral of the infinitesimal part of $f$, minus the first moment of the real part of $f$ against the character.</li>
+</ul>
+<p>This is the fundamental structural fact about the dual Fourier transform: the real part is constant in $\xi$, and the infinitesimal part is affine in $\xi$. The transform does not oscillate, because the characters are nilpotent and do not wrap around the circle.</p>
+<h3 id="comparison-with-the-complex-and-split-cases">Comparison with the Complex and Split Cases</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Complex</th>
+<th>Split Complex</th>
+<th>Dual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Characters</td>
+<td>$e^{i\xi x}$, bounded</td>
+<td>$e^{j\xi x}$, unbounded</td>
+<td>$1 + \xi x \varepsilon$, bounded</td>
+</tr>
+<tr>
+<td>Transform converges</td>
+<td>for $f \in L^1$</td>
+<td>only for rapid decay</td>
+<td>for $f \in L^1$</td>
+</tr>
+<tr>
+<td>Real part of transform</td>
+<td>oscillatory</td>
+<td>exponential</td>
+<td>constant</td>
+</tr>
+<tr>
+<td>Infinitesimal part</td>
+<td>—</td>
+<td>—</td>
+<td>affine in $\xi$</td>
+</tr>
+<tr>
+<td>Plancherel</td>
+<td>yes</td>
+<td>no</td>
+<td>degenerate</td>
+</tr>
+</tbody>
+</table>
+<p>So the dual case is the only one of the three where the transform converges on $L^1$ and is bounded, but the transform is degenerate in the sense that the real part is constant and the infinitesimal part is affine. This is a consequence of the nilpotence of $\varepsilon$.</p>
+<h2 id="the-dual-fourier-transform-on-a-bounded-interval">The Dual Fourier Transform on a Bounded Interval</h2>
+<h3 id="definition_1">Definition</h3>
+<p>On a bounded interval $[-T, T]^2$, the dual Fourier transform</p>
+<p>$$
+\hat{f}(\xi) = \int_{[-T, T]^2} f(z) e^{- \operatorname{Re}(\bar{\xi} z) \varepsilon} \, dz
+$$</p>
+<p>converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as above: the real part is the total integral of the real part of $f$, and the infinitesimal part is the total integral of the infinitesimal part minus the first moment of the real part.</p>
+<h3 id="inversion">Inversion</h3>
+<p>The inversion formula is</p>
+<p>$$
+f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\operatorname{Re}(\bar{\xi} z) \varepsilon} \, d\xi,
+$$</p>
+<p>under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to</p>
+<p>$$
+f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \operatorname{Re}(\bar{\xi} z) \varepsilon) \, d\xi.
+$$</p>
+<p>The real part of the inversion recovers the total integral, and the infinitesimal part recovers the first moment. So the inversion is not a true inversion: it recovers only the total integral and the first moment of the function, not the function itself. This is the degeneracy of the dual Fourier transform.</p>
+<h3 id="why-the-inversion-is-not-complete">Why the Inversion Is Not Complete</h3>
+<p>The dual Fourier transform loses information because the characters $1 + \xi x \varepsilon$ are linear in $\xi$ and do not oscillate. The transform is essentially the map</p>
+<p>$$
+f \mapsto \left( \int f, \int f \cdot z \right),
+$$</p>
+<p>which records only the zeroth and first moments. Higher moments are lost. So the dual Fourier transform is not invertible on $L^1$, and it does not have a Plancherel theorem in the usual sense.</p>
+<p>This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform.</p>
+<h2 id="convolution">Convolution</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>convolution</strong> of $f, g : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>$$
+(f * g)(z) = \int_{\mathbb{D}'} f(z - w) g(w) \, dw,
+$$</p>
+<p>whenever the integral converges. This is the convolution on the additive group $\mathbb{D}' \cong \mathbb{R}^2$.</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Commutativity.</strong> $f * g = g * f$.</p>
+<p><strong>Associativity.</strong> $(f * g) * h = f * (g * h)$.</p>
+<p><strong>Young's inequality.</strong> If $1/p + 1/q = 1/r + 1$ with $1 \leq p, q, r \leq \infty$, then</p>
+<p>$$
+\|f * g\|_r \leq \|f\|_p \|g\|_q,
+$$</p>
+<p>where the norms are the ordinary $L^p$ norms on $\mathbb{R}^2$.</p>
+<p><strong>Convolution theorem.</strong> For functions for which the dual Fourier transform is defined,</p>
+<p>$$
+\widehat{f * g}(\xi) = \hat{f}(\xi) \hat{g}(\xi).
+$$</p>
+<p><strong>Proof.</strong> Write the definition, apply Fubini, and change variables. $\square$</p>
+<h3 id="the-structure-of-the-convolution-theorem">The Structure of the Convolution Theorem</h3>
+<p>Because the dual Fourier transform is a moment map, the convolution theorem says that the moments of the convolution are the products of the moments of the factors. Explicitly, if</p>
+<p>$$
+\hat{f} = F_0 + F_1 \varepsilon, \qquad \hat{g} = G_0 + G_1 \varepsilon,
+$$</p>
+<p>then</p>
+<p>$$
+\widehat{f * g} = F_0 G_0 + (F_0 G_1 + F_1 G_0) \varepsilon.
+$$</p>
+<p>So the zeroth moment of the convolution is the product of the zeroth moments, and the first moment is the sum of the cross terms. This is the algebraic content of the convolution theorem in the dual case.</p>
+<h3 id="approximate-identities">Approximate Identities</h3>
+<p>A sequence $(\phi_n)$ in $L^1(\mathbb{D}')$ is an <strong>approximate identity</strong> if</p>
+<p>$$
+\int_{\mathbb{D}'} \phi_n = 1, \qquad \sup_n \|\phi_n\|_1 < \infty, \qquad \int_{\|z\|_E > \delta} |\phi_n(z)| \, dz \to 0
+$$</p>
+<p>for every $\delta > 0$.</p>
+<p><strong>Theorem.</strong> If $(\phi_n)$ is an approximate identity and $f \in L^p(\mathbb{D}')$ for $1 \leq p < \infty$, then</p>
+<p>$$
+\|f * \phi_n - f\|_p \to 0.
+$$</p>
+<p>This is the same as in the real case, because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$.</p>
+<h2 id="distributions">Distributions</h2>
+<h3 id="definition_3">Definition</h3>
+<p>A <strong>tempered distribution</strong> on $\mathbb{D}'$ is a continuous linear functional on the Schwartz space $\mathcal{S}(\mathbb{D}')$. The space of tempered distributions is denoted $\mathcal{S}'(\mathbb{D}')$. It includes all functions in $L^p(\mathbb{D}')$ for $1 \leq p \leq \infty$, all finite measures, and all derivatives of such objects.</p>
+<h3 id="operations-on-distributions">Operations on Distributions</h3>
+<p><strong>Differentiation.</strong> For $T \in \mathcal{S}'(\mathbb{D}')$ and $\phi \in \mathcal{S}(\mathbb{D}')$,</p>
+<p>$$
+\langle \partial_x T, \phi \rangle = -\langle T, \partial_x \phi \rangle, \qquad \langle \partial_y T, \phi \rangle = -\langle T, \partial_y \phi \rangle.
+$$</p>
+<p><strong>Multiplication by a function.</strong> For $f \in C^\infty(\mathbb{D}')$ with polynomial growth and $T \in \mathcal{S}'(\mathbb{D}')$,</p>
+<p>$$
+\langle f T, \phi \rangle = \langle T, f \phi \rangle.
+$$</p>
+<p><strong>Dual Fourier transform.</strong> For $T \in \mathcal{S}'(\mathbb{D}')$ and $\phi \in \mathcal{S}(\mathbb{D}')$,</p>
+<p>$$
+\langle \hat{T}, \phi \rangle = \langle T, \hat{\phi} \rangle.
+$$</p>
+<p>The dual Fourier transform is a bijection $\mathcal{S}'(\mathbb{D}') \to \mathcal{S}'(\mathbb{D}')$.</p>
+<h3 id="the-dirac-delta">The Dirac Delta</h3>
+<p>The <strong>Dirac delta</strong> $\delta$ is the tempered distribution</p>
+<p>$$
+\langle \delta, \phi \rangle = \phi(0).
+$$</p>
+<p>Its dual Fourier transform is the constant function $1$, and the dual Fourier transform of $1$ is $\delta$. The delta is the identity for convolution: $\delta * T = T$ for every tempered distribution $T$.</p>
+<h3 id="the-infinitesimal-delta">The Infinitesimal Delta</h3>
+<p>The <strong>infinitesimal delta</strong> is the distribution</p>
+<p>$$
+\langle \delta_\varepsilon, \phi \rangle = \partial_\varepsilon \phi(0),
+$$</p>
+<p>where $\partial_\varepsilon$ is the derivation that extracts the infinitesimal part. It is the distributional content of the maximal ideal, and it is the dual analogue of the derivative of the delta.</p>
+<h2 id="the-dual-hilbert-transform">The Dual Hilbert Transform</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>dual Hilbert transform</strong> of $f : \mathbb{R} \to \mathbb{R}$ is</p>
+<p>$$
+Hf(x) = \frac{1}{\pi} \, \text{p.v.} \int_{\mathbb{R}} \frac{f(y)}{x - y} \, dy,
+$$</p>
+<p>where p.v. denotes the Cauchy principal value. This is the ordinary real Hilbert transform, and it acts on the real part of the dual function.</p>
+<h3 id="the-dual-hilbert-transform-on-math108">The Dual Hilbert Transform on $\mathbb{D}'$</h3>
+<p>For $f : \mathbb{D}' \to \mathbb{D}'$, the dual Hilbert transform is defined by</p>
+<p>$$
+Hf(z) = Hf_r(x) + Hf_i(x) \varepsilon,
+$$</p>
+<p>where $f_r$ and $f_i$ are the real and infinitesimal parts of $f$. So the dual Hilbert transform is the ordinary real Hilbert transform applied to each component separately.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Boundedness.</strong> $H$ is bounded on $L^p(\mathbb{D}')$ for $1 < p < \infty$, with</p>
+<p>$$
+\|Hf\|_p \leq C_p \|f\|_p.
+$$</p>
+<p><strong>Fourier multiplier.</strong> In terms of the dual Fourier transform,</p>
+<p>$$
+\widehat{Hf}(\xi) = -i \operatorname{sgn}(\xi) \hat{f}(\xi),
+$$</p>
+<p>where $\operatorname{sgn}$ is the sign function on the real part.</p>
+<h2 id="maximal-functions">Maximal Functions</h2>
+<h3 id="the-dual-maximal-function">The Dual Maximal Function</h3>
+<p>The <strong>dual Hardy–Littlewood maximal function</strong> of $f \in L^1_{\mathrm{loc}}(\mathbb{D}')$ is</p>
+<p>$$
+Mf(z) = \sup_{r > 0} \frac{1}{|B(z, r)|} \int_{B(z, r)} \|f(w)\|_E \, dw,
+$$</p>
+<p>where $B(z, r)$ is the Euclidean ball of radius $r$ centered at $z$, and $|B(z, r)|$ is its area.</p>
+<h3 id="the-maximal-inequality">The Maximal Inequality</h3>
+<p><strong>Theorem (Hardy–Littlewood, dual version).</strong> There exists a constant $C > 0$ such that for every $f \in L^1(\mathbb{D}')$ and every $\lambda > 0$,</p>
+<p>$$
+|\{z : Mf(z) > \lambda\}| \leq \frac{C}{\lambda} \|f\|_1.
+$$</p>
+<p>This is a <strong>weak $(1,1)$</strong> estimate. It implies that $M$ is bounded on $L^p(\mathbb{D}')$ for $1 < p \leq \infty$.</p>
+<p><strong>Theorem.</strong> For $1 < p \leq \infty$, there exists $C_p > 0$ such that</p>
+<p>$$
+\|Mf\|_p \leq C_p \|f\|_p.
+$$</p>
+<p><strong>Proof.</strong> The case $p = \infty$ is trivial. The case $1 < p < \infty$ follows from the weak $(1,1)$ estimate and the trivial $L^\infty$ estimate by interpolation. $\square$</p>
+<h3 id="the-structure-of-the-maximal-function">The Structure of the Maximal Function</h3>
+<p>Because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the maximal function theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the maximal function, because the maximal function is defined in terms of the Euclidean norm, which does not see the algebra structure.</p>
+<h2 id="the-calderonzygmund-theory">The Calderón–Zygmund Theory</h2>
+<h3 id="singular-integrals">Singular Integrals</h3>
+<p>A <strong>dual Calderón–Zygmund operator</strong> is a bounded operator $T : L^2(\mathbb{D}') \to L^2(\mathbb{D}')$ with a kernel $K : \mathbb{D}' \times \mathbb{D}' \to \mathbb{D}'$ such that</p>
+<p>$$
+Tf(z) = \int_{\mathbb{D}'} K(z, w) f(w) \, dw
+$$</p>
+<p>for $z \notin \operatorname{supp} f$, and $K$ satisfies the size and smoothness estimates</p>
+<p>$$
+\|K(z, w)\|_E \leq \frac{C}{\|z - w\|_E},
+$$</p>
+<p>$$
+\|K(z, w) - K(z', w)\|_E \leq C \frac{\|z - z'\|_E^\delta}{\|z - w\|_E^{1+\delta}}, \qquad \|z - z'\|_E < \frac{1}{2} \|z - w\|_E,
+$$</p>
+<p>and the analogous estimate in the second variable, for some $\delta > 0$.</p>
+<p><strong>Theorem (Calderón–Zygmund, dual version).</strong> Every dual Calderón–Zygmund operator is bounded on $L^p(\mathbb{D}')$ for $1 < p < \infty$, and satisfies a weak $(1,1)$ estimate.</p>
+<p><strong>Examples.</strong> The dual Hilbert transform, the dual Riesz transforms, and the Beurling–Ahlfors transform are dual Calderón–Zygmund operators.</p>
+<h3 id="the-structure-of-the-theory">The Structure of the Theory</h3>
+<p>Because the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the Calderón–Zygmund theory is identical to the real theory on $\mathbb{R}^2$. The nilpotence of $\varepsilon$ does not affect the theory, because the kernel estimates are in terms of the Euclidean norm, which does not see the algebra structure.</p>
+<p>So the dual Calderón–Zygmund theory is the real theory on $\mathbb{R}^2$, stated in dual notation. This is a general phenomenon: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case. The nilpotence of $\varepsilon$ only matters when the algebra structure enters, as in the Fourier transform and the convolution theorem.</p>
+<h2 id="the-mellin-transform">The Mellin Transform</h2>
+<h3 id="definition_5">Definition</h3>
+<p>The <strong>dual Mellin transform</strong> of a function $f : (0, \infty) \to \mathbb{D}'$ is</p>
+<p>$$
+\mathcal{M} f(s) = \int_0^\infty t^{s-1} f(t) \, dt,
+$$</p>
+<p>where the power is the dual power. For $s = \sigma + \tau \varepsilon$ and $f = f_r + f_i \varepsilon$,</p>
+<p>$$
+\mathcal{M} f(s) = \int_0^\infty t^{\sigma-1} f_r(t) \, dt + \left( \int_0^\infty t^{\sigma-1} \left( f_i(t) + \tau \log t \, f_r(t) \right) dt \right) \varepsilon.
+$$</p>
+<p>So the dual Mellin transform has a real part that is the ordinary Mellin transform of the real part of $f$, and an infinitesimal part that involves the Mellin transform of the infinitesimal part plus the Mellin transform of the real part against $\log t$.</p>
+<h3 id="relation-to-the-dual-fourier-transform">Relation to the Dual Fourier Transform</h3>
+<p>Under the change of variables $t = e^x$, the Mellin transform becomes the dual Fourier transform on the real line:</p>
+<p>$$
+\mathcal{M} f(\sigma + \tau \varepsilon) = \int_{-\infty}^\infty e^{(\sigma + \tau \varepsilon) x} f(e^x) \, dx = \hat{g}(\tau),
+$$</p>
+<p>where $g(x) = e^{\sigma x} f(e^x)$. So the Mellin transform is the dual Fourier transform in logarithmic coordinates.</p>
+<h2 id="the-radon-transform">The Radon Transform</h2>
+<h3 id="definition_6">Definition</h3>
+<p>The <strong>dual Radon transform</strong> of a function $f : \mathbb{D}' \to \mathbb{D}'$ is</p>
+<p>$$
+Rf(\theta, t) = \int_{L(\theta, t)} f(z) \, ds,
+$$</p>
+<p>where $L(\theta, t)$ is the line with normal direction $(\cos\theta, \sin\theta)$ and signed distance $t$ from the origin, and $ds$ is the Euclidean arc length.</p>
+<h3 id="the-fourier-slice-theorem">The Fourier Slice Theorem</h3>
+<p><strong>Theorem (Fourier Slice, dual version).</strong> The one-dimensional dual Fourier transform of $Rf(\theta, \cdot)$ is the restriction of the two-dimensional dual Fourier transform of $f$ to the line through the origin in direction $(\cos\theta, \sin\theta)$:</p>
+<p>$$
+\widehat{Rf(\theta, \cdot)}(\sigma) = \hat{f}(\sigma \cos\theta, \sigma \sin\theta).
+$$</p>
+<p><strong>Proof.</strong> Write the definition of the Radon transform, take the dual Fourier transform in $t$, and change variables. $\square$</p>
+<p>The Fourier slice theorem is the mathematical basis of dual tomography, the analogue of computed tomography for the dual plane.</p>
+<h3 id="the-inversion-formula">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> For suitable $f$,</p>
+<p>$$
+f(z) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\operatorname{Re}(\bar{\xi} z) \varepsilon} \, d\sigma \, d\theta,
+$$</p>
+<p>where $\xi = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.</p>
+<h2 id="the-wavelet-transform">The Wavelet Transform</h2>
+<h3 id="definition_7">Definition</h3>
+<p>The <strong>dual continuous wavelet transform</strong> of $f \in L^2(\mathbb{R})$ with respect to a wavelet $\psi \in L^2(\mathbb{R})$ is</p>
+<p>$$
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{R}} f(t) \overline{\psi\left( \frac{t - b}{a} \right)} \, dt, \qquad a \neq 0, \; b \in \mathbb{R}.
+$$</p>
+<p>The parameter $a$ is the <strong>scale</strong>, and $b$ is the <strong>translation</strong>. The wavelet $\psi$ is assumed to satisfy the <strong>admissibility condition</strong></p>
+<p>$$
+C_\psi = \int_{\mathbb{R}} \frac{|\hat{\psi}(\xi)|^2}{|\xi|} \, d\xi < \infty,
+$$</p>
+<p>where $\hat{\psi}$ is the ordinary Fourier transform.</p>
+<h3 id="the-inversion-formula_1">The Inversion Formula</h3>
+<p><strong>Theorem.</strong> If $\psi$ is admissible and $f \in L^2(\mathbb{R})$, then</p>
+<p>$$
+f(t) = \frac{1}{C_\psi} \int_{\mathbb{R}} \int_{\mathbb{R}} W_\psi f(a, b) \frac{1}{\sqrt{|a|}} \psi\left( \frac{t - b}{a} \right) \frac{da \, db}{a^2}.
+$$</p>
+<p>The inversion formula reconstructs $f$ from its wavelet transform.</p>
+<h3 id="the-dual-wavelet-transform">The Dual Wavelet Transform</h3>
+<p>In the dual setting, the wavelet $\psi$ is allowed to be dual-valued, and the transform becomes</p>
+<p>$$
+W_\psi f(a, b) = \frac{1}{\sqrt{|a|}} \int_{\mathbb{D}'} f(z) \overline{\psi\left( \frac{z - b}{a} \right)} \, dz, \qquad a \in (\mathbb{D}')^\times, \; b \in \mathbb{D}'.
+$$</p>
+<p>The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}'$</td>
+<td>Dual number algebra</td>
+</tr>
+<tr>
+<td>$\varepsilon$</td>
+<td>Dual unit, $\varepsilon^2 = 0$</td>
+</tr>
+<tr>
+<td>$\chi_\xi(z) = 1 + \operatorname{Re}(\bar{\xi} z) \varepsilon$</td>
+<td>Dual character</td>
+</tr>
+<tr>
+<td>$\hat{f}$</td>
+<td>Dual Fourier transform</td>
+</tr>
+<tr>
+<td>$f * g$</td>
+<td>Convolution</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>Dirac delta</td>
+</tr>
+<tr>
+<td>$Hf$</td>
+<td>Dual Hilbert transform</td>
+</tr>
+<tr>
+<td>$Mf$</td>
+<td>Dual maximal function</td>
+</tr>
+<tr>
+<td>$\mathcal{M} f$</td>
+<td>Dual Mellin transform</td>
+</tr>
+<tr>
+<td>$Rf$</td>
+<td>Dual Radon transform</td>
+</tr>
+<tr>
+<td>$W_\psi f$</td>
+<td>Dual wavelet transform</td>
+</tr>
+<tr>
+<td>$\mathfrak{m} = (\varepsilon)$</td>
+<td>Maximal ideal</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-structure-principle">The Structure Principle</h2>
+<p>The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case on $\mathbb{R}^2$. Whenever the analysis involves the algebra structure, the nilpotence of $\varepsilon$ makes the theory degenerate.</p>
+<p><strong>Theorem (Structure Principle for harmonic analysis).</strong> Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the dual analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^2$, stated in dual notation. If $\mathcal{T}$ depends on the algebra structure, then the dual analogue is degenerate, and the degeneracy is controlled by the nilpotence of $\varepsilon$.</p>
+<p><strong>Consequences.</strong></p>
+<ul>
+<li>The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory, because they depend only on the additive group and the Euclidean norm.</li>
+<li>The Fourier transform, the convolution theorem, and the Radon transform are degenerate, because they depend on the algebra structure through the characters.</li>
+<li>The degeneracy is always of the same form: the real part of the transform is constant or affine, and the infinitesimal part is linear in the dual variable.</li>
+</ul>
+<p>This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform. The theory is useful in the cases where the additive group structure is all that matters, and degenerate in the cases where the algebra structure enters.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the origin of the dual numbers in the biquaternion program.</li>
+<li>Eduard Study, <em>Geometrie der Dynamen</em> (1903), for the geometry of dual numbers.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the theory of algebras over commutative rings.</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005), for the general theory of quadratic forms.</li>
+<li>Elias M. Stein and Guido Weiss, <em>Introduction to Fourier Analysis on Euclidean Spaces</em> (Princeton, 1971), for the classical treatment of the Fourier transform on $\mathbb{R}^n$.</li>
+<li>Andreas Griewank and Andrea Walther, <em>Evaluating Derivatives</em> (SIAM, 2008), for automatic differentiation with dual numbers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

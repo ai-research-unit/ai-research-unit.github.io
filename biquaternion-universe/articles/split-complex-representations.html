@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="split-complex-representations">Split Complex Representations</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the representation theory of the split complex algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The split complex algebra is assumed from the article on split complex algebra, and the idempotent decomposition is used throughout. No physics is invoked.</p>
+<h2 id="representations-of-math0">Representations of $\mathbb{D}$</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>representation</strong> of $\mathbb{D}$ is a real vector space $V$ together with a bilinear map</p>
+<p>$$
+\rho : \mathbb{D} \times V \to V, \qquad \rho(z, v) = z \cdot v,
+$$</p>
+<p>satisfying</p>
+<p>$$
+z \cdot (w \cdot v) = (zw) \cdot v, \qquad 1 \cdot v = v.
+$$</p>
+<p>Equivalently, a representation is an algebra homomorphism</p>
+<p>$$
+\rho : \mathbb{D} \to \operatorname{End}(V).
+$$</p>
+<p>Since $\mathbb{D}$ is commutative, the image of $\rho$ is a commutative subalgebra of $\operatorname{End}(V)$.</p>
+<h3 id="the-idempotent-action">The Idempotent Action</h3>
+<p>The idempotents $e_+$ and $e_-$ act as projection operators. For any representation $V$,</p>
+<p>$$
+e_+ \cdot (e_+ \cdot v) = e_+^2 \cdot v = e_+ \cdot v,
+$$</p>
+<p>so $e_+$ is idempotent, and similarly for $e_-$. Moreover,</p>
+<p>$$
+e_+ \cdot (e_- \cdot v) = (e_+ e_-) \cdot v = 0,
+$$</p>
+<p>and symmetrically. So the images of $e_+$ and $e_-$ are complementary subspaces:</p>
+<p>$$
+V = V_+ \oplus V_-, \qquad V_+ = e_+ \cdot V, \quad V_- = e_- \cdot V.
+$$</p>
+<p>This is the <strong>idempotent decomposition</strong> of the representation. It is the fundamental structural fact about representations of $\mathbb{D}$.</p>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>The <strong>regular representation</strong> of $\mathbb{D}$ is $\mathbb{D}$ acting on itself by left multiplication:</p>
+<p>$$
+\rho_{\mathrm{reg}}(z) w = z w, \qquad z, w \in \mathbb{D}.
+$$</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{D} \to \operatorname{End}(\mathbb{D})$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{D}$ on a two-dimensional real vector space.</p>
+<p>Under the idempotent decomposition,</p>
+<p>$$
+\mathbb{D} = \mathbb{D} e_+ \oplus \mathbb{D} e_-,
+$$</p>
+<p>where $\mathbb{D} e_+$ and $\mathbb{D} e_-$ are the two ideals of $\mathbb{D}$, each isomorphic to $\mathbb{R}$. The regular representation decomposes as</p>
+<p>$$
+\rho_{\mathrm{reg}} = \rho_+ \oplus \rho_-,
+$$</p>
+<p>where $\rho_+$ is the representation on $\mathbb{D} e_+ \cong \mathbb{R}$ and $\rho_-$ is the representation on $\mathbb{D} e_- \cong \mathbb{R}$.</p>
+<h3 id="the-one-dimensional-representations">The One-Dimensional Representations</h3>
+<p>The two one-dimensional representations of $\mathbb{D}$ are:</p>
+<p><strong>The $+$ representation.</strong> On $\mathbb{R}$, defined by</p>
+<p>$$
+\rho_+(z) = z_+ = a + b, \qquad z = a + bj.
+$$</p>
+<p>This is the representation that sends $j$ to $+1$.</p>
+<p><strong>The $-$ representation.</strong> On $\mathbb{R}$, defined by</p>
+<p>$$
+\rho_-(z) = z_- = a - b, \qquad z = a + bj.
+$$</p>
+<p>This is the representation that sends $j$ to $-1$.</p>
+<p>Both are algebra homomorphisms $\mathbb{D} \to \mathbb{R}$, and they are the only ones. Indeed, if $\rho : \mathbb{D} \to \mathbb{R}$ is an algebra homomorphism, then $\rho(1) = 1$ and $\rho(j)^2 = \rho(j^2) = \rho(1) = 1$, so $\rho(j) = \pm 1$. These are exactly $\rho_+$ and $\rho_-$.</p>
+<h2 id="classification">Classification</h2>
+<h3 id="the-classification-theorem">The Classification Theorem</h3>
+<p><strong>Theorem.</strong> Every finite-dimensional real representation of $\mathbb{D}$ is isomorphic to a direct sum of copies of $\rho_+$ and $\rho_-$:</p>
+<p>$$
+V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q},
+$$</p>
+<p>with $\rho = \rho_+^{\oplus p} \oplus \rho_-^{\oplus q}$.</p>
+<p><strong>Proof.</strong> Let $V$ be a finite-dimensional representation. The idempotent decomposition gives</p>
+<p>$$
+V = V_+ \oplus V_-,
+$$</p>
+<p>with $V_+ = e_+ \cdot V$ and $V_- = e_- \cdot V$. On $V_+$, the action of $z = a + bj$ is</p>
+<p>$$
+z \cdot v = (a + b) v, \qquad v \in V_+,
+$$</p>
+<p>because $z e_+ = (a + b) e_+$. So $V_+$ is a direct sum of copies of $\rho_+$. Similarly, on $V_-$,</p>
+<p>$$
+z \cdot v = (a - b) v, \qquad v \in V_-,
+$$</p>
+<p>so $V_-$ is a direct sum of copies of $\rho_-$. $\square$</p>
+<h3 id="irreducible-representations">Irreducible Representations</h3>
+<p><strong>Theorem.</strong> The irreducible real representations of $\mathbb{D}$ are exactly $\rho_+$ and $\rho_-$, up to isomorphism.</p>
+<p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence a direct sum of copies of $\rho_+$ and $\rho_-$. Since it is irreducible, it must be a single copy of one of them. $\square$</p>
+<h3 id="schurs-lemma">Schur's Lemma</h3>
+<p><strong>Theorem (Schur).</strong> Every $\mathbb{D}$-linear endomorphism of an irreducible real representation of $\mathbb{D}$ is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{D}$-linear. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$, $T$ is multiplication by a non-zero scalar. $\square$</p>
+<p><strong>Corollary.</strong> The endomorphism ring of each irreducible representation is $\mathbb{R}$.</p>
+<h2 id="the-representation-ring">The Representation Ring</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>representation ring</strong> $R(\mathbb{D})$ is the Grothendieck ring of finite-dimensional real representations of $\mathbb{D}$. As an abelian group, it is generated by the isomorphism classes $[\rho_+]$ and $[\rho_-]$, with the relation</p>
+<p>$$
+[\rho_+] + [\rho_-] = [\rho_{\mathrm{reg}}].
+$$</p>
+<p>Since every representation is a direct sum of copies of $\rho_+$ and $\rho_-$, we have</p>
+<p>$$
+R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z},
+$$</p>
+<p>with generators $[\rho_+]$ and $[\rho_-]$.</p>
+<h3 id="ring-structure">Ring Structure</h3>
+<p>The product in $R(\mathbb{D})$ is given by the tensor product of representations:</p>
+<p>$$
+[V] \cdot [W] = [V \otimes_{\mathbb{R}} W].
+$$</p>
+<p>Since $\rho_+$ and $\rho_-$ are one-dimensional, their tensor products are</p>
+<p>$$
+\rho_+ \otimes \rho_+ \cong \rho_+, \qquad \rho_+ \otimes \rho_- \cong \rho_-, \qquad \rho_- \otimes \rho_- \cong \rho_+.
+$$</p>
+<p>This is the multiplication rule of the group ring $\mathbb{Z}[\mathbb{Z}/2]$, where $\rho_+$ corresponds to the trivial character and $\rho_-$ to the sign character. So</p>
+<p>$$
+R(\mathbb{D}) \cong \mathbb{Z}[\mathbb{Z}/2].
+$$</p>
+<h2 id="representations-and-the-idempotent-decomposition">Representations and the Idempotent Decomposition</h2>
+<h3 id="the-projection-operators">The Projection Operators</h3>
+<p>In any representation $V$, the idempotents $e_+$ and $e_-$ act as projection operators:</p>
+<p>$$
+P_+ = \rho(e_+), \qquad P_- = \rho(e_-).
+$$</p>
+<p>They satisfy</p>
+<p>$$
+P_+^2 = P_+, \qquad P_-^2 = P_-, \qquad P_+ P_- = P_- P_+ = 0, \qquad P_+ + P_- = I.
+$$</p>
+<p>So $V = V_+ \oplus V_-$ with $V_+ = \operatorname{im} P_+$ and $V_- = \operatorname{im} P_-$.</p>
+<h3 id="the-action-on-each-component">The Action on Each Component</h3>
+<p>On $V_+$, the action of $z = a + bj$ is multiplication by $a + b$. On $V_-$, the action is multiplication by $a - b$. So the representation is completely determined by the pair of scalars $(a + b, a - b)$, which is exactly the image of $z$ under the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$.</p>
+<p>This is the representation-theoretic content of the isomorphism: a representation of $\mathbb{D}$ is the same thing as a pair of real vector spaces, one for each idempotent.</p>
+<h2 id="indecomposable-representations">Indecomposable Representations</h2>
+<h3 id="definition_2">Definition</h3>
+<p>A representation $V$ is <strong>indecomposable</strong> if it cannot be written as a direct sum of two non-zero subrepresentations. Every irreducible representation is indecomposable, but the converse fails in general.</p>
+<p><strong>Theorem.</strong> Every finite-dimensional representation of $\mathbb{D}$ is a direct sum of indecomposable representations, and the indecomposable representations are exactly $\rho_+$ and $\rho_-$.</p>
+<p><strong>Proof.</strong> By the classification theorem, $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$. Each summand is indecomposable because it is one-dimensional and any non-zero subrepresentation is the whole thing. Conversely, any indecomposable representation is a single copy of $\rho_+$ or $\rho_-$. $\square$</p>
+<p>So $\mathbb{D}$ is a <strong>semisimple</strong> algebra: every representation is a direct sum of irreducibles, and the indecomposables coincide with the irreducibles. This is a special feature of the split complex algebra, and it is the reason its representation theory is so simple.</p>
+<h2 id="comparison-with-the-complex-case">Comparison with the Complex Case</h2>
+<p>The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, the irreducible representations are all one-dimensional and are indexed by the complex numbers themselves: for each $\lambda \in \mathbb{C}$, the representation $\rho_\lambda(z) = \lambda z$ on $\mathbb{C}$. There are uncountably many. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(z) = a \pm b$ on $\mathbb{R}$.</p>
+<p>The reason is that $\mathbb{C}$ is a field, so every non-zero element is invertible, and the irreducible representations are indexed by the points of the field. $\mathbb{D}$ is not a field, so only the elements that are invertible in the quotient fields contribute, and those are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.</p>
+<h2 id="the-dual-representation">The Dual Representation</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by</p>
+<p>$$
+(\rho^*(z) f)(v) = f(\rho(z) v), \qquad z \in \mathbb{D}, \; f \in V^*, \; v \in V.
+$$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
+<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
+<p><strong>The dual of an irreducible is irreducible.</strong> $\rho_+^* \cong \rho_+$ and $\rho_-^* \cong \rho_-$.</p>
+<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<h3 id="the-pairing">The Pairing</h3>
+<p>The natural pairing</p>
+<p>$$
+\langle \cdot, \cdot \rangle : V^* \times V \to \mathbb{R}, \qquad \langle f, v \rangle = f(v),
+$$</p>
+<p>satisfies</p>
+<p>$$
+\langle \rho^*(z) f, v \rangle = \langle f, \rho(z) v \rangle.
+$$</p>
+<p>This is the definition of the dual representation, written as a pairing.</p>
+<h2 id="tensor-products">Tensor Products</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by</p>
+<p>$$
+z \cdot (v \otimes w) = (z \cdot v) \otimes w = v \otimes (z \cdot w).
+$$</p>
+<p>The two definitions agree because $\mathbb{D}$ is commutative.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Associativity.</strong> $(U \otimes V) \otimes W \cong U \otimes (V \otimes W)$.</p>
+<p><strong>Commutativity.</strong> $V \otimes W \cong W \otimes V$.</p>
+<p><strong>Distributivity.</strong> $U \otimes (V \oplus W) \cong (U \otimes V) \oplus (U \otimes W)$.</p>
+<p><strong>Tensor product of irreducibles.</strong> The tensor products of the irreducible representations are</p>
+<p>$$
+\rho_+ \otimes \rho_+ \cong \rho_+, \qquad \rho_+ \otimes \rho_- \cong \rho_-, \qquad \rho_- \otimes \rho_- \cong \rho_+.
+$$</p>
+<p>This is the same multiplication rule as the group $\mathbb{Z}/2$, with $\rho_+$ as the identity and $\rho_-$ as the non-trivial element.</p>
+<h2 id="homomorphisms">Homomorphisms</h2>
+<h3 id="definition_5">Definition</h3>
+<p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a linear map $T : V \to W$ such that</p>
+<p>$$
+T(z \cdot v) = z \cdot T(v), \qquad z \in \mathbb{D}, \; v \in V.
+$$</p>
+<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}}(V, W)$.</p>
+<h3 id="basic-properties_2">Basic Properties</h3>
+<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{D}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{D}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{D}}(V, U)$.</p>
+<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{D}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{D}}(V, V) \cong \mathbb{R}$.</p>
+<p><strong>Dimension count.</strong> For $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$ and $W \cong \mathbb{R}^{\oplus r} \oplus \mathbb{R}^{\oplus s}$,</p>
+<p>$$
+\dim \operatorname{Hom}_{\mathbb{D}}(V, W) = pr + qs.
+$$</p>
+<p><strong>Proof.</strong> A homomorphism must preserve the idempotent decomposition, so it is determined by its action on each isotypic component. On $V_+ \cong \mathbb{R}^{\oplus p}$, a homomorphism to $W_+ \cong \mathbb{R}^{\oplus r}$ is an $r \times p$ real matrix, of dimension $pr$. Similarly for the minus components, of dimension $qs$. $\square$</p>
+<h3 id="the-endomorphism-ring">The Endomorphism Ring</h3>
+<p>The <strong>endomorphism ring</strong> of a representation $V$ is $\operatorname{End}_{\mathbb{D}}(V) = \operatorname{Hom}_{\mathbb{D}}(V, V)$. For $V \cong \mathbb{R}^{\oplus p} \oplus \mathbb{R}^{\oplus q}$,</p>
+<p>$$
+\operatorname{End}_{\mathbb{D}}(V) \cong M_p(\mathbb{R}) \oplus M_q(\mathbb{R}),
+$$</p>
+<p>the direct sum of the matrix rings of sizes $p$ and $q$. This is a semisimple ring.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$e_+ = (1 + j)/2$</td>
+<td>Positive idempotent</td>
+</tr>
+<tr>
+<td>$e_- = (1 - j)/2$</td>
+<td>Negative idempotent</td>
+</tr>
+<tr>
+<td>$\rho : \mathbb{D} \to \operatorname{End}(V)$</td>
+<td>Representation</td>
+</tr>
+<tr>
+<td>$\rho_+$</td>
+<td>One-dimensional representation $j \mapsto +1$</td>
+</tr>
+<tr>
+<td>$\rho_-$</td>
+<td>One-dimensional representation $j \mapsto -1$</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{reg}}$</td>
+<td>Regular representation</td>
+</tr>
+<tr>
+<td>$V_+ = e_+ \cdot V$</td>
+<td>Positive isotypic component</td>
+</tr>
+<tr>
+<td>$V_- = e_- \cdot V$</td>
+<td>Negative isotypic component</td>
+</tr>
+<tr>
+<td>$P_+ = \rho(e_+)$</td>
+<td>Projection onto $V_+$</td>
+</tr>
+<tr>
+<td>$P_- = \rho(e_-)$</td>
+<td>Projection onto $V_-$</td>
+</tr>
+<tr>
+<td>$V^*$</td>
+<td>Dual representation</td>
+</tr>
+<tr>
+<td>$V \otimes W$</td>
+<td>Tensor product</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathbb{D}}(V, W)$</td>
+<td>Space of homomorphisms</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{D}}(V)$</td>
+<td>Endomorphism ring</td>
+</tr>
+<tr>
+<td>$R(\mathbb{D})$</td>
+<td>Representation ring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of algebras.</li>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the geometric interpretation of split complex numbers.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of SL(2, ℝ)</em> (Imperial College Press, 2012), for the analytic applications.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

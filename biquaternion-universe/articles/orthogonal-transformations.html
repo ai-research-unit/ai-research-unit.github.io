@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="orthogonal-transformations"><strong>Orthogonal Transformations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces orthogonal transformations. The treatment is introductory and purely mathematical.</p>
+<p>An orthogonal transformation is a linear transformation that preserves a quadratic form. The goal of this article is to explain what this means, why it is natural, and how the orthogonal transformations of a given quadratic form organize themselves into a group.</p>
+<p>We assume familiarity with modules, bilinear forms, and quadratic forms, as developed in the preceding articles. No prior knowledge of Lie algebras or Clifford algebras is required.</p>
+<p>This article treats the general theory, over a <strong>commutative ring</strong> in which 2 is invertible. The examples over specific rings, including the signature over $\mathbb{R}$, the Cartan–Dieudonné theorem, and the hyperbolic transformations, are the subject of the following article.</p>
+<p>A word on the base structure. The classical theory of orthogonal transformations assumes that the scalars form a field. But the definition and many of the basic properties carry over to the more general setting where the scalars form a <strong>commutative ring</strong>. This is the setting we adopt here. The main differences from the field case are:</p>
+<ul>
+<li>Modules over a commutative ring need not be free, so the orthogonal group need not be a matrix group. We assume the module is free of finite rank.</li>
+<li>Invertibility of a linear transformation requires the determinant to be a <strong>unit</strong> of the ring, not merely nonzero.</li>
+<li>The determinant takes values in the ring, and its square is 1 only up to units. So the determinant map is not as clean as over a field.</li>
+<li>The theory of Lie algebras over a general commutative ring is more subtle than over a field.</li>
+</ul>
+<p>We indicate where these differences matter.</p>
+<hr />
+<h2 id="part-i-the-definition">Part I: The Definition</h2>
+<h3 id="preserving-a-quadratic-form">Preserving a Quadratic Form</h3>
+<p>Let $M$ be a free module of finite rank over a commutative ring $R$ in which 2 is invertible, equipped with a quadratic form $Q$. A linear transformation $T : M \to M$ is <strong>orthogonal</strong> with respect to $Q$ if it preserves $Q$:</p>
+<p>$$
+Q(Tv) = Q(v) \quad \text{for all } v \in M.
+$$</p>
+<p>Equivalently, using the bilinear form $B$ associated with $Q$:</p>
+<p>$$
+B(Tu, Tv) = B(u, v) \quad \text{for all } u, v \in M.
+$$</p>
+<p>The two conditions are equivalent because $Q(v) = B(v, v)$ and $B$ is recovered from $Q$ by polarization. The polarization identity requires that 2 is invertible in $R$.</p>
+<h3 id="the-orthogonal-group">The Orthogonal Group</h3>
+<p>The set of all orthogonal transformations of $Q$ forms a group under composition. It is called the <strong>orthogonal group</strong> of $Q$ and is written</p>
+<p>$$
+O(M, Q).
+$$</p>
+<p>It is a subgroup of the general linear group $GL(M)$. To verify that it is a subgroup:</p>
+<ul>
+<li>The identity is orthogonal.</li>
+<li>If $S$ and $T$ are orthogonal, then $Q(STv) = Q(Tv) = Q(v)$, so $ST$ is orthogonal.</li>
+<li>If $T$ is orthogonal, then $Q(T^{-1}v) = Q(T(T^{-1}v)) = Q(v)$, so $T^{-1}$ is orthogonal.</li>
+</ul>
+<p>So $O(M, Q)$ is a group.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, $GL(M)$ consists of the invertible linear transformations, and "invertible" is equivalent to "nonzero determinant." Over a general commutative ring, $GL(M)$ consists of the linear transformations whose determinant is a <strong>unit</strong> of $R$. So the orthogonal group $O(M, Q)$ is a subgroup of $GL(M)$ in the ring-theoretic sense, which is more restrictive than over a field.</p>
+<h3 id="the-rotation-group">The Rotation Group</h3>
+<p>Let $M$ be free of finite rank. For any orthogonal transformation $T$, the determinant satisfies</p>
+<p>$$
+\det(T)^2 = 1.
+$$</p>
+<p>Over a field of characteristic not equal to 2, this means $\det T = +1$ or $\det T = -1$. The set of orthogonal transformations with determinant $+1$ is a subgroup, called the <strong>special orthogonal group</strong> or <strong>rotation group</strong>:</p>
+<p>$$
+SO(M, Q) = \{T \in O(M, Q) : \det T = +1\}.
+$$</p>
+<p>The rotation group is the kernel of the determinant map restricted to $O(M, Q)$:</p>
+<p>$$
+\det : O(M, Q) \to \{+1, -1\}.
+$$</p>
+<p>So $SO(M, Q)$ is a normal subgroup of $O(M, Q)$ of index 1 or 2, depending on whether the determinant map is surjective.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, the equation $\det(T)^2 = 1$ has exactly two solutions, $+1$ and $-1$, provided the field has characteristic not equal to 2. Over a general commutative ring, the equation $\det(T)^2 = 1$ may have many more solutions, and the determinant map may not be surjective onto $\{+1, -1\}$. So the definition of $SO(M, Q)$ as the kernel of the determinant map is still valid, but the structure of the quotient $O(M, Q) / SO(M, Q)$ may be more complicated than $\{+1, -1\}$.</p>
+<hr />
+<h2 id="part-ii-the-orthogonal-lie-algebra">Part II: The Orthogonal Lie Algebra</h2>
+<h3 id="the-definition">The Definition</h3>
+<p>The orthogonal group $O(M, Q)$ is a continuous group for a non-degenerate quadratic form over the real or complex numbers. Its infinitesimal version is the <strong>orthogonal Lie algebra</strong> $\mathfrak{so}(M, Q)$, defined as the set of linear transformations $A : M \to M$ that are <strong>antisymmetric</strong> with respect to $B$:</p>
+<p>$$
+B(Au, v) + B(u, Av) = 0 \quad \text{for all } u, v \in M.
+$$</p>
+<h3 id="the-lie-bracket">The Lie Bracket</h3>
+<p>The set $\mathfrak{so}(M, Q)$ is a module over $R$. It is closed under the <strong>commutator bracket</strong></p>
+<p>$$
+[A, C] = AC - CA.
+$$</p>
+<p>Indeed, if $A$ and $C$ are antisymmetric, then $[A, C]$ is antisymmetric:</p>
+<p>$$
+B([A, C]u, v) + B(u, [A, C]v) = 0.
+$$</p>
+<p>So $\mathfrak{so}(M, Q)$ is a Lie algebra under the commutator bracket.</p>
+<h3 id="the-rank">The Rank</h3>
+<p>For a free module of rank $n$, the orthogonal Lie algebra has rank</p>
+<p>$$
+\operatorname{rank} \mathfrak{so}(M, Q) = \binom{n}{2} = \frac{n(n-1)}{2}.
+$$</p>
+<p>This is the number of independent antisymmetric transformations. The rank does not depend on the ring or on the signature; only the structure of the Lie algebra depends on them.</p>
+<p><strong>Key difference from the field case.</strong> Over a field, the rank of $\mathfrak{so}(M, Q)$ is the dimension, and it is well-defined. Over a general commutative ring, the rank is well-defined only if the module is free. We assume this throughout.</p>
+<h3 id="the-exponential-map">The Exponential Map</h3>
+<p>For a non-degenerate quadratic form over $\mathbb{R}$ or $\mathbb{C}$, the <strong>exponential map</strong> sends $\mathfrak{so}(M, Q)$ to $SO(M, Q)$: if $A \in \mathfrak{so}(M, Q)$, then $\exp(A) \in SO(M, Q)$.</p>
+<p>The exponential map is not surjective in general, but its image contains the connected component of the identity in $SO(M, Q)$.</p>
+<p><strong>Key difference from the field case.</strong> The exponential map is defined over $\mathbb{R}$ or $\mathbb{C}$, where the notion of convergence makes sense. Over a general commutative ring, the exponential map is not defined in the same way, because there is no topology. So the relationship between the Lie algebra and the group is more subtle over a general commutative ring.</p>
+<hr />
+<h2 id="part-iii-summary">Part III: Summary</h2>
+<p>Let me summarize the main points.</p>
+<p><strong>An orthogonal transformation</strong> of a quadratic form $Q$ is a linear transformation $T$ that preserves $Q$: $Q(Tv) = Q(v)$ for all $v$. Equivalently, $B(Tu, Tv) = B(u, v)$ for all $u, v$.</p>
+<p><strong>The orthogonal group</strong> $O(M, Q)$ is the group of all orthogonal transformations of $Q$. It is a subgroup of $GL(M)$.</p>
+<p><strong>The rotation group</strong> $SO(M, Q)$ is the subgroup of orthogonal transformations with determinant $+1$. It is the kernel of the determinant map on $O(M, Q)$.</p>
+<p><strong>The orthogonal Lie algebra</strong> $\mathfrak{so}(M, Q)$ is the set of antisymmetric linear transformations with respect to the bilinear form $B$. Its rank is $\binom{n}{2}$. The exponential map sends $\mathfrak{so}(M, Q)$ to $SO(M, Q)$ over $\mathbb{R}$ or $\mathbb{C}$.</p>
+<p><strong>Key differences from the field case.</strong></p>
+<ul>
+<li>Over a field, every module is free, so the orthogonal group is a matrix group. Over a general commutative ring, the module need not be free.</li>
+<li>Over a field, invertibility is equivalent to nonzero determinant. Over a general commutative ring, invertibility requires the determinant to be a unit.</li>
+<li>Over a field of characteristic not equal to 2, the equation $\det(T)^2 = 1$ has exactly two solutions. Over a general commutative ring, it may have more.</li>
+<li>The exponential map is defined over $\mathbb{R}$ or $\mathbb{C}$, where there is a topology. Over a general commutative ring, it is not defined in the same way.</li>
+</ul>
+<p>The examples over specific rings, including the signature over $\mathbb{R}$, the Cartan–Dieudonné theorem, and the hyperbolic transformations, are the subject of the following article.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991), for an introduction to bilinear forms and orthogonal groups.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002), for a more advanced treatment.</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for a classic introduction.</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003), for a modern introduction.</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> (Dover, 2nd ed. 2009), for a thorough treatment.</li>
+<li>Jean Dieudonné, <em>La géométrie des groupes classiques</em> (Springer, 1971), for the Cartan–Dieudonné theorem and the structure of classical groups.</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991), for the theory over commutative rings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

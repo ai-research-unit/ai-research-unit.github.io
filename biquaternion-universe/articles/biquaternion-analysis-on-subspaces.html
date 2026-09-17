@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="biquaternion-analysis-on-subspaces">Biquaternion Analysis on Subspaces</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The article on biquaternion analysis defined limits, continuity, and the differential operators on a general four-dimensional real subspace $V \subset \mathbb{B}$. The article on biquaternion integration defined the integral and the Cauchy integral formula on the same general subspace. This article specializes the general theory to the natural four-dimensional subspaces of the biquaternion algebra: the <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$, the <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$, and the <strong>Hermitian subspace</strong> $\mathbb{M}_+$.</p>
+<p>These subspaces are the natural domains for the analysis because they are the four-dimensional real subspaces on which the zero divisors are either absent or confined to a manageable subset:</p>
+<ul>
+<li>On $\mathbb{H}_{\mathbb{B}}$, the norm form is positive-definite, and there are no zero divisors at all. The analysis is clean everywhere.</li>
+<li>On $\mathbb{M}_-$, the norm form is indefinite of signature $(3, 1)$ (or $(1, 3)$, depending on convention), and the zero divisors form a three-dimensional cone. The analysis is clean away from this cone.</li>
+<li>On $\mathbb{M}_+$, the norm form is indefinite of signature $(1, 3)$ (or $(3, 1)$), and the zero divisors form a three-dimensional cone. The analysis is clean away from this cone.</li>
+</ul>
+<p>The three subspaces are therefore complementary in their relation to the zero-divisor problem. They are the natural cases, and they are the cases that arise in the applications.</p>
+<p>The treatment is purely mathematical. The independent variables are four real variables, and they are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.</p>
+<p>Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.</p>
+<h2 id="the-quaternion-subspace">The Quaternion Subspace</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>quaternion subspace</strong> $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation:</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^* = \tilde{Q}\}.
+$$</p>
+<p>Explicitly, a biquaternion is in $\mathbb{H}_{\mathbb{B}}$ if and only if it has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>All four coefficients are real. The subset $\mathbb{H}_{\mathbb{B}}$ is a real vector space of dimension 4, and it is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Real vector space.</strong> $\mathbb{H}_{\mathbb{B}}$ is a real vector space of dimension 4. A basis is $\{e_0, e_1, e_2, e_3\}$.</p>
+<p><strong>Subalgebra.</strong> $\mathbb{H}_{\mathbb{B}}$ is closed under biquaternion multiplication. If $\tilde{Q}, \tilde{R} \in \mathbb{H}_{\mathbb{B}}$, then $\tilde{Q} \tilde{R} \in \mathbb{H}_{\mathbb{B}}$.</p>
+<p><strong>Division algebra.</strong> $\mathbb{H}_{\mathbb{B}}$ is a division algebra. The norm form restricts to a positive-definite quadratic form:</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This vanishes if and only if all $q_\mu = 0$. So every nonzero element of $\mathbb{H}_{\mathbb{B}}$ is invertible, and $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors.</p>
+<p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{H}_{\mathbb{B}}$ are in bijection with quadruples $(q_0, q_1, q_2, q_3)$ of real numbers. We use the notation</p>
+<p>$$
+\tilde{X} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+$$</p>
+<p>for a general element of $\mathbb{H}_{\mathbb{B}}$. The four real numbers $x_0, x_1, x_2, x_3$ are the <strong>coordinates</strong> of $\tilde{X}$ in the quaternion subspace.</p>
+<h3 id="functions-on-the-quaternion-subspace">Functions on the Quaternion Subspace</h3>
+<p>A <strong>biquaternion-valued function on the quaternion subspace</strong> is a map</p>
+<p>$$
+\tilde{F} : \mathbb{H}_{\mathbb{B}} \to \mathbb{B}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+$$</p>
+<p>Writing $\tilde{X} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, the function $\tilde{F}$ is determined by four complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:</p>
+<p>$$
+\tilde{F}(\tilde{X}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
+$$</p>
+<p>The restriction to $\mathbb{H}_{\mathbb{B}}$ reduces the number of independent real variables from eight to four.</p>
+<h3 id="partial-derivatives">Partial Derivatives</h3>
+<p>For each $\mu = 0, 1, 2, 3$, the <strong>partial derivative</strong> of $\tilde{F}$ with respect to $x_\mu$ is</p>
+<p>$$
+\frac{\partial \tilde{F}}{\partial x_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial x_\mu} e_\nu.
+$$</p>
+<p>The partial derivative acts component-wise on the coefficients. Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately. We write $\partial_\mu$ for $\partial/\partial x_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.</p>
+<h3 id="the-differential-operators-on-math51">The Differential Operators on $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>The <strong>biquaternionic gradient</strong> on the quaternion subspace is the same operator as on the general four-dimensional subspace:</p>
+<p>$$
+\tilde{\nabla} = e_0 \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3 = \sum_{\mu=0}^{3} e_\mu \partial_\mu.
+$$</p>
+<p>Its action on a function $\tilde{F}$ on $\mathbb{H}_{\mathbb{B}}$ is the same as its action on a general function on $V$:</p>
+<p>$$
+\tilde{\nabla}\tilde{F} = \left(\partial_0 F_0 - \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+$$</p>
+<p>where</p>
+<p>$$
+\mathrm{div}\,\mathbf{F} = \sum_{k=1}^{3} \partial_k F_k, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} (\partial_k F_0) e_k, \qquad \mathrm{rot}\,\mathbf{F} = \sum_{j,k,l=1}^{3} \epsilon_{jkl} (\partial_j F_k) e_l.
+$$</p>
+<p>The <strong>quaternion conjugate</strong> of $\tilde{\nabla}$ is</p>
+<p>$$
+\bar{\tilde{\nabla}} = e_0 \partial_0 - e_1 \partial_1 - e_2 \partial_2 - e_3 \partial_3,
+$$</p>
+<p>and the product $\bar{\tilde{\nabla}}\tilde{F}$ is</p>
+<p>$$
+\bar{\tilde{\nabla}}\tilde{F} = \left(\partial_0 F_0 + \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
+$$</p>
+<p>The <strong>d'Alembertian</strong> is</p>
+<p>$$
+\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\partial_0^2 + \Delta\right) e_0,
+$$</p>
+<p>where $\Delta = \partial_1^2 + \partial_2^2 + \partial_3^2$ is the ordinary three-dimensional Laplacian.</p>
+<p>The <strong>square</strong> of the gradient is</p>
+<p>$$
+\tilde{\nabla}\tilde{\nabla} = \left(\partial_0^2 - \Delta\right) + 2\sum_{k=1}^{3} e_k \partial_0 \partial_k.
+$$</p>
+<p>The <strong>convective derivative</strong> is defined as on the general subspace. Let</p>
+<p>$$
+\tilde{U} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
+$$</p>
+<p>be a velocity biquaternion in $\mathbb{H}_{\mathbb{B}}$. The convective derivative is</p>
+<p>$$
+\tilde{D} = \bar{\tilde{U}} \tilde{\nabla},
+$$</p>
+<p>with developed form</p>
+<p>$$
+\tilde{D} = \left(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u}).
+$$</p>
+<h3 id="integration-on-math69">Integration on $\mathbb{H}_{\mathbb{B}}$</h3>
+<p>The integral of a biquaternion-valued function $\tilde{F}$ over a domain $\Omega \subset \mathbb{H}_{\mathbb{B}}$ is defined component-wise:</p>
+<p>$$
+\int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu.
+$$</p>
+<p>The integration theory is the same as on the general subspace. The divergence theorem, Green's formulas, and the Cauchy integral formula all hold, with the fundamental solution</p>
+<p>$$
+\tilde{G}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4}.
+$$</p>
+<p>Since $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors, the analysis is clean everywhere on $\mathbb{H}_{\mathbb{B}}$.</p>
+<h2 id="the-anti-hermitian-subspace">The Anti-Hermitian Subspace</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>anti-Hermitian subspace</strong> $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation:</p>
+<p>$$
+\mathbb{M}_- = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\flat = \tilde{Q}\},
+$$</p>
+<p>where $\tilde{Q}^\flat = -\bar{\tilde{Q}}^*$. Explicitly, a biquaternion is in $\mathbb{M}_-$ if and only if it has the form</p>
+<p>$$
+\tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The scalar part is purely imaginary, and the vector part is real. The subset $\mathbb{M}_-$ is a real vector space of dimension 4.</p>
+<p>The subscript $-$ refers to the fact that $\mathbb{M}_-$ is the eigenspace of the Hermitian conjugation $\dagger$ with eigenvalue $-1$. The complementary eigenspace $\mathbb{M}_+$ (with eigenvalue $+1$) is the Hermitian subspace, treated below.</p>
+<h3 id="properties_1">Properties</h3>
+<p><strong>Real vector space.</strong> $\mathbb{M}_-$ is a real vector space of dimension 4. A basis is $\{i e_0, e_1, e_2, e_3\}$.</p>
+<p><strong>Not a subalgebra.</strong> $\mathbb{M}_-$ is not closed under biquaternion multiplication. For example, $(i e_0) \circ (i e_0) = -e_0$, which is not in $\mathbb{M}_-$.</p>
+<p><strong>Quadratic form.</strong> The biquaternion norm form restricts to a real quadratic form on $\mathbb{M}_-$:</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = (i q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This quadratic form has signature $(3, 1)$ (or $(1, 3)$ depending on convention). It vanishes on a three-dimensional cone, the set of zero divisors in $\mathbb{M}_-$ (discussed in the division theory article). On the complement of this cone, the quadratic form is nonzero, and every element is invertible.</p>
+<p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{M}_-$ are in bijection with quadruples $(q'_0, q_1, q_2, q_3)$ of real numbers. We use the notation</p>
+<p>$$
+\tilde{X} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+$$</p>
+<p>for a general element of $\mathbb{M}_-$. The four real numbers $x_0, x_1, x_2, x_3$ are the <strong>coordinates</strong> of $\tilde{X}$ in the anti-Hermitian subspace.</p>
+<h3 id="functions-on-the-anti-hermitian-subspace">Functions on the Anti-Hermitian Subspace</h3>
+<p>A <strong>biquaternion-valued function on the anti-Hermitian subspace</strong> is a map</p>
+<p>$$
+\tilde{F} : \mathbb{M}_- \to \mathbb{B}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+$$</p>
+<p>Writing $\tilde{X} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$, the function $\tilde{F}$ is determined by four complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:</p>
+<p>$$
+\tilde{F}(\tilde{X}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
+$$</p>
+<h3 id="partial-derivatives-and-operators">Partial Derivatives and Operators</h3>
+<p>The partial derivatives, the gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, and the integral are all defined in the same way as on $\mathbb{H}_{\mathbb{B}}$. The formulas are identical. The only difference is the domain and the interpretation of the coordinates.</p>
+<h3 id="the-role-of-the-zero-divisor-cone">The Role of the Zero Divisor Cone</h3>
+<p>On $\mathbb{M}_-$, the zero divisors form a three-dimensional cone $\mathcal{C}$ defined by $x_0^2 = x_1^2 + x_2^2 + x_3^2$ (in the coordinates of $\mathbb{M}_-$). On the complement of the cone, the analysis is clean. On the cone itself, the function $\tilde{G}$ is undefined at the apex and singular on the rest of the cone, and the integral formulas require careful treatment.</p>
+<p>In the applications, one usually restricts to domains that do not intersect the cone, or that intersect it only at the boundary. The general theory is the same as on $\mathbb{H}_{\mathbb{B}}$ away from the cone.</p>
+<h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>Hermitian subspace</strong> $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation:</p>
+<p>$$
+\mathbb{M}_+ = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^\dagger = \tilde{Q}\}.
+$$</p>
+<p>Explicitly, a biquaternion is in $\mathbb{M}_+$ if and only if it has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+$$</p>
+<p>The scalar part is real, and the vector part is purely imaginary. The subset $\mathbb{M}_+$ is a real vector space of dimension 4.</p>
+<p>The subscript $+$ refers to the fact that $\mathbb{M}_+$ is the eigenspace of the Hermitian conjugation $\dagger$ with eigenvalue $+1$.</p>
+<h3 id="properties_2">Properties</h3>
+<p><strong>Real vector space.</strong> $\mathbb{M}_+$ is a real vector space of dimension 4. A basis is $\{e_0, i e_1, i e_2, i e_3\}$.</p>
+<p><strong>Not a subalgebra.</strong> $\mathbb{M}_+$ is not closed under biquaternion multiplication. For example, $(i e_1) \circ (i e_1) = -e_0$, which is not in $\mathbb{M}_+$.</p>
+<p><strong>Quadratic form.</strong> The biquaternion norm form restricts to a real quadratic form on $\mathbb{M}_+$:</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = q_0^2 + (i q'_1)^2 + (i q'_2)^2 + (i q'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2.
+$$</p>
+<p>This quadratic form has signature $(1, 3)$ (or $(3, 1)$ depending on convention). It is the mirror image of the form on $\mathbb{M}_-$: the roles of the scalar and the vector components are interchanged. It vanishes on a three-dimensional cone, the set of zero divisors in $\mathbb{M}_+$. On the complement of this cone, the quadratic form is nonzero, and every element is invertible.</p>
+<p><strong>Identification with $\mathbb{R}^4$.</strong> The elements of $\mathbb{M}_+$ are in bijection with quadruples $(q_0, q'_1, q'_2, q'_3)$ of real numbers. We use the notation</p>
+<p>$$
+\tilde{X} = x_0 e_0 + i x_1 e_1 + i x_2 e_2 + i x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+$$</p>
+<p>for a general element of $\mathbb{M}_+$. The four real numbers $x_0, x_1, x_2, x_3$ are the <strong>coordinates</strong> of $\tilde{X}$ in the Hermitian subspace.</p>
+<h3 id="functions-on-the-hermitian-subspace">Functions on the Hermitian Subspace</h3>
+<p>A <strong>biquaternion-valued function on the Hermitian subspace</strong> is a map</p>
+<p>$$
+\tilde{F} : \mathbb{M}_+ \to \mathbb{B}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
+$$</p>
+<p>Writing $\tilde{X} = x_0 e_0 + i x_1 e_1 + i x_2 e_2 + i x_3 e_3$, the function $\tilde{F}$ is determined by four complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$.</p>
+<h3 id="partial-derivatives-and-operators_1">Partial Derivatives and Operators</h3>
+<p>The partial derivatives, the gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, and the integral are all defined in the same way as on $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$. The formulas are identical. The only difference is the domain and the interpretation of the coordinates.</p>
+<h3 id="the-role-of-the-zero-divisor-cone_1">The Role of the Zero Divisor Cone</h3>
+<p>On $\mathbb{M}_+$, the zero divisors form a three-dimensional cone defined by $x_0^2 = x_1^2 + x_2^2 + x_3^2$ (in the coordinates of $\mathbb{M}_+$). On the complement of the cone, the analysis is clean. On the cone itself, the function $\tilde{G}$ is undefined at the apex and singular on the rest of the cone, and the integral formulas require careful treatment.</p>
+<p>The cone on $\mathbb{M}_+$ is the mirror image of the cone on $\mathbb{M}_-$: the roles of the scalar and the vector coordinates are interchanged, and the form of the cone is the same.</p>
+<h2 id="comparison-of-the-three-subspaces">Comparison of the Three Subspaces</h2>
+<p>The three subspaces are all real vector spaces of dimension 4, and all admit the same differential and integral operators. The differences are in the algebraic properties and in the interpretation of the coordinates.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$\mathbb{H}_{\mathbb{B}}$</th>
+<th>$\mathbb{M}_-$</th>
+<th>$\mathbb{M}_+$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definition</td>
+<td>Fixed-point set of $^*$</td>
+<td>Fixed-point set of $\flat$</td>
+<td>Fixed-point set of $\dagger$</td>
+</tr>
+<tr>
+<td>Basis</td>
+<td>$\{e_0, e_1, e_2, e_3\}$</td>
+<td>$\{i e_0, e_1, e_2, e_3\}$</td>
+<td>$\{e_0, i e_1, i e_2, i e_3\}$</td>
+</tr>
+<tr>
+<td>Scalar part</td>
+<td>Real</td>
+<td>Purely imaginary</td>
+<td>Real</td>
+</tr>
+<tr>
+<td>Vector part</td>
+<td>Real</td>
+<td>Real</td>
+<td>Purely imaginary</td>
+</tr>
+<tr>
+<td>Norm form</td>
+<td>$q_0^2 + q_1^2 + q_2^2 + q_3^2$</td>
+<td>$-(q'_0)^2 + q_1^2 + q_2^2 + q_3^2$</td>
+<td>$q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>$(4, 0)$</td>
+<td>$(3, 1)$</td>
+<td>$(1, 3)$</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>None</td>
+<td>Three-dimensional cone</td>
+<td>Three-dimensional cone</td>
+</tr>
+<tr>
+<td>Subalgebra</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Division algebra</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The key differences are:</p>
+<p><strong>Norm form.</strong> On $\mathbb{H}_{\mathbb{B}}$, the norm form is positive-definite. On $\mathbb{M}_-$ and $\mathbb{M}_+$, it is indefinite, with signatures $(3, 1)$ and $(1, 3)$ respectively. The two indefinite forms are mirror images of each other: the roles of the scalar and the vector coordinates are interchanged.</p>
+<p><strong>Zero divisors.</strong> On $\mathbb{H}_{\mathbb{B}}$, there are no zero divisors. On both $\mathbb{M}_-$ and $\mathbb{M}_+$, the zero divisors form a three-dimensional cone. The two cones are mirror images of each other.</p>
+<p><strong>Subalgebra structure.</strong> $\mathbb{H}_{\mathbb{B}}$ is a subalgebra of $\mathbb{B}$. Neither $\mathbb{M}_-$ nor $\mathbb{M}_+$ is a subalgebra.</p>
+<p><strong>Interpretation.</strong> The coordinates of $\mathbb{H}_{\mathbb{B}}$ are the four real components of a real quaternion. The coordinates of $\mathbb{M}_-$ are the imaginary scalar part and the three real vector components. The coordinates of $\mathbb{M}_+$ are the real scalar part and the three imaginary vector components. The three interpretations are related by multiplication by $i$ on the appropriate components.</p>
+<h2 id="relation-between-the-three-subspaces">Relation Between the Three Subspaces</h2>
+<p>The three subspaces are related by the conjugations of the biquaternion algebra.</p>
+<p><strong>Quaternion conjugation.</strong> The quaternion conjugation $\bar{\cdot}$ maps $\mathbb{H}_{\mathbb{B}}$ to itself, $\mathbb{M}_-$ to $\mathbb{M}_+$, and $\mathbb{M}_+$ to $\mathbb{M}_-$. So it interchanges the two indefinite subspaces.</p>
+<p><strong>Complex conjugation.</strong> The complex conjugation $^*$ maps $\mathbb{H}_{\mathbb{B}}$ to itself, $\mathbb{M}_-$ to itself (up to sign), and $\mathbb{M}_+$ to itself (up to sign).</p>
+<p><strong>Hermitian conjugation.</strong> The Hermitian conjugation $\dagger$ maps $\mathbb{M}_+$ to itself, $\mathbb{M}_-$ to itself, and $\mathbb{H}_{\mathbb{B}}$ to itself.</p>
+<p><strong>Intersections.</strong> The pairwise intersections are:</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R} e_0, \qquad \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R} e_0, \qquad \mathbb{M}_- \cap \mathbb{M}_+ = \{0\}.
+$$</p>
+<p>So the quaternion subspace intersects each of the indefinite subspaces in the real line, and the two indefinite subspaces intersect only at the origin.</p>
+<p><strong>Spans.</strong> The pairwise sums are:</p>
+<p>$$
+\mathbb{H}_{\mathbb{B}} + \mathbb{M}_- = \mathbb{B}, \qquad \mathbb{H}_{\mathbb{B}} + \mathbb{M}_+ = \mathbb{B}, \qquad \mathbb{M}_- + \mathbb{M}_+ = \mathbb{M}_+ \oplus \mathbb{M}_-.
+$$</p>
+<p>The first two sums span the whole algebra, and the third is the direct sum decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ given by the Hermitian decomposition.</p>
+<p><strong>Compatibility of the analysis.</strong> The differential and integral operators on the three subspaces are the same operators, with the same formulas. The difference is only in the domain and in the algebraic properties of the domain. So the analysis on the three subspaces is compatible: a function defined on a domain that intersects two or more subspaces can be analyzed on each subspace separately, and the results agree on the intersections.</p>
+<h2 id="summary-of-the-operators">Summary of the Operators</h2>
+<p>The following table summarizes the differential operators on the three subspaces. The formulas are identical on the three subspaces; the table is included for reference.</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Definition</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde{\nabla}$</td>
+<td>$\sum_{\mu=0}^{3} e_\mu \partial_\mu$</td>
+<td>Biquaternion-valued first-order operator</td>
+</tr>
+<tr>
+<td>$\bar{\tilde{\nabla}}$</td>
+<td>$e_0 \partial_0 - \sum_{k=1}^{3} e_k \partial_k$</td>
+<td>Quaternion conjugate of $\tilde{\nabla}$</td>
+</tr>
+<tr>
+<td>$\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$</td>
+<td>$\partial_0^2 + \Delta$</td>
+<td>Scalar (times $e_0$) second-order operator</td>
+</tr>
+<tr>
+<td>$\tilde{\nabla}^2$</td>
+<td>$\left(\partial_0^2 - \Delta\right) + 2\sum_k e_k \partial_0 \partial_k$</td>
+<td>Biquaternion-valued second-order operator</td>
+</tr>
+<tr>
+<td>$\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$</td>
+<td>$\left(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_k e_k(u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u})$</td>
+<td>Biquaternion-valued first-order operator</td>
+</tr>
+<tr>
+<td>$\int_\Omega \tilde{F} \, dV$</td>
+<td>$\sum_\mu \left(\int_\Omega F_\mu \, dV\right) e_\mu$</td>
+<td>Biquaternion-valued integral</td>
+</tr>
+<tr>
+<td>$\tilde{G}(\tilde{X})$</td>
+<td>$\bar{\tilde{X}}/\|\tilde{X}\|_E^4$</td>
+<td>Fundamental solution of $\tilde{\nabla}$</td>
+</tr>
+</tbody>
+</table>
+<p>The operators are the same on all three subspaces. The differences between the subspaces are in the algebraic properties of the domain, not in the operators themselves.</p>
+<h2 id="open-questions">Open Questions</h2>
+<p>The following questions are not answered in this article and are left for later work:</p>
+<ol>
+<li>
+<p><strong>The relation between the analyses on $\mathbb{M}_-$ and $\mathbb{M}_+$.</strong> The two subspaces are mirror images under quaternion conjugation. Is the analysis on $\mathbb{M}_+$ obtained from the analysis on $\mathbb{M}_-$ by conjugation, or does it differ in an essential way?</p>
+</li>
+<li>
+<p><strong>The analysis on the complex subspace.</strong> The complex subspace $\mathbb{C}_{\mathbb{B}}$ is two-dimensional, and it carries the ordinary complex analysis. How does the biquaternion analysis on $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, or $\mathbb{M}_+$ restrict to $\mathbb{C}_{\mathbb{B}}$?</p>
+</li>
+<li>
+<p><strong>The analysis on the full algebra.</strong> Can the analysis be extended from the four-dimensional subspaces to the full eight-dimensional algebra $\mathbb{B}$? If so, what replaces the four-dimensional operators?</p>
+</li>
+<li>
+<p><strong>The role of the zero divisor cones.</strong> On $\mathbb{M}_-$ and $\mathbb{M}_+$, the zero divisors form three-dimensional cones. What is the structure of functions that are defined on the cones, or that have singularities on the cones?</p>
+</li>
+<li>
+<p><strong>The integral formulas on the three subspaces.</strong> Do the Cauchy integral formulas on $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, and $\mathbb{M}_+$ have the same form, or do they differ in a way that reflects the difference in the norm form?</p>
+</li>
+<li>
+<p><strong>The interaction between the subspaces.</strong> If a function is defined on two of the subspaces, how do the analyses on the two subspaces interact?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The natural four-dimensional subspaces of the biquaternion algebra are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-Hermitian subspace $\mathbb{M}_-$, and the Hermitian subspace $\mathbb{M}_+$.</p>
+<p>The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation. It is a subalgebra of $\mathbb{B}$ isomorphic to the quaternion algebra $\mathbb{H}$, with a positive-definite norm form and no zero divisors. The analysis on $\mathbb{H}_{\mathbb{B}}$ is clean everywhere.</p>
+<p>The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation. It is a real vector space of dimension 4, but not a subalgebra of $\mathbb{B}$. Its norm form is indefinite of signature $(3, 1)$, and its zero divisors form a three-dimensional cone. The analysis on $\mathbb{M}_-$ is clean away from the cone.</p>
+<p>The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation. It is a real vector space of dimension 4, but not a subalgebra of $\mathbb{B}$. Its norm form is indefinite of signature $(1, 3)$, and its zero divisors form a three-dimensional cone. The analysis on $\mathbb{M}_+$ is clean away from the cone.</p>
+<p>The three subspaces share the same differential and integral operators: the gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, and the integral with the fundamental solution $\tilde{G}$. The differences between the subspaces are in the algebraic properties of the domain, not in the operators.</p>
+<p>The three subspaces are related by the conjugations of the biquaternion algebra. The quaternion conjugation interchanges $\mathbb{M}_-$ and $\mathbb{M}_+$ and fixes $\mathbb{H}_{\mathbb{B}}$. The complex conjugation fixes $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$ and $\mathbb{M}_+$ (up to sign). The Hermitian conjugation fixes $\mathbb{M}_+$ and $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$.</p>
+<p>The choice of which subspace to use depends on the application. The quaternion subspace is natural when the positive-definite form is appropriate; the anti-Hermitian and Hermitian subspaces are natural when the indefinite form is appropriate. The two indefinite subspaces are mirror images, and the choice between them is a matter of convention.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation.</li>
+<li>William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.</li>
+<li>R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", <em>Commentarii Mathematici Helvetici</em> <strong>7</strong> (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra perspective.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
+<li>John Ryan, <em>Clifford Algebras in Analysis and Related Topics</em> (CRC Press, 1996), for the analytic theory of Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

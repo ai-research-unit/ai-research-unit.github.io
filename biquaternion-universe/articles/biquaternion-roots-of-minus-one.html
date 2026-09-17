@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="biquaternion-roots-of-minus-one">Biquaternion Roots of Minus One</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article determines the roots of $-1$ in the biquaternion algebra $\mathbb{B}$, that is, the elements $\xi \in \mathbb{B}$ satisfying</p>
+<p>$$
+\xi^2 = -1.
+$$</p>
+<p>It follows the article on biquaternion zero divisors, where the classification of the roots is used to classify the idempotents, and it follows the article on biquaternion norm and invertibility, where the norm form and the invertibility criterion are established. The goal here is to state the classification precisely and to prove it.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the article on biquaternion algebra, together with its four conjugations and its four fixed-point subspaces.</p>
+<p>Throughout this article, the quaternion basis is written $e_0 = 1, e_1, e_2, e_3$, and the scalar imaginary is written $i$, so that it does not collide with the quaternion units. A general biquaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C}.
+$$</p>
+<p>The quaternion conjugate is denoted $\bar{\tilde{Q}}$, the complex conjugate is denoted $\tilde{Q}^*$, and the Hermitian conjugate is denoted $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$.</p>
+<h2 id="the-problem">The Problem</h2>
+<h3 id="statement">Statement</h3>
+<p>A <strong>root of $-1$</strong> in $\mathbb{B}$ is an element $\xi \in \mathbb{B}$ satisfying</p>
+<p>$$
+\xi^2 = -1.
+$$</p>
+<p>The problem is to find all such elements.</p>
+<h3 id="reduction-to-the-pure-case">Reduction to the Pure Case</h3>
+<p>The first observation is that a root of $-1$ cannot have a nonzero scalar part. Indeed, write $\xi = A e_0 + \mathbf{X}$ with $A \in \mathbb{C}$ and $\mathbf{X}$ a pure biquaternion. Then</p>
+<p>$$
+\xi^2 = (A^2 - (\mathbf{X}, \mathbf{X})) e_0 + 2 A \mathbf{X}.
+$$</p>
+<p>For this to equal $-1 = -e_0$, the vector part must vanish:</p>
+<p>$$
+2 A \mathbf{X} = 0.
+$$</p>
+<p>If $\mathbf{X} \neq 0$, then $A = 0$, because the product of a nonzero complex scalar with a nonzero pure biquaternion is nonzero. The reason is that the pure biquaternions form a free module over $\mathbb{C}$, and multiplication by a nonzero complex scalar is injective on this module. If $\mathbf{X} = 0$, then $\xi = A e_0$ and $\xi^2 = A^2 e_0 = -e_0$, so $A^2 = -1$, i.e. $A = \pm i$. So the roots of $-1$ are either:</p>
+<ul>
+<li><strong>Scalar roots:</strong> $\xi = \pm i$.</li>
+<li><strong>Pure roots:</strong> $\xi$ pure, i.e. $\xi = \mathbf{X}$, with $\xi^2 = -1$.</li>
+</ul>
+<p>The scalar roots are the trivial roots. The pure roots are the non-trivial roots, and they are the main subject of this article.</p>
+<h3 id="the-pure-roots">The Pure Roots</h3>
+<p>A pure biquaternion has the form</p>
+<p>$$
+\xi = X_1 e_1 + X_2 e_2 + X_3 e_3, \qquad X_1, X_2, X_3 \in \mathbb{C}.
+$$</p>
+<p>The condition $\xi^2 = -1$ becomes</p>
+<p>$$
+X_1^2 + X_2^2 + X_3^2 = 1.
+$$</p>
+<p>Indeed, for a pure biquaternion, the square is</p>
+<p>$$
+\xi^2 = -(X_1^2 + X_2^2 + X_3^2) e_0,
+$$</p>
+<p>as computed in the article on biquaternion zero divisors, so $\xi^2 = -e_0$ if and only if the sum of squares is $1$.</p>
+<p>So the pure roots of $-1$ are the pure biquaternions whose three complex components have a sum of squares equal to $1$. This is a single complex equation in three complex unknowns, i.e. two real equations in six real unknowns, so the solution set is a four-real-dimensional submanifold of the six-real-dimensional space of pure biquaternions.</p>
+<h2 id="the-classification">The Classification</h2>
+<h3 id="statement_1">Statement</h3>
+<p><strong>Theorem.</strong> The roots of $-1$ in $\mathbb{B}$ are exactly:</p>
+<ol>
+<li><strong>The non-trivial roots:</strong> $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.</li>
+<li><strong>The trivial root:</strong> $\xi = \pm i$.</li>
+<li><strong>The real roots:</strong> $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.</li>
+</ol>
+<h3 id="remarks">Remarks</h3>
+<p>The three families are distinguished by the value of the real and imaginary parts of $\xi$.</p>
+<ul>
+<li>The <strong>non-trivial roots</strong> have both real and imaginary parts nonzero. They are the generic roots, and they use all four basis elements $e_0, e_1, e_2, e_3$ (via the scalar imaginary $i$).</li>
+<li>The <strong>trivial root</strong> $\xi = \pm i$ is the scalar imaginary itself. It is not pure in the biquaternion sense, because its imaginary part is the scalar $i$, which has zero vector part.</li>
+<li>The <strong>real roots</strong> $\xi = \pm \mu$ are unit pure real quaternions. They lie in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and they are the roots of $-1$ that already exist in $\mathbb{H}$.</li>
+</ul>
+<p>The real roots are the case $d = 0$ of the non-trivial form, with $b = \pm 1$. The trivial root is the case $b = 0$ of the non-trivial form, with $d = \pm 1$ and $\nu = 1$ (the unit scalar, which is not a pure quaternion but is the degenerate limit of the construction). So the three families can be combined into the single form</p>
+<p>$$
+\xi = b\mu + d\nu i, \qquad b^2 - d^2 = 1,
+$$</p>
+<p>where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, or one of the degenerate cases $\mu = 1$ or $\nu = 1$.</p>
+<h3 id="parametrization-by-hyperbolic-functions">Parametrization by Hyperbolic Functions</h3>
+<p>The constraint $b^2 - d^2 = 1$ is the equation of a hyperbola in the $(b, d)$-plane. It is parametrized by</p>
+<p>$$
+b = \cosh t, \qquad d = \sinh t, \qquad t \in \mathbb{R},
+$$</p>
+<p>or by</p>
+<p>$$
+b = -\cosh t, \qquad d = \sinh t, \qquad t \in \mathbb{R}.
+$$</p>
+<p>So the non-trivial roots can be written</p>
+<p>$$
+\xi = \cosh t \, \mu + \sinh t \, \nu i, \qquad \mu \perp \nu, \quad |\mu| = |\nu| = 1, \quad t \in \mathbb{R},
+$$</p>
+<p>up to the sign of the whole expression. This is the parametrization given by Sangwine. The parameter $t$ is the <strong>rapidity</strong> of the root, in analogy with the rapidity of a Lorentz boost.</p>
+<h2 id="proof-of-the-classification">Proof of the Classification</h2>
+<h3 id="the-proof-strategy">The Proof Strategy</h3>
+<p>The proof is by enumeration of the terms obtained when an arbitrary biquaternion is squared. Write the arbitrary biquaternion in the form</p>
+<p>$$
+\tilde{Q} = a e_0 + b\mu + c i + d\nu i,
+$$</p>
+<p>where $a, b, c, d \in \mathbb{R}$ and $\mu, \nu$ are unit pure real quaternions. If the vector part of $\tilde{Q}$ vanishes, we take $\mu$ arbitrary and $b = 0$; if the imaginary part of the vector part vanishes, we take $\nu$ arbitrary and $d = 0$. This form covers all biquaternions.</p>
+<p>Compute $\tilde{Q}^2$ by expanding the product. The 16 terms are organized in the following table, where the entry in row $r$ and column $c$ is the product of the $r$-th term and the $c$-th term of $\tilde{Q}$:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$a$</th>
+<th>$b\mu$</th>
+<th>$c i$</th>
+<th>$d\nu i$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$a$</td>
+<td>$a^2$</td>
+<td>$ab\mu$</td>
+<td>$ac i$</td>
+<td>$ad\nu i$</td>
+</tr>
+<tr>
+<td>$b\mu$</td>
+<td>$ab\mu$</td>
+<td>$-b^2$</td>
+<td>$bc\mu i$</td>
+<td>$bd\mu\nu i$</td>
+</tr>
+<tr>
+<td>$c i$</td>
+<td>$ac i$</td>
+<td>$bc\mu i$</td>
+<td>$-c^2$</td>
+<td>$cd\nu i$</td>
+</tr>
+<tr>
+<td>$d\nu i$</td>
+<td>$ad\nu i$</td>
+<td>$bd\nu\mu i$</td>
+<td>$cd\nu i$</td>
+<td>$d^2$</td>
+</tr>
+</tbody>
+</table>
+<p>The 16 terms fall into three classes:</p>
+<ul>
+<li><strong>Real terms.</strong> The diagonal entries $a^2$, $-b^2$, $-c^2$, $d^2$ are the only real terms. Their sum must be $-1$:</li>
+</ul>
+<p>$$
+a^2 - b^2 - c^2 + d^2 = -1. \tag{D}
+$$</p>
+<ul>
+<li><strong>Pure real quaternion terms.</strong> The off-diagonal entries $ab\mu$ appear twice, in positions $(a, b\mu)$ and $(b\mu, a)$, and they are the only pure real quaternion terms. Since they have the same sign, their sum must be zero:</li>
+</ul>
+<p>$$
+2 ab \mu = 0. \tag{O}
+$$</p>
+<ul>
+<li><strong>Terms containing $i$.</strong> All the remaining terms contain $i$ and must sum to zero:</li>
+</ul>
+<p>$$
+2 ac i + 2 ad \nu i + 2 bc \mu i + 2 bd (\mu \nu + \nu \mu) i + 2 cd \nu i = 0. \tag{I}
+$$</p>
+<h3 id="case-analysis">Case Analysis</h3>
+<p>From $(O)$, either $a = 0$ or $b = 0$.</p>
+<p><strong>Case $a = 0$.</strong> Then $(D)$ becomes $b^2 + c^2 - d^2 = 1$, and $(I)$ becomes</p>
+<p>$$
+2 bc \mu i + 2 bd (\mu \nu + \nu \mu) i + 2 cd \nu i = 0.
+$$</p>
+<p>For this to hold, each coefficient must vanish separately when $\mu$, $\nu$, and $\mu \nu + \nu \mu$ are linearly independent (which they are when $\mu$ and $\nu$ are not parallel). So $bc = 0$, $cd = 0$, and either $bd = 0$ or $\mu \perp \nu$.</p>
+<ul>
+<li>If $c = 0$: then $b^2 - d^2 = 1$. If $d = 0$, then $b = \pm 1$ and $\xi = \pm \mu$, giving the real roots. If $b, d \neq 0$, then $\mu \perp \nu$, giving $\xi = b\mu + d\nu i$ with $b^2 - d^2 = 1$, the non-trivial roots.</li>
+<li>If $d = 0$: then $b^2 + c^2 = 1$. If $b = 0$, then $c = \pm 1$ and $\xi = \pm i$, giving the trivial root. If $c = 0$, then $b = \pm 1$ and $\xi = \pm \mu$, giving the real roots.</li>
+</ul>
+<p><strong>Case $b = 0$.</strong> Then $(D)$ becomes $a^2 - c^2 + d^2 = -1$, i.e. $c^2 - a^2 - d^2 = 1$, and $(I)$ becomes</p>
+<p>$$
+2 ac i + 2 ad \nu i + 2 cd \nu i = 0.
+$$</p>
+<p>So $ac = 0$, $ad = 0$, $cd = 0$.</p>
+<ul>
+<li>If $a = 0$: then $c^2 - d^2 = 1$. If $d = 0$, then $c = \pm 1$ and $\xi = \pm i$, giving the trivial root. If $c = 0$, then $d = \pm 1$ and $\xi = \pm \nu i$. But $(\nu i)^2 = \nu^2 i^2 = (-1)(-1) = 1$, so $\xi = \pm \nu i$ is a root of $+1$, not of $-1$. So this subcase gives no roots of $-1$, and it is the reason the case $b = 0$ contributes only the trivial root and not the real roots.</li>
+<li>If $c = 0$: then $a^2 + d^2 = -1$, which has no real solution.</li>
+<li>If $d = 0$: then $c^2 - a^2 = 1$. If $a = 0$, then $c = \pm 1$ and $\xi = \pm i$, giving the trivial root. If $c = 0$, then $a^2 = -1$, which has no real solution.</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>The only solutions are:</p>
+<ul>
+<li>The non-trivial roots $\xi = b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$.</li>
+<li>The trivial root $\xi = \pm i$.</li>
+<li>The real roots $\xi = \pm \mu$.</li>
+</ul>
+<p>This is the classification stated in the theorem. $\square$</p>
+<h2 id="the-relation-to-the-idempotents">The Relation to the Idempotents</h2>
+<h3 id="the-idempotent-construction">The Idempotent Construction</h3>
+<p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$. Recall from the article on biquaternion zero divisors that every idempotent is of the form</p>
+<p>$$
+\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+$$</p>
+<p>where $\xi$ is a root of $-1$.</p>
+<p>Substituting the classification of $\xi$:</p>
+<ul>
+<li>For the trivial root $\xi = \pm i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde{P} = 0$ or $\tilde{P} = e_0$. These are the trivial idempotents.</li>
+<li>For the real root $\xi = \pm \mu$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. These are the idempotents that lie in the subalgebra spanned by $e_0$ and one of the quaternion units, after complexification.</li>
+<li>For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These are the idempotents that use all four basis elements $e_0, e_1, e_2, e_3$.</li>
+</ul>
+<h3 id="the-correspondence">The Correspondence</h3>
+<p>The correspondence between roots of $-1$ and idempotents is as follows. The map</p>
+<p>$$
+\xi \longmapsto \{\tilde{P}_+, \tilde{P}_-\}, \qquad \tilde{P}_\pm = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
+$$</p>
+<p>sends a root $\xi$ to the unordered pair of its two associated idempotents. This map is not injective: the roots $\xi$ and $-\xi$ give the same unordered pair, because</p>
+<p>$$
+\tfrac{1}{2} e_0 \pm \tfrac{1}{2} (-\xi) i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} \xi i,
+$$</p>
+<p>so the pair $\{\tilde{P}_+, \tilde{P}_-\}$ is the same. So the map is two-to-one from roots to unordered pairs of idempotents. Equivalently, the idempotents are in bijection with the roots of $-1$ modulo the sign $\xi \sim -\xi$, with the additional sign choice $\pm$ in the construction.</p>
+<p>The roots of $-1$ are not idempotents, and they are not zero divisors: if $\xi^2 = -1$, then $N(\xi) = -1 \neq 0$, so $\xi$ is invertible, and it lies in the group of units $\mathbb{B}^\times$ studied in the article on biquaternion norm and invertibility. The idempotents, by contrast, are zero divisors, as shown in the article on biquaternion zero divisors.</p>
+<h3 id="the-idempotent-as-a-projection">The Idempotent as a Projection</h3>
+<p>An idempotent $\tilde{P}$ is a <strong>projection</strong>: it satisfies $\tilde{P}^2 = \tilde{P}$, and its complementary idempotent is $e_0 - \tilde{P}$. The two idempotents $\tilde{P}$ and $e_0 - \tilde{P}$ are orthogonal: $\tilde{P} (e_0 - \tilde{P}) = 0$. So the pair of idempotents associated with a root $\xi$ gives a direct sum decomposition</p>
+<p>$$
+\mathbb{B} = \tilde{P} \mathbb{B} \oplus (e_0 - \tilde{P}) \mathbb{B},
+$$</p>
+<p>where $\tilde{P} \mathbb{B}$ and $(e_0 - \tilde{P}) \mathbb{B}$ are the two ideals of $\mathbb{B}$ corresponding to the two idempotents. Each ideal is isomorphic to $\mathbb{H}_{\mathbb{B}}$ as a left module, and the decomposition is the algebraic content of the idempotent construction.</p>
+<h2 id="the-relation-to-the-zero-divisors">The Relation to the Zero Divisors</h2>
+<h3 id="the-idempotents-as-zero-divisors">The Idempotents as Zero Divisors</h3>
+<p>Every non-trivial idempotent is a zero divisor, because</p>
+<p>$$
+\tilde{P} (e_0 - \tilde{P}) = \tilde{P} - \tilde{P}^2 = 0,
+$$</p>
+<p>and both $\tilde{P}$ and $e_0 - \tilde{P}$ are nonzero unless $\tilde{P}$ is $0$ or $e_0$. So the non-trivial idempotents are zero divisors, and they lie in the zero divisor set $\mathcal{Z}$ studied in the article on biquaternion zero divisors.</p>
+<h3 id="the-roots-as-invertible-elements">The Roots as Invertible Elements</h3>
+<p>A root of $-1$ is not a zero divisor, because $\xi^2 = -1$ implies $N(\xi) = -1 \neq 0$, so $\xi$ is invertible. The roots of $-1$ therefore lie in the group of units $\mathbb{B}^\times$ studied in the article on biquaternion norm and invertibility, and they form a four-real-dimensional submanifold of $\mathbb{B}^\times$.</p>
+<h3 id="the-cones">The Cones</h3>
+<p>The roots of $-1$ form a four-dimensional submanifold of the six-dimensional space of pure biquaternions, and the idempotents form a family of two-dimensional submanifolds (one for each root, parametrized by the sign $\pm$) in the seven-dimensional zero divisor set. The relation between the two is the construction $\xi \mapsto \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.</p>
+<h2 id="the-roots-of-plus-one">The Roots of Plus One</h2>
+<p>For completeness, we note the analogous problem for $+1$. A <strong>root of $+1$</strong> is an element $\eta \in \mathbb{B}$ satisfying $\eta^2 = 1$. The roots of $+1$ are related to the roots of $-1$ by</p>
+<p>$$
+\eta = \xi i,
+$$</p>
+<p>where $\xi$ is a root of $-1$. Indeed, $(\xi i)^2 = \xi^2 i^2 = (-1)(-1) = 1$. So the classification of the roots of $+1$ follows immediately from the classification of the roots of $-1$:</p>
+<ul>
+<li><strong>Non-trivial roots of $+1$:</strong> $\eta = b\mu i + d\nu i^2 = b\mu i - d\nu$, with $b^2 - d^2 = 1$ and $\mu \perp \nu$.</li>
+<li><strong>Trivial roots of $+1$:</strong> $\eta = \pm 1$ (from $\xi = \pm i$). These are the only roots of $+1$ that lie in the center $\mathbb{C}$.</li>
+<li><strong>Real roots of $+1$:</strong> $\eta = \pm \mu i$, where $\mu$ is a unit pure real quaternion.</li>
+</ul>
+<p>The roots of $+1$ are not used in the classification of the idempotents, but they appear in the theory of the biquaternion exponential and in the theory of the biquaternion logarithm.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary</td>
+</tr>
+<tr>
+<td>$\xi$</td>
+<td>Root of $-1$</td>
+</tr>
+<tr>
+<td>$\eta$</td>
+<td>Root of $+1$</td>
+</tr>
+<tr>
+<td>$\mu, \nu$</td>
+<td>Unit pure real quaternions</td>
+</tr>
+<tr>
+<td>$b, d$</td>
+<td>Real parameters with $b^2 - d^2 = 1$</td>
+</tr>
+<tr>
+<td>$t$</td>
+<td>Rapidity parameter</td>
+</tr>
+<tr>
+<td>$\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$</td>
+<td>Idempotent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary">Summary</h2>
+<p>The roots of $-1$ in the biquaternion algebra are exactly:</p>
+<ol>
+<li>The non-trivial roots $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.</li>
+<li>The trivial root $\xi = \pm i$.</li>
+<li>The real roots $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.</li>
+</ol>
+<p>The proof is by enumeration of the 16 terms in the square of an arbitrary biquaternion, grouped into real terms, pure real quaternion terms, and terms containing $i$. The analysis of the constraints gives the three families.</p>
+<p>The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The idempotents are zero divisors, and they are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.</p>
+<p>The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the biquaternions.</li>
+<li>S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", <em>Advances in Applied Clifford Algebras</em> <strong>16</strong> (2006) 63–68, for the original classification.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", <em>Advances in Applied Clifford Algebras</em> <strong>20</strong> (2010) 401–416, for the relation to the idempotents and the zero divisors.</li>
+<li>S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", <em>Advances in Applied Clifford Algebras</em> <strong>21</strong> (2011) 607–636, for the representation theory and the constraint verification.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

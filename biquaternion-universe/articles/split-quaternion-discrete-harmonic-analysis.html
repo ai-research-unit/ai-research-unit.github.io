@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="split-quaternion-discrete-harmonic-analysis">Split-Quaternion Discrete Harmonic Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces harmonic analysis for split-quaternion-valued sequences. It follows the elementary functions article, which defined the split quaternion exponential, and it uses the division theory articles, which characterized the zero divisors as the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$.</p>
+<p>The treatment is purely mathematical. The goal is to define the discrete split-quaternion Fourier transform, establish its basic properties, show how it decomposes into ordinary complex Fourier transforms via the idempotent decomposition, and identify the points where the split quaternion structure creates genuinely new phenomena. The continuous analogue is the subject of the companion article on split quaternion continuous harmonic analysis.</p>
+<p>The key structural fact is the <strong>idempotent decomposition</strong>: the split quaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$ commute with everything. So every power-series function of a split quaternion, including the Fourier kernel, decomposes into two copies of the corresponding quaternion function, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.</p>
+<p>Unlike the biquaternion case, the split quaternion Fourier kernel is <strong>not</strong> defined by a root of $-1$. The split complex unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $e^{j\theta} = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split quaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.</p>
+<p>Throughout, a split quaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p>The <strong>idempotent components</strong> of $\tilde{Q}$ are the real quaternions</p>
+<p>$$
+\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
+$$</p>
+<p>The idempotent decomposition is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$, with $e_\pm = \tfrac{1}{2}(1 \pm j)$.</p>
+<p><strong>Notation.</strong> To avoid collision with the standard basis $\{e_0, e_1, e_2, e_3\}$ and with the split complex unit $j$, the root of $-1$ used in the Fourier kernel of each idempotent component is denoted $\rho$ throughout. This is a local convention; the roots themselves are the objects classified in the article on split quaternion roots of minus one.</p>
+<h2 id="the-fourier-kernel">The Fourier Kernel</h2>
+<h3 id="definition">Definition</h3>
+<p>Fix a root $\rho$ of $-1$ in the quaternion algebra $\mathbb{H}$, i.e., an element $\rho \in \mathbb{H}$ with</p>
+<p>$$
+\rho^2 = -1.
+$$</p>
+<p>The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions, i.e., the elements of the form $\rho = \mu$ with $\mu \in \mathbb{R}^3_{\mathbb{H}}$ and $|\mu| = 1$.</p>
+<p>The <strong>split quaternion Fourier kernel</strong> of length $N$ is the function</p>
+<p>$$
+W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right), \qquad n, u \in \{0, 1, \ldots, N-1\},
+$$</p>
+<p>where the exponential is the split quaternion exponential and $\rho$ is viewed as an element of $\mathbb{H}_{\mathbb{D}}$ via the embedding $\mathbb{H} \hookrightarrow \mathbb{H}_{\mathbb{D}}$.</p>
+<p>In the idempotent basis, the kernel decomposes:</p>
+<p>$$
+W_N(n, u) = \exp\left(-2\pi \rho \frac{nu}{N}\right) e_+ + \exp\left(-2\pi \rho \frac{nu}{N}\right) e_-,
+$$</p>
+<p>because the same root $\rho$ is used in both components. The kernel is the same in each idempotent component, so the split quaternion kernel is the diagonal embedding of the quaternion kernel.</p>
+<p>Since $\rho^2 = -1$, the kernel takes the closed form</p>
+<p>$$
+W_N(n, u) = \cos\left(2\pi \frac{nu}{N}\right) e_0 - \sin\left(2\pi \frac{nu}{N}\right) \rho,
+$$</p>
+<p>where the cosine and sine are the ordinary real trigonometric functions applied to the real argument $2\pi nu/N$. The kernel is therefore a unit quaternion in the sense that its quaternion norm is $e_0$:</p>
+<p>$$
+N(W_N(n, u)) = \cos^2\left(2\pi \frac{nu}{N}\right) + \sin^2\left(2\pi \frac{nu}{N}\right) = 1.
+$$</p>
+<p>In particular, the kernel is always invertible, regardless of the choice of root and the values of $n, u$.</p>
+<h3 id="the-condition-on-the-root">The Condition on the Root</h3>
+<p>A quaternion $\rho$ satisfies $\rho^2 = -1$ if and only if it is a pure real quaternion of unit norm:</p>
+<p>$$
+\rho \in \mathbb{R}^3_{\mathbb{H}}, \qquad |\rho| = 1.
+$$</p>
+<p>So the roots of $-1$ in the quaternion algebra form the unit two-sphere $\mathbb{S}^2$ in the three-dimensional space of pure real quaternions.</p>
+<p>The choice of root $\rho$ is not neutral, but the resulting transforms for different choices of $\rho$ are related by conjugation in the quaternion algebra. Specifically, if $\rho' = u \rho u^{-1}$ for some unit quaternion $u$, then the corresponding kernels are related by conjugation, and the transforms are equivalent up to a change of basis.</p>
+<h3 id="the-choice-of-root">The Choice of Root</h3>
+<p>The choice of the root $\rho$ determines the <strong>axis</strong> of the Fourier transform, i.e., the direction in the space of pure quaternions along which the transform decomposes the signal. Different choices of $\rho$ give different decompositions, and the transforms are related by conjugation.</p>
+<p>There are three natural choices:</p>
+<p><strong>$\rho = e_1$.</strong> The kernel is the ordinary complex exponential in the $e_1$ direction, embedded in the quaternion algebra. The transform decomposes the signal into components along the $e_1$ axis.</p>
+<p><strong>$\rho = e_2$.</strong> Similarly, with the $e_2$ axis.</p>
+<p><strong>$\rho = e_3$.</strong> Similarly, with the $e_3$ axis.</p>
+<p>The three choices are related by the quaternion multiplication, and they correspond to three different but equivalent decompositions of the signal.</p>
+<h3 id="the-kernel-in-the-split-complex-subspace">The Kernel in the Split Complex Subspace</h3>
+<p>If the signal takes values in the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., if all coefficients are split complex scalars), then the kernel acts on each coefficient separately. The kernel is the quaternion kernel $\cos\theta - \sin\theta \rho$, and it multiplies the split complex coefficients. Since the root $\rho$ is a real quaternion, it commutes with the split complex coefficients, and the transform reduces to the ordinary complex Fourier transform applied to each of the four complex coefficients (after splitting into real and split parts).</p>
+<h2 id="the-discrete-transform-pair">The Discrete Transform Pair</h2>
+<h3 id="definition_1">Definition</h3>
+<p>Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$ be a split-quaternion-valued sequence. The <strong>discrete split-quaternion Fourier transform</strong> of $f$ is the sequence $F : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$ defined by</p>
+<p>$$
+F[u] = \sum_{n=0}^{N-1} W_N(n, u) f[n], \qquad u \in \{0, 1, \ldots, N-1\},
+$$</p>
+<p>where $W_N(n, u)$ is the kernel defined above. The <strong>inverse transform</strong> is</p>
+<p>$$
+f[n] = \frac{1}{N} \sum_{u=0}^{N-1} W_N(n, u)^{-1} F[u], \qquad n \in \{0, 1, \ldots, N-1\}.
+$$</p>
+<p>Since the kernel is a unit quaternion, its inverse is its quaternion conjugate:</p>
+<p>$$
+W_N(n, u)^{-1} = \overline{W_N(n, u)} = \cos\left(2\pi \frac{nu}{N}\right) e_0 + \sin\left(2\pi \frac{nu}{N}\right) \rho.
+$$</p>
+<p>So the inverse transform is</p>
+<p>$$
+f[n] = \frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} F[u], \qquad n \in \{0, 1, \ldots, N-1\}.
+$$</p>
+<p>The placement of the kernel on the <strong>left</strong> of $f[n]$ is a choice. An alternative transform has the kernel on the right:</p>
+<p>$$
+F[u] = \sum_{n=0}^{N-1} f[n] \, W_N(n, u).
+$$</p>
+<p>The two transforms are closely related: the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel.</p>
+<h3 id="invertibility">Invertibility</h3>
+<p>The invertibility of the transform depends on the properties of the kernel and of the signal.</p>
+<p><strong>The kernel has unit norm.</strong> For every $n$ and $u$, the kernel $W_N(n, u)$ satisfies $N(W_N(n, u)) = e_0$, as shown above. So the kernel is always invertible.</p>
+<p><strong>The signal may have vanishing norm.</strong> A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor, and it is not necessarily recoverable from the transform. The zero divisor set is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, described in the article on split quaternion zero divisors.</p>
+<p><strong>Theorem (invertibility).</strong> If every sample $f[n]$ has non-vanishing norm form, then the transform is invertible: the inverse formula reproduces $f[n]$ for every $n$.</p>
+<p><strong>Proof.</strong> Under the hypothesis, each $f[n]$ is invertible. The transform is a finite sum of products of invertible elements, and the inverse formula is verified by direct computation:</p>
+<p>$$
+\frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} F[u] = \frac{1}{N} \sum_{u=0}^{N-1} \overline{W_N(n, u)} \sum_{m=0}^{N-1} W_N(m, u) f[m] = \frac{1}{N} \sum_{m=0}^{N-1} \left(\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u)\right) f[m].
+$$</p>
+<p>The inner sum is the standard orthogonality relation:</p>
+<p>$$
+\sum_{u=0}^{N-1} \overline{W_N(n, u)} W_N(m, u) = \begin{cases} N e_0 & \text{if } n = m, \\ 0 & \text{if } n \neq m, \end{cases}
+$$</p>
+<p>which holds because the kernel is the ordinary complex kernel in the direction $\rho$, and the orthogonality is the standard one. So the double sum reduces to $f[n]$. $\square$</p>
+<p><strong>The transform is not invertible on signals containing zero-divisor samples.</strong> If some $f[n]$ is a zero divisor, the inverse may not reproduce it. The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.</p>
+<h3 id="invertibility-in-the-idempotent-basis">Invertibility in the Idempotent Basis</h3>
+<p>The invertibility condition is cleaner in the idempotent basis. Writing $f[n] = f_+[n] e_+ + f_-[n] e_-$ with $f_\pm[n] \in \mathbb{H}$, the sample $f[n]$ is invertible if and only if both components $f_+[n]$ and $f_-[n]$ are nonzero. So the transform is invertible on a signal if and only if, for every $n$, both idempotent components of $f[n]$ are nonzero.</p>
+<p>This is a <strong>linear</strong> condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case. The reason is that the split quaternion algebra is semisimple, and the invertibility criterion is the pair of the invertibility criteria in the two quaternion components.</p>
+<h3 id="symmetry-of-the-spectrum">Symmetry of the Spectrum</h3>
+<p>For a signal $f$ that takes values in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (i.e., all coefficients are real) and a root $\rho$, the spectrum satisfies a <strong>conjugate symmetry</strong> analogous to the Hermitian symmetry of the ordinary Fourier transform of a real signal.</p>
+<p><strong>Theorem (conjugate symmetry).</strong> Let $f : \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ be a real quaternion-valued signal, and let $F$ be its discrete split-quaternion Fourier transform with respect to a root $\rho$. Then</p>
+<p>$$
+F[N-u] = \overline{F[u]}, \qquad u = 1, \ldots, N-1.
+$$</p>
+<p><strong>Proof.</strong> The proof uses the reality of $f$, i.e., $\overline{f[n]} = f[n]$ for every $n$, and the identity</p>
+<p>$$
+\overline{W_N(n, N-u)} = W_N(n, u),
+$$</p>
+<p>which follows from the closed form of the kernel and the parity of the cosine and sine. Then</p>
+<p>$$
+F[N-u] = \sum_{n=0}^{N-1} W_N(n, N-u) f[n] = \sum_{n=0}^{N-1} \overline{W_N(n, u)} \overline{f[n]} = \overline{\sum_{n=0}^{N-1} W_N(n, u) f[n]} = \overline{F[u]}.
+$$</p>
+<p>$\square$</p>
+<p>The symmetry is the split quaternion analogue of the Hermitian symmetry $F[-u] = F[u]^*$ of the ordinary Fourier transform of a real signal. It is the basis for reconstructing a real signal from half of its spectrum.</p>
+<h2 id="factorization-into-complex-fourier-transforms">Factorization into Complex Fourier Transforms</h2>
+<h3 id="the-idempotent-decomposition-of-the-transform">The Idempotent Decomposition of the Transform</h3>
+<p>The transform decomposes in the idempotent basis. Writing $f[n] = f_+[n] e_+ + f_-[n] e_-$ and using the fact that the kernel is the same in both components,</p>
+<p>$$
+F[u] = \left(\sum_{n=0}^{N-1} W_N(n, u) f_+[n]\right) e_+ + \left(\sum_{n=0}^{N-1} W_N(n, u) f_-[n]\right) e_-.
+$$</p>
+<p>So the transform is the pair of the <strong>quaternion Fourier transforms</strong> of the two idempotent components:</p>
+<p>$$
+F[u] = F_+[u] e_+ + F_-[u] e_-,
+$$</p>
+<p>where $F_\pm[u] = \sum_{n=0}^{N-1} W_N(n, u) f_\pm[n]$ is the quaternion Fourier transform of the component $f_\pm$.</p>
+<p>This is the fundamental simplification: the split quaternion Fourier transform reduces to <strong>two independent quaternion Fourier transforms</strong>, one for each idempotent component. The transform is not a new operation; it is the quaternion Fourier transform applied to each of the two components separately.</p>
+<h3 id="the-quaternion-fourier-transform">The Quaternion Fourier Transform</h3>
+<p>The quaternion Fourier transform of a quaternion-valued sequence $g : \{0, 1, \ldots, N-1\} \to \mathbb{H}$ is defined by</p>
+<p>$$
+G[u] = \sum_{n=0}^{N-1} W_N(n, u) g[n],
+$$</p>
+<p>where $W_N(n, u) = \exp(-2\pi \rho nu/N)$ and $\rho$ is a unit pure real quaternion.</p>
+<p>The quaternion Fourier transform can be computed in several ways. The standard approach is to choose two other unit pure real quaternions $\nu$ and $\xi$ such that $\{\rho, \nu, \xi\}$ is an orthonormal basis of $\mathbb{R}^3_{\mathbb{H}}$, and to express $g[n]$ in the basis $\{e_0, \rho, \nu, \xi\}$:</p>
+<p>$$
+g[n] = g_0[n] e_0 + g_\rho[n] \rho + g_\nu[n] \nu + g_\xi[n] \xi, \qquad g_\bullet[n] \in \mathbb{C}.
+$$</p>
+<p>The quaternion Fourier transform then decomposes into <strong>four complex Fourier transforms</strong>, one for each complex coefficient, as discussed in the biquaternion discrete harmonic analysis article.</p>
+<h3 id="the-full-factorization">The Full Factorization</h3>
+<p>Combining the idempotent decomposition with the quaternion Fourier transform factorization, the split quaternion Fourier transform decomposes into <strong>eight complex Fourier transforms</strong>:</p>
+<ul>
+<li>Two idempotent components, each with four complex coefficients.</li>
+</ul>
+<p>This is the total number of complex transforms required for a general split-quaternion-valued signal.</p>
+<p>If the signal takes values in a subspace with fewer complex components (for example, the quaternion subspace, where the coefficients are real), the number of complex transforms is reduced. Specifically:</p>
+<ul>
+<li><strong>Split complex subspace:</strong> The signal has two real components per sample (real and split parts). The transform reduces to <strong>two complex Fourier transforms</strong> (one for each idempotent component, after splitting each component into real and imaginary parts, but since the components are real scalars, only two real Fourier transforms are needed).</li>
+<li><strong>Quaternion subspace:</strong> The signal has four real components per sample. The transform reduces to <strong>four complex Fourier transforms</strong> (one for each component of the quaternion Fourier transform, but since the coefficients are real, the transforms are real Fourier transforms).</li>
+<li><strong>General split quaternion:</strong> The signal has eight real components per sample. The transform requires <strong>eight complex Fourier transforms</strong> (four per idempotent component).</li>
+</ul>
+<h3 id="the-fast-algorithm">The Fast Algorithm</h3>
+<p>The factorization gives a fast algorithm for the discrete split-quaternion Fourier transform:</p>
+<ol>
+<li><strong>Idempotent decomposition.</strong> Decompose each sample $f[n]$ into its two idempotent components $f_+[n]$ and $f_-[n]$.</li>
+<li><strong>Quaternion Fourier transform.</strong> Apply the quaternion Fourier transform to each component. This requires four complex Fourier transforms per component (for a general quaternion-valued sequence).</li>
+<li><strong>Reassemble.</strong> Combine the two transformed components into the split quaternion spectrum $F[u] = F_+[u] e_+ + F_-[u] e_-$.</li>
+</ol>
+<p>The cost is eight complex FFTs of size $N$, which is $O(N \log N)$, as opposed to the naive evaluation, which is $O(N^2)$.</p>
+<p>If the signal takes values in the quaternion subspace, only four complex FFTs are needed. If it takes values in the split complex subspace, only two are needed.</p>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>The factorization is a computational result, but it also has a structural meaning. It shows that the split quaternion Fourier transform is not a fundamentally new operation: it is the quaternion Fourier transform applied to the two idempotent components, dressed in split quaternion language. The non-trivial content is the <strong>choice of root</strong> $\rho$ and the <strong>idempotent decomposition</strong>. Everything else is ordinary harmonic analysis.</p>
+<h2 id="the-convolution-theorem">The Convolution Theorem</h2>
+<h3 id="definition-of-convolution">Definition of Convolution</h3>
+<p>Let $f, g : \mathbb{Z} \to \mathbb{H}_{\mathbb{D}}$ be two split-quaternion-valued sequences, extended to $\mathbb{Z}$ by $f[n] = g[n] = 0$ outside the support $\{0, 1, \ldots, N-1\}$. The <strong>convolution</strong> of $f$ and $g$ is</p>
+<p>$$
+(f * g)[n] = \sum_{m \in \mathbb{Z}} f[m] g[n - m].
+$$</p>
+<p>The convolution is <strong>not commutative</strong> in general, because the split quaternion product is not commutative.</p>
+<h3 id="the-convolution-theorem_1">The Convolution Theorem</h3>
+<p><strong>Theorem (convolution theorem).</strong> Let $f, g$ be split-quaternion-valued sequences with finite support, and let $\mathcal{F}$ denote the discrete split-quaternion Fourier transform with the kernel on the left:</p>
+<p>$$
+\mathcal{F}[f][u] = \sum_{n=0}^{N-1} W_N(n, u) f[n].
+$$</p>
+<p>Then</p>
+<p>$$
+\mathcal{F}[f * g][u] = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u],
+$$</p>
+<p>where the product on the right is the split quaternion product.</p>
+<p><strong>Proof.</strong> Compute</p>
+<p>$$
+\mathcal{F}[f * g][u] = \sum_{n=0}^{N-1} W_N(n, u) \sum_{m=0}^{N-1} f[m] g[n-m] = \sum_{m=0}^{N-1} \sum_{n=0}^{N-1} W_N(n, u) f[m] g[n-m].
+$$</p>
+<p>Change variables $n = m + k$, so that $W_N(n, u) = W_N(m + k, u) = W_N(m, u) W_N(k, u)$. Then</p>
+<p>$$
+\mathcal{F}[f * g][u] = \sum_{m=0}^{N-1} \sum_{k=0}^{N-1} W_N(m, u) f[m] W_N(k, u) g[k] = \left(\sum_{m=0}^{N-1} W_N(m, u) f[m]\right) \left(\sum_{k=0}^{N-1} W_N(k, u) g[k]\right) = \mathcal{F}[f][u] \cdot \mathcal{F}[g][u].
+$$</p>
+<p>$\square$</p>
+<p><strong>Corollary (right-kernel case).</strong> For the transform with the kernel on the right,</p>
+<p>$$
+\mathcal{F}_{\text{right}}[f * g][u] = \mathcal{F}_{\text{right}}[g][u] \cdot \mathcal{F}_{\text{right}}[f][u].
+$$</p>
+<h3 id="consequences">Consequences</h3>
+<p>The convolution theorem implies that convolution in the signal domain becomes <strong>split quaternion multiplication</strong> in the frequency domain. This is the basis for filtering.</p>
+<p>It also implies that the convolution is:</p>
+<ul>
+<li><strong>Associative:</strong> $(f * g) * h = f * (g * h)$.</li>
+<li><strong>Distributive over addition:</strong> $f * (g + h) = f * g + f * h$.</li>
+<li><strong>Not commutative:</strong> $f * g \neq g * f$ in general.</li>
+</ul>
+<h3 id="the-convolution-theorem-in-the-idempotent-basis">The Convolution Theorem in the Idempotent Basis</h3>
+<p>In the idempotent basis, the convolution decomposes:</p>
+<p>$$
+(f * g)_+ = f_+ * g_+, \qquad (f * g)_- = f_- * g_-,
+$$</p>
+<p>where $*$ on the right is the quaternion convolution. So the split quaternion convolution is the pair of the quaternion convolutions of the two idempotent components. This is the cleanest form of the convolution theorem, and it shows that the non-commutativity is inherited from the quaternion case in each component.</p>
+<h2 id="the-vanishing-norm-issue">The Vanishing-Norm Issue</h2>
+<h3 id="samples-of-vanishing-norm">Samples of Vanishing Norm</h3>
+<p>A sample $f[n]$ with $N(f[n]) = 0$ is a zero divisor. Such samples have the property that they cannot necessarily be recovered from the transform.</p>
+<p>In the idempotent basis, a sample $f[n] = f_+[n] e_+ + f_-[n] e_-$ has vanishing norm form if and only if $f_+[n] = 0$ or $f_-[n] = 0$. So the vanishing-norm samples are exactly the samples with a vanishing idempotent component.</p>
+<h3 id="consequences-for-the-transform">Consequences for the Transform</h3>
+<ul>
+<li><strong>The transform is not necessarily invertible on signals containing zero-divisor samples.</strong></li>
+<li><strong>The transform is invertible on signals where both idempotent components of every sample are nonzero.</strong></li>
+</ul>
+<p>The precise condition under which the transform is invertible on a signal with zero-divisor samples is not known; it depends on the cancellations in the sum.</p>
+<h3 id="structural-interpretation">Structural Interpretation</h3>
+<p>The vanishing-norm issue is a genuinely split quaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split quaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a seven-dimensional cone.</p>
+<p>The issue can be avoided by restricting the signals to a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.</p>
+<h2 id="the-two-dimensional-transform">The Two-Dimensional Transform</h2>
+<h3 id="definition_2">Definition</h3>
+<p>For a split-quaternion-valued image $f : \{0, 1, \ldots, M-1\} \times \{0, 1, \ldots, N-1\} \to \mathbb{H}_{\mathbb{D}}$, the <strong>two-dimensional discrete split-quaternion Fourier transform</strong> is</p>
+<p>$$
+F[u, v] = \sum_{m=0}^{M-1} \sum_{n=0}^{N-1} W_M(m, u) \, f[m, n] \, W_N(n, v),
+$$</p>
+<p>where $W_M$ and $W_N$ are the one-dimensional kernels of lengths $M$ and $N$, respectively.</p>
+<h3 id="factorization">Factorization</h3>
+<p>The two-dimensional transform factorizes in the same way as the one-dimensional transform. In the idempotent basis, it reduces to two copies of the two-dimensional quaternion Fourier transform, one for each component. Each quaternion transform, in turn, factorizes into four two-dimensional complex transforms.</p>
+<h3 id="separability">Separability</h3>
+<p>The two-dimensional kernel is <strong>separable</strong>, because the exponential factorizes:</p>
+<p>$$
+W_{M \times N}((m, n), (u, v)) = W_M(m, u) \, W_N(n, v).
+$$</p>
+<p>This follows from the multiplicativity of the exponential. The separability is what allows the two-dimensional transform to be computed as a sequence of one-dimensional transforms.</p>
+<h2 id="higher-dimensional-transforms">Higher-Dimensional Transforms</h2>
+<p>The generalization to higher dimensions is straightforward. The transform of a split-quaternion-valued function on $\{0, 1, \ldots, N_1 - 1\} \times \cdots \times \{0, 1, \ldots, N_d - 1\}$ is defined by $d$ kernels, one for each dimension. The transform factorizes into the idempotent components, each of which is a quaternion transform, and each quaternion transform factorizes into four complex transforms.</p>
+<p>The higher-dimensional transform is separable, and it can be computed by applying one-dimensional transforms along each dimension in turn.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Wavelets.</strong> Can a split quaternion wavelet transform be defined, and what are its properties? The wavelet kernel is more general than the Fourier kernel, and the split quaternion structure may introduce new phenomena.</p>
+</li>
+<li>
+<p><strong>Time-frequency analysis.</strong> Can a split quaternion time-frequency distribution (Wigner, spectrogram, etc.) be defined, and what are its properties?</p>
+</li>
+<li>
+<p><strong>Non-commutative filtering.</strong> What are the implications of the non-commutativity of the split quaternion product for signal processing? Convolution is not commutative, and the standard filtering theory assumes commutativity.</p>
+</li>
+<li>
+<p><strong>The spectrum and vanishing norms.</strong> It is not known whether the spectrum of a split quaternion Fourier transform of a signal in a subspace can have samples with vanishing norm. If it can occur, it would mean that the transform is not invertible on such signals.</p>
+</li>
+<li>
+<p><strong>The precise invertibility condition.</strong> Under what conditions on the zero-divisor samples is the transform invertible? The answer is not known.</p>
+</li>
+<li>
+<p><strong>The relation to the continuous transform.</strong> How does the discrete transform relate to the continuous transform of the companion article? The sampling and periodization theorems should be stated.</p>
+</li>
+<li>
+<p><strong>The Clifford algebra framework.</strong> How does the split quaternion discrete Fourier transform fit into the general theory of Clifford algebra Fourier transforms?</p>
+</li>
+<li>
+<p><strong>Comparison with the biquaternion case.</strong> The split quaternion transform reduces to two quaternion transforms, while the biquaternion transform reduces to four complex transforms. What are the advantages and disadvantages of each in applications?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The discrete split-quaternion Fourier transform is defined by the kernel $W_N(n, u) = \exp(-2\pi \rho nu/N)$, where $\rho$ is a unit pure real quaternion (a root of $-1$ in the quaternion algebra). The kernel is the same in both idempotent components, so the transform decomposes into two independent quaternion Fourier transforms, one for each component.</p>
+<p>The transform is invertible on signals where both idempotent components of every sample are nonzero, and it satisfies the conjugate symmetry for real quaternion signals. It factorizes into eight complex Fourier transforms for a general split-quaternion-valued signal, four for a quaternion-valued signal, and two for a split-complex-valued signal. The convolution theorem holds, with the non-commutativity inherited from the quaternion case.</p>
+<p>The vanishing-norm issue is a genuinely split quaternion feature: signals containing zero-divisor samples (i.e., samples with a vanishing idempotent component) are not necessarily recoverable from their transform, and the precise invertibility condition is not known.</p>
+<p>The key simplification relative to the biquaternion case is the <strong>idempotent decomposition</strong>: the split quaternion algebra is the direct sum of two copies of the quaternion algebra, so the split quaternion Fourier transform reduces to two quaternion Fourier transforms. The split complex unit $j$ does not appear in the kernel; it only appears in the idempotent decomposition that separates the two components.</p>
+<p>The discrete transform is the discrete analogue of the continuous transform of the companion article, and it is the basis for the split quaternion signal processing applications.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions.</li>
+<li>S. Said, N. Le Bihan, S. J. Sangwine, "Fast complexified quaternion Fourier transform", <em>IEEE Transactions on Signal Processing</em> <strong>56</strong> (2008) 1522–1531, for the definition and factorization of the biquaternion Fourier transform, which is closely related.</li>
+<li>S. J. Sangwine and T. A. Ell, "Complexification of the quaternion roots of $-1$", arXiv:math.RA/0506190 (2005), for the classification of the biquaternion roots of $-1$, which provides background for the quaternion roots.</li>
+<li>S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", arXiv:0812.1102 (2008), for the classification of the zero divisors, which provides background for the split quaternion zero divisors.</li>
+<li>N. Le Bihan and J. Mars, "Singular value decomposition of quaternion matrices: a new tool for vector-sensor signal processing", <em>Signal Processing</em> <strong>84</strong> (2004) 1177–1199, for the quaternion signal processing background.</li>
+<li>T. A. Ell and S. J. Sangwine, "Hypercomplex Fourier transforms of color images", <em>IEEE Transactions on Image Processing</em> <strong>16</strong> (2007) 22–35, for the quaternion Fourier transform and its applications.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic structure of the split quaternions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

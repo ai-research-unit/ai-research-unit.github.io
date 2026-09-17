@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="split-quaternion-polar-representations">Split-Quaternion Polar Representations</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The article on split quaternion algebraic representations described four ways of writing a split quaternion using only the algebra operations, the split complex unit, and the underlying vector space structure: the split complex four-vector representation, the idempotent representation, the module representation, and the Clifford algebra representation.</p>
+<p>This article describes the <strong>polar representations</strong> of the split quaternion algebra: ways of writing a split quaternion as a product of a modulus and an exponential. These representations use the exponential, and they are therefore not algebraic in the sense of the preceding article.</p>
+<p>The word "representation" is used here in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory.</p>
+<p>The polar representations of a split quaternion are <strong>different in character</strong> from the polar representations of a biquaternion, and it is important to be clear about why.</p>
+<p><strong>The biquaternion case.</strong> In the biquaternion algebra, the polar forms exist because the complex algebra contains the scalar imaginary $i$ with $i^2 = -1$, and because the biquaternion algebra contains a four-dimensional family of non-trivial roots of $-1$. The de Moivre formula</p>
+<p>$$
+e^{\rho\theta} = \cos\theta \, e_0 + \sin\theta \, \rho, \qquad \rho^2 = -e_0,
+$$</p>
+<p>holds for every root $\rho$ of $-1$, and this is what makes the exponential of a biquaternion computable in closed form. The two polar forms — the Hamilton form and the complex form — correspond to the two classes of roots of $-1$.</p>
+<p><strong>The split quaternion case.</strong> In the split quaternion algebra, the situation is different. The split complex algebra has the unit $j$ with $j^2 = +1$, <strong>not</strong> a square root of $-1$. The exponential of a split complex number is hyperbolic, not trigonometric:</p>
+<p>$$
+e^{j\theta} = \cosh\theta + j\sinh\theta.
+$$</p>
+<p>And the split quaternion algebra does contain roots of $-1$ — in fact, a four-dimensional family of them, as established in the article on split quaternion roots of minus one — but these roots are not central, and they do not generate a de Moivre formula for arbitrary exponentials. The exponential of a general split quaternion is not a product of a modulus and a phase in the same way as in the biquaternion case.</p>
+<p><strong>The consequence.</strong> The polar representations of a split quaternion are therefore not the direct analogue of the Hamilton and complex polar forms of a biquaternion. There are still two natural polar forms, but they are different in character:</p>
+<ol>
+<li><strong>The idempotent polar form.</strong> This form uses the idempotent decomposition and expresses the split quaternion as a pair of quaternion polar forms, one for each idempotent component.</li>
+<li><strong>The exponential polar form.</strong> This form uses the exponential of the split quaternion directly, and it involves both hyperbolic and trigonometric functions, depending on the sign of the split complex norm of the vector part.</li>
+</ol>
+<p>These two forms are the subject of this article.</p>
+<p>Throughout, we use the notation of the preceding articles: a split quaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+$$</p>
+<p>or, more compactly, as</p>
+<p>$$
+\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>The split complex unit is $j$, with $j^2 = +1$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.</p>
+<p>The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+$$</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<h2 id="the-idempotent-polar-form">The Idempotent Polar Form</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>idempotent polar form</strong> of a split quaternion $\tilde{Q}$ is the expression obtained by writing each idempotent component $\tilde{Q}_\pm$ in its quaternion polar form:</p>
+<p>$$
+\tilde{Q} = r_+ \exp(\mu_+ \theta_+) e_+ + r_- \exp(\mu_- \theta_-) e_-,
+$$</p>
+<p>where:</p>
+<ul>
+<li>$r_\pm = |\tilde{Q}_\pm| \geq 0$ is the ordinary quaternion modulus of $\tilde{Q}_\pm$;</li>
+<li>$\mu_\pm \in \mathbb{H}$ is a unit pure real quaternion (the <strong>axis</strong> of the component), defined when $\tilde{Q}_\pm$ has a nonzero vector part;</li>
+<li>$\theta_\pm \in \mathbb{R}$ is the <strong>angle</strong> of the component, defined by $\cos\theta_\pm = \Re(\tilde{Q}_\pm)/r_\pm$ and $\sin\theta_\pm = |\operatorname{Vec}(\tilde{Q}_\pm)|/r_\pm$.</li>
+</ul>
+<p>The form is well-defined when both components are nonzero. If one component vanishes, the corresponding term is zero, and the form degenerates.</p>
+<h3 id="the-quaternion-polar-form">The Quaternion Polar Form</h3>
+<p>Recall that every nonzero quaternion $q \in \mathbb{H}$ has a polar form</p>
+<p>$$
+q = r \exp(\mu\theta) = r(\cos\theta + \mu \sin\theta),
+$$</p>
+<p>where $r = |q| \geq 0$, $\mu$ is a unit pure real quaternion (the axis), and $\theta \in \mathbb{R}$ is the angle. The axis is defined when the vector part of $q$ is nonzero; when $q$ is a real scalar, the axis is undefined and the polar form reduces to $q = r$ (or $q = -r$, with $\theta = \pi$).</p>
+<p>The idempotent polar form of a split quaternion is the extension of this to both components simultaneously.</p>
+<h3 id="properties">Properties</h3>
+<p><strong>Existence and uniqueness.</strong> Every split quaternion $\tilde{Q}$ with both idempotent components nonzero has an idempotent polar form. The form is unique up to the sign ambiguities in each quaternion component: replacing $(r_\pm, \theta_\pm)$ by $(-r_\pm, \theta_\pm + \pi)$ gives the same $\tilde{Q}_\pm$.</p>
+<p><strong>The moduli.</strong> The moduli $r_\pm$ are non-negative real numbers. In the idempotent basis, the norm form is</p>
+<p>$$
+N(\tilde{Q}) = r_+^2 e_+ + r_-^2 e_-.
+$$</p>
+<p>So the two moduli are the square roots of the two components of the norm form in the idempotent basis.</p>
+<p><strong>The angles.</strong> The angles $\theta_\pm$ are real numbers, not complex. This is a significant simplification compared to the biquaternion case, where the angle in the Hamilton polar form is complex.</p>
+<p><strong>The axes.</strong> The axes $\mu_\pm$ are unit pure real quaternions. They are the analogues of the axis of a quaternion, and they lie in the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.</p>
+<h3 id="the-case-of-vanishing-components">The Case of Vanishing Components</h3>
+<p>If $\tilde{Q}_+ = 0$, the split quaternion $\tilde{Q}$ is a zero divisor (unless $\tilde{Q} = 0$), and the idempotent polar form degenerates: the first term vanishes, and the second term is the polar form of $\tilde{Q}_-$ alone:</p>
+<p>$$
+\tilde{Q} = r_- \exp(\mu_- \theta_-) e_-.
+$$</p>
+<p>If both components vanish, $\tilde{Q} = 0$ and the form is not defined.</p>
+<h3 id="why-the-idempotent-polar-form-is-natural">Why the Idempotent Polar Form Is Natural</h3>
+<p>The idempotent polar form is the natural polar form of a split quaternion because:</p>
+<ol>
+<li><strong>It respects the semisimple structure.</strong> The split quaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotent polar form treats each copy separately.</li>
+<li><strong>It reduces to the quaternion polar form.</strong> If the split quaternion lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, then the two components are equal, $\tilde{Q}_+ = \tilde{Q}_- = q$, and the idempotent polar form reduces to the quaternion polar form $q = r \exp(\mu\theta)$ applied to each component.</li>
+<li><strong>It has real angles.</strong> Unlike the biquaternion case, the angles in the idempotent polar form are real numbers, not complex. This makes the form much easier to work with.</li>
+<li><strong>It reveals the zero divisors.</strong> The zero divisors are the elements with one component vanishing, and the idempotent polar form degenerates in exactly that case.</li>
+</ol>
+<h2 id="the-exponential-polar-form">The Exponential Polar Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>exponential polar form</strong> of a split quaternion is the expression obtained by computing the exponential of the split quaternion directly:</p>
+<p>$$
+\tilde{Q} = \exp(\tilde{L}),
+$$</p>
+<p>where $\tilde{L}$ is a split quaternion. This is the inverse of the logarithm, and it is the analogue of writing a complex number as $z = e^{w}$.</p>
+<p>The exponential polar form is useful when the split quaternion is given as the exponential of another, and when the structure of the exponential is of interest.</p>
+<h3 id="the-exponential-of-a-split-quaternion">The Exponential of a Split Quaternion</h3>
+<p>Write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ where $Q_0 \in \mathbb{D}$ is the split scalar part and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ is the split vector part. The scalar part commutes with everything, so</p>
+<p>$$
+\exp(\tilde{Q}) = \exp(Q_0 e_0) \exp(\mathbf{Q}) = e^{Q_0} \exp(\mathbf{Q}),
+$$</p>
+<p>where $e^{Q_0}$ is the split complex exponential and $\exp(\mathbf{Q})$ is the exponential of the vector part.</p>
+<p>The split complex exponential is</p>
+<p>$$
+e^{Q_0} = e^{q_0} (\cosh q'_0 + j \sinh q'_0), \qquad Q_0 = q_0 + j q'_0.
+$$</p>
+<p>The exponential of the vector part depends on the split complex norm</p>
+<p>$$
+\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2},
+$$</p>
+<p>which is a split complex number in general.</p>
+<h3 id="the-three-cases-for-the-vector-part">The Three Cases for the Vector Part</h3>
+<p>The exponential $\exp(\mathbf{Q})$ takes three different forms, depending on the sign of the real part of $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$.</p>
+<p><strong>Case 1: $\theta^2$ positive real.</strong> If $\theta^2 = r^2$ with $r > 0$ real, then</p>
+<p>$$
+\exp(\mathbf{Q}) = \cosh r \, e_0 + \frac{\sinh r}{r} \mathbf{Q}.
+$$</p>
+<p>This is the hyperbolic case. It occurs when the vector part has real components.</p>
+<p><strong>Case 2: $\theta^2$ negative real.</strong> If $\theta^2 = -r^2$ with $r > 0$ real, then</p>
+<p>$$
+\exp(\mathbf{Q}) = \cos r \, e_0 + \frac{\sin r}{r} \mathbf{Q}.
+$$</p>
+<p>This is the trigonometric case. It occurs when the vector part has purely split-imaginary components.</p>
+<p><strong>Case 3: $\theta^2$ split complex.</strong> If $\theta^2$ is a general split complex number, the exponential is expressed in terms of the split complex cosine and sine evaluated at $\theta$:</p>
+<p>$$
+\exp(\mathbf{Q}) = \cosh\theta \, e_0 + \frac{\sinh\theta}{\theta} \mathbf{Q},
+$$</p>
+<p>where $\cosh$ and $\sinh$ are the split complex hyperbolic functions. The formula is the same in all three cases; the three cases are distinguished by the sign of the real part of $\theta^2$.</p>
+<p>So the exponential of a general split quaternion is</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0} \left(\cosh\theta \, e_0 + \frac{\sinh\theta}{\theta} \mathbf{Q}\right),
+$$</p>
+<p>where $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$.</p>
+<h3 id="the-nilpotent-case">The Nilpotent Case</h3>
+<p>If the vector part is nilpotent, i.e., if $\mathbf{Q}^2 = 0$, then $\theta = 0$ and the formula degenerates. In this case, $\exp(\mathbf{Q}) = e_0 + \mathbf{Q}$, as in the biquaternion case. But note: in the split quaternion algebra, the nilpotent vector parts are exactly the elements of the zero divisor subspaces $Z_\pm$ with vanishing scalar part. So the nilpotent case is more restricted than in the biquaternion case.</p>
+<h3 id="the-exponential-polar-form_1">The Exponential Polar Form</h3>
+<p>The exponential polar form of a split quaternion is obtained by inverting the exponential. The logarithm is multivalued, and the branches are determined by the branches of the split complex logarithm and the branches of the hyperbolic functions.</p>
+<p>The principal branch of the logarithm is</p>
+<p>$$
+\log(\tilde{Q}) = \log(e^{Q_0}) e_0 + \log(\exp(\mathbf{Q})),
+$$</p>
+<p>where $\log(e^{Q_0})$ is the principal branch of the split complex logarithm and $\log(\exp(\mathbf{Q}))$ is computed from the inverse hyperbolic functions.</p>
+<p>The exponential polar form is then</p>
+<p>$$
+\tilde{Q} = \exp(\log \tilde{Q}),
+$$</p>
+<p>which is the analogue of the polar form $z = r e^{i\theta}$ for a complex number.</p>
+<h3 id="why-the-exponential-polar-form-is-useful">Why the Exponential Polar Form Is Useful</h3>
+<p>The exponential polar form is useful because:</p>
+<ol>
+<li><strong>It connects to the differential operators.</strong> The exponential is the solution of the scalar differential equation $\partial_0 \tilde{F} = \tilde{F}$, and the exponential polar form makes this transparent.</li>
+<li><strong>It generalizes the complex polar form.</strong> When the split quaternion is a split complex scalar, the exponential polar form reduces to the split complex polar form.</li>
+<li><strong>It is the natural form for the analysis.</strong> The exponential polar form is the form in which the split quaternion exponential appears in the solutions of the differential equations of the analysis.</li>
+</ol>
+<h2 id="comparison-of-the-two-polar-forms">Comparison of the Two Polar Forms</h2>
+<p>The two polar forms are complementary, and they are used in different contexts.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Idempotent polar form</th>
+<th>Exponential polar form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Based on</td>
+<td>Idempotent decomposition</td>
+<td>Exponential of the split quaternion</td>
+</tr>
+<tr>
+<td>Modulus</td>
+<td>Pair $(r_+, r_-)$ of non-negative reals</td>
+<td>Split complex scalar $e^{Q_0}$</td>
+</tr>
+<tr>
+<td>Angle</td>
+<td>Pair $(\theta_+, \theta_-)$ of real numbers</td>
+<td>Split complex angle $\theta$</td>
+</tr>
+<tr>
+<td>Axis</td>
+<td>Pair $(\mu_+, \mu_-)$ of unit pure real quaternions</td>
+<td>Split vector direction</td>
+</tr>
+<tr>
+<td>Reduces to</td>
+<td>Quaternion polar form (in each component)</td>
+<td>Split complex polar form (when $\mathbf{Q} = 0$)</td>
+</tr>
+<tr>
+<td>Number of cases</td>
+<td>One form</td>
+<td>Three cases (hyperbolic, trigonometric, split)</td>
+</tr>
+<tr>
+<td>Angles</td>
+<td>Real</td>
+<td>Split complex</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-to-use-which">When to Use Which</h3>
+<p><strong>Idempotent polar form.</strong> Use this form when the algebra is viewed as the direct sum of two copies of the quaternion algebra, when the quaternion polar form is the natural language, and when the goal is to separate the two components.</p>
+<p><strong>Exponential polar form.</strong> Use this form when the exponential itself is the object of interest, when the split quaternion arises as the solution of a differential equation, and when the split complex structure is the natural language.</p>
+<h2 id="comparison-with-the-biquaternion-case">Comparison with the Biquaternion Case</h2>
+<p>The polar representations of a split quaternion are significantly different from the polar representations of a biquaternion. The following table summarizes the differences.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathbb{B}$ (biquaternion)</th>
+<th>$\mathbb{H}_{\mathbb{D}}$ (split quaternion)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extra unit</td>
+<td>$i$, $i^2 = -1$</td>
+<td>$j$, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>Number of polar forms</td>
+<td>Two (Hamilton, complex)</td>
+<td>Two (idempotent, exponential)</td>
+</tr>
+<tr>
+<td>Nature of the forms</td>
+<td>Both use roots of $-1$</td>
+<td>Idempotent uses the quaternion polar form; exponential uses the split complex exponential</td>
+</tr>
+<tr>
+<td>Angles</td>
+<td>Complex</td>
+<td>Real (idempotent), split complex (exponential)</td>
+</tr>
+<tr>
+<td>Modulus</td>
+<td>Complex scalar (Hamilton), quaternion (complex)</td>
+<td>Pair of reals (idempotent), split complex scalar (exponential)</td>
+</tr>
+<tr>
+<td>Reduction to complex</td>
+<td>Complex polar form</td>
+<td>Split complex polar form</td>
+</tr>
+<tr>
+<td>Reduction to quaternion</td>
+<td>Hamilton polar form</td>
+<td>Quaternion polar form (in each component)</td>
+</tr>
+</tbody>
+</table>
+<p>The key differences are:</p>
+<ol>
+<li>
+<p><strong>The split quaternion polar forms use the split complex structure, not the roots of $-1$.</strong> The idempotent polar form uses the quaternion polar form in each component, and the exponential polar form uses the split complex exponential. Neither form uses the roots of $-1$ as a primary tool.</p>
+</li>
+<li>
+<p><strong>The angles in the idempotent polar form are real numbers.</strong> This is a significant simplification compared to the biquaternion case, where the angle in the Hamilton polar form is a complex number.</p>
+</li>
+<li>
+<p><strong>The exponential polar form has three cases.</strong> The hyperbolic case, the trigonometric case, and the general split case. In the biquaternion case, the exponential of the vector part always has the same form (the de Moivre formula with a complex angle).</p>
+</li>
+<li>
+<p><strong>The idempotent polar form is the primary one.</strong> In the biquaternion case, the primary polar form is the Hamilton form (or the complex form, depending on the context). In the split quaternion case, the primary form is the idempotent form, because it is the one that respects the semisimple structure.</p>
+</li>
+</ol>
+<h2 id="behavior-under-the-four-conjugations">Behavior Under the Four Conjugations</h2>
+<p>The four conjugations of the split quaternion algebra act on the two polar forms as follows.</p>
+<h3 id="idempotent-polar-form">Idempotent Polar Form</h3>
+<p><strong>Quaternion conjugation.</strong> $\overline{r_\pm \exp(\mu_\pm \theta_\pm)} = r_\pm \exp(-\mu_\pm \theta_\pm)$, i.e., the sign of each angle is reversed.</p>
+<p><strong>Split complex conjugation.</strong> Swaps the two components, so $(r_+, \theta_+, \mu_+)$ and $(r_-, \theta_-, \mu_-)$ are exchanged.</p>
+<p><strong>Hermitian conjugation.</strong> Reverses the sign of each angle and swaps the two components.</p>
+<p><strong>Anti-Hermitian conjugation.</strong> The negative of the Hermitian conjugate.</p>
+<h3 id="exponential-polar-form">Exponential Polar Form</h3>
+<p><strong>Quaternion conjugation.</strong> $\overline{\exp(\tilde{Q})} = \exp(\bar{\tilde{Q}})$ where $\bar{\tilde{Q}} = \bar{Q}_0 e_0 - \bar{\mathbf{Q}}$, i.e., the quaternion conjugate is applied to the argument.</p>
+<p><strong>Split complex conjugation.</strong> $(\exp(\tilde{Q}))^* = \exp(\tilde{Q}^*)$ where $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, i.e., the split complex conjugate is applied to the argument.</p>
+<p><strong>Hermitian conjugation.</strong> $\exp(\tilde{Q})^\dagger = \exp(\tilde{Q}^\dagger)$ where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$.</p>
+<p><strong>Anti-Hermitian conjugation.</strong> $\exp(\tilde{Q})^\flat = \exp(\tilde{Q}^\flat)$ where $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.</p>
+<p>So the exponential polar form behaves simply under the four conjugations: each conjugation is applied to the argument of the exponential, and the exponential is preserved. This is a significant simplification compared to the biquaternion case, where the conjugation of the polar form involves conjugating the modulus, the angle, and the root.</p>
+<h2 id="applications">Applications</h2>
+<h3 id="the-rotation-analogy">The Rotation Analogy</h3>
+<p>In the quaternion algebra, a unit quaternion $\exp(\mu\theta/2)$ acts on a pure quaternion by conjugation, giving a rotation. In the split quaternion algebra, the same construction gives a rotation in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. So the idempotent polar form can be used to compute rotations in each copy of the quaternion algebra separately.</p>
+<h3 id="the-boost-analogy">The Boost Analogy</h3>
+<p>The split quaternion algebra contains elements whose exponential gives a boost (a hyperbolic rotation). These are the elements with a real vector part and vanishing scalar part, for which the exponential is the hyperbolic case. The boost analogy is one of the reasons the split quaternion algebra appears in relativistic physics.</p>
+<h3 id="the-exponential-in-the-analysis">The Exponential in the Analysis</h3>
+<p>The exponential polar form is the natural form for the analysis of functions of a split quaternion variable. The exponential is the solution of the differential equation $\partial_0 \tilde{F} = \tilde{F}$, and the polar form makes the structure of the solutions transparent.</p>
+<h2 id="open-questions">Open Questions</h2>
+<ol>
+<li>
+<p><strong>Convergence of the exponential polar form.</strong> Under what conditions does the exponential polar form converge, and what is its domain of definition?</p>
+</li>
+<li>
+<p><strong>Relation between the two polar forms.</strong> Is there a transformation that maps the idempotent polar form to the exponential polar form, or are they independent?</p>
+</li>
+<li>
+<p><strong>The analogue of the polar decomposition of matrices.</strong> Is there an analogue of the polar decomposition for split quaternions, and what would it look like?</p>
+</li>
+<li>
+<p><strong>The role of the roots of $-1$.</strong> The roots of $-1$ in the split quaternion algebra are a four-dimensional family, but they are not used in the polar forms as they are in the biquaternion case. What is the role of the roots of $-1$ in the split quaternion polar representations?</p>
+</li>
+<li>
+<p><strong>Behavior under the analysis.</strong> How do the two polar forms interact with the differential operators of the analysis? In particular, what is the gradient of a split quaternion in polar form?</p>
+</li>
+<li>
+<p><strong>Application to signal processing.</strong> Can the split quaternion polar forms be used in signal processing, as the biquaternion polar forms are used in the discrete and continuous harmonic analysis?</p>
+</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The split quaternion algebra has two natural polar representations:</p>
+<p><strong>The idempotent polar form.</strong> Every split quaternion with both idempotent components nonzero is written as</p>
+<p>$$
+\tilde{Q} = r_+ \exp(\mu_+ \theta_+) e_+ + r_- \exp(\mu_- \theta_-) e_-,
+$$</p>
+<p>where $r_\pm \geq 0$ are the quaternion moduli of the two components, $\mu_\pm$ are unit pure real quaternions (the axes), and $\theta_\pm$ are real numbers (the angles). This form is the natural polar form of the split quaternion algebra, because it respects the semisimple structure and reduces to the quaternion polar form in each component. The angles are real numbers, which is a simplification compared to the biquaternion case.</p>
+<p><strong>The exponential polar form.</strong> Every split quaternion with nonzero norm form is written as $\tilde{Q} = \exp(\tilde{L})$, where $\tilde{L}$ is a split quaternion. The exponential of a general split quaternion is</p>
+<p>$$
+\exp(\tilde{Q}) = e^{Q_0} \left(\cosh\theta \, e_0 + \frac{\sinh\theta}{\theta} \mathbf{Q}\right),
+$$</p>
+<p>where $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$. The form has three cases: hyperbolic (when $\theta^2$ is positive real), trigonometric (when $\theta^2$ is negative real), and general split (when $\theta^2$ is a general split complex number).</p>
+<p>The two polar forms are complementary. The idempotent polar form is the primary one, because it reveals the structure of the algebra. The exponential polar form is useful in the analysis, where the exponential is the fundamental solution of the scalar differential equation.</p>
+<p>The polar representations of a split quaternion are different in character from the polar representations of a biquaternion. In the biquaternion case, the two polar forms both use the roots of $-1$, and the angles are complex. In the split quaternion case, the idempotent form uses the quaternion polar form in each component, and the exponential form uses the split complex exponential. The angles are real (idempotent form) or split complex (exponential form), and the roots of $-1$ play a lesser role.</p>
+<p>The simplification is a reflection of the fact that the split quaternion algebra is semisimple, while the biquaternion algebra is simple. The semisimple structure is what makes the idempotent polar form the natural one, and it is what makes the invertibility criterion linear and the zero divisor set a union of linear subspaces.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (1853), for the original formulation of quaternions.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), Chapter 3, for the polar representations of split quaternions and biquaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric-algebra perspective.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="algebras-categorization"><strong>Algebras: Categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article gives a classification of algebras, organized by the <strong>commutative ring of scalars</strong>. For each commutative ring, we state the classification of the simplest and most important algebras over that ring.</p>
+<p>The general theory of algebras is in the preceding article, <em>Algebras: A General Introduction</em>. We assume familiarity with the definitions given there.</p>
+<p>We consider four commutative rings, in order of increasing complexity:</p>
+<ul>
+<li>The rational numbers $\mathbb{Q}$, a field.</li>
+<li>The real numbers $\mathbb{R}$, a field.</li>
+<li>The complex numbers $\mathbb{C}$, a field.</li>
+<li>The split complex numbers $\mathbb{D}$, a commutative ring with zero divisors.</li>
+</ul>
+<p>For each commutative ring, we state the rank of the algebra over that ring, the properties it satisfies (associative, commutative, unital, division), and where appropriate the geometric interpretation.</p>
+<p>A note on terminology. The first three rings are fields, so the classical theory of algebras over a field applies verbatim. The fourth ring $\mathbb{D}$ is not a field: it is a commutative ring with zero divisors. The theory of algebras over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element is a unit, and that a division algebra over $\mathbb{D}$ is only possible in rank 1 (and even then only if the unique element is a unit). We indicate where this difference matters.</p>
+<p>Throughout this article, we use <strong>rank</strong> rather than <strong>dimension</strong> when speaking of algebras over a general commutative ring, reserving <strong>dimension</strong> for the field case. When the ring is a field, the two notions coincide.</p>
+<hr />
+<h1 id="part-i-algebras-over-math7">Part I: Algebras over $\mathbb{Q}$</h1>
+<h2 id="1-the-rational-numbers-math8-over-math9">1. The Rational Numbers $\mathbb{Q}$ over $\mathbb{Q}$</h2>
+<p>The set of rational numbers is a <strong>one-dimensional algebra over $\mathbb{Q}$</strong>. The product is ordinary multiplication. It is associative, commutative, unital, and every nonzero element has an inverse. It is a field.</p>
+<h2 id="2-the-field-math11-over-math12">2. The Field $\mathbb{Q}[\sqrt{2}]$ over $\mathbb{Q}$</h2>
+<p>The set of numbers of the form $a + b\sqrt{2}$ with $a, b \in \mathbb{Q}$ is a <strong>two-dimensional algebra over $\mathbb{Q}$</strong>, with basis $\{1, \sqrt{2}\}$ and the relation $(\sqrt{2})^2 = 2$. It is associative, commutative, unital, and a division algebra over $\mathbb{Q}$. It is a field extension of $\mathbb{Q}$ of degree 2.</p>
+<h2 id="3-the-quaternion-algebra-over-math20">3. The Quaternion Algebra over $\mathbb{Q}$</h2>
+<p>The quaternions with rational coefficients form a <strong>four-dimensional algebra over $\mathbb{Q}$</strong>, with the same relations as $\mathbb{H}$ but with coefficients in $\mathbb{Q}$. It is associative and unital over $\mathbb{Q}$, and a division algebra over $\mathbb{Q}$. It is not commutative.</p>
+<h2 id="4-the-algebra-math26-over-math27">4. The Algebra $M_n(\mathbb{Q})$ over $\mathbb{Q}$</h2>
+<p>The set of $n \times n$ matrices with rational entries is an <strong>$n^2$-dimensional algebra over $\mathbb{Q}$</strong>. The product is matrix multiplication. It is associative and unital over $\mathbb{Q}$. It is not commutative for $n \geq 2$. It is not a division algebra.</p>
+<hr />
+<h1 id="part-ii-algebras-over-math33">Part II: Algebras over $\mathbb{R}$</h1>
+<h2 id="5-the-real-numbers-math34-over-math35">5. The Real Numbers $\mathbb{R}$ over $\mathbb{R}$</h2>
+<p>The set of real numbers is a <strong>one-dimensional algebra over $\mathbb{R}$</strong>. The product is ordinary multiplication. It is associative, commutative, unital, and every nonzero element has an inverse. It is a field.</p>
+<h2 id="6-the-complex-numbers-math37-over-math38">6. The Complex Numbers $\mathbb{C}$ over $\mathbb{R}$</h2>
+<p>The set of complex numbers is a <strong>two-dimensional algebra over $\mathbb{R}$</strong>, with basis $\{1, i\}$ and the relation $i^2 = -1$. A general element is $a + bi$ with $a, b \in \mathbb{R}$, and the product is</p>
+<p>$$
+(a + bi)(c + di) = (ac - bd) + (ad + bc)i.
+$$</p>
+<p>It is associative, commutative, unital, and every nonzero element has an inverse. It is a field, and a field extension of $\mathbb{R}$ of degree 2.</p>
+<h2 id="7-the-quaternions-math46-over-math47">7. The Quaternions $\mathbb{H}$ over $\mathbb{R}$</h2>
+<p>The set of quaternions is a <strong>four-dimensional algebra over $\mathbb{R}$</strong>, with basis $\{e_0, e_1, e_2, e_3\}$ and the relations</p>
+<p>$$
+e_0 = 1, \quad e_1^2 = e_2^2 = e_3^2 = -e_0,
+$$</p>
+<p>$$
+e_1 e_2 = e_3, \quad e_2 e_3 = e_1, \quad e_3 e_1 = e_2,
+$$</p>
+<p>$$
+e_2 e_1 = -e_3, \quad e_3 e_2 = -e_1, \quad e_1 e_3 = -e_2.
+$$</p>
+<p>A general quaternion is $q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $q_\mu \in \mathbb{R}$. The quaternions are associative and unital over $\mathbb{R}$, and every nonzero element has an inverse. They are not commutative. So they form a <strong>division algebra over $\mathbb{R}$</strong> but not a field.</p>
+<p>By the Frobenius theorem (Part V below), the quaternions are one of only three finite-dimensional associative real division algebras, the others being $\mathbb{R}$ and $\mathbb{C}$.</p>
+<h2 id="8-the-split-complex-numbers-math59-over-math60">8. The Split Complex Numbers $\mathbb{D}$ over $\mathbb{R}$</h2>
+<p>The set of split complex numbers is a <strong>two-dimensional algebra over $\mathbb{R}$</strong>, with basis $\{1, e\}$ and the relation $e^2 = +1$. A general element is $a + be$ with $a, b \in \mathbb{R}$, and the product is</p>
+<p>$$
+(a + be)(c + de) = (ac + bd) + (ad + bc)e.
+$$</p>
+<p>It is associative, commutative, and unital over $\mathbb{R}$, but it is <strong>not a division algebra</strong>: it has zero divisors. For example, $(1 + e)(1 - e) = 0$.</p>
+<h2 id="9-the-dual-numbers-over-math69">9. The Dual Numbers over $\mathbb{R}$</h2>
+<p>The <strong>dual numbers</strong> are a <strong>two-dimensional algebra over $\mathbb{R}$</strong>, with basis $\{1, \epsilon\}$ and the relation $\epsilon^2 = 0$. A general element is $a + b\epsilon$ with $a, b \in \mathbb{R}$, and the product is</p>
+<p>$$
+(a + b\epsilon)(c + d\epsilon) = ac + (ad + bc)\epsilon.
+$$</p>
+<p>They are associative, commutative, and unital over $\mathbb{R}$, but not a division algebra: $\epsilon$ is nilpotent and has no inverse.</p>
+<h2 id="10-the-algebra-math78-over-math79">10. The Algebra $M_n(\mathbb{R})$ over $\mathbb{R}$</h2>
+<p>The set of $n \times n$ matrices with real entries is an <strong>$n^2$-dimensional algebra over $\mathbb{R}$</strong>. The product is matrix multiplication. It is associative and unital over $\mathbb{R}$. It is not commutative for $n \geq 2$. It is not a division algebra: a matrix with vanishing determinant is nonzero but has no inverse.</p>
+<h2 id="11-the-polynomial-algebra-math85-over-math86">11. The Polynomial Algebra $\mathbb{R}[x]$ over $\mathbb{R}$</h2>
+<p>The set of polynomials in one variable with real coefficients is an <strong>infinite-dimensional algebra over $\mathbb{R}$</strong>. The product is ordinary multiplication of polynomials. It is associative, commutative, and unital over $\mathbb{R}$. It is not a division algebra.</p>
+<h2 id="12-the-exterior-algebra-math89-over-math90">12. The Exterior Algebra $\Lambda(V)$ over $\mathbb{R}$</h2>
+<p>Let $V$ be a real vector space of dimension $n$. The <strong>exterior algebra</strong> $\Lambda(V)$ is a <strong>$2^n$-dimensional algebra over $\mathbb{R}$</strong>, generated by $V$ subject to the relation $v \wedge v = 0$. It is associative and unital over $\mathbb{R}$. It is not commutative for $n \geq 2$. It is not a division algebra.</p>
+<h2 id="13-the-cross-product-algebra-on-math100-over-math101">13. The Cross Product Algebra on $\mathbb{R}^3$ over $\mathbb{R}$</h2>
+<p>The set $\mathbb{R}^3$ with the cross product is a <strong>three-dimensional algebra over $\mathbb{R}$</strong>. It is bilinear and antisymmetric over $\mathbb{R}$, but <strong>not associative</strong>. It satisfies the Jacobi identity, so it is a Lie algebra over $\mathbb{R}$.</p>
+<h2 id="14-the-tensor-algebra-math106-over-math107">14. The Tensor Algebra $T(V)$ over $\mathbb{R}$</h2>
+<p>Let $V$ be a real vector space. The <strong>tensor algebra</strong> $T(V)$ is an <strong>infinite-dimensional algebra over $\mathbb{R}$</strong>, the free associative unital algebra on $V$. It satisfies no relations beyond bilinearity and associativity.</p>
+<h2 id="15-the-clifford-algebra-math112-over-math113">15. The Clifford Algebra $Cl(V, Q)$ over $\mathbb{R}$</h2>
+<p>Let $V$ be a real vector space with a quadratic form $Q$. The <strong>Clifford algebra</strong> $Cl(V, Q)$ is a <strong>$2^n$-dimensional algebra over $\mathbb{R}$</strong>, generated by $V$ subject to the relation $v^2 = Q(v) \cdot 1$. It is associative and unital over $\mathbb{R}$. It includes the real numbers, the complex numbers, and the quaternions as special cases.</p>
+<hr />
+<h1 id="part-iii-algebras-over-math122">Part III: Algebras over $\mathbb{C}$</h1>
+<h2 id="16-the-complex-numbers-math123-over-math124">16. The Complex Numbers $\mathbb{C}$ over $\mathbb{C}$</h2>
+<p>The set of complex numbers is a <strong>one-dimensional algebra over $\mathbb{C}$</strong>. The product is multiplication of complex numbers. It is associative, commutative, unital, and a division algebra over $\mathbb{C}$. It is a field.</p>
+<h2 id="17-the-biquaternions-math127-over-math128">17. The Biquaternions $\mathbb{H} \otimes \mathbb{C}$ over $\mathbb{C}$</h2>
+<p>The <strong>biquaternions</strong> are the tensor product $\mathbb{H} \otimes_\mathbb{R} \mathbb{C}$, viewed as a <strong>four-dimensional algebra over $\mathbb{C}$</strong>, with basis $\{1, i, j, k\}$ and the same relations as the quaternions, with coefficients in $\mathbb{C}$. They are associative and unital over $\mathbb{C}$, but not commutative. They are <strong>not a division algebra</strong>: they have zero divisors. As a complex algebra, they are isomorphic to $M_2(\mathbb{C})$.</p>
+<h2 id="18-the-algebra-math135-over-math136">18. The Algebra $M_n(\mathbb{C})$ over $\mathbb{C}$</h2>
+<p>The set of $n \times n$ matrices with complex entries is an <strong>$n^2$-dimensional algebra over $\mathbb{C}$</strong>. The product is matrix multiplication. It is associative and unital over $\mathbb{C}$. It is not commutative for $n \geq 2$. It is not a division algebra.</p>
+<h2 id="19-the-polynomial-algebra-math142-over-math143">19. The Polynomial Algebra $\mathbb{C}[x]$ over $\mathbb{C}$</h2>
+<p>The set of polynomials in one variable with complex coefficients is an <strong>infinite-dimensional algebra over $\mathbb{C}$</strong>. It is associative, commutative, and unital over $\mathbb{C}$. It is not a division algebra.</p>
+<h2 id="20-the-complex-cross-product-algebra-on-math146-over-math147">20. The Complex Cross Product Algebra on $\mathbb{C}^3$ over $\mathbb{C}$</h2>
+<p>The set $\mathbb{C}^3$ with the complex cross product is a <strong>three-dimensional algebra over $\mathbb{C}$</strong>. It is bilinear and antisymmetric over $\mathbb{C}$, but not associative. It satisfies the Jacobi identity, so it is a Lie algebra over $\mathbb{C}$.</p>
+<hr />
+<h1 id="part-iv-algebras-over-math152">Part IV: Algebras over $\mathbb{D}$</h1>
+<p>The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. But the theory of algebras over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element has an inverse.</p>
+<h2 id="21-the-split-complex-numbers-math155-over-math156">21. The Split Complex Numbers $\mathbb{D}$ over $\mathbb{D}$</h2>
+<p>The set of split complex numbers is a <strong>one-dimensional algebra over $\mathbb{D}$</strong>. The product is multiplication of split complex numbers. It is associative, commutative, and unital over $\mathbb{D}$. It is not a division algebra over $\mathbb{D}$, because $\mathbb{D}$ itself has zero divisors.</p>
+<h2 id="22-the-split-quaternions-over-math161">22. The Split Quaternions over $\mathbb{D}$</h2>
+<p>The <strong>split quaternions</strong> are the tensor product $\mathbb{H} \otimes_\mathbb{R} \mathbb{D}$, viewed as a <strong>four-dimensional algebra over $\mathbb{D}$</strong>, with basis $\{1, i, j, k\}$ and the same relations as the quaternions, with coefficients in $\mathbb{D}$. They are associative and unital over $\mathbb{D}$, but not commutative. They are not a division algebra.</p>
+<hr />
+<h1 id="part-v-the-frobenius-theorem">Part V: The Frobenius Theorem</h1>
+<p>The classification of algebras over $\mathbb{R}$ is governed by a classical theorem that singles out the three division algebras $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. This section states the theorem, explains the field to which it applies, discusses the consequences, and computes the tensor products of the three algebras.</p>
+<h2 id="23-the-statement-of-the-theorem">23. The Statement of the Theorem</h2>
+<p><strong>Frobenius's theorem.</strong> Let $A$ be a finite-dimensional associative algebra over the field $\mathbb{R}$ with no zero divisors. Then $A$ is isomorphic to one of the following three algebras:</p>
+<ol>
+<li>$\mathbb{R}$, of dimension $1$ over $\mathbb{R}$.</li>
+<li>$\mathbb{C}$, of dimension $2$ over $\mathbb{R}$.</li>
+<li>$\mathbb{H}$, of dimension $4$ over $\mathbb{R}$.</li>
+</ol>
+<p>Each of these three algebras is a division algebra over $\mathbb{R}$, and they are pairwise non-isomorphic.</p>
+<p>The theorem was proved by Ferdinand Georg Frobenius in 1878. It is one of the foundational results of the theory of real algebras.</p>
+<h2 id="24-the-field-in-the-theorem">24. The Field in the Theorem</h2>
+<p>The field in the theorem is $\mathbb{R}$, the real numbers. The theorem is a statement about <strong>algebras over $\mathbb{R}$</strong>. It does not apply to algebras over $\mathbb{Q}$, $\mathbb{C}$, or any other field or ring. The reader should keep in mind throughout this section that the base field is $\mathbb{R}$.</p>
+<p>This is worth emphasizing because the Frobenius theorem is often stated in the literature without making the field explicit, and it is easy to conflate it with statements about other fields. The theorem is specifically about real algebras. Over $\mathbb{Q}$, for example, there are infinitely many quaternion algebras, and the classification is much more complicated. Over $\mathbb{C}$, the only finite-dimensional associative division algebra is $\mathbb{C}$ itself, because $\mathbb{C}$ is algebraically closed. So the Frobenius theorem is a distinctively real phenomenon.</p>
+<h2 id="25-why-the-theorem-matters">25. Why the Theorem Matters</h2>
+<p>The theorem tells us that the passage from $\mathbb{R}$ to $\mathbb{C}$ to $\mathbb{H}$ exhausts the finite-dimensional associative real division algebras. There is no four-dimensional real division algebra other than $\mathbb{H}$, and there is no real division algebra of any dimension greater than $4$ if we require associativity.</p>
+<p>If we drop associativity, the <strong>Cayley–Dickson construction</strong> allows us to continue the doubling procedure one more step, to the <strong>octonions</strong> $\mathbb{O}$, of dimension $8$ over $\mathbb{R}$. The octonions are a non-associative division algebra. Beyond the octonions, the construction produces algebras with zero divisors (the sedenions and beyond), so the doubling stops there for division algebras.</p>
+<p>The Frobenius theorem is therefore the precise statement that the classical number systems $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$ are the only associative real division algebras. It is the algebraic counterpart of the geometric fact that the only finite-dimensional real normed division algebras are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, and $\mathbb{O}$ (the last being non-associative).</p>
+<h2 id="26-the-tensor-products">26. The Tensor Products</h2>
+<p>The Frobenius theorem is complemented by the computation of the tensor products of the three algebras over $\mathbb{R}$. These show that the tensor product of two division algebras over $\mathbb{R}$ need not be a division algebra. All tensor products below are over $\mathbb{R}$.</p>
+<p><strong>$\mathbb{R} \otimes_\mathbb{R} \mathbb{R} \cong \mathbb{R}$.</strong> Dimension $1$. A division algebra.</p>
+<p><strong>$\mathbb{R} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C}$.</strong> Dimension $2$. A division algebra.</p>
+<p><strong>$\mathbb{R} \otimes_\mathbb{R} \mathbb{H} \cong \mathbb{H}$.</strong> Dimension $4$. A division algebra.</p>
+<p><strong>$\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$.</strong> Dimension $4$. Not a division algebra: it has zero divisors. The idempotents $e_1 = \tfrac{1}{2}(1 \otimes 1 + i \otimes j)$ and $e_2 = \tfrac{1}{2}(1 \otimes 1 - i \otimes j)$ satisfy $e_1 e_2 = 0$.</p>
+<p><strong>$\mathbb{C} \otimes_\mathbb{R} \mathbb{H} \cong \mathbb{B} \cong M_2(\mathbb{C})$.</strong> Dimension $8$. Here $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ is the <strong>biquaternion algebra</strong>. It is not a division algebra: it has zero divisors. As a complex algebra, it is isomorphic to $M_2(\mathbb{C})$.</p>
+<p><strong>$\mathbb{H} \otimes_\mathbb{R} \mathbb{H} \cong M_4(\mathbb{R})$.</strong> Dimension $16$. Not a division algebra: it has zero divisors. It is the algebra of $4 \times 4$ real matrices.</p>
+<p>The pattern is clear: the tensor product of two division algebras over $\mathbb{R}$ is a division algebra if and only if at least one factor is $\mathbb{R}$. As soon as both factors are non-trivial, the tensor product has zero divisors.</p>
+<p>This phenomenon is governed by the <strong>Brauer group</strong> of $\mathbb{R}$, which is isomorphic to $\mathbb{Z}/2\mathbb{Z}$. The two elements are represented by $\mathbb{R}$ (the identity) and $\mathbb{H}$ (the non-trivial element). The complex numbers $\mathbb{C}$ are not a central simple algebra over $\mathbb{R}$, because they are commutative, and their tensor products split as direct sums of copies of $\mathbb{C}$. The tensor product $\mathbb{H} \otimes_\mathbb{R} \mathbb{H} \cong M_4(\mathbb{R})$ is the statement that $\mathbb{H}$ has order $2$ in the Brauer group of $\mathbb{R}$.</p>
+<h2 id="27-summary">27. Summary</h2>
+<p><strong>The field is $\mathbb{R}$.</strong> The Frobenius theorem is a statement about finite-dimensional associative division algebras over $\mathbb{R}$. The three algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$, of dimensions $1$, $2$, and $4$ over $\mathbb{R}$.</p>
+<p><strong>The tensor products are over $\mathbb{R}$.</strong> There are six tensor products of the three algebras, and only the three involving $\mathbb{R}$ as a factor are division algebras. The other three have zero divisors.</p>
+<p><strong>No other field is involved.</strong> The theorem and the tensor products are entirely about the field $\mathbb{R}$.</p>
+<p><strong>The theorem is sharp.</strong> There are no other finite-dimensional associative real division algebras. If associativity is dropped, the octonions are the only additional example.</p>
+<hr />
+<h1 id="summary">Summary</h1>
+<p>Let me summarize the classification in a table.</p>
+<table>
+<thead>
+<tr>
+<th>Algebra</th>
+<th>Ring</th>
+<th>Rank</th>
+<th>Associative</th>
+<th>Commutative</th>
+<th>Unital</th>
+<th>Division</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{Q}$</td>
+<td>$\mathbb{Q}$</td>
+<td>1</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{Q}[\sqrt{2}]$</td>
+<td>$\mathbb{Q}$</td>
+<td>2</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{H}(\mathbb{Q})$</td>
+<td>$\mathbb{Q}$</td>
+<td>4</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{Q})$</td>
+<td>$\mathbb{Q}$</td>
+<td>$n^2$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>$\mathbb{R}$</td>
+<td>1</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{R}$</td>
+<td>2</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>$\mathbb{R}$</td>
+<td>4</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\mathbb{R}$</td>
+<td>2</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>dual numbers</td>
+<td>$\mathbb{R}$</td>
+<td>2</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{R})$</td>
+<td>$\mathbb{R}$</td>
+<td>$n^2$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{R}[x]$</td>
+<td>$\mathbb{R}$</td>
+<td>$\infty$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\Lambda(V)$</td>
+<td>$\mathbb{R}$</td>
+<td>$2^n$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{R}^3$ cross</td>
+<td>$\mathbb{R}$</td>
+<td>3</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$T(V)$</td>
+<td>$\mathbb{R}$</td>
+<td>$\infty$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$Cl(V, Q)$</td>
+<td>$\mathbb{R}$</td>
+<td>$2^n$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>1</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$\mathbb{H} \otimes \mathbb{C}$</td>
+<td>$\mathbb{C}$</td>
+<td>4</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$M_n(\mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$n^2$</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{C}[x]$</td>
+<td>$\mathbb{C}$</td>
+<td>$\infty$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{C}^3$ cross</td>
+<td>$\mathbb{C}$</td>
+<td>3</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>$\mathbb{D}$</td>
+<td>1</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathbb{H} \otimes \mathbb{D}$</td>
+<td>$\mathbb{D}$</td>
+<td>4</td>
+<td>yes</td>
+<td>no</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern is clear: the ring of scalars determines the structure of the algebra. The rational numbers give rise to arithmetic versions of the classical algebras. The real numbers give rise to the classical division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, and the split and degenerate versions $\mathbb{D}$ and the dual numbers. The complex numbers give rise to the biquaternions and matrix algebras. The split complex numbers give rise to the split versions, which have zero divisors and are not division algebras.</p>
+<p><strong>Key differences from the field case.</strong> Over the fields $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$, the theory is the classical theory of algebras over a field. Over the commutative ring $\mathbb{D}$, the theory is similar but with the following caveats:</p>
+<ul>
+<li>Not every nonzero element of $\mathbb{D}$ is a unit, so a $\mathbb{D}$-algebra can fail to be a division algebra even if it has no zero divisors of its own.</li>
+<li>The rank of a $\mathbb{D}$-algebra is well-defined only if the algebra is free as a $\mathbb{D}$-module.</li>
+<li>The classical theorems (Frobenius, Wedderburn) do not apply over $\mathbb{D}$, because $\mathbb{D}$ is not a field.</li>
+</ul>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Michael Artin, <em>Algebra</em> (Prentice Hall, 1991).</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 3rd ed. 2002).</li>
+<li>I. N. Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975).</li>
+<li>Paul M. Cohn, <em>Basic Algebra: Groups, Rings and Fields</em> (Springer, 2003).</li>
+<li>Nathan Jacobson, <em>Basic Algebra I</em> and <em>II</em> (Dover, 2nd ed. 2009).</li>
+<li>David S. Dummit and Richard M. Foote, <em>Abstract Algebra</em> (Wiley, 3rd ed. 2004).</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, 1982).</li>
+<li>I. R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995).</li>
+<li>I. M. Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968).</li>
+<li>F. Catoni, R. Cannata, V. Catoni, E. Nichelatti, P. Zampetti, <em>The Mathematics of Minkowski Space-Time</em> (Birkhäuser, 2008).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

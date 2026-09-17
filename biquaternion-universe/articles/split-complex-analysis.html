@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="split-complex-analysis">Split Complex Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces split complex analysis as the study of differentiable functions of a split complex variable. The goal is to define the core objects precisely, establish their basic properties, and describe the theorems that give the subject its shape.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The split complex algebra is assumed from the article on split complex algebra, and the idempotent decomposition is used throughout. No physics is invoked. The hyperbolic structure that replaces the circular structure of complex analysis is developed systematically.</p>
+<h2 id="the-split-complex-plane">The Split Complex Plane</h2>
+<h3 id="points-and-distance">Points and Distance</h3>
+<p>A split complex number is written</p>
+<p>$$
+z = x + j y, \qquad x, y \in \mathbb{R},
+$$</p>
+<p>where $j^2 = +1$. The real number $x$ is the <strong>real part</strong>, and $y$ is the <strong>imaginary part</strong>. We write $x = \operatorname{Re} z$ and $y = \operatorname{Im} z$.</p>
+<p>The <strong>Euclidean modulus</strong> of $z$ is</p>
+<p>$$
+\|z\|_E = \sqrt{x^2 + y^2},
+$$</p>
+<p>and the <strong>Euclidean distance</strong> between two split complex numbers $z$ and $w$ is</p>
+<p>$$
+d(z, w) = \|z - w\|_E.
+$$</p>
+<p>This makes $\mathbb{D}$ a metric space isometric to $\mathbb{R}^2$. The Euclidean modulus satisfies the triangle inequality and is positive-definite, so it is a genuine norm.</p>
+<p>The <strong>split modulus</strong> is</p>
+<p>$$
+|z| = \sqrt{|x^2 - y^2|},
+$$</p>
+<p>which is not a norm. It vanishes on the light cone $x = \pm y$, and it is indefinite. It is used in the study of the multiplicative structure, not the topological structure.</p>
+<h3 id="balls-and-neighborhoods">Balls and Neighborhoods</h3>
+<p>The <strong>open ball</strong> of radius $r > 0$ centered at $z_0$ is</p>
+<p>$$
+B(z_0, r) = \{z \in \mathbb{D} : \|z - z_0\|_E < r\}.
+$$</p>
+<p>It is an open disk in the split complex plane, exactly as in the complex plane. The topology of $\mathbb{D}$ is the ordinary Euclidean topology of $\mathbb{R}^2$.</p>
+<h3 id="open-and-closed-sets">Open and Closed Sets</h3>
+<p>A set $U \subseteq \mathbb{D}$ is <strong>open</strong> if for every $z_0 \in U$ there exists $r > 0$ with $B(z_0, r) \subseteq U$.</p>
+<p>A set $F \subseteq \mathbb{D}$ is <strong>closed</strong> if its complement $\mathbb{D} \setminus F$ is open.</p>
+<p>Arbitrary unions of open sets are open. Finite intersections of open sets are open. Dually for closed sets.</p>
+<h3 id="connectedness-and-domains">Connectedness and Domains</h3>
+<p>A set $U \subseteq \mathbb{D}$ is <strong>connected</strong> if it cannot be written as the disjoint union of two non-empty open sets. It is <strong>path-connected</strong> if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.</p>
+<p>A <strong>domain</strong> is a non-empty open connected subset of $\mathbb{D}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.</p>
+<h3 id="compactness">Compactness</h3>
+<p>A set $K \subseteq \mathbb{D}$ is <strong>compact</strong> if every open cover of $K$ has a finite subcover.</p>
+<p><strong>Theorem (Heine–Borel).</strong> A subset of $\mathbb{D}$ is compact iff it is closed and bounded in the Euclidean norm.</p>
+<p><strong>Theorem.</strong> A continuous split-complex-valued function on a compact set is bounded and attains its maximum and minimum Euclidean modulus.</p>
+<h2 id="limits-and-continuity">Limits and Continuity</h2>
+<h3 id="limits-of-sequences">Limits of Sequences</h3>
+<p>A sequence $(z_n)$ of split complex numbers <strong>converges</strong> to $L \in \mathbb{D}$ if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+n \geq N \implies \|z_n - L\|_E < \epsilon.
+$$</p>
+<p>We write $z_n \to L$ or $\lim_{n \to \infty} z_n = L$.</p>
+<p><strong>Uniqueness.</strong> If $z_n \to L$ and $z_n \to L'$, then $L = L'$.</p>
+<p><strong>Componentwise convergence.</strong> Write $z_n = x_n + j y_n$ and $L = a + j b$. Then</p>
+<p>$$
+z_n \to L \iff x_n \to a \text{ and } y_n \to b.
+$$</p>
+<p>This is the reason split complex convergence is no harder than real convergence: it is two real convergences in parallel.</p>
+<p><strong>Boundedness.</strong> Every convergent sequence is bounded. The converse fails.</p>
+<p><strong>Algebra of limits.</strong> If $z_n \to L$ and $w_n \to M$, then</p>
+<p>$$
+z_n + w_n \to L + M, \qquad z_n w_n \to L M.
+$$</p>
+<p>There is no quotient rule in general, because $\mathbb{D}$ has zero divisors.</p>
+<h3 id="cauchy-sequences">Cauchy Sequences</h3>
+<p>A sequence $(z_n)$ is <strong>Cauchy</strong> if for every $\epsilon > 0$ there exists $N \in \mathbb{N}$ such that</p>
+<p>$$
+m, n \geq N \implies \|z_m - z_n\|_E < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> In $\mathbb{D}$, a sequence converges iff it is Cauchy. This is the completeness of $\mathbb{D}$ as a metric space, and it follows from the completeness of $\mathbb{R}$ applied to the real and imaginary parts.</p>
+<h3 id="limits-of-functions">Limits of Functions</h3>
+<p>Let $f : D \to \mathbb{D}$ with $D \subseteq \mathbb{D}$, and let $z_0$ be a limit point of $D$. We say</p>
+<p>$$
+\lim_{z \to z_0} f(z) = L
+$$</p>
+<p>if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z \in D, \; 0 < \|z - z_0\|_E < \delta \implies \|f(z) - L\|_E < \epsilon.
+$$</p>
+<p><strong>Uniqueness.</strong> If the limit exists, it is unique.</p>
+<p><strong>Sequential criterion.</strong> $\lim_{z \to z_0} f(z) = L$ iff for every sequence $(z_n)$ in $D \setminus \{z_0\}$ with $z_n \to z_0$, we have $f(z_n) \to L$.</p>
+<p><strong>Algebra of limits.</strong> Sums and products of limits are the limits of the sums and products.</p>
+<h3 id="continuity">Continuity</h3>
+<p>A function $f : D \to \mathbb{D}$ is <strong>continuous at</strong> $z_0 \in D$ if</p>
+<p>$$
+\lim_{z \to z_0} f(z) = f(z_0).
+$$</p>
+<p>Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z \in D, \; \|z - z_0\|_E < \delta \implies \|f(z) - f(z_0)\|_E < \epsilon.
+$$</p>
+<p>$f$ is <strong>continuous on</strong> $D$ if it is continuous at every point of $D$.</p>
+<p><strong>Theorem.</strong> Sums and products of continuous functions are continuous. Compositions of continuous functions are continuous.</p>
+<p><strong>Theorem.</strong> $f$ is continuous iff the preimage of every open set is open. Equivalently, the preimage of every closed set is closed.</p>
+<p><strong>Componentwise continuity.</strong> Write $f(z) = u(x, y) + j v(x, y)$. Then $f$ is continuous at $z_0 = x_0 + j y_0$ iff $u$ and $v$ are continuous at $(x_0, y_0)$. This reduces split complex continuity to real continuity of two functions of two variables.</p>
+<h3 id="uniform-continuity">Uniform Continuity</h3>
+<p>A function $f : D \to \mathbb{D}$ is <strong>uniformly continuous</strong> if for every $\epsilon > 0$ there exists $\delta > 0$ such that</p>
+<p>$$
+z, w \in D, \; \|z - w\|_E < \delta \implies \|f(z) - f(w)\|_E < \epsilon.
+$$</p>
+<p><strong>Theorem.</strong> A continuous function on a compact set is uniformly continuous.</p>
+<h2 id="split-complex-differentiability">Split Complex Differentiability</h2>
+<h3 id="the-derivative">The Derivative</h3>
+<p>Let $f : U \to \mathbb{D}$ with $U$ open, and let $z_0 \in U$. The <strong>derivative</strong> of $f$ at $z_0$ is</p>
+<p>$$
+f'(z_0) = \lim_{h \to 0} \frac{f(z_0 + h) - f(z_0)}{h},
+$$</p>
+<p>provided the limit exists. If it does, $f$ is <strong>split complex differentiable</strong> at $z_0$, or <strong>holomorphic</strong> at $z_0$ in the split sense.</p>
+<p>The limit is taken in the split complex plane, so $h$ can approach $0$ from any direction. But because $\mathbb{D}$ has zero divisors, the quotient is not always defined, and the limit must be taken along paths where $h$ is invertible. This is the fundamental difference from the complex case.</p>
+<p><strong>Theorem.</strong> Split complex differentiability implies continuity. The converse fails.</p>
+<h3 id="the-cauchyriemann-equations">The Cauchy–Riemann Equations</h3>
+<p>Write $f(z) = u(x, y) + j v(x, y)$, where $z = x + jy$ and $u, v : U \to \mathbb{R}$.</p>
+<p><strong>Theorem.</strong> $f$ is split complex differentiable at $z_0 = x_0 + j y_0$ iff $u$ and $v$ are real differentiable at $(x_0, y_0)$ and satisfy the <strong>split Cauchy–Riemann equations</strong></p>
+<p>$$
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = \frac{\partial v}{\partial x}.
+$$</p>
+<p><strong>Proof.</strong> Write $h = h_1 + j h_2$. The difference quotient is</p>
+<p>$$
+\frac{f(z_0 + h) - f(z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + j (v_x h_1 + v_y h_2)}{h_1 + j h_2} + o(1).
+$$</p>
+<p>For the limit to exist independently of the direction of $h$, the numerator must be a split complex multiple of $h$. This forces the split Cauchy–Riemann equations. $\square$</p>
+<p><strong>Corollary.</strong> If $f$ is split complex differentiable, then $u$ and $v$ satisfy the <strong>wave equation</strong>:</p>
+<p>$$
+\frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial y^2} = 0, \qquad \frac{\partial^2 v}{\partial x^2} - \frac{\partial^2 v}{\partial y^2} = 0.
+$$</p>
+<p><strong>Proof.</strong> Differentiate the split Cauchy–Riemann equations and use the equality of mixed partials. $\square$</p>
+<p>This is the fundamental difference from complex analysis: the real and imaginary parts of a holomorphic function are harmonic in the complex case, and solutions of the wave equation in the split complex case. The change of sign in the Cauchy–Riemann equations changes the Laplacian into the d'Alembertian.</p>
+<h3 id="the-wirtinger-derivatives">The Wirtinger Derivatives</h3>
+<p>Define the <strong>split Wirtinger derivatives</strong></p>
+<p>$$
+\frac{\partial}{\partial z} = \frac{1}{2}\left( \frac{\partial}{\partial x} + j \frac{\partial}{\partial y} \right), \qquad \frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} - j \frac{\partial}{\partial y} \right).
+$$</p>
+<p><strong>Theorem.</strong> $f$ is split complex differentiable iff $\partial f / \partial \bar{z} = 0$. In that case,</p>
+<p>$$
+f'(z) = \frac{\partial f}{\partial z}.
+$$</p>
+<p>The condition $\partial f / \partial \bar{z} = 0$ is the split Cauchy–Riemann equations in compact form.</p>
+<h3 id="rules-of-differentiation">Rules of Differentiation</h3>
+<p><strong>Linearity.</strong> $(af + bg)' = a f' + b g'$.</p>
+<p><strong>Product rule.</strong> $(fg)' = f' g + f g'$.</p>
+<p><strong>Quotient rule.</strong> $(f/g)' = (f' g - f g')/g^2$ where $g$ is invertible.</p>
+<p><strong>Chain rule.</strong> $(f \circ g)'(z) = f'(g(z)) g'(z)$.</p>
+<p><strong>Inverse function rule.</strong> If $f$ is split complex differentiable at $z_0$ with $f'(z_0)$ invertible and $f^{-1}$ is defined near $f(z_0)$, then</p>
+<p>$$
+(f^{-1})'(f(z_0)) = \frac{1}{f'(z_0)}.
+$$</p>
+<h2 id="the-idempotent-decomposition">The Idempotent Decomposition</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>idempotents</strong> of $\mathbb{D}$ are</p>
+<p>$$
+e_+ = \frac{1 + j}{2}, \qquad e_- = \frac{1 - j}{2}.
+$$</p>
+<p>They satisfy $e_+^2 = e_+$, $e_-^2 = e_-$, $e_+ e_- = 0$, and $e_+ + e_- = 1$.</p>
+<p>Every split complex number decomposes uniquely as</p>
+<p>$$
+z = z_+ e_+ + z_- e_-, \qquad z_+ = x + y, \quad z_- = x - y.
+$$</p>
+<h3 id="differentiability-in-the-idempotent-basis">Differentiability in the Idempotent Basis</h3>
+<p>Write $f(z) = f_+(z) e_+ + f_-(z) e_-$, where $f_+$ and $f_-$ are real-valued functions. Then</p>
+<p>$$
+f \text{ is split complex differentiable} \iff f_+ \text{ is differentiable in } z_+ \text{ and } f_- \text{ is differentiable in } z_-.
+$$</p>
+<p><strong>Proof.</strong> In the idempotent basis, the split complex algebra is $\mathbb{R} \oplus \mathbb{R}$, and the multiplication is componentwise. So a function $f$ is differentiable iff each component is differentiable with respect to its own variable. $\square$</p>
+<p>This is the <strong>fundamental theorem of split complex analysis</strong>: differentiability in $\mathbb{D}$ is equivalent to differentiability in each of the two real components separately. There is no interaction between the two components, because the idempotents annihilate each other.</p>
+<h3 id="consequences">Consequences</h3>
+<p><strong>No conformality.</strong> Split complex differentiable functions do not preserve angles in general, because the two components can scale differently.</p>
+<p><strong>No Cauchy integral formula.</strong> There is no single integral formula that reconstructs a split complex differentiable function from its boundary values, because the two components are independent.</p>
+<p><strong>No Liouville theorem.</strong> A bounded split complex differentiable function on all of $\mathbb{D}$ need not be constant, because each component can be an arbitrary bounded differentiable function of one real variable.</p>
+<h2 id="integration">Integration</h2>
+<h3 id="contour-integrals">Contour Integrals</h3>
+<p>Let $\gamma : [a, b] \to \mathbb{D}$ be a piecewise continuously differentiable path, and let $f$ be continuous on the image of $\gamma$. The <strong>contour integral</strong> of $f$ along $\gamma$ is</p>
+<p>$$
+\int_\gamma f(z) \, dz = \int_a^b f(\gamma(t)) \gamma'(t) \, dt.
+$$</p>
+<p><strong>Linearity.</strong> $\int_\gamma (af + bg) = a \int_\gamma f + b \int_\gamma g$.</p>
+<p><strong>Reversal.</strong> $\int_{-\gamma} f = -\int_\gamma f$.</p>
+<p><strong>Additivity.</strong> If $\gamma$ is the concatenation of $\gamma_1$ and $\gamma_2$, then $\int_\gamma f = \int_{\gamma_1} f + \int_{\gamma_2} f$.</p>
+<p><strong>Estimation.</strong> If $\|f(z)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then</p>
+<p>$$
+\left\| \int_\gamma f(z) \, dz \right\|_E \leq M L.
+$$</p>
+<h3 id="the-cauchygoursat-theorem">The Cauchy–Goursat Theorem</h3>
+<p><strong>Theorem (Cauchy–Goursat, split version).</strong> If $f$ is split complex differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then</p>
+<p>$$
+\oint_\gamma f(z) \, dz = 0
+$$</p>
+<p>provided the contour does not cross the light cone.</p>
+<p><strong>Proof.</strong> In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour. $\square$</p>
+<p><strong>Caution.</strong> The theorem fails if the contour crosses the light cone, because the idempotent components are not defined there in a single-valued way. The light cone is the analogue of the branch cut in complex analysis, and it must be avoided.</p>
+<h3 id="the-cauchy-integral-formula">The Cauchy Integral Formula</h3>
+<p>There is <strong>no</strong> general Cauchy integral formula in split complex analysis. The reason is that the kernel $1/(w - z)$ has a singularity on the light cone, and the integral around a point depends on the path in a way that cannot be removed by a single formula.</p>
+<p>However, if the function is written in the idempotent basis, each component has its own Cauchy integral formula:</p>
+<p>$$
+f_+(z_+) = \frac{1}{2\pi i} \oint \frac{f_+(\zeta_+)}{\zeta_+ - z_+} \, d\zeta_+,
+$$</p>
+<p>and similarly for $f_-$. But these are complex formulas applied to real functions, and they require complexification of the components. They are not split complex formulas.</p>
+<h2 id="power-series">Power Series</h2>
+<h3 id="definition_1">Definition</h3>
+<p>A <strong>power series</strong> centered at $z_0$ is</p>
+<p>$$
+\sum_{n=0}^\infty c_n (z - z_0)^n, \qquad c_n \in \mathbb{D}.
+$$</p>
+<p>The <strong>radius of convergence</strong> is</p>
+<p>$$
+R = \frac{1}{\limsup_{n \to \infty} \|c_n\|_E^{1/n}},
+$$</p>
+<p>with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.</p>
+<p><strong>Theorem.</strong> The series converges absolutely for $\|z - z_0\|_E < R$ and diverges for $\|z - z_0\|_E > R$. On $\|z - z_0\|_E < R$ it converges uniformly on compact subsets.</p>
+<p><strong>Theorem.</strong> A power series is split complex differentiable on $\|z - z_0\|_E < R$, and its derivative is obtained by term-by-term differentiation:</p>
+<p>$$
+\frac{d}{dz} \sum_{n=0}^\infty c_n (z - z_0)^n = \sum_{n=1}^\infty n c_n (z - z_0)^{n-1}.
+$$</p>
+<p>The differentiated series has the same radius of convergence.</p>
+<h3 id="taylor-series">Taylor Series</h3>
+<p><strong>Theorem (Taylor, split version).</strong> If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(z_0, r)$, then $f$ has a power series expansion</p>
+<p>$$
+f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n
+$$</p>
+<p>valid for $\|z - z_0\|_E < r$.</p>
+<p><strong>Proof.</strong> In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine. $\square$</p>
+<p><strong>Corollary.</strong> A split complex differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.</p>
+<p><strong>Caution.</strong> The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.</p>
+<h2 id="singularities">Singularities</h2>
+<h3 id="classification">Classification</h3>
+<p>Let $f$ be split complex differentiable on a punctured disk $0 < \|z - z_0\|_E < R$.</p>
+<p><strong>Removable singularity.</strong> $z_0$ is removable if $f$ extends to a split complex differentiable function on $\|z - z_0\|_E < R$.</p>
+<p><strong>Pole.</strong> $z_0$ is a pole if $f(z) \to \infty$ in Euclidean modulus as $z \to z_0$.</p>
+<p><strong>Essential singularity.</strong> $z_0$ is an essential singularity if it is neither removable nor a pole.</p>
+<p><strong>Caution.</strong> The classification is more complicated than in the complex case, because the function can behave differently on the two idempotent components. A point can be removable for one component and a pole for the other, in which case it is neither removable nor a pole for the split complex function.</p>
+<h3 id="residues">Residues</h3>
+<p>There is <strong>no</strong> general residue theory in split complex analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity.</p>
+<p>In the idempotent basis, each component has its own residue, and the two residues are independent. The sum of the two residues is the analogue of the complex residue, but it does not determine the integral in general.</p>
+<h2 id="applications">Applications</h2>
+<h3 id="the-wave-equation">The Wave Equation</h3>
+<p>The split Cauchy–Riemann equations imply that the real and imaginary parts of a split complex differentiable function satisfy the wave equation</p>
+<p>$$
+\frac{\partial^2 u}{\partial x^2} - \frac{\partial^2 u}{\partial y^2} = 0.
+$$</p>
+<p>So split complex analysis is the natural setting for the study of the two-dimensional wave equation. The idempotent decomposition corresponds to the decomposition of a solution into left-moving and right-moving waves:</p>
+<p>$$
+u(x, y) = F(x + y) + G(x - y),
+$$</p>
+<p>where $F$ and $G$ are arbitrary differentiable functions. This is d'Alembert's solution, and it is the general solution of the wave equation in one spatial dimension.</p>
+<h3 id="hyperbolic-geometry">Hyperbolic Geometry</h3>
+<p>The split complex numbers are the natural coordinates for the hyperbolic plane. The <strong>hyperbolic metric</strong> is</p>
+<p>$$
+ds^2 = \frac{dx^2 - dy^2}{y^2},
+$$</p>
+<p>and the split complex differentiable functions that preserve this metric are the <strong>hyperbolic isometries</strong>, which are the analogues of the Möbius transformations in complex analysis.</p>
+<h3 id="signal-processing">Signal Processing</h3>
+<p>The split complex Fourier transform, restricted to a bounded interval or with a decaying kernel, is used in the analysis of transient signals. The transform diagonalizes the wave operator, and the idempotent decomposition corresponds to the decomposition into forward and backward propagating waves.</p>
+<h2 id="comparison-with-complex-analysis">Comparison with Complex Analysis</h2>
+<p>The differences between split complex analysis and complex analysis are consequences of the sign in the multiplication rule $j^2 = +1$ versus $i^2 = -1$.</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Complex</th>
+<th>Split Complex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Multiplication</td>
+<td>$i^2 = -1$</td>
+<td>$j^2 = +1$</td>
+</tr>
+<tr>
+<td>Zero divisors</td>
+<td>none</td>
+<td>$1 \pm j$</td>
+</tr>
+<tr>
+<td>Cauchy–Riemann</td>
+<td>$u_x = v_y$, $u_y = -v_x$</td>
+<td>$u_x = v_y$, $u_y = v_x$</td>
+</tr>
+<tr>
+<td>Harmonic equation</td>
+<td>$\Delta u = 0$</td>
+<td>$\Box u = 0$</td>
+</tr>
+<tr>
+<td>Cauchy integral</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Residue theory</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Liouville</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Identity theorem</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Conformality</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>Idempotent decomposition</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+<p>The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The split complex case is flexible: differentiability is a weak condition, and the function is determined by two independent real functions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{D}$</td>
+<td>Split complex algebra</td>
+</tr>
+<tr>
+<td>$j$</td>
+<td>Split imaginary unit, $j^2 = +1$</td>
+</tr>
+<tr>
+<td>$z = x + jy$</td>
+<td>General split complex number</td>
+</tr>
+<tr>
+<td>$\bar{z} = x - jy$</td>
+<td>Split complex conjugate</td>
+</tr>
+<tr>
+<td>$\|z\|_E = \sqrt{x^2 + y^2}$</td>
+<td>Euclidean modulus</td>
+</tr>
+<tr>
+<td>$\|z\| = \sqrt{\|x^2 - y^2\|}$</td>
+<td>Split modulus</td>
+</tr>
+<tr>
+<td>$B(z_0, r)$</td>
+<td>Open disk of radius $r$</td>
+</tr>
+<tr>
+<td>$f'(z)$</td>
+<td>Split complex derivative</td>
+</tr>
+<tr>
+<td>$\partial/\partial z, \partial/\partial \bar{z}$</td>
+<td>Split Wirtinger derivatives</td>
+</tr>
+<tr>
+<td>$e_+ = (1 + j)/2$</td>
+<td>Positive idempotent</td>
+</tr>
+<tr>
+<td>$e_- = (1 - j)/2$</td>
+<td>Negative idempotent</td>
+</tr>
+<tr>
+<td>$z = z_+ e_+ + z_- e_-$</td>
+<td>Idempotent decomposition</td>
+</tr>
+<tr>
+<td>$\int_\gamma f(z) \, dz$</td>
+<td>Contour integral</td>
+</tr>
+<tr>
+<td>$\Box = \partial_x^2 - \partial_y^2$</td>
+<td>d'Alembertian</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Isaak Yaglom, <em>Complex Numbers in Geometry</em> (Academic Press, 1968), for the geometric interpretation of split complex numbers.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>Vladimir V. Kisil, <em>Geometry of Möbius Transformations: Elliptic, Parabolic and Hyperbolic Actions of SL(2, ℝ)</em> (Imperial College Press, 2012), for the analytic applications.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 1987), for the comparison with the complex case.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

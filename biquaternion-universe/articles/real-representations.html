@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="real-representations">Real Representations</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article introduces the representation theory of the real algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. The real algebra is assumed from the article on real algebra, and the order and completeness of $\mathbb{R}$ are used throughout. No physics is invoked.</p>
+<h2 id="representations-of-math1">Representations of $\mathbb{R}$</h2>
+<h3 id="definition">Definition</h3>
+<p>A <strong>representation</strong> of $\mathbb{R}$ is a real vector space $V$ together with a bilinear map</p>
+<p>$$
+\rho : \mathbb{R} \times V \to V, \qquad \rho(a, v) = a \cdot v,
+$$</p>
+<p>satisfying</p>
+<p>$$
+a \cdot (b \cdot v) = (ab) \cdot v, \qquad 1 \cdot v = v.
+$$</p>
+<p>Equivalently, a representation is an algebra homomorphism</p>
+<p>$$
+\rho : \mathbb{R} \to \operatorname{End}(V).
+$$</p>
+<p>Since $\mathbb{R}$ is a field, every representation is a real vector space, and the action is by real scalar multiplication.</p>
+<h3 id="the-regular-representation">The Regular Representation</h3>
+<p>The <strong>regular representation</strong> of $\mathbb{R}$ is $\mathbb{R}$ acting on itself by left multiplication:</p>
+<p>$$
+\rho_{\mathrm{reg}}(a) b = a b, \qquad a, b \in \mathbb{R}.
+$$</p>
+<p>This is the representation $\rho_{\mathrm{reg}} : \mathbb{R} \to \operatorname{End}(\mathbb{R})$ given by $\rho_{\mathrm{reg}}(a) = a$. It is the representation of $\mathbb{R}$ on a one-dimensional real vector space.</p>
+<h2 id="classification">Classification</h2>
+<h3 id="the-classification-theorem">The Classification Theorem</h3>
+<p><strong>Theorem.</strong> Every finite-dimensional real representation of $\mathbb{R}$ is isomorphic to a direct sum of copies of the regular representation:</p>
+<p>$$
+V \cong \mathbb{R}^{\oplus n}, \qquad \rho(a)(v_1, \dots, v_n) = (a v_1, \dots, a v_n).
+$$</p>
+<p><strong>Proof.</strong> Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $a \mapsto a \cdot v_i$ is $\mathbb{R}$-linear, so $a \cdot v_i = \lambda_i(a) v_i$ for some scalar $\lambda_i(a) \in \mathbb{R}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $a \cdot (b \cdot v_i) = (ab) \cdot v_i$, we have $\lambda_i(a) \lambda_i(b) = \lambda_i(ab)$. It follows that $\lambda_i(a) = a$ for all $a$, because $\lambda_i$ is a field homomorphism $\mathbb{R} \to \mathbb{R}$ fixing $1$. Hence $a \cdot v_i = a v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$</p>
+<h3 id="irreducible-representations">Irreducible Representations</h3>
+<p><strong>Theorem.</strong> The regular representation is the unique irreducible real representation of $\mathbb{R}$, up to isomorphism.</p>
+<p><strong>Proof.</strong> Any irreducible representation is a quotient of the regular representation, hence isomorphic to it, since $\mathbb{R}$ is a field and every non-zero $\mathbb{R}$-linear map $\mathbb{R} \to V$ is injective. $\square$</p>
+<h3 id="schurs-lemma">Schur's Lemma</h3>
+<p><strong>Theorem (Schur).</strong> Every $\mathbb{R}$-linear endomorphism of an irreducible real representation of $\mathbb{R}$ is a scalar multiple of the identity.</p>
+<p><strong>Proof.</strong> Let $V$ be irreducible and let $T : V \to V$ be $\mathbb{R}$-linear and commuting with the action. Then $\ker T$ and $\operatorname{im} T$ are subrepresentations. Since $V$ is irreducible, either $\ker T = 0$ and $\operatorname{im} T = V$ (so $T$ is an isomorphism), or $\ker T = V$ (so $T = 0$). In the first case, $T$ is an isomorphism, and since $V$ is one-dimensional over $\mathbb{R}$ (by the classification theorem), $T$ is multiplication by a non-zero scalar. $\square$</p>
+<p><strong>Corollary.</strong> The endomorphism ring of the regular representation is $\mathbb{R}$ itself.</p>
+<h2 id="the-representation-ring">The Representation Ring</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>representation ring</strong> $R(\mathbb{R})$ is the Grothendieck ring of finite-dimensional real representations of $\mathbb{R}$. As an abelian group, it is generated by the isomorphism class $[\rho_{\mathrm{reg}}]$, with no relations. So</p>
+<p>$$
+R(\mathbb{R}) \cong \mathbb{Z},
+$$</p>
+<p>with generator $[\rho_{\mathrm{reg}}]$.</p>
+<h3 id="ring-structure">Ring Structure</h3>
+<p>The product in $R(\mathbb{R})$ is given by the tensor product of representations:</p>
+<p>$$
+[V] \cdot [W] = [V \otimes_{\mathbb{R}} W].
+$$</p>
+<p>Since the regular representation is one-dimensional, its tensor powers are</p>
+<p>$$
+\rho_{\mathrm{reg}} \otimes \rho_{\mathrm{reg}} \cong \rho_{\mathrm{reg}}.
+$$</p>
+<p>So the multiplication in $R(\mathbb{R})$ is the ordinary multiplication in $\mathbb{Z}$.</p>
+<h2 id="representations-and-the-field-structure">Representations and the Field Structure</h2>
+<h3 id="the-role-of-the-field">The Role of the Field</h3>
+<p>The representation theory of $\mathbb{R}$ is trivial because $\mathbb{R}$ is a field. Every module over a field is free, so every representation is a direct sum of copies of the regular representation. The irreducible representations are one-dimensional over $\mathbb{R}$, and there is exactly one of them, up to isomorphism.</p>
+<p>This is a general fact about fields: if $F$ is any field, the finite-dimensional representations of $F$ are all direct sums of copies of the regular representation, and the irreducible representations are one-dimensional. The representation ring is $\mathbb{Z}$, generated by the regular representation.</p>
+<h3 id="the-role-of-the-order">The Role of the Order</h3>
+<p>The order on $\mathbb{R}$ does not enter the representation theory, because representations are linear and the order is not linear. However, the order does constrain which representations admit positive-definite invariant inner products.</p>
+<p>A representation $V$ admits a <strong>positive-definite invariant inner product</strong> if there exists an inner product $\langle \cdot, \cdot \rangle$ on $V$ such that</p>
+<p>$$
+\langle a \cdot v, w \rangle = \langle v, a \cdot w \rangle, \qquad a \in \mathbb{R}, \; v, w \in V.
+$$</p>
+<p><strong>Theorem.</strong> Every finite-dimensional real representation of $\mathbb{R}$ admits a positive-definite invariant inner product.</p>
+<p><strong>Proof.</strong> Choose any positive-definite inner product $\langle \cdot, \cdot \rangle_0$ on $V$ (which exists because $V$ is finite-dimensional). Average over a finite set, or use the fact that the representation is a direct sum of copies of the regular representation, on which the standard inner product is invariant. $\square$</p>
+<h3 id="the-role-of-completeness">The Role of Completeness</h3>
+<p>Completeness enters the representation theory through the theory of infinite-dimensional representations. A <strong>Banach representation</strong> of $\mathbb{R}$ is a Banach space $V$ together with a continuous algebra homomorphism $\rho : \mathbb{R} \to B(V)$, where $B(V)$ is the algebra of bounded linear operators on $V$.</p>
+<p><strong>Theorem.</strong> Every Banach representation of $\mathbb{R}$ is isomorphic to a direct sum of copies of the regular representation, in the sense that $V$ decomposes as a direct sum of closed invariant subspaces on each of which $\mathbb{R}$ acts by scalar multiplication.</p>
+<p><strong>Proof.</strong> This is a consequence of the fact that $\mathbb{R}$ is a complete field and the Gelfand–Mazur theorem, which states that every real Banach algebra that is a division algebra is isomorphic to $\mathbb{R}$. $\square$</p>
+<h2 id="the-dual-representation">The Dual Representation</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>dual</strong> (or contragredient) representation of a representation $\rho$ on $V$ is the representation $\rho^*$ on the dual space $V^* = \operatorname{Hom}_{\mathbb{R}}(V, \mathbb{R})$ defined by</p>
+<p>$$
+(\rho^*(a) f)(v) = f(\rho(a) v), \qquad a \in \mathbb{R}, \; f \in V^*, \; v \in V.
+$$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Duality is an involution.</strong> $(V^*)^* \cong V$.</p>
+<p><strong>Duality is exact.</strong> It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.</p>
+<p><strong>The dual of an irreducible is irreducible.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<p><strong>The dual of the regular representation is the regular representation.</strong> $\rho_{\mathrm{reg}}^* \cong \rho_{\mathrm{reg}}$.</p>
+<h3 id="the-pairing">The Pairing</h3>
+<p>The natural pairing</p>
+<p>$$
+\langle \cdot, \cdot \rangle : V^* \times V \to \mathbb{R}, \qquad \langle f, v \rangle = f(v),
+$$</p>
+<p>satisfies</p>
+<p>$$
+\langle \rho^*(a) f, v \rangle = \langle f, \rho(a) v \rangle.
+$$</p>
+<p>This is the definition of the dual representation, written as a pairing.</p>
+<h2 id="tensor-products">Tensor Products</h2>
+<h3 id="definition_3">Definition</h3>
+<p>The <strong>tensor product</strong> of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by</p>
+<p>$$
+a \cdot (v \otimes w) = (a \cdot v) \otimes w = v \otimes (a \cdot w).
+$$</p>
+<p>The two definitions agree because $\mathbb{R}$ is commutative.</p>
+<h3 id="basic-properties_1">Basic Properties</h3>
+<p><strong>Associativity.</strong> $(U \otimes V) \otimes W \cong U \otimes (V \otimes W)$.</p>
+<p><strong>Commutativity.</strong> $V \otimes W \cong W \otimes V$.</p>
+<p><strong>Distributivity.</strong> $U \otimes (V \oplus W) \cong (U \otimes V) \oplus (U \otimes W)$.</p>
+<p><strong>Tensor product of irreducibles.</strong> The tensor product of two copies of the regular representation is the regular representation:</p>
+<p>$$
+\rho_{\mathrm{reg}} \otimes \rho_{\mathrm{reg}} \cong \rho_{\mathrm{reg}}.
+$$</p>
+<h2 id="homomorphisms">Homomorphisms</h2>
+<h3 id="definition_4">Definition</h3>
+<p>A <strong>homomorphism</strong> of representations $V$ and $W$ is a real-linear map $T : V \to W$ such that</p>
+<p>$$
+T(a \cdot v) = a \cdot T(v), \qquad a \in \mathbb{R}, \; v \in V.
+$$</p>
+<p>The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{R}}(V, W)$.</p>
+<h3 id="basic-properties_2">Basic Properties</h3>
+<p><strong>Composition.</strong> If $T \in \operatorname{Hom}_{\mathbb{R}}(V, W)$ and $S \in \operatorname{Hom}_{\mathbb{R}}(W, U)$, then $S T \in \operatorname{Hom}_{\mathbb{R}}(V, U)$.</p>
+<p><strong>Schur's lemma.</strong> If $V$ and $W$ are irreducible, then $\operatorname{Hom}_{\mathbb{R}}(V, W) = 0$ if $V \not\cong W$, and $\operatorname{Hom}_{\mathbb{R}}(V, V) \cong \mathbb{R}$.</p>
+<p><strong>Dimension count.</strong> For $V \cong \mathbb{R}^{\oplus p}$ and $W \cong \mathbb{R}^{\oplus q}$,</p>
+<p>$$
+\dim_{\mathbb{R}} \operatorname{Hom}_{\mathbb{R}}(V, W) = pq.
+$$</p>
+<p><strong>Proof.</strong> A homomorphism is a real-linear map between finite-dimensional real vector spaces, so it is determined by a $q \times p$ real matrix, of real dimension $pq$. $\square$</p>
+<h3 id="the-endomorphism-ring">The Endomorphism Ring</h3>
+<p>The <strong>endomorphism ring</strong> of a representation $V$ is $\operatorname{End}_{\mathbb{R}}(V) = \operatorname{Hom}_{\mathbb{R}}(V, V)$. For $V \cong \mathbb{R}^{\oplus n}$,</p>
+<p>$$
+\operatorname{End}_{\mathbb{R}}(V) \cong M_n(\mathbb{R}),
+$$</p>
+<p>the ring of $n \times n$ real matrices. This is a simple ring, and it is the prototypical example of a central simple algebra over $\mathbb{R}$.</p>
+<h2 id="comparison-with-the-complex-and-split-complex-cases">Comparison with the Complex and Split Complex Cases</h2>
+<p>The representation theory of $\mathbb{R}$ is the simplest of the three two-dimensional real algebras, but it is the foundation on which the other two are built.</p>
+<p><strong>Field versus ring.</strong> $\mathbb{R}$ is a field, so every non-zero element is invertible. $\mathbb{D}$ is not a field, so it has zero divisors. This is the source of all the differences.</p>
+<p><strong>Number of irreducibles.</strong> $\mathbb{R}$ has one irreducible representation, up to isomorphism. $\mathbb{D}$ has two: $\rho_+$ and $\rho_-$. $\mathbb{C}$ has one, but as a real algebra it has uncountably many.</p>
+<p><strong>Endomorphism rings.</strong> The endomorphism ring of the regular representation of $\mathbb{R}$ is $\mathbb{R}$ itself. The endomorphism ring of the regular representation of $\mathbb{D}$ is $\mathbb{R} \oplus \mathbb{R}$. The endomorphism ring of the regular representation of $\mathbb{C}$ as a real algebra is $\mathbb{C}$.</p>
+<p><strong>Representation rings.</strong> $R(\mathbb{R}) \cong \mathbb{Z}$, generated by the regular representation. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$, generated by $\rho_+$ and $\rho_-$. $R(\mathbb{C})$ as a complex algebra is $\mathbb{Z}$, but as a real algebra it is more complicated.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{R}$</td>
+<td>Real algebra</td>
+</tr>
+<tr>
+<td>$\rho : \mathbb{R} \to \operatorname{End}(V)$</td>
+<td>Representation</td>
+</tr>
+<tr>
+<td>$\rho_{\mathrm{reg}}$</td>
+<td>Regular representation</td>
+</tr>
+<tr>
+<td>$V^*$</td>
+<td>Dual representation</td>
+</tr>
+<tr>
+<td>$V \otimes W$</td>
+<td>Tensor product</td>
+</tr>
+<tr>
+<td>$\operatorname{Hom}_{\mathbb{R}}(V, W)$</td>
+<td>Space of homomorphisms</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{R}}(V)$</td>
+<td>Endomorphism ring</td>
+</tr>
+<tr>
+<td>$R(\mathbb{R})$</td>
+<td>Representation ring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Charles C. Pinter, <em>A Book of Abstract Algebra</em> (Dover, 2010), for the representation theory of fields.</li>
+<li>Israel Nathan Herstein, <em>Noncommutative Rings</em> (Mathematical Association of America, 1968), for the general theory of modules over rings.</li>
+<li>Serge Lang, <em>Algebra</em> (Springer, 2002), for the structure theory of semisimple algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>Walter Rudin, <em>Real and Complex Analysis</em> (McGraw-Hill, 1987), for the analytic background.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

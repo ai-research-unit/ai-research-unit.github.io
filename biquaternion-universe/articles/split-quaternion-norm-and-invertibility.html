@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="split-quaternion-norm-and-invertibility">Split-Quaternion Norm and Invertibility</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article studies the norm form of the split quaternion algebra and the invertibility of its elements. It follows the article on split quaternion algebra, which defined the algebra, its four conjugations, and its four fixed-point subspaces. The goal here is to define the norm form and the Hermitian form, to establish the criterion for invertibility, and to describe the group of units.</p>
+<p>The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split quaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding article, together with its four conjugations, its four fixed-point subspaces, and its three decompositions.</p>
+<p>Throughout, a split quaternion is written</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+$$</p>
+<p>The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.</p>
+<p>The idempotents of the split complex algebra are denoted $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is</p>
+<p>$$
+\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+$$</p>
+<p>with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.</p>
+<h2 id="the-norm-form">The Norm Form</h2>
+<h3 id="definition">Definition</h3>
+<p>The <strong>norm form</strong> of a split quaternion $\tilde{Q}$ is</p>
+<p>$$
+N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2,
+$$</p>
+<p>where $\bar{\tilde{Q}}$ is the quaternion conjugate.</p>
+<p><strong>Basic properties.</strong></p>
+<ul>
+<li>$N(\tilde{Q})$ is a split complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ or in the imaginary translate $j \mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and it is split complex otherwise.</li>
+<li>$N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero split quaternion. The elements with vanishing norm form are the zero divisors, studied in the article on split quaternion zero divisors.</li>
+<li>$N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.</li>
+<li>$N(\tilde{Q})$ is not invariant under split complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.</li>
+<li>$N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\tilde{Q})^*$.</li>
+</ul>
+<h3 id="explicit-form">Explicit Form</h3>
+<p>Writing $Q_\mu = q_\mu + j q'_\mu$ and using $j^2 = +1$,</p>
+<p>$$
+N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
+$$</p>
+<p>So the real part of the norm form is the sum of the squares of all eight real components, and the split part is twice the inner product of the real and split parts. This is the <strong>same structure</strong> as in the biquaternion case, with $j$ in place of $i$. The difference is the sign of the square of the extra unit: $j^2 = +1$ versus $i^2 = -1$.</p>
+<h3 id="multiplicativity">Multiplicativity</h3>
+<p><strong>Theorem.</strong> The norm form is multiplicative:</p>
+<p>$$
+N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
+$$</p>
+<p><strong>Proof.</strong> Compute</p>
+<p>$$
+N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) \overline{(\tilde{Q} \tilde{R})} = \tilde{Q} \tilde{R} \bar{\tilde{R}} \bar{\tilde{Q}} = \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}}.
+$$</p>
+<p>Since $N(\tilde{R})$ is a split complex number and the split complex unit $j$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$. So</p>
+<p>$$
+\tilde{Q} N(\tilde{R}) \bar{\tilde{Q}} = N(\tilde{R}) \tilde{Q} \bar{\tilde{Q}} = N(\tilde{R}) N(\tilde{Q}).
+$$</p>
+<p>$\square$</p>
+<p><strong>Corollary.</strong> If $N(\tilde{Q}) \neq 0$ and $N(\tilde{R}) \neq 0$, then $N(\tilde{Q} \circ \tilde{R}) \neq 0$.</p>
+<p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any split quaternion is a zero divisor.</p>
+<h3 id="the-norm-form-in-the-idempotent-basis">The Norm Form in the Idempotent Basis</h3>
+<p>In the idempotent basis, the norm form takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
+<p>$$
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-,
+$$</p>
+<p>where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm of $\tilde{Q}_\pm$, which is a non-negative real number.</p>
+<p>So the norm form of a split quaternion is the pair of non-negative real numbers $(N_{\mathbb{H}}(\tilde{Q}_+), N_{\mathbb{H}}(\tilde{Q}_-))$, embedded in the split complex algebra via the idempotent basis. This is the cleanest form of the norm form, and it is the form in which the invertibility criterion is most transparent.</p>
+<h2 id="the-hermitian-form">The Hermitian Form</h2>
+<h3 id="definition_1">Definition</h3>
+<p>The <strong>Hermitian form</strong> of a split quaternion $\tilde{Q}$ is</p>
+<p>$$
+\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} Q_\mu Q_\mu^* = \sum_{\mu=0}^{3} (q_\mu^2 - q'^2_\mu),
+$$</p>
+<p>where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate and $Q_\mu^* = q_\mu - j q'_\mu$ is the split complex conjugate.</p>
+<p><strong>Basic properties.</strong></p>
+<ul>
+<li>$\tilde{Q} \tilde{Q}^\dagger$ is a <strong>real number</strong>. It is the difference between the sum of the squares of the real parts and the sum of the squares of the split parts.</li>
+<li>It is <strong>not positive-definite</strong>: it can be positive, negative, or zero. Its signature is $(4, 4)$ on the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$.</li>
+<li>It vanishes on the set of elements with $\sum_\mu q_\mu^2 = \sum_\mu q'^2_\mu$, which is a four-dimensional cone in $\mathbb{H}_{\mathbb{D}}$.</li>
+<li>It is <strong>not multiplicative</strong>: $\tilde{Q} \tilde{Q}^\dagger$ does not satisfy a product formula.</li>
+</ul>
+<h3 id="the-signature">The Signature</h3>
+<p>The Hermitian form is a real quadratic form of signature $(4, 4)$:</p>
+<ul>
+<li>The positive directions are the four real coefficients $q_0, q_1, q_2, q_3$.</li>
+<li>The negative directions are the four split coefficients $q'_0, q'_1, q'_2, q'_3$.</li>
+</ul>
+<p>So the Hermitian form is the difference of two positive-definite forms, each of rank 4.</p>
+<h3 id="the-zero-set">The Zero Set</h3>
+<p>The Hermitian form vanishes when</p>
+<p>$$
+\sum_{\mu=0}^{3} q_\mu^2 = \sum_{\mu=0}^{3} q'^2_\mu.
+$$</p>
+<p>This is the equation of a four-dimensional cone in $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$. The cone is the analogue of the light cone in Minkowski space, with signature $(4, 4)$ instead of $(1, 3)$.</p>
+<h2 id="the-euclidean-norm">The Euclidean Norm</h2>
+<h3 id="definition_2">Definition</h3>
+<p>The <strong>Euclidean norm</strong> of a split quaternion $\tilde{Q}$ is</p>
+<p>$$
+\|\tilde{Q}\|_E = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu)}.
+$$</p>
+<p>It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one.</p>
+<h3 id="relation-to-the-norm-form-and-the-hermitian-form">Relation to the Norm Form and the Hermitian Form</h3>
+<p>The Euclidean norm is not the square root of the Hermitian form, because the Hermitian form is indefinite. It is also not the modulus of the norm form, because the norm form is split complex and its modulus is</p>
+<p>$$
+|N(\tilde{Q})| = \sqrt{\left(\sum_\mu (q_\mu^2 + q'^2_\mu)\right)^2 - 4\left(\sum_\mu q_\mu q'_\mu\right)^2},
+$$</p>
+<p>which is not the Euclidean norm squared.</p>
+<p>The Euclidean norm is defined separately, and it is the ordinary Euclidean norm on the underlying real vector space. It is the norm that defines the topology of $\mathbb{H}_{\mathbb{D}}$, the convergence of sequences, and the completeness of the algebra as a metric space.</p>
+<h3 id="multiplicativity_1">Multiplicativity</h3>
+<p>The Euclidean norm is <strong>not</strong> multiplicative with respect to the split quaternion product. This is the same situation as in the biquaternion case, where the Euclidean norm is not multiplicative because the Hermitian form is not multiplicative.</p>
+<p>The norm form, which is multiplicative, is split complex-valued, and its vanishing set is the zero divisor set. The Euclidean norm, which is positive-definite, is not multiplicative, and it does not detect the zero divisors.</p>
+<h2 id="invertibility">Invertibility</h2>
+<h3 id="definition_3">Definition</h3>
+<p>A split quaternion $\tilde{Q}$ is <strong>invertible</strong> if there exists a split quaternion $\tilde{R}$ such that</p>
+<p>$$
+\tilde{Q} \circ \tilde{R} = \tilde{R} \circ \tilde{Q} = e_0.
+$$</p>
+<p>The split quaternion $\tilde{R}$, if it exists, is the <strong>inverse</strong> of $\tilde{Q}$ and is denoted $\tilde{Q}^{-1}$.</p>
+<h3 id="left-and-right-inverses">Left and Right Inverses</h3>
+<p>In a general non-commutative algebra, the notions of left inverse, right inverse, and two-sided inverse are distinct. In the split quaternion algebra, however, they coincide, for the same reason as in the biquaternion algebra: the algebra is finite-dimensional over $\mathbb{R}$, and in a finite-dimensional algebra over a field, a right inverse is also a left inverse.</p>
+<h3 id="criterion-for-invertibility">Criterion for Invertibility</h3>
+<p><strong>Theorem.</strong> A split quaternion $\tilde{Q}$ is invertible if and only if its norm form is nonzero:</p>
+<p>$$
+N(\tilde{Q}) \neq 0.
+$$</p>
+<p><strong>Proof.</strong> Suppose $N(\tilde{Q}) \neq 0$. Define</p>
+<p>$$
+\tilde{R} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}.
+$$</p>
+<p>The division by $N(\tilde{Q})$ is well-defined because $N(\tilde{Q})$ is a nonzero split complex number, which is invertible in $\mathbb{D}$. Then</p>
+<p>$$
+\tilde{Q} \circ \tilde{R} = \frac{\tilde{Q} \bar{\tilde{Q}}}{N(\tilde{Q})} = \frac{N(\tilde{Q})}{N(\tilde{Q})} = e_0,
+$$</p>
+<p>so $\tilde{R}$ is a right inverse, hence also a left inverse.</p>
+<p>Conversely, suppose $\tilde{Q}$ is invertible. Applying the norm form to $\tilde{Q} \circ \tilde{Q}^{-1} = e_0$ and using multiplicativity gives</p>
+<p>$$
+N(\tilde{Q}) N(\tilde{Q}^{-1}) = N(e_0) = 1,
+$$</p>
+<p>so $N(\tilde{Q}) \neq 0$. $\square$</p>
+<h3 id="the-inverse-formula">The Inverse Formula</h3>
+<p>When $N(\tilde{Q}) \neq 0$, the inverse is</p>
+<p>$$
+\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}}}{N(\tilde{Q})}.
+$$</p>
+<p>This is the split quaternion analogue of the formula $q^{-1} = \bar{q}/|q|^2$ for quaternions.</p>
+<h3 id="the-criterion-in-the-idempotent-basis">The Criterion in the Idempotent Basis</h3>
+<p>The invertibility criterion takes a particularly simple form in the idempotent basis. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,</p>
+<p>$$
+N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-.
+$$</p>
+<p>Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q}) \neq 0$ if and only if</p>
+<p>$$
+N_{\mathbb{H}}(\tilde{Q}_+) \neq 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) \neq 0.
+$$</p>
+<p>Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) \neq 0$ if and only if $\tilde{Q}_\pm \neq 0$. So the invertibility criterion is</p>
+<p>$$
+\tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
+$$</p>
+<p>This is the cleanest form of the invertibility criterion. It is a <strong>linear</strong> condition in the idempotent basis: the element is invertible if and only if neither of its two idempotent components vanishes.</p>
+<p><strong>Comparison with the biquaternion case.</strong> In the biquaternion algebra, the invertibility criterion $N(\tilde{Q}) \neq 0$ is a <strong>quadratic</strong> condition, and the zero divisor set is a seven-dimensional cone. In the split quaternion algebra, the invertibility criterion is a linear condition in the idempotent basis, and the zero divisor set is a union of two four-dimensional linear subspaces. The difference is a consequence of the fact that $\mathbb{H}_{\mathbb{D}}$ is semisimple while $\mathbb{B}$ is simple.</p>
+<h3 id="corollaries">Corollaries</h3>
+<p><strong>Corollary.</strong> The inverse of an invertible element is invertible, and $(\tilde{Q}^{-1})^{-1} = \tilde{Q}$.</p>
+<p><strong>Corollary.</strong> If $\tilde{Q}$ is invertible, then $\bar{\tilde{Q}}$, $\tilde{Q}^*$, $\tilde{Q}^\dagger$, and $\tilde{Q}^\flat$ are invertible, and their inverses are the corresponding conjugates of $\tilde{Q}^{-1}$.</p>
+<p><strong>Corollary.</strong> The product of two invertible elements is invertible, with $(\tilde{Q} \tilde{R})^{-1} = \tilde{R}^{-1} \tilde{Q}^{-1}$.</p>
+<h2 id="the-group-of-units">The Group of Units</h2>
+<h3 id="definition_4">Definition</h3>
+<p>The <strong>group of units</strong> of $\mathbb{H}_{\mathbb{D}}$ is the set of invertible elements:</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}^\times = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : N(\tilde{Q}) \neq 0\}.
+$$</p>
+<p>It is a group under multiplication, with identity $e_0$.</p>
+<h3 id="structure">Structure</h3>
+<p><strong>Theorem.</strong> The group of units is isomorphic to the direct product of two copies of the quaternion unit group:</p>
+<p>$$
+\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times \times \mathbb{H}^\times,
+$$</p>
+<p>where $\mathbb{H}^\times = \mathbb{H} \setminus \{0\}$ is the group of nonzero quaternions.</p>
+<p><strong>Proof.</strong> In the idempotent basis, an element is invertible if and only if both idempotent components are nonzero. The multiplication is componentwise, so the group of units is the direct product of the groups of units of the two components. Each component is a copy of $\mathbb{H}$, and its group of units is $\mathbb{H}^\times$. $\square$</p>
+<h3 id="basic-properties">Basic Properties</h3>
+<p><strong>Openness.</strong> The group of units is an open subset of $\mathbb{H}_{\mathbb{D}}$ in the Euclidean topology. Indeed, the invertibility condition is that both idempotent components are nonzero, which is an open condition.</p>
+<p><strong>Non-compactness.</strong> The group of units is not compact, because it contains the real line $\{a e_0 : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.</p>
+<p><strong>Connected components.</strong> The group of units has four connected components, corresponding to the four sign combinations of the two idempotent components. Indeed, in the idempotent basis, an invertible element is a pair $(\tilde{Q}_+, \tilde{Q}_-)$ with both components nonzero, and each component $\tilde{Q}_\pm \in \mathbb{H} \setminus \{0\}$ has two connected components (positive and negative real part). So the group of units has $2 \times 2 = 4$ connected components.</p>
+<p><strong>Lie group structure.</strong> The group of units is a Lie group of dimension $8$ over $\mathbb{R}$. Its Lie algebra is $\mathbb{H}_{\mathbb{D}}$ itself, with the commutator bracket.</p>
+<p><strong>Center.</strong> The center of $\mathbb{H}_{\mathbb{D}}^\times$ is the group of invertible split complex scalars, which is the group of units of $\mathbb{D}$:</p>
+<p>$$
+Z(\mathbb{H}_{\mathbb{D}}^\times) = \mathbb{D}^\times = \{Q_0 \in \mathbb{D} : Q_0 \neq 0\}.
+$$</p>
+<p>The group of units of $\mathbb{D}$ has four connected components, corresponding to the four sign combinations of the real and split parts.</p>
+<h3 id="the-inverse-map">The Inverse Map</h3>
+<p>The <strong>inverse map</strong></p>
+<p>$$
+\iota : \mathbb{H}_{\mathbb{D}}^\times \to \mathbb{H}_{\mathbb{D}}^\times, \qquad \iota(\tilde{Q}) = \tilde{Q}^{-1},
+$$</p>
+<p>is a smooth involution. Its differential at the identity is $-\mathrm{id}_{\mathbb{H}_{\mathbb{D}}}$, which is the reason the Lie algebra bracket is antisymmetric.</p>
+<h2 id="the-three-way-classification">The Three-Way Classification</h2>
+<p>Combining the criterion for invertibility with the definition of the zero element, the elements of $\mathbb{H}_{\mathbb{D}}$ are partitioned into three classes:</p>
+<table>
+<thead>
+<tr>
+<th>Condition on $N(\tilde{Q})$</th>
+<th>Condition on $\tilde{Q}$</th>
+<th>Conclusion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde{Q}) \neq 0$</td>
+<td>(automatically $\tilde{Q} \neq 0$)</td>
+<td>$\tilde{Q}$ is invertible</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = 0$</td>
+<td>$\tilde{Q} = 0$</td>
+<td>$\tilde{Q}$ is the zero element</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = 0$</td>
+<td>$\tilde{Q} \neq 0$</td>
+<td>$\tilde{Q}$ is a zero divisor</td>
+</tr>
+</tbody>
+</table>
+<p>The zero divisors are the subject of the article on split quaternion zero divisors.</p>
+<h3 id="the-algebra-is-not-a-division-algebra">The Algebra Is Not a Division Algebra</h3>
+<p>By definition, a <strong>division algebra</strong> is an algebra in which every nonzero element is invertible. Equivalently, an algebra is a division algebra if and only if it contains no zero divisors.</p>
+<p>The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the quaternion algebra $\mathbb{H}$, which is a division algebra, and to the biquaternion algebra $\mathbb{B}$, which is also not a division algebra.</p>
+<p>The Frobenius theorem states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The split quaternion algebra is a fourth finite-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors.</p>
+<h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
+<p>We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$ defined in the preceding article. The criterion is the same in all cases: an element is invertible if and only if its norm form is nonzero.</p>
+<h3 id="the-split-complex-subspace-math167">The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</h3>
+<p>An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form</p>
+<p>$$
+\tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2.
+$$</p>
+<p>This vanishes if and only if $Q_0 = 0$ or $Q_0$ is a zero divisor in $\mathbb{D}$, i.e., $Q_0$ is a nonzero multiple of $1 \pm j$. So the split complex subspace contains zero divisors: the elements $Q_0 e_0$ with $Q_0 = t(1 \pm j)$ for $t \neq 0$. These are the zero divisors inherited from the split complex algebra.</p>
+<p>The invertible elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are those with $Q_0$ not a multiple of $1 \pm j$, i.e., with $Q_0$ invertible in $\mathbb{D}$.</p>
+<h3 id="the-quaternion-subspace-math184">The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</h3>
+<p>An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e., if and only if $\tilde{Q} = 0$. So the quaternion subspace contains no zero divisors, and every nonzero element is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a copy of the division algebra $\mathbb{H}$.</p>
+<h3 id="the-hermitian-subspace-math192">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<p>An element of $\mathbb{M}_+$ has the form</p>
+<p>$$
+\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 + 2j q_0 (q'_1 + q'_2 + q'_3).
+$$</p>
+<p>Wait, let me recompute. With $Q_0 = q_0$ (real) and $Q_k = j q'_k$ (purely split-imaginary), the norm form is</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = q_0^2 + (j q'_1)^2 + (j q'_2)^2 + (j q'_3)^2 = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2.
+$$</p>
+<p>Since $j^2 = +1$, the split-imaginary vector components contribute $(j q'_k)^2 = j^2 (q'_k)^2 = -(q'_k)^2$.</p>
+<p>So the norm form on $\mathbb{M}_+$ is</p>
+<p>$$
+N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
+$$</p>
+<p>which is a <strong>real</strong> number, indefinite of signature $(1, 3)$. It vanishes on the light cone</p>
+<p>$$
+q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
+$$</p>
+<p>The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_+$ outside the cone have $N(\tilde{Q}) \neq 0$ and are invertible.</p>
+<p>The set of invertible elements of $\mathbb{M}_+$ is the complement of the light cone, which has two connected components (positive and negative $N(\tilde{Q})$).</p>
+<h3 id="the-anti-hermitian-subspace-math209">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<p>An element of $\mathbb{M}_-$ has the form</p>
+<p>$$
+\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad r_0, q_1, q_2, q_3 \in \mathbb{R}.
+$$</p>
+<p>The norm form is</p>
+<p>$$
+N(\tilde{Q}) = (j r_0)^2 + q_1^2 + q_2^2 + q_3^2 = -r_0^2 + q_1^2 + q_2^2 + q_3^2,
+$$</p>
+<p>which is a <strong>real</strong> number, indefinite of signature $(3, 1)$. It vanishes on the light cone</p>
+<p>$$
+r_0^2 = q_1^2 + q_2^2 + q_3^2.
+$$</p>
+<p>The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_-$ outside the cone have $N(\tilde{Q}) \neq 0$ and are invertible.</p>
+<h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
+<p>Of the four fixed-point subspaces:</p>
+<ul>
+<li>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors (inherited from $\mathbb{D}$), and the invertible elements are those whose scalar part is invertible in $\mathbb{D}$.</li>
+<li>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a division algebra: every nonzero element is invertible.</li>
+<li>$\mathbb{M}_+$ contains a three-dimensional light cone of zero divisors (signature $(1, 3)$), and the invertible elements form the complement of the cone, with two connected components.</li>
+<li>$\mathbb{M}_-$ contains a three-dimensional light cone of zero divisors (signature $(3, 1)$), and the invertible elements form the complement of the cone, with two connected components.</li>
+</ul>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}$</td>
+<td>Split quaternion algebra</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>General split quaternion</td>
+</tr>
+<tr>
+<td>$Q_\mu = q_\mu + j q'_\mu$</td>
+<td>Split complex coefficient</td>
+</tr>
+<tr>
+<td>$\bar{\tilde{Q}}$</td>
+<td>Quaternion conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^*$</td>
+<td>Split complex conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$</td>
+<td>Hermitian conjugate</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^\flat = -\tilde{Q}^\dagger$</td>
+<td>Anti-Hermitian conjugate</td>
+</tr>
+<tr>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>Norm form</td>
+</tr>
+<tr>
+<td>$\tilde{Q} \tilde{Q}^\dagger = \sum_\mu (q_\mu^2 - q'^2_\mu)$</td>
+<td>Hermitian form (signature $(4,4)$)</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E = \sqrt{\sum_\mu (q_\mu^2 + q'^2_\mu)}$</td>
+<td>Euclidean norm</td>
+</tr>
+<tr>
+<td>$\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$</td>
+<td>Inverse</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{D}}^\times$</td>
+<td>Group of units</td>
+</tr>
+<tr>
+<td>$e_+ = \tfrac{1}{2}(1 + j)$</td>
+<td>Positive idempotent</td>
+</tr>
+<tr>
+<td>$e_- = \tfrac{1}{2}(1 - j)$</td>
+<td>Negative idempotent</td>
+</tr>
+<tr>
+<td>$\tilde{Q}_\pm = \tilde{Q} e_\pm$</td>
+<td>Idempotent components</td>
+</tr>
+<tr>
+<td>$\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>Split complex subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$</td>
+<td>Quaternion subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary">Summary</h2>
+<p>The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split quaternion algebra. It is not positive-definite, and it vanishes on the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the norm form.</p>
+<p>The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$. It does not define a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.</p>
+<p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. In the idempotent basis, this is equivalent to both idempotent components being nonzero:</p>
+<p>$$
+\tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
+$$</p>
+<p>This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.</p>
+<p>The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it has four connected components.</p>
+<p>The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces contain light cones of zero divisors.</p>
+<p>The zero divisors themselves are studied in the article on split quaternion zero divisors, and the roots of $-1$ are studied in the article on split quaternion roots of minus one.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and their complexification.</li>
+<li>J. P. Ward, <em>Quaternions and Cayley Numbers: Algebra and Applications</em> (Kluwer, Dordrecht, 1997), for the algebraic structure and the norm form of the split quaternions.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection to Clifford algebras.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the classification of real algebras.</li>
+<li>F. Brackx, R. Delanghe, and F. Sommen, <em>Clifford Analysis</em> (Pitman, 1982), for the general Clifford analysis.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

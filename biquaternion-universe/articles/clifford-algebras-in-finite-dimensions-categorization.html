@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="clifford-algebras-in-finite-dimensions-categorization"><strong>Clifford Algebras in Finite Dimensions categorization</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article specializes the theory of finite-dimensional Clifford algebras to specific commutative rings. The treatment is introductory and purely mathematical.</p>
+<p>The common properties of finite-dimensional Clifford algebras, over any commutative ring, are the subject of the preceding article. Here we treat the specialization to the fields $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, and to the commutative ring $\mathbb{D}$.</p>
+<p>Throughout this article, the module is <strong>free of finite rank</strong> and the quadratic form is <strong>non-degenerate</strong>. We assume that 2 is invertible in the base ring, so that the polarization identity holds and the fundamental relation $uv + vu = 2B(u, v) \cdot 1$ is available.</p>
+<p>A word on terminology. The first three rings are fields, so the classical theory of Clifford algebras over a field applies verbatim. The fourth ring $\mathbb{D}$ is not a field: it is a commutative ring with zero divisors. The theory of Clifford algebras over $\mathbb{D}$ is similar to the theory over a field, with the caveat that not every nonzero element is a unit, and that a division algebra over $\mathbb{D}$ is only possible in rank 1 (and even then only if the unique element is a unit). We indicate where this difference matters.</p>
+<p>Throughout this article, we use <strong>rank</strong> rather than <strong>dimension</strong> when speaking of Clifford algebras over a general commutative ring, reserving <strong>dimension</strong> for the field case. When the ring is a field, the two notions coincide.</p>
+<p>For each case, we state the rank of the module, the quadratic form, the resulting Clifford algebra, and the name of the classical number system when there is one. We also give the concrete presentation of the algebra in terms of generators and relations.</p>
+<hr />
+<h1 id="part-i-the-field-math8">Part I: The Field $\mathbb{Q}$</h1>
+<h2 id="1-classification-over-math9">1. Classification over $\mathbb{Q}$</h2>
+<p>Over $\mathbb{Q}$, the situation is subtle. The signature is defined with respect to the usual order on $\mathbb{Q}$, but it is not the only invariant. The full classification of quadratic forms over $\mathbb{Q}$ requires arithmetic invariants beyond the signature, such as the Hasse–Minkowski theorem and the Hilbert symbol.</p>
+<p>We do not develop this theory here. We state only the low-dimensional cases.</p>
+<h2 id="2-rank-0">2. Rank 0</h2>
+<p>The module is $\{0\}$. There are no generators. The Clifford algebra is $\mathbb{Q}$ itself. This is the <strong>rational numbers</strong>.</p>
+<h2 id="3-rank-1">3. Rank 1</h2>
+<p>The module is $\mathbb{Q}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. There are two cases up to isomorphism.</p>
+<p><strong>$Q(e) = +1$.</strong> The relation is $e^2 = +1$. The Clifford algebra is $\mathbb{Q} \oplus \mathbb{Q}$, the <strong>split complex numbers over $\mathbb{Q}$</strong>. It has rank $2$ over $\mathbb{Q}$.</p>
+<p><strong>$Q(e) = -1$.</strong> The relation is $e^2 = -1$. The Clifford algebra is $\mathbb{Q}[i]$, the <strong>Gaussian rationals</strong>, of rank $2$ over $\mathbb{Q}$.</p>
+<h2 id="4-rank-2-and-beyond">4. Rank 2 and Beyond</h2>
+<p>In rank 2, the module is $\mathbb{Q}^2$, with basis $e_1, e_2$. The quadratic form is determined by the three values $Q(e_1)$, $Q(e_2)$, and $B(e_1, e_2)$. Over $\mathbb{Q}$, the classification depends on arithmetic invariants. For example, the forms $x^2 + y^2$ and $x^2 + 2y^2$ are not isomorphic over $\mathbb{Q}$, even though they have the same signature over $\mathbb{R}$.</p>
+<p>The full classification requires the theory of quaternion algebras over $\mathbb{Q}$, which we do not develop here. Higher-rank Clifford algebras over $\mathbb{Q}$ are obtained from the tensor product decomposition.</p>
+<hr />
+<h1 id="part-ii-the-field-math41">Part II: The Field $\mathbb{R}$</h1>
+<h2 id="5-the-matrix-of-the-bilinear-form">5. The Matrix of the Bilinear Form</h2>
+<p>Let $M$ be a free $\mathbb{R}$-module of finite rank with a symmetric bilinear form $B$. Choose a basis $f_1, \ldots, f_n$ of $M$. The <strong>matrix of $B$</strong> with respect to this basis is the $n \times n$ matrix $M$ with entries</p>
+<p>$$
+M_{ij} = B(f_i, f_j).
+$$</p>
+<p>Since $B$ is symmetric, the matrix $M$ is symmetric.</p>
+<p>For any vectors $u = \sum_i u_i f_i$ and $v = \sum_j v_j f_j$, the bilinear form is</p>
+<p>$$
+B(u, v) = u^T M v.
+$$</p>
+<p>The associated quadratic form is</p>
+<p>$$
+Q(v) = B(v, v) = v^T M v.
+$$</p>
+<h2 id="6-non-degeneracy">6. Non-Degeneracy</h2>
+<p>The bilinear form $B$ is <strong>non-degenerate</strong> if</p>
+<p>$$
+B(u, v) = 0 \text{ for all } v \in M \implies u = 0.
+$$</p>
+<p>Equivalently, $B$ is non-degenerate if and only if the matrix $M$ is invertible.</p>
+<h2 id="7-change-of-basis-and-congruence">7. Change of Basis and Congruence</h2>
+<p>Let $\mathcal{B}$ and $\mathcal{B}'$ be two bases of $M$, and let $P$ be the change-of-basis matrix from $\mathcal{B}'$ to $\mathcal{B}$. Then the matrix of $B$ with respect to the new basis is</p>
+<p>$$
+M' = P^T M P.
+$$</p>
+<p>Two matrices related in this way are called <strong>congruent</strong>. The classification of bilinear forms up to change of basis is the classification of symmetric matrices up to congruence.</p>
+<h2 id="8-diagonalization">8. Diagonalization</h2>
+<p>A symmetric matrix $M$ can be diagonalized by a congruence transformation. There is an invertible matrix $P$ such that</p>
+<p>$$
+P^T M P = \mathrm{diag}(\lambda_1, \ldots, \lambda_n)
+$$</p>
+<p>for some real numbers $\lambda_1, \ldots, \lambda_n$. Equivalently, there is a basis $e_1, \ldots, e_n$ of $M$ in which</p>
+<p>$$
+B(e_i, e_j) = 0 \quad (i \neq j), \qquad B(e_i, e_i) = \lambda_i.
+$$</p>
+<p>In this basis,</p>
+<p>$$
+Q(x_1 e_1 + \cdots + x_n e_n) = \lambda_1 x_1^2 + \cdots + \lambda_n x_n^2.
+$$</p>
+<h2 id="9-sylvesters-law-of-inertia">9. Sylvester's Law of Inertia</h2>
+<p>In a diagonalizing basis, we can arrange the basis so that the positive coefficients come first, then the negative coefficients, then the zero coefficients. In this basis, the matrix of the bilinear form is</p>
+<p>$$
+\eta = \begin{pmatrix}
+I_p & 0 & 0 \\
+0 & -I_q & 0 \\
+0 & 0 & 0_r
+\end{pmatrix},
+$$</p>
+<p>where $I_p$ is the $p \times p$ identity matrix, $I_q$ is the $q \times q$ identity matrix, and $0_r$ is the $r \times r$ zero matrix.</p>
+<p><strong>Sylvester's Law of Inertia.</strong> Let $Q$ be a quadratic form on a finite-rank free real module. In any diagonalizing basis, let $p$ be the number of positive coefficients, $q$ the number of negative coefficients, and $r$ the number of zero coefficients. Then the triple $(p, q, r)$ is independent of the choice of diagonalizing basis.</p>
+<p>The triple $(p, q, r)$ is called the <strong>signature</strong> of $Q$. The form is <strong>non-degenerate</strong> if $r = 0$, in which case the signature is written $(p, q)$.</p>
+<p>Two real quadratic forms are isomorphic if and only if they have the same signature.</p>
+<h2 id="10-the-clifford-algebras-over-math93">10. The Clifford Algebras over $\mathbb{R}$</h2>
+<p>The Clifford algebra with signature $(p, q)$ is written $Cl_{p,q}(\mathbb{R})$. Its rank over $\mathbb{R}$ is $2^n$, where $n = p + q$.</p>
+<h2 id="11-rank-0">11. Rank 0</h2>
+<p>The module is $\{0\}$. There are no generators. The Clifford algebra is $Cl_{0,0}(\mathbb{R}) \cong \mathbb{R}$. This is the <strong>real numbers</strong>.</p>
+<h2 id="12-rank-1">12. Rank 1</h2>
+<p>The module is $\mathbb{R}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. There are two cases up to isomorphism.</p>
+<p><strong>$Q(e) = +1$.</strong> The relation is $e^2 = +1$. The Clifford algebra is $Cl_{1,0}(\mathbb{R}) \cong \mathbb{R} \oplus \mathbb{R}$, the <strong>split complex numbers</strong>, also called the <strong>hyperbolic numbers</strong>. It has rank $2$ over $\mathbb{R}$.</p>
+<p><strong>$Q(e) = -1$.</strong> The relation is $e^2 = -1$. The Clifford algebra is $Cl_{0,1}(\mathbb{R}) \cong \mathbb{C}$, the <strong>complex numbers</strong>. It has rank $2$ over $\mathbb{R}$.</p>
+<h2 id="13-rank-2">13. Rank 2</h2>
+<p>The module is $\mathbb{R}^2$, with basis $e_1, e_2$. In an orthogonal basis, the quadratic form is determined by the two values $Q(e_1)$ and $Q(e_2)$, with $B(e_1, e_2) = 0$. There are three cases up to isomorphism.</p>
+<p><strong>$Q(e_1) = +1$, $Q(e_2) = +1$.</strong> The relations are</p>
+<p>$$
+e_1^2 = +1, \qquad e_2^2 = +1, \qquad e_1 e_2 = -e_2 e_1.
+$$</p>
+<p>The Clifford algebra is $Cl_{2,0}(\mathbb{R}) \cong M_2(\mathbb{R})$, the algebra of $2 \times 2$ real matrices, of rank $4$.</p>
+<p><strong>$Q(e_1) = +1$, $Q(e_2) = -1$.</strong> The relations are</p>
+<p>$$
+e_1^2 = +1, \qquad e_2^2 = -1, \qquad e_1 e_2 = -e_2 e_1.
+$$</p>
+<p>The Clifford algebra is $Cl_{1,1}(\mathbb{R}) \cong M_2(\mathbb{R})$, the same algebra of $2 \times 2$ real matrices. It is also called the <strong>split quaternions</strong> or <strong>coquaternions</strong>.</p>
+<p><strong>$Q(e_1) = -1$, $Q(e_2) = -1$.</strong> The relations are</p>
+<p>$$
+e_1^2 = -1, \qquad e_2^2 = -1, \qquad e_1 e_2 = -e_2 e_1.
+$$</p>
+<p>The Clifford algebra is $Cl_{0,2}(\mathbb{R}) \cong \mathbb{H}$, the <strong>quaternions</strong>, of rank $4$.</p>
+<p>Let me prove the last case. The algebra is generated by $1, e_1, e_2$. The product $e_1 e_2$ is a new element. Its square is</p>
+<p>$$
+(e_1 e_2)^2 = e_1 e_2 e_1 e_2 = -e_1 e_1 e_2 e_2 = -(e_1^2)(e_2^2) = -(-1)(-1) = -1.
+$$</p>
+<p>So the algebra is spanned by $1, e_1, e_2, e_1 e_2$, and the three elements $e_1, e_2, e_1 e_2$ all square to $-1$ and anticommute. This is exactly the quaternion algebra, with $e_1, e_2, e_1 e_2$ playing the roles of the three imaginary units.</p>
+<h2 id="14-rank-3">14. Rank 3</h2>
+<p>The module is $\mathbb{R}^3$, with basis $e_1, e_2, e_3$. In an orthogonal basis, the quadratic form is determined by the three values $Q(e_1)$, $Q(e_2)$, $Q(e_3)$. Up to isomorphism, there are four cases, but the Clifford algebras fall into two isomorphism classes.</p>
+<p><strong>Case with an odd number of positive squares.</strong> The Clifford algebra is $Cl_{3,0}(\mathbb{R}) \cong Cl_{1,2}(\mathbb{R}) \cong M_2(\mathbb{C})$, the algebra of $2 \times 2$ complex matrices, of rank $8$.</p>
+<p><strong>Case with an even number of positive squares.</strong> The Clifford algebra is $Cl_{0,3}(\mathbb{R}) \cong \mathbb{H} \oplus \mathbb{H}$, the <strong>split biquaternion algebra</strong>, of rank $8$.</p>
+<h2 id="15-rank-4-and-beyond">15. Rank 4 and Beyond</h2>
+<p>The pattern continues:</p>
+<p>$$
+Cl_{0,4}(\mathbb{R}) \cong \mathbb{H} \otimes \mathbb{H} \cong M_2(\mathbb{H}) \cong M_4(\mathbb{R}),
+$$</p>
+<p>$$
+Cl_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H}) \cong M_4(\mathbb{R}),
+$$</p>
+<p>$$
+Cl_{3,1}(\mathbb{R}) \cong M_4(\mathbb{R}),
+$$</p>
+<p>$$
+Cl_{4,0}(\mathbb{R}) \cong M_2(\mathbb{H}).
+$$</p>
+<h2 id="16-bott-periodicity">16. Bott Periodicity</h2>
+<p>The classification over $\mathbb{R}$ is periodic with period 8:</p>
+<p>$$
+Cl_{p+8,q}(\mathbb{R}) \cong Cl_{p,q}(\mathbb{R}) \otimes M_{16}(\mathbb{R}).
+$$</p>
+<h2 id="17-the-even-subalgebra-over-math158">17. The Even Subalgebra over $\mathbb{R}$</h2>
+<p>The even subalgebra satisfies</p>
+<p>$$
+Cl_{p,q}^+(\mathbb{R}) \cong Cl_{q,p-1}(\mathbb{R}).
+$$</p>
+<h2 id="18-the-center-over-math160">18. The Center over $\mathbb{R}$</h2>
+<p>The center of $Cl_{p,q}(\mathbb{R})$ is either $\mathbb{R}$ or $\mathbb{R} \oplus \mathbb{R} g_1 g_2 \cdots g_n$, depending on whether $n = p + q$ is even or odd.</p>
+<h2 id="19-the-dual-quaternions">19. The Dual Quaternions</h2>
+<p>The <strong>dual quaternion algebra</strong> is $\mathbb{H}[\epsilon]/(\epsilon^2)$, the quaternions with a nilpotent element $\epsilon$ adjoined, satisfying $\epsilon^2 = 0$.</p>
+<p>The dual quaternions are not a Clifford algebra in the strict sense. They are a <strong>degenerate</strong> Clifford algebra, obtained by allowing one of the generators to be nilpotent rather than square to $\pm 1$.</p>
+<hr />
+<h1 id="part-iii-the-field-math169">Part III: The Field $\mathbb{C}$</h1>
+<h2 id="20-classification-over-math170">20. Classification over $\mathbb{C}$</h2>
+<p>Over $\mathbb{C}$, every non-degenerate quadratic form of rank $n$ is isomorphic to the standard form</p>
+<p>$$
+Q(z_1, \ldots, z_n) = z_1^2 + \cdots + z_n^2.
+$$</p>
+<p>The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $\mu$ to make the coefficient $1$.</p>
+<p>So over $\mathbb{C}$, there is only one isomorphism class of non-degenerate quadratic forms in each rank. There is no signature.</p>
+<h2 id="21-the-complex-clifford-algebras">21. The Complex Clifford Algebras</h2>
+<p>The complex Clifford algebra of rank $n$ is written $\mathbb{C}l_n$. The classification is:</p>
+<p>$$
+\mathbb{C}l_{2k} \cong M_{2^k}(\mathbb{C}), \qquad \mathbb{C}l_{2k+1} \cong M_{2^k}(\mathbb{C}) \oplus M_{2^k}(\mathbb{C}).
+$$</p>
+<h2 id="22-rank-0">22. Rank 0</h2>
+<p>The module is $\{0\}$. There are no generators. The Clifford algebra is $\mathbb{C}l_0 \cong \mathbb{C}$. This is the <strong>complex numbers</strong>.</p>
+<h2 id="23-rank-1">23. Rank 1</h2>
+<p>The module is $\mathbb{C}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. Up to isomorphism, there is only one case.</p>
+<p>Take $Q(e) = +1$. The relation is $e^2 = +1$. The algebra generated by $1$ and $e$ with $e^2 = +1$ is two-dimensional over $\mathbb{C}$. It splits as a direct sum of two copies of $\mathbb{C}$, spanned by the idempotents $(1 + e)/2$ and $(1 - e)/2$. So the Clifford algebra is</p>
+<p>$$
+\mathbb{C}l_1 \cong \mathbb{C} \oplus \mathbb{C}.
+$$</p>
+<p>This is the <strong>split complex numbers over $\mathbb{C}$</strong>.</p>
+<p>If instead we take $Q(e) = -1$, we get the relation $e^2 = -1$. The resulting algebra is isomorphic to $\mathbb{C} \oplus \mathbb{C}$, via the substitution $e \mapsto i e'$, where $e'$ is the generator with $(e')^2 = +1$. So the two cases are isomorphic.</p>
+<h2 id="24-rank-2">24. Rank 2</h2>
+<p>The module is $\mathbb{C}^2$, with basis $e_1, e_2$. Up to isomorphism, there is only one case.</p>
+<p>Take $Q(e_1) = -1$ and $Q(e_2) = -1$. The relations are</p>
+<p>$$
+e_1^2 = -1, \qquad e_2^2 = -1, \qquad e_1 e_2 = -e_2 e_1.
+$$</p>
+<p>The algebra is generated by $1, e_1, e_2$, with the product $e_1 e_2$. A basis is</p>
+<p>$$
+1, \quad e_1, \quad e_2, \quad e_1 e_2.
+$$</p>
+<p>So the algebra is four-dimensional over $\mathbb{C}$. It is the quaternion algebra with complex coefficients, which is the <strong>biquaternions</strong>:</p>
+<p>$$
+\mathbb{C}l_2 \cong \mathbb{H} \otimes \mathbb{C} \cong M_2(\mathbb{C}).
+$$</p>
+<p>If instead we take $Q(e_1) = +1$ and $Q(e_2) = +1$, the relations are</p>
+<p>$$
+f_1^2 = +1, \qquad f_2^2 = +1, \qquad f_1 f_2 = -f_2 f_1.
+$$</p>
+<p>This algebra is isomorphic to the biquaternions, via the rescaling $e_1 = i f_1$, $e_2 = i f_2$. So the two choices of sign give isomorphic algebras.</p>
+<p>In all cases, the Clifford algebra in rank 2 over $\mathbb{C}$ is isomorphic to $M_2(\mathbb{C})$, the algebra of $2 \times 2$ complex matrices, which is also the biquaternions.</p>
+<h2 id="25-rank-3">25. Rank 3</h2>
+<p>The module is $\mathbb{C}^3$. Up to isomorphism, there is only one case. The Clifford algebra is</p>
+<p>$$
+\mathbb{C}l_3 \cong M_2(\mathbb{C}) \oplus M_2(\mathbb{C}),
+$$</p>
+<p>the direct sum of two copies of the biquaternions, of rank $8$ over $\mathbb{C}$.</p>
+<h2 id="26-periodicity-over-math228">26. Periodicity over $\mathbb{C}$</h2>
+<p>The complex Clifford algebras are periodic with period 2:</p>
+<p>$$
+\mathbb{C}l_{n+2} \cong \mathbb{C}l_n \otimes M_2(\mathbb{C}).
+$$</p>
+<h2 id="27-the-even-subalgebra-over-math230">27. The Even Subalgebra over $\mathbb{C}$</h2>
+<p>The even subalgebra satisfies</p>
+<p>$$
+\mathbb{C}l_n^+ \cong \mathbb{C}l_{n-1}
+$$</p>
+<p>for all $n \geq 1$ except $n = 2$.</p>
+<h2 id="28-the-center-over-math234">28. The Center over $\mathbb{C}$</h2>
+<p>The center of $\mathbb{C}l_n$ is $\mathbb{C}$ if $n$ is even, and $\mathbb{C} \oplus \mathbb{C}$ if $n$ is odd.</p>
+<hr />
+<h1 id="part-iv-the-commutative-ring-math240">Part IV: The Commutative Ring $\mathbb{D}$</h1>
+<h2 id="29-a-caveat">29. A Caveat</h2>
+<p>The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. The simplest example is $(1 + e)(1 - e) = 0$. The element $1 + e$ has no inverse.</p>
+<p>Despite this, much of the theory carries over. A module over $\mathbb{D}$ is a module over the ring $\mathbb{D}$. The determinant is defined, but the theorem "invertible if and only if determinant is nonzero" becomes "invertible if and only if determinant is a unit of $\mathbb{D}$".</p>
+<h2 id="30-classification-over-math247">30. Classification over $\mathbb{D}$</h2>
+<p>A quadratic form over $\mathbb{D}$ can be diagonalized, and the coefficients take values in $\mathbb{D}$. The classification is by the values of the coefficients, up to multiplication by squares in $\mathbb{D}$.</p>
+<h2 id="31-rank-0">31. Rank 0</h2>
+<p>The module is $\{0\}$. There are no generators. The Clifford algebra is $\mathbb{D}$ itself. This is the <strong>split complex numbers</strong>.</p>
+<h2 id="32-rank-1">32. Rank 1</h2>
+<p>The module is $\mathbb{D}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. There are two cases.</p>
+<p><strong>$Q(e) = +1$.</strong> The relation is $e^2 = +1$. The Clifford algebra is $\mathbb{D} \oplus \mathbb{D}$, the direct sum of two copies of the split complex numbers.</p>
+<p><strong>$Q(e) = -1$.</strong> The relation is $e^2 = -1$. The Clifford algebra is the algebra of <strong>dual numbers over $\mathbb{D}$</strong>, written $\mathbb{D}[\epsilon]/(\epsilon^2)$. The element $\epsilon = 1 + e$ is nilpotent, satisfying $\epsilon^2 = 0$.</p>
+<h2 id="33-rank-2">33. Rank 2</h2>
+<p>The module is $\mathbb{D}^2$, with basis $e_1, e_2$. In an orthogonal basis, the quadratic form is determined by $Q(e_1)$ and $Q(e_2)$. The Clifford algebra is</p>
+<p>$$
+M_2(\mathbb{D}),
+$$</p>
+<p>the algebra of $2 \times 2$ matrices with entries in $\mathbb{D}$, for all choices of signs.</p>
+<p>For $Q(e_1) = -1$, $Q(e_2) = -1$, the relations are</p>
+<p>$$
+e_1^2 = -1, \qquad e_2^2 = -1, \qquad e_1 e_2 = -e_2 e_1.
+$$</p>
+<p>This is the analogue of the biquaternions over $\mathbb{D}$, and it is also called the <strong>split biquaternions</strong>.</p>
+<h2 id="34-rank-3">34. Rank 3</h2>
+<p>The module is $\mathbb{D}^3$. The Clifford algebra is</p>
+<p>$$
+M_2(\mathbb{D}) \oplus M_2(\mathbb{D}),
+$$</p>
+<p>the direct sum of two copies of $M_2(\mathbb{D})$.</p>
+<h2 id="35-the-split-biquaternions">35. The Split Biquaternions</h2>
+<p>The <strong>split biquaternions</strong> are the algebra $\mathbb{H} \otimes \mathbb{D}$, the quaternions tensored with the split complex numbers. As an algebra over $\mathbb{D}$, the split biquaternions are four-dimensional, with basis $\{1, e_1, e_2, e_3\}$ and the same relations as the quaternions, with coefficients in $\mathbb{D}$.</p>
+<p>The split biquaternions are not a division algebra over $\mathbb{D}$, because $\mathbb{D}$ has zero divisors.</p>
+<hr />
+<h1 id="part-v-summary">Part V: Summary</h1>
+<h2 id="over-math285">Over $\mathbb{Q}$</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Quadratic form</th>
+<th>Clifford algebra</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>—</td>
+<td>$\mathbb{Q}$</td>
+<td>rational numbers</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$Q(e) = +1$</td>
+<td>$\mathbb{Q} \oplus \mathbb{Q}$</td>
+<td>split complex over $\mathbb{Q}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$Q(e) = -1$</td>
+<td>$\mathbb{Q}[i]$</td>
+<td>Gaussian rationals</td>
+</tr>
+</tbody>
+</table>
+<p>Higher ranks require arithmetic invariants.</p>
+<h2 id="over-math292">Over $\mathbb{R}$</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Signature</th>
+<th>Quadratic form</th>
+<th>Clifford algebra</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>$(0,0)$</td>
+<td>—</td>
+<td>$\mathbb{R}$</td>
+<td>real numbers</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$(1,0)$</td>
+<td>$Q(e) = +1$</td>
+<td>$\mathbb{R} \oplus \mathbb{R}$</td>
+<td>split complex numbers</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$(0,1)$</td>
+<td>$Q(e) = -1$</td>
+<td>$\mathbb{C}$</td>
+<td>complex numbers</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$(2,0)$</td>
+<td>$Q(e_1) = +1$, $Q(e_2) = +1$</td>
+<td>$M_2(\mathbb{R})$</td>
+<td>$2 \times 2$ real matrices</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$(1,1)$</td>
+<td>$Q(e_1) = +1$, $Q(e_2) = -1$</td>
+<td>$M_2(\mathbb{R})$</td>
+<td>split quaternions</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$(0,2)$</td>
+<td>$Q(e_1) = -1$, $Q(e_2) = -1$</td>
+<td>$\mathbb{H}$</td>
+<td>quaternions</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$(3,0)$</td>
+<td>all $+1$</td>
+<td>$M_2(\mathbb{C})$</td>
+<td>$2 \times 2$ complex matrices</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$(1,2)$</td>
+<td>one $+1$, two $-1$</td>
+<td>$M_2(\mathbb{C})$</td>
+<td>$2 \times 2$ complex matrices</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$(0,3)$</td>
+<td>all $-1$</td>
+<td>$\mathbb{H} \oplus \mathbb{H}$</td>
+<td>split biquaternions</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$(4,0)$</td>
+<td>all $+1$</td>
+<td>$M_2(\mathbb{H})$</td>
+<td>$2 \times 2$ quaternionic matrices</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$(1,3)$</td>
+<td>one $+1$, three $-1$</td>
+<td>$M_4(\mathbb{R})$</td>
+<td>$4 \times 4$ real matrices</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$(3,1)$</td>
+<td>three $+1$, one $-1$</td>
+<td>$M_4(\mathbb{R})$</td>
+<td>$4 \times 4$ real matrices</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$(0,4)$</td>
+<td>all $-1$</td>
+<td>$M_4(\mathbb{R})$</td>
+<td>$4 \times 4$ real matrices</td>
+</tr>
+</tbody>
+</table>
+<h2 id="over-math344">Over $\mathbb{C}$</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Quadratic form</th>
+<th>Clifford algebra</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>—</td>
+<td>$\mathbb{C}$</td>
+<td>complex numbers</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$Q(e) = +1$ or $-1$</td>
+<td>$\mathbb{C} \oplus \mathbb{C}$</td>
+<td>split complex over $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$Q(e_1) = -1$, $Q(e_2) = -1$</td>
+<td>$\mathbb{H} \otimes \mathbb{C} \cong M_2(\mathbb{C})$</td>
+<td>biquaternions</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$Q(e_1) = +1$, $Q(e_2) = +1$</td>
+<td>$\mathbb{H} \otimes \mathbb{C} \cong M_2(\mathbb{C})$</td>
+<td>biquaternions (isomorphic)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>any</td>
+<td>$M_2(\mathbb{C}) \oplus M_2(\mathbb{C})$</td>
+<td>sum of two copies</td>
+</tr>
+</tbody>
+</table>
+<h2 id="over-math357">Over $\mathbb{D}$</h2>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Quadratic form</th>
+<th>Clifford algebra</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>—</td>
+<td>$\mathbb{D}$</td>
+<td>split complex numbers</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$Q(e) = +1$</td>
+<td>$\mathbb{D} \oplus \mathbb{D}$</td>
+<td>sum of two copies of $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$Q(e) = -1$</td>
+<td>$\mathbb{D}[\epsilon]/(\epsilon^2)$</td>
+<td>dual numbers over $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>any</td>
+<td>$M_2(\mathbb{D})$</td>
+<td>$2 \times 2$ matrices over $\mathbb{D}$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>any</td>
+<td>$M_2(\mathbb{D}) \oplus M_2(\mathbb{D})$</td>
+<td>sum of two copies</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>I. R. Porteous, <em>Clifford Algebras and the Classical Groups</em> (Cambridge University Press, 1995).</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001).</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge University Press, 2003).</li>
+<li>H. Blaine Lawson and Marie-Louise Michelsohn, <em>Spin Geometry</em> (Princeton University Press, 1989).</li>
+<li>Klaus Gürlebeck and Wolfgang Sprössig, <em>Quaternionic and Clifford Calculus for Physicists and Engineers</em> (Wiley, 1997).</li>
+<li>David Hestenes and Garret Sobczyk, <em>Clifford Algebra to Geometric Calculus</em> (Reidel, 1984).</li>
+<li>Max-Albert Knus, <em>Quadratic and Hermitian Forms over Rings</em> (Springer, 1991).</li>
+<li>T. Y. Lam, <em>Introduction to Quadratic Forms over Fields</em> (AMS, 2005).</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
