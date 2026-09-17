@@ -1,5 +1,4 @@
 
-
 # __$\mathbb{M}_-$ as the Material Space__
 
 ## Introduction
@@ -92,7 +91,13 @@ The four-vectors share the following structural features, which are the reasons 
 
 **2. Real vector part.** The spatial components are real. They are the components in the three real directions $e_1, e_2, e_3$ of ordinary physical space.
 
-**3. Lorentz covariance.** The four-vectors transform under the Lorentz group by the **rotor conjugation** (see the companion article on the Lorentz transformation). The rotors are elements of the complementary subspace $\mathbb{M}_+$, and their action on $\mathbb{M}_-$ is the biquaternion form of the Lorentz transformation.
+**3. Lorentz covariance.** The four-vectors transform under the Lorentz group by the **rotor conjugation**
+
+$$
+\tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger.
+$$
+
+The rotor $\tilde{\Lambda}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
 **4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, $0$ for the four-potential (in the Lorenz gauge), $0$ for the four-current (as a consequence of charge conservation), and $0$ for the four-wavevector (for light).
 
@@ -124,11 +129,11 @@ $$
 \tilde{X}' = \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger,
 $$
 
-where $\tilde{\Lambda}$ is the **boost biquaternion** (an element of the complementary subspace $\mathbb{M}_+$), and $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$ for a pure boost. The rotor conjugation is the biquaternion form of the standard Lorentz transformation of a four-vector.
+where $\tilde{\Lambda}$ is a **unit-norm biquaternion**, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$ satisfying $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$. The rotor $\tilde{\Lambda}$ is Hermitian (i.e. $\tilde{\Lambda}^\dagger = \tilde{\Lambda}$) for a pure boost, in which case it lies in the complementary subspace $\mathbb{M}_+$. For a pure spatial rotation, $\tilde{\Lambda}$ is a real quaternion (it lies in $\mathbb{H}_{\mathbb{B}}$). For a general Lorentz transformation, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$.
 
-The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{X} \in \mathbb{M}_-$ and $\tilde{\Lambda} \in \mathbb{M}_+$ (or, more generally, $\tilde{\Lambda}$ is a unit-norm biquaternion), then $\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.
+The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{X} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.
 
-This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotors themselves lie in $\mathbb{M}_+$ (for pure boosts) or in the unit-norm group of $\mathbb{B}$ (for general Lorentz transformations); the space on which they act is $\mathbb{M}_-$.
+This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, with the specific subspaces $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ corresponding to pure boosts and pure rotations respectively; the space on which the rotor acts is $\mathbb{M}_-$.
 
 ## The Light Cone and the Zero Divisors
 
@@ -198,12 +203,12 @@ The subspace $\mathbb{M}_+$ contains the **boost biquaternions** $\tilde{\Lambda
 
 The structural relation between the two subspaces is:
 
-- $\mathbb{M}_-$ is the space of **states** — the four-vectors that describe the configuration of a physical system.
-- $\mathbb{M}_+$ is the space of **operators** — the Hermitian biquaternions that act on the states.
+- $\mathbb{M}_-$ is the space of **kinematic configurations** — the four-vectors that describe the kinematic configuration of a physical system.
+- $\mathbb{M}_+$ is the space of **operators** — the Hermitian biquaternions that act on these configurations.
 
-The action is the rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda} \in \mathbb{M}_+$ (for pure boosts) and $\tilde{X} \in \mathbb{M}_-$.
+The action is the rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion (in $\mathbb{M}_+$ for pure boosts, in $\mathbb{H}_{\mathbb{B}}$ for pure rotations, in $\mathbb{B}$ for general transformations) and $\tilde{X} \in \mathbb{M}_-$.
 
-This complementarity is the algebraic content of the interpretation of $\mathbb{M}_-$ as the "material" or "state" space and $\mathbb{M}_+$ as the "informational" or "operator" space. The present article focuses on the material side; the informational side is treated in the companion article.
+This complementarity is the algebraic content of the interpretation of $\mathbb{M}_-$ as the "material" space of kinematic configurations and $\mathbb{M}_+$ as the "informational" space of operators. The present article focuses on the material side; the informational side is treated in the companion article.
 
 ## Summary
 
@@ -219,13 +224,13 @@ The subspace $\mathbb{M}_-$ is the natural home of the four-vectors of relativis
 - The four-current $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$.
 - The four-wavevector $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$.
 
-Each has an imaginary scalar part (the time component) and a real vector part (the spatial components). Each transforms under the Lorentz group by rotor conjugation, with the rotor biquaternion living in the complementary subspace $\mathbb{M}_+$.
+Each has an imaginary scalar part (the time component) and a real vector part (the spatial components). Each transforms under the Lorentz group by rotor conjugation, with the rotor being a general unit-norm biquaternion in $\mathbb{B}$ (in $\mathbb{M}_+$ for pure boosts, in $\mathbb{H}_{\mathbb{B}}$ for pure rotations).
 
 The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$: the null four-vectors of light-like propagation are exactly the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.
 
 Not every physical object is a four-vector: the field-strength biquaternion (antisymmetric rank-2 tensor) and the energy–momentum biquaternion (symmetric rank-2 tensor) do not lie in $\mathbb{M}_-$. The subspace $\mathbb{M}_-$ is specifically the **vector representation** of the Lorentz group.
 
-The complementary subspace $\mathbb{M}_+$ is the Hermitian subspace, consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation. The complementarity $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the algebraic content of the interpretation of $\mathbb{M}_-$ as "material" (states) and $\mathbb{M}_+$ as "informational" (operators). The latter interpretation is the subject of the companion article.
+The complementary subspace $\mathbb{M}_+$ is the Hermitian subspace, consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. Its elements act on $\mathbb{M}_-$ by rotor conjugation. The complementarity $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ is the algebraic content of the interpretation of $\mathbb{M}_-$ as the space of kinematic configurations and $\mathbb{M}_+$ as the space of operators. The latter interpretation is the subject of the companion article.
 
 ## Summary of Notation
 
@@ -234,12 +239,13 @@ The complementary subspace $\mathbb{M}_+$ is the Hermitian subspace, consisting 
 | $\mathbb{B}$ | Biquaternion algebra |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material space): imaginary scalar, real vector |
 | $\mathbb{M}_+$ | Hermitian subspace (informational space): real scalar, imaginary vector |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (home of the rotation rotors) |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $s^2 = d\tilde{X}\circ d\tilde{X}$ | Invariant interval |
-| $\tilde{\Lambda} \in \mathbb{M}_+$ | Boost biquaternion |
+| $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
 
 ## Further Reading

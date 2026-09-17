@@ -1,5 +1,4 @@
 
-
 # __Spin-1/2 Quantum Mechanics in Biquaternionic Form__
 
 ## Introduction
@@ -122,7 +121,7 @@ $$
 
 This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{M}_+$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-**Anti-Hermitian subspace $\mathbb{M}_-$. ** A general element is $\tilde{X} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ with $x_k \in \mathbb{R}$. Under the isomorphism:
+**Anti-Hermitian subspace $\mathbb{M}_-$.** A general element is $\tilde{X} = i x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ with $x_k \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{X} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
@@ -315,7 +314,7 @@ which is a first-order equation for the field $\tilde{\Psi}$.
 
 ### The Interpretation as a Spinor Field
 
-The biquaternion field $\tilde{\Psi}$ is a **spinor field** on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra, and the algebra acts on itself by the structure of the module. Equivalently, at each point, the field is a pair of spinors (a left-handed and a right-handed Weyl spinor).
+The biquaternion field $\tilde{\Psi}$ is a **spinor field** on the four-dimensional material space $\mathbb{M}_-$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
 
 The Dirac equation is the equation of motion for a single spin-1/2 field. Its solutions describe relativistic spin-1/2 particles: electrons, muons, quarks, and other fermions.
 
@@ -325,7 +324,6 @@ The biquaternionic Dirac equation contains:
 
 - The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{\Psi}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **coupling to the electromagnetic field**: through the minimal coupling $\tilde{\nabla} \to \tilde{\nabla} - iq\tilde{A}$ (see the Maxwell article).
 - The **mass term**: the biquaternion mass term $m\tilde{\Psi}^\flat$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
@@ -333,7 +331,7 @@ The biquaternionic Dirac equation contains:
 The biquaternionic Dirac equation, as presented, does not contain:
 
 - **Quantization**: the promotion of the classical field $\tilde{\Psi}$ to an operator-valued field $\hat{\Psi}$ on Fock space.
-- **Antiparticles**: the full Dirac spinor includes both particles and antiparticles, and the biquaternion formulation represents this as a two-component (Weyl) field, not the full four-component Dirac spinor.
+- **The full four-component Dirac spinor**: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.
 - **Many-body structure**: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.
 - **Interactions beyond electromagnetism**: the weak and strong interactions require additional structure beyond the biquaternion algebra.
 
@@ -353,9 +351,9 @@ We can now make a precise statement about what the biquaternion framework contai
 
 5. **The relativistic extension.** The full $SL(2,\mathbb{C})$ group of unit-norm biquaternions acts as the Lorentz group, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
-6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field.
+6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **The electromagnetic coupling.** The biquaternion framework contains Maxwell's equations and the minimal coupling to spinor fields.
+7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde{\nabla}\tilde{F} = -\tilde{R}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial_\mu \to \partial_\mu - iqA_\mu/\hbar$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 
@@ -389,7 +387,9 @@ The identification raises several questions.
 
 5. **The extension to higher spins.** The biquaternion algebra contains only spin-1/2. How does it extend to spin-1 (the photon), spin-3/2, or spin-2 (the graviton)? These would require tensor products or larger algebras.
 
-6. **The role of the Weyl spinors.** The biquaternion Dirac equation is a two-component formulation. The full Dirac spinor is four-component. What is the precise relation between the two, and how does the chirality structure of the Standard Model fit into the biquaternion framework?
+6. **The role of the Weyl spinors.** The biquaternion Dirac equation is expressed in terms of a pair of Weyl spinors. The full Dirac spinor is four-component. What is the precise relation between the two, and how does the chirality structure of the Standard Model fit into the biquaternion framework?
+
+7. **The minimal coupling to electromagnetism.** The precise form of the coupling of the biquaternionic Dirac field to the electromagnetic field, in the biquaternion framework, deserves a dedicated treatment.
 
 These questions are open.
 
@@ -397,9 +397,9 @@ These questions are open.
 
 The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the complete algebraic structure of a two-state quantum system, which is the spin-1/2 system. Under the isomorphism, the Hermitian subspace $\mathbb{M}_+$ corresponds to the space of Hermitian operators on $\mathbb{C}^2$, which are the observables of a spin-1/2 particle. The idempotents of $\mathbb{M}_+$, of the form $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ for a unit pure quaternion $\mu$, correspond to the rank-1 projectors, i.e., the pure spin states. The trace formula $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ is the Born rule.
 
-The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part (the "spatial rotation rotors"). The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
+The spin rotation group $SU(2)$ is realized in the biquaternion framework as the group of unit-norm biquaternions with real vector part. The full Lorentz group $SL(2,\mathbb{C})$ is realized as the group of unit-norm biquaternions in general, and the Hermitian elements of $\mathbb{M}_+$ generate the boosts.
 
-The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, and it is the natural extension of the spin-1/2 structure to spacetime. The framework contains the classical Dirac field coupled to electromagnetism, but it does not contain the quantization of the field, the extension to bosonic or higher-spin fields, or the structure of many-body systems.
+The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field. The biquaternion formulation describes this field as a pair of Weyl spinors (left-handed and right-handed); the full four-component Dirac spinor is recovered by taking the direct sum of this pair with its complex conjugate. The framework contains the classical Dirac field coupled to electromagnetism, but it does not contain the quantization of the field, the extension to bosonic or higher-spin fields, or the structure of many-body systems.
 
 The identification is not an analogy. It is the same mathematics, expressed in the biquaternion algebra, and it is the deepest structural connection between the biquaternion framework and established quantum physics.
 

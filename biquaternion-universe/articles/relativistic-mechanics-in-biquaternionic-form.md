@@ -7,7 +7,7 @@ The equations of relativistic mechanics — the four-position, the invariant int
 
 The purpose is not to derive new physics. The purpose is to rewrite the established equations of relativistic mechanics in the biquaternion language, so that the algebraic structure of the theory is manifest. The biquaternion formulation makes the following structural facts explicit:
 
-- The invariant interval is the **square of a biquaternion**.
+- The invariant interval is the **norm form of the displacement biquaternion**.
 - The four-velocity and four-momentum are **biquaternions of the anti-Hermitian subspace** $\mathbb{M}_-$.
 - The mass-shell relation is the statement that the **norm form** of the four-momentum is a fixed negative constant.
 - The conserved current is characterized by the **scalar part of the quaternion-conjugate gradient** vanishing.
@@ -34,15 +34,21 @@ The four-position biquaternion lives in the **anti-Hermitian subspace** $\mathbb
 
 ## The Invariant Interval
 
-The **invariant interval** is the square of the biquaternion displacement:
+The **invariant interval** between two nearby events in spacetime is the **norm form** of the displacement biquaternion $d\tilde{X} \in \mathbb{M}_-$:
 
 $$
-ds^2 = d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
+ds^2 = d\tilde{X}\,\overline{d\tilde{X}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$
 
-This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature. The biquaternion formulation makes the **algebraic origin of the Lorentzian signature** explicit.
+Here $\overline{d\tilde{X}} = ic\,dt\,e_0 - d\mathbf{x}$ is the quaternion conjugate of the displacement. This is the biquaternion form of the Minkowski interval. The minus sign in the time–time component arises algebraically from $i^2 = -1$, not from an independently postulated metric signature.
 
-Two quadratic forms are used in this article and its companions: the **square** $\tilde{Q} \circ \tilde{Q}$ (used here for the interval), and the **norm form** $\tilde{Q}\bar{\tilde{Q}}$ (used for the four-velocity and four-momentum normalizations). For an element of the anti-Hermitian subspace $\mathbb{M}_-$, the two differ by the sign of the vector part: $\tilde{Q} \circ \tilde{Q} = (Q_0)^2 + \mathbf{Q}^2$, while $\tilde{Q}\bar{\tilde{Q}} = (Q_0)^2 - \mathbf{Q}^2$. The interval uses the square; the normalizations use the norm form.
+**The norm form on $\mathbb{M}_-$.** For a general element of the anti-Hermitian subspace, $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 = i q'_0$ imaginary and $\mathbf{Q} = q_1 e_1 + q_2 e_2 + q_3 e_3$ real, the norm form is
+
+$$
+\tilde{Q}\bar{\tilde{Q}} = Q_0^2 + |\mathbf{Q}|^2 = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+$$
+
+which is a real scalar of signature $(3, 1)$. This is the quadratic form used throughout this article, for the interval and for the four-vector normalizations.
 
 The interval is invariant under the Lorentz group, which in the biquaternion framework is the group of **rotor conjugations** (see the companion article on the Lorentz transformation).
 
@@ -139,16 +145,16 @@ where $q$ is the charge, $\mathbf{E}$ and $\mathbf{B}$ are the electric and magn
 The **relativistic action** for a free particle of rest mass $m$ is
 
 $$
-S = -mc\int\sqrt{-d\tilde{X} \circ d\tilde{X}},
+S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}},
 $$
 
-where the square root is the ordinary real square root of the positive quantity $-d\tilde{X} \circ d\tilde{X} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes
+where the square root is the ordinary real square root of the positive quantity $-d\tilde{X}\,\overline{d\tilde{X}} = c^2\,dt^2 - d\mathbf{x}^2 = c^2\,d\tau^2$. Since $d\tau = dt/\gamma$, we have $c\,d\tau = c\,dt/\gamma$, and the action becomes
 
 $$
 S = -mc^2\int\frac{dt}{\gamma} = -mc^2\int\sqrt{1 - \mathbf{v}^2/c^2}\,dt,
 $$
 
-which is the standard relativistic action. The biquaternion form makes the **invariant character** of the action manifest: the integrand is built from the biquaternion interval, which is a Lorentz scalar.
+which is the standard relativistic action. The biquaternion form makes the **invariant character** of the action manifest: the integrand is built from the norm form of the displacement biquaternion, which is a Lorentz scalar.
 
 ## The Conserved Current
 
@@ -215,12 +221,12 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Quantity | Biquaternion formula | Constraint |
 |---|---|---|
 | Four-position | $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$ | — |
-| Invariant interval | $ds^2 = d\tilde{X} \circ d\tilde{X}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
+| Invariant interval | $ds^2 = d\tilde{X}\,\overline{d\tilde{X}}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
 | Four-velocity | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | $\tilde{U}\bar{\tilde{U}} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{U}$ | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ |
 | Mass-shell relation | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ | — |
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $\tilde{F}\bar{\tilde{P}} + \tilde{P}\bar{\tilde{F}} = 0$ |
-| Action | $S = -mc\int\sqrt{-d\tilde{X}\circ d\tilde{X}}$ | — |
+| Action | $S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ |
 | Klein–Gordon | $(\tilde{\nabla}\bar{\tilde{\nabla}} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
 | Dirac | $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | — |
@@ -241,7 +247,7 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 
 2. **The Lorentz force in biquaternion form.** The four-force in component form is standard: $\tilde{F} = i\gamma q(\mathbf{E}\cdot\mathbf{v})/c\,e_0 + \gamma q(\mathbf{E} + \mathbf{v}\times\mathbf{B})$. Its expression as a biquaternion product of the field-strength biquaternion $\tilde{F}_{\text{EM}}$ and the four-velocity $\tilde{U}$ is **not** simply the real part of $\tilde{F}_{\text{EM}}\circ\tilde{U}$; the correct expression involves the representation theory of $\mathbb{B}$ in the even subalgebra of $\mathrm{Cl}_{1,3}$, and it remains to be worked out cleanly. This is left for a future revision, and it may be addressed by the scientific literature on the biquaternion formulation of the Lorentz force.
 
-3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde{X}\circ d\tilde{X}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?
+3. **The Lagrangian formulation.** The biquaternion action $S = -mc\int\sqrt{-d\tilde{X}\,\overline{d\tilde{X}}}$ is a real Lorentz scalar. Can the full Lagrangian formulation of relativistic mechanics (including interactions) be expressed in biquaternion form?
 
 4. **The Hamiltonian formulation.** The biquaternion form of the relativistic Hamiltonian and the associated Hamilton equations have not been developed.
 
@@ -255,7 +261,7 @@ These questions are open.
 
 The ten basic formulas of relativistic mechanics — four-position, invariant interval, four-velocity, four-momentum, mass-shell relation, four-force, action, current, Klein–Gordon, and Dirac — can all be expressed in the biquaternion algebra $\mathbb{B}$ using the $ict$ convention. The biquaternion formulation makes the following structural facts explicit:
 
-- The invariant interval is the square of the four-position biquaternion.
+- The invariant interval is the norm form of the four-position displacement biquaternion.
 - The four-velocity, four-momentum, four-force, four-potential, and four-current lie in the anti-Hermitian subspace $\mathbb{M}_-$.
 - The mass-shell relation is the norm-form condition $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$.
 - The light cone is the zero divisor set of the algebra.
@@ -279,6 +285,7 @@ These identities are algebraic, not physical. They are the reason the biquaterni
 | $\tilde{P} = m\tilde{U}$ | Four-momentum biquaternion |
 | $\tilde{F} = d\tilde{P}/d\tau$ | Four-force biquaternion |
 | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | Four-current biquaternion |
+| $\tilde{Q}\bar{\tilde{Q}}$ | Norm form (scalar quadratic form) |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\bar{\tilde{\nabla}} = e_0\partial_{ict} - \sum_k e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |

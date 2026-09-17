@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Maxwell's equations are the clearest illustration of why the biquaternionic formulation is natural. In their biquaternionic form, they collapse into a single equation relating a biquaternionic field strength to a biquaternionic source. With the $ict$ structure built into the Minkowski subspace, the biquaternionic structure becomes manifest, and the Lorentz invariance of electromagnetism appears as a rotation in the Minkowski subspace.
+Maxwell's equations are the clearest illustration of why the biquaternionic formulation is natural. In their biquaternionic form, they collapse into a single equation relating a biquaternionic field strength to a biquaternionic source. With the $ict$ structure built into the Minkowski subspace, the biquaternionic structure becomes manifest, and the Lorentz invariance of electromagnetism appears as a rotor conjugation in the Minkowski subspace.
 
 This article develops the biquaternionic formulation of Maxwell's equations in a material medium characterized by permittivity $\epsilon$ and permeability $\mu$, then takes the vacuum limit $\epsilon = \epsilon_0$, $\mu = \mu_0$. The presentation proceeds in the natural order: first the standard Maxwell equations in three-vector form, then the potential biquaternion $\tilde{A}$, then the biquaternionic gradient $\tilde{\nabla}$, then the field-strength biquaternion $\tilde{F}$, and finally the single biquaternionic equation that replaces the four standard Maxwell equations. The article closes with the gauge structure, the retarded Green's function, the stationary limit, the energy conservation law, the biquaternionic energy–momentum, the Lorentz transformation of the potential, and the extension to complexified spacetime.
 
@@ -131,13 +131,13 @@ $$
 
 Here $\mathbf{F}$ is a complex three-vector combining the electric and magnetic fields. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
 
-The field-strength biquaternion is obtained from the potential biquaternion by differentiation:
+The field-strength biquaternion is obtained from the potential biquaternion by differentiation. In the biquaternion algebra, the natural object constructed from $\tilde{A}$ is
 
 $$
-\tilde{F} = \tilde{\nabla} \tilde{A} - \mathrm{Sc}(\tilde{\nabla} \tilde{A}),
+\tilde{F} = \bar{\tilde{\nabla}} \tilde{A} - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}} \tilde{A}\right),
 $$
 
-or, equivalently, by the tensor relation
+which is the vector part of $\bar{\tilde{\nabla}}\tilde{A}$. Equivalently, in tensor language,
 
 $$
 F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu,
@@ -160,6 +160,8 @@ The tensor is antisymmetric:
 $$
 F^{\mu\nu} = -F^{\nu\mu}.
 $$
+
+**A note on the relation between $\mathbf{F}$ and $\bar{\tilde{\nabla}}\tilde{A}$.** The precise identification of the biquaternion $\mathbf{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$ with the vector part of $\bar{\tilde{\nabla}}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ reproduces this field strength up to a normalization factor and a possible sign convention depending on the choice of $A_0 = i\phi/c$ vs $A_0 = -i\phi/c$. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
 
 The complex combination $\mathbf{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\mathbf{F}$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
 
@@ -225,7 +227,7 @@ $$
 \tilde{G}_{\mathrm{ret}}(\tilde{X}) = -\frac{1}{4\pi R}\,\delta(t - R/c)\,e_0 - \frac{i}{4\pi R}\,\delta(t - R/c)\,\hat{R},
 $$
 
-where $R = \sqrt{x^2 + y^2 + z^2}$ is the radial distance, $\hat{R} = (x e_1 + y e_2 + z e_3)/R$ is the unit radial biquaternion, and $\delta(t - R/c)$ is the Dirac delta concentrated on the future light cone. The two terms correspond to the scalar and vector parts of the kernel: the scalar part propagates the longitudinal component of the source, and the vector part propagates the transverse component.
+where $R = \sqrt{x^2 + y^2 + z^2}$ is the radial distance, $\hat{R} = (x e_1 + y e_2 + z e_3)/R$ is the unit radial biquaternion, and $\delta(t - R/c)$ is the Dirac delta concentrated on the future light cone. This Green's function satisfies $\tilde{\nabla}\tilde{G}_{\mathrm{ret}} = -\delta(\tilde{X})e_0$ (up to a sign convention for the delta distribution). The precise form of the retarded kernel — including any derivatives of the delta function that appear in the general case — should be verified against the standard references on biquaternion Maxwell theory (e.g., Alexeyeva 2001).
 
 The solution of the inhomogeneous equation is then the retarded convolution
 
@@ -235,7 +237,7 @@ $$
 
 where the integral is over the past light cone of $\tilde{X}$. This is the biquaternionic form of the retarded solution of Maxwell's equations, and it is the physically correct solution for radiation problems: the field at a point depends only on the sources in its past light cone, not on the future sources.
 
-The retarded Green's function is distinct from the **Cauchy kernel** $\bar{\tilde{X}}/\|\tilde{X}\|_E^4$ of the elliptic theory (articles 8 and 11). The Cauchy kernel is the fundamental solution of the elliptic d'Alembertian $\Box = \partial_{ict}^2 + \Delta$, whereas the retarded Green's function is the fundamental solution of the hyperbolic wave operator $\Box = -\partial_t^2/c^2 + \Delta$. The two are related by the **Wick rotation** $t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
+The retarded Green's function is distinct from the **Cauchy kernel** $\bar{\tilde{X}}/\|\tilde{X}\|_E^4$ of the elliptic theory (companion articles on biquaternion integration and biquaternion analysis on subspaces). The Cauchy kernel is the fundamental solution of the elliptic d'Alembertian $\Box = \partial_{ict}^2 + \Delta$ (with the same sign for all four directions), whereas the retarded Green's function is the fundamental solution of the hyperbolic wave operator $\Box = -\partial_t^2/c^2 + \Delta$. The two are related by the **Wick rotation** $t \to -i\tau$, which converts the hyperbolic kernel into the elliptic one. The elliptic kernel is the natural object in the Euclidean (imaginary-time) formulation; the retarded kernel is the natural object in the Lorentzian (real-time) formulation.
 
 ## The Stationary Limit
 
@@ -282,13 +284,13 @@ where $\Gamma$ is an arbitrary scalar function. This is the biquaternionic form 
 Under this transformation, the field-strength biquaternion is invariant:
 
 $$
-\tilde{F}' = \tilde{\nabla} \tilde{A}' - \mathrm{Sc}(\tilde{\nabla} \tilde{A}') = \tilde{\nabla} \tilde{A} - \mathrm{Sc}(\tilde{\nabla} \tilde{A}) = \tilde{F}.
+\tilde{F}' = \bar{\tilde{\nabla}} \tilde{A}' - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}} \tilde{A}'\right) = \bar{\tilde{\nabla}} \tilde{A} - \mathrm{Sc}\!\left(\bar{\tilde{\nabla}} \tilde{A}\right) = \tilde{F}.
 $$
 
 The scalar part of the potential is not invariant. Write
 
 $$
-S = \mathrm{Sc}(\bar{\tilde{\nabla}} \tilde{A}).
+S = \mathrm{Sc}\!\left(\bar{\tilde{\nabla}} \tilde{A}\right).
 $$
 
 This is the biquaternionic scalar field, whose components are $\partial_{ict} A_0 + \mathrm{div}\,\mathbf{A}$. Under a gauge transformation, it transforms as
@@ -297,7 +299,7 @@ $$
 S' = S + \Box \Gamma.
 $$
 
-The scalar field $S$ is therefore a **gauge degree of freedom**. It is not a physical field; it can be changed at will by a gauge transformation. The physical content of the theory is entirely in the gauge-invariant combination $\tilde{\nabla} \tilde{A} + S$ that appears in the field-strength biquaternion.
+The scalar field $S$ is therefore a **gauge degree of freedom**. It is not a physical field; it can be changed at will by a gauge transformation. The physical content of the theory is entirely in the vector part of $\bar{\tilde{\nabla}} \tilde{A}$, which is the field-strength biquaternion $\tilde{F}$ and is invariant under the gauge transformation.
 
 The **Lorenz gauge** is the condition
 
@@ -331,7 +333,7 @@ The scalar field $S$ has no independent physical meaning. It is a gauge artifact
 
 The two formulations are related as follows:
 
-- The field-strength biquaternion $\tilde{F}$ is obtained from the potential biquaternion $\tilde{A}$ by differentiation: $\tilde{F} = \tilde{\nabla} \tilde{A} - \mathrm{Sc}(\tilde{\nabla} \tilde{A})$.
+- The field-strength biquaternion $\tilde{F}$ is obtained from the potential biquaternion $\tilde{A}$ by differentiation: $\tilde{F} = \bar{\tilde{\nabla}} \tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}} \tilde{A})$.
 - The first-order equation $\tilde{\nabla} \tilde{F} = -\tilde{R}$ is equivalent to the second-order equation $\Box \tilde{A} = -\mu \tilde{R}'$ in the Lorenz gauge.
 - The source biquaternions $\tilde{R}$ and $\tilde{R}'$ differ by the normalization factors: $\tilde{R} = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\mathbf{J}$, while $\tilde{R}' = ic\rho + \mathbf{J}$.
 
@@ -389,35 +391,37 @@ The energy method also provides a stability statement: small perturbations of th
 
 ## The Lorentz Transformation of the Potential
 
-The potential biquaternion transforms under a Lorentz boost in a compact form. Let the relative velocity between two inertial frames be $\mathbf{u}$ (the ordinary relative velocity, with $|\mathbf{u}| < c$). Define the **four-velocity biquaternion**
+The transformation of the four-potential under a Lorentz boost is the **rotor conjugation**
 
 $$
-\tilde{U} = c + i\,\mathbf{u},
+\tilde{A}' = \tilde{\Lambda}\,\tilde{A}\,\tilde{\Lambda}^\dagger,
 $$
 
-where the scalar part is the speed of light in the medium and the vector part is the relative velocity. The Lorentz factor is
+where $\tilde{\Lambda}$ is the boost biquaternion. For a pure boost with velocity $\mathbf{u}$, the boost biquaternion is
 
 $$
-\gamma = \frac{1}{\sqrt{1 - \mathbf{u}^2/c^2}}.
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} = \exp\!\left(\frac{\psi}{2}\,i\hat{\mathbf{u}}\right),
 $$
 
-The potential biquaternion transforms as
+with the rapidity $\psi$ related to the velocity by $\tanh\psi = u/c$, and $\hat{\mathbf{u}} = \mathbf{u}/u$ the unit vector in the direction of the boost. The Lorentz factor is
 
 $$
-\tilde{A}' = \frac{\gamma}{c}\,\tilde{U}\,\tilde{A}.
+\gamma = \frac{1}{\sqrt{1 - \mathbf{u}^2/c^2}} = \cosh\psi.
 $$
 
-Expanding this in scalar and vector parts gives the standard Lorentz transformation of the scalar and vector potentials:
+The full development of the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article on the Lorentz transformation. Here we recall the resulting component formulas for the transformation of the scalar and vector potentials:
 
 $$
-\phi' = \gamma\left(\phi - \mathbf{A}\cdot\mathbf{u}\right),
+\phi' = \gamma\left(\phi - \mathbf{u}\cdot\mathbf{A}\right),
 $$
 
 $$
-\mathbf{A}' = \gamma\left(\mathbf{A} - \frac{\phi}{c^2}\mathbf{u}\right).
+\mathbf{A}' = \mathbf{A} + \frac{\gamma - 1}{u^2}(\mathbf{u}\cdot\mathbf{A})\mathbf{u} - \gamma\frac{\phi}{c^2}\mathbf{u}.
 $$
 
-The same transformation law applies to the biquaternionic source $\tilde{R}$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form. The biquaternionic four-velocity $\tilde{U}$ is the operator that implements the boost.
+These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^\dagger$. The same transformation law applies to the biquaternionic source $\tilde{R}$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
+
+**A note on earlier conventions.** An earlier version of this article used the one-sided formula $\tilde{A}' = (\gamma/c)\tilde{U}\tilde{A}$ with $\tilde{U} = c + i\mathbf{u}$. This formula is **incorrect**: it does not reproduce the standard component formulas for a general boost, and it does not match the rotor-conjugation formulation of the Lorentz transformation established in the companion articles. The correct transformation is the rotor conjugation given above.
 
 ## The Vacuum Limit
 
@@ -455,17 +459,17 @@ This is a structural question, not a settled one. In SI units, $\mu_0$ and $c_0$
 
 ## Beyond the Minkowski Subspace: Complexified Spacetime
 
-Up to this point, all biquaternions have been taken in the Minkowski subspace $\mathbb{M}$, with $A_\mu = a_\mu + i a'_\mu$ and the constraint that the imaginary parts satisfy the reality conditions $a_0 = 0$, $a'_k = 0$ for the spatial components. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
+Up to this point, all biquaternions have been taken in the **anti-Hermitian subspace** $\mathbb{M}_-$ (the material sector), with $A_\mu = a_\mu + i a'_\mu$ and the constraint that the imaginary parts satisfy the reality conditions $a_0 = 0$, $a'_k = 0$ for the spatial components. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
 
 $$
 \tilde{A} = A_0 + \mathbf{A}, \qquad \tilde{F} = \mathbf{F},
 $$
 
-with complex coefficients that are not restricted to the Minkowski subspace. The projection onto the Minkowski subspace reproduces the electromagnetic field; the remaining components correspond to the additional directions of the complexified spacetime.
+with complex coefficients that are not restricted to the anti-Hermitian subspace. The projection onto $\mathbb{M}_-$ reproduces the electromagnetic field; the remaining components correspond to the additional directions of the complexified spacetime.
 
 The biquaternionic formulation extends naturally to this setting. The gradient $\tilde{\nabla}$ becomes an operator on the complexified coordinates, and the factorization $\Box = \tilde{\nabla} \bar{\tilde{\nabla}}$ continues to hold, with $\Box$ now the complexified d'Alembertian. The single equation $\tilde{\nabla} \tilde{F} = -\tilde{R}$ remains valid, but the fields and sources are now fully complex. The integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}} \tilde{R}) = 0$ remains the conservation law for the complexified source.
 
-This is the natural generalization of the $ict$ structure. The electromagnetic field is the real projection of a complex field, just as the Minkowski subspace is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
+This is the natural generalization of the $ict$ structure. The electromagnetic field is the real projection of a complex field, just as the material sector $\mathbb{M}_-$ is a real slice of the complexified biquaternion algebra. The structure of Maxwell's equations is preserved, but the arena is larger.
 
 ## Summary of Notation
 
@@ -474,11 +478,13 @@ This is the natural generalization of the $ict$ structure. The electromagnetic f
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$, commutes with $e_k$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector) |
+| $\mathbb{M}_+$ | Hermitian subspace (informational sector) |
 | $\tilde{A}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
 | $\tilde{R}, \tilde{R}'$ | Source biquaternions |
 | $\tilde{W}$ | Energy–momentum biquaternion |
-| $\tilde{U}$ | Four-velocity biquaternion |
+| $\tilde{\Lambda}$ | Boost biquaternion (unit-norm biquaternion) |
 | $\tilde{\nabla}$ | Biquaternionic gradient |
 | $\bar{\tilde{\nabla}}$ | Quaternion conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |

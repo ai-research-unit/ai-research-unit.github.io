@@ -3,26 +3,30 @@
 
 ## Core Proposal
 
-The fundamental arena of physics is **not** the Minkowski space $\mathbb{R}^{3,1}$, but the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$. A **point in the complexified spacetime** is an element of $\mathbb{B}$, written as a biquaternionic coordinate
+The fundamental structure of the universe is a biquaternion space, of which Minkowski space is one real slice. A point in this complexified spacetime is an element of the **biquaternion algebra** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$
 
-where $e_0 = 1$ and $e_1, e_2, e_3$ are the quaternion units. The four coefficients $Q_\mu$ are complex numbers, and they split naturally into two sectors, as described below. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point. This is the central proposal of this article.
+where $e_0 = 1$ and $e_1, e_2, e_3$ are the quaternion units. The four coefficients $Q_\mu$ are complex numbers, and they split naturally into two sectors, as described below. The complex structure — the identification of which direction is "real" and which is "imaginary" — is **local**, determined by the electromagnetic properties of the medium at each point.
+
+The hypothesis of this blog is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum mechanics is evidence for the proposal.
 
 ## Two Sectors: Material and Informational
 
-The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces, the fixed-point sets of the Hermitian and anti-Hermitian conjugations:
+The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces:
 
 $$
 \mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+.
 $$
 
-These two subspaces have distinct physical roles:
+The subspace $\mathbb{M}_-$ is the **anti-Hermitian subspace**, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation $\dagger$ with eigenvalue $-1$). The subspace $\mathbb{M}_+$ is the **Hermitian subspace**, the fixed-point set of the Hermitian conjugation $\dagger$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial.
 
-- **$\mathbb{M}_-$ is the material sector.** Its coordinates are **$ict$** (an imaginary temporal coordinate, c being the speed of light) and **$x, y, z$** (three real spatial coordinates). This is the home of the four-vectors of relativistic physics. The imaginary time coordinate reflects a simple fact: time can be measured, but it cannot be touched, held, or moved through. The companion article *$\mathbb{M}_-$ as the Material Space* develops this sector.
-- **$\mathbb{M}_+$ is the informational sector.** Its coordinates are **$ct'$** (a real temporal coordinate) and **$ix', iy', iz'$** (three imaginary spatial coordinates). This is the home of the Hermitian operators that act on the material sector — the boost biquaternions, the pure-state projectors, the observables. The imaginary spatial directions reflect a mirror fact: they are the directions of a space that is *organised* rather than *extended*. The companion article *$\mathbb{M}_+$ as the Informational Space* develops this sector.
+The two subspaces have distinct physical roles:
+
+- **$\mathbb{M}_-$ is the material sector.** Its coordinates are **$ict$** (an imaginary temporal coordinate, $c$ being the speed of light) and **$x, y, z$** (three real spatial coordinates). It is the home of the four-vectors of relativistic physics. The imaginary time coordinate reflects a simple fact: time can be measured, but it cannot be touched, held, or moved through.
+- **$\mathbb{M}_+$ is the informational sector.** Its coordinates are **$ct'$** (a real temporal coordinate) and **$ix', iy', iz'$** (three imaginary spatial coordinates). It is the home of the Hermitian operators, whose algebraic structure is that of a quantum-mechanical state space. The elements of $\mathbb{M}_+$ carry quantum-informational content, in the sense established in the companion article on quantum mechanics: they are the states, observables, and measurement operators of a qubit. The name "informational sector" reflects this content. It is not a claim about entropy or any other thermodynamic property of the sector.
 
 The complex structure makes the two sectors complementary: the material sector has three real spatial directions and one imaginary temporal direction; the informational sector has three imaginary spatial directions and one real temporal direction.
 
@@ -60,37 +64,69 @@ $$
 (dQ_\mu)^2 = (dq_\mu)^2 - (dq'_\mu)^2 + 2i\,dq_\mu\,dq'_\mu.
 $$
 
-The **real part** of $d\tilde{Q} \circ d\tilde{Q}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms, and is where the physical content of the hypothesis resides.
+The **real part** of $d\tilde{Q} \circ d\tilde{Q}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
-## The Informational Hypothesis
+## What the Framework Achieves
 
-The informational sector is not merely a mathematical mirror of the material one. Its algebraic structure is **exactly** that of the operator algebra of a two-state quantum system — the spin-1/2 system. The idempotents of $\mathbb{M}_+$ are pure-state projectors; the Hermitian elements are observables; the unitary elements are reversible transformations; the trace formula gives the Born rule. This identification is not an analogy: it is the same mathematics, expressed in the biquaternion algebra, and it is developed in detail in the companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*.
+The main result of the framework so far is that the biquaternion algebra **contains, as a matter of algebra, the structures required for both relativity and quantum mechanics**. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.
 
-The hypothesis of this blog is that this structural identification reflects a **physical fact** about the world: that beyond the material sector of observable physics there is an informational sector, whose elements are the operators acting on the material sector, and whose structure is the quantum-informational structure we have just described.
+### Relativity in $\mathbb{M}_-$
 
-The informational sector is conjectured to carry the following three properties:
+The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The **Lorentz group** $SL(2,\mathbb{C})$ is realized as the **group of unit-norm biquaternions in $\mathbb{B}$**,
 
-1. **Organization rather than dispersion.** Where the imaginary time direction $ict$ is associated with entropy increase, the real time direction $ct'$ is associated with information organization — possibly a decrease in entropy, or an increase in structural complexity.
+$$
+SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
+$$
 
-2. **Phase-like character.** The imaginary spatial directions $ix', iy', iz'$ are naturally phase-like, in the same sense that imaginary time in Wick-rotated quantum field theory is thermodynamic and statistical in character.
+and it **acts** on the material sector by the **rotor conjugation**
 
-3. **Coupling to the material sector.** The cross terms $2i\,dq_\mu\,dq'_\mu$ in the metric encode the coupling between the material and informational sectors. This coupling is where the physical content of the hypothesis would reside.
+$$
+\tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger.
+$$
+
+The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.
+
+The relativistic wave equations — **Maxwell's equations** and the **Dirac equation** — have natural biquaternion forms, as developed in the companion articles.
+
+### Quantum Mechanics in $\mathbb{M}_+$
+
+The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article *Quantum Mechanics in Biquaternionic Form*, and it can be summarized as follows.
+
+- The **idempotents** of $\mathbb{M}_+$, of the form $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.
+- The **positive trace-one elements** of $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.
+- The **general Hermitian elements** of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables, with spectral decomposition in terms of idempotents.
+- The **trace pairing** $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.
+- The **sandwich operation** $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ gives the projective measurement and state update.
+- The **unitary elements** of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^\dagger$, give the reversible evolution.
+- The distinction between **reversible evolution** and **irreversible measurement** is a property of the acting element (unitary vs. idempotent), not an additional postulate.
+
+The operator algebra of quantum mechanics, its state space, its Born rule, and its measurement rule are all **structural consequences** of the algebra of $\mathbb{M}_+$. They are not imposed from outside.
+
+### The Shared Home
+
+The most significant feature of the framework is that **relativity and quantum mechanics share the same algebraic home**. The Lorentz group is realized as the group of unit-norm biquaternions in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.
+
+This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum mechanics, but as a **common algebraic ground** on which both can be expressed.
 
 ## Status and Open Questions
 
-This is a **frontier hypothesis**, not established physics. The key open questions are:
+The framework is a **research program**, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum mechanics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.
 
-1. **Dimensionality.** Why are the imaginary spatial directions of $\mathbb{M}_+$ not observed? A compactification or hiding mechanism is required.
+What is not established is whether the framework has consequences beyond a reformulation of known physics. The key open questions are:
 
-2. **Causality.** How does causal structure in the material sector interact with the informational character of $\mathbb{M}_+$?
+1. **Physical reality of the biquaternionic structure.** Is the biquaternion algebra merely a convenient reformulation of known physics, or does the structure of the universe genuinely follow the algebra? A structural hypothesis of this kind can only be evaluated by the richness of the consequences it produces.
 
-3. **Coupling.** What is the precise dynamical coupling between the two sectors? The Lorentz coupling via the boost biquaternion is established, but a genuinely new coupling would be needed to give the informational sector physical content.
+2. **Coupling between the two sectors.** Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$? Any such coupling would be where new physical content could reside.
 
-4. **Dynamics of the informational sector.** Does $\mathbb{M}_+$ have its own dynamics? The biquaternion operators $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, and $\Box$ are available, but it is not clear which (if any) governs $\mathbb{M}_+$-valued fields.
+3. **Extension to many qubits and to quantum field theory.** The quantum formalism presented in the companion article is for a single qubit. The extension to $n$ qubits (via the tensor product $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$), the second-quantized version, and the connection to quantum field theory remain to be developed.
 
-5. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics?
+4. **Relativistic quantum theory.** The biquaternion algebra contains both the Lorentz group and the operator algebra of quantum mechanics. A fully relativistic quantum theory of spinor fields — whose classical precursor is the biquaternion Dirac equation — is the natural continuation of the framework.
 
-The hypothesis is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the informational subspace is the natural arena for the operator algebra of quantum mechanics. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention a vacuum approximation of a more general local structure, in the same way that special relativity is a local approximation of general relativity.
+5. **Curved spacetime.** The framework so far is formulated on flat spacetime. Its extension to curved spacetime, and its relation to general relativity, remain open.
+
+6. **Empirical contact.** What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend.
+
+The framework is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the algebra $\mathbb{B}$ is the natural home in which both relativity and quantum mechanics are expressed. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention a vacuum approximation of a more general local structure, in the same way that special relativity is a local approximation of general relativity.
 
 ## Summary of Notation
 
@@ -100,8 +136,12 @@ The hypothesis is offered as a structural intuition: that the two natural subspa
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternionic coordinate |
-| $\mathbb{M}_-$ | Material sector: coordinates $(ict, x, y, z)$ |
-| $\mathbb{M}_+$ | Informational sector: coordinates $(ct', x', y', z')$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$ |
+| $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', x', y', z')$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors) |
+| $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of the informational sector) |
+| $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable of the informational sector) |
+| $\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium (local) |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |
@@ -110,6 +150,7 @@ The hypothesis is offered as a structural intuition: that the two natural subspa
 
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), for the complex structure of spacetime.
-- Edward Witten, "Anti-de Sitter Space and Holography" (1998), for the geometric interpretation of information.
-- Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a biquaternionic approach to complexified geometry.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection between Clifford algebras and the structures discussed here.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra perspective on the same structures.
+- Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a related biquaternionic approach to complexified geometry.
 

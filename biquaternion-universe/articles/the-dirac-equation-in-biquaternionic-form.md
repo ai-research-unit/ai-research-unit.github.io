@@ -13,7 +13,7 @@ $$
 
 where $\eta^{\mu\nu}$ is the Minkowski metric and $I$ is the identity matrix. The gamma matrices generate the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, and the Dirac equation is the statement that the Dirac operator $\slashed{\partial} = \gamma^\mu \partial_\mu$ annihilates the spinor field.
 
-This article develops the biquaternionic formulation of the Dirac equation. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic to the **even subalgebra** of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternionic gradient $\tilde{\nabla}$ plays the role of the Dirac operator. The Dirac equation in biquaternionic form is therefore a first-order equation on the biquaternion algebra, and the spinor solutions are the elements of the two-dimensional complex module on which the algebra acts.
+This article develops the biquaternionic formulation of the Dirac equation. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a real algebra, to the **even subalgebra** of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternionic gradient $\tilde{\nabla}$ plays the role of the Dirac operator. The Dirac equation in biquaternionic form is therefore a first-order equation on the biquaternion algebra.
 
 The article is organized as follows. First the standard Dirac equation is reviewed, then the biquaternion algebra and its relation to $\mathrm{Cl}_{1,3}$ are recalled, then the biquaternionic Dirac operator is defined, and finally the biquaternionic Dirac equation is stated and solved. The article closes with the relativistic kinematics (four-velocity, four-momentum, mass-shell relation), the relation to the Maxwell equation, the plane-wave solutions, and the mass term.
 
@@ -38,7 +38,7 @@ $$
 \gamma^k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}, \quad k = 1, 2, 3,
 $$
 
-where $\sigma^k$ are the Pauli matrices. The gamma matrices are traceless, and their products generate a basis of $M_4(\mathbb{C})$.
+where $\sigma^k$ are the Pauli matrices.
 
 ### The Dirac Equation
 
@@ -84,15 +84,19 @@ where $\psi_L$ and $\psi_R$ are the left- and right-handed Weyl spinors. The Dir
 
 ### The Isomorphism
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic to the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the Clifford algebra $\mathrm{Cl}_{1,3}$ (article 5). The even subalgebra consists of products of an even number of gamma matrices: the identity $I$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$. It has real dimension $8$, matching the real dimension of $\mathbb{B}$.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a **real algebra**, to the **even subalgebra** $\mathrm{Cl}_{1,3}^+$ of the real Clifford algebra $\mathrm{Cl}_{1,3}$. The even subalgebra consists of products of an even number of gamma matrices: the identity $I$, the six bivectors $\gamma^\mu\gamma^\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$. It has real dimension $8$, matching the real dimension of $\mathbb{B}$.
 
-The isomorphism is given by mapping the quaternion units to the bivectors:
+**A note on the convention.** It is important to keep two things distinct. The biquaternion algebra $\mathbb{B}$ is a **real algebra of dimension 8**, and it is the even part of the **real** Clifford algebra. It is **not** the even part of the **complexified** Clifford algebra $\mathbb{C}\otimes \mathrm{Cl}_{1,3}$, which has complex dimension 8 (real dimension 16) and is isomorphic to $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
+
+**The isomorphism.** The bivectors of $\mathrm{Cl}_{1,3}^+$ span a 6-dimensional real space. Three of them are timelike-spacelike, $\gamma^0\gamma^k$, and have square $+I$. Three are spacelike-spacelike, $\gamma^j\gamma^k$ with $j,k \in \{1,2,3\}$, and have square $-I$. The three spacelike bivectors generate a copy of the quaternions $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$. The isomorphism is given by mapping the quaternion units to three mutually anticommuting spacelike bivectors, oriented so that $e_1 e_2 = e_3$. Concretely, one valid assignment is
 
 $$
-e_1 \mapsto \gamma^0\gamma^1, \qquad e_2 \mapsto \gamma^0\gamma^2, \qquad e_3 \mapsto \gamma^0\gamma^3.
+e_1 \mapsto \gamma^2\gamma^3, \qquad e_2 \mapsto \gamma^3\gamma^1, \qquad e_3 \mapsto \gamma^2\gamma^1 = -\gamma^1\gamma^2.
 $$
 
-Under this map, the quaternion multiplication rules reproduce the bivector multiplication rules. The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$ of $\mathrm{Cl}_{1,3}$, up to a factor.
+The choice of which bivector corresponds to which quaternion unit is a convention; different choices are related by rotations of the spatial frame.
+
+The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$ of $\mathrm{Cl}_{1,3}$, up to a sign. This correspondence is what makes the complexification of the quaternions inside $\mathbb{B}$ match the complexification of the even Clifford algebra.
 
 ### The Dirac Operator in Biquaternion Form
 
@@ -102,7 +106,7 @@ $$
 \tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z
 $$
 
-is the biquaternion form of the Dirac operator. The correspondence with the gamma-matrix Dirac operator $\slashed{\partial} = \gamma^\mu \partial_\mu$ is through the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $e_k$ correspond to the bivectors $\gamma^0\gamma^k$, and the scalar unit $e_0$ corresponds to the identity $I$.
+is the biquaternion form of the Dirac operator. The correspondence with the gamma-matrix Dirac operator $\slashed{\partial} = \gamma^\mu \partial_\mu$ is through the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $e_k$ correspond to spacelike bivectors, and the scalar unit $e_0$ corresponds to the identity $I$.
 
 The biquaternionic gradient satisfies the factorization
 
@@ -120,9 +124,9 @@ $$
 \mathrm{Cl}_{1,3} \cong M_4(\mathbb{C}),
 $$
 
-under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to $M_4(\mathbb{C})^+$, a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$ (article 5), and the action of $\tilde{\nabla}$ on $\mathbb{B}$ corresponds to the action of $\slashed{\partial}$ on the two-dimensional spinor module $\mathbb{C}^2$.
+under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$ (article 5), and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of $\slashed{\partial}$ on a two-dimensional complex spinor module.
 
-So the biquaternion formulation of the Dirac equation is a **two-component formulation**: the biquaternion-valued field plays the role of a pair of Weyl spinors, and the biquaternionic gradient is the Dirac operator acting on that pair. The four-component Dirac spinor is recovered by taking the direct sum of the two-component spinor module with its conjugate.
+So the biquaternion formulation of the Dirac equation is expressed in terms of the biquaternion algebra, whose elements can be viewed as **pairs of two-component Weyl spinors**. The full four-component Dirac spinor is recovered by taking the direct sum of the two-component spinor module with its complex conjugate.
 
 ## Relativistic Kinematics in Biquaternionic Form
 
@@ -168,7 +172,7 @@ $$
 \tilde{U}\bar{\tilde{U}} = \gamma^2\big(-c^2 + \mathbf{v}^2\big) = -c^2.
 $$
 
-This is the biquaternion form of the standard relativistic normalization $u^\mu u_\mu = -c^2$. The normalization is the statement that the four-velocity has a fixed "length" in the Minkowski metric.
+This is the biquaternion form of the standard relativistic normalization $u^\mu u_\mu = -c^2$.
 
 ### The Four-Momentum
 
@@ -192,7 +196,7 @@ $$
 E^2 = \mathbf{p}^2 c^2 + m^2 c^4,
 $$
 
-which is obtained by expanding $-m^2 c^2 = -(E/c)^2 + \mathbf{p}^2$. The mass-shell relation is the constraint that a physical particle must satisfy: it is the statement that the four-momentum has a fixed "length" determined by the mass.
+which is obtained by expanding $-m^2 c^2 = -(E/c)^2 + \mathbf{p}^2$.
 
 ### The Four-Acceleration and Four-Force
 
@@ -230,7 +234,7 @@ where $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is the anti-Hermitian conjuga
 
 ### The Massless Case
 
-The massless biquaternionic Dirac equation $\tilde{\nabla}\tilde{\Psi} = 0$ is identical to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$. The two equations have the same form:
+The massless biquaternionic Dirac equation $\tilde{\nabla}\tilde{\Psi} = 0$ is identical in form to the **homogeneous biquaternion Maxwell equation** for the field-strength biquaternion $\tilde{F}$. The two equations have the same form:
 
 $$
 \tilde{\nabla}\tilde{\Psi} = 0 \quad \text{(massless Dirac)}, \qquad \tilde{\nabla}\tilde{F} = 0 \quad \text{(source-free Maxwell)}.
@@ -250,19 +254,19 @@ $$
 
 The mass term couples the field to its anti-Hermitian conjugate. This is the biquaternion form of the standard mass term $m\psi$ in the Dirac equation, which couples the left- and right-handed Weyl spinors.
 
-The mass term breaks the factorization of the equation: the square of $\tilde{\nabla}$ acting on $\tilde{\Psi}$ is not simply $\Box\tilde{\Psi}$ because the mass term introduces a mixing between $\tilde{\Psi}$ and $\tilde{\Psi}^\flat$. Specifically,
+**The associated Klein–Gordon equation.** The mass term couples $\tilde{\Psi}$ to its anti-Hermitian conjugate, and the equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is not equivalent to a scalar wave equation on $\tilde{\Psi}$ alone. However, applying $\bar{\tilde{\nabla}}$ to both sides gives
 
 $$
-\tilde{\nabla}(\tilde{\nabla}\tilde{\Psi}) = \tilde{\nabla}(m\tilde{\Psi}^\flat) = m\tilde{\nabla}\tilde{\Psi}^\flat,
+\bar{\tilde{\nabla}}\tilde{\nabla}\tilde{\Psi} = m\bar{\tilde{\nabla}}\tilde{\Psi}^\flat,
 $$
 
-and the relation between $\tilde{\nabla}\tilde{\Psi}^\flat$ and $\tilde{\Psi}$ involves the anti-Hermitian conjugation. The result is the biquaternion form of the **Klein–Gordon equation with mass**:
+and in the standard Clifford algebra formulation (in which the mass term corresponds to a Clifford multiplication by $m$), this yields the **Klein–Gordon equation**
 
 $$
-\Box\tilde{\Psi} = m^2\tilde{\Psi}.
+\Box\tilde{\Psi} = -m^2 c^2/\hbar^2 \cdot \tilde{\Psi}
 $$
 
-This is the biquaternion form of the standard statement that the square of the Dirac operator is the Klein–Gordon operator: $(\slashed{\partial} + m)(\slashed{\partial} - m) = \Box - m^2$.
+(up to sign conventions determined by the normalization of the mass term). This is the biquaternion form of the standard statement that the square of the Dirac operator is the Klein–Gordon operator: $(\slashed{\partial} + m)(\slashed{\partial} - m) = \Box - m^2$. The precise sign and normalization of the mass term depend on the representation of the mass in the biquaternion algebra; the structural content, that the Dirac equation implies the Klein–Gordon equation, is invariant.
 
 ## Plane-Wave Solutions
 
@@ -312,25 +316,23 @@ The solution space of the massive equation is four-dimensional over $\mathbb{C}$
 
 ### Spherical Solutions
 
-Spherical solutions of the biquaternionic Dirac equation are obtained by the same construction as for the Maxwell equation (companion article). Given a scalar solution $\psi_{n\ell m}$ of the scalar wave equation $\Box\psi = 0$, the biquaternion-valued solution is
+Spherical solutions of the biquaternionic Dirac equation can be constructed by the methods of Clifford analysis, adapted to the biquaternion algebra. The standard technique is the **monogenic completion** of scalar harmonic functions: given a harmonic scalar function on the sphere, the monogenic completion produces a biquaternion-valued function that lies in the kernel of the Dirac operator.
 
-$$
-\tilde{\Psi}_{n\ell m} = \tilde{\nabla}\psi_{n\ell m},
-$$
+The construction is more involved than the corresponding construction for the Maxwell equation, because the massless Dirac operator $\tilde{\nabla}$ does not factor through the scalar wave operator $\Box$: the square of $\tilde{\nabla}$ is $\Box$ only when acting on functions that also satisfy the integrability condition $\tilde{\nabla}^2 = \Box$ on the given field. A harmonic scalar function $\psi$ with $\Box\psi = 0$ does not automatically give a solution $\tilde{\nabla}\psi$ of the massless Dirac equation; the correct construction requires the stronger condition $\tilde{\nabla}^2\psi = 0$ (equivalently, the monogenicity condition), which is a restricted class of the harmonic functions.
 
-for the massless case. For the massive case, the construction is more involved: the solution is a combination of $\tilde{\nabla}\psi$ and its anti-Hermitian conjugate, and the coefficients are determined by the mass-shell condition.
+For the massless case, the spherical solutions of the biquaternionic Dirac equation are the **monogenic spherical harmonics**, and they form a basis of the solution space. For the massive case, the construction is more involved: the solution is a combination of the monogenic spherical harmonics and their anti-Hermitian conjugates, with coefficients determined by the mass-shell condition.
 
-The spherical solutions describe the **angular momentum states** of a relativistic fermion. The quantum numbers $(n, \ell, m)$ correspond to the radial, orbital, and magnetic quantum numbers of the standard hydrogen-like Dirac equation. The biquaternion framework reproduces the standard spherical harmonic structure.
+The spherical solutions describe the **angular momentum states** of a relativistic fermion. The quantum numbers $(n, \ell, m)$ correspond to the radial, orbital, and magnetic quantum numbers of the standard hydrogen-like Dirac equation.
 
 ### Cylindrical Solutions
 
-Cylindrical solutions are similarly constructed from cylindrical harmonics. They describe **waveguide modes** of a fermion field in a cylindrical geometry, with the transverse-electric and transverse-magnetic modes corresponding to the two spin states.
+Cylindrical solutions are similarly constructed from cylindrical harmonics by the same monogenic completion technique. They describe **waveguide modes** of a fermion field in a cylindrical geometry, with the transverse-electric and transverse-magnetic modes corresponding to the two spin states.
 
 ## Relation to the Maxwell Equation
 
 ### Structural Identity
 
-The massless biquaternionic Dirac equation and the homogeneous biquaternion Maxwell equation are the same equation:
+The massless biquaternionic Dirac equation and the homogeneous biquaternion Maxwell equation have the same form:
 
 $$
 \tilde{\nabla}\tilde{\Psi} = 0.
@@ -357,13 +359,13 @@ The Dirac equation is naturally expressed in terms of the Clifford algebra $\mat
 
 The advantage of the biquaternion formulation is that it is **more compact** than the matrix formulation: the biquaternion algebra has 8 real dimensions (or 4 complex dimensions), while the Clifford algebra $\mathrm{Cl}_{1,3}$ has 16 real dimensions. The biquaternion algebra is the minimal algebraic structure that contains the even part of the Clifford algebra, and it is sufficient for describing the spinor fields.
 
-The disadvantage is that the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ acts naturally on a two-dimensional complex module, while the Clifford algebra $\mathrm{Cl}_{1,3} \cong M_4(\mathbb{C})$ acts on a four-dimensional complex module. The biquaternion formulation therefore requires an additional step to recover the four-component Dirac spinor: the Dirac spinor is a pair of biquaternion spinors, one for the particle and one for the antiparticle.
+The disadvantage is that the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ acts naturally on a two-dimensional complex module, while the Clifford algebra $\mathrm{Cl}_{1,3} \cong M_4(\mathbb{C})$ acts on a four-dimensional complex module. The biquaternion formulation therefore requires an additional step to recover the four-component Dirac spinor: the Dirac spinor is a pair of Weyl spinors (one left-handed, one right-handed), and the complex conjugate of the pair gives the antiparticle components.
 
 ### What the Biquaternion Formulation Adds
 
 The biquaternion formulation adds three things:
 
-**1. A unified algebraic framework for Maxwell and Dirac.** The two equations are the same equation in different representations of the same algebra. This is the algebraic content of the statement that the photon and the electron are both described by the Clifford algebra $\mathrm{Cl}_{1,3}$.
+**1. A unified algebraic framework for Maxwell and Dirac.** The two equations have the same form in different representations of the same algebra. This is the algebraic content of the statement that the photon and the electron are both described by the Clifford algebra $\mathrm{Cl}_{1,3}$.
 
 **2. A compact notation for the spinor structure.** The two-component structure of the Weyl spinor is naturally encoded in the biquaternion algebra, without the need for explicit spinor indices. The left- and right-handed spinors correspond to the two complex conjugate representations of $\mathbb{B}$.
 
@@ -381,7 +383,9 @@ The biquaternion formulation adds three things:
 
 5. **The quantization.** The Dirac equation is the classical equation of motion for a fermion field. How does the biquaternion framework extend to the quantized theory (quantum field theory), and what is the role of the biquaternion structure in the quantized case?
 
-6. **The relation to the biquaternion Maxwell equation.** The two equations are the same in form. Is there a deeper sense in which the photon and the electron are the same biquaternion field in different representations, or is the identity purely formal?
+6. **The relation to the biquaternion Maxwell equation.** The two equations have the same form. Is there a deeper sense in which the photon and the electron are the same biquaternion field in different representations, or is the identity purely formal?
+
+7. **The minimal coupling to electromagnetism.** The standard Dirac equation couples to the electromagnetic field through the minimal coupling $\partial_\mu \to \partial_\mu - iqA_\mu/\hbar$. How does this coupling read in the biquaternion framework, given the biquaternion form of the four-potential $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$? The precise form depends on the representation conventions and is worth stating explicitly.
 
 These questions are open.
 
@@ -393,13 +397,13 @@ $$
 \tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat,
 $$
 
-where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi}$ is a biquaternion-valued field, $m$ is the mass, and $\tilde{\Psi}^\flat$ is the anti-Hermitian conjugate. In the massless case, the equation reduces to $\tilde{\nabla}\tilde{\Psi} = 0$, which is identical in form to the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is its even subalgebra.
+where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi}$ is a biquaternion-valued field, $m$ is the mass, and $\tilde{\Psi}^\flat$ is the anti-Hermitian conjugate. In the massless case, the equation reduces to $\tilde{\nabla}\tilde{\Psi} = 0$, which has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra.
 
 The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{U} = \gamma(ic\, e_0 + \mathbf{v})$ satisfies $\tilde{U}\bar{\tilde{U}} = -c^2$, the four-momentum $\tilde{P} = m\tilde{U}$ satisfies the mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$, and the four-position $\tilde{X} = ict\, e_0 + \mathbf{x}$ gives the invariant interval $ds^2 = d\tilde{X}\circ d\tilde{X}$.
 
 The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp(\tilde{k}\tilde{X})$ with $\tilde{k}\tilde{\Psi}_0 = 0$, giving the two spin states of a massless fermion. The massive solutions require the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ and give the four components of the Dirac spinor (two for the particle, two for the antiparticle).
 
-The spherical and cylindrical solutions are constructed from the corresponding scalar solutions by applying the biquaternionic gradient. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
+The spherical and cylindrical solutions are constructed by the methods of Clifford analysis, via the monogenic completion of harmonic functions. They describe the angular momentum states of the fermion field and the waveguide modes, respectively.
 
 The biquaternion framework provides a compact and unified language for the Maxwell and Dirac equations, but it does not by itself derive the mass term or the electroweak structure. Those require additional physics beyond the algebraic framework.
 
@@ -410,8 +414,8 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\mathbb{B}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $c = 1/\sqrt{\epsilon\mu}$ | **Speed of light in the medium** |
-| $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** |
+| $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
+| $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $\mathbf{v}$ | Particle three-velocity |
 | $\gamma = 1/\sqrt{1 - \mathbf{v}^2/c^2}$ | Lorentz factor |
 | $\tilde{X} = ict\,e_0 + \mathbf{x}$ | Four-position biquaternion |
@@ -420,6 +424,7 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Biquaternion-valued spinor field |
+| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate |
 | $\tilde{k}$ | Wave biquaternion |
 | $m$ | Fermion mass |
 
@@ -432,5 +437,6 @@ The biquaternion framework provides a compact and unified language for the Maxwe
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric algebra approach to the Dirac equation.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of the Dirac equation in geometric algebra.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the spinor formulation of the Dirac equation.
+- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the monogenic functions and the Clifford-analytic technique.
 - L. A. Alexeyeva, "Differential algebra of biquaternions. Dirac equation and its generalized solutions," *Progress in Analysis, Proceedings of the 8th Congress of the ISAAC* (Moscow, 2013), pp. 153–161, for the biquaternion formulation of the Dirac equation.
 

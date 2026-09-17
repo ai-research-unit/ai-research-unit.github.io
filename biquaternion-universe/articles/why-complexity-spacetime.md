@@ -83,7 +83,7 @@ This blog takes the second view. The technical problems are real, but they are p
 
 The $ict$ convention points toward something the metric convention hides: that **Minkowski space is a real slice of a complexified space**. The complex structure is not an accident of notation; it is a structural feature of the geometry.
 
-This is the intuition that motivates the broader hypothesis this blog explores: that the fundamental arena of physics is not $\mathbb{R}^{3,1}$ but a complexified space whose coordinates are biquaternions. A point in this space is written
+This is the intuition that motivates the broader hypothesis this blog explores: that the fundamental arena of physics is a complexified space whose coordinates are biquaternions. A point in this space is written
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
@@ -95,7 +95,7 @@ $$
 Q_\mu = q_\mu + i\,q'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The real parts $q_\mu$ describe the observable sector. The imaginary parts $q'_\mu$ are hypothesized to describe an informational sector — a space in which information is organized rather than dispersed. The time coefficient carries the $ict$ structure explicitly: $q'_0 = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
+The real parts $q_\mu$ describe the material sector. The imaginary parts $q'_\mu$ describe the informational sector — the sector whose elements carry the operator algebra of quantum mechanics. The time coefficient carries the $ict$ structure explicitly: $q'_0 = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
 
 In this framework, the Lorentzian signature of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 
@@ -119,7 +119,7 @@ $$
 \Box = -\frac{1}{c^2}\frac{\partial^2}{\partial t^2} + \nabla^2,
 $$
 
-which becomes the ordinary Euclidean Laplacian in four dimensions when written in terms of the local complex coordinate $ict$. The Euclidean form is preserved in **any** medium, not just in vacuum. This is a strong structural argument for the local complex structure: the Euclidean character of the wave operator is a medium-independent fact, and it is captured precisely by the local complex coordinate.
+which becomes the ordinary Euclidean Laplacian in four dimensions when written in terms of the local complex coordinate $ict$. The Euclidean form is preserved in **any** medium, not just in vacuum. This is a structural argument in favor of the local complex structure: the Euclidean character of the wave operator is a medium-independent fact, and it is captured precisely by the local complex coordinate.
 
 Note the structural parallel with the signature argument. In the metric convention, the signature is an input; in the $ict$ convention, it is derived. Likewise, in the global $ict$ convention, the complex structure is an input; in the local version, it is derived from the local electromagnetic properties of the medium. In both cases, what looks like a fundamental postulate in the real formalism becomes a derived quantity in the complexified formalism.
 
@@ -127,13 +127,11 @@ Note the structural parallel with the signature argument. In the metric conventi
 
 Beyond the historical and structural arguments, several independent lines of thought support the complexification program.
 
-**Wick rotation.** The analytic continuation $t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. The partition function of a quantum field theory at finite temperature is computed by continuing to imaginary time and imposing periodic boundary conditions, with the period being the inverse temperature. This is not a mathematical convenience: imaginary time is **thermodynamic time**. The imaginary direction is where temperature, entropy, and statistical weight live. If imaginary time already carries thermodynamic meaning, it is natural to ask whether the imaginary directions of a full complexified spacetime carry informational meaning.
+**Wick rotation.** The analytic continuation $t \to -i\tau$ connects Lorentzian QFT to Euclidean statistical mechanics. The partition function of a quantum field theory at finite temperature is computed by continuing to imaginary time and imposing periodic boundary conditions, with the period being the inverse temperature. This is not merely a mathematical convenience: imaginary time is **thermodynamic time**. The imaginary direction is where temperature, entropy, and statistical weight live. If imaginary time already carries thermodynamic meaning, it is natural to ask whether the imaginary directions of a full complexified spacetime might also carry informational meaning. This is a question, not a claim.
 
-**The second law suggests a complement.** The second law of thermodynamics says that entropy increases along the real time direction. Systems thermalize; information disperses; the arrow of time points toward disorder. But the second law is a statistical statement, not a fundamental law. If the real time direction is where entropy increases, a symmetric complexified structure suggests a complementary direction along which organization increases. This is a structural hint, not a proof, but it is a natural reading of the complex structure.
+**Holography.** In AdS/CFT and related frameworks, the bulk geometry is dual to boundary information. The radial direction in the bulk is not just a spatial direction; it is a renormalization scale, along which moving corresponds to integrating out degrees of freedom. Geometry and information are dual descriptions of the same structure. If extra dimensions can be informational in holography, it is natural to ask whether the imaginary directions of a complexified spacetime could play an analogous role — not "extra space" in the ordinary sense, but directions carrying informational content. This is a structural analogy, not a derivation.
 
-**Holography.** In AdS/CFT and related frameworks, the bulk geometry is dual to boundary information. The radial direction in the bulk is not just a spatial direction; it is a renormalization scale, along which moving corresponds to integrating out degrees of freedom. Geometry and information are dual descriptions of the same structure. If extra dimensions can be informational in holography, it is natural to ask whether the imaginary directions of a complexified spacetime could play an analogous role: not "extra space" in the ordinary sense, but the directions along which information is organized.
-
-**Twistor theory.** Penrose's twistor theory is built on complexified Minkowski space. Twistors are elements of $\mathbb{C}^4$, and Minkowski space is a real slice. The complex structure is not an add-on; it is the fundamental arena. Twistor theory has produced deep results — the nonlinear graviton construction, the Penrose transform, the twistor-string correspondence — even though it has not replaced standard physics. If twistor theory complexifies spinor space, and the $ict$ convention complexifies time, the question is whether the two complexifications are related. This blog argues that they are: both are projections of a single complexified spacetime.
+**Twistor theory.** Penrose's twistor theory is built on complexified Minkowski space. Twistors are elements of $\mathbb{C}^4$, and Minkowski space is a real slice. The complex structure is not an add-on; it is the fundamental arena. Twistor theory has produced deep results — the nonlinear graviton construction, the Penrose transform, the twistor-string correspondence — even though it has not replaced standard physics. If twistor theory complexifies spinor space, and the $ict$ convention complexifies time, it is natural to ask whether the two complexifications are related. This blog explores whether they are: both could be projections of a single complexified spacetime.
 
 ## What This Program Does Not Claim
 
@@ -141,9 +139,9 @@ It is important to be clear about what this program does not claim:
 
 1. **It does not claim that real spacetime is wrong.** The real slice reproduces ordinary Minkowski space. All the successes of standard physics are preserved.
 
-2. **It does not claim that the imaginary directions are observable in the ordinary sense.** They are hypothesized to be informational, not spatial. Their effects would be indirect.
+2. **It does not claim that the imaginary directions are observable in the ordinary sense.** Their effects would be indirect.
 
-3. **It does not claim to have a complete theory.** The dynamics of the coupling between the real and imaginary sectors is not yet specified. The empirical predictions are not yet worked out.
+3. **It does not claim to have a complete theory.** The dynamics of the coupling between the material and informational sectors is not yet specified. The empirical predictions are not yet worked out.
 
 4. **It does not claim that complexification is the only way forward.** It is one direction among many. Its virtue is that it connects to existing structures — the $ict$ convention, the Wick rotation, holography, twistor theory — rather than standing alone.
 
@@ -153,7 +151,7 @@ The core intuition is this: **the real slice is a projection, and the complex st
 
 The metric convention tells you **what** the geometry is. The $ict$ convention tells you **why**. And the "why" may be where the next physics lies.
 
-This is not a proof. It is a research program. The motivations above are reasons to take it seriously, not reasons to believe it. The next articles lay out the mathematical structure in detail: first the two natural subspaces of the biquaternion algebra — the material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$ — and then the objects and dynamics that live in each.
+This is not a proof. It is a research program. The motivations above are reasons to take it seriously, not reasons to believe it. The next articles lay out the mathematical structure in detail: first the two natural subspaces of the biquaternion algebra — the material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$ — and then the objects that live in each.
 
 ## Summary of Notation
 

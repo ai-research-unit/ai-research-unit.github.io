@@ -34,10 +34,10 @@ $$
 Applying $\bar{\tilde{\nabla}}$ to both sides and using $\Box = \bar{\tilde{\nabla}}\tilde{\nabla}$ gives the wave equation
 
 $$
-\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2},
+\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
 $$
 
-where in vacuum $c = c_0$. This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.
+This is a **linear, constant-coefficient, hyperbolic** equation. Two structural features follow.
 
 **Feature 1: The equation is linear.** If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.
 
@@ -69,7 +69,7 @@ Although shock formation does not occur in vacuum, the biquaternionic framework 
 
 ### The Distributional Framework
 
-Let $S$ be a three-dimensional surface in $\mathbb{R}^3$ at a fixed time, or a three-dimensional surface $F$ in spacetime $\mathbb{R}^4 = \{(x,t)\}$. Let $[\,\cdot\,]_S$ denote the jump of a quantity across $S$: for a field $\tilde{F}$ that is discontinuous on $S$,
+Let $S$ be a three-dimensional surface in $\mathbb{R}^3$ at a fixed time, or a general three-dimensional hypersurface in spacetime. Let $[\,\cdot\,]_S$ denote the jump of a quantity across $S$: for a field $\tilde{F}$ that is discontinuous on $S$,
 
 $$
 [\tilde{F}]_S = \tilde{F}^+ - \tilde{F}^-,
@@ -77,41 +77,45 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. If $n$ is the unit normal to $S$ and $\delta_S$ is the surface delta distribution, then
+The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \mathbf{n}$ for a spatial surface and $\tilde{n} = i\nu_t\,e_0 + \mathbf{n}$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
 
 $$
-\partial_j \tilde{F} = \{\partial_j \tilde{F}\} + [\tilde{F}]_S\, n_j\, \delta_S,
+\partial_\mu \tilde{F} = \{\partial_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
 $$
 
-where $\{\partial_j\tilde{F}\}$ denotes the classical derivative away from $S$.
+where $\{\partial_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.
 
 ### The Jump Condition
 
-Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and separating the surface terms, one obtains the **jump condition** on $S$:
+Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ in a homogeneous medium, and separating the surface terms, one obtains the **jump condition** on $S$:
 
 $$
-\tilde{n}\,[\tilde{F}]_S = 0,
+\tilde{n}\,[\tilde{F}]_S = 0.
 $$
 
-where $\tilde{n} = n_0 e_0 + n_1 e_1 + n_2 e_2 + n_3 e_3$ is the biquaternion-valued normal.
-
-For the field-strength biquaternion $\tilde{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$, this becomes two conditions:
+**Consequence for a homogeneous medium.** In a homogeneous medium, the normal $\tilde{n}$ is invertible for any **non-characteristic** surface. For such surfaces, the jump condition $\tilde{n}[\tilde{F}]_S = 0$ forces the jump to vanish:
 
 $$
-[\mathbf{D}]_S \cdot n = 0, \qquad [\mathbf{B}]_S \cdot n = 0,
+[\tilde{F}]_S = 0 \qquad \text{(non-characteristic surface, homogeneous medium)}.
 $$
 
-where $\mathbf{D} = \epsilon\mathbf{E}$ and $\mathbf{B} = \mu\mathbf{H}$. These are the standard **electromagnetic boundary conditions** for a surface: the normal components of the electric displacement and the magnetic induction are continuous across the surface. This is established physics: it is the same condition that holds at a dielectric interface or a conductor surface.
+So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.
+
+**Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde{n}\bar{\tilde{n}} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
+
+**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\mathbf{D}]\cdot n = 0$ and $[\mathbf{B}]\cdot n = 0$, with the tangential components of $\mathbf{E}$ and $\mathbf{H}$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.
 
 ### The Light-Cone Condition
 
-If the surface $S$ is moving in spacetime, with the normal $\tilde{n}$ varying from point to point, then the jump condition becomes a **characteristic condition** when $\tilde{n}\bar{\tilde{n}} = 0$, i.e., when the surface is a light cone. In this case, the jump condition has the additional structure
+If the surface $S$ is a **characteristic** surface (the light cone), the jump condition admits nontrivial solutions. On the light cone, the normal is a zero divisor, and the jump condition becomes the **wave-front condition**
 
 $$
 [\tilde{F}]_S = -i\,[\tilde{F}]_S \times n,
 $$
 
-where $n$ is the spatial normal to the moving surface. This is the condition for a **propagating wave front** in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.
+where $n$ is the spatial part of the normal to the moving surface. This is the condition for a **propagating wave front** in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.
+
+The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific structure: it is a complex combination of the electric and magnetic jumps, transverse to the propagation direction. Explicitly, in the basis aligned with the propagation direction, the jump is characterized by a single complex amplitude (corresponding to the two transverse polarizations of the wave).
 
 ## Shock Formation in Nonlinear Media
 
@@ -149,7 +153,13 @@ $$
 \partial_t \tilde{F} + c(I)\,\partial_x \tilde{F} = 0,
 $$
 
-which is a **conservation law** of the form $\partial_t \tilde{F} + \partial_x(c(I)\tilde{F}) = 0$ when $c(I) = c(|\tilde{F}|)$. This is the same equation that governs the formation of shocks in a simple nonlinear wave.
+where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a **transport equation** of the nonlinear steepening type. For a scalar field $u$ satisfying $u_t + c(u)u_x = 0$, the equation can be written in conservation form
+
+$$
+u_t + \partial_x f(u) = 0, \qquad f'(u) = c(u),
+$$
+
+where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.
 
 By the method of characteristics, the wave profile steepens and forms a **caustic** (the point where the characteristics cross) in finite time. Beyond the caustic, the field becomes multivalued, and the **weak solution** (the physical solution) develops a discontinuity. This is a shock.
 
@@ -202,10 +212,14 @@ where $\tilde{R}_{\mathrm{eff}}$ includes both the external sources (free charge
 A shock front is a surface $S$ across which the effective source $\tilde{R}_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:
 
 $$
-\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S / (\text{coefficient}).
+\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ is continuous across } S,
 $$
 
-In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.
+$$
+\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ jumps across } S.
+$$
+
+In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.
 
 ### The Characteristic Structure
 
@@ -275,8 +289,9 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k \partial_k$ | Biquaternionic gradient |
 | $\Box = \partial_{ict}^2 + \Delta$ | d'Alembertian |
-| $\tilde{n}$ | Biquaternion-valued normal to the shock front |
+| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\mathbf{n}$ for spatial, $i\nu_t e_0 + \mathbf{n}$ for general) |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
+| $\tilde{R}_{\mathrm{eff}}$ | Effective source including nonlinear medium response |
 
 ## Further Reading
 
