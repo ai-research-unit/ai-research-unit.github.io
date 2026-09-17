@@ -16,7 +16,7 @@
 
 ## Biquaternion Electromagnetism
 
-### <a href="articles/maxwells-equations-in-biquaternic-space.html">Maxwells equations in Biquaternic Space</a>
+### <a href="articles/maxwells-equations-in-biquaternionic-form.html">Maxwells equations in Biquaternionic Form</a>
 
 ### <a href="articles/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a>
 
