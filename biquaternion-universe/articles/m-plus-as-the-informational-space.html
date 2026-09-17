@@ -53,8 +53,8 @@
 <h2 id="introduction">Introduction</h2>
 <p>The companion article identified the anti-Hermitian subspace $\mathbb{M}_-$ as the material space: the four-dimensional real subspace of $\mathbb{B}$ whose elements are the four-vectors of relativistic physics. This article is about the <strong>complementary subspace</strong> $\mathbb{M}_+$, the Hermitian subspace.</p>
 <p>The mathematics of $\mathbb{M}_+$ is standard: it is a four-dimensional real subspace consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation, and its elements satisfy a natural trace formula. All of this is established mathematics.</p>
-<p>The <strong>interpretation</strong> of $\mathbb{M}_+$ as the "informational space" is a hypothesis, and it should be read as such. The structural facts about $\mathbb{M}_+$ — that its elements are Hermitian operators on $\mathbb{M}_-$ — are the same structural facts that underlie quantum information theory. Whether this mathematical coincidence reflects a physical fact about the world — whether the biquaternion algebra has an informational sector that is as real as its material sector — is the central question of this article, and the article's answer is: <strong>we do not yet know, but the structure is compelling enough to be worth writing down.</strong></p>
-<p>The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled. Then the natural action of $\mathbb{M}_+$ on $\mathbb{M}_-$ is developed. Then the structural analogy with quantum information theory is presented in detail. Then the informational hypothesis is stated clearly, with the honest position on what it does and does not claim. The article closes with open questions.</p>
+<p>The <strong>algebraic identification</strong> of $\mathbb{M}_+$ with the operator algebra of a two-state quantum system is now also established: it is developed in detail in the companion article <em>Quantum Mechanics in Biquaternionic Form</em>, and it is not a conjecture. What remains a <strong>hypothesis</strong> is whether this algebraic structure is <strong>physically realised</strong> as a distinct sector of the world, in the same sense as the material sector $\mathbb{M}_-$. This is the central question of the article, and the article's honest position is: <strong>we do not yet know, but the structure is rich enough to be worth writing down.</strong></p>
+<p>The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled. Then the natural action of $\mathbb{M}_+$ on $\mathbb{M}_-$ is developed. Then the algebraic identification with the qubit operator algebra is recalled. Then the physical hypothesis is stated clearly, with the honest position on what it does and does not claim. The article closes with open questions.</p>
 <p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the <strong>speed of light in the medium</strong>, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the <strong>vacuum speed of light</strong>. In vacuum, $c = c_0$.</p>
 <h2 id="the-hermitian-subspace">The Hermitian Subspace</h2>
 <h3 id="definition-and-basis">Definition and Basis</h3>
@@ -89,22 +89,59 @@ $$</p>
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$</p>
 <p>and they are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. Under quaternion conjugation, $\overline{\mathbb{M}_+} = \mathbb{M}_-$.</p>
-<h3 id="the-interpretation-of-the-two-parts-of-math54">The Interpretation of the Two Parts of $\mathbb{M}_+$</h3>
-<p>A general element of $\mathbb{M}_+$ has a real scalar part and an imaginary vector part. The <strong>interpretation</strong> that motivates this article is:</p>
-<ul>
-<li>The <strong>imaginary vector part</strong> $i(q_1 e_1 + q_2 e_2 + q_3 e_3)$ corresponds to three <strong>imaginary spatial directions</strong> — the directions of an "imagined" or "informational" space, which, like the time direction of $\mathbb{M}_-$, cannot be touched or moved through in the ordinary sense.</li>
-<li>The <strong>real scalar part</strong> $q_0 e_0$ corresponds to a <strong>material temporal direction</strong> — a direction that is real (in the sense of being "accessible") and that carries the storage or ordering of information.</li>
-</ul>
-<p>This is not a derivation; it is a proposed reading of the structure. We flag it here as the interpretive content of the article and return to it in the section on the informational hypothesis.</p>
-<h2 id="elements-of-math59-in-the-series">Elements of $\mathbb{M}_+$ in the Series</h2>
-<p>The companion articles already contain several distinguished elements of $\mathbb{M}_+$. It is worth collecting them, because they are the natural candidates for the "informational objects" of the hypothesis.</p>
+<h3 id="the-structural-mirror-with-math53">The Structural Mirror with $\mathbb{M}_-$</h3>
+<p>The two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ are structurally complementary. Their coordinates and quadratic forms are mirror images:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>$\mathbb{M}_-$ (material)</th>
+<th>$\mathbb{M}_+$ (informational)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scalar part</td>
+<td>Imaginary ($ict$)</td>
+<td>Real ($ct'$)</td>
+</tr>
+<tr>
+<td>Vector part</td>
+<td>Real ($x, y, z$)</td>
+<td>Imaginary ($ix', iy', iz'$)</td>
+</tr>
+<tr>
+<td>Norm form</td>
+<td>$-q_0^2 + q_1^2 + q_2^2 + q_3^2$</td>
+<td>$q_0^2 - q_1^2 - q_2^2 - q_3^2$</td>
+</tr>
+<tr>
+<td>Signature</td>
+<td>$(3, 1)$</td>
+<td>$(1, 3)$</td>
+</tr>
+<tr>
+<td>Zero divisor cone</td>
+<td>$q_0^2 = q_1^2 + q_2^2 + q_3^2$</td>
+<td>$q_0^2 = q_1^2 + q_2^2 + q_3^2$</td>
+</tr>
+<tr>
+<td>Subalgebra?</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>The two subspaces are exchanged by the multiplication by $i$, and by the quaternion conjugation. This exchange is the algebraic operation that underlies the extended Wick rotation (see the companion article on the Wick rotation).</p>
+<h2 id="elements-of-math69-in-the-series">Elements of $\mathbb{M}_+$ in the Series</h2>
+<p>The companion articles already contain several distinguished elements of $\mathbb{M}_+$. It is worth collecting them, because they are the natural candidates for the objects of the informational sector.</p>
 <h3 id="the-boost-biquaternion">The Boost Biquaternion</h3>
 <p>The <strong>boost biquaternion</strong></p>
 <p>$$
 \tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}}, \qquad \hat{\mathbf{u}}^2 = -e_0,
 $$</p>
-<p>lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\hat{\mathbf{u}}$ is purely imaginary. It is Hermitian ($\tilde{\Lambda}^\dagger = \tilde{\Lambda}$) and has unit norm ($\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing the Lorentz boost.</p>
-<p>The boost biquaternion is the <strong>prototype</strong> of an operator in $\mathbb{M}_+$ acting on the material space $\mathbb{M}_-$. The other elements of $\mathbb{M}_+$ discussed below are also operators on $\mathbb{M}_-$, in the same sense.</p>
+<p>lies in $\mathbb{M}_+$: its scalar part $\cosh(\psi/2)$ is real, and its vector part $i\sinh(\psi/2)\hat{\mathbf{u}}$ is purely imaginary. It is Hermitian ($\tilde{\Lambda}^\dagger = \tilde{\Lambda}$) and has unit norm ($\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$). It acts on $\mathbb{M}_-$ by rotor conjugation, implementing a Lorentz boost.</p>
+<p>The boost biquaternion is a distinguished element of $\mathbb{M}_+$, and it is the <strong>prototype</strong> of an operator acting on the material sector $\mathbb{M}_-$. More generally, every unit-norm biquaternion $\tilde{\Lambda} \in \mathbb{B}$ acts on $\mathbb{M}_-$ by rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$. For pure boosts, $\tilde{\Lambda}$ lies in $\mathbb{M}_+$. For pure spatial rotations, $\tilde{\Lambda}$ lies in $\mathbb{H}_{\mathbb{B}}$. For general Lorentz transformations, $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$. The point is that the action of any such rotor on $\mathbb{M}_-$ preserves $\mathbb{M}_-$.</p>
 <h3 id="the-idempotents">The Idempotents</h3>
 <p>The <strong>idempotents</strong> of $\mathbb{B}$ of the form</p>
 <p>$$
@@ -127,8 +164,8 @@ $$</p>
 <p>is an element of $\mathbb{M}_+$: it is Hermitian by construction. Its scalar part is $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$, the Euclidean norm squared, which is non-negative. In the matrix representation, the Hermitian form corresponds to $M M^\dagger$, whose trace is the Frobenius norm squared.</p>
 <p>The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$, and it is the closest biquaternion analogue of the trace of a density matrix.</p>
 <h3 id="the-identity">The Identity</h3>
-<p>The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the "trivial" state or the identity operator.</p>
-<h3 id="summary-of-the-elements-of-math97">Summary of the Elements of $\mathbb{M}_+$</h3>
+<p>The identity $e_0$ is trivially in $\mathbb{M}_+$. It corresponds to the trivial state or the identity operator.</p>
+<h3 id="summary-of-the-elements-of-math116">Summary of the Elements of $\mathbb{M}_+$</h3>
 <table>
 <thead>
 <tr>
@@ -146,22 +183,22 @@ $$</p>
 <tr>
 <td>Boost biquaternion $\tilde{\Lambda}$</td>
 <td>Hermitian, unit norm</td>
-<td>Lorentz operator (reversible)</td>
+<td>Lorentz boost rotor</td>
 </tr>
 <tr>
 <td>Idempotent $P_\pm$</td>
 <td>Hermitian, idempotent, trace 1</td>
-<td>Pure state / projector (irreversible)</td>
+<td>Pure state / projector</td>
 </tr>
 <tr>
 <td>Hermitian form $\tilde{Q}\tilde{Q}^\dagger$</td>
 <td>Hermitian, positive scalar part</td>
-<td>Energy / weight of a state</td>
+<td>Weight of a state</td>
 </tr>
 </tbody>
 </table>
 <p>The common feature of these objects is that they are <strong>Hermitian</strong> (fixed under $\dagger$). This is what defines membership in $\mathbb{M}_+$.</p>
-<h2 id="the-action-of-math104-on-math105">The Action of $\mathbb{M}_+$ on $\mathbb{M}_-$</h2>
+<h2 id="the-action-of-math123-on-math124">The Action of $\mathbb{M}_+$ on $\mathbb{M}_-$</h2>
 <p>The most important structural fact about $\mathbb{M}_+$ is that its elements <strong>act</strong> on the elements of $\mathbb{M}_-$ by <strong>conjugation</strong>:</p>
 <p>$$
 \tilde{X} \;\longmapsto\; \tilde{H}\,\tilde{X}\,\tilde{H}^\dagger, \qquad \tilde{H} \in \mathbb{M}_+, \; \tilde{X} \in \mathbb{M}_-.
@@ -181,8 +218,8 @@ $$</p>
 <h3 id="the-structural-relation-operators-and-states">The Structural Relation: Operators and States</h3>
 <p>The action of $\mathbb{M}_+$ on $\mathbb{M}_-$ has the structure of <strong>operators acting on states</strong>:</p>
 <ul>
-<li>$\mathbb{M}_-$ is the space of <strong>states</strong> (the material configurations: position, velocity, momentum, potential, current).</li>
-<li>$\mathbb{M}_+$ is the space of <strong>operators</strong> (the Hermitian biquaternions that act on the states).</li>
+<li>$\mathbb{M}_-$ is the space of <strong>kinematic configurations</strong> (the four-vectors of position, velocity, momentum, potential, current).</li>
+<li>$\mathbb{M}_+$ is the space of <strong>operators</strong> (the Hermitian biquaternions that act on these configurations).</li>
 </ul>
 <p>This is the algebraic content of the interpretation of $\mathbb{M}_-$ as "material" and $\mathbb{M}_+$ as "informational" (or "operational"). The two subspaces are not symmetric: one acts, the other is acted upon.</p>
 <h3 id="reversible-versus-irreversible-actions">Reversible Versus Irreversible Actions</h3>
@@ -200,8 +237,8 @@ $$</p>
 \langle \tilde{H} \rangle_{\tilde{P}} = h_0 + \boldsymbol{\mu}\cdot\mathbf{h},
 $$</p>
 <p>which is the standard spin-1/2 expectation value $\langle \mu | \hat{H} | \mu \rangle$. The trace formula is the biquaternion expression of the Born rule.</p>
-<h2 id="the-structural-analogy-with-quantum-information">The Structural Analogy with Quantum Information</h2>
-<p>The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is <strong>structurally identical</strong> to the mathematics of quantum information theory for a single qubit. This is the central observation of this article.</p>
+<h2 id="the-algebraic-identification-with-quantum-information">The Algebraic Identification with Quantum Information</h2>
+<p>The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is <strong>structurally identical</strong> to the mathematics of quantum information theory for a single qubit. This is an algebraic fact, established in detail in the companion article <em>Quantum Mechanics in Biquaternionic Form</em>.</p>
 <h3 id="the-correspondence">The Correspondence</h3>
 <table>
 <thead>
@@ -213,11 +250,11 @@ $$</p>
 <tbody>
 <tr>
 <td>State space $\mathbb{C}^2$</td>
-<td>Material space $\mathbb{M}_-$</td>
+<td>Spinor module of $\mathbb{B}$</td>
 </tr>
 <tr>
 <td>Density matrix $\rho$ (Hermitian, positive, trace 1)</td>
-<td>Idempotent $\tilde{P} \in \mathbb{M}_+$ (Hermitian, idempotent, trace 1)</td>
+<td>Element $\tilde{\rho} \in \mathbb{M}_+$ (Hermitian, positive, trace 1)</td>
 </tr>
 <tr>
 <td>Pure state $\|\psi\rangle\langle\psi\|$</td>
@@ -233,27 +270,27 @@ $$</p>
 </tr>
 <tr>
 <td>Expectation value $\mathrm{Tr}(\rho H)$</td>
-<td>Trace formula $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$</td>
+<td>Trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{H})$</td>
 </tr>
 <tr>
 <td>Reversible evolution $U\rho U^\dagger$</td>
-<td>Rotor conjugation $\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$</td>
+<td>Rotor conjugation $\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger$</td>
 </tr>
 <tr>
 <td>Projective measurement $\rho \mapsto P\rho P$</td>
-<td>Idempotent projection $\tilde{X} \mapsto \tilde{P}\tilde{X}\tilde{P}$</td>
+<td>Idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$</td>
 </tr>
 </tbody>
 </table>
 <p>The correspondence is not an analogy. <strong>It is the same mathematics</strong>, expressed in two different notations. The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the algebra of $2 \times 2$ complex matrices, which is the algebra of observables of a two-state system.</p>
 <h3 id="what-the-correspondence-is-and-is-not">What the Correspondence Is and Is Not</h3>
-<p><strong>What it is:</strong> A structural fact about the algebra. The elements of $\mathbb{M}_+$ are Hermitian operators on $\mathbb{M}_-$, and the algebra they generate is the algebra of observables of a two-state system. The mathematics of quantum information applies to $\mathbb{M}_+$ as it applies to any such algebra.</p>
-<p><strong>What it is not (yet):</strong> A physical theory. The structural correspondence does not by itself establish that $\mathbb{M}_+$ <strong>is</strong> an informational sector of physics. It establishes that if $\mathbb{M}_+$ were given an informational interpretation, the mathematics would be available. Whether the interpretation is realized in nature is a separate question.</p>
+<p><strong>What it is:</strong> A structural fact about the algebra. The elements of $\mathbb{M}_+$ are Hermitian operators on the spinor module of $\mathbb{B}$, and the algebra they generate is the algebra of observables of a two-state system. The mathematics of quantum information applies to $\mathbb{M}_+$ as it applies to any such algebra.</p>
+<p><strong>What it is not (yet):</strong> A physical theory. The structural correspondence does not by itself establish that $\mathbb{M}_+$ <strong>is</strong> an informational sector of physics. It establishes that if $\mathbb{M}_+$ were given an informational interpretation, the mathematics would be available. Whether the interpretation is realised in nature is a separate question.</p>
 <h3 id="the-spin-analogy">The Spin Analogy</h3>
 <p>The correspondence with quantum information is closely related to the <strong>spin-1/2 formalism</strong> of non-relativistic quantum mechanics.</p>
 <ul>
 <li>In spin-1/2 quantum mechanics, the state space is $\mathbb{C}^2$, and the observables are the Pauli matrices $\sigma_k$ generating $\mathfrak{su}(2)$. The rotation group $SU(2)$ acts on the states.</li>
-<li>In the biquaternion framework, the material space $\mathbb{M}_-$ is analogous to the state space, and the Hermitian biquaternions in $\mathbb{M}_+$ are analogous to the observables. The action is by rotor conjugation.</li>
+<li>In the biquaternion framework, the spinor module of $\mathbb{B}$ is the state space, and the Hermitian elements of $\mathbb{M}_+$ are the observables. The action is by rotor conjugation on the module.</li>
 </ul>
 <p>The difference is:</p>
 <ul>
@@ -261,60 +298,61 @@ $$</p>
 <li>In $\mathbb{M}_+$, the Hermitian elements generate the <strong>non-compact</strong> group $SL(2,\mathbb{C})$ (Lorentz transformations).</li>
 </ul>
 <p>The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the operators generate the Lorentz group rather than the rotation group, and the corresponding observables include boosts (Hermitian biquaternions with imaginary vector part) alongside rotations.</p>
-<p>The biquaternion framework can therefore be read as a <strong>relativistic generalisation of the spin-1/2 formalism</strong>, in which the state space $\mathbb{M}_-$ is four-dimensional and the symmetry group is the Lorentz group.</p>
-<h2 id="the-informational-hypothesis">The Informational Hypothesis</h2>
+<p>The biquaternion framework can therefore be read as a <strong>relativistic generalisation of the spin-1/2 formalism</strong>, in which the state space is the spinor module of $\mathbb{B}$ and the symmetry group is the Lorentz group.</p>
+<h2 id="the-physical-hypothesis">The Physical Hypothesis</h2>
 <p>We now state the hypothesis that motivates this article, in the clearest terms possible.</p>
 <h3 id="statement-of-the-hypothesis">Statement of the Hypothesis</h3>
-<p><strong>Hypothesis (informational sector).</strong> The Hermitian subspace $\mathbb{M}_+$ is not only a mathematical structure but the arena of an <strong>informational sector</strong> of physics. Its elements are Hermitian operators on the material space $\mathbb{M}_-$, and the two sectors together constitute the full physical world. The <strong>material sector</strong> $\mathbb{M}_-$ describes the observable, causal structure of spacetime. The <strong>informational sector</strong> $\mathbb{M}_+$ describes the operations, measurements, and information-theoretic content associated with the material sector.</p>
+<p><strong>Hypothesis (informational sector).</strong> The Hermitian subspace $\mathbb{M}_+$ is not only a mathematical structure but the arena of an <strong>informational sector</strong> of physics, physically realised in the same sense as the material sector $\mathbb{M}_-$. Its elements are Hermitian operators on the spinor module of $\mathbb{B}$, and the two sectors together constitute the full physical world. The <strong>material sector</strong> $\mathbb{M}_-$ describes the observable, causal structure of spacetime. The <strong>informational sector</strong> $\mathbb{M}_+$ carries the operations, measurements, and information-theoretic content associated with the material sector.</p>
 <p>In this reading:</p>
 <ul>
-<li>A <strong>state</strong> of the informational sector is an idempotent $P_\pm \in \mathbb{M}_+$, a pure-state projector.</li>
+<li>A <strong>state</strong> of the informational sector is an element $\tilde{\rho} \in \mathbb{M}_+$ that is Hermitian, positive, and of trace one.</li>
 <li>An <strong>observable</strong> of the informational sector is a general Hermitian element $\tilde{H} \in \mathbb{M}_+$.</li>
-<li><strong>Evolution</strong> is generated by rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion.</li>
-<li><strong>Measurement</strong> is the idempotent projection $\tilde{X} \mapsto \tilde{P}\tilde{X}\tilde{P}$.</li>
-<li><strong>Expectation values</strong> are given by the trace formula $2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.</li>
+<li><strong>Evolution</strong> is generated by rotor conjugation $\tilde{\rho} \mapsto \tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger$, with $\tilde{\Lambda}$ a unit-norm biquaternion.</li>
+<li><strong>Measurement</strong> is the idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$.</li>
+<li><strong>Expectation values</strong> are given by the trace formula $2\,\mathrm{Sc}(\tilde{\rho}\tilde{H})$.</li>
 </ul>
-<h3 id="interpretation-of-the-two-parts-of-math186">Interpretation of the Two Parts of $\mathbb{M}_+$</h3>
-<p>The real scalar part and the imaginary vector part of an element of $\mathbb{M}_+$ have natural readings under the hypothesis.</p>
+<h3 id="the-structural-mirror-of-math206-and-math207">The Structural Mirror of $\mathbb{M}_-$ and $\mathbb{M}_+$</h3>
+<p>The two subspaces are structural mirror images, and their coordinates reflect this.</p>
 <ul>
-<li>The <strong>real scalar part</strong> $q_0 e_0$ corresponds to a <strong>temporal material direction</strong>: a direction in which information can be stored and ordered. It is the "memory" direction of the informational sector.</li>
-<li>The <strong>imaginary vector part</strong> $i(q_1 e_1 + q_2 e_2 + q_3 e_3)$ corresponds to three <strong>imaginary spatial directions</strong>: the directions of an "imagined" or "informational" space. These are the directions in which information is organised, in contrast to the ordinary material space $\mathbb{M}_-$ in which matter is extended.</li>
+<li>$\mathbb{M}_-$ has an <strong>imaginary temporal coordinate</strong> ($ict$) and <strong>three real spatial coordinates</strong> ($x, y, z$). The temporal direction is "non-material" in the sense that it cannot be touched; the spatial directions are "material" in the sense that they can be.</li>
+<li>$\mathbb{M}_+$ has a <strong>real temporal coordinate</strong> ($ct'$) and <strong>three imaginary spatial coordinates</strong> ($ix', iy', iz'$). The temporal direction is "material" in the same sense as the spatial directions of $\mathbb{M}_-$; the spatial directions are "imaginary" in the same sense as the temporal direction of $\mathbb{M}_-$.</li>
 </ul>
-<p>The interpretation is the mirror of the interpretation of $\mathbb{M}_-$ as the material sector (three real spatial directions and one imaginary temporal direction). Where $\mathbb{M}_-$ has three touchable spatial directions and one untouchable temporal direction, $\mathbb{M}_+$ has three untouchable spatial directions and one touchable temporal direction.</p>
+<p>This mirror structure is a structural feature of the algebra. It is the reason the two subspaces are natural complements.</p>
 <h3 id="what-the-hypothesis-does-and-does-not-claim">What the Hypothesis Does and Does Not Claim</h3>
 <p><strong>It does claim:</strong></p>
 <ul>
 <li>The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of a quantum-informational system.</li>
-<li>The elements of $\mathbb{M}_+$ act as operators on the material space $\mathbb{M}_-$.</li>
+<li>The elements of $\mathbb{M}_+$ act as operators on the spinor module of $\mathbb{B}$.</li>
 <li>The reversible/irreversible dichotomy of $\mathbb{M}_+$ (unitary vs. idempotent) mirrors the evolution/measurement dichotomy of quantum information.</li>
+<li>The <strong>hypothesis</strong> is that this structure is physically realised as a distinct sector.</li>
 </ul>
 <p><strong>It does not claim:</strong></p>
 <ul>
 <li>That the informational sector has been observed.</li>
-<li>That the informational sector has a specified dynamics (a wave equation, a field equation, a conservation law).</li>
-<li>That there is a specified coupling between the informational and material sectors (beyond the standard Lorentz coupling via the boost biquaternion).</li>
-<li>That the informational sector provides any empirical predictions that distinguish it from standard physics.</li>
+<li>That the informational sector has a specified dynamics (a wave equation, a field equation, a conservation law) beyond the quantum formalism itself.</li>
+<li>That there is a specified coupling between the informational and material sectors beyond the standard Lorentz coupling via the rotor conjugation.</li>
+<li>That the informational sector provides any empirical prediction that distinguishes it from standard physics.</li>
 <li>That the imaginary directions of $\mathbb{M}_+$ are "extra space" in the ordinary sense.</li>
 </ul>
 <h3 id="the-honest-position">The Honest Position</h3>
-<p>The informational hypothesis is a <strong>research program</strong>, not a theory. It proposes a structural reading of the biquaternion algebra in which the Hermitian subspace is given a physical meaning as the arena of operations and information. The mathematics is established; the interpretation is a hypothesis.</p>
-<p>The hypothesis is <strong>not</strong> in conflict with established physics, because it does not claim to replace any of it. The material sector $\mathbb{M}_-$ reproduces the four-vectors of relativistic physics exactly as in the companion articles. The informational sector $\mathbb{M}_+$ is an <strong>additional</strong> structure, whose physical significance remains to be determined.</p>
-<p>The honest position is that the mathematical structure of $\mathbb{M}_+$ is suggestive but the empirical content is not yet specified. The hypothesis is offered because the structure is compelling enough to be worth writing down, and because it connects the biquaternion algebra to a well-established body of mathematical physics (quantum information theory) in a way that is unlikely to be accidental.</p>
+<p>The physical hypothesis is a <strong>research program</strong>, not a theory. It proposes a structural reading of the biquaternion algebra in which the Hermitian subspace is given a physical meaning as the arena of operations and information. The mathematics is established; the physical interpretation is a hypothesis.</p>
+<p>The hypothesis is <strong>not</strong> in conflict with established physics, because it does not claim to replace any of it. The material sector $\mathbb{M}_-$ reproduces the four-vectors of relativistic physics, and the informational sector $\mathbb{M}_+$ carries the full operator algebra of a qubit. Whether $\mathbb{M}_+$ is a distinct physical sector, or only a mathematical structure that happens to describe the kinematics of a qubit, is an open question.</p>
 <h2 id="open-questions">Open Questions</h2>
 <p>The hypothesis raises several concrete questions. We list them here as a research agenda.</p>
-<p><strong>1. The dynamics of the informational sector.</strong> The material sector has a dynamics: Maxwell's equations for the electromagnetic field, the wave equation for free fields, the Dirac equation for spinors. Does the informational sector have its own dynamics? A natural candidate would be a wave equation for $\mathbb{M}_+$-valued fields, but the precise form is not known. The biquaternion framework provides the operators $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, and $\Box$, but it is not clear which of these (if any) governs the informational sector.</p>
-<p><strong>2. The coupling between the two sectors.</strong> Beyond the Lorentz coupling via the boost biquaternion, is there a genuinely new coupling between $\mathbb{M}_+$ and $\mathbb{M}_-$? In the standard framework, the only coupling is through the rotor conjugation (the Lorentz transformation). A new coupling would require an equation or a field that mixes the two sectors in a non-trivial way. The analogy with gauge theory suggests that such a coupling might exist, but its form is unknown.</p>
-<p><strong>3. Entropy and thermodynamics.</strong> In quantum information theory, the von Neumann entropy $S(\rho) = -\mathrm{Tr}(\rho \log \rho)$ quantifies the information content of a state. Does the biquaternion framework admit an entropy functional on the states $P_\pm \in \mathbb{M}_+$? The logarithm on $\mathbb{B}$ exists (see the elementary functions article) but is multivalued; the trace is available but is a scalar. A natural candidate would be $S(P) = -2\mathrm{Sc}(P \log P)$, but this needs verification.</p>
-<p><strong>4. The role of the non-Hermitian idempotents.</strong> The non-trivial roots of $-1$ give idempotents that are <strong>not</strong> in $\mathbb{M}_+$. What is their role in the interpretation? Are they "virtual" states, or do they have a physical meaning?</p>
-<p><strong>5. The relation to quantum field theory.</strong> Quantum information theory is most naturally formulated in the context of quantum field theory, where information is carried by fields. How does the biquaternion framework connect to QFT? Is there a biquaternion version of the entanglement structure that plays a role in holography?</p>
-<p><strong>6. Empirical contact.</strong> The most important question: what quantitative prediction distinguishes the informational hypothesis from standard physics? Without an empirical signature, the hypothesis remains a mathematical interpretation. Candidates for empirical contact include: modifications of the Lorentz transformation at very high energies, a new long-range force associated with the informational sector, or a modification of the light cone structure. None of these has been worked out.</p>
-<p><strong>7. The interpretation of the "imaginary directions".</strong> The imaginary vector part of $\mathbb{M}_+$ is interpreted as three "imagined" spatial directions. What is the precise sense in which these directions are "informational" rather than "spatial"? The interpretation is intuitive but not yet formal.</p>
+<p><strong>1. Physical reality of the informational sector.</strong> Is $\mathbb{M}_+$ realised physically as a distinct sector, or is it only a mathematical structure that happens to describe the kinematics of a qubit? A genuine physical realisation would require a coupling to the material sector that has observable consequences.</p>
+<p><strong>2. The dynamics of the informational sector.</strong> Beyond the standard quantum dynamics of the operator algebra, does $\mathbb{M}_+$ have its own dynamics as a sector? Are there $\mathbb{M}_+$-valued fields with wave equations? The biquaternion operators $\tilde{\nabla}$, $\bar{\tilde{\nabla}}$, and $\Box$ are available, but it is not clear which (if any) governs $\mathbb{M}_+$-valued fields.</p>
+<p><strong>3. The coupling between the two sectors.</strong> Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between $\mathbb{M}_+$ and $\mathbb{M}_-$? A new coupling would require an equation or a field that mixes the two sectors in a non-trivial way.</p>
+<p><strong>4. Entropy and thermodynamics.</strong> In quantum information theory, the von Neumann entropy $S(\rho) = -\mathrm{Tr}(\rho \log \rho)$ quantifies the information content of a state. Does the biquaternion framework admit an entropy functional on the states of $\mathbb{M}_+$? The logarithm on $\mathbb{B}$ exists (see the elementary functions article) but is multivalued; the trace is available but is a scalar. A natural candidate would be $S(\tilde{\rho}) = -2\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho})$, but this needs verification.</p>
+<p><strong>5. The role of the non-Hermitian idempotents.</strong> The non-trivial roots of $-1$ give idempotents that are <strong>not</strong> in $\mathbb{M}_+$. What is their role in the interpretation? Are they "virtual" states, or do they have a physical meaning?</p>
+<p><strong>6. The relation to quantum field theory.</strong> Quantum information theory is most naturally formulated in the context of quantum field theory, where information is carried by fields. How does the biquaternion framework connect to QFT? Is there a biquaternion version of the entanglement structure?</p>
+<p><strong>7. Empirical contact.</strong> The most important question: what quantitative prediction distinguishes the informational hypothesis from standard physics? Without an empirical signature, the hypothesis remains a mathematical interpretation. Candidates for empirical contact include: modifications of the Lorentz transformation at very high energies, a new long-range force associated with the informational sector, or a modification of the light cone structure. None of these has been worked out.</p>
+<p><strong>8. The interpretation of the "imaginary directions".</strong> The imaginary vector part of $\mathbb{M}_+$ is a structural mirror of the imaginary temporal direction of $\mathbb{M}_-$. What is the precise sense in which these directions are "informational" rather than "spatial"? The structural mirror is clear; the physical interpretation is not yet formal.</p>
 <p>These questions are open, and they constitute the research program associated with the informational hypothesis.</p>
 <h2 id="summary">Summary</h2>
-<p>The Hermitian subspace $\mathbb{M}_+$ is the complement of the material space $\mathbb{M}_-$ in the biquaternion algebra: $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. Its elements have real scalar part and imaginary vector part, and its norm form has signature $(1,3)$. It contains the identity, the boost biquaternions, the idempotents $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.</p>
+<p>The Hermitian subspace $\mathbb{M}_+$ is the complement of the material space $\mathbb{M}_-$ in the biquaternion algebra: $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. Its elements have real scalar part and imaginary vector part, and its norm form has signature $(1,3)$, the mirror image of the signature of $\mathbb{M}_-$. It contains the identity, the boost biquaternions, the idempotents $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.</p>
 <p>The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{X} \mapsto \tilde{H}\tilde{X}\tilde{H}^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the norm form when $\tilde{H}$ is unitary. The natural dichotomy between unitary and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.</p>
 <p>The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.</p>
-<p>The <strong>informational hypothesis</strong> is that the mathematics reflects physics: that $\mathbb{M}_+$ is not only a mathematical structure but an <strong>informational sector</strong> of the world, whose elements are the operators acting on the material sector. The hypothesis is offered as a research program. The mathematical structure is established; the empirical content is not yet specified. The article closes with the open questions that constitute the agenda for developing the hypothesis into a physical theory.</p>
+<p>The <strong>physical hypothesis</strong> is that the mathematics reflects physics: that $\mathbb{M}_+$ is not only a mathematical structure but an <strong>informational sector</strong> of the world, physically realised in the same sense as the material sector. The hypothesis is offered as a research program. The mathematical structure is established; the empirical content is not yet specified. The article closes with the open questions that constitute the agenda for developing the hypothesis into a physical theory.</p>
 <p>The companion article, <em>$\mathbb{M}_-$ as the Material Space</em>, presents the established physics of the material sector. Together, the two articles describe the two complementary subspaces of the biquaternion algebra and the structural relation between them.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <table>
@@ -338,6 +376,10 @@ $$</p>
 <td>Anti-Hermitian subspace: imaginary scalar, real vector</td>
 </tr>
 <tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Quaternion subspace (home of the rotation rotors)</td>
+</tr>
+<tr>
 <td>$i$</td>
 <td>Scalar imaginary, $i^2 = -1$</td>
 </tr>
@@ -346,8 +388,8 @@ $$</p>
 <td>Norm form</td>
 </tr>
 <tr>
-<td>$\tilde{\Lambda}$</td>
-<td>Boost biquaternion</td>
+<td>$\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$</td>
+<td>Lorentz rotor (unit-norm biquaternion)</td>
 </tr>
 <tr>
 <td>$P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$</td>

@@ -72,9 +72,9 @@ $$</p>
 $$</p>
 <p>Applying $\bar{\tilde{\nabla}}$ to both sides and using $\Box = \bar{\tilde{\nabla}}\tilde{\nabla}$ gives the wave equation</p>
 <p>$$
-\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2},
+\Box \tilde{F} = 0, \qquad \Box = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c_0^2}\frac{\partial^2}{\partial t^2}.
 $$</p>
-<p>where in vacuum $c = c_0$. This is a <strong>linear, constant-coefficient, hyperbolic</strong> equation. Two structural features follow.</p>
+<p>This is a <strong>linear, constant-coefficient, hyperbolic</strong> equation. Two structural features follow.</p>
 <p><strong>Feature 1: The equation is linear.</strong> If $\tilde{F}_1$ and $\tilde{F}_2$ are solutions, then any linear combination $\alpha\tilde{F}_1 + \beta\tilde{F}_2$ is also a solution. There is no mechanism for the solution to steepen or to form a discontinuity spontaneously.</p>
 <p><strong>Feature 2: The characteristics are the light cone.</strong> The characteristic equation of the wave operator $\Box$ is</p>
 <p>$$
@@ -91,33 +91,35 @@ $$</p>
 <h2 id="the-jump-conditions-of-the-biquaternionic-equation">The Jump Conditions of the Biquaternionic Equation</h2>
 <p>Although shock formation does not occur in vacuum, the biquaternionic framework can still describe the <strong>geometry</strong> of a hypothetical discontinuity surface. This is useful because the same jump conditions will appear in the nonlinear and plasma regimes.</p>
 <h3 id="the-distributional-framework">The Distributional Framework</h3>
-<p>Let $S$ be a three-dimensional surface in $\mathbb{R}^3$ at a fixed time, or a three-dimensional surface $F$ in spacetime $\mathbb{R}^4 = \{(x,t)\}$. Let $[\,\cdot\,]_S$ denote the jump of a quantity across $S$: for a field $\tilde{F}$ that is discontinuous on $S$,</p>
+<p>Let $S$ be a three-dimensional surface in $\mathbb{R}^3$ at a fixed time, or a general three-dimensional hypersurface in spacetime. Let $[\,\cdot\,]_S$ denote the jump of a quantity across $S$: for a field $\tilde{F}$ that is discontinuous on $S$,</p>
 <p>$$
 [\tilde{F}]_S = \tilde{F}^+ - \tilde{F}^-,
 $$</p>
 <p>where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.</p>
-<p>The distributional derivative of a discontinuous function acquires a surface term. If $n$ is the unit normal to $S$ and $\delta_S$ is the surface delta distribution, then</p>
+<p>The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \mathbf{n}$ for a spatial surface and $\tilde{n} = i\nu_t\,e_0 + \mathbf{n}$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then</p>
 <p>$$
-\partial_j \tilde{F} = \{\partial_j \tilde{F}\} + [\tilde{F}]_S\, n_j\, \delta_S,
+\partial_\mu \tilde{F} = \{\partial_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
 $$</p>
-<p>where $\{\partial_j\tilde{F}\}$ denotes the classical derivative away from $S$.</p>
+<p>where $\{\partial_\mu \tilde{F}\}$ denotes the classical derivative away from $S$.</p>
 <h3 id="the-jump-condition">The Jump Condition</h3>
-<p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
+<p>Applying the distributional derivative to the biquaternionic Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ in a homogeneous medium, and separating the surface terms, one obtains the <strong>jump condition</strong> on $S$:</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = 0,
+\tilde{n}\,[\tilde{F}]_S = 0.
 $$</p>
-<p>where $\tilde{n} = n_0 e_0 + n_1 e_1 + n_2 e_2 + n_3 e_3$ is the biquaternion-valued normal.</p>
-<p>For the field-strength biquaternion $\tilde{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$, this becomes two conditions:</p>
+<p><strong>Consequence for a homogeneous medium.</strong> In a homogeneous medium, the normal $\tilde{n}$ is invertible for any <strong>non-characteristic</strong> surface. For such surfaces, the jump condition $\tilde{n}[\tilde{F}]_S = 0$ forces the jump to vanish:</p>
 <p>$$
-[\mathbf{D}]_S \cdot n = 0, \qquad [\mathbf{B}]_S \cdot n = 0,
+[\tilde{F}]_S = 0 \qquad \text{(non-characteristic surface, homogeneous medium)}.
 $$</p>
-<p>where $\mathbf{D} = \epsilon\mathbf{E}$ and $\mathbf{B} = \mu\mathbf{H}$. These are the standard <strong>electromagnetic boundary conditions</strong> for a surface: the normal components of the electric displacement and the magnetic induction are continuous across the surface. This is established physics: it is the same condition that holds at a dielectric interface or a conductor surface.</p>
+<p>So a discontinuity cannot propagate on a non-characteristic surface; the field must be continuous across it.</p>
+<p><strong>Consequence for a characteristic surface.</strong> If the surface is <strong>characteristic</strong> (the light cone, $\tilde{n}\bar{\tilde{n}} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.</p>
+<p><strong>Remark on material interfaces.</strong> At a <strong>material interface</strong> (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\mathbf{D}]\cdot n = 0$ and $[\mathbf{B}]\cdot n = 0$, with the tangential components of $\mathbf{E}$ and $\mathbf{H}$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.</p>
 <h3 id="the-light-cone-condition">The Light-Cone Condition</h3>
-<p>If the surface $S$ is moving in spacetime, with the normal $\tilde{n}$ varying from point to point, then the jump condition becomes a <strong>characteristic condition</strong> when $\tilde{n}\bar{\tilde{n}} = 0$, i.e., when the surface is a light cone. In this case, the jump condition has the additional structure</p>
+<p>If the surface $S$ is a <strong>characteristic</strong> surface (the light cone), the jump condition admits nontrivial solutions. On the light cone, the normal is a zero divisor, and the jump condition becomes the <strong>wave-front condition</strong></p>
 <p>$$
 [\tilde{F}]_S = -i\,[\tilde{F}]_S \times n,
 $$</p>
-<p>where $n$ is the spatial normal to the moving surface. This is the condition for a <strong>propagating wave front</strong> in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.</p>
+<p>where $n$ is the spatial part of the normal to the moving surface. This is the condition for a <strong>propagating wave front</strong> in linear vacuum Maxwell. It is the same as the boundary condition for a wave front in the geometric-optics limit, and it does not describe a shock in the fluid-dynamic sense.</p>
+<p>The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific structure: it is a complex combination of the electric and magnetic jumps, transverse to the propagation direction. Explicitly, in the basis aligned with the propagation direction, the jump is characterized by a single complex amplitude (corresponding to the two transverse polarizations of the wave).</p>
 <h2 id="shock-formation-in-nonlinear-media">Shock Formation in Nonlinear Media</h2>
 <p>Shock electromagnetic waves <strong>do</strong> occur in nonlinear media. The mechanism is the same as in fluid dynamics: the nonlinearity causes the wave speed to depend on the field amplitude, and this dependence causes the wave profile to steepen.</p>
 <h3 id="nonlinear-constitutive-relations">Nonlinear Constitutive Relations</h3>
@@ -140,7 +142,11 @@ $$</p>
 <p>$$
 \partial_t \tilde{F} + c(I)\,\partial_x \tilde{F} = 0,
 $$</p>
-<p>which is a <strong>conservation law</strong> of the form $\partial_t \tilde{F} + \partial_x(c(I)\tilde{F}) = 0$ when $c(I) = c(|\tilde{F}|)$. This is the same equation that governs the formation of shocks in a simple nonlinear wave.</p>
+<p>where $c(I)$ depends on the intensity $I = |\tilde{F}|^2$. This is a <strong>transport equation</strong> of the nonlinear steepening type. For a scalar field $u$ satisfying $u_t + c(u)u_x = 0$, the equation can be written in conservation form</p>
+<p>$$
+u_t + \partial_x f(u) = 0, \qquad f'(u) = c(u),
+$$</p>
+<p>where $f$ is a primitive of $c$. For the biquaternion-valued field, the same structure applies, with $f$ defined as the primitive of $c$ along the direction of propagation.</p>
 <p>By the method of characteristics, the wave profile steepens and forms a <strong>caustic</strong> (the point where the characteristics cross) in finite time. Beyond the caustic, the field becomes multivalued, and the <strong>weak solution</strong> (the physical solution) develops a discontinuity. This is a shock.</p>
 <h3 id="established-observations">Established Observations</h3>
 <p>Shock electromagnetic waves in nonlinear media have been observed:</p>
@@ -171,12 +177,15 @@ $$</p>
 \tilde{\nabla}\tilde{F} = -\tilde{R}_{\mathrm{eff}},
 $$</p>
 <p>where $\tilde{R}_{\mathrm{eff}}$ includes both the external sources (free charges and currents) and the effective sources arising from the nonlinear response of the medium. In the vacuum limit, $\tilde{R}_{\mathrm{eff}} \to \tilde{R}$; in a linear medium, $\tilde{R}_{\mathrm{eff}}$ is a linear function of $\tilde{F}$; in a nonlinear medium, it is a nonlinear function.</p>
-<h3 id="the-shock-as-a-jump-in-math82">The Shock as a Jump in $\tilde{R}_{\mathrm{eff}}$</h3>
+<h3 id="the-shock-as-a-jump-in-math97">The Shock as a Jump in $\tilde{R}_{\mathrm{eff}}$</h3>
 <p>A shock front is a surface $S$ across which the effective source $\tilde{R}_{\mathrm{eff}}$ has a jump. The field $\tilde{F}$ also has a jump, and the jump conditions are determined by the distributional form of the equation:</p>
 <p>$$
-\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S / (\text{coefficient}).
+\tilde{n}\,[\tilde{F}]_S = 0 \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ is continuous across } S,
 $$</p>
-<p>In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
+<p>$$
+\tilde{n}\,[\tilde{F}]_S = -[\tilde{R}_{\mathrm{eff}}]_S \quad \text{when } \tilde{R}_{\mathrm{eff}} \text{ jumps across } S.
+$$</p>
+<p>In the linear vacuum case, $\tilde{R}_{\mathrm{eff}} = 0$ everywhere, and the jump in $\tilde{F}$ is forced to vanish (unless the surface is characteristic, in which case the wave-front structure appears). In the nonlinear case, the jump in $\tilde{R}_{\mathrm{eff}}$ provides the driving term for the shock.</p>
 <h3 id="the-characteristic-structure">The Characteristic Structure</h3>
 <p>The characteristic equation of the nonlinear biquaternionic equation is more complex than in the linear case. It depends on the effective source $\tilde{R}_{\mathrm{eff}}$, which depends on $\tilde{F}$ itself. The characteristics are no longer the light cone; they are the <strong>nonlinear characteristics</strong> of the medium.</p>
 <p>The precise form of the characteristics, and the resulting shock structure, depends on the specific nonlinearity. This is the subject of ongoing research in nonlinear optics and plasma physics, and the biquaternionic formulation provides a compact language for expressing it.</p>
@@ -252,11 +261,15 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{n}$</td>
-<td>Biquaternion-valued normal to the shock front</td>
+<td>Biquaternion-valued normal to the surface ($\mathbf{n}$ for spatial, $i\nu_t e_0 + \mathbf{n}$ for general)</td>
 </tr>
 <tr>
 <td>$[\tilde{F}]_S$</td>
 <td>Jump of $\tilde{F}$ across the surface $S$</td>
+</tr>
+<tr>
+<td>$\tilde{R}_{\mathrm{eff}}$</td>
+<td>Effective source including nonlinear medium response</td>
 </tr>
 </tbody>
 </table>
