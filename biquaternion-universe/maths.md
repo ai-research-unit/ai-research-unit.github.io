@@ -162,33 +162,4 @@
 
 
 
-## Split-Quaternions
-
-### <a href="articles/split-quaternion-algebra.html">Split-Quaternion Algebra</a>
-
-### <a href="articles/split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>
-
-### <a href="articles/split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>
-
-### <a href="articles/split-quaternion-roots-of-minus-one.html">Split-Quaternion Roots of Minus One</a>
-
-### <a href="articles/split-quaternion-algebraic-representations.html">Split-Quaternion Algebraic Representations</a>
-
-### <a href="articles/split-quaternion-polar-representations.html">Split-Quaternion Polar Representations</a>
-
-### <a href="articles/split-quaternion-analysis.html">Split-Quaternion Analysis</a>
-
-### <a href="articles/split-quaternion-integration.html">Split-Quaternion Integration</a>
-
-### <a href="articles/split-quaternion-analysis-on-subspaces.html">Split-Quaternion Analysis on Subspaces</a>
-
-### <a href="articles/split-quaternion-elementary-functions.html">Split-Quaternion Elementary Functions</a>
-
-### <a href="articles/split-quaternion-higher-special-functions.html">Split-Quaternion Higher Special Functions</a>
-
-### <a href="articles/split-quaternion-discrete-harmonic-analysis.html">Split-Quaternion Discrete Harmonic Analysis</a>
-
-### <a href="articles/split-quaternion-continous-harmonic-analysis.html">Split-Quaternion Continous Harmonic Analysis</a>
-
-
 
