@@ -1,3 +1,11 @@
+/* FIX: Force the very first element in the article body to have NO top margin */
+.article-body > h1:first-child,
+.article-body > h2:first-child,
+.article-body > h3:first-child,
+.article-body > p:first-child {
+  margin-top: 0 !important;
+}
+
 .article-header {
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -19,6 +27,7 @@
   letter-spacing: 0.08em;
   margin-bottom: 0.5rem;
 }
+
 .article-body > p:first-child {
   font-family: var(--font-ui);
   font-size: var(--size-sm);
@@ -93,38 +102,23 @@
   line-height: 1.5;
 }
 
-
 /* ===== KaTeX math rendering ===== */
-
-/* Display equations: allow horizontal scroll on narrow screens.
-   Without this, wide matrices blow out the article layout on mobile. */
 .article-body .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 0.5rem 0;
   margin: 1.25rem 0;
 }
-
-/* Give display math a little breathing room and center it visually. */
 .article-body .katex-display > .katex {
   font-size: 1.05em;
 }
-
-/* Inline math: match surrounding text size so it doesn't jump out
-   of a paragraph. */
 .article-body .katex {
   font-size: 1.05em;
 }
-
-/* If a formula is very wide, don't let it force the whole article
-   to scroll horizontally — only the formula container should. */
 .article-body {
   overflow-wrap: break-word;
 }
-
-/* Optional: subtle visual separation for display math when the
-   background has low contrast. Comment out if you don't like it. */
 .article-body .katex-display {
   /* background: var(--color-accent-soft); */
   /* border-radius: 4px; */
-
+}

@@ -45,7 +45,8 @@ body { display: flex; min-height: 100vh; }
 .page-wrap {
   margin-left: var(--sidebar-width);
   flex: 1;
-  padding: 2.5rem 3rem;
+  /* FIX: Changed from "2.5rem 3rem" to "1rem 3rem 2rem 3rem" to remove the huge top gap */
+  padding: 1rem 3rem 2rem 3rem; 
   max-width: 100%;
 }
 
@@ -56,14 +57,13 @@ body { display: flex; min-height: 100vh; }
   .sidebar { 
     position: relative; 
     width: 100%; 
-    height: auto;       /* FIX: Overrides the 100vh from the desktop rule! */
+    height: auto;       
     max-height: none;   
     border-right: none; 
     border-bottom: 1px solid var(--color-border); 
     padding: 1rem;      
   }
 
-  /* Make the menu items wrap horizontally so they don't stack endlessly */
   .sidebar-nav {
     display: flex;
     flex-wrap: wrap;
@@ -73,13 +73,14 @@ body { display: flex; min-height: 100vh; }
     margin-bottom: 0; 
   }
   .sidebar-nav a {
-    font-size: 1.1rem;  /* Bumped up for mobile readability */
-    padding: 0.5rem 0.9rem; /* Slightly larger padding for easier thumb tapping */
+    font-size: 1.1rem;  
+    padding: 0.5rem 0.9rem; 
     background: var(--color-accent-soft); 
   }
 
   .page-wrap { 
     margin-left: 0; 
-    padding: 1.5rem; 
+    /* FIX: Reduced top padding on mobile from 1.5rem to 1rem */
+    padding: 1rem; 
   }
 }
