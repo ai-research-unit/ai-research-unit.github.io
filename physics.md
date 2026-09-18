@@ -43,7 +43,7 @@
 
 ### <a href="articles/exercise-1-measuring-spin-along-an-arbitrary-direction.html">Exercise 1: Measuring Spin Along an Arbitrary Direction</a>
 
-### <a href="articles/.html"></a>
+### <a href="articles/exercise-2-spin-precession-in-a-magnetic-field.html">Exercise 2: Spin Precession in a Magnetic Field</a>
 
 ### <a href="articles/.html"></a>
 
