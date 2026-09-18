@@ -225,7 +225,11 @@ $$</p>
 <p>$$
 \tilde{Q}_r = \frac{1}{2}(\tilde{Q} + \tilde{Q}^*), \qquad \tilde{Q}_i = \frac{1}{2i}(\tilde{Q} - \tilde{Q}^*).
 $$</p>
-<p>Indeed, $\tilde{Q}_r$ is fixed by complex conjugation, so it lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and $\tilde{Q}_i$ satisfies $\tilde{Q}_i^* = -\tilde{Q}_i$, so $i\tilde{Q}_i$ is fixed by complex conjugation, meaning $\tilde{Q}_i$ also lies in $\mathbb{H}_{\mathbb{B}}$. The sum is $\tilde{Q}_r + i \tilde{Q}_i = \tilde{Q}$.</p>
+<p>Indeed, $\tilde{Q}_r$ is fixed by complex conjugation, so it lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and $\tilde{Q}_i$ is also fixed by complex conjugation. To see the latter, compute</p>
+<p>$$
+\tilde{Q}_i^* = \left(\frac{1}{2i}(\tilde{Q} - \tilde{Q}^*)\right)^* = \frac{-1}{2i}\left(\tilde{Q}^* - \tilde{Q}\right) = \frac{1}{2i}\left(\tilde{Q} - \tilde{Q}^*\right) = \tilde{Q}_i,
+$$</p>
+<p>so $\tilde{Q}_i$ lies in $\mathbb{H}_{\mathbb{B}}$ as well. The sum is $\tilde{Q}_r + i \tilde{Q}_i = \tilde{Q}$.</p>
 <p>This gives the direct sum decomposition</p>
 <p>$$
 \mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}},
@@ -267,18 +271,30 @@ $$</p>
 N(\tilde{Q} \circ \tilde{R}) = N(\tilde{Q}) \, N(\tilde{R}).
 $$</p>
 <h3 id="the-hermitian-form">The Hermitian Form</h3>
-<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is</p>
+<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is the biquaternion</p>
 <p>$$
-\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu),
+\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2 + \text{(vector terms)},
 $$</p>
-<p>where $\tilde{Q}^\dagger$ is the Hermitian conjugate. It is a <strong>non-negative real number</strong>, and it vanishes if and only if $\tilde{Q} = 0$. It is a genuine positive-definite quadratic form, and it is the natural "length squared" of $\tilde{Q}$ in the underlying real vector space of dimension 8.</p>
+<p>where $\tilde{Q}^\dagger$ is the Hermitian conjugate. This is generally a <strong>biquaternion</strong>, not a real scalar: its scalar part is $\sum_\mu |Q_\mu|^2$, but its vector part need not vanish. For example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and</p>
+<p>$$
+\tilde{Q}\tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+$$</p>
+<p>which has a nonzero vector part. The scalar part of the Hermitian form is the quantity that is non-negative:</p>
+<p>$$
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu).
+$$</p>
+<p>Its trace is twice this:</p>
+<p>$$
+\mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2.
+$$</p>
+<p>The scalar part is non-negative, and it vanishes if and only if $\tilde{Q} = 0$. It is the natural "length squared" of $\tilde{Q}$ in the underlying real vector space of dimension 8.</p>
 <p>The corresponding <strong>Euclidean norm</strong> is</p>
 <p>$$
-\|\tilde{Q}\|_E = \sqrt{\tilde{Q} \tilde{Q}^\dagger} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
 $$</p>
 <p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product.</p>
 <h3 id="the-inner-product">The Inner Product</h3>
-<p>The <strong>inner product</strong> of two biquaternions $\tilde{P}$ and $\tilde{Q}$ is</p>
+<p>The <strong>inner product</strong> of two biquaternions $\tilde{P}$ and $\tilde{Q}$ is the complex scalar</p>
 <p>$$
 \langle \tilde{P}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} P_\mu^* Q_\mu = \sum_{\mu=0}^{3} (p_\mu q_\mu + p'_\mu q'_\mu) + i \sum_{\mu=0}^{3} (p'_\mu q_\mu - p_\mu q'_\mu).
 $$</p>
@@ -294,17 +310,20 @@ $$</p>
 <p>which follows from the definition.</p>
 <p>The inner product of a biquaternion with itself is</p>
 <p>$$
-\langle \tilde{Q}, \tilde{Q} \rangle = \tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2,
+\langle \tilde{Q}, \tilde{Q} \rangle = \sum_{\mu=0}^{3} |Q_\mu|^2,
 $$</p>
-<p>which is the Hermitian form. So the Hermitian form is the restriction of the inner product to the diagonal.</p>
+<p>which is real and non-negative, and vanishes if and only if $\tilde{Q} = 0$. This is the scalar part of the Hermitian form:</p>
+<p>$$
+\langle \tilde{Q}, \tilde{Q} \rangle = \mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right).
+$$</p>
 <h3 id="relation-between-the-three-forms">Relation Between the Three Forms</h3>
 <p>The three quadratic objects are related as follows:</p>
 <ul>
-<li><strong>Norm form:</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex-valued, can vanish for nonzero $\tilde{Q}$, multiplicative.</li>
-<li><strong>Hermitian form:</strong> $\tilde{Q} \tilde{Q}^\dagger = \sum_\mu |Q_\mu|^2$. Non-negative real, vanishes only at $\tilde{Q} = 0$, not multiplicative.</li>
-<li><strong>Inner product:</strong> $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Complex-valued in general, Hermitian, linear in the second argument.</li>
+<li><strong>Norm form:</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Complex-valued in general, can vanish for nonzero $\tilde{Q}$, multiplicative.</li>
+<li><strong>Hermitian form:</strong> $\tilde{Q} \tilde{Q}^\dagger$, a biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ and whose vector part does not in general vanish. Not multiplicative.</li>
+<li><strong>Inner product:</strong> $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$, a complex scalar in general, Hermitian, linear in the second argument. Its diagonal value $\langle \tilde{Q}, \tilde{Q} \rangle = \sum_\mu |Q_\mu|^2$ equals the scalar part of the Hermitian form.</li>
 </ul>
-<p>The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure. The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a complex vector space.</p>
+<p>The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure. The scalar part of the Hermitian form (equivalently, the diagonal value of the inner product) controls the topological structure: continuity, completeness, the Euclidean topology. The full inner product combines the Hermitian pairing on the complex coefficient space with a phase.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <table>
 <thead>
@@ -371,15 +390,15 @@ $$</p>
 <td>Norm form</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \tilde{Q}^\dagger$</td>
-<td>Hermitian form</td>
+<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu \|Q_\mu\|^2$</td>
+<td>Scalar part of the Hermitian form</td>
 </tr>
 <tr>
 <td>$\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$</td>
 <td>Inner product</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}\|_E = \sqrt{\tilde{Q} \tilde{Q}^\dagger}$</td>
+<td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>

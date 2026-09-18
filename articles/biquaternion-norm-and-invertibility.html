@@ -64,11 +64,11 @@ $$</p>
 <p>where $\bar{\tilde{Q}}$ is the quaternion conjugate.</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$N(\tilde{Q})$ is a complex number in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, and it is complex otherwise.</li>
+<li>$N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, and it is complex otherwise.</li>
 <li>$N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. The elements with vanishing norm form are the zero divisors, studied in the article on biquaternion zero divisors.</li>
 <li>$N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.</li>
-<li>$N(\tilde{Q})$ is not invariant under complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.</li>
-<li>$N(\tilde{Q})$ is not invariant under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\bar{\tilde{Q}}^*) = N(\tilde{Q})^*$.</li>
+<li>$N(\tilde{Q})$ is complex-conjugated under complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.</li>
+<li>$N(\tilde{Q})$ is complex-conjugated under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\bar{\tilde{Q}}^*) = N(\tilde{Q})^*$.</li>
 </ul>
 <h3 id="multiplicativity">Multiplicativity</h3>
 <p><strong>Theorem.</strong> The norm form is multiplicative:</p>
@@ -79,7 +79,7 @@ $$</p>
 <p>$$
 N(\tilde{Q} \circ \tilde{R}) = (\tilde{Q} \tilde{R}) \overline{(\tilde{Q} \tilde{R})} = \tilde{Q} \tilde{R} \bar{\tilde{R}} \bar{\tilde{Q}} = \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}}.
 $$</p>
-<p>Since $N(\tilde{R})$ is a complex number and the scalar imaginary $i$ commutes with the quaternion units, $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$. So</p>
+<p>Since $N(\tilde{R})$ is a complex scalar (a multiple of $e_0$) and $e_0$ is central in $\mathbb{B}$, the factor $N(\tilde{R})$ commutes with $\tilde{Q}$ and with $\bar{\tilde{Q}}$. So</p>
 <p>$$
 \tilde{Q} N(\tilde{R}) \bar{\tilde{Q}} = N(\tilde{R}) \tilde{Q} \bar{\tilde{Q}} = N(\tilde{R}) N(\tilde{Q}).
 $$</p>
@@ -88,34 +88,49 @@ $$</p>
 <p><strong>Corollary.</strong> If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is a zero divisor.</p>
 <h2 id="the-hermitian-form">The Hermitian Form</h2>
 <h3 id="definition_1">Definition</h3>
-<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is</p>
+<p>The <strong>Hermitian form</strong> of a biquaternion $\tilde{Q}$ is the biquaternion</p>
 <p>$$
-\tilde{Q} \tilde{Q}^\dagger = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu),
+\tilde{Q} \tilde{Q}^\dagger,
 $$</p>
-<p>where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate, and $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$.</p>
+<p>where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$ is the Hermitian conjugate.</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$\tilde{Q} \tilde{Q}^\dagger$ is a <strong>non-negative real number</strong>. It vanishes if and only if $\tilde{Q} = 0$.</li>
-<li>It is a genuine positive-definite quadratic form on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$.</li>
-<li>It is <strong>not</strong> multiplicative with respect to the biquaternion product. Indeed, $\tilde{Q} \tilde{Q}^\dagger$ is the sum of the squares of the moduli of the complex coefficients, while $N(\tilde{Q})$ is the sum of the squares of the complex coefficients themselves. The two agree only when all the coefficients are real, i.e. when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</li>
+<li>$\tilde{Q} \tilde{Q}^\dagger$ is a <strong>biquaternion</strong>, not a real scalar in general. Its <strong>scalar part</strong> is</li>
+</ul>
+<p>$$
+\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu),
+$$</p>
+<p>with $Q_\mu = q_\mu + i q'_\mu$. This scalar part is non-negative and vanishes if and only if $\tilde{Q} = 0$. The vector part of $\tilde{Q} \tilde{Q}^\dagger$ does not in general vanish: for example, for $\tilde{Q} = e_0 + ie_1$, one has $\tilde{Q}^\dagger = e_0 + ie_1$ and</p>
+<p>$$
+\tilde{Q} \tilde{Q}^\dagger = (e_0 + ie_1)^2 = 2e_0 + 2ie_1,
+$$</p>
+<p>which has a nonzero vector part $2ie_1$.</p>
+<ul>
+<li>The Hermitian form is <strong>not</strong> multiplicative with respect to the biquaternion product, and its scalar part does not in general equal the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$.</li>
+<li>The Hermitian form is <strong>Hermitian</strong> in the sense that $(\tilde{Q} \tilde{Q}^\dagger)^\dagger = \tilde{Q} \tilde{Q}^\dagger$: the Hermitian form of any biquaternion is a Hermitian element of $\mathbb{B}$.</li>
 </ul>
 <h3 id="the-euclidean-norm">The Euclidean Norm</h3>
-<p>The <strong>Euclidean norm</strong> of a biquaternion is</p>
+<p>The <strong>Euclidean norm</strong> of a biquaternion is defined by the scalar part of the Hermitian form:</p>
 <p>$$
-\|\tilde{Q}\|_E = \sqrt{\tilde{Q} \tilde{Q}^\dagger} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q} \tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2} = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu)}.
 $$</p>
-<p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product, because the Hermitian form is not multiplicative.</p>
+<p>It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is <strong>not</strong> multiplicative with respect to the biquaternion product.</p>
+<p><strong>Notation.</strong> The scalar part of the Hermitian form is often written $\|\tilde{Q}\|_E^2$; the trace version is</p>
+<p>$$
+\mathrm{Tr}\!\left(\tilde{Q} \tilde{Q}^\dagger\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2 = 2 \|\tilde{Q}\|_E^2.
+$$</p>
+<p>The trace is the <strong>Frobenius norm squared</strong> of the matrix representing $\tilde{Q}$ under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$.</p>
 <h3 id="relation-between-the-norm-form-and-the-hermitian-form">Relation Between the Norm Form and the Hermitian Form</h3>
 <p>The two forms are related as follows:</p>
 <ul>
-<li>The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is complex-valued, multiplicative, and can vanish for nonzero $\tilde{Q}$.</li>
-<li>The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is non-negative real, positive-definite, and not multiplicative.</li>
+<li>The <strong>norm form</strong> $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex scalar (a multiple of $e_0$), multiplicative, and can vanish for nonzero $\tilde{Q}$.</li>
+<li>The <strong>Hermitian form</strong> $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.</li>
 </ul>
-<p>They coincide if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real.</p>
+<p>They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the Hermitian form is also scalar-valued, but it equals $-\sum_\mu q'^2_\mu \cdot e_0$, which is the negative of the norm form; on that subspace the two forms differ by a sign.</p>
 <p>The two forms play different roles:</p>
 <ul>
 <li>The <strong>norm form</strong> controls the multiplicative structure: it determines invertibility, zero divisors, and the multiplicativity of the norm.</li>
-<li>The <strong>Hermitian form</strong> controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.</li>
+<li>The <strong>scalar part of the Hermitian form</strong> (equivalently, the diagonal value of the inner product $\langle \tilde{Q}, \tilde{Q}\rangle$) controls the topological structure: it defines the Euclidean norm, the topology of $\mathbb{B}$, and the completeness of the underlying real vector space.</li>
 </ul>
 <h2 id="invertibility">Invertibility</h2>
 <h3 id="definition_2">Definition</h3>
@@ -164,8 +179,8 @@ $$</p>
 <h3 id="basic-properties">Basic Properties</h3>
 <p><strong>Openness.</strong> The group of units is an open subset of $\mathbb{B}$ in the Euclidean topology. Indeed, the norm form $N : \mathbb{B} \to \mathbb{C}$ is a continuous map, and $\mathbb{B}^\times = N^{-1}(\mathbb{C} \setminus \{0\})$ is the preimage of an open set.</p>
 <p><strong>Non-compactness.</strong> The group of units is not compact, because it contains the real line $\{a e_0 : a \in \mathbb{R}, a \neq 0\}$, which is unbounded.</p>
-<p><strong>Connected components.</strong> The group of units has the same number of connected components as $\mathbb{C} \setminus \{0\}$, namely one, because $\mathbb{C} \setminus \{0\}$ is connected. But the preimage of a connected set under a continuous map need not be connected, so the connectivity of $\mathbb{B}^\times$ requires a separate argument. In fact, $\mathbb{B}^\times$ is connected: it is the complement of the zero divisor set, which has real codimension at least two in $\mathbb{B}$, and the complement of a set of codimension at least two in $\mathbb{R}^8$ is connected.</p>
-<p><strong>Lie group structure.</strong> The group of units is a Lie group of dimension $8$ over $\mathbb{R}$. Its Lie algebra is $\mathbb{B}$ itself, with the commutator bracket</p>
+<p><strong>Connected components.</strong> The group of units is <strong>connected</strong>. To see this, use the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ of the basic algebra article. Under this isomorphism, $\mathbb{B}^\times$ corresponds to the group $GL(2, \mathbb{C})$ of invertible $2 \times 2$ complex matrices. The group $GL(n, \mathbb{C})$ is connected for every $n \geq 1$: every invertible complex matrix can be continuously deformed to the identity, for instance via the Gram–Schmidt process, which gives a continuous retraction of $GL(n, \mathbb{C})$ onto the unitary group $U(n)$, and $U(n)$ is connected. Hence $\mathbb{B}^\times \cong GL(2, \mathbb{C})$ is connected.</p>
+<p><strong>Lie group structure.</strong> The group of units is a Lie group of real dimension $8$ over $\mathbb{R}$. Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$, it corresponds to $GL(2, \mathbb{C})$, which is a complex Lie group of complex dimension $4$, hence a real Lie group of real dimension $8$. Its Lie algebra is $\mathbb{B}$ itself (as a real vector space), with the commutator bracket</p>
 <p>$$
 [\tilde{P}, \tilde{Q}] = \tilde{P} \tilde{Q} - \tilde{Q} \tilde{P}.
 $$</p>
@@ -210,7 +225,7 @@ $$</p>
 <p>The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is <strong>not</strong> a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The biquaternion algebra $\mathbb{B}$ is a fourth finite-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors. The zero divisors are studied in the article on biquaternion zero divisors.</p>
 <h2 id="distribution-of-the-invertible-elements">Distribution of the Invertible Elements</h2>
 <p>We now examine how the invertible elements are distributed among the four fixed-point subspaces of $\mathbb{B}$ defined in the basic algebra article. The criterion is the same in all cases: an element is invertible if and only if its norm form is nonzero.</p>
-<h3 id="the-complex-subspace-math132">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-subspace-math156">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{C}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{C}.
@@ -220,7 +235,7 @@ $$</p>
 N(\tilde{Q}) = Q_0^2.
 $$</p>
 <p>This vanishes if and only if $Q_0 = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{C}_{\mathbb{B}}$ is invertible. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-quaternion-subspace-math141">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math165">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{H}_{\mathbb{B}}$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
@@ -230,7 +245,7 @@ $$</p>
 N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2.
 $$</p>
 <p>This is a sum of squares of real numbers, and it vanishes if and only if all $q_\mu = 0$, i.e. if and only if $\tilde{Q} = 0$. So every nonzero element of $\mathbb{H}_{\mathbb{B}}$ is invertible. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$, in which every nonzero element has an inverse.</p>
-<h3 id="the-hermitian-subspace-math150">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-hermitian-subspace-math174">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element of $\mathbb{M}_+$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -250,7 +265,7 @@ $$</p>
 <li>The <strong>past cone</strong> $q_0 < 0$, on which $N(\tilde{Q}) > 0$.</li>
 </ul>
 <p>On both components, the norm form is positive.</p>
-<h3 id="the-anti-hermitian-subspace-math164">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math188">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element of $\mathbb{M}_-$ has the form</p>
 <p>$$
 \tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -266,8 +281,8 @@ $$</p>
 <p>which is again a double cone with apex at the origin. The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_-$ <strong>outside</strong> the cone have $N(\tilde{Q}) \neq 0$ and are invertible.</p>
 <p>The set of invertible elements of $\mathbb{M}_-$ is the complement of the light cone, which has two connected components:</p>
 <ul>
-<li>The <strong>spacelike cone</strong> $q_1^2 + q_2^2 + q_3^2 > (q'_0)^2$, on which $N(\tilde{Q}) > 0$.</li>
-<li>The <strong>timelike cone</strong> $q_1^2 + q_2^2 + q_3^2 < (q'_0)^2$, on which $N(\tilde{Q}) < 0$.</li>
+<li>The <strong>spacelike region</strong> $q_1^2 + q_2^2 + q_3^2 > (q'_0)^2$, on which $N(\tilde{Q}) > 0$.</li>
+<li>The <strong>timelike region</strong> $q_1^2 + q_2^2 + q_3^2 < (q'_0)^2$, on which $N(\tilde{Q}) < 0$.</li>
 </ul>
 <p>On both components, the norm form is nonzero.</p>
 <h3 id="summary-of-the-distribution">Summary of the Distribution</h3>
@@ -285,10 +300,10 @@ $$</p>
 <p>Specifically:</p>
 <ul>
 <li>For $\tilde{Q} \in \mathbb{M}_+$, the norm form is real, and it is positive on the future and past cones and negative inside the light cone.</li>
-<li>For $\tilde{Q} \in \mathbb{M}_-$, the norm form is real, and it is positive outside the light cone and negative inside the timelike cone.</li>
+<li>For $\tilde{Q} \in \mathbb{M}_-$, the norm form is real, and it is positive outside the light cone and negative inside the timelike region.</li>
 <li>For a general $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$ with both components nonzero, the norm form is complex, and the invertibility criterion is $N(\tilde{Q}) \neq 0$, which is a condition on both the real and imaginary parts of $N$.</li>
 </ul>
-<p>The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$. It does not detect the zero divisors, because it vanishes only at $\tilde{Q} = 0$.</p>
+<p>The <strong>scalar part</strong> of the Hermitian form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <table>
 <thead>
@@ -327,15 +342,19 @@ $$</p>
 <td>Anti-Hermitian conjugate</td>
 </tr>
 <tr>
-<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$</td>
+<td>$N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$</td>
 <td>Norm form</td>
 </tr>
 <tr>
-<td>$\tilde{Q} \tilde{Q}^\dagger = \sum_\mu \|Q_\mu\|^2$</td>
-<td>Hermitian form</td>
+<td>$\tilde{Q} \tilde{Q}^\dagger$</td>
+<td>Hermitian form (a Hermitian biquaternion)</td>
 </tr>
 <tr>
-<td>$\|\tilde{Q}\|_E = \sqrt{\tilde{Q} \tilde{Q}^\dagger}$</td>
+<td>$\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu \|Q_\mu\|^2$</td>
+<td>Scalar part of the Hermitian form</td>
+</tr>
+<tr>
+<td>$\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger)}$</td>
 <td>Euclidean norm</td>
 </tr>
 <tr>
@@ -365,8 +384,8 @@ $$</p>
 </tbody>
 </table>
 <h2 id="summary">Summary</h2>
-<p>The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a complex-valued multiplicative quadratic form on the biquaternion algebra. It is not positive-definite, and it vanishes on the zero divisors. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a non-negative real positive-definite quadratic form, and it defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$.</p>
-<p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open subset of $\mathbb{B}$ and a Lie group of dimension $8$, with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$.</p>
+<p>The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra. It is not positive-definite, and it vanishes on the zero divisors. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part does not vanish unless $\tilde{Q}$ lies in $\mathbb{H}_{\mathbb{B}}$ or $i\mathbb{H}_{\mathbb{B}}$.</p>
+<p>The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, isomorphic to $GL(2, \mathbb{C})$, and is a Lie group of real dimension $8$, with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$.</p>
 <p>The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are division algebras, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors.</p>
 <p>The zero divisors themselves are studied in the article on biquaternion zero divisors, and the classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
 <h2 id="further-reading">Further Reading</h2>

@@ -116,11 +116,18 @@ $$</p>
 $$</p>
 <p>The non-pure case is studied in the section on non-pure zero divisors below.</p>
 <h3 id="why-the-scalar-part-is-the-right-invariant">Why the Scalar Part Is the Right Invariant</h3>
-<p>The scalar part is the right invariant because the scalar imaginary $i$ is central in $\mathbb{B}$. The quaternion decomposition</p>
+<p>The scalar part is the natural invariant because the scalar imaginary $i$ is central in $\mathbb{B}$: the scalar part is the component of the element in the central direction, and the vector part is the component perpendicular to it. The two cases of zero divisors — pure and non-pure — are distinguished by whether this central component vanishes.</p>
+<p>In the <strong>pure case</strong>, the norm form reduces to</p>
 <p>$$
-\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i \mathbb{H}_{\mathbb{B}}
+N(\tilde{Q}) = -(\mathbf{Q}, \mathbf{Q}) = -(Q_1^2 + Q_2^2 + Q_3^2),
 $$</p>
-<p>exhibits $\mathbb{B}$ as two copies of $\mathbb{H}$, and the scalar part $Q_0$ is the component in the first summand. In the pure case, the element lies entirely in $i \mathbb{H}_{\mathbb{B}}$, where the norm form is negative-definite on the vector part; in the non-pure case, the element has a component in $\mathbb{H}_{\mathbb{B}}$, where the norm form is positive-definite, and the two components can cancel. This is the algebraic content of the distinction.</p>
+<p>a complex scalar. The vanishing of the norm form is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).</p>
+<p>In the <strong>non-pure case</strong>, the norm form contains the scalar contribution $Q_0^2$ in addition to the vector contribution:</p>
+<p>$$
+N(\tilde{Q}) = Q_0^2 + (\mathbf{Q}, \mathbf{Q}),
+$$</p>
+<p>and the vanishing condition allows the scalar and vector contributions to cancel. The resulting solutions are the complex multiples of the idempotents.</p>
+<p>The two cases are structurally distinct, and they lead to two different families of zero divisors.</p>
 <h2 id="pure-zero-divisors">Pure Zero Divisors</h2>
 <h3 id="the-square-of-a-pure-biquaternion">The Square of a Pure Biquaternion</h3>
 <p>Let $\tilde{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ be a pure biquaternion. Using the product formula for two pure biquaternions,</p>
@@ -244,11 +251,11 @@ $$</p>
 <p>The three families are distinguished by the value of the real and imaginary parts of $\xi$. The non-trivial roots have both parts nonzero, the trivial root has vanishing real part and imaginary part equal to $\pm i$, and the real roots have vanishing imaginary part.</p>
 <h2 id="distribution-of-the-zero-divisors">Distribution of the Zero Divisors</h2>
 <p>We now examine how the zero divisors are distributed among the four fixed-point subspaces of $\mathbb{B}$ defined in the basic algebra article.</p>
-<h3 id="the-complex-subspace-math177">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
+<h3 id="the-complex-subspace-math175">The Complex Subspace $\mathbb{C}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{C}_{\mathbb{B}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{C}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{C}_{\mathbb{B}}$ contains no zero divisors. This reflects the fact that $\mathbb{C}_{\mathbb{B}}$ is a copy of the field $\mathbb{C}$.</p>
-<h3 id="the-quaternion-subspace-math186">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
+<h3 id="the-quaternion-subspace-math184">The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$</h3>
 <p>An element of $\mathbb{H}_{\mathbb{B}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at $\tilde{Q} = 0$. So $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors. This reflects the Frobenius theorem: $\mathbb{H}_{\mathbb{B}}$ is a copy of the division algebra $\mathbb{H}$.</p>
-<h3 id="the-hermitian-subspace-math192">The Hermitian Subspace $\mathbb{M}_+$</h3>
+<h3 id="the-hermitian-subspace-math190">The Hermitian Subspace $\mathbb{M}_+$</h3>
 <p>An element of $\mathbb{M}_+$ has the form</p>
 <p>$$
 \tilde{Q} = q_0 e_0 + i q'_1 e_1 + i q'_2 e_2 + i q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
@@ -263,7 +270,7 @@ q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
 $$</p>
 <p>This is the equation of a <strong>double cone</strong> in the four-dimensional real space $\mathbb{M}_+$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_+$ is therefore a three-dimensional submanifold of $\mathbb{M}_+$.</p>
 <p>The elements of $\mathbb{M}_+$ <strong>outside</strong> the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_+$ is the complement of the cone, which has two connected components.</p>
-<h3 id="the-anti-hermitian-subspace-math203">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
+<h3 id="the-anti-hermitian-subspace-math201">The Anti-Hermitian Subspace $\mathbb{M}_-$</h3>
 <p>An element of $\mathbb{M}_-$ has the form</p>
 <p>$$
 \tilde{Q} = i q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
@@ -343,8 +350,12 @@ $$</p>
 </tbody>
 </table>
 <h3 id="the-union">The Union</h3>
-<p>The set of zero divisors of $\mathbb{B}$ is the union of the set of pure zero divisors (the nilpotents) and the set of non-pure zero divisors (the complex multiples of the idempotents). The two sets intersect at the origin only: the origin is not a zero divisor by definition, and the pure and non-pure cases are distinguished by whether the scalar part vanishes.</p>
-<p>So the zero divisors are the union of two families, each of which is a complex cone (a union of complex lines through the origin) in $\mathbb{B}$. The pure family is the nilpotent cone, and the non-pure family is the idempotent cone. Each has real dimension $7$ (as a subset of $\mathbb{B} \cong \mathbb{R}^8$), minus the origin.</p>
+<p>The set of zero divisors of $\mathbb{B}$ is the union of the set of pure zero divisors (the nilpotents) and the set of non-pure zero divisors (the complex multiples of the idempotents). The two families are <strong>disjoint</strong>: they are distinguished by whether the scalar part $Q_0$ vanishes, and the origin is excluded from both by the definition of a zero divisor. Their union is the zero divisor set $\mathcal{Z}$.</p>
+<p>The two families have different dimensions as complex cones:</p>
+<ul>
+<li>The <strong>pure family</strong> (the nilpotent cone) is a complex cone of complex dimension $2$ — equivalently, real dimension $4$ — since it is defined by one complex equation in the three complex coefficients $(Q_1, Q_2, Q_3)$.</li>
+<li>The <strong>non-pure family</strong> is an open dense subset of the full zero divisor cone (the condition $Q_0 \neq 0$ is open, and the closure of the resulting family is the whole cone). Its complex dimension is $3$, equivalently real dimension $6$, matching that of the full zero divisor set.</li>
+</ul>
 <h2 id="the-structure-of-the-zero-divisor-set">The Structure of the Zero Divisor Set</h2>
 <p>The zero divisor set $\mathcal{Z} \subset \mathbb{B}$ is</p>
 <p>$$
@@ -356,10 +367,11 @@ $$</p>
 $$</p>
 <p><strong>Basic properties.</strong></p>
 <ul>
-<li>$\mathcal{Z}$ is a closed subset of $\mathbb{B}$, because it is the preimage of $\{0\}$ under the continuous map $N$ minus the origin.</li>
-<li>$\mathcal{Z}$ is a cone: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C}$, then $\alpha \tilde{Q} \in \mathcal{Z}$ whenever $\alpha \neq 0$, because $N(\alpha \tilde{Q}) = \alpha^2 N(\tilde{Q}) = 0$.</li>
-<li>$\mathcal{Z}$ has real dimension $7$: it is defined by the vanishing of a complex-valued function on the eight-dimensional real space $\mathbb{B}$, which gives two real equations, so the dimension is $8 - 2 = 6$ generically, but the two equations are not independent at the origin and the dimension of $\mathcal{Z}$ is actually $7$. The reason is that the norm form is a quadratic form, and the vanishing of a quadratic form in $n$ real variables defines a cone of dimension $n - 1$.</li>
+<li>The closed cone $\{N(\tilde{Q}) = 0\}$ is the zero-set of the continuous (indeed polynomial) map $N : \mathbb{B} \to \mathbb{C}$; it is therefore a closed subset of $\mathbb{B}$. The set $\mathcal{Z}$ itself is this closed cone with the origin removed, and is therefore <strong>not closed</strong>: it is a closed cone minus its apex.</li>
+<li>$\mathcal{Z}$ is a cone away from the origin: if $\tilde{Q} \in \mathcal{Z}$ and $\alpha \in \mathbb{C} \setminus \{0\}$, then $\alpha \tilde{Q} \in \mathcal{Z}$, because $N(\alpha \tilde{Q}) = \alpha^2 N(\tilde{Q}) = 0$.</li>
 </ul>
+<p><strong>Dimension.</strong> The zero divisor set has <strong>real dimension $6$</strong> (equivalently, <strong>complex dimension $3$</strong> as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The norm form $N : \mathbb{B} \to \mathbb{C}$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $N(\tilde{Q}) = 0$ is therefore a <strong>complex hypersurface</strong> in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.</p>
+<p>The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real $6$-manifold away from the origin. (The two real equations are $N_r = 0$ and $N_i = 0$, with gradients $\nabla N_r$ and $\nabla N_i$ proportional only when $(q_0, q_1, q_2, q_3) = (0, 0, 0, 0)$; since the origin is excluded from $\mathcal{Z}$, the gradients are linearly independent everywhere on $\mathcal{Z}$.)</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <table>
 <thead>
@@ -418,12 +430,12 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:</p>
 <ul>
-<li>The <strong>pure zero divisors</strong>, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nilpotents: their square is zero, and their annihilator contains themselves.</li>
-<li>The <strong>non-pure zero divisors</strong>, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the complex multiples of the idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$.</li>
+<li>The <strong>pure zero divisors</strong>, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.</li>
+<li>The <strong>non-pure zero divisors</strong>, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the complex multiples of the idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.</li>
 </ul>
 <p>The idempotents are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$, the trivial root $\pm i$, and the real roots $\pm \mu$.</p>
-<p>Of the four fixed-point subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors.</p>
-<p>The zero divisor set is a complex cone of real dimension $7$ in $\mathbb{B} \cong \mathbb{R}^8$. The classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
+<p>Of the four fixed-point subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors (within the four-dimensional subspace).</p>
+<p>The zero divisor set is a complex cone of complex dimension $3$ (real dimension $6$) in $\mathbb{B} \cong \mathbb{C}^4$, with the origin removed. The classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li>William Rowan Hamilton, <em>Lectures on Quaternions</em> (Hodges and Smith, Dublin, 1853), for the original discovery of the zero divisors and the nilpotents.</li>
