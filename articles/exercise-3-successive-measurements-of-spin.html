@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exercise-3-successive-measurements-of-spin"><strong>Exercise 3: Successive Measurements of Spin</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the third in a series of <strong>worked exercises</strong> that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. To keep the two solutions strictly parallel, each is presented in the same steps, and the final result is stated in the same form.</p>
+<p>The first exercise treated the Born rule for a single measurement. The second exercise treated the time evolution of a spin state. This third exercise treats <strong>successive measurements</strong>: what happens when a spin state is measured twice in a row, along different directions.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
+<h2 id="the-exercise">The Exercise</h2>
+<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. It is then measured along a direction $\hat{n}_1$ that makes an angle $\theta_1$ with the $z$-axis, and immediately after, it is measured along a direction $\hat{n}_2$ that makes an angle $\theta_2$ with the $z$-axis. Both directions lie in the $xz$-plane. What is the <strong>joint probability of both outcomes being spin-up</strong>?</p>
+<p>This exercise illustrates two structural features of quantum mechanics: the Born rule for a single measurement (already treated in Exercise 1), and the fact that a measurement <strong>changes the state</strong>, so that successive measurements are not independent.</p>
+<h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
+<h3 id="step-1-the-initial-state">Step 1: The initial state</h3>
+<p>The spin-up state along the $z$-axis is the eigenvalue-$+1$ eigenvector of the Pauli matrix $\sigma_3$:</p>
+<p>$$
+|+z\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$</p>
+<h3 id="step-2-the-eigenstates-along-the-measurement-directions">Step 2: The eigenstates along the measurement directions</h3>
+<p>The spin-up state along a direction $\hat{n} = (\sin\theta, 0, \cos\theta)$ in the $xz$-plane is the eigenvalue-$+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$:</p>
+<p>$$
+|+n(\theta)\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
+$$</p>
+<p>In particular, the states for the two measurement directions are</p>
+<p>$$
+|+n_1\rangle = \begin{pmatrix} \cos(\theta_1/2) \\ \sin(\theta_1/2) \end{pmatrix}, \qquad |+n_2\rangle = \begin{pmatrix} \cos(\theta_2/2) \\ \sin(\theta_2/2) \end{pmatrix}.
+$$</p>
+<h3 id="step-3-the-joint-probability">Step 3: The joint probability</h3>
+<p>The joint probability of the two measurements both yielding the outcome spin-up is the product of the probability of the first outcome and the conditional probability of the second outcome given the first:</p>
+<p>$$
+p(+,+) = \bigl|\langle +n_1 \mid +z\rangle\bigr|^2 \cdot \bigl|\langle +n_2 \mid +n_1\rangle\bigr|^2.
+$$</p>
+<p><strong>First factor.</strong> The overlap of the initial state with $|+n_1\rangle$ is</p>
+<p>$$
+\langle +n_1 \mid +z\rangle = \cos(\theta_1/2).
+$$</p>
+<p>So the first factor is</p>
+<p>$$
+p_1 = \bigl|\langle +n_1 \mid +z\rangle\bigr|^2 = \cos^2(\theta_1/2).
+$$</p>
+<p><strong>Second factor.</strong> The angle between the two measurement directions is $\theta_2 - \theta_1$, so the overlap is</p>
+<p>$$
+\langle +n_2 \mid +n_1\rangle = \cos\bigl((\theta_2 - \theta_1)/2\bigr).
+$$</p>
+<p>So the second factor is</p>
+<p>$$
+p_2 = \bigl|\langle +n_2 \mid +n_1\rangle\bigr|^2 = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+$$</p>
+<h3 id="step-4-the-result">Step 4: The result</h3>
+<p>Multiplying the two factors,</p>
+<p>$$
+p(+,+) = \cos^2(\theta_1/2) \cdot \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+$$</p>
+<h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
+<h3 id="step-1-the-initial-state_1">Step 1: The initial state</h3>
+<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
+<p>$$
+P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+$$</p>
+<p>where $\hat{m}$ is a unit pure real quaternion. The spin-up state along $z$ corresponds to</p>
+<p>$$
+P_z = \tfrac{1}{2}\left(e_0 + i e_3\right).
+$$</p>
+<h3 id="step-2-the-projectors-along-the-measurement-directions">Step 2: The projectors along the measurement directions</h3>
+<p>The projectors onto the spin-up states along the two measurement directions are the idempotents</p>
+<p>$$
+P_{n_1} = \tfrac{1}{2}\left(e_0 + i\hat{n}_1\right), \qquad P_{n_2} = \tfrac{1}{2}\left(e_0 + i\hat{n}_2\right),
+$$</p>
+<p>with $\hat{n}_1 = \sin\theta_1\, e_1 + \cos\theta_1\, e_3$ and $\hat{n}_2 = \sin\theta_2\, e_1 + \cos\theta_2\, e_3$ as unit pure real quaternions.</p>
+<h3 id="step-3-the-joint-probability_1">Step 3: The joint probability</h3>
+<p>The joint probability of the two measurements both yielding spin-up is the product of the two trace formulas:</p>
+<p>$$
+p(+,+) = \mathrm{Tr}\!\left(P_{n_1} \circ P_z\right) \cdot \mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right).
+$$</p>
+<p><strong>First factor.</strong> From Exercise 1, the first factor is</p>
+<p>$$
+\mathrm{Tr}\!\left(P_{n_1} \circ P_z\right) = 2\,\mathrm{Sc}\!\left(P_{n_1} \circ P_z\right) = \cos^2(\theta_1/2).
+$$</p>
+<p><strong>Second factor.</strong> Computing the product $P_{n_2} \circ P_{n_1}$,</p>
+<p>$$
+P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left(e_0 + i\hat{n}_2\right)\left(e_0 + i\hat{n}_1\right) = \tfrac{1}{4}\left[e_0 + i\hat{n}_1 + i\hat{n}_2 - \hat{n}_2 \hat{n}_1\right].
+$$</p>
+<p>For pure real quaternions, the product is $\hat{n}_2 \hat{n}_1 = -\hat{n}_2 \cdot \hat{n}_1\, e_0 + \hat{n}_2 \times \hat{n}_1$. Substituting,</p>
+<p>$$
+P_{n_2} \circ P_{n_1} = \tfrac{1}{4}\left[\bigl(1 + \hat{n}_2 \cdot \hat{n}_1\bigr) e_0 + i\hat{n}_1 + i\hat{n}_2 - \hat{n}_2 \times \hat{n}_1\right].
+$$</p>
+<p>The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}(1 + \hat{n}_2 \cdot \hat{n}_1)$; the other terms $i\hat{n}_1$, $i\hat{n}_2$, and $\hat{n}_2 \times \hat{n}_1$ are vector terms with vanishing coefficient of $e_0$. Therefore</p>
+<p>$$
+\mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right) = 2 \cdot \tfrac{1}{4}\left(1 + \hat{n}_2 \cdot \hat{n}_1\right) = \tfrac{1}{2}\left(1 + \hat{n}_2 \cdot \hat{n}_1\right).
+$$</p>
+<p>Since both $\hat{n}_1$ and $\hat{n}_2$ lie in the $xz$-plane, the scalar product is $\hat{n}_2 \cdot \hat{n}_1 = \cos(\theta_2 - \theta_1)$, and the second factor is</p>
+<p>$$
+\mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right) = \tfrac{1}{2}\left(1 + \cos(\theta_2 - \theta_1)\right) = \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+$$</p>
+<h3 id="step-4-the-result_1">Step 4: The result</h3>
+<p>Multiplying the two factors,</p>
+<p>$$
+p(+,+) = \cos^2(\theta_1/2) \cdot \cos^2\bigl((\theta_2 - \theta_1)/2\bigr).
+$$</p>
+<h2 id="limiting-cases">Limiting Cases</h2>
+<p>Both formulations give the same result, and both give the same limits.</p>
+<p><strong>Case $\theta_1 = 0$, $\theta_2 = 0$</strong> (both measurements along $z$). Then</p>
+<p>$$
+p(+,+) = \cos^2(0) \cdot \cos^2(0) = 1.
+$$</p>
+<p>Measuring $z$ twice in a row gives the same result with certainty.</p>
+<p><strong>Case $\theta_1 = \pi/2$, $\theta_2 = 0$</strong> (measure $x$, then measure $z$). Then</p>
+<p>$$
+p(+,+) = \cos^2(\pi/4) \cdot \cos^2(\pi/4) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4}.
+$$</p>
+<p>This is the canonical "successive Stern–Gerlach" result: after measuring along $x$, the information about $z$ is scrambled, and the subsequent measurement along $z$ is equally likely to be $+$ or $-$.</p>
+<p><strong>Case $\theta_1 = \pi/2$, $\theta_2 = \pi/2$</strong> (measure $x$ twice). Then</p>
+<p>$$
+p(+,+) = \cos^2(\pi/4) \cdot \cos^2(0) = \frac{1}{2} \cdot 1 = \frac{1}{2}.
+$$</p>
+<p>Here the two factors have a clean interpretation. The first measurement along $x$ has probability $1/2$ of giving $+$, since the initial state is spin-up along $z$, not along $x$. Conditionally on the first outcome being $+$, the state has collapsed to spin-up along $x$, and the second measurement along the same direction is then certain to give $+$ again. So the joint probability is $1/2 \cdot 1 = 1/2$. This illustrates that two successive measurements along the <strong>same</strong> direction are perfectly correlated, once the state has been collapsed.</p>
+<p><strong>Case $\theta_1 = 0$, $\theta_2 = \pi/2$</strong> (measure $z$, then measure $x$). Then</p>
+<p>$$
+p(+,+) = \cos^2(0) \cdot \cos^2(\pi/4) = 1 \cdot \frac{1}{2} = \frac{1}{2}.
+$$</p>
+<p>Measuring $z$ first leaves the state unchanged (it is already spin-up along $z$), and then measuring $x$ gives $+$ with probability $1/2$.</p>
+<p>These agree with the physical expectation: a measurement along a direction $\hat{n}$ destroys the information about the spin along any non-parallel direction, and the information about parallel directions is preserved.</p>
+<h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
+<p><strong>1. The trace formula applies to successive measurements.</strong> The joint probability of two successive measurements is a <strong>product of two trace formulas</strong>:</p>
+<p>$$
+p(+,+) = \mathrm{Tr}\!\left(P_{n_1} \circ P_z\right) \cdot \mathrm{Tr}\!\left(P_{n_2} \circ P_{n_1}\right).
+$$</p>
+<p>The first factor is the Born rule for the initial measurement; the second factor is the Born rule for the conditional measurement. Both use the same trace pairing on $\mathbb{M}_+$.</p>
+<p><strong>2. Measurement is a projection onto an idempotent.</strong> After the first measurement, the state is not the original $P_z$ but the new idempotent $P_{n_1}$. This is the algebraic content of the "state update" or "collapse" rule. The biquaternion framework expresses this as a <strong>change of the idempotent</strong>: from $P_z$ to $P_{n_1}$.</p>
+<p><strong>3. The overlap of two idempotents is their scalar product.</strong> The trace $\mathrm{Tr}(P_{n_2} \circ P_{n_1})$ is a symmetric function of the two idempotents, equal to $\frac{1}{2}(1 + \hat{n}_2 \cdot \hat{n}_1)$, which depends only on the angle between the directions $\hat{n}_1$ and $\hat{n}_2$. This is the biquaternion expression of the transition probability between two spin states.</p>
+<p><strong>4. The geometry enters through the algebra.</strong> The angle between the measurement directions enters through the scalar product $\hat{n}_2 \cdot \hat{n}_1 = \cos(\theta_2 - \theta_1)$, which appears in the trace formula through the product $\hat{n}_2 \hat{n}_1$. The Bloch sphere geometry is encoded in the multiplication rules of the algebra.</p>
+<p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the trace formula corresponds exactly to $\mathrm{Tr}(P_{n_2}P_{n_1})$ for rank-one projectors. But seeing the same result emerge from the algebra is a useful sanity check on the framework.</p>
+<h2 id="comparison-with-exercises-1-and-2">Comparison with Exercises 1 and 2</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Exercise 1</th>
+<th>Exercise 2</th>
+<th>Exercise 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Physical process</td>
+<td>Single measurement</td>
+<td>Time evolution</td>
+<td>Successive measurements</td>
+</tr>
+<tr>
+<td>Structural object</td>
+<td>Idempotent + idempotent</td>
+<td>Idempotent + unitary</td>
+<td>Sequence of idempotents</td>
+</tr>
+<tr>
+<td>Rule used</td>
+<td>Trace formula</td>
+<td>Trace formula + rotor conjugation</td>
+<td>Product of trace formulas</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>$\cos^2(\theta/2)$</td>
+<td>$(\hbar/2)\cos(\omega_L t)$</td>
+<td>$\cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$</td>
+</tr>
+</tbody>
+</table>
+<p>The three exercises illustrate three fundamental operations of the quantum formalism: <strong>measurement</strong> (Exercise 1), <strong>evolution</strong> (Exercise 2), and <strong>sequential measurement</strong> (Exercise 3). In each case, the biquaternion framework expresses the operation as an algebraic manipulation of the elements of $\mathbb{M}_+$ and $\mathbb{H}_\mathbb{B}$.</p>
+<h2 id="summary">Summary</h2>
+<p>We have solved a third exercise in quantum mechanics — the joint probability of two successive spin measurements along different directions — in two parallel presentations.</p>
+<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, projection operators, and the Born rule for the first measurement followed by the conditional Born rule for the second, giving $p(+,+) = \cos^2(\theta_1/2)\cos^2((\theta_2-\theta_1)/2)$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents $P_z, P_{n_1}, P_{n_2}$ and the product of the two trace formulas $\mathrm{Tr}(P_{n_1}\circ P_z)\mathrm{Tr}(P_{n_2}\circ P_{n_1})$, giving the same result.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of successive measurements: each measurement is a projection onto an idempotent, the transition probability between two idempotents is their trace pairing, and the joint probability is the product of the trace formulas.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (states, observables)</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$</td>
+<td>Pauli matrices</td>
+</tr>
+<tr>
+<td>$P_z = \tfrac{1}{2}(e_0 + ie_3)$</td>
+<td>Spin-up state along $z$</td>
+</tr>
+<tr>
+<td>$P_{n_k} = \tfrac{1}{2}(e_0 + i\hat{n}_k)$</td>
+<td>Projector along direction $\hat{n}_k$</td>
+</tr>
+<tr>
+<td>$\hat{n}_k = \sin\theta_k\,e_1 + \cos\theta_k\,e_3$</td>
+<td>Unit vector for the $k$-th direction</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(P_{n_2} \circ P_{n_1})$</td>
+<td>Transition probability between idempotents</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the standard formulation of successive measurements.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment of the Stern–Gerlach experiment and successive measurements.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bloch sphere and the composition of qubit measurements.</li>
+<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, <em>Exercise 1: Measuring Spin Along an Arbitrary Direction</em>, and <em>Exercise 2: Spin Precession in a Magnetic Field</em>.</li>
+</ul>
+<hr />
+<h2 id="notes-on-the-final-version">Notes on the final version</h2>
+<p><strong>Two changes applied.</strong></p>
+<p><strong>Change 1 — the wording in the standard Step 3.</strong> The sentence introducing the joint probability has been reworded for precision:</p>
+<blockquote>
+<p>"The joint probability of the two measurements both yielding the outcome spin-up is the product of the probability of the first outcome and the conditional probability of the second outcome given the first."</p>
+</blockquote>
+<p>The phrase "both yielding spin-up" has been expanded to "the probability of the first outcome and the conditional probability of the second outcome given the first", which makes the conditional structure explicit and matches the level of precision used in the biquaternion solution.</p>
+<p><strong>Change 2 — the interpretation in the case $\theta_1 = \pi/2$, $\theta_2 = \pi/2$.</strong> A short paragraph has been added clarifying that the two successive measurements along the <strong>same</strong> direction ($x$) are perfectly correlated after the first measurement collapses the state:</p>
+<blockquote>
+<p>"Here the two factors have a clean interpretation. The first measurement along $x$ has probability $1/2$ of giving $+$, since the initial state is spin-up along $z$, not along $x$. Conditionally on the first outcome being $+$, the state has collapsed to spin-up along $x$, and the second measurement along the same direction is then certain to give $+$ again. So the joint probability is $1/2 \cdot 1 = 1/2$. This illustrates that two successive measurements along the <strong>same</strong> direction are perfectly correlated, once the state has been collapsed."</p>
+</blockquote>
+<p>This reinforces the point that the collapse rule has observable consequences: measurements along the same direction are not independent, but perfectly correlated.</p>
+<p>Everything else is unchanged. The article is now ready for the blog.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
