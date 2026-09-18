@@ -196,8 +196,10 @@ The scalar part is $\partial_{q_0}^2 - \Delta_{\mathbb{H}}$; the vector part is 
 **The convective derivative.** For a biquaternion $\tilde{U} = \sum_\mu u_\mu e_\mu$ with $u_\mu \in \mathbb{R}$, the convective derivative is
 
 $$
-\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(u_0 \frac{\partial}{\partial q_0} + \mathbf{u}\cdot\mathrm{grad}_{\mathbb{H}}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial q_k} - u_k \frac{\partial}{\partial q_0}\right) - \mathrm{rot}_{\mathbb{H}}(\mathbf{u}).
+\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(u_0 \frac{\partial}{\partial q_0} + \sum_{k=1}^{3} u_k \frac{\partial}{\partial q_k}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial q_k} - u_k \frac{\partial}{\partial q_0}\right) - \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \frac{\partial}{\partial q_k} e_l.
 $$
+
+The last term is **operator-valued**: the derivatives $\partial_{q_k}$ act on a function to the right, and the constant vector $\mathbf{u} = (u_1, u_2, u_3)$ supplies the coefficients. This term is *not* the same as the curl $\mathrm{rot}_{\mathbb{H}}\,\mathbf{F}$ of a biquaternion-valued function $\mathbf{F}$ defined above: $\mathrm{rot}_{\mathbb{H}}\,\mathbf{F}$ acts on the coefficient functions $F_k$ of $\mathbf{F}$, whereas the term here uses the constants $u_j$ and leaves the derivatives to act on a function that has not yet been specified.
 
 ### Integration on $\mathbb{H}_{\mathbb{B}}$
 
@@ -207,13 +209,13 @@ $$
 \int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu.
 $$
 
-The divergence theorem, Green's formulas, and the Cauchy integral formula all hold, with the fundamental solution
+The divergence theorem, Green's formulas, and the Cauchy integral formula all hold. The **Cauchy kernel** — a constant multiple of the fundamental solution of the first-order gradient operator $\tilde{\nabla}$ — is
 
 $$
 \tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} = \frac{q_0 e_0 - \sum_k q_k e_k}{\left(\sum_\mu q_\mu^2\right)^2}.
 $$
 
-Since $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors, the analysis is clean everywhere on $\mathbb{H}_{\mathbb{B}}$.
+Here $\tilde{G}$ is the fundamental solution of the **first-order** operator $\tilde{\nabla}$: in the sense of distributions, $\tilde{\nabla}\tilde{G}$ is a multiple of the Dirac delta at the origin. It is *not* the fundamental solution of the second-order d'Alembertian $\Box_{\mathbb{H}}$; on $\mathbb{H}_{\mathbb{B}} \cong \mathbb{R}^4$, the fundamental solution of the Euclidean Laplacian scales as $\|\tilde{Q}\|_E^{-2}$. Since $\mathbb{H}_{\mathbb{B}}$ contains no zero divisors, the analysis is clean everywhere on $\mathbb{H}_{\mathbb{B}}$ except at the origin $\tilde{Q} = 0$, which is the singularity of the kernel.
 
 ## The Anti-Hermitian Subspace
 
@@ -318,10 +320,10 @@ The scalar part is $-\partial_{q'_0}^2 - \Delta_{\mathbb{M}_-}$; the vector part
 **The convective derivative.** For a biquaternion $\tilde{U} = \sum_\mu u_\mu e_\mu$ with $u_\mu \in \mathbb{R}$, the convective derivative is
 
 $$
-\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(-i u_0 \frac{\partial}{\partial q'_0} + \mathbf{u}\cdot\mathrm{grad}_{\mathbb{M}_-}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial q_k} + i u_k \frac{\partial}{\partial q'_0}\right) - \mathrm{rot}_{\mathbb{M}_-}(\mathbf{u}),
+\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(-i u_0 \frac{\partial}{\partial q'_0} + \sum_{k=1}^{3} u_k \frac{\partial}{\partial q_k}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial q_k} + i u_k \frac{\partial}{\partial q'_0}\right) - \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \frac{\partial}{\partial q_k} e_l.
 $$
 
-where $\mathbf{u}\cdot\mathrm{grad}_{\mathbb{M}_-} = \sum_k u_k \partial/\partial q_k$ and $\mathrm{rot}_{\mathbb{M}_-}(\mathbf{u})$ is defined with the specific derivatives.
+The last term is operator-valued, with the same meaning as on $\mathbb{H}_{\mathbb{B}}$: the derivatives $\partial_{q_k}$ act on a function to the right, and the constants $u_j$ provide the coefficients.
 
 ### Integration on $\mathbb{M}_-$
 
@@ -331,11 +333,13 @@ $$
 \int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu.
 $$
 
-The fundamental solution is
+The Cauchy kernel — a constant multiple of the fundamental solution of the first-order gradient operator on $\mathbb{M}_-$ — is
 
 $$
 \tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} = \frac{i q'_0 e_0 - \sum_k q_k e_k}{\left((q'_0)^2 + \sum_k q_k^2\right)^2}.
 $$
+
+As on $\mathbb{H}_{\mathbb{B}}$, this is the fundamental solution of $\tilde{\nabla}$, not of the second-order d'Alembertian.
 
 ### The Role of the Zero Divisor Cone
 
@@ -345,7 +349,7 @@ $$
 (q'_0)^2 = q_1^2 + q_2^2 + q_3^2
 $$
 
-in the coordinates $(q'_0, q_1, q_2, q_3)$ of $\mathbb{M}_-$. On the complement of the cone, the analysis is clean. On the cone itself, the function $\tilde{G}$ is undefined at the apex and singular on the rest of the cone.
+in the coordinates $(q'_0, q_1, q_2, q_3)$ of $\mathbb{M}_-$. On the complement of the cone, the analysis is clean. On the cone itself, the function $\tilde{G}$ is undefined at the apex; on the rest of the cone, $\tilde{G}$ remains finite but takes zero-divisor values, since the element $\tilde{Q}$ is itself a zero divisor and the algebra structure degenerates there. The kernel does not blow up away from the apex; what fails on the cone (away from the origin) is the invertibility of $\tilde{Q}$.
 
 ## The Hermitian Subspace
 
@@ -450,10 +454,10 @@ The scalar part is $\partial_{q_0}^2 + \Delta_{\mathbb{M}_+}$; the vector part i
 **The convective derivative.** For a biquaternion $\tilde{U} = \sum_\mu u_\mu e_\mu$ with $u_\mu \in \mathbb{R}$, the convective derivative is
 
 $$
-\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(u_0 \frac{\partial}{\partial q_0} - i \sum_k u_k \frac{\partial}{\partial q'_k}\right) + \sum_{k=1}^{3} e_k \left(-i u_0 \frac{\partial}{\partial q'_k} - u_k \frac{\partial}{\partial q_0}\right) - \mathrm{rot}_{\mathbb{M}_+}(\mathbf{u}),
+\tilde{D} = \bar{\tilde{U}} \tilde{\nabla} = \left(u_0 \frac{\partial}{\partial q_0} - i \sum_{k=1}^{3} u_k \frac{\partial}{\partial q'_k}\right) + \sum_{k=1}^{3} e_k \left(-i u_0 \frac{\partial}{\partial q'_k} - u_k \frac{\partial}{\partial q_0}\right) + i \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \frac{\partial}{\partial q'_k} e_l.
 $$
 
-where $\mathrm{rot}_{\mathbb{M}_+}(\mathbf{u})$ is defined with the specific derivatives.
+The last term is operator-valued. Note the appearance of the factor $i$ and the derivative $\partial_{q'_k}$, reflecting the imaginary character of the spatial coordinates on $\mathbb{M}_+$. In particular, this term is not the negative of the corresponding term on $\mathbb{M}_-$, but differs by the factor $i$ and by which coordinates appear.
 
 ### Integration on $\mathbb{M}_+$
 
@@ -463,11 +467,13 @@ $$
 \int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu.
 $$
 
-The fundamental solution is
+The Cauchy kernel — a constant multiple of the fundamental solution of the first-order gradient operator on $\mathbb{M}_+$ — is
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} = \frac{q_0 e_0 + \sum_k i q'_k e_k}{\left(q_0^2 + \sum_k {q'_k}^2\right)^2}.
+\tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} = \frac{q_0 e_0 - i\sum_k q'_k e_k}{\left(q_0^2 + \sum_k {q'_k}^2\right)^2}.
 $$
+
+As on $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_-$, this is the fundamental solution of $\tilde{\nabla}$, not of the second-order d'Alembertian.
 
 ### The Role of the Zero Divisor Cone
 
@@ -477,7 +483,7 @@ $$
 q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2
 $$
 
-in the coordinates $(q_0, q'_1, q'_2, q'_3)$ of $\mathbb{M}_+$. The cone is the mirror image of the cone on $\mathbb{M}_-$: the first and the remaining coordinates are interchanged.
+in the coordinates $(q_0, q'_1, q'_2, q'_3)$ of $\mathbb{M}_+$. The cone is the mirror image of the cone on $\mathbb{M}_-$: the first and the remaining coordinates are interchanged. As on $\mathbb{M}_-$, the Cauchy kernel is undefined at the apex and takes zero-divisor values on the rest of the cone, where the algebra structure degenerates because $\tilde{Q}$ has no inverse.
 
 ## Comparison of the Three Subspaces
 
@@ -513,11 +519,29 @@ The key structural facts:
 
 The three subspaces are related by the conjugations of the biquaternion algebra and by multiplication by $i$.
 
-**Quaternion conjugation.** The quaternion conjugation $\bar{\cdot}$ maps $\mathbb{H}_{\mathbb{B}}$ to itself, $\mathbb{M}_-$ to $\mathbb{M}_+$, and $\mathbb{M}_+$ to $\mathbb{M}_-$.
+**Quaternion conjugation.** The quaternion conjugation $\bar{\cdot}$ preserves each of the three subspaces:
 
-**Complex conjugation.** The complex conjugation $^*$ maps $\mathbb{H}_{\mathbb{B}}$ to itself, $\mathbb{M}_-$ to itself (up to sign), and $\mathbb{M}_+$ to itself (up to sign).
+$$
+\bar{\mathbb{H}}_{\mathbb{B}} = \mathbb{H}_{\mathbb{B}}, \qquad \bar{\mathbb{M}}_- = \mathbb{M}_-, \qquad \bar{\mathbb{M}}_+ = \mathbb{M}_+.
+$$
 
-**Hermitian conjugation.** The Hermitian conjugation $\dagger$ fixes each of the three subspaces.
+The reason is that quaternion conjugation negates the vector part of a biquaternion, and on each of these subspaces the reality structure of the vector part is preserved under negation: the vector part of an element of $\mathbb{H}_{\mathbb{B}}$ is real and its negative is real; the vector part of an element of $\mathbb{M}_-$ is real and its negative is real; the vector part of an element of $\mathbb{M}_+$ is imaginary and its negative is imaginary.
+
+**Complex conjugation.** The complex conjugation $^*$ also preserves each of the three subspaces:
+
+$$
+\mathbb{H}_{\mathbb{B}}^* = \mathbb{H}_{\mathbb{B}}, \qquad \mathbb{M}_-^* = \mathbb{M}_-, \qquad \mathbb{M}_+^* = \mathbb{M}_+.
+$$
+
+Indeed, on $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $^*$ is the identity. On $\mathbb{M}_-$, the scalar coefficient $iq'_0$ is conjugated to $-iq'_0$ (still imaginary) and the vector coefficients $q_k$ are real (unchanged). On $\mathbb{M}_+$, the scalar coefficient $q_0$ is real (unchanged) and the vector coefficients $iq'_k$ are conjugated to $-iq'_k$ (still imaginary).
+
+**Hermitian conjugation.** The Hermitian conjugation $\dagger$ preserves each of the three subspaces as a set, but acts differently on each: it is the identity on $\mathbb{M}_+$, negation on $\mathbb{M}_-$, and quaternion conjugation on $\mathbb{H}_{\mathbb{B}}$:
+
+$$
+\tilde{Q}^\dagger = \tilde{Q} \;\; \text{for } \tilde{Q} \in \mathbb{M}_+, \qquad \tilde{Q}^\dagger = -\tilde{Q} \;\; \text{for } \tilde{Q} \in \mathbb{M}_-, \qquad \tilde{Q}^\dagger = \bar{\tilde{Q}} \;\; \text{for } \tilde{Q} \in \mathbb{H}_{\mathbb{B}}.
+$$
+
+These identities are the defining properties of $\mathbb{M}_\pm$ and a direct computation on $\mathbb{H}_{\mathbb{B}}$.
 
 **Multiplication by $i$.** Multiplication by the scalar imaginary $i$ exchanges the two indefinite subspaces:
 
@@ -525,7 +549,7 @@ $$
 i \mathbb{M}_- = \mathbb{M}_+, \qquad i \mathbb{M}_+ = \mathbb{M}_-.
 $$
 
-This exchange sends a point of $\mathbb{M}_-$ with coordinates $(q'_0, q_1, q_2, q_3)$ to a point of $\mathbb{M}_+$ with coordinates $(q_0, q'_1, q'_2, q'_3)$ where the specific values depend on the explicit element.
+Indeed, for $\tilde{Q} = iq'_0 e_0 + \sum_k q_k e_k \in \mathbb{M}_-$, we have $i\tilde{Q} = -q'_0 e_0 + i\sum_k q_k e_k$, which has real scalar part $-q'_0$ and imaginary vector part $i\sum_k q_k e_k$ — hence lies in $\mathbb{M}_+$. The reverse map is analogous.
 
 **Intersections.** The pairwise intersections are:
 
@@ -539,13 +563,15 @@ $$
 
 **Proof of the third intersection.** An element of $\mathbb{M}_- \cap \mathbb{M}_+$ is both anti-Hermitian and Hermitian, hence satisfies $\tilde{Q} = -\tilde{Q}$, so $\tilde{Q} = 0$. The intersection is trivial.
 
-**Spans.** The pairwise sums are:
+**Decompositions.** The two natural decompositions of $\mathbb{B}$ are:
 
 $$
-\mathbb{H}_{\mathbb{B}} + \mathbb{M}_- = \mathbb{B}, \qquad \mathbb{H}_{\mathbb{B}} + \mathbb{M}_+ = \mathbb{B}, \qquad \mathbb{M}_- + \mathbb{M}_+ = \mathbb{M}_+ \oplus \mathbb{M}_- = \mathbb{B}.
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}, \qquad \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-.
 $$
 
-The first two sums span the whole algebra, and the third is the Hermitian decomposition of $\mathbb{B}$.
+The first is the quaternion decomposition (associated with the complex conjugation $^*$); the second is the Hermitian decomposition (associated with the Hermitian conjugation $\dagger$). Each is a direct sum of two four-dimensional real subspaces.
+
+The pairwise sums of subspaces from different decompositions are not the whole algebra: for instance, $\mathbb{H}_{\mathbb{B}} + \mathbb{M}_- = \mathrm{span}_\mathbb{R}\{e_0, ie_0, e_1, e_2, e_3\}$, which is a five-dimensional subspace of $\mathbb{B}$, and $\mathbb{H}_{\mathbb{B}} + \mathbb{M}_+ = \mathrm{span}_\mathbb{R}\{e_0, e_1, e_2, e_3, ie_1, ie_2, ie_3\}$, which is a seven-dimensional subspace. Only within each decomposition does the direct sum recover the full algebra.
 
 **Compatibility of the analysis.** The differential and integral operators on the three subspaces are the same abstract operators, with the same formulas. The difference is only in the specific expression of the partial derivatives in the coordinates of each subspace. A function defined on a domain that intersects two or more subspaces can be analyzed on each subspace separately, and the results agree on the intersections.
 
@@ -570,13 +596,15 @@ The following table summarizes the specific differential operators on the three 
 | $\tilde{\nabla}^2$ (direct) | $(\partial_{q_0}^2 - \Delta_{\mathbb{H}}) + 2\sum_k e_k \partial_{q_0}\partial_{q_k}$ | $-(\partial_{q'_0}^2 + \Delta_{\mathbb{M}_-}) - 2i\sum_k e_k \partial_{q'_0}\partial_{q_k}$ | $(\partial_{q_0}^2 + \Delta_{\mathbb{M}_+}) - 2i\sum_k e_k \partial_{q_0}\partial_{q'_k}$ |
 | $\tilde{\nabla}^2$ (via $\Box$) | $2\partial_{q_0}\tilde{\nabla} - \Box_{\mathbb{H}}$ | $-2i\partial_{q'_0}\tilde{\nabla} - \Box_{\mathbb{M}_-}$ | $2\partial_{q_0}\tilde{\nabla} - \Box_{\mathbb{M}_+}$ |
 
-**Fundamental solution.**
+**Cauchy kernel.** The kernel $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ is a constant multiple of the fundamental solution of the first-order operator $\tilde{\nabla}$ (the Cauchy kernel for the Cauchy integral formula), not of the second-order d'Alembertian. With this convention, the explicit forms on the three subspaces are:
 
-| Operator | All three subspaces |
+| Subspace | $\tilde{G}(\tilde{Q})$ |
 |---|---|
-| $\tilde{G}(\tilde{Q})$ | $\bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $\dfrac{q_0 e_0 - \sum_k q_k e_k}{\left(\sum_\mu q_\mu^2\right)^2}$ |
+| $\mathbb{M}_-$ | $\dfrac{i q'_0 e_0 - \sum_k q_k e_k}{\left((q'_0)^2 + \sum_k q_k^2\right)^2}$ |
+| $\mathbb{M}_+$ | $\dfrac{q_0 e_0 - i\sum_k q'_k e_k}{\left(q_0^2 + \sum_k {q'_k}^2\right)^2}$ |
 
-The fundamental solution has the same abstract form on all three subspaces; its expression in the specific coordinates differs only through the specific form of $\bar{\tilde{Q}}$ and $\|\tilde{Q}\|_E$.
+The Cauchy kernel has the same abstract form on all three subspaces; its expression in the specific coordinates differs only through the specific form of $\bar{\tilde{Q}}$ and $\|\tilde{Q}\|_E$.
 
 ## Open Questions
 
@@ -606,9 +634,9 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermit
 
 The Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation. Its coordinates are $(q_0, q'_1, q'_2, q'_3)$, with the three remaining coefficients imaginary. Its specific d'Alembertian is $\partial_{q_0}^2 - \Delta_{\mathbb{M}_+}$, with signature $(1, 3)$. Its zero divisors form the mirror cone $q_0^2 = {q'_1}^2 + {q'_2}^2 + {q'_3}^2$.
 
-The three subspaces share the same **abstract** differential and integral operators — the gradient $\tilde{\nabla}$, its quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square of the gradient $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, and the integral with the fundamental solution $\tilde{G}$ — but the **specific expressions** of these operators in the coordinates of each subspace differ in a characteristic way. The abstract d'Alembertian $\Box = \sum_\mu \partial^2/\partial Q_\mu^2$ becomes the Euclidean Laplacian on $\mathbb{H}_{\mathbb{B}}$, the operator with signature $(3,1)$ on $\mathbb{M}_-$, and the mirror operator with signature $(1,3)$ on $\mathbb{M}_+$. The square of the gradient is related to the d'Alembertian by the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$, which holds in the abstract algebra and in each subspace.
+The three subspaces share the same **abstract** differential and integral operators — the gradient $\tilde{\nabla}$, its quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square of the gradient $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, and the Cauchy kernel $\tilde{G}$ — but the **specific expressions** of these operators in the coordinates of each subspace differ in a characteristic way. The abstract d'Alembertian $\Box = \sum_\mu \partial^2/\partial Q_\mu^2$ becomes the Euclidean Laplacian on $\mathbb{H}_{\mathbb{B}}$, the operator with signature $(3,1)$ on $\mathbb{M}_-$, and the mirror operator with signature $(1,3)$ on $\mathbb{M}_+$. The square of the gradient is related to the d'Alembertian by the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$, which holds in the abstract algebra and in each subspace.
 
-The three subspaces are related by the conjugations of the biquaternion algebra and by multiplication by $i$. The multiplication by $i$ exchanges the two indefinite subspaces and exchanges their signatures. The two indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ are complementary in the direct sum decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$.
+The three subspaces are related by the conjugations of the biquaternion algebra and by multiplication by $i$. Quaternion conjugation and complex conjugation each preserve all three subspaces. Multiplication by $i$ exchanges the two indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ and exchanges their signatures. The two indefinite subspaces are complementary in the direct sum decomposition $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, and the quaternion subspace pairs with its imaginary translate in the quaternion decomposition $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$.
 
 ## Summary of Notation
 
@@ -624,7 +652,7 @@ The three subspaces are related by the conjugations of the biquaternion algebra 
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian (natural second-order operator) |
 | $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ | Square of the gradient |
 | $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative |
-| $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Fundamental solution |
+| $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Cauchy kernel (fundamental solution of $\tilde{\nabla}$) |
 | $\Delta_{\mathbb{H}}, \Delta_{\mathbb{M}_-}, \Delta_{\mathbb{M}_+}$ | Spatial Laplacians in each subspace |
 
 ## Further Reading

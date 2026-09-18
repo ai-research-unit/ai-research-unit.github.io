@@ -35,7 +35,15 @@ $$
 \|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The norm is **not** multiplicative with respect to the biquaternion product. The reason is that the four complex coefficients of the product $\tilde{Q}\tilde{R}$ are sums of products of the coefficients of $\tilde{Q}$ and $\tilde{R}$, and these sums can cancel. As a concrete example, with $\tilde{Q} = \tilde{R} = e_1 + ie_2$, one has $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, while $\tilde{Q}\tilde{R} = (e_1 + ie_2)^2 = 0$, so $\|\tilde{Q}\tilde{R}\|_E = 0 \neq 2$. (The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is multiplicative, but it is complex-valued and vanishes on the zero divisors, so it cannot serve as a norm.) The Euclidean norm is the ordinary norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$.
+The norm is **not** multiplicative with respect to the biquaternion product. The reason is structural: the product $\tilde{Q}\tilde{R}$ is not obtained by multiplying the moduli $\|\tilde{Q}\|_E$ and $\|\tilde{R}\|_E$, and the equality $\|\tilde{Q}\tilde{R}\|_E = \|\tilde{Q}\|_E\|\tilde{R}\|_E$ fails in general. (This is in contrast to the multiplicative but complex-valued norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, which satisfies $N(\tilde{Q}\tilde{R}) = N(\tilde{Q})N(\tilde{R})$ but vanishes on the zero divisors, so it cannot serve as a norm.)
+
+As a concrete example, take $\tilde{Q} = \tilde{R} = e_1 + ie_2$. Then $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, but
+
+$$
+\tilde{Q}\tilde{R} = (e_1 + ie_2)^2 = e_1^2 + e_1(ie_2) + (ie_2)e_1 + (ie_2)^2 = -1 + ie_3 - ie_3 + 1 = 0,
+$$
+
+so $\|\tilde{Q}\tilde{R}\|_E = 0 \neq \|\tilde{Q}\|_E \|\tilde{R}\|_E = 2$. The Euclidean norm is the ordinary norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$, and it does not respect the algebra structure.
 
 ### The Distance
 
@@ -320,13 +328,27 @@ $$
 \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\frac{\partial^2}{\partial Q_0^2} + \Delta_Q\right) e_0.
 $$
 
-The operator $\partial^2/\partial Q_0^2 + \Delta_Q$ is the **four-dimensional Laplacian** in the coordinates $Q_0, Q_1, Q_2, Q_3$, and we write
+The operator $\partial^2/\partial Q_0^2 + \Delta_Q$ is the **four-dimensional Laplacian in the formal coordinates** $Q_0, Q_1, Q_2, Q_3$, and we write
 
 $$
 \Box = \frac{\partial^2}{\partial Q_0^2} + \Delta_Q.
 $$
 
 The operator $\Box$ is a scalar operator: it multiplies a biquaternion by the identity $e_0$. It acts component-wise on the coefficients of $\tilde{F}$.
+
+**Remark on the signature.** The formal expression $\partial^2/\partial Q_0^2 + \Delta_Q$ has the interpretation of a Laplacian in the coordinates $Q_\mu$, but when the subspace is such that some of the $Q_\mu$ are purely imaginary, the operator takes a Lorentzian form in the underlying real coordinates. For example, on $\mathbb{M}_-$, where $Q_0 = iq'_0$ and $Q_k = q_k$, the derivative $\partial^2/\partial Q_0^2 = -\partial^2/\partial (q'_0)^2$, so
+
+$$
+\Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_0)^2} + \frac{\partial^2}{\partial q_1^2} + \frac{\partial^2}{\partial q_2^2} + \frac{\partial^2}{\partial q_3^2},
+$$
+
+which is the Lorentzian wave operator (d'Alembertian in the relativistic sense) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_0 = q_0$ and $Q_k = iq'_k$, we have
+
+$$
+\Box\big|_{\mathbb{M}_+} = \frac{\partial^2}{\partial q_0^2} - \frac{\partial^2}{\partial (q'_1)^2} - \frac{\partial^2}{\partial (q'_2)^2} - \frac{\partial^2}{\partial (q'_3)^2},
+$$
+
+which is also Lorentzian, with the opposite sign convention. On $\mathbb{H}_{\mathbb{B}}$, where all $Q_\mu$ are real, $\Box$ is the ordinary Euclidean four-dimensional Laplacian.
 
 The d'Alembertian is the **natural second-order operator** in the biquaternion framework: it is symmetric under the exchange of $\tilde{\nabla}$ and $\bar{\tilde{\nabla}}$, it is scalar-valued, and it is the operator that appears in the second-order equations, in the Cauchy integral formula, and in the factorization of the Dirac operator.
 
@@ -409,10 +431,16 @@ where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.
 Separating the cases and collecting terms, we obtain
 
 $$
-\tilde{D} = \left(u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{rot}(\mathbf{u}),
+\tilde{D} = \left(u_0 \frac{\partial}{\partial Q_0} + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}),
 $$
 
-where $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial/\partial Q_k$ is a scalar and $\mathrm{rot}(\mathbf{u}) = \sum_{j,k,l} \epsilon_{jkl} u_j \partial/\partial Q_k \cdot e_l$ is a biquaternion.
+where the scalar operator $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial/\partial Q_k$ acts by multiplication by the components of $\mathbf{u}$ followed by the partial derivatives, and
+
+$$
+\mathrm{Curl}(\mathbf{u}) = \sum_{j,k,l=1}^{3} \epsilon_{jkl} \, u_j \, \frac{\partial}{\partial Q_k} \, e_l.
+$$
+
+Note that the operator $\mathrm{Curl}(\mathbf{u})$ is **not** the same as the "rot" of a biquaternion-valued function defined earlier: $\mathrm{rot}\,\mathbf{F} = \sum_{j,k,l}\epsilon_{jkl}(\partial F_k/\partial Q_j) e_l$ acts on the coefficient functions of $\mathbf{F}$, whereas $\mathrm{Curl}(\mathbf{u})$ acts on a fixed real quaternion $\mathbf{u}$ and the derivative operators fall on the function to its right. In particular, $\mathrm{Curl}(\mathbf{u})$ does **not** vanish when $\mathbf{u}$ is constant, unlike the classical curl of a constant vector field, because the partial derivatives are still there to act on the function.
 
 The **scalar part** of $\tilde{D}$ is
 
@@ -425,7 +453,7 @@ This is the convective derivative in four variables. When $u_0 = 1$, it reduces 
 The **vector part** of $\tilde{D}$ is
 
 $$
-\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{rot}(\mathbf{u}).
+\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k \left(u_0 \frac{\partial}{\partial Q_k} - u_k \frac{\partial}{\partial Q_0}\right) - \mathrm{Curl}(\mathbf{u}).
 $$
 
 This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.
@@ -438,7 +466,7 @@ The approach in this article is the quaternionic analysis of Fueter, generalized
 - The differential operators are biquaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\bar{\tilde{\nabla}}$.
 - The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the biquaternion analogue of the Cauchy–Riemann equations.
 
-This approach is closely related to **Clifford analysis**, which generalizes the theory to Clifford algebras over any commutative ring, including $\mathbb{C}$. The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
+This approach is closely related to **Clifford analysis**, which generalizes the theory to Clifford algebras over arbitrary base rings (including the real and complex numbers). The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
 
 The main difference from the classical Fueter theory is that the functions are biquaternion-valued rather than quaternion-valued, and the coefficients are complex. This allows for a richer structure, including the two polar forms and the four conjugations, which do not appear in the quaternion case.
 
@@ -470,7 +498,7 @@ A direct definition of differentiability with respect to the biquaternion variab
 
 The three natural subspaces are the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, with all complex coefficients real; the anti-Hermitian subspace $\mathbb{M}_-$, with the first complex coefficient purely imaginary and the three spatial complex coefficients real; and the Hermitian subspace $\mathbb{M}_+$, with the first complex coefficient real and the three spatial complex coefficients purely imaginary. In each case, the partial derivatives are taken with respect to the complex coefficients, with a factor of $-i$ when the coefficient is purely imaginary.
 
-The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = (\partial^2/\partial Q_0^2 + \Delta_Q)e_0$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ is a biquaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$ is the **natural second-order operator**: it is scalar-valued, symmetric under conjugation, and it appears in the standard second-order equations. On the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ it is the ordinary four-dimensional Euclidean Laplacian; on the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$ it takes a Lorentzian form in the underlying real coordinates. The **square of the gradient** $\tilde{\nabla}^2 = (\partial^2/\partial Q_0^2 - \Delta_Q) + 2\sum_k e_k \partial^2/(\partial Q_0 \partial Q_k)$ is a related second-order operator, expressed through the identity $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
 
 The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.
 

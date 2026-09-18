@@ -245,7 +245,7 @@ The four fixed-point subspaces have a simple characterization in the matrix repr
 - **Hermitian subspace $\mathbb{M}_+$:** matrices that are Hermitian, i.e., equal to their conjugate transpose.
 - **Anti-Hermitian subspace $\mathbb{M}_-$:** matrices that are anti-Hermitian, i.e., equal to the negative of their conjugate transpose.
 
-The identifications of $\mathbb{M}_+$ with the Hermitian matrices and $\mathbb{M}_-$ with the anti-Hermitian matrices follow directly from the isomorphism: if $\tilde{Q}$ maps to $M$, then $\tilde{Q}^\dagger$ maps to $M^\dagger$ (the conjugate transpose). Indeed, the images of the quaternion units satisfy $\phi(e_k)^\dagger = \phi(e_k)$ (the matrices $-i\sigma_k$ are Hermitian), and complex conjugation of the scalar coefficients is compatible with conjugate transposition of the matrix. Hence the fixed points of $\dagger$ are exactly the matrices with $M = M^\dagger$, i.e., the Hermitian matrices, and the fixed points of $\flat$ are exactly the matrices with $M = -M^\dagger$, i.e., the anti-Hermitian matrices.
+The identifications of $\mathbb{M}_+$ with the Hermitian matrices and $\mathbb{M}_-$ with the anti-Hermitian matrices follow directly from the isomorphism: if $\tilde{Q}$ maps to $M$, then $\tilde{Q}^\dagger$ maps to $M^\dagger$ (the conjugate transpose). Indeed, the imaginary quaternion units satisfy $\phi(i e_k) = \sigma_k$, and the Pauli matrices $\sigma_k$ are Hermitian, while the quaternion units themselves satisfy $\phi(e_k) = -i \sigma_k$, which is skew-Hermitian. Combined with the fact that complex conjugation of the scalar coefficients is compatible with conjugate transposition of the matrix, this gives that the fixed points of $\dagger$ are exactly the matrices with $M = M^\dagger$, i.e., the Hermitian matrices, and the fixed points of $\flat$ are exactly the matrices with $M = -M^\dagger$, i.e., the anti-Hermitian matrices.
 
 ### Structural Consequences of the Isomorphism
 
@@ -297,9 +297,11 @@ The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary
 
 ### Transformation Under the Lorentz Group
 
-Spinors transform under the Lorentz group in a simple way. The action of $SU(2)$ on $\mathbb{C}^2$ is the fundamental representation of the rotation subgroup, and the action of the full Lorentz group is obtained by complexification. The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the tensor square of the spinor representation. So a vector is, algebraically, a pair of spinors.
+Spinors transform under the Lorentz group in a simple way. The $(1/2,0)$ representation of $SL(2,\mathbb{C})$ restricts to the fundamental representation of $SU(2)$ on $\mathbb{C}^2$, which is the rotation subgroup; the full Lorentz-group action is obtained by passing from $SU(2)$ to its complexification $SL(2,\mathbb{C})$.
 
-The group of unit-norm biquaternions, $SL(2, \mathbb{C})$, is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. The compact subgroup $SU(2) \subset SL(2, \mathbb{C})$ is the double cover of the spatial rotation group $SO(3)$.
+The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the **tensor product of the spinor representation with its conjugate**: a vector is a bilinear object of the form $\psi \otimes \bar{\phi}$, i.e., a $2 \times 2$ matrix built from a spinor and a conjugate spinor. Equivalently, a 4-vector can be represented as a $2 \times 2$ Hermitian matrix; the space of such matrices is the tensor product $\mathbb{C}^2 \otimes \overline{\mathbb{C}^2}$. In representation-theoretic notation, the spinor representation is the $(\tfrac{1}{2}, 0)$ of $SL(2, \mathbb{C})$, its conjugate is the $(0, \tfrac{1}{2})$, and the vector representation is the $(\tfrac{1}{2}, \tfrac{1}{2})$.
+
+The group of biquaternions with unit norm form, $SL(2, \mathbb{C})$, is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. The compact subgroup $SU(2) \subset SL(2, \mathbb{C})$ is the double cover of the spatial rotation group $SO(3)$.
 
 This is the algebraic content of the statement that spinors are the fundamental representation of the Lorentz group, and it is the reason spinors appear in the Dirac equation and in quantum field theory.
 
@@ -321,9 +323,9 @@ $$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 \eta^{\mu\nu} I,
 $$
 
-where $\eta = \mathrm{diag}(-1, +1, +1, +1)$ (or its negative, depending on convention). The algebra has real dimension $2^4 = 16$.
+where $\eta = \mathrm{diag}(-1, +1, +1, +1)$ (or its negative, depending on convention). The algebra has real dimension $2^4 = 16$. A real basis is given by the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu \gamma^\nu \gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\gamma^0 \gamma^1 \gamma^2 \gamma^3$.
 
-The **even subalgebra** $\mathrm{Cl}_{1,3}^+$ consists of products of an even number of generators. It has real dimension $8$, and it is spanned by the identity and the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$.
+The **even subalgebra** $\mathrm{Cl}_{1,3}^+$ consists of products of an even number of generators. It has real dimension $8$, and it is spanned by the identity, the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma^0 \gamma^1 \gamma^2 \gamma^3$.
 
 **Theorem.** The biquaternion algebra is isomorphic to the even subalgebra of the Clifford algebra $\mathrm{Cl}_{1,3}$:
 
@@ -331,13 +333,23 @@ $$
 \mathbb{B} \cong \mathrm{Cl}_{1,3}^+(\mathbb{R}).
 $$
 
-The isomorphism is given by mapping the quaternion units to the **spacelike** bivectors (products of two spatial gamma matrices), oriented so that the products reproduce the quaternion relations:
+The isomorphism is given by mapping the quaternion units and the scalar imaginary to
 
 $$
-e_1 \mapsto \gamma^2 \gamma^3, \qquad e_2 \mapsto \gamma^3 \gamma^1, \qquad e_3 \mapsto \gamma^2 \gamma^1 = -\gamma^1 \gamma^2.
+e_1 \mapsto \gamma^2 \gamma^3, \qquad e_2 \mapsto \gamma^3 \gamma^1, \qquad e_3 \mapsto \gamma^2 \gamma^1, \qquad i \mapsto \gamma^0 \gamma^1 \gamma^2 \gamma^3,
 $$
 
-**Verification.** Each spacelike bivector squares to $-1$: $(\gamma^j \gamma^k)^2 = \gamma^j \gamma^k \gamma^j \gamma^k = -\gamma^j \gamma^j \gamma^k \gamma^k = -(1)(1) = -1$ for $j \neq k$ in $\{1, 2, 3\}$. The products reproduce the quaternion relations: for example, $e_1 e_2 \mapsto (\gamma^2 \gamma^3)(\gamma^3 \gamma^1) = \gamma^2 (\gamma^3 \gamma^3) \gamma^1 = \gamma^2 \gamma^1 = e_3$, matching $e_1 e_2 = e_3$ in the quaternion algebra.
+where the last identification is with the pseudoscalar. The three spacelike bivectors $\gamma^2 \gamma^3, \gamma^3 \gamma^1, \gamma^2 \gamma^1$ correspond to the quaternion units and the pseudoscalar corresponds to the scalar imaginary. The three remaining bivectors $\gamma^0 \gamma^1, \gamma^0 \gamma^2, \gamma^0 \gamma^3$ correspond to the imaginary quaternion units $i e_1, i e_2, i e_3$ up to sign:
+
+$$
+\omega \cdot (\gamma^2 \gamma^3) = -\gamma^0 \gamma^1, \qquad
+\omega \cdot (\gamma^3 \gamma^1) = -\gamma^0 \gamma^2, \qquad
+\omega \cdot (\gamma^2 \gamma^1) = +\gamma^0 \gamma^3,
+$$
+
+where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. With the alternative convention $i \mapsto -\omega$, the first two become $+\gamma^0 \gamma^1$ and $+\gamma^0 \gamma^2$ while the third becomes $-\gamma^0 \gamma^3$; no choice of sign of $i$ makes all three simultaneously $+\gamma^0 \gamma^k$. The signs are a consequence of the chosen handedness of the correspondence $e_1, e_2, e_3 \mapsto \gamma^2 \gamma^3, \gamma^3 \gamma^1, \gamma^2 \gamma^1$ and are absorbed into the identification of the imaginary quaternion units with the timelike bivectors.
+
+**Verification.** Each spacelike bivector squares to $-1$: $(\gamma^j \gamma^k)^2 = \gamma^j \gamma^k \gamma^j \gamma^k = -\gamma^j \gamma^j \gamma^k \gamma^k = -(1)(1) = -1$ for $j \neq k$ in $\{1, 2, 3\}$. The pseudoscalar also squares to $-1$: $(\gamma^0 \gamma^1 \gamma^2 \gamma^3)^2 = -1$ in signature $(1,3)$. The products reproduce the quaternion relations: for example, $e_1 e_2 \mapsto (\gamma^2 \gamma^3)(\gamma^3 \gamma^1) = \gamma^2 (\gamma^3 \gamma^3) \gamma^1 = \gamma^2 \gamma^1$, matching $e_1 e_2 = e_3$ in the quaternion algebra.
 
 ### Properties
 
@@ -345,7 +357,7 @@ $$
 
 **Norm.** The Clifford norm on the even subalgebra corresponds to the biquaternion norm form.
 
-**Relation to $M_2(\mathbb{C})$.** The Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{C}) \oplus M_2(\mathbb{C})$, and the even subalgebra is isomorphic to $M_2(\mathbb{C})$. This is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$: the biquaternion algebra is the even part of the Clifford algebra, and the even part is a single copy of $M_2(\mathbb{C})$.
+**Relation to $M_2(\mathbb{C})$.** The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{H})$ as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled.
 
 ### Why the Clifford Algebra Representation Is Useful
 
@@ -363,7 +375,7 @@ The four representations are related as follows.
 
 **Matrix and spinor.** The matrix representation and the spinor representation are related by the action of the matrix on a column vector: the matrix representation is the algebra of operators, and the spinor representation is the space on which they act.
 
-**Matrix and Clifford algebra.** The matrix representation and the Clifford algebra representation are related by the isomorphism $\mathrm{Cl}_{1,3}^+ \cong M_2(\mathbb{C})$: the bivectors of the Clifford algebra map to the matrices that represent the quaternion units.
+**Matrix and Clifford algebra.** The matrix representation and the Clifford algebra representation are related by the isomorphism $\mathrm{Cl}_{1,3}^+ \cong M_2(\mathbb{C})$: the bivectors of the Clifford algebra map to the matrices that represent the quaternion units and the imaginary quaternion units.
 
 **All four.** The four representations are different ways of presenting the same algebra. The choice of representation is a choice of how to write the algebra, and different choices are useful for different purposes. There is no canonical choice; the four-vector representation is the most familiar, and the matrix representation is the most computationally convenient, but the spinor and Clifford algebra representations reveal the deeper structure.
 
