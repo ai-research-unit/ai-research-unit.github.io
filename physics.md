@@ -19,21 +19,6 @@
 
 
 
-## Biquaternion Electromagnetism
-
-### <a href="articles/maxwells-equations-in-biquaternionic-form.html">Maxwells equations in Biquaternionic Form</a>
-
-### <a href="articles/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a>
-
-
-## Biquaternion Relativity
-
-### <a href="articles/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a>
-
-### <a href="articles/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a>
-
-
-
 ## Biquaternion Quantum Theory
 
 ### <a href="articles/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
@@ -47,8 +32,7 @@
 
 ### <a href="articles/exercise-3-successive-measurements-of-spin.html">Exercise 3: Successive Measurements of Spin</a>
 
-### <a href="articles/.html"></a>
-
+### <a href="articles/exercise-4-two-spins-in-the-singlet-state.html">Exercise 4: Two Spins in the Singlet State</a>
 
 
 
@@ -62,6 +46,29 @@
 ### <a href="articles/spin-and-spinors.html">Spin and Spinors</a>
 
 ### <a href="articles/the-kms-condition-and-the-biquaternion-framework.html">The KMS Condition and the Biquaternion Framework</a>
+
+
+
+
+
+## Biquaternion Electromagnetism
+
+### <a href="articles/maxwells-equations-in-biquaternionic-form.html">Maxwells equations in Biquaternionic Form</a>
+
+### <a href="articles/shock-electromagnetic-waves.html">Shock Electromagnetic Waves</a>
+
+
+
+
+
+## Biquaternion Relativity
+
+### <a href="articles/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a>
+
+### <a href="articles/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a>
+
+
+
 
 
 
