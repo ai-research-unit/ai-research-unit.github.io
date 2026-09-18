@@ -53,7 +53,7 @@
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$</p>
 <p>where $e_0 = 1$ and $e_1, e_2, e_3$ are the quaternion units. The four coefficients $Q_\mu$ are complex numbers, and they split naturally into two sectors, as described below. The complex structure — the identification of which direction is "real" and which is "imaginary" — is <strong>local</strong>, determined by the electromagnetic properties of the medium at each point.</p>
-<p>The hypothesis of this blog is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum mechanics is evidence for the proposal.</p>
+<p>The hypothesis of this article is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum mechanics is evidence for the proposal.</p>
 <h2 id="two-sectors-material-and-informational">Two Sectors: Material and Informational</h2>
 <p>The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces:</p>
 <p>$$
@@ -91,30 +91,30 @@ $$</p>
 <h2 id="what-the-framework-achieves">What the Framework Achieves</h2>
 <p>The main result of the framework so far is that the biquaternion algebra <strong>contains, as a matter of algebra, the structures required for both relativity and quantum mechanics</strong>. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.</p>
 <h3 id="relativity-in-math38">Relativity in $\mathbb{M}_-$</h3>
-<p>The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>Lorentz group</strong> $SL(2,\mathbb{C})$ is realized as the <strong>group of unit-norm biquaternions in $\mathbb{B}$</strong>,</p>
+<p>The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>proper orthochronous Lorentz group</strong> $SO^+(1,3)$ is realized through its double cover $SL(2,\mathbb{C})$, which is the <strong>group of biquaternions of unit norm form</strong> in $\mathbb{B}$:</p>
 <p>$$
-SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
+SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\}.
 $$</p>
-<p>and it <strong>acts</strong> on the material sector by the <strong>rotor conjugation</strong></p>
+<p>This group <strong>acts</strong> on the material sector by the <strong>rotor conjugation</strong></p>
 <p>$$
 \tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger.
 $$</p>
 <p>The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.</p>
 <p>The relativistic wave equations — <strong>Maxwell's equations</strong> and the <strong>Dirac equation</strong> — have natural biquaternion forms, as developed in the companion articles.</p>
-<h3 id="quantum-mechanics-in-math49">Quantum Mechanics in $\mathbb{M}_+$</h3>
+<h3 id="quantum-mechanics-in-math50">Quantum Mechanics in $\mathbb{M}_+$</h3>
 <p>The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article <em>Quantum Mechanics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
 <ul>
-<li>The <strong>idempotents</strong> of $\mathbb{M}_+$, of the form $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
-<li>The <strong>positive trace-one elements</strong> of $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.</li>
-<li>The <strong>general Hermitian elements</strong> of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables, with spectral decomposition in terms of idempotents.</li>
+<li>The <strong>idempotents</strong> in $\mathbb{M}_+$, of the form $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
+<li>The <strong>positive trace-one elements</strong> in $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.</li>
+<li>The <strong>elements</strong> of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables (they are automatically Hermitian by definition of $\mathbb{M}_+$), with spectral decomposition in terms of idempotents.</li>
 <li>The <strong>trace pairing</strong> $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.</li>
-<li>The <strong>sandwich operation</strong> $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ gives the projective measurement and state update.</li>
+<li>The <strong>sandwich operation</strong> $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}/\mathrm{Tr}(\tilde{P}\tilde{\rho}\tilde{P})$ gives the projective measurement and state update (the trace in the denominator normalizes the post-measurement state).</li>
 <li>The <strong>unitary elements</strong> of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^\dagger$, give the reversible evolution.</li>
 <li>The distinction between <strong>reversible evolution</strong> and <strong>irreversible measurement</strong> is a property of the acting element (unitary vs. idempotent), not an additional postulate.</li>
 </ul>
 <p>The operator algebra of quantum mechanics, its state space, its Born rule, and its measurement rule are all <strong>structural consequences</strong> of the algebra of $\mathbb{M}_+$. They are not imposed from outside.</p>
 <h3 id="the-shared-home">The Shared Home</h3>
-<p>The most significant feature of the framework is that <strong>relativity and quantum mechanics share the same algebraic home</strong>. The Lorentz group is realized as the group of unit-norm biquaternions in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.</p>
+<p>The most significant feature of the framework is that <strong>relativity and quantum mechanics share the same algebraic home</strong>. The Lorentz group is realized (via its double cover $SL(2,\mathbb{C})$) as the group of biquaternions of unit norm form in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.</p>
 <p>This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum mechanics, but as a <strong>common algebraic ground</strong> on which both can be expressed.</p>
 <h2 id="status-and-open-questions">Status and Open Questions</h2>
 <p>The framework is a <strong>research program</strong>, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum mechanics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.</p>
@@ -187,7 +187,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$</td>
-<td>Lorentz rotor (unit-norm biquaternion)</td>
+<td>Lorentz rotor (unit-norm-form biquaternion)</td>
 </tr>
 <tr>
 <td>$c = 1/\sqrt{\epsilon\mu}$</td>
