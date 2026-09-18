@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <header class="article-header">
+        <h1>Biquaternion Universe</h1>
+      </header>
+      <div class="article-body">
+        <h1 id="introduction-to-the-biquaternion-universe"><strong>Introduction to the Biquaternion Universe</strong></h1>
+<h2 id="core-proposal">Core Proposal</h2>
+<p>The fundamental structure of the universe is a biquaternion space, of which Minkowski space is one real slice. A point in this complexified spacetime is an element of the <strong>biquaternion algebra</strong> $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, written as a biquaternionic coordinate</p>
+<p>$$
+\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+$$</p>
+<p>where $e_0 = 1$ and $e_1, e_2, e_3$ are the quaternion units. The four coefficients $Q_\mu$ are complex numbers, and they split naturally into two sectors, as described below. The complex structure — the identification of which direction is "real" and which is "imaginary" — is <strong>local</strong>, determined by the electromagnetic properties of the medium at each point.</p>
+<p>The hypothesis of this blog is that this biquaternionic structure is the natural language in which the fundamental structures of physics are written, and that the fact that the framework contains both relativity and quantum mechanics is evidence for the proposal.</p>
+<h2 id="two-sectors-material-and-informational">Two Sectors: Material and Informational</h2>
+<p>The biquaternion algebra splits naturally into two complementary four-dimensional real subspaces:</p>
+<p>$$
+\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+.
+$$</p>
+<p>The subspace $\mathbb{M}_-$ is the <strong>anti-Hermitian subspace</strong>, the fixed-point set of the anti-Hermitian conjugation $\flat$ (equivalently, the eigenspace of the Hermitian conjugation $\dagger$ with eigenvalue $-1$). The subspace $\mathbb{M}_+$ is the <strong>Hermitian subspace</strong>, the fixed-point set of the Hermitian conjugation $\dagger$ (equivalently, its eigenspace with eigenvalue $+1$). The two are complementary: together they span $\mathbb{B}$, and their intersection is trivial.</p>
+<p>The two subspaces have distinct physical roles:</p>
+<ul>
+<li><strong>$\mathbb{M}_-$ is the material sector.</strong> Its coordinates are <strong>$ict$</strong> (an imaginary temporal coordinate, $c$ being the speed of light) and <strong>$x, y, z$</strong> (three real spatial coordinates). It is the home of the four-vectors of relativistic physics. The imaginary time coordinate reflects a simple fact: time can be measured, but it cannot be touched, held, or moved through.</li>
+<li><strong>$\mathbb{M}_+$ is the informational sector.</strong> Its coordinates are <strong>$ct'$</strong> (a real temporal coordinate) and <strong>$ix', iy', iz'$</strong> (three imaginary spatial coordinates). It is the home of the Hermitian operators, whose algebraic structure is that of a quantum-mechanical state space. The elements of $\mathbb{M}_+$ carry quantum-informational content, in the sense established in the companion article on quantum mechanics: they are the states, observables, and measurement operators of a qubit. The name "informational sector" reflects this content. It is not a claim about entropy or any other thermodynamic property of the sector.</li>
+</ul>
+<p>The complex structure makes the two sectors complementary: the material sector has three real spatial directions and one imaginary temporal direction; the informational sector has three imaginary spatial directions and one real temporal direction.</p>
+<h2 id="the-complex-coordinates">The Complex Coordinates</h2>
+<p>Writing the biquaternion coordinate in terms of its material and informational parts,</p>
+<p>$$
+\tilde{Q} = \underbrace{(ict)\,e_0 + (x\,e_1 + y\,e_2 + z\,e_3)}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + (ix'\,e_1 + iy'\,e_2 + iz'\,e_3)}_{\in\,\mathbb{M}_+},
+$$</p>
+<p>the coefficients $Q_0, Q_1, Q_2, Q_3$ take the explicit form</p>
+<p>$$
+Q_0 = ct' + ict, \qquad Q_1 = x + i x', \qquad Q_2 = y + i y', \qquad Q_3 = z + i z'.
+$$</p>
+<p>The <strong>real parameters</strong> $(t, x, y, z)$ describe the material sector, and the <strong>real parameters</strong> $(t', x', y', z')$ describe the informational sector. Each sector is four-dimensional, and the full complexified spacetime is the direct sum of the two.</p>
+<h3 id="the-vacuum-limit">The Vacuum Limit</h3>
+<p>In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 t$ — the familiar $ict$ form with the vacuum speed of light. The $ict$ convention is therefore the vacuum limit of the more general local structure. In a material medium, the complex structure uses $c$, the local speed of light, and varies from point to point. This makes the complex structure <strong>local</strong>, in the same spirit as the metric in general relativity.</p>
+<h2 id="the-metric">The Metric</h2>
+<p>The natural quadratic form on the biquaternion algebra is the complex bilinear form</p>
+<p>$$
+d\tilde{Q} \circ d\tilde{Q} = \sum_{\mu=0}^{3} (dQ_\mu)^2,
+$$</p>
+<p>where $\circ$ is the biquaternion product. Expanding in real and imaginary parts,</p>
+<p>$$
+(dQ_\mu)^2 = (dq_\mu)^2 - (dq'_\mu)^2 + 2i\,dq_\mu\,dq'_\mu.
+$$</p>
+<p>The <strong>real part</strong> of $d\tilde{Q} \circ d\tilde{Q}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The <strong>imaginary part</strong> couples the material and informational sectors through cross terms.</p>
+<h2 id="what-the-framework-achieves">What the Framework Achieves</h2>
+<p>The main result of the framework so far is that the biquaternion algebra <strong>contains, as a matter of algebra, the structures required for both relativity and quantum mechanics</strong>. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.</p>
+<h3 id="relativity-in-math38">Relativity in $\mathbb{M}_-$</h3>
+<p>The material sector $\mathbb{M}_-$ carries the four-vectors of relativistic physics: position, velocity, momentum, force, potential, current. The <strong>Lorentz group</strong> $SL(2,\mathbb{C})$ is realized as the <strong>group of unit-norm biquaternions in $\mathbb{B}$</strong>,</p>
+<p>$$
+SL(2,\mathbb{C}) \;\cong\; \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
+$$</p>
+<p>and it <strong>acts</strong> on the material sector by the <strong>rotor conjugation</strong></p>
+<p>$$
+\tilde{X} \;\longmapsto\; \tilde{\Lambda}\,\tilde{X}\,\tilde{\Lambda}^\dagger.
+$$</p>
+<p>The group itself lives in the full algebra $\mathbb{B}$ (since $\mathbb{M}_-$ is not closed under multiplication and cannot carry a group structure). The four-vectors it acts on live in $\mathbb{M}_-$. The different types of Lorentz transformation have rotors in different subspaces: pure boosts have rotors in $\mathbb{M}_+$ (they are Hermitian), pure spatial rotations have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and general Lorentz transformations have rotors in the full algebra.</p>
+<p>The relativistic wave equations — <strong>Maxwell's equations</strong> and the <strong>Dirac equation</strong> — have natural biquaternion forms, as developed in the companion articles.</p>
+<h3 id="quantum-mechanics-in-math49">Quantum Mechanics in $\mathbb{M}_+$</h3>
+<p>The informational sector $\mathbb{M}_+$ is, exactly, the operator algebra of a two-state quantum system. This is established in the companion article <em>Quantum Mechanics in Biquaternionic Form</em>, and it can be summarized as follows.</p>
+<ul>
+<li>The <strong>idempotents</strong> of $\mathbb{M}_+$, of the form $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ with $\hat{\mu}$ a unit pure real quaternion, are the pure states of a qubit. They parametrize the Bloch sphere $S^2$.</li>
+<li>The <strong>positive trace-one elements</strong> of $\mathbb{M}_+$, of the form $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$, are the mixed states, parametrizing the Bloch ball.</li>
+<li>The <strong>general Hermitian elements</strong> of $\mathbb{M}_+$, of the form $\tilde{H} = h_0 e_0 + i\mathbf{h}$, are the observables, with spectral decomposition in terms of idempotents.</li>
+<li>The <strong>trace pairing</strong> $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ gives the Born rule, as a consequence of the algebra rather than an independent postulate.</li>
+<li>The <strong>sandwich operation</strong> $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ gives the projective measurement and state update.</li>
+<li>The <strong>unitary elements</strong> of $\mathbb{B}$, and their conjugation action $\tilde{\rho} \mapsto \tilde{U}\tilde{\rho}\tilde{U}^\dagger$, give the reversible evolution.</li>
+<li>The distinction between <strong>reversible evolution</strong> and <strong>irreversible measurement</strong> is a property of the acting element (unitary vs. idempotent), not an additional postulate.</li>
+</ul>
+<p>The operator algebra of quantum mechanics, its state space, its Born rule, and its measurement rule are all <strong>structural consequences</strong> of the algebra of $\mathbb{M}_+$. They are not imposed from outside.</p>
+<h3 id="the-shared-home">The Shared Home</h3>
+<p>The most significant feature of the framework is that <strong>relativity and quantum mechanics share the same algebraic home</strong>. The Lorentz group is realized as the group of unit-norm biquaternions in $\mathbb{B}$, and the operator algebra of quantum mechanics is realized in the Hermitian subspace $\mathbb{M}_+$. The two structures are not independent; they are aspects of the same algebra.</p>
+<p>This is the sense in which the framework is proposed as an alternative to the standard formulation: not as a modification of relativity or of quantum mechanics, but as a <strong>common algebraic ground</strong> on which both can be expressed.</p>
+<h2 id="status-and-open-questions">Status and Open Questions</h2>
+<p>The framework is a <strong>research program</strong>, not a finished theory. The algebraic results — that $\mathbb{M}_-$ carries the four-vectors of relativity and that $\mathbb{M}_+$ carries the operator algebra of quantum mechanics — are established mathematics, and the identifications with the physical theories are developed in the companion articles.</p>
+<p>What is not established is whether the framework has consequences beyond a reformulation of known physics. The key open questions are:</p>
+<ol>
+<li>
+<p><strong>Physical reality of the biquaternionic structure.</strong> Is the biquaternion algebra merely a convenient reformulation of known physics, or does the structure of the universe genuinely follow the algebra? A structural hypothesis of this kind can only be evaluated by the richness of the consequences it produces.</p>
+</li>
+<li>
+<p><strong>Coupling between the two sectors.</strong> Beyond the Lorentz coupling via the rotor conjugation, is there a genuinely new coupling between the anti-Hermitian subspace $\mathbb{M}_-$ and the Hermitian subspace $\mathbb{M}_+$? Any such coupling would be where new physical content could reside.</p>
+</li>
+<li>
+<p><strong>Extension to many qubits and to quantum field theory.</strong> The quantum formalism presented in the companion article is for a single qubit. The extension to $n$ qubits (via the tensor product $\mathbb{B}^{\otimes n} \cong M_{2^n}(\mathbb{C})$), the second-quantized version, and the connection to quantum field theory remain to be developed.</p>
+</li>
+<li>
+<p><strong>Relativistic quantum theory.</strong> The biquaternion algebra contains both the Lorentz group and the operator algebra of quantum mechanics. A fully relativistic quantum theory of spinor fields — whose classical precursor is the biquaternion Dirac equation — is the natural continuation of the framework.</p>
+</li>
+<li>
+<p><strong>Curved spacetime.</strong> The framework so far is formulated on flat spacetime. Its extension to curved spacetime, and its relation to general relativity, remain open.</p>
+</li>
+<li>
+<p><strong>Empirical contact.</strong> What quantitative prediction distinguishes this framework from standard physics? This is the central open question, and the one on which the eventual evaluation of the hypothesis will depend.</p>
+</li>
+</ol>
+<p>The framework is offered as a structural intuition: that the two natural subspaces of the biquaternion algebra have distinct physical roles — one material, one informational — and that the algebra $\mathbb{B}$ is the natural home in which both relativity and quantum mechanics are expressed. The local speed of light $c = 1/\sqrt{\epsilon\mu}$ plays the role of the local scale factor of the complex structure, making the $ict$ convention a vacuum approximation of a more general local structure, in the same way that special relativity is a local approximation of general relativity.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\tilde{Q} = \sum_\mu Q_\mu e_\mu$</td>
+<td>Biquaternionic coordinate</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (informational sector): coordinates $(ct', x', y', z')$</td>
+</tr>
+<tr>
+<td>$\mathbb{H}_{\mathbb{B}}$</td>
+<td>Real quaternion subspace (home of the rotation rotors)</td>
+</tr>
+<tr>
+<td>$\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$</td>
+<td>Idempotent (pure state of the informational sector)</td>
+</tr>
+<tr>
+<td>$\tilde{H} = h_0 e_0 + i\mathbf{h}$</td>
+<td>Hermitian element (observable of the informational sector)</td>
+</tr>
+<tr>
+<td>$\tilde{\Lambda} \in \mathbb{B}$ with $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$</td>
+<td>Lorentz rotor (unit-norm biquaternion)</td>
+</tr>
+<tr>
+<td>$c = 1/\sqrt{\epsilon\mu}$</td>
+<td>Speed of light in the medium (local)</td>
+</tr>
+<tr>
+<td>$c_0 = 1/\sqrt{\epsilon_0\mu_0}$</td>
+<td>Speed of light in vacuum (global constant)</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>Particle or frame velocity</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-readings">Further Readings</h2>
+<ul>
+<li>Hermann Minkowski, "Space and Time" (1908), reprinted in <em>The Principle of Relativity</em> (Dover).</li>
+<li>Roger Penrose, <em>The Road to Reality</em> (Knopf, 2004), for the complex structure of spacetime.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge, 2001), for the connection between Clifford algebras and the structures discussed here.</li>
+<li>Chris Doran and Anthony Lasenby, <em>Geometric Algebra for Physicists</em> (Cambridge, 2003), for the geometric algebra perspective on the same structures.</li>
+<li>Vladimir V. Kassandrov, "Relativistic Algebra of Space-Time and Algebrodynamics" (2006), for a related biquaternionic approach to complexified geometry.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
