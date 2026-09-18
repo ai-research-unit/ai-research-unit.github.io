@@ -4,13 +4,48 @@ import shutil
 import markdown
 from pathlib import Path
 
-SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit/systems-analysis")
-DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit-deploy/systems-analysis")
+SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit")
+DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit-deploy")
 DEPLOY_ART = DEPLOY / "articles"
 
 ARTICLES_DIR   = SRC / "articles"
 TEMPLATE       = (SRC / "articles" / "article_template.html").read_text()
 INDEX_TEMPLATE = (SRC / "index_template.html").read_text()
+
+
+
+
+# ── NEW: math protection helpers ──────────────────────────────────────────
+# Python-Markdown mangles LaTeX: it eats "_", "^", "\\", and "&" inside
+# formulas, wraps display math in <p> tags, and escapes backslashes.
+# We mask math regions with placeholders before Markdown runs, then put
+# the original text back afterwards. KaTeX then renders it client-side.
+MATH_RE = re.compile(
+    r'(\$\$.*?\$\$|\$[^$\n]+?\$)',
+    re.DOTALL
+)
+
+def protect_math(md_text):
+    """Replace math blocks with placeholders before Markdown conversion."""
+    store = []
+    def repl(m):
+        store.append(m.group(0))
+        return f"\x00MATH{len(store)-1}\x00"
+    return MATH_RE.sub(repl, md_text), store
+
+def restore_math(html_text, store):
+    """Put math blocks back into the rendered HTML."""
+    for i, chunk in enumerate(store):
+        html_text = html_text.replace(f"\x00MATH{i}\x00", chunk)
+    return html_text
+
+def md_to_html(md_text):
+    """Markdown → HTML with math regions preserved verbatim."""
+    protected, store = protect_math(md_text)
+    html = markdown.markdown(protected, extensions=["extra", "toc"])
+    return restore_math(html, store)
+# ──────────────────────────────────────────────────────────────────────────
+
 
 def parse_frontmatter(text):
     meta = {"title": "", "coordinate": ""}
@@ -39,22 +74,25 @@ def strip_title_line(text):
 def label_from_stem(stem):
     return stem.replace("-", " ").replace("_", " ").title()
 
+
+# ── CHANGED: Disclaimer now comes *before* Contact, both at the end ──
 def build_nav_index(articles):
     items = []
+    items.append('<li><a href="maths.html">Maths</a></li>')
+    items.append('<li><a href="physics.html">Physics</a></li>')
     items.append('<li><a href="disclaimer.html">Disclaimer</a></li>')
-    for f in articles:
-        items.append(f'<li><a href="articles/{f.stem}.html">{label_from_stem(f.stem)}</a></li>')
     items.append('<li><a href="contact.html">Contact</a></li>')
     return "\n      ".join(items)
 
 def build_nav_article(articles, current_stem=None):
     items = []
+    items.append('<li><a href="../maths.html">Maths</a></li>')
+    items.append('<li><a href="../physics.html">Physics</a></li>')
     items.append('<li><a href="../disclaimer.html">Disclaimer</a></li>')
-    for f in articles:
-        active = ' class="active"' if f.stem == current_stem else ""
-        items.append(f'<li><a href="{f.stem}.html"{active}>{label_from_stem(f.stem)}</a></li>')
     items.append('<li><a href="../contact.html">Contact</a></li>')
     return "\n      ".join(items)
+# ─────────────────────────────────────────────────────────────────────
+
 
 def article_sort_key(p):
     name = p.stem.lower()
@@ -67,7 +105,7 @@ def article_sort_key(p):
     return (group, name)
 
 articles = sorted(ARTICLES_DIR.glob("*.md"), key=article_sort_key)
-nav_articles = [p for p in articles if "example" not in p.stem.lower()]
+nav_articles = [p for p in articles if "zexample" not in p.stem.lower()]
 if not articles:
     print("No md files found in articles/. Add some and re-run.")
     exit(0)
@@ -87,7 +125,9 @@ for f in articles:
     raw = f.read_text()
     meta, body_md = parse_frontmatter(raw)
     body_md = strip_title_line(body_md)
-    body_html = markdown.markdown(body_md, extensions=["extra", "toc"])
+
+    body_html = md_to_html(body_md)
+
     html = (TEMPLATE
         .replace("{title}",      meta.get("title", label_from_stem(f.stem)))
         .replace("{coordinate}", meta.get("coordinate", ""))
@@ -102,7 +142,9 @@ def build_root_page(md_path, out_name, articles):
         raw = md_path.read_text()
         meta, body_md = parse_frontmatter(raw)
         body_md = strip_title_line(body_md)
-        body_html = markdown.markdown(body_md, extensions=["extra", "toc"])
+
+        body_html = md_to_html(body_md)
+
         html = (INDEX_TEMPLATE
             .replace("{nav}",         build_nav_index(articles))
             .replace("{index_items}", body_html)
@@ -113,7 +155,10 @@ def build_root_page(md_path, out_name, articles):
         print(f"Warning: {md_path.name} not found at {md_path}")
 
 build_root_page(SRC / "index.md",      "index.html",      nav_articles)
+build_root_page(SRC / "maths.md", "maths.html", nav_articles)
+build_root_page(SRC / "physics.md", "physics.html", nav_articles)
 build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
 build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
 print("Done.")
+

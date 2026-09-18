@@ -1,5 +1,5 @@
 
-# __Complexified Spacetime with a Local Complex Structure__
+# __Introduction to the Biquaternion Universe__
 
 ## Core Proposal
 
@@ -146,7 +146,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum (global constant) |
 | $v$ | Particle or frame velocity |
 
-## Further Reading
+## Further Readings
 
 - Hermann Minkowski, "Space and Time" (1908), reprinted in *The Principle of Relativity* (Dover).
 - Roger Penrose, *The Road to Reality* (Knopf, 2004), for the complex structure of spacetime.

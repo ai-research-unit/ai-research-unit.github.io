@@ -6,6 +6,8 @@
 ## Biquaternion Universe
 
 
+### <a href="articles/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>
+
 ### <a href="articles/why-complexity-spacetime.html">Why Complexity Spacetime</a>
 
 ### <a href="articles/m-as-the-material-space.html">M- as the Material Space</a>
