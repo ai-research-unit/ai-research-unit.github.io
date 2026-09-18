@@ -41,6 +41,19 @@
 ### <a href="articles/quantum-mechanics-in-biquaternionic-form.html">Quantum Mechanics in Biquaternionic Form</a>
 
 
+### <a href="articles/exercise-1-measuring-spin-along-an-arbitrary-direction.html">Exercise 1: Measuring Spin Along an Arbitrary Direction</a>
+
+### <a href="articles/.html"></a>
+
+### <a href="articles/.html"></a>
+
+### <a href="articles/.html"></a>
+
+
+
+
+
+
 
 ### <a href="articles/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
 
