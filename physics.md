@@ -42,6 +42,12 @@
 
 
 
+
+### <a href="articles/entangled-subsystems-in-the-biquaternion-framework.html">Entangled Subsystems in the Biquaternion Framework</a>
+
+### <a href="articles/the-quantum–classical-divide-in-the-biquaternion-framework.html">The Quantum–Classical Divide in the Biquaternion Framework</a>
+
+
 ### <a href="articles/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
 
 ### <a href="articles/spin-1-2-quantum-mechanics-in-biquaternionic-form.html">Spin-1/2 Quantum Mechanics in Biquaternionic Form</a>
