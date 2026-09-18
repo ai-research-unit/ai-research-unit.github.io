@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its four fixed-point subspaces. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
+This article introduces the analysis of biquaternion-valued functions. It follows the basic algebra article, which defined the biquaternion algebra $\mathbb{B}$, its conjugations, and its four fixed-point subspaces, and it follows the article on biquaternion norm and invertibility, which defined the norm form, the Hermitian form, and the Euclidean norm. The goal here is to define limits, continuity, and differentiation for biquaternion-valued functions, and to establish the differential operators that will be used in later applications.
 
 The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
@@ -24,16 +24,18 @@ $$
 Writing each complex coefficient as $Q_\mu = q_\mu + i q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$, the **Euclidean norm** is
 
 $$
-\|\tilde{Q}\|_E = \sqrt{q_0^2 + q'^2_0 + q_1^2 + q'^2_1 + q_2^2 + q'^2_2 + q_3^2 + q'^2_3}.
+\|\tilde{Q}\|_E = \sqrt{q_0^2 + q'^2_0 + q_1^2 + q'^2_1 + q_2^2 + q'^2_2 + q_3^2 + q'^2_3} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
 $$
 
-It is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies
+Equivalently, this is the square root of the scalar part of the Hermitian form, $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q}\tilde{Q}^\dagger)}$, as defined in the article on biquaternion norm and invertibility.
+
+The Euclidean norm is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies
 
 $$
 \|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
 $$
 
-The norm is **not** multiplicative with respect to the biquaternion product, because the Hermitian form is not multiplicative. It is the ordinary Euclidean norm on the underlying real vector space.
+The norm is **not** multiplicative with respect to the biquaternion product. The reason is that the four complex coefficients of the product $\tilde{Q}\tilde{R}$ are sums of products of the coefficients of $\tilde{Q}$ and $\tilde{R}$, and these sums can cancel. As a concrete example, with $\tilde{Q} = \tilde{R} = e_1 + ie_2$, one has $\|\tilde{Q}\|_E = \|\tilde{R}\|_E = \sqrt{2}$, while $\tilde{Q}\tilde{R} = (e_1 + ie_2)^2 = 0$, so $\|\tilde{Q}\tilde{R}\|_E = 0 \neq 2$. (The norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is multiplicative, but it is complex-valued and vanishes on the zero divisors, so it cannot serve as a norm.) The Euclidean norm is the ordinary norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$.
 
 ### The Distance
 
@@ -158,7 +160,7 @@ These two conventions give different results in general. So the derivative would
 
 ### The Second Obstruction: Zero Divisors
 
-The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm form, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the division theory article. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
+The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{B}$, however, there are nonzero elements $\tilde{H}$ with vanishing norm form, $\tilde{H} \bar{\tilde{H}} = 0$, for which no inverse exists. These are the **zero divisors** of the algebra, discussed in detail in the article on biquaternion zero divisors. For such $\tilde{H}$, the quotient $\tilde{A} / \tilde{H}$ is undefined, and the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor.
 
 ### The Standard Approach
 

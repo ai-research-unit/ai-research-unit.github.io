@@ -131,15 +131,17 @@ An explicit isomorphism is given by mapping the quaternion units to the matrices
 
 $$
 e_0 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \quad
-e_1 \mapsto \begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}, \quad
-e_2 \mapsto \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}, \quad
-e_3 \mapsto \begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix}.
+e_1 \mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \quad
+e_2 \mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \quad
+e_3 \mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}.
 $$
 
-Each of these matrices squares to $-I$, and they satisfy the quaternion multiplication rules. The map extends to an algebra isomorphism $\mathbb{B} \to M_2(\mathbb{C})$, under which a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ maps to the matrix
+Each of these matrices squares to $-I$, and they satisfy the quaternion multiplication rules. (Verification: with $e_1 \mapsto -i\sigma_1$, $e_2 \mapsto -i\sigma_2$, $e_3 \mapsto -i\sigma_3$, we have $e_1 e_2 \mapsto (-i\sigma_1)(-i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3$, which is the image of $e_3$.)
+
+The map extends to an algebra isomorphism $\mathbb{B} \to M_2(\mathbb{C})$, under which a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ maps to the matrix
 
 $$
-\tilde{Q} \mapsto \begin{pmatrix} Q_0 + i Q_3 & i Q_1 + Q_2 \\ i Q_1 - Q_2 & Q_0 - i Q_3 \end{pmatrix}.
+\tilde{Q} \mapsto \begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix}.
 $$
 
 ### The Trace and Determinant
@@ -149,7 +151,7 @@ Two invariants of the matrix representation are particularly important.
 **Trace.** The trace of the matrix is
 
 $$
-\mathrm{Tr}(\tilde{Q}) = (Q_0 + i Q_3) + (Q_0 - i Q_3) = 2 Q_0.
+\mathrm{Tr}(\tilde{Q}) = (Q_0 - i Q_3) + (Q_0 + i Q_3) = 2 Q_0.
 $$
 
 So the trace is twice the scalar part of the biquaternion. It transforms under the four conjugations as
@@ -167,36 +169,70 @@ So the trace is invariant under quaternion conjugation, complex-conjugated under
 **Determinant.** The determinant of the matrix is
 
 $$
-\det(\tilde{Q}) = (Q_0 + i Q_3)(Q_0 - i Q_3) - (i Q_1 + Q_2)(i Q_1 - Q_2) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}).
+\det(\tilde{Q}) = (Q_0 - i Q_3)(Q_0 + i Q_3) - (-i Q_1 - Q_2)(-i Q_1 + Q_2)
+$$
+
+$$
+= (Q_0^2 + Q_3^2) - [(-i Q_1)^2 - Q_2^2] = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = N(\tilde{Q}).
 $$
 
 So the determinant is the **norm form** of the biquaternion. This is a crucial fact: the norm form, which we defined algebraically as $\tilde{Q}\bar{\tilde{Q}}$, is exactly the determinant of the corresponding matrix. In particular, the norm form is multiplicative because the determinant is multiplicative.
 
-### The Hermitian Form in Matrix Form
+### The Hermitian Form
 
-The **Hermitian form** of the biquaternion is
+The **Hermitian form** of the biquaternion is the biquaternion
 
 $$
-\tilde{Q}\tilde{Q}^\dagger = |Q_0 + i Q_3|^2 + |i Q_1 + Q_2|^2 + |i Q_1 - Q_2|^2 + |Q_0 - i Q_3|^2.
+\tilde{Q}\tilde{Q}^\dagger.
 $$
 
-This is the sum of the squared moduli of the four entries of the matrix, which is the **Frobenius norm squared** of the matrix. It is a non-negative real number, and it vanishes if and only if $\tilde{Q} = 0$.
+This is a Hermitian element of $\mathbb{B}$, not a real scalar in general: its scalar part is non-negative, but its vector part need not vanish. For example, for $\tilde{Q} = e_1 + i e_2$, one has $\tilde{Q}^\dagger = -e_1 + i e_2$ and $\tilde{Q}\tilde{Q}^\dagger = 2 e_0 + 2 i e_3$, which has a nonzero vector part.
 
-The Euclidean norm $\|\tilde{Q}\|_E = \sqrt{\tilde{Q}\tilde{Q}^\dagger}$ is therefore the Frobenius norm of the matrix.
+**Scalar part.** The scalar part of the Hermitian form is
+
+$$
+\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = \sum_{\mu=0}^{3} |Q_\mu|^2 = \sum_{\mu=0}^{3}(q_\mu^2 + q'^2_\mu).
+$$
+
+This is a **non-negative real number**, and it vanishes if and only if $\tilde{Q} = 0$.
+
+**Trace.** In the matrix representation, the trace of the Hermitian form is
+
+$$
+\mathrm{Tr}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = 2 \sum_{\mu=0}^{3} |Q_\mu|^2.
+$$
+
+This is twice the scalar part. It also equals the **sum of the squared moduli of the four entries of the matrix**, i.e., the Frobenius norm squared of the matrix:
+
+$$
+\mathrm{Tr}\!\left(\tilde{Q}\tilde{Q}^\dagger\right) = |Q_0 - i Q_3|^2 + |Q_0 + i Q_3|^2 + |-i Q_1 - Q_2|^2 + |-i Q_1 + Q_2|^2 = \|M\|_F^2.
+$$
+
+**Euclidean norm.** The Euclidean norm of the biquaternion is defined from the scalar part of the Hermitian form:
+
+$$
+\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}\!\left(\tilde{Q}\tilde{Q}^\dagger\right)} = \sqrt{\sum_{\mu=0}^{3} |Q_\mu|^2}.
+$$
+
+This is a genuine norm on the real vector space $\mathbb{B} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It is **not** multiplicative with respect to the biquaternion product.
 
 ### Conjugation in Matrix Form
 
 **Quaternion conjugation** $\bar{\tilde{Q}}$ corresponds to the matrix
 
 $$
-\bar{\tilde{Q}} \mapsto \begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix},
+\bar{\tilde{Q}} \mapsto \begin{pmatrix} Q_0 + i Q_3 & i Q_1 + Q_2 \\ i Q_1 - Q_2 & Q_0 - i Q_3 \end{pmatrix},
 $$
 
-which is the **adjugate** (or classical adjoint) of the matrix, up to a sign: it is the matrix whose entries are the cofactors.
+which is the **adjugate** (or classical adjoint) of the matrix: it is the matrix whose entries are the cofactors of the original matrix.
 
-**Complex conjugation** $\tilde{Q}^*$ conjugates all entries.
+**Complex conjugation** $\tilde{Q}^*$ conjugates all entries of the matrix.
 
-**Hermitian conjugation** $\tilde{Q}^\dagger$ is the conjugate transpose of the matrix.
+**Hermitian conjugation** $\tilde{Q}^\dagger$ is the conjugate transpose of the matrix:
+
+$$
+\tilde{Q}^\dagger \mapsto \begin{pmatrix} Q_0^* + i Q_3^* & i Q_1^* + Q_2^* \\ i Q_1^* - Q_2^* & Q_0^* - i Q_3^* \end{pmatrix} = \begin{pmatrix} \overline{Q_0 - i Q_3} & \overline{-i Q_1 + Q_2} \\ \overline{-i Q_1 - Q_2} & \overline{Q_0 + i Q_3} \end{pmatrix}.
+$$
 
 **Anti-Hermitian conjugation** $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ is the negative of the conjugate transpose.
 
@@ -205,11 +241,11 @@ which is the **adjugate** (or classical adjoint) of the matrix, up to a sign: it
 The four fixed-point subspaces have a simple characterization in the matrix representation.
 
 - **Complex subspace $\mathbb{C}_{\mathbb{B}}$:** diagonal matrices of the form $Q_0 I$ with $Q_0 \in \mathbb{C}$.
-- **Quaternion subspace $\mathbb{H}_{\mathbb{B}}$:** matrices of the form $\begin{pmatrix} q_0 + i q_3 & i q_1 + q_2 \\ i q_1 - q_2 & q_0 - i q_3 \end{pmatrix}$ with $q_\mu \in \mathbb{R}$.
+- **Quaternion subspace $\mathbb{H}_{\mathbb{B}}$:** matrices of the form $\begin{pmatrix} q_0 - i q_3 & -i q_1 - q_2 \\ -i q_1 + q_2 & q_0 + i q_3 \end{pmatrix}$ with $q_\mu \in \mathbb{R}$. These are the matrices of the form $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}$ with $z, w \in \mathbb{C}$.
 - **Hermitian subspace $\mathbb{M}_+$:** matrices that are Hermitian, i.e., equal to their conjugate transpose.
 - **Anti-Hermitian subspace $\mathbb{M}_-$:** matrices that are anti-Hermitian, i.e., equal to the negative of their conjugate transpose.
 
-The identification of $\mathbb{M}_+$ with the Hermitian matrices and $\mathbb{M}_-$ with the anti-Hermitian matrices follows directly from the isomorphism: if $\tilde{Q}$ maps to $M$, then $\tilde{Q}^\dagger$ maps to $M^*$ (the conjugate transpose), because the images of the quaternion units are Hermitian matrices up to the scalar factor $i$, and the scalar imaginary $i$ is conjugated by $^*$. So the fixed points of $\dagger$ are exactly the matrices with $M = M^*$, i.e., the Hermitian matrices, and the fixed points of $\flat$ are exactly the matrices with $M = -M^*$, i.e., the anti-Hermitian matrices.
+The identifications of $\mathbb{M}_+$ with the Hermitian matrices and $\mathbb{M}_-$ with the anti-Hermitian matrices follow directly from the isomorphism: if $\tilde{Q}$ maps to $M$, then $\tilde{Q}^\dagger$ maps to $M^\dagger$ (the conjugate transpose). Indeed, the images of the quaternion units satisfy $\phi(e_k)^\dagger = \phi(e_k)$ (the matrices $-i\sigma_k$ are Hermitian), and complex conjugation of the scalar coefficients is compatible with conjugate transposition of the matrix. Hence the fixed points of $\dagger$ are exactly the matrices with $M = M^\dagger$, i.e., the Hermitian matrices, and the fixed points of $\flat$ are exactly the matrices with $M = -M^\dagger$, i.e., the anti-Hermitian matrices.
 
 ### Structural Consequences of the Isomorphism
 
@@ -236,7 +272,7 @@ $$
 A biquaternion $\tilde{Q}$ acts on a spinor by matrix multiplication, via the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$:
 
 $$
-\psi \mapsto \tilde{Q} \psi = \begin{pmatrix} (Q_0 + i Q_3)\psi_1 + (i Q_1 + Q_2)\psi_2 \\ (i Q_1 - Q_2)\psi_1 + (Q_0 - i Q_3)\psi_2 \end{pmatrix}.
+\psi \mapsto \tilde{Q} \psi = \begin{pmatrix} (Q_0 - i Q_3)\psi_1 + (-i Q_1 - Q_2)\psi_2 \\ (-i Q_1 + Q_2)\psi_1 + (Q_0 + i Q_3)\psi_2 \end{pmatrix}.
 $$
 
 This is the **spinor representation** of the biquaternion algebra: the biquaternion acts as a linear operator on the space of spinors.
@@ -257,11 +293,13 @@ $$
 
 The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary, i.e., when $\tilde{Q}^\dagger \tilde{Q} = 1$. The unitary biquaternions form the group $U(2)$.
 
-**Determinant.** The subgroup of $U(2)$ consisting of elements with determinant $1$ is $SU(2)$. This is the group of unit quaternions, and it is the double cover of the rotation group $SO(3)$. In the context of the Lorentz group, $SU(2) \times SU(2)$ is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$.
+**Determinant.** The subgroup of $U(2)$ consisting of elements with determinant $1$ is $SU(2)$. This is the group of unit quaternions, and it is the double cover of the rotation group $SO(3)$.
 
 ### Transformation Under the Lorentz Group
 
-Spinors transform under the Lorentz group in a simple way. The action of $SU(2)$ on $\mathbb{C}^2$ is the fundamental representation, and the action of the Lorentz group is the complexification. The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the tensor square of the spinor representation. So a vector is, algebraically, a pair of spinors.
+Spinors transform under the Lorentz group in a simple way. The action of $SU(2)$ on $\mathbb{C}^2$ is the fundamental representation of the rotation subgroup, and the action of the full Lorentz group is obtained by complexification. The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the tensor square of the spinor representation. So a vector is, algebraically, a pair of spinors.
+
+The group of unit-norm biquaternions, $SL(2, \mathbb{C})$, is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. The compact subgroup $SU(2) \subset SL(2, \mathbb{C})$ is the double cover of the spatial rotation group $SO(3)$.
 
 This is the algebraic content of the statement that spinors are the fundamental representation of the Lorentz group, and it is the reason spinors appear in the Dirac equation and in quantum field theory.
 
@@ -280,7 +318,7 @@ The spinor representation is useful because:
 The Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$ is generated by four elements $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying the anticommutation relations
 
 $$
-\gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 \eta^{\mu\nu},
+\gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 \eta^{\mu\nu} I,
 $$
 
 where $\eta = \mathrm{diag}(-1, +1, +1, +1)$ (or its negative, depending on convention). The algebra has real dimension $2^4 = 16$.
@@ -293,19 +331,13 @@ $$
 \mathbb{B} \cong \mathrm{Cl}_{1,3}^+(\mathbb{R}).
 $$
 
-The isomorphism is given by mapping the quaternion units to the bivectors:
+The isomorphism is given by mapping the quaternion units to the **spacelike** bivectors (products of two spatial gamma matrices), oriented so that the products reproduce the quaternion relations:
 
 $$
-e_1 \mapsto \gamma^0 \gamma^1, \qquad e_2 \mapsto \gamma^0 \gamma^2, \qquad e_3 \mapsto \gamma^0 \gamma^3.
+e_1 \mapsto \gamma^2 \gamma^3, \qquad e_2 \mapsto \gamma^3 \gamma^1, \qquad e_3 \mapsto \gamma^2 \gamma^1 = -\gamma^1 \gamma^2.
 $$
 
-The products of these bivectors reproduce the quaternion multiplication rules, because the anticommutation relations of the gamma matrices imply that
-
-$$
-(\gamma^0 \gamma^1)(\gamma^0 \gamma^2) = \gamma^0 \gamma^1 \gamma^0 \gamma^2 = -\gamma^0 \gamma^0 \gamma^1 \gamma^2 = \gamma^1 \gamma^2 = \gamma^0 \gamma^3 \cdot (\gamma^0)^{-1} \gamma^0 \gamma^3 \ldots
-$$
-
-and so on. The details are standard in the theory of Clifford algebras.
+**Verification.** Each spacelike bivector squares to $-1$: $(\gamma^j \gamma^k)^2 = \gamma^j \gamma^k \gamma^j \gamma^k = -\gamma^j \gamma^j \gamma^k \gamma^k = -(1)(1) = -1$ for $j \neq k$ in $\{1, 2, 3\}$. The products reproduce the quaternion relations: for example, $e_1 e_2 \mapsto (\gamma^2 \gamma^3)(\gamma^3 \gamma^1) = \gamma^2 (\gamma^3 \gamma^3) \gamma^1 = \gamma^2 \gamma^1 = e_3$, matching $e_1 e_2 = e_3$ in the quaternion algebra.
 
 ### Properties
 
@@ -351,7 +383,7 @@ Different choices give representations that are related by conjugation, and the 
 | Representation | Biquaternion as | Useful for |
 |---|---|---|
 | Complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms, Lorentz group |
-| $2 \times 2$ matrix | $\begin{pmatrix} Q_0 + i Q_3 & i Q_1 + Q_2 \\ i Q_1 - Q_2 & Q_0 - i Q_3 \end{pmatrix}$ | Concrete computation, isomorphism with $M_2(\mathbb{C})$ |
+| $2 \times 2$ matrix | $\begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix}$ | Concrete computation, isomorphism with $M_2(\mathbb{C})$ |
 | Spinor | Operator on $\begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}$ | Dirac equation, Lorentz invariance, quantum fields |
 | Clifford algebra | Element of $\mathrm{Cl}_{1,3}^+$ | Dirac algebra, geometry, generalization |
 
@@ -365,5 +397,4 @@ The four-vector representation is the one most familiar from standard physics. T
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the matrix representations of biquaternions.
 - S. J. Sangwine, T. A. Ell, N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* 21 (2011) 607–636, for the applied representation theory.
-
 

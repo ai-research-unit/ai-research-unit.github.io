@@ -5,7 +5,9 @@
 
 This article introduces the integration theory of biquaternion-valued functions. It follows the article on biquaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace of $\mathbb{B}$. The goal here is to define the integral of a biquaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences in complex analysis.
 
-The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of a four-dimensional real subspace of $\mathbb{B}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+Throughout the main body of this article, we work on the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, whose four coordinates $q_0, q_1, q_2, q_3$ are all real. On this subspace, the framework's partial derivatives coincide with the ordinary real partial derivatives, and the framework's gradient $\tilde{\nabla}$ coincides with the Clifford–Dirac operator on $\mathbb{R}^4$. The integration theory on $\mathbb{H}_{\mathbb{B}}$ is therefore the standard Clifford analysis of $\mathbb{R}^4$, with the biquaternion algebra $\mathbb{B}$ (isomorphic to $\mathrm{Cl}_{1,3}^+$) playing the role of the Clifford algebra. The extension of the theory to the indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$, where the partial derivatives carry factors of $-i$, is not developed here; it is discussed in the open questions.
+
+The treatment is purely mathematical. The independent variables are four real parameters — the coordinates of $\mathbb{H}_{\mathbb{B}}$. They are independent of any physical interpretation. The complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
 
 Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
 
@@ -15,19 +17,19 @@ The biquaternion algebra $\mathbb{B}$, its conjugations, its four fixed-point su
 
 ### Definition
 
-Let $V$ be a four-dimensional real subspace of $\mathbb{B}$, with the complex coefficients $Q_0, Q_1, Q_2, Q_3$ of a general element $\tilde{Q} \in V$ taking the specific forms appropriate to that subspace (as described in the analysis article). Let $\tilde{F} : V \to \mathbb{B}$ be a biquaternion-valued function, written in components as
+Let $\tilde{F} : \mathbb{H}_{\mathbb{B}} \to \mathbb{B}$ be a biquaternion-valued function, written in components as
 
 $$
-\tilde{F}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(Q_0, Q_1, Q_2, Q_3) e_\mu, \qquad F_\mu \in \mathbb{C}.
+\tilde{F}(\tilde{Q}) = \sum_{\mu=0}^{3} F_\mu(q_0, q_1, q_2, q_3) e_\mu, \qquad F_\mu \in \mathbb{C}.
 $$
 
-Let $\Omega \subset V$ be a domain. The **integral** of $\tilde{F}$ over $\Omega$ is
+Let $\Omega \subset \mathbb{H}_{\mathbb{B}}$ be a domain. The **integral** of $\tilde{F}$ over $\Omega$ is
 
 $$
 \int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
 $$
 
-where each $F_\mu$ is a complex-valued function on $\Omega$ and the integral is the ordinary Lebesgue integral with respect to the Lebesgue measure on the four real parameters that parametrize $V$.
+where each $F_\mu$ is a complex-valued function on $\Omega$ and the integral is the ordinary Lebesgue integral with respect to the Lebesgue measure on the four real coordinates $(q_0, q_1, q_2, q_3)$.
 
 The integral is defined component-wise. It exists whenever each of the four complex-valued functions $F_\mu$ is integrable over $\Omega$.
 
@@ -84,7 +86,7 @@ So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidea
 **Theorem (integration by parts).** Let $\phi$ be a scalar function and $\tilde{F}$ a biquaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
 
 $$
-\int_\Omega \left(\frac{\partial \phi}{\partial Q_\mu}\right) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi \left(\frac{\partial \tilde{F}}{\partial Q_\mu}\right) dV,
+\int_\Omega \left(\frac{\partial \phi}{\partial q_\mu}\right) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi \left(\frac{\partial \tilde{F}}{\partial q_\mu}\right) dV,
 $$
 
 where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
@@ -116,13 +118,13 @@ where $\tilde{n} = \sum_{\mu=0}^{3} n_\mu e_\mu$ is the biquaternion-valued outw
 **Proof.** The gradient $\tilde{\nabla}\tilde{F}$ is a biquaternion-valued function with components
 
 $$
-(\tilde{\nabla}\tilde{F})_\nu = \sum_{\mu=0}^{3} \left(\frac{\partial F_\nu}{\partial Q_\mu}\right) e_\mu e_\nu.
+(\tilde{\nabla}\tilde{F})_\nu = \sum_{\mu=0}^{3} \left(\frac{\partial F_\nu}{\partial q_\mu}\right) e_\mu e_\nu.
 $$
 
 Integrating each component over $\Omega$ and applying the ordinary divergence theorem in $\mathbb{R}^4$ gives
 
 $$
-\int_\Omega \frac{\partial F_\nu}{\partial Q_\mu} \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
+\int_\Omega \frac{\partial F_\nu}{\partial q_\mu} \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
 $$
 
 Multiplying by $e_\mu e_\nu$ and summing gives the result. $\square$
@@ -167,7 +169,7 @@ $$
 \int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
 $$
 
-where $\Box = \partial^2/\partial Q_0^2 + \Delta_Q$ is the four-dimensional Laplacian in the coordinates $Q_0, Q_1, Q_2, Q_3$.
+where $\Box = \partial^2/\partial q_0^2 + \Delta_q$ is the four-dimensional Laplacian in the coordinates $q_0, q_1, q_2, q_3$.
 
 **Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$, and use the definition of $\Box$. $\square$
 
@@ -175,7 +177,7 @@ where $\Box = \partial^2/\partial Q_0^2 + \Delta_Q$ is the four-dimensional Lapl
 
 ### Definition
 
-The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the biquaternion-valued function
+The **fundamental solution** of the gradient operator $\tilde{\nabla}$ on $\mathbb{H}_{\mathbb{B}}$ is the biquaternion-valued function
 
 $$
 \tilde{G}(\tilde{Q}) = \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4},
@@ -183,42 +185,74 @@ $$
 
 where $\bar{\tilde{Q}}$ is the quaternion conjugate of $\tilde{Q}$ and $\|\tilde{Q}\|_E^4 = (\|\tilde{Q}\|_E^2)^2$ is the fourth power of the Euclidean norm.
 
-The function $\tilde{G}$ is defined for $\tilde{Q} \neq 0$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{Q}) = \lambda^{-3} \tilde{G}(\tilde{Q})$ for $\lambda > 0$.
+The function $\tilde{G}$ is defined for $\tilde{Q} \neq 0$ in $\mathbb{H}_{\mathbb{B}}$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{Q}) = \lambda^{-3} \tilde{G}(\tilde{Q})$ for $\lambda > 0$.
 
 ### The Gradient of the Fundamental Solution
 
-**Theorem.** For $\tilde{Q} \neq 0$,
+**Theorem (on $\mathbb{H}_{\mathbb{B}}$).** For $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$ with $\tilde{Q} \neq 0$,
 
 $$
 \tilde{\nabla} \tilde{G}(\tilde{Q}) = 0.
 $$
 
-**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \sum_k Q_k e_k$. So
+**Proof.** Write $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $\|\tilde{Q}\|_E^2 = \sum_\mu Q_\mu^2$ (all $Q_\mu$ are real, since $\tilde{Q} \in \mathbb{H}_{\mathbb{B}}$). The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \sum_k Q_k e_k$. So
 
 $$
-\tilde{G}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu |Q_\mu|^2)^2}.
+\tilde{G}(\tilde{Q}) = \frac{Q_0 e_0 - \sum_k Q_k e_k}{(\sum_\mu Q_\mu^2)^2}.
 $$
 
 A direct computation gives
 
 $$
-\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \frac{\partial}{\partial Q_\mu} \left( \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} + \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right).
+\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \frac{\partial}{\partial q_\mu} \left( \frac{\bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{Q}}}{\|\tilde{Q}\|_E^4} + \bar{\tilde{Q}} \tilde{\nabla} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right),
 $$
 
-The first term is $\sum_\mu e_\mu \bar{e}_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = 4 e_0$. The second term is
+where we have used the product rule and the fact that $\bar{\tilde{Q}}$ and the scalar function $1/\|\tilde{Q}\|_E^4$ commute with the partial derivatives (since $\bar{\tilde{Q}}$ is a function of $\tilde Q$ and the partial derivative acts on the variable $\tilde Q$).
+
+The first term is $\tilde{\nabla}\bar{\tilde{Q}} = \sum_\mu e_\mu \bar e_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = 4 e_0$. (Here we used $\partial_{q_\mu}\bar{\tilde{Q}} = \bar e_\mu$, which holds because the coefficients $Q_\mu$ are real: $\partial_{q_0}\bar{\tilde{Q}} = e_0$ and $\partial_{q_k}\bar{\tilde{Q}} = -e_k$.)
+
+For the second term, on $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\partial_{q_\mu}\|\tilde Q\|_E^2 = \partial_{q_\mu}(\sum_\nu Q_\nu^2) = 2Q_\mu$. Hence
 
 $$
-\bar{\tilde{Q}} \sum_\mu e_\mu \frac{\partial}{\partial Q_\mu} \left( \frac{1}{\|\tilde{Q}\|_E^4} \right) = \bar{\tilde{Q}} \sum_\mu e_\mu \left( -\frac{4 \bar{Q}_\mu}{\|\tilde{Q}\|_E^6} \right) = -\frac{4 \bar{\tilde{Q}} \tilde{Q}}{\|\tilde{Q}\|_E^6}.
+\partial_{q_\mu}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4}{\|\tilde Q\|_E^6} \partial_{q_\mu}\|\tilde Q\|_E^2 = -\frac{4 \cdot 2 Q_\mu}{\|\tilde Q\|_E^6} = -\frac{4 Q_\mu}{\|\tilde Q\|_E^6} \cdot 2 \cdot \frac{1}{2}.
 $$
 
-Since $\bar{\tilde{Q}} \tilde{Q} = \|\tilde{Q}\|_E^2 e_0$, the second term is $-4 e_0 / \|\tilde{Q}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$. $\square$
+Let us be precise: $\partial_{q_\mu}(r^{-4})$ where $r = \|\tilde Q\|_E^2$. Chain rule: $\partial_{q_\mu}(r^{-4}) = -4 r^{-5} \partial_{q_\mu} r = -4 r^{-5} \cdot 2 Q_\mu = -8 Q_\mu r^{-5} = -8 Q_\mu / \|\tilde Q\|_E^{10}$.
+
+Hmm, careful: $r^{-5} = (\|\tilde Q\|_E^2)^{-5} = \|\tilde Q\|_E^{-10}$. But we want to write the result as $-4 Q_\mu/\|\tilde Q\|_E^6$. Let me redo.
+
+$r = \|\tilde Q\|_E^2$. $\partial_{q_\mu}(r^{-2}) = -2r^{-3}\partial_{q_\mu} r = -2r^{-3}\cdot 2Q_\mu = -4Q_\mu/r^3 = -4Q_\mu/\|\tilde Q\|_E^6$. ✓
+
+So $\partial_{q_\mu}(\|\tilde Q\|_E^{-4}) = -4Q_\mu/\|\tilde Q\|_E^6$. ✓
+
+Therefore
+
+$$
+\tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = \sum_\mu e_\mu \left(-\frac{4 Q_\mu}{\|\tilde Q\|_E^6}\right) = -\frac{4}{\|\tilde Q\|_E^6}\sum_\mu Q_\mu e_\mu = -\frac{4\tilde Q}{\|\tilde Q\|_E^6}.
+$$
+
+Multiplying by $\bar{\tilde Q}$ on the left:
+
+$$
+\bar{\tilde Q} \tilde{\nabla}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4\bar{\tilde Q}\tilde Q}{\|\tilde Q\|_E^6}.
+$$
+
+On $\mathbb{H}_{\mathbb{B}}$, $\bar{\tilde Q}\tilde Q = \sum_\mu Q_\mu^2 e_0 = \|\tilde Q\|_E^2 e_0$. So this term is $-4\|\tilde Q\|_E^2 e_0/\|\tilde Q\|_E^6 = -4e_0/\|\tilde Q\|_E^4$.
+
+Combining both terms:
+
+$$
+\tilde\nabla\tilde G = \frac{4e_0}{\|\tilde Q\|_E^4} - \frac{4e_0}{\|\tilde Q\|_E^4} = 0.
+$$
+
+$\square$
 
 ### The Distributional Gradient
 
-**Theorem.** In the sense of distributions,
+**Theorem.** In the sense of distributions on $\mathbb{H}_{\mathbb{B}}$,
 
 $$
-\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0,
+\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0,
 $$
 
 where $\delta_0$ is the Dirac delta at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
@@ -253,13 +287,19 @@ $$
 \langle \tilde{\nabla} \tilde{G}, \phi \rangle = -2\pi^2 \phi(0) e_0,
 $$
 
-which is the distributional identity $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$. With the sign convention for the gradient, the constant is $2\pi^2$; the absolute value is what matters for the integral formula. $\square$
+which is the distributional identity
+
+$$
+\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0.
+$$
+
+$\square$
 
 ## The Cauchy Integral Formula
 
 ### Statement
 
-**Theorem (Cauchy integral formula).** Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
+**Theorem (Cauchy integral formula).** Let $\tilde{F}$ be a continuously differentiable biquaternion-valued function on a domain $\Omega \subset \mathbb{H}_{\mathbb{B}}$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{Q}_0$ be an interior point of $\Omega$. Then
 
 $$
 \tilde{F}(\tilde{Q}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS(\tilde{Q}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}(\tilde{Q} - \tilde{Q}_0) (\tilde{\nabla}\tilde{F})(\tilde{Q}) \, dV(\tilde{Q}),
@@ -285,7 +325,7 @@ $$
 \int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{F}(\tilde{Q}) \right) dV = \int_{\partial \Omega} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS + \int_{\partial B(\tilde{Q}_0, \varepsilon)} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS.
 $$
 
-On the small sphere, $\tilde{n} = (\tilde{Q} - \tilde{Q}_0)/\varepsilon$ (pointing inward toward $\tilde{Q}_0$, so with a sign), and the computation of the boundary term gives
+On the small sphere, $\tilde{n} = -(\tilde{Q} - \tilde{Q}_0)/\varepsilon$ (pointing inward toward $\tilde{Q}_0$, hence with a sign), and the computation of the boundary term gives
 
 $$
 \int_{\partial B(\tilde{Q}_0, \varepsilon)} \tilde{G}(\tilde{Q} - \tilde{Q}_0) \tilde{n} \tilde{F}(\tilde{Q}) \, dS \to -2\pi^2 \tilde{F}(\tilde{Q}_0) \quad \text{as } \varepsilon \to 0.
@@ -329,7 +369,7 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 ### Liouville's Theorem
 
-**Theorem (Liouville).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $V$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.
+**Theorem (Liouville).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $\mathbb{H}_{\mathbb{B}}$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.
 
 **Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{Q}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{Q} - \tilde{Q}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero, so $\tilde{F}(\tilde{Q}_0)$ is independent of $\tilde{Q}_0$. $\square$
 
@@ -344,7 +384,7 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 **Theorem (Cauchy estimates).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{Q}_0, R)$ and $\|\tilde{F}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,
 
 $$
-\left\|\frac{\partial^{|\alpha|} \tilde{F}}{\partial Q^\alpha}(\tilde{Q}_0)\right\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
+\left\|\frac{\partial^{|\alpha|} \tilde{F}}{\partial q^\alpha}(\tilde{Q}_0)\right\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
 $$
 
 where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.
@@ -393,23 +433,23 @@ The integration theory developed in this article is the biquaternion analogue of
 
 The following questions are not answered in this article and are left for later work:
 
-1. **The residue theory in the non-commutative case.** The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?
+1. **The extension to $\mathbb{M}_-$ and $\mathbb{M}_+$.** The integration theory presented here is for functions on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the four coordinates are real. Extending the theory to the indefinite subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ requires modifying the fundamental solution, because the kernel $\bar{\tilde Q}/\|\tilde Q\|_E^4$ is not annihilated by the framework's gradient on these subspaces. Indeed, on $\mathbb{M}_-$ and $\mathbb{M}_+$, the coefficients $Q_\mu$ include imaginary entries, and the identity $\bar{\tilde Q}\tilde Q = \|\tilde Q\|_E^2 e_0$ fails, so the proof of $\tilde\nabla\tilde G = 0$ does not carry over. Whether a modified kernel exists, and how it relates to the standard Clifford analysis of $\mathbb{R}^{3,1}$ or $\mathbb{R}^{1,3}$, is open.
 
-2. **The Cauchy integral formula for other domains.** What is the form of the Cauchy integral formula for domains with non-smooth boundaries, or for domains that are not simply connected?
+2. **The residue theory in the non-commutative case.** The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?
 
-3. **The relation to the polar representations.** How do the polar representations of the biquaternion algebra interact with the integration theory?
+3. **The Cauchy integral formula for other domains.** What is the form of the Cauchy integral formula for domains with non-smooth boundaries, or for domains that are not simply connected?
 
-4. **The relation to the integral formulas of Clifford analysis.** How does the biquaternion integration theory relate to the general Clifford analysis?
+4. **The relation to the polar representations.** How do the polar representations of the biquaternion algebra interact with the integration theory?
 
 5. **Applications.** What are the applications of the biquaternion integration theory to the solution of partial differential equations?
 
-6. **The integration of functions on other subspaces.** How does the integration theory extend to the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and to the Hermitian subspace $\mathbb{M}_+$?
+6. **The general subspace.** Can the integration theory be extended from $\mathbb{H}_{\mathbb{B}}$ to the full biquaternion algebra $\mathbb{B}$ and to its indefinite subspaces, with a canonical choice of fundamental solution for each?
 
 ## Summary
 
-The integral of a biquaternion-valued function on a four-dimensional subspace of $\mathbb{B}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
+The integral of a biquaternion-valued function on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
 
-The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions.
+The **fundamental solution** of the gradient operator on $\mathbb{H}_{\mathbb{B}}$ is $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$, which satisfies $\tilde{\nabla} \tilde{G} = 0$ away from the origin and $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$ in the sense of distributions.
 
 The **Cauchy integral formula** expresses the value of a continuously differentiable function at an interior point in terms of its boundary values and the volume integral of its gradient. For functions satisfying $\tilde{\nabla}\tilde{F} = 0$ (the biquaternion analogue of the Cauchy–Riemann equations), the volume integral vanishes and the value at the interior point is given entirely by the boundary values.
 
@@ -417,23 +457,22 @@ The Cauchy integral formula implies the **mean value property**, the **maximum p
 
 The **residue theory** for biquaternion-valued functions is more delicate than in the complex case, because of the non-commutativity of the algebra. The residue at an isolated singularity is defined as a boundary integral, and the residue theorem expresses the integral over the boundary of a domain in terms of the residues at the singularities inside.
 
-The integration theory is related to complex analysis, Fueter's quaternionic analysis, and the general Clifford analysis. The biquaternion case is the case of four dimensions with complex coefficients, which enriches the structure with the four conjugations and the two polar forms.
+The integration theory is related to complex analysis, Fueter's quaternionic analysis, and the general Clifford analysis. The biquaternion case on $\mathbb{H}_{\mathbb{B}}$ is the case $n = 4$ with complex coefficients, and enriches the structure with the four conjugations and the two polar forms.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $V$ | Four-dimensional real subspace of $\mathbb{B}$ |
-| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Point in $V$ |
-| $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient, taking the specific form appropriate to the subspace |
-| $\partial/\partial Q_\mu$ | Partial derivative with respect to $Q_\mu$ (with $-i$ factor on imaginary coordinates) |
-| $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial Q_\mu$ | Biquaternionic gradient |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (real coordinates $q_0, q_1, q_2, q_3$) |
+| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Point in $\mathbb{H}_{\mathbb{B}}$ (all $Q_\mu$ real) |
+| $\partial/\partial q_\mu$ | Ordinary real partial derivative |
+| $\tilde{\nabla} = \sum_\mu e_\mu \partial/\partial q_\mu$ | Biquaternionic gradient (Clifford–Dirac operator) |
 | $\bar{\tilde{\nabla}}$ | Quaternion conjugate of the gradient |
-| $\Box = \partial^2/\partial Q_0^2 + \Delta_Q$ | d'Alembertian |
+| $\Box = \partial^2/\partial q_0^2 + \Delta_q$ | d'Alembertian |
 | $\tilde{n}$ | Biquaternion-valued outward unit normal |
 | $\tilde{G}(\tilde{Q}) = \bar{\tilde{Q}}/\|\tilde{Q}\|_E^4$ | Fundamental solution of the gradient |
-| $d\tilde{Q}$ | Lebesgue measure on the four real parameters of $V$ |
+| $dV$ | Lebesgue measure on the four real coordinates of $\mathbb{H}_{\mathbb{B}}$ |
 
 ## Further Reading
 

@@ -96,10 +96,10 @@ The axis $\xi$ is not an arbitrary root of $-1$: it is the root parallel to the 
 The roots of $-1$ that arise this way are characterized by the constraints
 
 $$
-\Re(\xi) \perp \Im(\xi), \qquad \|\Re(\xi)\| - \|\Im(\xi)\| = 1,
+\Re(\xi) \perp \Im(\xi), \qquad \|\Re(\xi)\|^2 - \|\Im(\xi)\|^2 = 1,
 $$
 
-which are stated and proved in the article on biquaternion roots of minus one. The axis of the Hamilton polar form is therefore one of the non-trivial roots of $-1$, unless the vector part $\mathbf{Q}$ happens to be a real quaternion, in which case the axis is a unit pure real quaternion (a "real root" of $-1$ in the classification of that article).
+which are stated and proved in the article on biquaternion roots of minus one. Here $\Re(\xi)$ and $\Im(\xi)$ denote the real and imaginary parts of $\xi$ with respect to the scalar imaginary $i$, and $\|\cdot\|$ denotes the quaternion norm on $\mathbb{H}$. The axis of the Hamilton polar form is therefore one of the non-trivial roots of $-1$, unless the vector part $\mathbf{Q}$ happens to be a real quaternion, in which case the axis is a unit pure real quaternion (a "real root" of $-1$ in the classification of that article).
 
 ### The Angle Is Complex
 
@@ -129,7 +129,9 @@ where:
 
 - $Q$ is a **quaternion** (a real quaternion, element of $\mathbb{H}$);
 - $i$ is the **scalar imaginary**, the central root of $-1$ that commutes with everything;
-- $\Psi$ is the **complex angle**, defined by $\tan\Psi = Q_r^{-1} Q_i$, and $Q = \tilde{Q} \exp(-i\Psi)$.
+- $\Psi$ is the **quaternion angle**, defined by $\tan\Psi = Q_r^{-1} Q_i$, and $Q = \tilde{Q} \exp(-i\Psi)$.
+
+The angle $\Psi$ is a real quaternion (element of $\mathbb{H}$), because it is the arctangent of the real quaternion $Q_r^{-1}Q_i$. Its coefficient of $i$ vanishes by construction.
 
 ### The Case $Q_r = 0$
 
@@ -141,19 +143,19 @@ If the norm form vanishes, $\tilde{Q}$ is a zero divisor. The complex polar form
 
 ### Existence and Uniqueness
 
-**Theorem.** Every biquaternion $\tilde{Q}$ with $Q_r \neq 0$ and $N(\tilde{Q}) \neq 0$ has a complex polar form. The form is unique up to the addition of $2\pi$ to the real part of $\Psi$.
+**Theorem.** Every biquaternion $\tilde{Q}$ with $Q_r \neq 0$ and $N(\tilde{Q}) \neq 0$ has a complex polar form. The form is unique up to the addition of $2\pi$ to the scalar part of $\Psi$.
 
-**Proof.** The construction above gives $\Psi$ and $Q$ explicitly from $\tilde{Q}$. The verification that $\tilde{Q} = Q \exp(i\Psi)$ is a direct computation:
+**Proof.** The construction above gives $\Psi$ and $Q$ explicitly from $\tilde{Q}$. Set $\Psi = \arctan(Q_r^{-1}Q_i)$, which is a real quaternion. Then $\cos\Psi$ and $\sin\Psi$ are also real quaternions (they are functions of $\Psi$ with real coefficients, since $\Psi$ is pure or has a real scalar part combined with a pure quaternion vector part). Define $Q = Q_r\cos^{-1}\Psi$. Since $Q_r$ and $\cos\Psi$ are real quaternions, so is $Q$. Then
 
 $$
-Q \exp(i\Psi) = \tilde{Q} \exp(-i\Psi) \exp(i\Psi) = \tilde{Q},
+Q\exp(i\Psi) = Q\cos\Psi + iQ\sin\Psi = Q_r + iQ_r\cos^{-1}\Psi\sin\Psi = Q_r + iQ_r\tan\Psi = Q_r + iQ_i = \tilde{Q},
 $$
 
-where the second equality uses the fact that $i$ commutes with $\tilde{Q}$ and $\exp(-i\Psi)$ commutes with $\exp(i\Psi)$. The uniqueness follows from the fact that $\Psi$ is determined by the equation $\tan\Psi = Q_r^{-1} Q_i$, which determines $\Psi$ up to the addition of $\pi$ in the real part, with the sign of $Q$ adjusted accordingly. $\square$
+where we have used $\cos^{-1}\Psi\sin\Psi = \tan\Psi$ (as both sides are functions of $\Psi$ and commute with each other) and $Q_r\tan\Psi = Q_r Q_r^{-1}Q_i = Q_i$. The uniqueness follows from the fact that $\Psi$ is determined by the equation $\tan\Psi = Q_r^{-1}Q_i$, which determines $\Psi$ up to the addition of $\pi$ in the scalar part, with the sign of $Q$ adjusted accordingly. $\square$
 
-### The Angle Is Complex
+### The Angle Is Quaternionic
 
-As in the Hamilton polar form, the angle $\Psi$ is a complex number, not a real one. This is because $Q_r^{-1} Q_i$ is a quaternion, not a real number, and its tangent is a complex angle.
+The angle $\Psi$ is a quaternion, not a real number. This is because $Q_r^{-1}Q_i$ is a quaternion, not a real number, and its arctangent is a quaternion. The angle $\Psi$ has the form $\Psi = a + b\mu$ with $a, b \in \mathbb{R}$ (the scalar part plus a pure quaternion part), or more generally a scalar part plus a pure quaternion part in a specific direction.
 
 ### The Modulus Is a Quaternion
 
@@ -161,7 +163,7 @@ The modulus $Q$ is a real quaternion, not a complex scalar. This is the essentia
 
 ### Example
 
-Take $\tilde{Q} = 1 + i$, a complex scalar. Then $Q_r = 1$ and $Q_i = 1$, so $\tan\Psi = 1$, i.e., $\Psi = \pi/4$ (up to the addition of $\pi$ in the real part). And $Q = (1+i) \exp(-i\pi/4) = (1+i)(\cos(\pi/4) - i \sin(\pi/4)) = (1+i)(1/\sqrt{2} - i/\sqrt{2}) = \sqrt{2}$. So
+Take $\tilde{Q} = 1 + i$, a complex scalar. Then $Q_r = 1$ and $Q_i = 1$, so $\tan\Psi = 1$, i.e., $\Psi = \pi/4$ (up to the addition of $\pi$ in the scalar part). And $Q = (1+i) \exp(-i\pi/4) = (1+i)(\cos(\pi/4) - i \sin(\pi/4)) = (1+i)(1/\sqrt{2} - i/\sqrt{2}) = \sqrt{2}$. So
 
 $$
 \tilde{Q} = \sqrt{2} \exp(i \pi/4).
@@ -171,7 +173,35 @@ This is exactly the ordinary polar form of the complex number $1 + i$. So in the
 
 ### A Non-Scalar Example
 
-Take $\tilde{Q} = e_0 + i e_1$. Then $Q_r = e_0$ and $Q_i = e_1$, so $\tan\Psi = e_0^{-1} e_1 = e_1$, i.e., $\Psi = \arctan(e_1)$, which is a complex angle with real part $\pi/4$ and imaginary part $0$ in the quaternion basis. The modulus is $Q = \tilde{Q} \exp(-i\Psi)$, which is a real quaternion. The exact form of $Q$ depends on the branch of the arctangent, but the representation is well-defined.
+Take $\tilde{Q} = e_0 + e_1 + i e_2 = 1 + e_1 + ie_2$. Then $Q_r = 1 + e_1$ and $Q_i = e_2$, so $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = 1 \neq 0$ (see below), and the complex polar form exists.
+
+Compute $\tan\Psi = Q_r^{-1}Q_i = (1+e_1)^{-1}e_2 = \frac{(1-e_1)}{2}e_2 = \frac{e_2 - e_3}{2}$, using $(1+e_1)^{-1} = (1-e_1)/2$ (from $(1+e_1)(1-e_1) = 1 - e_1^2 = 2$). The quaternion $q = (e_2-e_3)/2$ has unit direction $\hat{q} = (e_2-e_3)/\sqrt{2}$ and magnitude $|q| = 1/\sqrt{2}$. Therefore
+
+$$
+\Psi = \arctan(q) = \hat{q}\,\arctan(|q|) = \frac{e_2 - e_3}{\sqrt{2}}\,\arctan\!\left(\frac{1}{\sqrt{2}}\right),
+$$
+
+so $\Psi$ is a pure quaternion (scalar part zero) proportional to $e_2 - e_3$. The corresponding cosine and sine are
+
+$$
+\cos\Psi = \cos\!\left(\arctan\frac{1}{\sqrt{2}}\right) = \sqrt{\frac{2}{3}}, \qquad \sin\Psi = \hat{q}\,\sin\!\left(\arctan\frac{1}{\sqrt{2}}\right) = \frac{e_2 - e_3}{\sqrt{2}}\cdot\frac{1}{\sqrt{3}} = \frac{e_2-e_3}{\sqrt{6}},
+$$
+
+using $\sin(\arctan x) = x/\sqrt{1+x^2}$ and $\cos(\arctan x) = 1/\sqrt{1+x^2}$. The modulus is $Q = Q_r\cos^{-1}\Psi = (1+e_1)\sqrt{3/2}$, a real quaternion. The reconstruction $Q\exp(i\Psi) = \tilde{Q}$ can be verified directly by expansion, as in the existence proof.
+
+**Verification that $N(\tilde{Q}) = 1$.** Compute $\tilde{Q}\bar{\tilde{Q}} = (1 + e_1 + ie_2)(1 - e_1 - ie_2)$:
+
+$$
+= 1 - e_1 - ie_2 + e_1 - e_1^2 - ie_1e_2 + ie_2 - ie_2e_1 - i^2 e_2^2
+$$
+$$
+= 1 - e_1 - ie_2 + e_1 + 1 - ie_3 + ie_2 + ie_3 - (-1)(-1)
+$$
+$$
+= 1 + 1 - 1 = 1.
+$$
+
+So $N(\tilde{Q}) = 1 \neq 0$, and $\tilde{Q}$ is not a zero divisor. The complex polar form applies.
 
 ## Comparison of the Two Polar Forms
 
@@ -181,7 +211,7 @@ The two polar forms differ in **which root of $-1$ is used in the exponential** 
 |---|---|---|
 | Root of $-1$ | $\xi$, a non-central root | $i$, the central root |
 | Modulus | $R$, a complex scalar | $Q$, a real quaternion |
-| Angle | $\Theta$, a complex scalar | $\Psi$, a complex scalar |
+| Angle | $\Theta$, a complex scalar | $\Psi$, a real quaternion |
 | Existence requires | $\mathbf{Q} \neq 0$ | $Q_r \neq 0$ |
 | Reduces to | Quaternion polar form (when $\tilde{Q} \in \mathbb{H}$) | Complex polar form (when $\tilde{Q} \in \mathbb{C}_{\mathbb{B}}$) |
 
@@ -224,43 +254,45 @@ The axis of the Hamilton polar form is a real root when the vector part is a rea
 
 ## Behavior Under the Four Conjugations
 
-The three conjugations of the biquaternion algebra act on the two polar forms as follows. Throughout, the scalar imaginary $i$ is treated as a complex scalar, so it is conjugated by $^*$ and preserved by $\bar{\cdot}$.
+The three conjugations of the biquaternion algebra act on the two polar forms as follows. Throughout, the scalar imaginary $i$ is treated as a complex scalar, so it is conjugated by $^*$ and preserved by $\bar{\cdot}$. In both polar forms, $R$, $Q$, $\Theta$ are treated as central (commuting with everything), while $\xi$, $\Psi$ are quaternion-valued.
 
 ### Quaternion Conjugation
 
-**Hamilton form.** $\bar{R \exp(\xi \Theta)} = \bar{R} \exp(\bar{\xi} \bar{\Theta})$. Since $\bar{R} = R$ (the norm form is invariant under quaternion conjugation, so $R$ is invariant up to sign), $\bar{\xi} = -\xi$ (the quaternion conjugate of a pure biquaternion is its negative), and $\bar{\Theta} = \Theta$ (the angle is a complex scalar and is not affected by quaternion conjugation), we get
+**Hamilton form.** $\overline{R \exp(\xi \Theta)} = R \exp(\bar{\xi} \Theta)$. Since $R$ is central and $\Theta$ is a complex scalar (central), they are unaffected by $\bar{\cdot}$. Since $\xi$ is pure ($\bar{\xi} = -\xi$), we get
 
 $$
-\bar{R \exp(\xi \Theta)} = R \exp(-\xi \Theta).
+\overline{R \exp(\xi \Theta)} = R \exp(-\xi \Theta).
 $$
 
 So quaternion conjugation reverses the sign of the angle in the Hamilton polar form.
 
-**Complex form.** $\bar{Q \exp(i \Psi)} = \bar{Q} \exp(i \Psi)$. Since $i$ commutes with the quaternion conjugate, the sign of the angle is not affected, and only the quaternion modulus is conjugated.
+**Complex form.** $\overline{Q \exp(i \Psi)} = \bar{Q} \exp(i\bar{\Psi})$. The modulus is quaternion-conjugated, and the angle $\Psi$ (a real quaternion) is quaternion-conjugated as well, since $\bar{\Psi}$ is not in general equal to $\Psi$.
 
 ### Complex Conjugation
 
-**Hamilton form.** $(R \exp(\xi \Theta))^* = R^* \exp(\xi^* \Theta^*)$. The modulus is conjugated, and both the root and the angle are conjugated. Since the norm form transforms as $N(\tilde{Q}^*) = N(\tilde{Q})^*$, we have $R^* = \sqrt{N(\tilde{Q})^*} = \sqrt{N(\tilde{Q}^*)}$, which is consistent.
+**Hamilton form.** $(R \exp(\xi \Theta))^* = R^* \exp(\xi^* \Theta^*)$. The modulus is complex-conjugated, and both the root and the angle are complex-conjugated. Since the norm form transforms as $N(\tilde{Q}^*) = N(\tilde{Q})^*$, we have $R^* = \sqrt{N(\tilde{Q})^*} = \sqrt{N(\tilde{Q}^*)}$, which is consistent.
 
-**Complex form.** $(Q \exp(i \Psi))^* = Q^* \exp(-i \Psi^*)$. Since $i^* = -i$, the sign of the exponential is reversed, and both the modulus and the angle are conjugated.
+**Complex form.** $(Q \exp(i \Psi))^* = Q \exp(-i \Psi^*)$. Since $Q$ is a real quaternion ($Q^* = Q$) and $\Psi$ is a real quaternion ($\Psi^* = \Psi$), this simplifies to
+
+$$
+(Q \exp(i \Psi))^* = Q \exp(-i\Psi).
+$$
+
+So complex conjugation reverses the sign of $i$ (equivalently, replaces $\exp(i\Psi)$ by $\exp(-i\Psi)$) and leaves both $Q$ and $\Psi$ unchanged.
 
 ### Hermitian Conjugation
 
-**Hamilton form.** $(R \exp(\xi \Theta))^\dagger = (R^* \exp(\xi^* \Theta^*))$ with the additional quaternion conjugation, which reverses the sign of the angle:
+**Hamilton form.** $(R \exp(\xi \Theta))^\dagger = \overline{(R \exp(\xi \Theta))^*} = \overline{R^* \exp(\xi^* \Theta^*)} = R^* \exp(\bar{\xi}^* \Theta^*) = R^* \exp(-\xi^* \Theta^*)$, using $\bar{\xi}^* = (\bar{\xi})^* = (-\xi)^* = -\xi^*$.
 
-$$
-(R \exp(\xi \Theta))^\dagger = R^* \exp(-\xi^* \Theta^*).
-$$
-
-**Complex form.** $(Q \exp(i \Psi))^\dagger = Q^\dagger \exp(i \Psi^*)$. The quaternion modulus is Hermitian-conjugated, and the angle is complex-conjugated.
+**Complex form.** $(Q \exp(i \Psi))^\dagger = \overline{(Q \exp(i \Psi))^*} = \overline{Q \exp(-i\Psi)} = \bar{Q} \exp(-i\bar{\Psi})$, using the quaternion conjugation property applied to the real quaternion $\Psi$.
 
 ### Summary
 
 | Conjugation | Hamilton form | Complex form |
 |---|---|---|
-| Quaternion $\bar{\cdot}$ | $\xi \to -\xi$ | $Q \to \bar{Q}$ |
-| Complex $^*$ | $R \to R^*$, $\xi \to \xi^*$, $\Theta \to \Theta^*$ | $Q \to Q^*$, $\Psi \to -\Psi^*$ |
-| Hermitian $\dagger$ | $R \to R^*$, $\xi \to -\xi^*$, $\Theta \to \Theta^*$ | $Q \to Q^\dagger$, $\Psi \to \Psi^*$ |
+| Quaternion $\bar{\cdot}$ | $\xi \to -\xi$ | $Q \to \bar{Q}$, $\Psi \to \bar{\Psi}$ |
+| Complex $^*$ | $R \to R^*$, $\xi \to \xi^*$, $\Theta \to \Theta^*$ | $\Psi \to -\Psi$ (i.e., $i \to -i$) |
+| Hermitian $\dagger$ | $R \to R^*$, $\xi \to -\xi^*$, $\Theta \to \Theta^*$ | $Q \to \bar{Q}$, $\Psi \to -\bar{\Psi}$ |
 
 The two polar forms respond differently to the three conjugations, and the choice of polar form determines which conjugation is "natural" for the expression.
 
@@ -268,7 +300,7 @@ The two polar forms respond differently to the three conjugations, and the choic
 
 The polar representations are related to the algebraic representations as follows.
 
-**Relation to the matrix representation.** The polar form of a biquaternion is the analogue of the polar decomposition of the corresponding $2 \times 2$ complex matrix. The Hamilton form corresponds to the **polar decomposition** $M = U P$ where $U$ is unitary and $P$ is positive semidefinite, but with the roles of the modulus and the phase interchanged. The complex form corresponds to the **Jordan decomposition** of the matrix into its complex scalar and quaternion parts.
+**Relation to the matrix representation.** The polar form of a biquaternion is the analogue of the polar decomposition of the corresponding $2 \times 2$ complex matrix. The Hamilton form separates the biquaternion into a "magnitude" times an exponential of a non-central root of $-1$, in analogy with the quaternion polar form. The complex form separates the biquaternion into its "real" and "imaginary" quaternion parts, and then polar-decomposes the imaginary part relative to the real part.
 
 **Relation to the four-vector representation.** The Hamilton polar form separates the four-vector into a "magnitude" $R$ and a "direction" $\xi$, in analogy with the polar form of a vector. The complex polar form separates the four-vector into its "real" and "imaginary" quaternion parts, and then polar-decomposes the imaginary part relative to the real part.
 
@@ -288,16 +320,16 @@ The polar representations are related to the algebraic representations as follow
 | $\xi = \mathbf{Q}/B$ | Axis (root of $-1$, Hamilton) |
 | $\Theta$ | Complex angle (Hamilton) |
 | $Q_r, Q_i$ | Real and imaginary quaternion parts |
-| $Q$ | Quaternion modulus (complex form) |
-| $\Psi$ | Complex angle (complex form) |
+| $Q$ | Real quaternion modulus (complex form) |
+| $\Psi$ | Real quaternion angle (complex form) |
 | $i$ | Scalar imaginary |
 
 ## Summary
 
 The biquaternion algebra has **two** natural polar representations:
 
-- The **Hamilton polar form** $\tilde{Q} = R \exp(\xi \Theta)$, where $R$ is a complex scalar modulus, $\xi$ is a non-central root of $-1$ parallel to the vector part, and $\Theta$ is a complex angle.
-- The **complex polar form** $\tilde{Q} = Q \exp(i \Psi)$, where $Q$ is a real quaternion modulus, $i$ is the central root of $-1$, and $\Psi$ is a complex angle.
+- The **Hamilton polar form** $\tilde{Q} = R \exp(\xi \Theta)$, where $R$ is a complex scalar modulus, $\xi$ is a non-central root of $-1$ parallel to the vector part, and $\Theta$ is a complex scalar angle.
+- The **complex polar form** $\tilde{Q} = Q \exp(i \Psi)$, where $Q$ is a real quaternion modulus, $i$ is the central root of $-1$, and $\Psi$ is a real quaternion angle.
 
 The two forms are complementary. The Hamilton form generalizes the quaternion polar form and is natural when the biquaternion is close to a quaternion. The complex form generalizes the ordinary complex polar form and is natural when the biquaternion is close to a complex scalar.
 
