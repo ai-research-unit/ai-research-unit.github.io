@@ -34,6 +34,7 @@
 
 ### <a href="articles/exercise-4-two-spins-in-the-singlet-state.html">Exercise 4: Two Spins in the Singlet State</a>
 
+### <a href="articles/exercise-5-the-reduced-state-of-an-entangled-subsystem.html">Exercise 5: The Reduced State of an Entangled Subsystem</a>
 
 
 
