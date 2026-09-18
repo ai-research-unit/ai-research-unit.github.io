@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exercise-1-measuring-spin-along-an-arbitrary-direction"><strong>Exercise 1: Measuring Spin Along an Arbitrary Direction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>This article is the first in a series of <strong>worked exercises</strong> that illustrate quantum mechanics in two parallel presentations: the standard Hilbert-space formulation, and the biquaternion formulation developed in the companion articles. The goal is not to derive new physics, but to give the reader a concrete, computationally explicit demonstration of the correspondence between the two formalisms.</p>
+<p>Each exercise in the series is solved twice: first in the standard way, then in the biquaternion way. The results agree, as they must: the two formulations are the same mathematics in different notation. The pedagogical value is in seeing the same physical result emerge from both frameworks, and in observing how the algebraic structure of the biquaternion framework handles the objects of quantum mechanics.</p>
+<p>To keep the two solutions strictly parallel, each is presented in the same four steps: <strong>the state</strong>, <strong>the measurement operator</strong>, <strong>the outcome object</strong>, and <strong>the probability</strong>. The final result is stated in the same form in both solutions.</p>
+<p>The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$. The quaternion units are $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary. The trace of an element of $\mathbb{M}_+$ is twice its scalar part: $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$.</p>
+<h2 id="the-exercise">The Exercise</h2>
+<p>A spin-$\tfrac{1}{2}$ particle is prepared in the <strong>spin-up state along the $z$-axis</strong>. We measure the spin along a direction $\hat{n}$ that makes an angle $\theta$ with the $z$-axis, in the $xz$-plane. What is the probability of finding the particle spin-up along $\hat{n}$?</p>
+<p>This is the canonical "rotate the Stern–Gerlach apparatus" exercise. It involves states, observables, and the Born rule, but no dynamics and no interactions.</p>
+<h2 id="solution-in-the-standard-formulation">Solution in the Standard Formulation</h2>
+<h3 id="step-1-the-state">Step 1: The state</h3>
+<p>The spin-up state along the $z$-axis is the eigenvector of the Pauli matrix $\sigma_3$ with eigenvalue $+1$:</p>
+<p>$$
+|+z\rangle = \begin{pmatrix} 1 \\ 0 \end{pmatrix}.
+$$</p>
+<h3 id="step-2-the-measurement-operator">Step 2: The measurement operator</h3>
+<p>The measurement is along the direction</p>
+<p>$$
+\hat{n} = (\sin\theta,\, 0,\, \cos\theta).
+$$</p>
+<p>The measurement operator is the spin projection along $\hat{n}$:</p>
+<p>$$
+\hat{n}\cdot\mathbf{S} = \frac{\hbar}{2}\,\hat{n}\cdot\boldsymbol{\sigma} = \frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
+$$</p>
+<p>where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices.</p>
+<h3 id="step-3-the-eigenstate-for-the-outcome">Step 3: The eigenstate for the outcome</h3>
+<p>The eigenvalue-$+1$ eigenvector of $\hat{n}\cdot\mathbf{S}$, up to a global phase, is</p>
+<p>$$
+|+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
+$$</p>
+<h3 id="step-4-the-probability">Step 4: The probability</h3>
+<p>The probability of finding the particle spin-up along $\hat{n}$, given that it was prepared spin-up along $z$, is given by the Born rule:</p>
+<p>$$
+p_+ = \bigl|\langle +n \mid +z\rangle\bigr|^2.
+$$</p>
+<p>Computing the inner product:</p>
+<p>$$
+\langle +n \mid +z \rangle = \cos(\theta/2).
+$$</p>
+<p>Therefore</p>
+<p>$$
+p_+ = \bigl|\cos(\theta/2)\bigr|^2 = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
+$$</p>
+<h2 id="solution-in-the-biquaternion-formulation">Solution in the Biquaternion Formulation</h2>
+<h3 id="step-1-the-state_1">Step 1: The state</h3>
+<p>In the biquaternion framework, a pure spin state is an <strong>idempotent</strong> of the Hermitian subspace $\mathbb{M}_+$, of the form</p>
+<p>$$
+P(\hat{m}) = \tfrac{1}{2}\left(e_0 + i\hat{m}\right),
+$$</p>
+<p>where $\hat{m}$ is a unit pure real quaternion (a unit vector in $\mathbb{R}^3$). The spin-up state along $z$ corresponds to</p>
+<p>$$
+P_z = \tfrac{1}{2}\left(e_0 + i e_3\right).
+$$</p>
+<h3 id="step-2-the-measurement-operator_1">Step 2: The measurement operator</h3>
+<p>The same measurement direction $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ is now written as a unit pure real quaternion. The measurement operator is the Hermitian element of $\mathbb{M}_+$ corresponding to the spin projection along $\hat{n}$:</p>
+<p>$$
+\tilde{H} = \frac{\hbar}{2}\, i\hat{n}.
+$$</p>
+<h3 id="step-3-the-projector-for-the-outcome">Step 3: The projector for the outcome</h3>
+<p>The projector onto the eigenvalue-$+1$ eigenstate of $\tilde{H}$ is the idempotent</p>
+<p>$$
+P_n = \tfrac{1}{2}\left(e_0 + i\hat{n}\right).
+$$</p>
+<h3 id="step-4-the-probability_1">Step 4: The probability</h3>
+<p>The probability of finding the particle spin-up along $\hat{n}$, given that it was prepared spin-up along $z$, is given by the <strong>trace formula</strong>:</p>
+<p>$$
+p_+ = \mathrm{Tr}\!\left(P_n \circ P_z\right) = 2\,\mathrm{Sc}\!\left(P_n \circ P_z\right),
+$$</p>
+<p>where $\circ$ is the biquaternion product.</p>
+<p>Computing the product:</p>
+<p>$$
+P_n \circ P_z = \tfrac{1}{4}\left(e_0 + i\hat{n}\right)\left(e_0 + i e_3\right) = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat{n} - \hat{n}\,e_3\right].
+$$</p>
+<p>Evaluating $\hat{n}\,e_3$, using $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ and the quaternion product rules $e_1 e_3 = -e_2$, $e_3 e_3 = -e_0$:</p>
+<p>$$
+\hat{n}\,e_3 = \sin\theta\, e_1 e_3 + \cos\theta\, e_3 e_3 = -\sin\theta\, e_2 - \cos\theta\, e_0.
+$$</p>
+<p>Substituting:</p>
+<p>$$
+P_n \circ P_z = \tfrac{1}{4}\left[e_0 + i e_3 + i\hat{n} + \sin\theta\, e_2 + \cos\theta\, e_0\right].
+$$</p>
+<p>The scalar part (coefficient of $e_0$) is $\tfrac{1}{4}\left(1 + \cos\theta\right)$; the other terms $i e_3$, $i\hat{n}$, and $\sin\theta\, e_2$ are vector terms with vanishing coefficient of $e_0$.</p>
+<p>Applying the trace formula:</p>
+<p>$$
+p_+ = 2 \cdot \tfrac{1}{4}\left(1 + \cos\theta\right) = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
+$$</p>
+<h2 id="limiting-cases">Limiting Cases</h2>
+<p>Both formulations give the same result, and both give the same limits:</p>
+<ul>
+<li><strong>$\theta = 0$</strong> (measurement along $z$): $p_+ = \cos^2(0) = 1$.</li>
+<li><strong>$\theta = \pi/2$</strong> (measurement along $x$): $p_+ = \cos^2(\pi/4) = 1/2$.</li>
+<li><strong>$\theta = \pi$</strong> (measurement along $-z$): $p_+ = \cos^2(\pi/2) = 0$.</li>
+</ul>
+<p>These agree with the physical expectation.</p>
+<h2 id="what-the-biquaternion-solution-illustrates">What the Biquaternion Solution Illustrates</h2>
+<p><strong>1. States and observables are elements of the same subspace.</strong> The state $P_z$ and the outcome projector $P_n$ are both idempotents of $\mathbb{M}_+$. The entire calculation involves only the algebra of the biquaternion units and the extraction of the scalar part.</p>
+<p><strong>2. The Born rule is the trace formula.</strong> The probability is $p_+ = \mathrm{Tr}(P_n \circ P_z) = 2\,\mathrm{Sc}(P_n \circ P_z)$. This is not an additional postulate: it is the natural pairing between two elements of the algebra, given by the trace. It is the same formula as $p_+ = \mathrm{Tr}(\rho_n \rho_z)$ for density matrices, applied to the idempotents that represent the pure states.</p>
+<p><strong>3. No complex vectors are needed.</strong> In the standard solution, the calculation involves complex column vectors and their inner product. In the biquaternion solution, it involves only the algebra of $\mathbb{B}$: products of quaternion units, extraction of the scalar part, application of the trace formula. The complex structure is absorbed into the scalar imaginary $i$ of the algebra.</p>
+<p><strong>4. The geometry enters through the algebra.</strong> The angle $\theta$ enters through the unit vector $\hat{n} = \sin\theta\, e_1 + \cos\theta\, e_3$ that parametrizes the measurement direction. The result depends on $\theta$ only through the scalar product $\hat{n}\cdot e_3 = \cos\theta$, which appears in the trace formula through the product $\hat{n}\,e_3$. The geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.</p>
+<p><strong>5. The result agrees with the standard formulation.</strong> This is not surprising, because the two formulations are the same mathematics in different notation: $\mathbb{B} \cong M_2(\mathbb{C})$, and the idempotent $P(\hat{n}) = \tfrac{1}{2}(e_0 + i\hat{n})$ corresponds exactly to the rank-one projector $\tfrac{1}{2}(I + \hat{n}\cdot\boldsymbol{\sigma})$. But seeing the same result emerge from the algebra is a useful sanity check on the biquaternion framework.</p>
+<h2 id="extension-the-expectation-value-of-the-spin">Extension: The Expectation Value of the Spin</h2>
+<p>The same pattern applies to the calculation of the <strong>expectation value of the spin along $\hat{n}$</strong> in the state $|+z\rangle$. The two formulations are again strictly parallel.</p>
+<h3 id="standard-formulation">Standard formulation</h3>
+<p>$$
+\langle \hat{n}\cdot\mathbf{S}\rangle_{+z} = \langle +z|\hat{n}\cdot\mathbf{S}|+z\rangle = \frac{\hbar}{2}\cos\theta.
+$$</p>
+<h3 id="biquaternion-formulation">Biquaternion formulation</h3>
+<p>The observable is $\tilde{H} = \tfrac{\hbar}{2} i\hat{n}$ and the state is $P_z = \tfrac{1}{2}(e_0 + i e_3)$. The expectation value is given by the trace formula:</p>
+<p>$$
+\langle \tilde{H}\rangle_{P_z} = \mathrm{Tr}(P_z \circ \tilde{H}) = 2\,\mathrm{Sc}(P_z \circ \tilde{H}).
+$$</p>
+<p>Computing the product:</p>
+<p>$$
+P_z \circ \tilde{H} = \tfrac{1}{2}(e_0 + i e_3)\cdot\tfrac{\hbar}{2} i\hat{n} = \tfrac{\hbar}{4}\left(i\hat{n} - e_3 \hat{n}\right).
+$$</p>
+<p>Evaluating $e_3 \hat{n}$, using $e_3 e_1 = e_2$ and $e_3 e_3 = -e_0$:</p>
+<p>$$
+e_3 \hat{n} = e_3(\sin\theta\, e_1 + \cos\theta\, e_3) = \sin\theta\, e_2 - \cos\theta\, e_0.
+$$</p>
+<p>Substituting:</p>
+<p>$$
+P_z \circ \tilde{H} = \tfrac{\hbar}{4}\left(i\hat{n} - \sin\theta\, e_2 + \cos\theta\, e_0\right).
+$$</p>
+<p>The scalar part is $\tfrac{\hbar}{4}\cos\theta$. Therefore</p>
+<p>$$
+\langle \tilde{H}\rangle_{P_z} = 2 \cdot \tfrac{\hbar}{4}\cos\theta = \frac{\hbar}{2}\cos\theta.
+$$</p>
+<p>Both formulations give the same result.</p>
+<h2 id="summary">Summary</h2>
+<p>We have solved a simple exercise in quantum mechanics — the probability of measuring spin-up along an arbitrary direction, given a spin-up state along $z$ — in two parallel presentations.</p>
+<p>In the <strong>standard formulation</strong>, the solution proceeds through ket vectors, Pauli matrices, and the Born rule in the form $p_+ = |\langle +n | +z\rangle|^2$, giving $p_+ = \cos^2(\theta/2) = (1 + \cos\theta)/2$.</p>
+<p>In the <strong>biquaternion formulation</strong>, the solution proceeds through the idempotents of $\mathbb{M}_+$ and the trace formula $p_+ = \mathrm{Tr}(P_n \circ P_z)$, giving the same result.</p>
+<p>The two formulations agree, as they must. The biquaternion formulation makes explicit the algebraic structure of the qubit: states and observables are elements of the same subspace, the Born rule is the natural pairing given by the trace, and the geometry of the Bloch sphere is encoded in the multiplication rules of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>Biquaternion algebra</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+$</td>
+<td>Hermitian subspace (states, observables)</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_-$</td>
+<td>Anti-Hermitian subspace (generators)</td>
+</tr>
+<tr>
+<td>$e_0 = 1, e_1, e_2, e_3$</td>
+<td>Quaternion basis, $e_k^2 = -e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>Scalar imaginary, $i^2 = -1$</td>
+</tr>
+<tr>
+<td>$\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$</td>
+<td>Pauli matrices</td>
+</tr>
+<tr>
+<td>$P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$</td>
+<td>Pure-state idempotent</td>
+</tr>
+<tr>
+<td>$\tilde{H} = h_0 e_0 + i\mathbf{h}$</td>
+<td>Hermitian element (observable)</td>
+</tr>
+<tr>
+<td>$\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$</td>
+<td>Trace of an element of $\mathbb{M}_+$</td>
+</tr>
+<tr>
+<td>$p_+ = \mathrm{Tr}(P_n \circ P_z)$</td>
+<td>Born rule in biquaternion form</td>
+</tr>
+</tbody>
+</table>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>P. A. M. Dirac, <em>The Principles of Quantum Mechanics</em> (Oxford, 1930), for the standard formulation of spin-$\tfrac{1}{2}$.</li>
+<li>J. J. Sakurai and Jim Napolitano, <em>Modern Quantum Mechanics</em> (Pearson, 2017), for the standard textbook treatment of the spin-$\tfrac{1}{2}$ measurement.</li>
+<li>Michael A. Nielsen and Isaac L. Chuang, <em>Quantum Computation and Quantum Information</em> (Cambridge, 2000), for the Bloch sphere and the Born rule for qubits.</li>
+<li>The companion articles of this series: <em>Quantum Mechanics in Biquaternionic Form</em>, <em>Spin-1/2 Quantum Mechanics in Biquaternionic Form</em>, and <em>$\mathbb{M}_+$ as the Informational Space</em>.</li>
+</ul>
+<hr />
+<h2 id="notes-on-the-correction">Notes on the correction</h2>
+<p><strong>One change made.</strong></p>
+<p>The final line of the biquaternion Step 4 has been rewritten so that the result is presented in the same form as the standard solution. Both now end with</p>
+<p>$$
+p_+ = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
+$$</p>
+<p>The earlier version of the biquaternion Step 4 presented the result with the half-angle form coming last:</p>
+<p>$$
+p_+ = 2 \cdot \tfrac{1}{4}(1 + \cos\theta) = \frac{1 + \cos\theta}{2} = \cos^2(\theta/2).
+$$</p>
+<p>The corrected version presents the intermediate arithmetic and the final result in the same order as the standard solution:</p>
+<p>$$
+p_+ = 2 \cdot \tfrac{1}{4}(1 + \cos\theta) = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2},
+$$</p>
+<p>where the equality $\frac{1 + \cos\theta}{2} = \cos^2(\theta/2)$ is the standard half-angle identity, used in the same direction as in the standard solution. The two solutions now display their final results identically.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
