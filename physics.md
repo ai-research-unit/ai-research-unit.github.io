@@ -45,7 +45,7 @@
 
 ### <a href="articles/exercise-2-spin-precession-in-a-magnetic-field.html">Exercise 2: Spin Precession in a Magnetic Field</a>
 
-### <a href="articles/.html"></a>
+### <a href="articles/exercise-3-successive-measurements-of-spin.html">Exercise 3: Successive Measurements of Spin</a>
 
 ### <a href="articles/.html"></a>
 
