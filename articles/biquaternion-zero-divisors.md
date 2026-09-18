@@ -53,7 +53,7 @@ The zero divisors are exactly the nonzero elements on which the norm form vanish
 
 ### The Algebra Is Not a Division Algebra
 
-By definition, a **division algebra** is an algebra in which every nonzero element is invertible. Equivalently, an algebra is a division algebra if and only if it contains no zero divisors.
+By definition, a **division algebra** is an algebra in which every nonzero element is invertible. For the finite-dimensional algebra $\mathbb{B}$, this is equivalent to containing no zero divisors: if every nonzero element is invertible, then no nonzero element can annihilate another; and conversely, if there are no zero divisors, then by the criterion above every nonzero element has an inverse.
 
 The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is **not** a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$.
 
@@ -88,7 +88,7 @@ The scalar part is the natural invariant because the scalar imaginary $i$ is cen
 In the **pure case**, the norm form reduces to
 
 $$
-N(\tilde{Q}) = -(\mathbf{Q}, \mathbf{Q}) = -(Q_1^2 + Q_2^2 + Q_3^2),
+N(\tilde{Q}) = (\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2,
 $$
 
 a complex scalar. The vanishing of the norm form is the condition $(\mathbf{Q}, \mathbf{Q}) = 0$, which has nontrivial complex solutions (the nilpotents).
@@ -217,7 +217,7 @@ So every non-pure zero divisor is a complex multiple of an idempotent.
 
 The idempotents of $\mathbb{B}$ are classified as follows. The classification depends on the roots of $-1$ in $\mathbb{B}$, which are classified in the article on biquaternion roots of minus one.
 
-**Theorem.** Every idempotent of $\mathbb{B}$ is of the form
+**Theorem.** Every idempotent of $\mathbb{B}$ is either trivial ($0$ or $e_0$) or of the form
 
 $$
 \tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i,
@@ -225,33 +225,35 @@ $$
 
 where $\xi \in \mathbb{B}$ is a root of $-1$, i.e. $\xi^2 = -1$. There are no other idempotents in $\mathbb{B}$.
 
-**Proof.** Write the idempotent in the form $\tilde{P} = A e_0 + \xi B$ with $A, B \in \mathbb{C}$ and $\xi$ a root of $-1$. Squaring and equating to $\tilde{P}$ gives
+**Proof.** Write $\tilde{P} = A e_0 + \mathbf{B}$ with $A \in \mathbb{C}$ and $\mathbf{B} = B_1 e_1 + B_2 e_2 + B_3 e_3$ a pure biquaternion. Then
 
 $$
-\tilde{P}^2 = (A^2 - B^2) e_0 + 2 A B \xi = A e_0 + B \xi = \tilde{P}.
+\tilde{P}^2 = (A^2 - (\mathbf{B}, \mathbf{B})) e_0 + 2 A \mathbf{B}.
 $$
 
-Equating the coefficients of $e_0$ and $\xi$:
+Equating to $\tilde{P} = A e_0 + \mathbf{B}$ gives the two equations
 
 $$
-A = A^2 - B^2, \qquad B = 2 A B.
+A^2 - (\mathbf{B}, \mathbf{B}) = A, \qquad 2 A \mathbf{B} = \mathbf{B}.
 $$
 
-The second equation requires $A = \tfrac{1}{2}$ (since $B \neq 0$ for a non-trivial idempotent, and the case $B = 0$ gives only the trivial idempotents $0$ and $e_0$). Substituting into the first:
+If $\mathbf{B} = 0$, then $A^2 = A$, so $A = 0$ or $A = 1$, giving the trivial idempotents. If $\mathbf{B} \neq 0$, then the second equation gives $A = 1/2$. Substituting into the first gives $1/4 - (\mathbf{B}, \mathbf{B}) = 1/2$, so $(\mathbf{B}, \mathbf{B}) = -1/4$.
+
+Define $\xi = -2 i \mathbf{B}$. Then $\xi$ is pure, and
 
 $$
-\tfrac{1}{2} = \tfrac{1}{4} - B^2,
+(\xi, \xi) = \sum_{k=1}^{3} (-2 i B_k)^2 = -4 \sum_{k=1}^{3} B_k^2 = -4 (\mathbf{B}, \mathbf{B}) = 1,
 $$
 
-so $B^2 = -\tfrac{1}{4}$. Since $B$ is complex, the only solutions are $B = \pm i/2$. Thus
+so $\xi^2 = -(\xi, \xi) = -1$. Thus $\xi$ is a root of $-1$, and $\mathbf{B} = \xi \cdot (i/2)$. Hence
 
 $$
-\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i.
+\tilde{P} = \tfrac{1}{2} e_0 + \tfrac{1}{2} \xi i.
 $$
 
-$\square$
+The sign choice arises from replacing $\xi$ by $-\xi$, which is also a root of $-1$. $\square$
 
-The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, we get $\tilde{P} = \tfrac{1}{2} e_0 - \tfrac{1}{2} e_0 = 0$; with $\xi = -i$, we get $\tilde{P} = \tfrac{1}{2} e_0 + \tfrac{1}{2} e_0 = e_0$.
+The trivial idempotents correspond to the degenerate roots $\xi = \pm i$: with $\xi = i$, the formula gives $\tilde{P} = \frac{1}{2} e_0 + \frac{1}{2} i \cdot i = \frac{1}{2} e_0 - \frac{1}{2} e_0 = 0$; with $\xi = -i$, it gives $\tilde{P} = \frac{1}{2} e_0 - \frac{1}{2} i \cdot i = \frac{1}{2} e_0 + \frac{1}{2} e_0 = e_0$.
 
 ### Properties
 
@@ -274,13 +276,13 @@ $$
 
 The classification of the idempotents depends on the classification of the roots of $-1$ in $\mathbb{B}$. The roots are stated here; the proof is in the article on biquaternion roots of minus one.
 
-**Theorem.** The roots of $-1$ in $\mathbb{B}$ are exactly:
+**Theorem.** The roots of $-1$ in $\mathbb{B}$, i.e. the elements $\xi \in \mathbb{B}$ with $\xi^2 = -1$, are exactly:
 
-1. **Non-trivial roots:** $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.
-2. **The trivial root:** $\xi = \pm i$.
-3. **The real roots:** $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.
+1. **The trivial roots:** $\xi = \pm i$ (the scalar imaginary).
+2. **The real quaternion roots:** $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion, i.e. $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ with $\mu_1, \mu_2, \mu_3 \in \mathbb{R}$ and $\mu_1^2 + \mu_2^2 + \mu_3^2 = 1$.
+3. **The non-trivial roots:** $\xi = b \mu + d \nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$ with $b \neq 0$ and $d \neq 0$.
 
-The three families are distinguished by the value of the real and imaginary parts of $\xi$. The non-trivial roots have both parts nonzero, the trivial root has vanishing real part and imaginary part equal to $\pm i$, and the real roots have vanishing imaginary part.
+The three families are distinguished by the value of the real and imaginary parts of $\xi$. Writing $\xi = \xi_0 e_0 + \xi_1 e_1 + \xi_2 e_2 + \xi_3 e_3$ with $\xi_\mu = a_\mu + i b_\mu$, the trivial roots have $a_\mu = 0$ for all $\mu$, $b_0 = \pm 1$, and $b_k = 0$ for $k = 1, 2, 3$; the real quaternion roots have $b_\mu = 0$ for all $\mu$ and $a_0 = 0$; and the non-trivial roots have both a nonzero real part and a nonzero imaginary part in the vector directions.
 
 ## Distribution of the Zero Divisors
 
@@ -316,7 +318,11 @@ $$
 
 This is the equation of a **double cone** in the four-dimensional real space $\mathbb{M}_+$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_+$ is therefore a three-dimensional submanifold of $\mathbb{M}_+$.
 
-The elements of $\mathbb{M}_+$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_+$ is the complement of the cone, which has two connected components.
+The elements of $\mathbb{M}_+$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_+$ is the complement of the cone, which has **three** connected components:
+
+- The **future timelike region** $q_0 > 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
+- The **past timelike region** $q_0 < 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
+- The **spacelike region** $q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) < 0$.
 
 ### The Anti-Hermitian Subspace $\mathbb{M}_-$
 
@@ -340,13 +346,17 @@ $$
 
 This is again the equation of a **double cone** in the four-dimensional real space $\mathbb{M}_-$, with apex at the origin. The nonzero elements of this cone are zero divisors. The set of zero divisors in $\mathbb{M}_-$ is therefore a three-dimensional submanifold of $\mathbb{M}_-$.
 
-The elements of $\mathbb{M}_-$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible.
+The elements of $\mathbb{M}_-$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible. The set of invertible elements of $\mathbb{M}_-$ is the complement of the cone, which has **three** connected components:
+
+- The **spacelike region** $q_1^2 + q_2^2 + q_3^2 > (q'_0)^2$, on which $N(\tilde{Q}) > 0$.
+- The **future timelike region** $q'_0 > 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
+- The **past timelike region** $q'_0 < 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
 
 ### Summary of the Distribution
 
 Of the four fixed-point subspaces of $\mathbb{B}$:
 
-- $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors. They are the maximal subalgebras of $\mathbb{B}$ that are division algebras.
+- $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors. They are the subalgebras of $\mathbb{B}$ among the four subspaces that are division algebras.
 - $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional cone of zero divisors. The nonzero elements outside the cone are invertible, and the zero divisors form the cone itself (minus the origin).
 
 The two cones have the same structure: in each case, the equation is that the square of one real coordinate equals the sum of the squares of the other three. In $\mathbb{M}_+$ the special coordinate is $q_0$ (the real scalar part); in $\mathbb{M}_-$ it is $q'_0$ (the imaginary scalar part).
@@ -418,7 +428,7 @@ $$
 
 **Dimension.** The zero divisor set has **real dimension $6$** (equivalently, **complex dimension $3$** as a complex algebraic cone in $\mathbb{C}^4$). The reasoning is the following. The norm form $N : \mathbb{B} \to \mathbb{C}$ is a single complex-valued polynomial equation in the four complex coefficients $(Q_0, Q_1, Q_2, Q_3)$, or equivalently two real equations in the eight real coordinates. The solution set of $N(\tilde{Q}) = 0$ is therefore a **complex hypersurface** in $\mathbb{C}^4$ of complex dimension $4 - 1 = 3$, hence real dimension $2 \cdot 3 = 6$.
 
-The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real $6$-manifold away from the origin. (The two real equations are $N_r = 0$ and $N_i = 0$, with gradients $\nabla N_r$ and $\nabla N_i$ proportional only when $(q_0, q_1, q_2, q_3) = (0, 0, 0, 0)$; since the origin is excluded from $\mathcal{Z}$, the gradients are linearly independent everywhere on $\mathcal{Z}$.)
+The two real equations are independent at every nonzero point of the zero set, so the zero set is a smooth real $6$-manifold away from the origin. (The two real equations are $N_r = 0$ and $N_i = 0$, with gradients $\nabla N_r$ and $\nabla N_i$ proportional only when $(q_0, q_1, q_2, q_3, q'_0, q'_1, q'_2, q'_3) = (0, \dots, 0)$; since the origin is excluded from $\mathcal{Z}$, the gradients are linearly independent everywhere on $\mathcal{Z}$.)
 
 ## Summary of Notation
 
@@ -443,7 +453,7 @@ The zero divisors of the biquaternion algebra are the nonzero elements on which 
 - The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
 - The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the complex multiples of the idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
 
-The idempotents are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$, the trivial root $\pm i$, and the real roots $\pm \mu$.
+The idempotents are either trivial ($0$ or $e_0$) or of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as the trivial roots $\pm i$, the real quaternion roots $\pm \mu$ with $\mu$ a unit pure real quaternion, and the non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$ unit pure real quaternions.
 
 Of the four fixed-point subspaces of $\mathbb{B}$, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ contain no zero divisors, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a three-dimensional double cone of zero divisors (within the four-dimensional subspace).
 

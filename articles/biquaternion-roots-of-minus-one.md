@@ -97,7 +97,7 @@ $$
 
 From the first condition, $|\mathbf{q}|^2 = 1 + |\mathbf{q}'|^2 \geq 1 > 0$, so $\mathbf{q} \neq 0$.
 
-**Sub-case 2a: $\mathbf{q}' = 0$.** Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{X} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the **real roots**. Since $\mu$ ranges over the whole unit sphere $S^2 \subset \mathbb{R}^3$, the real roots are the unit sphere itself: writing them as $\xi = \pm\mu$ is redundant but conventional.
+**Sub-case 2a: $\mathbf{q}' = 0$.** Then $|\mathbf{q}|^2 = 1$, so $\mathbf{q}$ is a unit vector in $\mathbb{R}^3$. Let $\mu = \mathbf{q}$, which is a unit pure real quaternion. Then $\mathbf{X} = \mu$, and $\xi = \mu$. Since $\mu$ is a unit pure real quaternion, $\mu^2 = -1$ (a standard fact from the quaternion algebra). These are the **real roots**. Since $\mu$ ranges over the whole unit sphere $S^2 \subset \mathbb{R}^3$, and $S^2$ is invariant under $\mu \mapsto -\mu$, the family can also be written in the redundant form $\xi = \pm \mu$.
 
 **Sub-case 2b: $\mathbf{q}' \neq 0$.** Then $|\mathbf{q}| \geq 1 > 0$ and $|\mathbf{q}'| > 0$, so we can normalize both. Let
 
@@ -177,7 +177,7 @@ using the constraint $b^2 - d^2 = 1$. ✓
 
 The three families are related as follows.
 
-**Real roots as the boundary of the non-trivial family.** If $d \to 0$ in the non-trivial family, then $b^2 \to 1$ (by the constraint $b^2 - d^2 = 1$), and $\xi = b\mu + d\nu i$ tends to $\pm\mu$, a real root. The unit pure quaternion $\nu$ becomes undetermined in the limit. So the real roots (the unit sphere $S^2$) form the boundary of the non-trivial family.
+**Real roots as the boundary of the non-trivial family.** If $d \to 0$ in the non-trivial family, then $b^2 \to 1$ (by the constraint $b^2 - d^2 = 1$), and $\xi = b\mu + d\nu i$ tends to $\mu$, a real root. The unit pure quaternion $\nu$ becomes undetermined in the limit. So the real roots (the unit sphere $S^2$) form the boundary of the non-trivial family.
 
 **Trivial roots as a separate family.** The trivial roots $\xi = \pm i$ have vanishing vector part. Neither the real roots (which are pure, hence have $\mathbf{X} = \mu \neq 0$) nor the non-trivial roots (which have $\mathbf{X} = b\mu + d\nu i$ with $b \neq 0$, hence $\mathbf{X} \neq 0$) include or approach the trivial roots. So the trivial roots form a separate family, consisting of two isolated points.
 
@@ -244,23 +244,30 @@ where we have used $\xi^2 i^2 = (-1)(-1) = 1$ and the fact that $e_0$ commutes w
 Substituting the classification of $\xi$:
 
 - For the trivial root $\xi = \pm i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} i \cdot i = \tfrac{1}{2} e_0 \mp \tfrac{1}{2} e_0$, giving $\tilde{P} = 0$ or $\tilde{P} = e_0$. These are the **trivial idempotents**.
-- For the real root $\xi = \pm \mu$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. These are the idempotents that use one quaternion unit direction and the scalar imaginary.
-- For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These are the idempotents that use all four basis elements.
+- For the real root $\xi = \pm \mu$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \mu i$. These are the idempotents that involve the real scalar part together with the imaginary vector direction $\mu i$.
+- For the non-trivial root $\xi = b\mu + d\nu i$: $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu + d\nu i) i = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} (b\mu i - d\nu)$. These idempotents combine a real scalar part, a real vector part in the direction of $\nu$, and an imaginary vector part in the direction of $\mu$.
 
 ### The Correspondence
 
 The map
 
 $$
-\xi \longmapsto \{ \tilde{P}_+(\xi), \tilde{P}_-(\xi) \}, \qquad \tilde{P}_\pm(\xi) = \tfrac{1}{2}(e_0 \pm \xi i),
+\xi \longmapsto P_+(\xi), \qquad P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i),
 $$
 
-sends a root $\xi$ to the unordered pair of its associated idempotents. This map is **two-to-one** from roots to unordered pairs:
+is a **bijection** from the set of roots of $-1$ to the set of idempotents of $\mathbb{B}$. Indeed:
 
-- $\xi$ and $-\xi$ give the same unordered pair, since $\tilde{P}_+(-\xi) = \tilde{P}_-(\xi)$ and $\tilde{P}_-(-\xi) = \tilde{P}_+(\xi)$.
-- If $\xi \neq \xi'$ and $\xi \neq -\xi'$, then the unordered pairs differ.
+- It is well-defined: the verification that $P_+(\xi)$ is idempotent whenever $\xi^2 = -1$ is the computation above.
+- It is injective: $P_+(\xi) = P_+(\xi')$ gives $\xi i = \xi' i$, hence $\xi = \xi'$.
+- It is surjective onto the set of idempotents of the stated form, since $P_-(\xi) = \tfrac{1}{2}(e_0 - \xi i) = P_+(-\xi)$ and $-\xi$ is again a root of $-1$.
 
-So the idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, with the additional sign choice $\pm$ in the construction selecting between the two complementary idempotents of the pair.
+Consequently, the **complementary pairs** $\{P, e_0 - P\}$ of idempotents are in bijection with the roots of $-1$ modulo the sign identification $\xi \sim -\xi$, since
+
+$$
+P_+(-\xi) = \tfrac{1}{2}(e_0 - \xi i) = e_0 - P_+(\xi).
+$$
+
+Thus $P_+(\xi)$ and $P_+(-\xi)$ are the two members of a complementary pair, and the pair itself corresponds to the class $\{\xi, -\xi\}$.
 
 ### The Idempotent as a Projection
 
@@ -296,7 +303,9 @@ In either case $N(\xi) \neq 0$, so by the invertibility criterion, $\xi$ is inve
 
 ### Dimensions
 
-The **non-trivial** roots form a **four-real-dimensional** family. The **non-trivial** idempotents (that is, the idempotents other than $0$ and $e_0$) also form a **four-real-dimensional** family: they are in bijection with the pairs $\{\xi, -\xi\}$ of real and non-trivial roots of $-1$, together with the discrete choice $\tilde{P}_+ \leftrightarrow \tilde{P}_-$ between the two complementary idempotents of a pair. The construction relating the roots to the idempotents is $\xi \mapsto \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$.
+The set of roots of $-1$ is a stratified space of real dimension $4$ (the non-trivial family) with a two-dimensional boundary stratum (the real roots, $S^2$) and two isolated points (the trivial roots, $\pm i$).
+
+The idempotents correspond bijectively to the roots of -1, so the non-trivial idempotents (that is, the idempotents other than 0 and e₀) also form a set of real dimension 4, with a two-dimensional boundary stratum inherited from the real roots. The trivial roots $\pm i$ map to the trivial idempotents $0$ and $e_0$, which are excluded from the non-trivial idempotents, so there are no isolated points among the non-trivial idempotents.
 
 The non-trivial roots sit inside the six-real-dimensional space of pure biquaternions. The non-trivial idempotents sit inside the six-real-dimensional zero divisor set. The trivial roots ($\pm i$) and trivial idempotents ($0, e_0$) are isolated points outside these families.
 
@@ -315,6 +324,8 @@ where $\xi$ is a root of $-1$. Indeed,
 $$
 (\xi i)^2 = \xi^2 i^2 = (-1)(-1) = 1.
 $$
+
+The map $\xi \mapsto \xi i$ is a bijection from the roots of $-1$ to the roots of $+1$: it is injective since $i$ is invertible, and if $\eta^2 = 1$ then $\xi = -\eta i$ satisfies $\xi^2 = -1$ and $\xi i = \eta$.
 
 Applying the classification of the roots of $-1$:
 
@@ -350,15 +361,15 @@ The proof proceeds by writing $\xi = A + \mathbf{X}$ in scalar-vector form, squa
 
 The non-trivial roots form a four-real-dimensional family, with the real roots (a two-dimensional sphere) as their boundary. The trivial roots are two isolated points. All roots except the trivial ones are pure, and they lie in the six-dimensional space of pure biquaternions.
 
-The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
+The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
 
 The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original discovery of the biquaternions.
-- S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the original classification. (The classification is correct; the original derivation contains a tabulation error, which is not reproduced here.)
-- S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the cleaner derivation method used in this article and the relation to the idempotents and the zero divisors.
+- S. J. Sangwine, "Biquaternion (complexified quaternion) roots of $-1$", *Advances in Applied Clifford Algebras* **16** (2006) 63–68, for the original classification.
+- S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416, for the relation to the idempotents and the zero divisors.
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the representation theory and the constraint verification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.

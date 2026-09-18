@@ -29,8 +29,8 @@ where $\bar{\tilde{Q}}$ is the quaternion conjugate.
 
 **Basic properties.**
 
-- $N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real when $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ or in the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, and it is complex otherwise.
-- $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. The elements with vanishing norm form are the zero divisors, studied in the article on biquaternion zero divisors.
+- $N(\tilde{Q})$ is a complex scalar (a complex multiple of $e_0$) in general. It is real on the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and on the imaginary translate $i \mathbb{H}_{\mathbb{B}}$; outside their union it need not be real.
+- $N(\tilde{Q})$ is not positive-definite: it can vanish for a nonzero biquaternion. The nonzero elements with vanishing norm form are the zero divisors, studied in the article on biquaternion zero divisors.
 - $N(\tilde{Q})$ is invariant under quaternion conjugation: $N(\bar{\tilde{Q}}) = N(\tilde{Q})$.
 - $N(\tilde{Q})$ is complex-conjugated under complex conjugation: $N(\tilde{Q}^*) = N(\tilde{Q})^*$.
 - $N(\tilde{Q})$ is complex-conjugated under Hermitian conjugation: $N(\tilde{Q}^\dagger) = N(\bar{\tilde{Q}}^*) = N(\tilde{Q})^*$.
@@ -59,7 +59,7 @@ $\square$
 
 **Corollary.** If $N(\tilde{Q}) \neq 0$ and $N(\tilde{R}) \neq 0$, then $N(\tilde{Q} \circ \tilde{R}) \neq 0$.
 
-**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is a zero divisor.
+**Corollary.** If $N(\tilde{Q}) = 0$ or $N(\tilde{R}) = 0$, then $N(\tilde{Q} \circ \tilde{R}) = 0$. In particular, the product of a zero divisor with any biquaternion is either zero or a zero divisor.
 
 ## The Hermitian Form
 
@@ -117,7 +117,7 @@ The two forms are related as follows:
 - The **norm form** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex scalar (a multiple of $e_0$), multiplicative, and can vanish for nonzero $\tilde{Q}$.
 - The **Hermitian form** $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is $\sum_\mu |Q_\mu|^2$ (non-negative, vanishing only at $\tilde{Q} = 0$) and whose vector part need not vanish. It is not multiplicative.
 
-They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the Hermitian form is also scalar-valued, but it equals $-\sum_\mu q'^2_\mu \cdot e_0$, which is the negative of the norm form; on that subspace the two forms differ by a sign.
+They coincide as biquaternions if and only if $\tilde{Q}$ lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, i.e. if and only if all the coefficients $Q_\mu$ are real. On the imaginary translate $i \mathbb{H}_{\mathbb{B}}$, the Hermitian form is also scalar-valued, but it equals $+\sum_\mu q'^2_\mu \cdot e_0$, which is the negative of the norm form; on that subspace the two forms differ by a sign.
 
 The two forms play different roles:
 
@@ -238,9 +238,9 @@ So the algebra $\mathbb{B}$ is partitioned into three classes: the zero element,
 
 ### The Algebra Is Not a Division Algebra
 
-By definition, a **division algebra** is an algebra in which every nonzero element is invertible. Equivalently, an algebra is a division algebra if and only if it contains no zero divisors: if every nonzero element is invertible, then no nonzero element can annihilate another; and conversely, if there are no zero divisors, then the norm form never vanishes on nonzero elements, so every nonzero element has an inverse.
+By definition, a **division algebra** is an algebra in which every nonzero element is invertible. For the finite-dimensional algebra $\mathbb{B}$, this is equivalent to containing no zero divisors: if every nonzero element is invertible, then no nonzero element can annihilate another; and conversely, if there are no zero divisors, then by the invertibility criterion above every nonzero element has an inverse.
 
-The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is **not** a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The biquaternion algebra $\mathbb{B}$ is a fourth finite-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors. The zero divisors are studied in the article on biquaternion zero divisors.
+The biquaternion algebra $\mathbb{B}$ contains zero divisors, so it is **not** a division algebra. This is in contrast to the Frobenius theorem, which states that the only finite-dimensional associative real division algebras are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$. The biquaternion algebra $\mathbb{B}$ is an eight-dimensional associative real algebra, but it is not a division algebra, because it contains zero divisors. The zero divisors are studied in the article on biquaternion zero divisors.
 
 ## Distribution of the Invertible Elements
 
@@ -300,12 +300,13 @@ $$
 
 which is a double cone with apex at the origin. The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_+$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible.
 
-The set of invertible elements of $\mathbb{M}_+$ is the complement of the light cone, which has two connected components:
+The set of invertible elements of $\mathbb{M}_+$ is the complement of the light cone, which has three connected components:
 
-- The **future cone** $q_0 > 0$, on which $N(\tilde{Q}) > 0$.
-- The **past cone** $q_0 < 0$, on which $N(\tilde{Q}) > 0$.
+- The **future region** $q_0 > 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
+- The **past region** $q_0 < 0$ and $q_0^2 > (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) > 0$.
+- The **inside region** $q_0^2 < (q'_1)^2 + (q'_2)^2 + (q'_3)^2$, on which $N(\tilde{Q}) < 0$.
 
-On both components, the norm form is positive.
+On all three components, the norm form is nonzero.
 
 ### The Anti-Hermitian Subspace $\mathbb{M}_-$
 
@@ -329,21 +330,22 @@ $$
 
 which is again a double cone with apex at the origin. The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_-$ **outside** the cone have $N(\tilde{Q}) \neq 0$ and are invertible.
 
-The set of invertible elements of $\mathbb{M}_-$ is the complement of the light cone, which has two connected components:
+The set of invertible elements of $\mathbb{M}_-$ is the complement of the light cone, which has three connected components:
 
 - The **spacelike region** $q_1^2 + q_2^2 + q_3^2 > (q'_0)^2$, on which $N(\tilde{Q}) > 0$.
-- The **timelike region** $q_1^2 + q_2^2 + q_3^2 < (q'_0)^2$, on which $N(\tilde{Q}) < 0$.
+- The **future timelike region** $q'_0 > 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
+- The **past timelike region** $q'_0 < 0$ and $(q'_0)^2 > q_1^2 + q_2^2 + q_3^2$, on which $N(\tilde{Q}) < 0$.
 
-On both components, the norm form is nonzero.
+On all three components, the norm form is nonzero.
 
 ### Summary of the Distribution
 
 Of the four fixed-point subspaces of $\mathbb{B}$:
 
 - $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are division algebras: every nonzero element is invertible.
-- $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, and the invertible elements form the complement of the cone, with two connected components each.
+- $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors, and the invertible elements form the complement of the cone, with three connected components each.
 
-The two cones have the same structure: each is defined by the vanishing of an indefinite quadratic form of signature $(1, 3)$ or $(3, 1)$. In both cases, the cone separates the invertible elements into two connected components.
+The two cones have the same structure: each is defined by the vanishing of an indefinite quadratic form of signature $(1, 3)$ or $(3, 1)$. In both cases, the cone separates the invertible elements into three connected components.
 
 ## The Relation to the Hermitian Decomposition
 
@@ -355,8 +357,8 @@ $$
 
 Specifically:
 
-- For $\tilde{Q} \in \mathbb{M}_+$, the norm form is real, and it is positive on the future and past cones and negative inside the light cone.
-- For $\tilde{Q} \in \mathbb{M}_-$, the norm form is real, and it is positive outside the light cone and negative inside the timelike region.
+- For $\tilde{Q} \in \mathbb{M}_+$, the norm form is real, and it is positive in the future and past regions (outside the light cone) and negative inside the light cone.
+- For $\tilde{Q} \in \mathbb{M}_-$, the norm form is real, and it is positive in the spacelike region (outside the light cone) and negative in the timelike region (inside the light cone, which has two connected components).
 - For a general $\tilde{Q} = \tilde{Q}_+ + \tilde{Q}_-$ with both components nonzero, the norm form is complex, and the invertibility criterion is $N(\tilde{Q}) \neq 0$, which is a condition on both the real and imaginary parts of $N$.
 
 The **scalar part** of the Hermitian form, by contrast, is always non-negative, and it is positive-definite on all of $\mathbb{B}$: it vanishes only at $\tilde{Q} = 0$. The full Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is this non-negative quantity; it does not detect the zero divisors, because its scalar part vanishes only at $\tilde{Q} = 0$.
@@ -374,7 +376,7 @@ The **scalar part** of the Hermitian form, by contrast, is always non-negative, 
 | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ | Anti-Hermitian conjugate |
 | $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
 | $\tilde{Q} \tilde{Q}^\dagger$ | Hermitian form (a Hermitian biquaternion) |
-| $\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu \|Q_\mu\|^2$ | Scalar part of the Hermitian form |
+| $\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger) = \sum_\mu |Q_\mu|^2$ | Scalar part of the Hermitian form |
 | $\|\tilde{Q}\|_E = \sqrt{\mathrm{Sc}(\tilde{Q} \tilde{Q}^\dagger)}$ | Euclidean norm |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse |
 | $\mathbb{B}^\times$ | Group of units |
@@ -385,11 +387,11 @@ The **scalar part** of the Hermitian form, by contrast, is always non-negative, 
 
 ## Summary
 
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra. It is not positive-definite, and it vanishes on the zero divisors. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part does not vanish unless $\tilde{Q}$ lies in $\mathbb{H}_{\mathbb{B}}$ or $i\mathbb{H}_{\mathbb{B}}$.
+The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is a complex-valued multiplicative quadratic form on the biquaternion algebra. It is not positive-definite, and it vanishes on the zero divisors. The Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a Hermitian biquaternion whose scalar part is the non-negative quantity $\sum_\mu |Q_\mu|^2$; this scalar part defines the Euclidean norm on the underlying real vector space $\mathbb{B} \cong \mathbb{R}^8$. The full Hermitian form is not scalar-valued in general; its vector part vanishes precisely when $\tilde{Q}$ is a complex scalar multiple of a real quaternion, i.e. when $\tilde{Q} = (\alpha + i\beta) A$ with $\alpha, \beta \in \mathbb{R}$ and $A \in \mathbb{H}_{\mathbb{B}}$.
 
 The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \neq 0$. The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{B}^\times$ is an open, connected subset of $\mathbb{B}$, isomorphic to $GL(2, \mathbb{C})$, and is a Lie group of real dimension $8$, with Lie algebra $\mathbb{B}$ and center $\mathbb{C}^\times$.
 
-The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are division algebras, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors.
+The algebra $\mathbb{B}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are division algebras, while $\mathbb{M}_+$ and $\mathbb{M}_-$ contain a light cone of zero divisors; the invertible elements in each of $\mathbb{M}_+$ and $\mathbb{M}_-$ form a complement of the cone with three connected components.
 
 The zero divisors themselves are studied in the article on biquaternion zero divisors, and the classification of the roots of $-1$ that underlies the idempotent classification is studied in the article on biquaternion roots of minus one.
 
