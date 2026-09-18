@@ -1,5 +1,4 @@
 
-
 # __Exercise 1: Measuring Spin Along an Arbitrary Direction__
 
 ## Introduction
@@ -237,30 +236,4 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the standard textbook treatment of the spin-$\tfrac{1}{2}$ measurement.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the Bloch sphere and the Born rule for qubits.
 - The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, and *$\mathbb{M}_+$ as the Informational Space*.
-
----
-
-## Notes on the correction
-
-**One change made.**
-
-The final line of the biquaternion Step 4 has been rewritten so that the result is presented in the same form as the standard solution. Both now end with
-
-$$
-p_+ = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2}.
-$$
-
-The earlier version of the biquaternion Step 4 presented the result with the half-angle form coming last:
-
-$$
-p_+ = 2 \cdot \tfrac{1}{4}(1 + \cos\theta) = \frac{1 + \cos\theta}{2} = \cos^2(\theta/2).
-$$
-
-The corrected version presents the intermediate arithmetic and the final result in the same order as the standard solution:
-
-$$
-p_+ = 2 \cdot \tfrac{1}{4}(1 + \cos\theta) = \cos^2(\theta/2) = \frac{1 + \cos\theta}{2},
-$$
-
-where the equality $\frac{1 + \cos\theta}{2} = \cos^2(\theta/2)$ is the standard half-angle identity, used in the same direction as in the standard solution. The two solutions now display their final results identically.
 
