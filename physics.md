@@ -36,6 +36,8 @@
 
 ### <a href="articles/exercise-5-the-reduced-state-of-an-entangled-subsystem.html">Exercise 5: The Reduced State of an Entangled Subsystem</a>
 
+### <a href="articles/exercise-6-the-correlation-function-of-the-bell-states.html">Exercise 6: The Correlation Function of the Bell States</a>
+
 
 
 
