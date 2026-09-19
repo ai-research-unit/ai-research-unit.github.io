@@ -221,9 +221,9 @@ So $\mathbb{D}$ is a **semisimple** algebra: every representation is a direct su
 
 ## Comparison with the Complex Case
 
-The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, the irreducible representations are all one-dimensional and are indexed by the complex numbers themselves: for each $\lambda \in \mathbb{C}$, the representation $\rho_\lambda(z) = \lambda z$ on $\mathbb{C}$. There are uncountably many. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(z) = a \pm b$ on $\mathbb{R}$.
+The representation theory of $\mathbb{D}$ differs from that of $\mathbb{C}$ in one essential way. For $\mathbb{C}$, regarded as a real algebra, there is exactly one irreducible representation, of real dimension two: $\mathbb{C}$ acting on itself by multiplication. For $\mathbb{D}$, the irreducible representations are two in number, indexed by $\pm 1$: $\rho_\pm(z) = a \pm b$ on $\mathbb{R}$.
 
-The reason is that $\mathbb{C}$ is a field, so every non-zero element is invertible, and the irreducible representations are indexed by the points of the field. $\mathbb{D}$ is not a field, so only the elements that are invertible in the quotient fields contribute, and those are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.
+The reason is that $\mathbb{C}$ is a division algebra, so it has exactly one irreducible representation, whereas $\mathbb{D}$ is not a division algebra: its two irreducible representations are the two homomorphisms $\mathbb{D} \to \mathbb{R}$.
 
 ## The Dual Representation
 
@@ -268,10 +268,10 @@ This is the definition of the dual representation, written as a pairing.
 The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_{\mathbb{R}} W$ defined by
 
 $$
-z \cdot (v \otimes w) = (z \cdot v) \otimes w = v \otimes (z \cdot w).
+z \cdot (v \otimes w) = (z \cdot v) \otimes (z \cdot w).
 $$
 
-The two definitions agree because $\mathbb{D}$ is commutative.
+This is the componentwise (diagonal) action. The alternatives $z \cdot (v \otimes w) = (z \cdot v) \otimes w$ and $z \cdot (v \otimes w) = v \otimes (z \cdot w)$ agree with each other only when $V$ and $W$ have the same character, so neither of them is the definition.
 
 ### Basic Properties
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The **KMS condition** — named after Kubo, Martin, and Schwinger — is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic thermal states, with the appropriate sign in the boundary condition, and it is the reason the imaginary-time (Matsubara) formalism works.
+The **KMS condition** — named after Kubo, Martin, and Schwinger — is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a specific boundary condition that exchanges the order of the operators. The condition is satisfied by both bosonic and fermionic thermal states — the boundary relation itself is the same in both cases, while the statistics enter through the time-ordered correlation functions — and it is the reason the imaginary-time (Matsubara) formalism works.
 
 The KMS condition has imaginary time built into its structure. The analytic continuation $t \to t + i\beta$ is not a convenience; it is the content of the condition. This suggests that a framework in which imaginary time is **intrinsic** — not an analytic continuation, but the natural coordinate — might be a natural setting for the condition.
 
@@ -35,11 +35,10 @@ and is continuous on its closure.
 
 2. On the boundary of the strip, the boundary values are related by
 $$
-F_{AB}(t + i\beta) = \pm\, F_{BA}(t),
+F_{AB}(t + i\beta) = F_{BA}(-t),
 $$
-where the sign is $+$ for **bosonic** operators and $-$ for **fermionic** operators.
 
-So the value of the correlation function at imaginary time $t + i\beta$ equals (up to a sign determined by the statistics) the correlation function of the reversed pair at real time $t$. The condition is the **twisted periodicity** of the correlation function in imaginary time.
+So the value of the correlation function at imaginary time $t + i\beta$ equals the correlation function of the reversed pair evaluated at the reversed time $-t$. The condition is the **periodicity** of the correlation function in imaginary time, accompanied by the exchange of the two operators and the reversal of the time argument.
 
 ### Why It Characterizes Thermal Equilibrium
 
@@ -49,27 +48,27 @@ The KMS condition therefore plays a role in thermal physics analogous to the rol
 
 ### Bosons and Fermions
 
-The two cases of the sign in the boundary condition correspond to the two statistics.
+The two statistics differ not in the boundary relation satisfied by $F_{AB}$, which reads $F_{AB}(t + i\beta) = F_{BA}(-t)$ in both cases, but in the **time-ordered** correlation function, where the exchange of two fermionic operators carries an additional minus sign. That sign requires the $\mathbb{Z}_2$ grading of the operator algebra, which the biquaternion framework does not yet provide (see **The Fermionic Case and the Structure of the Algebra**).
 
-**Bosonic operators.** The KMS condition is
-
-$$
-F_{AB}(t + i\beta) = +\, F_{BA}(t).
-$$
-
-The correlation function is **periodic** in imaginary time with period $\beta$, up to the exchange of the two operators.
-
-**Fermionic operators.** The KMS condition is
+**Bosonic operators.** Both $F_{AB}$ and the time-ordered correlation function satisfy
 
 $$
-F_{AB}(t + i\beta) = -\, F_{BA}(t).
+F_{AB}(t + i\beta) = F_{BA}(-t).
 $$
 
-The correlation function is **antiperiodic** in imaginary time with period $\beta$, up to the exchange of the two operators. Equivalently, the fermionic correlation functions are periodic with period $2\beta$ without any operator exchange.
+The correlation function is **periodic** in imaginary time with period $\beta$, up to the exchange of the two operators and the reversal of the time argument.
 
-This distinction is the origin of the two families of **Matsubara frequencies**: the Fourier modes of bosonic fields in the compact imaginary time direction are $2\pi n/\beta$, whereas for fermionic fields they are $(2n+1)\pi/\beta$.
+**Fermionic operators.** The unordered correlation function satisfies the same relation,
 
-The distinction between the two cases is not an accident. It follows from the spin–statistics theorem: bosons are described by integer-spin fields (whose correlation functions are periodic in imaginary time), and fermions are described by half-integer-spin fields (whose correlation functions are antiperiodic). The sign in the KMS condition is the reflection of the spin structure of the field.
+$$
+F_{AB}(t + i\beta) = F_{BA}(-t),
+$$
+
+whereas the **time-ordered** fermionic correlation function is **antiperiodic** in imaginary time with period $\beta$. Equivalently, the time-ordered fermionic correlation functions are periodic with period $2\beta$ without any operator exchange.
+
+This distinction between the time-ordered correlation functions is the origin of the two families of **Matsubara frequencies**: the Fourier modes of bosonic fields in the compact imaginary time direction are $2\pi n/\beta$, whereas for fermionic fields they are $(2n+1)\pi/\beta$.
+
+The distinction between the two cases is not an accident. It follows from the spin–statistics theorem: bosons are described by integer-spin fields (whose correlation functions are periodic in imaginary time), and fermions are described by half-integer-spin fields (whose correlation functions are antiperiodic). The sign acquired on exchanging the operators is the reflection of the spin structure of the field.
 
 ### The Origin of the Imaginary-Time Formalism
 
@@ -129,11 +128,10 @@ and is continuous on its closure.
 
 2. On the boundary of the strip,
 $$
-F_{\tilde{A}\tilde{B}}(t + i\beta) = \pm\, F_{\tilde{B}\tilde{A}}(t),
+F_{\tilde{A}\tilde{B}}(t + i\beta) = F_{\tilde{B}\tilde{A}}(-t),
 $$
-with the sign $+$ for bosonic operators and $-$ for fermionic operators.
 
-This is the same condition as in the standard formulation, with the operators taking values in the biquaternion algebra. It holds for both bosonic and fermionic fields, with the appropriate sign.
+This is the same condition as in the standard formulation, with the operators taking values in the biquaternion algebra. It holds for both bosonic and fermionic fields.
 
 ### The Structural Fit
 
@@ -153,7 +151,7 @@ The complexified time direction of $\mathbb{M}_-$ — the direction in which the
 
 ### The Fermionic Case and the Structure of the Algebra
 
-The fermionic case deserves a separate note. In the standard formulation, the antiperiodicity of fermionic correlation functions in imaginary time is a consequence of the spin–statistics theorem, and it is tied to the spin structure of the fermionic field.
+The fermionic case deserves a separate note. In the standard formulation, the antiperiodicity of the **time-ordered** fermionic correlation functions in imaginary time is a consequence of the spin–statistics theorem, and it is tied to the spin structure of the fermionic field.
 
 In the biquaternion framework, fermionic fields are spinors: they lie in the fundamental module of the algebra, which is a two-dimensional complex representation. The operator $(-1)^F$ that appears in the standard treatment (the fermion number mod 2) is defined on the Fock space of a fermionic field theory. To read the fermionic KMS condition in the biquaternion framework, one would need to introduce a $\mathbb{Z}/2$ **grading** on the algebra — a decomposition of the algebra into even and odd parts with respect to the fermion number, together with the rule that fermionic operators anticommute rather than commute. This grading is an additional structure that is not automatically present in the biquaternion algebra; it would need to be specified.
 
@@ -166,7 +164,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 - The KMS condition: the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory.
 - Its analytic structure: the extension of correlation functions to a strip of width $\beta$ in the complex time plane.
 - Its equivalence to the Gibbs formula under suitable technical conditions (the Haag–Hugenholtz–Winnink theorem).
-- Its satisfaction by both bosonic and fermionic states, with the appropriate sign.
+- Its satisfaction by both bosonic and fermionic states; the boundary relation is the same in both cases, the statistics entering through the time-ordered correlation functions.
 - Its role as the origin of the imaginary-time (Matsubara) formalism.
 
 **Established (algebra).**
@@ -179,7 +177,7 @@ The fermionic KMS condition might then be readable as a statement about the spin
 
 - That the KMS condition acquires a natural algebraic interpretation in the material sector, because the imaginary time is intrinsic to the sector and the modular Hamiltonian lies in $\mathbb{M}_+$.
 - That this provides a structural reading of the KMS condition in which the material and informational sectors are connected through the thermal structure.
-- That the fermionic antiperiodicity would be related to a $\mathbb{Z}/2$ grading of the algebra, if such a grading is introduced.
+- That the antiperiodicity of the time-ordered fermionic correlation functions would be related to a $\mathbb{Z}/2$ grading of the algebra, if such a grading is introduced.
 
 **Open.**
 
@@ -195,7 +193,7 @@ The following directions seem promising.
 
 **2. The KMS condition for biquaternion-valued fields.** The KMS condition is usually stated for scalar or spinor fields. What is the correct statement when the operators take values in the biquaternion algebra? Do the additional degrees of freedom (the four complex coefficients) introduce new structure?
 
-**3. The fermionic twist.** The antiperiodicity of fermionic correlation functions in imaginary time is tied to the spin–statistics theorem. In the biquaternion framework, fermions are spinors, which lie in a specific module over the algebra. Does the twist have a natural formulation in terms of the module structure, and what is the correct $\mathbb{Z}/2$ grading to introduce?
+**3. The fermionic twist.** The antiperiodicity of the **time-ordered** fermionic correlation functions in imaginary time is tied to the spin–statistics theorem. In the biquaternion framework, fermions are spinors, which lie in a specific module over the algebra. Does the twist have a natural formulation in terms of the module structure, and what is the correct $\mathbb{Z}/2$ grading to introduce?
 
 **4. The relation to the Unruh and Hawking effects.** The KMS condition is the fundamental structure behind the Unruh effect (an accelerated observer sees a thermal bath) and the Hawking temperature of black holes. Does the biquaternion framework provide a cleaner or more unified treatment of these phenomena?
 
@@ -205,7 +203,7 @@ The following directions seem promising.
 
 ## Summary
 
-The KMS condition is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a boundary condition that exchanges the order of the operators with a sign determined by the statistics: $+$ for bosons, $-$ for fermions.
+The KMS condition is the correct abstract characterization of thermal equilibrium in quantum statistical mechanics and quantum field theory. It states that the correlation functions of a thermal state extend analytically to a strip of width $\beta = \hbar/(k_B T)$ in the complex time plane, and satisfy a boundary condition that exchanges the order of the operators and reverses the time argument; the statistics do not enter this relation, but the time-ordered correlation functions, where the fermionic exchange carries a minus sign.
 
 The KMS condition has imaginary time built into it. The analytic continuation $t \to t + i\beta$ is not a convenience; it is the content of the condition.
 
@@ -229,7 +227,7 @@ The reformulation is an interpretation, not a derivation. The KMS condition is e
 | $\omega_\beta$ | Thermal state at inverse temperature $\beta$ |
 | $\alpha_t$ | Heisenberg evolution |
 | $F_{AB}(t)$ | Thermal correlation function (complex-valued) |
-| $F_{AB}(t + i\beta) = \pm F_{BA}(t)$ | KMS condition ($+$ bosons, $-$ fermions) |
+| $F_{AB}(t + i\beta) = F_{BA}(-t)$ | KMS condition |
 | $K = -\log \rho$ | Modular Hamiltonian (Hermitian, in $\mathbb{M}_+$) |
 | $\omega_n = 2\pi n/\beta$ | Bosonic Matsubara frequencies |
 | $\omega_n = (2n+1)\pi/\beta$ | Fermionic Matsubara frequencies |

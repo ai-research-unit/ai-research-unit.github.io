@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains four distinguished real subspaces, characterized as the fixed-point sets of the four natural conjugations. Two of them are four-dimensional: the **anti-Hermitian subspace** $\mathbb{M}_-$ and the **Hermitian subspace** $\mathbb{M}_+$. This article is about $\mathbb{M}_-$.
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ contains four distinguished real subspaces, characterized as the fixed-point sets of the four natural conjugations. Three of them are four-dimensional: the **real-quaternion subspace** $\mathbb{H}_{\mathbb{B}}$ (the fixed points of complex conjugation), the **anti-Hermitian subspace** $\mathbb{M}_-$, and the **Hermitian subspace** $\mathbb{M}_+$. This article is about $\mathbb{M}_-$.
 
 The mathematical content of this article is standard: $\mathbb{M}_-$ is isomorphic, as a real vector space with a quadratic form, to Minkowski space $\mathbb{R}^{1,3}$, and it is the natural home of the four-vectors of relativistic physics. The physical content is also standard: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current of a relativistic system all lie in $\mathbb{M}_-$.
 
@@ -57,7 +57,7 @@ $$
 q_0^2 = q_1^2 + q_2^2 + q_3^2,
 $$
 
-a double cone with apex at the origin. The nonzero elements of this cone are **zero divisors** of $\mathbb{B}$ (see the companion article on biquaternion zero divisors). The complement of the cone has two connected components, corresponding to the future and past components of the time-like region.
+a double cone with apex at the origin. The nonzero elements of this cone are **zero divisors** of $\mathbb{B}$ (see the companion article on biquaternion zero divisors). The complement of the cone has three connected components: the space-like region, together with the two components of the time-like region, future and past.
 
 **Not a division algebra.** The presence of the zero divisor cone means that $\mathbb{M}_-$ is not a division algebra: there are nonzero elements of $\mathbb{M}_-$ that have no inverse. The physical significance of this is discussed below.
 
@@ -74,7 +74,7 @@ The following table lists the seven physical four-vectors that live in $\mathbb{
 | Four-position | $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$ | $(ict, \mathbf{x})$ |
 | Four-velocity | $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | $(\gamma ic, \gamma\mathbf{v})$ |
 | Four-momentum | $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | $(iE/c, \mathbf{p})$ |
-| Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $(iP/c, \gamma\mathbf{f})$ |
+| Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | $(i\gamma P/c, \gamma\mathbf{f})$ |
 | Four-potential | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | $(i\phi/c, \mathbf{A})$ |
 | Four-current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $(ic\rho, \mathbf{j})$ |
 | Four-wavevector | $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$ | $(i\omega/c, \mathbf{k})$ |
@@ -99,17 +99,17 @@ $$
 
 The rotor $\tilde{\Lambda}$ is a unit-norm biquaternion, i.e. an element of the group $SL(2,\mathbb{C}) \subset \mathbb{B}$. The group lives in the full algebra $\mathbb{B}$, not in any single subspace (since $\mathbb{M}_-$ and $\mathbb{M}_+$ are not closed under multiplication). The different types of Lorentz transformation have rotors in different subspaces: **pure boosts** have rotors in $\mathbb{M}_+$ (they are Hermitian), **pure spatial rotations** have rotors in $\mathbb{H}_{\mathbb{B}}$ (they are real quaternions), and **general Lorentz transformations** have rotors in the full algebra $\mathbb{B}$.
 
-**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, $0$ for the four-potential (in the Lorenz gauge), $0$ for the four-current (as a consequence of charge conservation), and $0$ for the four-wavevector (for light).
+**4. Invariant norm.** Each four-vector has an invariant norm under the Lorentz group, equal to the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ evaluated on the four-vector. This is the biquaternion expression of the relativistic invariants: the interval for the four-position, $-c^2$ for the four-velocity, $-m^2 c^2$ for the four-momentum, and $0$ for the four-wavevector of light. The four-potential and the four-current are different in kind: the invariant statements associated with them are the gauge condition $\partial_\mu A^\mu = 0$ and the conservation law $\partial_\mu J^\mu = 0$, which constrain the divergence of the four-vector, not its norm form. The norm form $\tilde{A}\bar{\tilde{A}}$ vanishes only for a radiation field in the null gauge, and $\tilde{J}\bar{\tilde{J}}$ vanishes only for a null current, $|\mathbf{j}| = c\rho$.
 
 ## The Invariant Interval and the Minkowski Metric
 
 The **invariant interval** between two nearby events in spacetime is the quadratic form associated with the displacement biquaternion $d\tilde{X} \in \mathbb{M}_-$:
 
 $$
-ds^2 = d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
+ds^2 = N(d\tilde{X}) = d\tilde{X} \circ \overline{d\tilde{X}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2\,dt^2 + d\mathbf{x}^2.
 $$
 
-This is the biquaternion expression of the Minkowski interval. Note that the interval uses the **square** $d\tilde{X} \circ d\tilde{X}$, not the norm form $d\tilde{X}\bar{d\tilde{X}}$. For an element of $\mathbb{M}_-$, the two differ by the sign of the vector part: $d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + d\mathbf{x}^2$, while $d\tilde{X}\bar{d\tilde{X}} = (ic\,dt)^2 - d\mathbf{x}^2$. The interval uses the square, giving the standard Minkowski form $-c^2 dt^2 + d\mathbf{x}^2$.
+This is the biquaternion expression of the Minkowski interval, and it is the norm form, in agreement with the expression for $N$ obtained above. The interval is *not* the square $d\tilde{X} \circ d\tilde{X}$: for $\tilde{Q} = iq_0e_0 + \mathbf{q}$ one has $\tilde{Q} \circ \tilde{Q} = -(q_0^2 + |\mathbf{q}|^2) + 2iq_0\mathbf{q}$, which is a biquaternion rather than a scalar. The square therefore carries a vector part and is not the interval.
 
 The Lorentzian signature of the interval is not postulated: it arises algebraically from $i^2 = -1$ in the time component. This is the content of the $ict$ convention (see the companion article on the $ict$ convention). The biquaternion formulation makes explicit that the Lorentzian structure of spacetime is a **consequence of a complex structure** on the time coordinate, not an independent axiom.
 
@@ -158,10 +158,10 @@ Not every physical object is a four-vector, and not every biquaternion lies in $
 The **field-strength biquaternion** of the electromagnetic field is
 
 $$
-\tilde{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H},
+\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H},
 $$
 
-which is a biquaternion with **vanishing scalar part** and a **mixed real/imaginary vector part**. This is not an element of $\mathbb{M}_-$: the vector part is neither purely real nor purely imaginary, but a specific combination of a real part ($\sqrt{\epsilon}\mathbf{E}$) and an imaginary part ($i\sqrt{\mu}\mathbf{H}$). The field strength is not a four-vector but a **rank-2 antisymmetric tensor** $F^{\mu\nu}$, and it transforms under the Lorentz group by a more general rule than the four-vector rotor conjugation.
+which is a biquaternion with **vanishing scalar part** and a **mixed real/imaginary vector part**. This is not an element of $\mathbb{M}_-$: the vector part is neither purely real nor purely imaginary, but a specific combination of an imaginary part ($i\sqrt{\epsilon}\mathbf{E}$) and a real part ($-\sqrt{\mu}\mathbf{H}$). The field strength is not a four-vector but a **rank-2 antisymmetric tensor** $F^{\mu\nu}$, and it transforms under the Lorentz group by a more general rule than the four-vector rotor conjugation.
 
 ### The Energy–Momentum Biquaternion
 
@@ -197,7 +197,7 @@ $$
 
 The scalar part is **real** and the vector part is **purely imaginary**. The norm form on $\mathbb{M}_+$ has signature $(1,3)$ (one positive, three negative), the mirror image of the signature on $\mathbb{M}_-$.
 
-The two subspaces are related by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. The quaternion conjugation swaps them: $\overline{\mathbb{M}_+} = \mathbb{M}_-$ and $\overline{\mathbb{M}_-} = \mathbb{M}_+$.
+The two subspaces are related by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. It is multiplication by $i$, not quaternion conjugation, that swaps them: quaternion conjugation negates the vector part and leaves the scalar part alone, so it maps each of $\mathbb{M}_\pm$ to itself ($iq_0 + \mathbf{q} \mapsto iq_0 - \mathbf{q}$ stays in $\mathbb{M}_-$, and $q_0 + i\mathbf{q} \mapsto q_0 - i\mathbf{q}$ stays in $\mathbb{M}_+$).
 
 The subspace $\mathbb{M}_+$ contains the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$ that act on $\mathbb{M}_-$ by rotor conjugation. It also contains the **Hermitian forms** $\tilde{Q}\tilde{Q}^\dagger$ for any $\tilde{Q}$, the **idempotents** $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$ from real roots of $-1$, and the identity $e_0$. These objects are the subject of the companion article on the informational space.
 
@@ -244,7 +244,7 @@ The complementary subspace $\mathbb{M}_+$ is the Hermitian subspace, consisting 
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
-| $s^2 = d\tilde{X}\circ d\tilde{X}$ | Invariant interval |
+| $s^2 = N(d\tilde{X}) = d\tilde{X}\circ\overline{d\tilde{X}}$ | Invariant interval |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{X}' = \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation |
 

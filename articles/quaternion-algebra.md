@@ -317,7 +317,7 @@ In general this is a **quaternion**, not a real number. This is a genuinely quat
 The inner product is linear in the second argument and anti-linear in the first:
 
 $$
-\langle \lambda p, q \rangle = \bar{\lambda} \langle p, q \rangle, \qquad \langle p, \lambda q \rangle = \lambda \langle p, q \rangle, \qquad \lambda \in \mathbb{H}.
+\langle p \lambda, q \rangle = \bar{\lambda} \langle p, q \rangle, \qquad \langle p, q \lambda \rangle = \langle p, q \rangle \lambda, \qquad \lambda \in \mathbb{H}.
 $$
 
 It is **Hermitian** in the sense that

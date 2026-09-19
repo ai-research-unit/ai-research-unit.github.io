@@ -33,7 +33,7 @@ $$
 \rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}}) = \tfrac{1}{2}e_0.
 $$
 
-This is the maximally mixed state of a qubit, at the center of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly: the off-diagonal tensor-product terms $e_j\otimes e_j$ in the singlet, after tracing out the second factor, produce the scalar-only element $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
+This is the maximally mixed state of a qubit, at the center of the Bloch ball. Its purity is $\mathrm{Tr}(\rho_1^2) = \tfrac{1}{2}$ and its von Neumann entropy is $\log 2$. In the biquaternion formulation, this mixedness is read off directly. The singlet contains no terms of the form $e_j\otimes e_0$ with $j \neq 0$, and the entangled terms $e_j\otimes e_j$ with $j \neq 0$ are traceless in the second factor: $\mathrm{Tr}_2(e_j\otimes e_j) = e_j\,\mathrm{Tr}_\mathbb{B}(e_j) = 0$. So the partial trace keeps only the $e_0\otimes e_0$ term and produces the scalar-only element $\tfrac{1}{2}e_0$, which is not idempotent. The mixedness of the reduced state is the algebraic trace of the entanglement of the joint state.
 
 ### The correlation function as a bilinear pairing
 

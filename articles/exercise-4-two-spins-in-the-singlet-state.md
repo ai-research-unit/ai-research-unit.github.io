@@ -257,7 +257,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
-| $\|\Psi^-\rangle$ | Singlet state |
+| $|\Psi^-\rangle$ | Singlet state |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
 | $P_+(\hat{a}) = \tfrac{1}{2}(e_0 + i\hat{a})$ | Single-qubit projector |
 | $P_{++}(\hat{a},\hat{b}) = P_+(\hat{a})\otimes P_+(\hat{b})$ | Joint projector |

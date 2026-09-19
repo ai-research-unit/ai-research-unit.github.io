@@ -11,7 +11,7 @@ $$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2\eta^{\mu\nu} I,
 $$
 
-where $\eta^{\mu\nu}$ is the Minkowski metric and $I$ is the identity matrix. The gamma matrices generate the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, and the Dirac equation is the statement that the Dirac operator $\slashed{\partial} = \gamma^\mu \partial_\mu$ annihilates the spinor field.
+where $\eta^{\mu\nu}$ is the Minkowski metric and $I$ is the identity matrix. The gamma matrices generate the Clifford algebra $\mathrm{Cl}_{1,3}(\mathbb{R})$, and the Dirac equation is the statement that the Dirac operator $\not\partial = \gamma^\mu \partial_\mu$ annihilates the spinor field.
 
 This article develops the biquaternionic formulation of the Dirac equation. The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as a real algebra, to the **even subalgebra** of the Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternionic gradient $\tilde{\nabla}$ plays the role of the Dirac operator. The Dirac equation in biquaternionic form is therefore a first-order equation on the biquaternion algebra.
 
@@ -45,10 +45,10 @@ where $\sigma^k$ are the Pauli matrices.
 The **Dirac equation** for a free fermion of mass $m$ is
 
 $$
-(i\slashed{\partial} - m)\psi = 0,
+(i\not\partial - m)\psi = 0,
 $$
 
-where $\slashed{\partial} = \gamma^\mu \partial_\mu$ is the **Dirac operator**, $\psi$ is a four-component complex **Dirac spinor**, and $m$ is the mass. In natural units $\hbar = c = 1$, the equation is
+where $\not\partial = \gamma^\mu \partial_\mu$ is the **Dirac operator**, $\psi$ is a four-component complex **Dirac spinor**, and $m$ is the mass. In natural units $\hbar = c = 1$, the equation is
 
 $$
 (i\gamma^\mu \partial_\mu - m)\psi = 0.
@@ -57,13 +57,13 @@ $$
 For a massless fermion ($m = 0$), the equation reduces to
 
 $$
-\slashed{\partial}\psi = 0.
+\not\partial\psi = 0.
 $$
 
 Squaring the Dirac operator gives the Klein–Gordon operator:
 
 $$
-\slashed{\partial}^2 = \Box,
+\not\partial^2 = \Box,
 $$
 
 where $\Box = \eta^{\mu\nu} \partial_\mu \partial_\nu = -\partial_t^2/c^2 + \Delta$ is the d'Alembertian. So every solution of the massless Dirac equation is a solution of the wave equation.
@@ -106,7 +106,7 @@ $$
 \tilde{\nabla} = e_0 \partial_{ict} + e_1 \partial_x + e_2 \partial_y + e_3 \partial_z
 $$
 
-is the biquaternion form of the Dirac operator. The correspondence with the gamma-matrix Dirac operator $\slashed{\partial} = \gamma^\mu \partial_\mu$ is through the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $e_k$ correspond to spacelike bivectors, and the scalar unit $e_0$ corresponds to the identity $I$.
+is the biquaternion form of the Dirac operator. The correspondence with the gamma-matrix Dirac operator $\not\partial = \gamma^\mu \partial_\mu$ is through the isomorphism $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$: the biquaternion units $e_k$ correspond to spacelike bivectors, and the scalar unit $e_0$ corresponds to the identity $I$.
 
 The biquaternionic gradient satisfies the factorization
 
@@ -114,17 +114,17 @@ $$
 \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \Box,
 $$
 
-which is the biquaternion form of the factorization $\slashed{\partial}^2 = \Box$. The two factorizations use the same algebraic relation between the basis elements and the metric.
+which is the biquaternion form of the factorization $\not\partial^2 = \Box$. The two factorizations use the same algebraic relation between the basis elements and the metric.
 
 ### The Difference from the Matrix Form
 
-The matrix Dirac operator $\slashed{\partial}$ acts on four-component complex spinors (the Dirac spinors), while the biquaternionic gradient $\tilde{\nabla}$ acts on biquaternions. The two formulations are related by the isomorphism
+The matrix Dirac operator $\not\partial$ acts on four-component complex spinors (the Dirac spinors), while the biquaternionic gradient $\tilde{\nabla}$ acts on biquaternions. The two formulations are related by the isomorphism
 
 $$
 \mathrm{Cl}_{1,3} \cong M_4(\mathbb{C}),
 $$
 
-under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$ (article 5), and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of $\slashed{\partial}$ on a two-dimensional complex spinor module.
+under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$ (article 5), and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of $\not\partial$ on a two-dimensional complex spinor module.
 
 So the biquaternion formulation of the Dirac equation is expressed in terms of the biquaternion algebra, whose elements can be viewed as **pairs of two-component Weyl spinors**. The full four-component Dirac spinor is recovered by taking the direct sum of the two-component spinor module with its complex conjugate.
 
@@ -147,7 +147,7 @@ with $x_0 = ict$. The scalar part is the complex time coordinate, and the vector
 The invariant interval is the square of the biquaternion displacement:
 
 $$
-ds^2 = d\tilde{X} \circ d\tilde{X} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 + d\mathbf{x}^2.
+ds^2 = N(d\tilde{X}) = d\tilde{X} \circ \overline{d\tilde{X}} = (ic\,dt)^2 + dx^2 + dy^2 + dz^2 = -c^2 dt^2 + d\mathbf{x}^2.
 $$
 
 This is the biquaternion form of the Minkowski interval. The Lorentzian signature emerges algebraically from $i^2 = -1$, as discussed in the companion article on the $ict$ convention.
@@ -207,7 +207,7 @@ The **four-acceleration biquaternion** is $\tilde{A} = d\tilde{U}/d\tau$, where 
 | Quantity | Biquaternion | Constraint |
 |---|---|---|
 | Four-position | $\tilde{X} = ict\, e_0 + \mathbf{x}$ | — |
-| Interval | $ds^2 = d\tilde{X}\circ d\tilde{X}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
+| Interval | $ds^2 = N(d\tilde{X}) = d\tilde{X}\circ\overline{d\tilde{X}}$ | $= -c^2 dt^2 + d\mathbf{x}^2$ |
 | Four-velocity | $\tilde{U} = \gamma(ic\, e_0 + \mathbf{v})$ | $\tilde{U}\bar{\tilde{U}} = -c^2$ |
 | Four-momentum | $\tilde{P} = m\tilde{U}$ | $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$ |
 | Four-force | $\tilde{F} = d\tilde{P}/d\tau$ | — |
@@ -263,10 +263,10 @@ $$
 and in the standard Clifford algebra formulation (in which the mass term corresponds to a Clifford multiplication by $m$), this yields the **Klein–Gordon equation**
 
 $$
-\Box\tilde{\Psi} = -m^2 c^2/\hbar^2 \cdot \tilde{\Psi}
+\Box\tilde{\Psi} = +m^2 c^2/\hbar^2 \cdot \tilde{\Psi}
 $$
 
-(up to sign conventions determined by the normalization of the mass term). This is the biquaternion form of the standard statement that the square of the Dirac operator is the Klein–Gordon operator: $(\slashed{\partial} + m)(\slashed{\partial} - m) = \Box - m^2$. The precise sign and normalization of the mass term depend on the representation of the mass in the biquaternion algebra; the structural content, that the Dirac equation implies the Klein–Gordon equation, is invariant.
+(up to sign conventions determined by the normalization of the mass term). This is the biquaternion form of the standard statement that the square of the Dirac operator is the Klein–Gordon operator: $(\not\partial + m)(\not\partial - m) = \Box - m^2$. The precise sign and normalization of the mass term depend on the representation of the mass in the biquaternion algebra; the structural content, that the Dirac equation implies the Klein–Gordon equation, is invariant.
 
 ## Plane-Wave Solutions
 
@@ -284,7 +284,7 @@ $$
 \tilde{k}\tilde{\Psi}_0 = 0,
 $$
 
-i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{k}$. This is the biquaternion form of the **Weyl equation** $\slashed{k}\psi_0 = 0$.
+i.e., the polarization biquaternion $\tilde{\Psi}_0$ is annihilated by the wave biquaternion $\tilde{k}$. This is the biquaternion form of the **Weyl equation** $\not k\psi_0 = 0$.
 
 The solutions of $\tilde{k}\tilde{\Psi}_0 = 0$ form a two-dimensional complex vector space, corresponding to the two spin states of a massless fermion. This matches the two-component structure of the Weyl spinor.
 
@@ -399,7 +399,7 @@ $$
 
 where $\tilde{\nabla}$ is the biquaternionic gradient, $\tilde{\Psi}$ is a biquaternion-valued field, $m$ is the mass, and $\tilde{\Psi}^\flat$ is the anti-Hermitian conjugate. In the massless case, the equation reduces to $\tilde{\nabla}\tilde{\Psi} = 0$, which has the same form as the source-free biquaternion Maxwell equation. The structural identity reflects the fact that both the photon and the electron are described by the same Clifford algebra $\mathrm{Cl}_{1,3}$, and the biquaternion algebra $\mathbb{B}$ is isomorphic to its even subalgebra.
 
-The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{U} = \gamma(ic\, e_0 + \mathbf{v})$ satisfies $\tilde{U}\bar{\tilde{U}} = -c^2$, the four-momentum $\tilde{P} = m\tilde{U}$ satisfies the mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$, and the four-position $\tilde{X} = ict\, e_0 + \mathbf{x}$ gives the invariant interval $ds^2 = d\tilde{X}\circ d\tilde{X}$.
+The relativistic kinematic relations are naturally expressed in biquaternion form: the four-velocity $\tilde{U} = \gamma(ic\, e_0 + \mathbf{v})$ satisfies $\tilde{U}\bar{\tilde{U}} = -c^2$, the four-momentum $\tilde{P} = m\tilde{U}$ satisfies the mass-shell relation $\tilde{P}\bar{\tilde{P}} = -m^2 c^2$, and the four-position $\tilde{X} = ict\, e_0 + \mathbf{x}$ gives the invariant interval $ds^2 = N(d\tilde{X}) = d\tilde{X}\circ\overline{d\tilde{X}}$.
 
 The plane-wave solutions of the massless equation are $\tilde{\Psi} = \tilde{\Psi}_0\exp(\tilde{k}\tilde{X})$ with $\tilde{k}\tilde{\Psi}_0 = 0$, giving the two spin states of a massless fermion. The massive solutions require the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ and give the four components of the Dirac spinor (two for the particle, two for the antiparticle).
 

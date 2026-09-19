@@ -38,13 +38,13 @@ If $R$ is a field, an $R$-module is exactly a **vector space** over $R$. So modu
 
 Let $M$ be an $R$-module. The following properties follow from the axioms.
 
-**(a) Multiplication by zero.** For all $m \in M$,
+**(a) Multiplication by the zero scalar.** For all $m \in M$,
 
 $$
 0 m = 0.
 $$
 
-**(b) Multiplication by zero scalar.** For all $r \in R$,
+**(b) Multiplication by the zero element.** For all $r \in R$,
 
 $$
 r 0 = 0.
@@ -188,7 +188,7 @@ An $R$-module $M$ is **free** if it has a basis. If $M$ has a basis of cardinali
 
 If $M$ is a free $R$-module with a basis of cardinality $n$, we say that $M$ has **rank** $n$. Over a field, the rank is the dimension, and it is well-defined: every basis has the same cardinality.
 
-Over a general commutative ring, the rank of a free module is well-defined if $R$ has the **invariant basis number** property. Many rings of interest (including fields, $\mathbb{Z}$, and $\mathbb{D}$) have this property. But not every ring does: there are rings over which $R^m \cong R^n$ for $m \neq n$.
+Over a commutative ring with $1 \neq 0$, the rank of a free module is well-defined: every such ring has the **invariant basis number** property. This property can fail for non-commutative rings: there are non-commutative rings over which $R^m \cong R^n$ for $m \neq n$.
 
 ## 10. Torsion
 
@@ -198,7 +198,9 @@ $$
 r m = 0.
 $$
 
-The set of torsion elements of $M$ is a submodule, called the **torsion submodule** of $M$. A module is **torsion-free** if its torsion submodule is zero.
+If $R$ is an integral domain, the set of torsion elements of $M$ is a submodule, called the **torsion submodule** of $M$. Over a general commutative ring this can fail: if $r m = 0$ and $s n = 0$ with $r, s \neq 0$, then $r s (m + n) = 0$, but $r s$ may itself be $0$, in which case $m + n$ need not be torsion. For example, in $\mathbb{Z}/6\mathbb{Z}$ viewed as a module over itself, $2$ and $3$ are torsion, since $3 \cdot 2 = 0$ and $2 \cdot 3 = 0$, but $2 + 3 = 5$ is not, since $5$ is a unit.
+
+A module is **torsion-free** if its only torsion element is $0$.
 
 Over a field, every module is torsion-free. Over a general commutative ring, torsion is a new phenomenon.
 
@@ -226,11 +228,11 @@ Several key properties of vector spaces fail for modules over a general commutat
 
 **(b) Not every submodule is a direct summand.** Over a field, every subspace of a vector space has a complement. Over a general ring, this is false.
 
-**(c) Rank may not be well-defined.** Over a field, every basis has the same cardinality. Over a general ring, this may fail if the ring does not have the invariant basis number property.
+**(c) Rank and the invariant basis number property.** Over a field, every basis has the same cardinality. Over a commutative ring with $1 \neq 0$ this remains true, since every such ring has the invariant basis number property; the failure $R^m \cong R^n$ with $m \neq n$ occurs only for non-commutative rings.
 
 **(d) Torsion may exist.** Over a field, every module is torsion-free. Over a general ring, torsion is a new phenomenon.
 
-**(e) Linear maps may not have a determinant.** Over a field, every linear map has a determinant, and invertibility is equivalent to nonzero determinant. Over a general ring, the determinant is still defined, but invertibility is equivalent to the determinant being a **unit** of the ring.
+**(e) Invertibility is detected by units, not by non-zero determinants.** Over a field, every linear map has a determinant, and invertibility is equivalent to nonzero determinant. Over a general ring, the determinant is still defined, but invertibility is equivalent to the determinant being a **unit** of the ring.
 
 ## 13. The Case of a Field
 

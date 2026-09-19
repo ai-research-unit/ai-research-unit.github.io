@@ -154,10 +154,10 @@ The four Bell states give the four diagonal correlation matrices:
 
 | Bell state | $T = \mathrm{diag}(T_{11}, T_{22}, T_{33})$ | $E(\hat{a}, \hat{b})$ |
 |---|---|---|
-| $\|\Psi^-\rangle$ | $\mathrm{diag}(-1,-1,-1)$ | $-\hat{a}\cdot\hat{b}$ |
-| $\|\Phi^+\rangle$ | $\mathrm{diag}(+1,-1,+1)$ | $a_1 b_1 - a_2 b_2 + a_3 b_3$ |
-| $\|\Phi^-\rangle$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
-| $\|\Psi^+\rangle$ | $\mathrm{diag}(+1,+1,-1)$ | $a_1 b_1 + a_2 b_2 - a_3 b_3$ |
+| $|\Psi^-\rangle$ | $\mathrm{diag}(-1,-1,-1)$ | $-\hat{a}\cdot\hat{b}$ |
+| $|\Phi^+\rangle$ | $\mathrm{diag}(+1,-1,+1)$ | $a_1 b_1 - a_2 b_2 + a_3 b_3$ |
+| $|\Phi^-\rangle$ | $\mathrm{diag}(-1,+1,+1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
+| $|\Psi^+\rangle$ | $\mathrm{diag}(+1,+1,-1)$ | $a_1 b_1 + a_2 b_2 - a_3 b_3$ |
 
 Each diagonal entry is $\pm 1$, and the product $T_{11}T_{22}T_{33}$ equals $-1$ in every case. Equivalently, writing $T_{jj} = -\epsilon_j$, the signs satisfy $\epsilon_1\epsilon_2\epsilon_3 = +1$. Only the singlet has $T = -I$, and hence the rotationally invariant correlation $E = -\hat{a}\cdot\hat{b}$.
 
@@ -177,10 +177,10 @@ where $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ runs over the four sign 
 
 | State | $\epsilon = (\epsilon_1, \epsilon_2, \epsilon_3)$ | Biquaternion idempotent |
 |---|---|---|
-| $\|\Psi^-\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3)$ |
-| $\|\Phi^+\rangle$ | $(-1,+1,-1)$ | $\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 + e_2\otimes e_2 - e_3\otimes e_3)$ |
-| $\|\Phi^-\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 - e_2\otimes e_2 - e_3\otimes e_3)$ |
-| $\|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 - e_2\otimes e_2 + e_3\otimes e_3)$ |
+| $|\Psi^-\rangle$ | $(+1,+1,+1)$ | $\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 + e_2\otimes e_2 + e_3\otimes e_3)$ |
+| $|\Phi^+\rangle$ | $(-1,+1,-1)$ | $\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 + e_2\otimes e_2 - e_3\otimes e_3)$ |
+| $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $\tfrac{1}{4}(e_0\otimes e_0 + e_1\otimes e_1 - e_2\otimes e_2 - e_3\otimes e_3)$ |
+| $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $\tfrac{1}{4}(e_0\otimes e_0 - e_1\otimes e_1 - e_2\otimes e_2 + e_3\otimes e_3)$ |
 
 **Verification of the general form.** For any sign pattern with $\epsilon_1\epsilon_2\epsilon_3 = +1$, the element $P_\epsilon$ is idempotent and of trace one.
 
@@ -282,10 +282,10 @@ Applying this formula to the four sign patterns:
 
 | Bell state | $\epsilon = (\epsilon_1,\epsilon_2,\epsilon_3)$ | $E(\hat{a}, \hat{b})$ |
 |---|---|---|
-| $\|\Psi^-\rangle$ | $(+1,+1,+1)$ | $-a_1 b_1 - a_2 b_2 - a_3 b_3 = -\hat{a}\cdot\hat{b}$ |
-| $\|\Phi^+\rangle$ | $(-1,+1,-1)$ | $+a_1 b_1 - a_2 b_2 + a_3 b_3$ |
-| $\|\Phi^-\rangle$ | $(+1,-1,-1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
-| $\|\Psi^+\rangle$ | $(-1,-1,+1)$ | $+a_1 b_1 + a_2 b_2 - a_3 b_3$ |
+| $|\Psi^-\rangle$ | $(+1,+1,+1)$ | $-a_1 b_1 - a_2 b_2 - a_3 b_3 = -\hat{a}\cdot\hat{b}$ |
+| $|\Phi^+\rangle$ | $(-1,+1,-1)$ | $+a_1 b_1 - a_2 b_2 + a_3 b_3$ |
+| $|\Phi^-\rangle$ | $(+1,-1,-1)$ | $-a_1 b_1 + a_2 b_2 + a_3 b_3$ |
+| $|\Psi^+\rangle$ | $(-1,-1,+1)$ | $+a_1 b_1 + a_2 b_2 - a_3 b_3$ |
 
 These match the standard results exactly.
 
@@ -365,11 +365,11 @@ The correlation function is the object measured in Bell-inequality experiments, 
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $\boldsymbol{\sigma}_1 = \boldsymbol{\sigma}\otimes I$ | Spin operator on particle 1 |
 | $\boldsymbol{\sigma}_2 = I\otimes\boldsymbol{\sigma}$ | Spin operator on particle 2 |
-| $\|\Phi^\pm\rangle, \|\Psi^\pm\rangle$ | The four Bell states |
+| $|\Phi^\pm\rangle, |\Psi^\pm\rangle$ | The four Bell states |
 | $P_\epsilon = \tfrac{1}{4}(e_0\otimes e_0 + \sum_j \epsilon_j\,e_j\otimes e_j)$ | Bell idempotent, with $\epsilon_1\epsilon_2\epsilon_3 = +1$ |
 | $\tilde{H}_{ab} = (i\hat{a})\otimes(i\hat{b})$ | Correlation observable |
 | $E(\hat{a}, \hat{b}) = \mathrm{Tr}(P_\epsilon\circ\tilde{H}_{ab})$ | Correlation function |
-| $T_{jk} = \langle\Psi\|\sigma_j\otimes\sigma_k\|\Psi\rangle$ | Correlation matrix |
+| $T_{jk} = \langle\Psi|\sigma_j\otimes\sigma_k|\Psi\rangle$ | Correlation matrix |
 | $\mathrm{Tr}(x\otimes y) = \mathrm{Tr}_\mathbb{B}(x)\cdot\mathrm{Tr}_\mathbb{B}(y)$ | Trace on the tensor product |
 
 ## Further Reading

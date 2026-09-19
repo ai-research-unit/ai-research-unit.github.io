@@ -241,10 +241,10 @@ $$
 
 Equivalently, if $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ is the **Dirac operator**, then $f$ is monogenic iff $D f = 0$.
 
-The Dirac operator satisfies
+The Dirac operator and its conjugate $\bar{D} = \partial_{x_0} - e_1 \partial_{x_1} - e_2 \partial_{x_2} - e_3 \partial_{x_3}$ satisfy
 
 $$
-D^2 = \partial_{x_0}^2 + \partial_{x_1}^2 + \partial_{x_2}^2 + \partial_{x_3}^2 = \Delta,
+D \bar{D} = \bar{D} D = \partial_{x_0}^2 + \partial_{x_1}^2 + \partial_{x_2}^2 + \partial_{x_3}^2 = \Delta,
 $$
 
 where $\Delta$ is the Laplacian on $\mathbb{R}^4$. So monogenic functions are harmonic:
@@ -280,7 +280,7 @@ So monogenic functions are the correct analogue of holomorphic functions in quat
 The Dirac operator $D$ is the quaternion analogue of the Cauchy–Riemann operator $\bar{\partial}$ in complex analysis. It factors the Laplacian:
 
 $$
-D^2 = \Delta,
+\bar{D} D = \Delta,
 $$
 
 and the monogenic functions are the kernel of $D$. This is the starting point of **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients.
@@ -459,7 +459,7 @@ $$
 
 ### Properties
 
-**Factorization of the Laplacian.** $D^2 = \Delta$.
+**Factorization of the Laplacian.** $\bar{D} D = \Delta$.
 
 **Ellipticity.** The symbol of $D$ is $\sigma_D(\xi) = \xi_0 + e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, which is invertible for every non-zero $\xi \in \mathbb{R}^4$. So $D$ is elliptic.
 
@@ -548,7 +548,7 @@ The complex case is the case $n = 2$ of the general theory, and the quaternion c
 | $B(q_0, r)$ | Open ball of radius $r$ |
 | $D = \partial_{x_0} + e_1 \partial_{x_1} + e_2 \partial_{x_2} + e_3 \partial_{x_3}$ | Dirac operator |
 | $D f = 0$ | Monogenic equation |
-| $\Delta = D^2$ | Laplacian |
+| $\Delta = \bar{D} D$ | Laplacian |
 | $\int_\gamma f(q) \, dq$ | Contour integral |
 | $\operatorname{Res}(f, q_0)$ | Residue |
 | $2\pi^2$ | Surface area of the unit sphere in $\mathbb{R}^4$ |

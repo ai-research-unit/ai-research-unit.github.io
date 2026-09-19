@@ -373,7 +373,7 @@ The scalar part is real, and the vector part is purely imaginary. The subset $\m
 
 **Real vector space.** $\mathbb{M}_+$ is a real vector space of dimension 4. A basis is $\{e_0, i e_1, i e_2, i e_3\}$.
 
-**Not a subalgebra.** $\mathbb{M}_+$ is not closed under biquaternion multiplication. For example, $(i e_1) \circ (i e_1) = -e_0$, which is not in $\mathbb{M}_+$.
+**Not a subalgebra.** $\mathbb{M}_+$ is not closed under biquaternion multiplication. For example, $(i e_1) \circ (i e_2) = -e_3$, which is not in $\mathbb{M}_+$.
 
 **Quadratic form.** The biquaternion norm form restricts to a real quadratic form on $\mathbb{M}_+$:
 

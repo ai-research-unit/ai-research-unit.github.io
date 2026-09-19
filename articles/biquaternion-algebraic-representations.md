@@ -299,7 +299,7 @@ The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary
 
 Spinors transform under the Lorentz group in a simple way. The $(1/2,0)$ representation of $SL(2,\mathbb{C})$ restricts to the fundamental representation of $SU(2)$ on $\mathbb{C}^2$, which is the rotation subgroup; the full Lorentz-group action is obtained by passing from $SU(2)$ to its complexification $SL(2,\mathbb{C})$.
 
-The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the **tensor product of the spinor representation with its conjugate**: a vector is a bilinear object of the form $\psi \otimes \bar{\phi}$, i.e., a $2 \times 2$ matrix built from a spinor and a conjugate spinor. Equivalently, a 4-vector can be represented as a $2 \times 2$ Hermitian matrix; the space of such matrices is the tensor product $\mathbb{C}^2 \otimes \overline{\mathbb{C}^2}$. In representation-theoretic notation, the spinor representation is the $(\tfrac{1}{2}, 0)$ of $SL(2, \mathbb{C})$, its conjugate is the $(0, \tfrac{1}{2})$, and the vector representation is the $(\tfrac{1}{2}, \tfrac{1}{2})$.
+The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the **tensor product of the spinor representation with its conjugate**: a vector is a bilinear object of the form $\psi \otimes \bar{\phi}$, i.e., a $2 \times 2$ matrix built from a spinor and a conjugate spinor. Equivalently, a 4-vector can be represented as a $2 \times 2$ anti-Hermitian matrix; the space of such matrices is the anti-Hermitian part of the tensor product $\mathbb{C}^2 \otimes \overline{\mathbb{C}^2}$, a real vector space of dimension $4$. In representation-theoretic notation, the spinor representation is the $(\tfrac{1}{2}, 0)$ of $SL(2, \mathbb{C})$, its conjugate is the $(0, \tfrac{1}{2})$, and the vector representation is the $(\tfrac{1}{2}, \tfrac{1}{2})$.
 
 The group of biquaternions with unit norm form, $SL(2, \mathbb{C})$, is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. The compact subgroup $SU(2) \subset SL(2, \mathbb{C})$ is the double cover of the spatial rotation group $SO(3)$.
 
@@ -323,7 +323,7 @@ $$
 \gamma^\mu \gamma^\nu + \gamma^\nu \gamma^\mu = 2 \eta^{\mu\nu} I,
 $$
 
-where $\eta = \mathrm{diag}(-1, +1, +1, +1)$ (or its negative, depending on convention). The algebra has real dimension $2^4 = 16$. A real basis is given by the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu \gamma^\nu \gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\gamma^0 \gamma^1 \gamma^2 \gamma^3$.
+where $\eta = \mathrm{diag}(-1, +1, +1, +1)$. The algebra has real dimension $2^4 = 16$. A real basis is given by the identity, the four vectors $\gamma^\mu$, the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$, the four trivectors $\gamma^\mu \gamma^\nu \gamma^\rho$ with $\mu < \nu < \rho$, and the pseudoscalar $\gamma^0 \gamma^1 \gamma^2 \gamma^3$.
 
 The **even subalgebra** $\mathrm{Cl}_{1,3}^+$ consists of products of an even number of generators. It has real dimension $8$, and it is spanned by the identity, the six bivectors $\gamma^\mu \gamma^\nu$ with $\mu < \nu$, and the pseudoscalar $\gamma^0 \gamma^1 \gamma^2 \gamma^3$.
 
@@ -357,7 +357,7 @@ where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. With the alternative conve
 
 **Norm.** The Clifford norm on the even subalgebra corresponds to the biquaternion norm form.
 
-**Relation to $M_2(\mathbb{C})$.** The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_2(\mathbb{H})$ as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled.
+**Relation to $M_2(\mathbb{C})$.** The even subalgebra $\mathrm{Cl}_{1,3}^+$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, which is the algebraic content of the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$. The full Clifford algebra $\mathrm{Cl}_{1,3}$ is isomorphic to $M_4(\mathbb{R})$ as a real algebra (equivalently, $\mathrm{Cl}_{1,3} \otimes_{\mathbb{R}} \mathbb{C} \cong M_4(\mathbb{C})$), and its even subalgebra is the single copy of $M_2(\mathbb{C})$ on which the biquaternions are modeled.
 
 ### Why the Clifford Algebra Representation Is Useful
 

@@ -186,7 +186,7 @@ Write $f(z) = u(x, y) + v(x, y) \varepsilon$, where $z = x + y\varepsilon$ and $
 **Theorem.** $f$ is dual differentiable at $z_0 = x_0 + y_0 \varepsilon$ iff $u$ and $v$ are real differentiable at $(x_0, y_0)$ and satisfy the **dual Cauchy–Riemann equations**
 
 $$
-\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = 0, \qquad \frac{\partial v}{\partial x} = 0.
+\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}, \qquad \frac{\partial u}{\partial y} = 0.
 $$
 
 **Proof.** Write $h = h_1 + h_2 \varepsilon$. The difference quotient is
@@ -195,30 +195,30 @@ $$
 \frac{f(z_0 + h) - f(z_0)}{h} = \frac{(u_x h_1 + u_y h_2) + (v_x h_1 + v_y h_2) \varepsilon}{h_1 + h_2 \varepsilon} + o(1).
 $$
 
-For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$, $v_x = 0$, and $u_x = v_y$. $\square$
+For the limit to exist independently of the direction of $h$, the numerator must be a dual multiple of $h$. This forces $u_y = 0$ and $u_x = v_y$; the remaining partial $v_x$ is free and becomes the infinitesimal part of the derivative. $\square$
 
-**Corollary.** If $f$ is dual differentiable, then $u$ depends only on $x$ and $v$ is constant:
+**Corollary.** If $f$ is dual differentiable on a domain, then $u$ depends only on $x$, and $v$ is affine in $y$ with slope $u'(x)$:
 
 $$
-f(x + y\varepsilon) = u(x) + c \varepsilon,
+f(x + y\varepsilon) = u(x) + \left( y u'(x) + c(x) \right) \varepsilon,
 $$
 
-where $u$ is an ordinary differentiable function of one variable and $c$ is a constant. So the dual differentiable functions are exactly the functions that are constant in the infinitesimal direction.
+where $u$ and $c$ are ordinary differentiable functions of one variable. So a dual differentiable function is determined by two ordinary differentiable functions of one real variable, and it is constant in the infinitesimal direction only when $u$ is constant.
 
-This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the function to be independent of the infinitesimal part, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a very restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.
+This is the fundamental difference from complex analysis: the dual Cauchy–Riemann equations force the real part to be independent of the infinitesimal direction and force the infinitesimal part to be affine in it with slope $u'(x)$, while the complex Cauchy–Riemann equations force the function to be harmonic. The dual differentiable functions are a restrictive class, and this is the reason dual numbers analysis is less developed than complex analysis.
 
 ### The Wirtinger Derivatives
 
 Define the **dual Wirtinger derivatives**
 
 $$
-\frac{\partial}{\partial z} = \frac{\partial}{\partial x}, \qquad \frac{\partial}{\partial \bar{z}} = \frac{\partial}{\partial x} - 2 \varepsilon \frac{\partial}{\partial y}.
+\frac{\partial}{\partial z} = \frac{\partial}{\partial x}, \qquad \frac{\partial}{\partial \bar{z}} = \frac{\partial}{\partial y} - \varepsilon \frac{\partial}{\partial x}.
 $$
 
-**Theorem.** $f$ is dual differentiable iff $\partial f / \partial \bar{z} = 0$ in the sense that $f$ is independent of the infinitesimal direction. In that case,
+**Theorem.** $f = u + v\varepsilon$ is dual differentiable iff $\partial f / \partial \bar{z} = 0$, that is, iff $u_y = 0$ and $v_y = u_x$. In that case,
 
 $$
-f'(z) = \frac{\partial f}{\partial z} = u'(x).
+f'(z) = \frac{\partial f}{\partial z} = u'(x) + v_x \varepsilon.
 $$
 
 ### Rules of Differentiation
@@ -273,7 +273,7 @@ $$
 T_h : \mathbb{D}' \to \mathbb{D}', \qquad T_h(z) = z + h,
 $$
 
-is the **infinitesimal translation** by $h$. It is a bijection of $\mathbb{D}'$ onto itself, and it preserves the ring structure in the sense that $T_h(z) - T_h(w) = z - w$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.
+is the **infinitesimal translation** by $h$. It is a bijection of $\mathbb{D}'$ onto itself, and it preserves differences: $T_h(z) - T_h(w) = z - w$. The infinitesimal translations form a group isomorphic to the additive group of the maximal ideal.
 
 ## Integration
 
@@ -307,7 +307,7 @@ $$
 
 provided the contour does not cross the maximal ideal in a way that makes the integral diverge.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + c\varepsilon$ with $u$ differentiable and $c$ constant. The integral decomposes into the integral of $u(x)$ along the real projection and the integral of $c\varepsilon$ along the infinitesimal projection. The first vanishes because $u$ is a real differentiable function of one variable on a closed contour in the real line. The second vanishes because $c\varepsilon$ is constant and the total variation of the infinitesimal part along a closed contour is zero. $\square$
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. Let $U$ be an antiderivative of $u$ and let $C$ be an antiderivative of $c$, and set $F(x + y\varepsilon) = U(x) + (y u(x) + C(x))\varepsilon$. Then $F$ is dual differentiable with $F' = f$: its real part is $U$ with $U' = u$, and the $x$-derivative of its infinitesimal part $y u(x) + C(x)$ is $y u'(x) + c(x)$. So $f$ has a primitive, and the integral of $f$ over a closed contour vanishes. $\square$
 
 **Caution.** The theorem fails if the contour crosses the maximal ideal in a way that makes the integral diverge. The maximal ideal is the analogue of the branch cut in complex analysis, and it must be avoided.
 
@@ -315,7 +315,7 @@ provided the contour does not cross the maximal ideal in a way that makes the in
 
 There is **no** general Cauchy integral formula in dual numbers analysis. The reason is that the kernel $1/(w - z)$ has a singularity on the maximal ideal, and the integral around a point depends on the path in a way that cannot be removed by a single formula.
 
-However, if the function is written in the form $f(x + y\varepsilon) = u(x) + c\varepsilon$, then the real part $u$ has the ordinary real Cauchy integral formula, and the infinitesimal part $c$ is constant. So the dual differentiable functions are reconstructed from their real parts by the real theory, and the infinitesimal part is a constant.
+However, if the function is written in the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$, then the real part $u$ and the function $c$ have the ordinary real Cauchy integral formula, and the infinitesimal part is recovered from them. So the dual differentiable functions are reconstructed from their real data by the real theory.
 
 ## Power Series
 
@@ -355,7 +355,7 @@ $$
 
 valid for $\|z - z_0\|_E < r$.
 
-**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + c\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $c$ is constant. So the expansion is the real Taylor expansion of $u$ plus the constant $c$ times the expansion of the constant function $1$. $\square$
+**Proof.** Since $f$ is dual differentiable, it is of the form $f(x + y\varepsilon) = u(x) + (y u'(x) + c(x))\varepsilon$. The real part $u$ has an ordinary real Taylor expansion, and the infinitesimal part $y u'(x) + c(x)$ is expanded by differentiating term by term. So the expansion is the real Taylor expansion of $u$ plus $\varepsilon$ times the real Taylor expansion of $y u'(x) + c(x)$. $\square$
 
 **Corollary.** A dual differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.
 
@@ -377,7 +377,7 @@ Let $f$ be dual differentiable on a punctured disk $0 < \|z - z_0\|_E < R$.
 
 ### Residues
 
-There is **no** general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(x) + c\varepsilon$, and the singularity structure is that of the real function $u$, with the constant $c$ playing no role.
+There is **no** general residue theory in dual numbers analysis. The reason is that the integral around a singularity depends on the path, and there is no single number that captures the singularity. The dual differentiable functions are of the form $u(x) + (y u'(x) + c(x))\varepsilon$, and the singularity structure is that of the real functions $u$ and $c$.
 
 ## Applications
 
@@ -407,16 +407,16 @@ The differences between dual numbers analysis and complex analysis are consequen
 |---|---|---|
 | Multiplication | $i^2 = -1$ | $\varepsilon^2 = 0$ |
 | Zero divisors | none | $\varepsilon$ |
-| Cauchy–Riemann | $u_x = v_y$, $u_y = -v_x$ | $u_x = v_y$, $u_y = v_x = 0$ |
-| Harmonic equation | $\Delta u = 0$ | $u_{xx} = 0$, $v$ constant |
+| Cauchy–Riemann | $u_x = v_y$, $u_y = -v_x$ | $u_x = v_y$, $u_y = 0$ |
+| Harmonic equation | $\Delta u = 0$ | $u_y = 0$, $v$ affine in $y$ |
 | Cauchy integral | yes | no |
 | Residue theory | yes | no |
 | Liouville | yes | no |
 | Identity theorem | yes | no |
 | Conformality | yes | no |
-| Differentiable functions | rich | $u(x) + c\varepsilon$ |
+| Differentiable functions | rich | $u(x) + (y u'(x) + c(x))\varepsilon$ |
 
-The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is even more rigid: differentiability forces the function to be independent of the infinitesimal direction, and the only freedom is in the real part, which is an ordinary differentiable function of one variable.
+The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is also rigid: differentiability forces the real part to be independent of the infinitesimal direction, and leaves two ordinary differentiable functions of one variable (the real part and the value of the infinitesimal part along $y = 0$).
 
 ## Summary of Notation
 

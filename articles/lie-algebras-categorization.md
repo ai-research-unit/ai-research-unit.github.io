@@ -98,7 +98,7 @@ $$
 [X, Y] = Z, \qquad [X, Z] = 0, \qquad [Y, Z] = 0.
 $$
 
-The Jacobi identity is satisfied because all nested brackets vanish. The center is spanned by $Z$. The Heisenberg Lie algebra does not arise from any associative algebra over $\mathbb{R}$.
+The Jacobi identity is satisfied because all nested brackets vanish. The center is spanned by $Z$.
 
 ## 11. The Clifford Algebra as a Lie Algebra over $\mathbb{R}$
 

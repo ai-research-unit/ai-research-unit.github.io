@@ -84,7 +84,7 @@ $$
 This is single-valued on the domain of the logarithm. It satisfies
 
 $$
-q^{a + b} = q^a q^b \quad \text{only if } a \text{ and } b \text{ commute with } \log q.
+q^{a + b} = q^a q^b \quad \text{if } a \text{ and } b \text{ commute with } \log q.
 $$
 
 The power is not multiplicative in general, because $\mathbb{H}$ is not commutative.
@@ -93,13 +93,7 @@ The power is not multiplicative in general, because $\mathbb{H}$ is not commutat
 
 ### Trigonometric Functions
 
-The **quaternion sine** and **cosine** are defined by
-
-$$
-\sin(q) = \frac{e^{e_1 q} - e^{-e_1 q}}{2 e_1}, \qquad \cos(q) = \frac{e^{e_1 q} + e^{-e_1 q}}{2},
-$$
-
-where $e_1$ is a fixed quaternion unit. These definitions depend on the choice of $e_1$, because $\mathbb{H}$ is not commutative. A more invariant definition uses the scalar-vector decomposition:
+The **quaternion sine** and **cosine** are defined by the scalar-vector decomposition
 
 $$
 \sin(q) = \sin(q_0) \cosh(|\mathbf{q}|) + \frac{\mathbf{q}}{|\mathbf{q}|} \cos(q_0) \sinh(|\mathbf{q}|),
@@ -138,14 +132,6 @@ $$
 $$
 \cosh^2(q) - \sinh^2(q) = 1.
 $$
-
-The relation between the trigonometric and hyperbolic functions is the same as in the real case:
-
-$$
-\sin(e_1 q) = e_1 \sinh(q), \qquad \cos(e_1 q) = \cosh(q),
-$$
-
-where $e_1$ is a quaternion unit.
 
 ### Other Functions
 
@@ -206,16 +192,18 @@ where the integral is along the positive real axis and the powers are quaternion
 ### Relation to the Gamma Function
 
 $$
-B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}.
+B(p, q) = \frac{\Gamma(p) \Gamma(q)}{\Gamma(p + q)}, \qquad pq = qp.
 $$
 
-This follows from the same substitution as in the real case, applied to the scalar-vector decomposition.
+This follows from the same substitution as in the real case, applied to the scalar-vector decomposition, which requires $p$ and $q$ to commute.
 
 ### Symmetry
 
 $$
-B(p, q) = B(q, p).
+B(p, q) = B(q, p), \qquad pq = qp.
 $$
+
+The symmetry fails when $p$ and $q$ do not commute.
 
 ## The Quaternion Error Function
 
@@ -227,7 +215,7 @@ $$
 \operatorname{erf}(q) = \frac{2}{\sqrt{\pi}} \int_0^q e^{-t^2} \, dt,
 $$
 
-where the integral is along a path from $0$ to $q$ that does not cross the singularities of the integrand, and the exponential is the quaternion exponential.
+where the integral is along a path from $0$ to $q$ and the exponential is the quaternion exponential. The integrand $e^{-t^2}$ is entire, but it is not monogenic, so the integral depends on the path in general.
 
 ### Properties
 
@@ -293,7 +281,7 @@ $$
 J_\nu(q) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{q}{2} \right)^{2n + \nu},
 $$
 
-where the power and the gamma function are quaternion. The series converges absolutely for all $q$, because the quaternion norm is submultiplicative.
+where the power and the gamma function are quaternion. The series converges absolutely for every $q$ for which the powers $(q/2)^{2n+\nu}$ are defined; when $\nu$ is not an integer this requires $q$ to lie in the domain of the logarithm.
 
 ### Differential Equation
 
@@ -404,30 +392,30 @@ $$
 It is the fundamental solution of the Dirac operator:
 
 $$
-D E = \delta_0
+D E = 2\pi^2 \delta_0
 $$
 
 in the sense of distributions. It is the quaternion analogue of the kernel $1/z$ in complex analysis.
 
-### The Monogenic Exponential
+### The Exponential in Scalar-Vector Form
 
-The **monogenic exponential** is the function
+The **exponential** written in scalar-vector form is the function
 
 $$
 f(q) = e^{q_0} \left( \cos|\mathbf{q}| + \frac{\mathbf{q}}{|\mathbf{q}|} \sin|\mathbf{q}| \right),
 $$
 
-which is the quaternion exponential written in scalar-vector form. It is monogenic in the sense that $D f = 0$ on the appropriate domain, and it is the starting point for the construction of monogenic functions by power series.
+which is $e^q$. It is not monogenic: $D f = -2 e^{q_0} \sin|\mathbf{q}| / |\mathbf{q}|$, which is non-zero wherever $\sin|\mathbf{q}| \neq 0$.
 
-### The Monogenic Power Functions
+### The Power Functions
 
-The **monogenic power functions** are the functions
+The **power functions** are the functions
 
 $$
 f_n(q) = q^n, \qquad n \in \mathbb{Z},
 $$
 
-which are monogenic on the appropriate domains. For negative $n$, the functions have singularities at the origin, and the Laurent expansion of a monogenic function is expressed in terms of these powers.
+which are not monogenic: $D q = -2$ and $D(q^2) = -4 q_0$, neither of which vanishes identically. For negative $n$, the functions have singularities at the origin, and the Laurent expansion of a monogenic function is expressed in terms of other powers.
 
 ### The Monogenic Bessel Functions
 
@@ -442,7 +430,7 @@ The **monogenic Bessel functions** are the radial monogenic functions, which are
 | $q = q_0 + \mathbf{q}$ | General quaternion |
 | $e^q, \log q$ | Quaternion exponential, logarithm |
 | $\sin q, \cos q, \tan q$ | Quaternion trigonometric functions |
-| $\sinh q, \cosh q, \tanh q$ | Quaternion hyperbolic functions |
+| $\sinh q, \cosh q, \coth q$ | Quaternion hyperbolic functions |
 | $q^a$ | Quaternion power |
 | $\Gamma(q)$ | Quaternion gamma function |
 | $B(p, q)$ | Quaternion beta function |

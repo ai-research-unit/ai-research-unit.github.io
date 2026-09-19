@@ -80,12 +80,12 @@ A matrix $A \in M_n(\mathbb{R})$ is invertible if and only if its determinant is
 
 ## 10. Additional Structure over $\mathbb{R}$
 
-Unlike $\mathbb{Q}$, the field $\mathbb{R}$ carries a natural topology and a notion of positivity. This allows the definition of:
+The field $\mathbb{R}$ carries a natural topology and a notion of positivity, and unlike $\mathbb{Q}$ it is complete with respect to this topology. This allows the definition of:
 
 - **Inner products.** A positive definite symmetric bilinear form on a real vector space.
 - **Normed spaces.** A vector space equipped with a norm.
 - **Hilbert spaces.** A complete inner product space.
-- **Orthogonal and unitary groups.** The groups of isometries of a real vector space with an inner product.
+- **Orthogonal groups.** The groups of isometries of a real vector space with an inner product.
 
 These notions do not carry over to $\mathbb{Q}$ or $\mathbb{C}$ in the same way.
 

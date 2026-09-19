@@ -59,10 +59,10 @@ $$
 
 is a transformation. It reflects the plane across the $x$-axis.
 
-**Matrix multiplication.** On $M = R^n$, any $n \times n$ matrix $M$ with entries in $R$ defines a transformation by
+**Matrix multiplication.** On $M = R^n$, any $n \times n$ matrix $A$ with entries in $R$ defines a transformation by
 
 $$
-v \mapsto Mv.
+v \mapsto Av.
 $$
 
 In fact, every transformation of $R^n$ arises in this way from a unique matrix. This holds over any commutative ring $R$, not just over a field.
@@ -80,7 +80,7 @@ The composition of two transformations is again a transformation: it is $R$-line
 Composition is **associative**:
 
 $$
-(R \circ S) \circ T = R \circ (S \circ T).
+(U \circ S) \circ T = U \circ (S \circ T).
 $$
 
 Composition is **not commutative** in general: $S \circ T$ and $T \circ S$ may be different.

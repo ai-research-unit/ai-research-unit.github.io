@@ -96,7 +96,7 @@ The first integral is the cosine transform, and the second is the sine transform
 **Scaling.** If $f_\lambda(q) = f(\lambda q)$ for $\lambda \in \mathbb{H}^\times$, then
 
 $$
-\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\xi/\lambda).
+\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^4} \hat{f}(\bar{\lambda}^{-1}\xi).
 $$
 
 **Rotation.** If $f_u(q) = f(u q u^{-1})$ for a unit quaternion $u$, then $\hat{f}_u(\xi) = \hat{f}(u \xi u^{-1})$. The transform commutes with rotations.

@@ -67,7 +67,7 @@ Arbitrary unions of open sets are open. Finite intersections of open sets are op
 
 ### Connectedness and Domains
 
-A set $U \subseteq \mathbb{C}$ is **connected** if it cannot be written as the disjoint union of two non-empty open sets. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{C}$, connectedness and path-connectedness are equivalent.
+A set $U \subseteq \mathbb{C}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{C}$, connectedness and path-connectedness are equivalent.
 
 A **domain** is a non-empty open connected subset of $\mathbb{C}$. Domains are the natural setting for complex analysis, because differentiability on a domain imposes strong global constraints.
 
@@ -141,13 +141,7 @@ $$
 
 ### Continuity
 
-A function $f : D \to \mathbb{C}$ is **continuous at** $z_0 \in D$ if
-
-$$
-\lim_{z \to z_0} f(z) = f(z_0).
-$$
-
-Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
+A function $f : D \to \mathbb{C}$ is **continuous at** $z_0 \in D$ if $\lim_{z \to z_0} f(z) = f(z_0)$ when $z_0$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
 z \in D, \; |z - z_0| < \delta \implies |f(z) - f(z_0)| < \epsilon.
@@ -225,7 +219,7 @@ $$
 \frac{\partial}{\partial z} = \frac{1}{2}\left( \frac{\partial}{\partial x} - i \frac{\partial}{\partial y} \right), \qquad \frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} + i \frac{\partial}{\partial y} \right).
 $$
 
-**Theorem.** $f$ is holomorphic iff $\partial f / \partial \bar{z} = 0$. In that case,
+**Theorem.** $f$ is holomorphic iff $f$ is real differentiable and $\partial f / \partial \bar{z} = 0$. In that case,
 
 $$
 f'(z) = \frac{\partial f}{\partial z}.
@@ -253,7 +247,7 @@ $$
 
 ### Definition
 
-A map $f : U \to \mathbb{C}$ is **conformal** at $z_0$ if it preserves angles between curves through $z_0$. Equivalently, if $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$, then $f$ is conformal at $z_0$.
+A map $f : U \to \mathbb{C}$ is **conformal** at $z_0$ if it preserves angles between curves through $z_0$. In particular, if $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$, then $f$ is conformal at $z_0$.
 
 **Theorem.** If $f$ is holomorphic at $z_0$ with $f'(z_0) \neq 0$, then $f$ is conformal at $z_0$, and the local behavior of $f$ near $z_0$ is multiplication by $f'(z_0)$, i.e., a rotation by $\arg f'(z_0)$ and a scaling by $|f'(z_0)|$.
 
@@ -267,7 +261,7 @@ $$
 f(z) = \frac{az + b}{cz + d}, \qquad ad - bc \neq 0.
 $$
 
-It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ and conformal wherever $f'(z) \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.
+It is holomorphic on $\mathbb{C} \setminus \{-d/c\}$ when $c \neq 0$, and entire when $c = 0$; it is conformal wherever $f'(z) \neq 0$. Möbius transformations map circles and lines to circles and lines, and they form a group under composition.
 
 ### The Riemann Mapping Theorem
 
@@ -479,7 +473,7 @@ $$
 \int_{-\infty}^\infty f(x) \, dx,
 $$
 
-where $f$ is a rational function decaying faster than $1/|x|$ at infinity, close the contour in the upper half-plane and use the residue theorem.
+where $f$ is a rational function decaying faster than $1/|x|$ at infinity with no poles on the real axis, close the contour in the upper half-plane and use the residue theorem.
 
 **Integrals with trigonometric kernels.** For an integral of the form
 
@@ -487,7 +481,7 @@ $$
 \int_{-\infty}^\infty f(x) e^{iax} \, dx, \qquad a > 0,
 $$
 
-where $f$ is a rational function decaying at infinity, use the same contour as above, with **Jordan's lemma** controlling the contribution from the semicircle.
+where $f$ is a rational function decaying at infinity with no poles on the real axis, use the same contour as above, with **Jordan's lemma** controlling the contribution from the semicircle.
 
 ### The Argument Principle
 

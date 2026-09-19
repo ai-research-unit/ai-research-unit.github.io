@@ -137,11 +137,11 @@ $$
 \xi = \pm i, \qquad \xi = \pm\mu, \qquad \xi = b\mu + d\nu i,
 $$
 
-where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.
+where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d > 0$ satisfy $b^2 - d^2 = 1$.
 
 Equivalently:
 
-1. **Non-trivial roots:** $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.
+1. **Non-trivial roots:** $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions, and $b, d > 0$ satisfy $b^2 - d^2 = 1$.
 2. **Trivial root:** $\xi = \pm i$.
 3. **Real roots:** $\xi = \pm\mu$, where $\mu$ is a unit pure real quaternion.
 
@@ -353,7 +353,7 @@ The roots of $+1$ are not used in the classification of the idempotents, but the
 
 The roots of $-1$ in the biquaternion algebra are exactly:
 
-1. **Non-trivial roots:** $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d \in \mathbb{R}$ satisfy $b^2 - d^2 = 1$.
+1. **Non-trivial roots:** $\xi = b\mu + d\nu i$, where $\mu$ and $\nu$ are perpendicular unit pure real quaternions and $b, d > 0$ satisfy $b^2 - d^2 = 1$.
 2. **Trivial root:** $\xi = \pm i$.
 3. **Real roots:** $\xi = \pm \mu$, where $\mu$ is a unit pure real quaternion.
 

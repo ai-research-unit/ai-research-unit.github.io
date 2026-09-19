@@ -49,15 +49,15 @@ Because $\mathbb{H}$ is not commutative, there are two distinct regular represen
 
 **Left regular representation.** $\rho_L(q) r = q r$.
 
-**Right regular representation.** $\rho_R(q) r = r q$.
+**Right regular representation.** $\rho_R(q) r = r q$. This is a right action rather than a left one: $\rho_R(q) \rho_R(q') = \rho_R(q' q)$.
 
-These are not isomorphic as representations, because the left action commutes with the right action and vice versa, but they are equivalent under the anti-automorphism $q \mapsto \bar{q}$.
+Composing the right action with the anti-automorphism $q \mapsto \bar{q}$ gives a left representation $\rho_R(q) r = r \bar{q}$, and the map $r \mapsto \bar{r}$ intertwines it with $\rho_L$, so the two regular representations are isomorphic.
 
 ## Classification
 
 ### The Classification Theorem
 
-**Theorem.** Let $F$ be a field of characteristic not two. Every finite-dimensional representation of $\mathbb{H}$ over $F$ is isomorphic to a direct sum of copies of the regular representation:
+**Theorem.** Let $F$ be a field of characteristic not two over which $\mathbb{H}$ is a division algebra. Every finite-dimensional representation of $\mathbb{H}$ over $F$ is isomorphic to a direct sum of copies of the regular representation:
 
 $$
 V \cong \mathbb{H}^{\oplus n}, \qquad \rho(q)(v_1, \dots, v_n) = (q v_1, \dots, q v_n).
@@ -97,7 +97,7 @@ So $\mathbb{H}$ is a central simple algebra over $F$ when $F$ is the center. The
 
 As a central simple algebra over $F$, the quaternion algebra $\mathbb{H}$ has a class in the Brauer group $\operatorname{Br}(F)$. This class is trivial if and only if $\mathbb{H}$ is isomorphic to the matrix algebra $M_2(F)$, which happens if and only if the quaternion algebra splits over $F$. The quaternion algebra is a division algebra precisely when its class in the Brauer group is non-trivial.
 
-**Example.** Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $e_1^2 = e_2^2 = e_3^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, one for each pair of primes, and they are classified by the Hilbert symbol.
+**Example.** Over $\mathbb{R}$, the only non-trivial quaternion algebra is the classical one, with $e_1^2 = e_2^2 = e_3^2 = -1$. Over $\mathbb{Q}$, there are infinitely many quaternion algebras, classified by their ramification: a finite set of places of even cardinality, equivalently by the Hilbert symbol.
 
 ## The Representation Ring
 
@@ -133,7 +133,7 @@ $$
 [\rho_{\mathrm{reg}}] \cdot [\rho_{\mathrm{reg}}] = 4 [\rho_{\mathrm{reg}}].
 $$
 
-So the representation ring is $\mathbb{Z}$ with the multiplication $m \cdot n = 4 mn$, which is isomorphic to $\mathbb{Z}$ as a ring after rescaling the generator.
+So the representation ring is $\mathbb{Z}$ with the multiplication $m \cdot n = 4 mn$. This multiplication has no identity element, since $4 e n = n$ would force $e = 1/4$, so $R(\mathbb{H})$ is not isomorphic to $\mathbb{Z}$ as a ring.
 
 ## The Complexification
 
@@ -191,7 +191,7 @@ $$
 
 ### Basic Properties
 
-**Duality is an involution.** $(V^*)^* \cong V$.
+**Duality is an involution.** $(V^*)^* \cong V$ for finite-dimensional $V$.
 
 **Duality is exact.** It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.
 
@@ -219,13 +219,13 @@ This is the definition of the dual representation, written as a pairing.
 
 ### Definition
 
-The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_F W$ defined by
+The **tensor product** of two representations $V$ and $W$ is the representation on $V \otimes_F W$ defined by the diagonal action
 
 $$
-q \cdot (v \otimes w) = (q \cdot v) \otimes w = v \otimes (q \cdot w).
+q \cdot (v \otimes w) = (q \cdot v) \otimes (q \cdot w).
 $$
 
-The two definitions agree because the action is by left multiplication and the tensor product is over $F$, not over $\mathbb{H}$.
+This is a representation because the diagonal map $\Delta(q) = q \otimes q$ is an algebra homomorphism: $\Delta(q) \Delta(q') = (q q') \otimes (q q') = \Delta(q q')$.
 
 ### Basic Properties
 
@@ -243,11 +243,9 @@ $$
 
 because $\mathbb{H} \otimes_F \mathbb{H} \cong M_4(F)$.
 
-### The Failure of the Tensor Product to Be a Representation
+### The Tensor Product as a Representation
 
-The tensor product $V \otimes_F W$ is a representation of $\mathbb{H}$ only when the action is defined by the diagonal map, and the diagonal map is not an algebra homomorphism for $\mathbb{H}$ because $\mathbb{H}$ is not commutative. So the tensor product is a representation of $\mathbb{H} \otimes_F \mathbb{H}$, not of $\mathbb{H}$ itself, unless one restricts to a subalgebra or uses a different coproduct.
-
-This is the fundamental difference from the commutative case. For a commutative algebra, the diagonal map is an algebra homomorphism, and the tensor product of two representations is again a representation. For a non-commutative algebra, this fails in general.
+The diagonal map $\Delta(q) = q \otimes q$ is an algebra homomorphism whether or not $\mathbb{H}$ is commutative, so the tensor product of two representations of $\mathbb{H}$ is again a representation of $\mathbb{H}$. The tensor product is also symmetric: the swap $v \otimes w \mapsto w \otimes v$ is $\mathbb{H}$-linear under the diagonal action, so $V \otimes W \cong W \otimes V$ as representations.
 
 ## Homomorphisms
 
@@ -296,7 +294,7 @@ The representations of $\mathbb{H}$ form an abelian category $\mathrm{Rep}(\math
 The **Ext algebra** of $\mathbb{H}$ is
 
 $$
-\operatorname{Ext}^\bullet_{\mathbb{H}}(F, F) \cong \mathbb{H},
+\operatorname{Ext}^\bullet_{\mathbb{H}}(\mathbb{H}, \mathbb{H}) \cong \mathbb{H},
 $$
 
 with $\mathbb{H}$ in degree zero. So the Ext algebra is concentrated in degree zero, and the higher Ext groups vanish. This is the algebraic content of the semisimplicity: the category has no non-trivial extensions.
@@ -313,9 +311,9 @@ The representation theory of $\mathbb{H}$ differs from that of the complex and s
 
 **Endomorphism rings.** The endomorphism ring of the regular representation of $\mathbb{C}$ is $\mathbb{C}$ itself. The endomorphism ring of the regular representation of $\mathbb{H}$ is $\mathbb{H}$ itself. The endomorphism ring of the regular representation of $\mathbb{D}$ is $\mathbb{R} \oplus \mathbb{R}$.
 
-**Tensor products.** The tensor product of two representations of $\mathbb{C}$ is again a representation, because $\mathbb{C}$ is commutative. The tensor product of two representations of $\mathbb{H}$ is not a representation of $\mathbb{H}$ in the naive way, because $\mathbb{H}$ is non-commutative.
+**Tensor products.** The tensor product of two representations is again a representation in all three cases; for $\mathbb{H}$ this uses the diagonal action, which is an algebra homomorphism whether or not the algebra is commutative.
 
-**Representation rings.** $R(\mathbb{C}) \cong \mathbb{Z}$. $R(\mathbb{H}) \cong \mathbb{Z}$ with the multiplication $m \cdot n = 4 mn$. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$. The three rings are not isomorphic.
+**Representation rings.** $R(\mathbb{C}) \cong \mathbb{Z}$. $R(\mathbb{H})$ is $\mathbb{Z}$ as a group, with the multiplication $m \cdot n = 4 mn$, which has no identity element. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$. The three are not isomorphic.
 
 ## Summary of Notation
 

@@ -62,7 +62,7 @@ $$
 GL(1, \mathbb{Q}) = \mathbb{Q}^\times,
 $$
 
-the group of nonzero rational numbers under multiplication. It has two connected components: the positive rationals (dilatations) and the negative rationals (reflections composed with dilatations).
+the group of nonzero rational numbers under multiplication. It splits into the positive rationals (dilatations) and the negative rationals (reflections composed with dilatations).
 
 The determinant is $\lambda$. The special linear group is
 
@@ -457,9 +457,9 @@ $$
 \begin{pmatrix} p & q \\ q & p \end{pmatrix}.
 $$
 
-The determinant is $p^2 - q^2$. The transformation is invertible if and only if $p^2 - q^2$ is a **unit** of $\mathbb{D}$, that is, if and only if $p^2 - q^2 \neq 0$.
+The determinant of the underlying real transformation is $p^2 - q^2$. The transformation is invertible if and only if $p^2 - q^2$ is a **unit** of $\mathbb{D}$, that is, if and only if $p^2 - q^2 \neq 0$.
 
-Geometrically, the transformation is a **hyperbolic transformation**: it stretches the plane along the line $a = b$ and shrinks it along the line $a = -b$.
+Geometrically, it multiplies the line $a = b$ by the factor $p + q$ and the line $a = -b$ by the factor $p - q$: it is a **hyperbolic transformation**, stretching the plane along the line $a = b$ and shrinking it along the line $a = -b$ whenever $0 < p - q < 1 < p + q$.
 
 ### The groups
 
@@ -471,7 +471,7 @@ $$
 
 the group of split complex numbers with $p^2 - q^2 \neq 0$.
 
-The determinant is $\lambda = p + qe$. The special linear group is
+The determinant of the transformation as a $\mathbb{D}$-linear map is $\lambda = p + qe$, while its determinant as a real transformation of the plane is $p^2 - q^2$. The special linear group, taken with respect to the real determinant, is
 
 $$
 SL(1, \mathbb{D}) = \{\lambda \in \mathbb{D}^\times : p^2 - q^2 = 1\},
@@ -515,7 +515,7 @@ $$
 
 with coefficients in $\mathbb{D}$. The product is associative and unital. It is not commutative. It is not a division algebra: it has zero divisors.
 
-As an algebra over $\mathbb{D}$, the split biquaternions are isomorphic to a subalgebra of $M_2(\mathbb{D})$. Equivalently, they are isomorphic to the algebra $M_2(\mathbb{D})$ of $2 \times 2$ matrices with entries in $\mathbb{D}$, when considered as an algebra over $\mathbb{R}$. But over $\mathbb{D}$, the structure is more subtle because $\mathbb{D}$ has zero divisors.
+As an algebra over $\mathbb{R}$, the split biquaternions are isomorphic to $\mathbb{H} \times \mathbb{H}$, since $\mathbb{D} \cong \mathbb{R} \times \mathbb{R}$ and tensoring with $\mathbb{H}$ distributes over finite products. This is a product of two division algebras, and it is not a matrix algebra over $\mathbb{D}$.
 
 ### The transformations
 
@@ -566,7 +566,7 @@ The same set can be viewed as a module over different scalar structures. For exa
 
 - $\mathbb{C}$ is a two-dimensional vector space over $\mathbb{R}$ and a one-dimensional vector space over $\mathbb{C}$.
 - $\mathbb{D}$ is a two-dimensional vector space over $\mathbb{R}$ and a one-dimensional module over $\mathbb{D}$.
-- $\mathbb{H}$ is a four-dimensional vector space over $\mathbb{R}$, a two-dimensional vector space over $\mathbb{C}$ (after complexification), and a four-dimensional module over $\mathbb{D}$ (after tensoring with $\mathbb{D}$).
+- $\mathbb{H}$ is a four-dimensional vector space over $\mathbb{R}$, a four-dimensional vector space over $\mathbb{C}$ (after complexification), and a four-dimensional module over $\mathbb{D}$ (after tensoring with $\mathbb{D}$).
 
 The transformation groups are different in each case. For example, the transformations of $\mathbb{C}$ over $\mathbb{R}$ form $GL(2, \mathbb{R})$, while the transformations of $\mathbb{C}$ over $\mathbb{C}$ form $GL(1, \mathbb{C}) = \mathbb{C}^\times$. These are different groups: $GL(2, \mathbb{R})$ is four-dimensional, while $\mathbb{C}^\times$ is two-dimensional.
 

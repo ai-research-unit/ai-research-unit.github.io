@@ -88,7 +88,7 @@ If the vector part is null — that is, $(\mathbf{Q}, \mathbf{Q}) = 0$ — then 
 
 ### The Case $N(\tilde{Q}) = 0$
 
-If the norm form vanishes, $\tilde{Q}$ is a zero divisor, and $R = 0$. The Hamilton polar form degenerates: either $Q_0 = 0$ (pure case) or $Q_0 \neq 0$ (non-pure case), and in both cases the representation as a modulus times an exponential is not available in the same form. The zero divisors are treated in the article on biquaternion zero divisors.
+If the norm form vanishes and $\tilde{Q} \neq 0$, then $\tilde{Q}$ is a zero divisor, and $R = 0$. The Hamilton polar form degenerates: either $Q_0 = 0$ (pure case) or $Q_0 \neq 0$ (non-pure case), and in both cases the representation as a modulus times an exponential is not available in the same form. The zero divisors are treated in the article on biquaternion zero divisors.
 
 ### Existence and Uniqueness
 
@@ -203,16 +203,16 @@ Take $\tilde{Q} = e_0 + e_1 + i e_2 = 1 + e_1 + ie_2$. Then $Q_r = 1 + e_1$ and 
 Compute $\tan\Psi = Q_r^{-1}Q_i = (1+e_1)^{-1}e_2 = \frac{(1-e_1)}{2}e_2 = \frac{e_2 - e_3}{2}$, using $(1+e_1)^{-1} = (1-e_1)/2$ (from $(1+e_1)(1-e_1) = 1 - e_1^2 = 2$). The quaternion $q = (e_2-e_3)/2$ is pure, with unit direction $\hat{q} = (e_2-e_3)/\sqrt{2}$ and magnitude $|q| = 1/\sqrt{2}$. Therefore
 
 $$
-\Psi = \arctan(q) = \hat{q}\,\arctan(|q|) = \frac{e_2 - e_3}{\sqrt{2}}\,\arctan\!\left(\frac{1}{\sqrt{2}}\right),
+\Psi = \arctan(q) = \hat{q}\,\arctan(|q|) = \frac{e_2 - e_3}{\sqrt{2}}\,\operatorname{artanh}\!\left(\frac{1}{\sqrt{2}}\right),
 $$
 
 so $\Psi$ is a pure quaternion (scalar part zero) proportional to $e_2 - e_3$. The corresponding cosine and sine are
 
 $$
-\cos\Psi = \cos\!\left(\arctan\frac{1}{\sqrt{2}}\right) = \sqrt{\frac{2}{3}}, \qquad \sin\Psi = \hat{q}\,\sin\!\left(\arctan\frac{1}{\sqrt{2}}\right) = \frac{e_2 - e_3}{\sqrt{2}}\cdot\frac{1}{\sqrt{3}} = \frac{e_2-e_3}{\sqrt{6}},
+\cos\Psi = \cosh\!\left(\operatorname{artanh}\frac{1}{\sqrt{2}}\right) = \sqrt{2}, \qquad \sin\Psi = \hat{q}\,\sinh\!\left(\operatorname{artanh}\frac{1}{\sqrt{2}}\right) = \frac{e_2 - e_3}{\sqrt{2}} \cdot 1 = \frac{e_2-e_3}{\sqrt{2}},
 $$
 
-using $\sin(\arctan x) = x/\sqrt{1+x^2}$ and $\cos(\arctan x) = 1/\sqrt{1+x^2}$. The modulus is $Q = Q_r (\cos\Psi)^{-1} = (1+e_1)\sqrt{3/2}$, a real quaternion. The reconstruction $Q\exp(i\Psi) = \tilde{Q}$ can be verified directly by expansion, as in the existence proof.
+using $\sinh(\operatorname{artanh} x) = x/\sqrt{1-x^2}$ and $\cosh(\operatorname{artanh} x) = 1/\sqrt{1-x^2}$. The modulus is $Q = Q_r (\cos\Psi)^{-1} = (1+e_1)/\sqrt{2}$, a real quaternion. The reconstruction $Q\exp(i\Psi) = \tilde{Q}$ can be verified directly by expansion, as in the existence proof.
 
 **Verification that $N(\tilde{Q}) = 1$.** Compute $\tilde{Q}\bar{\tilde{Q}} = (1 + e_1 + ie_2)(1 - e_1 - ie_2)$:
 
@@ -258,13 +258,13 @@ The two polar forms are defined on overlapping but different domains, both assum
 - The Hamilton polar form is defined for $B \neq 0$, i.e. $(\mathbf{Q}, \mathbf{Q}) \neq 0$.
 - The complex polar form is defined for $Q_r$ invertible, equivalently $Q_r \neq 0$.
 
-The union of the two domains covers all biquaternions with $N(\tilde{Q}) \neq 0$ except those with $B = 0$ and $Q_r = 0$ simultaneously, i.e., the elements
+The union of the two domains covers all biquaternions with $N(\tilde{Q}) \neq 0$ except those with $B = 0$ and $Q_r = 0$ simultaneously. Since $Q_r = 0$ makes every coefficient purely imaginary, and $B = 0$ then forces the vector part to vanish, these exceptions are exactly the purely imaginary complex scalars
 
 $$
-\tilde{Q} = i Q'_0 e_0 + \mathbf{Q}, \qquad Q'_0 \in \mathbb{R} \setminus \{0\}, \qquad (\mathbf{Q}, \mathbf{Q}) = 0,
+\tilde{Q} = i Q'_0 e_0, \qquad Q'_0 \in \mathbb{R} \setminus \{0\},
 $$
 
-whose real scalar part vanishes, whose vector part is null, and whose imaginary scalar part is nonzero (so that $N(\tilde{Q}) = -Q'^2_0 \neq 0$). The case $\mathbf{Q} = 0$ reduces to the purely imaginary complex scalars $\tilde{Q} = i Q'_0 e_0$; these do have polar forms as ordinary complex numbers (namely $iQ'_0 = |Q'_0| \exp(\pm i\pi/2)$), but these are not captured by either of the two biquaternion polar forms constructed above. The case $\mathbf{Q} \neq 0$ involves a nonzero nilpotent vector part, and its polar form, if one exists, is of the nilpotent-exponential kind discussed in the Hamilton section.
+whose real scalar part and vector part both vanish, and whose imaginary scalar part is nonzero (so that $N(\tilde{Q}) = -Q'^2_0 \neq 0$). These do have polar forms as ordinary complex numbers (namely $iQ'_0 = |Q'_0| \exp(\pm i\pi/2)$), but they are not captured by either of the two biquaternion polar forms constructed above.
 
 ## The Role of the Roots of Minus One
 

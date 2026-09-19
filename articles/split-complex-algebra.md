@@ -340,7 +340,7 @@ $$
 \operatorname{Re}(z \bar{w}) = ac - bd,
 $$
 
-which is the indefinite form, not the Euclidean one. The Euclidean inner product is $\operatorname{Re}(z \tilde{w})$ where $\tilde{w}$ is the idempotent conjugate, which coincides with $\bar{w}$ in this algebra. So the distinction between the two forms is the distinction between the indefinite and the Euclidean structures on $\mathbb{R}^2$, and it is the source of the difference between split complex analysis and ordinary real analysis in the plane.
+which is the indefinite form, not the Euclidean one. The Euclidean inner product is $\operatorname{Re}(z w)$. So the distinction between the two forms is the distinction between the indefinite and the Euclidean structures on $\mathbb{R}^2$, and it is the source of the difference between split complex analysis and ordinary real analysis in the plane.
 
 ## Summary of Notation
 

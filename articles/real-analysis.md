@@ -131,7 +131,7 @@ $$
 
 Both exist in $\mathbb{R} \cup \{-\infty, +\infty\}$ for any sequence, because the sequences $(\sup_{k \geq n} a_k)$ and $(\inf_{k \geq n} a_k)$ are monotone.
 
-**Theorem.** $\liminf a_n \leq \limsup a_n$, with equality iff $(a_n)$ converges.
+**Theorem.** $\liminf a_n \leq \limsup a_n$. Equality holds iff $(a_n)$ converges in $\mathbb{R} \cup \{-\infty, +\infty\}$ — that is, iff it converges in $\mathbb{R}$, or diverges to $+\infty$, or diverges to $-\infty$. For instance $a_n = n$ has $\liminf a_n = \limsup a_n = +\infty$ without converging in $\mathbb{R}$.
 
 ### Series
 
@@ -181,13 +181,7 @@ $$
 
 ### Continuity
 
-A function $f : D \to \mathbb{R}$ is **continuous at** $a \in D$ if
-
-$$
-\lim_{x \to a} f(x) = f(a).
-$$
-
-Equivalently, for every $\epsilon > 0$ there exists $\delta > 0$ such that
+A function $f : D \to \mathbb{R}$ is **continuous at** $a \in D$ if $\lim_{x \to a} f(x) = f(a)$ when $a$ is a limit point of $D$; a point of $D$ that is isolated in $D$ is a point of continuity by convention. Equivalently, and in a form that covers isolated points as well, for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
 x \in D, \; |x - a| < \delta \implies |f(x) - f(a)| < \epsilon.
@@ -285,7 +279,7 @@ $$
 
 ### Taylor's Theorem
 
-**Theorem (Taylor).** If $f$ is $n$ times differentiable on an interval containing $a$ and $x$, then
+**Theorem (Taylor).** If $f$ is $n$ times differentiable on an interval containing $a$ and $x$, with $f^{(n)}$ continuous on the interval between them, then
 
 $$
 f(x) = \sum_{k=0}^{n-1} \frac{f^{(k)}(a)}{k!} (x - a)^k + R_n(x),
@@ -429,7 +423,7 @@ A series of functions $\sum f_n$ **converges uniformly** if the sequence of part
 
 **Theorem.** A uniformly convergent series of integrable functions can be integrated term by term.
 
-**Theorem.** A series of differentiable functions with uniformly convergent derivatives can be differentiated term by term.
+**Theorem.** A series of differentiable functions that converges at one point, and whose derivatives converge uniformly, can be differentiated term by term.
 
 ## Power Series
 

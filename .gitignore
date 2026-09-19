@@ -7,6 +7,15 @@ temp__/
 arch/
 arch_/
 arch__/
+*.pyc
+__pycache__/
 *.sh
 *.7z
 *.pdf
+.claude/
+
+# Internal review work - confidential, never published, never committed
+REVIEW-PLAN*
+*.thinking
+_reserve/
+

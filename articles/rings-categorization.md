@@ -74,7 +74,7 @@ Unitality is the most basic assumption in modern ring theory. It allows the defi
 
 - $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{D}$.
 - $\mathbb{B} = \mathbb{H} \otimes \mathbb{C}$, the biquaternions.
-- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.
+- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 2$.
 - $M_n(R)$ for any unital ring $R$.
 - $R[x]$ for any unital ring $R$.
 
@@ -87,7 +87,7 @@ Commutative rings are the natural setting for algebraic geometry, number theory,
 **Examples.**
 
 - $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$.
-- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.
+- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 2$.
 - $\mathbb{D}$, the split complex numbers.
 - The dual numbers $\mathbb{R}[\epsilon]/(\epsilon^2)$.
 - $R[x]$ for any commutative ring $R$.
@@ -319,13 +319,12 @@ Artinian rings are in some sense dual to Noetherian rings. Every Artinian ring i
 **Examples.**
 
 - Every field $F$.
-- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 1$.
+- $\mathbb{Z}/n\mathbb{Z}$ for any $n \geq 2$.
 - Every finite ring.
 
 **Non-examples.**
 
 - $\mathbb{Z}$, because the descending chain $(2) \supseteq (4) \supseteq (8) \supseteq \cdots$ does not stabilize.
-- $\mathbb{D}$, because the descending chain $(e) \supseteq (e^2) \supseteq \cdots$ does not stabilize (since $e^2 = 1$, this chain is constant, but $\mathbb{D}$ is not Artinian as a ring; more precisely, $\mathbb{D}$ is not Artinian because it has infinitely many ideals).
 
 ## 15. Local Rings
 
@@ -358,22 +357,24 @@ Dedekind domains generalize PIDs: every PID is a Dedekind domain, but not conver
 
 **Non-examples.**
 
-- $\mathbb{Z}[x]$, because it is not integrally closed.
+- $\mathbb{Z}[x]$, because the nonzero prime ideal $(x)$ is not maximal.
 - $\mathbb{D}$, because it is not an integral domain.
 
 ## 17. Valuation Rings
 
-A **valuation ring** is an integral domain $R$ with a valuation
+A **valuation ring** is an integral domain $R$ whose field of fractions $K$ carries a valuation
 
 $$
-v : R \setminus \{0\} \to \Gamma
+v : K \setminus \{0\} \to \Gamma
 $$
 
 where $\Gamma$ is a totally ordered abelian group, such that
 
 $$
-v(a b) = v(a) + v(b), \qquad v(a + b) \geq \min(v(a), v(b)).
+v(a b) = v(a) + v(b), \qquad v(a + b) \geq \min(v(a), v(b)),
 $$
+
+and $R = \{x \in K : v(x) \geq 0\}$.
 
 Valuation rings are the local rings of algebraic geometry and number theory.
 
@@ -448,14 +449,13 @@ Every Artinian ring is Noetherian. Not every Noetherian ring is Artinian.
 - $\mathbb{Z}/n\mathbb{Z}$ is Artinian and Noetherian.
 - $\mathbb{Z}$ is Noetherian but not Artinian.
 - The ring of continuous functions on $[0, 1]$ is commutative but not Noetherian.
-- $\mathbb{D}$ is Noetherian but not Artinian.
 
 ## 21. The Local Hierarchy
 
 The following chain summarizes the local classes:
 
 $$
-\text{Valuation rings} \subset \text{Dedekind domains} \subset \text{Integral domains}.
+\text{Discrete valuation rings} \subset \text{Dedekind domains} \subset \text{Integral domains}.
 $$
 
 Every valuation ring is a local ring. Every Dedekind domain is an integral domain.

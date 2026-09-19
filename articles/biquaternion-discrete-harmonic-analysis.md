@@ -68,7 +68,7 @@ In particular, the kernel is always invertible, regardless of the choice of root
 A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if it is a pure biquaternion (i.e., its scalar part vanishes) and
 
 $$
-\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\| - \|\Im(\rho)\| = 1,
+\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
 $$
 
 where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of $\rho$, the orthogonality is with respect to the inner product on $\mathbb{H}$, and $\|\cdot\|$ is the norm on $\mathbb{H}$. This is the content of the classification of the biquaternion roots of $-1$ given in the division theory article.

@@ -77,16 +77,3 @@
 ### <a href="articles/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a>
 
 
-
-
-
-
-
-### <a href="articles/.html"></a>
-
-### <a href="articles/.html"></a>
-
-### <a href="articles/.html"></a>
-
-### <a href="articles/.html"></a>
-

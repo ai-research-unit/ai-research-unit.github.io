@@ -51,7 +51,11 @@ $$
 
 for all $a, b \in R$.
 
-A ring is **associative** if multiplication is associative, as in (R2). All rings in this article are associative.
+A ring is **associative** if multiplication is associative, as in (R2). In this article associativity is an axiom rather than an extra property, so every ring considered here is associative by definition. The convention is worth stating because it is not universal: algebras, as treated in *Algebras: A General Introduction*, need not be associative, and the most important non-associative examples (Lie algebras) are studied there.
+
+**Examples.** The integers $\mathbb{Z}$, the rational numbers $\mathbb{Q}$, the real numbers $\mathbb{R}$, and the complex numbers $\mathbb{C}$ are all commutative unital rings, and so is the polynomial ring $\mathbb{R}[x]$. The ring $M_n(\mathbb{R})$ of $n \times n$ real matrices, with the usual addition and matrix multiplication, is a unital ring that is not commutative for $n \geq 2$.
+
+The **characteristic** of a unital ring is the least positive integer $n$ with $n \cdot 1 = 0$, if such an $n$ exists, and $0$ if it does not. Thus $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$ all have characteristic $0$, while $\mathbb{Z}/n\mathbb{Z}$ has characteristic $n$.
 
 ## 2. Elementary Properties
 
@@ -117,7 +121,7 @@ $$
 \operatorname{im} \varphi = \{\varphi(a) : a \in R\}.
 $$
 
-The kernel is an ideal of $R$, and the image is a subring of $S$.
+The kernel is an ideal of $R$ (ideals are defined in §6), and the image is a subring of $S$.
 
 ---
 
@@ -149,6 +153,14 @@ $$
 a b \in I \implies a \in I \text{ or } b \in I.
 $$
 
+The two notions are distinguished by their quotients:
+
+$$
+I \text{ is maximal} \iff R/I \text{ is a field}, \qquad I \text{ is prime} \iff R/I \text{ is an integral domain}.
+$$
+
+It follows that every maximal ideal is prime, since every field is an integral domain.
+
 ## 7. Quotient Rings
 
 Let $R$ be a commutative ring and $I$ an ideal. The **quotient ring** $R/I$ is the set of cosets
@@ -173,17 +185,21 @@ $$
 
 ## 8. Zero Divisors
 
-An element $a \in R$ is a **zero divisor** if there exists a nonzero $b \in R$ such that
+A nonzero element $a \in R$ is a **zero divisor** if there exists a nonzero $b \in R$ such that
 
 $$
 a b = 0.
 $$
+
+The condition $a \neq 0$ is not redundant. Without it, $0$ would be a zero divisor in every ring, since $0 \cdot b = 0$ for any nonzero $b$; combined with the requirement $1 \neq 0$ below, no ring would satisfy the definition of an integral domain.
 
 A commutative ring $R$ is an **integral domain** if it has no zero divisors and $1 \neq 0$. That is, for all $a, b \in R$,
 
 $$
 a b = 0 \implies a = 0 \text{ or } b = 0.
 $$
+
+For example, $\mathbb{Z}/6\mathbb{Z}$ has zero divisors, since $2 \cdot 3 = 0$ there with both factors nonzero, so it is not an integral domain; whereas $\mathbb{Z}/5\mathbb{Z}$ is a field and therefore an integral domain.
 
 ## 9. Units
 
@@ -197,13 +213,15 @@ The set of units of $R$ is denoted $R^\times$. It is a group under multiplicatio
 
 ## 10. Fields
 
-A **field** is a commutative ring $F$ in which every nonzero element is a unit. That is, for every $a \in F$ with $a \neq 0$, there exists $b \in F$ such that
+A **field** is a commutative ring $F$ with $1 \neq 0$ in which every nonzero element is a unit. That is, for every $a \in F$ with $a \neq 0$, there exists $b \in F$ such that
 
 $$
 a b = 1.
 $$
 
-Equivalently, a field is a commutative ring with $1 \neq 0$ in which every nonzero element has a multiplicative inverse.
+The condition $1 \neq 0$ is not redundant: it excludes the zero ring, in which the statement "every nonzero element is a unit" holds vacuously.
+
+The prototypical fields are $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{C}$. For a prime $p$, the quotient ring $\mathbb{Z}/p\mathbb{Z}$ is a field; for composite $n$, the ring $\mathbb{Z}/n\mathbb{Z}$ has zero divisors and is not even an integral domain.
 
 ## 11. Properties of Fields
 
@@ -221,13 +239,13 @@ Fields have many special properties that make them the natural setting for linea
 
 **(f) Every finitely generated module is free.** Over a field, every finitely generated module is a finite-dimensional vector space.
 
-**(g) The classification of quadratic forms is clean.** Over a field, quadratic forms are classified by their rank and signature (over $\mathbb{R}$) or by arithmetic invariants (over $\mathbb{Q}$).
+**(g) The classification of quadratic forms is clean.** Over a real-closed field such as $\mathbb{R}$, quadratic forms are classified by their rank and signature, by Sylvester's law of inertia. Over $\mathbb{Q}$ the classification is finer and requires arithmetic invariants, since forms of the same rank can be inequivalent. In characteristic $2$ the theory changes qualitatively and the usual normal forms are not available.
 
 ## 12. Integral Domains
 
 An **integral domain** is a commutative ring $R$ with $1 \neq 0$ and no zero divisors.
 
-Integral domains are intermediate between general commutative rings and fields. Every field is an integral domain, but not every integral domain is a field.
+Integral domains are intermediate between general commutative rings and fields. Every field is an integral domain, but not every integral domain is a field: $\mathbb{Z}$ is the standard example, since $2$ is neither zero nor a unit in $\mathbb{Z}$ and therefore has no inverse there.
 
 In an integral domain, cancellation holds: if $a b = a c$ and $a \neq 0$, then $b = c$. This is because $a(b - c) = 0$ and $a \neq 0$, so $b - c = 0$.
 
@@ -235,7 +253,9 @@ In an integral domain, cancellation holds: if $a b = a c$ and $a \neq 0$, then $
 
 A **division ring** (or **skew field**) is a ring $R$ with $1 \neq 0$ in which every nonzero element is a unit. Unlike a field, a division ring need not be commutative.
 
-By **Wedderburn's little theorem**, every finite division ring is a field.
+The **quaternions** $\mathbb{H}$ are the standard example of a division ring that is not a field: multiplication is not commutative, yet every nonzero quaternion is invertible. This is the noncommutative counterpart of the fact, noted in §12, that not every integral domain is a field.
+
+By **Wedderburn's little theorem**, every finite division ring is a field. It follows that the quaternions, being a noncommutative division ring, cannot be finite.
 
 ---
 
@@ -271,7 +291,7 @@ $$
 
 with $r_i \in R$.
 
-Not every module is free. Over a general commutative ring, modules can be more complicated than vector spaces.
+Not every module is free. Over a general commutative ring, modules can be more complicated than vector spaces. The standard example is $\mathbb{Z}/n\mathbb{Z}$ as a $\mathbb{Z}$-module with $n \geq 2$: it is finite, whereas a free $\mathbb{Z}$-module with a nonempty basis is infinite, since it contains a copy of $\mathbb{Z}$, and the free module on the empty basis is the zero module.
 
 ## 16. Algebras over Rings
 
@@ -305,6 +325,14 @@ for some $a \in R$.
 
 ## 18. Unique Factorization Domains
 
+An element $a$ of an integral domain $R$ is **irreducible** if it is nonzero and not a unit, and cannot be written as a product $a = b c$ in which both $b$ and $c$ are nonzero non-units. It is **prime** if it is nonzero and not a unit, and
+
+$$
+a \mid b c \implies a \mid b \text{ or } a \mid c
+$$
+
+for all $b, c \in R$. In an integral domain every prime element is irreducible; the converse holds in a UFD.
+
 A **unique factorization domain** (UFD) is an integral domain $R$ in which every nonzero non-unit element can be written uniquely as a product of irreducible elements, up to order and multiplication by units.
 
 ## 19. Euclidean Domains
@@ -327,11 +355,21 @@ $$
 \text{Euclidean domains} \subset \text{PIDs} \subset \text{UFDs} \subset \text{integral domains} \subset \text{commutative rings}.
 $$
 
+Each inclusion is strict. A Euclidean domain is a PID because the division algorithm shows every ideal to be generated by an element of least norm. A PID is a UFD because it has no infinite ascending chain of principal ideals, so factorisations exist, and its irreducible elements are prime, so they are unique. That the inclusions are strict is illustrated by $\mathbb{Z}[\sqrt{-5}]$, which is an integral domain but not a UFD: there
+
+$$
+6 = 2 \cdot 3 = (1 + \sqrt{-5})(1 - \sqrt{-5})
+$$
+
+are two factorisations into irreducibles that differ by more than order and units.
+
 ---
 
 # Part V: Summary
 
 ## 20. Summary of Ring Classes
+
+The columns answer the question "does every ring of this class have the property?". Thus "no" in the commutative column means that rings of this class need not be commutative, not that they never are.
 
 | Class | Commutative | Unital | No zero divisors | Every nonzero element is a unit |
 |---|---|---|---|---|
@@ -340,6 +378,8 @@ $$
 | Integral domain | yes | yes | yes | no |
 | Field | yes | yes | yes | yes |
 | Division ring | no | yes | yes | yes |
+
+The classes of Part IV — Euclidean domains, PIDs, and UFDs — are all integral domains that are not in general fields, so each would read "yes / yes / yes / no" in this table. They are distinguished not by these properties but by their ideal structure; the hierarchy among them is the chain given in §19.
 
 ## 21. The Role of Fields
 

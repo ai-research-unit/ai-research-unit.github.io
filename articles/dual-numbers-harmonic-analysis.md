@@ -16,16 +16,16 @@ Throughout this article, the dual number algebra is denoted $\mathbb{D}'$, and t
 The dual plane $\mathbb{D}'$ is a locally compact abelian group under addition, isomorphic to $R^2$ when $R = \mathbb{R}$. Its **characters** are the continuous homomorphisms into the circle group. Since the additive group of $\mathbb{D}'$ is just $\mathbb{R}^2$, the characters are the ordinary two-dimensional Fourier characters:
 
 $$
-\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi} z)}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(z) = e^{2\pi i \langle \xi, z \rangle}, \qquad \xi \in \mathbb{D}',
 $$
 
 where the exponential is the ordinary complex exponential, and the pairing is
 
 $$
-\langle \xi, z \rangle = \operatorname{Re}(\bar{\xi} z) = u x - v y, \qquad \xi = u + v\varepsilon, \quad z = x + y\varepsilon.
+\langle \xi, z \rangle = u x + v y, \qquad \xi = u + v\varepsilon, \quad z = x + y\varepsilon.
 $$
 
-Note the minus sign: it comes from the dual conjugation $\bar{\xi} = u - v\varepsilon$ and the fact that $\varepsilon^2 = 0$ but the product $v\varepsilon \cdot y\varepsilon = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and the pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$ with a sign flip in the infinitesimal direction.
+The pairing is the ordinary Euclidean pairing on $\mathbb{R}^2$: it pairs the real coordinate $u$ with $x$ and the infinitesimal coefficient $v$ with $y$. It is **not** $\operatorname{Re}(\bar{\xi} z)$: for dual numbers $\operatorname{Re}(\bar{\xi} z) = u x$, because the term $-vy\,\varepsilon^2$ vanishes since $\varepsilon^2 = 0$. The dual conjugation acts as the identity on the real part and negates the infinitesimal part, and it cannot supply the pairing of the two real coordinates that the additive characters require.
 
 So at the level of the additive group, dual harmonic analysis is the same as Fourier analysis on $\mathbb{R}^2$, with a degenerate pairing.
 
@@ -34,18 +34,18 @@ So at the level of the additive group, dual harmonic analysis is the same as Fou
 The **dual characters** are the homomorphisms into the multiplicative monoid of $\mathbb{D}'$:
 
 $$
-\chi_\xi(z) = e^{\operatorname{Re}(\bar{\xi} z) \varepsilon}, \qquad \xi \in \mathbb{D}',
+\chi_\xi(z) = e^{\langle \xi, z \rangle \varepsilon}, \qquad \xi \in \mathbb{D}',
 $$
 
 where the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
 
 $$
-\chi_\xi(z) = 1 + \operatorname{Re}(\bar{\xi} z) \varepsilon.
+\chi_\xi(z) = 1 + \langle \xi, z \rangle \varepsilon.
 $$
 
-These characters are **bounded** in the Euclidean norm, because they take values in the affine line $1 + \mathbb{D}' \varepsilon$. This is the fundamental difference from the split complex case, where the characters are unbounded because the hyperbolic functions grow exponentially.
+These characters take values in the affine line $1 + \mathbb{D}' \varepsilon$, and their Euclidean norm $\sqrt{1 + \langle \xi, z \rangle^2}$ grows only linearly in the coordinates. This is the fundamental difference from the split complex case, where the characters grow exponentially.
 
-So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the maximal ideal, which is nilpotent and hence bounded.
+So the dual case is intermediate between the complex case, where the characters take values in the compact circle, and the split complex case, where the characters take values in the non-compact hyperbola. In the dual case, the characters take values in the affine line $1 + \mathfrak{m}$, so their deviation from the identity lies in the nilpotent maximal ideal.
 
 ## The Dual Fourier Transform
 
@@ -54,13 +54,13 @@ So the dual case is intermediate between the complex case, where the characters 
 The **dual Fourier transform** of a function $f : \mathbb{D}' \to \mathbb{D}'$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) e^{- \operatorname{Re}(\bar{\xi} z) \varepsilon} \, dz,
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) e^{- \langle \xi, z \rangle \varepsilon} \, dz,
 $$
 
 where $dz$ is Lebesgue measure on $\mathbb{D}' \cong \mathbb{R}^2$, and the exponential is the dual exponential. Because $\varepsilon^2 = 0$, this is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) (1 - \operatorname{Re}(\bar{\xi} z) \varepsilon) \, dz.
+\hat{f}(\xi) = \int_{\mathbb{D}'} f(z) (1 - \langle \xi, z \rangle \varepsilon) \, dz.
 $$
 
 So the dual Fourier transform is the ordinary two-dimensional Fourier transform of the real part, plus an infinitesimal correction given by the first moment of the function.
@@ -70,7 +70,7 @@ So the dual Fourier transform is the ordinary two-dimensional Fourier transform 
 Write $f(z) = u(x, y) + v(x, y) \varepsilon$. Then
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{R}^2} u(x, y) \, dx \, dy + \left( \int_{\mathbb{R}^2} v(x, y) \, dx \, dy - \int_{\mathbb{R}^2} u(x, y) \operatorname{Re}(\bar{\xi} z) \, dx \, dy \right) \varepsilon.
+\hat{f}(\xi) = \int_{\mathbb{R}^2} u(x, y) \, dx \, dy + \left( \int_{\mathbb{R}^2} v(x, y) \, dx \, dy - \int_{\mathbb{R}^2} u(x, y) \langle \xi, z \rangle \, dx \, dy \right) \varepsilon.
 $$
 
 So the dual Fourier transform has:
@@ -78,13 +78,13 @@ So the dual Fourier transform has:
 - A real part that is the total integral of the real part of $f$, independent of $\xi$.
 - An infinitesimal part that is the total integral of the infinitesimal part of $f$, minus the first moment of the real part of $f$ against the character.
 
-This is the fundamental structural fact about the dual Fourier transform: the real part is constant in $\xi$, and the infinitesimal part is affine in $\xi$. The transform does not oscillate, because the characters are nilpotent and do not wrap around the circle.
+This is the fundamental structural fact about the dual Fourier transform: the real part is constant in $\xi$, and the infinitesimal part is affine in $\xi$. The transform does not oscillate, because the characters have nilpotent deviation from the identity and do not wrap around the circle.
 
 ### Comparison with the Complex and Split Cases
 
 | Property | Complex | Split Complex | Dual |
 |---|---|---|---|
-| Characters | $e^{i\xi x}$, bounded | $e^{j\xi x}$, unbounded | $1 + \xi x \varepsilon$, bounded |
+| Characters | $e^{i\xi x}$, bounded | $e^{j\xi x}$, unbounded | $1 + \xi x \varepsilon$, linear growth |
 | Transform converges | for $f \in L^1$ | only for rapid decay | for $f \in L^1$ |
 | Real part of transform | oscillatory | exponential | constant |
 | Infinitesimal part | — | — | affine in $\xi$ |
@@ -99,7 +99,7 @@ So the dual case is the only one of the three where the transform converges on $
 On a bounded interval $[-T, T]^2$, the dual Fourier transform
 
 $$
-\hat{f}(\xi) = \int_{[-T, T]^2} f(z) e^{- \operatorname{Re}(\bar{\xi} z) \varepsilon} \, dz
+\hat{f}(\xi) = \int_{[-T, T]^2} f(z) e^{- \langle \xi, z \rangle \varepsilon} \, dz
 $$
 
 converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as above: the real part is the total integral of the real part of $f$, and the infinitesimal part is the total integral of the infinitesimal part minus the first moment of the real part.
@@ -109,13 +109,13 @@ converges for $f \in L^1([-T, T]^2)$. The transform has the same structure as ab
 The inversion formula is
 
 $$
-f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\operatorname{Re}(\bar{\xi} z) \varepsilon} \, d\xi,
+f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) e^{\langle \xi, z \rangle \varepsilon} \, d\xi,
 $$
 
 under suitable conditions. Because $\varepsilon^2 = 0$, this reduces to
 
 $$
-f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \operatorname{Re}(\bar{\xi} z) \varepsilon) \, d\xi.
+f(z) = \frac{1}{(2\pi)^2} \int_{\mathbb{R}^2} \hat{f}(\xi) (1 + \langle \xi, z \rangle \varepsilon) \, d\xi.
 $$
 
 The real part of the inversion recovers the total integral, and the infinitesimal part recovers the first moment. So the inversion is not a true inversion: it recovers only the total integral and the first moment of the function, not the function itself. This is the degeneracy of the dual Fourier transform.
@@ -409,7 +409,7 @@ The Fourier slice theorem is the mathematical basis of dual tomography, the anal
 **Theorem.** For suitable $f$,
 
 $$
-f(z) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\operatorname{Re}(\bar{\xi} z) \varepsilon} \, d\sigma \, d\theta,
+f(z) = \frac{1}{2} \int_0^{2\pi} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma| e^{\langle \xi, z \rangle \varepsilon} \, d\sigma \, d\theta,
 $$
 
 where $\xi = \sigma \cos\theta + \sigma \sin\theta \varepsilon$. The factor $|\sigma|$ is the ramp filter, and it is the source of the high-frequency amplification in dual tomography.
@@ -458,7 +458,7 @@ The dual wavelet transform is used in infinitesimal signal processing, where it 
 |---|---|
 | $\mathbb{D}'$ | Dual number algebra |
 | $\varepsilon$ | Dual unit, $\varepsilon^2 = 0$ |
-| $\chi_\xi(z) = 1 + \operatorname{Re}(\bar{\xi} z) \varepsilon$ | Dual character |
+| $\chi_\xi(z) = 1 + \langle \xi, z \rangle \varepsilon$ | Dual character |
 | $\hat{f}$ | Dual Fourier transform |
 | $f * g$ | Convolution |
 | $\delta$ | Dirac delta |

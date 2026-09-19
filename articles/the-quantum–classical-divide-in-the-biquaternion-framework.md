@@ -200,7 +200,7 @@ The paper and the framework are complementary. The paper tells us what to look f
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_-$ | Material sector (anti-Hermitian): four-vectors, mode functions, classical fields |
+| $\mathbb{M}_-$ | Material sector (anti-Hermitian): four-vectors, classical fields |
 | $\mathbb{M}_+$ | Informational sector (Hermitian): states, observables, excitations |
 | $\mathbb{B}\otimes\mathbb{B}$ | Two-qubit tensor product, $\cong M_4(\mathbb{C})$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |

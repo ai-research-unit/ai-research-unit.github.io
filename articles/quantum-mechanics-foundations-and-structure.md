@@ -369,7 +369,7 @@ $$
 
 where $\rho_A$ and $\rho_B$ are states of the two subsystems. Product states describe systems that are prepared independently and have no correlations between them.
 
-A state that is **not** a product state is called **entangled**. Entanglement is the quantum correlation between the two subsystems that cannot be explained by any classical correlation.
+A **pure** state that is **not** a product state is called **entangled**. For mixed states the criterion is different: a state is **separable** if it can be written as a convex combination of product states, and **entangled** otherwise. Entanglement is the quantum correlation between the two subsystems that cannot be explained by any classical correlation.
 
 The canonical examples of entangled states are the **Bell states** of two qubits:
 
@@ -389,7 +389,7 @@ $$
 
 where $\mathrm{Tr}_B$ is the partial trace over $\mathcal{H}_B$. The reduced state captures all the information about subsystem $A$ that is accessible by measurements on $A$ alone.
 
-For a product state $\rho_A \otimes \rho_B$, the reduced states are $\rho_A$ and $\rho_B$. For an entangled state, the reduced states are mixed, even if the composite state is pure. This is the origin of the "monogamy" of entanglement: entanglement between the two subsystems reduces the purity of each subsystem.
+For a product state $\rho_A \otimes \rho_B$, the reduced states are $\rho_A$ and $\rho_B$. For an entangled state, the reduced states are mixed, even if the composite state is pure. The mixedness of the reduced states is what makes entanglement a property of the pair rather than of either subsystem: for a pure composite state it measures exactly the entanglement between the two subsystems.
 
 ## What a Comprehensive Quantum Theory Must Contain
 

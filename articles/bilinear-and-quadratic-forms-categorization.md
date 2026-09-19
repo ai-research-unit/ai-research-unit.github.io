@@ -216,7 +216,7 @@ Over $\mathbb{C}$, this form takes complex values. The notions of definiteness d
 
 The key fact over $\mathbb{C}$ is that every non-degenerate quadratic form of dimension $n$ is isomorphic to the standard form $z_1^2 + \cdots + z_n^2$.
 
-The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $\mu$ to make the coefficient $1$.
+The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $1/\mu$ to make the coefficient $1$.
 
 So over $\mathbb{C}$, there is only one isomorphism class of non-degenerate quadratic forms in each dimension.
 
@@ -286,13 +286,13 @@ This is a **hyperbola** in the $(a, b)$-plane. It has two connected components: 
 
 ## 21. The Split Quaternions and Forms over $\mathbb{D}$
 
-The split quaternions $\mathbb{H} \otimes \mathbb{D}$ are a four-dimensional algebra over $\mathbb{D}$ (or over $\mathbb{R}$, if we forget the $\mathbb{D}$-module structure). The norm form
+The split quaternions $\mathbb{H} \otimes \mathbb{D}$ are a four-dimensional algebra over $\mathbb{D}$ and an eight-dimensional algebra over $\mathbb{R}$. The norm form
 
 $$
 N(q) = q \bar{q}
 $$
 
-is a quadratic form over $\mathbb{R}$. Over $\mathbb{D}$, the structure is more subtle because $\mathbb{D}$ has zero divisors.
+takes values in $\mathbb{D}$. Over $\mathbb{D}$, the structure is more subtle because $\mathbb{D}$ has zero divisors.
 
 ---
 
@@ -314,7 +314,7 @@ Let me summarize the classification in a table.
 | determinant form | $\mathbb{R}$ | 4 | no | no | yes |
 | standard form | $\mathbb{C}$ | $n$ | — | no | yes if $n \geq 2$ |
 | complex determinant | $\mathbb{C}$ | 4 | — | no | yes |
-| standard form | $\mathbb{D}$ | $n$ | — | no | depends |
+| standard form | $\mathbb{D}$ | $n$ | — | no | no |
 | split form | $\mathbb{D}$ | 2 | no | no | yes |
 
 The pattern is clear: the ring of scalars determines the classification of quadratic forms. Over $\mathbb{R}$, the forms are classified by their definiteness and their isotropic vectors. Over $\mathbb{C}$, there is only one non-degenerate form per dimension, and every form of dimension at least 2 has isotropic vectors. Over $\mathbb{Q}$, the situation is more subtle, and arithmetic invariants are needed. Over $\mathbb{D}$, the situation is analogous to $\mathbb{R}$ but with zero divisors.

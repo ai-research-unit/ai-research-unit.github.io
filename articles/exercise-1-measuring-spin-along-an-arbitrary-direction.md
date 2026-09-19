@@ -45,7 +45,7 @@ where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matri
 
 ### Step 3: The eigenstate for the outcome
 
-The eigenvalue-$+1$ eigenvector of $\hat{n}\cdot\mathbf{S}$, up to a global phase, is
+The eigenvector of $\hat{n}\cdot\mathbf{S}$ with eigenvalue $+\hbar/2$ (equivalently, the $+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$), up to a global phase, is
 
 $$
 |+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
@@ -97,7 +97,7 @@ $$
 
 ### Step 3: The projector for the outcome
 
-The projector onto the eigenvalue-$+1$ eigenstate of $\tilde{H}$ is the idempotent
+The projector onto the eigenstate of $\tilde{H} = \frac{\hbar}{2}i\hat{n}$ with eigenvalue $+\hbar/2$ is the idempotent
 
 $$
 P_n = \tfrac{1}{2}\left(e_0 + i\hat{n}\right).

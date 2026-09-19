@@ -249,7 +249,7 @@ $$
 N(a) = a \cdot a = a^2,
 $$
 
-where the product is the field multiplication. It is a real number in general. It is not positive-definite, and it vanishes only at $a = 0$, because $\mathbb{R}$ is a field.
+where the product is the field multiplication. It is a real number in general. It is positive-definite, since $a^2 \geq 0$ for every $a$, and it vanishes only at $a = 0$, because $\mathbb{R}$ is a field.
 
 The norm form is **multiplicative**:
 
@@ -317,7 +317,7 @@ The three quadratic objects are related as follows:
 - **Hermitian form:** $a^2$. Non-negative real, vanishes only at $a = 0$, multiplicative.
 - **Inner product:** $\langle a, b \rangle = ab$. Real-valued, symmetric, bilinear.
 
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.
+The norm form and the Hermitian form are the same function here, and the inner product is the bilinear form from which they are recovered by polarization. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a real vector space.
 
 In the real case, the norm form and the Hermitian form coincide, because the conjugation is trivial and there is no imaginary part. This is a degeneracy of the one-dimensional case, and it is the reason the real numbers are often treated as a trivial example rather than as a case study.
 
@@ -359,7 +359,7 @@ Completeness is the axiom that distinguishes $\mathbb{R}$ from $\mathbb{Q}$. Its
 
 ### The Nested Interval Property and Uniqueness
 
-The completeness axiom is equivalent to the nested interval property, to the convergence of Cauchy sequences, and to the least upper bound property. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$.
+The completeness axiom, which is the least upper bound property stated as an axiom above, is equivalent to the nested interval property and to the convergence of Cauchy sequences. These equivalences are not trivial; they are the content of the standard constructions of $\mathbb{R}$ from $\mathbb{Q}$.
 
 The **uniqueness** of $\mathbb{R}$ as a complete ordered field is a theorem: if $F$ is any complete ordered field, there is a unique order-isomorphism $F \to \mathbb{R}$. This is why we speak of *the* real numbers.
 
@@ -378,7 +378,7 @@ The **uniqueness** of $\mathbb{R}$ as a complete ordered field is a theorem: if 
 | $\langle a, b \rangle = a \cdot b$ | Inner product |
 | $\|a\|_E = \sqrt{a \cdot a}$ | Euclidean norm |
 | $\mathbb{R}_{\mathbb{R}}$ | Real subspace, fixed-point set of $\operatorname{id}$ |
-| $\mathbb{R}_{>0}$ | Positive cone |
+| $\mathbb{R}_{\geq 0}$ | Positive cone (the non-negative reals) |
 | $[a, b], (a, b)$ | Closed and open intervals |
 | $\sup S, \inf S$ | Supremum and infimum |
 

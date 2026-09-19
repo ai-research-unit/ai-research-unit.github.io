@@ -74,6 +74,23 @@ def strip_title_line(text):
 def label_from_stem(stem):
     return stem.replace("-", " ").replace("_", " ").title()
 
+def heading_title(text):
+    """Title from the article's first H1 heading.
+
+    Headings appear in three shapes across the corpus: `# Title`,
+    `# __Title__`, and `# __Coordinate — Title__` (the last is handled
+    by parse_frontmatter and never reaches here). Returns "" if the
+    text opens with something other than a heading.
+    """
+    for line in text.splitlines():
+        s = line.strip()
+        if not s:
+            continue
+        if s.startswith("#"):
+            return s.lstrip("#").strip().strip("_*").strip()
+        break
+    return ""
+
 
 # ── CHANGED: Disclaimer now comes *before* Contact, both at the end ──
 def build_nav_index(articles):
@@ -124,12 +141,16 @@ if src_assets.exists():
 for f in articles:
     raw = f.read_text()
     meta, body_md = parse_frontmatter(raw)
+    # parse_frontmatter always defines "title" (default ""), so .get()'s
+    # default never fires — fall back explicitly. Read the heading before
+    # strip_title_line removes it.
+    title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
     body_md = strip_title_line(body_md)
 
     body_html = md_to_html(body_md)
 
     html = (TEMPLATE
-        .replace("{title}",      meta.get("title", label_from_stem(f.stem)))
+        .replace("{title}",      title)
         .replace("{coordinate}", meta.get("coordinate", ""))
         .replace("{nav}",        build_nav_article(nav_articles, current_stem=f.stem))
         .replace("{body}",       body_html)

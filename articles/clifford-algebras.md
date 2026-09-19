@@ -97,7 +97,7 @@ $$
 v^2 = -Q(v) \cdot 1.
 $$
 
-The two conventions give algebras that differ by the signs of the generators. They are isomorphic under the map $v \mapsto -v$ on $M$, which extends to an algebra isomorphism. So the choice of convention does not affect the classification of Clifford algebras up to isomorphism; it only affects the signs in the formulas. We use the first convention throughout.
+The second convention applied to $Q$ defines the same algebra as the first convention applied to $-Q$: the two conventions are related by replacing the quadratic form by its negative, not by changing the signs of the generators. Negating the generators does not change the defining relation, since $(-v)^2 = v^2$, so the map $v \mapsto -v$ extends to an automorphism of a fixed Clifford algebra rather than relating the two conventions. The two algebras need not be isomorphic: over $\mathbb{R}$ with $M$ of rank $1$ and $Q(x) = x^2$, the first convention gives $\mathbb{R}[t]/(t^2 - 1) \cong \mathbb{R} \times \mathbb{R}$, which has zero divisors, while the second gives $\mathbb{R}[t]/(t^2 + 1) \cong \mathbb{C}$, which is a field. We use the first convention throughout.
 
 ## 4. The Universal Property
 
@@ -202,20 +202,20 @@ This is the **fundamental relation** of the Clifford algebra. It holds for all $
 The **radical** of $Q$ is the submodule
 
 $$
-R = \{v \in M : B(v, w) = 0 \text{ for all } w \in M\}.
+\mathrm{rad}(Q) = \{v \in M : B(v, w) = 0 \text{ for all } w \in M\}.
 $$
 
-It is the kernel of the linear map $M \to M^*$, $v \mapsto B(v, \cdot)$. The restriction of $Q$ to $R$ is zero, and the quotient $M/R$ carries an induced quadratic form $\bar{Q}$, which is non-degenerate when the quotient is defined and the induced form is non-degenerate.
+It is the kernel of the linear map $M \to M^*$, $v \mapsto B(v, \cdot)$. The restriction of $Q$ to $\mathrm{rad}(Q)$ is zero, and the quotient $M/\mathrm{rad}(Q)$ carries an induced quadratic form $\bar{Q}$ whose radical is zero.
 
 **Basic properties.**
 
-- $R$ is the set of vectors orthogonal to every vector.
-- $Q$ is non-degenerate iff $R = 0$ and the map $M \to M^*$ is an isomorphism.
-- For $r, s \in R$, the fundamental relation gives $r s + s r = 2 B(r, s) \cdot 1 = 0$, so $r s = -s r$ and $r^2 = 0$.
+- $\mathrm{rad}(Q)$ is the set of vectors orthogonal to every vector.
+- $Q$ is non-degenerate iff $\mathrm{rad}(Q) = 0$ and the map $M \to M^*$ is an isomorphism.
+- For $r, s \in \mathrm{rad}(Q)$, the fundamental relation gives $r s + s r = 2 B(r, s) \cdot 1 = 0$, so $r s = -s r$ and $r^2 = 0$.
 
 The radical is the obstruction to non-degeneracy, and it is the source of the nilpotent factor in the decomposition.
 
-**Key difference from the field case.** Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism, which is a stronger condition. We assume this stronger condition when we speak of non-degenerate Clifford algebras over a commutative ring.
+**Key difference from the field case.** Over a finite-dimensional vector space, non-degeneracy is equivalent to the radical being zero. Over an infinite-dimensional space it is not: for $M = \bigoplus_{\mathbb{N}} R$ with $B(e_i, e_j) = \delta_{ij}$ the radical is zero, but the functional taking the value $1$ on every basis vector is not of the form $B(v, \cdot)$. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism, which is a stronger condition. We assume this stronger condition when we speak of non-degenerate Clifford algebras over a commutative ring.
 
 ## 8. Degenerate and Non-degenerate Clifford Algebras
 
@@ -225,9 +225,9 @@ $$
 B(u, v) = 0 \quad \text{for all } v \in M.
 $$
 
-In words: there is a nonzero vector that is orthogonal to every vector. Equivalently, the radical $R$ is non-zero.
+In words: there is a nonzero vector that is orthogonal to every vector. Equivalently, the radical $\mathrm{rad}(Q)$ is non-zero.
 
-If no such vector exists, the Clifford algebra is **non-degenerate**.
+If no such vector exists, the radical is zero, and the Clifford algebra is **non-degenerate** (over a general commutative ring, non-degeneracy additionally requires the map $M \to M^*$ to be an isomorphism, as in §7; the two conditions agree over a finite-dimensional field).
 
 If such a vector $u$ exists, then in particular $B(u, u) = 0$, so $Q(u) = 0$. Such a vector generates a nilpotent element in the Clifford algebra, which obstructs the construction of the spin group and spinors.
 
@@ -278,21 +278,21 @@ The decomposition reduces the classification of Clifford algebras to the one-dim
 
 The tensor product decomposition of the preceding section applies to an arbitrary orthogonal direct sum, including the case where one of the summands is the radical. This gives the structural reduction of a degenerate Clifford algebra to a non-degenerate Clifford algebra tensored with an exterior algebra.
 
-**Theorem.** Let $M$ be an $R$-module with quadratic form $Q$, radical $R$, and induced non-degenerate form $\bar{Q}$ on $M/R$. Suppose that $M$ is the direct sum of $R$ and a complement $W$ on which $Q$ is non-degenerate. Then there is an algebra isomorphism
+**Theorem.** Let $M$ be an $R$-module with quadratic form $Q$, radical $\mathrm{rad}(Q)$, and induced non-degenerate form $\bar{Q}$ on $M/\mathrm{rad}(Q)$. Suppose that $M$ is the direct sum of $\mathrm{rad}(Q)$ and a complement $W$ on which $Q$ is non-degenerate. Then there is an algebra isomorphism
 
 $$
-Cl(M, Q) \cong Cl(M/R, \bar{Q}) \hat{\otimes} \Lambda(R),
+Cl(M, Q) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q)),
 $$
 
-where $\hat{\otimes}$ is the graded tensor product, and $\Lambda(R)$ is the exterior algebra on $R$.
+where $\hat{\otimes}$ is the graded tensor product, and $\Lambda(\mathrm{rad}(Q))$ is the exterior algebra on $\mathrm{rad}(Q)$.
 
-**Proof.** Write $M = W \oplus R$ with $W$ non-degenerate. The Clifford relations split into three families:
+**Proof.** Write $M = W \oplus \mathrm{rad}(Q)$ with $W$ non-degenerate. The Clifford relations split into three families (as noted in §6, writing them in the form $uv + vu = 2B(u,v) \cdot 1$ requires $2$ invertible in $R$):
 
 - For $v, w \in W$: $v w + w v = 2 B(v, w) \cdot 1$.
-- For $v \in W$, $r \in R$: $v r + r v = 2 B(v, r) \cdot 1 = 0$.
-- For $r, s \in R$: $r s + s r = 2 B(r, s) \cdot 1 = 0$.
+- For $v \in W$, $r \in \mathrm{rad}(Q)$: $v r + r v = 2 B(v, r) \cdot 1 = 0$.
+- For $r, s \in \mathrm{rad}(Q)$: $r s + s r = 2 B(r, s) \cdot 1 = 0$.
 
-The first family generates $Cl(W, Q|_W) \cong Cl(M/R, \bar{Q})$. The third family generates $\Lambda(R)$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $R$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two. $\square$
+The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. The third family generates $\Lambda(\mathrm{rad}(Q))$, since $r^2 = 0$ and $r s = -s r$. The second family says that the generators of $W$ and the generators of $\mathrm{rad}(Q)$ anticommute, which is the graded tensor product relation. So the algebra is the graded tensor product of the two. $\square$
 
 The isomorphism is not canonical: it depends on the choice of complement $W$. Different complements give different isomorphisms, related by the action of the orthogonal group of $Q$.
 
@@ -300,18 +300,18 @@ The isomorphism is not canonical: it depends on the choice of complement $W$. Di
 
 ### The Non-Degenerate Factor
 
-The factor $Cl(M/R, \bar{Q})$ is the ordinary Clifford algebra of a non-degenerate form. Its structure depends on the ring $R$ and on the form $\bar{Q}$.
+The factor $Cl(M/\mathrm{rad}(Q), \bar{Q})$ is the ordinary Clifford algebra of a non-degenerate form. Its structure depends on the ring $R$ and on the form $\bar{Q}$.
 
-Over a general commutative ring, the non-degenerate Clifford algebra is a central simple algebra over $R$, or a product of two central simple algebras, when the relevant hypotheses hold. Its class in the Brauer group of $R$ is determined by the discriminant and the Hasse invariant of $\bar{Q}$. The algebra is $\mathbb{Z}/2$-graded, with even part $Cl^0$ and odd part $Cl^1$, and the even part is a central simple algebra over $R$ when the rank of $M/R$ is even.
+Over a general commutative ring, the non-degenerate Clifford algebra is a central simple algebra over $R$, or a product of two central simple algebras, when the relevant hypotheses hold. Its class in the Brauer group of $R$ is determined by the discriminant and the Hasse invariant of $\bar{Q}$. The algebra is $\mathbb{Z}/2$-graded, with even part $Cl^0$ and odd part $Cl^1$, and the even part is a central simple algebra over $R$ when the rank of $M/\mathrm{rad}(Q)$ is odd.
 
 **Key difference from the field case.** Over a general commutative ring, the classification of non-degenerate Clifford algebras is much more subtle than over a field. It requires the theory of quadratic forms over rings, and the Brauer group is replaced by the Brauer group of Azumaya algebras over $R$. The classification is the subject of the article *Clifford Algebras over Commutative Rings*.
 
 ### The Nilpotent Factor
 
-The factor $\Lambda(R)$ is the **exterior algebra** on the radical. If $(r_i)_{i \in I}$ is a basis of $R$, then
+The factor $\Lambda(\mathrm{rad}(Q))$ is the **exterior algebra** on the radical. If $(r_i)_{i \in I}$ is a basis of $\mathrm{rad}(Q)$, then
 
 $$
-\Lambda(R) = \bigoplus_{k \geq 0} \Lambda^k(R),
+\Lambda(\mathrm{rad}(Q)) = \bigoplus_{k \geq 0} \Lambda^k(\mathrm{rad}(Q)),
 $$
 
 with basis the products $r_{i_1} \cdots r_{i_k}$ for $i_1 < \dots < i_k$ and $k$ ranging over the non-negative integers. The generators satisfy
@@ -320,15 +320,15 @@ $$
 r_i^2 = 0, \qquad r_i r_j = -r_j r_i, \qquad i \neq j.
 $$
 
-So $\Lambda(R)$ is a graded-commutative algebra, and every element of positive degree is nilpotent.
+So $\Lambda(\mathrm{rad}(Q))$ is a graded-commutative algebra, and every element of positive degree is nilpotent.
 
-**Theorem.** The algebra $\Lambda(R)$ is semisimple iff $R = 0$.
+**Theorem.** For a field $R$, the algebra $\Lambda(\mathrm{rad}(Q))$ is semisimple iff $\mathrm{rad}(Q) = 0$.
 
-**Proof.** If $R \neq 0$, the ideal $\Lambda^{\geq 1}(R)$ is a non-zero nilpotent ideal, so the algebra is not semisimple. If $R = 0$, the algebra is $R$, which is semisimple when $R$ is a field. $\square$
+**Proof.** If $\mathrm{rad}(Q) \neq 0$, the ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$ is non-zero. When $\mathrm{rad}(Q)$ has finite rank it is nilpotent, so the algebra is not semisimple; when $\mathrm{rad}(Q)$ has infinite rank the algebra is not artinian, since the ideals $(r_1) \supsetneq (r_1 r_2) \supsetneq \cdots$ form a strictly descending chain for independent $r_i$, and a semisimple algebra is artinian. Either way it is not semisimple. If $\mathrm{rad}(Q) = 0$, the algebra is $R$, which is semisimple when $R$ is a field. $\square$
 
 So the degenerate Clifford algebra is semisimple iff the quadratic form is non-degenerate, under the usual hypotheses on the base ring.
 
-**The structure of $\Lambda(R)$.** The algebra $\Lambda(R)$ is the free graded-commutative algebra on $R$. It is generated by $R$ in degree one, subject to the relations $r^2 = 0$ and $r s = -s r$. If $R$ is free of finite rank $r$, then $\Lambda(R)$ is free of rank $2^r$, and it is local, with unique maximal ideal $\Lambda^{\geq 1}(R)$. If $R$ is free of infinite rank, $\Lambda(R)$ is the direct sum of the exterior powers $\Lambda^k(R)$ over all finite $k$, and it is not local: the maximal ideals correspond to the various quotients of $R$.
+**The structure of $\Lambda(\mathrm{rad}(Q))$.** The algebra $\Lambda(\mathrm{rad}(Q))$ is the free graded-commutative algebra on $\mathrm{rad}(Q)$. It is generated by $\mathrm{rad}(Q)$ in degree one, subject to the relations $r^2 = 0$ and $r s = -s r$. If $\mathrm{rad}(Q)$ is free of finite rank $r$, then $\Lambda(\mathrm{rad}(Q))$ is free of rank $2^r$, and it is local when the base ring is a field, with unique maximal ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$; over a non-local ring it need not be local, since then the radical of $R$ contributes further maximal ideals. If $\mathrm{rad}(Q)$ is free of infinite rank, $\Lambda(\mathrm{rad}(Q))$ is the direct sum of the exterior powers $\Lambda^k(\mathrm{rad}(Q))$ over all finite $k$, and it is not local.
 
 ### The Grading and the Filtration
 
@@ -343,10 +343,10 @@ $$
 where $Cl^0$ is spanned by products of an even number of elements of $M$, and $Cl^1$ by products of an odd number. The grading decomposes as
 
 $$
-Cl^0(M, Q) \cong Cl^0(M/R, \bar{Q}) \otimes \Lambda^0(R) \oplus Cl^1(M/R, \bar{Q}) \otimes \Lambda^1(R),
+Cl^0(M, Q) \cong Cl^0(M/\mathrm{rad}(Q), \bar{Q}) \otimes \Lambda^0(\mathrm{rad}(Q)) \oplus Cl^1(M/\mathrm{rad}(Q), \bar{Q}) \otimes \Lambda^1(\mathrm{rad}(Q)),
 $$
 
-and similarly for the odd part, with the roles of $\Lambda^0$ and $\Lambda^1$ interchanged. The exterior algebra $\Lambda(R)$ is itself $\mathbb{Z}$-graded, and the $\mathbb{Z}/2$-grading of the Clifford algebra is the reduction of the $\mathbb{Z}$-grading modulo $2$ on the radical factor.
+and similarly for the odd part, with the roles of $\Lambda^0$ and $\Lambda^1$ interchanged. The exterior algebra $\Lambda(\mathrm{rad}(Q))$ is itself $\mathbb{Z}$-graded, and the $\mathbb{Z}/2$-grading of the Clifford algebra is the reduction of the $\mathbb{Z}$-grading modulo $2$ on the radical factor.
 
 The Clifford algebra also carries a natural **filtration**
 
@@ -360,7 +360,7 @@ $$
 \operatorname{gr} Cl(M, Q) \cong \Lambda(M).
 $$
 
-The tensor product decomposition is compatible with the filtration: the filtration on $Cl(M/R, \bar{Q})$ and the grading on $\Lambda(R)$ combine to give the filtration on $Cl(M, Q)$.
+The tensor product decomposition is compatible with the filtration: the filtration on $Cl(M/\mathrm{rad}(Q), \bar{Q})$ and the grading on $\Lambda(\mathrm{rad}(Q))$ combine to give the filtration on $Cl(M, Q)$.
 
 ## 11. The Clifford Algebra as a Lie Algebra
 
@@ -402,7 +402,7 @@ $$
 M_2 \cong \mathfrak{so}(M, Q).
 $$
 
-This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra. The spin group is a subgroup of the group of units of $Cl^+(M, Q)$, and its Lie algebra is the Lie algebra of bivectors with the commutator bracket.
+This is the algebraic origin of the relationship between Clifford algebras and orthogonal groups. The bivectors generate the rotations, and the commutator bracket on the bivectors is the Lie bracket of the orthogonal Lie algebra. The spin group is a subgroup of the group of units of $Cl^0(M, Q)$, and its Lie algebra is the Lie algebra of bivectors with the commutator bracket.
 
 So the Clifford algebra is both an associative algebra (with the Clifford product) and a Lie algebra (with the commutator bracket). The two structures coexist on the same module, and their interaction is the source of much of the richness of the theory.
 
@@ -492,10 +492,10 @@ where $B$ is the bilinear form associated with $Q$. This relation holds for all 
 
 **The Clifford algebra is degenerate** if there is a nonzero vector orthogonal to every vector. In that case, it contains nilpotent elements and does not admit a spin group. Otherwise, it is non-degenerate.
 
-**The tensor product decomposition** $Cl(M_1 \oplus M_2) \cong Cl(M_1) \hat{\otimes} Cl(M_2)$ reduces the classification of Clifford algebras to the one-dimensional cases. Applied to the decomposition $M = W \oplus R$ with $W$ non-degenerate and $R$ the radical, it gives the structural reduction of a degenerate Clifford algebra to a non-degenerate Clifford algebra tensored with an exterior algebra:
+**The tensor product decomposition** $Cl(M_1 \oplus M_2) \cong Cl(M_1) \hat{\otimes} Cl(M_2)$ reduces the classification of Clifford algebras to the one-dimensional cases. Applied to the decomposition $M = W \oplus \mathrm{rad}(Q)$ with $W$ non-degenerate, it gives the structural reduction of a degenerate Clifford algebra to a non-degenerate Clifford algebra tensored with an exterior algebra:
 
 $$
-Cl(M, Q) \cong Cl(M/R, \bar{Q}) \hat{\otimes} \Lambda(R).
+Cl(M, Q) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q)).
 $$
 
 The non-degenerate factor is a central simple algebra over $R$, or a product of two such algebras. The nilpotent factor is the exterior algebra on the radical, which is semisimple iff the radical is zero.
@@ -509,7 +509,7 @@ The non-degenerate factor is a central simple algebra over $R$, or a product of 
 **Key differences from the field case.**
 
 - Over a field, every module is free, so the Clifford algebra has a well-defined dimension. Over a general commutative ring, the module need not be free, so the Clifford algebra need not have a well-defined rank.
-- Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.
+- Over a finite-dimensional vector space, non-degeneracy is equivalent to the radical being zero. Over an infinite-dimensional space, or over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.
 - The polarization identity requires that 2 is invertible in $R$. Over a field of characteristic not equal to 2, this is automatic. Over a general commutative ring, it is an assumption.
 - The tensor product decomposition of a degenerate Clifford algebra requires the radical to be a direct summand. Over a field, this is automatic. Over a general commutative ring, it is an assumption.
 - The classification of Clifford algebras over a general commutative ring is much more subtle than over a field, and requires the theory of quadratic forms over rings.

@@ -300,22 +300,20 @@ $$
 **Estimation.** If $\|f(z)\|_E \leq M$ on $\gamma$ and $L$ is the length of $\gamma$, then
 
 $$
-\left\| \int_\gamma f(z) \, dz \right\|_E \leq M L.
+\left\| \int_\gamma f(z) \, dz \right\|_E \leq \sqrt{2} M L.
 $$
+
+The factor $\sqrt{2}$ is needed because the Euclidean modulus is not submultiplicative: $\|z w\|_E \leq \sqrt{2} \|z\|_E \|w\|_E$, and the constant is sharp.
 
 ### The Cauchy–Goursat Theorem
 
 **Theorem (Cauchy–Goursat, split version).** If $f$ is split complex differentiable on a simply connected domain $U$ and $\gamma$ is a closed contour in $U$, then
 
 $$
-\oint_\gamma f(z) \, dz = 0
+\oint_\gamma f(z) \, dz = 0.
 $$
 
-provided the contour does not cross the light cone.
-
 **Proof.** In the idempotent basis, the integral decomposes into two real integrals, one for each component. Each component is a real line integral of a differentiable function of one variable, and each vanishes on a closed contour. $\square$
-
-**Caution.** The theorem fails if the contour crosses the light cone, because the idempotent components are not defined there in a single-valued way. The light cone is the analogue of the branch cut in complex analysis, and it must be avoided.
 
 ### The Cauchy Integral Formula
 
@@ -339,27 +337,33 @@ $$
 \sum_{n=0}^\infty c_n (z - z_0)^n, \qquad c_n \in \mathbb{D}.
 $$
 
-The **radius of convergence** is
+In the idempotent basis $c_n = c_{n,+} e_+ + c_{n,-} e_-$, and the series is the pair of real power series
 
 $$
-R = \frac{1}{\limsup_{n \to \infty} \|c_n\|_E^{1/n}},
+\sum_{n=0}^\infty c_{n,+} (z - z_0)_+^n e_+ + \sum_{n=0}^\infty c_{n,-} (z - z_0)_-^n e_-.
 $$
 
-with the conventions $R = 0$ if the limsup is $\infty$ and $R = \infty$ if the limsup is $0$.
+The **radii of convergence** are the pair of real numbers
 
-**Theorem.** The series converges absolutely for $\|z - z_0\|_E < R$ and diverges for $\|z - z_0\|_E > R$. On $\|z - z_0\|_E < R$ it converges uniformly on compact subsets.
+$$
+R_\pm = \frac{1}{\limsup_{n \to \infty} |c_{n,\pm}|^{1/n}},
+$$
 
-**Theorem.** A power series is split complex differentiable on $\|z - z_0\|_E < R$, and its derivative is obtained by term-by-term differentiation:
+with the conventions $R_\pm = 0$ if the limsup is $\infty$ and $R_\pm = \infty$ if the limsup is $0$.
+
+**Theorem.** The series converges absolutely for $|z_+ - z_{0+}| < R_+$ and $|z_- - z_{0-}| < R_-$, and diverges if $|z_+ - z_{0+}| > R_+$ or $|z_- - z_{0-}| > R_-$. Where both inequalities hold it converges uniformly on compact subsets.
+
+**Theorem.** A power series is split complex differentiable on the region $|z_+ - z_{0+}| < R_+$ and $|z_- - z_{0-}| < R_-$, and its derivative is obtained by term-by-term differentiation:
 
 $$
 \frac{d}{dz} \sum_{n=0}^\infty c_n (z - z_0)^n = \sum_{n=1}^\infty n c_n (z - z_0)^{n-1}.
 $$
 
-The differentiated series has the same radius of convergence.
+The differentiated series has the same radii of convergence.
 
 ### Taylor Series
 
-**Theorem (Taylor, split version).** If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(z_0, r)$, then $f$ has a power series expansion
+**Theorem (Taylor, split version).** If $f$ is split complex differentiable on a domain containing the closed disk $\overline{B}(z_0, r)$, and its components $f_+$ and $f_-$ are real-analytic on that disk, then $f$ has a power series expansion
 
 $$
 f(z) = \sum_{n=0}^\infty \frac{f^{(n)}(z_0)}{n!} (z - z_0)^n
@@ -369,7 +373,7 @@ valid for $\|z - z_0\|_E < r$.
 
 **Proof.** In the idempotent basis, each component has a real Taylor expansion, and the two expansions combine. $\square$
 
-**Corollary.** A split complex differentiable function is analytic: it equals its Taylor series in a neighborhood of every point.
+**Corollary.** A split complex differentiable function whose components are real-analytic is analytic: it equals its Taylor series in a neighborhood of every point.
 
 **Caution.** The identity theorem fails in general, because a split complex differentiable function can vanish on a set with an accumulation point without being identically zero. The reason is that the two idempotent components are independent, and one can vanish while the other does not.
 
@@ -385,7 +389,7 @@ Let $f$ be split complex differentiable on a punctured disk $0 < \|z - z_0\|_E <
 
 **Essential singularity.** $z_0$ is an essential singularity if it is neither removable nor a pole.
 
-**Caution.** The classification is more complicated than in the complex case, because the function can behave differently on the two idempotent components. A point can be removable for one component and a pole for the other, in which case it is neither removable nor a pole for the split complex function.
+**Caution.** The classification is empty under this hypothesis. The component $f_+$ is a function of $z_+$ alone, and differentiating $f$ at a point with $z_+ = z_{0+}$ and $z_- \neq z_{0-}$ (such points lie in the punctured disk) gives a derivative of $f_+$ across $z_{0+}$, and dually for $f_-$. So $f$ extends to $z_0$: every singularity in the sense above is removable, and there are no isolated poles or essential singularities. In particular a point that is a pole for one component is a pole for the function, since $\|f\|_E^2 = (f_+^2 + f_-^2)/2$.
 
 ### Residues
 
@@ -411,15 +415,15 @@ $$
 
 where $F$ and $G$ are arbitrary differentiable functions. This is d'Alembert's solution, and it is the general solution of the wave equation in one spatial dimension.
 
-### Hyperbolic Geometry
+### The Lorentzian Metric
 
-The split complex numbers are the natural coordinates for the hyperbolic plane. The **hyperbolic metric** is
+The split complex numbers are the natural coordinates for a Lorentzian analogue of the hyperbolic plane. The **metric** is
 
 $$
 ds^2 = \frac{dx^2 - dy^2}{y^2},
 $$
 
-and the split complex differentiable functions that preserve this metric are the **hyperbolic isometries**, which are the analogues of the Möbius transformations in complex analysis.
+which has signature $(1,1)$ and is therefore Lorentzian; the Riemannian metric of the hyperbolic plane is $ds^2 = (dx^2 + dy^2)/y^2$ instead. The split complex differentiable functions that preserve this metric are the **isometries**, which are the analogues of the Möbius transformations in complex analysis.
 
 ### Signal Processing
 

@@ -325,7 +325,7 @@ $$
 
 where $\hat{\mathbf{h}} = \mathbf{h}/|\mathbf{h}|$ (for $\mathbf{h} \neq 0$). The exponential of the vector part uses $\hat{\mathbf{h}}^2 = -e_0$, which gives the trigonometric form.
 
-The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^\dagger = e_0$. It is not Hermitian in general (it would be Hermitian only when $\tilde{U}(t)^2 = e_0$, i.e., only at isolated times $t = n\pi\hbar/|\mathbf{h}|$). It is a general element of the unitary group $U(2) \subset \mathbb{B}$.
+The element $\tilde{U}(t)$ is **unitary**: $\tilde{U}(t)\tilde{U}(t)^\dagger = e_0$. It is not Hermitian in general: writing $\theta = |\mathbf{h}|t/\hbar$, $\tilde{U}(t)$ is Hermitian exactly when $\tilde{U}(t)^2 = e_0$, which requires either $\sin\theta = 0$ together with $h_0t/\hbar \in \pi\mathbb{Z}$, or $\cos\theta = 0$ together with $h_0t/\hbar \in \tfrac{\pi}{2} + \pi\mathbb{Z}$. For $h_0 = 0$ only the first case survives, at the isolated times $t = n\pi\hbar/|\mathbf{h}|$; for $h_0 \neq 0$ the two conditions must hold simultaneously, so the Hermitian times are more restricted than this. It is a general element of the unitary group $U(2) \subset \mathbb{B}$.
 
 **The trace part of the Hamiltonian does not affect the state.** Since $e^{-ih_0 t/\hbar}$ is a central complex scalar, and since the conjugation
 

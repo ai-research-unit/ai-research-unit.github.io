@@ -214,7 +214,7 @@ The first term is $\tilde{\nabla}\bar{\tilde{Q}} = \sum_\mu e_\mu \bar e_\mu = e
 For the second term, on $\mathbb{H}_{\mathbb{B}}$ the coefficients are real, so $\partial_{q_\mu}\|\tilde Q\|_E^2 = \partial_{q_\mu}(\sum_\nu Q_\nu^2) = 2Q_\mu$. Hence
 
 $$
-\partial_{q_\mu}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{4}{\|\tilde Q\|_E^6} \partial_{q_\mu}\|\tilde Q\|_E^2 = -\frac{4 \cdot 2 Q_\mu}{\|\tilde Q\|_E^6} = -\frac{4 Q_\mu}{\|\tilde Q\|_E^6} \cdot 2 \cdot \frac{1}{2}.
+\partial_{q_\mu}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{2}{\|\tilde Q\|_E^6} \partial_{q_\mu}\|\tilde Q\|_E^2 = -\frac{2 \cdot 2 Q_\mu}{\|\tilde Q\|_E^6} = -\frac{4 Q_\mu}{\|\tilde Q\|_E^6}.
 $$
 
 Let us be precise: $\partial_{q_\mu}(r^{-4})$ where $r = \|\tilde Q\|_E^2$. Chain rule: $\partial_{q_\mu}(r^{-4}) = -4 r^{-5} \partial_{q_\mu} r = -4 r^{-5} \cdot 2 Q_\mu = -8 Q_\mu r^{-5} = -8 Q_\mu / \|\tilde Q\|_E^{10}$.

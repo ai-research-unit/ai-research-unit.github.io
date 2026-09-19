@@ -135,7 +135,7 @@ $$
 \tilde{Q} \mapsto q_0 I_2 - i q_1\sigma_1 - i q_2\sigma_2 - i q_3\sigma_3 = \begin{pmatrix} q_0 - i q_3 & -i(q_1 - i q_2) \\ -i(q_1 + i q_2) & q_0 + i q_3 \end{pmatrix}.
 $$
 
-This is a general element of the complexified form $q_0 I - i \mathbf{q}\cdot\boldsymbol{\sigma}$, i.e., an **arbitrary complex $2 \times 2$ matrix** with a specific structure. This is the full algebra $M_2(\mathbb{C})$.
+This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \\ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is **not** the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.
 
 ## The Observables
 
@@ -281,7 +281,7 @@ So the **spin rotations of a spin-1/2 particle are realized in the biquaternion 
 
 The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
 
-In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to non-unitary operations, which in the quantum-information language are **non-reversible transformations**.
+In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm form, so it inverts to $\bar{\tilde{\Lambda}}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
 
 The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.
 

@@ -157,7 +157,7 @@ This bracket is bilinear, antisymmetric, and satisfies the Jacobi identity. So $
 
 This construction applies in particular to the Clifford algebras studied in the later articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.
 
-The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ and the Heisenberg Lie algebra are examples of Lie algebras that do not arise from associative algebras. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.
+The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ is an example of a Lie algebra that does not arise from an associative algebra. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.
 
 ### The Subspace of Bivectors
 
@@ -275,7 +275,7 @@ Simple Lie algebras are the building blocks of the theory. Every finite-dimensio
 
 ### The Classification of Simple Lie Algebras
 
-Over the complex numbers, the simple Lie algebras are classified by their **root systems**, which are combinatorial objects called **Dynkin diagrams**. The classification was achieved by Killing and Cartan in the late nineteenth century. The simple Lie algebras fall into four infinite families
+Over the complex numbers, the simple Lie algebras are classified by their **root systems**, which are encoded in combinatorial objects called **Dynkin diagrams**. The classification was achieved by Killing and Cartan in the late nineteenth century. The simple Lie algebras fall into four infinite families
 
 $$
 A_n, \quad B_n, \quad C_n, \quad D_n,

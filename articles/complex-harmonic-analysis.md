@@ -42,7 +42,7 @@ $$
 Its characters are
 
 $$
-\chi_{s, n}(z) = r^s e^{i n \theta}, \qquad s \in \mathbb{R}, \; n \in \mathbb{Z}.
+\chi_{\tau, n}(z) = r^{i \tau} e^{i n \theta}, \qquad \tau \in \mathbb{R}, \; n \in \mathbb{Z}.
 $$
 
 This is the starting point of **multiplicative harmonic analysis** on $\mathbb{C}$, which is the Mellin transform in disguise.
@@ -76,10 +76,10 @@ This is the ordinary two-dimensional Fourier transform. The complex notation is 
 **Scaling.** If $f_\lambda(z) = f(\lambda z)$ for $\lambda \in \mathbb{C}^\times$, then
 
 $$
-\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \hat{f}\left(\frac{\xi}{\lambda}\right),
+\widehat{f_\lambda}(\xi) = \frac{1}{|\lambda|^2} \hat{f}\left(\frac{\xi}{\bar{\lambda}}\right),
 $$
 
-where $\xi/\lambda$ is complex division.
+where $\xi/\bar{\lambda}$ is complex division.
 
 **Rotation.** If $f_\theta(z) = f(e^{i\theta} z)$, then $\hat{f}_\theta(\xi) = \hat{f}(e^{i\theta} \xi)$. The Fourier transform commutes with rotations.
 
@@ -216,7 +216,7 @@ This is the algebraic content of the Fourier transform on $\mathbb{C}$: it turns
 The Cauchy–Riemann operator has symbol
 
 $$
-\widehat{\bar{\partial} f}(\xi) = \pi i \bar{\xi} \hat{f}(\xi),
+\widehat{\bar{\partial} f}(\xi) = \pi i \xi \hat{f}(\xi),
 $$
 
 where $\bar{\xi}$ is the complex conjugate of $\xi$. The symbol vanishes on the set $\bar{\xi} = 0$, which is the origin. This is the reason the Cauchy–Riemann operator is elliptic: its symbol vanishes only at the origin.
@@ -238,7 +238,7 @@ $$
 in the sense of distributions. The Fourier transform of $\Phi$ is the tempered distribution
 
 $$
-\hat{\Phi}(\xi) = -\frac{1}{2\pi |\xi|^2},
+\hat{\Phi}(\xi) = -\frac{1}{4\pi^2 |\xi|^2},
 $$
 
 which is defined by principal value.
@@ -285,7 +285,7 @@ The Hardy spaces are the natural setting for the study of holomorphic functions 
 
 ### The Paley–Wiener Space
 
-The **Paley–Wiener space** $PW_B$ is the set of entire functions of exponential type at most $B$ whose restriction to $\mathbb{R}$ is in $L^2$. By the Paley–Wiener theorem, it is the image of the compactly supported $L^2$ functions on $[-B, B]$ under the Fourier transform.
+The **Paley–Wiener space** $PW_B$ is the set of entire functions of exponential type at most $2\pi B$ whose restriction to $\mathbb{R}$ is in $L^2$. By the Paley–Wiener theorem, it is the image of the compactly supported $L^2$ functions on $[-B, B]$ under the Fourier transform.
 
 The Paley–Wiener space is a reproducing kernel Hilbert space, with reproducing kernel
 
@@ -306,7 +306,7 @@ $$
 For $p = 2$, the Bergman space is a reproducing kernel Hilbert space, with reproducing kernel
 
 $$
-K(z, w) = \frac{1}{(1 - z \bar{w})^2}.
+K(z, w) = \frac{1}{\pi (1 - z \bar{w})^2}.
 $$
 
 It is the natural setting for the study of holomorphic functions with controlled $L^p$ growth on the disk.
@@ -338,7 +338,7 @@ whenever the integral converges. For $f \in L^1((0, \infty), x^{\sigma-1} dx)$, 
 Under the change of variables $x = e^t$, the Mellin transform becomes the Fourier transform:
 
 $$
-\mathcal{M} f(\sigma + i\tau) = \int_{-\infty}^\infty e^{(\sigma + i\tau) t} f(e^t) \, dt = \hat{g}(\tau),
+\mathcal{M} f(\sigma + i\tau) = \int_{-\infty}^\infty e^{(\sigma + i\tau) t} f(e^t) \, dt = \hat{g}(-\tau/2\pi),
 $$
 
 where $g(t) = e^{\sigma t} f(e^t)$. So the Mellin transform is the Fourier transform in logarithmic coordinates.

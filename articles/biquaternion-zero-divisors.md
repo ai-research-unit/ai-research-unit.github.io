@@ -127,7 +127,7 @@ $$
 
 ### The Criterion
 
-**Theorem.** The following three conditions on a pure biquaternion $\tilde{Q}$ are equivalent:
+**Theorem.** The following three conditions on a nonzero pure biquaternion $\tilde{Q}$ are equivalent:
 
 1. $\tilde{Q}$ is a zero divisor.
 2. $N(\tilde{Q}) = 0$, i.e. $Q_1^2 + Q_2^2 + Q_3^2 = 0$.
@@ -135,7 +135,7 @@ $$
 
 **Proof.** The equivalence of (1) and (2) is the general criterion for zero divisors. The equivalence of (2) and (3) follows from the computation of the square above: $\tilde{Q}^2 = -N(\tilde{Q}) e_0$ vanishes if and only if $N(\tilde{Q}) = 0$. $\square$
 
-A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a **nilpotent**, so in the pure case, the zero divisors are exactly the nilpotents.
+A biquaternion satisfying $\tilde{Q}^2 = 0$ is called a **nilpotent**, so in the pure case, the zero divisors are exactly the nonzero nilpotents.
 
 ### Properties
 
@@ -373,7 +373,7 @@ $$
 Q_1^2 + Q_2^2 + Q_3^2 = 0,
 $$
 
-and in that case $\tilde{Q}^2 = 0$. So the pure zero divisors are exactly the nilpotents. They form the zero divisors whose scalar part vanishes.
+and in that case $\tilde{Q}^2 = 0$. So the pure zero divisors are exactly the nonzero nilpotents. They form the zero divisors whose scalar part vanishes.
 
 ### The Non-Pure Case
 
@@ -383,7 +383,7 @@ $$
 \tilde{Q}^2 = 2 Q_0 \tilde{Q}.
 $$
 
-So the non-pure zero divisors are exactly the complex multiples of the idempotents of $\mathbb{B}$. They form the zero divisors whose scalar part is nonzero.
+So the non-pure zero divisors are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$. They form the zero divisors whose scalar part is nonzero.
 
 ### The Comparison Table
 
@@ -450,8 +450,8 @@ The two real equations are independent at every nonzero point of the zero set, s
 
 The zero divisors of the biquaternion algebra are the nonzero elements on which the norm form vanishes. They split into two families:
 
-- The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
-- The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the complex multiples of the idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
+- The **pure zero divisors**, which have vanishing scalar part and satisfy $Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero nilpotents: their square is zero, and their annihilator contains themselves. They form a complex cone of real dimension $4$.
+- The **non-pure zero divisors**, which have nonzero scalar part and satisfy $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$. These are exactly the nonzero complex multiples of the nontrivial idempotents of $\mathbb{B}$: their square is $2 Q_0 \tilde{Q}$, and their annihilator contains $\tilde{Q} - 2 Q_0 e_0$. They form an open dense subset of the full zero divisor cone.
 
 The idempotents are either trivial ($0$ or $e_0$) or of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$, where $\xi$ is a root of $-1$ in $\mathbb{B}$. The roots of $-1$ are classified as the trivial roots $\pm i$, the real quaternion roots $\pm \mu$ with $\mu$ a unit pure real quaternion, and the non-trivial roots $b\mu + d\nu i$ with $b^2 - d^2 = 1$ and $\mu \perp \nu$ unit pure real quaternions.
 

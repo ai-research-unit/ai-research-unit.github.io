@@ -16,12 +16,12 @@ Before defining any special function, it is worth recalling the structural theor
 **Theorem (Structure of dual differentiable functions).** A dual differentiable function $f : U \to \mathbb{D}'$ on a domain $U \subseteq \mathbb{D}'$ is of the form
 
 $$
-f(x + y\varepsilon) = u(x) + c \varepsilon,
+f(x + y\varepsilon) = u(x) + \left( y u'(x) + c(x) \right) \varepsilon,
 $$
 
-where $u$ is an ordinary differentiable function of one real variable and $c$ is a constant.
+where $u$ and $c$ are ordinary differentiable functions of one real variable.
 
-So every dual differentiable function is determined by a real differentiable function of the real part, plus a constant infinitesimal part. The infinitesimal part does not vary with the input. This is the fundamental constraint, and it is the reason the special functions of dual numbers analysis are simpler than the special functions of complex or split complex analysis.
+So every dual differentiable function is determined by two ordinary differentiable functions of one real variable. The real part depends only on $x$; the infinitesimal part is affine in $y$, with slope the derivative $u'(x)$ of the real part. This is the fundamental constraint, and it is the reason the special functions of dual numbers analysis are simpler than the special functions of complex or split complex analysis.
 
 The functions defined below are of two kinds:
 
@@ -357,7 +357,7 @@ $$
 where $C$ is a contour in the complex plane, the exponential is the complex exponential, and $z$ is a dual number. For $z = x + y\varepsilon$,
 
 $$
-\operatorname{Ai}(z) = \operatorname{Ai}(x) - y \operatorname{Ai}'(x) \varepsilon,
+\operatorname{Ai}(z) = \operatorname{Ai}(x) + y \operatorname{Ai}'(x) \varepsilon,
 $$
 
 where $\operatorname{Ai}$ on the right is the ordinary real Airy function.
@@ -515,7 +515,7 @@ $$
 \tilde{F}(z) = F(x) + y F'(x) \varepsilon.
 $$
 
-**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + c\varepsilon$ for some differentiable $u$ and constant $c$. Evaluating at $y = 0$ gives $u(x) = F(x)$. The infinitesimal part is the derivative with respect to the infinitesimal direction, which is $F'(x) y$ by the chain rule. $\square$
+**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$. $\square$
 
 This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
 

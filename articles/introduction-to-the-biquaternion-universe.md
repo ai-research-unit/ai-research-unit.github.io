@@ -52,19 +52,19 @@ In vacuum, $c = c_0$, and the material time coordinate becomes $ic_0 t$ — the 
 
 ## The Metric
 
-The natural quadratic form on the biquaternion algebra is the complex bilinear form
+The natural quadratic form on the biquaternion algebra is the **norm form**
 
 $$
-d\tilde{Q} \circ d\tilde{Q} = \sum_{\mu=0}^{3} (dQ_\mu)^2,
+N(d\tilde{Q}) = d\tilde{Q} \circ \overline{d\tilde{Q}} = \sum_{\mu=0}^{3} (dQ_\mu)^2,
 $$
 
-where $\circ$ is the biquaternion product. Expanding in real and imaginary parts,
+where $\circ$ is the biquaternion product and $\overline{\cdot}$ is the quaternion conjugate. The conjugate is what produces the sum of squares: the product $d\tilde{Q} \circ d\tilde{Q}$ of $d\tilde{Q}$ with itself is not $\sum_\mu (dQ_\mu)^2$. Expanding in real and imaginary parts,
 
 $$
 (dQ_\mu)^2 = (dq_\mu)^2 - (dq'_\mu)^2 + 2i\,dq_\mu\,dq'_\mu.
 $$
 
-The **real part** of $d\tilde{Q} \circ d\tilde{Q}$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
+The **real part** of $N(d\tilde{Q}) = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
 ## What the Framework Achieves
 
@@ -137,7 +137,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternionic coordinate |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$ |
-| $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', x', y', z')$ |
+| $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', ix', iy', iz')$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors) |
 | $\tilde{P}_\pm(\hat{\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of the informational sector) |
 | $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable of the informational sector) |

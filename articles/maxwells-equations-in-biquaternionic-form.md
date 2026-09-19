@@ -126,10 +126,10 @@ So the d'Alembertian is the product of the biquaternionic gradient and its quate
 The electromagnetic field is described by a **field-strength biquaternion**
 
 $$
-\tilde{F} = \mathbf{F}, \qquad \mathbf{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}.
+\tilde{F} = \mathbf{F}, \qquad \mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}.
 $$
 
-Here $\mathbf{F}$ is a complex three-vector combining the electric and magnetic fields. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
+Here $\mathbf{F}$ is a complex three-vector combining the electric and magnetic fields, with an **imaginary** electric part and a **real** magnetic part: the electric field carries a time index, and in the $ict$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
 
 The field-strength biquaternion is obtained from the potential biquaternion by differentiation. In the biquaternion algebra, the natural object constructed from $\tilde{A}$ is
 
@@ -148,10 +148,10 @@ with components
 $$
 F^{\mu\nu} =
 \begin{pmatrix}
-0 & -E_x/c & -E_y/c & -E_z/c \\
-E_x/c & 0 & -B_z & B_y \\
-E_y/c & B_z & 0 & -B_x \\
-E_z/c & -B_y & B_x & 0
+0 & iE_x/c & iE_y/c & iE_z/c \\
+-iE_x/c & 0 & B_z & -B_y \\
+-iE_y/c & -B_z & 0 & B_x \\
+-iE_z/c & B_y & -B_x & 0
 \end{pmatrix}.
 $$
 
@@ -161,9 +161,9 @@ $$
 F^{\mu\nu} = -F^{\nu\mu}.
 $$
 
-**A note on the relation between $\mathbf{F}$ and $\bar{\tilde{\nabla}}\tilde{A}$.** The precise identification of the biquaternion $\mathbf{F} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$ with the vector part of $\bar{\tilde{\nabla}}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ reproduces this field strength up to a normalization factor and a possible sign convention depending on the choice of $A_0 = i\phi/c$ vs $A_0 = -i\phi/c$. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
+**A note on the relation between $\mathbf{F}$ and $\bar{\tilde{\nabla}}\tilde{A}$.** The precise identification of the biquaternion $\mathbf{F} = i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H}$ with the vector part of $\bar{\tilde{\nabla}}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \bar{\tilde{\nabla}}\tilde{A} - \mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
 
-The complex combination $\mathbf{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\mathbf{F}$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
+The complex combination $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\mathbf{F}$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
 
 ## The Biquaternionic Source
 
@@ -202,7 +202,7 @@ One equation replaces the four standard Maxwell equations. There is no explicit 
 Taking the scalar and vector parts of $\tilde{\nabla} \tilde{F} = -\tilde{R}$ separately, we recover the Hamiltonian form of Maxwell's equations. The scalar part is
 
 $$
-\mathrm{div}\,\mathbf{F} = -R_0,
+-\mathrm{div}\,\mathbf{F} = -R_0,
 $$
 
 and the vector part is
@@ -255,21 +255,21 @@ $$
 
 where $\tilde{\nabla}_{\mathrm{stat}}$ is the biquaternionic gradient restricted to the spatial directions. The equation is purely spatial, and the time coordinate plays no role.
 
-The static solution is given by the **Newton potential** for the biquaternionic source:
+The static solution is given by the **gradient of the Newton kernel**, not by the Newton kernel itself, because the static equation is first order:
 
 $$
-\tilde{F}(\mathbf{x}) = -\frac{1}{4\pi} \int \frac{\tilde{R}(\mathbf{y})}{\|\mathbf{x} - \mathbf{y}\|}\,d^3 y,
+\tilde{F}(\mathbf{x}) = \frac{1}{4\pi} \int \frac{(\mathbf{x} - \mathbf{y})\,R_0(\mathbf{y})}{\|\mathbf{x} - \mathbf{y}\|^3}\,d^3 y \;-\; \frac{1}{4\pi} \int \frac{\mathbf{R}(\mathbf{y}) \times (\mathbf{x} - \mathbf{y})}{\|\mathbf{x} - \mathbf{y}\|^3}\,d^3 y,
 $$
 
-where $\|\mathbf{x} - \mathbf{y}\|$ is the ordinary Euclidean distance in $\mathbb{R}^3$. This is the biquaternionic form of the Coulomb and Ampère laws: the scalar part of $\tilde{F}$ is the electric displacement, and the vector part is the magnetic field, both expressed as superpositions of point sources weighted by the inverse distance.
+with $R_0 = \mathrm{Sc}(\tilde{R})$ and $\mathbf{R} = \mathrm{Vect}(\tilde{R})$, and where $\|\mathbf{x} - \mathbf{y}\|$ is the ordinary Euclidean distance in $\mathbb{R}^3$. The first term is the biquaternionic form of the Coulomb law and the second that of the Biot-Savart law. Its imaginary part is $\sqrt{\epsilon}\mathbf{E}$ and its real part is $-\sqrt{\mu}\mathbf{H}$.
 
 For a point charge $q$ at the origin, the source is $\tilde{R} = i q/\sqrt{\epsilon}\,\delta(\mathbf{x}) e_0$, and the solution is
 
 $$
-\tilde{F}(\mathbf{x}) = -\frac{i q}{4\pi\sqrt{\epsilon}\|\mathbf{x}\|}\,e_0,
+\tilde{F}(\mathbf{x}) = \frac{i q\,\hat{\mathbf{x}}}{4\pi\sqrt{\epsilon}\,\|\mathbf{x}\|^2},
 $$
 
-which is the Coulomb field of a point charge at the origin. In the same way, a steady current loop produces a magnetic dipole field, and the biquaternionic formulation reproduces the standard results of magnetostatics.
+where $\hat{\mathbf{x}} = \mathbf{x}/\|\mathbf{x}\|$, which is the Coulomb field of a point charge at the origin, falling as $1/\|\mathbf{x}\|^2$. In the same way, a steady current loop produces a magnetic dipole field, and the biquaternionic formulation reproduces the standard results of magnetostatics.
 
 ## Gauge Structure
 
@@ -296,7 +296,7 @@ $$
 This is the biquaternionic scalar field, whose components are $\partial_{ict} A_0 + \mathrm{div}\,\mathbf{A}$. Under a gauge transformation, it transforms as
 
 $$
-S' = S + \Box \Gamma.
+S' = S - \Box \Gamma.
 $$
 
 The scalar field $S$ is therefore a **gauge degree of freedom**. It is not a physical field; it can be changed at will by a gauge transformation. The physical content of the theory is entirely in the vector part of $\bar{\tilde{\nabla}} \tilde{A}$, which is the field-strength biquaternion $\tilde{F}$ and is invariant under the gauge transformation.
@@ -434,7 +434,7 @@ $$
 All the equations above carry over with the substitution $c \to c_0$, $\epsilon \to \epsilon_0$, $\mu \to \mu_0$. In particular, the field-strength biquaternion becomes
 
 $$
-\tilde{F} = \sqrt{\epsilon_0}\,\mathbf{E} + i\sqrt{\mu_0}\,\mathbf{H},
+\tilde{F} = i\sqrt{\epsilon_0}\,\mathbf{E} - \sqrt{\mu_0}\,\mathbf{H},
 $$
 
 and the potential biquaternion becomes

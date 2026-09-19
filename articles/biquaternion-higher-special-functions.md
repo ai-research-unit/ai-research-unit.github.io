@@ -78,10 +78,10 @@ The parity of $\hat{n}^{2m+\nu}$ depends on the parity of $\nu$. If $\nu$ is an 
 For integer $\nu = n$, the result is
 
 $$
-J_n(\theta \hat{n}) = \begin{cases} (-1)^{n/2} J_n(\theta) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} J_n(\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
+J_n(\theta \hat{n}) = \begin{cases} (-1)^{n/2} I_n(\theta) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
 $$
 
-where $J_n(\theta)$ on the right is the ordinary complex Bessel function. The verification is a direct substitution of the alternating powers of $\hat{n}$.
+where $I_n(\theta)$ on the right is the ordinary complex modified Bessel function. The verification is a direct substitution of the alternating powers of $\hat{n}$.
 
 ### The Pure Case, Nilpotent Regime
 

@@ -194,7 +194,7 @@ $$
 z_r = \frac{1}{2}(z + \bar{z}), \qquad z_i = \frac{1}{2i}(z - \bar{z}).
 $$
 
-Indeed, $z_r$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $z_i$ is real, so $i z_i$ is fixed by complex conjugation.
+Indeed, $z_r$ is fixed by complex conjugation, so it lies in $\mathbb{R}_{\mathbb{C}}$, and $z_i$ is real, so $i z_i$ is negated by complex conjugation.
 
 This gives the direct sum decomposition
 
@@ -294,7 +294,7 @@ The three quadratic objects are related as follows:
 - **Hermitian form:** $z \bar{z} = a^2 + b^2$. Same as the norm form, because $\mathbb{C}$ is commutative.
 - **Inner product:** $\langle z, w \rangle = \bar{z} w$. Complex-valued in general, Hermitian, linear in the second argument.
 
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a complex vector space.
+The norm form and the Hermitian form coincide, while the inner product is a distinct two-variable object; each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form controls the topological structure (continuity, completeness). The inner product combines both, and is the natural pairing on the algebra as a complex vector space.
 
 In the complex case, the norm form and the Hermitian form coincide, because the conjugation is the only non-trivial involution and the algebra is commutative. This is a degeneracy of the two-dimensional case, and it is the reason the complex numbers are often treated as a trivial example rather than as a case study.
 

@@ -272,7 +272,7 @@ $$
 where $B_{2n}$ are the Bernoulli numbers. The values at negative integers are
 
 $$
-\zeta(-n) = -\frac{B_{n+1}}{n+1}, \qquad n \geq 0.
+\zeta(-n) = (-1)^n \frac{B_{n+1}}{n+1}, \qquad n \geq 0.
 $$
 
 In particular, $\zeta(0) = -1/2$ and $\zeta(-1) = -1/12$.
@@ -506,7 +506,7 @@ J_\nu(z) \sim \sqrt{\frac{2}{\pi z}} \cos\left(z - \frac{\nu \pi}{2} - \frac{\pi
 $$
 
 $$
-I_\nu(z) \sim \frac{e^z}{\sqrt{2 \pi z}}.
+I_\nu(z) \sim \frac{e^z}{\sqrt{2 \pi z}}, \qquad |\arg z| < \frac{\pi}{2}.
 $$
 
 ## The Airy Functions
@@ -519,7 +519,7 @@ $$
 \operatorname{Ai}(z) = \frac{1}{2\pi i} \int_C \exp\left(\frac{t^3}{3} - zt\right) dt,
 $$
 
-where $C$ is a contour in the complex plane that starts at infinity in the sector $|\arg t| < \pi/3$ and ends at infinity in the sector $|\arg t - 2\pi/3| < \pi/3$. The integral converges because of the cubic term.
+where $C$ is a contour in the complex plane that starts at infinity along the ray $\arg t = -\pi/3$ and ends at infinity along the ray $\arg t = \pi/3$. The integral converges because of the cubic term.
 
 It satisfies Airy's differential equation
 
@@ -537,10 +537,10 @@ $$
 \operatorname{Ai}(z) \sim \frac{1}{2 \sqrt{\pi} z^{1/4}} e^{-2 z^{3/2}/3}.
 $$
 
-As $|z| \to \infty$ with $|\arg(-z)| < \pi$,
+As $|z| \to \infty$ with $|\arg(-z)| < 2\pi/3$,
 
 $$
-\operatorname{Ai}(z) \sim \frac{1}{\sqrt{\pi} |z|^{1/4}} \sin\left(\frac{2 |z|^{3/2}}{3} + \frac{\pi}{4}\right).
+\operatorname{Ai}(z) \sim \frac{1}{\sqrt{\pi} (-z)^{1/4}} \sin\left(\frac{2 (-z)^{3/2}}{3} + \frac{\pi}{4}\right).
 $$
 
 The Airy functions are the simplest example of functions with a Stokes phenomenon: the asymptotic expansion changes form across certain rays in the complex plane.

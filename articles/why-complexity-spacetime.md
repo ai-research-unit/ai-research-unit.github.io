@@ -95,7 +95,7 @@ $$
 Q_\mu = q_\mu + i\,q'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The real parts $q_\mu$ describe the material sector. The imaginary parts $q'_\mu$ describe the informational sector — the sector whose elements carry the operator algebra of quantum mechanics. The time coefficient carries the $ict$ structure explicitly: $q'_0 = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
+The material sector is described by the real parts $q_\mu$ for $\mu = 1, 2, 3$ — the spatial parameters $x, y, z$ — together with the imaginary time part $q'_0$. The informational sector — the sector whose elements carry the operator algebra of quantum mechanics — is described by the imaginary parts $q'_j$ for $j = 1, 2, 3$ — the spatial parameters $x', y', z'$ — together with the real time part $q_0$. The time coefficient carries the $ict$ structure explicitly: $q'_0 = ct$, where $c = 1/\sqrt{\epsilon\mu}$ is the **local** speed of light in the medium. In vacuum, $c = c_0$ and the familiar $ic_0 t$ form is recovered.
 
 In this framework, the Lorentzian signature of the real slice is not postulated; it emerges algebraically from the complex structure. The metric convention, for all its technical convenience, hides this emergence.
 

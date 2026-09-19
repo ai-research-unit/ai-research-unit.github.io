@@ -183,22 +183,28 @@ So the algebra is spanned by $1, e_1, e_2, e_1 e_2$, and the three elements $e_1
 
 ## 14. Rank 3
 
-The module is $\mathbb{R}^3$, with basis $e_1, e_2, e_3$. In an orthogonal basis, the quadratic form is determined by the three values $Q(e_1)$, $Q(e_2)$, $Q(e_3)$. Up to isomorphism, there are four cases, but the Clifford algebras fall into two isomorphism classes.
+The module is $\mathbb{R}^3$, with basis $e_1, e_2, e_3$. In an orthogonal basis, the quadratic form is determined by the three values $Q(e_1)$, $Q(e_2)$, $Q(e_3)$. Up to isomorphism, there are four cases, and the Clifford algebras fall into three isomorphism classes.
 
 **Case with an odd number of positive squares.** The Clifford algebra is $Cl_{3,0}(\mathbb{R}) \cong Cl_{1,2}(\mathbb{R}) \cong M_2(\mathbb{C})$, the algebra of $2 \times 2$ complex matrices, of rank $8$.
 
-**Case with an even number of positive squares.** The Clifford algebra is $Cl_{0,3}(\mathbb{R}) \cong \mathbb{H} \oplus \mathbb{H}$, the **split biquaternion algebra**, of rank $8$.
+**Case with two positive squares.** The Clifford algebra is $Cl_{2,1}(\mathbb{R}) \cong M_2(\mathbb{R}) \oplus M_2(\mathbb{R})$, a sum of two copies of the algebra of $2 \times 2$ real matrices, of rank $8$. Its center is $\mathbb{R} \oplus \mathbb{R}$, spanned by the unit and the volume element, so it is a product of two simple algebras rather than a simple algebra.
+
+**Case with no positive squares.** The Clifford algebra is $Cl_{0,3}(\mathbb{R}) \cong \mathbb{H} \oplus \mathbb{H}$, the **split biquaternion algebra**, of rank $8$.
 
 ## 15. Rank 4 and Beyond
 
-The pattern continues:
+The pattern continues, with the graded tensor product of the preceding article in the first line:
 
 $$
-Cl_{0,4}(\mathbb{R}) \cong \mathbb{H} \otimes \mathbb{H} \cong M_2(\mathbb{H}) \cong M_4(\mathbb{R}),
+Cl_{0,4}(\mathbb{R}) \cong \mathbb{H} \hat{\otimes} \mathbb{H} \cong M_2(\mathbb{H}),
 $$
 
 $$
-Cl_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H}) \cong M_4(\mathbb{R}),
+Cl_{1,3}(\mathbb{R}) \cong M_2(\mathbb{H}),
+$$
+
+$$
+Cl_{2,2}(\mathbb{R}) \cong M_4(\mathbb{R}),
 $$
 
 $$
@@ -208,6 +214,8 @@ $$
 $$
 Cl_{4,0}(\mathbb{R}) \cong M_2(\mathbb{H}).
 $$
+
+The algebras $M_2(\mathbb{H})$ and $M_4(\mathbb{R})$ are both $16$-dimensional central simple algebras over $\mathbb{R}$, but they are **not** isomorphic: $M_4(\mathbb{R})$ is split while $M_2(\mathbb{H})$ is not, the two lying in different classes of the Brauer group $\mathrm{Br}(\mathbb{R}) = \mathbb{Z}/2$. Their centers are both $\mathbb{R}$, so the center does not distinguish them.
 
 ## 16. Bott Periodicity
 
@@ -222,8 +230,10 @@ $$
 The even subalgebra satisfies
 
 $$
-Cl_{p,q}^+(\mathbb{R}) \cong Cl_{q,p-1}(\mathbb{R}).
+Cl_{p,q}^+(\mathbb{R}) \cong Cl_{q,p-1}(\mathbb{R})
 $$
+
+for $p \geq 1$. The formula requires a positive direction to stand on; for $p = 0$ the companion formula reads $Cl_{0,q}^+(\mathbb{R}) \cong Cl_{0,q-1}(\mathbb{R})$.
 
 ## 18. The Center over $\mathbb{R}$
 
@@ -247,7 +257,7 @@ $$
 Q(z_1, \ldots, z_n) = z_1^2 + \cdots + z_n^2.
 $$
 
-The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $\mu$ to make the coefficient $1$.
+The reason is that over $\mathbb{C}$, we can rescale a basis vector by a complex scalar to change the sign of its coefficient. If a coefficient is $\lambda \neq 0$, we can write $\lambda = \mu^2$ for some $\mu \in \mathbb{C}^\times$, and then rescale the basis vector by $1/\mu$ to make the coefficient $1$.
 
 So over $\mathbb{C}$, there is only one isomorphism class of non-degenerate quadratic forms in each rank. There is no signature.
 
@@ -347,7 +357,7 @@ The center of $\mathbb{C}l_n$ is $\mathbb{C}$ if $n$ is even, and $\mathbb{C} \o
 
 ## 29. A Caveat
 
-The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. The simplest example is $(1 + e)(1 - e) = 0$. The element $1 + e$ has no inverse.
+The split complex numbers $\mathbb{D}$ are not a field in the strict sense: they form a commutative ring with zero divisors. Writing $j$ for the split complex unit, with $j^2 = +1$ as in the split complex algebra article, the simplest example is $(1 + j)(1 - j) = 0$, and the element $1 + j$ has no inverse.
 
 Despite this, much of the theory carries over. A module over $\mathbb{D}$ is a module over the ring $\mathbb{D}$. The determinant is defined, but the theorem "invertible if and only if determinant is nonzero" becomes "invertible if and only if determinant is a unit of $\mathbb{D}$".
 
@@ -361,21 +371,23 @@ The module is $\{0\}$. There are no generators. The Clifford algebra is $\mathbb
 
 ## 32. Rank 1
 
-The module is $\mathbb{D}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. There are two cases.
+The module is $\mathbb{D}$, with basis vector $e$. The quadratic form is determined by the single value $Q(e)$. There are two cases, since $+1$ and $-1$ are not related by multiplication by a square in $\mathbb{D}$.
 
 **$Q(e) = +1$.** The relation is $e^2 = +1$. The Clifford algebra is $\mathbb{D} \oplus \mathbb{D}$, the direct sum of two copies of the split complex numbers.
 
-**$Q(e) = -1$.** The relation is $e^2 = -1$. The Clifford algebra is the algebra of **dual numbers over $\mathbb{D}$**, written $\mathbb{D}[\epsilon]/(\epsilon^2)$. The element $\epsilon = 1 + e$ is nilpotent, satisfying $\epsilon^2 = 0$.
+**$Q(e) = -1$.** The relation is $e^2 = -1$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, the algebra is $\mathbb{D}[e]/(e^2+1) \cong \mathbb{C} \oplus \mathbb{C}$, the direct sum of two copies of the complex numbers. It is not the algebra of dual numbers over $\mathbb{D}$: the element $1 + e$ is not nilpotent, since $(1+e)^2 = 1 + 2e + e^2 = 2e \neq 0$.
 
 ## 33. Rank 2
 
-The module is $\mathbb{D}^2$, with basis $e_1, e_2$. In an orthogonal basis, the quadratic form is determined by $Q(e_1)$ and $Q(e_2)$. The Clifford algebra is
+The module is $\mathbb{D}^2$, with basis $e_1, e_2$. In an orthogonal basis, the quadratic form is determined by $Q(e_1)$ and $Q(e_2)$. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$, the Clifford algebra of the form with sign pattern $(p,q)$ is $Cl_{p,q}(\mathbb{R}) \otimes_{\mathbb{R}} \mathbb{D}$, so the classification over $\mathbb{D}$ is that over $\mathbb{R}$ tensored with $\mathbb{D}$. There are therefore two outcomes, not one.
+
+If at most one of the two values is negative, the Clifford algebra is
 
 $$
 M_2(\mathbb{D}),
 $$
 
-the algebra of $2 \times 2$ matrices with entries in $\mathbb{D}$, for all choices of signs.
+the algebra of $2 \times 2$ matrices with entries in $\mathbb{D}$.
 
 For $Q(e_1) = -1$, $Q(e_2) = -1$, the relations are
 
@@ -383,17 +395,17 @@ $$
 e_1^2 = -1, \qquad e_2^2 = -1, \qquad e_1 e_2 = -e_2 e_1.
 $$
 
-This is the analogue of the biquaternions over $\mathbb{D}$, and it is also called the **split biquaternions**.
+This is the analogue of the biquaternions over $\mathbb{D}$, and it is also called the **split biquaternions**: the algebra is $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{D}$, not $M_2(\mathbb{D})$.
 
 ## 34. Rank 3
 
-The module is $\mathbb{D}^3$. The Clifford algebra is
+The module is $\mathbb{D}^3$. As in rank 2, the Clifford algebra is $Cl_{p,q}(\mathbb{R}) \otimes_{\mathbb{R}} \mathbb{D}$ for the sign pattern $(p,q)$, so it depends on that pattern rather than being the same for every form. For $Q = (+1, +1, -1)$ it is
 
 $$
 M_2(\mathbb{D}) \oplus M_2(\mathbb{D}),
 $$
 
-the direct sum of two copies of $M_2(\mathbb{D})$.
+the direct sum of two copies of $M_2(\mathbb{D})$; for $Q = (+1,+1,+1)$ it is $M_2(\mathbb{C}) \otimes_{\mathbb{R}} \mathbb{D}$, and for $Q = (-1,-1,-1)$ it is $(\mathbb{H} \oplus \mathbb{H}) \otimes_{\mathbb{R}} \mathbb{D}$, a sum of four copies of $\mathbb{H}$.
 
 ## 35. The Split Biquaternions
 
@@ -426,12 +438,14 @@ Higher ranks require arithmetic invariants.
 | 2 | $(1,1)$ | $Q(e_1) = +1$, $Q(e_2) = -1$ | $M_2(\mathbb{R})$ | split quaternions |
 | 2 | $(0,2)$ | $Q(e_1) = -1$, $Q(e_2) = -1$ | $\mathbb{H}$ | quaternions |
 | 3 | $(3,0)$ | all $+1$ | $M_2(\mathbb{C})$ | $2 \times 2$ complex matrices |
+| 3 | $(2,1)$ | two $+1$, one $-1$ | $M_2(\mathbb{R}) \oplus M_2(\mathbb{R})$ | sum of two copies |
 | 3 | $(1,2)$ | one $+1$, two $-1$ | $M_2(\mathbb{C})$ | $2 \times 2$ complex matrices |
 | 3 | $(0,3)$ | all $-1$ | $\mathbb{H} \oplus \mathbb{H}$ | split biquaternions |
 | 4 | $(4,0)$ | all $+1$ | $M_2(\mathbb{H})$ | $2 \times 2$ quaternionic matrices |
-| 4 | $(1,3)$ | one $+1$, three $-1$ | $M_4(\mathbb{R})$ | $4 \times 4$ real matrices |
 | 4 | $(3,1)$ | three $+1$, one $-1$ | $M_4(\mathbb{R})$ | $4 \times 4$ real matrices |
-| 4 | $(0,4)$ | all $-1$ | $M_4(\mathbb{R})$ | $4 \times 4$ real matrices |
+| 4 | $(2,2)$ | two $+1$, two $-1$ | $M_4(\mathbb{R})$ | $4 \times 4$ real matrices |
+| 4 | $(1,3)$ | one $+1$, three $-1$ | $M_2(\mathbb{H})$ | $2 \times 2$ quaternionic matrices |
+| 4 | $(0,4)$ | all $-1$ | $M_2(\mathbb{H})$ | $2 \times 2$ quaternionic matrices |
 
 ## Over $\mathbb{C}$
 
@@ -449,9 +463,12 @@ Higher ranks require arithmetic invariants.
 |---|---|---|---|
 | 0 | — | $\mathbb{D}$ | split complex numbers |
 | 1 | $Q(e) = +1$ | $\mathbb{D} \oplus \mathbb{D}$ | sum of two copies of $\mathbb{D}$ |
-| 1 | $Q(e) = -1$ | $\mathbb{D}[\epsilon]/(\epsilon^2)$ | dual numbers over $\mathbb{D}$ |
-| 2 | any | $M_2(\mathbb{D})$ | $2 \times 2$ matrices over $\mathbb{D}$ |
-| 3 | any | $M_2(\mathbb{D}) \oplus M_2(\mathbb{D})$ | sum of two copies |
+| 1 | $Q(e) = -1$ | $\mathbb{C} \oplus \mathbb{C}$ | sum of two copies of $\mathbb{C}$ |
+| 2 | at most one negative | $M_2(\mathbb{D})$ | $2 \times 2$ matrices over $\mathbb{D}$ |
+| 2 | $Q(e_1) = Q(e_2) = -1$ | $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{D}$ | split biquaternions |
+| 3 | $(2,1)$ | $M_2(\mathbb{D}) \oplus M_2(\mathbb{D})$ | sum of two copies |
+| 3 | $(3,0)$ or $(1,2)$ | $M_2(\mathbb{C}) \otimes_{\mathbb{R}} \mathbb{D}$ | — |
+| 3 | $(0,3)$ | $(\mathbb{H} \oplus \mathbb{H}) \otimes_{\mathbb{R}} \mathbb{D}$ | — |
 
 ---
 

@@ -227,8 +227,8 @@ This is in sharp contrast with the singlet case.
 
 | State | Reduced state $\rho_1$ | Purity | Entropy |
 |---|---|---|---|
-| Singlet $\|\Psi^-\rangle$ | $\frac{1}{2}e_0$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
-| Product $\|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_0 + ie_3)$ (pure) | $1$ | $0$ |
+| Singlet $|\Psi^-\rangle$ | $\frac{1}{2}e_0$ (mixed) | $\frac{1}{2}$ | $\log 2$ |
+| Product $|\uparrow\uparrow\rangle$ | $\frac{1}{2}(e_0 + ie_3)$ (pure) | $1$ | $0$ |
 
 The contrast is the operational signature of entanglement: **product states have pure reduced states; entangled states have mixed reduced states**. The more entangled the joint state, the more mixed the reduced state.
 
@@ -238,7 +238,7 @@ The contrast is the operational signature of entanglement: **product states have
 
 **2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_0$ is not idempotent; it is a genuine mixed state, with $\mathbf{r} = 0$.
 
-**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the off-diagonal tensor-product terms $e_k\otimes e_k$. These are exactly the terms that, after tracing out the second factor, produce the maximally mixed reduced state. Without the tensor-product coupling, the reduced state would be pure.
+**3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $e_k\otimes e_k$ with $k \neq 0$, and none of the form $e_k\otimes e_0$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_0\otimes e_0$ term survives, giving the maximally mixed reduced state. In a product state the terms $e_k\otimes e_0$ are present, and they carry the pure reduced state.
 
 **4. The purity and entropy are natural functions on $\mathbb{M}_+$.** Both the purity $\mathrm{Tr}(\rho_1^2)$ and the entropy $-\mathrm{Tr}(\rho_1\log\rho_1)$ are expressed in terms of the trace on $\mathbb{B}$. The reduced state's mixedness is measured by these functions, and for the singlet the reduced state is maximally mixed.
 
@@ -277,7 +277,7 @@ The comparison with a product state — where the reduced state is pure — illu
 | $\mathbb{B}\otimes\mathbb{B}$ | Tensor product, isomorphic to $M_4(\mathbb{C})$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
-| $\|\Psi^-\rangle$ | Singlet state |
+| $|\Psi^-\rangle$ | Singlet state |
 | $P_{\mathrm{singlet}} = \tfrac{1}{4}(e_0\otimes e_0 + \sum_k e_k\otimes e_k)$ | Singlet idempotent |
 | $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$ | Partial trace over the second factor |
 | $\rho_1 = \mathrm{Tr}_2(P_{\mathrm{singlet}})$ | Reduced state of particle 1 |

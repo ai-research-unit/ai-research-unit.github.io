@@ -60,13 +60,15 @@ So $O(M, Q)$ is a group.
 
 ### The Rotation Group
 
-Let $M$ be free of finite rank. For any orthogonal transformation $T$, the determinant satisfies
+Let $M$ be free of finite rank with $Q$ **non-degenerate**, so that the Gram matrix of $B$ is invertible. For any orthogonal transformation $T$, the determinant satisfies
 
 $$
 \det(T)^2 = 1.
 $$
 
-Over a field of characteristic not equal to 2, this means $\det T = +1$ or $\det T = -1$. The set of orthogonal transformations with determinant $+1$ is a subgroup, called the **special orthogonal group** or **rotation group**:
+(Write the condition $B(Tu, Tv) = B(u, v)$ as $T^T G T = G$ for the Gram matrix $G$; since $\det G$ is a unit, taking determinants gives $\det(T)^2 = 1$.) Over a field of characteristic not equal to 2, this means $\det T = +1$ or $\det T = -1$.
+
+Non-degeneracy is needed here: with $Q = 0$ every linear transformation preserves $Q$, and $\det(T)^2 = 1$ fails for $T = 2\,\mathrm{id}$. The set of orthogonal transformations with determinant $+1$ is a subgroup, called the **special orthogonal group** or **rotation group**:
 
 $$
 SO(M, Q) = \{T \in O(M, Q) : \det T = +1\}.
@@ -78,7 +80,7 @@ $$
 \det : O(M, Q) \to \{+1, -1\}.
 $$
 
-So $SO(M, Q)$ is a normal subgroup of $O(M, Q)$ of index 1 or 2, depending on whether the determinant map is surjective.
+So $SO(M, Q)$ is a normal subgroup of $O(M, Q)$, and the quotient $O(M, Q)/SO(M, Q)$ is the image of the determinant map. Over a field that image has order $1$ or $2$, but over a general commutative ring it can be larger: for $R = \mathbb{R} \times \mathbb{R}$ with $M = R$ and $Q(x) = x^2$, the orthogonal transformations are multiplication by $a$ with $a^2 = 1$, so $O(M, Q) \cong \mathbb{Z}/2 \times \mathbb{Z}/2$ while $SO(M, Q)$ is trivial, and the quotient has four elements.
 
 **Key difference from the field case.** Over a field, the equation $\det(T)^2 = 1$ has exactly two solutions, $+1$ and $-1$, provided the field has characteristic not equal to 2. Over a general commutative ring, the equation $\det(T)^2 = 1$ may have many more solutions, and the determinant map may not be surjective onto $\{+1, -1\}$. So the definition of $SO(M, Q)$ as the kernel of the determinant map is still valid, but the structure of the quotient $O(M, Q) / SO(M, Q)$ may be more complicated than $\{+1, -1\}$.
 
@@ -112,13 +114,15 @@ So $\mathfrak{so}(M, Q)$ is a Lie algebra under the commutator bracket.
 
 ### The Rank
 
-For a free module of rank $n$, the orthogonal Lie algebra has rank
+For a free module of rank $n$ with $Q$ **non-degenerate**, the orthogonal Lie algebra has rank
 
 $$
 \operatorname{rank} \mathfrak{so}(M, Q) = \binom{n}{2} = \frac{n(n-1)}{2}.
 $$
 
-This is the number of independent antisymmetric transformations. The rank does not depend on the ring or on the signature; only the structure of the Lie algebra depends on them.
+Multiplication by the invertible Gram matrix of $B$ identifies $\mathfrak{so}(M, Q)$ with the antisymmetric matrices, whose rank is $\binom{n}{2}$; this is the number of independent antisymmetric transformations. The rank does not depend on the ring or on the signature; only the structure of the Lie algebra depends on them.
+
+Without non-degeneracy the count fails, because the condition $B(Au, v) + B(u, Av) = 0$ can become vacuous: for $Q = 0$ it holds for every $A$, so $\mathfrak{so}(M, 0)$ is all of $\operatorname{End}(M)$, of rank $n^2$.
 
 **Key difference from the field case.** Over a field, the rank of $\mathfrak{so}(M, Q)$ is the dimension, and it is well-defined. Over a general commutative ring, the rank is well-defined only if the module is free. We assume this throughout.
 
@@ -142,7 +146,7 @@ Let me summarize the main points.
 
 **The rotation group** $SO(M, Q)$ is the subgroup of orthogonal transformations with determinant $+1$. It is the kernel of the determinant map on $O(M, Q)$.
 
-**The orthogonal Lie algebra** $\mathfrak{so}(M, Q)$ is the set of antisymmetric linear transformations with respect to the bilinear form $B$. Its rank is $\binom{n}{2}$. The exponential map sends $\mathfrak{so}(M, Q)$ to $SO(M, Q)$ over $\mathbb{R}$ or $\mathbb{C}$.
+**The orthogonal Lie algebra** $\mathfrak{so}(M, Q)$ is the set of antisymmetric linear transformations with respect to the bilinear form $B$. For non-degenerate $Q$ on a free module of rank $n$ its rank is $\binom{n}{2}$. The exponential map sends $\mathfrak{so}(M, Q)$ to $SO(M, Q)$ over $\mathbb{R}$ or $\mathbb{C}$.
 
 **Key differences from the field case.**
 

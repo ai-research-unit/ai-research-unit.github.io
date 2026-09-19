@@ -264,7 +264,7 @@ This is the case that arises in the quantum mechanics of the electron: the elect
 
 For $W = \mathbb{R}^4$ with the Euclidean form, the spin group is $SU(2) \times SU(2)$. The spin representation is four-dimensional over $\mathbb{C}$. It **decomposes as the direct sum of two irreducible two-dimensional representations**, the **left-handed** and **right-handed** Weyl spinors.
 
-This splitting is special to dimension 4. It is the algebraic origin of the distinction between left-handed and right-handed particles.
+The splitting into two irreducible halves occurs for every even $n$; what is special to dimension 4 is that the two halves are two-dimensional. It is the algebraic origin of the distinction between left-handed and right-handed particles.
 
 ### Relation to the biquaternion algebra
 
@@ -281,7 +281,7 @@ Under this identification, the spinors of the Lorentzian signature are the eleme
 | Dimension | Quadratic form | Spin group | Spin representation |
 |---|---|---|---|
 | 2 | Euclidean | $S^1$ | $\mathbb{C}$, dim 1 |
-| 2 | split | hyperbola group | $\mathbb{R} \oplus \mathbb{R}$, dim 1 |
+| 2 | split | hyperbola group | $\mathbb{R} \oplus \mathbb{R}$, dim 2 |
 | 3 | Euclidean | $SU(2)$ | $\mathbb{C}^2$, dim 2 |
 | 4 | Euclidean | $SU(2) \times SU(2)$ | $\mathbb{C}^2 \oplus \mathbb{C}^2$, dim 4 |
 | 4 | Lorentzian | $SL(2,\mathbb{C})$ | $\mathbb{C}^2 \oplus \mathbb{C}^2$, dim 4 |

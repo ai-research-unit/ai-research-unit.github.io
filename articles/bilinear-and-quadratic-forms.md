@@ -76,9 +76,9 @@ $$
 \mathrm{rad}(B) = \{u \in M : B(u, v) = 0 \text{ for all } v \in M\}.
 $$
 
-Over a field, the form is non-degenerate if and only if the radical is zero. Over a general commutative ring, non-degeneracy is a stronger condition: the radical must be zero **and** the induced map must be surjective.
+Over a finite-dimensional vector space, the form is non-degenerate if and only if the radical is zero. Over a general commutative ring, non-degeneracy is a stronger condition: the radical must be zero **and** the induced map must be surjective.
 
-**Key difference from the field case.** Over a field, the induced map $V \to V^*$ is injective if and only if it is an isomorphism, because $V$ and $V^*$ have the same dimension. Over a general commutative ring, this is not true: a module and its dual can have different "sizes," and injectivity does not imply surjectivity. So non-degeneracy over a ring is more delicate than over a field.
+**Key difference from the field case.** Over a finite-dimensional vector space, the induced map $V \to V^*$ is injective if and only if it is an isomorphism, because $V$ and $V^*$ have the same finite dimension. Over a general commutative ring, this is not true: a module and its dual can have different "sizes," and injectivity does not imply surjectivity. So non-degeneracy over a ring is more delicate than over a field.
 
 ### The Matrix of a Bilinear Form
 
@@ -257,7 +257,7 @@ It requires that 2 is invertible in the ring $R$.
 **Key differences from the field case.**
 
 - Over a field, every module is free, so every bilinear form has a matrix with respect to a basis. Over a general commutative ring, not every module is free.
-- Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.
+- Over a finite-dimensional vector space, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.
 - Over a field of characteristic not equal to 2, 2 is automatically invertible. Over a general commutative ring, we must assume that 2 is a unit.
 - Over a field, invertibility of a matrix is equivalent to nonzero determinant. Over a general commutative ring, invertibility requires the determinant to be a unit.
 

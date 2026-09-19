@@ -41,15 +41,15 @@ $$
 
 This is the representation $\rho_{\mathrm{reg}} : \mathbb{C} \to \operatorname{End}(\mathbb{C})$ given by $\rho_{\mathrm{reg}}(z) = z$. It is the representation of $\mathbb{C}$ on a one-dimensional complex vector space.
 
-### The Scalar Representations
+### The Scalar Maps
 
-For each $\lambda \in \mathbb{C}$, the **scalar representation** $\rho_\lambda$ is defined on $\mathbb{C}$ by
+For each $\lambda \in \mathbb{C}$, the **scalar map** $\rho_\lambda$ is defined on $\mathbb{C}$ by
 
 $$
 \rho_\lambda(z) w = \lambda z w, \qquad z, w \in \mathbb{C}.
 $$
 
-Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. For $\lambda = 1$, this is the regular representation. For $\lambda = 0$, this is the zero representation.
+Equivalently, $\rho_\lambda(z) = \lambda z$ as a complex-linear map. Since a representation must satisfy $1 \cdot w = w$, this is a representation only for $\lambda = 1$, which is the regular representation; $\lambda = 0$ gives the zero map, which is a representation only on the zero space.
 
 ## Classification
 
@@ -61,7 +61,7 @@ $$
 V \cong \mathbb{C}^{\oplus n}, \qquad \rho(z)(v_1, \dots, v_n) = (z v_1, \dots, z v_n).
 $$
 
-**Proof.** Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $z \mapsto z \cdot v_i$ is $\mathbb{C}$-linear, so $z \cdot v_i = \lambda_i(z) v_i$ for some scalar $\lambda_i(z) \in \mathbb{C}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $z \cdot (w \cdot v_i) = (zw) \cdot v_i$, we have $\lambda_i(z) \lambda_i(w) = \lambda_i(zw)$. It follows that $\lambda_i(z) = z$ for all $z$, because $\lambda_i$ is a field homomorphism $\mathbb{C} \to \mathbb{C}$ fixing $1$. Hence $z \cdot v_i = z v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$
+**Proof.** Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $z \mapsto z \cdot v_i$ is $\mathbb{C}$-linear, so $z \cdot v_i = \lambda_i(z) v_i$ for some scalar $\lambda_i(z) \in \mathbb{C}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $z \cdot (w \cdot v_i) = (zw) \cdot v_i$, we have $\lambda_i(z) \lambda_i(w) = \lambda_i(zw)$. It follows that $\lambda_i(z) = z$ for all $z$, because $\lambda_i$ is $\mathbb{C}$-linear and $\lambda_i(1) = 1$. Hence $z \cdot v_i = z v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$
 
 ### Irreducible Representations
 
@@ -115,9 +115,9 @@ This is a general fact about fields: if $F$ is any field, the finite-dimensional
 
 ### The Role of the Complex Structure
 
-The complex structure enters only through the choice of the coefficient field. If we forget the complex structure and consider $\mathbb{C}$ as a real algebra, the representation theory changes drastically: the representations are real vector spaces, the action is real-linear, and there are uncountably many irreducible representations, indexed by the complex numbers.
+The complex structure enters only through the choice of the coefficient field. If we forget the complex structure and consider $\mathbb{C}$ as a real algebra, the representations are real vector spaces and the action is real-linear, but $\mathbb{C}$ is still a division algebra, so there is exactly one irreducible representation, of real dimension two.
 
-So the representation theory of $\mathbb{C}$ is trivial as a complex algebra, but it is rich as a real algebra. The distinction is the distinction between the field $\mathbb{C}$ and the real algebra $\mathbb{C}$, and it is the reason the complex case is both the simplest and the most subtle.
+So the representation theory of $\mathbb{C}$ is trivial as a complex algebra, and it remains trivial as a real algebra. The distinction is the distinction between the field $\mathbb{C}$ and the real algebra $\mathbb{C}$, and it is the reason the complex case is both the simplest and the most subtle.
 
 ## The Dual Representation
 
@@ -131,7 +131,7 @@ $$
 
 ### Basic Properties
 
-**Duality is an involution.** $(V^*)^* \cong V$.
+**Duality is an involution.** $(V^*)^* \cong V$ for finite-dimensional $V$.
 
 **Duality is exact.** It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.
 
@@ -219,7 +219,7 @@ the ring of $n \times n$ complex matrices. This is a simple ring, and it is the 
 
 ## Comparison with the Split Complex Case
 
-The representation theory of $\mathbb{C}$ differs from that of $\mathbb{D}$ in three essential ways.
+The representation theory of $\mathbb{C}$ differs from that of $\mathbb{D}$ in four essential ways.
 
 **Field versus ring.** $\mathbb{C}$ is a field, so every non-zero element is invertible. $\mathbb{D}$ is not a field, so it has zero divisors. This is the source of all the differences.
 
@@ -237,7 +237,7 @@ The representation theory of $\mathbb{C}$ differs from that of $\mathbb{D}$ in t
 | $i$ | Imaginary unit, $i^2 = -1$ |
 | $\rho : \mathbb{C} \to \operatorname{End}(V)$ | Representation |
 | $\rho_{\mathrm{reg}}$ | Regular representation |
-| $\rho_\lambda$ | Scalar representation $z \mapsto \lambda z$ |
+| $\rho_\lambda$ | Scalar map $z \mapsto \lambda z$ |
 | $V^*$ | Dual representation |
 | $V \otimes W$ | Tensor product |
 | $\operatorname{Hom}_{\mathbb{C}}(V, W)$ | Space of homomorphisms |

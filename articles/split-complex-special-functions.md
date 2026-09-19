@@ -145,50 +145,6 @@ defined for $z$ with $|z_+| < 1$ and $|z_-| < 1$.
 
 In the idempotent basis, each of these is the ordinary real inverse hyperbolic function applied to the corresponding component.
 
-## The Trigonometric Functions
-
-### Definition
-
-The **split trigonometric sine** and **cosine** are defined by
-
-$$
-\sin z = \frac{e^{jz} - e^{-jz}}{2j}, \qquad \cos z = \frac{e^{jz} + e^{-jz}}{2}.
-$$
-
-These are not the same as the hyperbolic functions, because the factor $j$ in the exponent changes the sign. Indeed,
-
-$$
-\sin z = \sin(x) e_+ + \sin(x) e_- = \sin(x),
-$$
-
-where $z = x + jy$ and we have used the idempotent decomposition. So the split trigonometric functions are just the ordinary real trigonometric functions applied to the real part, independent of the imaginary part.
-
-**Caution.** The split trigonometric functions are not the same as the hyperbolic functions, and they are not the same as the complex trigonometric functions. They are the real trigonometric functions, extended to $\mathbb{D}$ by ignoring the imaginary part.
-
-### The Other Trigonometric Functions
-
-$$
-\tan z = \frac{\sin z}{\cos z}, \qquad \cot z = \frac{\cos z}{\sin z}.
-$$
-
-These are defined wherever the denominator is invertible.
-
-### Inverse Trigonometric Functions
-
-The **split arcsine** is defined by
-
-$$
-\arcsin z = -j \log\left( jz + \sqrt{1 - z^2} \right),
-$$
-
-where the square root is the split complex square root. The **split arctangent** is
-
-$$
-\arctan z = \frac{1}{2j} \log \frac{1 + jz}{1 - jz}.
-$$
-
-In the idempotent basis, each of these is the ordinary real inverse trigonometric function applied to the corresponding component.
-
 ## The Gamma Function
 
 ### Definition
@@ -229,7 +185,7 @@ $$
 \Gamma(z) \Gamma(1 - z) = \frac{\pi}{\sin(\pi z)},
 $$
 
-where the sine is the split trigonometric sine. In the idempotent basis, this is the ordinary real reflection formula applied to each component.
+where the sine is the ordinary real sine applied to each idempotent component.
 
 ## The Beta Function
 
@@ -309,7 +265,7 @@ $$
 \operatorname{Ai}(z) = \frac{1}{\pi} \int_0^\infty \cos\left(\frac{t^3}{3} + zt\right) dt,
 $$
 
-where the cosine is the split trigonometric cosine. In the idempotent basis,
+where the cosine is the ordinary real cosine applied to each idempotent component. In the idempotent basis,
 
 $$
 \operatorname{Ai}(z) = \operatorname{Ai}(z_+) e_+ + \operatorname{Ai}(z_-) e_-.
@@ -381,7 +337,7 @@ In the idempotent basis, this is the ordinary real modified Bessel function appl
 
 ### Definition
 
-The **split complex Gauss hypergeometric function** is defined for $\|z\|_E < 1$ by
+The **split complex Gauss hypergeometric function** is defined for $|z_+| < 1$ and $|z_-| < 1$ by
 
 $$
 {}_2F_1(a, b; c; z) = \sum_{n=0}^\infty \frac{(a)_n (b)_n}{(c)_n} \frac{z^n}{n!},
@@ -414,8 +370,10 @@ $$
 $$
 
 $$
-{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; z^2\right) = \frac{\arcsin z}{z}.
+{}_2F_1\left(\frac{1}{2}, \frac{1}{2}; \frac{3}{2}; z^2\right) = \frac{\arcsin z}{z},
 $$
+
+where the arcsine is the ordinary real arcsine applied to each idempotent component.
 
 ### The Generalized Hypergeometric Function
 
@@ -469,7 +427,6 @@ The split complex Lambert W function has two real branches, corresponding to the
 | $j$ | Split imaginary unit, $j^2 = +1$ |
 | $e^z, \log z$ | Split complex exponential, logarithm |
 | $\sinh z, \cosh z, \tanh z$ | Split hyperbolic functions |
-| $\sin z, \cos z, \tan z$ | Split trigonometric functions |
 | $\Gamma(z)$ | Split complex gamma function |
 | $B(x, y)$ | Split complex beta function |
 | $\operatorname{erf}(z), \operatorname{erfc}(z)$ | Split error function, complementary error function |

@@ -27,7 +27,7 @@ The biquaternion algebra can be viewed in two equivalent ways, depending on whic
 
 **As an $\mathbb{R}$-algebra.** Forgetting the $\mathbb{C}$-module structure, the same set $\mathbb{B}$ is also naturally a **real vector space of dimension $8$**, with real basis $\{e_0, e_1, e_2, e_3, i e_0, i e_1, i e_2, i e_3\}$. In this view, $\mathbb{B}$ is an **eight-dimensional algebra over $\mathbb{R}$**. The multiplication is $\mathbb{R}$-bilinear, and the algebra is associative and unital, with unit $e_0$. The scalar imaginary $i$ is now an element of the algebra itself, not a scalar, and it lies in the center.
 
-The two views are related by a change of base ring: passing from the $\mathbb{R}$-algebra to the $\mathbb{C}$-algebra is the operation of **extension of scalars** from $\mathbb{R}$ to $\mathbb{C}$, and passing back is the operation of **restriction of scalars**. The dimension changes as follows:
+The two views are related by a change of base ring: passing from the quaternion algebra $\mathbb{H}$ to the $\mathbb{C}$-algebra is the operation of **extension of scalars** from $\mathbb{R}$ to $\mathbb{C}$, and passing back is the operation of **restriction of scalars**. The dimension changes as follows:
 
 $$
 \dim_{\mathbb{R}} \mathbb{B} = 2 \cdot \dim_{\mathbb{C}} \mathbb{B},

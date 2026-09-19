@@ -507,6 +507,8 @@ $$
 J_\nu(x) = \sum_{n=0}^\infty \frac{(-1)^n}{n! \, \Gamma(n + \nu + 1)} \left( \frac{x}{2} \right)^{2n + \nu}.
 $$
 
+The powers are real for every $x$ when $\nu$ is an integer; when $\nu$ is not an integer they are real only for $x > 0$, which is therefore the domain of the real function $J_\nu$ in that case.
+
 It satisfies Bessel's differential equation
 
 $$
@@ -526,8 +528,10 @@ with the limit taken for integer $\nu$. It is the second linearly independent so
 The **modified Bessel function of the first kind** is
 
 $$
-I_\nu(x) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{x}{2} \right)^{2n + \nu}.
+I_\nu(x) = \sum_{n=0}^\infty \frac{1}{n! \, \Gamma(n + \nu + 1)} \left( \frac{x}{2} \right)^{2n + \nu},
 $$
+
+with the same domain convention as for $J_\nu$: all real $x$ when $\nu$ is an integer, and $x > 0$ otherwise.
 
 It satisfies
 

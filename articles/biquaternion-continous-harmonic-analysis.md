@@ -64,7 +64,7 @@ $$
 A biquaternion $\rho$ satisfies $\rho^2 = -e_0$ if and only if it is a pure biquaternion (i.e., its scalar part vanishes) and
 
 $$
-\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\| - \|\Im(\rho)\| = 1,
+\Re(\rho) \perp \Im(\rho), \qquad \|\Re(\rho)\|^2 - \|\Im(\rho)\|^2 = 1,
 $$
 
 where $\Re(\rho)$ and $\Im(\rho)$ are the real and imaginary quaternion parts of $\rho$. This is the content of the classification of the biquaternion roots of $-1$ given in the division theory article. The classification yields three families: the scalar imaginary $\rho = \pm i$, the unit pure real quaternions $\rho = \pm \mu_{\mathbb{R}}$, and the non-trivial roots $\rho = b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$.

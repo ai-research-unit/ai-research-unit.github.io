@@ -5,7 +5,7 @@
 
 This article introduces the representation theory of the real algebra. The goal is to define representations precisely, classify them, and describe the structure of the representation ring.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. The real algebra is assumed from the article on real algebra, and the order and completeness of $\mathbb{R}$ are used throughout. No physics is invoked.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. The real algebra is assumed from the article on real algebra. The order of $\mathbb{R}$ is used where positive-definiteness appears; completeness, developed in the preceding article, turns out to play no role in the representation theory. No physics is invoked.
 
 ## Representations of $\mathbb{R}$
 
@@ -51,7 +51,13 @@ $$
 V \cong \mathbb{R}^{\oplus n}, \qquad \rho(a)(v_1, \dots, v_n) = (a v_1, \dots, a v_n).
 $$
 
-**Proof.** Let $V$ be a finite-dimensional representation. Choose a basis $(v_1, \dots, v_n)$. For each $i$, the map $a \mapsto a \cdot v_i$ is $\mathbb{R}$-linear, so $a \cdot v_i = \lambda_i(a) v_i$ for some scalar $\lambda_i(a) \in \mathbb{R}$. Since $1 \cdot v_i = v_i$, we have $\lambda_i(1) = 1$. Since $a \cdot (b \cdot v_i) = (ab) \cdot v_i$, we have $\lambda_i(a) \lambda_i(b) = \lambda_i(ab)$. It follows that $\lambda_i(a) = a$ for all $a$, because $\lambda_i$ is a field homomorphism $\mathbb{R} \to \mathbb{R}$ fixing $1$. Hence $a \cdot v_i = a v_i$ in the chosen basis, and the representation is a direct sum of copies of the regular representation. $\square$
+**Proof.** For fixed $v \in V$, the map $a \mapsto a \cdot v$ is $\mathbb{R}$-linear in $a$, being the composite of the $\mathbb{R}$-linear map $\rho : \mathbb{R} \to \operatorname{End}(V)$ with evaluation at $v$. It is therefore determined by its value at $1$, which is $v$: hence
+
+$$
+a \cdot v = a(1 \cdot v) = a v
+$$
+
+for every $a \in \mathbb{R}$ and every $v \in V$, where the scalar $a$ on the right multiplies in $V$. So the action of the field element $a$ is already the scalar multiplication of $V$, and in any basis the matrix of $\rho(a)$ is diagonal with every entry equal to $a$. The representation is thus a direct sum of copies of the regular representation. $\square$
 
 ### Irreducible Representations
 
@@ -105,7 +111,7 @@ This is a general fact about fields: if $F$ is any field, the finite-dimensional
 
 ### The Role of the Order
 
-The order on $\mathbb{R}$ does not enter the representation theory, because representations are linear and the order is not linear. However, the order does constrain which representations admit positive-definite invariant inner products.
+The order on $\mathbb{R}$ does not enter the representation theory, because representations are linear and the order is not a linear-algebraic datum: an $\mathbb{R}$-linear map need not respect the order. The order is, however, what makes the notion of a positive-definite invariant inner product available, and the theorem below shows that in this case it imposes no restriction, since every finite-dimensional representation admits one.
 
 A representation $V$ admits a **positive-definite invariant inner product** if there exists an inner product $\langle \cdot, \cdot \rangle$ on $V$ such that
 
@@ -115,15 +121,15 @@ $$
 
 **Theorem.** Every finite-dimensional real representation of $\mathbb{R}$ admits a positive-definite invariant inner product.
 
-**Proof.** Choose any positive-definite inner product $\langle \cdot, \cdot \rangle_0$ on $V$ (which exists because $V$ is finite-dimensional). Average over a finite set, or use the fact that the representation is a direct sum of copies of the regular representation, on which the standard inner product is invariant. $\square$
+**Proof.** The representation is a direct sum of copies of the regular representation, and on the regular representation the standard inner product is invariant: $\langle a \cdot v, w \rangle = (av)w = v(aw) = \langle v, a \cdot w \rangle$. The orthogonal direct sum of the standard inner products on the summands is then an invariant positive-definite inner product on $V$. $\square$
 
 ### The Role of Completeness
 
-Completeness enters the representation theory through the theory of infinite-dimensional representations. A **Banach representation** of $\mathbb{R}$ is a Banach space $V$ together with a continuous algebra homomorphism $\rho : \mathbb{R} \to B(V)$, where $B(V)$ is the algebra of bounded linear operators on $V$.
+Completeness does not in fact enter the representation theory, even for infinite-dimensional representations. A **Banach representation** of $\mathbb{R}$ is a Banach space $V$ together with a continuous algebra homomorphism $\rho : \mathbb{R} \to B(V)$, where $B(V)$ is the algebra of bounded linear operators on $V$.
 
-**Theorem.** Every Banach representation of $\mathbb{R}$ is isomorphic to a direct sum of copies of the regular representation, in the sense that $V$ decomposes as a direct sum of closed invariant subspaces on each of which $\mathbb{R}$ acts by scalar multiplication.
+**Theorem.** Every Banach representation of $\mathbb{R}$ is a direct sum of copies of the regular representation, in the sense that $V$ is a direct sum of closed invariant subspaces on each of which $\mathbb{R}$ acts by scalar multiplication.
 
-**Proof.** This is a consequence of the fact that $\mathbb{R}$ is a complete field and the Gelfand–Mazur theorem, which states that every real Banach algebra that is a division algebra is isomorphic to $\mathbb{R}$. $\square$
+**Proof.** Since $\rho$ is an algebra homomorphism of real algebras it is $\mathbb{R}$-linear and unital, so $\rho(a) = \rho(a \cdot 1) = a\,\rho(1) = a\,\mathrm{id}$ for every $a \in \mathbb{R}$: the field $\mathbb{R}$ acts on $V$ by scalar multiplication. Neither continuity nor completeness is used, and the conclusion holds for every representation, finite- or infinite-dimensional, Banach or not. $\square$
 
 ## The Dual Representation
 
@@ -137,7 +143,7 @@ $$
 
 ### Basic Properties
 
-**Duality is an involution.** $(V^*)^* \cong V$.
+**Duality is an involution.** For finite-dimensional $V$, $(V^*)^* \cong V$. Finite dimension is needed here: for an infinite-dimensional space the double dual is strictly larger than the space.
 
 **Duality is exact.** It preserves direct sums: $(V \oplus W)^* \cong V^* \oplus W^*$.
 
@@ -229,11 +235,11 @@ The representation theory of $\mathbb{R}$ is the simplest of the three two-dimen
 
 **Field versus ring.** $\mathbb{R}$ is a field, so every non-zero element is invertible. $\mathbb{D}$ is not a field, so it has zero divisors. This is the source of all the differences.
 
-**Number of irreducibles.** $\mathbb{R}$ has one irreducible representation, up to isomorphism. $\mathbb{D}$ has two: $\rho_+$ and $\rho_-$. $\mathbb{C}$ has one, but as a real algebra it has uncountably many.
+**Number of irreducibles.** $\mathbb{R}$ has one irreducible representation, up to isomorphism, of real dimension $1$. $\mathbb{D}$ has two, $\rho_+$ and $\rho_-$, each of real dimension $1$. $\mathbb{C}$, regarded as a real algebra, has one, of real dimension $2$.
 
 **Endomorphism rings.** The endomorphism ring of the regular representation of $\mathbb{R}$ is $\mathbb{R}$ itself. The endomorphism ring of the regular representation of $\mathbb{D}$ is $\mathbb{R} \oplus \mathbb{R}$. The endomorphism ring of the regular representation of $\mathbb{C}$ as a real algebra is $\mathbb{C}$.
 
-**Representation rings.** $R(\mathbb{R}) \cong \mathbb{Z}$, generated by the regular representation. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$, generated by $\rho_+$ and $\rho_-$. $R(\mathbb{C})$ as a complex algebra is $\mathbb{Z}$, but as a real algebra it is more complicated.
+**Representation rings.** $R(\mathbb{R}) \cong \mathbb{Z}$, generated by the regular representation. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$, generated by $\rho_+$ and $\rho_-$. $R(\mathbb{C})$ as a complex algebra is $\mathbb{Z}$. As a real algebra it is $\mathbb{Z}$ as well, generated as a group by the class of the two-dimensional irreducible; since $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$, that class $x$ satisfies $x^2 = 2x$.
 
 ## Summary of Notation
 

@@ -37,7 +37,7 @@ $$
 \{e_0,\; i\,e_1,\; i\,e_2,\; i\,e_3\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_1) = -e_0 \in \mathbb{M}_-$.
+As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3 \in \mathbb{M}_-$. (The square of a single element, by contrast, stays in $\mathbb{M}_+$: for $\tilde{Q} = q_0e_0 + i\mathbf{q}$ one has $\tilde{Q}^2 = q_0^2 + |\mathbf{q}|^2 + 2iq_0\mathbf{q}$.)
 
 ### Properties
 
@@ -55,7 +55,7 @@ $$
 q_0^2 = q_1^2 + q_2^2 + q_3^2,
 $$
 
-which is the mirror image of the light cone of $\mathbb{M}_-$. The complement of the cone has two connected components, corresponding to the regions $N > 0$ and $N < 0$.
+which is the mirror image of the light cone of $\mathbb{M}_-$. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < q_1^2 + q_2^2 + q_3^2$, connected) and the two components of the region $N > 0$ ($q_0 > |\mathbf{q}|$ and $q_0 < -|\mathbf{q}|$).
 
 **Not a division algebra.** As for $\mathbb{M}_-$, the presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra.
 
@@ -65,7 +65,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$
 
-and they are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. Under quaternion conjugation, $\overline{\mathbb{M}_+} = \mathbb{M}_-$.
+and they are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. Quaternion conjugation, by contrast, preserves each of the two subspaces: it negates the vector part and leaves the scalar part alone, so $iq_0 + \mathbf{q} \mapsto iq_0 - \mathbf{q}$ stays in $\mathbb{M}_-$ and $q_0 + i\mathbf{q} \mapsto q_0 - i\mathbf{q}$ stays in $\mathbb{M}_+$.
 
 ### The Structural Mirror with $\mathbb{M}_-$
 
@@ -80,7 +80,7 @@ The two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ are structurally complementa
 | Zero divisor cone | $q_0^2 = q_1^2 + q_2^2 + q_3^2$ | $q_0^2 = q_1^2 + q_2^2 + q_3^2$ |
 | Subalgebra? | No | No |
 
-The two subspaces are exchanged by the multiplication by $i$, and by the quaternion conjugation. This exchange is the algebraic operation that underlies the extended Wick rotation (see the companion article on the Wick rotation).
+The two subspaces are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$. Quaternion conjugation does not exchange them, and neither does complex conjugation: both preserve each of the two subspaces. The exchange between the sectors is multiplication by $i$, which is not a conjugation at all. This exchange is the algebraic operation that underlies the extended Wick rotation (see the companion article on the Wick rotation).
 
 ## Elements of $\mathbb{M}_+$ in the Series
 
@@ -164,7 +164,7 @@ so the image is anti-Hermitian, i.e., in $\mathbb{M}_-$. The action maps the mat
 
 **2. The action is linear in $\tilde{X}$.** This follows from the bilinearity of the biquaternion product.
 
-**3. The action preserves the norm form when $\tilde{H}$ is unitary.** If $\tilde{H}\tilde{H}^\dagger = e_0$ (unit-norm, e.g., a boost biquaternion), then the action preserves $N(\tilde{X}) = \tilde{X}\bar{\tilde{X}}$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval.
+**3. The action preserves the norm form when $\tilde{H}$ has unit norm form.** If $\tilde{H}\bar{\tilde{H}} = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{X}) = \tilde{X}\bar{\tilde{X}}$: by multiplicativity of the norm form, $N(\tilde{H}\tilde{X}\tilde{H}^\dagger) = N(\tilde{H})N(\tilde{X})N(\tilde{H})^* = N(\tilde{X})$ when $N(\tilde{H}) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the norm form and not on $\tilde{H}\tilde{H}^\dagger$: a boost biquaternion is Hermitian, so $\tilde{H}\tilde{H}^\dagger = \tilde{H}^2 = \cosh\psi + i\sinh\psi\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors are unitary in the matrix sense.
 
 **4. The action is a group action.** Compositions of actions compose:
 
@@ -183,9 +183,9 @@ This is the algebraic content of the interpretation of $\mathbb{M}_-$ as "materi
 
 ### Reversible Versus Irreversible Actions
 
-The elements of $\mathbb{M}_+$ fall into two important classes.
+The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unitary elements** ($\tilde{H}\tilde{H}^\dagger = e_0$). These preserve the norm form and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$, the spatial rotation rotors, the unit-norm elements of the group $SL(2,\mathbb{C})$. These correspond to Lorentz transformations.
+**Unit-norm-form elements** ($\tilde{H}\bar{\tilde{H}} = e_0$, i.e. $\tilde{H} \in SL(2,\mathbb{C})$). These preserve the norm form and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{H}\tilde{H}^\dagger = e_0$ — unitarity in the matrix representation — is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
 **Idempotent elements** ($\tilde{H}^2 = \tilde{H}$). These do not preserve the norm form (unless $\tilde{H} = e_0$). They act by **irreversible** projections: $\tilde{X} \mapsto \tilde{P}\tilde{X}\tilde{P}$. Examples: the pure-state projectors $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$. These correspond to quantum-mechanical measurements.
 
@@ -322,7 +322,7 @@ These questions are open, and they constitute the research program associated wi
 
 The Hermitian subspace $\mathbb{M}_+$ is the complement of the material space $\mathbb{M}_-$ in the biquaternion algebra: $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$. Its elements have real scalar part and imaginary vector part, and its norm form has signature $(1,3)$, the mirror image of the signature of $\mathbb{M}_-$. It contains the identity, the boost biquaternions, the idempotents $P_\pm = \tfrac{1}{2}(e_0 \pm \mu i)$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.
 
-The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{X} \mapsto \tilde{H}\tilde{X}\tilde{H}^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the norm form when $\tilde{H}$ is unitary. The natural dichotomy between unitary and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
+The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{X} \mapsto \tilde{H}\tilde{X}\tilde{H}^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the norm form when $\tilde{H}$ has unit norm form. The natural dichotomy between unit-norm-form and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
 
 The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.
 

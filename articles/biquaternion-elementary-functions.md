@@ -272,7 +272,7 @@ where $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ and $\hat{n} = \mathbf{Q}/B$.
 
 ### Properties
 
-**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the exponential is not multiplicative.
+**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the exponential is not multiplicative.
 
 **Non-vanishing.** The exponential is never zero. In the oscillatory case, $e^{Q_0} \neq 0$ and the factor $\cos B \, e_0 + \sin B \, \hat{n}$ is invertible: its inverse is $\cos B \, e_0 - \sin B \, \hat{n}$, as follows from the identity
 
@@ -494,7 +494,7 @@ $$
 \sin(\tilde{P} + \tilde{Q}) = \sin(\tilde{P})\cos(\tilde{Q}) + \cos(\tilde{P})\sin(\tilde{Q}),
 $$
 
-hold **if and only if $\tilde{P}$ and $\tilde{Q}$ commute**. In general they fail. For instance, with $\tilde{P} = e_1$ and $\tilde{Q} = e_2$, each is pure with complex norm $1$, so
+hold **if $\tilde{P}$ and $\tilde{Q}$ commute**. In general they fail. For instance, with $\tilde{P} = e_1$ and $\tilde{Q} = e_2$, each is pure with complex norm $1$, so
 
 $$
 \sin(e_1) = \sinh(1) e_1, \qquad \cos(e_1) = \cosh(1) e_0,

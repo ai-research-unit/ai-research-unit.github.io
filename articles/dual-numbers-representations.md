@@ -224,7 +224,7 @@ $$
 E^* : V^* \to V^*, \qquad (E^* f)(v) = -f(E v).
 $$
 
-The minus sign is chosen so that $(E^*)^2 = 0$ is preserved: indeed,
+The sign is a convention — $(E^*)^2 = 0$ holds for either choice — and it makes the contragredient action the one induced by dual conjugation, $(z \cdot f)(v) = f(\bar{z} v)$. Indeed,
 
 $$
 (E^*)^2 f = E^*(E^* f) = - (E^* f) \circ E = f \circ E \circ E = f \circ E^2 = 0.
@@ -263,22 +263,22 @@ The space of all such homomorphisms is denoted $\operatorname{Hom}_{\mathbb{D}'}
 **Dimension count over a field.** For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ and $W \cong R^{\oplus r} \oplus (R^2)^{\oplus s}$,
 
 $$
-\dim_R \operatorname{Hom}_{\mathbb{D}'}(V, W) = pr + 2qs.
+\dim_R \operatorname{Hom}_{\mathbb{D}'}(V, W) = pr + ps + qr + 2qs.
 $$
 
-The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra.
+The factor of $2$ comes from the endomorphisms of the regular representation, which form a two-dimensional algebra. The cross terms $ps$ and $qr$ come from the one-dimensional spaces $\operatorname{Hom}_{\mathbb{D}'}(R, R^2)$ and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R)$, which are non-zero even though the two indecomposables are non-isomorphic: Schur's lemma constrains only homomorphisms between **irreducible** modules, and the regular representation is not irreducible.
 
-**Proof.** A homomorphism must preserve the decomposition into trivial and regular summands, because the two indecomposables are non-isomorphic. So it is determined by its action on each isotypic component. On the trivial component $R^{\oplus p} \to R^{\oplus r}$, the space of maps is $pr$-dimensional. On the regular component $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$, the space of maps is $2qs$-dimensional, because each regular summand has a two-dimensional endomorphism ring. $\square$
+**Proof.** A homomorphism is a block matrix with four types of blocks. The blocks $R^{\oplus p} \to R^{\oplus r}$ give $M_p(R)$, of dimension $pr$; the blocks $(R^2)^{\oplus q} \to (R^2)^{\oplus s}$ give matrices over $\operatorname{End}_{\mathbb{D}'}(R^2) \cong \mathbb{D}'$, of dimension $2qs$. For the cross blocks, $\operatorname{Hom}_{\mathbb{D}'}(R, R^2) \cong \ker E \cong R$ (the image of the generator must lie in the kernel of $E$) and $\operatorname{Hom}_{\mathbb{D}'}(R^2, R) \cong R$ (the map must vanish on the image of $E$), so those contribute $ps$ and $qr$. $\square$
 
 ### The Endomorphism Ring
 
-The **endomorphism ring** of a representation $(V, E)$ is $\operatorname{End}_{\mathbb{D}'}(V) = \operatorname{Hom}_{\mathbb{D}'}(V, V)$. For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ over a field,
+The **endomorphism ring** of a representation $(V, E)$ is $\operatorname{End}_{\mathbb{D}'}(V) = \operatorname{Hom}_{\mathbb{D}'}(V, V)$. For $V \cong R^{\oplus p} \oplus (R^2)^{\oplus q}$ over a field it has dimension
 
 $$
-\operatorname{End}_{\mathbb{D}'}(V) \cong M_p(R) \oplus M_q(\mathbb{D}'),
+\dim_R \operatorname{End}_{\mathbb{D}'}(V) = p^2 + 2pq + 2q^2.
 $$
 
-the direct sum of the matrix ring of size $p$ over $R$ and the matrix ring of size $q$ over $\mathbb{D}'$. This is not semisimple when $q > 0$, because $\mathbb{D}'$ is not semisimple.
+It contains $M_p(R)$ (acting on the trivial summands) and $M_q(\mathbb{D}')$ (acting on the regular summands) as subalgebras, but it is **not** their direct sum when $p, q > 0$: the cross-homomorphisms contribute the extra $2pq$ dimensions. This is not semisimple when $q > 0$, because $\mathbb{D}'$ is not semisimple.
 
 ## The Category of Representations
 
@@ -303,12 +303,12 @@ The extension class of this sequence is the generator of $\operatorname{Ext}^1_{
 The **Ext algebra** of $\mathbb{D}'$ is
 
 $$
-\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[\varepsilon]/(\varepsilon^2),
+\operatorname{Ext}^\bullet_{\mathbb{D}'}(R, R) \cong R[x],
 $$
 
-with $\varepsilon$ in degree one. So the Ext algebra is isomorphic to $\mathbb{D}'$ itself, with the grading shifted. This is a general phenomenon: for a local ring with maximal ideal $\mathfrak{m}$ satisfying $\mathfrak{m}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathfrak{m}$, truncated at degree two.
+the polynomial algebra on one generator of degree one. So $\operatorname{Ext}^i_{\mathbb{D}'}(R, R) \cong R$ in every degree $i \geq 0$: the minimal free resolution $\cdots \to \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \xrightarrow{\varepsilon} \mathbb{D}' \to R \to 0$ has one free module in each degree, and after applying $\operatorname{Hom}_{\mathbb{D}'}(-, R)$ all the differentials vanish because $\varepsilon$ acts as zero on $R$. This is a general phenomenon: for a local ring with maximal ideal $\mathfrak{m}$ satisfying $\mathfrak{m}^2 = 0$, the Ext algebra of the residue field is the Koszul dual, which is the symmetric algebra on the dual of $\mathfrak{m}$ (untruncated).
 
-So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra $\mathbb{D}'$, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.
+So the representation theory of $\mathbb{D}'$ is controlled by the Ext algebra, and the nilpotence of $\varepsilon$ is the source of the non-semisimplicity.
 
 ## Comparison with the Split Complex Case
 

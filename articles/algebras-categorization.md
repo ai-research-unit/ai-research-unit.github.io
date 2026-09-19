@@ -186,11 +186,11 @@ This is worth emphasizing because the Frobenius theorem is often stated in the l
 
 ## 25. Why the Theorem Matters
 
-The theorem tells us that the passage from $\mathbb{R}$ to $\mathbb{C}$ to $\mathbb{H}$ exhausts the finite-dimensional associative real division algebras. There is no four-dimensional real division algebra other than $\mathbb{H}$, and there is no real division algebra of any dimension greater than $4$ if we require associativity.
+The theorem tells us that the passage from $\mathbb{R}$ to $\mathbb{C}$ to $\mathbb{H}$ exhausts the finite-dimensional associative real division algebras. There is no four-dimensional real division algebra other than $\mathbb{H}$, and there is no finite-dimensional real division algebra of any dimension greater than $4$ if we require associativity.
 
 If we drop associativity, the **Cayley–Dickson construction** allows us to continue the doubling procedure one more step, to the **octonions** $\mathbb{O}$, of dimension $8$ over $\mathbb{R}$. The octonions are a non-associative division algebra. Beyond the octonions, the construction produces algebras with zero divisors (the sedenions and beyond), so the doubling stops there for division algebras.
 
-The Frobenius theorem is therefore the precise statement that the classical number systems $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$ are the only associative real division algebras. It is the algebraic counterpart of the geometric fact that the only finite-dimensional real normed division algebras are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, and $\mathbb{O}$ (the last being non-associative).
+The Frobenius theorem is therefore the precise statement that the classical number systems $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$ are the only finite-dimensional associative real division algebras. It is the algebraic counterpart of the geometric fact that the only finite-dimensional real normed division algebras are $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, and $\mathbb{O}$ (the last being non-associative).
 
 ## 26. The Tensor Products
 
@@ -202,7 +202,7 @@ The Frobenius theorem is complemented by the computation of the tensor products 
 
 **$\mathbb{R} \otimes_\mathbb{R} \mathbb{H} \cong \mathbb{H}$.** Dimension $4$. A division algebra.
 
-**$\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$.** Dimension $4$. Not a division algebra: it has zero divisors. The idempotents $e_1 = \tfrac{1}{2}(1 \otimes 1 + i \otimes j)$ and $e_2 = \tfrac{1}{2}(1 \otimes 1 - i \otimes j)$ satisfy $e_1 e_2 = 0$.
+**$\mathbb{C} \otimes_\mathbb{R} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$.** Dimension $4$. Not a division algebra: it has zero divisors. The idempotents $e_1 = \tfrac{1}{2}(1 \otimes 1 + i \otimes i)$ and $e_2 = \tfrac{1}{2}(1 \otimes 1 - i \otimes i)$ satisfy $e_1 e_2 = 0$.
 
 **$\mathbb{C} \otimes_\mathbb{R} \mathbb{H} \cong \mathbb{B} \cong M_2(\mathbb{C})$.** Dimension $8$. Here $\mathbb{B} = \mathbb{H} \otimes_\mathbb{R} \mathbb{C}$ is the **biquaternion algebra**. It is not a division algebra: it has zero divisors. As a complex algebra, it is isomorphic to $M_2(\mathbb{C})$.
 
