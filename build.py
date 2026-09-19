@@ -4,8 +4,8 @@ import shutil
 import markdown
 from pathlib import Path
 
-SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit")
-DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research-unit/ai-research-unit-deploy")
+SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
+DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
 DEPLOY_ART = DEPLOY / "articles"
 
 ARTICLES_DIR   = SRC / "articles"
