@@ -1,5 +1,6 @@
 .git/
 .venv/
+material/
 temp/
 temp_/
 temp__/
