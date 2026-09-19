@@ -137,6 +137,18 @@ for f in articles:
     (DEPLOY_ART / f"{f.stem}.html").write_text(html)
     print(f"Built: articles/{f.stem}.html")
 
+# ── NEW: prune orphaned article HTML ──────────────────────────────────────
+# We only ever write files into the deploy dir, never delete, so a renamed
+# or removed source md leaves its old .html behind — still served, still
+# indexable, and silently diverging from the current article. Drop any
+# deployed article page that no longer has a matching source.
+built = {f"{f.stem}.html" for f in articles}
+for stale in DEPLOY_ART.glob("*.html"):
+    if stale.name not in built:
+        stale.unlink()
+        print(f"Removed orphan: articles/{stale.name}")
+# ──────────────────────────────────────────────────────────────────────────
+
 def build_root_page(md_path, out_name, articles):
     if md_path.exists():
         raw = md_path.read_text()
