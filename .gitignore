@@ -15,7 +15,8 @@ __pycache__/
 .claude/
 
 # Internal review work - confidential, never published, never committed
-REVIEW-PLAN*
+PLAN*
 *.thinking
+*.idea
 _reserve/
 

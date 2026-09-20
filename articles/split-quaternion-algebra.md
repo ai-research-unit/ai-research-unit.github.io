@@ -379,7 +379,7 @@ $$
 N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu.
 $$
 
-It is not positive-definite, and it can vanish for a nonzero split quaternion. The elements with vanishing norm form are the zero divisors, studied in the article on split quaternion zero divisors.
+Its real part is positive-definite, $\sum_\mu(q_\mu^2+q'^2_\mu)$, so $N(\tilde Q)=0$ forces $\tilde Q=0$: the norm form does **not** single out the zero divisors. Those are characterized instead by the vanishing of an idempotent component, $\tilde Q_+=0$ or $\tilde Q_-=0$, as the article on split quaternion zero divisors shows.
 
 The norm form is **multiplicative**:
 
@@ -429,11 +429,11 @@ The real part is the indefinite form of signature $(4, 4)$, and the split part i
 
 The three quadratic objects are related as follows:
 
-- **Norm form:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Split complex-valued, can vanish for nonzero $\tilde{Q}$, multiplicative.
+- **Norm form:** $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$. Split complex-valued, vanishes only at $\tilde{Q}=0$, multiplicative.
 - **Hermitian form:** $\tilde{Q} \tilde{Q}^\dagger$, whose scalar part is $\sum_\mu (q_\mu^2 - q'^2_\mu)$. That scalar part is real, indefinite of signature $(4, 4)$, and vanishes on a quadric hypersurface of dimension $7$; the full product is not multiplicative.
 - **Inner product:** $\langle \tilde{P}, \tilde{Q} \rangle = \sum_\mu P_\mu^* Q_\mu$. Split complex-valued in general, Hermitian, linear in the second argument.
 
-The three are distinct, and each is useful in a different context. The norm form controls the multiplicative structure (invertibility, zero divisors). The Hermitian form is indefinite and does not control the topological structure. The Euclidean norm, which is defined separately, provides the topological structure.
+The three are distinct, and each is useful in a different context. The norm form controls invertibility (through $\Delta$, its split complex invertibility). The zero divisors are not a norm-form condition; they are the vanishing of an idempotent component. The Hermitian form is indefinite and does not control the topological structure. The Euclidean norm, which is defined separately, provides the topological structure.
 
 ## The Lie Algebra Structure
 

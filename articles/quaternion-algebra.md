@@ -141,7 +141,7 @@ $$
 
 ### Conjugations
 
-There are **three** natural conjugations on $\mathbb{H}$, obtained by composing the quaternion conjugation with itself:
+There are **three** natural conjugations on $\mathbb{H}$, obtained from the quaternion conjugation together with the negation map:
 
 **Quaternion conjugation** $\bar{q}$:
 

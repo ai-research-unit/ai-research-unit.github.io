@@ -239,14 +239,14 @@ Among the graded quotients, $\operatorname{Sym}(V)$ (the universal commutative q
 
 ```
                         T(V)   (free associative, graded)
-                          |
+ |
        homogeneous relations|inhomogeneous relations
        --------------------|-------------------
-       |                                       |
+ | |
   graded quotients                        filtered quotients
-  |-- Sym(V)  (commutative)               |-- Cl(V,Q),  gr = Exterior(V)
-  |-- Exterior(V) (graded-commutative)    |-- U(g),     gr = Sym(g)
-  |-- RQ, RQ/I (paths, relations)         |-- A_n(R),   gr = Sym(V (x) V*)
+ |-- Sym(V)  (commutative) |-- Cl(V,Q),  gr = Exterior(V)
+ |-- Exterior(V) (graded-commutative) |-- U(g),     gr = Sym(g)
+ |-- RQ, RQ/I (paths, relations) |-- A_n(R),   gr = Sym(V (x) V*)
 ```
 
 ---

@@ -34,13 +34,13 @@ So at the level of the additive group, quaternion harmonic analysis is the same 
 The **quaternion characters** are the homomorphisms into the multiplicative group of $\mathbb{H}$:
 
 $$
-\chi_\xi(q) = e^{\omega \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
+\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}, \qquad \xi \in \mathbb{H},
 $$
 
 where $\omega$ is a fixed unit pure quaternion and the exponential is the quaternion exponential. Because $\omega^2 = -1$, this is
 
 $$
-\chi_\xi(q) = \cos(\operatorname{Re}(\bar{\xi} q)) + \omega \sin(\operatorname{Re}(\bar{\xi} q)).
+\chi_\xi(q) = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) + \omega \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
 $$
 
 These characters are **bounded** in the quaternion norm, because they take values on the unit sphere $\mathbb{S}^3$. This is the fundamental difference from the split complex case, where the characters are unbounded, and the similarity with the complex case, where the characters take values in the compact circle.
@@ -54,16 +54,16 @@ So the quaternion case is intermediate between the complex case and the split co
 The **quaternion Fourier transform** of a function $f : \mathbb{H} \to \mathbb{H}$ is
 
 $$
-\hat{f}(\xi) = \int_{\mathbb{H}} f(q) e^{-\omega \operatorname{Re}(\bar{\xi} q)} \, dq,
+\hat{f}(\xi) = \int_{\mathbb{H}} f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq,
 $$
 
 where $dq$ is Lebesgue measure on $\mathbb{H} \cong \mathbb{R}^4$, $\omega$ is a fixed unit pure quaternion, and the exponential is the quaternion exponential.
 
 Because the exponential depends on the choice of $\omega$, there are infinitely many quaternion Fourier transforms, one for each unit pure quaternion. The most common choices are:
 
-- **Left-sided transform.** $\hat{f}(\xi) = \int f(q) e^{-\omega \operatorname{Re}(\bar{\xi} q)} \, dq$, with the exponential on the right.
-- **Right-sided transform.** $\hat{f}(\xi) = \int e^{-\omega \operatorname{Re}(\bar{\xi} q)} f(q) \, dq$, with the exponential on the left.
-- **Two-sided transform.** $\hat{f}(\xi) = \int e^{-\omega_1 \operatorname{Re}(\bar{\xi} q)} f(q) e^{-\omega_2 \operatorname{Re}(\bar{\xi} q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.
+- **Left-sided transform.** $\hat{f}(\xi) = \int f(q) e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, dq$, with the exponential on the right.
+- **Right-sided transform.** $\hat{f}(\xi) = \int e^{-2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q) \, dq$, with the exponential on the left.
+- **Two-sided transform.** $\hat{f}(\xi) = \int e^{-2\pi \omega_1 \operatorname{Re}(\bar{\xi} q)} f(q) e^{-2\pi \omega_2 \operatorname{Re}(\bar{\xi} q)} \, dq$, with two distinct unit pure quaternions $\omega_1$ and $\omega_2$.
 
 The three transforms are related but not equivalent, and the choice depends on the application. The two-sided transform is the most general, and it is the one that diagonalizes the quaternion Dirac operator.
 
@@ -74,13 +74,13 @@ Write $f(q) = f_0(q) + f_1(q) e_1 + f_2(q) e_2 + f_3(q) e_3$ with $f_\mu : \math
 For the simplest case $\omega = e_1$, the kernel is
 
 $$
-e^{-e_1 \operatorname{Re}(\bar{\xi} q)} = \cos(\operatorname{Re}(\bar{\xi} q)) - e_1 \sin(\operatorname{Re}(\bar{\xi} q)).
+e^{-2\pi e_1 \operatorname{Re}(\bar{\xi} q)} = \cos(2\pi \operatorname{Re}(\bar{\xi} q)) - e_1 \sin(2\pi \operatorname{Re}(\bar{\xi} q)).
 $$
 
 So the transform is
 
 $$
-\hat{f}(\xi) = \int f(q) \cos(\operatorname{Re}(\bar{\xi} q)) \, dq - e_1 \int f(q) \sin(\operatorname{Re}(\bar{\xi} q)) \, dq.
+\hat{f}(\xi) = \int f(q) \cos(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq - e_1 \int f(q) \sin(2\pi \operatorname{Re}(\bar{\xi} q)) \, dq.
 $$
 
 The first integral is the cosine transform, and the second is the sine transform. Both are real-valued when $f$ is real-valued, and both are ordinary four-dimensional Fourier transforms. So the quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$, tensored with the quaternion algebra.
@@ -89,9 +89,9 @@ The first integral is the cosine transform, and the second is the sine transform
 
 **Linearity.** The transform is linear over $\mathbb{R}$, but not over $\mathbb{H}$, because $\mathbb{H}$ is non-commutative.
 
-**Translation.** If $f_a(q) = f(q - a)$, then $\hat{f}_a(\xi) = e^{-\omega \operatorname{Re}(\bar{\xi} a)} \hat{f}(\xi)$ for the left-sided transform.
+**Translation.** If $f_a(q) = f(q - a)$, then $\hat{f}_a(\xi) = e^{-2\pi \omega \operatorname{Re}(\bar{\xi} a)} \hat{f}(\xi)$ for the left-sided transform.
 
-**Modulation.** If $f_\xi(q) = e^{\omega \operatorname{Re}(\bar{\xi} q)} f(q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.
+**Modulation.** If $f_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} f(q)$, then $\hat{f}_\xi(\eta) = \hat{f}(\eta - \xi)$.
 
 **Scaling.** If $f_\lambda(q) = f(\lambda q)$ for $\lambda \in \mathbb{H}^\times$, then
 
@@ -124,7 +124,7 @@ This is the Plancherel theorem for $\mathbb{R}^4$, written in quaternion notatio
 **Theorem.** If $f \in L^1(\mathbb{H})$ and $\hat{f} \in L^1(\mathbb{H})$, then
 
 $$
-f(q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{\omega \operatorname{Re}(\bar{\xi} q)} \, d\xi
+f(q) = \int_{\mathbb{H}} \hat{f}(\xi) e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)} \, d\xi
 $$
 
 for almost every $q$.
@@ -238,7 +238,7 @@ $$
 which satisfies
 
 $$
-D E = \delta_0
+D E = 2\pi^2 \delta_0
 $$
 
 in the sense of distributions, where $D$ is the quaternion Dirac operator. It is the fundamental solution of the Dirac operator, and it is the quaternion analogue of the kernel $1/z$ in complex analysis.
@@ -406,7 +406,7 @@ The Fourier slice theorem is the mathematical basis of quaternion tomography, th
 **Theorem.** For suitable $f$,
 
 $$
-f(q) = \frac{1}{2} \int_{\mathbb{S}^3} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma|^3 e^{\omega \operatorname{Re}(\bar{\theta} q)} \, d\sigma \, d\theta,
+f(q) = \frac{1}{2} \int_{\mathbb{S}^3} \int_{-\infty}^\infty \widehat{Rf(\theta, \cdot)}(\sigma) |\sigma|^3 e^{2\pi \omega \operatorname{Re}(\bar{\theta} q)} \, d\sigma \, d\theta,
 $$
 
 where $d\theta$ is the surface measure on the unit sphere $\mathbb{S}^3$. The factor $|\sigma|^3$ is the ramp filter in dimension four, and it is the source of the high-frequency amplification in quaternion tomography.
@@ -451,7 +451,7 @@ The quaternion wavelet transform is used in quaternion signal processing, where 
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $q = q_0 + \mathbf{q}$ | General quaternion |
 | $\omega$ | Unit pure quaternion |
-| $\chi_\xi(q) = e^{\omega \operatorname{Re}(\bar{\xi} q)}$ | Quaternion character |
+| $\chi_\xi(q) = e^{2\pi \omega \operatorname{Re}(\bar{\xi} q)}$ | Quaternion character |
 | $\hat{f}$ | Quaternion Fourier transform |
 | $f * g$ | Convolution |
 | $\delta$ | Dirac delta |

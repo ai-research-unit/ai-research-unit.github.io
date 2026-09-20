@@ -341,10 +341,10 @@ The first-order formulation is the most compact: one equation for the field stre
 
 ## The Biquaternionic Energy–Momentum
 
-The energy and momentum of the electromagnetic field are encoded in a **biquaternionic energy–momentum**
+The energy and momentum of the electromagnetic field are encoded in a **biquaternionic energy–momentum**, the halved Hermitian form of the field strength:
 
 $$
-\tilde{W} = W + \frac{1}{c}\vec{S},
+\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W + \frac{i}{c}\vec{S},
 $$
 
 where $W$ is the energy density and $\mathbf{S}$ is the energy flow density (the Poynting vector). For the electromagnetic field in a medium, these are
@@ -353,7 +353,7 @@ $$
 W = \frac{1}{2}\left(\epsilon\,\mathbf{E}\cdot\mathbf{E} + \mu\,\mathbf{H}\cdot\mathbf{H}\right), \qquad \mathbf{S} = \mathbf{E}\times\mathbf{H}.
 $$
 
-The scalar part of $\tilde{W}$ is the energy density, and the vector part is the energy flow density. The biquaternionic energy–momentum is the natural source for the gravitational field in any theory that couples gravity to the electromagnetic field.
+The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\mathbf{S}$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $ict$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\tilde{R}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^\dagger$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T^{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.
 
 The conservation of energy and momentum is expressed by the biquaternionic equation
 
@@ -361,17 +361,17 @@ $$
 \tilde{\nabla} \tilde{W} = -\tilde{P},
 $$
 
-where $\tilde{P}$ is the biquaternionic power–force density, whose scalar part is the power density and whose vector part is the force density. This is the biquaternionic form of the Poynting theorem. When expanded, it gives the standard energy conservation law
+where $\tilde{P}$ is the biquaternionic power–force density, whose scalar part is $-\frac{i}{c}\,\mathbf{J}\cdot\mathbf{E}$ and whose vector part is $-(\rho\mathbf{E} + \mathbf{J}\times\mathbf{B})$. Taking the scalar part of the equation gives the standard energy conservation law
 
 $$
 \frac{\partial W}{\partial t} + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0.
 $$
 
-The biquaternionic energy–momentum is the natural bridge between the electromagnetic field and the gravitational field. In the full complexified framework, the same structure appears in the gravitational sector, with the energy–momentum biquaternion playing the role of the source.
+The energy–momentum tensor is the natural bridge between the electromagnetic field and the gravitational field. In the full complexified framework, the same structure appears in the gravitational sector, with the energy–momentum tensor playing the role of the source.
 
 ## Energy Conservation and the Cauchy Problem
 
-The biquaternionic energy–momentum $\tilde{W} = W + (1/c)\mathbf{S}$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
+The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^\dagger = W + (i/c)\mathbf{S}$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
 
 $$
 \int_{\partial D} \tilde{n} \tilde{W}\,dS = -\int_D \tilde{P}\,dV,
@@ -483,7 +483,7 @@ This is the natural generalization of the $ict$ structure. The electromagnetic f
 | $\tilde{A}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
 | $\tilde{R}, \tilde{R}'$ | Source biquaternions |
-| $\tilde{W}$ | Energy–momentum biquaternion |
+| $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^\dagger$ | Energy–momentum biquaternion, in $\mathbb{M}_+$ |
 | $\tilde{\Lambda}$ | Boost biquaternion (unit-norm biquaternion) |
 | $\tilde{\nabla}$ | Biquaternionic gradient |
 | $\bar{\tilde{\nabla}}$ | Quaternion conjugate gradient |

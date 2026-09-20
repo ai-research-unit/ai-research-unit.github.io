@@ -340,7 +340,7 @@ $$
 
 It satisfies $\tilde{\nabla}\tilde{G} = 2\pi^2 \delta_0 e_0$ in the sense of distributions, where $\delta_0$ is the Dirac delta at the origin.
 
-In the oscillatory regime, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / \theta^4 = -\hat{n}/\theta^3$, which is the quaternion analogue of the Cauchy kernel $1/z$ in complex analysis.
+In the oscillatory regime, with $\theta$ real and $\hat{n}$ a root of $-1$, $\tilde{G}(\theta \hat{n}) = -\theta \hat{n} / (\theta^4 \|\hat{n}\|_E^4) = -\hat{n}/(\theta^3 \|\hat{n}\|_E^4)$, which is the quaternion analogue of the Cauchy kernel $1/z$ in complex analysis. The Euclidean norm $\|\hat{n}\|_E$ must be kept: it equals $1$ only on the degenerate branches of the root classification.
 
 In the nilpotent regime, $\tilde{G}(\mathbf{Q}) = -\mathbf{Q}/\|\mathbf{Q}\|_E^4$, which is singular at the origin.
 

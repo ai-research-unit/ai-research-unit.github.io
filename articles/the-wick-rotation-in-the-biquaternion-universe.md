@@ -1,5 +1,5 @@
 
-# The Wick Rotation in the Biquaternion Universe
+# __The Wick Rotation in the Biquaternion Universe__
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-# Quantum Mechanics in Biquaternionic Form
+# __Quantum Mechanics in Biquaternionic Form__
 
 ## Introduction
 

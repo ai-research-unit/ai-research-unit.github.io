@@ -300,9 +300,9 @@ $$
 z \mapsto z_+^2 + z_-^2 = (a + b)^2 + (a - b)^2 = 2(a^2 + b^2),
 $$
 
-which is positive-definite but is not multiplicative. It is the Euclidean norm squared on the underlying real vector space $\mathbb{D} \cong \mathbb{R}^2$, and it is the natural "length squared" of $z$ as a point in the plane.
+which is positive-definite but is not multiplicative. It is **twice** the Euclidean norm squared on the underlying real vector space $\mathbb{D} \cong \mathbb{R}^2$; half of it, $a^2+b^2$, is the natural "length squared" of $z$ as a point in the plane.
 
-The corresponding **Euclidean norm** is
+The **Euclidean norm** is
 
 $$
 \|z\|_E = \sqrt{a^2 + b^2}.

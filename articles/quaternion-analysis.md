@@ -61,7 +61,7 @@ Arbitrary unions of open sets are open. Finite intersections of open sets are op
 
 ### Connectedness and Domains
 
-A set $U \subseteq \mathbb{H}$ is **connected** if it cannot be written as the disjoint union of two non-empty open sets. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{H}$, connectedness and path-connectedness are equivalent.
+A set $U \subseteq \mathbb{H}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{H}$, connectedness and path-connectedness are equivalent.
 
 A **domain** is a non-empty open connected subset of $\mathbb{H}$. Domains are the natural setting for quaternion analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
@@ -469,7 +469,7 @@ $$
 E(q) = \frac{q^{-1}}{|q|^2} = \frac{\bar{q}}{|q|^4},
 $$
 
-which satisfies $D E = \delta_0$ in the sense of distributions.
+which satisfies $D E = 2\pi^2 \delta_0$ in the sense of distributions.
 
 ### The Relation to the Cauchy–Riemann Operator
 

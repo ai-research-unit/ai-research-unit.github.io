@@ -34,24 +34,24 @@ where $\eta^{\mu\nu} = \mathrm{diag}(-1,+1,+1,+1)$ is the Minkowski metric and $
 In the **Dirac representation**, the gamma matrices are
 
 $$
-\gamma^0 = \begin{pmatrix} I_2 & 0 \\ 0 & -I_2 \end{pmatrix}, \qquad
-\gamma^k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}, \quad k = 1, 2, 3,
+\gamma^0 = \begin{pmatrix} iI_2 & 0 \\ 0 & -iI_2 \end{pmatrix}, \qquad
+\gamma^k = \begin{pmatrix} 0 & i\sigma^k \\ -i\sigma^k & 0 \end{pmatrix}, \quad k = 1, 2, 3,
 $$
 
-where $\sigma^k$ are the Pauli matrices.
+where $\sigma^k$ are the Pauli matrices. These are $i$ times the matrices of the usual mostly-minus Dirac representation, and the factor is fixed by the mostly-plus signature declared above: with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the generators must satisfy $(\gamma^0)^2 = -I_4$ and $(\gamma^k)^2 = +I_4$, whereas the mostly-minus matrices satisfy the opposite squares. Squaring them reproduces $(\gamma^\mu)^2 = \eta^{\mu\mu} I_4$ in each case, so the anticommutation relation holds as stated.
 
 ### The Dirac Equation
 
 The **Dirac equation** for a free fermion of mass $m$ is
 
 $$
-(i\not\partial - m)\psi = 0,
+(\not\partial - m)\psi = 0,
 $$
 
-where $\not\partial = \gamma^\mu \partial_\mu$ is the **Dirac operator**, $\psi$ is a four-component complex **Dirac spinor**, and $m$ is the mass. In natural units $\hbar = c = 1$, the equation is
+where $\not\partial = \gamma^\mu \partial_\mu$ is the **Dirac operator**, $\psi$ is a four-component complex **Dirac spinor**, and $m$ is the mass. With the mostly-plus signature the factor of $i$ is carried by the generators themselves, so the equation is written $\not\partial\psi = m\psi$ rather than with an explicit $i$ on the operator; in natural units $\hbar = c = 1$ the equation is
 
 $$
-(i\gamma^\mu \partial_\mu - m)\psi = 0.
+(\gamma^\mu \partial_\mu - m)\psi = 0.
 $$
 
 For a massless fermion ($m = 0$), the equation reduces to
@@ -103,23 +103,23 @@ The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma
 The biquaternion units give an explicit set of gamma matrices. Write the biquaternion algebra as $M_2(\mathbb{C})$ by $e_0 \mapsto I_2$, $e_k \mapsto -i\sigma^k$, $i \mapsto iI_2$, so that $ie_k \leftrightarrow \sigma^k$, and arrange the units in $2 \times 2$ blocks:
 
 $$
-\gamma^0 = \begin{pmatrix} 0 & e_0 \\ e_0 & 0 \end{pmatrix}, \qquad
-\gamma^k = \begin{pmatrix} 0 & i e_k \\ -i e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
+\gamma^0 = \begin{pmatrix} 0 & i e_0 \\ i e_0 & 0 \end{pmatrix}, \qquad
+\gamma^k = \begin{pmatrix} 0 & -e_k \\ e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
 $$
 
-that is, $\gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma^k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $e_k^2 = -e_0$,
+that is, $\gamma^0 = \begin{pmatrix} 0 & iI_2 \\ iI_2 & 0 \end{pmatrix}$ and $\gamma^k = \begin{pmatrix} 0 & i\sigma^k \\ -i\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $e_k^2 = -e_0$,
 
 $$
-(\gamma^0)^2 = e_0^2 = I_4, \qquad (\gamma^k)^2 = -(ie_k)^2 = -i^2 e_k^2 = -e_0 = -I_4 .
+(\gamma^0)^2 = (ie_0)^2 = i^2 e_0^2 = -I_4, \qquad (\gamma^k)^2 = (-e_k)(e_k) = -e_k^2 = +I_4 .
 $$
 
-The mixed products are block diagonal: $\gamma^0\gamma^k = \mathrm{diag}(-ie_k,\, ie_k)$ and $\gamma^k\gamma^0 = -\gamma^0\gamma^k$, while $\gamma^j\gamma^k = \mathrm{diag}(e_je_k,\, e_je_k)$ and $\gamma^k\gamma^j = -\, \gamma^j\gamma^k$ because $e_je_k = -e_ke_j$. Hence
+The mixed products are block diagonal: $\gamma^0\gamma^k = \mathrm{diag}(ie_k,\, -ie_k)$ and $\gamma^k\gamma^0 = -\gamma^0\gamma^k$, while $\gamma^j\gamma^k = \mathrm{diag}(-e_je_k,\, -e_je_k)$ and $\gamma^k\gamma^j = -\, \gamma^j\gamma^k$ because $e_je_k = -e_ke_j$. Hence
 
 $$
-\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu} I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu} I_4, \qquad g = \mathrm{diag}(-1,+1,+1,+1),
 $$
 
-and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. The overall sign of the metric is a convention: replacing every generator by $i\gamma^\mu$ flips the sign of $g$ and leaves the Clifford algebra unchanged.
+and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. This is the declared metric of the introduction and of the section above. The overall sign of the metric is a convention: replacing every generator by $i\gamma^\mu$ flips the sign of $g$ and leaves the Clifford algebra unchanged, so the mostly-minus set is $i$ times the set displayed here.
 
 ### The Dirac Operator in Biquaternion Form
 

@@ -1,5 +1,5 @@
 
-# Entangled Subsystems in the Biquaternion Framework: What the Reformulation Changes and What It Does Not
+# __Entangled Subsystems in the Biquaternion Framework__
 
 ## Introduction
 
@@ -37,7 +37,7 @@ This is the maximally mixed state of a qubit, at the center of the Bloch ball. I
 
 ### The correlation function as a bilinear pairing
 
-The spin correlation function, computed in full in *Exercise 6*, is
+The spin correlation function, computed in full in *Exercise: The Correlation Function of the Bell States*, is
 
 $$
 E(\hat{a}, \hat{b}) = \mathrm{Tr}\!\left(P_{\mathrm{singlet}}\circ\bigl((i\hat{a})\otimes(i\hat{b})\bigr)\right) = -\hat{a}\cdot\hat{b}.
@@ -256,5 +256,5 @@ The honest position is this. The framework makes certain structural features of 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement, Bell states, and the no-communication theorem.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for the modern understanding of the quantum/classical transition.
 - Robert F. Spekkens, "Evidence for the epistemic view of quantum states: A toy theory," *Physical Review A* **75** (2007) 032110, and subsequent work, for a careful treatment of the quantum/classical divide.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *$\mathbb{M}_-$ as the Material Space*, *$\mathbb{M}_+$ as the Informational Space*, *Quantum Mechanics in Biquaternionic Form*, *Exercises 1–6*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *$\mathbb{M}_-$ as the Material Space*, *$\mathbb{M}_+$ as the Informational Space*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
 

@@ -165,15 +165,15 @@ which is a biquaternion with **vanishing scalar part** and a **mixed real/imagin
 
 ### The Energy–Momentum Biquaternion
 
-The **energy–momentum biquaternion** is
+The **energy–momentum biquaternion** is the halved Hermitian form of the field strength,
 
 $$
-\tilde{W} = W + \frac{1}{c}\mathbf{S},
+\tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W + \frac{i}{c}\mathbf{S},
 $$
 
-with a **real** scalar part (the energy density) and a **real** vector part (the Poynting vector). This is an element of the **quaternion subspace** $\mathbb{H}_\mathbb{B}$, not of $\mathbb{M}_-$ or $\mathbb{M}_+$. The energy–momentum is a component of a **rank-2 symmetric tensor** $T^{\mu\nu}$, and it transforms under the Lorentz group by a still more general rule.
+with a **real** scalar part (the energy density) and a **purely imaginary** vector part ($i/c$ times the Poynting vector). This is an element of the **Hermitian subspace** $\mathbb{M}_+$, not of $\mathbb{M}_-$; the factor $i$ on the Poynting part is the same one that separates $\mathbb{M}_+$ from the real subspace $\mathbb{H}_\mathbb{B}$, and it is required by the $ict$ convention, in which a temporal component carries an $i$ relative to a spatial one. The energy–momentum is a component of a **rank-2 symmetric tensor** $T^{\mu\nu}$, and it transforms under the Lorentz group by a still more general rule.
 
-These counterexamples illustrate that $\mathbb{M}_-$ is specifically the **vector representation** of the Lorentz group, not the full tensor algebra. The four-vectors live in $\mathbb{M}_-$; the antisymmetric tensors (field strengths) and symmetric tensors (energy–momentum) do not.
+These counterexamples illustrate that $\mathbb{M}_-$ is specifically the **vector representation** of the Lorentz group, not the full tensor algebra. The four-vectors live in $\mathbb{M}_-$; neither the antisymmetric tensors (field strengths), whose vector part is neither purely real nor purely imaginary, nor the symmetric tensors (energy–momentum), whose four-component representative is Hermitian, do.
 
 ## The Complementary Subspace $\mathbb{M}_+$
 

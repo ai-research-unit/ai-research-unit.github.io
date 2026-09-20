@@ -61,7 +61,7 @@ Arbitrary unions of open sets are open. Finite intersections of open sets are op
 
 ### Connectedness and Domains
 
-A set $U \subseteq \mathbb{D}$ is **connected** if it cannot be written as the disjoint union of two non-empty open sets. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.
+A set $U \subseteq \mathbb{D}$ is **connected** if it cannot be written as the disjoint union of two non-empty sets open in $U$. It is **path-connected** if any two points can be joined by a continuous path in $U$. For open subsets of $\mathbb{D}$, connectedness and path-connectedness are equivalent.
 
 A **domain** is a non-empty open connected subset of $\mathbb{D}$. Domains are the natural setting for split complex analysis, because differentiability on a domain imposes constraints that are weaker than in the complex case but still nontrivial.
 
@@ -219,7 +219,7 @@ $$
 \frac{\partial}{\partial z} = \frac{1}{2}\left( \frac{\partial}{\partial x} + j \frac{\partial}{\partial y} \right), \qquad \frac{\partial}{\partial \bar{z}} = \frac{1}{2}\left( \frac{\partial}{\partial x} - j \frac{\partial}{\partial y} \right).
 $$
 
-**Theorem.** $f$ is split complex differentiable iff $\partial f / \partial \bar{z} = 0$. In that case,
+**Theorem.** $f$ is split complex differentiable iff $f$ is real differentiable and $\partial f / \partial \bar{z} = 0$. In that case,
 
 $$
 f'(z) = \frac{\partial f}{\partial z}.
