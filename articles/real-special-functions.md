@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article introduces the real special functions as a collection of named functions that arise repeatedly in analysis, differential equations, and mathematical physics. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.
+This article introduces the real special functions as a collection of named functions that arise repeatedly in analysis and differential equations. The goal is to define each function precisely, establish its basic properties, and describe the relations among them.
 
 The treatment is mathematically honest: every claim is either proved or stated as a definition. No complex analysis is invoked. All functions are treated as functions of a real variable, and all integral representations are real integrals. The order of presentation follows the dependency order: elementary functions first, then functions defined from them, then functions defined from those.
 
@@ -625,7 +625,7 @@ $$
 {}_pF_q(a_1, \dots, a_p; b_1, \dots, b_q; x) = \sum_{n=0}^\infty \frac{(a_1)_n \cdots (a_p)_n}{(b_1)_n \cdots (b_q)_n} \frac{x^n}{n!}.
 $$
 
-Most special functions of mathematical physics are special cases of ${}_pF_q$.
+Most named special functions are special cases of ${}_pF_q$.
 
 ## The Elliptic Integrals
 

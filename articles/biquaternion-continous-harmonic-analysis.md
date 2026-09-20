@@ -95,7 +95,7 @@ $$
 F(\omega) = \int_{-\infty}^{\infty} f(t) \, W(t, \omega) \, dt.
 $$
 
-The two transforms are related as in the discrete case: the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel.
+The two transforms are related as in the discrete case: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)
 
 ### Convergence
 
@@ -434,7 +434,6 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 6. **The Clifford algebra framework.** How does the biquaternion continuous Fourier transform fit into the general theory of Clifford algebra Fourier transforms?
 
-7. **Applications to physics.** The biquaternion Fourier transform may be relevant to the analysis of biquaternion-valued fields in the complexified-spacetime program. This is a forward reference to physics and is not developed in this article.
 
 ## Summary
 

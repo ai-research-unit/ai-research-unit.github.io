@@ -103,7 +103,7 @@ $$
 F(\omega) = \int_{-\infty}^{\infty} f(t) \, W(t, \omega) \, dt.
 $$
 
-The two transforms are related as in the discrete case: the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel.
+The two transforms are related as in the discrete case: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)
 
 ### Convergence
 
@@ -155,7 +155,7 @@ $$
 \int_{-\infty}^{\infty} \|f(t)\|_E^2 \, dt = \int_{-\infty}^{\infty} \|F(\omega)\|_E^2 \, d\omega.
 $$
 
-**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is an isometry on the split quaternion algebra, the total norm is preserved. $\square$
+**Proof.** The proof follows the standard proof of the Plancherel theorem, using the factorization into quaternion transforms established below. Since the factorization is an isometry on each quaternion component, and the idempotent decomposition is a linear isomorphism that scales the Euclidean norm by the same factor $\sqrt{2}$ on the signal and on the transform (from $\|\tilde{Q}\|_E^2 = \frac12(\|\tilde{Q}_+\|_E^2 + \|\tilde{Q}_-\|_E^2)$, so that the factor cancels between the two sides), the total norm is preserved. $\square$
 
 **Corollary (Parseval).** For $f, g \in L^2(\mathbb{R}, \mathbb{H}_{\mathbb{D}})$,
 
@@ -330,7 +330,7 @@ So the Fourier transform of a solution of $\Box \tilde{F} = 0$ is supported on t
 The square of the gradient $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-quaternion-valued operator. Under the transform, it becomes multiplication by
 
 $$
-\left((2\pi \omega_0)^2 + (2\pi)^2 (\omega_1^2 + \omega_2^2 + \omega_3^2)\right) e_0 + 2 \sum_k e_k (2\pi \omega_0)(2\pi \omega_k),
+-4\pi^2 \Big[\Big(\omega_0^2 - \sum_k \omega_k^2\Big) e_0 + 2\omega_0 \sum_k e_k \omega_k\Big],
 $$
 
 which is a split-quaternion-valued multiplier.
@@ -374,7 +374,7 @@ The precise condition under which the transform is invertible on a function with
 
 ### Structural Interpretation
 
-The vanishing-norm issue is a genuinely split quaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split quaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a seven-dimensional cone.
+The vanishing-norm issue is a genuinely split quaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split quaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
 The issue can be avoided by restricting to functions whose values lie in a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero value is invertible, and the transform is invertible on all functions.
 
@@ -420,7 +420,6 @@ where the sinc function is the ordinary real sinc, and the convergence is in the
 
 7. **The relation to the biquaternion case.** The split quaternion transform reduces to two quaternion transforms, while the biquaternion transform reduces to four complex transforms. What are the advantages and disadvantages of each in applications?
 
-8. **Applications to physics.** The split quaternion Fourier transform may be relevant to the analysis of split-quaternion-valued fields in two-time physics. This is a forward reference to physics and is not developed in this article.
 
 ## Summary
 

@@ -273,7 +273,7 @@ where $\operatorname{sgn}$ is the sign function on the real part.
 
 ### The Relation to the Dirac Operator
 
-The quaternion Hilbert transform is the boundary value of the Cauchy integral for monogenic functions. It is the quaternion analogue of the Hilbert transform in complex analysis, and it is used in the theory of boundary value problems for the Dirac equation.
+The quaternion Hilbert transform is the boundary value of the Cauchy integral for monogenic functions. It is the quaternion analogue of the Hilbert transform in complex analysis, and it is used in the theory of boundary value problems for the Dirac operator.
 
 ## Maximal Functions
 

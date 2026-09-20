@@ -5,7 +5,7 @@
 
 This article introduces the biquaternion algebra as an algebraic structure, without yet discussing its representations. The goal is to define the algebra precisely, establish its basic properties, and describe the four distinguished real vector subspaces that arise from the natural conjugations.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically, and its identification with spacetime is left for a later article.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The anti-Hermitian subspace is defined algebraically.
 
 The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra, together with its basis, its multiplication, its conjugation, and its norm. No facts about $\mathbb{H}$ are restated here.
 
@@ -39,7 +39,7 @@ because each complex dimension contributes two real dimensions (the real and ima
 
 - The **$\mathbb{C}$-algebra view** is the natural one when the biquaternions are studied as a complex algebra, for instance in the context of complex representations, complex Lie algebras, or the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices. In this view, the algebra is four-dimensional and its structure is relatively simple: it is isomorphic to $M_2(\mathbb{C})$.
 
-- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real representations, real Clifford algebras, or applications to physics. In this view, the algebra is eight-dimensional, and the four real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
+- The **$\mathbb{R}$-algebra view** is the natural one when the biquaternions are studied as a real algebra, for instance in the context of real representations or real Clifford algebras. In this view, the algebra is eight-dimensional, and the four real subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ that we describe below are all real vector subspaces of this eight-dimensional real algebra.
 
 In this article we use both views, and we indicate which one is in force whenever it matters. When we say "$\mathbb{B}$ is four-dimensional," we mean over $\mathbb{C}$. When we say "$\mathbb{B}$ is eight-dimensional," we mean over $\mathbb{R}$. The context will make the field clear.
 
@@ -507,5 +507,4 @@ The three are distinct, and each is useful in a different context. The norm form
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 

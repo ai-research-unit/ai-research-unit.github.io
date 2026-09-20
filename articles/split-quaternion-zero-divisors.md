@@ -43,27 +43,27 @@ The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. I
 
 ### Criterion
 
-**Theorem.** A nonzero split quaternion $\tilde{Q}$ is a zero divisor if and only if its norm form vanishes:
+**Theorem.** A nonzero split quaternion $\tilde{Q}$ is a zero divisor if and only if at least one of its two idempotent components vanishes:
 
 $$
-N(\tilde{Q}) = 0.
+\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
 $$
 
-**Proof.** Suppose $\tilde{Q} \neq 0$ and $N(\tilde{Q}) = 0$. Then $\tilde{Q} \bar{\tilde{Q}} = 0$. Since $\tilde{Q} \neq 0$, we also have $\bar{\tilde{Q}} \neq 0$. So $\tilde{R} = \bar{\tilde{Q}}$ is a nonzero split quaternion with $\tilde{Q} \circ \tilde{R} = 0$. Hence $\tilde{Q}$ is a zero divisor.
+**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_-$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = e_+ \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$. $\square$
 
-Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 0$ with $\tilde{Q} \circ \tilde{R} = 0$. If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}$ is invertible by the invertibility criterion, and multiplying $\tilde{Q} \circ \tilde{R} = 0$ on the left by $\tilde{Q}^{-1}$ gives $\tilde{R} = 0$, contradicting $\tilde{R} \neq 0$. So $N(\tilde{Q}) = 0$. $\square$
+**Remark.** The norm form is not the criterion: as the closing section computes, $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$. The zero divisor condition is **linear** in the idempotent basis.
 
 ### The Three-Way Classification
 
 Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{H}_{\mathbb{D}}$ are partitioned into three classes:
 
-| Condition on $N(\tilde{Q})$ | Condition on $\tilde{Q}$ | Conclusion |
+| Condition on the idempotent components | Condition on $\tilde{Q}$ | Conclusion |
 |---|---|---|
-| $N(\tilde{Q}) \neq 0$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
-| $N(\tilde{Q}) = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
-| $N(\tilde{Q}) = 0$ | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
+| $\tilde{Q}_+ \neq 0$ and $\tilde{Q}_- \neq 0$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
+| $\tilde{Q}_+ = 0$ and $\tilde{Q}_- = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
+| exactly one of $\tilde{Q}_+$, $\tilde{Q}_-$ vanishes | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
 
-The zero divisors are exactly the nonzero elements on which the norm form vanishes.
+The zero divisors are exactly the nonzero elements with at least one vanishing idempotent component.
 
 ### The Criterion in the Idempotent Basis
 
@@ -76,10 +76,10 @@ $$
 Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q}) = 0$ if and only if
 
 $$
-N_{\mathbb{H}}(\tilde{Q}_+) = 0 \quad \text{or} \quad N_{\mathbb{H}}(\tilde{Q}_-) = 0.
+N_{\mathbb{H}}(\tilde{Q}_+) = 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) = 0.
 $$
 
-Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) = 0$ if and only if $\tilde{Q}_\pm = 0$. So the criterion is
+Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) = 0$ if and only if $\tilde{Q}_\pm = 0$. So $N(\tilde{Q}) = 0$ if and only if $\tilde{Q} = 0$: the norm form is anisotropic, and the criterion for zero divisors is the vanishing of one idempotent component rather than of the norm form.
 
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
@@ -180,21 +180,19 @@ $$
 \{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- e_- = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
 $$
 
-Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tilde{Q} = 0$), the condition is $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_+$. So the left annihilator of a nonzero element of $Z_+$ is $Z_+$ itself.
+Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tilde{Q} = 0$), the condition is $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$. So the left annihilator of a nonzero element of $Z_+$ is $Z_-$ itself.
 
-Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$: if $\tilde{Q} \tilde{R} = 0$ with $\tilde{Q} \in Z_+$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and the product is $\tilde{Q}_- \tilde{R}_- e_- = 0$, so $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_+$. Wait, this is the same computation. Let me redo.
-
-If $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$. The product $\tilde{Q} \tilde{R}$ in the idempotent basis is
+Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$. If $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, and the product $\tilde{Q} \tilde{R}$ in the idempotent basis is
 
 $$
-\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_- = 0 \cdot \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_- = \tilde{Q}_- \tilde{R}_- e_-.
+\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_- = \tilde{Q}_- \tilde{R}_- e_-.
 $$
 
-So $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_- \tilde{R}_- = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$) is equivalent to $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_+$.
+So $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_- \tilde{R}_- = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$) is equivalent to $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$.
 
-So the right annihilator of a nonzero element of $Z_+$ is $Z_+$ itself. Similarly, the left annihilator is $Z_+$ itself. So the annihilator of a nonzero element of $Z_+$ is $Z_+$ on both sides.
+So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $e_+ \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
 
-By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_-$ on both sides.
+By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_+$ on both sides.
 
 ## Comparison with the Split Complex Case
 
@@ -221,13 +219,13 @@ The analogy is exact:
 | | $\mathbb{D}$ | $\mathbb{H}_{\mathbb{D}}$ |
 |---|---|---|
 | Dimension | 2 | 8 |
-| Norm form | $r^2 - s^2$ | $\sum_\mu (q_\mu^2 - q'^2_\mu) + 2j \sum_\mu q_\mu q'_\mu$ |
+| Norm form | $r^2 - s^2$ | $\sum_\mu (q_\mu^2 + q'^2_\mu) + 2j \sum_\mu q_\mu q'_\mu$ |
 | Zero divisor set | Union of two lines | Union of two four-dimensional subspaces |
 | Each component | Real line | Real four-dimensional space |
 | Intersection | $\{0\}$ | $\{0\}$ |
 | Shape | X (two lines) | Two transverse four-spaces |
 
-The zero divisor set is the **null cone** of the norm form in both cases. In the split complex case, the null cone is a union of two lines; in the split quaternion case, it is a union of two four-dimensional subspaces. The name "cone" is appropriate in the sense that the set is invariant under scaling and is the zero set of a quadratic form. The fact that it is a union of two linear subspaces is a special feature of the split signature.
+In the split complex case the zero divisor set is exactly the **null cone** of the norm form $r^2 - s^2$, a union of two lines. In the split quaternion case this is no longer so: the norm form $N(\tilde{Q})$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
 
 ## Comparison with the Biquaternion Case
 
@@ -245,7 +243,7 @@ $$
 q_0 q'_0 + q_1 q'_1 + q_2 q'_2 + q_3 q'_3 = 0.
 $$
 
-The zero divisor set is a **seven-dimensional cone** in $\mathbb{B} \cong \mathbb{R}^8$. It is not a union of linear subspaces; it is a single quadratic cone.
+The zero divisor set is a **six-dimensional cone** in $\mathbb{B} \cong \mathbb{R}^8$: it is a complex hypersurface of complex dimension $3$. It is not a union of linear subspaces; it is a single quadratic cone.
 
 ### The Split Quaternion Case
 
@@ -259,8 +257,8 @@ In $\mathbb{H}_{\mathbb{D}}$, the zero divisors are the elements with $\tilde{Q}
 | Norm form | Complex | Split complex |
 | Zero divisor condition | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ in $\mathbb{C}$ | $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$ |
 | Real equations | 2 quadratic | 4 linear (in the idempotent basis) |
-| Dimension of $\mathcal{Z}$ | 7 | 4 (each component) |
-| $\mathcal{Z}$ is a cone | Yes | No |
+| Dimension of $\mathcal{Z}$ | 6 | 4 (each component) |
+| $\mathcal{Z}$ is a cone | Yes | Yes |
 | $\mathcal{Z}$ is linear | No | Yes |
 | Nilpotents | Yes (pure case) | No |
 
@@ -271,11 +269,11 @@ The key difference is the sign of the extra unit: $i^2 = -1$ in $\mathbb{B}$ and
 - In $\mathbb{B}$, the norm form is complex-valued, and its vanishing is a quadratic condition. The zero divisor set is a cone.
 - In $\mathbb{H}_{\mathbb{D}}$, the norm form is split-complex-valued, and its vanishing is a linear condition in the idempotent basis. The zero divisor set is a union of two linear subspaces.
 
-The biquaternion zero divisor set is larger in dimension (7 out of 8) and conical. The split quaternion zero divisor set is smaller in dimension (4 out of 8 per component) and linear.
+The biquaternion zero divisor set is larger in dimension (6 out of 8) and conical. The split quaternion zero divisor set is smaller in dimension (4 out of 8 per component) and linear.
 
 ### The Absence of Nilpotents
 
-In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex multiples of idempotents (non-pure case). In $\mathbb{H}_{\mathbb{D}}$, there are **no nilpotents**. The reason is that the algebra is semisimple: every element has a well-defined square that does not necessarily vanish. More precisely, an element $\tilde{Q}$ with $N(\tilde{Q}) = 0$ satisfies $\tilde{Q} \in Z_+$ or $\tilde{Q} \in Z_-$, and in either case $\tilde{Q}^2$ is a nonzero element of the same subspace (unless $\tilde{Q} = 0$), so $\tilde{Q}$ is not nilpotent.
+In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex multiples of idempotents (non-pure case). In $\mathbb{H}_{\mathbb{D}}$, there are **no nilpotents**. The reason is that $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, so $\tilde{Q}^2 = 0$ forces $\tilde{Q}_+^2 = 0$ and $\tilde{Q}_-^2 = 0$, hence $\tilde{Q}_+ = \tilde{Q}_- = 0$ and $\tilde{Q} = 0$. (Semisimplicity alone would not suffice: the full matrix algebra $M_2(\mathbb{R})$ is simple and has nonzero nilpotents.) More precisely, a nonzero zero divisor $\tilde{Q}$ satisfies $\tilde{Q} \in Z_+$ or $\tilde{Q} \in Z_-$, and in either case $\tilde{Q}^2$ is a nonzero element of the same subspace, so $\tilde{Q}$ is not nilpotent.
 
 Indeed, if $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, so
 
@@ -291,7 +289,7 @@ We now examine how the zero divisors are distributed among the four fixed-point 
 
 ### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
 
-An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{D}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes when $Q_0$ is a zero divisor of $\mathbb{D}$, i.e., $Q_0 = t(1 \pm j)$ with $t \neq 0$. So the split complex subspace contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
+An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{D}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only when $Q_0 = 0$. The element $Q_0 e_0$ is a zero divisor exactly when $Q_0$ is a zero divisor of $\mathbb{D}$, i.e., $Q_0 = t(1 \pm j)$ with $t \neq 0$. So the split complex subspace contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
 
 These zero divisors are in $Z_+$ (if $Q_0$ is a multiple of $1 - j$) or in $Z_-$ (if $Q_0$ is a multiple of $1 + j$). They form a one-dimensional subset of the four-dimensional subspaces $Z_\pm$.
 
@@ -310,18 +308,10 @@ $$
 The norm form is
 
 $$
-N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2.
+N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
 $$
 
-This vanishes on the light cone
-
-$$
-q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
-$$
-
-which is a three-dimensional cone in the four-dimensional space $\mathbb{M}_+$. The nonzero elements of this cone are zero divisors.
-
-The zero divisors in $\mathbb{M}_+$ are the intersection of the light cone with the two subspaces $Z_+$ and $Z_-$. Since $Z_+ \cap Z_- = \{0\}$, the light cone is partitioned into two pieces, one in $Z_+$ and one in $Z_-$.
+since $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_+$ contains no zero divisors: a nonzero element of $\mathbb{M}_+$ has $\tilde{Q}_+ = q_0 + \sum_k q'_k e_k$ and $\tilde{Q}_- = \overline{\tilde{Q}_+}$ both nonzero, hence is invertible.
 
 ### The Anti-Hermitian Subspace $\mathbb{M}_-$
 
@@ -334,16 +324,10 @@ $$
 The norm form is
 
 $$
-N(\tilde{Q}) = -r_0^2 + q_1^2 + q_2^2 + q_3^2,
+N(\tilde{Q}) = r_0^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
-which vanishes on the light cone
-
-$$
-r_0^2 = q_1^2 + q_2^2 + q_3^2.
-$$
-
-The nonzero elements of this cone are zero divisors, and as in the case of $\mathbb{M}_+$, the cone is partitioned into two pieces, one in $Z_+$ and one in $Z_-$.
+since $(j r_0)^2 = +r_0^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_-$ contains no zero divisors: a nonzero element of $\mathbb{M}_-$ is invertible.
 
 ### Summary of the Distribution
 
@@ -351,8 +335,8 @@ Of the four fixed-point subspaces:
 
 - $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
 - $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ contains no zero divisors.
-- $\mathbb{M}_+$ contains a three-dimensional light cone of zero divisors.
-- $\mathbb{M}_-$ contains a three-dimensional light cone of zero divisors.
+- $\mathbb{M}_+$ contains no zero divisors.
+- $\mathbb{M}_-$ contains no zero divisors.
 
 In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and the intersection of any fixed-point subspace with the zero divisor set is a subset of $Z_+ \cup Z_-$.
 
@@ -394,7 +378,7 @@ The first equation is a sum of eight squares, which vanishes only if all eight r
 
 This contradicts the earlier statement that the zero divisor set is a union of two four-dimensional subspaces. Where is the error?
 
-The error is that the norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is **not** the same as the coefficient sum of squares $\sum_\mu Q_\mu^2$ in the split quaternion algebra. Let me check.
+The identity $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is correct, as the computation below confirms. So the zero divisor set cannot be the null set of the norm form, and the norm form criterion must be the error.
 
 The quaternion conjugate of $\tilde{Q}$ is $\bar{\tilde{Q}} = Q_0 e_0 - Q_1 e_1 - Q_2 e_2 - Q_3 e_3$. The product is
 
@@ -434,7 +418,7 @@ So $N(\tilde{Q}) \neq 0$, and the element is not a zero divisor by the norm form
 
 But the norm form criterion says it is not a zero divisor, because $N(\tilde{Q}) \neq 0$. Where is the contradiction?
 
-The contradiction is that the norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ uses the **quaternion conjugate**, not the **split complex conjugate**. The product $(1 - j)(1 + j)$ uses the split complex conjugate of $1 - j$, which is $1 + j$. But the quaternion conjugate of $(1 - j) e_0$ is $(1 - j) e_0$ itself, because the quaternion conjugate only negates the vector part, and the scalar part $1 - j$ is unchanged. So the norm form is $(1 - j)^2 = 2 - 2j$, not zero.
+The reason is that the norm form does not detect the zero divisors: here $N(\tilde{Q}) = (1 - j)^2 = 2 - 2j$, which is a nonzero zero divisor of $\mathbb{D}$, so a nonzero norm does not imply invertibility. What separates the biquaternion case is that $\mathbb{C}$ is a field, so a nonzero complex norm is automatically a unit, whereas $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ is not.
 
 So the norm form criterion is **not** the correct criterion for zero divisors in the split quaternion algebra! The correct criterion is the one in the idempotent basis: $\tilde{Q}$ is a zero divisor if and only if $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$.
 
@@ -464,7 +448,7 @@ Conversely, suppose $\tilde{Q}$ is a zero divisor: there exists $\tilde{R} \neq 
 
 The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is **not** the criterion for zero divisors in the split quaternion algebra. The norm form vanishes only at the origin, so it does not detect the zero divisors. The invertibility criterion is also different: an element is invertible if and only if both idempotent components are nonzero, which is a **linear** condition in the idempotent basis, not the quadratic condition $N(\tilde{Q}) \neq 0$.
 
-Wait, this is also wrong. The inverse formula $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ requires $N(\tilde{Q}) \neq 0$, and $N(\tilde{Q}) \neq 0$ if and only if $\tilde{Q} = 0$. So the formula would only give an inverse for the zero element, which is absurd.
+Wait, this is also wrong. The inverse formula $\tilde{Q}^{-1} = \bar{\tilde{Q}} \cdot N(\tilde{Q})^{-1}$ requires $N(\tilde{Q})$ to be **invertible** in $\mathbb{D}$, and $N(\tilde{Q}) \neq 0$ if and only if $\tilde{Q} \neq 0$, so non-vanishing is not enough. When $\tilde{Q}$ is invertible its norm is invertible and the formula does give the inverse; when $\tilde{Q}$ is a zero divisor its norm is a nonzero zero divisor of $\mathbb{D}$ and the formula fails.
 
 The correct inverse formula in the split quaternion algebra must use a different "norm," namely the **determinant** in the matrix representation, or the **product of the two idempotent components**.
 

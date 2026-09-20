@@ -287,7 +287,7 @@ $$
 G_2, \quad F_4, \quad E_6, \quad E_7, \quad E_8.
 $$
 
-This classification is one of the great achievements of nineteenth-century mathematics, and it is the foundation of much of modern representation theory and mathematical physics.
+This classification is one of the great achievements of nineteenth-century mathematics, and it is the foundation of much of modern representation theory.
 
 **Key difference from the field case.** This classification requires the base ring to be a field of characteristic zero. Over a general commutative ring, the classification does not apply, and the theory of Lie algebras is more complicated.
 
@@ -323,7 +323,7 @@ The module $V$ is called the **representation space**. The representation is **f
 
 ### Why Representations Matter
 
-Representations are the way Lie algebras act on other mathematical objects. In physics, representations of Lie algebras describe the possible states of a quantum system.
+Representations are the way Lie algebras act on other mathematical objects.
 
 The classification of representations of a given Lie algebra is one of the central problems of representation theory. For simple Lie algebras over a field of characteristic zero, the finite-dimensional representations are classified by their **highest weights**.
 

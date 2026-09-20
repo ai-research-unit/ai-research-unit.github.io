@@ -295,23 +295,9 @@ The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary
 
 **Determinant.** The subgroup of $U(2)$ consisting of elements with determinant $1$ is $SU(2)$. This is the group of unit quaternions, and it is the double cover of the rotation group $SO(3)$.
 
-### Transformation Under the Lorentz Group
+### Relation to the Representation Theory Article
 
-Spinors transform under the Lorentz group in a simple way. The $(1/2,0)$ representation of $SL(2,\mathbb{C})$ restricts to the fundamental representation of $SU(2)$ on $\mathbb{C}^2$, which is the rotation subgroup; the full Lorentz-group action is obtained by passing from $SU(2)$ to its complexification $SL(2,\mathbb{C})$.
-
-The vector representation of the Lorentz group, i.e., the action on the four-dimensional space $\mathbb{M}_-$, is the **tensor product of the spinor representation with its conjugate**: a vector is a bilinear object of the form $\psi \otimes \bar{\phi}$, i.e., a $2 \times 2$ matrix built from a spinor and a conjugate spinor. Equivalently, a 4-vector can be represented as a $2 \times 2$ anti-Hermitian matrix; the space of such matrices is the anti-Hermitian part of the tensor product $\mathbb{C}^2 \otimes \overline{\mathbb{C}^2}$, a real vector space of dimension $4$. In representation-theoretic notation, the spinor representation is the $(\tfrac{1}{2}, 0)$ of $SL(2, \mathbb{C})$, its conjugate is the $(0, \tfrac{1}{2})$, and the vector representation is the $(\tfrac{1}{2}, \tfrac{1}{2})$.
-
-The group of biquaternions with unit norm form, $SL(2, \mathbb{C})$, is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. The compact subgroup $SU(2) \subset SL(2, \mathbb{C})$ is the double cover of the spatial rotation group $SO(3)$.
-
-This is the algebraic content of the statement that spinors are the fundamental representation of the Lorentz group, and it is the reason spinors appear in the Dirac equation and in quantum field theory.
-
-### Why the Spinor Representation Is Useful
-
-The spinor representation is useful because:
-
-1. **It connects to the Dirac equation.** The Dirac equation describes spin-$\frac{1}{2}$ particles and is naturally written in terms of $2 \times 2$ matrices. Biquaternions provide a natural algebraic framework for these matrices.
-2. **It makes Lorentz invariance manifest.** Spinors transform under the Lorentz group in a simple way, and the biquaternion action is Lorentz-invariant.
-3. **It is the natural representation for quantum fields.** In quantum field theory, the fundamental fermionic fields are spinorial, and the biquaternion algebra is their natural algebraic home.
+The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is treated in the companion article *Biquaternion Representation Theory*, which takes the concrete realization given here as its starting point. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines.
 
 ## The Clifford Algebra Representation
 
@@ -351,6 +337,8 @@ where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. With the alternative conve
 
 **Verification.** Each spacelike bivector squares to $-1$: $(\gamma^j \gamma^k)^2 = \gamma^j \gamma^k \gamma^j \gamma^k = -\gamma^j \gamma^j \gamma^k \gamma^k = -(1)(1) = -1$ for $j \neq k$ in $\{1, 2, 3\}$. The pseudoscalar also squares to $-1$: $(\gamma^0 \gamma^1 \gamma^2 \gamma^3)^2 = -1$ in signature $(1,3)$. The products reproduce the quaternion relations: for example, $e_1 e_2 \mapsto (\gamma^2 \gamma^3)(\gamma^3 \gamma^1) = \gamma^2 (\gamma^3 \gamma^3) \gamma^1 = \gamma^2 \gamma^1$, matching $e_1 e_2 = e_3$ in the quaternion algebra.
 
+**Equality of the containment.** The three spacelike bivectors generate a copy of $\mathbb{H}$ inside $\mathrm{Cl}_{1,3}^+$, and the pseudoscalar $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ is central in $\mathrm{Cl}_{1,3}^+$ with $\omega^2 = -1$, so it generates a central copy of $\mathbb{C}$ commuting with that copy. Hence $\mathbb{R}[\omega]\otimes_{\mathbb{R}}\mathbb{H} \cong \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H} = \mathbb{B}$ embeds in $\mathrm{Cl}_{1,3}^+$. Both sides have real dimension $8$, so the embedding is surjective; this is what makes the identification an equality of algebras rather than an identification of $\mathbb{B}$ with a proper subalgebra.
+
 ### Properties
 
 **Multiplication.** The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the biquaternion product.
@@ -363,8 +351,8 @@ where $\omega = \gamma^0 \gamma^1 \gamma^2 \gamma^3$. With the alternative conve
 
 The Clifford algebra representation is useful because:
 
-1. **It connects to the Dirac algebra.** The gamma matrices of the Dirac equation generate the Clifford algebra. The biquaternion algebra is the even part of this, which is the part that acts on spinors.
-2. **It makes the geometry explicit.** The Clifford algebra is the natural algebraic structure on a vector space with a quadratic form. In the case of $\mathrm{Cl}_{1,3}$, the quadratic form is the Minkowski metric.
+1. **It connects the algebra to the Clifford algebra of the underlying form.** The biquaternion algebra is the even part of $\mathrm{Cl}_{1,3}$, and the even part is what acts on spinors.
+2. **It makes the geometry explicit.** The Clifford algebra is the natural algebraic structure on a vector space with a quadratic form. In the case of $\mathrm{Cl}_{1,3}$, that form has signature $(1,3)$.
 3. **It generalizes.** The Clifford algebra construction works in any dimension and any signature. The biquaternion algebra is the specific case of dimension $4$ and signature $(1,3)$ or $(3,1)$, and the general theory places it in a broader context.
 
 ## Relations Between the Representations
@@ -396,17 +384,16 @@ Different choices give representations that are related by conjugation, and the 
 |---|---|---|
 | Complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms, Lorentz group |
 | $2 \times 2$ matrix | $\begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix}$ | Concrete computation, isomorphism with $M_2(\mathbb{C})$ |
-| Spinor | Operator on $\begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}$ | Dirac equation, Lorentz invariance, quantum fields |
-| Clifford algebra | Element of $\mathrm{Cl}_{1,3}^+$ | Dirac algebra, geometry, generalization |
+| Spinor | Operator on $\begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}$ | Module structure, tensor products, the group of unit-norm elements |
+| Clifford algebra | Element of $\mathrm{Cl}_{1,3}^+$ | Geometry, generalization in dimension and signature |
 
-The four-vector representation is the one most familiar from standard physics. The matrix, spinor, and Clifford representations are more algebraic and reveal more of the structure. The choice of representation depends on what is being computed, and the four are related by explicit isomorphisms.
+The four-vector representation is the one most familiar from the Lorentz-group literature. The matrix, spinor, and Clifford representations are more algebraic and reveal more of the structure. The choice of representation depends on what is being computed, and the four are related by explicit isomorphisms.
 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the matrix representations of biquaternions.
 - S. J. Sangwine, T. A. Ell, N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* 21 (2011) 607–636, for the applied representation theory.
 

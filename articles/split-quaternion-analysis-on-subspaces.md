@@ -9,8 +9,8 @@ The four subspaces are the natural domains for the analysis because they are the
 
 - On the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the algebra is commutative, two-dimensional, and contains zero divisors.
 - On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the algebra is the quaternion algebra, a division algebra, and the norm form is positive-definite.
-- On the Hermitian subspace $\mathbb{M}_+$, the norm form is indefinite of signature $(1, 3)$, and the zero divisors form a three-dimensional cone.
-- On the anti-Hermitian subspace $\mathbb{M}_-$, the norm form is indefinite of signature $(3, 1)$, and the zero divisors form a three-dimensional cone.
+- On the Hermitian subspace $\mathbb{M}_+$, the Hermitian form is indefinite of signature $(1, 3)$, the norm form is positive definite, and there are no zero divisors.
+- On the anti-Hermitian subspace $\mathbb{M}_-$, the Hermitian form is indefinite of signature $(3, 1)$, the norm form is positive definite, and there are no zero divisors.
 
 The four subspaces are therefore complementary, and each of them is the natural domain for a different aspect of the theory.
 
@@ -264,19 +264,19 @@ The scalar part is real, and the vector part is purely split-imaginary. The subs
 
 **Not a subalgebra.** $\mathbb{M}_+$ is not closed under split quaternion multiplication.
 
-**Norm form.** The norm form restricts to the real quadratic form
+**Norm form and Hermitian form.** On $\mathbb{M}_+$ the norm form restricts to
 
 $$
-N(\tilde{Q}) = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
+N(\tilde{Q}) = (q'_1)^2 + (q'_2)^2 + (q'_3)^2 + q_0^2,
 $$
 
-which is indefinite of signature $(1, 3)$. It vanishes on the three-dimensional cone
+since $(j q'_k)^2 = +(q'_k)^2$: it is positive definite of signature $(4, 0)$. It therefore vanishes only at the origin, and every nonzero element of $\mathbb{M}_+$ is invertible. The indefinite form of signature $(1, 3)$ associated with $\mathbb{M}_+$ is the scalar part of the **Hermitian** form,
 
 $$
-q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2.
+Q Q^\dagger = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
 $$
 
-The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_+$ outside the cone are invertible.
+whose zero set is the three-dimensional cone $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$; that form does not detect zero divisors either, as the invertible element $e_0 + j e_1$ on the cone shows.
 
 **Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_+$ are in bijection with quadruples $(q_0, q'_1, q'_2, q'_3)$ of real numbers. We use the notation
 
@@ -288,17 +288,17 @@ for a general element of $\mathbb{M}_+$.
 
 ### Functions and Operators
 
-The functions on $\mathbb{M}_+$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace, with the same formulas. The only difference is the interpretation of the coordinates and the fact that the zero divisor set intersects $\mathbb{M}_+$ in the light cone.
+The functions on $\mathbb{M}_+$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace, with the same formulas. The only difference is the interpretation of the coordinates: the zero divisor set does not meet $\mathbb{M}_+$ away from the origin.
 
-The analysis on $\mathbb{M}_+$ is clean away from the light cone. On the cone itself, the analysis requires care, because the norm form vanishes and the elements are zero divisors.
+The analysis on $\mathbb{M}_+$ is clean away from the origin, where the only singularity of the fundamental solution lies; the light cone of the Hermitian form is not a locus of zero divisors.
 
 ### Comparison with the Hermitian Subspace of the Biquaternion Algebra
 
-In the biquaternion algebra $\mathbb{B}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and it has norm form of signature $(1, 3)$ (or $(3, 1)$, depending on convention). The zero divisors form a three-dimensional cone.
+In the biquaternion algebra $\mathbb{B}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and it has norm form of signature $(1, 3)$ (or $(3, 1)$, depending on convention), because the extra unit there satisfies $i^2 = -1$. The zero divisors form a three-dimensional cone.
 
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and it also has norm form of signature $(1, 3)$. The zero divisors form a three-dimensional cone.
+In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and its Hermitian form also has signature $(1, 3)$, but its norm form is positive definite of signature $(4, 0)$, so $\mathbb{M}_+$ contains no zero divisors.
 
-The two Hermitian subspaces are isomorphic as real vector spaces with quadratic forms, and the analysis on them is the same.
+The two Hermitian subspaces are isomorphic as real vector spaces and carry Hermitian forms of the same signature, but their norm forms differ: on $\mathbb{B}$ the norm form is the indefinite one and has a light cone of zero divisors, while on $\mathbb{H}_{\mathbb{D}}$ it is positive definite and there are none.
 
 ## The Anti-Hermitian Subspace
 
@@ -324,19 +324,19 @@ The scalar part is purely split-imaginary, and the vector part is real. The subs
 
 **Not a subalgebra.** $\mathbb{M}_-$ is not closed under split quaternion multiplication.
 
-**Norm form.** The norm form restricts to the real quadratic form
+**Norm form and Hermitian form.** On $\mathbb{M}_-$ the norm form restricts to
 
 $$
-N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
-which is indefinite of signature $(3, 1)$. It vanishes on the three-dimensional cone
+since $(j q'_0)^2 = +(q'_0)^2$: it is positive definite of signature $(4, 0)$, it vanishes only at the origin, and every nonzero element of $\mathbb{M}_-$ is invertible. The indefinite form of signature $(3, 1)$ associated with $\mathbb{M}_-$ is the scalar part of the **Hermitian** form,
 
 $$
-(q'_0)^2 = q_1^2 + q_2^2 + q_3^2.
+Q Q^\dagger = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
-The nonzero elements of this cone are zero divisors. The elements of $\mathbb{M}_-$ outside the cone are invertible.
+whose zero set is the three-dimensional cone $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$; as on $\mathbb{M}_+$, that form does not detect zero divisors.
 
 **Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_-$ are in bijection with quadruples $(q'_0, q_1, q_2, q_3)$ of real numbers. We use the notation
 
@@ -350,15 +350,15 @@ for a general element of $\mathbb{M}_-$.
 
 The functions on $\mathbb{M}_-$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace, with the same formulas.
 
-The analysis on $\mathbb{M}_-$ is clean away from the light cone. On the cone itself, the analysis requires care, because the norm form vanishes and the elements are zero divisors.
+The analysis on $\mathbb{M}_-$ is clean away from the origin; as on $\mathbb{M}_+$, the light cone of the Hermitian form is not a locus of zero divisors.
 
 ### Comparison with the Anti-Hermitian Subspace of the Biquaternion Algebra
 
-In the biquaternion algebra $\mathbb{B}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and it has norm form of signature $(3, 1)$. The zero divisors form a three-dimensional cone.
+In the biquaternion algebra $\mathbb{B}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and it has norm form of signature $(3, 1)$, again because the extra unit there satisfies $i^2 = -1$. The zero divisors form a three-dimensional cone.
 
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and it also has norm form of signature $(3, 1)$. The zero divisors form a three-dimensional cone.
+In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and its Hermitian form also has signature $(3, 1)$, but its norm form is positive definite of signature $(4, 0)$, so $\mathbb{M}_-$ contains no zero divisors.
 
-The two anti-Hermitian subspaces are isomorphic as real vector spaces with quadratic forms, and the analysis on them is the same. In the biquaternion series, the anti-Hermitian subspace was chosen for the physical applications because the indefinite form of signature $(3, 1)$ is the Lorentzian signature. In the split quaternion case, the same choice is natural.
+The two anti-Hermitian subspaces are isomorphic as real vector spaces and carry Hermitian forms of the same signature, but their norm forms differ in character, as for $\mathbb{M}_+$. In the biquaternion series, the anti-Hermitian subspace was chosen for the physical applications because the indefinite form of signature $(3, 1)$ is the Lorentzian signature. In the split quaternion case, the Lorentzian signature $(3, 1)$ is carried by the Hermitian form rather than by the norm form, and the anti-Hermitian subspace is natural for the same reason.
 
 ## Comparison of the Four Subspaces
 
@@ -371,8 +371,8 @@ The four subspaces are all real vector spaces, but of different dimensions and w
 | Basis | $\{e_0, j e_0\}$ | $\{e_0, e_1, e_2, e_3\}$ | $\{e_0, j e_1, j e_2, j e_3\}$ | $\{j e_0, e_1, e_2, e_3\}$ |
 | Scalar part | Split complex | Real | Real | Purely split-imaginary |
 | Vector part | Zero | Real | Purely split-imaginary | Real |
-| Norm form signature | $(1, 1)$ | $(4, 0)$ | $(1, 3)$ | $(3, 1)$ |
-| Zero divisors | Two lines | None | Three-dimensional cone | Three-dimensional cone |
+| Hermitian form signature | $(1, 1)$ | $(4, 0)$ | $(1, 3)$ | $(3, 1)$ |
+| Zero divisors | Two lines | None | None | None |
 | Subalgebra | Yes | Yes | No | No |
 | Division algebra | No | Yes | No | No |
 
@@ -382,15 +382,15 @@ The key differences are:
 
 **Algebraic structure.** The split complex subspace and the quaternion subspace are subalgebras. The Hermitian and anti-Hermitian subspaces are not.
 
-**Zero divisors.** The split complex subspace contains zero divisors (two lines), the quaternion subspace contains none, and the Hermitian and anti-Hermitian subspaces contain three-dimensional cones.
+**Zero divisors.** The split complex subspace contains zero divisors (two lines), and the other three subspaces contain none, since the norm form is positive definite on each of them.
 
-**Norm form.** The split complex subspace has signature $(1, 1)$, the quaternion subspace has signature $(4, 0)$, the Hermitian subspace has signature $(1, 3)$, and the anti-Hermitian subspace has signature $(3, 1)$.
+**Hermitian form.** The scalar part of the Hermitian form has signature $(1, 1)$ on the split complex subspace, $(4, 0)$ on the quaternion subspace, $(1, 3)$ on the Hermitian subspace, and $(3, 1)$ on the anti-Hermitian subspace. The norm form itself is positive definite of signature $(4, 0)$ on the quaternion, Hermitian and anti-Hermitian subspaces.
 
 ## Relation Between the Subspaces
 
 The four subspaces are related by the conjugations of the split quaternion algebra.
 
-**Quaternion conjugation.** The quaternion conjugation $\bar{\cdot}$ fixes $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, and maps $\mathbb{M}_-$ to $\mathbb{M}_+$ and $\mathbb{M}_+$ to $\mathbb{M}_-$.
+**Quaternion conjugation.** The quaternion conjugation $\bar{\cdot}$ fixes $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and preserves $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (it is the identity only on $\mathbb{R}e_0$), and it preserves $\mathbb{M}_+$ and $\mathbb{M}_-$, negating the vector part in each. It is multiplication by $j$ that exchanges them: $j\mathbb{M}_+ = \mathbb{M}_-$ and $j\mathbb{M}_- = \mathbb{M}_+$.
 
 **Split complex conjugation.** The split complex conjugation ${}^*$ fixes $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_-$ (up to sign) and $\mathbb{M}_+$ (up to sign), and maps $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ to itself.
 
@@ -403,13 +403,13 @@ $$
 $$
 
 $$
-\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{R} e_0, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_- = \mathbb{R} e_0, \qquad \mathbb{M}_+ \cap \mathbb{M}_- = \{0\}.
+\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{R} e_0, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_- = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad \mathbb{M}_+ \cap \mathbb{M}_- = \{0\}.
 $$
 
 **Spans.** The pairwise sums are:
 
 $$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \oplus \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \text{ (as real spaces)}, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{M}_- = \mathbb{H}_{\mathbb{D}},
+\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \operatorname{span}_{\mathbb{R}}\{e_0, j e_0, e_1, e_2, e_3\} \ (\dim 5), \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{M}_- = \operatorname{span}_{\mathbb{R}}\{e_0, j e_0, e_1, e_2, e_3\} \ (\dim 5),
 $$
 
 and so on. The full algebra is the sum of the subspaces in various ways.
@@ -487,9 +487,9 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of the two four-d
 
 **Quaternion subspace.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-) = \{0\}$. The quaternion subspace contains no zero divisors.
 
-**Hermitian subspace.** $\mathbb{M}_+ \cap (Z_+ \cup Z_-)$ is the three-dimensional cone $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$. This is the light cone of the indefinite form of signature $(1, 3)$.
+**Hermitian subspace.** $\mathbb{M}_+ \cap (Z_+ \cup Z_-) = \{0\}$. The Hermitian form has an indefinite light cone of signature $(1, 3)$, but the norm form is positive definite on $\mathbb{M}_+$, so the cone contains no zero divisors.
 
-**Anti-Hermitian subspace.** $\mathbb{M}_- \cap (Z_+ \cup Z_-)$ is the three-dimensional cone $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$. This is the light cone of the indefinite form of signature $(3, 1)$.
+**Anti-Hermitian subspace.** $\mathbb{M}_- \cap (Z_+ \cup Z_-) = \{0\}$. As on $\mathbb{M}_+$, the Hermitian form has an indefinite light cone of signature $(3, 1)$ but the norm form is positive definite, so the cone contains no zero divisors.
 
 So the four subspaces have different zero divisor structures, and the analysis on each of them must take this into account.
 
@@ -501,7 +501,7 @@ The following questions are not answered in this article and are left for later 
 
 2. **The analysis on the quaternion subspace.** The analysis on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the ordinary quaternion analysis. How does it relate to the analysis on the biquaternion quaternion subspace $\mathbb{H}_{\mathbb{B}}$?
 
-3. **The analysis on $\mathbb{M}_+$ and $\mathbb{M}_-$.** The analysis on these subspaces requires care on the light cones. What is the precise structure of the solutions of $\tilde{\nabla}\tilde{F} = 0$ and $\Box\tilde{F} = 0$ on these subspaces?
+3. **The analysis on $\mathbb{M}_+$ and $\mathbb{M}_-$.** The analysis on these subspaces differs from the quaternion subspace through the Hermitian form, whose light cone replaces the origin as the natural singular locus of the Euclidean kernel. What is the precise structure of the solutions of $\tilde{\nabla}\tilde{F} = 0$ and $\Box\tilde{F} = 0$ on these subspaces?
 
 4. **The interaction between the subspaces.** If a function is defined on two of the subspaces, how do the analyses on the two subspaces interact?
 

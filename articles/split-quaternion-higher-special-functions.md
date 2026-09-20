@@ -37,17 +37,17 @@ $$
 J_\nu(\tilde{Q}) = \sum_{m=0}^{\infty} \frac{(-1)^m}{m! \, \Gamma(m + \nu + 1)} \left(\frac{\tilde{Q}}{2}\right)^{2m+\nu}.
 $$
 
-The series converges for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, because the algebra is finite-dimensional and the Euclidean norm grows at most exponentially with $m$. So $J_\nu$ is an entire function on $\mathbb{H}_{\mathbb{D}}$ for every $\nu \in \mathbb{C}$ (or, more generally, $\nu \in \mathbb{D}$).
+For integer order the series converges for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, its terms decaying like $\|\tilde{Q}\|_E^{2m}/(4^m (m+n)!)$ up to a bounded factor. For non-integer $\nu$ the individual powers are defined through the power function $\exp((2m+\nu)\log \tilde{Q})$, which requires $\tilde{Q}$ to lie in the domain of the logarithm, so the series converges absolutely whenever the powers are defined: in the idempotent decomposition this means that both components $\tilde{Q}_\pm$ are nonzero, i.e. that $\tilde{Q}$ is not a zero divisor. The order is taken in $\mathbb{R}$ (or, more generally, $\nu \in \mathbb{D}$), since $\mathbb{D}$ contains no square root of $-1$ and hence no copy of $\mathbb{C}$.
 
 ### Computation via the Idempotent Decomposition
 
 Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the Bessel function decomposes:
 
 $$
-J_\nu(\tilde{Q}) = J_\nu(\tilde{Q}_+) e_+ + J_\nu(\tilde{Q}_-) e_-,
+J_\nu(\tilde{Q}) = J_{\nu_+}(\tilde{Q}_+) e_+ + J_{\nu_-}(\tilde{Q}_-) e_-,
 $$
 
-where $J_\nu(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
+where $\nu = \nu_+ e_+ + \nu_- e_-$ and $J_{\nu_\pm}(\tilde{Q}_\pm)$ is the ordinary quaternion Bessel function of the component $\tilde{Q}_\pm$ with the order $\nu_\pm$ belonging to that component. The quaternion Bessel function is defined by the same power series, with $\tilde{Q}_\pm$ in place of $\tilde{Q}$, and it can be computed in closed form in the two regimes (pure oscillatory and pure nilpotent), as discussed in the biquaternion higher special functions article.
 
 The split complex order $\nu \in \mathbb{D}$ is decomposed in the idempotent basis as $\nu = \nu_+ e_+ + \nu_- e_-$ with $\nu_\pm \in \mathbb{R}$ (or, more generally, $\nu_\pm \in \mathbb{H}$), and the Bessel function of the component is taken with the corresponding order.
 
@@ -58,10 +58,10 @@ So the split quaternion Bessel function is the pair of the quaternion Bessel fun
 For a component $\tilde{Q}_\pm = \theta_\pm \hat{n}_\pm$ with $\theta_\pm \neq 0$ and $\hat{n}_\pm^2 = -e_0$, the quaternion Bessel function is
 
 $$
-J_n(\theta_\pm \hat{n}_\pm) = \begin{cases} (-1)^{n/2} J_n(\theta_\pm) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} J_n(\theta_\pm) \, \hat{n}_\pm & \text{if } n \text{ is odd}, \end{cases}
+J_n(\theta_\pm \hat{n}_\pm) = I_n(\theta_\pm) \, \hat{n}_\pm^n = \begin{cases} (-1)^{n/2} I_n(\theta_\pm) \, e_0 & \text{if } n \text{ is even}, \\ (-1)^{(n-1)/2} I_n(\theta_\pm) \, \hat{n}_\pm & \text{if } n \text{ is odd}, \end{cases}
 $$
 
-where $J_n(\theta_\pm)$ on the right is the ordinary complex Bessel function evaluated at the real (or complex) number $\theta_\pm$.
+where $I_n(\theta_\pm)$ on the right is the ordinary complex **modified** Bessel function evaluated at the real (or complex) number $\theta_\pm$. The two signs $(-1)^m$ in the defining series cancel, which is why the modified function appears in place of $J_n$.
 
 ### The Pure Nilpotent Regime
 
@@ -90,10 +90,10 @@ The same analysis applies: the function decomposes in the idempotent basis, and 
 The **Legendre polynomials** $P_n(\tilde{Q})$ are defined by the generating function
 
 $$
-\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < 1,
+\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < R(\tilde{Q}),
 $$
 
-where $t$ is a real parameter and the square root is the split quaternion square root (defined via the elementary functions). Equivalently, they satisfy the recurrence
+where $t$ is a real parameter, the square root is the split quaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible. For $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but not in general: for $\tilde{Q} = 3e_0$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$, so the series converges only for $|t| < 3 - 2\sqrt{2} \approx 0.172$. Equivalently, they satisfy the recurrence
 
 $$
 (n+1) P_{n+1}(\tilde{Q}) = (2n+1) \tilde{Q} P_n(\tilde{Q}) - n P_{n-1}(\tilde{Q}),
@@ -107,7 +107,7 @@ $$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) e_+ + P_n(\tilde{Q}_-) e_-,
 $$
 
-where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. The quaternion Legendre polynomial reduces to the ordinary Legendre polynomial in the pure oscillatory regime and truncates in the pure nilpotent regime, as discussed in the biquaternion higher special functions article.
+where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion Legendre polynomial of the component. In the pure oscillatory regime the quaternion Legendre polynomial does **not** reduce to the ordinary Legendre polynomial at the same argument: for a component $\tilde{Q}_\pm = \theta\hat{n}$ with $\hat{n}^2 = -e_0$ one has $P_n(\theta\hat{n}) = P_n(i\theta)$ with $i$ replaced by $\hat{n}$, since the generator $\hat{n}$ plays the role of the imaginary unit. For instance $P_2(\theta\hat{n}) = -(3\theta^2+1)/2$, whereas the ordinary $P_2$ gives $(3\theta^2-1)/2$: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat{n}$. The analogous statement is discussed in the biquaternion higher special functions article.
 
 ### Chebyshev Polynomials
 
@@ -147,7 +147,7 @@ $$
 P_n(\tilde{Q}) = P_n(\tilde{Q}_+) e_+ + P_n(\tilde{Q}_-) e_-,
 $$
 
-where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion polynomial of the component. The quaternion polynomial reduces to the ordinary polynomial in the pure oscillatory regime and truncates in the pure nilpotent regime.
+where $P_n(\tilde{Q}_\pm)$ is the ordinary quaternion polynomial of the component. In the pure oscillatory regime the quaternion polynomial is obtained from the ordinary polynomial by replacing $i$ with $\hat{n}$ (as for the Legendre polynomials above), not by evaluating the ordinary polynomial at the same argument.
 
 The general case (with both scalar and vector parts nonzero, and with a general split complex norm) reduces to the quaternion case in each idempotent component, which is the standard theory of quaternion orthogonal polynomials.
 
@@ -173,7 +173,13 @@ $$
 
 where $a_\pm, b_\pm, c_\pm$ are the idempotent components of the parameters, and ${}_2F_1(a_\pm, b_\pm; c_\pm; \tilde{Q}_\pm)$ is the ordinary quaternion hypergeometric function of the component.
 
-The quaternion hypergeometric function reduces to the ordinary complex hypergeometric function in the pure oscillatory regime and truncates in the pure nilpotent regime.
+In the pure oscillatory regime the quaternion hypergeometric function does **not** reduce to the ordinary complex hypergeometric function: for a component $\tilde{Q}_\pm = \theta\hat{n}$ with $\hat{n}^2 = -e_0$ one has
+
+$$
+{}_2F_1(a, b; c; \theta\hat{n}) = \Big[\sum_k \frac{(a)_{2k}(b)_{2k}}{(c)_{2k}} \frac{(-1)^k \theta^{2k}}{(2k)!}\Big] e_0 + \Big[\sum_k \frac{(a)_{2k+1}(b)_{2k+1}}{(c)_{2k+1}} \frac{(-1)^k \theta^{2k+1}}{(2k+1)!}\Big] \hat{n},
+$$
+
+the Pochhammer symbols sitting at $2k$ and $2k+1$ rather than at $k$, which is the even/odd decomposition stated for the biquaternion case.
 
 ### The Generalized Hypergeometric Function
 
@@ -189,7 +195,7 @@ The same analysis applies: the function decomposes in the idempotent basis, and 
 
 ### The Definition Problem
 
-The **gamma function** of a split complex variable could be defined by the integral
+The **gamma function** of a split quaternion variable could be defined by the integral
 
 $$
 \Gamma(\tilde{Q}) = \int_0^\infty t^{\tilde{Q}-1} e^{-t} \, dt,
@@ -269,7 +275,7 @@ Almost nothing is known about the split quaternion zeta function. The following 
 
 1. **Convergence.** For which split quaternions $\tilde{Q}$ does the series converge?
 
-2. **The Euler product.** The Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$ requires the multiplicativity of the power function, which does not hold in the split quaternion case. Is there an analogue?
+2. **The Euler product.** For positive integer bases the power function is multiplicative: $m^{\tilde{Q}} n^{\tilde{Q}} = \exp(\tilde{Q}\log m)\exp(\tilde{Q}\log n) = (mn)^{\tilde{Q}}$, because the two exponents commute as multiples of $\tilde{Q}$. Hence the Euler product $\prod_p (1 - p^{-\tilde{Q}})^{-1} = \sum_n n^{-\tilde{Q}}$ holds in the region of absolute convergence, and no separate obstruction arises; what remains open is the analytic continuation of the individual factors $p^{-\tilde{Q}}$.
 
 3. **Analytic continuation.** Can the zeta function be continued beyond the region of convergence?
 
@@ -341,7 +347,7 @@ Its construction is standard from the fundamental solution, and it decomposes in
 
 The higher special functions of a split quaternion variable fall into two classes.
 
-**Power-series functions.** These are defined by a power series in $\tilde{Q}$, and the series decomposes in the idempotent basis into two copies of the corresponding quaternion function. The Bessel functions, the orthogonal polynomials, and the hypergeometric function belong to this class. The quaternion functions, in turn, reduce to the ordinary complex functions in the pure oscillatory regime and truncate in the pure nilpotent regime.
+**Power-series functions.** These are defined by a power series in $\tilde{Q}$, and the series decomposes in the idempotent basis into two copies of the corresponding quaternion function. The Bessel functions, the orthogonal polynomials, and the hypergeometric function belong to this class. The quaternion functions, in turn, reduce in the pure oscillatory regime to the corresponding ordinary complex functions evaluated with $i$ replaced by the generator $\hat{n}$ of the component (for the Bessel function this is the modified function $I_n$, for the orthogonal polynomials and the hypergeometric function the argument $i\theta$).
 
 **Integral-defined functions.** These are defined by an integral over a real or complex parameter, and the extension to split quaternions requires a notion of the integrand for split quaternion arguments. The gamma function and the zeta function belong to this class. The convergence and analyticity of the integral are not automatic, and the theory is largely open.
 
@@ -369,7 +375,7 @@ The common thread is the **idempotent decomposition**: the split quaternion alge
 
 The higher special functions of a split quaternion variable fall into three classes.
 
-**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series decompose in the idempotent basis into two copies of the corresponding quaternion function. The quaternion functions reduce to the ordinary complex functions in the pure oscillatory regime and truncate in the pure nilpotent regime. This is the cleanest and most fully developed part of the theory.
+**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series decompose in the idempotent basis into two copies of the corresponding quaternion function. In the pure oscillatory regime the quaternion functions are the ordinary complex functions with $i$ replaced by the generator $\hat{n}$ of the component, as in the Bessel, Legendre and hypergeometric cases above. This is the cleanest and most fully developed part of the theory.
 
 **Integral-defined functions.** The gamma function and the zeta function are defined by integrals or series that require a notion of the split quaternion power for real arguments. The convergence and analyticity are established only in special cases, and the functional equations are open.
 

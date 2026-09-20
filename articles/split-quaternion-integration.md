@@ -180,7 +180,7 @@ $$
 **Theorem (second Green's formula).** Under the same hypotheses,
 
 $$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{F} \tilde{n} \bar{\tilde{G}} \right] dS.
+\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
 $$
 
 The precise form of the second Green's formula depends on the choice of the differential operators and the boundary terms; the version above is the one that follows from the first formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.
@@ -263,25 +263,25 @@ $$
 \int_{\|\tilde{X}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{X}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
 $$
 
-On the sphere $\|\tilde{X}\|_E = \varepsilon$, the outward unit normal is $\tilde{n} = \tilde{X}/\varepsilon$, and $\tilde{G} = \bar{\tilde{X}}/\varepsilon^4$. So
+On the sphere $\|\tilde{X}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{X}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde{n} = -\tilde{X}/\varepsilon$, and $\tilde{G} = \bar{\tilde{X}}/\varepsilon^4$. So
 
 $$
-\tilde{G} \tilde{n} = \frac{\bar{\tilde{X}}}{\varepsilon^4} \cdot \frac{\tilde{X}}{\varepsilon} = \frac{\|\tilde{X}\|_E^2}{\varepsilon^5} e_0 = \frac{\varepsilon^2}{\varepsilon^5} e_0 = \frac{1}{\varepsilon^3} e_0.
+\tilde{G} \tilde{n} = \frac{\bar{\tilde{X}}}{\varepsilon^4} \cdot \left(-\frac{\tilde{X}}{\varepsilon}\right) = -\frac{\|\tilde{X}\|_E^2}{\varepsilon^5} e_0 = -\frac{\varepsilon^2}{\varepsilon^5} e_0 = -\frac{1}{\varepsilon^3} e_0.
 $$
 
 So
 
 $$
-\int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS = \frac{1}{\varepsilon^3} \int_{\|\tilde{X}\|_E = \varepsilon} \phi \, dS \cdot e_0.
+\int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{X}\|_E = \varepsilon} \phi \, dS \cdot e_0.
 $$
 
-As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $2\pi^2 \phi(0) e_0$. Therefore
+As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_0$. Therefore
 
 $$
-\langle \tilde{\nabla} \tilde{G}, \phi \rangle = -2\pi^2 \phi(0) e_0,
+\langle \tilde{\nabla} \tilde{G}, \phi \rangle = 2\pi^2 \phi(0) e_0,
 $$
 
-which is the distributional identity $\tilde{\nabla} \tilde{G} = -2\pi^2 \delta_0 e_0$. With the sign convention for the gradient, the constant is $2\pi^2$; the absolute value is what matters for the integral formula. $\square$
+which is the distributional identity $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$, in agreement with the statement of the theorem. $\square$
 
 ## The Cauchy Integral Formula
 
@@ -313,7 +313,7 @@ $$
 \int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X}) \right) dV = \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS + \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS.
 $$
 
-On the small sphere, $\tilde{n} = (\tilde{X} - \tilde{X}_0)/\varepsilon$ (pointing inward toward $\tilde{X}_0$, so with a sign), and the computation of the boundary term gives
+On the small sphere, the outward normal of $\Omega_\varepsilon$ points toward $\tilde{X}_0$, so $\tilde{n} = -(\tilde{X} - \tilde{X}_0)/\varepsilon$, and the computation of the boundary term gives
 
 $$
 \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS \to -2\pi^2 \tilde{F}(\tilde{X}_0) \quad \text{as } \varepsilon \to 0.
@@ -363,7 +363,7 @@ where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\ma
 
 **Theorem (maximum principle).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ and $\|\tilde{F}\|_E$ attains its maximum at an interior point of $\Omega$, then $\tilde{F}$ is constant on $\Omega$.
 
-**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{X}_0$, then the mean value over a small sphere around $\tilde{X}_0$ equals $\tilde{F}(\tilde{X}_0)$, which is only possible if $\tilde{F}$ is constant on the sphere. Iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
+**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{X}_0$, then $\tilde{F}(\tilde{X}_0)$ equals the average of $\tilde{F}$ over every small sphere around $\tilde{X}_0$, so $\|\tilde{F}(\tilde{X}_0)\|_E \leq$ the average of $\|\tilde{F}\|_E \leq \|\tilde{F}(\tilde{X}_0)\|_E$; both inequalities are equalities, so $\|\tilde{F}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial_\mu \tilde{F}(\tilde{X}_0) = 0$, so $\tilde{F}$ is constant in a neighbourhood of $\tilde{X}_0$, and iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
 
 ### Liouville's Theorem
 
@@ -431,9 +431,9 @@ where each of the two residues is the quaternion residue of the corresponding co
 
 The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
 
-**In the fundamental solution.** The fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$ is defined for $\tilde{X} \neq 0$. It is not defined on the zero divisor set except at the origin, where it is singular.
+**In the fundamental solution.** The fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$ is defined for every $\tilde{X} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\bar{\tilde{X}}\tilde{X} = \|\tilde{X}\|_E^2 e_0$ fails (for $\tilde{X} = 1 + j$ one has $\bar{\tilde{X}}\tilde{X} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}\tilde{G} = 0$; the only singularity of $\tilde{G}$ is the origin.
 
-**In the Cauchy integral formula.** The formula requires the function $\tilde{F}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the fundamental solution is singular on the intersection.
+**In the Cauchy integral formula.** The formula requires the function $\tilde{F}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
 
 **In the residue theory.** The definition of the residue involves an integral over a small sphere around the singularity. If the sphere intersects the zero divisor set, the integral requires care.
 
@@ -447,11 +447,11 @@ The integration theory developed in this article is the split quaternion analogu
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split quaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
 
-**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^n$ and the Clifford algebra-valued integration. The split quaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a split signature Clifford algebra.
+**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $\bar{x}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split quaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
 
 ## The Relation to the Split Complex Case
 
-In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(z - z_0)$, where the reciprocal is defined only away from the zero divisor set (the union of the two lines $\mathbb{R}(1 \pm j)$). The integral formula is
+In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(z - z_0)$, whose singular locus is the translate $z_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{D}$. The integral formula is
 
 $$
 f(z_0) = \frac{1}{2\pi i_{\mathbb{D}}} \oint_\gamma \frac{f(z)}{z - z_0} \, dz,

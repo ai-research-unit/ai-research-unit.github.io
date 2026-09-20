@@ -97,7 +97,7 @@ There are no other roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$.
 
 **Step 1: Reduction.** As shown above, the equation $\xi^2 = -1$ is equivalent to the pair of equations $\xi_+^2 = -1$ and $\xi_-^2 = -1$, where $\xi_\pm \in \mathbb{H}$ are the idempotent components of $\xi$.
 
-**Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure (if $\mu$ had a nonzero scalar part, the scalar part of $\mu^2$ would be nonzero in general) and $|\mu| = 1$.
+**Step 2: Quaternion roots.** The roots of $-1$ in $\mathbb{H}$ are exactly the unit pure real quaternions. This is the standard result: $\mu^2 = -1$ with $\mu \in \mathbb{H}$ implies $\mu$ is pure and $|\mu| = 1$: writing $\mu = a + v$ with $a$ real and $v$ a vector, the vector part of $\mu^2$ is $2av$, which must vanish, so $a = 0$ or $v = 0$; the case $v = 0$ gives $\mu^2 = a^2 \geq 0 \neq -1$, leaving $a = 0$, and then $\mu^2 = -|v|^2 = -1$ gives $|v| = 1$.
 
 **Step 3: Combination.** Any pair $(\mu_+, \mu_-)$ of unit pure real quaternions gives a root $\xi = \mu_+ e_+ + \mu_- e_-$. Conversely, every root arises this way. $\square$
 
@@ -143,7 +143,7 @@ $$
 \xi = \mu_+ e_+ - \mu_+ e_- = \mu_+ (e_+ - e_-) = \mu_+ j.
 $$
 
-So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a three-dimensional family, parametrized by the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.
+So the pure roots of $-1$ are exactly the elements of the form $\mu j$ with $\mu \in \mathbb{H}$ a unit pure real quaternion. This is a two-dimensional family, parametrized by the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$.
 
 ### The Scalar Roots
 
@@ -159,23 +159,23 @@ $$
 \xi = \mu_+ e_+ + \mu_+ e_- = \mu_+ (e_+ + e_-) = \mu_+.
 $$
 
-So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a three-dimensional family.
+So the scalar roots of $-1$ are exactly the unit pure real quaternions $\mu \in \mathbb{H}$. This is a two-dimensional family.
 
 But wait: the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ are the elements $\xi = \mu$ with $\mu^2 = -1$ in $\mathbb{H}$. These are the quaternion roots of $-1$ embedded in $\mathbb{H}_{\mathbb{D}}$. They are not the "scalar imaginary" $i$ of the biquaternion case; there is no single scalar root, because the split complex algebra $\mathbb{D}$ has no square root of $-1$.
 
-So the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ form a three-dimensional family, and the pure roots form another three-dimensional family. The general root is a combination of the two, parametrized by a pair of unit pure real quaternions, which is a six-dimensional family.
+So the scalar roots of $-1$ in $\mathbb{H}_{\mathbb{D}}$ form a two-dimensional family, and the pure roots form another two-dimensional family. The general root is a combination of the two, parametrized by a pair of unit pure real quaternions, which is a four-dimensional family.
 
 ### Dimension of the Root Set
 
-The root set is parametrized by a pair of unit pure real quaternions $\mu_+, \mu_-$, each of which lies on the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$. So the root set has real dimension $3 + 3 = 6$.
+The root set is parametrized by a pair of unit pure real quaternions $\mu_+, \mu_-$, each of which lies on the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$. So the root set has real dimension $2 + 2 = 4$.
 
-This is a six-dimensional submanifold of the eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$.
+This is a four-dimensional submanifold of the eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$.
 
 ### Comparison with the Biquaternion Case
 
 In the biquaternion algebra $\mathbb{B}$, the roots of $-1$ are:
 - The trivial root $\pm i$ (two points).
-- The real roots $\pm \mu$ with $\mu$ a unit pure real quaternion (a three-dimensional family, doubled by sign).
+- The real roots $\pm \mu$ with $\mu$ a unit pure real quaternion (a two-dimensional family, the unit sphere $\mathbb{S}^2$, which is invariant under $\mu \mapsto -\mu$).
 - The non-trivial roots $b\mu + d\nu i$ with $\mu \perp \nu$ and $b^2 - d^2 = 1$ (a four-dimensional family).
 
 The biquaternion root set has a much richer structure, with degenerate roots, real roots, and non-trivial roots. The split quaternion root set is simpler: it is the product of two copies of the quaternion root set, i.e., a pair of unit pure real quaternions.
@@ -234,7 +234,7 @@ The nontrivial idempotents $e_+$ and $e_-$ are zero divisors: $e_+ e_- = 0$ with
 
 ### The Cones
 
-The roots of $-1$ form a six-dimensional submanifold of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
+The roots of $-1$ form a four-dimensional submanifold of $\mathbb{H}_{\mathbb{D}}$. The idempotents form a finite set of four points. The relation between the two is not a map from roots to idempotents, as in the biquaternion case, but rather the two structures are independent.
 
 ## Comparison with the Biquaternion Case
 
@@ -244,7 +244,7 @@ The roots of $-1$ form a six-dimensional submanifold of $\mathbb{H}_{\mathbb{D}}
 | Scalar roots of $-1$ | $\pm i$ | None |
 | Quaternion roots of $-1$ | $\pm \mu$, $\mu$ unit pure real | $\mu$, $\mu$ unit pure real |
 | Non-trivial roots | $b\mu + d\nu i$, $\mu \perp \nu$, $b^2 - d^2 = 1$ | None |
-| Dimension of root set | 4 (non-trivial family) | 6 (product of two quaternion root sets) |
+| Dimension of root set | 4 (non-trivial family) | 4 (product of two quaternion root sets) |
 | Relation to idempotents | Roots generate idempotents | Independent |
 | Idempotents | $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | $0, e_+, e_-, 1$ |
 
@@ -275,7 +275,7 @@ So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimension
 
 ### Comparison with the Biquaternion Root Set
 
-The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional manifold with a more complicated topology, while the split quaternion root set is the product of two two-spheres.
+The biquaternion root set has dimension 4 (the non-trivial family is four-dimensional, and the degenerate families are lower-dimensional). So both root sets have dimension 4, but their structures are different: the biquaternion root set is a four-dimensional stratified space with a more complicated topology, while the split quaternion root set is the product of two two-spheres.
 
 ## Summary of Notation
 

@@ -307,7 +307,7 @@ $$
 
 ### The Relation to the Dirac Operator
 
-The Bessel functions of the quaternion variable are the radial parts of the monogenic functions on $\mathbb{R}^4$. They appear in the separation of variables for the Dirac equation in spherical coordinates, and they are the quaternion analogues of the cylindrical harmonics in complex analysis.
+The Bessel functions of the quaternion variable are the radial parts of the monogenic functions on $\mathbb{R}^4$. They appear in the separation of variables for the Dirac operator in spherical coordinates, and they are the quaternion analogues of the cylindrical harmonics in complex analysis.
 
 ## The Quaternion Hypergeometric Function
 
@@ -419,7 +419,7 @@ which are not monogenic: $D q = -2$ and $D(q^2) = -4 q_0$, neither of which vani
 
 ### The Monogenic Bessel Functions
 
-The **monogenic Bessel functions** are the radial monogenic functions, which are the solutions of the Dirac equation in spherical coordinates. They are expressed in terms of the ordinary Bessel functions of the radial variable, with coefficients that depend on the angular variables.
+The **monogenic Bessel functions** are the radial monogenic functions, which are the solutions of the Dirac operator in spherical coordinates. They are expressed in terms of the ordinary Bessel functions of the radial variable, with coefficients that depend on the angular variables.
 
 ## Summary of Notation
 

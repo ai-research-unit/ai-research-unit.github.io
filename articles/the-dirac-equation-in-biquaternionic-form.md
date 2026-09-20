@@ -98,6 +98,29 @@ The choice of which bivector corresponds to which quaternion unit is a conventio
 
 The scalar imaginary $i$ of $\mathbb{B}$ corresponds to the pseudoscalar $\gamma^0\gamma^1\gamma^2\gamma^3$ of $\mathrm{Cl}_{1,3}$, up to a sign. This correspondence is what makes the complexification of the quaternions inside $\mathbb{B}$ match the complexification of the even Clifford algebra.
 
+### The Gamma Matrices from the Biquaternion Units
+
+The biquaternion units give an explicit set of gamma matrices. Write the biquaternion algebra as $M_2(\mathbb{C})$ by $e_0 \mapsto I_2$, $e_k \mapsto -i\sigma^k$, $i \mapsto iI_2$, so that $ie_k \leftrightarrow \sigma^k$, and arrange the units in $2 \times 2$ blocks:
+
+$$
+\gamma^0 = \begin{pmatrix} 0 & e_0 \\ e_0 & 0 \end{pmatrix}, \qquad
+\gamma^k = \begin{pmatrix} 0 & i e_k \\ -i e_k & 0 \end{pmatrix}, \qquad k = 1,2,3 ,
+$$
+
+that is, $\gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}$ and $\gamma^k = \begin{pmatrix} 0 & \sigma^k \\ -\sigma^k & 0 \end{pmatrix}$. The Clifford relations are then the quaternion relations in disguise. From the multiplication table and $i^2 = -1$, $e_k^2 = -e_0$,
+
+$$
+(\gamma^0)^2 = e_0^2 = I_4, \qquad (\gamma^k)^2 = -(ie_k)^2 = -i^2 e_k^2 = -e_0 = -I_4 .
+$$
+
+The mixed products are block diagonal: $\gamma^0\gamma^k = \mathrm{diag}(-ie_k,\, ie_k)$ and $\gamma^k\gamma^0 = -\gamma^0\gamma^k$, while $\gamma^j\gamma^k = \mathrm{diag}(e_je_k,\, e_je_k)$ and $\gamma^k\gamma^j = -\, \gamma^j\gamma^k$ because $e_je_k = -e_ke_j$. Hence
+
+$$
+\{\gamma^\mu,\gamma^\nu\} = 2g^{\mu\nu} I_4, \qquad g = \mathrm{diag}(+1,-1,-1,-1),
+$$
+
+and the verification uses nothing beyond the quaternion multiplication table and $i^2 = -1$. The overall sign of the metric is a convention: replacing every generator by $i\gamma^\mu$ flips the sign of $g$ and leaves the Clifford algebra unchanged.
+
 ### The Dirac Operator in Biquaternion Form
 
 The biquaternionic gradient
@@ -127,6 +150,28 @@ $$
 under which the even subalgebra $\mathrm{Cl}_{1,3}^+$ corresponds to a subalgebra of $M_4(\mathbb{C})$ isomorphic to $M_2(\mathbb{C})$. The biquaternion algebra $\mathbb{B}$ is then isomorphic to $M_2(\mathbb{C})$ (article 5), and the action of $\tilde{\nabla}$ on the biquaternion algebra corresponds to the action of $\not\partial$ on a two-dimensional complex spinor module.
 
 So the biquaternion formulation of the Dirac equation is expressed in terms of the biquaternion algebra, whose elements can be viewed as **pairs of two-component Weyl spinors**. The full four-component Dirac spinor is recovered by taking the direct sum of the two-component spinor module with its complex conjugate.
+
+### Chirality and the Gamma-Five Operator
+
+The volume element $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ of the Clifford algebra is the image of the biquaternion scalar imaginary, $\Phi(i) = \omega$, and satisfies $\omega^2 = -1$. The chirality operator is
+
+$$
+\gamma_5 = i\,\omega = i\,\gamma^0\gamma^1\gamma^2\gamma^3, \qquad \gamma_5^2 = i^2 \omega^2 = (-1)(-1) = 1 .
+$$
+
+It anticommutes with every generator, $\gamma_5\gamma^\mu = -\gamma^\mu\gamma_5$, and therefore commutes with every even element, the biquaternion algebra among them. In the block representation of the preceding subsection it is diagonal,
+
+$$
+\gamma_5 = \begin{pmatrix} -I_2 & 0 \\ 0 & I_2 \end{pmatrix},
+$$
+
+acting as $-1$ on the upper two-component block and $+1$ on the lower. Since $\gamma_5^2 = 1$, the Dirac spinor space splits into its eigenspaces,
+
+$$
+\mathbb{C}^4 = \Delta_+\oplus\Delta_-, \qquad \Delta_\pm = \{\psi : \gamma_5\psi = \pm\psi\}, \qquad P_\pm = \tfrac12(1\pm\gamma_5),
+$$
+
+each of complex dimension two; the elements of $\Delta_\pm$ are the Weyl spinors of the preceding section, left- and right-handed up to the labelling convention for the sign. Correspondingly the central idempotents $\tfrac12(1\pm i\omega)$ split the complexified even algebra, $\mathbb{C}\otimes_{\mathbb{R}}\mathrm{Cl}_{1,3}^+ \cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$, which is the algebraic form of the same decomposition. The $i$ in $\gamma_5$ and in the projectors is the scalar imaginary of the complexified Clifford algebra; the biquaternion imaginary is the element whose image under $\Phi$ is $\omega$ itself.
 
 ## Relativistic Kinematics in Biquaternionic Form
 

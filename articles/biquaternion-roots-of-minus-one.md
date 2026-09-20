@@ -195,7 +195,7 @@ $$
 \xi = \cosh t \, \mu + \sinh t \, \nu i, \qquad \mu \perp \nu, \quad |\mu| = |\nu| = 1, \quad t \in \mathbb{R}.
 $$
 
-The parameter $t$ is the **rapidity** of the root, by analogy with the rapidity of a Lorentz boost.
+The parameter $t$ is the **rapidity** of the root, by analogy with the rapidity parameter of a hyperbolic rotation.
 
 ### Status of the Roots
 
@@ -373,5 +373,4 @@ The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: 
 - S. J. Sangwine, T. A. Ell, and N. Le Bihan, "Fundamental representations and algebraic properties of biquaternions or complexified quaternions", *Advances in Applied Clifford Algebras* **21** (2011) 607–636, for the representation theory and the constraint verification.
 - J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the semi-norm and the algebraic properties of the biquaternions.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 

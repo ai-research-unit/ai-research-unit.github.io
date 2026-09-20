@@ -342,7 +342,7 @@ $$
 \Box\big|_{\mathbb{M}_-} = -\frac{\partial^2}{\partial (q'_0)^2} + \frac{\partial^2}{\partial q_1^2} + \frac{\partial^2}{\partial q_2^2} + \frac{\partial^2}{\partial q_3^2},
 $$
 
-which is the Lorentzian wave operator (d'Alembertian in the relativistic sense) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_0 = q_0$ and $Q_k = iq'_k$, we have
+which is the Lorentzian wave operator (the d'Alembertian) on $\mathbb{R}^{1,3}$, up to an overall sign convention. Similarly, on $\mathbb{M}_+$, where $Q_0 = q_0$ and $Q_k = iq'_k$, we have
 
 $$
 \Box\big|_{\mathbb{M}_+} = \frac{\partial^2}{\partial q_0^2} - \frac{\partial^2}{\partial (q'_1)^2} - \frac{\partial^2}{\partial (q'_2)^2} - \frac{\partial^2}{\partial (q'_3)^2},
@@ -527,7 +527,6 @@ The specialization to specific four-dimensional subspaces, including the quatern
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory of Clifford algebras.
 

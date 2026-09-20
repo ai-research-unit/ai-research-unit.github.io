@@ -91,39 +91,23 @@ $$
 \theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}.
 $$
 
-There are three cases:
-
-**Case 1: $\theta^2$ positive real.** If $\theta^2 = r^2$ with $r > 0$ real,
+Since $\mathbf{Q}^2 = -\theta^2 e_0$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \theta^{2m}/(2m)!$ and $\sum_m (-1)^m \theta^{2m+1}/(2m+1)!$, so
 
 $$
-\exp(\mathbf{Q}) = \cosh r \, e_0 + \frac{\sinh r}{r} \mathbf{Q}.
+\exp(\mathbf{Q}) = \cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q},
 $$
 
-**Case 2: $\theta^2$ negative real.** If $\theta^2 = -r^2$ with $r > 0$ real,
-
-$$
-\exp(\mathbf{Q}) = \cos r \, e_0 + \frac{\sin r}{r} \mathbf{Q}.
-$$
-
-**Case 3: $\theta^2$ general split complex.** In general,
-
-$$
-\exp(\mathbf{Q}) = \cosh\theta \, e_0 + \frac{\sinh\theta}{\theta} \mathbf{Q},
-$$
-
-where $\cosh$ and $\sinh$ are the split complex hyperbolic functions.
-
-The three formulas agree with the idempotent formula when evaluated componentwise.
+where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\theta$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\theta/\theta$ depends on $\theta^2$ alone). No hyperbolic function occurs here. When $\theta^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_0 + (\sin r/r)\mathbf{Q}$. The real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, so $\theta^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.
 
 ### The Nilpotent Case
 
-If the vector part is nilpotent, i.e., $\mathbf{Q}^2 = 0$, then $\theta = 0$ and the formula degenerates. In this case, $\exp(\mathbf{Q}) = e_0 + \mathbf{Q}$, as in the biquaternion case. In the split quaternion algebra, the nilpotent vector parts are the elements of the zero divisor subspaces $Z_\pm$ with vanishing scalar part.
+If the vector part is nilpotent, i.e., $\mathbf{Q}^2 = 0$, then $\theta = 0$ and the formula degenerates. In the split quaternion algebra this happens only for $\mathbf{Q} = 0$: since $\mathbf{Q}^2 = -\theta^2 e_0$ and the real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, the equation $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, and then $\exp(\mathbf{Q}) = e_0$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\mathbf{Q} = (1 - j)e_1 \in Z_+$ one has $\mathbf{Q}^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{H}_{\mathbb{D}}$ has no nonzero nilpotent vector part.
 
 ### Properties
 
 **Non-vanishing.** The exponential is never zero, because both idempotent components are nonzero: $\exp(\tilde{Q}_\pm) \neq 0$ since the quaternion exponential is never zero.
 
-**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the exponential is not multiplicative.
+**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ whenever $\tilde{P}$ and $\tilde{Q}$ commute, but commutativity is not necessary: for example $\tilde{P} = 2\pi e_1$ and $\tilde{Q} = -\pi e_1 + \pi\sqrt{3}\,e_2$ do not commute and all three exponentials equal $e_0$. In general, the exponential is not multiplicative.
 
 **Derivative.** The exponential is its own derivative in the sense of the directional derivative along the scalar direction: $\partial_0 \exp(\tilde{Q}) = \exp(\tilde{Q})$.
 
@@ -174,20 +158,16 @@ These are the standard quaternion formulas, and they reduce to the real formulas
 The trigonometric and hyperbolic functions can also be expressed in terms of the exponential:
 
 $$
-\sin(\tilde{Q}) = \frac{\exp(j\tilde{Q}) - \exp(-j\tilde{Q})}{2j}, \qquad \cos(\tilde{Q}) = \frac{\exp(j\tilde{Q}) + \exp(-j\tilde{Q})}{2},
-$$
-
-$$
 \sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
 $$
 
-where $j$ is the split complex unit. This reduces the computation to the exponential formula.
+which reduces the computation of the hyperbolic functions to the exponential formula. The trigonometric functions are not obtained this way: since $j$ is central with $j^2 = +1$, the combinations $\frac{\exp(j\tilde{Q}) \mp \exp(-j\tilde{Q})}{2}$ are $\cosh \tilde{Q} \mp j \sinh\tilde{Q}$, that is, the hyperbolic functions again, and there is no central element of $\mathbb{H}_{\mathbb{D}}$ with square $-1$ that could produce $\sin$ and $\cos$. The trigonometric functions are defined by their power series, equivalently as the ordinary quaternion trigonometric functions of the two idempotent components.
 
-Note: in the biquaternion case, the trigonometric functions are defined using the scalar imaginary $i$, which satisfies $i^2 = -1$. In the split quaternion case, the split complex unit $j$ satisfies $j^2 = +1$, so the identities above involve the **hyperbolic** exponential of $j\tilde{Q}$, not the trigonometric one. This is a fundamental difference: the split complex unit does not produce trigonometric functions, it produces hyperbolic functions.
+Note: in the biquaternion case, the trigonometric functions are defined using the scalar imaginary $i$, which satisfies $i^2 = -1$. In the split quaternion case, the centre is $\mathbb{D}$, and $(a + bj)^2 = a^2 + b^2 + 2abj$ is never $-1$, so no such scalar imaginary exists. This is a fundamental difference: the split complex unit does not produce trigonometric functions, it produces hyperbolic functions.
 
 ### Properties
 
-**Pythagorean identity.** In general, $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ does **not** hold, because the split quaternion algebra is non-commutative and the product $\sin(\tilde{Q}) \cos(\tilde{Q})$ does not commute with $\cos(\tilde{Q}) \sin(\tilde{Q})$. The identity holds in the idempotent basis for each component, because the quaternion algebra has the identity $\sin^2(q) + \cos^2(q) = 1$ for the quaternion trigonometric functions.
+**Pythagorean identity.** The identity $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ holds for every split quaternion: componentwise it is the quaternion identity $\sin^2(q) + \cos^2(q) = 1$, and $\sin\tilde{Q}$ and $\cos\tilde{Q}$ both lie in the commutative subalgebra generated by $\tilde{Q}$ and the idempotents, so they commute and the two components add to $e_+ + e_- = e_0$. Non-commutativity obstructs only identities involving two independent variables.
 
 **Hyperbolic identity.** Similarly, $\cosh^2(\tilde{Q}) - \sinh^2(\tilde{Q}) = e_0$ holds in the idempotent basis for each component.
 
@@ -265,8 +245,6 @@ When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power fu
 
 **Square root.** The square root $\tilde{Q}^{1/2}$ is multivalued, and the branches correspond to the branches of the quaternion square root in each component.
 
-**The exponential.** The exponential is the power function with $\alpha = 1$ in each component, i.e., $\tilde{Q}^1 = \tilde{Q}$.
-
 ### Properties
 
 **Multiplicativity.** In general, $(\tilde{P} \tilde{Q})^\alpha \neq \tilde{P}^\alpha \tilde{Q}^\alpha$, because the logarithm is not multiplicative.
@@ -327,7 +305,7 @@ This is the same situation as in the biquaternion case, and it is the fundamenta
 
 | Function | Idempotent form | Standard form |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ | $e^{Q_0}(\cosh\theta \, e_0 + \frac{\sinh\theta}{\theta}\mathbf{Q})$ |
+| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\mathbf{Q})$ |
 | $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) e_+ + \sin(\tilde{Q}_-) e_-$ | (computed from the exponential) |
 | $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) e_+ + \cos(\tilde{Q}_-) e_-$ | (computed from the exponential) |
 | $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) e_+ + \sinh(\tilde{Q}_-) e_-$ | (computed from the exponential) |
@@ -344,7 +322,7 @@ The idempotent form is the primary one, because it reduces the elementary functi
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Primary decomposition | Quaternion decomposition | Idempotent decomposition |
 | Exponential | $e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$ with $\theta$ complex | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ |
-| Trigonometric functions | Defined via the scalar imaginary $i$ | Defined via the scalar imaginary $i$ (no $j$ involved) |
+| Trigonometric functions | Defined via the scalar imaginary $i$ | Defined by the same power series, or componentwise by the quaternion trigonometric functions (no central scalar imaginary exists) |
 | Hyperbolic functions | Defined via the exponential | Defined via the exponential, or via $j$ |
 | Logarithm | $Q_0 e_0 + \theta \hat{n}$ with $\theta$ complex | $\log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-$ |
 | Power function | $e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n})$ | $\tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-$ |
@@ -400,10 +378,10 @@ and similarly for the trigonometric and hyperbolic functions.
 The exponential can also be computed directly from the scalar-vector decomposition:
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \left(\cosh\theta \, e_0 + \frac{\sinh\theta}{\theta} \mathbf{Q}\right),
+\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q}\right),
 $$
 
-where $\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ is the split complex norm of the vector part. The formula has three cases: hyperbolic (when $\theta^2$ is positive real), trigonometric (when $\theta^2$ is negative real), and general split (when $\theta^2$ is a general split complex number).
+where $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\theta^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\theta^2$ alike, and a negative real $\theta^2$ cannot occur.
 
 The elementary functions of a split quaternion are **simpler** than the elementary functions of a biquaternion, because the idempotent decomposition reduces them to two copies of the quaternion case, the angles are real numbers, and the split complex unit produces hyperbolic functions rather than trigonometric ones. The main complication is the zero divisor set, on which the logarithm is not defined.
 

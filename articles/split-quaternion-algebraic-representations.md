@@ -120,14 +120,14 @@ $$
 On the anti-Hermitian subspace $\mathbb{M}_-$, the norm form restricts to the real quadratic form
 
 $$
-N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
+N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
 $$
 
-which is indefinite of signature $(3, 1)$.
+which is positive definite, of signature $(4, 0)$. The indefinite form of signature $(3, 1)$ that goes with this subspace is the scalar part of the **Hermitian** form $\tilde{Q} \tilde{Q}^\dagger = \sum_\mu Q^\mu (Q^\mu)^*$, namely $-(q'_0)^2 + q_1^2 + q_2^2 + q_3^2$.
 
 ### Why the Four-Vector Representation Is Useful
 
-The four-vector representation is the bridge between the algebraic split quaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the scalar and vector components enter with opposite signs in the norm form, and the indefinite form on the anti-Hermitian subspace is expressed as a Lorentzian norm.
+The four-vector representation is the bridge between the algebraic split quaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian form, and its scalar part on the anti-Hermitian subspace is expressed as a Lorentzian norm.
 
 It is also the representation in which the split quaternion looks least like a split quaternion. The algebraic structure — the non-commutative product, the two conjugations, the zero divisors — is hidden. This is why the four-vector representation, while useful, is not the fundamental one.
 
@@ -329,8 +329,7 @@ and the split complex unit $j$ to another bivector, for example $\gamma^0 \gamma
 The Clifford algebra representation is useful because:
 
 1. **It places the split quaternion algebra in the general Clifford classification.** The split quaternion algebra is one of the real Clifford algebras, and the representation shows how it fits into the general theory.
-2. **It connects to physics.** The Clifford algebra $\mathrm{Cl}_{2,2}$ appears in the study of conformal field theory in two dimensions and in the theory of twistors in $2+2$ dimensions.
-3. **It generalizes.** The Clifford algebra construction works in any dimension and any signature.
+2. **It generalizes.** The Clifford algebra construction works in any dimension and any signature.
 
 ## The Absence of a Matrix Representation
 
@@ -340,7 +339,7 @@ Unlike the biquaternion algebra, which is isomorphic to the matrix algebra $M_2(
 
 ### Reason
 
-The reason is the following. The quaternion algebra $\mathbb{H}$ is a division algebra over $\mathbb{R}$ and is central simple. It is not isomorphic to a matrix algebra over $\mathbb{R}$: the only central simple algebras over $\mathbb{R}$ are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$, and the matrix algebras are $M_n(\mathbb{R})$, $M_n(\mathbb{C})$, and $M_n(\mathbb{H})$ for $n \geq 1$. The quaternion algebra $\mathbb{H}$ is not a matrix algebra over $\mathbb{R}$; it only becomes one after complexification: $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$.
+The reason is the following. The quaternion algebra $\mathbb{H}$ is a division algebra over $\mathbb{R}$ and is central simple. It is not isomorphic to a matrix algebra over $\mathbb{R}$: the only finite-dimensional division algebras over $\mathbb{R}$ are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$, and the finite-dimensional simple algebras over $\mathbb{R}$ are the matrix algebras $M_n(\mathbb{R})$, $M_n(\mathbb{C})$, and $M_n(\mathbb{H})$ for $n \geq 1$. The quaternion algebra $\mathbb{H}$ is not a matrix algebra over $\mathbb{R}$; it only becomes one after complexification: $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$.
 
 The split quaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H} \cong \mathbb{H} \oplus \mathbb{H}$. It is semisimple but not simple, and its simple summands are both isomorphic to $\mathbb{H}$. It is not isomorphic to a matrix algebra over a field, because a matrix algebra over a field is simple (for $M_n$ with $n \geq 1$), and $\mathbb{H}_{\mathbb{D}}$ is not simple.
 
@@ -388,7 +387,7 @@ Each representation involves a choice, and different choices give equivalent but
 - **Four-vector representation:** the choice of the ordering of the components.
 - **Idempotent representation:** the choice of the idempotents $e_+$ and $e_-$. There is a unique pair of nontrivial idempotents in $\mathbb{D}$, so there is no real choice here; the representation is canonical.
 - **Module representation:** the choice of the module (left or right), which is a matter of convention.
-- **Clifford algebra representation:** the choice of the gamma matrices and the signature.
+- **Clifford algebra representation:** the choice of the Clifford generators and the signature.
 
 Different choices give representations that are related by conjugation or by a change of basis, and the algebraic structure of the split quaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.
 
@@ -410,7 +409,6 @@ Unlike the biquaternion algebra, the split quaternion algebra does **not** have 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions and their relatives.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the algebraic representations of split quaternions.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 

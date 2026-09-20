@@ -122,10 +122,10 @@ The same analysis applies: in the pure oscillatory regime, the result is express
 The **Legendre polynomials** $P_n(\tilde{Q})$ are defined by the generating function
 
 $$
-\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < 1,
+\frac{1}{\sqrt{1 - 2\tilde{Q} t + t^2}} = \sum_{n=0}^{\infty} P_n(\tilde{Q}) t^n, \qquad |t| < R(\tilde{Q}),
 $$
 
-where $t$ is a real parameter and the square root is the biquaternion square root (defined via the elementary functions). Equivalently, they satisfy the recurrence
+where $t$ is a real parameter, the square root is the biquaternion square root (defined via the elementary functions), and the radius $R(\tilde{Q})$ is the distance from the origin to the nearest value of $t$ at which $1 - 2\tilde{Q}t + t^2$ fails to be invertible (for $|\tilde{Q}| \le 1$ one has $R(\tilde{Q}) = 1$, but for $\tilde{Q} = 3e_0$ the quadratic vanishes at $t = 3 \pm 2\sqrt{2}$). Equivalently, they satisfy the recurrence
 
 $$
 (n+1) P_{n+1}(\tilde{Q}) = (2n+1) \tilde{Q} P_n(\tilde{Q}) - n P_{n-1}(\tilde{Q}),
@@ -138,10 +138,10 @@ The Legendre polynomials are polynomials in $\tilde{Q}$ with real coefficients (
 **The pure oscillatory case.** For $\tilde{Q} = \theta \hat{n}$ with $\theta \neq 0$ and $\hat{n}^2 = -e_0$, the recurrence gives
 
 $$
-P_n(\theta \hat{n}) = \begin{cases} P_n(\theta) \, e_0 & \text{if } n \text{ is even}, \\ P_n(\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
+P_n(\theta \hat{n}) = \begin{cases} P_n(i\theta) \, e_0 & \text{if } n \text{ is even}, \\ \frac{1}{i} P_n(i\theta) \, \hat{n} & \text{if } n \text{ is odd}, \end{cases}
 $$
 
-where $P_n(\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $\theta$. This follows from the recurrence and the alternating powers of $\hat{n}$.
+where $P_n(i\theta)$ is the ordinary Legendre polynomial evaluated at the complex number $i\theta$. The generator $\hat{n}$ plays the role of the imaginary unit, so no reduction to $P_n(\theta)$ holds: only the even part of $P_n$ survives on $e_0$ and only the odd part on $\hat{n}$. For instance $P_2(\theta\hat{n}) = -(3\theta^2+1)/2$, whereas $P_2(\theta) = (3\theta^2-1)/2$. This follows from the recurrence and the alternating powers of $\hat{n}$.
 
 **The pure nilpotent case.** For $\tilde{Q} = \mathbf{Q}$ with $\mathbf{Q}^2 = 0$, the recurrence involves powers of $\mathbf{Q}$ that truncate. In particular, $P_n(\mathbf{Q})$ is a polynomial in $\mathbf{Q}$ of degree at most one, because $\mathbf{Q}^2 = 0$. The explicit form is obtained from the recurrence.
 
@@ -153,7 +153,7 @@ $$
 T_{n+1}(\tilde{Q}) = 2\tilde{Q} T_n(\tilde{Q}) - T_{n-1}(\tilde{Q}),
 $$
 
-with $T_0 = e_0$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $\theta$, with the parity determined by $n$; in the pure nilpotent regime, the polynomials truncate.
+with $T_0 = e_0$ and $T_1 = \tilde{Q}$. The same analysis applies: in the pure oscillatory regime, the polynomials reduce to the ordinary Chebyshev polynomials evaluated at $i\theta$ with $i$ replaced by $\hat{n}$ (so $T_n(\theta\hat{n})$ is $T_n(i\theta)e_0$ or $\frac{1}{i}T_n(i\theta)\hat{n}$ according to the parity of $n$); in the pure nilpotent regime, the polynomials truncate.
 
 ### Hermite Polynomials
 
@@ -179,7 +179,7 @@ with $L_0 = e_0$ and $L_1 = e_0 - \tilde{Q}$. The same analysis applies.
 
 The orthogonal polynomials are defined by three-term recurrences involving only the multiplication and addition of biquaternions. So they are defined for every $\tilde{Q} \in \mathbb{B}$, and they reduce to the ordinary polynomials in the two pure regimes:
 
-- In the pure oscillatory regime, the polynomial $P_n(\theta \hat{n})$ reduces to $P_n(\theta) e_0$ or $P_n(\theta) \hat{n}$, depending on the parity of $n$.
+- In the pure oscillatory regime, the polynomial $P_n(\theta \hat{n})$ is the ordinary polynomial evaluated at $i\theta$ with $i$ replaced by $\hat{n}$, i.e. $P_n(i\theta) e_0$ or $\frac{1}{i}P_n(i\theta)\hat{n}$ according to the parity of $n$.
 - In the pure nilpotent regime, the polynomial truncates to a polynomial of degree at most one in $\mathbf{Q}$.
 
 The general case (with both $Q_0 \neq 0$ and $\mathbf{Q} \neq 0$) does not reduce to a closed form, because the recurrence involves the non-commutative product $Q_0 \mathbf{Q}$, and the polynomial is a genuine biquaternion polynomial.
@@ -306,7 +306,7 @@ Almost nothing is known about the biquaternion zeta function. The following are 
 
 1. **Convergence.** For which biquaternions $\tilde{Q}$ does the series converge?
 
-2. **The Euler product.** The Euler product $\zeta(s) = \prod_p (1 - p^{-s})^{-1}$ requires the multiplicativity of the power function, which does not hold in the biquaternion case. Is there an analogue?
+2. **The Euler product.** For positive integer bases the power function is multiplicative: $m^{\tilde{Q}} n^{\tilde{Q}} = \exp(\tilde{Q}\log m)\exp(\tilde{Q}\log n) = (mn)^{\tilde{Q}}$, because the two exponents commute as multiples of $\tilde{Q}$. Hence the Euler product $\prod_p (1 - p^{-\tilde{Q}})^{-1} = \sum_n n^{-\tilde{Q}}$ holds in the region of absolute convergence, and no separate obstruction arises; what remains open is the analytic continuation of the individual factors $p^{-\tilde{Q}}$.
 
 3. **Analytic continuation.** Can the zeta function be continued beyond the region of convergence?
 
@@ -408,7 +408,7 @@ The common thread is the **complex norm** $\theta$: the two regimes $\theta \neq
 
 The higher special functions of a biquaternion variable fall into three classes.
 
-**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions reduce to the ordinary functions evaluated at the complex norm $\theta$, with a parity factor depending on the power of the axis $\hat{n}$. In the pure nilpotent regime, the series truncate to polynomials in $\mathbf{Q}$ of degree at most one. The general case is open.
+**Power-series functions.** The Bessel functions, the orthogonal polynomials, and the hypergeometric function are defined by power series, and the series can be summed in closed form in the two pure regimes. In the pure oscillatory regime, the functions are the ordinary functions evaluated at the complex argument $i\theta$ with $i$ replaced by the axis $\hat{n}$ of the component (for the Bessel function this is the modified function $I_n(\theta)$ times the parity factor $\hat{n}^n$). In the pure nilpotent regime, the series truncate to polynomials in $\mathbf{Q}$ of degree at most one. The general case is open.
 
 **Integral-defined functions.** The gamma function and the zeta function are defined by integrals or series that require a notion of the biquaternion power for real arguments. The convergence and analyticity are established only in special cases, and the functional equations are open.
 

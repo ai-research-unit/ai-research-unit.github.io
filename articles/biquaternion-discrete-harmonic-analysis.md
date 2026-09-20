@@ -129,7 +129,7 @@ $$
 F[u] = \sum_{n=0}^{N-1} f[n] \, W_N(n, u).
 $$
 
-The two transforms are closely related: the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel.
+The two transforms are closely related: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K(t,\omega) f(t)} = \overline{f(t)}\,\overline{K(t,\omega)}$.)
 
 ### Invertibility
 

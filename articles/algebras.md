@@ -167,7 +167,7 @@ $$
 u(v(uu)) = (uv)(uu).
 $$
 
-An algebra over a commutative ring $R$ equipped with a commutative product satisfying the Jordan identity is called a **Jordan algebra**. Jordan algebras arise in the study of observables in quantum mechanics. They are not associative in general.
+An algebra over a commutative ring $R$ equipped with a commutative product satisfying the Jordan identity is called a **Jordan algebra**. They are not associative in general.
 
 ### The Hierarchy of Algebraic Structures
 
@@ -215,7 +215,7 @@ $$
 
 for all $u, v, w \in A$. Associativity allows us to write products of three or more elements without parentheses.
 
-Most algebras of interest in mathematics and physics are associative. The cross product algebra $\mathbb{R}^3$ is a notable exception.
+Most algebras of interest are associative. The cross product algebra $\mathbb{R}^3$ is a notable exception.
 
 ### Commutativity
 

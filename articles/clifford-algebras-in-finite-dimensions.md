@@ -501,7 +501,6 @@ The classification of the rank-one cases, and the structure of the Clifford alge
 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001).
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003).
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989).
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991).
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005).

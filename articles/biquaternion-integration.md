@@ -427,7 +427,7 @@ The integration theory developed in this article is the biquaternion analogue of
 
 **Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The biquaternion case is the generalization to complex coefficients, with the additional structure of the four conjugations.
 
-**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^n$ and the Clifford algebra-valued integration. The biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of $\mathrm{Cl}_{1,3}$.
+**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $\bar{x}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The biquaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of $\mathrm{Cl}_{1,3}$.
 
 ## Open Questions
 
@@ -480,7 +480,6 @@ The integration theory is related to complex analysis, Fueter's quaternionic ana
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions.
 - R. Fueter, "Die Funktionentheorie der Differentialgleichungen $\Delta u = 0$ und $\Delta\Delta u = 0$ mit vier reellen Variablen", *Commentarii Mathematici Helvetici* **7** (1934–35) 307–330, for the analysis of quaternion-valued functions of four real variables.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra perspective.
 - F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
 - John Ryan, *Clifford Algebras in Analysis and Related Topics* (CRC Press, 1996), for the analytic theory of Clifford algebras.
 - A. Sudbery, "Quaternionic analysis", *Mathematical Proceedings of the Cambridge Philosophical Society* **85** (1979) 199–225, for the quaternionic analogue of the Cauchy integral formula.

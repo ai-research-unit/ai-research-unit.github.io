@@ -170,7 +170,7 @@ These two conventions give different results in general. So the derivative would
 
 The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{H}_{\mathbb{D}}$, however, the zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, and for $\tilde{H}$ in this set (with $\tilde{H} \neq 0$), the inverse does not exist.
 
-So the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor. The zero divisor set in the split quaternion case is a union of two linear subspaces, which is a different geometry from the seven-dimensional cone of the biquaternion case. In particular, the zero divisor set has codimension 4, while the biquaternion zero divisor set has codimension 1. This means that in the split quaternion case, a generic direction in $\mathbb{H}_{\mathbb{D}}$ is **not** a zero divisor, while in the biquaternion case, a generic direction is.
+So the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor. The zero divisor set in the split quaternion case is a union of two linear subspaces, which is a different geometry from the complex cone of the biquaternion case. In particular, the zero divisor set has real codimension 4, while the biquaternion zero divisor set, being the zero set of the complex norm form, has real codimension 2 (complex dimension 3, real dimension 6). Neither set has interior points, so a generic direction in the ambient algebra is a zero divisor in neither case; what distinguishes the split quaternion case is that its zero divisor set is a finite union of linear subspaces rather than a cone cut out by a single complex equation.
 
 ### The Standard Approach
 
@@ -420,7 +420,7 @@ The approach in this article is the split quaternion analogue of the quaternioni
 - The differential operators are split-quaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\bar{\tilde{\nabla}}$.
 - The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the split quaternion analogue of the Cauchy–Riemann equations.
 
-This approach is closely related to **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The split quaternion algebra is isomorphic to the even subalgebra of a Clifford algebra of split signature, and the split quaternion analysis developed here is the four-dimensional case of the general Clifford analysis with split signature.
+This approach is closely related to **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The split quaternion algebra is isomorphic to the even subalgebra of a definite (Euclidean) Clifford algebra, $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,4}^+ \cong \mathrm{Cl}_{4,0}^+ \cong \mathrm{Cl}_{0,3}$, and the split quaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
 
 The main difference from the quaternion Fueter theory is that the functions are split-quaternion-valued rather than quaternion-valued, and the coefficients are split complex. This allows for the idempotent decomposition, which reduces the analysis to two copies of the quaternion analysis.
 
@@ -432,8 +432,8 @@ The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimen
 
 **In the restriction to four-dimensional subspaces.** On a four-dimensional subspace $V$, the intersection with the zero divisor set is:
 - $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-) = \{0\}$ (the quaternion subspace contains no zero divisors).
-- $\mathbb{M}_+ \cap (Z_+ \cup Z_-)$ is a three-dimensional cone (the light cone of the indefinite form).
-- $\mathbb{M}_- \cap (Z_+ \cup Z_-)$ is a three-dimensional cone.
+- $\mathbb{M}_+ \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $q_0 e_0 + \sum_k q'_k (j e_k)$ has idempotent components $q_0 \pm \sum_k q'_k e_k$, both nonzero).
+- $\mathbb{M}_- \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $j q'_0 e_0 + \sum_k q_k e_k$ has idempotent components $\pm q'_0 + \sum_k q_k e_k$, both nonzero).
 - $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-)$ is a one-dimensional subset (the zero divisors of the split complex algebra).
 
 **In the integration theory.** The fundamental solution of the gradient has singularities on the zero divisor set, and the integral formulas require careful treatment on or near the zero divisors.
@@ -466,7 +466,7 @@ The **split-quaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$
 
 The formulas for the operators are **identical** to the biquaternion case, because the operators act on functions of four real variables and the multiplication of the coefficients is the same up to the sign of the extra unit. What is different is the algebraic structure of the domains on which the operators are defined:
 
-- The zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, in contrast to the seven-dimensional cone of the biquaternion case.
+- The zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, in contrast to the complex cone of complex dimension 3 (real dimension 6) of the biquaternion case.
 - The Hermitian form is indefinite of signature $(4, 4)$, not positive-definite.
 - The invertibility criterion is linear in the idempotent basis, not quadratic.
 - The idempotent decomposition reduces the analysis to two copies of the quaternion analysis.

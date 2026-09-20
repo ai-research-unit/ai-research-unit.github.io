@@ -519,11 +519,10 @@ The non-degenerate factor is a central simple algebra over $R$, or a product of 
 ## Further Reading
 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the definitive modern classification.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for a physics-oriented treatment.
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the geometric-algebra perspective.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for an accessible treatment.
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989), for the mathematical foundations.
-- Klaus Gürlebeck and Wolfgang Sprössig, *Quaternionic and Clifford Calculus for Physicists and Engineers* (Wiley, 1997), for an accessible introduction.
 - David Hestenes and Garret Sobczyk, *Clifford Algebra to Geometric Calculus* (Reidel, 1984), for the geometric-calculus approach.
+- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003), for the geometric-algebra perspective.
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991), for the theory of Clifford algebras over commutative rings.
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005), for the field case.
 

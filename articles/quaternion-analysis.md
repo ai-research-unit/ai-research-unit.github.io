@@ -491,27 +491,16 @@ Monogenic functions are harmonic, so quaternion analysis is closely related to h
 
 Quaternion analysis is the case $n = 4$ of **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The Dirac operator is defined for any $n$, and the monogenic functions are the kernel of the Dirac operator. The theory is used in:
 
-- The study of the Dirac equation in physics.
 - The theory of harmonic forms and Hodge theory.
 - The theory of boundary value problems for elliptic systems.
 - The theory of Hardy spaces and singular integrals.
-
-### The Dirac Equation
-
-The Dirac equation in physics is a first-order partial differential equation of the form
-
-$$
-(i \gamma^\mu \partial_\mu - m) \psi = 0,
-$$
-
-where the $\gamma^\mu$ are Dirac matrices and $\psi$ is a spinor. The quaternion Dirac operator is the simplest case of this equation, and the monogenic functions are the solutions of the massless Dirac equation. This is the reason quaternion analysis is used in relativistic quantum mechanics.
 
 ### The Radon Transform
 
 The quaternion Radon transform is the analogue of the Radon transform in complex analysis. It is defined by integrating a function over spheres in $\mathbb{R}^4$, and it is inverted by a formula involving the Dirac operator. It is used in:
 
 - The theory of integral geometry in four dimensions.
-- The inversion of the Radon transform for the Dirac equation.
+- The inversion of the Radon transform for the Dirac operator.
 - The theory of the X-ray transform in higher dimensions.
 
 ## Comparison with Complex Analysis

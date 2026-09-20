@@ -476,9 +476,7 @@ Higher ranks require arithmetic invariants.
 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001).
-- Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge University Press, 2003).
 - H. Blaine Lawson and Marie-Louise Michelsohn, *Spin Geometry* (Princeton University Press, 1989).
-- Klaus Gürlebeck and Wolfgang Sprössig, *Quaternionic and Clifford Calculus for Physicists and Engineers* (Wiley, 1997).
 - David Hestenes and Garret Sobczyk, *Clifford Algebra to Geometric Calculus* (Reidel, 1984).
 - Max-Albert Knus, *Quadratic and Hermitian Forms over Rings* (Springer, 1991).
 - T. Y. Lam, *Introduction to Quadratic Forms over Fields* (AMS, 2005).

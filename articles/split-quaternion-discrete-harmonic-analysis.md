@@ -9,7 +9,7 @@ The treatment is purely mathematical. The goal is to define the discrete split-q
 
 The key structural fact is the **idempotent decomposition**: the split quaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$ commute with everything. So every power-series function of a split quaternion, including the Fourier kernel, decomposes into two copies of the corresponding quaternion function, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case.
 
-Unlike the biquaternion case, the split quaternion Fourier kernel is **not** defined by a root of $-1$. The split complex unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $e^{j\theta} = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split quaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.
+Unlike the biquaternion case, the split quaternion Fourier kernel is **not** defined by the split complex unit $j$, which is the only scalar candidate in the algebra. The unit $j$ satisfies $j^2 = +1$, not $j^2 = -1$, so the exponential $e^{j\theta} = \cosh\theta + j\sinh\theta$ is hyperbolic, not trigonometric. The Fourier kernel in the split quaternion case is therefore defined by an element whose square is $-1$ in each idempotent component, and the kernel is the pair of the quaternion Fourier kernels of the two components.
 
 Throughout, a split quaternion is written
 
@@ -135,7 +135,7 @@ $$
 F[u] = \sum_{n=0}^{N-1} f[n] \, W_N(n, u).
 $$
 
-The two transforms are closely related: the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel.
+The two transforms are closely related: the conjugate of the left-kernel transform of $f$ equals the right-kernel transform of the conjugate of $f$, with a sign change in the kernel. (The outer conjugation is needed: $\overline{K_u[n] f[n]} = \overline{f[n]}\,\overline{K_u[n]}$.)
 
 ### Invertibility
 
@@ -348,7 +348,7 @@ The precise condition under which the transform is invertible on a signal with z
 
 ### Structural Interpretation
 
-The vanishing-norm issue is a genuinely split quaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split quaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a seven-dimensional cone.
+The vanishing-norm issue is a genuinely split quaternion feature. It does not arise in the quaternion Fourier transform, because the quaternion algebra is a division algebra. It arises in the biquaternion case as well, but the zero divisor structure is different: in the split quaternion case, the zero divisor set is the union of two four-dimensional linear subspaces, while in the biquaternion case, it is a complex cone of complex dimension $3$ (real dimension $6$).
 
 The issue can be avoided by restricting the signals to a subspace where the norm form is nonzero, such as the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$. On the quaternion subspace, every nonzero sample is invertible, and the transform is invertible on all signals.
 

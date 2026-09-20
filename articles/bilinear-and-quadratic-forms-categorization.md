@@ -114,7 +114,7 @@ $$
 Q(v) = v_0^2 - v_1^2 - v_2^2 - v_3^2.
 $$
 
-This is the **Minkowski interval**. The form is indefinite and non-degenerate. It has isotropic vectors: the **null vectors** of relativity, such as $v = (1, 1, 0, 0)$, satisfy $Q(v) = 1 - 1 = 0$.
+This is the **Minkowski interval**. The form is indefinite and non-degenerate. It has isotropic vectors: the **null vectors**, such as $v = (1, 1, 0, 0)$, satisfy $Q(v) = 1 - 1 = 0$.
 
 ## 8. The Split Form over $\mathbb{R}$
 
