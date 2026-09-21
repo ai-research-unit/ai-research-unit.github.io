@@ -64,7 +64,7 @@ so it commutes with $\gamma_5$ and with each $P_{L,R}$. Chirality is therefore a
 
 ## Problem 2: The Two Weyl Halves and the Mass Term
 
-Take the block gamma matrices of the parent article,
+Take the mostly-minus counterpart of the parent's block gamma matrices,
 
 $$
 \gamma^0 = \begin{pmatrix}0 & I_2\\ I_2 & 0\end{pmatrix}, \qquad
@@ -102,7 +102,7 @@ $$
 
 and identically for $\psi_R$. Thus the mass term, and only the mass term, couples the two halves: at $m=0$ the coupling disappears, and each half separately obeys the massive Klein–Gordon equation. (The overall sign of $\Box$ is the usual metric-sign convention, fixed here by the block gammas.)
 
-**Mass shell.** For a plane wave $\Psi\propto e^{-ik_0x^0+i\mathbf{k}\cdot\mathbf{x}}$, the Klein–Gordon equation gives $k_0^2 = \mathbf{k}^2 + m^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_0 + \mathbf{p}\in\mathbb{M}_-$ and $k = p/\hbar$,
+**Mass shell.** For a plane wave $\Psi\propto e^{-ik_0x^0+i\mathbf{k}\cdot\mathbf{x}}$, the Klein–Gordon equation gives $k_0^2 = \mathbf{k}^2 + m^2c^2/\hbar^2$. Equivalently, with the four-momentum $\tilde{P} = iE/c\,e_0 + \mathbf{p}\in\mathbb{M}_-$ and $k = p/\hbar$,
 
 $$
 N(\tilde{P}) = \tilde{P}\bar{\tilde{P}} = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2c^2,
@@ -211,7 +211,7 @@ $$
 
 and shows that it transforms as $X\mapsto gXg^{\dagger}$. This is immediate: $(gu)(gv)^{\dagger} = g(uv^{\dagger})g^{\dagger}$.
 
-**Hermiticity and the general four-vector map.** The matrix $X = uv^{\dagger}$ is Hermitian if and only if $u$ and $v$ are proportional; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The four-vector space is the Hermitian subspace $\mathbb{M}_+$ (real dimension four), and the bilinear that lands in it is the **Hermitian part**
+**Hermiticity and the general four-vector map.** The matrix $X = uv^{\dagger}$ is Hermitian if and only if $u$ and $v$ are proportional by a real factor; in general it is a rank-one element of the full algebra $\mathbb{B}$, not of the Hermitian subspace. The bilinear that lands in the Hermitian subspace $\mathbb{M}_+$ (real dimension four) is the **Hermitian part**
 
 $$
 H(u,v) = \tfrac12\left(u\,v^{\dagger} + v\,u^{\dagger}\right) \in \mathbb{M}_+ .
@@ -345,7 +345,7 @@ Three points arose where the parent either leaves a definition to convention or 
 
 1. **Right-handed action, exact form.** The parent says the right-handed action is "equivalent to the entrywise-conjugate action $g\mapsto\bar{g}$ (the two differ by conjugation with the invariant tensor $\epsilon$)"; it does not give the identity. The precise identity is $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon = \epsilon\bar{g}\epsilon^{-1}$, verified numerically. The orientation of $\epsilon$ in this identity is a convention.
 
-2. **The spinor-to-vector map for a general pair.** The parent writes $X = uv^{\dagger}$ and calls $iuv^{\dagger}$ the four-vector. But $uv^{\dagger}$ is Hermitian only when $u$ and $v$ are proportional; in general it is a rank-one element of the full algebra, not of $\mathbb{M}_+$, and the general map requires the Hermitian part, $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})$.
+2. **The spinor-to-vector map for a general pair.** The parent writes $X = uv^{\dagger}$ and warns that for a generic pair $iuv^{\dagger}$ does not lie in $\mathbb{M}_-$ and is therefore not a four-vector; it then supplies the symmetrised map $H = \tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_+$, with four-vector image $V = iH\in\mathbb{M}_-$. The exercise uses that symmetrised map. The shorthand $X = uv^{\dagger}$ is general, but the identification of $iX$ with a four-vector is not.
 
 3. **The biquaternion mass term and the conjugate module.** The parent's open question 2 already flags that the compatibility of $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^{\flat}$ with the module action "requires the relationship between the one-sided action and the conjugate module to be fixed by a convention". The parent exhibits neither $\bar{S}$ inside $\mathbb{B}$ nor the isomorphism between the left-regular module $\mathbb{B}\cong S\oplus S$ and the Dirac module $S\oplus\bar{S}$.
 
@@ -353,7 +353,7 @@ A fourth point, the biquaternion (ideal) form of the symplectic pairing, is the 
 
 ## Summary
 
-Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$, with $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box+m^2)\psi = 0$, with mass shell $k_0^2 = \mathbf{k}^2+m^2$. (3) Under a boost along $\hat{e}_3$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$; in general $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g^{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde{\Lambda}V\tilde{\Lambda}^{\dagger}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.
+Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma_5)$, $P_R = \tfrac12(I_4+\gamma_5)$, with $\gamma_5 = \operatorname{diag}(-I_2,I_2)$ on $\Delta = S\oplus\bar{S}$, satisfy the projector algebra and commute with the Lorentz action. (2) The massless Dirac equation splits into two independent Weyl equations; the mass term couples them, and each half obeys $(\Box+m^2)\psi = 0$, with mass shell $k_0^2 = \mathbf{k}^2+m^2c^2/\hbar^2$. (3) Under a boost along $\hat{e}_3$ the halves transform by inverse matrices $g_{\text{boost}} = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ and $g_{\text{boost}}^{-1}$; under a rotation both transform by $g_{\text{rot}} = \operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$; in general $\Phi(\tilde{\Lambda}^{*}) = \epsilon^{-1}\bar{g}\epsilon$. (4) The symplectic form $\varepsilon(\psi,\phi) = \psi^{T}\epsilon\phi$ is invariant because $g^{T}\epsilon g = (\det g)\epsilon = \epsilon$, is nondegenerate, and gives $S^{*}\cong S$, but is not self-conjugacy. (5) The spinor bilinear gives $V = i\cdot\tfrac12(uv^{\dagger}+vu^{\dagger})\in\mathbb{M}_-$, transforming by rotor conjugation $\tilde{\Lambda}V\tilde{\Lambda}^{\dagger}$; a single spinor gives a null four-vector, and the vector representation is the tensor product of the chiral halves. (6) A $2\pi$ rotation acts as $-I_2$ on spinors and as the identity on four-vectors, and a $4\pi$ rotation as the identity on both: the double cover $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$. (7) The two-sided four-vector action is the bilinear shadow of the one-sided spinor action; the sign cancels in the former but not in the latter, and the mixed pairing $b(\psi,\chi) = \psi^{\dagger}\chi$ is invariant.
 
 ## Summary of Notation
 

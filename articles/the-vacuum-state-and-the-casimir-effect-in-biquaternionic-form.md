@@ -67,7 +67,7 @@ The honest summary is this: "the biquaternion vacuum" is not a biquaternion. For
 
 **From the mode expansion.** The free Maxwell potential expands in four covariant polarisations,
 $$
-\hat A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}\,2\omega_k}\sum_{r=0}^{3}
+\hat A_\mu(x)=\int\!\frac{d^{3}k}{(2\pi)^{3}}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}
 \Big(\hat a_r(\mathbf{k})\,\epsilon^{(r)}_\mu(\mathbf{k})\,e^{-ik\cdot x}
 +\hat a_r^{\dagger}(\mathbf{k})\,\epsilon^{(r)*}_\mu(\mathbf{k})\,e^{+ik\cdot x}\Big),
 \qquad
@@ -124,9 +124,9 @@ $$
 \frac{E_{\mathrm{cas}}(a)}{A}
 =\frac{\hbar c}{2}\int\!\frac{d^{2}k_\perp}{(2\pi)^{2}}
 \Bigg[\,2\sum_{n=1}^{\infty}\sqrt{\mathbf{k}_\perp^{2}+\Big(\frac{\pi n}{a}\Big)^{2}}
-\;-\;2\int_{0}^{\infty}dq\,\sqrt{\mathbf{k}_\perp^{2}+q^{2}}\,\Bigg],
+\;-\;2\,\frac{a}{\pi}\int_{0}^{\infty}dq\,\sqrt{\mathbf{k}_\perp^{2}+q^{2}}\,\Bigg],
 $$
-in which the continuum integral $2\int_0^\infty dq\,(\cdots)$ is the free-space zero-point energy per unit length at the same transverse momentum, and the TEM term has been dropped because it is $a$-independent and its contribution to the force vanishes. The subtraction is what the physical statement "the energy of the vacuum in the bounded region minus the energy of the same vacuum without the plates" means, and it is the subtraction that removes the volume divergence: the leading $\Lambda^{4}$ term is identical in the two configurations and cancels. What survives of the surface terms is an $a$-independent plate self-energy — a constant in $a$ — and, beyond it, a finite remainder that depends on $a$.
+in which the continuum integral $2\,\frac{a}{\pi}\int_0^\infty dq\,(\cdots)$ is the free-space zero-point energy per unit length at the same transverse momentum — the factor $a/\pi$ is the mode density of the discrete $k_3=\pi n/a$, and without it the two terms are not commensurable — and the TEM term has been dropped because it is $a$-independent and its contribution to the force vanishes. The subtraction is what the physical statement "the energy of the vacuum in the bounded region minus the energy of the same vacuum without the plates" means, and it is the subtraction that removes the volume divergence: the leading $\Lambda^{4}$ term is identical in the two configurations and cancels. What survives of the surface terms is an $a$-independent plate self-energy — a constant in $a$ — and, beyond it, a finite remainder that depends on $a$.
 
 It has to be said clearly that this subtracted expression is still not an evaluable expression term by term. The two terms separately diverge; only their difference is finite, and it must be defined by a regularisation. The rest of the article evaluates that difference by two routes, and this is where the well-known trap lies.
 
@@ -158,7 +158,7 @@ $$
 $$
 because the exponent $s$ is conjugate to the frequency, and this is the sense in which the "sum of half-quantum-per-mode" is the zeta function at $s=-\tfrac12$.
 
-**Where the divergence went.** The continued zeta function has a pole where $\zeta(2s-2)$ has its pole, at $2s-2=1$, that is $s=\tfrac32$; this is the quartic volume divergence in disguise, and it sits exactly at the upper edge of the domain of convergence of the defining series. The continuation past the pole is unique given the functional equation of $\zeta$, and it is that uniqueness which makes the finite value at $s=-\tfrac12$ meaningful. In the language of the previous section: the pole is the cutoff divergence, and the analytic continuation is the statement that the divergence is a **local** term (a volume term, plus lower local terms) which is subtracted by the physical mode-density subtraction; the remaining finite part is universal. This is the justification of the regularisation, and it is the standard one.
+**Where the divergence went.** The continued zeta function has a pole where $\zeta(2s-2)$ has its pole, at $2s-2=1$, that is $s=\tfrac32$; this is the quartic volume divergence in disguise, and it sits exactly at the lower edge of the domain of convergence of the defining series, the boundary line $\mathrm{Re}\,s=\tfrac32$ of the half-plane $\mathrm{Re}\,s>\tfrac32$ in which the series converges. The continuation past the pole is unique given the functional equation of $\zeta$, and it is that uniqueness which makes the finite value at $s=-\tfrac12$ meaningful. In the language of the previous section: the pole is the cutoff divergence, and the analytic continuation is the statement that the divergence is a **local** term (a volume term, plus lower local terms) which is subtracted by the physical mode-density subtraction; the remaining finite part is universal. This is the justification of the regularisation, and it is the standard one.
 
 **The value.** Evaluating the continued zeta function at $s=-\tfrac12$ uses
 $$

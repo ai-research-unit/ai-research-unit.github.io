@@ -182,14 +182,21 @@ $$
 \big(\hat{a}_0(\mathbf{k})-\hat{a}_3(\mathbf{k})\big)|\psi\rangle=0 .
 $$
 
-This condition does not set the timelike and longitudinal excitations to zero individually; it permits the combination $\hat{a}_0^\dagger+\hat{a}_3^\dagger$. That combination has **zero norm**,
+This condition does not set the timelike and longitudinal excitations to zero individually; it leaves the combination $\hat{a}_0^\dagger-\hat{a}_3^\dagger$. That combination is annihilated by the condition,
 
 $$
-\big\|\big(\hat{a}_0^\dagger+\hat{a}_3^\dagger\big)|0\rangle\big\|^2
+\big(\hat{a}_0-\hat{a}_3\big)\big(\hat{a}_0^\dagger-\hat{a}_3^\dagger\big)|0\rangle
+=\big(\zeta_0+\zeta_3\big)|0\rangle=0,
+$$
+
+and it has **zero norm**,
+
+$$
+\big\|\big(\hat{a}_0^\dagger-\hat{a}_3^\dagger\big)|0\rangle\big\|^2
 =\zeta_0+\zeta_3=-1+1=0,
 $$
 
-so it is orthogonal to every state in the physical subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
+so, lying in the physical subspace and being null, it is orthogonal to every state in that subspace and decouples from all physical amplitudes. On the quotient by the zero-norm states, the physical subspace has **positive-definite norm** and consists exactly of the two transverse polarizations. Their polarization sum is the transverse projector,
 
 $$
 \sum_{\lambda=1}^{2}\epsilon_i^{(\lambda)}(\mathbf{k})\,\epsilon_j^{(\lambda)}(\mathbf{k})
@@ -243,7 +250,7 @@ The biquaternion Maxwell equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ is first 
 
 The Legendre transform is singular. The conjugate momenta are $\pi^\mu=-F^{0\mu}$, so $\pi^0\approx0$ is primary and Gauss's law $\mathrm{div}\,\boldsymbol{\pi}\approx0$ is secondary; both are **first class** and generate gauge transformations. The phase-space count $8-2\times2=4$ gives two field degrees of freedom. In the notation of the companion articles the constraints are $\mathrm{Sc}(\tilde{\pi})\approx0$ and $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{\pi})\approx0$, the same scalar-part shape as the charge-conservation condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$.
 
-Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[\hat{a}_r,\hat{a}_s^\dagger]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\zeta=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(\hat{a}_0-\hat{a}_3)|\psi\rangle=0$ leaves the zero-norm combination $\hat{a}_0^\dagger+\hat{a}_3^\dagger$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^\lambda\epsilon_j^\lambda=\delta_{ij}-\hat{k}_i\hat{k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
+Covariant quantization is Gupta–Bleuler: four polarizations with commutators $[\hat{a}_r,\hat{a}_s^\dagger]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}$, $\zeta=(-1,+1,+1,+1)$, so the timelike mode has negative norm; the subsidiary condition $(\hat{a}_0-\hat{a}_3)|\psi\rangle=0$ leaves the zero-norm combination $\hat{a}_0^\dagger-\hat{a}_3^\dagger$, which decouples, and the physical subspace has positive-definite norm and exactly the two transverse polarizations, with $\sum_{\lambda=1}^2\epsilon_i^\lambda\epsilon_j^\lambda=\delta_{ij}-\hat{k}_i\hat{k}_j$. By comparison a real scalar field has one mode, no constraint, and positive norm. The two-polarization count follows from the gauge symmetry, not from the number of components.
 
 The extension is a transcription of standard canonical quantization into the framework's notation, not a derivation of the quantized structure from $\mathbb{B}$. Unlike the Dirac case it requires no new grading, but unlike the Dirac case the natural variable is not the canonical one, and the gauge must be fixed from outside the algebra. The framework cannot quantize the Maxwell field automatically.
 

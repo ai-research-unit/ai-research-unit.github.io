@@ -50,8 +50,8 @@ An equation second order in $t$ does not determine the field from its value alon
 
 $$
 \left(\bar{\tilde{\nabla}} + \mu\right)\left(\tilde{\nabla} - \mu\right)
-= \Box + \mu\bar{\tilde{\nabla}} - \mu\tilde{\nabla} - \mu^2
-= \Box - 2\mu\,\boldsymbol{\nabla} - \mu^2,
+= \Box - \mu\bar{\tilde{\nabla}} + \mu\tilde{\nabla} - \mu^2
+= \Box + 2\mu\,\boldsymbol{\nabla} - \mu^2,
 \qquad \mu = \frac{mc}{\hbar},
 $$
 
@@ -176,7 +176,7 @@ $$
 \Box\tilde{\Phi}_\pm = (\Box\tilde{\Phi})_\pm ,
 $$
 
-so $\tilde{\Phi}$ solves the Klein–Gordon equation if and only if $\tilde{\Phi}_+$ and $\tilde{\Phi}_-$ each solve it separately. There is no equation coupling the two sectors, and the decomposition is not a decomposition into interacting parts. Worse for the hoped-for reading, the two parts are not independent: because $i$ is central and commutes with $\Box$, multiplication by $i$ maps Klein–Gordon solutions in $\mathbb{M}_+$ to Klein–Gordon solutions in $\mathbb{M}_-$,
+so $\tilde{\Phi}$ solves the Klein–Gordon equation if and only if $\tilde{\Phi}_+$ and $\tilde{\Phi}_-$ each solve it separately. There is no equation coupling the two sectors, and the decomposition is not a decomposition into interacting parts. Worse for the hoped-for reading, the two sectors are not independent: because $i$ is central and commutes with $\Box$, multiplication by $i$ maps Klein–Gordon solutions in $\mathbb{M}_+$ to Klein–Gordon solutions in $\mathbb{M}_-$,
 
 $$
 \left(\Box-\mu^2\right)\tilde{\Phi}_+ = 0

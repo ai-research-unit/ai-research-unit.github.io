@@ -76,7 +76,7 @@ $$
 =(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q),
 $$
 
-with all other anticommutators vanishing. The particle number, antiparticle number, fermion number and electric charge are
+with all other anticommutators vanishing. The particle number, antiparticle number, the total number of quanta and the electric charge are
 
 $$
 \hat N_a=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\hat a_r^\dagger\hat a_r,\qquad
@@ -85,7 +85,7 @@ $$
 \hat Q=\hat N_a-\hat N_b,
 $$
 
-and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\mathbf p))^2=0$. All of this is the Dirac quantization article's; the notations $\hat F$ and $\hat Q$ are its notations.
+and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\mathbf p))^2=0$. Here $\hat Q=\hat N_a-\hat N_b$ is the conserved fermion number (the corpus's $U(1)$ charge), while $\hat F=\hat N_a+\hat N_b$ is the **total number of quanta**, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $\hat Q$ is the Dirac quantization article's; $\hat F$ is introduced here.
 
 **Bosonic (Maxwell).** The potential expands in four polarizations with
 
@@ -177,7 +177,7 @@ $$
 \tilde N_{\mathrm{tr}}^2=\tilde N_{\mathrm{tr}},
 $$
 
-so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(ie_1-e_2)$; the creation and annihilation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\Phi(e_k)=-i\sigma_k$ they have the images
+so the truncated ladder satisfies the **fermionic** canonical anticommutation relations with no truncation error at all. The operators are the angular-momentum article's spin ladder up to the factor $\hbar$, $\tilde S_+=\tfrac{\hbar}{2}(ie_1-e_2)$; the annihilation and creation operators of the single mode are the spin-raising and spin-lowering operators of the informational sector. Under the isomorphism $\Phi(e_k)=-i\sigma_k$ they have the images
 
 $$
 \Phi(\tilde a_{\mathrm{tr}})=|0\rangle\langle1|,\qquad
@@ -231,7 +231,7 @@ The consequence for the framework is worth stating plainly. The Maxwell quantiza
 | $\mathbb{Z}/2$ parity grading | nontrivial; an element of $\mathbb{B}$ for one mode | exists on the Fock space, but the modes commute and no anticommutation is imposed |
 | What $\mathbb{B}$ supplies | the whole one-mode algebra | the module, and nothing algebraic |
 
-The table's last row is the article's finding in one line. The statistics is carried by the bracket, as the KMS and Dirac articles both state; the finite-dimensional algebra can carry the fermionic bracket for a single mode and cannot carry the bosonic bracket for any mode. The asymmetry is not a preference of the framework for fermions. It is the finite dimension of $\mathbb{B}$ acting on a dimension count and a trace identity, and it disappears as soon as the construction moves to the infinite-dimensional module where the fields actually live, where both the exterior and the symmetric algebra are available on the same footing.
+The table's last row is the article's finding in one line. The statistics is carried by the (anti)commutation rule — the Dirac article states this for the mode algebra — and the KMS article reaches the same point from the thermal side, where the statistics enters through the time-ordered correlation functions and the $\mathbb{Z}/2$ grading of the operator algebra rather than through the bracket of the mode operators itself. The finite-dimensional algebra can carry the fermionic bracket for a single mode and cannot carry the bosonic bracket for any mode. The asymmetry is not a preference of the framework for fermions. It is the finite dimension of $\mathbb{B}$ acting on a dimension count and a trace identity, and it disappears as soon as the construction moves to the infinite-dimensional module where the fields actually live, where both the exterior and the symmetric algebra are available on the same footing.
 
 ## What This Article Establishes and What It Does Not
 
@@ -272,10 +272,10 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula; $\mathrm{Tr}(e_0)=2$ |
 | $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI_2$ | Isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
-| $\hat a,\hat a^\dagger$ | Creation and annihilation operators (general) |
+| $\hat a,\hat a^\dagger$ | Annihilation and creation operators (general) |
 | $\hat N=\sum_i\hat a_i^\dagger\hat a_i$ | Number operator |
 | $\hat a_r(\mathbf p),\hat b_r(\mathbf p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
-| $\hat F=\hat N_a+\hat N_b$, $\hat Q=\hat N_a-\hat N_b$ | Fermion number and electric charge |
+| $\hat F=\hat N_a+\hat N_b$, $\hat Q=\hat N_a-\hat N_b$ | Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge) |
 | $\hat a_r(\mathbf k)$, $\zeta=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
 | $\hat N_\gamma$ | Photon number (transverse sum) |
 | $\tilde a_{\mathrm{tr}}=\tfrac12(ie_1-e_2)$ | Single-mode annihilation operator in $\mathbb{B}$ |

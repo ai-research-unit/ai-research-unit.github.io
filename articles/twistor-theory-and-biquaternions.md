@@ -22,7 +22,7 @@ where $\omega^A$ is a left-handed (unprimed) two-component spinor and $\pi_{A'}$
 Twistor space carries a nondegenerate Hermitian form of signature $(2,2)$. Writing $T = S\oplus\bar{S}$ for the splitting into the unprimed and primed parts, the form is
 
 $$
-\Phi(Z,Z') = \omega^\dagger \pi' + \pi^\dagger \omega',
+h(Z,Z') = \omega^\dagger \pi' + \pi^\dagger \omega',
 $$
 
 and the group preserving it is $U(2,2)$. Its determinant-one subgroup $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$ of compactified Minkowski space. The conformal group acts **linearly** on $T$; this linearisation of an action that is nonlinear on spacetime is the technical heart of the programme.
@@ -53,7 +53,7 @@ $$
 T = S\oplus\bar{S} = \left(\tfrac12,0\right)\oplus\left(0,\tfrac12\right) = \Delta,
 $$
 
-which is **exactly the Dirac spinor module of that article**. A twistor is a Dirac spinor on which the conformal group, not merely the Lorentz group, acts; the extra structure distinguishing a twistor from a Dirac spinor is the Hermitian form $\Phi$ of signature $(2,2)$, which encodes the conformal metric.
+which is **exactly the Dirac spinor module of that article**. A twistor is a Dirac spinor on which the conformal group, not merely the Lorentz group, acts; the extra structure distinguishing a twistor from a Dirac spinor is the Hermitian form $h$ of signature $(2,2)$, which encodes the conformal metric.
 
 The two programmes therefore start from the same representation-theoretic fact, and both inherit from it the same kinematics of the double cover: the Lorentz group acts projectively on null directions, the spinor is two-valued, and a rotation by $2\pi$ is $-e_0$ on a spinor but $e_0$ on a four-vector. Whatever the differences in aim, the spinor module is not a point of contrast but a point of contact.
 
@@ -75,7 +75,7 @@ $$
 \omega \longmapsto A\,\omega, \qquad \pi \longmapsto (A^\dagger)^{-1}\,\pi.
 $$
 
-The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations, dilations, and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.
+The second factor is the conjugate defining representation in disguise: with $\epsilon$ the invariant form of the spinor-module article, $(A^\dagger)^{-1} = \epsilon\,\bar{A}\,\epsilon^{-1}$. Under $SU(2,2)$ this block-diagonal action is completed by the off-diagonal generators — translations and special conformal transformations — that mix $\omega$ and $\pi$ and thereby move the point $x$; the Lorentz group is the part that preserves the metric.
 
 A related caution concerns the symbol $i$. In the framework, $i$ is the **scalar imaginary** of $\mathbb{B}$, and its appearance in the time coordinate $ict$ is what makes the signature Lorentzian. In the incidence relation $\omega = ix\pi$, $i$ is the complex unit of twistor space, and its role is to make the line $L_x$ a real line when $x$ is Hermitian. The two complex structures are not the same structure, and the projective coincidence $\mathbb{P}(\mathbb{B})\cong\mathbb{PT}$ does not equate them.
 
@@ -87,7 +87,7 @@ On the biquaternion side, the norm form $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}
 
 On the twistor side, the same projective space and the same spinor lines appear, now carrying the metric. The incidence relation makes the null separation of two points a statement about the intersection of two lines: the null cone at $x$ is swept out by the points $y$ whose lines $L_y$ meet $L_x$, and this is exactly the condition $\det(x-y)=0$. The Klein correspondence is the dictionary between the two descriptions of the same projective geometry.
 
-Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm form $N$ is a **complex bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $\Phi$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
+Two qualifications keep the agreement honest. First, the quadrics are different objects. The biquaternion norm form $N$ is a **complex bilinear** (symmetric) form on $\mathbb{B}\cong\mathbb{C}^4$, and its null cone is a complex quadric; the twistor form $h$ is **Hermitian** of signature $(2,2)$, and its null set is the real cone that defines the conformal structure. They agree in being governed by the spinor and its two chiralities, not in being the same equation. Second, the agreement is at the level of the algebra of spinors and null directions, which is standard; neither programme owns it.
 
 ## Where the Aims Diverge
 
@@ -99,7 +99,7 @@ The differences are not algebraic errors on either side; they are differences in
 
 **Field equations.** The framework writes wave equations in the algebra: the biquaternion Maxwell and Dirac equations, with mass terms, at a point of $\mathbb{M}_-$ or of the full $\mathbb{B}$. Twistor theory's native transform is the **massless** one: the Penrose transform represents helicity-$h$ massless fields by sheaf cohomology on twistor space, and the conformal invariance is essential to it. Massive fields require additional twistor machinery and are not the natural home of the method.
 
-**Self-duality and operators.** Twistor theory's deepest result is the nonlinear graviton, which reduces half-flat Ricci-flat complex spacetimes to deformed twistor spaces; the framework's representation theory contains the decomposition of the field strength into self-dual $(1,0)$ and anti-self-dual $(0,1)$ parts, but the framework has no analogous curved-space construction. Conversely, the framework carries the **informational sector** $\mathbb{M}_+$ with its operator algebra and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, the biquaternion form of the Born rule. Twistor theory has no counterpart of this Hermitian operator algebra: its Hermitian form $\Phi$ is a fixed conformal structure, not a space of states and observables. The two programmes are asymmetric in what they provide: twistors give conformal and null geometry and a transform; the framework gives a real material sector and an operator sector on the same algebra.
+**Self-duality and operators.** Twistor theory's deepest result is the nonlinear graviton, which reduces half-flat Ricci-flat complex spacetimes to deformed twistor spaces; the framework's representation theory contains the decomposition of the field strength into self-dual $(1,0)$ and anti-self-dual $(0,1)$ parts, but the framework has no analogous curved-space construction. Conversely, the framework carries the **informational sector** $\mathbb{M}_+$ with its operator algebra and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, the biquaternion form of the Born rule. Twistor theory has no counterpart of this Hermitian operator algebra: its Hermitian form $h$ is a fixed conformal structure, not a space of states and observables. The two programmes are asymmetric in what they provide: twistors give conformal and null geometry and a transform; the framework gives a real material sector and an operator sector on the same algebra.
 
 ## What Is Not Claimed
 
@@ -112,7 +112,7 @@ It is worth stating the negative claims as plainly as the positive ones.
 
 ## Summary
 
-Twistor theory and the biquaternion framework share a precise foundation: the two-component Weyl spinor module $S=\mathbb{C}^2$ and the covering $SL(2,\mathbb{C})\to SO^+(1,3)$. Twistor space is $T = S\oplus\bar{S}$, which is exactly the Dirac spinor module $\Delta$ of the spinor-module article, equipped with a Hermitian form $\Phi$ of signature $(2,2)$ whose isometry group $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$. A point of complexified Minkowski space corresponds to a line in $\mathbb{PT}$ by the incidence relation $\omega = ix\pi$, and null separation becomes the intersection of lines — the Klein correspondence. Twistor theory uses this to organise conformal invariance, null geometry, massless fields (the Penrose transform), and half-flat solutions (the nonlinear graviton).
+Twistor theory and the biquaternion framework share a precise foundation: the two-component Weyl spinor module $S=\mathbb{C}^2$ and the covering $SL(2,\mathbb{C})\to SO^+(1,3)$. Twistor space is $T = S\oplus\bar{S}$, which is exactly the Dirac spinor module $\Delta$ of the spinor-module article, equipped with a Hermitian form $h$ of signature $(2,2)$ whose isometry group $SU(2,2)$ is the double cover of the conformal group $SO(2,4)$. A point of complexified Minkowski space corresponds to a line in $\mathbb{PT}$ by the incidence relation $\omega = ix\pi$, and null separation becomes the intersection of lines — the Klein correspondence. Twistor theory uses this to organise conformal invariance, null geometry, massless fields (the Penrose transform), and half-flat solutions (the nonlinear graviton).
 
 The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinct four-complex-dimensional module structures — $S\oplus S$ under left multiplication, $S\otimes\bar{S}=(\tfrac12,\tfrac12)$ under conjugation, and (for $T$) $S\oplus\bar{S}$ — and it is the same spinor module, not the same space, that the two programmes share. The material sector $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, have no twistor counterparts, while the conformal group and the twistor transform have no counterpart here. The two programmes agree on the spinor and the null cone and diverge on what they build from them; neither contains the other.
 
@@ -123,6 +123,7 @@ The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinc
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
+| $\Phi:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix realization; $\Phi(e_0)=I_2$, $\Phi(e_k)=-i\sigma_k$ (read list) |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector), fixed points of $\flat$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector), fixed points of $\dagger$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, fixed points of complex conjugation |
@@ -135,7 +136,7 @@ The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ carries three distinc
 | $T=S\oplus\bar{S}$ | Twistor space, $\cong\mathbb{C}^4$ |
 | $Z=(\omega^A,\pi_{A'})$ | Twistor: unprimed and primed Weyl spinors |
 | $\mathbb{PT}=\mathbb{CP}^3$ | Projective twistor space |
-| $\Phi(Z,Z')=\omega^\dagger\pi'+\pi^\dagger\omega'$ | Hermitian form of signature $(2,2)$ on $T$ |
+| $h(Z,Z')=\omega^\dagger\pi'+\pi^\dagger\omega'$ | Hermitian form of signature $(2,2)$ on $T$ |
 | $SU(2,2)$ | Double cover of the conformal group $SO(2,4)$ |
 | $x^{AA'}$ | $2\times2$ matrix of a point of complexified Minkowski space |
 | $\omega^A=ix^{AA'}\pi_{A'}$ | Twistor incidence relation |

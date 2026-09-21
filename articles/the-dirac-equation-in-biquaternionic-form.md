@@ -323,7 +323,7 @@ $$
 \tilde{\Psi}(\tilde{X}) = \tilde{\Psi}_0 \exp(\tilde{k}\tilde{X}),
 $$
 
-where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{k} = e_0 k_0 + e_1 k_1 + e_2 k_2 + e_3 k_3$ is the wave biquaternion, and $\tilde{X} = e_0 (ict) + e_1 x + e_2 y + e_3 z$ is the four-position biquaternion. The equation $\tilde{\nabla}\tilde{\Psi} = 0$ becomes
+where $\tilde{\Psi}_0 \in \mathbb{B}$ is a constant biquaternion, $\tilde{k} = i k_0 e_0 + e_1 k_1 + e_2 k_2 + e_3 k_3$ is the wave biquaternion, and $\tilde{X} = e_0 (ict) + e_1 x + e_2 y + e_3 z$ is the four-position biquaternion. The equation $\tilde{\nabla}\tilde{\Psi} = 0$ becomes
 
 $$
 \tilde{k}\tilde{\Psi}_0 = 0,
@@ -353,7 +353,7 @@ $$
 \tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2,
 $$
 
-i.e., $k_0^2 + k_1^2 + k_2^2 + k_3^2 = -m^2 c^2/\hbar^2$, or equivalently $-k_0^2 + \|\mathbf{k}\|^2 = -m^2 c^2/\hbar^2$, which is the standard mass-shell relation $k_0^2 = \|\mathbf{k}\|^2 + m^2 c^2/\hbar^2$ (with $k_0 = E/\hbar c$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \mathbf{p}^2 c^2 + m^2 c^4$ (with $\mathbf{p} = \hbar\mathbf{k}$).
+i.e., $-k_0^2 + \|\mathbf{k}\|^2 = -m^2 c^2/\hbar^2$, which is the standard mass-shell relation $k_0^2 = \|\mathbf{k}\|^2 + m^2 c^2/\hbar^2$ (with $k_0 = E/\hbar c$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \mathbf{p}^2 c^2 + m^2 c^4$ (with $\mathbf{p} = \hbar\mathbf{k}$).
 
 The solution space of the massive equation is four-dimensional over $\mathbb{C}$, corresponding to the four components of the Dirac spinor (two spin states for the particle, two for the antiparticle).
 

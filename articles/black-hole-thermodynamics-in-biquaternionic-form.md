@@ -133,7 +133,7 @@ $$
 T_{\mathrm H}=\frac{\hbar c^3}{8\pi G M k_B}.
 $$
 
-Two features of the parent's result are used below and are not re-established here. First, $\kappa$ is the **redshifted** surface gravity — finite at the horizon, the limit of $a(r)\sqrt f$ for the static observer, not the divergent proper acceleration $a(r)$ — so the temperature is the same function of the state regardless of the observer. Second, the parent identified the inverse temperature with the Euclidean period, $\beta=2\pi/\kappa=8\pi GM/c^3$, which is the length of the compact imaginary-time circle. That identification is the operational meaning of the imaginary time of $\mathbb{M}_-$ and is the reason the thermodynamics below can be read as a statement about the horizon's own geometry rather than about a distant observer's detector.
+Two features of the parent's result are used below and are not re-established here. First, $\kappa$ is the **redshifted** surface gravity — finite at the horizon, the limit of $a(r)\sqrt f$ for the static observer, not the divergent proper acceleration $a(r)$ — so the temperature is the same function of the state regardless of the observer. Second, the parent identified the inverse temperature with the Euclidean period, $\beta=2\pi c/\kappa=8\pi GM/c^3$, which is the length of the compact imaginary-time circle. That identification is the operational meaning of the imaginary time of $\mathbb{M}_-$ and is the reason the thermodynamics below can be read as a statement about the horizon's own geometry rather than about a distant observer's detector.
 
 The framework content inherited here is likewise the parent's: the horizon-generating flow is the modular flow, and its modular Hamiltonian $K=-\log\rho$ is a Hermitian element of the informational sector $\mathbb{M}_+$. The horizon's temperature is fixed by the period of that flow. The entropy developed in the next section is, by contrast, **not** a functional of an $\mathbb{M}_+$ state; the framework supplies no such state for a horizon, and the distinction is kept explicit.
 
@@ -169,7 +169,7 @@ The interior of a black hole has a perfectly good coordinate volume on any given
 
 **3. Dimensions leave no other choice.** With $\hbar,c,G,k_B$ available, the only dimensionless combination linear in the horizon's own geometry is $c^3A/(G\hbar)=A/\ell_P^2$. A dimensionless entropy assembled from the horizon data must therefore be $S/k_B=c\,A/\ell_P^2$ for a pure number $c$, and the number is fixed to $1/4$ by reason 2. There is no corresponding dimensionless "volume per Planck volume" that is a state function, by reason 1.
 
-**4. The Euclidean section localises the entropy at the horizon.** The Euclidean Schwarzschild (or Kerr–Newman) section is a "cigar"; the Euclidean time circle shrinks to a point at the horizon, a **codimension-two** locus. The on-shell gravitational action's horizon contribution is a boundary term at that locus and is proportional to its area; differentiating the resulting free energy with respect to the temperature gives $S=A/4G$ (Gibbons and Hawking). This is the same Euclidean computation the Hawking article used to fix the period $\beta=2\pi/\kappa$, read as an action rather than as a period. The localisation is what makes the result an area and not a volume: the entropy is the contribution of the shrinking circle, and that circle shrinks on a two-surface, not on a three-volume.
+**4. The Euclidean section localises the entropy at the horizon.** The Euclidean Schwarzschild (or Kerr–Newman) section is a "cigar"; the Euclidean time circle shrinks to a point at the horizon, a **codimension-two** locus. The on-shell gravitational action's horizon contribution is a boundary term at that locus and is proportional to its area; differentiating the resulting free energy with respect to the temperature gives $S=A/4G$ (Gibbons and Hawking). This is the same Euclidean computation the Hawking article used to fix the period $\beta=2\pi c/\kappa$, read as an action rather than as a period. The localisation is what makes the result an area and not a volume: the entropy is the contribution of the shrinking circle, and that circle shrinks on a two-surface, not on a three-volume.
 
 **5. The area is the monotone quantity.** Bekenstein's original argument reaches the same conclusion from the second law. The classical area theorem makes $A$ non-decreasing, and the generalized second law requires $S_{BH}+S_{\text{matter}}$ to be non-decreasing; the geometric entropy consistent with both must be a function of the area, and the function is fixed by dimensional analysis and the first law to $A/(4\ell_P^2)$.
 
@@ -396,7 +396,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 - The four laws of black hole mechanics: the constancy of $\kappa$ over a Killing horizon, the first law $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dQ$, the area theorem $\delta A\ge0$ under the dominant energy condition, and the unattainability of $\kappa=0$.
 - The no-hair theorem: a stationary, asymptotically flat electrovacuum black hole is a member of the Kerr–Newman family and its state is $(M,J,Q)$.
-- The Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$ (the parent's result), including the Euclidean period $\beta=2\pi/\kappa$.
+- The Hawking temperature $T=\hbar\kappa/(2\pi c k_B)$ (the parent's result), including the Euclidean period $\beta=2\pi c/\kappa$.
 - The Bekenstein–Hawking entropy $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$, from the Euclidean action and Bekenstein's argument.
 - The first law, verified term by term for Kerr–Newman and each specialisation.
 - The Smarr relation $M=2TS+2\Omega J+\Phi Q$, derived by scaling and verified; and its extension $M=2TS+2\Omega J+\Phi Q-2PV$ with a cosmological constant, verified for Schwarzschild–AdS.
@@ -440,7 +440,7 @@ Substituting these, $M-2TS+2PV$ reduces identically to zero; and independently, 
 
 ## Summary
 
-The four laws of black hole mechanics are the ordinary laws of thermodynamics applied to the horizon, through the dictionary $T=\kappa/2\pi$, $S=A/(4G)$ in units $c=\hbar=k_B=1$ (with $G$ kept explicit). The temperature is the parent's result $T=\hbar\kappa/(2\pi c k_B)$, taken as input: $\kappa$ is the redshifted surface gravity, constant over the horizon, and the inverse temperature is the Euclidean period $2\pi/\kappa$. The no-hair theorem gives the horizon a three-parameter state $(M,J,Q)$, which is what makes the thermodynamic description possible.
+The four laws of black hole mechanics are the ordinary laws of thermodynamics applied to the horizon, through the dictionary $T=\kappa/2\pi$, $S=A/(4G)$ in units $c=\hbar=k_B=1$ (with $G$ kept explicit). The temperature is the parent's result $T=\hbar\kappa/(2\pi c k_B)$, taken as input: $\kappa$ is the redshifted surface gravity, constant over the horizon, and the inverse temperature is the Euclidean period $2\pi c/\kappa$. The no-hair theorem gives the horizon a three-parameter state $(M,J,Q)$, which is what makes the thermodynamic description possible.
 
 The entropy is the **Bekenstein–Hawking entropy** $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$. It is the **area**, not a volume, and this is forced rather than coincidental: the area is a state function of $(M,J,Q)$ while the interior volume is slicing-dependent; the first law's geometric conjugate to $\kappa$ is $\delta A$; dimensional analysis leaves $A/\ell_P^2$ as the only dimensionless combination; the Euclidean section localises the entropy at the codimension-two locus where the time circle shrinks; and the area is the monotone quantity of Bekenstein's second-law argument. The coefficient $1/4$ is fixed by $T\,dS=(\kappa/2\pi)(dA/4G)=\kappa\,dA/(8\pi G)$. The entropy is thermodynamic and geometric; it is not a count of microstates, and no such count is claimed.
 
@@ -474,7 +474,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 | $T=\hbar\kappa/(2\pi c k_B)$ | Hawking temperature (from the parent) |
 | $S=k_B c^3A/(4G\hbar)=k_B A/(4\ell_P^2)$ | Bekenstein–Hawking entropy |
 | $\ell_P^2=\hbar G/c^3$ | Planck area |
-| $\beta=\hbar/(k_BT)=2\pi/\kappa$ | Inverse temperature, Euclidean period |
+| $\beta=\hbar/(k_BT)=2\pi c/\kappa$ | Inverse temperature, Euclidean period |
 | $dM=(\kappa/8\pi G)\,dA+\Omega\,dJ+\Phi\,dQ$ | First law (units $c=\hbar=k_B=1$) |
 | $M=2TS+2\Omega J+\Phi Q$ | Smarr relation |
 | $\Lambda$, $P=-\Lambda/(8\pi G)$, $V$ | Cosmological constant, pressure, thermodynamic volume |

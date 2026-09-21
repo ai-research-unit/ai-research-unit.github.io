@@ -15,7 +15,7 @@ That article deliberately worked at a summary level. It identified the solution 
 
 The article is organized as follows. The next section fixes the field, the two natural spinor bases, and the conventions. The following section constructs the plane-wave solutions in full, separating the positive- and the negative-frequency branches and displaying the spinor structure in both bases. The section after that treats orthogonality and normalization and records the spin sums. The next section gives the biquaternion form of the spinor bilinears. The longest section performs the non-relativistic limit, reduces the equation to the Pauli equation, exhibits the two-component spinor, and shows how the gyromagnetic factor and the spin–magnetic coupling emerge. A short section records the massless case and chirality, and the article closes with a summary.
 
-The material here is the declared foundation for three later exercises: on the plane-wave solutions, on the non-relativistic limit and the Pauli equation, and on chirality with Weyl spinors. The solutions and the limiting procedure are therefore worked out explicitly, with all intermediate steps that those exercises will need.
+The material here is the declared foundation for two of the later exercises, on the plane-wave solutions and on the non-relativistic limit and the Pauli equation. The solutions and the limiting procedure are therefore worked out explicitly, with all intermediate steps that those exercises will need.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary with $i^2 = -1$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ used throughout is the one of the companion article *Quantum Mechanics in Biquaternionic Form*,
 
@@ -23,7 +23,7 @@ $$
 e_0 \mapsto I_2, \qquad e_k \mapsto -i\sigma_k, \qquad i \mapsto i I_2,
 $$
 
-so that $i e_k \leftrightarrow \sigma_k$. The gamma matrices are the explicit block matrices built from the biquaternion units in the companion Dirac article,
+so that $i e_k \leftrightarrow \sigma_k$. The gamma matrices are the explicit block matrices built from the biquaternion units, in the mostly-minus convention used here; the companion Dirac article attaches $\eta$ to its generators, so its matrices are the $\gamma'^\mu = i\gamma^\mu$ of the paragraph below,
 
 $$
 \gamma^0 = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix}, \qquad
@@ -125,7 +125,7 @@ $$
 u_\pm(\mathbf{p}) = \begin{pmatrix} \sqrt{E \mp |\mathbf{p}|}\; \chi_\pm \\[2pt] \sqrt{E \pm |\mathbf{p}|}\; \chi_\pm \end{pmatrix},
 $$
 
-with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\not{p}-m)u_\pm = 0$: the upper equation is $(E+|\mathbf{p}|)\sqrt{E\mp|\mathbf{p}|} = m\sqrt{E\pm|\mathbf{p}|}$, which reduces to $E^2 - \mathbf{p}^2 = m^2$. At high energy the coefficient $E \mp |\mathbf{p}|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
+with the upper block left-handed and the lower block right-handed. One checks directly that this satisfies $(\not{p}-m)u_\pm = 0$: the upper equation is $(E\mp|\mathbf{p}|)\sqrt{E\pm|\mathbf{p}|} = m\sqrt{E\mp|\mathbf{p}|}$, which reduces to $E^2 - \mathbf{p}^2 = m^2$. At high energy the coefficient $E \mp |\mathbf{p}|$ of the upper component tends to zero for the matching sign, so each helicity-eigenstate solution becomes dominated by a single chirality — the statement that a massless fermion has definite handedness. The two bases are related by a fixed unitary transformation, and the two spin states may equally be labelled by helicity or by the index $r$; the labelling is a convention.
 
 The general positive-energy solution is an arbitrary linear combination $u = a_1 u^{(1)} + a_2 u^{(2)}$, so the positive-frequency solution space at fixed $\mathbf{p}$ is two-dimensional over $\mathbb{C}$.
 
@@ -261,7 +261,7 @@ $$
 The axial current similarly has
 
 $$
-j_5^0 = \psi_L^\dagger\psi_R - \psi_R^\dagger\psi_L, \qquad
+j_5^0 = \psi_R^\dagger\psi_R - \psi_L^\dagger\psi_L, \qquad
 \mathbf{j}_5 = \psi_L^\dagger\boldsymbol{\sigma}\psi_L + \psi_R^\dagger\boldsymbol{\sigma}\psi_R .
 $$
 

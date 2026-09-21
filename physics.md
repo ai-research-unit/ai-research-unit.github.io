@@ -15,8 +15,6 @@
 
 ### <a href="articles/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a>
 
-### <a href="articles/hamiltonian-mechanics-and-biquaternions-a-historical-note.html">Hamiltonian Mechanics and Biquaternions — A Historical Note</a>
-
 ### <a href="articles/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a>
 
 ### <a href="articles/the-wick-rotation-in-the-biquaternion-universe.html">The Wick Rotation in the Biquaternion Universe</a>
@@ -85,9 +83,19 @@
 
 ### <a href="articles/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a>
 
-### <a href="articles/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
 
 ### <a href="articles/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a>
+
+
+
+
+## Biquaternion Quantum Theory Classical Approximation
+
+
+### <a href="articles/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
+
+
+
 
 
 
@@ -116,6 +124,7 @@
 ### <a href="articles/radiation-from-accelerated-charges-in-biquaternionic-form.html">Radiation from Accelerated Charges in Biquaternionic Form</a>
 
 ### <a href="articles/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a>
+
 
 
 
@@ -153,8 +162,10 @@
 
 ### <a href="articles/exercise-the-relativistic-kinematics-of-a-two-body-decay.html">Exercise: The Relativistic Kinematics of a Two-Body Decay</a>
 
-## Biquaternion Relativistic Quantum Theory
 
+
+
+## Biquaternion Relativistic Quantum Theory
 
 ### <a href="articles/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>
 
@@ -178,8 +189,10 @@
 
 ### <a href="articles/zitterbewegung-in-biquaternionic-form.html">Zitterbewegung in Biquaternionic Form</a>
 
-## Biquaternion Quantum Fields
 
+
+
+## Biquaternion Quantum Fields
 
 ### <a href="articles/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>
 
@@ -211,8 +224,10 @@
 
 ### <a href="articles/the-modular-theory-of-tomita-takesaki-under-the-biquaternion-framework.html">The Modular Theory of Tomita–Takesaki under the Biquaternion Framework</a>
 
-## Biquaternion Particle Physics and Gauge Fields
 
+
+
+## Biquaternion Particle Physics and Gauge Fields
 
 ### <a href="articles/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>
 
@@ -242,8 +257,10 @@
 
 ### <a href="articles/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a>
 
-## Biquaternion Gravity and Cosmology
 
+
+
+## Biquaternion Gravity and Cosmology
 
 ### <a href="articles/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>
 
@@ -261,8 +278,10 @@
 
 ### <a href="articles/quantum-gravity-under-the-biquaternion-framework-a-research-agenda.html">Quantum Gravity under the Biquaternion Framework — A Research Agenda</a>
 
-## Biquaternion Thermodynamics and Statistical Mechanics
 
+
+
+## Biquaternion Thermodynamics and Statistical Mechanics
 
 ### <a href="articles/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
 
@@ -270,8 +289,10 @@
 
 ### <a href="articles/quantum-thermodynamics-in-biquaternionic-form.html">Quantum Thermodynamics in Biquaternionic Form</a>
 
-## Biquaternion Quantum Information
 
+
+
+## Biquaternion Quantum Information
 
 ### <a href="articles/quantum-gates-and-circuits-in-biquaternionic-form.html">Quantum Gates and Circuits in Biquaternionic Form</a>
 
@@ -279,8 +300,10 @@
 
 ### <a href="articles/quantum-teleportation-in-biquaternionic-form.html">Quantum Teleportation in Biquaternionic Form</a>
 
-## Biquaternion Connections and Horizons
 
+
+
+## Biquaternion Connections and Horizons
 
 ### <a href="articles/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>
 

@@ -202,11 +202,11 @@ a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\tfrac{71}{400}=0.864392\ldots,\qqu
 $$
 with $\mathbf{a}=(-0.335401,-0.447202,0.223601)$. The direction $\mathbf{r}$ is deliberately neither an axis of the basis nor the thermal direction. For this state the KMS relation was evaluated at several real $t$ with generic $\tilde{A},\tilde{B}$: $F_{AB}(t+i)$ agrees with $\omega(\sigma_{-t}(B)A)$ and with $F_{BA}(-t)$ to machine precision, and the flow identities hold to the same order.
 
-A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.253506,0.746494)$ in the $e_3$ basis, and
+A second, physical case ties the construction to the parent article and to *The Partition Function in Biquaternionic Form*. For the single fermionic mode of the Fock-space article, with $\tilde H=\omega\tilde N_{\mathrm{tr}}$ and $\tilde N_{\mathrm{tr}}=\tfrac12(e_0-ie_3)$, the thermal state at $\beta=1.2$, $\omega=0.9$ is $\tilde\rho=\mathrm{diag}(0.746494,0.253506)$ in the $e_3$ basis (the occupied mode second, so that $\tilde N_{\mathrm{tr}}\mapsto\mathrm{diag}(0,1)$), and
 $$
-\tilde K=-\log\tilde\rho=\mathrm{diag}(1.372368,0.292368)=\beta\tilde H+(\log Z)e_0,
+\tilde K=-\log\tilde\rho=\mathrm{diag}(0.292368,1.372368)=\beta\tilde H+(\log Z)e_0,
 $$
-with $Z=1+e^{-\beta\omega}=1.339596$, in agreement with the parent article's $K=\beta H+\log Z\,e_0$ and with the partition function of the companion article.
+with $Z=1+e^{-\beta\omega}=1.339596$, in agreement with the partition-function article's $K=\beta H+\log Z\,e_0$ and with that article's partition function.
 
 ## The Biquaternion Candidate for $S$
 
@@ -230,7 +230,7 @@ the modular flow is trivial. A nontrivial modular flow requires a nontracial sta
 
 ## The Type of the Algebra and Inner Versus Outer Modular Flow
 
-The finite-dimensional algebra is a factor of **type I$_1$**, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde\rho^{it}$ inside $\mathbb{B}$,
+The finite-dimensional algebra is a factor of **type I$_2$**: a finite factor is I$_n$ exactly when it is $M_n(\mathbb{C})$, and $\mathbb{B}\cong M_2(\mathbb{C})$, and it is semifinite: it carries a trace, and in the model above its modular flow is inner, implemented by the unitary $\tilde\rho^{it}$ inside $\mathbb{B}$,
 $$
 \sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it},\qquad \tilde\rho^{it}\in\mathbb{B}.
 $$
@@ -268,7 +268,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 - $\Delta(\tilde{A})=\tilde\rho\tilde{A}\tilde\rho^{-1}$, $\Delta^{1/2}(\tilde{A})=\tilde\rho^{1/2}\tilde{A}\tilde\rho^{-1/2}$, $J(\tilde{A})=\tilde\rho^{1/2}\tilde{A}^\dagger\tilde\rho^{-1/2}$, $\sigma_t(\tilde{A})=\tilde\rho^{it}\tilde{A}\tilde\rho^{-it}$.
 - $J^2=1$, $J\Delta J=\Delta^{-1}$, $J\,i\,J=-i$, $\sigma_t\circ\sigma_s=\sigma_{t+s}$, $d\sigma_t/dt|_{t=0}=-i[\tilde{K},\tilde{A}]$, and $JMJ=M'$.
 - $\tilde{K}=-\log\tilde\rho\in\mathbb{M}_+$, and for the thermal single mode $\tilde{K}=\beta\tilde{H}+(\log Z)e_0$, matching the parent and partition-function articles.
-- $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_1$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.
+- $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$; its modular flow is inner, implemented by $\tilde\rho^{it}\in\mathbb{B}$.
 
 **Interpretation.**
 
@@ -277,7 +277,7 @@ The KMS connection does not depend on this. The theorem of the earlier section �
 **Gap.**
 
 - The framework admits a modular flow but does not select a state; the distinguished tracial state gives the trivial flow $\sigma_t=\mathrm{id}$.
-- $\mathbb{B}$ is type I$_1$ (semifinite), so the genuinely type-III, outer modular flow lies outside it; realizing it requires an infinite-dimensional algebra built on $\mathbb{B}$-modules.
+- $\mathbb{B}$ is type I$_2$ and semifinite, so the genuinely type-III, outer modular flow lies outside it; realizing it requires an infinite-dimensional algebra built on $\mathbb{B}$-modules.
 - The action of $J$ on the sector decomposition and on the fermionic one-mode structure, in particular the parity $(-1)^F=ie_3$, has not been worked out.
 - No empirical consequence is derived.
 
@@ -299,7 +299,7 @@ The identities $J^2=1$, $J\Delta J=\Delta^{-1}$ and $J\,i\,J=-i$ — the modular
 
 The modular flow is the KMS flow: normalized to $\beta=1$, a faithful normal state satisfies the KMS boundary relation with respect to $\sigma_{-t}$, and the parent article's modular Hamiltonian $K=-\log\tilde\rho\in\mathbb{M}_+$ generates it, $d\sigma_t/dt|_{t=0}=-i[K,A]$. The parent stated the condition; this article has constructed the operator whose polar decomposition produces the flow for which it holds.
 
-Two honest limitations. The framework supplies $S$ and a family of faithful states, but no dynamics that selects a state, and the distinguished tracial state gives the trivial flow. And $\mathbb{B}$ is a type I$_1$ factor, hence semifinite, so its modular flow is inner — implemented by $\tilde\rho^{it}\in\mathbb{B}$ — while the outer modular flow of type III factors, the case in which the theory is indispensable, cannot occur inside the finite-dimensional algebra. The modular flow is inner for the semifinite factors and outer for III$_1$; the reverse reading is a common error. Whether an infinite-dimensional algebra built on $\mathbb{B}$-modules realizes the type III case is open.
+Two honest limitations. The framework supplies $S$ and a family of faithful states, but no dynamics that selects a state, and the distinguished tracial state gives the trivial flow. And $\mathbb{B}$ is a type I$_2$ factor, hence semifinite, so its modular flow is inner — implemented by $\tilde\rho^{it}\in\mathbb{B}$ — while the outer modular flow of type III factors, the case in which the theory is indispensable, cannot occur inside the finite-dimensional algebra. The modular flow is inner for the semifinite factors and outer for III$_1$; the reverse reading is a common error. Whether an infinite-dimensional algebra built on $\mathbb{B}$-modules realizes the type III case is open.
 
 ## Summary of Notation
 

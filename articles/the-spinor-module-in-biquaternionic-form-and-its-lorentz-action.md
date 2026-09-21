@@ -295,7 +295,7 @@ $$
 
 so the anti-Hermitian generators $-i\sigma_k$ and the Hermitian generators $\sigma_k$ both act on $S$ by matrix multiplication. On the spinor module the infinitesimal generators act as the Pauli matrices and their multiples, which is the familiar statement that the spin-$\frac{1}{2}$ representation is the fundamental representation of $\mathfrak{sl}(2,\mathbb{C})$.
 
-The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unitary biquaternions, $\tilde{R}^\dagger\tilde{R} = e_0$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
+The **compact subgroup** $SU(2)\subset SL(2,\mathbb{C})$ consists of the unit-norm biquaternions with real vector part (the unit quaternions), for which $\tilde{R}^\dagger\tilde{R} = e_0$. Its action on $S$ is unitary with respect to the Hermitian inner product $\langle\psi,\phi\rangle = \psi^\dagger\phi$, and it is the double cover of the spatial rotation group $SO(3)$. The boosts, by contrast, are not unitary, and they do not preserve that inner product; this is the representation-theoretic expression of the non-compactness of the Lorentz group.
 
 ## Bilinear Pairings and the Vector Representation
 
@@ -468,7 +468,7 @@ In this reading the spinor module is not an add-on to the biquaternion framework
 
 The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has a unique simple module, the two-dimensional complex **spinor module** $S=\mathbb{C}^2$, on which $\mathbb{B}$ acts by matrix multiplication. Inside the algebra, $S$ is realized as the minimal left ideal $\mathbb{B}p$, $p = \tfrac{1}{2}(e_0+ie_3)$, whose elements are the spinors; the algebra acts by left multiplication, and the action is one-sided.
 
-The **left-handed Weyl spinor** is the defining module $(\tfrac12,0)$; the **right-handed Weyl spinor** is its complex conjugate $(0,\tfrac12)$. These are the two **chiral halves**; their direct sum is the four-component Dirac spinor module. Over the complex algebra the two halves are isomorphic (the algebra is simple), and the chirality distinction is a real-structure distinction that appears on complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
+The **left-handed Weyl spinor** is the defining module $(\tfrac12,0)$; the **right-handed Weyl spinor** is its complex conjugate $(0,\tfrac12)$. These are the two **chiral halves**; their direct sum is the four-component Dirac spinor module. The two halves are not isomorphic as complex representations of $SL(2,\mathbb{C})$ (they are conjugate to one another), and the chirality distinction is a real-structure distinction that appears on complexification, $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{B}\cong M_2(\mathbb{C})\oplus M_2(\mathbb{C})$.
 
 The group of unit-norm biquaternions is $SL(2,\mathbb{C})$, the double cover of the restricted Lorentz group $SO^{+}(1,3)$. It acts on the spinor module by
 

@@ -53,7 +53,7 @@ The dictionary that places the photon's data in the algebra is the following.
 | Physical polarizations | the plane in $\mathrm{Vect}(\mathbb{M}_-)$ orthogonal to $\hat{\mathbf{k}}$ |
 | Helicity states | the $\pm1$ eigenvectors $\hat{\varepsilon}_\pm$ of the $\mathbb{M}_+$ element $i\hat{\mathbf{k}}$ |
 | Helicity observable | $\lambda=\tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}$, represented by the $\mathbb{M}_+$ element $i\hat{\mathbf{k}}$ |
-| Conserved energy–momentum | $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger=W+\tfrac{i}{c}\mathbf{S}\in\mathbb{M}_+$ |
+| Conserved energy–momentum | $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^\dagger=W+\tfrac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $\mathbf{S}$ the **Poynting vector** |
 | Photon number | $\hat N_\gamma$ (transverse sum) — **not** in $\mathbb{B}$ |
 
 Two structural observations follow from the table. The field-strength-like datum $\tilde{F}$ is in neither sector: it has vanishing scalar part and a vector part that is part electric (imaginary) and part magnetic (real), which is why it is not an element of $\mathbb{M}_-$ even though it is built from the potentials. The polarization *directions*, by contrast, are real spatial vectors and do sit in the material sector; this is the observation that the quantization article invited, and the next section makes it precise.
@@ -63,7 +63,7 @@ Two structural observations follow from the table. The field-strength-like datum
 The covariant quantization expands the potential in four polarizations,
 
 $$
-\hat A_\mu(x) = \int \frac{d^3k}{(2\pi)^3\,2\omega_k}\sum_{r=0}^{3}\Bigl(\hat a_r(\mathbf{k})\,\epsilon^{(r)}_\mu(\mathbf{k})\,e^{-ik\cdot x} + \hat a_r^\dagger(\mathbf{k})\,\epsilon^{(r)*}_\mu(\mathbf{k})\,e^{+ik\cdot x}\Bigr),
+\hat A_\mu(x) = \int \frac{d^3k}{(2\pi)^3}\frac{1}{\sqrt{2\omega_k}}\sum_{r=0}^{3}\Bigl(\hat a_r(\mathbf{k})\,\epsilon^{(r)}_\mu(\mathbf{k})\,e^{-ik\cdot x} + \hat a_r^\dagger(\mathbf{k})\,\epsilon^{(r)*}_\mu(\mathbf{k})\,e^{+ik\cdot x}\Bigr),
 $$
 
 with $\eta_{\mu\nu}\epsilon^{(r)\mu}\epsilon^{(s)\nu}=\zeta_r\delta_{rs}$ and $\zeta=(-1,+1,+1,+1)$. The vectors $\epsilon^{(1)},\epsilon^{(2)}$ are the two real spatial directions transverse to $\hat{\mathbf{k}}$, $\epsilon^{(3)}=\hat{\mathbf{k}}$ is longitudinal, and $\epsilon^{(0)}$ is timelike.
@@ -83,7 +83,7 @@ This is the precise sense in which the polarization space is native. The framewo
 The physical polarizations are the two spatial directions orthogonal to the propagation direction. Let $\hat{\mathbf{k}}$ be the unit vector along $\mathbf{k}$, and let $\hat{\varepsilon}_1,\hat{\varepsilon}_2$ be a right-handed orthonormal pair with $(\hat{\varepsilon}_1,\hat{\varepsilon}_2,\hat{\mathbf{k}})$ a right-handed triad. Transversality is the statement that the physical amplitudes lie in the orthogonal complement of $\hat{\mathbf{k}}$ inside the vector part of $\mathbb{M}_-$, whose projector is
 
 $$
-P_{ij} = \delta_{ij} - \hat k_i \hat k_j, \qquad \sum_{\lambda=1}^{2}\hat\varepsilon^{( \lambda)}_i \hat\varepsilon^{(\lambda)}_j = P_{ij}.
+P_{ij} = \delta_{ij} - \hat k_i \hat k_j, \qquad \sum_{r=1}^{2}\hat\varepsilon^{( r)}_i \hat\varepsilon^{(r)}_j = P_{ij}.
 $$
 
 The polarization sum that the parent article records is thus the statement that the physical polarization space is the $\hat{\mathbf{k}}$-orthogonal plane, an object defined by the algebra's own norm form.
@@ -120,13 +120,13 @@ Both the eigenvalue relation and the circular completeness relation were checked
 
 ## Helicity as an Observable in the Informational Sector
 
-The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, spin is the adjoint action on the imaginary quaternions: the rotation generators are the real pure quaternions $e_k\in\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$, acting by $\mathrm{ad}_{e_k}/2 = e_k\times$, and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\tfrac{\hbar}{2}ie_k$ in the angular-momentum article. The helicity observable is therefore
+The helicity of a spin-one particle is the projection of its spin along the momentum. In the algebra, spin is the adjoint action on the imaginary quaternions: the rotation generators are the real pure quaternions $e_k\in\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$, acting by $\mathrm{ad}_{e_k}/2 = e_k\times$ (the angular-momentum article normalizes the same generators as $g_k=-\tfrac12 e_k$, so its generator is $-e_k/2$ where this section uses $e_k$), and the observable is $i$ times the generator, exactly as the spin-$\tfrac12$ observable is $\tfrac{\hbar}{2}ie_k$ in the angular-momentum article. The helicity observable is therefore
 
 $$
 \lambda = \frac{i}{2}\,\mathrm{ad}_{\hat{\mathbf{k}}} = i\,\mathrm{Vect}(\hat{\mathbf{k}}\,\cdot\,) = \hat{\mathbf{k}}\cdot\mathbf{S},
 $$
 
-which on the complexified vector part is the vector part of left multiplication by the Hermitian element $i\hat{\mathbf{k}}\in\mathbb{M}_+$: $\lambda = \mathrm{Vect}\circ(\text{left multiplication by } i\hat{\mathbf{k}})$. Its action on the circular basis is diagonal:
+where $\mathbf{S}$ is the **spin** vector of the angular-momentum article (a different object from the Poynting vector $\mathbf{S}$ of the energy–momentum table above, which this auxiliary symbol unfortunately shares). On the complexified vector part, $\lambda$ is the vector part of left multiplication by the Hermitian element $i\hat{\mathbf{k}}\in\mathbb{M}_+$: $\lambda = \mathrm{Vect}\circ(\text{left multiplication by } i\hat{\mathbf{k}})$. Its action on the circular basis is diagonal:
 
 $$
 \lambda\,\hat\varepsilon_\pm = \pm\,\hat\varepsilon_\pm, \qquad \lambda\,\hat{\mathbf{k}} = 0 .
@@ -165,7 +165,7 @@ This is the algebraic content of "the photon has two helicity states and no thir
 
 Two things are conspicuously absent, and both were established by the parent articles rather than by this one.
 
-**The ladder.** The photon creation and annihilation operators satisfy $[\hat a_r,\hat a_s^\dagger]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}(\mathbf{k}-\mathbf{k}')$, a bosonic canonical relation. The Fock article proves that no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only relation of the form $[\tilde a,\tilde a^\dagger]=c\,e_0$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $\hat N_\gamma=\sum_{\lambda=1}^{2}\int\hat a_\lambda^\dagger\hat a_\lambda$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
+**The ladder.** The photon creation and annihilation operators satisfy $[\hat a_r,\hat a_s^\dagger]=\zeta_r\delta_{rs}(2\pi)^3\delta^{(3)}(\mathbf{k}-\mathbf{k}')$, a bosonic canonical relation. The Fock article proves that no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ satisfies $[\tilde a,\tilde a^\dagger]=e_0$: a commutator has vanishing trace, while $\mathrm{Tr}(e_0)=2$, so the only relation of the form $[\tilde a,\tilde a^\dagger]=c\,e_0$ that can hold in $\mathbb{B}$ has $c=0$. The photon's ladder algebra is therefore not native. It is not even a finite-dimensional object: the physical photon number is the transverse sum $\hat N_\gamma=\sum_{r=1}^{2}\int\hat a_r^\dagger\hat a_r$, acting on the symmetric algebra of the transverse polarization module, which is infinite-dimensional. What the algebra supplies here is the module — the transverse polarization plane of the previous sections — and nothing algebraic on top of it. This is a sharper negative than the spin-$\tfrac12$ case, where the algebra carries the one-mode fermionic relation exactly.
 
 **The gauge.** The canonical-quantization article proves that the algebra gives no reason to prefer the Lorenz gauge $S=\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{A})=0$ to any other. The reduction from the four polarization directions of $\mathbb{M}_-$ to the two transverse physical directions is performed by a subsidiary condition, and the subsidiary condition is imported. So the framework's role is asymmetric: it *owns* the space in which the reduction happens (the material sector and its indefinite norm), and it *does not own* the principle by which the reduction is made. I regard this as the central unclosed gap of the article, and it is not closed by the polarization results above.
 
@@ -207,7 +207,7 @@ The gaps are of three kinds, and none is closed by better notation.
 
 ## Summary
 
-The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the norm form $N(\tilde{X})=|\mathbf{q}|^2-q_0^2$ of that sector. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{\lambda=1}^{2}\hat\varepsilon^{(\lambda)}_i\hat\varepsilon^{(\lambda)}_j=\delta_{ij}-\hat k_i\hat k_j$.
+The photon is the one-particle state of the biquaternion Maxwell field $\tilde{\nabla}\tilde{F}=0$, and its two transverse polarizations have a native meaning in the algebra. The four polarization vectors of the covariant quantization are the four directions of the material sector $\mathbb{M}_-$, and the indefinite metric $\zeta=(-1,+1,+1,+1)$ is the norm form $N(\tilde{X})=|\mathbf{q}|^2-q_0^2$ of that sector. The two physical polarizations are the plane in the vector part of $\mathbb{M}_-$ orthogonal to the propagation direction, with polarization sum $\sum_{r=1}^{2}\hat\varepsilon^{(r)}_i\hat\varepsilon^{(r)}_j=\delta_{ij}-\hat k_i\hat k_j$.
 
 Circular polarization is the algebra's complex structure acting on the propagation direction: the circular vectors $\hat\varepsilon_\pm=\tfrac{1}{\sqrt2}(\hat\varepsilon_1\pm i\hat\varepsilon_2)$ are the eigenvectors of left multiplication by $\hat{\mathbf{k}}$, with $\hat{\mathbf{k}}\hat\varepsilon_\pm=\mp i\hat\varepsilon_\pm$. The helicity operator is $\lambda=\hat{\mathbf{k}}\cdot\mathbf{S}=\tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}=i\,\mathrm{Vect}(\hat{\mathbf{k}}\,\cdot\,)$, the vector part of left multiplication by the Hermitian element $i\hat{\mathbf{k}}\in\mathbb{M}_+$, with spectral values $\{+1,0,-1\}$; its $\pm1$ eigenvectors are the two physical polarizations and its $0$ eigenvector is the longitudinal direction $\hat{\mathbf{k}}$. The two helicities are the self-dual and anti-self-dual halves of the field strength: a definite-helicity plane wave is supported on $\mathbf{E}+ic\mathbf{B}$ or on $\mathbf{E}-ic\mathbf{B}$, never both.
 
@@ -232,8 +232,11 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 | $\hat\varepsilon_1,\hat\varepsilon_2$; $\hat\varepsilon_\pm$ | Linear and circular polarization vectors |
 | $\zeta=(-1,+1,+1,+1)$ | Indefinite metric of Gupta–Bleuler; norm form of $\mathbb{M}_-$ |
 | $\lambda=\hat{\mathbf{k}}\cdot\mathbf{S}=\tfrac{i}{2}\mathrm{ad}_{\hat{\mathbf{k}}}$ | Helicity operator; representative $i\hat{\mathbf{k}}\in\mathbb{M}_+$ |
+| $\mathbf{S}$ (in $\tilde W=W+\tfrac{i}{c}\mathbf S$) | Poynting vector (Maxwell article) |
+| $\mathbf{S}$ (in $\lambda=\hat{\mathbf{k}}\cdot\mathbf S$) | Spin vector (angular-momentum article) |
+| $g_k=-\tfrac12 e_k$ | Rotation generators in the angular-momentum article; this article writes the same generators as $e_k$ |
 | $\epsilon^{(r)}_\mu$, $\hat a_r,\hat a_r^\dagger$ | Polarization vectors and mode operators (imported) |
-| $\hat N_\gamma=\sum_{\lambda=1}^{2}\int\hat a_\lambda^\dagger\hat a_\lambda$ | Photon number (transverse sum), not in $\mathbb{B}$ |
+| $\hat N_\gamma=\sum_{r=1}^{2}\int\hat a_r^\dagger\hat a_r$ | Photon number (transverse sum), not in $\mathbb{B}$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 | $c=1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 

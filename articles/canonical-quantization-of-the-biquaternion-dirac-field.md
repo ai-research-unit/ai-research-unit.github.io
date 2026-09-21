@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The companion article *Quantum Mechanics in Biquaternionic Form* closes its list of open questions with a precise one:
+The companion article *Quantum Mechanics in Biquaternionic Form* raises, as the second of its list of open questions, a precise one:
 
 > "The formalism is first-quantized. To describe creation and annihilation of particles, one needs a Fock space and operator-valued fields. How does the biquaternion framework extend to this setting?"
 
-The companion article *The Dirac Equation in Biquaternionic Form* asks the same question from the field side, and the article *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit* supplies the classical material a mode expansion needs: the positive- and negative-frequency plane-wave solutions, their covariant normalizations, and the spin sums. The article *The KMS Condition and the Biquaternion Framework* supplies the thermal motivation and identifies exactly what a fermionic extension must add: a $\mathbb{Z}/2$ grading under which fermionic operators anticommute, which the biquaternion algebra does not by itself provide.
+The companion article *The Dirac Equation in Biquaternionic Form* asks the same question from the field side, and the article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* supplies the classical material a mode expansion needs: the positive- and negative-frequency plane-wave solutions, their covariant normalizations, and the spin sums. The article *The KMS Condition and the Biquaternion Framework* supplies the thermal motivation and identifies exactly what a fermionic extension must add: a $\mathbb{Z}/2$ grading under which fermionic operators anticommute, which the biquaternion algebra does not by itself provide.
 
 This article is a first attempt at that extension. Its subject is the canonical quantization of the biquaternion Dirac field: the promotion of the classical field to an operator-valued field, the equal-time anticommutation relations, the expansion in the plane-wave solutions established by the parent article, the algebra of the mode operators, the Hamiltonian and its normal-ordering constant, the reason the modes anticommute rather than commute, and the relation of the resulting operator algebra to the thermal-state framework of the KMS article.
 
@@ -30,7 +30,7 @@ $$
 \tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^\flat,\qquad \tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger,
 $$
 
-with massless limit $\tilde{\nabla}\tilde{\Psi}=0$. The companion solutions article works with its spinor-module representative, the four-component complex Dirac spinor $\psi$, on which the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the equation is the standard Dirac equation
+with massless limit $\tilde{\nabla}\tilde{\Psi}=0$. The companion solutions article works with its spinor-module representative, the four-component complex Dirac spinor $\psi$, on whose underlying two-component spinor module the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the equation is the standard Dirac equation
 
 $$
 (i\gamma^\mu\partial_\mu-m)\psi=0,

@@ -19,7 +19,59 @@ $$
 i^2 = j^2 = k^2 = ijk = -1 .
 $$
 
+These are Hamilton's own letters: here $i, j, k$ are the three quaternion units. The article's notation, in which those units are written $e_1, e_2, e_3$ and $i$ denotes the scalar imaginary, is set out below.
+
 Hamilton had spent years trying to multiply triples of numbers to represent points in space; the breakthrough was to give up triples for quadruples. He named the quadruple a **quaternion** and spent the rest of his life on it. The *Lectures on Quaternions* (1853) is the comprehensive treatise; the *Elements of Quaternions* appeared posthumously in 1866, edited by his son William Edwin Hamilton, with a later edition by Charles Jasper Joly (1899–1901). Olinde Rodrigues had published formulas equivalent in substance to quaternion multiplication in the composition of rotations in 1840, without the algebra; the composition law is accordingly shared, while the algebra is Hamilton's.
+
+**Why the coefficients had to become complex.** Hamilton was studying the quaternion algebra and wanted to **solve equations** with it, and when he worked through the cases by degree he found that the algebra stops short.
+
+- **Linear equations**: solved, and within $\mathbb{H}$ itself. If $ax = b$ with $a \neq 0$, then $x = a^{-1}b$, and if $xa = b$ then $x = ba^{-1}$, each unique. The side on which $a$ stands matters — $e_1^{-1}e_2 = -e_3$ while $e_2e_1^{-1} = +e_3$ — but every nonzero quaternion is invertible, so a linear equation asked on a definite side always has its answer in $\mathbb{H}$.
+- **Quadratic equations**: no longer routine. There is no quadratic formula, and the solutions, when they are found, **sometimes require complex coefficients** — that is, complex quaternions rather than quaternions.
+- **Higher degree**: worse. The root sets cease to be finite. The cubic $x^{3} = 1$ has the root $1$ and a whole sphere of further roots $x = -\tfrac{1}{2} + \tfrac{\sqrt{3}}{2}\mathbf{u}$, one for each unit pure quaternion $\mathbf{u}$, so a degree-$n$ equation over $\mathbb{H}$ cannot be reduced to $n$ linear factors.
+
+The quadratic case fails at the first step of the classroom method. Completing the square requires
+
+$$
+\left(x + \frac{b}{2}\right)^{2} = x^{2} + b\,x + \frac{1}{2}\left(bx - xb\right) + \frac{b^{2}}{4},
+$$
+
+and the linear term disappears only if $x$ commutes with $b$, which is not the general case. With the commutator left standing there is no reduction to $y^{2} = \text{const}$, and hence no discriminant to compute with.
+
+**A basic example.** The shortest way to see the obstruction is a quadratic with ordinary real quaternion coefficients:
+
+$$
+x^{2} + 2e_2\,x - 3 = 0 .
+$$
+
+Write $x = x_0 + x_1 e_1 + x_2 e_2 + x_3 e_3$ and separate the four components of the equation. The $e_1$- and $e_3$-components give $x_3 = -x_0 x_1$ and $x_1 = x_0 x_3$, hence $x_1 = x_3 = 0$; the $e_2$-component gives $x_0\,(x_2 + 1) = 0$, which leaves two branches.
+
+**First branch, $x_2 = -1$.** The scalar component becomes $x_0^{2} = 2$, so $x_0 = \pm\sqrt{2}$ and
+
+$$
+x = \pm\sqrt{2} - e_2 ,
+$$
+
+two solutions in $\mathbb{H}$.
+
+**Second branch, $x_0 = 0$.** The scalar component becomes
+
+$$
+x_2^{2} + 2x_2 + 3 = 0, \qquad \Delta = 4 - 12 = -8 < 0 ,
+$$
+
+which no real $x_2$ satisfies. The resolution is $x_2 = -1 \pm \sqrt{2}\,i$, so
+
+$$
+x = \left(-1 \pm \sqrt{2}\,i\right) e_2 ,
+$$
+
+two complex quaternions, not quaternions.
+
+Substitution confirms all four. A quadratic with real quaternion coefficients has produced four solutions, two in $\mathbb{H}$ and two outside it — and the second branch is where the coefficients leave the algebra. It leaves because a single **scalar** equation, $x_2^{2} + 2x_2 + 3 = 0$, has a negative discriminant, and solving it calls for a scalar square root of $-1$: a number that commutes with everything, so that the ordinary algebra of equations still applies. The quaternion units are roots of $-1$ in abundance, but they are not central, and $\mathbb{H}$ contains no central root of $-1$ at all, since the only quaternions commuting with every element are the real numbers. Nothing in the reduction is repaired by a quaternion unit; the repair is to let the coefficients themselves be complex.
+
+That the complexification is forced by this branch, rather than by a shortage of roots, is worth recording, since the point is often overstated. By the Eilenberg–Niven theorem a one-sided quaternion polynomial of positive degree always has a quaternion root, and the first branch above duly supplies two. What fails in $\mathbb{H}$ is the splitting: the quadratic has solutions galore but no factorisation into linear factors, and no scalar discriminant to separate them.
+
+This is the precise content of the remark that the quaternions were "not enough": they are enough to solve the equation in one branch, and not enough to solve it as an equation.
 
 The quaternions form a four-dimensional real division algebra. Making them complex produces the biquaternions: the four coefficients are allowed to be complex,
 
@@ -27,7 +79,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu \in \mathbb{C},
 $$
 
-with the quaternion units $e_0 = 1, e_1, e_2, e_3$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the **biquaternion** is the complex quaternion, and its fullest treatment in his own work is in the *Lectures on Quaternions* (1853). The word is his, and so is the surrounding vocabulary — he introduced *bivector*, *biconjugate*, *bitensor*, and *biversor* alongside it. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $e_1, e_2, e_3$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is
+with the quaternion units $e_0 = 1, e_1, e_2, e_3$ multiplying as in $\mathbb{H}$ and commuting with every complex scalar. Hamilton himself took this step and named the result: the **biquaternion** is the complex quaternion, and its fullest treatment in his own work is in the *Lectures on Quaternions* (1853). His motive was the algebraic one set out above: in the treatment of general quadratic equations with quaternion coefficients, the resolution called for complex coefficients. The word is his, and so is the surrounding vocabulary — he introduced *bivector*, *biconjugate*, *bitensor*, and *biversor* alongside it. Because the quaternion units were written $i, j, k$, Hamilton used the letter $h$ — not $i$ — for the square root of $-1$ in the coefficient field, to keep the two imaginary units apart, and Arthur W. Conway later followed the same convention. The companion articles write the quaternion units as $e_1, e_2, e_3$ and reserve $i$ for the scalar imaginary, which removes the clash that $h$ was introduced to avoid. The translation is
 
 $$
 e_0 \leftrightarrow 1, \qquad e_1 \leftrightarrow i, \qquad e_2 \leftrightarrow j, \qquad e_3 \leftrightarrow k, \qquad i \leftrightarrow h .
@@ -133,7 +185,7 @@ The distinction on which this turns is between an algebra **containing** a struc
 
 ## Summary
 
-The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his *Lectures on Quaternions* (1853). As an algebra they are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm-form elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.
+The biquaternions are the complex quaternions, $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, introduced and named by Hamilton and treated at length in his *Lectures on Quaternions* (1853). The motive for the complexification was algebraic: in $\mathbb{H}$ a quadratic equation has no quadratic formula, its solution set need not be finite, and its resolution can call for a scalar square root of $-1$ — that is, for complex coefficients. As an algebra the biquaternions are $M_2(\mathbb{C})$, equivalently the Pauli algebra $Cl_{3,0}(\mathbb{R})$ and the even subalgebra of the spacetime algebra $Cl_{1,3}$. Their unit-norm-form elements are $SL(2,\mathbb{C})$, the double cover of the Lorentz group, acting on the material sector $\mathbb{M}_{-}$ by rotor conjugation; the full algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is the operator algebra of a two-state system, of which $\mathbb{M}_{+}$ is the Hermitian subspace.
 
 In physics, real quaternions first entered through Maxwell's electromagnetism and Tait's advocacy, and were displaced from the mid-1880s by the vector analysis of Gibbs and Heaviside. Biquaternions were applied to special relativity by Conway and by Silberstein in the 1910s, most fully in Silberstein's *The Theory of Relativity* (1914), and were displaced by Minkowski's tensor formalism. The algebra returned in the mid-twentieth century through quaternionic quantum mechanics, geometric algebra, twistor theory, and modern biquaternionic field theory.
 
@@ -158,10 +210,16 @@ The history shows that the algebra is old, rich, and structurally sufficient for
 | $\tilde{P}_\pm = \tfrac{1}{2}(e_0 \pm i\hat{\mu})$ | Idempotent (pure state of $\mathbb{M}_{+}$) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbf{E} + ic\mathbf{B}$ | Riemann–Silberstein vector (Silberstein, 1907) |
+| $\mathbb{H}$ | Real quaternion algebra (Hamilton 1843) |
+| $ax = b$, $x = a^{-1}b$ | Linear equation in $\mathbb{H}$; the side on which $a$ stands matters |
+| $x^{2} + bx + c = 0$ | Quaternion quadratic: no completing the square, no discriminant |
+| $x^{2} + 2e_2x - 3 = 0$ | Worked quadratic: roots $\pm\sqrt{2} - e_2$ in $\mathbb{H}$, and $(-1 \pm \sqrt{2}\,i)e_2$ in $\mathbb{B}$ |
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original treatment of quaternions and biquaternions.
+- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original treatment of quaternions and biquaternions, including the algebraic motive for the complex coefficients.
+- Ivan Niven, "Equations in Quaternions," *American Mathematical Monthly* **48** (1941) 654–661, for the solution sets of quaternion equations, which may be a point, a circle, or a sphere.
+- Samuel Eilenberg and Ivan Niven, "The Fundamental Theorem of Algebra for Quaternions," *Bulletin of the American Mathematical Society* **50** (1944) 246–248, for the existence of a quaternion root of a one-sided polynomial of positive degree.
 - Peter Guthrie Tait, *An Elementary Treatise on Quaternions* (1867), for the leading nineteenth-century exposition after Hamilton.
 - James Clerk Maxwell, *A Treatise on Electricity and Magnetism* (1873), for the quaternion notation in early electromagnetism.
 - Michael J. Crowe, *A History of Vector Analysis* (University of Notre Dame Press, 1967), for the displacement of quaternions by vectors.

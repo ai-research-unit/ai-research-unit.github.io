@@ -112,7 +112,7 @@ $$
 
 with $\partial_0 = \partial_{ict}$ and $\partial_k = \partial_{x_k}$. This is the identical component form derived in the gauge principle article, now read as an operator on the Dirac field. Setting $\hbar = 1$ gives $D_\mu = \partial_\mu + iqA_\mu$, the convention used for the minimal substitution in the companion article on the Dirac equation's solutions and the non-relativistic limit.
 
-**The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iq}{\hbar}\tilde{A}$ in $D$ is anti-Hermitian. This is inherited, not rederived.
+**The connection is a material-sector object.** The gauge principle article shows that a **real** gauge function $\Gamma$ keeps $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ in $\mathbb{M}_-$. The coupling is therefore the coupling of the Dirac field to a material-sector connection, and the ingredient $\frac{iq}{\hbar}\tilde{A}$ in $D$ is Hermitian. This is inherited, not rederived.
 
 **Sign convention.** The gauge principle article fixes the pair of signs $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ and $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ with the phase $\lambda = e^{iq\Gamma/\hbar}$, and its companion records that the two must be kept together. The open question in the parent Dirac article writes the standard physics convention $\partial_\mu \to \partial_\mu - iqA_\mu/\hbar$, with the opposite sign. That is the same coupling with the opposite sign of $q$ (or of $\tilde{A}$); this article inherits the gauge principle's sign and does not silently flip it. The covariance checks below use the inherited pair.
 
@@ -234,7 +234,7 @@ $$
 \left(\lambda\tilde{\Psi}\right)\left(\lambda\tilde{\Psi}\right)^\dagger = \lambda\,\tilde{\Psi}\tilde{\Psi}^\dagger\,\lambda^{*} = |\lambda|^2\,\tilde{\Psi}\tilde{\Psi}^\dagger = \tilde{\Psi}\tilde{\Psi}^\dagger ,
 $$
 
-and it is **anti-Hermitian**, $\tilde{J}^\dagger = -\tilde{J}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the current $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ of the Maxwell article. Its scalar part is $i\,\mathrm{Sc}(\tilde{\Psi}\tilde{\Psi}^\dagger) = i\,\|\tilde{\Psi}\|_E^2$, a positive imaginary number, matching the $ic\rho$ form of a positive density. It is, by these tests, a plausible current.
+and it is **anti-Hermitian**, $\tilde{J}^\dagger = -\tilde{J}$, hence an element of the material sector $\mathbb{M}_-$ — the same sector as the source $\tilde{R}' = ic\rho + \mathbf{J}$ of the Maxwell article. Its scalar part is $i\,\mathrm{Sc}(\tilde{\Psi}\tilde{\Psi}^\dagger) = i\,\|\tilde{\Psi}\|_E^2$, a positive imaginary number, matching the $ic\rho$ form of a positive density. It is, by these tests, a plausible current.
 
 **It is not conserved.** The divergence of $\tilde{J}$ in the $ict$ convention is the scalar part of $\bar{\tilde{\nabla}}\tilde{J}$,
 

@@ -13,7 +13,7 @@ Five problems are worked:
 4. the Hermiticity of every term, and which terms lie in the Hermitian subspace $\mathbb M_+$ and which do not;
 5. the physical dimensions of every term.
 
-**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial_t\tilde\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the operators it uses. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
+**On the parent article.** The parent's non-relativistic section works only to leading order. It factors out the rest energy, eliminates the small component with the approximation $\partial_t\tilde\chi\approx 0$, and reads off the Pauli Hamiltonian; it stops there. It contains no spin–orbit and no Darwin term, it never actually performs a Foldy–Wouthuysen transformation (the transformation appears only in its Further Reading), and it does not state the sector ($\mathbb M_\pm$) status of the intermediate operators it uses ($\beta$, $\boldsymbol\alpha$, $O$, $S_1$), although it does identify the Pauli Hamiltonian and the spin term as $\mathbb M_+$ observables. Problems 3 and 4 supply those orders. Where the parent is silent this is stated explicitly and not silently filled in.
 
 **Conventions.** The biquaternion algebra is $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$, the basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary. The subspace $\mathbb M_+$ is the Hermitian subspace (real scalar, imaginary vector) and $\mathbb M_-$ the anti-Hermitian subspace (imaginary scalar, real vector), with $\mathbb B=\mathbb M_+\oplus\mathbb M_-$ and $i\mathbb M_\pm=\mathbb M_\mp$. The isomorphism, written $\Phi$ as in the companion Dirac article, is $e_0\mapsto I_2$, $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$, so that $\Phi(e_k)=-i\sigma_k$ and $\sigma_k\leftrightarrow ie_k$. (The same letter $\Phi$ denotes the electrostatic potential in $A^\mu=(\Phi,\mathbf A)$, as in the parent; the two uses are distinguished by their arguments.) The gamma matrices are the parent's Dirac-basis matrices,
 
@@ -218,12 +218,12 @@ Evaluating the expansion of $e^{iS_2}\hat H_1e^{-iS_2}$ and using $[\boldsymbol\
 
 $$
 \hat H^{(2)}
-=-\frac{\boldsymbol\pi^4}{8m^3c^2}
+=-\frac{(\boldsymbol\sigma\cdot\boldsymbol\pi)^4}{8m^3c^2}
 +\frac{\hbar^2}{8m^2c^2}\nabla^2V
 -\frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi),
 $$
 
-with $V=q\Phi$ the potential energy. The first term is the expansion of the relativistic kinetic energy $\sqrt{m^2c^4+\boldsymbol\pi^2c^2}$; note that it is $\boldsymbol\pi^4$, not $(\boldsymbol\sigma\cdot\boldsymbol\pi)^4$, because the spin term is already displayed separately and the difference is of higher order.
+with $V=q\Phi$ the potential energy. The first term is the expansion of the large-component energy $\sqrt{m^2c^4+(\boldsymbol\sigma\cdot\boldsymbol\pi)^2c^2}$; it is $(\boldsymbol\sigma\cdot\boldsymbol\pi)^4$, not $\boldsymbol\pi^4$, because $(\boldsymbol\sigma\cdot\boldsymbol\pi)^2=\boldsymbol\pi^2-q\hbar\boldsymbol\sigma\cdot\mathbf B$, so the two differ by $-q\hbar(\boldsymbol\pi^2\boldsymbol\sigma\cdot\mathbf B+\boldsymbol\sigma\cdot\mathbf B\boldsymbol\pi^2)+(q\hbar)^2(\boldsymbol\sigma\cdot\mathbf B)^2$, which is of the same $1/c^2$ order and is not dropped.
 
 *Step 2: the Darwin term.* Since $\mathbf E=-\nabla\Phi$ and $V=q\Phi$,
 
@@ -249,7 +249,7 @@ where $\mathbf E\times\boldsymbol\pi$ has been written with $\mathbf E=-\nabla\P
 $$
 \boxed{\;
 \hat H=\frac{\boldsymbol\pi^2}{2m}+q\Phi-\frac{q\hbar}{2m}\boldsymbol\sigma\cdot\mathbf B
--\frac{\boldsymbol\pi^4}{8m^3c^2}
+-\frac{(\boldsymbol\sigma\cdot\boldsymbol\pi)^4}{8m^3c^2}
 +\frac{\hbar^2}{8m^2c^2}\nabla^2V
 -\frac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)
 \;}
@@ -257,7 +257,7 @@ $$
 
 to relative order $c^{-2}$. The first three terms are the Pauli Hamiltonian of Problem 1; the last three are the corrections that the parent article does not reach.
 
-*Step 5: numerical verification against the exact Dirac spectrum.* The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $Z$, the first-order shifts of the four terms are
+*Step 5: numerical verification against the exact Dirac spectrum.* The three corrections are fixed by their coefficients; a single overall check is therefore decisive. In a hydrogenic atom with nuclear charge $Z$, the first-order shifts of the four terms are, in natural units ($c=1$), as in the companion's derivation,
 
 $$
 \Delta E_{\rm kin}=-\frac{m(Z\alpha)^4}{2n^3}\!\left[\frac{1}{\ell+\tfrac12}-\frac{3}{4n}\right],\qquad
@@ -268,7 +268,7 @@ $$
 \Delta E_{\rm D}=\frac{m(Z\alpha)^4}{2n^3}\quad(\ell=0),\qquad \Delta E_{\rm D}=0\quad(\ell\neq0),
 $$
 
-with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(Z\alpha)^4}{2n^3}\Big[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Big]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, both $j=\ell\pm\tfrac12$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. An independent one-dimensional Foldy–Wouthuysen expansion, carried out symbolically to order $m^{-3}$ in a purely scalar potential, reproduces the four coefficients $1,+\tfrac12,+\tfrac18,-\tfrac18$ for $V$, $\boldsymbol\pi^2/2m$, $\nabla^2V/(8m^2c^2)$ and $-\boldsymbol\pi^4/(8m^3c^2)$ respectively. The Darwin sign is therefore $+\hbar^2\nabla^2V/(8m^2c^2)$, equivalently $-(q\hbar^2/8m^2c^2)\nabla\cdot\mathbf E$.
+with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(Z\alpha)^4}{2n^3}\Big[\dfrac{1}{j+\tfrac12}-\dfrac{3}{4n}\Big]$. Evaluating all of these with exact rational arithmetic for every level with $n\le6$ (36 levels, both $j=\ell\pm\tfrac12$), the sum $\Delta E_{\rm kin}+\Delta E_{\rm SO}+\Delta E_{\rm D}$ equals $\Delta E_{\rm exact}$ in every case, with difference exactly $0$. An independent one-dimensional Foldy–Wouthuysen expansion, carried out symbolically to order $m^{-3}$ in a purely scalar potential, reproduces the four coefficients $1,+\tfrac12,+\tfrac18,-\tfrac18$ for $V$, $\boldsymbol\pi^2/2m$, $\nabla^2V/(8m^2c^2)$ and $-(\boldsymbol\sigma\cdot\boldsymbol\pi)^4/(8m^3c^2)$ respectively. The Darwin sign is therefore $+\hbar^2\nabla^2V/(8m^2c^2)$, equivalently $-(q\hbar^2/8m^2c^2)\nabla\cdot\mathbf E$.
 
 ## Problem 4: Hermiticity and the $\mathbb M_\pm$ decomposition
 
@@ -281,7 +281,7 @@ with the exact Dirac shift $\Delta E_{\rm exact}=-\dfrac{m(Z\alpha)^4}{2n^3}\Big
 - $\boldsymbol\pi^2/2m$: $\pi_i^\dagger=\pi_i$, hence $\pi_i\pi_i$ is Hermitian;
 - $q\Phi$: multiplication by the real function $q\Phi$, Hermitian;
 - $-\dfrac{q\hbar}{2m}\boldsymbol\sigma\cdot\mathbf B$: $\sigma_k$ and the real field $B_k$ are Hermitian;
-- $-\boldsymbol\pi^4/(8m^3c^2)$: a real multiple of the Hermitian $\boldsymbol\pi^2$;
+- $-(\boldsymbol\sigma\cdot\boldsymbol\pi)^4/(8m^3c^2)$: a real multiple of the Hermitian $(\boldsymbol\sigma\cdot\boldsymbol\pi)^2$;
 - $\dfrac{\hbar^2}{8m^2c^2}\nabla^2V$: multiplication by a real function;
 - $-\dfrac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)$: this is the one term whose Hermiticity is not automatic. Using $[\pi_i,E_j]=-i\hbar\partial_iE_j$,
 
@@ -309,7 +309,7 @@ Every term of the reduced, two-component Hamiltonian is Hermitian, hence every t
 
 2. **The anti-Hermitian generator.** $S_1$ is Hermitian, so $iS_1$ is anti-Hermitian: it plays the rôle that the elements of $\mathbb M_-$ play in the companion quantum article, where the Lie algebra of the unitary group is $\mathbb M_-$. It is not itself in $\mathbb M_-$, because it is built from the Clifford-odd element $\beta O$. The two gradings must not be conflated: the Foldy–Wouthuysen grading is by conjugation with $\beta$, the $\mathbb M_\pm$ grading is by $\dagger$. Thus the odd operator $O=c\boldsymbol\alpha\cdot\boldsymbol\pi$ is Foldy–Wouthuysen-odd but Clifford-even and Hermitian, so as a biquaternion it lies in $\mathbb M_+$; while $\beta O$ is Foldy–Wouthuysen-odd, Clifford-odd and anti-Hermitian, and lies in neither $\mathbb B$ nor $\mathbb M_\pm$. The identification of "odd" with "not in $\mathbb M_+$" is incorrect.
 
-3. **The sector-exchanging mass term and the rest-energy phase.** In the biquaternion equation the mass appears as $m\tilde\Psi^\flat$ with $\tilde\Psi^\flat=-\tilde\Psi^\dagger$, and $\flat$ exchanges the sectors: if $\tilde\Psi\in\mathbb M_+$ then $\tilde\Psi^\flat=-\tilde\Psi\in\mathbb M_-$. The mass term is therefore the $\mathbb M_+\leftrightarrow\mathbb M_-$ coupling. The rest-energy phase that is factored out before the reduction,
+3. **The sector-preserving mass term and the sector-exchanging rest-energy phase.** In the biquaternion equation the mass appears as $m\tilde\Psi^\flat$ with $\tilde\Psi^\flat=-\tilde\Psi^\dagger$, and $\flat$ *preserves* the sectors: if $\tilde\Psi\in\mathbb M_+$ then $\tilde\Psi^\flat=-\tilde\Psi\in\mathbb M_+$, and if $\tilde\Psi\in\mathbb M_-$ then $\tilde\Psi^\flat=\tilde\Psi\in\mathbb M_-$. The mass term is therefore diagonal on the sector decomposition, with opposite signs $\mp m$; the operation that exchanges the two sectors is multiplication by the central $i$. The rest-energy phase that is factored out before the reduction,
 
 $$
 e^{-imc^2t/\hbar}=\cos\!\Big(\frac{mc^2t}{\hbar}\Big)e_0-\sin\!\Big(\frac{mc^2t}{\hbar}\Big)(ie_0),
@@ -330,7 +330,7 @@ is not Hermitian: its first term lies in $\mathbb M_+$ and its second in $\mathb
 | $\dfrac{q\hbar}{2m}\boldsymbol\sigma\cdot\mathbf B$ | $\mathrm C\,\mathrm{kg\,m^2\,s^{-1}\,kg^{-1}}$ | $\mathrm{kg\,s^{-2}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $-\dfrac{q\hbar^2}{8m^2c^2}\nabla\cdot\mathbf E$ | $\mathrm C\,\mathrm{kg^2m^4s^{-2}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg\,s^{-3}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 | $\dfrac{q\hbar}{4m^2c^2}\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)$ | $\mathrm C\,\mathrm{kg\,m^2s^{-1}}\,\mathrm{kg^{-2}m^{-2}s^{2}}$ | $\mathrm{kg^2m^2s^{-4}A^{-1}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
-| $\dfrac{\boldsymbol\pi^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
+| $\dfrac{(\boldsymbol\sigma\cdot\boldsymbol\pi)^4}{8m^3c^2}$ | $\mathrm{kg^{-3}m^{-2}s^{2}}$ | $\mathrm{kg^4m^4s^{-4}}$ | $\mathrm{kg\,m^2\,s^{-2}}$ |
 
 The pattern is informative. The leading terms ($\boldsymbol\pi^2/2m$, $q\Phi$, the spin term) carry no power of $c$; the three corrections each carry $c^{-2}$, which is the statement that they are relativistic corrections of order $v^2/c^2$. The spin term carries one power of $\hbar$ while the leading kinetic and electrostatic terms carry none, so the spin term vanishes formally in the classical limit $\hbar\to0$; this is the operator form of the statement that the magnetic moment of a point charge is a quantum effect. The Darwin and spin–orbit terms carry $\hbar^2$ and $\hbar$ respectively, and both survive the $\hbar\to0$ limit when divided by $\hbar$ in the corresponding classical spin–orbit coupling, which is the Thomas-precession energy.
 
@@ -340,9 +340,9 @@ The non-relativistic limit of the biquaternion Dirac equation was carried throug
 
 The Foldy–Wouthuysen elimination of the small component, executed systematically with the generator $S_1=-\frac{i}{2mc^2}\beta O$, produces the Pauli Hamiltonian
 $i\hbar\partial_t\tilde\phi=\big[\boldsymbol\pi^2/2m+q\Phi-(q\hbar/2m)\boldsymbol\sigma\cdot\mathbf B\big]\tilde\phi$,
-reproducing the parent article. The minimal substitution $\boldsymbol\pi=\hat{\mathbf p}-q\mathbf A$ gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\boldsymbol\pi)^2=\boldsymbol\pi^2-q\hbar\boldsymbol\sigma\cdot\mathbf B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\boldsymbol\mu=(q/m)\mathbf S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$ the second Foldy–Wouthuysen step adds the relativistic kinetic correction $-\boldsymbol\pi^4/(8m^3c^2)$, the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\mathbf E$, and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\mathbf L$. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
+reproducing the parent article. The minimal substitution $\boldsymbol\pi=\hat{\mathbf p}-q\mathbf A$ gives $[\pi_i,\pi_j]=i\hbar q\epsilon_{ijk}B_k$ and $(\boldsymbol\sigma\cdot\boldsymbol\pi)^2=\boldsymbol\pi^2-q\hbar\boldsymbol\sigma\cdot\mathbf B$, and the coefficient $1/2m$ produced by the elimination fixes $g=2$ and $\boldsymbol\mu=(q/m)\mathbf S$, hence $\mu_B=e\hbar/2m_e$ for the electron. At the next order in $1/c$ the second Foldy–Wouthuysen step adds the relativistic kinetic correction $-(\boldsymbol\sigma\cdot\boldsymbol\pi)^4/(8m^3c^2)$, the Darwin term $+\hbar^2\nabla^2V/(8m^2c^2)=-(q\hbar^2/8m^2c^2)\nabla\cdot\mathbf E$, and the spin–orbit coupling $-(q\hbar/4m^2c^2)\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)=(\hbar/4m^2c^2)r^{-1}(dV/dr)\boldsymbol\sigma\cdot\mathbf L$. Summed, these reproduce the exact Dirac fine structure of hydrogenic ions for 36 levels with $n\le6$, with difference exactly zero.
 
-Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($\beta mc^2$, $\beta O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the sector-exchanging mass term and rest-energy phase. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by $\dagger$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
+Every term of the reduced Hamiltonian is Hermitian and therefore lies in $\mathbb M_+$; the objects that do not are the Clifford-odd pieces ($\beta mc^2$, $\beta O$), which have no representative in $\mathbb B$ at all, the anti-Hermitian generator $iS_1$, and the sector-preserving mass term together with the sector-exchanging rest-energy phase. The Foldy–Wouthuysen grading by $\beta$ must not be confused with the $\mathbb M_\pm$ grading by $\dagger$. All terms are energies, the three corrections carrying the expected $c^{-2}$.
 
 ## Summary of Notation
 

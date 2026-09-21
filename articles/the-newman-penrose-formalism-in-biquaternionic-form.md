@@ -5,7 +5,7 @@
 
 The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\Psi_0, \dots, \Psi_4$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
 
-This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*$\mathbb{M}_-$ as the Material Space*; *Biquaternion Null Quadric and Projective Geometry*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's vector bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
+This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*$\mathbb{M}_-$ as the Material Space*; *Biquaternion Null Quadric and Projective Geometry*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
 
 Three claims organise the discussion.
 
@@ -158,7 +158,7 @@ l = \sqrt2\,i\,o\,o^\dagger, \quad n = \sqrt2\,i\,\iota\,\iota^\dagger, \quad m 
 \tag{8}
 $$
 
-This is the Newman–Penrose **spinor dyad** $\{o,\iota\}$ in the framework's notation, and (8) is the sense in which the tetrad is the image of the dyad under the bilinear map $S\times\bar S\to\mathbb{B}$, $(u,v)\mapsto i\,uv^\dagger$, that the spinor-module article identifies as the ancestor of the vector representation. The dyad is normalized by the invariant symplectic pairing of the spinor module,
+This is the Newman–Penrose **spinor dyad** $\{o,\iota\}$ in the framework's notation, and (8) is the sense in which the tetrad is the image of the dyad under the bilinear map $S\times\bar S\to\mathbb{B}$, $(u,v)\mapsto i\,uv^\dagger$, the framework's form of the algebra-level outer product $u\,v^\dagger$, whose Hermitian part the spinor-module article identifies with the vector representation. The dyad is normalized by the invariant symplectic pairing of the spinor module,
 
 $$
 \varepsilon(o,\iota) = o_1\iota_2 - o_2\iota_1 = 1, \qquad \varepsilon(g o, g \iota) = \varepsilon(o,\iota) \ \text{ for } g\in SL(2,\mathbb{C}),
@@ -177,7 +177,7 @@ $$
 \Gamma_{abc} := (\nabla_a e_b)\cdot e_c, \qquad \nabla_a := \nabla_{e_a}.
 $$
 
-Metric compatibility, $\nabla_a(e_b\cdot e_c)=0$, gives $\Gamma_{abc}+\Gamma_{acb}=0$, so the coefficients are antisymmetric in the last two tetrad indices. For each $a$ this is a $4\times4$ antisymmetric matrix with six independent real entries, so $\Gamma_{abc}$ has $4\times6=24$ real independent components — that is, **twelve complex** ones. These twelve complex numbers, written in the standard names, are the **spin coefficients**:
+Metric compatibility, $\nabla_a(e_b\cdot e_c)=0$, gives $\Gamma_{abc}+\Gamma_{acb}=0$, so the coefficients are antisymmetric in the last two tetrad indices. For each $a$ this is a $4\times4$ antisymmetric matrix with six independent entries, the connection being real, so $\Gamma_{abc}$ has $4\times6=24$ real independent components — that is, **twelve complex** ones. These twelve complex numbers, written in the standard names, are the **spin coefficients**:
 
 $$
 \kappa,\ \sigma,\ \rho,\ \tau; \qquad \pi,\ \lambda,\ \mu,\ \nu; \qquad \varepsilon,\ \gamma,\ \beta,\ \alpha .
