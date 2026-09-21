@@ -150,7 +150,7 @@ T^{00} = W, \qquad T^{0j} = T^{j0} = \frac{1}{c}S_j, \qquad T^{jk} = -\sigma_{jk
 $$
 because $T^{0j} = \eta^{jj}T^0{}_j = \frac{1}{c}S_j$ and $T^{j0} = \eta^{00}T^j{}_0 = (-1)(-\frac{1}{c}S_j) = \frac{1}{c}S_j$, and $T^{jk} = \eta^{kk}T^j{}_k = -\sigma_{jk}$ is symmetric because $\sigma$ is. This is the standard electromagnetic energy–momentum tensor in the medium: $W$ is the energy density, $\frac{1}{c}\mathbf{S}$ the energy flux and the momentum density times $c$, and $-\sigma_{jk}$ the momentum flux.
 
-**Remark on what the construction is.** The insertion of $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ is what turns a single biquaternion into a rank-two object: each basis element supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^\dagger$, the second through right multiplication and scalar projection — which is why the natural object is $T^\mu{}_\nu$ (mixed) and not the doubly-covariant tensor. The parents' four-component $\tilde W = \frac{1}{2}\tilde F\tilde F^\dagger$ is the time row of $T$: $T^0{}_\nu = \frac{1}{2}\mathrm{Sc}(\tilde F\tilde F^\dagger\mathcal{E}_\nu)$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
+**Remark on what the construction is.** The insertion of $\mathcal{E}_\mu$ and $\mathcal{E}_\nu$ is what turns a single biquaternion into a rank-two object: each basis element supplies one vector direction, and the scalar part reads off the component. The two indices are treated differently by the algebra — the first through the Hermitian form $\tilde F(\,\cdot\,)\tilde F^\dagger$, the second through right multiplication and scalar projection — which is why the natural object is $T^\mu{}_\nu$ (mixed) and not the doubly-covariant tensor. The parents' four-component $\tilde W = \frac{1}{2}\tilde F\tilde F^\dagger$ is the time row of $T$, up to the factor $i$ carried by $\mathcal{E}_0 = ie_0$: $T^0{}_\nu = \frac{i}{2}\mathrm{Sc}(\tilde F\tilde F^\dagger\mathcal{E}_\nu) = i\,\mathrm{Sc}(\tilde W\mathcal{E}_\nu)$. The full tensor needs all sixteen entries; twelve of them — the six independent stress components and their partners — are simply absent from any four-component object.
 
 ## Problem 3: Tracelessness
 
@@ -239,7 +239,7 @@ The following problems are left to the reader. They extend the construction, and
 
 **2. The tensor formula.** Using the component form of $F^{\mu\nu}$ given in the parent article, verify that
 $$
-T^{\mu\nu} = -\frac{1}{\mu}\left(F^{\mu\alpha}{F^\nu}_\alpha - \frac{1}{4}\,\delta^{\mu\nu}F_{\alpha\beta}F_{\alpha\beta}\right)
+T^{\mu\nu} = \frac{1}{\mu}\left(F^{\mu\alpha}{F^\nu}_\alpha - \frac{1}{4}\,\eta^{\mu\nu}F_{\alpha\beta}F^{\alpha\beta}\right)
 $$
 reproduces the component table of Problem 2 up to the medium factors, and identify the normalization of the bracketed expression in terms of $W$ and $\sigma_{jk}$. This shows that the biquaternion bilinear and the standard tensor formula are the same object.
 

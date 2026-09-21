@@ -7,7 +7,7 @@ The biquaternion framework reads the Lorentzian signature of spacetime as a cons
 $$
 ds^2=-c^2\,dt^2+d\mathbf x^2
 $$
-is, in this reading, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure *on*. The answer turns on a distinction that is easy to blur: **no global complex structure on spacetime is available, but a local one is**, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.
+is, in this reading, the sign of $i^2$; it is not put into the metric by hand. That much is inherited. This article isolates the structure that does the work and asks what, precisely, it is a structure *on*. The answer turns on a distinction that is easy to blur: **no global complex structure compatible with the Minkowski metric is available on spacetime, but a local one is**, and the speed of light $c$ is the single scale that converts the local structure into the Minkowski metric.
 
 The parent of this article is *Electromagnetism in Media — The Local Complex Structure at Work*, where the local structure is used in a material medium. There the medium supplies the general case and the vacuum is its limit. Here the subject is the structure itself and its relation to the speed of light; the medium appears only as the setting in which the local structure is seen to vary from point to point. The distinction between the global and the local statement is the organising theme, and every step below says which of the two is being claimed.
 
@@ -65,9 +65,9 @@ N(JY,Z)=N(J^2Y,JZ)=-N(Y,JZ)=0,
 $$
 using compatibility in the first equality and $JZ$ in the plane in the last. Iterating, a four-dimensional space is an orthogonal direct sum of two such planes, so its signature is $(4,0)$, $(2,2)$ or $(0,4)$. The norm form of $\mathbb{M}_-$ has signature $(3,1)$: three positive directions and one negative. It is not in the list. Therefore **no complex structure compatible with the Minkowski metric exists**, neither globally nor at a single point.
 
-The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, with balanced signature. In four dimensions the forms compatible with a complex structure have eigenvalues of multiplicity two and are balanced as well; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose two eigenvalues each occur twice. A count of three positives and one negative cannot arise. The signature $(3,1)$ is exactly the unbalanced case.
+The obstruction is easy to check directly. In two dimensions, writing $g=\begin{pmatrix}p&q\\q&r\end{pmatrix}$ and $J=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, the condition $J^{\mathsf T}gJ=g$ forces $p=r$ and $q=0$: the compatible form is a multiple of the identity, hence definite, of signature $(2,0)$ or $(0,2)$, never $(1,1)$. In four dimensions the forms compatible with a complex structure have eigenvalues each of multiplicity two, so each sign occurs an even number of times — the signature is $(4,0)$, $(2,2)$ or $(0,4)$; a symbolic solution of $J_0^{\mathsf T}GJ_0=G$ for the standard $J_0$ returns a form whose eigenvalues each occur twice. A count of three positives and one negative cannot arise, and the signature $(3,1)$ is exactly the excluded case.
 
-The way out is not to look for a better $J$ but to change the space: **complexify**. On the complexified tangent space the form is complex, and multiplication by $i$ is a complex structure there. This is what the $ict$ notation does, and it is why the framework complexifies spacetime rather than placing a real $J$ on it. The distinction is not pedantic: a complex structure on the complexified tangent space is a different object from a complex structure on spacetime, and the second does not exist. Calling $ict$ "a complex structure on spacetime" is the conflation this article is written to avoid.
+The way out is not to look for a better $J$ but to change the space: **complexify**. On the complexified tangent space the form is complex, and multiplication by $i$ is a complex structure there. This is what the $ict$ notation does, and it is why the framework complexifies spacetime rather than placing a real $J$ on it. The distinction is not pedantic: a complex structure on the complexified tangent space is a different object from a complex structure on spacetime compatible with the Minkowski metric, and the second does not exist. Calling $ict$ "a complex structure on spacetime" is the conflation this article is written to avoid.
 
 ### The global $ict$ is a coordinate device
 
@@ -151,64 +151,24 @@ The wave-operator route uses the field equation and the constitutive relations, 
 
 **Independence and agreement.** Route 1 is geometric: it reads $c$ off a quadratic form. Route 2 is dynamical: it reads the same $c$ off a differential operator and the medium's constitutive relations. Neither determines the numerical value of $c$ — that is empirical, as it is in the metric formalism — but together they fix what $c$ is *for*: it is at once the aperture of the local light cone and the characteristic speed of the medium's electrodynamics, and there is exactly one number doing both jobs. This is the precise sense in which $c$ is fixed by the local structure rather than postulated alongside it. In the metric formalism one writes $-c^2dt^2$ and, separately, $\mathbf D=\epsilon\mathbf E$ and $\mathbf B=\mu\mathbf H$; the appearance of the same $c$ in both places is a consistency to be checked. Here it is a single scale with a single role.
 
-**A third, group-theoretic cross-check.** The same scale appears in the action of the Lorentz rotors. With $\hat{\mathbf u}$ a unit real pure quaternion, the boost biquaternion $\tilde{\Lambda}=\cosh(\psi/2)+i\sinh(\psi/2)\hat{\mathbf u}$ acts on $\mathbb{M}_-$ by $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$. Applied to the four-velocity at rest, $\tilde{U}=ic\,e_0$,
-$$
-\tilde{U}'=\tilde{\Lambda}(ic\,e_0)\tilde{\Lambda}^\dagger
-=ic\cosh\psi\,e_0-c\sinh\psi\,\hat{\mathbf u},
-$$
-so the induced velocity has magnitude
-$$
-|\mathbf v|=c\,\tanh|\psi|<c .
-$$
-The invariant speed of the local rotor action is again $c$. This route uses the conjugation action rather than the quadratic form or the field equation, and it returns the same scale.
-
-## The Boost as a Rotation by an Imaginary Angle
-
-The sign and phase conventions are those of the read-list articles, and they are worth displaying once, because the whole reading is a statement about signs. With $x^0=ic\,t$ the interval is
-$$
-ds^2=(x^0)^2+x^2 .
-$$
-A boost along $\hat{\mathbf u}$ is a rotation in the $(x^0,\hat{\mathbf u}\cdot\mathbf x)$ plane by the imaginary angle $i\psi$:
-$$
-\begin{pmatrix} x^{0\prime}\\ x' \end{pmatrix}
-=
-\begin{pmatrix} \cosh\psi & -i\sinh\psi\\ i\sinh\psi & \cosh\psi \end{pmatrix}
-\begin{pmatrix} x^{0}\\ x \end{pmatrix}.
-$$
-The matrix has determinant $1$ and preserves $(x^0)^2+x^2$, hence the interval. In terms of real time and position it reads
-$$
-t'=t\cosh\psi-\frac{x}{c}\sinh\psi,
-\qquad
-x'=x\cosh\psi-c\,t\sinh\psi,
-$$
-a Lorentz boost of rapidity $\psi$ with velocity parameter $v=c\tanh\psi$. The scalar component of the gradient acts on a monochromatic wave $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$ as
-$$
-\partial_{ict}=-\frac{i}{c}\,\partial_t
-\;\longrightarrow\;
--\frac{\omega}{c},
-$$
-a real eigenvalue. That is the sign convention under which $\Box=\partial_{ict}^2+\nabla^2$ reproduces $\omega^2=c^2|\mathbf k|^2$ on a null wave. The opposite convention $e^{-i(\mathbf k\cdot\mathbf x-\omega t)}$ is equivalent under $\omega\to-\omega$ and flips the sign of the eigenvalue; one convention is fixed here and used throughout, as in the parent article.
-
-The check against *Why Complexify Spacetime?* is exact. That article writes the metric convention $\eta_{\mu\nu}=\mathrm{diag}(-1,+1,+1,+1)$, the $ict$ interval $(ic_0dt)^2+d\mathbf x^2$, the operator $\Box=\partial_{ict}^2+\nabla^2$, and the description of a boost as a rotation with an imaginary angle. The conventions used here are the same, with $c$ in place of $c_0$, and no sign is changed.
-
 ## Limits of the Local Reading
 
 Four boundaries should be stated, so that the local claim is not read as a global one.
 
 1. **No empirical content is added.** The algebraicity of the signature and the identity $c=1/\sqrt{\epsilon\mu}$ are both known. The local structure is a repackaging of them, not a new prediction, and it does not distinguish the framework from standard electromagnetism in a medium. Whether the framework has any empirical consequence remains the open question it is elsewhere in the corpus.
 2. **The scale must be real.** In a transparent frequency window $c(\omega)$ is real and the rescaling of the imaginary axis is a real one. Near an absorption line $\epsilon$ and $\mu$ become complex, so $c$ becomes complex, and the rescaling becomes a complex rotation; the scale can no longer be read as the aperture of a real null cone. This is a boundary of the structure as written, recorded in the parent article and not repaired here.
-3. **Only the local Lorentz action survives when $c$ varies.** For constant $c$ the unit-norm rotors, i.e. $SL(2,\mathbb C)$, realize the proper orthochronous Lorentz group, the identity component of the isometry group of $g$, and the invariance is global. For $c=c(\mathbf x)$, a constant rotor mixes $t$ and $\mathbf x$ and therefore does not preserve $g(\mathbf x)$: only the pointwise action remains. No global Lorentz invariance of a variable metric is claimed here. This is the same local/global caution in group-theoretic form.
+3. **Only the pointwise Lorentz invariance survives when $c$ varies.** For constant $c$ the interval is invariant under the full Lorentz group and the invariance is global. For $c=c(\mathbf x)$, a constant Lorentz transformation mixes $t$ and $\mathbf x$ and therefore does not preserve $g(\mathbf x)$: only the pointwise invariance remains. No global Lorentz invariance of a variable metric is claimed here. This is the same local/global caution in group-theoretic form.
 4. **Curved spacetime is a further step.** The structure described here is a tangent-space statement at a point. Its extension to a curved manifold requires a tetrad or spin connection, and it is treated separately in the corpus; nothing in the present article assumes or establishes that extension.
 
 ## Summary
 
 The Lorentzian signature of spacetime is algebraic in the biquaternion framework: the minus sign in $ds^2=-c^2dt^2+d\mathbf x^2$ is the sign of $i^2$. What this article has separated is the sense in which the complex structure that produces it is, and is not, available.
 
-A **global** complex structure on spacetime is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes and hence to have balanced signature, while the norm form of $\mathbb{M}_-$ has signature $(3,1)$. The $ict$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
+A **global** complex structure on spacetime, in the sense the question requires — an endomorphism of $\mathbb{M}_-$ compatible with its norm form — is not available, on two independent grounds. First, the algebra's complex structure $J_{\mathbb{B}}:\tilde{Q}\mapsto i\tilde{Q}$ exchanges the two sectors, $i\mathbb{M}_-=\mathbb{M}_+$, so it is not an endomorphism of the material sector. Second, and independently of the algebra, no real complex structure compatible with the Minkowski metric exists at all: compatibility with $J^2=-I$ forces the metric to be an orthogonal sum of definite two-planes, in which each sign occurs an even number of times, while the norm form of $\mathbb{M}_-$ has signature $(3,1)$. The $ict$ convention is not a counterexample; it is a complexification of the coordinates, a different object, and its global use is limited to flat spacetime with a constant scale.
 
 A **local** structure is available, and it is the following pointwise data: the temporal direction is identified with the imaginary scalar generator with a local scale $c$, so that the temporal coordinate is $ict$ with $c=c(\mathbf x)$ — and $c(\omega)$ in a dispersive medium. The phase is the algebra's fixed $i$; only the scale varies, and because $c$ is real and positive the map rescales the imaginary axis rather than rotating it. At each point the induced quadratic form is $-c^2dt^2+d\mathbf x^2$, so the local complex structure produces the local Minkowski metric with its one free number, $c$.
 
-That number is fixed by the local structure on two independent routes, and they agree. The null cone of the norm form has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. A third route, the boost rotor, returns the same scale as the invariant velocity $|\mathbf v|=c\tanh|\psi|$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role. The sign and phase conventions agree with *Why Complexify Spacetime?*: a boost is an imaginary-angle rotation preserving $(x^0)^2+x^2$, and $\partial_{ict}\to-\omega/c$ on $e^{i(\mathbf k\cdot\mathbf x-\omega t)}$.
+That number is fixed by the local structure on two independent routes, and they agree. The null cone of the norm form has aperture $c$. The characteristic speed of the local wave operator $\Box=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ must equal the characteristic speed $c_{em}=1/\sqrt{\epsilon\mu}$ of the medium's Maxwell equations, so $c=c_{em}$. The numerical value of $c$ remains empirical, as in the metric formalism; what is fixed is its role.
 
 The reading closes no empirical gap and claims no global structure. Its content is that the signature is algebra, the scale is local, and the one scale is the speed of light.
 
@@ -233,8 +193,6 @@ The reading closes no empirical gap and claims no global structure. Its content 
 | $\tilde{\nabla}=e_0\partial_{ict}+\nabla$, $\bar{\tilde{\nabla}}$ | Biquaternionic gradient and its quaternion conjugate |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta=\Delta-c^{-2}\partial_t^2$ | d'Alembertian |
 | $x^0=ict$ | Complex time coordinate |
-| $\tilde{\Lambda}=\cosh(\psi/2)+i\sinh(\psi/2)\hat{\mathbf u}$ | Boost biquaternion (rapidity $\psi$) |
-| $\tilde{X}\mapsto\tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ | Rotor conjugation on $\mathbb{M}_-$; $|\mathbf v|=c\tanh|\psi|$ |
 
 ## Further Reading
 
@@ -246,6 +204,5 @@ The reading closes no empirical gap and claims no global structure. Its content 
 - *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.
 - *The Field-Strength Biquaternion and Its Invariants*, for the field-strength normalisation that uses the same scale $c$ and the two medium parameters.
-- *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, its action on $\mathbb{M}_-$, and the velocity parameter.
 - *The Wick Rotation in the Biquaternion Universe*, for the Euclidean continuation and the sense in which the imaginary time direction carries thermodynamic content.
 - *Curved Spacetime and the Biquaternion Framework*, for the tetrad and spin-connection extension that the local structure requires beyond a single tangent space.

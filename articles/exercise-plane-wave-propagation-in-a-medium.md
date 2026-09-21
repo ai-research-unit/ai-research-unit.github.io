@@ -155,9 +155,9 @@ $$
 $$
 The last term vanishes identically, and the first two cancel because for a unit $\hat{\mathbf{k}}$ and a transverse $\mathbf{E}_0$,
 $$
-(\hat{\mathbf{k}}\times\mathbf{E}_0)^2 = \hat{\mathbf{k}}^2\,\mathbf{E}_0^2 - (\hat{\mathbf{k}}\cdot\mathbf{E}_0)^2 = \mathbf{E}_0^2,
+(\hat{\mathbf{k}}\times\mathbf{E}_0)^2 = (\hat{\mathbf{k}}\cdot\hat{\mathbf{k}})\,\mathbf{E}_0^2 - (\hat{\mathbf{k}}\cdot\mathbf{E}_0)^2 = \mathbf{E}_0^2,
 $$
-using the complex-bilinear identity $(\mathbf{a}\times\mathbf{b})\cdot(\mathbf{a}\times\mathbf{c}) = (\mathbf{a}\cdot\mathbf{a})(\mathbf{b}\cdot\mathbf{c}) - (\mathbf{a}\cdot\mathbf{c})(\mathbf{a}\cdot\mathbf{b})$ with $\mathbf{a} = \hat{\mathbf{k}}$, $\mathbf{b} = \mathbf{c} = \mathbf{E}_0$, and $\hat{\mathbf{k}}^2 = 1$, $\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0$. Hence
+using the complex-bilinear identity $(\mathbf{a}\times\mathbf{b})\cdot(\mathbf{a}\times\mathbf{c}) = (\mathbf{a}\cdot\mathbf{a})(\mathbf{b}\cdot\mathbf{c}) - (\mathbf{a}\cdot\mathbf{c})(\mathbf{a}\cdot\mathbf{b})$ with $\mathbf{a} = \hat{\mathbf{k}}$, $\mathbf{b} = \mathbf{c} = \mathbf{E}_0$, and $\hat{\mathbf{k}}\cdot\hat{\mathbf{k}} = 1$, $\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0$. Hence
 $$
 \boxed{\;N(\tilde{F}_0) = -\epsilon\,\mathbf{V}_0\cdot\mathbf{V}_0 = 0\;}.
 $$
@@ -235,7 +235,7 @@ because $\frac{\mu}{Z^2} = \epsilon$. Therefore $c\langle W\rangle = \frac{c\eps
 $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^\dagger = W\left(e_0 + i\hat{\mathbf{k}}\right).
 $$
-This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\hat{\mathbf{k}}$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \mathbf{k}\cdot\mathbf{x} - \omega t$ and $W = W_0\cos^2\phi$. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde{K}$, with $W_\phi = \partial_\phi W$ and $\tilde{K} = \frac{i\omega}{c}e_0 + \mathbf{k}$ the four-wavevector: expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $e^{\pm 2i\phi}$ are eigenfunctions with eigenvalues $\pm 2i\tilde{K}$, and their combination reproduces $W_\phi\tilde{K}$. Since $e_0 + i\hat{\mathbf{k}}$ is constant,
+This is an element of $\mathbb{M}_+$, as every Hermitian form is: its scalar part $W$ is real and its vector part $iW\hat{\mathbf{k}}$ is purely imaginary. To compute $\tilde{\nabla}\tilde{W}$, write $\phi = \mathbf{k}\cdot\mathbf{x} - \omega t$ and $W = W(\phi)$, the general form, which reduces to $W = W_0\cos^2\phi$ for an in-phase, linearly polarised wave. For a scalar, the gradient acts as $\tilde{\nabla}W = W_\phi\,\tilde{K}$, with $W_\phi = \partial_\phi W$ and $\tilde{K} = \frac{i\omega}{c}e_0 + \mathbf{k}$ the four-wavevector: in the in-phase case, expanding $W = \frac{W_0}{2}(1 + \cos 2\phi)$, the exponentials $e^{\pm 2i\phi}$ are eigenfunctions with eigenvalues $\pm 2i\tilde{K}$, and their combination reproduces $W_\phi\tilde{K}$. Since $e_0 + i\hat{\mathbf{k}}$ is constant,
 $$
 \tilde{\nabla}\tilde{W} = \left(\tilde{\nabla}W\right)\left(e_0 + i\hat{\mathbf{k}}\right)
 = W_\phi\,\tilde{K}\left(e_0 + i\hat{\mathbf{k}}\right).
@@ -251,7 +251,7 @@ using $\mathbf{k}\hat{\mathbf{k}} = -k e_0$. So $\tilde{\nabla}\tilde{W} = 0$: t
 
 Finally, the norm form of $\tilde{W}$ is
 $$
-N(\tilde{W}) = W^2\left(1 + (i\hat{\mathbf{k}})^2\right) = W^2\left(1 - \hat{\mathbf{k}}^2\right) = W^2\left(1 - 1\right) = 0 .
+N(\tilde{W}) = W^2\left(1 + (i\hat{\mathbf{k}})^2\right) = W^2\left(1 - \hat{\mathbf{k}}\cdot\hat{\mathbf{k}}\right) = W^2\left(1 - 1\right) = 0 .
 $$
 So the energy–momentum biquaternion of the wave is itself a **zero divisor**, on the null cone of $\mathbb{M}_+$. The wave is null in the field strength and null in its energy–momentum simultaneously, and this is a consequence of the single null direction $\hat{\mathbf{k}}$ that the plane wave carries.
 

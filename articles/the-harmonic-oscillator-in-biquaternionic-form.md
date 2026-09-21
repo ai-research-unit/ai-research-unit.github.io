@@ -169,7 +169,7 @@ $$
 
 so the phase rotates the $\mathbb{M}_+$ quadrature $\tilde X$ into the $\mathbb{M}_-$ content of the amplitude and back. The oscillator's phase is literally the rotation that mixes the two sectors. This is a genuine addition of the framework: the "complex structure" that gives the oscillator its complex amplitude is identified with the operation that exchanges $\mathbb{M}_+$ and $\mathbb{M}_-$, and the oscillator's phase is the one-parameter group it generates.
 
-The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=e^{-ih_0t/\hbar}(\cos(|\mathbf h|t/\hbar)e_0+\sin(|\mathbf h|t/\hbar)\hat{\mathbf h})$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
+The connection to the dynamics is direct. The parent article's evolution $\tilde U(t)=e^{-ih_0t/\hbar}(\cos(|\mathbf h|t/\hbar)e_0+\sin(|\mathbf h|t/\hbar)\hat{\mathbf h})$ carries the trace part $h_0$ of the Hamiltonian only as a central phase that cancels from the conjugation. For the truncated oscillator that trace part is $\hbar\omega$, twice the zero-point energy $\tfrac12\hbar\omega$; that the zero-point energy is unobservable and that the trace part of the Hamiltonian is a central scalar are the same statement, with the trace formula making "trace part" literal.
 
 ## Squeezing Is a Boost
 
@@ -181,7 +181,7 @@ $$
 
 Both $\tilde K_1$ and $\tilde K_2$ are Hermitian elements of $\mathbb{M}_+$, while the bracket is $i$ times a Hermitian element and therefore lies in $\mathbb{M}_-$. So the oscillator's dynamical algebra is not contained in either sector: its generators are in $\mathbb{M}_+$ and its brackets are in $\mathbb{M}_-$, and the factor of $i$ that carries a bracket across is exactly the sector exchange. In this sense the "$su(1,1)$ of squeezing" is an algebra that lives between the sectors, even though no oscillator itself does.
 
-The generator content is sharper still. A squeeze in one quadrature, $\tilde X\mapsto e^{-r}\tilde X$, $\tilde P\mapsto e^{r}\tilde P$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde X\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde X_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde X_4\mapsto\tilde\Lambda\tilde X_4\tilde\Lambda^\dagger$; computing the result gives
+The generator content is sharper still. A squeeze, $\tilde X\mapsto\tilde X\cosh r-\tilde P\sinh r$, $\tilde P\mapsto\tilde P\cosh r-\tilde X\sinh r$, is a hyperbolic transformation of the phase plane: it scales the two null combinations $\tilde X\pm\tilde P$ by $e^{\mp r}$. A Lorentz boost in the $(t,x)$ plane of $\mathbb{M}_-$ does the same thing to the null combinations $ct\pm x$. Concretely, the boost rotor $\tilde\Lambda=\cosh(\psi/2)\,e_0+i\sinh(\psi/2)e_1$ lies in $\mathbb{M}_+$ and acts on $\tilde X_{4}=ict\,e_0+x\,e_1\in\mathbb{M}_-$ by rotor conjugation $\tilde X_4\mapsto\tilde\Lambda\tilde X_4\tilde\Lambda^\dagger$; computing the result gives
 
 $$
 ct'=\cosh\psi\,ct-\sinh\psi\,x,\qquad x'=\cosh\psi\,x-\sinh\psi\,ct,

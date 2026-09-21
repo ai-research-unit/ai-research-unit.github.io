@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbf{B}=\mu\,\mathbf{H},
 $$
-where $\mathbf{E}$ is the electric field, $\mathbf{H}$ the magnetic field, $\mathbf{D}$ the electric displacement and $\mathbf{B}$ the magnetic induction. These relations are inherited unchanged from the parent article. The free charge and current densities $\rho$ and $\mathbf{J}$ obey the conservation law
+where $\mathbf{E}$ is the electric field, $\mathbf{H}$ the magnetic field, $\mathbf{D}$ the electric displacement and $\mathbf{B}$ the magnetic induction. These relations are inherited unchanged from the Maxwell article. The free charge and current densities $\rho$ and $\mathbf{J}$ obey the conservation law
 $$
 \mathrm{div}\,\mathbf{J}+\frac{\partial\rho}{\partial t}=0,
 $$
@@ -136,7 +136,7 @@ W=\frac{1}{2}\left(\epsilon\,\mathbf{E}^2+\mu\,\mathbf{H}^2\right)=\frac{1}{2}\l
 \qquad
 \mathbf{S}=\mathbf{E}\times\mathbf{H},
 $$
-so the energy density is the scalar part of the Hermitian form, and the Poynting vector is its vector part. Both are medium-dependent through $\epsilon$ and $\mu$.
+so twice the energy density is the scalar part of the Hermitian form, and $\frac{2}{c}$ times the imaginary unit times the Poynting vector is its vector part. Both are medium-dependent through $\epsilon$ and $\mu$.
 
 Finally, in an inhomogeneous medium $\epsilon=\epsilon(\mathbf{x})$ and $\mu=\mu(\mathbf{x})$, and the normalisation is applied pointwise:
 $$
@@ -183,7 +183,7 @@ $$
 $$
 using $\sqrt{\epsilon\mu}=1/c$; likewise the term coupling $\partial_t\mathbf{H}$ to $\mathrm{rot}\,\mathbf{E}$ carries $\sqrt{\mu}/(c\sqrt{\epsilon})=\mu$. The factors $\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the fields and the factors $1/\sqrt{\epsilon}$ and $\sqrt{\mu}$ on the source are exactly what is required for the medium to disappear from the equation. The biquaternionic Maxwell equation is therefore medium-independent in form; the medium is entirely in the definitions of $\tilde{F}$, $\tilde{R}$, and the operator $\partial_{ict}$.
 
-Two companion statements from the parent article carry over unchanged. The first is the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\mathbf{A}$ satisfies
+Two companion statements from the Maxwell article carry over unchanged. The first is the integrability condition $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{R})=0$, which is the biquaternionic form of charge conservation. The second is the potential formulation: in the Lorenz gauge the potential biquaternion $\tilde{A}=i\phi/c+\mathbf{A}$ satisfies
 $$
 \Box\tilde{A}=-\mu\,\tilde{R}',
 \qquad
@@ -342,13 +342,13 @@ $$
 $$
 the gradient becomes $\tilde{\nabla}=e_0\partial_{ic_0t}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the d'Alembertian becomes $\Box=\Delta-c_0^{-2}\partial_t^2$. The complex time coordinate becomes $ic_0t$, recovering the familiar $ict$ form with the vacuum speed of light, and the local complex structure becomes constant. The invariants become $I_1=\mathbf{E}^2-c_0^2\mathbf{B}^2$ and $I_2=\mathbf{E}\cdot\mathbf{B}$, the Riemann–Silberstein vector becomes $\mathbf{V}=\mathbf{E}+ic_0\mathbf{B}$, and the plane-wave conditions become $\mathbf{k}^2=\omega^2/c_0^2$, $|\mathbf{E}_0|=c_0|\mathbf{B}_0|$, and $N(\tilde{F}_0)=0$, all as in the parent article. The impedance becomes $Z_0=\sqrt{\mu_0/\epsilon_0}$, and the refractive index becomes $n=1$.
 
-This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the parent article and is not settled here.
+This is the check that the medium conventions are consistent. Every medium result is the general one, and the vacuum results are recovered by setting the two medium parameters to their vacuum values. In particular, the null condition and the zero-divisor structure of the field strength are not special to vacuum; they hold in every medium, with the medium speed defining the cone. The question of which of $c_0$ and $(\epsilon_0,\mu_0)$ is fundamental — whether the vacuum has electromagnetic properties in the same sense that a medium does — is discussed in the Maxwell article and is not settled here.
 
 ## Summary
 
 Electromagnetism in a material medium is developed here as the general case, with the vacuum as its limit. The constitutive relations $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$ supply the two parameters of a homogeneous medium, which may be taken as the speed $c=1/\sqrt{\epsilon\mu}$ and the impedance $Z=\sqrt{\mu/\epsilon}$, or equivalently as $\epsilon=1/(cZ)$ and $\mu=Z/c$.
 
-The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial_{ict}=-(i/c)\partial_t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisation $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength
+The medium enters the biquaternionic structure in two places and nowhere else. First, through $c$ in the gradient, $\partial_{ict}=-(i/c)\partial_t$, so that the map from physical time to the imaginary scalar direction of $\mathbb{B}$ carries the local scale $c$; this is the sense in which the complex structure is local, the algebra being fixed while its embedding in physical spacetime is not. Second, through the normalisations $\sqrt{\epsilon},\sqrt{\mu}$ of the field strength and the corresponding $1/\sqrt{\epsilon},\sqrt{\mu}$ of the source biquaternion
 $$
 \tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H},
 $$

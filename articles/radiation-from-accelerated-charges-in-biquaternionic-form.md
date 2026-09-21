@@ -27,7 +27,7 @@ $$
 \Box \tilde{A} = -\mu\,\tilde{R}', \qquad \tilde{R}' = ic\rho + \mathbf{J},
 $$
 
-and that the physically correct solution is the **retarded** one, built by convolution over the past light cone. The scalar companion of the biquaternion-valued retarded Green's function of that article is the familiar retarded kernel of the d'Alembertian,
+and that the physically correct solution is the **retarded** one, built by convolution over the past light cone. The scalar Green's function of this second-order equation, distinct from the scalar part of that article's biquaternion-valued retarded Green's function (a first-order kernel of the opposite sign), is the familiar retarded kernel of the d'Alembertian,
 
 $$
 G_{\Box}(\tilde{X}) = \frac{1}{4\pi R}\,\delta\!\left(t - \frac{R}{c}\right), \qquad R = |\mathbf{x}|,
@@ -287,7 +287,7 @@ $$
 \mathbf{S}_a = \mathbf{E}_a\times\mathbf{H}_a = \frac{|\mathbf{E}_a|^2}{\mu c}\,\hat{\mathbf{R}},
 $$
 
-so the energy flux through a sphere of radius $R$ is $R^2|\mathbf{E}_a|^2/(\mu c)$ per unit solid angle, independent of $R$: the energy does not fall off, and it escapes to infinity. The velocity field, by contrast, contributes a flux that falls as $1/R^2$ and integrates to a constant, representing the energy permanently bound to the charge.
+so the energy flux through a sphere of radius $R$ is $R^2|\mathbf{E}_a|^2/(\mu c)$ per unit solid angle, independent of $R$: the energy does not fall off, and it escapes to infinity. The velocity field, by contrast, contributes a flux that falls as $1/R^2$ and so adds nothing to the energy radiated to infinity; the energy it carries is the bound field energy that travels with the charge.
 
 ## Radiated Power and the Relativistic Larmor Formula
 
@@ -369,7 +369,7 @@ $$
 
 Like the linear case, the pattern is forward-beamed by the factor $\kappa^{-6}$, so at high speed the emission is concentrated in a narrow cone around the instantaneous velocity. The term in $\gamma^{-2}$ is the correction that distinguishes circular from linear motion: since $\phi$ vanishes for directions lying in the orbital plane (the plane containing $\boldsymbol{\beta}$ and $\dot{\boldsymbol{\beta}}$), that term suppresses radiation emitted within the orbital plane relative to directions perpendicular to it, by a relative amount of order $\gamma^{-2}$ at angles away from the forward direction.
 
-**A remark on the temporal convention.** The distributions above are written per unit of the observer's time $t$ and with $\dot{\boldsymbol{\beta}}$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t_r$; because $dt = \kappa\,dt_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The total power, which is the integral over the sphere, is the same in either convention.
+**A remark on the temporal convention.** The distributions above are written per unit of the observer's time $t$ and with $\dot{\boldsymbol{\beta}}$ the retarded-time derivative; hence the power of $\kappa$ in the denominator is six. The same distributions are often written per unit of the retarded time $t_r$; because $dt = \kappa\,dt_r$, that convention multiplies the distributions by $\kappa$ and produces the more familiar-looking denominators $\kappa^5$ (general), $\kappa^5$ (linear), and $\kappa^3$ (circular, after the identity above is used to cancel two powers). No physical quantity depends on the choice; only the bookkeeping of the distribution does. The physical total power is the same in either convention; the two distributions themselves are not, since they differ pointwise by the direction-dependent factor $\kappa$, so the sphere integral must be taken with that factor in the retarded-time form.
 
 **Forward beaming.** The factor $\kappa^{-6}$ is the entire content of relativistic beaming. For $\beta\to1$, $\kappa$ is small only within the forward cone $\theta\lesssim1/\gamma$; outside it, the distribution is suppressed by many powers of $\gamma$. The radiated energy is therefore concentrated in a narrow forward cone of half-angle of order $1/\gamma$, the same cone that controls the relativistic Doppler effect and the synchrotron spectrum. As $\beta\to1$, the angular distribution becomes an increasingly sharp forward spike: the charge radiates almost entirely along its direction of motion.
 

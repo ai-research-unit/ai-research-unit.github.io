@@ -119,19 +119,21 @@ $$
 $$
 Thus $J \succeq 0$ for $0 \leq p \leq 2$, confirming complete positivity (the parent restricts to the sub-range $0 \leq p \leq 1$, where $\Phi^{\mathrm{deph}}_p$ is a convex mixture of the identity and the full-dephasing measurement channel), and
 $$
-\mathrm{rank}\,J = 1 \text{ at } p=0, \qquad \mathrm{rank}\,J = 2 \text{ for } 0 < p \leq 2 .
+\mathrm{rank}\,J = 2 \text{ for } 0 < p < 2, \qquad \mathrm{rank}\,J = 1 \text{ at } p=0 \text{ and at } p=2 .
 $$
-By the parent's rank theorem, the **minimal Kraus rank is two** for every $p>0$, and a minimal representation is
+By the parent's rank theorem, the **minimal Kraus rank is two** for $0<p<2$, and a minimal representation is
 $$
 \tilde{K}_0 = \sqrt{1-\tfrac{p}{2}}\;e_0, \qquad \tilde{K}_1 = \sqrt{\tfrac{p}{2}}\;i\hat{\mathbf{n}} .
 $$
+At $p=2$ the first operator vanishes, $\tilde{K}_0=0$, and the pair collapses to the single operator $\tilde{K}_1=i\hat{\mathbf{n}}$, which is unitary; that endpoint lies outside the parent's physical range $0\le p\le 1$.
+
 Trace preservation holds because $(i\hat{\mathbf{n}})^\dagger(i\hat{\mathbf{n}}) = (i\hat{\mathbf{n}})^2 = i^2\hat{\mathbf{n}}^2 = e_0$, so $\tilde{K}_0^\dagger\tilde{K}_0 + \tilde{K}_1^\dagger\tilde{K}_1 = (1-\tfrac{p}{2})e_0 + \tfrac{p}{2}e_0 = e_0$. The action is
 $$
 \Phi(\tilde{\rho}) = \left(1-\tfrac{p}{2}\right)\tilde{\rho} + \tfrac{p}{2}\,(i\hat{\mathbf{n}})\,\tilde{\rho}\,(i\hat{\mathbf{n}}).
 $$
 Since $(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}}) = -\hat{\mathbf{n}}\tilde{\rho}\hat{\mathbf{n}} = \tfrac{1}{2}\left(e_0 - i\mathbf{r} + 2i(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}\right)$, this reproduces $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, as required.
 
-**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde{P}_+ + \tilde{P}_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing for $p>0$ has Kraus rank two and is therefore irreversible; at $p=0$ the rank is one and the channel is the identity.
+**Conclusion.** The three-operator representation of Problem 1 is valid but **not minimal**: for $0<p<1$ the span of $\{\tilde{K}_0,\tilde{K}_1,\tilde{K}_2\}$ is two-dimensional, since $\tilde{K}_0 = \sqrt{1-p}\,(\tilde{P}_+ + \tilde{P}_-)$. The minimal representation given above has two operators. Consistently with the parent's dichotomy, dephasing has Kraus rank one at $p=0$ (the identity) and Kraus rank two for $0<p\le1$, and is therefore irreversible throughout the physical range except at its identity endpoint. The formal continuation to $p\in(1,2]$ is completely positive but leaves that range, and at $p=2$ it degenerates: $\tilde{K}_0=0$ and the channel reduces to the unitary conjugation $\tilde{\rho}\mapsto(i\hat{\mathbf{n}})\tilde{\rho}(i\hat{\mathbf{n}})^\dagger$, of Kraus rank one and reversible.
 
 ## Problem 3: A Positive Map That Is Not Completely Positive
 
@@ -300,13 +302,13 @@ while the purity falls to $\tfrac{1}{2}(1 + \tfrac{1}{4}) = \tfrac{5}{8} = 0.625
 We have worked six problems that exercise the channel formalism of the parent article in $\mathbb{M}_+$.
 
 1. **Dephasing as a Kraus sum.** The channel $\Phi^{\mathrm{deph}}_p$ has Kraus operators $\sqrt{1-p}\,e_0$, $\sqrt{p}\,\tilde{P}_+$, $\sqrt{p}\,\tilde{P}_-$ and acts on the Bloch vector as $\mathbf{r}' = (1-p)\mathbf{r} + p(\hat{\mathbf{n}}\cdot\mathbf{r})\hat{\mathbf{n}}$, scaling the transverse coherence by $1-p$ and leaving the populations fixed.
-2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$ and rank two for $0<p\leq 2$. The minimal Kraus rank is therefore two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_0$, $\sqrt{\tfrac{p}{2}}\,i\hat{\mathbf{n}}$ is a minimal set.
+2. **Kraus rank.** The Choi matrix of dephasing has spectrum $\{2-p,\,p,\,0,\,0\}$; its rank is two for $0<p<2$, dropping to one at the endpoints $p=0$ and $p=2$. On the parent's physical range $0\le p\le1$ it is therefore two for every $p>0$. The minimal Kraus rank is two, not three: the three-operator representation of the parent is valid but non-minimal, and $\sqrt{1-\tfrac{p}{2}}\,e_0$, $\sqrt{\tfrac{p}{2}}\,i\hat{\mathbf{n}}$ is a minimal set.
 3. **Positive but not completely positive.** The transpose map acts on the Bloch ball as $(r_1,r_2,r_3)\mapsto(r_1,-r_2,r_3)$, is positive and trace preserving, and has Choi matrix equal to the swap operator, with spectrum $\{1,1,1,-1\}$. It is not a channel.
 4. **Amplitude damping.** With $s=\sqrt{1-\gamma}$, the Kraus operators are $\tilde{K}_0 = \tfrac{1+s}{2}e_0 + i\tfrac{1-s}{2}e_3$ and $\tilde{K}_1 = \tfrac{\sqrt{\gamma}}{2}(ie_1 - e_2)$; the channel is non-unital, has the unique fixed state $\tilde{P}_+(\hat{\mathbf{z}})$, sends the excited state to $(0,0,2\gamma-1)$, and raises the purity of the maximally mixed state to $\tfrac{1}{2}(1+\gamma^2)$.
 5. **Composition and rank.** Composing channels multiplies Kraus operators, $B_lA_m$, and the Kraus rank of a composition is at most the product of the ranks. Two dephasings compose to a dephasing along the common axis with $p' = p+q-pq$ when the axes are parallel, but to the rank-four completely depolarizing channel when they are orthogonal and full.
 6. **Contraction and entropy.** Dephasing contracts the Bloch ball, $|\mathbf{r}'|^2 = (1-p)^2 r_\perp^2 + r_\parallel^2 \leq |\mathbf{r}|^2$, lowers the purity, and raises the entropy, since $dS/d|\mathbf{r}| = \tfrac{1}{2}\log\frac{1-|\mathbf{r}|}{1+|\mathbf{r}|} \leq 0$. For $\tilde{P}_+(e_1)$ dephased along $e_3$ with $p=\tfrac{1}{2}$, the entropy rises from $0$ to $\approx 0.562335$ nats and the purity falls to $0.625$.
 
-The two canonical channels illustrate the two faces of irreversibility. Dephasing is unital and destroys coherence without changing populations; amplitude damping is non-unital and drives the state toward a pure ground state. Both have Kraus rank two, both are irreversible, and both are instances of the parent's dichotomy: reversible if and only if Kraus rank one.
+The two canonical channels illustrate the two faces of irreversibility. Dephasing is unital and destroys coherence without changing populations; amplitude damping is non-unital and drives the state toward a pure ground state. Both have Kraus rank two on their physical ranges ($0<p\le1$ for dephasing, $0<\gamma\le1$ for damping), both are irreversible there, and both are instances of the parent's dichotomy: reversible if and only if Kraus rank one.
 
 ## Summary of Notation
 

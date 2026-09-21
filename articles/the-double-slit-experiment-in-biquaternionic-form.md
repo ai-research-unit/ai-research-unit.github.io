@@ -39,13 +39,13 @@ $$
 \tilde{K}(P) = \tilde{K}_1(P) + \tilde{K}_2(P) = \bigl(a_1 e^{i\varphi_1} + a_2 e^{i\varphi_2}\bigr) e_0 ,
 $$
 
-which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the norm form of the amplitude:
+which is again central. The additivity is the superposition principle; in the algebra it is the linearity of the complex one-dimensional space $\mathbb{C}_{\mathbb{B}}$ over $\mathbb{C}$ (equivalently, the additivity of the path integral, which the path-integral article takes as its starting point). The intensity is the scalar coefficient of the Hermitian norm of the amplitude:
 
 $$
-N\bigl(\tilde{K}(P)\bigr) = I(P)\,e_0, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
+\tilde{K}(P)\tilde{K}(P)^\dagger = I(P)\,e_0, \qquad I(P) = a_1^2 + a_2^2 + 2 a_1 a_2 \cos\delta(P), \qquad \delta(P) := \varphi_1(P) - \varphi_2(P).
 $$
 
-**Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $e^{ic}$, which cancels in $N(\tilde{K})$; and it cancels in any state built from $\tilde{K}$ as well, since $\tilde{K}\tilde{K}^\dagger \mapsto e^{ic}\tilde{K}\tilde{K}^\dagger e^{-ic} = \tilde{K}\tilde{K}^\dagger$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
+**Only the relative phase is observable.** The substitution $\varphi_j \mapsto \varphi_j + c$ with $c$ constant multiplies both amplitudes by the same central element $e^{ic}$, which cancels in the Hermitian norm $\tilde{K}\tilde{K}^\dagger$; and it cancels in any state built from $\tilde{K}$ as well, since $\tilde{K}\tilde{K}^\dagger \mapsto e^{ic}\tilde{K}\tilde{K}^\dagger e^{-ic} = \tilde{K}\tilde{K}^\dagger$. This is the path-integral article's statement that the global phase of a path is unobservable and only differences of actions are observable, in its simplest instance. The double slit is the arrangement in which exactly one relative phase, $\delta$, is read off.
 
 Two observations about where the objects live belong here, because later sections use them.
 
@@ -211,7 +211,7 @@ because $\bar{\tilde{W}}\tilde{W} = N(\tilde{W})e_0$ is central and $N(\tilde{W}
 So the *spin-summed* two-slit intensity, for a common spin state, is **root-independent**; the double slit, read as an intensity pattern without spin analysis, does not by itself witness the centrality of the phase. What the non-central choice changes is not this number but the *type* of the amplitude and the *action* of the phase:
 
 - the amplitude is a quaternion in a plane that must be chosen, rather than a complex scalar;
-- the phase rotates the spin: a spin-resolved intensity *in a basis not aligned with* $\hat{\mu}$ distinguishes the roots, while the intensity resolved in the $\hat{\mu}$ eigenbasis does not (the transverse difference is generically of order unity — about $10.9$ on random cases — whereas the $\hat{\mu}$-resolved and spin-summed intensities agree to about $4\times10^{-14}$);
+- the phase rotates the spin: a spin-resolved intensity *in a basis not aligned with* $\hat{\mu}$ distinguishes the roots, while the intensity resolved in the $\hat{\mu}$ eigenbasis does not (the transverse difference is generically of order unity — about $10.9$ on random cases — whereas the $\hat{\mu}$-resolved difference between the roots agrees with the spin-summed difference to about $4\times10^{-14}$);
 - when the two routes carry **different** spin states the *total* intensity itself differs between the two choices, again generically by an order-unity amount (about $9.5$ on random cases);
 - the choice of $\hat{\mu}$ is extra input that the algebra does not supply, whereas the central $i$ is fixed by $\mathbb{C} \subset \mathbb{B}$.
 

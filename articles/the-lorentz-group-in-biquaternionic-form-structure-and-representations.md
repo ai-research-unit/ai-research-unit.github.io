@@ -188,7 +188,7 @@ $$
 $$
 The first two say that the rotations form a subalgebra $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ (the compact part) and that the boosts transform as a vector under it. The third is the infinitesimal statement that **the boosts do not close**: the bracket of two boost generators is a rotation generator. This is the Lie-algebraic origin of the Thomas–Wigner rotation and of the non-closure of the preceding section.
 
-**Relation to $\mathfrak{so}(1,3)$ and to $\mathfrak{sl}(2,\mathbb{C})$.** The real Lie algebra $\mathfrak{g}$ is isomorphic to the Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\Pi$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$. The exponential map $\exp:\mathfrak{g}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $X$ maps to $e_0$ exactly when its eigenvalues lie in $2\pi i\mathbb{Z}$, a nonzero discrete kernel. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a **product** of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
+**Relation to $\mathfrak{so}(1,3)$ and to $\mathfrak{sl}(2,\mathbb{C})$.** The real Lie algebra $\mathfrak{g}$ is isomorphic to the Lie algebra $\mathfrak{so}(1,3)$ of the Lorentz group, the isomorphism being the infinitesimal form of $\Pi$. It is also, by definition, the real Lie algebra underlying the complex Lie algebra $\mathfrak{sl}(2,\mathbb{C})$. The exponential map $\exp:\mathfrak{g}\to SL(2,\mathbb{C})$ is neither injective nor surjective. It is not injective: an element $X$ maps to $e_0$ exactly when it is diagonalisable with eigenvalues in $2\pi i\mathbb{Z}$, so the preimage of $e_0$ is nonzero — indeed a union of conjugacy classes, not a discrete set. It is not surjective either: for example, a matrix with a nontrivial Jordan block and eigenvalue $-1$ is not the exponential of any traceless matrix. What is true is that every unit-norm biquaternion is a **product** of exponentials, because the group is connected and $\exp$ is a local diffeomorphism at the identity. The Cartan decomposition makes this explicit: a boost is the exponential of a boost generator and a rotation is the exponential of a rotation generator, so every rotor is
 $$
 \tilde{\Lambda}=\exp(X)\exp(Y),\qquad
 X\in\operatorname{span}_{\mathbb{R}}\{K_1,K_2,K_3\},\quad
@@ -198,8 +198,8 @@ The exponential map and its failure of surjectivity are treated in the companion
 
 **The Killing form.** The Lie algebra is semisimple, and its Killing form is nondegenerate. In the basis $(J_1,J_2,J_3,K_1,K_2,K_3)$ it is diagonal,
 $$
-B(J_j,J_k)=-8\,\delta_{jk},\qquad
-B(K_j,K_k)=+8\,\delta_{jk},\qquad
+B(J_j,J_k)=-16\,\delta_{jk},\qquad
+B(K_j,K_k)=+16\,\delta_{jk},\qquad
 B(J_j,K_k)=0,
 $$
 (computed from $B(X,Y)=\operatorname{tr}(\operatorname{ad}X\,\operatorname{ad}Y)$ in this algebra). Its signature is therefore $(3,3)$: negative definite on the compact rotation subalgebra and positive definite on the complementary boost directions. The indefiniteness is the Lie-algebraic expression of the non-compactness of $SL(2,\mathbb{C})$ and of the Lorentz group.

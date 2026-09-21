@@ -84,7 +84,7 @@ $$
 \qquad \alpha\in\mathbb{R},
 $$
 
-leaves both terms of $\mathcal{L}$ unchanged, because $e^{i\alpha}$ is central and $\tilde{\Phi}^\dagger\mapsto e^{-i\alpha}\tilde{\Phi}^\dagger$: the two phase factors in $(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})$ cancel, and $\tilde{\Phi}^\dagger\tilde{\Phi}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term is linear in $\tilde{\Phi}$ — a fact used again below.
+leaves both terms of $\mathcal{L}$ unchanged, because $e^{i\alpha}$ is central and $\tilde{\Phi}^\dagger\mapsto e^{-i\alpha}\tilde{\Phi}^\dagger$: the two phase factors in $(\bar{\tilde{\nabla}}\tilde{\Phi}^\dagger)(\tilde{\nabla}\tilde{\Phi})$ cancel, and $\tilde{\Phi}^\dagger\tilde{\Phi}$ is invariant. The symmetry therefore holds for the **massive** field as well as the massless one, because the mass term depends on $\tilde{\Phi}$ only through the invariant $\tilde{\Phi}^\dagger\tilde{\Phi}$ — a fact used again below.
 
 **The current.** For the infinitesimal variation $\delta\tilde{\Phi} = i\alpha\tilde{\Phi}$, $\delta\tilde{\Phi}^\dagger = -i\alpha\tilde{\Phi}^\dagger$, the Noether current is
 
@@ -189,7 +189,7 @@ or, in the integrated form that avoids the derivative altogether, $\sum_{\mathrm
 **A numerical witness.** Two bodies connected by a translation-invariant interaction exchange momentum, so $d\tilde{P}_2/dt = -d\tilde{P}_1/dt = i\,e_0 + e_1$ at some instant, and their Lorentz factors differ, $\gamma_1 = 5/3$, $\gamma_2 = 5/4$. Then $d\tilde{P}_{\mathrm{tot}}/dt = 0$, but
 
 $$
-\tilde{F}_1 + \tilde{F}_2 = (\gamma_1 - \gamma_2)\frac{d\tilde{P}_1}{dt} = \frac{5}{12}\left(i\,e_0 + e_1\right) \neq 0 .
+\tilde{F}_1 + \tilde{F}_2 = (\gamma_1 - \gamma_2)\frac{d\tilde{P}_1}{dt} = -\frac{5}{12}\left(i\,e_0 + e_1\right) \neq 0 .
 $$
 
 The naive sum of the parent's four-forces is not zero even though the total four-momentum is conserved. For the collision of *Exercise: Four-Momentum Conservation in a Collision* ($E_1 = 3mc^2$, equal masses, $\theta^* = 90^\circ$), the total four-momenta $\tilde{P}_{\mathrm{in}}$ and $\tilde{P}_{\mathrm{out}}$ were recomputed and agree component by component in the laboratory.
@@ -250,7 +250,7 @@ $$
 
 the angular momentum of a free particle is a single biquaternion. This is the same construction by which $\tilde{F} = \mathrm{Vect}(\bar{\tilde{\nabla}}\tilde{A}) = \tfrac12\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ packages the antisymmetric field strength, and the Lorentz generators themselves are bivectors.
 
-**What does not carry over as a single biquaternion.** For a field, the Noether current of Lorentz invariance is a rank-three object, $L^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu} + S^{\mu\nu\rho}$, whose conservation $\partial_\mu L^{\mu\nu\rho} = 0$ expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar and Maxwell fields. The particle bivector $\tilde{L}$ above is the finite-dimensional case where the rank-two object *is* the whole story.
+**What does not carry over as a single biquaternion.** For a field, the Noether current of Lorentz invariance is a rank-three object, $L^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu} + S^{\mu\nu\rho}$, whose conservation $\partial_\mu L^{\mu\nu\rho} = 0$ expresses the symmetry of the energy–momentum tensor together with the conservation of spin. Being rank three, it is not a biquaternion and not even a single bilinear; the orbital and spin pieces separate, with the spin term vanishing for the classical scalar field. The particle bivector $\tilde{L}$ above is the finite-dimensional case where the rank-two object *is* the whole story.
 
 ## What Is Inherited, What Is Added, What Is Interpretation
 

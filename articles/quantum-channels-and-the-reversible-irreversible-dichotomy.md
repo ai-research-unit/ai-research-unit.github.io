@@ -130,7 +130,7 @@ The kernel of $\tilde{U} \mapsto \Phi_{\tilde{U}}$ on $\mathbb{M}_+$ is the grou
 
 ### Sums of Conjugations and Stinespring Dilation
 
-A general quantum channel is a sum of conjugations, $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^\dagger$ with $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$, involving two or more Kraus operators or a single non-unitary one. But a trace-preserving channel with a single Kraus operator is necessarily unitary, since $\tilde{K}^\dagger\tilde{K} = e_0$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
+A general quantum channel is a sum of conjugations, $\Phi(\tilde{\rho}) = \sum_l \tilde{K}_l\tilde{\rho}\tilde{K}_l^\dagger$ with $\sum_l \tilde{K}_l^\dagger\tilde{K}_l = e_0$, involving two or more Kraus operators. But a trace-preserving channel with a single Kraus operator is necessarily unitary, since $\tilde{K}^\dagger\tilde{K} = e_0$ *is* unitarity. It follows that **a channel is irreversible precisely when its Kraus rank is at least two**. Irreversibility is not a matter of degree in the action of a single element; it is the presence of a sum, and the choice among the terms is what the map forgets.
 
 The information-theoretic picture is that the Kraus operators describe the interaction of the system with an environment that is not observed. This is made precise by the **Stinespring dilation**: every channel can be written
 
@@ -227,7 +227,7 @@ S(\tilde{\rho}) = -\lambda_+\log\lambda_+ - \lambda_-\log\lambda_-,
 \lambda_\pm = \tfrac{1}{2}\left(1 \pm |\mathbf{r}|\right),
 $$
 
-strictly increases, since $S$ is a decreasing function of $|\mathbf{r}|$. A pure state on the equator is driven into the interior of the Bloch ball; only the two states on the $\hat{\mathbf{n}}$ axis are fixed. No channel can restore the lost coherence, because the inverse map is not completely positive. Unitary evolution, by contrast, preserves $|\mathbf{r}|$ exactly, and with it the purity and the spectrum of every state.
+strictly increases, since $S$ is a decreasing function of $|\mathbf{r}|$. A pure state on the equator is driven into the interior of the Bloch ball; only the two pure states on the $\hat{\mathbf{n}}$ axis are fixed. No channel can restore the lost coherence, because the inverse map is not completely positive. Unitary evolution, by contrast, preserves $|\mathbf{r}|$ exactly, and with it the purity and the spectrum of every state.
 
 ## The Dichotomy, the Two Subspaces, and the Informational Sector
 

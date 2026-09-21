@@ -45,7 +45,7 @@ For light in a medium of local speed $c = 1/\sqrt{\epsilon\mu}$ the dispersion r
 $$
 N(\tilde{K}) = 0 :
 $$
-the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *$\mathbb{M}_-$ as the Material Space* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\tilde{K} = \tilde{P}/\hbar$ and hence $N(\tilde{K}) = -m^2c^2/\hbar^2$, a fixed negative norm form, whereas for light the norm form vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: only the direction of $\mathbf{k}$, not its magnitude, is free.
+the four-wavevector of light is a **null** element of $\mathbb{M}_-$, i.e. a zero divisor of the algebra, exactly as the light cone of Minkowski space is the zero-divisor cone (see *$\mathbb{M}_-$ as the Material Space* and the mass-shell relation of *Relativistic Mechanics in Biquaternionic Form*). The contrast with matter is instructive: a massive de Broglie wave has $\tilde{K} = \tilde{P}/\hbar$ and hence $N(\tilde{K}) = -m^2c^2/\hbar^2$, a fixed negative norm form, whereas for light the norm form vanishes. The null condition is what makes the Doppler problem a one-parameter problem in each direction: the shift depends only on the direction of $\mathbf{k}$, through the angle $\theta$, and on $\beta$ — not on the magnitude $k$.
 
 **Solution (b).** Fix the plane-wave convention $\propto e^{i\Phi}$ with
 $$
@@ -164,7 +164,7 @@ $$
 $$
 in agreement with (b).
 
-> **Remark on the boost-direction convention.** The rotor with vector part $+\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ carries the frame in which the four-vector components are given *to the frame moving with velocity $+\mathbf{u}$* relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\bar{\tilde{\Lambda}} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ in place of $\tilde{\Lambda}$ — interchanges emission and reception: it would yield $\omega_0 = \gamma\omega'(1-\beta\cos\theta')$, the inverse relation, and would turn every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.
+> **Remark on the boost-direction convention.** The rotor with vector part $+\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ carries the frame in which the four-vector components are given *to the frame moving with velocity $+\mathbf{u}$* relative to it. This is fixed by the parent's verification against the four-potential components, and it is the convention used throughout. Reversing it — using the inverse rotor $\bar{\tilde{\Lambda}} = \cosh\frac{\psi}{2} - i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ in place of $\tilde{\Lambda}$ — interchanges emission and reception: it flips the sign of the Doppler term, giving $\omega' = \gamma\omega_0(1+\beta\cos\theta)$ in place of $\omega' = \gamma\omega_0(1-\beta\cos\theta)$, so that a receding observer ($\theta = 0$) is blueshifted rather than redshifted. Reversing the rotor therefore turns every receding observer into an approaching one. A sibling exercise in this series has found a parent article applying a boost rotor in the inverse direction in exactly this way; the present exercise pins the direction down before using it.
 
 ## Problem 3: Longitudinal Doppler — The Two Factors
 
@@ -251,7 +251,7 @@ $$
 \qquad
 \pi - \theta' = \arccos\beta .
 $$
-Since the emission is isotropic in the source frame, the hemisphere $\theta\ge\pi/2$ — half the emitted light, and the half that contains the forward direction $-\hat{\mathbf{u}}$ — arrives within the cone of half-angle $\arccos\beta$ about that forward direction. This is the relativistic beaming (headlight) effect. For $\beta\to1$, $\arccos\beta\approx\sqrt{2(1-\beta)}=1/\gamma$, the familiar forward cone of half-angle $1/\gamma$.
+Since the emission is isotropic in the source frame, the hemisphere $\theta\ge\pi/2$ — half the emitted light, and the half that contains the forward direction $-\hat{\mathbf{u}}$ — arrives within the cone of half-angle $\arccos\beta$ about that forward direction. This is the relativistic beaming (headlight) effect. For $\beta\to1$, $\arccos\beta\approx\sqrt{2(1-\beta)}\approx1/\gamma$, the familiar forward cone of half-angle $1/\gamma$.
 
 **Solution (c).** The half-angles are $60.00^\circ$ ($\beta=0.5$), $25.84^\circ$ ($\beta=0.9$), and $8.11^\circ$ ($\beta=0.99$); the corresponding values of $1/\gamma$ are $49.62^\circ$, $24.97^\circ$, and $8.08^\circ$. The approximation $\arccos\beta\approx1/\gamma$ is poor at $\beta=0.5$ but already accurate to a few per cent at $\beta=0.9$, and to a fraction of a per cent at $\beta=0.99$, as it must be since the two agree to leading order in $1/\gamma$. The forward cone is the same cone that sets the beaming of synchrotron radiation and the angular concentration of radiated energy by a fast charge.
 
@@ -289,7 +289,7 @@ The first-order term $-\beta\cos\theta$ is the classical Doppler shift. The lead
 
 ## Further Problems
 
-The following are left to the reader; none is solved above, and the last four are applications that the parents do not treat.
+The following are left to the reader; none is fully worked out above, and the last four are applications that the parents do not treat.
 
 1. **The invariant formula for arbitrary direction.** Verify $\omega_{\mathrm{obs}} = -\mathrm{Sc}(\tilde{K}\bar{\tilde{U}})$ directly for $\theta$ chosen so that $\cos\theta = \beta$, and show that it reproduces $\omega_0/\gamma$. Then verify it is invariant under a second boost applied to both $\tilde{K}$ and $\tilde{U}$.
 
@@ -297,11 +297,11 @@ The following are left to the reader; none is solved above, and the last four ar
 
 3. **Dispersion.** In a medium with frequency-dependent $c(\omega) = 1/\sqrt{\epsilon(\omega)\mu(\omega)}$, the null condition $N(\tilde{K}) = 0$ uses the phase speed at the received frequency, and the boost of Problem 2 changes the frequency. Does the transformation remain internally consistent when the medium is dispersive, and does it matter whether the medium is at rest in the source frame or in the observer frame? The parents take the complex structure to be local but do not combine it with a moving dispersive medium; this is open here.
 
-4. **Apparent superluminal motion.** Show that a source moving at small angle $\theta$ to the line of sight has apparent transverse speed
+4. **Apparent superluminal motion.** Show that a source moving at small angle $\Theta$ to the line of sight — $\Theta$ the angle between the source velocity and the direction from the source to the observer, the same line-of-sight angle as in further problem 5 — has apparent transverse speed
 $$
-v_{\mathrm{app}} = \frac{\beta c\sin\theta}{1-\beta\cos\theta} ,
+v_{\mathrm{app}} = \frac{\beta c\sin\Theta}{1-\beta\cos\Theta} ,
 $$
-and find the angle that maximises it. (For $\beta = 0.99$ and $\theta = 0.1$ rad this gives $v_{\mathrm{app}} = 6.61\,c$.)
+and find the angle that maximises it. (For $\beta = 0.99$ and $\Theta = 0.1$ rad this gives $v_{\mathrm{app}} = 6.61\,c$.)
 
 5. **The CMB dipole.** An observer moving with velocity $\mathbf{u}$ through an isotropic blackbody of temperature $T$ sees, in the direction making angle $\Theta$ with $\mathbf{u}$ (the angle to the line of sight, not to the propagation direction), a blackbody of temperature $T' = T\,/\left[\gamma(1-\beta\cos\Theta)\right]$. Expand for small $\beta$ and identify the dipole and quadrupole terms. Why is the observed CMB dipole usually attributed to the observer's motion rather than to a property of the source? (Note that at $\Theta = \pi/2$ this is the case-B redshift $T' = T/\gamma$; the apparently conflicting statement that a ray perpendicular to the motion in the *source* frame is blueshifted refers to the source-frame propagation angle, which aberration relates to $\Theta$.)
 

@@ -53,7 +53,7 @@ $$
 $$
 These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $ict$ convention is what puts them there.
 
-**Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *real* algebra: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{B}$-valued equation, and since $\mathbb{B}$ has real dimension four (and the difference already lies in the four-dimensional real subspace $\mathbb{M}_-$), it is exactly four real equations. No information is lost, and none is smuggled in.
+**Remark on counting.** A reader may ask whether a single biquaternion equation can carry four real conditions. It can, because $\mathbb{B}$ is a four-dimensional *complex* algebra while the difference lies in the four-dimensional *real* subspace $\mathbb{M}_-$: the equation $\tilde{P}_{\rm in}-\tilde{P}_{\rm out}=0$ is one $\mathbb{M}_-$-valued equation, and since $\mathbb{M}_-$ has real dimension four ($\mathbb{B}$ itself has complex dimension four, i.e. real dimension eight), it is exactly four real equations. No information is lost, and none is smuggled in.
 
 **Solution (b).** The law is linear in the four-momenta: it equates sums, not products or norms. The norm form is not additive, and it does not commute with the sum. Applying $N$ to the law gives only
 $$

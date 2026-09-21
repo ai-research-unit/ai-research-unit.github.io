@@ -101,7 +101,7 @@ $$
 [\tilde H,\tilde K] = -2\,(\mathbf{h}\times\mathbf{k}),
 $$
 
-which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$. In particular the commutator of two observables is not another observable but a **rotation generator**. The angular-momentum commutation relations are therefore a statement about the quaternion product: the right-hand side $i\hbar\epsilon_{ijk}\tilde J_k$ is $i$ times a pure real quaternion, which is precisely what makes it Hermitian.
+which is a pure real quaternion, an element of $\mathbb{M}_-\cap\mathbb{H}_{\mathbb{B}}$. In particular the commutator of two observables is not another observable but a **rotation generator**. The angular-momentum commutation relations are therefore a statement about the quaternion product: the right-hand side $i\hbar\epsilon_{ijk}\tilde J_k$ is a rotation generator — $i$ times a Hermitian observable, hence anti-Hermitian.
 
 ## The Orbital Angular Momentum Operator
 
@@ -334,7 +334,7 @@ $$
 
 The coefficients are pure numbers; they do not depend on the biquaternion representation of the spin factor, which enters only through the operators $\tilde S_k$ generating the suitable matrix action. In this respect the addition of angular momenta is standard quantum mechanics expressed in biquaternion language, with one genuinely algebraic ingredient: the spin-1/2 factor is the fundamental module of $\mathbb{B}$, so the spin operators used in the coupling are the elements $\tilde S_k$ of $\mathbb{M}_+$ constructed above.
 
-Two structural points should be stated precisely. First, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has as irreducible modules only the trivial one and the fundamental two-dimensional one; it therefore realises, as modules, only $j=0$ and $j=\tfrac12$. The vector representation $j=1$ is present not as a $\mathbb{B}$-module but as the adjoint action of the unitary subgroup on the imaginary quaternions, and higher $j$ require tensor products or symmetric powers. Second, the orbital representation is not a biquaternion module at all (except for $l=\tfrac12$); it is the standard rotation representation carried by the position dependence of the wavefunction. The biquaternion content of the coupled system is therefore confined to the spin factor, while the orbital factor and the Clebsch–Gordan coefficients are carried over unchanged from standard quantum mechanics.
+Two structural points should be stated precisely. First, the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ has as irreducible modules only the trivial one and the fundamental two-dimensional one; it therefore realises, as modules, only $j=0$ and $j=\tfrac12$. The vector representation $j=1$ is present not as a $\mathbb{B}$-module but as the adjoint action of the unitary subgroup on the imaginary quaternions, and higher $j$ require tensor products or symmetric powers. Second, the orbital representation is not a biquaternion module at all (except for $l=0$); it is the standard rotation representation carried by the position dependence of the wavefunction. The biquaternion content of the coupled system is therefore confined to the spin factor, while the orbital factor and the Clebsch–Gordan coefficients are carried over unchanged from standard quantum mechanics.
 
 ## The Rotor Realisation of Rotations
 

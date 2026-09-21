@@ -16,7 +16,11 @@ __pycache__/
 
 # Internal review work - confidential, never published, never committed
 PLAN*
+BRAINSTORMING*
+*.summary
+*.analyse
 *.thinking
-*.idea
+*.suggestions
+*.ideas
 _reserve/
 

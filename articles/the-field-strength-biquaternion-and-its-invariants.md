@@ -11,7 +11,7 @@ $$
 
 as the single biquaternionic object that carries the electromagnetic field, and showed that, in a medium with permittivity $\epsilon$ and permeability $\mu$, the four Maxwell equations collapse into the one equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. In that article $\tilde{F}$ appears as a means to an end: the compact rewriting of the field equations. This article studies $\tilde{F}$ for its own sake.
 
-Two features make the field strength worth treating separately. First, $\tilde{F}$ is *not* a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has **vanishing scalar part** and a **mixed real/imaginary vector part**: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the **norm form** evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are exactly the two classical Lorentz invariants, $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.
+Two features make the field strength worth treating separately. First, $\tilde{F}$ is *not* a four-vector. Unlike the four-potential $\tilde{A}$, whose scalar part is imaginary and whose vector part is real, the field-strength biquaternion has **vanishing scalar part** and a **mixed real/imaginary vector part**: its imaginary half carries the electric field and its real half the magnetic field. The field strength is therefore a different kind of object from the kinematic four-vectors that live in the material subspace $\mathbb{M}_-$, and its Lorentz transformation law is correspondingly different. Second, the **norm form** evaluated on $\tilde{F}$ is a complex scalar whose real and imaginary parts are the two classical Lorentz invariants, $E^2 - c^2B^2$ and $\mathbf{E}\cdot\mathbf{B}$, up to the medium factors $-\epsilon$ and $-2\epsilon c$. The algebraic apparatus built to describe the Minkowski metric thus delivers the electromagnetic invariants as well.
 
 This article is the declared foundation for three later articles on electromagnetism in media, on the Lorentz force, and on radiation from accelerated charges. It therefore fixes the field-strength notation once and for all. The **canonical objects** are: the field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$; the electric and magnetic fields $\mathbf{E}$ and $\mathbf{H}$, together with the magnetic induction $\mathbf{B} = \mu\mathbf{H}$; the medium speed of light $c = 1/\sqrt{\epsilon\mu}$; the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$; the two invariants $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$; and the energy density $W$ and Poynting vector $\mathbf{S}$. Nothing in this list is new notation; the first three come unchanged from the Maxwell article, and the rest are assembled from them.
 
@@ -89,7 +89,7 @@ $$
 The electric part is therefore **Hermitian** and the magnetic part **anti-Hermitian**, and $\tilde{F}$ is neither. Explicitly,
 
 $$
-\tilde{F}^\dagger = -\overline{\mathbf{F}} = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H},
+\tilde{F}^\dagger = -\mathbf{F}^* = i\sqrt{\epsilon}\,\mathbf{E} + \sqrt{\mu}\,\mathbf{H},
 $$
 
 so that the Hermitian and anti-Hermitian parts of the field strength are
@@ -145,7 +145,7 @@ $$
 \mathrm{Im}\,N(\tilde{F}) = -2\epsilon c\,\mathbf{E}\cdot\mathbf{B}.
 $$
 
-The two real quantities appearing here are precisely the two classical **Lorentz invariants** of the electromagnetic field:
+The two real quantities appearing here are the two classical **Lorentz invariants** of the electromagnetic field, up to the factors $-\epsilon$ and $-2\epsilon c$:
 
 $$
 \boxed{\;I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2\;},
@@ -165,10 +165,10 @@ $$
 
 The norm form is a single complex number, and it carries exactly two real invariants. It is the *fully contracted* object built from the field strength with no derivatives and no extra vectors, so these are the only two independent invariants of the field; any other algebraic invariant is a function of $I_1$ and $I_2$.
 
-**The conjugate norm form.** The quaternion norm form is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\bar{\tilde{F}} = -\mathbf{F}$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \overline{\mathbf{F}}$. For the norm form of the complex-conjugate field,
+**The conjugate norm form.** The quaternion norm form is not the only natural quadratic object here. Because quaternion conjugation fixes the scalar part, conjugation acts on the vector components by $\bar{\tilde{F}} = -\mathbf{F}$; complex conjugation, by contrast, acts on the coefficients, $\tilde{F}^* = \mathbf{F}^*$. For the norm form of the complex-conjugate field,
 
 $$
-N(\tilde{F}^*) = \overline{N(\tilde{F})},
+N(\tilde{F}^*) = N(\tilde{F})^*,
 $$
 
 so the norm form and its conjugate carry the same two real invariants. Equivalently, the reverse product is $\bar{\tilde{F}}\tilde{F} = \tilde{F}\bar{\tilde{F}} = N(\tilde{F})$ for a pure vector. The two invariants are therefore the two real components of the complex norm form.
@@ -280,7 +280,27 @@ $$
 
 The first equation has the form of a Schrödinger equation whose Hamiltonian is $c\,\mathrm{rot}$; the second is the transverse (divergence-free) condition inherited from $\mathrm{div}\,\mathbf{D} = 0$ and $\mathrm{div}\,\mathbf{B} = 0$. This is the form in which the radiative content of the field is most transparent, and the null condition $\mathbf{V}\cdot\mathbf{V} = 0$ is precisely the condition that the complex vector be a null vector of the complexified spatial metric. A field whose Riemann–Silberstein vector is null, i.e. for which $N(\tilde{F}) = 0$, is a radiation field.
 
-Finally, the antisymmetric field tensor decomposes into its **self-dual and anti-self-dual parts**: with the Hodge convention $(\star F)_{0k} = B_k$, the combination $F - i\star F$ corresponds to $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$ and $F + i\star F$ to its complex conjugate $\mathbf{V}^* = \mathbf{E} - ic\mathbf{B}$. The two pieces are complex conjugates of one another rather than independent: $\mathbf{V}$ alone already carries the six real field components of $(\mathbf{E},\mathbf{B})$, and $\mathbf{V}^*$ adds no new data. On the complexified field space the two pieces transform independently under the Lorentz group, in the two three-dimensional complex representations.
+Finally, the antisymmetric field tensor decomposes into its **self-dual and anti-self-dual parts**. Define the Hodge dual by its action on the fields,
+$$
+\star:\ (\mathbf{E},\mathbf{B}) \mapsto (c\,\mathbf{B}, -\mathbf{E}/c),
+\qquad
+\star^2 = -1,
+$$
+which is the $\theta = \pi/2$ case of the duality rotation below. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
+$$
+\mathbf{V}(\star F) = -i\,\mathbf{V},
+\qquad
+\mathbf{V}^*(\star F) = +i\,\mathbf{V}^* .
+$$
+The two combinations $F \pm i\star F$ are therefore the two parts, of opposite chirality,
+$$
+F + i\,\star F \ \longleftrightarrow\ 2\mathbf{V} = 2(\mathbf{E} + ic\mathbf{B}),
+\qquad
+F - i\,\star F \ \longleftrightarrow\ 2\mathbf{V}^* = 2(\mathbf{E} - ic\mathbf{B}),
+$$
+with $\star(F \pm i\star F) = \mp i\,(F \pm i\star F)$. The $\mathbf{V}$ part ($\star F = -iF$) is the **self-dual** half and the $\mathbf{V}^*$ part ($\star F = +iF$) the **anti-self-dual** half; the two halves are the two helicities of the radiation field. For a real field the two parts are complex conjugates of one another, so $\mathbf{V}^*$ adds no new data: $\mathbf{V}$ alone already carries the six real field components of $(\mathbf{E},\mathbf{B})$. On the complexified field space they are instead independent, and transform separately under the Lorentz group in the two three-dimensional complex representations — the two chiralities.
+
+*Convention.* The dual is defined here by its action on $(\mathbf{E},\mathbf{B})$, the real-time convention with $\star^2 = -1$, which is the form in which the self-dual/anti-self-dual split is standard. Two sign conventions are in circulation for the star. We use the one in which $\star$ is the $\theta = \pi/2$ duality rotation, giving $\star\mathbf{V} = -i\mathbf{V}$; the **self-dual** half is then the $\mathbf{V}$ combination $F + i\star F$ ($\star$-eigenvalue $-i$) and the **anti-self-dual** half the $\mathbf{V}^*$ combination $F - i\star F$ ($\star$-eigenvalue $+i$). With the opposite sign of $\epsilon^{\mu\nu\rho\sigma}$ the two names are exchanged and nothing else changes. The component-wise dual read off from the $ict$ tensor above, $(\star F)_{0k} = B_k$, is $-i$ times this one and has $\star^2 = +1$; it is the same decomposition, with the two parts appearing as the real $\pm1$ eigenfields $F \pm \star F$ instead of the complex ones $F \pm i\star F$.
 
 ## Duality Rotation
 
@@ -382,7 +402,7 @@ W = \frac{1}{2}\left(\epsilon\,\mathbf{E}^2 + \mu\,\mathbf{H}^2\right) = \frac{1
 \mathbf{S} = \mathbf{E}\times\mathbf{H}.
 $$
 
-The scalar part of $\tilde{F}\tilde{F}^\dagger$ is the (non-negative) energy density, and its vector part is the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the norm form is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is strictly positive and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.
+The scalar part of $\tilde{F}\tilde{F}^\dagger$ is $2W$, twice the (non-negative) energy density, and its vector part is $\frac{2i}{c}\mathbf{S}$, $\frac{2}{c}$ times the imaginary unit times the Poynting vector; the result is an element of $\mathbb{M}_+$, as every Hermitian form must be. The contrast is instructive: the norm form is a Lorentz-invariant complex scalar that can vanish, while the Hermitian form is an $\mathbb{M}_+$-valued object whose scalar part is strictly positive and whose transformation law is not that of a scalar. The first classifies the field; the second measures it. This is the biquaternion expression of the familiar fact that the electromagnetic energy density is positive-definite, whereas the invariant $I_1$ is indefinite.
 
 ## Summary
 
@@ -425,6 +445,7 @@ Duality is the rotation $\mathbf{V}\mapsto e^{-i\theta}\mathbf{V}$; at $\theta =
 | $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ | First Lorentz invariant (scalar) |
 | $I_2 = \mathbf{E}\cdot\mathbf{B}$ | Second Lorentz invariant (pseudoscalar) |
 | $\mathbf{V} = \mathbf{E} + ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$ |
+| $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B}) = (c\mathbf{B}, -\mathbf{E}/c)$, $\star^2 = -1$ |
 | $W = \tfrac{1}{2}(\epsilon\mathbf{E}^2 + \mu\mathbf{H}^2)$ | Electromagnetic energy density |
 | $\mathbf{S} = \mathbf{E}\times\mathbf{H}$ | Poynting vector |
 | $\mathbf{v}$ | Boost (frame) velocity |

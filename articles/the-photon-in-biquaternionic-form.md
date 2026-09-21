@@ -146,7 +146,7 @@ All of the helicity statements were checked exactly on the same three independen
 
 ## Helicity and the Self-Dual Split of the Field Strength
 
-The field-strength article establishes that the Riemann–Silberstein vector $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ is the self-dual half of the field, in the sense that under the Hodge decomposition with $(\star F)_{0k}=B_k$, the combination $F-i\star F$ corresponds to $\mathbf{V}$ and $F+i\star F$ to its conjugate; the two pieces are the two three-dimensional complex representations of the Lorentz group. The helicity of the plane wave is exactly the label of these two pieces.
+The field-strength article establishes that the Riemann–Silberstein vector $\mathbf{V}=\mathbf{E}+ic\mathbf{B}$ is the self-dual half of the field: under the Hodge decomposition $\star(\mathbf{E},\mathbf{B})=(c\mathbf{B},-\mathbf{E}/c)$ with $\star^2=-1$, the combination $F+i\star F$ corresponds to $\mathbf{V}$ and $F-i\star F$ to its complex conjugate $\mathbf{V}^*$; the two pieces are the two three-dimensional complex representations of the Lorentz group. The helicity of the plane wave is exactly the label of these two pieces.
 
 For a plane wave, Faraday's law gives $\mathbf{B}=\hat{\mathbf{k}}\times\mathbf{E}$ (in vacuum natural units, $c=1$). Decompose the complex transverse amplitude as $\mathbf{E}=E_+\hat\varepsilon_+ + E_-\hat\varepsilon_-$. Using $\hat{\mathbf{k}}\times\hat\varepsilon_\pm=\mp i\hat\varepsilon_\pm$,
 

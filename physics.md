@@ -2,8 +2,8 @@
 # __Physics__
 
 
-## Biquaternion Universe
 
+## Biquaternion Universe
 
 ### <a href="articles/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>
 
@@ -15,20 +15,15 @@
 
 ### <a href="articles/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a>
 
-### <a href="articles/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a>
-
 ### <a href="articles/hamiltonian-mechanics-and-biquaternions-a-historical-note.html">Hamiltonian Mechanics and Biquaternions — A Historical Note</a>
 
-### <a href="articles/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a>
-
-### <a href="articles/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
-
-### <a href="articles/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>
+### <a href="articles/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a>
 
 ### <a href="articles/the-wick-rotation-in-the-biquaternion-universe.html">The Wick Rotation in the Biquaternion Universe</a>
 
-## Biquaternion Quantum Theory
 
+
+## Biquaternion Quantum Theory
 
 ### <a href="articles/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
 
@@ -90,10 +85,13 @@
 
 ### <a href="articles/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a>
 
+### <a href="articles/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
+
 ### <a href="articles/the-ontology-of-the-quantum-state-under-the-biquaternion-framework.html">The Ontology of the Quantum State under the Biquaternion Framework</a>
 
-## Biquaternion Electromagnetism
 
+
+## Biquaternion Electromagnetism
 
 ### <a href="articles/maxwells-equations-in-biquaternionic-form.html">Maxwell's Equations in the Biquaternionic Formulation</a>
 
@@ -119,8 +117,9 @@
 
 ### <a href="articles/exercise-the-retarded-potentials-and-the-greens-function.html">Exercise: The Retarded Potentials and the Green's Function</a>
 
-## Biquaternion Relativity
 
+
+## Biquaternion Relativity
 
 ### <a href="articles/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a>
 
@@ -129,6 +128,10 @@
 ### <a href="articles/the-lorentz-transformation-as-a-biquaternionic-rotation.html">The Lorentz Transformation as a Biquaternionic Rotation</a>
 
 ### <a href="articles/exercise-the-relativistic-doppler-effect.html">Exercise: The Relativistic Doppler Effect</a>
+
+### <a href="articles/similitudes-between-biquaternion-rotors-and-hamiltonian-flow.html">Similitudes Between Biquaternion Rotors and Hamiltonian Flow</a>
+
+### <a href="articles/noethers-theorem-in-biquaternionic-form.html">Noether's Theorem in Biquaternionic Form</a>
 
 ### <a href="articles/the-lorentz-group-in-biquaternionic-form-structure-and-representations.html">The Lorentz Group in Biquaternionic Form — Structure and Representations †</a>
 

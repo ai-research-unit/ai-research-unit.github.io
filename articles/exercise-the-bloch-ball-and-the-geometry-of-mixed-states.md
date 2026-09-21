@@ -145,7 +145,7 @@ $$
 = 1 - 2p(1-p)\bigl(1 - \cos\theta\bigr).
 $$
 
-The mixture therefore lies on the chord joining $\hat{\boldsymbol{\mu}}$ and $\hat{\boldsymbol{\nu}}$, at the point that divides it in the ratio $p : (1-p)$. Its purity and linear entropy are
+The mixture therefore lies on the chord joining $\hat{\boldsymbol{\mu}}$ and $\hat{\boldsymbol{\nu}}$, at the point that divides it in the ratio $(1-p) : p$. Its purity and linear entropy are
 
 $$
 \mathrm{Tr}(\tilde{\rho}^2) = \tfrac12\bigl(1 + |\mathbf{r}|^2\bigr) = 1 - p(1-p)\bigl(1-\cos\theta\bigr),
@@ -161,7 +161,7 @@ $$
 \mathbf{r} = \tfrac12(e_1 + e_3), \qquad |\mathbf{r}|^2 = 1 - 2\cdot\tfrac14\cdot 1 = \tfrac12, \qquad |\mathbf{r}| = 1/\sqrt2,
 $$
 
-so the purity is $\tfrac34$, the linear entropy is $\tfrac14$, and the entropy is about $0.416496$ nats — the state of Problem 2(d), as it must be. With $p = \tfrac34$,
+so the purity is $\tfrac34$, the linear entropy is $\tfrac14$, and the entropy is about $0.416496$ nats — the value found in Problem 2(d), as it must be. With $p = \tfrac34$,
 
 $$
 \mathbf{r} = \tfrac34 e_3 + \tfrac14 e_1, \qquad |\mathbf{r}|^2 = 1 - 2\cdot\tfrac34\cdot\tfrac14 = \tfrac58,

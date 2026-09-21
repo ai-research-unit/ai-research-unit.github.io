@@ -269,7 +269,7 @@ $$
 X=\sum_{\mu,\nu=0}^{3}X_{\mu\nu}\,e_\mu\otimes e_\nu,
 $$
 
-the Bell idempotents are precisely those elements whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
+the Bell idempotents are precisely those **trace-one idempotents** whose expansion contains only the **diagonal** terms $e_\mu\otimes e_\mu$:
 
 $$
 P_\epsilon=\tfrac{1}{4}\sum_{\mu=0}^{3}\epsilon_\mu\,e_\mu\otimes e_\mu,\qquad \epsilon_0=1 .
@@ -277,13 +277,13 @@ $$
 
 There are no cross terms $e_\mu\otimes e_\nu$ with $\mu\neq\nu$. This is the "particular tensor structure" of the Bell states: the two tensor factors carry matched indices throughout, so the element is a sum of correlated pairs rather than of arbitrary products. In particular, $P_\epsilon$ is invariant under the tensor flip $\tau(e_\mu\otimes e_\nu)=e_\nu\otimes e_\mu$.
 
-A natural question is how many idempotents of this diagonal form there are. Let
+A natural question is how many idempotents of this diagonal form **of trace one** there are. Let
 
 $$
 P=\tfrac{1}{4}\left(\lambda_0\,e_0\otimes e_0+\lambda_1\,e_1\otimes e_1+\lambda_2\,e_2\otimes e_2+\lambda_3\,e_3\otimes e_3\right).
 $$
 
-Imposing $P^2=P$ and $\mathrm{Tr}(P)=1$ determines the coefficients completely. The trace gives $\lambda_0=1$. The coefficient of $e_0\otimes e_0$ in $P^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $e_l\otimes e_l$ (for $l=1,2,3$, where $\{j,k,l\}=\{1,2,3\}$) is $\tfrac{1}{16}\left(2\lambda_l+2\lambda_j\lambda_k\right)$, which must equal $\tfrac14\lambda_l$, so $\lambda_j\lambda_k=\lambda_l$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_k=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents, and they are the four Bell idempotents. No other diagonal idempotent exists.
+Imposing $P^2=P$ and $\mathrm{Tr}(P)=1$ determines the coefficients completely. The trace gives $\lambda_0=1$. The coefficient of $e_0\otimes e_0$ in $P^2$ is $\tfrac{1}{16}\sum_\mu\lambda_\mu^2$, which must equal $\tfrac14\lambda_0=\tfrac14$, so $\sum_\mu\lambda_\mu^2=4$. The coefficient of $e_l\otimes e_l$ (for $l=1,2,3$, where $\{j,k,l\}=\{1,2,3\}$) is $\tfrac{1}{16}\left(2\lambda_l+2\lambda_j\lambda_k\right)$, which must equal $\tfrac14\lambda_l$, so $\lambda_j\lambda_k=\lambda_l$. Multiplying the three relations by $\lambda_1,\lambda_2,\lambda_3$ respectively gives $\lambda_1^2=\lambda_2^2=\lambda_3^2=\lambda_1\lambda_2\lambda_3$; combined with $\lambda_0=1$ and $\sum_\mu\lambda_\mu^2=4$ this yields $\lambda_1^2=\lambda_2^2=\lambda_3^2=1$. Hence each $\lambda_k=\pm1$ and $\lambda_1\lambda_2\lambda_3=+1$. (For the four sign patterns, the direct verification of idempotency is the computation in *Exercise: The Correlation Function of the Bell States*.) So there are exactly **four** diagonal-form idempotents **of trace one**, and they are the four Bell idempotents. No other trace-one diagonal idempotent exists.
 
 ### The Bell idempotents inside the continuum of maximally entangled states
 
@@ -348,7 +348,7 @@ $$
 
 So each Bell idempotent is maximally entangled in the precise sense of the previous section: its partial trace is maximal mixed, its reduced purity is $\tfrac12$ (the minimum for a qubit), and its reduced entropy is $\log 2$ (the maximum). The computation is the same for all four states and reproduces, for the singlet, the result $\rho_1=\tfrac12e_0$ of the entangled-subsystems article and of *Exercise: The Reduced State of an Entangled Subsystem*.
 
-Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only diagonal-form idempotents; and their partial traces are all the maximally mixed state $\tfrac{1}{2}e_0$. The Bell basis is thus a canonical object of the tensor-product algebra, selected simultaneously by the tensor structure, by the stabiliser spectrum, and by maximal entanglement.
+Combined with the previous section, the picture is complete. The four Bell idempotents form an idempotent basis of $\mathbb{B}\otimes\mathbb{B}$; they are the joint eigenbasis of the stabiliser operators $S_1$ and $S_3$; they are the only trace-one diagonal-form idempotents; and their partial traces are all the maximally mixed state $\tfrac{1}{2}e_0$. The Bell basis is thus a canonical object of the tensor-product algebra, selected simultaneously by the tensor structure, by the stabiliser spectrum, and by maximal entanglement.
 
 ## A Remark on the Status of the Tensor Product
 

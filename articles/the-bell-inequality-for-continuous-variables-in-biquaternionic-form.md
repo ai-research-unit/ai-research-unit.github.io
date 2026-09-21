@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The companion exercise *Exercise: The CHSH Inequality and Tsirelson's Bound* treats Bell's theorem for two qubits. Its observables have two outcomes each, labelled $\pm1$; its classical bound is $|S|\le2$; and its quantum bound is Tsirelson's $|S|\le2\sqrt{2}$, which is a theorem about the spectrum of a four-dimensional Hermitian operator and holds for every state of the two-qubit algebra. That article closes by recording, among the things it deliberately did not touch, "the continuous-variable Bell inequality", which the menu lists as a separate article. This is that article.
+The companion exercise *Exercise: The CHSH Inequality and Tsirelson's Bound* treats Bell's theorem for two qubits. Its observables have two outcomes each, labelled $\pm1$; its classical bound is $|S|\le2$; and its quantum bound is Tsirelson's $|S|\le2\sqrt{2}$, which is a theorem about the spectrum of a four-dimensional Hermitian operator and holds for every state of the two-qubit algebra. The menu lists "the continuous-variable Bell inequality" as a separate article. This is that article.
 
 The subject is the analogue of CHSH for observables with **continuous spectrum**. The benchmark is not the discrete Tsirelson bound but the Clauser–Horne–Shimony–Holt form as it was adapted to continuous variables by Braunstein and Caves. The physical arena is quantum optics: two field modes, quadratures $(\hat x,\hat p)$ with $[\hat x,\hat p]=i$, displacements in phase space, and the ideal test state, the **two-mode squeezed vacuum**.
 
@@ -35,7 +35,7 @@ satisfies $|S|\le2$ in every local hidden-variable model, because for each value
 
 ### The continuous form, and why the bound moves
 
-A continuous-variable observable — a quadrature $\hat x_\theta$, the photon-number parity, a binned homodyne count — has a spectrum that is continuous, or infinite, or unbounded. Two things change at once.
+A continuous-variable observable — a quadrature $\hat x_\theta$, the photon-number parity, a binned homodyne count — has a spectrum that need not be $\{\pm1\}$. Two things change at once.
 
 **The observables are no longer pinned to $\{\pm1\}$.** If the outcomes are unbounded, the CHSH combination is not defined without a normalisation, and the inequality that replaces it is a different inequality: Braunstein and Caves adapted the Bell argument to observables of continuous spectrum by bounding the outcomes (or by working with the Wigner function directly), and the bound they obtain is a bound **on the normalised correlations of those bounded observables**. Quoting "$2\sqrt{2}$" for it is a category error unless the observables are first made dichotomic.
 
