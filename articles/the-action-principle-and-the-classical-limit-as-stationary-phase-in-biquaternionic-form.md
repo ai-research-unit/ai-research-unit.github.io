@@ -32,6 +32,20 @@ $$
 
 Because $L$ takes values in the center $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$, the value of $S$ is a complex scalar and its phase $e^{iS/\hbar}$ is well defined. This is not automatic for a non-central Lagrangian, and it is the first reason the biquaternion formulation is convenient for the stationary-phase statement: the exponent is a scalar.
 
+### The Domain of the Principle: Discrete and Continuous
+
+The statement is written for a finite list of coordinates, and this article uses it that way throughout. Nothing in it requires a finite list. A deformable body, or a field, has infinitely many degrees of freedom: its state is a function of position and time rather than a finite tuple $q(t)$, and the Lagrangian is replaced by a **density** $\mathcal{L}$, the action becoming $S=\int\mathcal{L}\,d^3x\,dt$. The stationarity statement is unchanged, and its Euler–Lagrange equations are field equations rather than ordinary differential equations. In the biquaternion formulation the configuration is then an algebra-valued field $\tilde q(\mathbf x,t)$ and the action a spacetime integral of a central-valued density, which is the form the companion articles *The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form* and *Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form* use. Checked on an elastic string, with
+
+$$
+S=\tfrac12\iint\left(\rho\,u_t^2-\mathcal{T}u_x^2\right)dx\,dt,\qquad c^2=\mathcal{T}/\rho ,
+$$
+
+the first variation is $2\times10^{-10}$ at a solution of the wave equation $u_{tt}=c^2u_{xx}$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation.
+
+The continuum case also shows where the plain form of the principle stops. When the external loads are **non-conservative** — a damping force is the standard example — the variation of the action does not vanish on the physical motion, and the principle must be **extended** by adding the virtual work of those loads; it reduces to the plain form when the loads derive from a potential. This is not a technicality: a non-conservative force is the gradient of nothing, so no Lagrangian contains it, and it enters the principle as a work term instead. Checked on a damped string with damping coefficient $\gamma=0.4$, where the motion solves $u_{tt}+\gamma u_t=c^2u_{xx}$: the first variation of $S$ is $-0.545$ rather than zero, the virtual work of the damping force is $+0.545$, and their sum vanishes at $-9\times10^{-11}$. The added term is not idle — for the undamped solution the same extended expression is $-0.611$.
+
+The statement is also independent of the coordinates in which it is written, which is what allows the coordinates to be generalized away altogether. Checked on the free particle in polar coordinates, whose Lagrangian $L=\tfrac12m(\dot r^2+r^2\dot\varphi^2)$ gives $\ddot r=r\dot\varphi^2$ and $r^2\dot\varphi$ constant: the solutions are straight lines, the residual against $x=x_0+vt$ being $3.5\times10^{-14}$ with $r^2\dot\varphi$ conserved to $1.0\times10^{-13}$. Newton's law is recovered from a variational statement, in coordinates in which it is not obvious; the form of the statement, not the coordinates, is what carries the physics.
+
 ### The First Variation and the Boundary Term
 
 The first variation of $S$, with the gradient notation of the preceding article, is
@@ -279,6 +293,7 @@ The **characteristic function** $\mathcal{W}(\tilde q)$ of a time-independent pr
 The action principle and the classical limit as stationary phase take the following form in the biquaternion algebra.
 
 - The action $S[\tilde q]=\int L\,dt$ is central-valued for a real-quaternion configuration, so its phase is unambiguous.
+- The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations. When the external loads are non-conservative the plain form fails, and the principle is extended by the virtual work of those loads.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\ddot{\tilde q}-V''\delta\tilde q$ and the geodesic-deviation equation $m\ddot\xi+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
@@ -293,6 +308,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 | Symbol | Meaning |
 |---|---|
 | $S[\tilde q]=\int L\,dt$ | Action (central-valued) |
+| $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$, $\gamma$ | Lagrangian density; string displacement, density, tension and damping of the continuum example |
 | $\tilde p=\partial L/\partial\dot{\tilde q}$ | Conjugate momentum |
 | $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$ | Symplectic potential (boundary term) |
 | $S_{\mathrm{ps}}=\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ | Phase-space action |
@@ -308,6 +324,7 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 
 ## Further Reading
 
+- W. R. Hamilton, "On a General Method in Dynamics," *Philosophical Transactions of the Royal Society*, Part II (1834) 247–308 and Part I (1835) 95–144, for the original statement of the principle.
 - L. D. Landau and E. M. Lifshitz, *Mechanics* (Pergamon, 1976), for the action principle, the second variation, and the Hamilton–Jacobi equation.
 - V. I. Arnold, *Mathematical Methods of Classical Mechanics* (Springer, 1989), for geodesic flows on Lie groups, the Jacobi equation, and conjugate points.
 - H. Goldstein, C. P. Poole, and J. L. Safko, *Classical Mechanics* (Addison-Wesley, 2002), for Hamilton's principal function and the generating-function interpretation of the action.

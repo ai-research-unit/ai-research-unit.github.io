@@ -26,6 +26,8 @@ The companion articles supply the pieces:
 
 The standard Lagrangian and Hamiltonian formalism is recalled here in the form the biquaternion transcription will take; nothing in this section is new.
 
+The formalism is not an independent postulate. It follows from **D'Alembert's principle of virtual work** — the infinitesimal virtual work done by the impressed forces across displacements consistent with the constraints vanishes, which is the statement that the constraint forces do no work. Eliminating those forces is what allows the constraints to be absorbed into the geometry of the coordinates: a system of $\mathcal N$ constituents in three dimensions with $\kappa$ independent constraints has $3\mathcal N-\kappa$ **degrees of freedom**, described by the same number of **generalized coordinates** $q_i$, one per degree of freedom. These are not curvilinear coordinates. The number of curvilinear coordinates is the dimension of the position space — three, for three-dimensional space — whereas the number of generalized coordinates is the number of degrees of freedom, which constraints reduce and additional constituents raise; the two counts need not agree. A constraint expressible as $\mathbf r=\mathbf r(q,t)$ holding for all $t$ is **holonomic**; it is **scleronomic** when the relation carries no explicit time and **rheonomic** when it does. The Lagrange equation obtained below is the generalized form of Newton's second law that results, and the stationary-action statement is its equivalent formulation in integral form.
+
 Let a system have $n$ generalized coordinates $q=(q_1,\dots,q_n)$ and velocities $\dot q$. The **Lagrangian** is a smooth real function $L(q,\dot q,t)$, and the **action** is the functional
 
 $$
@@ -45,7 +47,21 @@ $$
 \frac{d}{dt}\frac{\partial L}{\partial \dot q_i}-\frac{\partial L}{\partial q_i}=0 .
 $$
 
-The **conjugate momenta** are $p_i=\partial L/\partial \dot q_i$. When the Hessian matrix $\partial^2L/\partial\dot q_i\partial\dot q_j$ is non-singular, the map $(q,\dot q)\mapsto(q,p)$ is invertible, and the **Legendre transform**
+The Lagrangian is **not unique**, and the extent of the ambiguity is a boundary term. For any smooth $F(q,t)$, the Lagrangians $L$ and
+
+$$
+L'=L+\frac{d}{dt}F(q,t)
+$$
+
+have the same Euler–Lagrange equations. The added term enters both terms of the Euler–Lagrange operator as the same expression, $d/dt(\partial F/\partial q_i)$: once as $\partial_{q_i}(dF/dt)$, and once as $d/dt\big(\partial_{\dot q_i}(dF/dt)\big)=d/dt(\partial F/\partial q_i)$, since the mixed partials of $F$ commute. The two contributions cancel. The action is ambiguous in the corresponding way,
+
+$$
+S'=S+F\big(q(t_2),t_2\big)-F\big(q(t_1),t_1\big) ,
+$$
+
+the difference being an endpoint term, which a variation with fixed endpoints cannot see. What the formalism determines is therefore the **equations of motion**, not the Lagrangian, and the ambiguity is exactly a boundary term: the same structure the companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* meets from the other side, where the boundary term of $\delta S$ is the symplectic potential. The Hamiltonian carries the analogous freedom — a generating function of the coordinates, momenta and time shifts it by a partial time derivative — and that is the freedom a canonical transformation exploits.
+
+The **conjugate momenta** are $p_i=\partial L/\partial \dot q_i$. In the Hamiltonian description the coordinates, velocities and momenta are **mutually independent** variables: the relation $p_i=\partial L/\partial\dot q_i$ is used once, to eliminate the velocities in favour of the momenta, and does not thereafter act as a constraint among the phase-space variables. So $H(q,p)$ is differentiated with respect to $p_i$ at fixed $q$, with $\dot q$ already eliminated; holding $\dot q$ fixed while varying $p_i$ would describe a different object. This is what makes the passage a change of variables rather than a definition, and it is why the phase-space element $\tilde Z=\tilde q+i\tilde p$ constructed below is a coordinate. When the Hessian matrix $\partial^2L/\partial\dot q_i\partial\dot q_j$ is non-singular, the map $(q,\dot q)\mapsto(q,p)$ is invertible, and the **Legendre transform**
 
 $$
 H(q,p,t)=p_i\dot q_i-L(q,\dot q,t)
@@ -186,6 +202,22 @@ $$
 
 The Hamiltonian is a sum of two norm forms with positive coefficients, one in the momentum and one in the coordinate. Its level sets $H=E$ are ellipsoids in the eight-dimensional real phase space.
 
+**When is the Hamiltonian the energy?** The identification of $H$ with $T+V$ is not automatic, and the condition is one this transcription satisfies by construction. If the kinetic energy is a **homogeneous function of degree two** in the generalized velocities, $T(\lambda\dot q)=\lambda^2T(\dot q)$, then Euler's theorem on homogeneous functions gives $\dot q_\mu\partial T/\partial\dot q_\mu=2T$. When the potential depends on the coordinates alone, $p_\mu=\partial T/\partial\dot q_\mu$, and therefore
+
+$$
+\mathrm{Sc}\!\left(\bar{\tilde p}\,\dot{\tilde q}\right)=p_\mu\dot q_\mu=2T,\qquad H=2T-(T-V)=T+V ,
+$$
+
+so $H$ is the total energy, and it is conserved when $L$ has no explicit time dependence. For the systems of this article the hypothesis is not an assumption but a property of the kinetic term: $T=\tfrac12 mN(\dot{\tilde q})$ is a quadratic form in the velocities and hence homogeneous of degree two. The condition can fail — a relativistic kinetic energy is not homogeneous of degree two — and where it fails $H$ remains the Legendre transform of $L$ but is no longer the energy.
+
+Explicit time dependence, by contrast, is preserved by the transform. Differentiating $H=p_\mu\dot q_\mu-L$ with respect to $t$ at fixed coordinates and momenta, the terms in $\partial\dot q_\mu/\partial t$ cancel against $p_\mu=\partial L/\partial\dot q_\mu$, leaving
+
+$$
+\frac{\partial H}{\partial t}=-\frac{\partial L}{\partial t}.
+$$
+
+So $L$ carries explicit time dependence exactly when $H$ does, with the sign reversed.
+
 ### Legendre Involution
 
 The Legendre transform is an involution. Writing $H$ for the transform of $L$, the inverse relation is
@@ -208,6 +240,22 @@ $$
 **Check on the free particle.** $H_0=N(\tilde p)/2m$ gives $\partial H_0/\partial\tilde p=\tilde p/m=\dot{\tilde q}$ and $\partial H_0/\partial\tilde q=0$, hence $\dot{\tilde p}=0$: constant momentum.
 
 **Check on the oscillator.** With $H$ as above, $\dot{\tilde q}=\tilde p/m$ and $\dot{\tilde p}=-m\omega^2\tilde q$, whose second-order form is $\ddot{\tilde q}=-\omega^2\tilde q$. The flow is a rotation of the $(\tilde q,\tilde p)$ plane at frequency $\omega$, and after a quarter period the configuration has become the momentum and the momentum (up to sign) the configuration. In the biquaternion picture this exchange is the action of the complex structure, as the next section states.
+
+### The Routhian: the Partial Legendre Transform
+
+The Legendre transform need not be applied to all the coordinates at once. When a Lagrangian has $s$ **cyclic** coordinates $q=(q_1,\dots,q_s)$ — coordinates of which $L$ is independent, so that their conjugate momenta are conserved — the transform can be applied to those alone, leaving the remaining coordinates $\zeta=(\zeta_1,\dots,\zeta_{n-s})$ in Lagrangian form. The result is the **Routhian**
+
+$$
+R(q,p,\zeta,\dot\zeta)=\mathrm{Sc}\!\left(\bar p\,\dot q\right)-L ,
+$$
+
+in which the $s$ transformed coordinates obey Hamilton's equations and the $n-s$ others obey Lagrange's. The Routhian has the form of a Hamiltonian and the role of a Lagrangian: the remaining coordinates satisfy the same Lagrange equations as a system of $n-s$ degrees of freedom whose potential is shifted by the momenta that were removed. A central potential shows the mechanism. The angle $\theta$ is cyclic, its momentum $p_\theta=\ell$ is conserved, and the Routhian is a function of $r$ alone, whose Lagrange equation is
+
+$$
+m\ddot r=-V'(r)+\frac{\ell^2}{mr^3},
+$$
+
+the centrifugal term appearing as a consequence of the transform rather than as an inserted fictitious force. The partition is arbitrary — nothing requires the transformed coordinates to be the cyclic ones, and choosing them so is a convenience. This article applies the transform to the whole configuration, which is the case $s=n$; the partial case is recorded because it is the general form, and because it shows that which variable is eliminated is a choice of description and not of physics. The other classical reformulation worth naming is **Appell's**, whose equations of motion are written in the **generalized accelerations** $\alpha_r=\ddot q_r$ rather than in the generalized velocities, with the generalized forces of D'Alembert's principle.
 
 ## Phase Space as a Single Biquaternion
 
@@ -281,6 +329,16 @@ $$
 
 which for $f=q_\mu,p_\nu$ reproduces $\dot q_\mu=\partial H/\partial p_\mu$, $\dot p_\nu=-\partial H/\partial q_\nu$.
 
+### Canonical Transformations
+
+A change of phase-space variables $(\tilde q,\tilde p)\to(\tilde Q,\tilde P)$ that preserves the form of Hamilton's equations is a **canonical transformation**, and the test is a statement about the bracket alone:
+
+$$
+\{Q_\mu,Q_\nu\}=0,\qquad \{P_\mu,P_\nu\}=0,\qquad \{Q_\mu,P_\nu\}=\delta_{\mu\nu},
+$$
+
+evaluated with the original bracket. A transformation satisfying these is canonical; one that fails any of them is not. The criterion is worth recording for a reason specific to this article: it is **scalar**. It never asks what the discarded vector part of the quaternion product does. That is the sharpest support for the claim made below in *What the Bracket Is Not*: the classical structure of the theory, including which changes of variable are permitted, lives entirely in the scalar projection of the quaternion product, while the vector part carries the rotations. The generating functions of such transformations are the ones whose freedom the Standard Formulation notes: the Hamiltonian is fixed only up to the partial time derivative of an arbitrary function of coordinates, momenta and time.
+
 ### Angular Momentum
 
 For a particle the quantity
@@ -344,6 +402,11 @@ The Lagrangian and Hamiltonian formulations of classical mechanics take the foll
 - Position and momentum combine into the phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$, whose anti-Hermitian part is the configuration and whose Hermitian part is $i$ times the momentum. The algebra's complex structure $i$ exchanges the two parts.
 - The Poisson bracket is $\{f,g\}=\mathrm{Sc}(\overline{\nabla_{\tilde q}f}\nabla_{\tilde p}g)-\mathrm{Sc}(\overline{\nabla_{\tilde p}f}\nabla_{\tilde q}g)$, the scalar part of a quaternion expression; the discarded vector part is the cross product that makes the angular-momentum bracket $\{L_i,L_j\}=\varepsilon_{ijk}L_k$ exact.
 - Rotational symmetry acts by rotor conjugation $\tilde q\mapsto\tilde R\tilde q\tilde R^\dagger$, and its Noether charge is $\tilde L=\tilde q\tilde p$.
+- The Lagrangian is determined only up to a total time derivative: $L$ and $L+dF(q,t)/dt$ have the same equations of motion, and their actions differ by the endpoint term $F(t_2)-F(t_1)$, which a variation with fixed endpoints cannot see. This is the same boundary freedom that appears as the symplectic potential in the variation of the action.
+- The Legendre transform may be applied to a subset of the coordinates. The partial transform is the **Routhian**, which puts the transformed coordinates — conventionally the cyclic ones, whose momenta are conserved — in Hamiltonian form and the rest in Lagrangian form; for a central potential it produces the centrifugal term as a transformed potential.
+- In the Hamiltonian description coordinates, velocities and momenta are **mutually independent** variables; the relation $\tilde p=\partial L/\partial\dot{\tilde q}$ is used only to eliminate the velocity. This is what makes the transform a change of variables and $\tilde Z=\tilde q+i\tilde p$ a coordinate.
+- $H=T+V$ is not automatic. It requires $T$ homogeneous of degree two in the velocities, which $T=\tfrac12mN(\dot{\tilde q})$ satisfies by construction; with $L$ time-independent, $H$ is then the conserved energy. Explicit time dependence is preserved by the transform, $\partial H/\partial t=-\partial L/\partial t$.
+- A change of phase-space variables is **canonical** exactly when it preserves the brackets $\{Q_\mu,P_\nu\}=\delta_{\mu\nu}$. The criterion is scalar, so the permitted changes of variable live in the scalar projection of the quaternion product alone.
 
 The formulation is a transcription, exact for configurations that fit in a real quaternion. It introduces no commutator and no $\hbar$; the canonical Heisenberg structure is absent from the finite-dimensional algebra, and the classical bracket that the algebra does carry is the scalar part of a quaternion product.
 
@@ -360,7 +423,12 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\dot{\tilde q}$ | Configuration velocity |
 | $N(\tilde q)=\tilde q\bar{\tilde q}$ | Norm form |
 | $L(\tilde q,\dot{\tilde q},t)$ | Lagrangian |
-| $S[\tilde q]=\int L\,dt$ | Action |
+| $F(\tilde q,t)$, $L'=L+dF/dt$ | Arbitrary function and the total-derivative ambiguity of the Lagrangian |
+| $S[\tilde q]=\int L\,dt$ | Action; ambiguous by the endpoint term $F(t_2)-F(t_1)$ |
+| $R=\mathrm{Sc}(\bar p\,\dot q)-L$ (over the transformed block) | Routhian: the partial Legendre transform, shown in the general case, of which this article uses $s=n$ |
+| $T(\lambda\dot{\tilde q})=\lambda^2T(\dot{\tilde q})$ | Homogeneity of the kinetic energy; gives $\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})=2T$ and $H=T+V$ |
+| $\partial H/\partial t=-\partial L/\partial t$ | Explicit time dependence is preserved with reversed sign |
+| $\{Q_\mu,P_\nu\}=\delta_{\mu\nu}$ | Canonical-transformation criterion (scalar) |
 | $\partial_{\tilde q}L=\sum_\mu e_\mu\partial L/\partial q_\mu$ | Quaternion gradient of a central-valued function |
 | $\tilde p=\partial L/\partial\dot{\tilde q}$ | Conjugate momentum (real quaternion) |
 | $H=\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-L$ | Hamiltonian (Legendre transform) |

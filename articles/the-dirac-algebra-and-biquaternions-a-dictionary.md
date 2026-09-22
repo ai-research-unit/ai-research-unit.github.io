@@ -473,6 +473,42 @@ $$
 
 The trace formula itself is a statement internal to $\mathbb{B}$ and needs no translation.
 
+## Two Ways the Algebra Carries Physics: Multiplication and Conjugation
+
+The dictionary so far has mapped objects; it is worth stating the two ways an element of $\mathbb{B}$ is *used*, because they are not interchangeable, and the difference is the source of the framework's most persistent obstruction.
+
+**One element, two readings.** Because $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, the algebra is the endomorphism algebra of its own unique simple module, $\mathbb{B} = \mathrm{End}(S)$ with $S$ of complex dimension two. Every element is therefore at once an **object** of the algebra and a **linear operator** on $S$. The two mechanisms are those two readings.
+
+**Mechanism one: multiplication, on the module.** A spinor is an element of the minimal left ideal $S = \mathbb{B}p$, $p = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, *every* complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.
+
+**Mechanism two: conjugation, on the algebra.** A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation
+
+$$
+\tilde X \;\mapsto\; \tilde\Lambda\,\tilde X\,\tilde\Lambda^\dagger,
+\qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
+$$
+
+not by multiplication. This mechanism carries the integer-spin sector: the four-vector, the gauge potential, the field strength, the four-current, and the rotors themselves as points of $SL(2,\mathbb{C})$.
+
+**Why the two cannot be merged.** The vector carrier $\mathbb{M}_-$ is only a **real** vector space: multiplication by $i$ maps it to the other sector, $i\mathbb{M}_- = \mathbb{M}_+$ (O16 of the catalogue). A $\mathbb{B}$-module, by contrast, is complex-linear, $i$ acting as its complex structure. So $\mathbb{M}_-$ is not a $\mathbb{B}$-module, and a four-vector cannot be carried by multiplication. The two mechanisms are separated by the real-versus-complex distinction, and that distinction is forced by the algebra rather than chosen.
+
+The same fact shows up as a closure failure. Left multiplication by a general element does **not** preserve $\mathbb{M}_-$: multiplying by $e_1$ sends $ie_0$ into $\mathbb{M}_+$, sends $e_2$ into $\mathbb{M}_-$, and sends a generic element of $\mathbb{M}_-$ into neither sector, whereas the rotor conjugation always stays inside $\mathbb{M}_-$. In the explicit model $\Phi(e_0)=I$, $\Phi(e_k)=-i\sigma_k$, both statements were checked on random samples: every one of $200$ rotor conjugations of a random element of $\mathbb{M}_-$ remained anti-Hermitian, and every one of $200$ left products fell outside the sector. The vector part is closed under central scalars and under the adjoint action, and under nothing else.
+
+| Object | Carrier | Action | Spin |
+|---|---|---|---|
+| Dirac field $\psi$ | module $S$ | left multiplication | $\tfrac12$ |
+| Weyl halves $\psi_L,\psi_R$ | two copies of $S$ | left multiplication | $\tfrac12$ |
+| chirality projectors $\tfrac12(1\pm\gamma_5)$ | central idempotents of $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$ | on the complexified module | — |
+| mass $m$, phase $\lambda$ | center $\mathbb{C}_{\mathbb{B}}$ | scalar multiplication | $0$ |
+| gradient $\tilde{\nabla}$ acting on a field | $\mathbb{B}$ | left multiplication | — |
+| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde X\tilde\Lambda^\dagger$ | $1$ |
+| gauge potential, four-current | $\mathbb{M}_-$ | conjugation | $1$ |
+| field strength, Lorentz generator | the algebra's vector part | conjugation | $1$ |
+
+**The consequence: multiplication is chirality-blind.** The two mechanisms differ again in what they do to the two chiral components of a Dirac module. Conjugation and central multiplication are the framework's gauge and Lorentz actions, and the question that the series' electroweak articles ask — can an action distinguish the left-handed from the right-handed fermion? — is answered by the mechanism, not by the group: left multiplication acts on the two components with the **same** representation, so no multiplication can give them inequivalent ones. This is the vector-like obstruction, and it is a property of $\mathbb{B}$ rather than of any particular gauge group.
+
+What lies outside that mechanism is precisely the operations that must treat the two chiralities *differently* or *exchange* them in a single step. They are not multiplications and have no representative in $\mathbb{B}$: the parity-reflecting frame element $\gamma^0$ and the energy-sign split built on it, the internal matrices of charge conjugation and parity, the chiral gauge coupling the electroweak article requires, and the odd form of a first-order operator — the Feynman slash. The slash is the mildest case, because $\mathbb{B}$ carries a first-order operator of its own, the even gradient $\tilde{\nabla}$, as the next section relates; the others have no such substitute. All of them are catalogued together as **O22** in the companion catalogue of obstructions, where the vector-like property is stated as the algebraic fact it is.
+
 ## The Dirac Operator and the Gradient
 
 The biquaternionic Dirac operator — the gradient $\tilde{\nabla}$ of the companion articles, written $D$ in the quaternion-analysis articles — is
@@ -547,6 +583,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and complex subspaces |
+| $S = \mathbb{B}p$, $p=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\not\partial = \gamma^\mu\partial_\mu$ | Gamma-matrix Dirac operator |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (unchanged) |
