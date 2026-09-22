@@ -9,8 +9,6 @@
 
 ### <a href="articles/why-complexify-spacetime.html">Why Complexify Spacetime?</a>
 
-### <a href="articles/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>
-
 ### <a href="articles/m-as-the-material-space.html">M- as the Material Space</a>
 
 ### <a href="articles/m-plus-as-the-informational-space.html">M+ as the Informational Space</a>
@@ -22,6 +20,8 @@
 ### <a href="articles/the-local-complex-structure-and-the-speed-of-light.html">The Local Complex Structure and the Speed of Light</a>
 
 ### <a href="articles/the-wick-rotation-in-the-biquaternion-universe.html">The Wick Rotation in the Biquaternion Universe</a>
+
+### <a href="articles/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>
 
 ### <a href="articles/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a>
 
