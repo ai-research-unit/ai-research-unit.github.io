@@ -137,24 +137,66 @@ This is the central fact of the representation. The norm form, defined algebraic
 
 ## The Four Subspaces
 
-Each of the four fixed-point subspaces of the algebra has a one-line description in matrix language, and each description is a statement a physicist recognizes.
+Each of the four fixed-point subspaces of the algebra has a description in matrix language, and each description is a statement a physicist recognizes. The table gives the general element of each one and its image; the paragraphs that follow record what the matrix form of each buys. Following the conventions article, the components of a general biquaternion are written $Q_0, Q_1, Q_2, Q_3$ and are **complex**, while the components of a four-dimensional real subspace are written $q_0, q_1, q_2, q_3$ and are **real**; the symbol $q_\mu$ in the table is the set of real parameters of whichever subspace its row describes.
 
-| Subspace | Matrix characterisation | Reading |
-|---|---|---|
-| Center $\mathbb{C}_{\mathbb{B}}$ | the scalar matrices $Q_0 I_2$ | the complex numbers |
-| Real quaternions $\mathbb{H}_{\mathbb{B}}$ | $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z, w \in \mathbb{C}$ | a subalgebra, isomorphic to $\mathbb{H}$ |
-| Hermitian $\mathbb{M}_+$ | the Hermitian matrices $M = M^\dagger$ | observables |
-| Anti-Hermitian $\mathbb{M}_-$ | the anti-Hermitian matrices $M = -M^\dagger$ | the material sector |
+| Subspace | Fixed by | General element | Matrix image |
+|---|---|---|---|
+| Complex subspace $\mathbb{C}_{\mathbb{B}}$ (the center) | $\bar{\cdot}$ | $Q_0e_0$, $Q_0 \in \mathbb{C}$ | $Q_0I_2$ |
+| Real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ | ${}^*$ | $q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $q_\mu \in \mathbb{R}$ | $\begin{pmatrix} q_0 - iq_3 & -iq_1 - q_2 \\ -iq_1 + q_2 & q_0 + iq_3\end{pmatrix}$ |
+| Hermitian subspace $\mathbb{M}_+$ (the informational sector) | $\dagger$ | $q_0e_0 + iq_1e_1 + iq_2e_2 + iq_3e_3$, $q_\mu \in \mathbb{R}$ | $\begin{pmatrix} q_0 + q_3 & q_1 - iq_2 \\ q_1 + iq_2 & q_0 - q_3\end{pmatrix} = q_0I_2 + q_1\sigma_1 + q_2\sigma_2 + q_3\sigma_3$ |
+| Anti-Hermitian subspace $\mathbb{M}_-$ (the material sector) | $\flat$ | $iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $q_\mu \in \mathbb{R}$ | $i\begin{pmatrix} q_0 - q_3 & -q_1 + iq_2 \\ -q_1 - iq_2 & q_0 + q_3\end{pmatrix} = i\left(q_0I_2 - q_1\sigma_1 - q_2\sigma_2 - q_3\sigma_3\right)$ |
 
-The identification of $\mathbb{M}_+$ with the observables is immediate from $ie_k \mapsto \sigma_k$: an element $\tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3$ with real $h_\mu$ maps to
+**The complex subspace $\mathbb{C}_{\mathbb{B}}$, the center, is the scalar matrices.** Its general element is $Q_0e_0$ with $Q_0$ complex, and $\Phi(Q_0e_0) = Q_0I_2$; nothing else commutes with everything. This is a two-real-dimensional space, and it is the one subspace that straddles the two sectors instead of lying inside one: $Q_0e_0$ is Hermitian exactly when $Q_0$ is real and anti-Hermitian exactly when $Q_0$ is purely imaginary. So $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.
+
+**The real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation ${}^*$, is the image of the elements with $q_\mu$ real,**
 
 $$
-\tilde{H} \;\mapsto\; h_0 I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3 ,
+\Phi(q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3) = \begin{pmatrix} q_0 - iq_3 & -iq_1 - q_2 \\ -iq_1 + q_2 & q_0 + iq_3 \end{pmatrix} = \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}, \qquad z = q_0 - iq_3, \quad w = -iq_1 - q_2 ,
 $$
 
-which is the general Hermitian $2\times 2$ matrix, i.e. the general observable of a two-state system. The anti-Hermitian subspace is $i$ times the Hermitian one, so the material sector is the observables multiplied by $i$ — the statement that the material sector is the Hermitian sector rotated by the complex structure, in matrix form.
+which is the matrix statement of $M = \epsilon\overline{M}\epsilon^{-1}$. The trace is $2q_0$, twice the scalar part, and the determinant is
 
-The quaternion subspace deserves its own line, because it is the one that is **not** the whole algebra: the real quaternions are the matrices of the form $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$. This is a four-**real**-dimensional subalgebra, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and it is the matrix reason that $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not: the determinant of that form is $|z|^2 + |w|^2$, which vanishes only when $z = w = 0$.
+$$
+\det = |z|^2 + |w|^2 = q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
+$$
+
+a sum of squares, which vanishes only at the zero element. This is a four-**real**-dimensional set, not the four-dimensional complex space of all matrices with $z, w \in \mathbb{C}$, and on it the determinant is **definite** — which is the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. Removing the complex coefficients from the algebra makes the norm form positive definite, and that is all that separates the two cases.
+
+**The Hermitian subspace $\mathbb{M}_+$, the informational sector, is the image of the elements with $q_\mu$ real, and $\Phi$ carries its basis $\{e_0, ie_1, ie_2, ie_3\}$ to $\{I_2, \sigma_1, \sigma_2, \sigma_3\}$:**
+
+Writing the general element of the subspace as $\tilde{H} = q_0e_0 + iq_1e_1 + iq_2e_2 + iq_3e_3$ with $q_\mu$ real,
+
+$$
+\Phi(\tilde{H}) = \begin{pmatrix} q_0 + q_3 & q_1 - iq_2 \\ q_1 + iq_2 & q_0 - q_3 \end{pmatrix} = q_0I_2 + q_1\sigma_1 + q_2\sigma_2 + q_3\sigma_3 ,
+$$
+
+the general Hermitian $2 \times 2$ matrix — the general observable of a two-state system — with scalar part half the trace, $\mathrm{Tr}\,\Phi(\tilde{H}) = 2q_0$, and determinant $q_0^2 - q_1^2 - q_2^2 - q_3^2$. That the three Hermitian units $ie_k$ become the three Pauli matrices is the dictionary the spin and qubit articles use throughout.
+
+**The anti-Hermitian subspace $\mathbb{M}_-$, the material sector, is the image of the elements with $q_\mu$ real, and its basis $\{ie_0, e_1, e_2, e_3\}$ is carried to $\{iI_2, -i\sigma_1, -i\sigma_2, -i\sigma_3\}$:**
+
+Writing the general element as $\tilde{X} = iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ with $q_\mu$ real,
+
+$$
+\Phi(\tilde{X}) = i\begin{pmatrix} q_0 - q_3 & -q_1 + iq_2 \\ -q_1 - iq_2 & q_0 + q_3 \end{pmatrix} = i\left(q_0I_2 - q_1\sigma_1 - q_2\sigma_2 - q_3\sigma_3\right),
+$$
+
+the Hermitian form multiplied by $i$, with the signs of the $\sigma_k$ reversed. Its determinant is
+
+$$
+\det\Phi(\tilde{X}) = N(\tilde{X}) = -q_0^2 + q_1^2 + q_2^2 + q_3^2 ,
+$$
+
+which is the Minkowski interval of signature $(3,1)$ — the $ict$ metric of the corpus, read on the material four-position $\tilde{X} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$ of the companion article, that is $q_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \mathbf{x}^2$. This is the most economical place to see why the material sector is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign. The trace is $2iq_0$, purely imaginary, against the real $2q_0$ of the Hermitian sector.
+
+The two sectors together account for the whole algebra, and this is the contrast the table is pointing at:
+
+$$
+\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- \quad \text{(as real vector spaces)}, \qquad \mathbb{M}_- = i\,\mathbb{M}_+ , \qquad \mathbb{M}_+ \cap \mathbb{M}_- = \{0\} .
+$$
+
+The multiplication by $i$ in the second identity reverses the vector parameters as well as changing the sector: $i(q_0e_0 + iq_1e_1 + iq_2e_2 + iq_3e_3) = iq_0e_0 - q_1e_1 - q_2e_2 - q_3e_3$, so the Hermitian element with parameters $q_\mu$ has as its $i$-image the anti-Hermitian element with parameters $(q_0, -q_1, -q_2, -q_3)$.
+
+Every element is a sum of a Hermitian and an anti-Hermitian part, $\tilde{Q} = \tfrac12(\tilde{Q} + \tilde{Q}^\dagger) + \tfrac12(\tilde{Q} - \tilde{Q}^\dagger)$, and the two parts are the same object up to the factor $i$ that carries the anti-Hermitian sector into the Hermitian one. Two of the four subspaces are subalgebras and two are not: $\mathbb{C}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$ are closed under multiplication, while $\mathbb{M}_\pm$ are not — the product of two Hermitian matrices is Hermitian only when they commute. Three of the four subspaces share a common line: the center, the real quaternions and the Hermitian subspace all intersect in $\mathbb{R}e_0$, the real multiples of the identity.
 
 ## The Ideals as Columns and the Spinor Module
 
@@ -168,25 +210,24 @@ $$
 generate the two **columns** of the matrix algebra,
 
 $$
-\mathbb{B}P_+ = \mathbb{C}E_{11} \oplus \mathbb{C}E_{21} = \left\{ \begin{pmatrix} a & 0 \\ c & 0 \end{pmatrix} : a, c \in \mathbb{C} \right\}, \qquad
-\mathbb{B}P_- = \mathbb{C}E_{12} \oplus \mathbb{C}E_{22} = \left\{ \begin{pmatrix} 0 & b \\ 0 & d \end{pmatrix} : b, d \in \mathbb{C} \right\},
+\mathbb{B}P_+ = \mathbb{C}E_{11} \oplus \mathbb{C}E_{21}, \qquad \mathbb{B}P_- = \mathbb{C}E_{12} \oplus \mathbb{C}E_{22},
 $$
 
-with $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$. Each column is two-dimensional over $\mathbb{C}$ and minimal, and left multiplication acts on it irreducibly: the column **is** the spinor module $S = \mathbb{C}^2$ of the companion articles on the spinor module and on representation theory, not merely a space isomorphic to it.
+with $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$; the first column is the set of matrices whose second column vanishes, the second those whose first column vanishes. Each column is two-dimensional over $\mathbb{C}$ and minimal, and left multiplication acts on it irreducibly: the column **is** the spinor module $S = \mathbb{C}^2$ of the companion articles on the spinor module and on representation theory — the abstract simple module realised inside the algebra, with the algebra acting on it by left multiplication — and not merely a space isomorphic to it.
 
 Two structural facts are visible in this form, and both are used by the physics articles.
 
-**The two columns are the two chiralities.** Left multiplication preserves each column: for any $M$, the products $ME_{11}$ and $ME_{21}$ again have vanishing second column, so $M(\mathbb{B}P_+) \subseteq \mathbb{B}P_+$. No left multiplication can therefore relate the two columns. A mass term that couples the left- and right-handed components cannot be a left multiplication; it must be a **right** multiplication, and the matrix unit that performs it is
+**The two columns are the two chiralities.** Left multiplication preserves each column: for any $M$, the products $ME_{11}$ and $ME_{21}$ again have vanishing second column, so $M(\mathbb{B}P_+) \subseteq \mathbb{B}P_+$. No left multiplication can therefore relate the two columns. A mass term that couples the left- and right-handed components cannot be a left multiplication; it must be a **right** multiplication, and the element that performs it is the one carried to the off-diagonal matrix unit,
 
 $$
-x = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12},
+\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12} = |0\rangle\langle 1| .
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $x$, with $\tilde{a}_{\mathrm{tr}}^\dagger = \tfrac12(ie_1 + e_2)$ written $y$; the pair satisfies the matrix-unit relations $xy = P_+$, $yx = P_-$, $x^2 = y^2 = 0$.
 
 **The two-sided ideals are not among them.** Since $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, its only two-sided ideals are $0$ and $\mathbb{B}$; the columns are one-sided. That is what allows the algebra to be simple and still carry two distinct chiralities, and it is why the mass term must be off-diagonal rather than a multiplication confined to a single column.
 
-The pair $P_\pm$ used here is not the only one: every unit vector $\hat{\boldsymbol\mu}$ gives idempotents $\tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$, and the choice $e_3$ is the one for which the two columns are the coordinate columns. The idempotent $\tfrac12(e_0 + ie_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
+The pair $P_\pm$ used here is not the only one: every unit vector $\hat{\boldsymbol\mu}$ gives the idempotent pair $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$, and $P_\pm = \tilde{P}_\pm(\hat{\mathbf{e}}_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde{P}_+(\hat{\mathbf{e}}_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
 
 ## The Conjugations in Matrix Form
 
@@ -238,11 +279,11 @@ which are the Pauli spin matrices. The eigenvalue statement $\tilde{S}_k^2 = \tf
 **States as projectors.** The rank-one idempotents of $\mathbb{M}_+$ are the pure-state projectors. The element
 
 $$
-p = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+\tilde{P}_+(\hat{\mathbf{e}}_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
 = \tfrac{1}{2}(I_2 + \sigma_1)
 $$
 
-satisfies $p^2 = p$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $p_- = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $p + p_- = e_0$ is $I_2$. Both $p$ and $p_-$ have vanishing norm form, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $I_2$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
+satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde{P}_-(\hat{\mathbf{e}}_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde{P}_+(\hat{\mathbf{e}}_1) + \tilde{P}_-(\hat{\mathbf{e}}_1) = e_0$ is $I_2$. Both have vanishing norm form, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $I_2$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 **The density matrix.** A general mixed state is
 
@@ -272,7 +313,7 @@ $$
 \{\tilde{Q} \in \mathbb{B} : N(\tilde{Q}) = e_0\} \;\cong\; \mathrm{SL}(2,\mathbb{C}).
 $$
 
-This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm quaternions, which map to the $SU(2)$ matrices
+This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
 \tilde{R}(\theta, \hat{\mathbf{n}}) = \exp\!\big(\tfrac{1}{2}\theta \hat{\mathbf{n}}\cdot e\big) \;\longmapsto\; \exp\!\big(-\tfrac{i}{2}\theta\,\hat{\mathbf{n}}\cdot\boldsymbol{\sigma}\big),
@@ -280,7 +321,7 @@ $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.
 
-The advantage of the matrix form here is not computational but structural: the classification of the unit-norm elements into rotations and boosts is the classification of the $\mathrm{SL}(2,\mathbb{C})$ matrices into unitary and Hermitian ones, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the norm form; in the matrix form it is visible, because $-I_2$ is a unit-norm element acting trivially on the material sector.
+The advantage of the matrix form here is not computational but structural: writing a general unit-norm element as a rotation times a boost is the polar decomposition of its $\mathrm{SL}(2,\mathbb{C})$ matrix into a unitary factor and a positive Hermitian one, and the double cover $SU(2) \to SO(3)$ is the statement that $\pm M$ give the same rotation. In the algebra the double cover has to be argued from the norm form; in the matrix form it is visible, because $-I_2$ is a unit-norm element acting trivially on the material sector.
 
 ## What the Matrix Form Makes Visible
 
@@ -294,10 +335,10 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 
 - The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, $\sigma_k = \Phi(ie_k)$, is why the Hermitian elements of the algebra are its observables.
 - The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the norm form, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as singular matrices all follow.
-- The four subspaces are the scalar matrices (center), the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ (real quaternions), the Hermitian matrices ($\mathbb{M}_+$, observables) and the anti-Hermitian matrices ($\mathbb{M}_-$, material sector).
-- The minimal left ideals are the matrix **columns**: $P_\pm = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
+- The four subspaces of the algebra are the complex subspace $\mathbb{C}_{\mathbb{B}}$ (the center, $Q_0e_0 \mapsto Q_0I_2$), the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite), the Hermitian subspace $\mathbb{M}_+$ (the informational sector, $q_0I_2 + q_k\sigma_k$, $\det = q_0^2 - q_1^2 - q_2^2 - q_3^2$) and the anti-Hermitian subspace $\mathbb{M}_-$ (the material sector, $i(q_0I_2 - q_k\sigma_k)$, $\det = -q_0^2 + q_1^2 + q_2^2 + q_3^2$, the $ict$ interval). Every element splits as $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
+- The minimal left ideals are the matrix **columns**: $P_\pm = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = i\sigma_2 = \Phi(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -\dagger$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
-- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\sigma_k$; the pure states are the rank-one projectors and are the null elements $N(p) = 0$; the density matrix $\rho = \tfrac12(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma})$ has $r_k = \mathrm{Tr}(\rho\sigma_k)$ on the Bloch ball.
+- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\sigma_k$; the pure states are the rank-one projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu})$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma})$ has $r_k = \mathrm{Tr}(\rho\sigma_k)$ on the Bloch ball.
 - Unit norm form is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
 
 ## Summary of Notation
@@ -316,10 +357,15 @@ The matrix representation of the biquaternion algebra is the isomorphism $\Phi :
 | $\epsilon = i\sigma_2 = \Phi(-e_2)$ | The antisymmetric form dressing bar and star |
 | $\tilde{Q}^\dagger \mapsto M^\dagger$ | Hermitian conjugation is the conjugate transpose |
 | $\tilde{Q}^\flat \mapsto -M^\dagger$ | Anti-Hermitian conjugation; the real structure |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian matrices |
-| $P_\pm = \tfrac12(e_0 \pm ie_3)$ | Idempotents generating the two minimal left ideals; $\Phi(P_\pm) = E_{11}, E_{22}$ |
+| $\mathbb{C}_{\mathbb{B}}$ | The complex subspace, i.e. the center: $Q_0e_0 \mapsto Q_0I_2$, the scalar matrices |
+| $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace: $q_0e_0 + \cdots + q_3e_3 \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ |
+| $\mathbb{M}_+$ | The Hermitian subspace, i.e. the informational sector: $q_0e_0 + iq_ke_k \mapsto q_0I_2 + q_k\sigma_k$, Hermitian, $\det = q_0^2 - q_1^2 - q_2^2 - q_3^2$ |
+| $\mathbb{M}_-$ | The anti-Hermitian subspace, i.e. the material sector: $iq_0e_0 + q_ke_k \mapsto i(q_0I_2 - q_k\sigma_k)$, anti-Hermitian, $\det = -q_0^2 + q_1^2 + q_2^2 + q_3^2$ |
+| $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
+| $P_\pm = \tfrac12(e_0 \pm ie_3) = \tilde{P}_\pm(\hat{\mathbf{e}}_3)$ | Idempotents generating the two minimal left ideals; $\Phi(P_\pm) = E_{11}, E_{22}$; the spinor-module articles write them $p$, $q$ |
+| $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
 | $\mathbb{B}P_+$, $\mathbb{B}P_-$ | The two matrix **columns**, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}P_+ \oplus \mathbb{B}P_-$ |
-| $x = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}P_+$ onto $\mathbb{B}P_-$; the chirality coupling |
+| $\tilde{a}_{\mathrm{tr}} = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}P_+$ onto $\mathbb{B}P_-$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $x$, its conjugate $y$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\sigma_k$ | Spin operators |
 | $\rho = \tfrac12(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma})$ | Density matrix; Bloch vector $\mathbf{r}$, $r_k = \mathrm{Tr}(\rho\sigma_k)$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Image of the unit-norm biquaternions |

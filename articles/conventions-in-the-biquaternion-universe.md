@@ -108,14 +108,20 @@ $$
 \det\Phi(\tilde{Q}) = N(\tilde{Q}) .
 $$
 
-Equivalently, the basis images are $i$ times the Pauli matrices, $\sigma_k = i\,\Phi(e_k) = \Phi(ie_k)$: the Pauli matrices are the images of the **Hermitian** units $ie_k$. In this realisation the four fixed spaces of the preceding subsections read off as follows.
+Equivalently, the basis images are $i$ times the Pauli matrices, $\sigma_k = i\,\Phi(e_k) = \Phi(ie_k)$, or in the other direction $\Phi(e_k) = -i\,\sigma_k$: the Pauli matrices are the images of the **Hermitian** units $ie_k$.
 
-| Subspace | Matrix image |
-|---|---|
-| Center $\mathbb{C}_{\mathbb{B}}$ | the scalar matrices $Q_0 I_2$ |
-| Real quaternions $\mathbb{H}_{\mathbb{B}}$ | $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}$, $z, w \in \mathbb{C}$ |
-| Hermitian $\mathbb{M}_+$ | the Hermitian matrices |
-| Anti-Hermitian $\mathbb{M}_-$ | the anti-Hermitian matrices |
+**The four subspaces in matrix form.**
+
+| Subspace | Fixed by | General element | Matrix image |
+|---|---|---|---|
+| Complex subspace $\mathbb{C}_{\mathbb{B}}$ (the center) | $\bar{\cdot}$ | $Q_0e_0$, $Q_0 \in \mathbb{C}$ | $Q_0I_2$ |
+| Real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ | ${}^*$ | $q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_0 - iq_3$, $w = -iq_1 - q_2$ |
+| Hermitian subspace $\mathbb{M}_+$ (the informational sector) | $\dagger$ | $q_0e_0 + iq_1e_1 + iq_2e_2 + iq_3e_3$ | $q_0I_2 + q_1\sigma_1 + q_2\sigma_2 + q_3\sigma_3$ |
+| Anti-Hermitian subspace $\mathbb{M}_-$ (the material sector) | $\flat$ | $iq_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $i\left(q_0I_2 - q_1\sigma_1 - q_2\sigma_2 - q_3\sigma_3\right)$ |
+
+In every row the four $q_\mu$ are **real**, and the same letter denotes the parameters of whichever subspace is being described; only the center's $Q_0$ is complex. The $\sigma_k = \Phi(ie_k)$ are the Pauli matrices.
+
+The determinants of the rows are the quadratic forms the series works with. On the real-quaternion row it is $|z|^2 + |w|^2$, **definite** — the matrix reason $\mathbb{H}$ is a division algebra while $\mathbb{B}$ is not. On $\mathbb{M}_+$ it is $q_0^2 - q_1^2 - q_2^2 - q_3^2$, of signature $(1,3)$; on $\mathbb{M}_-$ it is $-q_0^2 + q_1^2 + q_2^2 + q_3^2$, of signature $(3,1)$, the Minkowski interval, read on the material coordinate $\tilde{X} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$.
 
 **The conjugations in matrix form.** The four involutions of the algebra become four matrix operations, with $M = \Phi(\tilde{Q})$:
 
@@ -135,17 +141,16 @@ $$
 
 and the adjugate identity $\tilde{Q}\bar{\tilde{Q}} = N(\tilde{Q})e_0$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)I_2$.
 
-**Entrywise conjugation is not in the list.** A reader who has the matrix $M$ in hand will be tempted to conjugate its entries and call the result $\Phi(\tilde{Q}^*)$. That operation is not the image of any involution of the algebra, and it does not preserve the sector dictionary: it sends $-i\sigma_1 \mapsto +i\sigma_1$ and $-i\sigma_3 \mapsto +i\sigma_3$, turning the images of $e_1$ and $e_3$ into the images of $-e_1$ and $-e_3$, while $\Phi(e_2)$ has real entries and is left untouched. Only the dressed form in the table is correct. The safe rule for the series is that $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through those four formulas and never by conjugating matrix entries on their own.
+**Entrywise conjugation is not in the table.** Conjugating the entries of $M$ is not the image of any involution of the algebra: it negates the images of $e_1$ and $e_3$ while leaving $\Phi(e_2)$, which has real entries, untouched, and it destroys the sector dictionary. The safe rule for the series is that $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through the four formulas above and never by conjugating matrix entries on their own.
 
-**The symbol $\Phi$.** A plain $\Phi$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_0$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\Phi$ is not any of them.
-
-**Why the form is fixed.** Three features of the assignment are consequences rather than choices, and they are worth recording because the identification $\mathbb{B} \cong M_2(\mathbb{C})$ is often written without them.
+**Why the form is fixed.** Two features of the assignment are consequences rather than choices, and they are recorded because the identification $\mathbb{B} \cong M_2(\mathbb{C})$ is often written down without them.
 
 - *The factor $i$ is forced by $e_k^2 = -e_0$.* The matrices $\sigma_k$ square to $+I_2$, so a real assignment $e_k \mapsto \sigma_k$ would give $e_k^2 = +e_0$, the wrong sign. Both $\pm i\sigma_k$ repair it.
-- *The sign is forced by $e_1e_2 = e_3$.* The opposite assignment, $\Phi(e_k) = +i\sigma_k$, reproduces $e_k^2 = -e_0$ but reverses every cross-relation: $(+i\sigma_1)(+i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3$, whereas that assignment gives $e_3$ the image $+i\sigma_3$. The sign in the basis table above is therefore a consequence, not a convention.
-- *The residual freedom is unitary, and no more.* Any other isomorphism has the form $\Phi' = S\Phi S^{-1}$ with $S$ invertible. Among these, the ones that preserve the sector table above — $\mathbb{M}_+$ to Hermitian, $\mathbb{M}_-$ to anti-Hermitian, $\mathbb{H}_{\mathbb{B}}$ to the form $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ — are exactly those with $S$ a unitary matrix up to a nonzero complex scalar, and the scalar cancels in $S \cdot S^{-1}$. The representation is thus fixed up to a **unitary change of basis of $\mathbb{C}^2$**. An arbitrary invertible $S$ destroys the dictionary, and so does a genuine squeeze $S = UP$ with $U$ unitary and $P$ positive definite and $\neq I$; both cases were checked on four hundred random biquaternions each, and neither preserved a single entry of the table.
+- *The sign is forced by $e_1e_2 = e_3$.* The opposite assignment, $\Phi(e_k) = +i\sigma_k$, reproduces $e_k^2 = -e_0$ but reverses every cross-relation: $(+i\sigma_1)(+i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3$, whereas that assignment gives $e_3$ the image $+i\sigma_3$. The sign above is therefore a consequence, not a convention.
 
-The matrix realisation is a convention of *presentation*, not of content: the algebra and the two sectors of level 2 are unchanged by it, and the articles of the series use the assignment above identically. It is recorded here because a mistake of translation between the algebra and its matrices is repaired **here**, by correcting the assignment or the explicit factors of $i$, and never by altering the norm form, the $ict$ assignment or the sector split.
+The residual freedom is a **unitary change of basis of $\mathbb{C}^2$, and no more**: the isomorphisms that preserve the subspace table above are the $\Phi' = S\Phi S^{-1}$ with $S$ unitary up to a nonzero complex scalar, and the scalar cancels in $S \cdot S^{-1}$. An arbitrary invertible $S$ destroys the dictionary, and so does a genuine squeeze $S = UP$ with $U$ unitary and $P$ positive definite and $\neq I$: both keep the center, which is scalars, and neither preserves the real-quaternion row or either sector. Both cases were checked on four hundred random elements drawn from each of the four subspaces, and the quaternion and sector rows were destroyed in every case. The realisation is thus a convention of *presentation*, not of content, and it is recorded here so that a mistake of translation between the algebra and its matrices is repaired **here** — by correcting the assignment or the explicit factors of $i$ — and never by altering the norm form, the $ict$ assignment or the sector split.
+
+**The symbol $\Phi$.** A plain $\Phi$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_0$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\Phi$ is not any of them.
 
 ### The Trace
 
