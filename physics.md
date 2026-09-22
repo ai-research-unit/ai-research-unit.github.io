@@ -13,6 +13,8 @@
 
 ### <a href="articles/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
 
+### <a href="articles/the-matrix-representation-in-the-biquaternion-universe.html">The Matrix Representation in the Biquaternion Universe</a>
+
 ### <a href="articles/action-units-and-the-constants-of-the-biquaternion-universe.html">Action, Units, and the Constants of the Biquaternion Universe</a>
 
 ### <a href="articles/why-complexify-spacetime.html">Why Complexify Spacetime?</a>

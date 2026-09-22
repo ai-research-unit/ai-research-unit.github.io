@@ -7,7 +7,7 @@ A framework built on a non-standard algebra, and on a non-standard choice of whi
 
 This article collects the conventions of the series in one place, states each one, and gives the reason it was chosen. It is meant to be read before any other article is edited, and it has two readers in mind. The first is a reader who meets an equation in a companion article that looks wrong. The second is anyone writing or revising an article in the series, for whom the conventions are load-bearing: a change that looks local — a sign, an operator definition, a factor of $i$ — generally propagates into a dozen dependent articles.
 
-The article is organised in three parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the two sectors, and the trace. The second gives the **spacetime and field-theoretic** conventions: the material coordinate, the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure. The third records the **conventions of presentation**, that is, the conventions the articles in this series follow.
+The article is organised in two parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the two sectors, the matrix representation, and the trace. The second gives the **spacetime and field-theoretic** conventions: the material coordinate, the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure.
 
 One warning applies throughout. **A convention recorded here is not a claim that the alternative is wrong.** Several of these choices are freely made where either choice would be defensible; they are conventions, not theorems. What is not free is *consistency*: once a convention is fixed, the dependent articles inherit it, and a change to it is a change to all of them. Where a convention is instead forced — where the alternative leads to a demonstrable contradiction — the article says so explicitly, and that distinction is the difference between a convention and a result.
 
@@ -47,7 +47,7 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$
 
-and this identification is used constantly. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
+and this identification is used constantly. It is fixed explicitly in *The Matrix Representation* below, which asserts the four basis images and shows that neither the factor $i$ nor the sign is a free choice. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
 
 ### The Conjugations and the Real Subspaces
 
@@ -88,9 +88,68 @@ The naming convention is a deliberate choice and should be stated as such:
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material sector. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
+### The Matrix Representation
+
+The identification $\mathbb{B} \cong M_2(\mathbb{C})$ is fixed by a single isomorphism, written $\Phi$, and it is worth writing out in full because every numerical check in the series is performed with it. The four basis elements are assigned the matrices
+
+$$
+\Phi(e_0) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I_2, \qquad
+\Phi(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
+\Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
+\Phi(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
+$$
+<!-- CONVENTION — the matrix basis: the four basis images are asserted, with sigma_k = i Phi(e_k) = Phi(i e_k). Both the factor i and the sign are forced (e_k^2 = -e_0 and e_1 e_2 = e_3), so a reviewer must not "correct" them to Phi(e_k) = +i sigma_k, nor to real matrices, and must not treat the choice as free. -->
+
+with the central scalar mapping to $\Phi(i) = iI_2$, and a general element to
+
+$$
+\Phi(\tilde{Q}) = \begin{pmatrix} Q_0 - iQ_3 & -iQ_1 - Q_2 \\ -iQ_1 + Q_2 & Q_0 + iQ_3 \end{pmatrix},
+\qquad
+\det\Phi(\tilde{Q}) = N(\tilde{Q}) .
+$$
+
+Equivalently, the basis images are $i$ times the Pauli matrices, $\sigma_k = i\,\Phi(e_k) = \Phi(ie_k)$: the Pauli matrices are the images of the **Hermitian** units $ie_k$. In this realisation the four fixed spaces of the preceding subsections read off as follows.
+
+| Subspace | Matrix image |
+|---|---|
+| Center $\mathbb{C}_{\mathbb{B}}$ | the scalar matrices $Q_0 I_2$ |
+| Real quaternions $\mathbb{H}_{\mathbb{B}}$ | $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z} \end{pmatrix}$, $z, w \in \mathbb{C}$ |
+| Hermitian $\mathbb{M}_+$ | the Hermitian matrices |
+| Anti-Hermitian $\mathbb{M}_-$ | the anti-Hermitian matrices |
+
+**The conjugations in matrix form.** The four involutions of the algebra become four matrix operations, with $M = \Phi(\tilde{Q})$:
+
+| Involution | Matrix image |
+|---|---|
+| Quaternion conjugation $\bar{\tilde{Q}}$ | the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ |
+| Complex conjugation $\tilde{Q}^*$ | $\epsilon\,\overline{M}\,\epsilon^{-1}$ |
+| Hermitian conjugation $\tilde{Q}^\dagger$ | the conjugate transpose $M^\dagger$ |
+| Anti-Hermitian conjugation $\tilde{Q}^\flat$ | $-M^\dagger$ |
+
+Two of the four are dressed by the invariant antisymmetric form
+
+$$
+\epsilon = i\sigma_2 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = \Phi(-e_2),
+$$
+<!-- CONVENTION — the conjugation dictionary: quaternion conjugation is the adjugate epsilon M^T epsilon^-1 and complex conjugation is epsilon conj(M) epsilon^-1, while dagger and flat are undressed. A reviewer must not "simplify" complex conjugation to a plain entrywise conjugation of M: that operation is the image of no involution, sends e_1 and e_3 to minus themselves and leaves e_2 fixed, and so destroys the sector dictionary. -->
+
+and the adjugate identity $\tilde{Q}\bar{\tilde{Q}} = N(\tilde{Q})e_0$ is the matrix identity $M\,\mathrm{adj}(M) = \det(M)I_2$.
+
+**Entrywise conjugation is not in the list.** A reader who has the matrix $M$ in hand will be tempted to conjugate its entries and call the result $\Phi(\tilde{Q}^*)$. That operation is not the image of any involution of the algebra, and it does not preserve the sector dictionary: it sends $-i\sigma_1 \mapsto +i\sigma_1$ and $-i\sigma_3 \mapsto +i\sigma_3$, turning the images of $e_1$ and $e_3$ into the images of $-e_1$ and $-e_3$, while $\Phi(e_2)$ has real entries and is left untouched. Only the dressed form in the table is correct. The safe rule for the series is that $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through those four formulas and never by conjugating matrix entries on their own.
+
+**The symbol $\Phi$.** A plain $\Phi$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_0$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\Phi$ is not any of them.
+
+**Why the form is fixed.** Three features of the assignment are consequences rather than choices, and they are worth recording because the identification $\mathbb{B} \cong M_2(\mathbb{C})$ is often written without them.
+
+- *The factor $i$ is forced by $e_k^2 = -e_0$.* The matrices $\sigma_k$ square to $+I_2$, so a real assignment $e_k \mapsto \sigma_k$ would give $e_k^2 = +e_0$, the wrong sign. Both $\pm i\sigma_k$ repair it.
+- *The sign is forced by $e_1e_2 = e_3$.* The opposite assignment, $\Phi(e_k) = +i\sigma_k$, reproduces $e_k^2 = -e_0$ but reverses every cross-relation: $(+i\sigma_1)(+i\sigma_2) = -\sigma_1\sigma_2 = -i\sigma_3$, whereas that assignment gives $e_3$ the image $+i\sigma_3$. The sign in the basis table above is therefore a consequence, not a convention.
+- *The residual freedom is unitary, and no more.* Any other isomorphism has the form $\Phi' = S\Phi S^{-1}$ with $S$ invertible. Among these, the ones that preserve the sector table above — $\mathbb{M}_+$ to Hermitian, $\mathbb{M}_-$ to anti-Hermitian, $\mathbb{H}_{\mathbb{B}}$ to the form $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ — are exactly those with $S$ a unitary matrix up to a nonzero complex scalar, and the scalar cancels in $S \cdot S^{-1}$. The representation is thus fixed up to a **unitary change of basis of $\mathbb{C}^2$**. An arbitrary invertible $S$ destroys the dictionary, and so does a genuine squeeze $S = UP$ with $U$ unitary and $P$ positive definite and $\neq I$; both cases were checked on four hundred random biquaternions each, and neither preserved a single entry of the table.
+
+The matrix realisation is a convention of *presentation*, not of content: the algebra and the two sectors of level 2 are unchanged by it, and the articles of the series use the assignment above identically. It is recorded here because a mistake of translation between the algebra and its matrices is repaired **here**, by correcting the assignment or the explicit factors of $i$, and never by altering the norm form, the $ict$ assignment or the sector split.
+
 ### The Trace
 
-The trace is taken in the $2 \times 2$ matrix representation afforded by $\mathbb{B} \cong M_2(\mathbb{C})$, with the normalisation
+The trace is taken in the $2 \times 2$ matrix representation afforded by $\Phi$, with the normalisation
 
 $$
 \mathrm{Tr}(e_0) = 2 .
@@ -102,7 +161,13 @@ $$
 \mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}), \qquad \tilde{P} \in \mathbb{M}_+, \ \tilde{H} \in \mathbb{M}_+ .
 $$
 
-This identity is used throughout the series to turn algebraic pairings into real numbers; in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$. Its factor $2$ — not $1$ — is the convention, and it must not be dropped.
+The restriction to $\mathbb{M}_+$ is not needed. As the article on the involution lattice records, the identity holds for arbitrary arguments, which is the form in which the operator articles use it:
+
+$$
+\mathrm{Tr}(\tilde{X}\tilde{Y}) = 2\,\mathrm{Sc}(\tilde{X}\tilde{Y}) \qquad \text{for all } \tilde{X}, \tilde{Y} \in \mathbb{B},
+$$
+
+where $\mathrm{Tr}(\tilde{X}\tilde{Y})$ is the trace of the product of the matrices, $\mathrm{Tr}(\Phi(\tilde{X})\Phi(\tilde{Y}))$. This follows from $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2Q_0$, the $\mathbb{C}$-linearity of $\Phi$ and the multiplicativity of the trace; the $\mathbb{M}_+$ statement above is the case in which the pairing is real. This identity is used throughout the series to turn algebraic pairings into real numbers; in the quantum-information articles it is the Born rule, $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$. Its factor $2$ — not $1$ — is the convention, and it must not be dropped.
 
 ## The Spacetime Conventions
 
@@ -338,98 +403,13 @@ In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\P
 
 $\flat$ is **not** the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention above. A reader who finds $\flat$ in an article should expect conjugation, a Majorana pairing, a bilinear, or the sector split — never a Dirac mass.
 
-## Conventions of Presentation
-
-The articles in this series follow a common format. These conventions are stated here so that a new or revised article matches its companions, and so that a reader knows what to expect.
-
-### The Article Format
-
-Every article in the series begins with a blank line and then the title,
-
-```
-# __Title__
-```
-
-then `## Introduction`, then thematic `##` sections (with `###` subsections where warranted), and closes with these three sections in order:
-
-```
-## Summary
-## Summary of Notation
-## Further Reading
-```
-
-The `## Summary of Notation` table is the canonical record of an article's symbols and is what a companion article consults when matching notation.
-
-The title style is uniform in the physics series: every one of its articles uses the enclosing underscores. The mathematics companion menu, `maths.md`, is not uniform — about half of its articles use a plainer `# Title` — so a new article should follow the style of the menu it appears in.
-
-### Mathematics
-
-All mathematics is written in LaTeX: an inline formula is delimited by a single dollar sign on each side, and a displayed formula is set off by a pair of dollar signs on their own lines. **The number of display fences is kept even** throughout the series: an unclosed fence silently swallows the rest of the article. Typography uses **en dashes** `–` in proper names and ranges — Klein–Gordon, Bargmann–Michel–Telegdi — rather than hyphens.
-
-### Citing Companion Articles
-
-Articles cite one another **by title, in italics, without hyperlinks** — the series does not link between articles. The form is
-
-```
-- Companion article *Title of the Article*, for what it supplies.
-```
-
-A companion article may be cited only if it exists; an entry still marked for writing in the menu is not cited.
-
-### The Further Reading Section
-
-The `## Further Reading` section lists **external literature only** — books and journal papers:
-
-```
-- Author, *Title* (Publisher, Year), for what it supplies.
-- Author, "Article title," *Journal* **volume** (year) pages, for what it supplies.
-```
-
-It does not list companion articles; those belong in the prose, as above.
-
-### Recording Deliberate Choices
-
-Two inline HTML markers record choices that a reviewer might otherwise try to revert. They are render-invisible but source-visible.
-
-```
-<!-- EDITORIAL (YYYY-MM-DD): what it used to say, why it changed, the evidence or rule. -->
-```
-
-records a **substantive change**: the previous statement, the reason, and the basis for the new one.
-
-```
-<!-- CONVENTION — short label: the fact, why it looks unusual, what a reviewer must not do. -->
-```
-
-records a **standing** notation fact — the kind of thing this article collects — and states explicitly what must not be "corrected".
-
-Two rules govern the markers. First, a marker **must never contain an interior `--`**, or an HTML comment terminates early and its text leaks into the rendered page; use an em dash `—` instead. Second, a marker is placed **at the equation it protects**, not only in a companion note, so that the article defends itself against a suspicious reading.
-
-The reasoning behind a change is not put in the prose. The prose states the physics; the marker and the companion notes state the history.
-
-### The Companion Notes
-
-Each article has a companion file of the same name with the suffix `.thinking`, holding the working notes for the article: the structural choices, the conventions fixed, the points that could not be derived, and any conflict found with a neighbouring article. An addition to that file opens with three lines of `XXXXXXXXXX`, followed by the name of the phase the note belongs to — *writing*, *enriching*, *reviewing*, *homogenizing*, *innovating*, or *cleaning*.
-
-### Where to Start
-
-An article in the main line of the theory should be read against its foundations first. Three articles carry the notational load for the whole series:
-
-- *Introduction to the Biquaternion Universe*, for the algebra and its two sectors;
-- *$\mathbb{M}_-$ as the Material Space*, for the material sector and four-vectors;
-- *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian subspace, the trace, and states.
-
-This article should be read alongside them: they fix the notation, and it fixes the conventions that surround it.
-
 ## Summary
 
-The conventions of the series fall into three groups.
+The conventions of the series fall into two groups.
 
-**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations give four distinguished real subspaces, three of them four-dimensional and named: $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus.
+**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations give four distinguished real subspaces, three of them four-dimensional and named: $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The matrix representation $\Phi$ is fixed by its four basis images, with $\sigma_k = i\,\Phi(e_k) = \Phi(ie_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
 
 **Spacetime and fields.** The material coordinate is $\tilde{X} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the norm form, of signature $(3,1)$, vanishing on the zero-divisor cone. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The series d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the Weyl-spinor exercise uses the opposite sign, $\Box = \partial_0^2 - \nabla^2$, and the two mass-term signs are the same equation. The Clifford metric $g$ is a level-3 tool rather than a convention, adopted where an article translates into gamma matrices, and its value is the standard mostly-minus $\mathrm{diag}(+1,-1,-1,-1)$ throughout the series — the $\mathbb{M}_+$ form, since the Clifford vectors correspond to the Hermitian subspace, so that the square of a Clifford vector agrees with the norm form of the biquaternion it represents with no relative sign. The opposite sign is not in use. Either way the norm form, the $ict$ metric and the sector structure are unchanged, and the tool never dictates them. The Dirac mass term is **linear and chirality-off-diagonal**, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it conserves the vector $U(1)$ and breaks the axial symmetry. The retired antilinear form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ was retired for its spacelike dispersion, and $\flat = -\dagger$ is retained as the algebra's real structure.
-
-**Presentation.** Articles open with a blank line and the title, close with `## Summary`, `## Summary of Notation` and `## Further Reading`; mathematics is LaTeX with an even number of display fences; en dashes throughout; companion articles are cited by italic title without hyperlinks and `## Further Reading` lists external literature only; deliberate choices are recorded in `<!-- EDITORIAL … -->` and `<!-- CONVENTION — … -->` markers placed at the equation they protect, with no interior `--`.
 
 The theme is single. In a framework whose algebra and sector assignment are non-standard, the most likely error is a correction of something that is deliberate. The conventions recorded above are the places where that is most likely to happen.
 
@@ -441,6 +421,8 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\bar{\tilde{Q}}, \tilde{Q}^*, \tilde{Q}^\dagger, \tilde{Q}^\flat$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
+| $\bar{\tilde{Q}} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\tilde{Q}^* \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = i\sigma_2 = \Phi(-e_2)$ |
+| $\tilde{Q}^\dagger \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |
 | $\flat = -\dagger$ | The anti-Hermitian conjugation, the algebra's real structure |
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_0, e_1, e_2, e_3$ |
 | $\mathbb{M}_+ = \{ \tilde{Q} : \tilde{Q}^\dagger = \tilde{Q} \}$ | Hermitian subspace, the informational sector; basis $e_0, ie_1, ie_2, ie_3$ |
@@ -453,7 +435,8 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\tilde{\nabla}, \bar{\tilde{\nabla}}$ | Biquaternionic gradient and its conjugate |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\Box_{\text{Weyl}} = -\Box$ | d'Alembertian of the Weyl-spinor exercise, opposite sign |
-| $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula in $\mathbb{M}_+$, for a state $\tilde{P}$ and an observable $\tilde{H}$, with $\mathrm{Tr}(e_0) = 2$ |
+| $\mathrm{Tr}(\tilde{X}\tilde{Y}) = 2\,\mathrm{Sc}(\tilde{X}\tilde{Y})$ | Trace pairing, unrestricted; the case $\tilde{P}\in\mathbb{M}_+$, $\tilde{H}\in\mathbb{M}_+$ is the real one. $\mathrm{Tr}(e_0) = 2$ |
+| $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ | The matrix representation, with $\Phi(e_0) = I_2$ and $\sigma_k = i\,\Phi(e_k) = \Phi(ie_k)$. Fixed up to a unitary change of basis, and no further |
 | $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ | Chiral decomposition of the Dirac field |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ | The linear, chirality-off-diagonal mass term (canonical form) |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions, the Lorentz group on $\mathbb{M}_-$ |

@@ -42,9 +42,57 @@ $$
 
 the first variation is $2\times10^{-10}$ at a solution of the wave equation $u_{tt}=c^2u_{xx}$ and $-1.67$ at a neighbouring non-solution: stationarity selects exactly the field equation.
 
-The continuum case also shows where the plain form of the principle stops. When the external loads are **non-conservative** — a damping force is the standard example — the variation of the action does not vanish on the physical motion, and the principle must be **extended** by adding the virtual work of those loads; it reduces to the plain form when the loads derive from a potential. This is not a technicality: a non-conservative force is the gradient of nothing, so no Lagrangian contains it, and it enters the principle as a work term instead. Checked on a damped string with damping coefficient $\gamma=0.4$, where the motion solves $u_{tt}+\gamma u_t=c^2u_{xx}$: the first variation of $S$ is $-0.545$ rather than zero, the virtual work of the damping force is $+0.545$, and their sum vanishes at $-9\times10^{-11}$. The added term is not idle — for the undamped solution the same extended expression is $-0.611$.
-
 The statement is also independent of the coordinates in which it is written, which is what allows the coordinates to be generalized away altogether. Checked on the free particle in polar coordinates, whose Lagrangian $L=\tfrac12m(\dot r^2+r^2\dot\varphi^2)$ gives $\ddot r=r\dot\varphi^2$ and $r^2\dot\varphi$ constant: the solutions are straight lines, the residual against $x=x_0+vt$ being $3.5\times10^{-14}$ with $r^2\dot\varphi$ conserved to $1.0\times10^{-13}$. Newton's law is recovered from a variational statement, in coordinates in which it is not obvious; the form of the statement, not the coordinates, is what carries the physics.
+
+### When the Loads Are Not Conservative
+
+The principle as written assumes the applied forces derive from a potential, and that assumption can fail. When the external loads are **non-conservative** — a damping force is the standard example — the variation of the action does not vanish on the physical motion, and the principle must be **extended** by adding the virtual work of those loads; it reduces to the plain form when the loads do derive from a potential. Checked on a damped string with damping coefficient $\gamma=0.4$, where the motion solves $u_{tt}+\gamma u_t=c^2u_{xx}$: the first variation of $S$ is $-0.545$ rather than zero, the virtual work of the damping force is $+0.545$, and their sum vanishes at $-9\times10^{-11}$. The added term is not idle — for the undamped solution the same extended expression is $+0.611$.
+
+It is worth being precise about what is lost, because the natural summary — a non-conservative force is the gradient of nothing, so no Lagrangian contains it — is too strong. What is true is that no *potential* contains it, so no Lagrangian of the form $T-V$ does. A Lagrangian may still exist, at a price: the damped linear oscillator has the explicitly time-dependent
+
+$$
+L_t=e^{\gamma t}\left(\tfrac12\dot x^2-\tfrac12\omega_0^2x^2\right),
+$$
+
+whose Euler–Lagrange equation is $\ddot x+\gamma\dot x+\omega_0^2x=0$, verified to $1.3\times10^{-9}$ along the damped motion. The price is that $L_t$ is neither $T-V$ nor invariant under time translation, so the quantity it would call the energy is not conserved. The plain framework can be made to hold, but it stops being one in which energy means what it meant.
+
+**Herglotz's principle** is the systematic alternative, and it changes what the action *is* rather than adding a term to it. The action is defined not by the integral $\int L\,dt$ but as the solution of the differential equation
+
+$$
+\dot S(t)=L(t,\tilde q,\dot{\tilde q},S),\qquad S(t_0)=S_0 ,
+$$
+
+so that the Lagrangian may depend on the action, and the requirement is that this $S$ be stationary. The stationarity condition is the **Euler–Lagrange–Herglotz equation**
+
+$$
+\frac{d}{dt}\frac{\partial L}{\partial\dot{\tilde q}}-\frac{\partial L}{\partial\tilde q}
+=\frac{\partial L}{\partial S}\,\frac{\partial L}{\partial\dot{\tilde q}},
+$$
+
+whose right-hand side carries the dissipation and which returns the Euler–Lagrange equation of this article when $\partial_SL=0$. The damped oscillator is the standard illustration: with
+
+$$
+L=\tfrac12\dot x^2-\tfrac12\omega_0^2x^2-\gamma S,\qquad \dot S=L ,
+$$
+
+the equation of motion is $\ddot x+\gamma\dot x+\omega_0^2x=0$, matching the analytic damped solution to $1.7\times10^{-14}$, while the same $L$ evaluated on the *undamped* motion leaves a residual of $0.30$. The $S$-dependence is what produces the damping, and the check separates the two motions rather than confirming both.
+
+**What replaces the energy.** Dissipation does not remove the conservation law; it weights it. For a time-translation symmetry the conserved quantity acquires the exponential of $\int\partial_SL$,
+
+$$
+e^{\gamma t}\left(L-\dot x\,\frac{\partial L}{\partial\dot x}\right)
+=-e^{\gamma t}\left(\tfrac12\dot x^2+\tfrac12\omega_0^2x^2+\gamma S\right),
+$$
+
+which for the damped oscillator is conserved to $3.0\times10^{-14}$ while the plain energy $\tfrac12\dot x^2+\tfrac12\omega_0^2x^2$ decays from $0.500$ to $0.075$. In Hamiltonian form the same structure is a **contact** Hamiltonian system on the extended space $(\tilde q,\tilde p,S)$. The momentum and Hamiltonian are the usual Legendre data, $p_i=\partial L/\partial\dot q_i$ and $H=\sum_ip_i\dot q_i-L$, and the equations
+
+$$
+\dot q_i=\frac{\partial H}{\partial p_i},\qquad
+\dot p_i=-\left(\frac{\partial H}{\partial q_i}+p_i\frac{\partial H}{\partial S}\right),\qquad
+\dot S=\sum_ip_i\frac{\partial H}{\partial p_i}-H
+$$
+
+reduce to Hamilton's equations when $\partial_SH=0$; for the damped oscillator $H=\tfrac12p^2+\tfrac12\omega_0^2x^2+\gamma S$ reproduces the damped motion to $1.3\times10^{-11}$. Since $L$ is central-valued, so is $S$, and the extended space is the configuration and momentum biquaternions with one central coordinate adjoined: the algebra accommodates the construction without enlargement. The class covered is wider than damping — $\ddot x+f(x)\dot x^2+g(t)\dot x+h(x)=0$ is the Euler–Lagrange–Herglotz equation of $L=\tfrac12\dot x^2-[2f(x)\dot x+g(t)]S-U(x)$ for the $U$ solving $U'+2fU=h$, verified to $1.3\times10^{-15}$, with the Lane–Emden equation among its special cases. Herglotz's principle is the variational formulation of the non-conservative equations, not a workaround for them.
 
 ### The First Variation and the Boundary Term
 
@@ -168,6 +216,14 @@ S_0[\tilde q]=\frac{m}{2}\int N(\dot{\tilde q})\,dt ,
 $$
 
 is the energy of a curve in the positive-definite metric that the norm form defines on $\mathbb{H}_{\mathbb{B}}$. Its extremals are the straight lines $\ddot{\tilde q}=0$ found in the preceding article, and the geodesic equation of the norm-form metric is the same equation. The length functional $\int\sqrt{N(d\tilde q)}$ has the same extremals as the energy functional at fixed duration, by the standard argument: extremising the energy at fixed duration selects the geodesics parametrised proportionally to arc length, which are exactly the extremals of the length.
+
+The geodesic reading has a Hamiltonian form, and it is the same statement. On the cotangent bundle the norm-form metric induces the Hamiltonian
+
+$$
+H(\tilde q,\tilde p)=\frac{1}{2m}\,p_\mu p_\mu=\frac{N(\tilde p)}{2m},
+$$
+
+the two forms agreeing because the norm-form metric is Euclidean in the basis $e_\mu$, so that the inverse metric is the metric itself. Hamilton's equations for it are $\dot{\tilde q}=\partial_{\tilde p}H=\tilde p/m$ and $\dot{\tilde p}=0$, whose solutions are the straight lines found above: the geodesic flow of the norm form **is** a Hamiltonian flow, its Hamiltonian is the Legendre transform of the free action, and $H=N(\tilde p)/2m$ is conserved along it. This is the flat case of the general statement that a geodesic flow is the Hamiltonian flow of the quadratic form built from the inverse metric. Checked on the same free particle as the polar-coordinate example above, now read as a Hamiltonian flow: integrating Hamilton's equations for $H=\tfrac12\big(p_r^2+p_\varphi^2/r^2\big)$ returns the same straight line in Cartesian coordinates, with residual $3.2\times10^{-14}$, $p_\varphi$ constant, and $H$ conserved to $3.4\times10^{-14}$. It is the abelian counterpart of the correspondence the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes on the coadjoint orbit: the free particle is the case in which the carrier is abelian and the metric flat.
 
 The norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$, so its metric is Riemannian and there are no null directions. The **norm-form cone** $N(\tilde X)=0$ is trivial on the real-quaternion sector; it becomes nontrivial on the material sector $\mathbb{M}_-$ of the complexified algebra, where the four-vector $\tilde X=ict\,e_0+\mathbf x$ has the indefinite norm $N(\tilde X)=-c^2t^2+\mathbf x^2$, whose zero set is the light cone. The two statements are consistent: the indefinite norm appears when the central coordinate is imaginary, $q_0=ict$, which is exactly the passage from a real quaternion to a material-sector four-vector. The cone and its role in the symplectic geometry are the subject of the next article.
 
@@ -293,7 +349,9 @@ The **characteristic function** $\mathcal{W}(\tilde q)$ of a time-independent pr
 The action principle and the classical limit as stationary phase take the following form in the biquaternion algebra.
 
 - The action $S[\tilde q]=\int L\,dt$ is central-valued for a real-quaternion configuration, so its phase is unambiguous.
-- The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations. When the external loads are non-conservative the plain form fails, and the principle is extended by the virtual work of those loads.
+- The principle is not restricted to finitely many coordinates: for a continuum the Lagrangian becomes a density and the Euler–Lagrange equations become field equations.
+- A non-conservative load cannot enter a potential, so no $T-V$ Lagrangian contains it and the plain form fails. The principle is then extended by virtual work, or replaced by **Herglotz's principle**, whose action solves $\dot S=L$ and whose Euler–Lagrange–Herglotz equation carries the dissipative term; the energy is replaced by a weighted conserved quantity, and the Hamiltonian form becomes a contact system on $(\tilde q,\tilde p,S)$.
+- The geodesic flow of the norm-form metric is a Hamiltonian flow, with Hamiltonian $H=N(\tilde p)/2m$. The free particle is the abelian case of the correspondence that the rotor articles exhibit on the coadjoint orbit.
 - Its first variation is the sum of a bulk term and a boundary term. The bulk term vanishes for all variations exactly when the quaternion Euler–Lagrange equation $\frac{d}{dt}\partial_{\dot{\tilde q}}L-\partial_{\tilde q}L=0$ holds. The boundary term is the symplectic potential $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$, and on shell $dS=\theta_2-\theta_1$: the action generates the canonical transformation between its endpoints.
 - The phase-space action $\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ has Hamilton's equations as its critical-point equations.
 - The second variation defines the Jacobi operator $\mathcal{J}\delta\tilde q=-m\,\delta\ddot{\tilde q}-V''\delta\tilde q$ and the geodesic-deviation equation $m\ddot\xi+V''\xi=0$; conjugate points are where the classical extremum ceases to be a strict minimum.
@@ -307,8 +365,9 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 
 | Symbol | Meaning |
 |---|---|
-| $S[\tilde q]=\int L\,dt$ | Action (central-valued) |
-| $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$, $\gamma$ | Lagrangian density; string displacement, density, tension and damping of the continuum example |
+| $S[\tilde q]=\int L\,dt$ | Action (central-valued); in Herglotz's form it solves $\dot S=L$ and is state-dependent |
+| $\omega_0$, $\gamma$ | Oscillator frequency and damping coefficient |
+| $\mathcal{L}$, $u$, $\rho$, $\mathcal{T}$ | Lagrangian density; string displacement, density and tension of the continuum example |
 | $\tilde p=\partial L/\partial\dot{\tilde q}$ | Conjugate momentum |
 | $\theta=\mathrm{Sc}(\bar{\tilde p}\,d\tilde q)$ | Symplectic potential (boundary term) |
 | $S_{\mathrm{ps}}=\int[\mathrm{Sc}(\bar{\tilde p}\dot{\tilde q})-H]dt$ | Phase-space action |
@@ -328,6 +387,8 @@ The biquaternion algebra supplies a central-valued action, so the phase is well 
 - L. D. Landau and E. M. Lifshitz, *Mechanics* (Pergamon, 1976), for the action principle, the second variation, and the Hamilton–Jacobi equation.
 - V. I. Arnold, *Mathematical Methods of Classical Mechanics* (Springer, 1989), for geodesic flows on Lie groups, the Jacobi equation, and conjugate points.
 - H. Goldstein, C. P. Poole, and J. L. Safko, *Classical Mechanics* (Addison-Wesley, 2002), for Hamilton's principal function and the generating-function interpretation of the action.
+- G. Herglotz, *Berührungstransformationen* (Lectures, University of Göttingen, 1930), for the original state-dependent variational principle for non-conservative systems.
+- R. B. Guenther, J. A. Gottsch, and C. M. Guenther, *The Herglotz Lectures on Contact Transformations and Hamiltonian Systems* (Juliusz Center for Nonlinear Studies, Toruń, 1996), for the contact-Hamiltonian form and the generalized Noether theorem.
 - Lord Kelvin (W. Thomson), "On the waves produced by a single impulse in water of any depth," *Proceedings of the Royal Society of Edinburgh* **9** (1877) 253, for the method of stationary phase.
 - N. G. van Kampen, "The method of stationary phase and the Stokes phenomenon," *Physica* **6** (1939) 513, for the asymptotic evaluation of oscillatory integrals.
 - V. P. Maslov and M. V. Fedoriuk, *Semi-Classical Approximation in Quantum Mechanics* (Reidel, 1981), for the Maslov phase and the fluctuation determinant of the stationary-phase expansion.

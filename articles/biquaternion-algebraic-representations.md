@@ -226,7 +226,13 @@ $$
 
 which is the **adjugate** (or classical adjoint) of the matrix: it is the matrix whose entries are the cofactors of the original matrix.
 
-**Complex conjugation** $\tilde{Q}^*$ conjugates all entries of the matrix.
+**Complex conjugation** $\tilde{Q}^*$ does **not** act entrywise on the matrix. The representation is built with the same $i$ that conjugates the coefficients, so the two operations compete: conjugating the entries of $M(\tilde{Q})$ sends $-i\sigma_1 \mapsto +i\sigma_1$, the image of $e_1$ to its negative, while the image of $e_2$ is preserved. Entrywise conjugation of $M(\tilde{Q})$ is therefore not $M(\tilde{Q}^*)$, and it is not the image of any of the four involutions. The correct correspondence dresses the conjugation with the antisymmetric form $\epsilon = i\sigma_2$:
+
+$$
+\tilde{Q}^* \mapsto \epsilon\,\overline{\Phi(\tilde{Q})}\,\epsilon^{-1}, \qquad \epsilon = i\sigma_2 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = \Phi(-e_2).
+$$
+
+With the same $\epsilon$, quaternion conjugation reads $\bar{\tilde{Q}} \mapsto \epsilon\,\Phi(\tilde{Q})^{\mathsf{T}}\epsilon^{-1}$, which is the adjugate statement above, since $\epsilon M^{\mathsf{T}}\epsilon^{-1} = \mathrm{adj}(M)$ for $2 \times 2$ matrices.
 
 **Hermitian conjugation** $\tilde{Q}^\dagger$ is the conjugate transpose of the matrix:
 
