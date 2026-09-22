@@ -1,5 +1,5 @@
 
-# Split-Quaternion Zero Divisors
+# __Split-Quaternion Zero Divisors__
 
 ## Introduction
 
@@ -408,23 +408,6 @@ $$
 $$
 The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $N(\tilde{Q}) \neq 0$ is already the invertibility criterion, and the zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = 0$. In $\mathbb{H}_{\mathbb{D}}$ the norm form takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $N(\tilde{Q})$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
 
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split quaternion algebra |
-| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split quaternion |
-| $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $e_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $e_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ | Idempotent decomposition |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
-| $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
-| $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
-| $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
-| $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |
-
 ## Summary
 
 The zero divisors of the split quaternion algebra are the nonzero elements with at least one vanishing idempotent component:
@@ -444,6 +427,23 @@ $$
 which reduces to $\bar{\tilde{Q}}/N(\tilde{Q})$ when $N(\tilde{Q})$ is a unit of $\mathbb{D}$.
 
 The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreducible components, the two four-dimensional subspaces, and it is invariant under scaling; the zero divisor set is that union with the origin removed. It is not the null set of the norm form and not a quadric: unlike the split complex case, where the zero divisors are the null cone of the quadratic norm form, here they are the nonzero zeros of the quartic $\Delta$. The split complex subspace contains zero divisors, inherited from $\mathbb{D}$; the quaternion, Hermitian, and anti-Hermitian subspaces contain none. In the biquaternion algebra, by contrast, the zero divisor set is a single complex cone of complex dimension $3$ (real dimension $6$), because $\mathbb{C}$ is a field and the norm form itself is the criterion.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{H}_{\mathbb{D}}$ | Split quaternion algebra |
+| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split quaternion |
+| $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
+| $e_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
+| $e_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
+| $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ | Idempotent decomposition |
+| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
+| $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
+| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
+| $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
+| $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
+| $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |
 
 ## Further Reading
 

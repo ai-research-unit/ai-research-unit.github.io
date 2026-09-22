@@ -1,5 +1,5 @@
 
-# Split Complex Representations
+# __Split Complex Representations__
 
 ## Introduction
 

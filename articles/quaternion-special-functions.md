@@ -1,5 +1,5 @@
 
-# Quaternion Special Functions
+# __Quaternion Special Functions__
 
 ## Introduction
 

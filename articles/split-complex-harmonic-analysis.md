@@ -1,5 +1,5 @@
 
-# Split Complex Harmonic Analysis
+# __Split Complex Harmonic Analysis__
 
 ## Introduction
 

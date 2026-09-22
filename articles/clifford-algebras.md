@@ -1,5 +1,5 @@
 
-# Clifford Algebras
+# __Clifford Algebras__
 
 ## Introduction
 

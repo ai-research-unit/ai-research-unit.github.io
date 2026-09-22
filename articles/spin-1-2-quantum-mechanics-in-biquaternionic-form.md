@@ -298,19 +298,20 @@ The identification extends from a single spin-1/2 particle to a **spin-1/2 field
 
 ### The Biquaternionic Dirac Equation
 
-The biquaternion Dirac equation (companion article) is
+The biquaternion Dirac equation (companion article) is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-where $\tilde{\Psi}$ is a biquaternion-valued field, $m$ is the mass, and $\tilde{\Psi}^\flat$ is the anti-Hermitian conjugate. In the massless case ($m = 0$), the equation is
+where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ is a biquaternion-valued field with one component per chirality, and $m$ is the mass. In the massless case ($m = 0$), the pair reduces to
 
 $$
 \tilde{\nabla}\tilde{\Psi} = 0,
 $$
 
 which is a first-order equation for the field $\tilde{\Psi}$.
+<!-- EDITORIAL (2026-09-19): the equation was previously the single antilinear form grad(Psi) = m Psi^flat, with Psi^flat described as the mass-carrying anti-Hermitian conjugate. The parent's mass is now the linear chiral pair; flat = -dagger is the algebra's real structure, not the mass. See the parent Dirac article's .thinking file. -->
 
 ### The Interpretation as a Spinor Field
 
@@ -324,7 +325,8 @@ The biquaternionic Dirac equation contains:
 
 - The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2 c^2/\hbar^2$ for plane-wave solutions.
 - The **spin structure**: the polarization biquaternion $\tilde{\Psi}_0$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **mass term**: the biquaternion mass term $m\tilde{\Psi}^\flat$, which couples the two chiral components of the spinor.
+- The **mass term**: the linear, chirality-off-diagonal mass term $m\tilde{\Psi}_{L,R}$, which couples the two chiral components of the spinor.
+<!-- EDITORIAL (2026-09-19): this bullet previously named the mass term m Psi^flat. The identification of the mass with the anti-Hermitian conjugation was retired with the antilinear equation; the mass is the linear off-diagonal coupling, and the description "couples the two chiral components" was already the intended one. -->
 
 ### What the Dirac Equation Does Not Contain
 
@@ -418,7 +420,8 @@ The identification is not an analogy. It is the same mathematics, expressed in t
 | $\mathrm{Tr}(P\tilde{H}) = 2\mathrm{Sc}(P\tilde{H})$ | Born-rule expectation value |
 | $SU(2)$ | Spin rotation group |
 | $SL(2,\mathbb{C})$ | Lorentz group (double cover) |
-| $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | Biquaternionic Dirac equation |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Biquaternionic Dirac equation (linear chiral pair) |
+<!-- EDITORIAL (2026-09-19): this row gave the retired antilinear equation grad(Psi) = m Psi^flat; it now records the parent's linear chiral pair. -->
 
 ## Further Reading
 

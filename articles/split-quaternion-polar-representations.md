@@ -1,5 +1,5 @@
 
-# Split-Quaternion Polar Representations
+# __Split-Quaternion Polar Representations__
 
 ## Introduction
 

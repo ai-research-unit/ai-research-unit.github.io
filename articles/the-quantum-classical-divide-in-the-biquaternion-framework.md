@@ -185,7 +185,7 @@ The structural refinement is not part of the paper's criterion, and the paper do
 
 **4. A dynamical question the framework makes sharper.** The operational criterion classifies a given non-separable state as quantum or classical, based on the operations available. But the framework suggests a question the criterion does not ask: can the *number of available idempotents* itself be a dynamical variable? Could a state transition from quantum to classical by the loss of an idempotent measurement channel — for example, through decoherence, through the classicalization of one partition, or through the emergence of a filter-only regime? The framework does not answer this, but the algebra makes the question well-posed in a way that the standard operational criterion does not.
 
-## Conclusion
+## Summary
 
 Korolkova, Sánchez-Soto, and Leuchs propose an operational criterion for the quantum–classical divide in non-separability: two idempotents is quantum, one idempotent and one unitary is classical. The biquaternion framework has a natural home for this criterion in its reversible/irreversible dichotomy — unitary elements vs. idempotent elements of the algebra — and it expresses the criterion in its native vocabulary.
 

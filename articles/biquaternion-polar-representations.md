@@ -1,5 +1,5 @@
 
-# Biquaternion Polar Representations
+# __Biquaternion Polar Representations__
 
 ## Introduction
 
@@ -363,6 +363,19 @@ The polar representations are related to the algebraic representations as follow
 
 **Relation to the Clifford algebra representation.** The polar forms are not naturally expressed in the Clifford algebra representation, because the Clifford algebra is a real algebra and the polar forms use the complex scalar imaginary. However, the Clifford algebra does provide a natural setting for the roots of $-1$ and for the spinor structure that underlies the polar forms.
 
+## Summary
+
+The biquaternion algebra has **two** natural polar representations:
+
+- The **Hamilton polar form** $\tilde{Q} = R \exp(\xi \Theta)$, where $R$ is a complex scalar modulus, $\xi$ is a non-central root of $-1$ parallel to the vector part, and $\Theta$ is a complex scalar angle. It is defined when $B = \sqrt{(\mathbf{Q},\mathbf{Q})} \neq 0$ and $N(\tilde{Q}) \neq 0$.
+- The **complex polar form** $\tilde{Q} = Q \exp(i \Psi)$, where $Q$ is a real quaternion modulus, $i$ is the central root of $-1$, and $\Psi$ is a real quaternion angle. It is defined when the real quaternion part $Q_r$ is invertible and $N(\tilde{Q}) \neq 0$.
+
+The two forms are complementary. The Hamilton form generalizes the quaternion polar form and is natural when the biquaternion is close to a quaternion. The complex form generalizes the ordinary complex polar form and is natural when the biquaternion is close to a complex scalar.
+
+The existence of the two forms is a consequence of the existence of two classes of roots of $-1$ in the biquaternion algebra: the central root $i$, and the non-central roots (real and non-trivial). The classification of these roots is the subject of the article on biquaternion roots of minus one.
+
+The two forms behave differently under the four conjugations of the algebra, and this difference is the algebraic content of the distinction between them. In particular, quaternion conjugation reverses the order of the two factors in the complex form (because it is an anti-automorphism), a feature that does not arise for the Hamilton form because the Hamilton factors are central and hence commute.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -380,19 +393,6 @@ The polar representations are related to the algebraic representations as follow
 | $Q$ | Real quaternion modulus (complex form) |
 | $\Psi$ | Real quaternion angle (complex form) |
 | $i$ | Scalar imaginary |
-
-## Summary
-
-The biquaternion algebra has **two** natural polar representations:
-
-- The **Hamilton polar form** $\tilde{Q} = R \exp(\xi \Theta)$, where $R$ is a complex scalar modulus, $\xi$ is a non-central root of $-1$ parallel to the vector part, and $\Theta$ is a complex scalar angle. It is defined when $B = \sqrt{(\mathbf{Q},\mathbf{Q})} \neq 0$ and $N(\tilde{Q}) \neq 0$.
-- The **complex polar form** $\tilde{Q} = Q \exp(i \Psi)$, where $Q$ is a real quaternion modulus, $i$ is the central root of $-1$, and $\Psi$ is a real quaternion angle. It is defined when the real quaternion part $Q_r$ is invertible and $N(\tilde{Q}) \neq 0$.
-
-The two forms are complementary. The Hamilton form generalizes the quaternion polar form and is natural when the biquaternion is close to a quaternion. The complex form generalizes the ordinary complex polar form and is natural when the biquaternion is close to a complex scalar.
-
-The existence of the two forms is a consequence of the existence of two classes of roots of $-1$ in the biquaternion algebra: the central root $i$, and the non-central roots (real and non-trivial). The classification of these roots is the subject of the article on biquaternion roots of minus one.
-
-The two forms behave differently under the four conjugations of the algebra, and this difference is the algebraic content of the distinction between them. In particular, quaternion conjugation reverses the order of the two factors in the complex form (because it is an anti-automorphism), a feature that does not arise for the Hamilton form because the Hamilton factors are central and hence commute.
 
 ## Further Reading
 

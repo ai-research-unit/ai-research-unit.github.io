@@ -1,5 +1,5 @@
 
-# Biquaternion Analysis on Subspaces
+# __Biquaternion Analysis on Subspaces__
 
 ## Introduction
 

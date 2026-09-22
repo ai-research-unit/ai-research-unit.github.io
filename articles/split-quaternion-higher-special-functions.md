@@ -1,5 +1,5 @@
 
-# Split-Quaternion Higher Special Functions
+# __Split-Quaternion Higher Special Functions__
 
 ## Introduction
 

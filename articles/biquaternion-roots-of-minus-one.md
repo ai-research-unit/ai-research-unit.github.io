@@ -1,5 +1,5 @@
 
-# Biquaternion Roots of Minus One
+# __Biquaternion Roots of Minus One__
 
 ## Introduction
 
@@ -335,20 +335,6 @@ Applying the classification of the roots of $-1$:
 
 The roots of $+1$ are not used in the classification of the idempotents, but they appear in the theory of the biquaternion exponential and in the theory of the biquaternion logarithm.
 
-## Summary of Notation
-
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{B}$ | Biquaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
-| $i$ | Scalar imaginary |
-| $\xi$ | Root of $-1$ |
-| $\eta$ | Root of $+1$ |
-| $\mu, \nu$ | Unit pure real quaternions |
-| $b, d$ | Real parameters with $b^2 - d^2 = 1$ |
-| $t$ | Rapidity parameter |
-| $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | Idempotent |
-
 ## Summary
 
 The roots of $-1$ in the biquaternion algebra are exactly:
@@ -364,6 +350,20 @@ The non-trivial roots form a four-real-dimensional family, with the real roots (
 The classification of the roots of $-1$ gives the classification of the idempotents of $\mathbb{B}$, which are of the form $\tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$. The map $\xi \mapsto P_+(\xi) = \tfrac{1}{2}(e_0 + \xi i)$ is a bijection from the roots of $-1$ to the idempotents; complementary pairs of idempotents correspond to roots modulo the sign identification $\xi \sim -\xi$. The non-trivial idempotents form a four-dimensional family in the six-dimensional zero divisor set, and are used in the classification of the non-pure zero divisors in the article on biquaternion zero divisors. The roots themselves are invertible, and they lie in the group of units studied in the article on biquaternion norm and invertibility.
 
 The roots of $+1$ are obtained from the roots of $-1$ by multiplication by $i$: $\eta = \xi i$. They are not used in the idempotent classification, but they appear in the theory of the biquaternion exponential.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb{B}$ | Biquaternion algebra |
+| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
+| $i$ | Scalar imaginary |
+| $\xi$ | Root of $-1$ |
+| $\eta$ | Root of $+1$ |
+| $\mu, \nu$ | Unit pure real quaternions |
+| $b, d$ | Real parameters with $b^2 - d^2 = 1$ |
+| $t$ | Rapidity parameter |
+| $\tilde{P} = \tfrac{1}{2} e_0 \pm \tfrac{1}{2} \xi i$ | Idempotent |
 
 ## Further Reading
 

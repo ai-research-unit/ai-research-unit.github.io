@@ -1,5 +1,5 @@
 
-# Biquaternion Discrete Harmonic Analysis
+# __Biquaternion Discrete Harmonic Analysis__
 
 ## Introduction
 

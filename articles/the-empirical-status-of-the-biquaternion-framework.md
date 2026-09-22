@@ -1,5 +1,5 @@
 
-# __Empirical Signatures — A Research Agenda__
+# __The Empirical Status of the Biquaternion Framework__
 
 ## Introduction
 
@@ -44,13 +44,15 @@ The following table collects the quantitative results the series has obtained an
 | Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$; sandwich update | States, observables, Born rule, projective measurement |
 | Relativistic point mechanics | $N(d\tilde{X})=-c^2dt^2+d\mathbf{x}^2$; $\tilde{P}\bar{\tilde{P}}=-m^2c^2$; $\tilde{F}\bar{\tilde{P}}+\tilde{P}\bar{\tilde{F}}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
-| Dirac field | $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^\flat$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
+| Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
 | Hydrogen, relativistic | Exact Dirac–Coulomb spectrum; fine structure | Standard spectrum, quoted not derived |
 | Casimir effect | $-\pi^2\hbar c/(240a^4)$, attractive | Standard Casimir force, reproduced |
 | Unruh effect | $T=\hbar a/(2\pi c\,k_B)$ | Standard Unruh temperature, reproduced |
 | CPT, Born rule, Bell/CHSH, decoherence | Standard statements | Standard results, reproduced; CPT transcribed, not established |
 | Linearized gravity and gravitational waves | Standard wave equation **assumed**; no deviation predicted | No derivation of the field equation |
+
+<!-- EDITORIAL (2026-09-19): the Dirac row previously gave the framework result as $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^\flat$. The parent's mass term is now the linear chiral pair, so the row states it; the massless case and the "Dirac equation, mass term" reproduction are unchanged. -->
 
 Not one entry in the table is a difference. The agreement is exact where the algebra is used exactly (the qubit, the four-vector kinematics), and it is a faithful reproduction where the framework transcribes a standard equation (Maxwell, Dirac, hydrogen, Casimir, Unruh). The gravitational-wave row is the weakest: there the framework does not derive the field equation it uses, so even the agreement is carried by standard general relativity rather than produced by the algebra.
 

@@ -15,26 +15,33 @@ $$
 D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}, \qquad D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu .
 $$
 
-The gauge principle article derived $D$ from the localization of the algebra's central phase and verified that $D\tilde{\Psi}$ transforms homogeneously. It applied the result to a general biquaternion field, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* records, as its open question 7, that the precise biquaternion form of the minimal coupling of the Dirac field "depends on the representation conventions and is worth stating explicitly". This article supplies that statement, and reports what the recomputation gives.
+The gauge principle article derived $D$ from the localization of the algebra's central phase and verified that $D\tilde{\Psi}$ transforms homogeneously. It applied the result to a general biquaternion field, not specifically to the Dirac field. *The Dirac Equation in Biquaternionic Form* names the minimal coupling of the Dirac field as the subject of the companion treatment (its open question 7); the precise biquaternion form is representation-dependent. This article supplies that statement, and reports what the recomputation gives.
+<!-- EDITORIAL (2026-09-19): this sentence previously attributed a direct quotation to the parent's open question 7 — "depends on the representation conventions and is worth stating explicitly". That wording is no longer present in the parent article, whose open question 7 now names this companion as the treatment of the minimal coupling. The quotation marks and the attribution have been removed; the sentence states only what the parent's open question 7 now contains, and the representation-dependence is asserted in this article's own voice rather than quoted. -->
 
-Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ by the covariant derivative gives $D\tilde{\Psi} = m\tilde{\Psi}^\flat$, whose components are $\sum_\mu e_\mu(\partial_\mu + \frac{iq}{\hbar}A_\mu)\tilde{\Psi} = m\tilde{\Psi}^\flat$. The second is that this coupling is **exactly gauge covariant in the massless case** — $D\tilde{\Psi} = 0$ holds in every gauge when it holds in one — and **not gauge covariant in the massive case**, because the mass term is antilinear: under the local phase the mass term acquires the factor $e^{2iq\Gamma/\hbar}$, so the equation is form-invariant only for a constant phase with $\lambda = \pm 1$. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
+Three results are established here. The first is the coupled equation itself: replacing the gradient in the free biquaternion Dirac equation by the covariant derivative gives $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$, whose components are $\sum_\mu e_\mu(\partial_\mu + \frac{iq}{\hbar}A_\mu)\tilde{\Psi}_R = m\tilde{\Psi}_L$ and its conjugate partner. The second is that this coupling is **exactly gauge covariant, in the massive case as well as the massless one** — $D\tilde{\Psi} = 0$ and the massive chiral pair each hold in every gauge when they hold in one — because the parent's mass term is the linear chiral pair and the central phase passes through it; the axial symmetry, not the phase symmetry, is what the mass breaks. The third is a negative result about the interaction current: the naive gauge-invariant bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is a material-sector object but is **not conserved** on solutions of the massless equation, so the electromagnetic current of the coupled system is not a pure biquaternion product of this kind.
+<!-- EDITORIAL (2026-09-19): the second result previously reported that the coupling was "not gauge covariant in the massive case", the mass term being antilinear. The parent's mass term is now the linear chiral pair, so gauge covariance holds in both cases and the broken symmetry is the axial one. See the .thinking file. -->
 
 The division between what is established and what is interpretation is stated at the outset and kept explicit.
 
-- **Established, and recomputed below.** The minimal-coupling prescription $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact gauge covariance of the massless coupled equation; the failure of gauge covariance in the massive case, with the residual symmetry $\lambda = \pm 1$; the gauge invariance and material-sector membership of $i\tilde{\Psi}\tilde{\Psi}^\dagger$; and the non-conservation of that bilinear.
+- **Established, and recomputed below.** The minimal-coupling prescription $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting on the biquaternion Dirac field by left multiplication; the coupled equation and its component form; the exact gauge covariance of the coupled equation, in the massive case as well as the massless one; the gauge invariance and material-sector membership of $i\tilde{\Psi}\tilde{\Psi}^\dagger$; and the non-conservation of that bilinear.
+<!-- EDITORIAL (2026-09-19): this bullet previously listed "the failure of gauge covariance in the massive case, with the residual symmetry lambda = +-1". That failure belonged to the retired antilinear mass term; with the linear chiral pair the covariance holds in the massive case too. -->
 - **Interpretation.** Reading the coupled equation as "the Dirac field in a background electromagnetic connection" is a geometric reading of an algebraic construction. The algebra supplies the transformation law and the covariance; the connection/curvature picture is a consistent reading, as in the gauge principle article.
-- **Gaps, left visible.** The massive equation's continuous symmetry is broken by its mass term, so the minimal coupling derived here is a property of the **massless** biquaternion Dirac field. The biquaternion form of the conserved interaction current is not the naive bilinear, and is not settled here. Whether the left or the right action on the algebra is the physical matter representation is a choice the parent left open. These are stated as gaps in the sections where they arise and collected in the open questions.
+- **Gaps, left visible.** The biquaternion form of the conserved interaction current is not the naive bilinear, and is not settled here. Whether the left or the right action on the algebra is the physical matter representation is a choice the parent left open. The axial symmetry broken by the mass — and whether it can be gauged — is not treated here. These are stated as gaps in the sections where they arise and collected in the open questions.
+<!-- EDITORIAL (2026-09-19): the first sentence previously recorded that the massive equation's continuous symmetry was broken by its antilinear mass term, confining the minimal coupling to the massless sector. With the linear mass term the vector symmetry survives, and the axial symmetry is the new gap. -->
 
-The article is organized as follows. The next section recalls the Dirac field and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case and isolates the obstruction. A section examines the interaction current and the Maxwell source, and reports the negative result. A section relates the construction to the standard spinor-module minimal coupling. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
+The article is organized as follows. The next section recalls the Dirac field and the phase symmetry that is to be localized. The section after that states the minimal-coupling prescription. The following section proves the covariance in the massless case and fixes the sign conventions. The next section treats the massive case, where the linear mass term preserves the covariance and the axial symmetry is what the mass breaks. A section examines the interaction current and the Maxwell source, and reports the negative result. A section relates the construction to the standard spinor-module minimal coupling. A section separates what the algebra supplies from what it only transcribes. The article closes with open questions.
+<!-- EDITORIAL (2026-09-19): the fourth sentence previously said the massive-case section "isolates the obstruction". There is no obstruction for the linear mass term; the section now records the axial breaking instead. -->
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ and $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the center of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The Dirac field is $\tilde{\Psi}\in\mathbb{B}$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ and $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$. The mass term is the linear chiral pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; the conjugation $\tilde{\Psi}^\flat$ is the algebra's real structure and is **not** the mass. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+<!-- EDITORIAL (2026-09-19): the mass term was previously identified with flat; the linear chiral pair is named here instead, and flat is restricted to its role as the real structure. -->
 
 ## The Dirac Field and Its Phase Symmetry
 
 The **biquaternion Dirac field** is a biquaternion-valued field $\tilde{\Psi}(\tilde{X}) \in \mathbb{B}$ satisfying the free equation
 
 $$
-\tilde{\nabla}\tilde{\Psi} = m\,\tilde{\Psi}^\flat, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\bar{\tilde{\Psi}}^{\,*},
+\tilde{\nabla}\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\,\tilde{\Psi}_R, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger = -\bar{\tilde{\Psi}}^{\,*},
+<!-- EDITORIAL (2026-09-19): the free equation was restated here as the antilinear grad(Psi) = m Psi^flat; it is now the linear chiral pair, with flat listed only as the conjugation. -->
 $$
 
 which reduces to
@@ -57,19 +64,21 @@ $$
 \tilde{\Psi} \;\longmapsto\; e^{i\theta}\tilde{\Psi}, \qquad \theta \ \text{constant},
 $$
 
-is a symmetry of the massless equation, because a central constant commutes with the basis and with the derivatives and therefore passes through the gradient:
+is a symmetry of the equation, massive or massless, because a central constant commutes with the basis and with the derivatives and therefore passes through the gradient and through the linear mass term:
+<!-- EDITORIAL (2026-09-19): this sentence previously said "massless equation"; the central phase passes through the linear mass term too. -->
 
 $$
 \tilde{\nabla}\!\left(e^{i\theta}\tilde{\Psi}\right) = e^{i\theta}\,\tilde{\nabla}\tilde{\Psi}.
 $$
 
-The **massive** equation carries no such continuous symmetry. The mass term pairs the field with its anti-Hermitian conjugate, and
+The **massive** equation is invariant as well: the parent's mass term is the linear chiral pair, so a central phase passes through it, and the massive equation carries the same continuous symmetry as the massless one. What the mass term breaks is the **axial** symmetry, not the phase. The algebra's anti-Hermitian conjugation $\flat$ remains antilinear,
 
 $$
 \left(\lambda\tilde{\Psi}\right)^\flat = \lambda^{*}\,\tilde{\Psi}^\flat
 $$
 
-for a central phase $\lambda$, because the conjugation $\flat$ is anti-linear. Invariance under $\tilde{\Psi}\mapsto\lambda\tilde{\Psi}$ therefore requires $\lambda = \lambda^{*}$; among unimodular phases this leaves only $\lambda = \pm 1$. This is the mass-term obstruction of the gauge principle article, recalled here for one reason: it decides in advance how much of the minimal-coupling prescription can be applied. The continuous coupling belongs to the **massless** field; the massive field carries only the discrete sign.
+for a central phase $\lambda$, so a mass term that *paired* the field with its conjugate would require $\lambda = \lambda^{*}$ and would retain only $\lambda = \pm 1$; but that is a property of the real structure $\flat$, not of the parent's mass term, and it is developed in the companion articles on the neutrino and on chirality. The continuous coupling therefore belongs to the massive field as well as to the massless one.
+<!-- EDITORIAL (2026-09-19): this passage previously read "The massive equation carries no such continuous symmetry", followed by the antilinear conjugation computation and the conclusion that "the continuous coupling belongs to the massless field; the massive field carries only the discrete sign". That held only for the retired antilinear mass term m Psi^flat. The parent's mass term is now the linear chiral pair, through which the central phase passes; the antilinear flat conjugation is retained, but as the algebra's real structure rather than as the mass, and the broken symmetry is the axial one. Do not revert without re-deriving the mass term. -->
 
 The **charge** $q$ is the coupling constant of the field, introduced by the gauge principle. It is a parameter: the algebra does not fix its value, its sign, or its quantization. For the electron $q = -e$; the value and the sign are inserted, as *The Electron in Biquaternionic Form* records.
 
@@ -82,16 +91,16 @@ $$
 D\tilde{\Psi} = \tilde{\nabla}\tilde{\Psi} + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi}.
 $$
 
-The connection acts by **left multiplication** on the field. Applied to the free Dirac equation, the prescription gives the **minimally coupled biquaternion Dirac equation**
+The connection acts by **left multiplication** on the field. Applied to the free Dirac equation in its linear, chirality-off-diagonal form, the prescription gives the **minimally coupled biquaternion Dirac equation**
 
 $$
-\boxed{\ D\tilde{\Psi} = m\,\tilde{\Psi}^\flat\ }
+\boxed{\ D\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\,\tilde{\Psi}_R\ }
 $$
 
 that is,
 
 $$
-\tilde{\nabla}\tilde{\Psi} + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi} = m\,\tilde{\Psi}^\flat,
+\tilde{\nabla}\tilde{\Psi}_R + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi}_R = m\,\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L + \frac{iq}{\hbar}\,\bar{\tilde{A}}\,\tilde{\Psi}_L = m\,\tilde{\Psi}_R,
 $$
 
 and in the massless case
@@ -125,7 +134,8 @@ $$
 
 Both constructions are gauge covariant (verified below). What is **not** covariant is the mixed combination — the left gradient with the connection inserted on the right. The two consistent constructions correspond to the two ways the algebra can act on the field, and the choice between them is a choice of **matter representation**: on which module, and from which side, the Dirac field sits. The gauge principle article records this as an open question, and this article does not resolve it; it states the left-action form, which is the one the gauge principle produces, and records the right-action mirror as the alternative.
 
-## Gauge Covariance of the Massless Coupled Equation
+## Gauge Covariance of the Coupled Equation
+<!-- EDITORIAL (2026-09-19): this section heading read "Gauge Covariance of the Massless Coupled Equation". The covariance holds in the massive case too for the parent's linear mass term, so "Massless" was dropped from the heading. -->
 
 The gauge transformation is
 
@@ -172,51 +182,37 @@ the **massless minimally coupled biquaternion Dirac equation is exactly gauge co
 
 The same computation gives the mirror statement for the right action. With the derivative on the right and the connection inserted on the right, and with the same transformation laws for $\tilde{\Psi}$ and $\tilde{A}$, the right covariant derivative is also homogeneous, so the right-action coupled equation is also covariant. The **mixed** insertion is not: the two gradient terms involving $\tilde{\nabla}\Gamma$ no longer cancel, because one acts on the field from the left and the other multiplies it from the right. This is the algebraic content of the statement that the matter representation must be chosen consistently.
 
-## The Massive Case: The Mass Term Obstructs the Coupling
+## The Massive Case: Gauge Covariance and the Axial Symmetry
 
-The massive equation is where the prescription fails, and it fails for a reason that is structural rather than technical. Suppose the minimally coupled massive equation holds in one gauge:
-
-$$
-D\tilde{\Psi} = m\,\tilde{\Psi}^\flat .
-$$
-
-Because $D$ is covariant, the left-hand side of the transformed equation is
+The massive equation is where the mass term's role is decided, and with the linear chiral pair it is benign. Suppose the minimally coupled massive equation holds in one gauge:
 
 $$
-D'\tilde{\Psi}' = \lambda\,D\tilde{\Psi} = \lambda\,m\,\tilde{\Psi}^\flat .
+D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
-The right-hand side is the transformed mass term, and the conjugation is anti-linear:
+Because $D$ is covariant, the left-hand side of the transformed first equation is
 
 $$
-m\left(\tilde{\Psi}'\right)^\flat = m\left(\lambda\tilde{\Psi}\right)^\flat = m\,\lambda^{*}\,\tilde{\Psi}^\flat .
+D'\tilde{\Psi}_R' = \lambda\,D\tilde{\Psi}_R ,
 $$
 
-Writing this in terms of the transformed field, for which $\tilde{\Psi}^\flat = \left(\tilde{\Psi}'\right)^\flat/\lambda^{*}$,
+and the right-hand side is the transformed mass term, which for a **linear** mass term carries the same factor:
 
 $$
-D'\tilde{\Psi}' = m\,\frac{\lambda}{\lambda^{*}}\,\left(\tilde{\Psi}'\right)^\flat = m\,e^{2iq\Gamma/\hbar}\,\left(\tilde{\Psi}'\right)^\flat .
+m\tilde{\Psi}_L' = m\,\lambda\,\tilde{\Psi}_L .
 $$
 
-The mass term acquires the phase factor $e^{2iq\Gamma/\hbar}$. The equation is **not form-invariant** under a local phase: the operator side transforms by one power of $\lambda$ and the mass side by the conjugate. Equivalently, the difference between the two sides of the transformed equation is
+The two sides transform identically, because the central phase commutes with the mass. The same holds for the second equation, with $\bar{\lambda}$. The massive coupled equation is therefore **form-invariant** under the local phase, and it holds in every gauge when it holds in one — exactly as in the massless case.
 
-$$
-\lambda\,m\,\tilde{\Psi}^\flat - m\,\lambda^{*}\,\tilde{\Psi}^\flat = m\left(\lambda - \lambda^{*}\right)\tilde{\Psi}^\flat ,
-$$
+This is the biquaternion form of the standard fact that a mass term linear in the field is compatible with a gauged continuous $U(1)$ (fermion number). A mass term that instead pairs the field with its conjugate — a Majorana-type mass, built on the algebra's anti-Hermitian conjugation $\flat$, which is antilinear — would acquire the factor $e^{2iq\Gamma/\hbar}$ and would be form-invariant only for $\lambda = \pm 1$. That obstruction is a property of the real structure $\flat$, not of the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality rather than here.
 
-which vanishes identically only when $\lambda$ is real. Among the unimodular phases this leaves
+**What this is.** The computation is elementary and exact, and it is the biquaternion form of a familiar fact: a mass term linear in the field is compatible with a gauged continuous $U(1)$ (fermion number), whereas a mass term that pairs a field with its conjugate — a **Majorana-type** mass — is not. The complex scalar realization of the phase symmetry in the gauge principle article has a linear mass term, and so does the biquaternion Dirac field in its parent's present form; both keep their $U(1)$ even when massive. The standard four-component Dirac equation has the linear mass term $m\psi$ and is gauge covariant under minimal coupling, and the biquaternion chiral pair is its algebra-level transcription. The object the phase cannot pass through is the antilinear conjugation $\flat$, which is retained as the algebra's real structure and is no longer the mass term.
 
-$$
-\lambda = \pm 1 :
-$$
+**What it is not.** The article does not declare the standard minimal coupling deficient, and with the linear mass term it does not need to: the massive sector is gauge covariant on the same footing as the massless one. What the biquaternion form adds is the algebra-level location of the coupling — the covariant derivative $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting by left multiplication, with the central phase passing through the linear mass and the **axial** symmetry broken instead. The residual question of the left-versus-right matter representation is the parent's, and is collected in the open questions below.
 
-the continuous $U(1)$ of the massless theory is broken to a discrete $\mathbb{Z}_2$ by the mass term, and the abelian minimal coupling derived above does not survive it.
+**The reading that is taken.** Of the two readings previously left open, the parent's linear mass term selects the second: the algebra-level equation is the real-form expression of an ordinary Dirac mass, the physical coupling is the standard spinor-module one, and the massive sector carries the charge. The first reading — that the framework's massive equation is a Majorana-type equation, with no continuously charged massive field — remains available, but for a different equation, one genuinely built on $\flat$; it is now a statement about the algebra's real structure rather than about the parent, and it is where the companion articles on the neutrino and on chirality continue the discussion.
 
-**What this is.** The computation is elementary and exact, and it is the biquaternion form of a familiar fact: a mass term that pairs a field with its conjugate — a **Majorana-type** mass — is incompatible with a gauged continuous $U(1)$ (fermion number), whereas a mass term linear in the field is compatible. The complex scalar realization of the phase symmetry in the gauge principle article has a linear mass term and keeps its $U(1)$ even when massive. The standard four-component Dirac equation has the linear mass term $m\psi$ and is gauge covariant under minimal coupling. The biquaternion equation, as written by the parent, has the **antilinear** mass term $m\tilde{\Psi}^\flat$, and it is this object that the phase cannot pass through.
-
-**What it is not.** The article does not declare the parent's equation defective. It records that, as written, the equation's mass term is antilinear, that the continuously gauged minimal coupling therefore applies to the massless sector, and that the massive sector is where the framework's gauge structure and the parent's mass term do not yet meet. Whether the parent's mass term is *intended* as a Majorana-type coupling, or whether it is the real-form expression of an ordinary linear Dirac mass whose $U(1)$ is realized differently on the spinor module, is not decided here; it is the gauge principle article's open question 5, and it is left open.
-
-**Candidate readings of the massive equation.** Two inequivalent readings are available, and they are not equivalent, so the article states both and chooses neither. (i) The biquaternion equation is a **Majorana-type** equation; then the charged minimal coupling is genuinely absent in the massive sector, and only the massless (Weyl) field carries electromagnetism. (ii) The parent's mass term is a **real-form encoding** of a linear Dirac mass, in which case the physical coupling is the standard one on the spinor module, where the mass term is linear and the minimal coupling is covariant; the antilinear algebra-level equation is then not the equation that carries the charge. The choice between these readings changes the conclusion about the charged massive field, and the framework as inherited does not decide between them; this article states both and leaves the decision open.
+<!-- EDITORIAL (2026-09-19): this section was titled "The Massive Case: The Mass Term Obstructs the Coupling" and proved that the minimally coupled massive equation is not form-invariant under a local phase, the antilinear mass term m Psi^flat acquiring the factor e^{2iq Gamma/hbar} and reducing the U(1) to a discrete Z_2. That proof was correct for the retired antilinear equation. With the parent's linear chiral pair the mass term acquires the same factor as the operator side, so the massive equation is gauge covariant and the reading taken above is the second of the two the article previously left open. The Majorana-type statement is retained, relocated to the real structure flat. Do not revert without re-deriving the mass term; see the .thinking file. -->
 
 ## The Interaction Current and the Maxwell Source
 
@@ -262,9 +258,11 @@ $$
 \left(i\hbar\gamma^\mu D_\mu - mc\right)\psi = 0, \qquad D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu ,
 $$
 
-**provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is $j^\mu = \bar{\psi}\gamma^\mu\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is the contrast: they are obtained with a **linear** mass term, whereas the biquaternion equation as written by the parent has an antilinear one.
+**provided the mass term is the linear Dirac mass** $m\psi$. With the linear mass the equation is gauge covariant in the standard way, the conserved current is $j^\mu = \bar{\psi}\gamma^\mu\psi$, and the standard consequences — the tree-level gyromagnetic factor $g = 2$, the correct non-relativistic limit, the magnetic moment — follow by the computations of the companion articles on the electron and on the solutions and non-relativistic limit. Those results are not repeated here; the point for this article is that they are obtained with a **linear** mass term, which is exactly the form the parent's biquaternion equation carries, so the transcription and the standard treatment agree on the massive sector as well as on the massless one.
+<!-- EDITORIAL (2026-09-19): the closing clause previously drew a contrast with the parent, said to have an antilinear mass term. The parent now carries the linear mass, so no contrast remains. -->
 
-The transcription carries the representation conventions that the parent Dirac article explicitly left open — the identification of the biquaternion units with the gamma matrices, the placement of the two chiralities in the algebra, and the role of the Dirac adjoint. This article does not fix them. What it fixes is the biquaternion form of the coupling itself: the covariant derivative $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting by left multiplication, the component operators $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$, and the coupled equation $D\tilde{\Psi} = m\tilde{\Psi}^\flat$.
+The transcription carries the representation conventions that the parent Dirac article explicitly left open — the identification of the biquaternion units with the gamma matrices, the placement of the two chiralities in the algebra, and the role of the Dirac adjoint. This article does not fix them. What it fixes is the biquaternion form of the coupling itself: the covariant derivative $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ acting by left multiplication, the component operators $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$, and the coupled equation $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$.
+<!-- EDITORIAL (2026-09-19): the coupled equation in the closing sentence was the antilinear $D\tilde{\Psi} = m\tilde{\Psi}^\flat$; it is now the linear chiral pair. -->
 
 ## What the Algebra Supplies and What It Only Transcribes
 
@@ -287,7 +285,8 @@ It is worth separating the two, because they are easily conflated.
 
 ## Open Questions
 
-1. **The massive sector.** Is the parent's antilinear mass term a Majorana-type coupling, in which case the continuously charged massive field is genuinely absent and only the massless sector carries electromagnetism? Or is it the real-form expression of a linear Dirac mass, in which case the physical coupling is the standard spinor-module one and the antilinear algebra-level equation is not the charged equation? The two readings are inequivalent and change the conclusion about the charged massive field.
+1. **The massive sector and the axial symmetry.** With the linear mass term the vector $U(1)$ survives and the massive sector is gauge covariant, so the minimal coupling derived here applies to it. What the mass breaks is the axial symmetry between the two central ideals. Can that symmetry be gauged, and does the framework's central-element structure supply anything analogous to the would-be Goldstone statement for the breaking? The former question — whether the parent's mass term is a Majorana-type coupling — is answered in its second branch by the linear mass term.
+<!-- EDITORIAL (2026-09-19): the former question 1 asked whether the parent's antilinear mass term was a Majorana-type coupling or a real-form Dirac mass. The parent's linear mass term answers it in the second branch; the axial symmetry replaces it as the open item. -->
 
 2. **The matter representation.** The gauge principle produces a left-action covariant derivative; a right-action mirror is equally covariant, and the mixed insertion is not. Which action — which spinor module — is the physical Dirac field in? What fixes it inside the algebra?
 
@@ -312,14 +311,16 @@ $$
 acting by left multiplication on the field. The coupled equation is
 
 $$
-D\tilde{\Psi} = m\tilde{\Psi}^\flat, \qquad \tilde{\nabla}\tilde{\Psi} + \frac{iq}{\hbar}\tilde{A}\tilde{\Psi} = m\tilde{\Psi}^\flat,
+D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R, \qquad \tilde{\nabla}\tilde{\Psi}_R + \frac{iq}{\hbar}\,\tilde{A}\,\tilde{\Psi}_R = m\,\tilde{\Psi}_L,
 $$
 
 with the interaction term $\frac{iq}{\hbar}\tilde{A}\tilde{\Psi}$ that the localized central phase forces, and the massless case $D\tilde{\Psi} = 0$.
 
-The **massless** coupled equation is exactly gauge covariant: with $\tilde{\Psi}' = e^{iq\Gamma/\hbar}\tilde{\Psi}$ and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D'\tilde{\Psi}' = \lambda D\tilde{\Psi}$, so $D\tilde{\Psi} = 0$ holds in every gauge when it holds in one. The **massive** coupled equation is not: the mass term is antilinear, $(\lambda\tilde{\Psi})^\flat = \lambda^{*}\tilde{\Psi}^\flat$, so the transformed mass term acquires the factor $e^{2iq\Gamma/\hbar}$ and the equation is form-invariant only for a constant phase with $\lambda = \pm 1$. The continuous $U(1)$ of the massless theory is broken to a discrete $\mathbb{Z}_2$ by the mass term. This is the biquaternion form of the statement that a Majorana-type mass term is incompatible with a gauged continuous $U(1)$; the standard linear Dirac mass does not have this obstruction, and on the spinor module the standard minimal coupling is recovered.
+The **massless** and the **massive** coupled equations are both exactly gauge covariant: with $\tilde{\Psi}' = e^{iq\Gamma/\hbar}\tilde{\Psi}$ and $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, one has $D'\tilde{\Psi}' = \lambda D\tilde{\Psi}$, and the parent's linear mass term acquires the same factor $\lambda$, so $D\tilde{\Psi}_R = m\tilde{\Psi}_L$ holds in every gauge when it holds in one. The continuous $U(1)$ of the massless theory survives the mass. The biquaternion form of the statement that a Majorana-type mass term — built on the antilinear real structure $\flat$ — is incompatible with a gauged continuous $U(1)$ is given in the companion articles on the neutrino and on chirality; the standard linear Dirac mass, which is the parent's form, does not have that obstruction, and on the spinor module the standard minimal coupling is recovered.
+<!-- EDITORIAL (2026-09-19): this passage previously reported the massive coupled equation as *not* gauge covariant, with the continuous U(1) broken to Z_2 by the antilinear mass term. That held only for the retired antilinear equation grad(Psi) = m Psi^flat. With the parent's linear chiral-pair mass term both cases are covariant, so the passage now records that; the Majorana-type incompatibility statement is relocated to the real structure flat and to the neutrino/chirality companions. Do not revert without re-deriving the mass term. -->
 
-The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is not conserved on solutions of the massless equation; the physical current is the spinor-module $j^\mu = \bar{\psi}\gamma^\mu\psi$, whose Dirac adjoint uses the Clifford-odd $\gamma^0$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the meaning of the massive sector.
+The interaction current is not a pure biquaternion product. The gauge-invariant, material-sector bilinear $i\tilde{\Psi}\tilde{\Psi}^\dagger$ is not conserved on solutions of the massless equation; the physical current is the spinor-module $j^\mu = \bar{\psi}\gamma^\mu\psi$, whose Dirac adjoint uses the Clifford-odd $\gamma^0$ outside $\mathbb{B}$. The pure-biquaternion form of the current, and the closure of the sourced system, are left as open questions, together with the choice of the left or right matter representation and the axial symmetry of the massive sector.
+<!-- EDITORIAL (2026-09-19): the final clause previously said "the meaning of the massive sector"; with the linear mass term the massive sector is gauge covariant, and the live question is the axial symmetry the mass breaks. -->
 
 ## Summary of Notation
 
@@ -334,17 +335,17 @@ The interaction current is not a pure biquaternion product. The gauge-invariant,
 | $\bar{\tilde{\nabla}} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Biquaternion Dirac field |
-| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$, $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$ | Anti-Hermitian conjugate of the field |
-| $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | Free biquaternion Dirac equation |
+| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$, $\tilde{\Psi}^\dagger = \bar{\tilde{\Psi}}^{\,*}$ | Anti-Hermitian conjugate of the field (the algebra's real structure; **not** the mass) |
+| $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Free biquaternion Dirac equation (massive chiral pair) |
 | $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase; $\Gamma$ real scalar |
 | $q$ | Charge (coupling constant), not fixed by the algebra |
 | $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ | Covariant derivative (left action) |
 | $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ | Components; $\partial_0 = \partial_{ict}$ |
-| $D\tilde{\Psi} = m\tilde{\Psi}^\flat$ | Minimally coupled Dirac equation |
+| $D\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | Minimally coupled Dirac equation |
 | $\frac{iq}{\hbar}\tilde{A}\tilde{\Psi}$ | Interaction term |
-| $e^{2iq\Gamma/\hbar}$ | Phase acquired by the mass term under a local phase |
+| $e^{2iq\Gamma/\hbar}$ | Phase that an antilinear (Majorana-type) mass term would acquire under a local phase; the linear mass term acquires $\lambda$ instead |
 | $\tilde{J} = i\tilde{\Psi}\tilde{\Psi}^\dagger$ | Naive bilinear; gauge invariant, in $\mathbb{M}_-$, **not conserved** |
 | $j^\mu = \bar{\psi}\gamma^\mu\psi$, $\bar{\psi} = \psi^\dagger\gamma^0$ | Spinor-module conserved current (involves the Clifford-odd $\gamma^0$) |
 | $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Maxwell source biquaternion |

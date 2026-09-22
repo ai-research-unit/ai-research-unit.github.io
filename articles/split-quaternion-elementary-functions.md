@@ -1,5 +1,5 @@
 
-# Split-Quaternion Elementary Functions
+# __Split-Quaternion Elementary Functions__
 
 ## Introduction
 

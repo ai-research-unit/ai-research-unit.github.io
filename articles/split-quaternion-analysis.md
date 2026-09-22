@@ -1,5 +1,5 @@
 
-# Split-Quaternion Analysis
+# __Split-Quaternion Analysis__
 
 ## Introduction
 

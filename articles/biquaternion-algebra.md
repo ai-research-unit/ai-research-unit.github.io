@@ -1,5 +1,5 @@
 
-# Biquaternion Algebra
+# __Biquaternion Algebra__
 
 ## Introduction
 

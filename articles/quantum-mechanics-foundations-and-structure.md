@@ -443,6 +443,32 @@ The standard formalism has ten structural requirements: a state space, a descrip
 
 The standard formalism has several open issues: the measurement problem, the axiomatic status of the Born rule, the non-uniqueness of quantization, the difficulty of quantum gravity, and the interpretation of the quantum state. These are the questions that motivate alternative frameworks, including the biquaternion reformulation.
 
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathcal{H}$ | Complex Hilbert space of the system |
+| $\rho$ | Density matrix (state): $\rho \geq 0$, $\mathrm{Tr}(\rho) = 1$ |
+| $\rho_\psi = \lvert\psi\rangle\langle\psi\rvert$ | Pure state; a rank-one projector, idempotent ($\rho_\psi^2 = \rho_\psi$) |
+| $\mathrm{Tr}$, $\mathrm{Tr}_B$ | Trace, and partial trace over subsystem $B$ |
+| $A$, $A^\dagger$ | Observable (self-adjoint operator) and its adjoint |
+| $[A,B] = AB - BA$ | Commutator; $A$ and $B$ are compatible if and only if $[A,B] = 0$ |
+| $a$, $P_a$ | Eigenvalue (measurement outcome) and its orthogonal projector |
+| $p(a) = \mathrm{Tr}(P_a \rho)$ | Born probability of outcome $a$ |
+| $\langle A\rangle_\rho = \mathrm{Tr}(A\rho)$ | Expectation value of $A$ in state $\rho$ |
+| $U(t,t_0)$ | Unitary evolution operator, $U(t_0,t_0) = I$ |
+| $H$ | Hamiltonian |
+| $\hbar$ | Reduced Planck constant |
+| $\lvert\psi\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
+| $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
+| $\mathbf{r}$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$ |
+| $S^2$, $B^3$ | Bloch sphere (pure states) and Bloch ball (all states) |
+| $\{E_i\}$ | POVM elements: $E_i \geq 0$, $\sum_i E_i = I$ |
+| $K_i$, $\Phi$ | Kraus operators and the channel $\Phi(\rho) = \sum_i K_i \rho K_i^\dagger$ |
+| $\mathcal{H}_A \otimes \mathcal{H}_B$ | Tensor-product space of a bipartite system |
+| $\rho_A = \mathrm{Tr}_B(\rho)$ | Reduced state of subsystem $A$ |
+| $\lvert\Phi^\pm\rangle$, $\lvert\Psi^\pm\rangle$ | Bell states of two qubits |
+
 ## Further Reading
 
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the foundational treatment.

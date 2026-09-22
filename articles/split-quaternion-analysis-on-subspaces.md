@@ -1,5 +1,5 @@
 
-# Split-Quaternion Analysis on Subspaces
+# __Split-Quaternion Analysis on Subspaces__
 
 ## Introduction
 

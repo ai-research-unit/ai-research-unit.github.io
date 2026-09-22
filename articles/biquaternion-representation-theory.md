@@ -49,7 +49,7 @@ A caution: for a non-commutative algebra the tensor product of two left modules 
 
 Let $V = \mathbb{C}^2$ be the simple module. A $\mathbb{B}$-module homomorphism, or intertwining operator, is a $\mathbb{C}$-linear map $T$ with $T(\tilde{Q}u) = \tilde{Q}T(u)$.
 
-**Schur's lemma.** $\operatorname{End}_{\mathbb{B}}(V) \cong \mathbb{C}$; if $V_1, V_2$ are non-isomorphic simple modules then $\operatorname{Hom}_{\mathbb{B}}(V_1, V_2) = 0$.
+**Schur's lemma.** $\operatorname{End}_{\mathbb{B}}(V) \cong \mathbb{C}$; if $V$ and $V'$ are non-isomorphic simple modules then $\operatorname{Hom}_{\mathbb{B}}(V, V') = 0$.
 
 **Proof.** The kernel and image of a module homomorphism are submodules; a nonzero endomorphism of the simple module $V$ has zero kernel and full image, hence is an isomorphism, and an operator commuting with all of $M_2(\mathbb{C})$ is a scalar matrix. $\square$
 
@@ -119,7 +119,7 @@ $$
 
 is surjective with kernel $\{\pm e_0\}$, so $SL(2,\mathbb{C})$ is the double cover of the proper orthochronous Lorentz group. Since $-e_0$ acts as $-\mathrm{id}$ on $V$, the defining two-dimensional representation does not descend to $SO^{+}(1,3)$. The unitary biquaternions $\tilde{Q}^{\dagger}\tilde{Q} = 1$ form $U(2)$, the maximal compact subgroup of $\mathbb{B}^{\times}$, and the unit quaternions form $SU(2) = SL(2,\mathbb{C}) \cap U(2)$, the maximal compact subgroup of $SL(2,\mathbb{C})$ and the double cover of $SO(3)$.
 
-**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $z \mapsto z^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $\lambda_1 - \lambda_2 \geq 0$.
+**Representations of the unit group.** As a reductive group, $GL_2(\mathbb{C})$ has finite-dimensional algebraic (rational) representations parameterised by highest weights $(\lambda_1, \lambda_2) \in \mathbb{Z}^2$ with $\lambda_1 \geq \lambda_2$; the irreducible one is $\operatorname{Sym}^{\lambda_1 - \lambda_2}(\mathbb{C}^2) \otimes (\det)^{\lambda_2}$, of dimension $\lambda_1 - \lambda_2 + 1$, with central character $z \mapsto z^{\lambda_1 + \lambda_2}$. Restriction to $SL(2,\mathbb{C})$ forgets the determinant twist, leaving the highest weight $2j = \lambda_1 - \lambda_2 \geq 0$, that is, the irreducible $V_j$ of the next section with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$.
 
 ## 6. Finite-Dimensional Representations of $SL(2,\mathbb{C})$
 
@@ -131,9 +131,9 @@ $$
 
 the two summands corresponding to the self-dual and anti-self-dual parts.
 
-Every finite-dimensional smooth complex representation of $G$ is completely reducible, and its irreducible summands are the outer tensor products $(m,n) = V_m \boxtimes V_n$ with $m, n \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, where $V_j$ denotes the $\mathfrak{sl}(2,\mathbb{C})$-module of highest weight $2j$; thus $\dim_{\mathbb{C}}(m,n) = (2m+1)(2n+1)$. The defining representation is $(\tfrac{1}{2}, 0)$ and its complex conjugate is $(0, \tfrac{1}{2})$.
+Every finite-dimensional smooth complex representation of $G$ is completely reducible, and its irreducible summands are the outer tensor products $(m,n) = V_m \boxtimes V_n$ with $m, n \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, where $V_j$ denotes the irreducible $\mathfrak{su}(2)$-module of dimension $2j+1$, equivalently the $\mathfrak{sl}(2,\mathbb{C})$-module $\operatorname{Sym}^{2j}(\mathbb{C}^2)$ of highest weight $2j$; thus $\dim_{\mathbb{C}}(m,n) = (2m+1)(2n+1)$. The defining representation is $(\tfrac{1}{2}, 0)$ and its complex conjugate is $(0, \tfrac{1}{2})$.
 
-**Polynomial representations.** Relative to a Cartan subalgebra spanned by $h = \operatorname{diag}(1,-1)$, the irreducible $\mathfrak{sl}(2,\mathbb{C})$-modules of highest weight $n \in \mathbb{Z}_{\geq 0}$ are $V_n \cong \operatorname{Sym}^n(\mathbb{C}^2)$, of dimension $n+1$. These are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) finite-dimensional representations of the complex group $G$: their matrix entries are polynomial functions of the entries of $g \in G$, and every finite-dimensional holomorphic representation of $G$ is a direct sum of the $V_n$, hence is parameterised by its highest weight $n \in \mathbb{Z}_{\geq 0}$. Not every continuous finite-dimensional representation is polynomial: the complex conjugates of the $V_n$ are antiholomorphic and belong to the $(0, n/2)$ family.
+**Polynomial representations.** Relative to a Cartan subalgebra spanned by $h = \operatorname{diag}(1,-1)$, the irreducible $\mathfrak{sl}(2,\mathbb{C})$-modules are the symmetric powers $V_j \cong \operatorname{Sym}^{2j}(\mathbb{C}^2)$, with spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$, highest weight $2j$ and dimension $2j+1$. These are exactly the **polynomial** (equivalently holomorphic, equivalently algebraic) finite-dimensional representations of the complex group $G$: their matrix entries are polynomial functions of the entries of $g \in G$, and every finite-dimensional holomorphic representation of $G$ is a direct sum of the $V_j$, hence is parameterised by its highest weight $2j$, that is, by its spin $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. Not every continuous finite-dimensional representation is polynomial: the complex conjugates of the $V_j$ are antiholomorphic and belong to the $(0, j)$ family.
 
 **The unitary trick.** Restriction to the maximal compact subgroup $SU(2)$ is an equivalence of categories
 
@@ -141,35 +141,35 @@ $$
 \left\{\text{f.d. polynomial representations of } SL(2,\mathbb{C})\right\} \simeq \left\{\text{f.d. unitary representations of } SU(2)\right\},
 $$
 
-so the finite-dimensional polynomial representations of $SL(2,\mathbb{C})$ are obtained from those of $SU(2)$ by complexifying the Lie algebra and exponentiating, and both are parameterised by the same highest weights $n \in \mathbb{Z}_{\geq 0}$. What complexification does not preserve is unitarity, a point taken up in Section 9.
+so the finite-dimensional polynomial representations of $SL(2,\mathbb{C})$ are obtained from those of $SU(2)$ by complexifying the Lie algebra and exponentiating, and both are parameterised by the same highest weights $2j$, $j \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}$. What complexification does not preserve is unitarity, a point taken up in Section 9.
 
 ## 7. The Defining Representation and the Weyl Spinors
 
-The defining representation of $SL(2,\mathbb{C})$ is $V_1 = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in Part I as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_1)$ is the $2 \times 2$ matrix representation. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_1 = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_1} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. Their direct sum is the **Dirac spinor**
+The defining representation of $SL(2,\mathbb{C})$ is $V_{1/2} = \mathbb{C}^2$, the polynomial representation of highest weight $1$. It is the same space that appears in Part I as the unique simple module of the algebra $\mathbb{B}$, and the isomorphism $\mathbb{B} \cong \operatorname{End}_{\mathbb{C}}(V_{1/2})$ is the $2 \times 2$ matrix representation. Under the Lorentz group the defining representation and its conjugate are the two **Weyl spinors**: $V_{1/2} = (\tfrac{1}{2}, 0)$ is the left-handed one and $\overline{V_{1/2}} = (0, \tfrac{1}{2})$ is the right-handed one; they are not isomorphic as complex representations, and parity exchanges them. Their direct sum is the **Dirac spinor**
 
 $$
-\Delta = V_1 \oplus \overline{V_1} = (\tfrac{1}{2},0) \oplus (0,\tfrac{1}{2}), \qquad \dim_{\mathbb{C}} \Delta = 4,
+\Delta = V_{1/2} \oplus \overline{V_{1/2}} = (\tfrac{1}{2},0) \oplus (0,\tfrac{1}{2}), \qquad \dim_{\mathbb{C}} \Delta = 4,
 $$
 
-and their tensor product is the **vector representation** $(\tfrac{1}{2}, \tfrac{1}{2}) = V_1 \otimes \overline{V_1}$, of complex dimension $4$, whose real form is the Lorentz action on the four-dimensional vector space. The adjoint representation of the Lorentz algebra is $(1,0) \oplus (0,1)$, of dimension $3 + 3$.
+and their tensor product is the **vector representation** $(\tfrac{1}{2}, \tfrac{1}{2}) = V_{1/2} \otimes \overline{V_{1/2}}$, of complex dimension $4$, whose real form is the Lorentz action on the four-dimensional vector space. The adjoint representation of the Lorentz algebra is $(1,0) \oplus (0,1)$, of dimension $3 + 3$.
 
-Two dualities must be distinguished. The defining module is **self-dual** as a representation of $SL(2,\mathbb{C})$: since $\det = 1$, the alternating form $\varepsilon(u,v) = u_1 v_2 - u_2 v_1$ is invariant and identifies $V_1^{*}$ with $V_1$, so $V_1^{*} \cong V_1$. The **conjugate** $\overline{V_1}$, by contrast, is not isomorphic to $V_1$; it is the other chirality. Finally, $-e_0$ acts as $-1$ on $V_1$, so the defining representation, and every $(m,n)$ with $m+n$ half-integral, is a genuine spin representation that does not descend to $SO^{+}(1,3)$.
+Two dualities must be distinguished. The defining module is **self-dual** as a representation of $SL(2,\mathbb{C})$: since $\det = 1$, the alternating form $\varepsilon(u,v) = u_1 v_2 - u_2 v_1$ is invariant and identifies $V_{1/2}^{*}$ with $V_{1/2}$, so $V_{1/2}^{*} \cong V_{1/2}$. The **conjugate** $\overline{V_{1/2}}$, by contrast, is not isomorphic to $V_{1/2}$; it is the other chirality. Finally, $-e_0$ acts as $-1$ on $V_{1/2}$, so the defining representation, and every $(m,n)$ with $m+n$ half-integral, is a genuine spin representation that does not descend to $SO^{+}(1,3)$.
 
 ## 8. Tensor Products and the Clebsch–Gordan Rule
 
 Group representations tensor with the diagonal action $g \cdot (v \otimes w) = (gv) \otimes (gw)$. For the polynomial representations of $SL(2,\mathbb{C})$ the Clebsch–Gordan rule is
 
 $$
-V_m \otimes V_n \cong \bigoplus_{k=0}^{\min(m,n)} V_{m+n-2k}, \qquad m, n \in \mathbb{Z}_{\geq 0}.
+V_j \otimes V_k \cong \bigoplus_{l=|j-k|}^{j+k} V_l, \qquad j, k \in \tfrac{1}{2}\mathbb{Z}_{\geq 0}.
 $$
 
 The tensor square of the spinor is the simplest nontrivial case:
 
 $$
-V_1 \otimes V_1 \cong \operatorname{Sym}^2 V_1 \oplus \Lambda^2 V_1 \cong V_2 \oplus V_0, \qquad \dim_{\mathbb{C}} V_2 = 3, \quad \dim_{\mathbb{C}} V_0 = 1.
+V_{1/2} \otimes V_{1/2} \cong \operatorname{Sym}^2 V_{1/2} \oplus \Lambda^2 V_{1/2} \cong V_1 \oplus V_0, \qquad \dim_{\mathbb{C}} V_1 = 3, \quad \dim_{\mathbb{C}} V_0 = 1.
 $$
 
-The summand $V_2$ is the **traceless symmetric part** and is the adjoint representation of $\mathfrak{sl}(2,\mathbb{C})$, that is, the complexification of the adjoint representation of the compact algebra $\mathfrak{su}(2) \cong \mathfrak{so}(3)$; concretely, $\operatorname{Sym}^2 V_1$ is the space of symmetric $2 \times 2$ matrices and $V_2$ the traceless subspace. The summand $V_0 = \Lambda^2 V_1 \cong \mathbb{C}$ is the **scalar**, spanned by the invariant alternating form $\varepsilon$. Thus the tensor square of the spinor splits as the complexified adjoint representation plus a scalar. This is the three-dimensional rotation algebra; the adjoint representation of the six-dimensional Lorentz algebra is instead $(1,0) \oplus (0,1)$.
+The summand $V_1$ is the **traceless symmetric part** and is the adjoint representation of $\mathfrak{sl}(2,\mathbb{C})$, that is, the complexification of the adjoint representation of the compact algebra $\mathfrak{su}(2) \cong \mathfrak{so}(3)$; concretely, $\operatorname{Sym}^2 V_{1/2}$ is the space of symmetric $2 \times 2$ matrices and $V_1$ the traceless subspace. The summand $V_0 = \Lambda^2 V_{1/2} \cong \mathbb{C}$ is the **scalar**, spanned by the invariant alternating form $\varepsilon$. Thus the tensor square of the spinor splits as the complexified adjoint representation plus a scalar. This is the three-dimensional rotation algebra; the adjoint representation of the six-dimensional Lorentz algebra is instead $(1,0) \oplus (0,1)$.
 
 For the two-parameter family the rule applies to each factor:
 
@@ -182,14 +182,14 @@ For example, $(\tfrac{1}{2},\tfrac{1}{2}) \otimes (\tfrac{1}{2},\tfrac{1}{2}) \c
 **Tensor powers of the defining representation.** Iterating the rule gives the complete decomposition of the $N$-fold tensor power of the spinor,
 
 $$
-V_1^{\otimes N} \cong \bigoplus_{k=0}^{\lfloor N/2 \rfloor} \left[ \binom{N}{k} - \binom{N}{k-1} \right] V_{N-2k}, \qquad \binom{N}{-1} = 0,
+V_{1/2}^{\otimes N} \cong \bigoplus_{k=0}^{\lfloor N/2 \rfloor} \left[ \binom{N}{k} - \binom{N}{k-1} \right] V_{N/2-k}, \qquad \binom{N}{-1} = 0,
 $$
 
-the multiplicity of $V_{N-2k}$ being the ballot (Catalan-triangle) number $\binom{N}{k} - \binom{N}{k-1}$. For example $V_1^{\otimes 2} \cong V_2 \oplus V_0$ and $V_1^{\otimes 3} \cong V_3 \oplus 2V_1$. Since every finite-dimensional polynomial representation is completely reducible, the **composition factors** of a tensor power are exactly its direct summands, with these multiplicities.
+the multiplicity of $V_{N/2-k}$ being the ballot (Catalan-triangle) number $\binom{N}{k} - \binom{N}{k-1}$. For example $V_{1/2}^{\otimes 2} \cong V_1 \oplus V_0$ and $V_{1/2}^{\otimes 3} \cong V_{3/2} \oplus 2V_{1/2}$. Since every finite-dimensional polynomial representation is completely reducible, the **composition factors** of a tensor power are exactly its direct summands, with these multiplicities.
 
 ## 9. Unitary Representations
 
-A representation $\rho$ on $W$ is **unitary** if $W$ carries an invariant positive-definite Hermitian form $\langle \cdot, \cdot \rangle$. On $V_1 = \mathbb{C}^2$ the standard form $\langle u,v \rangle = u_1^{*}v_1 + u_2^{*}v_2$ is invariant under $SU(2)$, so $V_1$ is unitary for the compact form $SU(2)$. It is **not** unitary for $SL(2,\mathbb{C})$: the non-compact one-parameter subgroups of boosts do not preserve it. More generally a non-compact simple Lie group has no nontrivial finite-dimensional unitary representation, since the image would lie in a compact group; hence only the trivial representation is finite-dimensional and unitary for $SL(2,\mathbb{C})$, and the defining representation is not unitarisable for the complex group. Unitarity of the compact form $SU(2)$, not of $SL(2,\mathbb{C})$, is what complexification preserves.
+A representation $\rho$ on $W$ is **unitary** if $W$ carries an invariant positive-definite Hermitian form $\langle \cdot, \cdot \rangle$. On $V_{1/2} = \mathbb{C}^2$ the standard form $\langle u,v \rangle = u_1^{*}v_1 + u_2^{*}v_2$ is invariant under $SU(2)$, so $V_{1/2}$ is unitary for the compact form $SU(2)$. It is **not** unitary for $SL(2,\mathbb{C})$: the non-compact one-parameter subgroups of boosts do not preserve it. More generally a non-compact simple Lie group has no nontrivial finite-dimensional unitary representation, since the image would lie in a compact group; hence only the trivial representation is finite-dimensional and unitary for $SL(2,\mathbb{C})$, and the defining representation is not unitarisable for the complex group. Unitarity of the compact form $SU(2)$, not of $SL(2,\mathbb{C})$, is what complexification preserves.
 
 **The principal series.** The infinite-dimensional unitary representations are built by induction. Let $P$ be the Borel subgroup of upper triangular matrices, with $P = MAN$,
 
@@ -205,7 +205,7 @@ $$
 
 realised on $L^2(G/P) = L^2(S^2)$, where $G/P \cong SU(2)/U(1) \cong S^2$. Each $\pi_{m,\nu}$ is unitary by construction; it is irreducible for generic parameters, and for $\nu \in \mathbb{R}$ it is tempered. The parameter $m$ is discrete and $\nu$ is continuous. The principal series is not the whole unitary dual: there are also the **complementary series**, for which the continuous parameter is purely imaginary and bounded rather than real, and the trivial representation. The finite-dimensional polynomial representations are not unitary for $SL(2,\mathbb{C})$, except for the trivial representation $V_0$; only their restrictions to $SU(2)$ are unitary.
 
-**Complexification of the unitary dual.** The unitary dual of the maximal compact subgroup $SU(2)$ is discrete, the family $\{V_n\}_{n \geq 0}$. Passing to the complexification $SL(2,\mathbb{C})$ replaces the discrete highest-weight parameter by a continuous complex parameter; the representations that remain unitary form the principal series, with parameter on the unitary axis, together with the complementary series on a bounded interval of the imaginary axis. In this sense the unitary dual of $SL(2,\mathbb{C})$ is the complexification of the unitary dual of $SU(2)$. The polynomial representations correspond to the dominant integral highest weights, the discrete points that were unitary for $SU(2)$; under complexification those points cease to be unitary except for the trivial representation.
+**Complexification of the unitary dual.** The unitary dual of the maximal compact subgroup $SU(2)$ is discrete, the family $\{V_j\}_{j \in \frac{1}{2}\mathbb{Z}_{\geq 0}}$. Passing to the complexification $SL(2,\mathbb{C})$ replaces the discrete highest-weight parameter by a continuous complex parameter; the representations that remain unitary form the principal series, with parameter on the unitary axis, together with the complementary series on a bounded interval of the imaginary axis. In this sense the unitary dual of $SL(2,\mathbb{C})$ is the complexification of the unitary dual of $SU(2)$. The polynomial representations correspond to the dominant integral highest weights, the discrete points that were unitary for $SU(2)$; under complexification those points cease to be unitary except for the trivial representation.
 
 ## Summary of Notation
 
@@ -216,7 +216,7 @@ realised on $L^2(G/P) = L^2(S^2)$, where $G/P \cong SU(2)/U(1) \cong S^2$. Each 
 | $\mathbb{B}^{\times} \cong GL_2(\mathbb{C})$ | Group of units |
 | $SL(2,\mathbb{C})$ | Unit-norm subgroup, double cover of $SO^{+}(1,3)$ |
 | $SU(2)$ | Maximal compact subgroup |
-| $V_n$ | Polynomial representation, highest weight $n$, dimension $n+1$ |
+| $V_j$ | Irreducible representation of spin $j$, highest weight $2j$, dimension $2j+1$ |
 | $(m,n)$ | Irreducible representation of the complexified Lorentz algebra |
 | $\operatorname{End}_{\mathbb{B}}(V) \cong \mathbb{C}$ | Intertwining operators, by Schur's lemma |
 | $\operatorname{Der}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C})$ | Inner derivations |

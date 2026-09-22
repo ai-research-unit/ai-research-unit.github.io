@@ -1,5 +1,5 @@
 
-# Biquaternion Analysis
+# __Biquaternion Analysis__
 
 ## Introduction
 

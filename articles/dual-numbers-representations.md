@@ -1,5 +1,5 @@
 
-# Dual Numbers Representations
+# __Dual Numbers Representations__
 
 ## Introduction
 

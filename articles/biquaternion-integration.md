@@ -1,5 +1,5 @@
 
-# Biquaternion Integration
+# __Biquaternion Integration__
 
 ## Introduction
 

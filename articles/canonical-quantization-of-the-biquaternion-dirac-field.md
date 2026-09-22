@@ -24,13 +24,14 @@ The article is organized as follows. The next section fixes the classical field 
 
 ## The Classical Field and Its Conjugate Momentum
 
-The biquaternion Dirac field of the companion article is the map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$ satisfying
+The biquaternion Dirac field of the companion article is the map $\tilde{\Psi}:\mathbb{R}^{1,3}\to\mathbb{B}$ satisfying the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^\flat,\qquad \tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger,
+\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L,\qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R,
 $$
 
-with massless limit $\tilde{\nabla}\tilde{\Psi}=0$. The companion solutions article works with its spinor-module representative, the four-component complex Dirac spinor $\psi$, on whose underlying two-component spinor module the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the equation is the standard Dirac equation
+with massless limit $\tilde{\nabla}\tilde{\Psi}=0$; here $\tilde{\Psi}=\tilde{\Psi}_L+\tilde{\Psi}_R$ carries one component per chirality.
+<!-- EDITORIAL (2026-09-19): the field equation was previously stated as the single antilinear equation grad(Psi) = m Psi^flat. It is now the parent's linear chiral pair; flat = -dagger is the algebra's real structure, not the mass. See the parent Dirac article's .thinking file. --> The companion solutions article works with its spinor-module representative, the four-component complex Dirac spinor $\psi$, on whose underlying two-component spinor module the algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts. There the equation is the standard Dirac equation
 
 $$
 (i\gamma^\mu\partial_\mu-m)\psi=0,
@@ -68,7 +69,8 @@ Equation $\chi\approx0$ is a **second-class constraint**: the Legendre transform
 
 ### The Biquaternion Reading and the Open Point
 
-Written on the spinor module, the Lagrangian and the canonical momentum are the standard ones. Written in the algebra, they are not yet fixed. The parent article's mass term $\tilde{\Psi}^\flat$ is, as that article states, a representation-dependent transcription of the spinor mass term, and its sign is convention-dependent. Consequently the $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates, and the trace or norm pairing of the algebra — is not determined by the algebra alone, and neither is the intrinsic conjugate momentum. Two inequivalent transcriptions are available: one may treat the operator field as $\mathbb{B}$-valued and pair it with the real part of the trace, or one may treat it as valued in the spinor module and quantize there. We adopt the second, which is the parent article's working setting, and we return to the first in the closing section on what is open. The reader should keep in mind that the mode structure below is the standard one; what is being tested here is whether the biquaternion framework naturally reproduces it.
+Written on the spinor module, the Lagrangian and the canonical momentum are the standard ones. Written in the algebra, they are not yet fixed. The parent article's mass term is the linear, chirality-off-diagonal coupling, whose spinor-module representative is the ordinary mass term $m\psi$; the anti-Hermitian conjugation $\flat=-\dagger$ is the algebra's real structure, not the mass. The $\mathbb{B}$-intrinsic Lagrangian — the real scalar built from $\tilde{\nabla}\tilde{\Psi}$, $\tilde{\Psi}$, their conjugates, and the trace or norm pairing of the algebra — is not determined by the algebra alone, and neither is the intrinsic conjugate momentum. Two inequivalent transcriptions are available: one may treat the operator field as $\mathbb{B}$-valued and pair it with the real part of the trace, or one may treat it as valued in the spinor module and quantize there. We adopt the second, which is the parent article's working setting, and we return to the first in the closing section on what is open. The reader should keep in mind that the mode structure below is the standard one; what is being tested here is whether the biquaternion framework naturally reproduces it.
+<!-- EDITORIAL (2026-09-19): this paragraph previously grounded the open intrinsic Lagrangian in "the parent article's mass term Psi^flat", called a representation-dependent transcription of the spinor mass term. The parent's mass is now the linear chiral coupling, and flat is the algebra's real structure rather than the mass, so the mass-term premise is dropped and the open point is stated directly. The conclusion — that the B-intrinsic Lagrangian and momentum are not fixed by the algebra alone — is unchanged. -->
 
 ## Equal-Time Anticommutation Relations
 
@@ -138,7 +140,8 @@ $$
 
 together define the operator-valued field. The **annihilation** operators $\hat a_r(\mathbf p)$ multiply the positive-frequency solutions, and the **creation** operators $\hat b_r^\dagger(\mathbf p)$ multiply the negative-frequency solutions. The attribution of a creation operator to the negative-frequency branch is the operator form of the reinterpretation of the Dirac sea: the modes of "negative frequency" are the antiparticles of positive energy.
 
-Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp(\tilde{k}\tilde{X})$; the two branches are the two roots of the single biquaternion mass-shell condition
+Two structural remarks belong here. First, $\hat{\psi}$ is **not Hermitian**, and it should not be: a complex Dirac field carries a conserved charge, and particle and antiparticle are distinct. Second, the expansion is written on the spinor module, following the parent article. In the algebra, each mode function is the module representative of a biquaternion plane wave $\tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{X}})\right)$; the two branches are the two roots of the single biquaternion mass-shell condition
+<!-- EDITORIAL (2026-09-19): the biquaternion plane wave was previously written with the retired ansatz exp(ktilde Xtilde), which belongs to the antilinear equation and its spacelike locus. The parent's plane waves are now the central-phase form exp(i Sc(ktilde Xbar)), used here. -->
 
 $$
 \tilde k\bar{\tilde k}=-\frac{m^2c^2}{\hbar^2},
@@ -363,7 +366,8 @@ Because the question addressed here is itself an open question of the framework,
 **Open in the biquaternion framework.**
 
 - **The intrinsic operator field.** Whether the quantized field should be $\mathbb{B}$-valued, $M_2(\mathbb{C})$-valued, or spinor-module-valued, and to what extent these give inequivalent quantizations.
-- **The intrinsic Lagrangian and momentum.** The companion article's mass term is representation-dependent, so the $\mathbb{B}$-intrinsic Lagrangian, its real-scalar pairing, and the conjugate momentum are not fixed by the algebra.
+- **The intrinsic Lagrangian and momentum.** The $\mathbb{B}$-intrinsic Lagrangian, its real-scalar pairing, and the conjugate momentum are not fixed by the algebra alone; the spinor-module transcription is the one adopted above.
+<!-- EDITORIAL (2026-09-19): this bullet previously read "The companion article's mass term is representation-dependent, so the B-intrinsic Lagrangian ... are not fixed by the algebra", grounding the open point in the retired antilinear mass term. With the linear chiral mass and flat as the real structure, the bullet states the open point without that premise. -->
 - **The biquaternion Fock space.** Whether it is the exterior algebra of the spinor-module solution space, or a construction native to $\mathbb{B}$; the planned companion article on the Fock space is the natural place to settle this.
 - **The grading.** The $\mathbb{Z}/2$ grading is supplied here on the mode algebra; embedding it in $\mathbb{B}$ itself, as the KMS article requires, is not done.
 - **The spin–statistics theorem.** Whether the framework derives spin–statistics or only transcribes it is left to the dedicated article.
@@ -406,7 +410,8 @@ The extension is a transcription of standard canonical quantization onto the par
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Classical biquaternion Dirac field |
-| $\tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate (parent mass-term form) |
+| $\tilde{\Psi}^\flat=-\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
+<!-- EDITORIAL (2026-09-19): this row previously read "Anti-Hermitian conjugate (parent mass-term form)". With the mass now the linear chiral pair, flat is the algebra's real structure and is no longer identified with the mass. -->
 | $\psi=(\psi_L,\psi_R)$, $\bar\psi=\psi^\dagger\gamma^0$ | Dirac spinor (spinor module) and its adjoint |
 | $\gamma^\mu$, $\gamma_5=i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |
 | $g=\mathrm{diag}(+1,-1,-1,-1)$ | Clifford metric of the $\gamma^\mu$; $g=-\eta$ |

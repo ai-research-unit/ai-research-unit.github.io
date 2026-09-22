@@ -208,7 +208,7 @@ $$
 
 The middle elements are pairwise incomparable; each covers $0$ and is covered by $\mathbb{B}$. Because the length of $\mathbb{B}$ as a left module over itself is $2$, every minimal left ideal is also a **maximal** left ideal: nothing lies strictly between it and $\mathbb{B}$. Right ideals admit the same description, with lines in the dual space and the rows as coordinate members.
 
-The parameter space deserves a caution. The projective space classifying the minimal one-sided ideals of $M_n(D)$ is $\mathbb{P}^{n-1}(D)$, over the **division ring** $D$ in the Wedderburn–Artin decomposition $M_n(D)$ — not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the part singled out by the real structure (Section 11).
+The parameter space deserves a caution. The projective space classifying the minimal one-sided ideals of $M_n(D)$ is $\mathbb{P}^{n-1}(D)$, over the **division ring** $D$ in the Wedderburn–Artin decomposition $M_n(D)$ — not over an arbitrary base field. Here $D = \mathbb{C}$ and $n = 2$, so the parameter space is $\mathbb{P}^1(\mathbb{C})$. In particular, regarding $\mathbb{B}$ as an $\mathbb{R}$-algebra does not replace this by $\mathbb{P}^1(\mathbb{R})$: the one-sided ideals are still parametrized by $\mathbb{P}^1(\mathbb{C})$. The real projective line appears only as the subfamily of kernels that the real structure preserves, not as a set of fixed minimal left ideals: Section 11 shows that no minimal left ideal is stable under coefficient conjugation.
 
 ## 10. The Radical
 
@@ -243,19 +243,35 @@ $$
 
 using $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{C} \oplus \mathbb{C}$. The algebra on the right is **not simple**: its two-sided ideals are $0$, the two summands, and the whole ring. So the real biquaternion algebra is **not absolutely simple**: simple over $\mathbb{R}$, but with a complexification that splits as a product of two simple algebras. This is the precise sense in which the real structure carries a richer two-sided ideal theory — not in the lattice of $\mathbb{B}$ itself, which is $\{0, \mathbb{B}\}$ in both views, but in the lattice produced by base change. In contrast, $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong \mathbb{B}$ is simple: it is the real biquaternion algebra, not $\mathbb{H}$, whose complexification splits.
 
-**(d) Real points of the projective line.** Complex conjugation $\tilde{Q} \mapsto \tilde{Q}^{*}$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{B}$ (it is $\mathbb{C}$-antilinear), so it permutes the left ideals; under the matrix isomorphism it acts as entrywise conjugation. On a minimal left ideal $L_W$ it acts by
+**(d) The action of complex conjugation on the lattice.** Complex conjugation $\tilde{Q} \mapsto \tilde{Q}^{*} = \sum_\mu \bar{Q}_\mu e_\mu$ is an $\mathbb{R}$-algebra automorphism of $\mathbb{B}$ (it is $\mathbb{C}$-antilinear), so it permutes the left ideals, $\sigma(\mathbb{B}\tilde{\chi}) = \mathbb{B}\sigma(\tilde{\chi})$. Since $\sigma(p) = q$ and $\sigma(q) = p$, it **interchanges the two columns**:
 
 $$
-L_W^{*} = L_{\overline{W}},
+\sigma(\mathbb{B}p) = \mathbb{B}q, \qquad \sigma(\mathbb{B}q) = \mathbb{B}p.
 $$
 
-where $\overline{W}$ is the complex-conjugate line. Hence $L_W$ is fixed by the real structure if and only if $W = \overline{W}$, i.e., if and only if $W$ is a **real line**. The $\mathbb{C}$-lines fixed by conjugation form the real projective line
+It does **not** act as entrywise conjugation of the matrix. With $\varphi(\tilde{Q}) = M = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ under the isomorphism of Section 5, coefficient conjugation is
 
 $$
-\mathbb{P}^1(\mathbb{R}) \subset \mathbb{P}^1(\mathbb{C}).
+\varphi(\tilde{Q}^{*}) = \begin{pmatrix} \bar{d} & -\bar{c} \\ -\bar{b} & \bar{a} \end{pmatrix} = J\,\overline{M}\,J^{-1}, \qquad J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix} = \varphi(-e_2),
 $$
 
-So although the lattice of left ideals is unchanged from $\mathbb{C}$ to $\mathbb{R}$, the real structure marks out the subfamily $\mathbb{P}^1(\mathbb{R})$ of conjugation-stable minimal left ideals inside $\mathbb{P}^1(\mathbb{C})$.
+whereas entrywise conjugation fixes $E_{11} = p$ and would leave $\mathbb{B}p$ invariant. The two differ already on $e_1$: $\varphi(e_1) = -i\sigma_1$ is fixed by $\sigma$, but entrywise conjugation carries it to $+i\sigma_1$.
+
+On a minimal left ideal $L_W$ the action is
+
+$$
+\sigma(L_W) = L_{W^{\perp}},
+$$
+
+where $W^{\perp}$ is the **Hermitian-orthogonal complement** of $W$ in $\mathbb{C}^2$: if $W = \operatorname{span}(w_1, w_2)$, then $W^{\perp} = \operatorname{span}(\bar{w}_2, -\bar{w}_1)$. In the affine coordinate $t = w_2/w_1$ the induced map on $\mathbb{P}^1(\mathbb{C})$ is $t \mapsto -1/\bar{t}$, whose fixed-point equation $t = -1/\bar{t}$ reads $|t|^2 = -1$ and has no solution. So **no minimal left ideal is stable under complex conjugation**: the involution $W \mapsto W^{\perp}$ is fixed-point-free and pairs the two columns, which is the algebraic form of the statement, used elsewhere in the series, that coefficient conjugation exchanges the defining module $S$ and its conjugate $\bar{S}$.
+
+The **real lines** $W = \overline{W}$ still form the real projective line
+
+$$
+\mathbb{P}^1(\mathbb{R}) \subset \mathbb{P}^1(\mathbb{C}),
+$$
+
+and $\sigma$ preserves this subfamily — the Hermitian orthogonal of a real line is again real — acting on it as the antipodal map $W \mapsto W^{\perp}$. So although the lattice of left ideals is unchanged from $\mathbb{C}$ to $\mathbb{R}$, the real structure does not mark out conjugation-stable minimal left ideals; what it marks out is the subfamily $\mathbb{P}^1(\mathbb{R})$ of kernels that it preserves, on which it acts without fixed points.
 
 ## 12. Summary
 
@@ -266,7 +282,7 @@ So although the lattice of left ideals is unchanged from $\mathbb{C}$ to $\mathb
 | Two-sided ideals | $0$, $\mathbb{B}$ (simple) | $0$, $\mathbb{B}$ (simple) |
 | Central simple? | yes, center $\mathbb{C}$ | no, center $\mathbb{C} \neq \mathbb{R}$ |
 | Left ideals | $0$, the $\mathbb{P}^1(\mathbb{C})$ of minimal ones, $\mathbb{B}$ | same lattice |
-| Minimal left ideals | columns, all $\cong \mathbb{C}^2$ | same, with $\mathbb{P}^1(\mathbb{R})$ marked |
+| Minimal left ideals | columns, all $\cong \mathbb{C}^2$ | same; $\sigma$ pairs $L_W \leftrightarrow L_{W^{\perp}}$, none stable |
 | Minimal right ideals | rows, all $\cong (\mathbb{C}^2)^{*}$ | same |
 | Jacobson radical | $0$ | $0$ |
 | Length as module over itself | $2$ | $2$ |

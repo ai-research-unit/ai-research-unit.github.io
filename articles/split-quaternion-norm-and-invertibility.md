@@ -1,5 +1,5 @@
 
-# Split-Quaternion Norm and Invertibility
+# __Split-Quaternion Norm and Invertibility__
 
 ## Introduction
 
@@ -409,6 +409,26 @@ Of the four fixed-point subspaces:
 - $\mathbb{M}_+$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 - $\mathbb{M}_-$ is positive-definite of signature $(4, 0)$: it contains no zero divisors and every nonzero element of it is invertible.
 
+## Summary
+
+The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split quaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the norm form.
+
+The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. It does not define a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
+
+The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero. In the idempotent basis, this is equivalent to both idempotent components being nonzero:
+
+$$
+\tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
+$$
+
+This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
+
+The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
+
+The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
+
+The zero divisors themselves are studied in the article on split quaternion zero divisors, and the roots of $-1$ are studied in the article on split quaternion roots of minus one.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -432,26 +452,6 @@ Of the four fixed-point subspaces:
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |
 | $\mathbb{M}_+$ | Hermitian subspace |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace |
-
-## Summary
-
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$ is a split complex-valued multiplicative quadratic form on the split quaternion algebra. It is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. In the idempotent basis, it is the pair of ordinary quaternion norms of the two idempotent components, which is the cleanest form of the norm form.
-
-The scalar part of the Hermitian form $\tilde{Q} \tilde{Q}^\dagger$ is a real indefinite quadratic form of signature $(4, 4)$; the product itself need not be real. It does not define a Euclidean norm. The Euclidean norm is defined separately and is positive-definite but not multiplicative.
-
-The invertibility criterion is: $\tilde{Q}$ is invertible if and only if $N(\tilde{Q})$ is invertible in $\mathbb{D}$, equivalently if and only if both of its idempotent components are nonzero. In the idempotent basis, this is equivalent to both idempotent components being nonzero:
-
-$$
-\tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
-$$
-
-This is a linear condition in the idempotent basis, in contrast to the quadratic condition in the biquaternion case.
-
-The inverse is $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$. The group of units $\mathbb{H}_{\mathbb{D}}^\times$ is isomorphic to $\mathbb{H}^\times \times \mathbb{H}^\times$, and it is connected.
-
-The algebra $\mathbb{H}_{\mathbb{D}}$ is partitioned into three classes: the zero element, the invertible elements, and the zero divisors. Of the four fixed-point subspaces, the quaternion subspace is a division algebra, the split complex subspace contains zero divisors inherited from $\mathbb{D}$, and the Hermitian and anti-Hermitian subspaces are positive-definite and contain no zero divisors.
-
-The zero divisors themselves are studied in the article on split quaternion zero divisors, and the roots of $-1$ are studied in the article on split quaternion roots of minus one.
 
 ## Further Reading
 

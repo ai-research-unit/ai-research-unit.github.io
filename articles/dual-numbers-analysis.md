@@ -1,5 +1,5 @@
 
-# Dual Numbers Analysis
+# __Dual Numbers Analysis__
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-# Quaternion Algebra
+# __Quaternion Algebra__
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-# Dual Numbers Harmonic Analysis
+# __Dual Numbers Harmonic Analysis__
 
 ## Introduction
 

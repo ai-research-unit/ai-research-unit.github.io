@@ -1,5 +1,5 @@
 
-# Split-Quaternion Discrete Harmonic Analysis
+# __Split-Quaternion Discrete Harmonic Analysis__
 
 ## Introduction
 

@@ -66,6 +66,27 @@ $$
 
 The **real part** of $N(d\tilde{Q}) = \sum_\mu (dQ_\mu)^2$ reproduces the Lorentzian interval on the material sector. The minus sign in the time–time component arises algebraically from $i^2 = -1$ in the imaginary time coordinate $ict$, not from an independently postulated metric signature. The **imaginary part** couples the material and informational sectors through cross terms.
 
+### Where the Minus Comes From
+
+The same norm form is read two ways, and keeping them apart prevents a recurring confusion. They are worth stating plainly here, at the start.
+
+**The algebra's own form.** The biquaternion universe is a $\mathbb{C}$-universe over the quaternions, and its coefficients $Q_\mu$ are complex. Read as a metric on $\mathbb{C}$, the norm form is the identity,
+
+$$
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_{\mu=0}^{3} Q_\mu^2, \qquad \mathrm{diag}(+1,+1,+1,+1),
+$$
+
+with every entry positive and the four directions of $\mathbb{B}$ on an equal footing. There is no minus sign in the form itself, and none is needed. It is a *complex* bilinear form, and that is exactly what makes this possible: a complex coefficient can carry the sign, so no direction has to be singled out by the metric in advance.
+
+**The real sectors.** A minus appears only when a *real* coordinate is placed on a direction whose coefficient carries a factor of $i$. The two four-dimensional real sectors are exactly such choices, and they read off the same form differently:
+
+| Sector | Basis | $N$ on the basis | Signature |
+|---|---|---|---|
+| $\mathbb{M}_-$ (material) | $ie_0,\ e_1,\ e_2,\ e_3$ | $-1,+1,+1,+1$ | $(-,+,+,+)$ |
+| $\mathbb{M}_+$ (informational) | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $+1,-1,-1,-1$ | $(+,-,-,-)$ |
+
+Multiplying by $i$ exchanges the two sectors, $i\mathbb{M}_+ = \mathbb{M}_-$, and reverses the sign of the form, $N(i\tilde{Q}) = -N(\tilde{Q})$; that is the algebraic content of the mirror relation between the two signatures. The Minkowski signature is therefore not an independent input of the theory. It is what the algebra's own form looks like once the time coordinate is written $ict$ — the same norm form, read on the material sector, with $i^2 = -1$ supplying the minus.
+
 ## What the Framework Achieves
 
 The main result of the framework so far is that the biquaternion algebra **contains, as a matter of algebra, the structures required for both relativity and quantum mechanics**. They are not incompatible sectors of physics that must be glued together; they are two aspects of the same algebra, appearing in its two complementary subspaces.
@@ -136,6 +157,7 @@ The framework is offered as a structural intuition: that the two natural subspac
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | Biquaternionic coordinate |
+| $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; the identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$, signature $(-,+,+,+)$ on the real material sector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): coordinates $(ict, x, y, z)$ |
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): coordinates $(ct', ix', iy', iz')$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace (home of the rotation rotors) |

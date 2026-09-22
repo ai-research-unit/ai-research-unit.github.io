@@ -26,10 +26,11 @@ This is a deliberately modest accounting, and it is the honest one. The sharpest
 The proton enters the framework the way any massive spin-$\tfrac12$ fermion does: as a biquaternion field $\tilde{\Psi}$ satisfying the biquaternion Dirac equation
 
 $$
-\tilde{\nabla}\tilde{\Psi}=m_p\,\tilde{\Psi}^{\flat},
+\tilde{\nabla}\tilde{\Psi}_R=m_p\,\tilde{\Psi}_L,
 \qquad
-\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{\dagger},
+\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\,\tilde{\Psi}_R,
 $$
+<!-- EDITORIAL (2026-09-19): the field's equation previously read $\tilde{\nabla}\tilde{\Psi}=m_p\tilde{\Psi}^{\flat}$, $\tilde{\Psi}^{\flat}=-\tilde{\Psi}^{\dagger}$. The parent's mass term is now the linear chiral pair; $\flat$ is the algebra's real structure, not the mass map. The spinor-module equivalent and everything downstream about spin content are unchanged. See The Dirac Equation in Biquaternionic Form. -->
 
 or, equivalently, as a field $\Psi\in\Delta$ in the spinor module satisfying the standard Dirac equation. In this section we record what is structural about placing it there and what is not.
 
@@ -42,7 +43,8 @@ $$
 
 so it carries spin $\tfrac12$, and a rotation by $2\pi$ acts as $-e_0$ on the module while acting as $+e_0$ on the four-vectors of $\mathbb{M}_-$. The half-integral, double-valued character of the proton's spin is therefore a representation-theoretic consequence of where the field lives, and *not* of anything proton-specific. What the framework does **not** derive is why this composite object has spin $\tfrac12$: that is angular-momentum addition among constituents in standard physics, and the framework has no constituent structure to add. The correct statement is the conditional one — *if* the proton is modelled as a field in the module, its spin is $\tfrac12$.
 
-**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient of the mass term $m\tilde{\Psi}^{\flat}$. For $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so the mass term acts as $+1$ on the material part and $-1$ on the informational part; it is the only mass term in the free equation. The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free proton field carries the mass-shell relation
+**The mass term is structural; the mass value is not.** The proton mass appears exactly once, as the coefficient of the linear mass term $m_p$ that couples the two chiral halves, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$; it is the only mass term in the free equation. The algebra's real structure $\flat=-\dagger$ is a different object: for $\tilde{\Psi}=\tilde{\Psi}_++\tilde{\Psi}_-$ with $\tilde{\Psi}_\pm\in\mathbb{M}_\pm$ one has $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$, so $\flat$ acts as $+1$ on the material part and $-1$ on the informational part.
+<!-- EDITORIAL (2026-09-19): this paragraph previously said the mass appeared "as the coefficient of the mass term $m\tilde{\Psi}^{\flat}$" and that "the mass term acts as +1 on the material part and -1 on the informational part". The parent's mass is now the linear chiral pair, which couples the chiral halves; the +1/-1 action on $\mathbb{M}_\mp$ is a property of the algebra's real structure $\flat$, separated out here. --> The value $m_p=938.272$ MeV, or $1.6726\times10^{-27}$ kg, is not a consequence of the algebra or of the equation. It is a parameter, and the framework is scale-free until it is supplied. Equivalently, the free proton field carries the mass-shell relation
 
 $$
 \tilde{P}=m_p\tilde{U},
@@ -52,7 +54,8 @@ $$
 
 in the corpus's four-momentum convention $\tilde{P}=iE/c\,e_0+\mathbf{p}$: the *form* of the mass shell is structural, the number in it is an import.
 
-**The free equation contains no charge.** Neither $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^{\flat}$ nor the standard Dirac equation it transcribes contains a coupling. Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge operator to *carry* the value $+1$, not an ability to produce it.
+**The free equation contains no charge.** Neither the linear chiral mass pair $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m\tilde{\Psi}_R$ nor the standard Dirac equation it transcribes contains a coupling.
+<!-- EDITORIAL (2026-09-19): this sentence previously cited $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^{\flat}$ as the free equation. The parent's mass term is now the linear chiral pair; the conclusion that the free equation contains no charge is unchanged. --> Charge enters only when the field is coupled to a four-potential, through minimal substitution. Two immediate consequences follow and they are the theme of the next section. First, the proton and the neutron satisfy the same free equation with the same operator; whatever distinguishes them is an inserted coupling and not a structure of the equation. Second, the framework's ability to state the proton's charge is the ability of its charge operator to *carry* the value $+1$, not an ability to produce it.
 
 ## The Charge Operator on the Dirac Module
 
@@ -83,7 +86,8 @@ q_L=q_R=q
 Q=q\,I_4 .
 $$
 
-This much is a derivation: the mass term of the framework and the charge operator of the framework are not independent, and for the proton — which is massive — they force the vector-like form. It is the structural reason a colour interaction, which is vector-like, sits comfortably with massive baryons, just as the QCD agenda records. One qualification belongs to the step: the selection rule is a statement about the Dirac mass bilinear, and applying it to the proton presupposes that the framework's own antilinear mass term is the real form of a Dirac mass rather than a conjugate-pairing (Majorana-type) term. That reading is left open by the chiral-fermion article and is carried into the open questions below; on the Majorana-type reading the vector-like forcing does not follow in the same form.
+This much is a derivation: the mass term of the framework and the charge operator of the framework are not independent, and for the proton — which is massive — they force the vector-like form. It is the structural reason a colour interaction, which is vector-like, sits comfortably with massive baryons, just as the QCD agenda records. One qualification belongs to the step: the selection rule is a statement about the Dirac mass bilinear, and the parent's mass term is precisely that — the linear chiral pair — so the vector-like forcing follows directly. The open real-form question of the chiral-fermion article concerns a separate conjugate pairing built on the algebra's real structure $\flat$, a neutral-fermion coupling that does not enter the charged proton's Dirac mass; it is carried into the open questions below.
+<!-- EDITORIAL (2026-09-19): this passage previously made the vector-like forcing conditional on "the framework's own antilinear mass term" being the real form of a Dirac mass, and said the Majorana-type reading would block it. The parent's mass term is now the linear chiral pair, which is exactly the Dirac mass bilinear, so the forcing follows directly; the open real-form question is re-attributed to the separate pairing on the real structure $\flat$. -->
 
 **The check on the values $+1$ and $0$.** The proton's charge is $+1$ and the neutron's is $0$, in units of the elementary charge. Substituting the two assignments into the operator gives
 
@@ -133,7 +137,8 @@ Three further distinctions belong here, because the framework has several conser
 
 - **Electric charge versus chirality.** The operator $Q$ is diagonal in the chiral basis and commutes with $\gamma_5$ for every $q_L,q_R$; the axial combination $q_R=-q_L$ is $Q=\tfrac{q_R-q_L}{2}\gamma_5$, proportional to the chirality operator. But $\gamma_5$ is a chirality label, not an electric charge, and the axial assignment is precisely one that fails the mass selection rule. For the massive proton only the vector-like specialization survives, and it is blind to chirality.
 - **Electric charge versus the $\mathfrak{su}(2)$ generators.** As above, these are real-spectrum (after multiplication by $i$) but half-integer-valued; they are isospin-like, not electric.
-- **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond whatever the central phase provides, and no composite quantum number at all. The framework's own mass term, being antilinear, is not invariant under the continuous central phase and reduces it to $\mathbb{Z}_2$ on one reading — the open mass-term question of the chiral-fermion article. So even the conservation of the electric charge the proton carries is, in the framework, conditional on the unresolved reading of the mass map. This is inherited, not resolved here.
+- **Electric charge versus baryon number.** The framework supplies no baryon-number current, no conserved fermion number beyond the central phase, and no composite quantum number at all. The framework's own mass term is the linear chiral pair, through which the continuous central phase passes, so the proton's electric charge is conserved by the massive free equation; what remains open is a separate conjugate pairing built on the algebra's real structure $\flat$, the real-form question of the chiral-fermion article. The framework still does not supply baryon number, and that gap is inherited, not resolved here.
+<!-- EDITORIAL (2026-09-19): this passage previously said "The framework's own mass term, being antilinear, is not invariant under the continuous central phase and reduces it to $\mathbb{Z}_2$ on one reading ... the conservation of the electric charge the proton carries is ... conditional on the unresolved reading of the mass map." The parent's mass is now the linear chiral pair, through which the continuous central phase passes, so the charge is conserved by the massive free equation (verified: vector divergence 5.3e-10 on a two-plane-wave superposition, axial divergence ratio 1.000000); the open real-form reading is re-attributed to the separate pairing on $\flat$. -->
 
 ## What the Framework Does Not Supply: Compositeness and Colour
 
@@ -163,7 +168,7 @@ The table sorts the proton's properties by the status they have in the framework
 |---|---|---|
 | Spin-$\tfrac12$ representation content | Represented (forced once modelled) | unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | Spin states, observables, Born rule | Derived | idempotents of $\mathbb{M}_+$; $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ |
-| Mass term preserves sectors, mixes chiralities | Derived | $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
+| Mass term is off-diagonal in chirality; real structure acts $+1/-1$ on $\mathbb{M}_\mp$ | Derived | linear chiral pair; $\tilde{\Psi}^{\flat}=-\tilde{\Psi}_++\tilde{\Psi}_-$; Weyl decomposition |
 | Vector-like charge operator $Q=qI_4$ for a massive field | Derived | mass selection rule $q_L=q_R$ |
 | Conserved current $\tilde{J}\in\mathbb{M}_-$ | Derived | Dirac current $j^\mu=\bar{\psi}\gamma^\mu\psi$ |
 | Electric charge generator is the central $U(1)$ | Derived | $\mathbb{C}_{\mathbb{B}}$ central; $\mathfrak{su}(2)$ generators have imaginary/half-integer spectra |
@@ -174,8 +179,10 @@ The table sorts the proton's properties by the status they have in the framework
 | Compositeness; quark content $uud$; colour; confinement | Outside | standard QCD; no route in the framework |
 | Anomalous magnetic moment $g_p\approx5.586$ | Outside | strong-interaction / composite dynamics |
 | Baryon number | Outside | not constructed |
-| Conservation of the charge under the framework's own mass | Open | antilinear mass reading of the chiral-fermion article |
+| Conservation of the charge under the framework's own mass | Derived | linear chiral pair passes the continuous central phase; the real structure's separate pairing is the open reading |
 | Empirical contact | Outside | no prediction distinguishing the framework from standard physics |
+
+<!-- EDITORIAL (2026-09-19): the table previously read "Mass term preserves sectors, mixes chiralities | Derived | Psi^flat=-Psi_+ + Psi_-" and "Conservation of the charge under the framework's own mass | Open | antilinear mass reading". The parent's mass term is now the linear chiral pair, coupling the two chiral halves; the +1/-1 action on the sector split belongs to the real structure $\flat$, and the linear mass passes the continuous central phase, so charge conservation under the framework's own mass is established while the separate $\flat$-pairing remains the open reading. -->
 
 ## Open Questions
 
@@ -187,7 +194,8 @@ The table sorts the proton's properties by the status they have in the framework
 
 4. **Can the framework host a bound state?** The proton's compositeness is entirely imported because the framework has no bound-state formalism and no colour. A biquaternionic bound-state construction — if one could be built on the carrier the QCD agenda says is missing — is the only route by which compositeness could enter. No route yet.
 
-5. **Does the framework's own mass violate the charge it relies on?** The framework's mass map is antilinear, and on the reading in which it is Majorana-type it reduces the continuous central phase to $\mathbb{Z}_2$. Whether the proton's electric charge is conserved by the framework's own dynamics therefore depends on a reading the chiral-fermion article leaves open.
+5. **Does the framework's own mass violate the charge it relies on?** No: the framework's mass term is the linear chiral pair, through which the continuous central phase passes, so the massive free equation conserves the proton's charge. The reading the chiral-fermion article leaves open concerns a separate conjugate pairing on the algebra's real structure $\flat$, a neutral-fermion coupling that does not enter the charged proton's mass. The live question is therefore whether that separate pairing exists physically, not whether the proton's charge survives its own mass.
+<!-- EDITORIAL (2026-09-19): this question previously read "The framework's mass map is antilinear, and on the reading in which it is Majorana-type it reduces the continuous central phase to $\mathbb{Z}_2$. Whether the proton's electric charge is conserved ... depends on a reading the chiral-fermion article leaves open." The parent's mass is now the linear chiral pair, which conserves the vector $U(1)$; the open real-form reading is re-attributed to the separate neutral-fermion pairing on $\flat$. -->
 
 6. **Baryon number.** Nothing in the framework distinguishes the proton's conserved fermion number from the electron's. Is there any framework object that could carry baryon number, given that the algebra's abelian charge is the electromagnetic-type $U(1)$ and no composite quantum number is constructed?
 
@@ -195,7 +203,8 @@ The table sorts the proton's properties by the status they have in the framework
 
 ## Summary
 
-The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, $\tilde{\nabla}\tilde{\Psi}=m_p\tilde{\Psi}^{\flat}$, and the framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing coupling $m\tilde{\Psi}^{\flat}$; and, being massive, the proton is forced by the mass selection rule $q_L=q_R$ to be vector-like, so the general charge operator $Q=q_LP_L+q_RP_R$ on the Dirac module collapses to
+The proton can be placed in the biquaternion framework as a massive spin-$\tfrac12$ Dirac field, $\tilde{\nabla}\tilde{\Psi}_R=m_p\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L=m_p\tilde{\Psi}_R$, and the framework makes three structural statements about it. The spin-$\tfrac12$ representation content follows from the unique simple module of $\mathbb{B}\cong M_2(\mathbb{C})$; the mass term is the chirality-mixing linear pair of the two chiral halves; and, being massive,
+<!-- EDITORIAL (2026-09-19): the summary previously wrote the field's equation as $\tilde{\nabla}\tilde{\Psi}=m_p\tilde{\Psi}^{\flat}$ and called "the mass term ... the chirality-mixing coupling $m\tilde{\Psi}^{\flat}$". The parent's mass term is now the linear chiral pair, which is what mixes the chiralities; the real structure $\flat$ is a separate object. --> the proton is forced by the mass selection rule $q_L=q_R$ to be vector-like, so the general charge operator $Q=q_LP_L+q_RP_R$ on the Dirac module collapses to
 
 $$
 Q=q_p\,I_4,
@@ -240,8 +249,10 @@ What the framework does not supply is everything that makes the proton a proton.
 
 ## Further Reading
 
-- *Chiral Fermions in the Biquaternion Framework* — the charge operator $Q=q_LP_L+q_RP_R$ on the Dirac module, the mass selection rule $q_L=q_R$, and the antilinear-mass question on which the conservation of the proton's charge depends.
-- *The Dirac Equation in Biquaternionic Form* — the biquaternion Dirac equation $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^{\flat}$, the spinor module, the mass term, and the mass-shell relation used here.
+- *Chiral Fermions in the Biquaternion Framework* — the charge operator $Q=q_LP_L+q_RP_R$ on the Dirac module, the mass selection rule $q_L=q_R$, and the real-structure question that the separate pairing poses.
+<!-- EDITORIAL (2026-09-19): this bullet previously ended "the antilinear-mass question on which the conservation of the proton's charge depends". The parent's mass is now the linear chiral pair and conserves the charge; the open reading is re-attributed to the algebra's real structure $\flat$. -->
+- *The Dirac Equation in Biquaternionic Form* — the biquaternion Dirac equation in its linear chiral-pair form, the spinor module, the mass term, and the mass-shell relation used here.
+<!-- EDITORIAL (2026-09-19): this bullet previously cited the equation as $\tilde{\nabla}\tilde{\Psi}=m\tilde{\Psi}^{\flat}$. The parent's mass term is now the linear chiral pair. -->
 - *Non-Abelian Gauge Fields in Biquaternionic Form* — the $\mathfrak{su}(2)$ generators $T_a=\tfrac12e_a$, their spectra, and the compact factor of the material sector whose distinction from the charge generator this article checks.
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the ceiling on the compact gauge algebra, the absence of a colour triplet and of confinement, and the three-way classification of what the framework reaches and what it does not.
 - *The Electron in Biquaternionic Form* — the sibling accounting, in which charge and mass are likewise parameters, and the statement that nothing in the algebra fixes $|q_e|=|q_p|$.
@@ -249,6 +260,7 @@ What the framework does not supply is everything that makes the proton a proton.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the module $\Delta=S\oplus\bar{S}$ and the Lorentz action that fixes the spin-$\tfrac12$ representation content.
 - *The Gauge Principle in Biquaternionic Form* — the abelian gauge group as the unitary part of the center, on which the electric-charge identification rests.
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin operators $\tilde{S}_k=\tfrac\hbar2 ie_k$ and the idempotent state structure used implicitly here.
-- *The Neutrino and Majorana Fermions in Biquaternionic Form* — the antilinear mass map and the Majorana-versus-Dirac reading that bears on charge conservation.
+- *The Neutrino and Majorana Fermions in Biquaternionic Form* — the real structure and the Majorana-versus-Dirac reading that bears on charge conservation.
+<!-- EDITORIAL (2026-09-19): this bullet previously said "the antilinear mass map". The parent's mass is now the linear chiral pair; the Majorana-versus-Dirac reading attaches to the algebra's real structure $\flat$. -->
 - *$\mathbb{M}_-$ as the Material Space* and *$\mathbb{M}_+$ as the Informational Space* — the two sectors, their bases and the trace formula inherited unchanged.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations and the sector split in which the whole construction is set.

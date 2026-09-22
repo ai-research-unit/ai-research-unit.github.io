@@ -15,9 +15,13 @@ The article asks what the biquaternion framework contributes to this problem, an
 
 - **Algebraic, and recomputed here.** The total angular momentum $\tilde J_k = \tilde L_k + \tilde S_k$, with the orbital part in the scalar slot and the spin part in the vector slots, closes on the angular-momentum algebra. The spin–orbit operator $\tilde L_k\tilde S_k$ is a Hermitian element of the informational sector $\mathbb{M}_+$; it commutes with $\tilde J_k$, but not with $\tilde L_k$ or $\tilde S_k$ separately, which is the algebraic statement that the spin is no longer a spectator. The relativistic level is labelled by $(n,j)$ and not by $(n,l)$: the $l$-degeneracy is lifted, and at fixed $n$ and $j$ the two states $l = j\pm\tfrac12$ are degenerate. All of this is checked below.
 - **Transcribed, not derived.** The exact bound-state energies are the standard Sommerfeld–Dirac spectrum, quoted in full in its place. The transcription reproduces them and predicts no deviation. Its non-relativistic limit and fine structure are worked through in the companion article *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and its exercise, which is where the elimination of the small component lives; the exact bound-state solution itself is the standard radial Dirac–Coulomb one, and it is not reproduced anywhere in the corpus. No independent biquaternionic derivation is claimed.
-- **Gap, left visible.** The biquaternion Dirac equation of the corpus has an **antilinear** mass term, $\tilde\Psi^\flat = -\tilde\Psi^\dagger$. The mass term therefore transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$ under a central phase, while a covariant derivative contributes the factor $\lambda$; no local central phase can make the massive equation covariant. The precise algebra-level form of the electromagnetic coupling of the massive biquaternion field is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which confirms this obstruction; the Coulomb field is introduced here in the **spinor-module transcription**, where the mass term is linear. This is a gap in the framework's own construction, and it is not closed by notation.
+- **Gap, left visible.** The corpus's biquaternion Dirac equation carries the **linear**, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\bar{\tilde\nabla}\tilde\Psi_L = m\tilde\Psi_R$, and this mass term passes through a local central phase: the central $U(1)$ (fermion number) is exact for the massive field, and the symmetry the mass breaks is the axial one. The algebra-level electromagnetic coupling is therefore available in the massive case, and its precise form is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra; the Coulomb field is introduced here in the **spinor-module transcription**, where the algebra and the module agree, and the spectrum is transcribed. This is the gap that remains, and it is not closed by notation.
 
-The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from a covariant biquaternion equation. That claim is not made, because it is not true of the construction as it stands.
+<!-- EDITORIAL (2026-09-19): this bullet previously said the mass term is antilinear and obstructs minimal coupling, so that no local central phase makes the massive equation covariant. With the parent's linear chiral pair the central phase passes through the mass, the massive algebra-level coupling is covariant, and the broken symmetry is the axial one; the remaining gap is the algebra-level radial solution. See the .thinking file. -->
+
+The title covers the relativistic case as the framework's algebraic structures reach it; it is not a claim that the framework derives the Sommerfeld spectrum from its own algebra-level equation. That derivation is not carried out in the corpus, so the claim is not made.
+
+<!-- EDITORIAL (2026-09-19): the second sentence previously rested the disclaimer on the construction's massive equation being non-covariant. With the parent's linear chiral pair the algebra-level equation is covariant, so the disclaimer now rests on the absent algebra-level radial solution. See the .thinking file. -->
 
 **Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The anti-Hermitian subspace $\mathbb{M}_-$ is the material sector (imaginary scalar, real vector) and the Hermitian subspace $\mathbb{M}_+$ is the informational sector (real scalar, imaginary vector), with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. The real quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, the centre is $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$, and the trace is normalised so that $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, its quaternion conjugate is $\bar{\tilde\nabla} = e_0\partial_{ict} - e_k\partial_k$, and $\Box = \tilde\nabla\bar{\tilde\nabla} = \bar{\tilde\nabla}\tilde\nabla$. The isomorphism is $\Phi(e_0) = I_2$, $\Phi(e_k) = -i\sigma_k$, $\Phi(i) = iI_2$, so that $\Phi(ie_k) = \sigma_k$. The idempotents are $\tilde P_\pm(\hat\mu) = \tfrac12(e_0 \pm i\hat\mu)$. The orbital operators are $\tilde L_k = \hat L_k e_0$ with $\hat L_k = -i\hbar\epsilon_{klm}x_l\partial_m$, the spin operators are $\tilde S_k = \tfrac{\hbar}{2}ie_k$, and $\tilde J_k = \tilde L_k + \tilde S_k$. The rest of the notation is inherited from the read-list articles unchanged.
 
@@ -51,12 +55,16 @@ $$
 with $V(r) = q\phi = -\kappa/r$. The biquaternion field $\tilde\Psi \in \mathbb{B}$ is the algebra-level representative of this spinor, and the free part is the corpus's biquaternion Dirac equation
 
 $$
-\tilde\nabla\tilde\Psi = m\tilde\Psi^\flat, \qquad \tilde\Psi^\flat = -\tilde\Psi^\dagger .
+\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \bar{\tilde\nabla}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^\dagger .
 $$
+
+<!-- EDITORIAL (2026-09-19): the free equation was displayed as the antilinear grad(Psi) = m Psi^flat. The parent's mass is now the linear chiral pair, with flat retained as the algebra's real structure. Do not revert without re-deriving the mass term. See the .thinking file. -->
 
 The Coulomb term is a **central scalar**, $V(r)e_0 \in \mathbb{C}_{\mathbb{B}}$, so it multiplies the field without ambiguity of order, and in this respect its placement is the same as the non-relativistic potential's.
 
-A structural caveat must accompany this transcription. The matrix $\beta$ is an **odd** element of the Clifford algebra $\mathrm{Cl}_{1,3}$, while $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. The module transcription therefore uses structure that the algebra-level field $\tilde\Psi$ does not contain; the algebra-level equation replaces the linear spinor mass term by the antilinear $\tilde\Psi^\flat$, and it is exactly this replacement that obstructs the algebra-level coupling (treated in its own section below). The transcription is the one the corpus's electron and solutions articles use, and it is adopted here on that basis, with the caveat recorded rather than hidden.
+A structural caveat must accompany this transcription. The matrix $\beta$ is an **odd** element of the Clifford algebra $\mathrm{Cl}_{1,3}$, while $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. The module transcription therefore uses structure that the algebra-level field $\tilde\Psi$ does not contain: $\beta$ has no representative in the even subalgebra. The algebra-level equation carries the same linear mass as the spinor module, so the transcription is not forced by an obstruction at the mass term; the two descriptions agree on the mass, and the module supplies the Clifford-odd structure that the Hamiltonian's Foldy–Wouthuysen reduction needs. The transcription is the one the corpus's electron and solutions articles use, and it is adopted here on that basis, with the caveat recorded rather than hidden.
+
+<!-- EDITORIAL (2026-09-19): this caveat previously said the algebra-level equation replaces the linear spinor mass by the antilinear Psi^flat and that this replacement obstructs the algebra-level coupling. The parent's mass is now the same linear chiral pair in both descriptions; the caveat now records only the Clifford-odd structure that the module supplies. See the .thinking file. -->
 
 ## The Hamiltonian Leaves the Scalar Slot
 
@@ -195,31 +203,36 @@ $$
 
 which was verified for $n \le 6$. So the framework's state space is not enlarged or reduced by the relativistic treatment; what changes is the **splitting** of the $2n^2$ states into levels $E_{nj}$ that depend on $j$ as well as $n$. The non-relativistic $l$-degeneracy among states of the same $n$ is gone, replaced by the $l = j \mp \tfrac12$ degeneracy at fixed $j$; in the limit $Z\alpha \to 0$ the $\delta_j$ corrections collapse and the full non-relativistic degeneracy is restored.
 
-## The Minimal-Coupling Obstruction
+## Minimal Coupling and the Massive Sector
 
-The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation has a mass term that does not admit that coupling, and the obstruction is algebraic.
+The Coulomb field is an electromagnetic field, and in a gauge theory it is introduced by minimal coupling. The framework's biquaternion Dirac equation carries a linear, chirality-off-diagonal mass pair, and the coupling is available at the algebra level: the central phase passes through the mass term.
 
-Let $\lambda = e^{iq\Gamma/\hbar}$ be a central phase. The mass term of the corpus's equation transforms as
-
-$$
-\bigl(\lambda\tilde\Psi\bigr)^\flat = \lambda^{*}\,\tilde\Psi^\flat ,
-$$
-
-because $\tilde\Psi^\flat = -\tilde\Psi^\dagger$ and $\dagger = \bar{\cdot}^{\,*}$ is antilinear in the coefficients. This was recomputed for a generic biquaternion $\tilde\Psi$ and a generic non-real central phase: the identity holds, and the alternative $\lambda\tilde\Psi^\flat$ fails exactly when $\lambda$ is not real. A covariant derivative, by contrast, contributes a factor $\lambda$,
+Let $\lambda = e^{iq\Gamma/\hbar}$ be a central phase. The covariant derivative
 
 $$
 D = \tilde\nabla + \frac{iq}{\hbar}\tilde A, \qquad D\tilde\Psi \longmapsto \lambda\, D\tilde\Psi ,
 $$
 
-and the consistent transformation of $\tilde A$, namely $\tilde A' = \tilde A - \tilde\nabla\Gamma$, is what the abelian gauge structure of the framework provides. This covariance, together with the Leibniz rule it needs, was machine-checked by finite differences at a point not used to fix the conventions. The massive equation $D\tilde\Psi = m\tilde\Psi^\flat$ would then transform to $\lambda D\tilde\Psi = m\lambda^{*}\tilde\Psi^\flat$, that is, to
+transforms homogeneously, with the consistent connection transformation $\tilde A' = \tilde A - \tilde\nabla\Gamma$ that the abelian gauge structure of the framework provides. This covariance, together with the Leibniz rule it needs, was machine-checked by finite differences at a point not used to fix the conventions. The mass term of the parent's equation is linear, so it carries the same factor: for the pair
 
 $$
-D\tilde\Psi = m\,\frac{\lambda^{*}}{\lambda}\,\tilde\Psi^\flat = m\,e^{-2iq\Gamma/\hbar}\,\tilde\Psi^\flat ,
+D\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{D}\tilde{\Psi}_L = m\tilde{\Psi}_R ,
 $$
 
-which is not the original equation unless $\Gamma$ is constant. **No local central phase makes the massive biquaternion Dirac equation covariant.** The mass term as written is a real-form (Majorana-type) coupling, appropriate to a neutral field; the charged field of the hydrogen problem has a linear mass term, and it is that linear form which the spinor-module transcription uses.
+the transformed left-hand side is $\lambda\,D\tilde\Psi_R$ and the transformed right-hand side is $m\lambda\tilde\Psi_L$, because the central phase commutes with the mass. The two sides transform identically, so the massive coupled equation is **form-invariant** under the local phase and holds in every gauge when it holds in one. **Every local central phase is allowed, and the central $U(1)$ (fermion number) is exact for the massive field.**
 
-The consequences should be stated plainly. The Coulomb potential cannot be inserted into the algebra-level equation $\tilde\nabla\tilde\Psi = m\tilde\Psi^\flat$ by the standard minimal coupling; the spectrum of this article is obtained in the module transcription, where the mass is linear and the coupling works. The precise algebra-level transcription of the electromagnetic coupling of the massive biquaternion field — the biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\Phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which confirms that the massive equation is not covariant; a covariant massive form remains open (open question 7 of *The Dirac Equation in Biquaternionic Form*). Until it is settled, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+The object the phase cannot pass through is not the mass but the algebra's real structure: a coupling built on $\flat = -\dagger$, which is antilinear, transforms as $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$, so a Majorana-type mass $m\tilde\Psi^\flat$ would acquire the factor $e^{2iq\Gamma/\hbar}$ and be form-invariant only for $\lambda = \pm1$. That is a statement about the real structure, not about the parent's mass term, and it belongs to the companion articles on the neutrino and on chirality. What the mass breaks is the **axial** symmetry,
+
+$$
+\partial_\mu j_5^\mu = 2im\,\bar\psi\gamma_5\psi ,
+$$
+
+which vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
+
+The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\Phi$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+
+<!-- EDITORIAL (2026-09-19): this section was titled "The Minimal-Coupling Obstruction" and proved that the massive equation is not form-invariant under a local phase, the antilinear mass term m Psi^flat acquiring e^{2iq Gamma/hbar} and reducing U(1) to a discrete Z_2. With the parent's linear chiral pair the mass carries the same factor as the operator side, so the massive algebra-level coupling is exactly gauge covariant and the central U(1) is exact; the Majorana-type statement is retained, relocated to the real structure flat, and the broken symmetry is the axial one. The spectrum is still transcribed, because the corpus contains no algebra-level radial Dirac–Coulomb solution. Do not revert without re-deriving the mass term; see the .thinking file. -->
+
 
 ## What the Framework Supplies and What It Does Not
 
@@ -234,15 +247,19 @@ The accounting can be put in one table, in the form used by the companion electr
 | Exact spectrum $E_{nj}$ (Sommerfeld–Dirac) | Transcribed | standard Dirac–Coulomb solution; companion solutions article |
 | Fine-structure shift and its decomposition | Verified (transcribed) | companion Pauli exercise; exact rational check |
 | Coulomb potential $V = -\kappa/r$, coupling $\kappa$, $\alpha$, $Z$ | Input | point-charge source; values inserted |
-| Algebra-level minimal coupling of the massive field | Worked out; massive case not covariant | antilinear mass term $\tilde\Psi^\flat$; minimal-coupling article |
+| Algebra-level minimal coupling of the massive field | Worked out; massive case covariant | linear chiral pair; central phase passes through the mass; minimal-coupling article |
 | Deviation from standard physics | None found | the spectrum is the standard one |
 
-Two entries deserve a sentence. The first is that the algebraic content is real but narrow: the framework supplies the spin algebra, the sector placement of the spin–orbit coupling, and the bookkeeping of the levels; it does not supply the orbital dynamics, the radial equation, or the coupling constant. The second is the obstruction: the one step that would turn the transcription into a derivation — minimal coupling at the level of the biquaternion field — is exactly the step the antilinear mass term blocks. That is the sense in which the title overpromises if read as "derived", and the article does not sign for it.
+Two entries deserve a sentence. The first is that the algebraic content is real but narrow: the framework supplies the spin algebra, the sector placement of the spin–orbit coupling, and the bookkeeping of the levels; it does not supply the orbital dynamics, the radial equation, or the coupling constant. The second is the step that remains: the algebra-level coupling is consistent and covariant, so the obstacle is no longer the mass term; what the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra, and that is the step that would turn the transcription into a derivation. That is the sense in which the title overpromises if read as "derived", and the article does not sign for it.
+
+<!-- EDITORIAL (2026-09-19): the second entry previously said the antilinear mass term blocks minimal coupling at the algebra level. With the parent's linear chiral pair that step is available and covariant; the remaining obstacle is the absent algebra-level radial Dirac–Coulomb solution. The table row above was corrected in the same pass. See the .thinking file. -->
 
 ## Open Questions
 
-1. **The algebra-level minimal coupling.** What is the precise biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$, $i\hbar\partial_t \to i\hbar\partial_t - q\Phi$ for the massive field $\tilde\Psi$, given the antilinear mass term? Is there a modified mass term, or a modified coupling, that makes the massive equation covariant? (The coupling itself is set out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which leaves this question open; Dirac article, open question 7.)
-2. **The nature of the mass term.** Is $\tilde\Psi^\flat$ a Majorana-type mass (a neutral field), or is it a representation artifact of the real form of $\mathbb{B}$ whose linear transcription is the charged Dirac mass? The two readings have different consequences for the charge sectors.
+1. **The algebra-level minimal coupling.** The coupled massive equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ is set out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, and is proved there to be gauge covariant. The choice of matter representation — left versus right action — remains open in that article and in the parent's open question 7.
+2. **The nature of the mass term.** The parent's mass term is the linear, chirality-off-diagonal pair; the algebra's real structure $\flat$ is retained separately, and a coupling built on it — a Majorana-type mass — is a neutral-field pairing. Whether the real form of $\mathbb{B}$ forces a second, neutral massive sector alongside the charged one is open, and the two readings have different consequences for the charge sectors.
+
+<!-- EDITORIAL (2026-09-19): open question 1 previously asked for the coupling of the massive field "given the antilinear mass term" and whether a modified mass or coupling could make the massive equation covariant; that equation is now the linear chiral pair and is covariant, so the question is re-pointed to the still-open left/right matter representation. Open question 2 previously offered the mass term itself as either Majorana-type or a linear charged mass; with the mass linear, the Majorana-type reading is relocated to the separate real structure flat. See the .thinking file. -->
 3. **A framework derivation of the spectrum.** Can the radial Dirac–Coulomb equation be written and solved within the biquaternion algebra without passing to the spinor module, and does the Sommerfeld formula follow from the algebra's own operators?
 4. **The supercritical regime.** For $Z\alpha$ beyond $j+\tfrac12$ the exact formula loses its bound states; how does the framework describe the diving of the level into the negative continuum?
 5. **Radiative corrections.** The Lamb shift and the anomalous moment are loop effects; the framework's classical equation does not contain them (as the electron article records for $g-2$), and a framework account would require the quantized theory.
@@ -270,7 +287,9 @@ $$
 
 returns the non-relativistic $E_n$ at leading order and the fine structure at the next, the latter verified by exact rational arithmetic against the kinetic, spin–orbit, and Darwin terms of the companion exercise. The spectrum is the standard one and no deviation is predicted.
 
-One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equation has the antilinear mass term $\tilde\Psi^\flat = -\tilde\Psi^\dagger$, whose transformation $(\lambda\tilde\Psi)^\flat = \lambda^{*}\tilde\Psi^\flat$ cannot be matched by any local central phase, so the massive equation admits no algebra-level minimal coupling; the Coulomb field is introduced in the spinor-module transcription, where the mass is linear. The algebra-level form of the coupling is set out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which confirms the obstruction; a covariant massive form remains an open question of the corpus. The relativistic hydrogen atom is therefore, in this framework, an algebraically structured **transcription** of the standard solution — with the spin algebra, the sector placement, the good quantum numbers, and the level bookkeeping genuinely algebraic, and the derivation from the framework's own field equation an open problem.
+One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equation carries the linear, chirality-off-diagonal mass pair $\tilde\nabla\tilde\Psi_R = m\tilde\Psi_L$, $\bar{\tilde\nabla}\tilde\Psi_L = m\tilde\Psi_R$, through which a local central phase passes; the massive equation therefore admits the algebra-level minimal coupling, and the central $U(1)$ (fermion number) is exact for the massive field, with the axial symmetry broken instead. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra: the algebra-level form of the coupling is set out in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, and the spectrum above is obtained in the spinor-module transcription, where the algebra and the module agree. The relativistic hydrogen atom is therefore, in this framework, an algebraically structured **transcription** of the standard solution — with the spin algebra, the sector placement, the good quantum numbers, and the level bookkeeping genuinely algebraic, and the derivation from the framework's own field equation an open problem.
+
+<!-- EDITORIAL (2026-09-19): this closing paragraph previously made the antilinear mass term the load-bearing gap, on the ground that no local central phase could make the massive equation covariant. With the parent's linear chiral pair the mass term is covariant (central U(1) exact, axial symmetry broken), and the load-bearing gap is the absent algebra-level radial Dirac–Coulomb solution. Do not restore the obstruction without re-deriving the mass term; see the .thinking file. -->
 
 ## Summary of Notation
 
@@ -286,7 +305,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\Phi(e_k) = -i\sigma_k$, $\Phi(ie_k) = \sigma_k$ | Isomorphism with $M_2(\mathbb{C})$ |
 | $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde\nabla\bar{\tilde\nabla} = \bar{\tilde\nabla}\tilde\nabla$ | d'Alembertian |
-| $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^\dagger$ | Biquaternion Dirac field and anti-Hermitian conjugate |
+| $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^\dagger$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
 | $\tilde A = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ | Electromagnetic four-potential |
 | $V(r) = q\phi = -\kappa/r$ | Coulomb potential energy |
 | $\kappa = Ze^2/(4\pi\epsilon_0) = Z\alpha\,\hbar c$ | Coulomb coupling |
@@ -301,6 +320,8 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\Delta E_{\text{fs}} = -\frac{mc^2(Z\alpha)^4}{2n^3}\bigl(\frac{1}{j+1/2}-\frac{3}{4n}\bigr)$ | Fine-structure shift |
 | $\mathbb{B}\tilde P \cong \mathbb{C}^2$ | Spinor module carrying the field $\psi$ |
 | $\mathrm{Tr}(\tilde P\tilde H) = 2\,\mathrm{Sc}(\tilde P\tilde H)$ | Trace formula (Born rule) |
+
+<!-- EDITORIAL (2026-09-19): the flat row of the notation table previously read "Biquaternion Dirac field and anti-Hermitian conjugate". It now records that flat is the algebra's real structure and not the mass term. See the .thinking file. -->
 
 ## Further Reading
 

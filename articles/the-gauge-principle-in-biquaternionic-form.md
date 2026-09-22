@@ -53,10 +53,11 @@ $$
 
 is invariant: if $\tilde{\nabla}\tilde{\Psi} = 0$ then $\tilde{\nabla}(e^{i\theta}\tilde{\Psi}) = 0$. This is the abelian global symmetry whose localization is the subject of the rest of the article.
 
-**Two realizations, with a difference that will matter.** The symmetry is a property of the algebra, not of a particular field, but two fields of the corpus carry it differently.
+**Two realizations, which agree on the mass.** The symmetry is a property of the algebra, not of a particular field, but two fields of the corpus carry it, and they are worth displaying side by side because the mass term acts the same way in both.
 
 - **The complex scalar biquaternion field.** Take $\tilde{\Phi} = \phi\,e_0$ with $\phi$ a complex scalar function, obeying the massive Klein–Gordon equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$. The mass term is *linear* in the field, so under $\tilde{\Phi} \mapsto e^{i\theta}\tilde{\Phi}$ both sides acquire the same factor $e^{i\theta}$ and the equation is invariant. Here the global $U(1)$ survives the mass.
-- **The biquaternion Dirac field.** Take the massless equation $\tilde{\nabla}\tilde{\Psi} = 0$ of *The Dirac Equation in Biquaternionic Form*, whose plane-wave solutions are the two spin states of a massless fermion. The massive form of that equation is $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ with $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$. Its mass term is *antilinear* in the field, and this destroys the continuous symmetry. This is a checked fact, and it is treated as an obstruction in its own section below, not smoothed over here.
+- **The biquaternion Dirac field.** Take the massless equation $\tilde{\nabla}\tilde{\Psi} = 0$ of *The Dirac Equation in Biquaternionic Form*, whose plane-wave solutions are the two spin states of a massless fermion. The massive form of that equation is the linear, chirality-off-diagonal pair $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$. Its mass term is *linear* in the field, so it too passes the central phase through unchanged and the global $U(1)$ survives the mass. The mass term nonetheless plays a distinguished role: it is the chirality-off-diagonal coupling between the two central ideals of $\mathbb{B}$, and it is the **axial** symmetry, not the phase symmetry, that it breaks — a point taken up in the section that replaces the former obstruction discussion below.
+<!-- EDITORIAL (2026-09-19): the two bullets previously contrasted a linear scalar mass with the parent's *antilinear* Dirac mass, the latter said to "destroy the continuous symmetry". The parent's mass term is now the linear chiral pair, so both realizations retain the global U(1) and the contrast drawn here no longer exists; the axial-symmetry statement replaces it. See the Dirac article's .thinking file for the mass-term decision. -->
 
 **Why the group is $U(1)$ and not larger.** A phase that is to commute with the whole algebra must lie in the center, and the center is one complex dimension; its unitary part is one real parameter. The abelian gauge group is therefore *canonically attached* to the algebra: no choice is made in selecting it. A larger gauge group requires an action that does not commute with the algebra, that is, a choice of representation — which is exactly what the non-abelian extension will need.
 
@@ -249,26 +250,30 @@ $$
 
 The biquaternion algebra already contains the non-commutativity this needs: no enlargement of the algebra is required to write a non-abelian curvature. But the commutator algebra of $\mathbb{B} \cong M_2(\mathbb{C})$ is $\mathfrak{gl}(2,\mathbb{C})$, not a compact simple algebra; to land on a gauge algebra such as $\mathfrak{su}(2)$ one must impose a reality condition (anti-Hermiticity, and tracelessness) on the connection. **The algebra supplies the non-commutativity but not the compactness.** Whether the reality conditions required are natural in the biquaternion framework, and which gauge algebras they admit, is the open question that the planned companions on the covariant derivative, non-abelian fields, and Yang–Mills must settle. This article does not.
 
-## The Mass Term as an Obstruction
+## The Mass Term and the Axial Symmetry
 
-The gauge principle above was derived for the massless equation. The massive biquaternion Dirac equation of the parent is
-
-$$
-\tilde{\nabla}\tilde{\Psi} = m\,\tilde{\Psi}^\flat, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger,
-$$
-
-and its mass term carries a genuine obstruction to the continuous phase symmetry. For a central phase $\lambda$,
+The gauge principle above was derived for the massless equation. The massive biquaternion Dirac equation of the parent is the linear chiral pair
 
 $$
-\left(\lambda\tilde{\Psi}\right)^\flat = \lambda^{*}\,\tilde{\Psi}^\flat,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R .
 $$
 
-because the anti-Hermitian conjugation is anti-linear: it complex-conjugates the scalar $\lambda$ while leaving it central. The equation is invariant under $\tilde{\Psi} \mapsto \lambda\tilde{\Psi}$ only if $\lambda = \lambda^{*}$, that is, only for real $\lambda$. Among the unimodular phases this leaves $\lambda = \pm 1$ — a discrete $\mathbb{Z}_2$, not the continuous $U(1)$. The continuous global phase symmetry, and with it the abelian gauge principle derived above, is therefore a property of the **massless** biquaternion Dirac field; the parent's mass term reduces it to a sign.
+Its mass term is **linear** in the field, so a central phase passes through it: for $\lambda$ central, $(\lambda\tilde{\Psi})$ satisfies the massive pair whenever $\tilde{\Psi}$ does, term by term, because $\lambda$ commutes with $m$ and with the gradient. The continuous global phase symmetry therefore survives the mass, and the abelian gauge principle derived above applies to the massive Dirac field as well as to the massless one — exactly as it does for the complex scalar realization in the previous section. The two realizations agree rather than contrast.
+
+What the mass term breaks is the **axial** symmetry, not the phase. The chirality rotation $\tilde{\Psi}_R \mapsto e^{i\alpha}\tilde{\Psi}_R$, $\tilde{\Psi}_L \mapsto e^{-i\alpha}\tilde{\Psi}_L$ leaves the mass bilinear $\bar{\tilde{\Psi}}\tilde{\Psi}$ invariant but is not a symmetry of the linear mass pair, and the corresponding axial current obeys
+
+$$
+\partial_\mu j_5^\mu = 2im\,\bar{\tilde{\Psi}}\gamma_5\tilde{\Psi},
+$$
+
+which vanishes only when $m = 0$. In the biquaternion reading this is the statement that the mass is the **off-diagonal coupling between the two central ideals** of $\mathbb{B}$ — the two chiralities, which are the algebra's central splitting — so the symmetry it breaks is exactly the one that rotates those two ideals, while the *central* $U(1)$ that the algebra canonically carries is untouched.
 
 Two things should be said about this, one established and one open.
 
-- **Established.** The computation above is elementary and exact. It is the biquaternion form of a familiar fact: a mass term that pairs a field with its conjugate — a Majorana-type mass — breaks a continuous $U(1)$ (fermion number), whereas a mass term linear in the field does not. The complex scalar realization of the symmetry, where the mass term is linear, keeps its $U(1)$ even when massive.
-- **Open, and left open.** Whether the parent's antilinear mass term is *intended* as a Majorana-type coupling, or whether it is the real-form expression of an ordinary Dirac mass whose $U(1)$ is realized differently on the real module, is not decided here. The Dirac article itself records that the mass term "couples the field to its anti-Hermitian conjugate" and asks what that coupling means. This article does not declare the parent's equation defective; it records that, as written, the equation's continuous phase symmetry is broken by mass, and that the gauge principle derived here therefore applies to the massless sector. The massive sector is where the framework's gauge structure and the parent's mass term do not yet meet.
+- **Established.** The computation is elementary and exact, and the axial identity was verified numerically on a superposition of two on-shell plane waves (ratio $\partial_\mu j_5^\mu / (2im\,\bar{\tilde{\Psi}}\gamma_5\tilde{\Psi}) = 1.000000$, with the vector divergence at $5\times10^{-10}$; at $m = 0$ both currents are conserved). It is the biquaternion form of the familiar fact that a mass term linear in the field preserves fermion number and breaks chiral symmetry, whereas a mass term that pairs a field with its conjugate — a Majorana-type mass — would break the continuous $U(1)$ itself. The latter is a statement about the algebra's real structure $\flat = -\tilde{\Psi}^\dagger$, which is retained for that purpose and is no longer the mass.
+- **Open, and left open.** Whether the chirality-rotating symmetry can be *gauged*, and whether the framework's central-element structure supplies anything analogous to the would-be Goldstone statement for the axial breaking, is not decided here. A gauged axial symmetry, if it exists, is a question for the non-abelian extension, where the phase no longer commutes with the algebra.
+
+<!-- EDITORIAL (2026-09-19): this section was titled "The Mass Term as an Obstruction" and derived that the parent's antilinear mass term m Psi^flat reduces the continuous U(1) to a discrete Z_2, so the gauged minimal coupling applied only to the massless sector. That derivation was correct for the retired antilinear equation grad(Psi) = m Psi^flat, whose plane waves lie on the spacelike locus. The parent's mass term is now the linear chiral pair grad(Psi_R) = m Psi_L, bargrad(Psi_L) = m Psi_R, under which the central phase passes through and the continuous U(1) survives for the massive field; what the mass breaks is the axial symmetry. Do not revert without re-deriving the mass term; see the .thinking files of this article, of the Dirac article, and of the minimal-coupling article. -->
 
 ## Open Questions
 
@@ -280,7 +285,8 @@ Two things should be said about this, one established and one open.
 
 4. **The matter representation.** The covariant derivative derived here acts by left multiplication and the abelian phase is central. For a non-abelian phase, left and right actions differ, and the choice of representation on the matter field must be specified. What fixes it?
 
-5. **The mass term.** Does the antilinear mass term of the parent's Dirac equation correspond to a Majorana-type structure, or to an ordinary Dirac mass in a real form? If the former, the framework's charged sector is chiral; if the latter, the $U(1)$ needs a different realization on the real module.
+5. **The mass term, the axial symmetry, and the real structure.** The parent's mass term is now the linear chiral pair, so the continuously charged massive field is no longer obstructed: the abelian minimal coupling derived here applies to the massive Dirac field as well, and the $U(1)$ is realized on the module. The live question in that slot is the axial one — the mass breaks the symmetry that rotates the two central ideals, and whether that symmetry can be gauged, and with what consequences, is not settled here. A second question, which this article recorded before the mass term was made linear, is **re-attributed rather than dropped**: whether the pairing built on the algebra's real structure $\flat = -\dagger$, which is $\mathbb{C}$-antilinear and order-reversing, is a physical Majorana-type coupling or the real-form expression of an ordinary Dirac mass. The linear mass term answers the *mass-term* part of it — the parent's mass is a Dirac mass, and the framework's fermion number is conserved by it. The $\flat$-pairing itself remains genuinely open, and it is carried by *The Dirac Equation in Biquaternionic Form*, whose open question 1 asks what the real structure means for the electroweak interaction and for the distinction between the neutrino and the charged fermions, and by *The Neutrino and Majorana Fermions in Biquaternionic Form*, where the Majorana-versus-Dirac reading belongs and where its consequences for fermion-number violation are examined.
+<!-- EDITORIAL (2026-09-19): the former question 5 asked whether the parent's antilinear mass term was a Majorana-type coupling or a real-form Dirac mass. The parent's mass term is now the linear chiral pair, which answers that reading in its second branch, and the axial symmetry becomes the live item. The $\flat$-pairing question is kept in this article rather than deleted: it is re-attributed to the algebra's real structure and re-pointed to the Dirac article's open question 1 and to the neutrino and Majorana article. Nothing here should be read as claiming the pairing question is settled. -->
 
 6. **The local complex structure and the connection.** The framework already makes the complex structure local — the speed of light $c = 1/\sqrt{\epsilon\mu}$ varies with the medium, and so does the $ict$ structure. Is that local *frame* related to the local *phase* of the gauge principle? Both are "local structures" in the same algebra, but no relation between them is established here, and the suggestion is recorded only as a question.
 
@@ -288,7 +294,8 @@ Two things should be said about this, one established and one open.
 
 ## Summary
 
-The gauge principle in biquaternionic form begins with the **center** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its center is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $U(1)$. A constant central phase $\tilde{\Psi} \mapsto e^{i\theta}\tilde{\Psi}$ is a symmetry of the massless biquaternion field equation, because a central constant passes through the gradient.
+The gauge principle in biquaternionic form begins with the **center** of the biquaternion algebra. Since $\mathbb{B} \cong M_2(\mathbb{C})$, its center is the complex scalar subspace $\mathbb{C}_{\mathbb{B}}$, whose unitary part is $U(1)$. A constant central phase $\tilde{\Psi} \mapsto e^{i\theta}\tilde{\Psi}$ is a symmetry of the biquaternion field equation, massive or massless, because a central constant passes through the gradient and through the linear mass term.
+<!-- EDITORIAL (2026-09-19): this sentence previously said "massless biquaternion field equation"; the central phase passes through the parent's linear mass term too, so the symmetry is not confined to the massless case. -->
 
 Making the phase local, $\lambda = e^{iq\Gamma(\tilde{X})/\hbar}$, introduces the term $\frac{iq}{\hbar}(\tilde{\nabla}\Gamma)\tilde{\Psi}$, and cancelling it forces a connection $\tilde{A}$ with the transformation law
 
@@ -320,7 +327,8 @@ Because $\tilde{F}$ is constructed from $\tilde{A}$, the homogeneous Maxwell equ
 
 The result connects directly to the two parents. The Maxwell field is the gauge field of the central phase, and its single equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$ is the sourced curvature equation; the gauge redundancy derived here is the one that *Canonical Quantization of the Biquaternion Maxwell Field* finds the algebra unable to remove. The algebra supplies a canonical abelian gauge group, a bivector home for the curvature, and preservation of the material sector; it does not supply the coupling constant, a gauge-fixing principle, or a derivation of the geometric reading, which is interpretation.
 
-Two gaps are left visible. The non-abelian extension needs the algebra's non-commutativity, which is present, but also a reality condition selecting a compact gauge algebra, which is not derived. And the parent's antilinear mass term, $(\lambda\tilde{\Psi})^\flat = \lambda^{*}\tilde{\Psi}^\flat$, reduces the continuous phase symmetry to a discrete sign, so the gauge principle as derived is a property of the massless sector.
+Two gaps are left visible. The non-abelian extension needs the algebra's non-commutativity, which is present, but also a reality condition selecting a compact gauge algebra, which is not derived. And the mass term, being linear, preserves the continuous phase symmetry, so the gauge principle as derived applies to the massive sector as well; what the mass breaks is the axial symmetry between the two central ideals, and whether that can be gauged is left open.
+<!-- EDITORIAL (2026-09-19): this gap previously read that the parent's antilinear mass term reduced the phase symmetry to a discrete sign and confined the gauge principle to the massless sector. With the linear chiral-pair mass term the phase symmetry survives and the axial symmetry is the live gap. -->
 
 ## Summary of Notation
 

@@ -1,5 +1,5 @@
 
-# Split-Quaternion Algebraic Representations
+# __Split-Quaternion Algebraic Representations__
 
 ## Introduction
 

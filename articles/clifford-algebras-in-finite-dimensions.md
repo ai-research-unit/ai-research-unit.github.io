@@ -1,5 +1,5 @@
 
-# Clifford Algebras in Finite Dimensions
+# __Clifford Algebras in Finite Dimensions__
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 
-# Quaternion Analysis
+# __Quaternion Analysis__
 
 ## Introduction
 

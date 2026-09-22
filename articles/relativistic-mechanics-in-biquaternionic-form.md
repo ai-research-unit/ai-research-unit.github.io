@@ -202,19 +202,20 @@ which is the standard Klein–Gordon equation $(\Box - m^2 c^2/\hbar^2)\phi = 0$
 
 ## The Dirac Equation
 
-The **Dirac equation** for a relativistic spinor field $\tilde{\Psi}$ of mass $m$ is
+The **Dirac equation** for a relativistic spinor field $\tilde{\Psi}$ of mass $m$ is the linear, chirality-off-diagonal pair
 
 $$
-\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-where $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is the anti-Hermitian conjugate of $\tilde{\Psi}$. In the massless case ($m = 0$), the equation reduces to
+where $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ carries one component per chirality. In the massless case ($m = 0$), the pair reduces to
 
 $$
 \tilde{\nabla}\tilde{\Psi} = 0,
 $$
 
-which is identical in form to the source-free biquaternion Maxwell equation. The massive case includes the mass term $m\tilde{\Psi}^\flat$, which is the biquaternion form of the standard Dirac mass term. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+which is identical in form to the source-free biquaternion Maxwell equation. The mass term $m\tilde{\Psi}_{L,R}$ couples the two chiralities, and each chirality satisfies the Klein–Gordon equation; the anti-Hermitian conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is the algebra's real structure, not the mass term, and the single-field equation $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ is a separate real-linear (Majorana-type) equation whose plane waves lie on the spacelike locus. The full treatment of the Dirac equation in biquaternionic form is given in the companion article.
+<!-- EDITORIAL (2026-09-19): this section previously gave the single antilinear equation grad(Psi) = m Psi^flat and called m Psi^flat "the biquaternion form of the standard Dirac mass term". The parent's mass is now the linear chirality-off-diagonal pair, so the standard-mass identification is dropped; flat is retained as the algebra's real structure, and the antilinear single-field equation is noted as a separate real-linear (Majorana-type) equation on the spacelike locus. Evidence and decision: the .thinking files of the parent Dirac article and of this article. -->
 
 ## Summary of the Ten Formulas
 
@@ -229,7 +230,8 @@ which is identical in form to the source-free biquaternion Maxwell equation. The
 | Action | $S = -mc\int\sqrt{-\,d\tilde{X}\,\overline{d\tilde{X}}}$ | — |
 | Current | $\tilde{J} = ic\rho\,e_0 + \mathbf{j}$ | $\mathrm{Sc}(\bar{\tilde{\nabla}}\tilde{J}) = 0$ |
 | Klein–Gordon | $(\tilde{\nabla}\bar{\tilde{\nabla}} - m^2c^2/\hbar^2)\tilde{\Phi} = 0$ | — |
-| Dirac | $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ | — |
+| Dirac | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L,\ \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$ | — |
+<!-- EDITORIAL (2026-09-19): this row gave the retired antilinear Dirac equation grad(Psi) = m Psi^flat; it now records the parent's linear chiral pair, whose mass term is the off-diagonal chirality coupling. -->
 
 ## Structural Observations
 

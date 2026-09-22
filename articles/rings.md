@@ -1,5 +1,4 @@
 
-
 # __Rings: A General Introduction__
 
 ## Introduction

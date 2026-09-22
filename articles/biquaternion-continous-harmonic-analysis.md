@@ -1,5 +1,5 @@
 
-# Biquaternion Continuous Harmonic Analysis
+# __Biquaternion Continuous Harmonic Analysis__
 
 ## Introduction
 

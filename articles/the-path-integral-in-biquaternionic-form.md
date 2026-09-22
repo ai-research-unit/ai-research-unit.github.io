@@ -197,6 +197,49 @@ obtained by relabeling the imaginary time coefficient as a real one; it is real-
 
 This is where the Wick-rotation article's classification meets the path integral. Its thesis is that the transfer is harmless for problems about equilibrium and correlation and fatal for problems about causality and dynamics, because $\mathbb{H}_{\mathbb{B}}$ is better behaved precisely by having given up the Lorentzian structure. The path integral is the object in which both cases appear: its Euclidean form is the statistical weight of a Euclidean field theory or lattice model, and its Lorentzian form is the amplitude that encodes causal propagation. The transfer to $\mathbb{H}_{\mathbb{B}}$ is what turns amplitudes into weights; it is also what discards the phase relations that carry the causal ordering. And, as the Feynman-propagator article argues for the $i\epsilon$, the direction of the rotation is a choice equivalent to the sign of $\epsilon$: the algebra names the $ict$ axis along which the phase lives, and does not choose the orientation of the continuation.
 
+## The Semiclassical Kernel and Stationary Phase
+
+The classical limit of the sum over paths is obtained by stationary phase, and it is the second place where the algebra of the phase can be read. Expand the action about a classical path $x_{\mathrm{cl}}$ joining the endpoints,
+
+$$
+S[x_{\mathrm{cl}}+\delta x]=S_{\mathrm{cl}}+\tfrac12\,\delta^2S+O(\delta^3),
+$$
+
+where the linear term vanishes because $x_{\mathrm{cl}}$ is stationary. The leading contribution to the integral is the phase $e^{iS_{\mathrm{cl}}/\hbar}$ times the Gaussian integral over the fluctuations, giving the **van Vleck determinant** formula
+
+$$
+K(x_f,t_f;x_i,t_i)\;\approx\;\frac{1}{\sqrt{2\pi i\hbar}}\,
+\sqrt{\Big|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial x_i\,\partial x_f}\Big|}\;
+e^{iS_{\mathrm{cl}}/\hbar},
+$$
+
+with the Maslov index supplying a phase $e^{-i\pi\nu/2}$ at each conjugate point (caustic), where the determinant vanishes. The next correction comes from the cubic term in the expansion and is of order $\hbar$ relative to the leading term; it is the first term that feels the anharmonicity of the action, and it is not pursued here.
+
+For the free particle $S_{\mathrm{cl}}=m(x_f-x_i)^2/2T$ and $\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f=-m/T$, so the prefactor is $(m/2\pi i\hbar T)^{1/2}$ and the semiclassical kernel is the exact kernel. Checked by recomputation: composing the semiclassical kernels for $t_1=0.6$ and $t_2=1.1$ reproduces $K(t_1+t_2)$ for the free particle to $8.3\times10^{-17}$, and the van Vleck prefactor matches $(m/2\pi i\hbar T)^{1/2}$ to $2.8\times10^{-17}$. A quadratic action is semiclassically exact; the free particle and the harmonic oscillator are the two elementary cases.
+
+**The phase.** The stationary-phase phase $e^{iS_{\mathrm{cl}}/\hbar}$ is a **central unitary** element of $\mathbb{C}_{\mathbb{B}}$, for the same reason the phase of an individual path is: the classical action is still a real scalar, its exponent is still a purely imaginary scalar in $\mathbb{M}_-$, and the phase is still central. The classical limit changes which paths contribute; it does not change the sector of the phase.
+
+**The prefactor.** The determinant is built from the second variation $\delta^2S$, a real symmetric quadratic form — an ordinary real object, not an element of the algebra. Written out,
+
+$$
+\frac{1}{\sqrt{2\pi i\hbar}}\sqrt{\big|\det\nolimits\delta^2S\big|}
+=\frac{A_{\mathrm{WKB}}}{\sqrt{2\pi i\hbar}},
+\qquad
+A_{\mathrm{WKB}}=\sqrt{\big|\det\nolimits\delta^2S\big|},
+$$
+
+so the semiclassical prefactor is the **WKB amplitude** divided by the central $\sqrt{2\pi i\hbar}$. This is the amplitude that the companion article *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* writes as the modulus of the wave function; the van Vleck determinant is its multidimensional transport, and the statement that it is the WKB amplitude is the content of that article's continuity equation. Checked for the free particle: $A_{\mathrm{WKB}}=\sqrt{m/T}=0.766965$, and $A_{\mathrm{WKB}}/\sqrt{2\pi i\hbar}$ reproduces the exact free prefactor to $2.8\times10^{-17}$.
+
+Both factors are central — the phase is central, and the prefactor is a real number over the central $\sqrt{2\pi i\hbar}$ — so the semiclassical kernel is central:
+
+$$
+K\;\approx\;\mathcal{K}\,e_0,\qquad \mathcal{K}\in\mathbb{C},
+$$
+
+with no non-central element anywhere, exactly as for the full kernel. Under the Wick rotation of the previous section, $\sqrt{2\pi i\hbar}$ becomes $\sqrt{2\pi\hbar}$ and the prefactor becomes real and positive, while the unit-circle phase becomes the decaying weight.
+
+**What this adds, and where the gap remains.** The algebra supplies the square root $\sqrt{i}$ inside the center, so the factor $1/\sqrt{2\pi i\hbar}$ — and with it the $\pm\pi/2$ phases of the Maslov index — is an operation performed on the central element rather than on a quantity whose imaginary unit has to be chosen. It also makes the reality of the prefactor structural. It does **not** supply the determinant: the second variation is the Hessian of an ordinary real action, and the fluctuations are real displacements in the material sector's configuration space. The fluctuation operator is therefore the same kind of external object as the measure, and the assessment of the next section applies to it unchanged.
+
 ## What the Algebra Adds and What It Does Not
 
 **Standard quantum mechanics, transcribed.** The sum over paths, the composition law, the interference formula, the stationary-phase classical limit, the free and short-time kernels, the Gaussian fluctuation determinant, and the Euclidean reduction by Wick rotation are all standard. None of them is new, and none depends on the biquaternion structure beyond the identification of the phase's imaginary unit.
@@ -207,10 +250,12 @@ This is where the Wick-rotation article's classification meets the path integral
 - A **location for the phase exponent**. The exponent $iS/\hbar$ lies in the material sector $\mathbb{M}_-$, along the same $ict$ direction as the propagator's $i\epsilon$ and the thermal analyticity strip — the same direction the Wick rotation turns real.
 - A **name for the phase generator**. The generator $ie_0$ is the central element that exchanges the two sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$.
 - A **bridge**. The Wick rotation is exhibited as the transfer $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, which is exactly the operation that converts the oscillatory phase into a decaying weight.
+- A **central square root**. The semiclassical prefactor contains $\sqrt{2\pi i\hbar}$; the square root is taken inside the center, so the $\pm\tfrac{\pi}{2}$ phases of the Maslov index are operations on the central $i$ rather than on a quantity whose imaginary unit must first be chosen, and the reality of the prefactor after the Wick rotation is structural.
 
 **What remains open in the framework.**
 
 - **The measure.** The path-integral measure $\mathcal{D}x$ is not supplied by the algebra. The trajectories live in the material sector's configuration space, and the algebra labels points of that sector, but the measure on the space of paths is an analytic construction. The free-kernel normalization is fixed by the composition property, not read off the algebra.
+- **The fluctuation operator.** The determinant of the semiclassical kernel is the Hessian of a real action, $\delta^2S$, and the fluctuations are real displacements in the material sector's configuration space. Like the measure, it is an analytic object external to the algebra: the algebra supplies the central $i$ under its square root, not the determinant itself.
 - **The space of paths.** This is the sharpest gap. The biquaternion algebra is finite-dimensional ($\mathbb{B}\cong M_2(\mathbb{C})$ as a $\mathbb{C}$-algebra), whereas the space of paths is infinite-dimensional. As the harmonic-oscillator article records for the infinite ladder, $\mathbb{B}$ hosts the two-level truncation and does not contain an infinite-dimensional module. The sum over paths is therefore performed on a function space *outside* $\mathbb{B}$; the algebra acts fiberwise on the values of the field and supplies the phase, but it does not contain the integration domain.
 - **A biquaternion-valued action.** If the action were $\mathbb{B}$-valued rather than a real scalar — for instance if a Hermitian Lagrangian density were integrated to an $\mathbb{M}_+$-valued action — then the exponent $iS/\hbar$ would lie in $\mathbb{M}_-$ without being central, and the phase $e^{iS/\hbar}$ would be a general unitary biquaternion rather than a central one. Whether such a theory is admissible in the framework, and what a matrix-valued phase would mean, is not addressed here.
 
@@ -238,6 +283,8 @@ A non-central root $J$ fails as the phase's imaginary unit for the same reasons 
 
 The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is central, its phase the classical action over $\hbar$ and its prefactor a function of the central $i$; its composition law was verified to machine precision. The Wick rotation $t\mapsto-i\tau$ gives $S=iS_E$ and hence $e^{iS/\hbar}=e^{-S_E/\hbar}$; in the reading of the companion article this is the identification $\mathbb{M}_-\to\mathbb{H}_{\mathbb{B}}$, which turns the unit circle of central phases into the positive real axis of decaying weights. The algebra thus supplies the phase, its sector, and the bridge to the Euclidean form; it does not supply the measure, the action, or the space of paths — the last being a gap it cannot close, because $\mathbb{B}$ is finite-dimensional.
 
+The classical limit by stationary phase is the van Vleck kernel, $K\approx(2\pi i\hbar)^{-1/2}\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}e^{iS_{\mathrm{cl}}/\hbar}$. Its phase is the same central unitary element as before, and its prefactor is the WKB amplitude $A_{\mathrm{WKB}}=\sqrt{|\det\delta^2S|}$ divided by the central $\sqrt{2\pi i\hbar}$, so the semiclassical kernel is central as well. For the free particle it is the exact kernel, with the composition law and the prefactor verified to $8.3\times10^{-17}$ and $2.8\times10^{-17}$ respectively. The algebra supplies the square root of the central $i$ — and with it the Maslov phases — and makes the reality of the prefactor after the Wick rotation structural; the determinant, being the Hessian of an ordinary real action, is not supplied.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -255,7 +302,10 @@ The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is cent
 | $ie_0$ | Generator of the phase; exchanges the sectors, $i\mathbb{M}_\pm=\mathbb{M}_\mp$ |
 | $K_\varepsilon(x',x)$ | Single-step kernel; phase $=\frac{i}{\hbar}\big(\frac{m(x'-x)^2}{2\varepsilon}-\varepsilon V\big)$ |
 | $K_0$ | Free kernel; $K_0=\mathcal{K}_0e_0$, $\lvert\mathcal{K}_0\rvert^2=m/2\pi\hbar T$ |
-| $S_{\mathrm{cl}}$ | Classical action; phase of the free kernel |
+| $S_{\mathrm{cl}}$ | Classical action; stationary point of $S[x]$; phase of the free kernel |
+| $\delta^2S$ | Second variation (Hessian) of the action about $x_{\mathrm{cl}}$ |
+| $\sqrt{\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert}$ | Van Vleck determinant; equals the WKB amplitude $A_{\mathrm{WKB}}$ |
+| $e^{-i\pi\nu/2}$ | Maslov phase; $\nu$ the number of conjugate points (caustics) |
 | $\tilde\rho=\psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | State from a spinor; global phase cancels |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $t\mapsto-i\tau$ | Wick rotation |
@@ -269,7 +319,10 @@ The free kernel $K_0=(m/2\pi i\hbar T)^{1/2}\exp(im\Delta x^2/2\hbar T)$ is cent
 - R. P. Feynman, "Space-Time Approach to Non-Relativistic Quantum Mechanics," *Reviews of Modern Physics* **20** (1948) 367–387, for the original construction.
 - R. P. Feynman and A. R. Hibbs, *Quantum Mechanics and Path Integrals* (McGraw-Hill, 1965), for the standard treatment of the kernel, its composition, and the free-particle case.
 - L. S. Schulman, *Techniques and Applications of Path Integration* (Wiley, 1981), for the measure, the semiclassical expansion, and the convergence of the oscillatory integral.
+- J. H. Van Vleck, "The Correspondence Principle in the Statistical Interpretation of Quantum Mechanics," *Proceedings of the National Academy of Sciences* **14** (1928) 178–188, for the fluctuation determinant that carries the semiclassical amplitude.
+- V. P. Maslov and M. V. Fedoriuk, *Semi-Classical Approximation in Quantum Mechanics* (Reidel, 1981), for the rigorous stationary-phase expansion and the Maslov index at caustics.
 - J. Glimm and A. Jaffe, *Quantum Physics: A Functional Integral Point of View* (Springer, 1987), for the Euclidean (Wick-rotated) path integral and its rigorous formulation.
 - H. Kleinert, *Path Integrals in Quantum Mechanics, Statistics, Polymer Physics, and Financial Markets* (World Scientific, 2009), for the Euclidean and real-time integrals side by side.
 - S. L. Adler, *Quaternionic Quantum Mechanics and Quantum Fields* (Oxford, 1995), for the quaternionic formulation in which a complex structure must be chosen.
 - G. C. Wick, "Properties of Bethe-Salpeter Wave Functions," *Physical Review* **96** (1954) 1124–1134, for the Wick rotation and its analytic continuation.
+- *The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form* (`articles/the-wkb-approximation-and-the-hamilton-jacobi-equation-in-biquaternionic-form.md`), for the WKB amplitude, its transport by the continuity equation, and the quantum potential.

@@ -1,5 +1,5 @@
 
-# Split Complex Algebra
+# __Split Complex Algebra__
 
 ## Introduction
 

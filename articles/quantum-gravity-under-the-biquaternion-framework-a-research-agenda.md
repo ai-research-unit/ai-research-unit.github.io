@@ -128,7 +128,7 @@ A "no route yet" means the object does not exist and no mechanism producing it h
 
 **A type III field algebra with an outer modular flow.** No route yet. The finite-dimensional modular flow is inner, on a type I$_2$ factor that is semifinite and admits a trace; the wedge algebra of a quantum field theory is type III, admits no trace and no density matrix, and its modular flow is outer. The two statements "$\tilde K\in\mathbb{M}_+$" and "$\tilde K$ generates the modular flow" hold in both settings, but by different mechanisms — an inner commutator in finite dimension, a geometric outer flow at the wedge — and the gap between them is the type gap. Realising the wedge requires an infinite-dimensional algebra built on $\mathbb{B}$-modules; the modular and Bisognano–Wichmann articles name this, and no construction is attempted anywhere in the series. *Would settle it:* the object is an infinite-dimensional von Neumann algebra on $\mathbb{B}$-modules whose modular flow is outer and on which the field vacua of the horizon articles can be represented.
 
-**Empirical content for the gravitational sector.** No route. Nothing in the framework's gravity series predicts a deviation from standard general relativity; a quantisation could in principle produce one, but there is no quantisation to do so. This item is owned by *Empirical Signatures — A Research Agenda* and is not developed here; the gravitational part of it is the action and its coupling, both of which belong to the field-equation agenda.
+**Empirical content for the gravitational sector.** No route. Nothing in the framework's gravity series predicts a deviation from standard general relativity; a quantisation could in principle produce one, but there is no quantisation to do so. This item is owned by *The Empirical Status of the Biquaternion Framework* and is not developed here; the gravitational part of it is the action and its coupling, both of which belong to the field-equation agenda.
 
 ## The Modular Route to a Horizon Temperature: What It Gives and What It Does Not
 
@@ -247,7 +247,7 @@ The ledger's three columns are the deliverable. **Established:** the kinematical
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the framework's loop-level machinery in the scalar and gauge sectors — which does not extend to gravity here.
 - Companion article *The Partition Function in Biquaternionic Form*, for the thermal operator and the Gibbs form of the modular Hamiltonian.
 - Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the sibling ledger and the non-perturbative gap in the gauge sector.
-- Companion article *Empirical Signatures — A Research Agenda*, for the framework-level empirical question that the gravitational sector's absence of a quantisation leaves untouched.
+- Companion article *The Empirical Status of the Biquaternion Framework*, for the framework-level empirical question that the gravitational sector's absence of a quantisation leaves untouched.
 - Companion article *$\mathbb{M}_-$ as the Material Space*, for the material sector, the four-vectors, the norm form, and the zero-divisor cone.
 - Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector, the trace formula, and the home of the modular Hamiltonian.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the boost generators $K_k=ie_k$ and the Lie algebra whose two-sided action drives the obstruction.

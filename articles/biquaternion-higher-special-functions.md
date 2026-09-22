@@ -1,5 +1,5 @@
 
-# Biquaternion Higher Special Functions
+# __Biquaternion Higher Special Functions__
 
 ## Introduction
 

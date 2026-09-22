@@ -1,5 +1,5 @@
 
-# Dual Numbers Special Functions
+# __Dual Numbers Special Functions__
 
 ## Introduction
 

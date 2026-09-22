@@ -1,5 +1,5 @@
 
-# Quaternion Representations
+# __Quaternion Representations__
 
 ## Introduction
 

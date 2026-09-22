@@ -1,5 +1,5 @@
 
-# Dual Numbers Algebra
+# __Dual Numbers Algebra__
 
 ## Introduction
 

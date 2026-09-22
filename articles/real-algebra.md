@@ -1,5 +1,5 @@
 
-# Real Algebra
+# __Real Algebra__
 
 ## Introduction
 

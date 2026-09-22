@@ -6,10 +6,11 @@
 The companion article *The Dirac Equation in Biquaternionic Form* stated the biquaternionic Dirac equation
 
 $$
-\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat, \qquad \tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger,
+\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L, \qquad \bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R,
 $$
 
-together with its massless limit $\tilde{\nabla}\tilde{\Psi} = 0$. It established the algebraic setting — the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the even subalgebra of the Clifford algebra, the biquaternionic gradient $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ as the biquaternion form of the Dirac operator, the action of the equation on the spinor module of $\mathbb{B}$, and the plane-wave ansatz $\tilde{\Psi} = \tilde{\Psi}_0\exp(\tilde{k}\tilde{X})$ with the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2c^2/\hbar^2$. It closed by noting that the massive solution space is four-dimensional over $\mathbb{C}$, corresponding to the four components of the Dirac spinor.
+together with its massless limit $\tilde{\nabla}\tilde{\Psi} = 0$ and the Klein–Gordon reduction $(\Box - m^2c^2/\hbar^2)\tilde{\Psi} = 0$. It established the algebraic setting — the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ as the even subalgebra of the Clifford algebra, the biquaternionic gradient $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ as the biquaternion form of the Dirac operator, the action of the equation on the spinor module of $\mathbb{B}$, and the plane-wave ansatz $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{X}})\right)$ with the mass-shell condition $\tilde{k}\bar{\tilde{k}} = -m^2c^2/\hbar^2$. It closed by noting that the massive solution space is four-dimensional over $\mathbb{C}$, corresponding to the four components of the Dirac spinor.
+<!-- EDITORIAL (2026-09-19): the summary of the parent previously restated grad(Psi) = m Psi^flat with the ansatz exp(ktilde Xtilde). The parent's mass term is now the linear chiral pair, the ansatz is exp(i Sc(ktilde Xbar)), and the Klein-Gordon reduction is included. Both changes are propagated here. -->
 
 That article deliberately worked at a summary level. It identified the solution classes and the mass-shell condition, but it did not construct the solutions, did not fix their normalization, did not write the spinor bilinears, and did not carry the equation into the non-relativistic regime. The purpose of the present article is to supply exactly those four things.
 
@@ -63,7 +64,8 @@ $$
 (i\gamma^\mu\partial_\mu - m)\psi = 0,
 $$
 
-with $\psi$ a four-component complex Dirac spinor. The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this spinor: it is the element of $\mathbb{B} \cong M_2(\mathbb{C})$ that acts on, and encodes, the two-component spinor module, and the operator $\tilde{\nabla}$ is its Dirac operator. The mass term of the companion article, written $\tilde{\Psi}^\flat$, is the representation-dependent transcription of the spinor mass term; we keep the standard spinor form above and note that the identification of the two is the convention discussed in the companion article.
+with $\psi$ a four-component complex Dirac spinor. The biquaternion field $\tilde{\Psi}$ of the companion article is the algebra-level representative of this spinor: it is the element of $\mathbb{B} \cong M_2(\mathbb{C})$ that acts on, and encodes, the two-component spinor module, and the operator $\tilde{\nabla}$ is its Dirac operator. The mass term of the companion article is the linear, chirality-off-diagonal coupling of its chiral pair — the algebra-level representative of the spinor mass term above. The conjugation $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ is a separate object, the algebra's real structure (the fixed space of $\flat$ is the anti-Hermitian sector $\mathbb{M}_-$), and is *not* the mass term.
+<!-- EDITORIAL (2026-09-19): this passage previously identified the parent's mass term with Psi^flat as "the representation-dependent transcription of the spinor mass term". It now identifies the mass with the linear chirality-off-diagonal coupling and separates flat from it; the identification with Psi^flat belonged to the retired antilinear equation. -->
 
 Because $\mathbb{B} \cong M_2(\mathbb{C})$ acts naturally on a two-dimensional complex module, the biquaternion field carries two two-component spinors. In the chiral representation these are the left- and right-handed Weyl spinors,
 
@@ -153,7 +155,8 @@ with $\eta^{(r)\dagger}\eta^{(s)} = \delta^{rs}$; at rest $v^{(r)}(0) = \sqrt{2m
 
 ### The biquaternion mass shell
 
-The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp(\tilde{k}\tilde{X})$, carries the wave biquaternion $\tilde{k}$. With the four-wavevector of the companion article written as $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, the norm form is
+The plane-wave ansatz of the companion article, $\tilde{\Psi} = \tilde{\Psi}_0\exp\!\left(i\,\mathrm{Sc}(\tilde{k}\bar{\tilde{X}})\right)$, carries the wave biquaternion $\tilde{k}$.
+<!-- EDITORIAL (2026-09-19): the ansatz here previously read exp(ktilde Xtilde), which is NOT the same phase as exp(i Sc(ktilde Xbar)) — Sc(ktilde Xbar) = k.x - omega t, whereas Sc(ktilde Xtilde) = -(omega t + k.x). The article's own norm form N(K) = (i omega/c)^2 + k^2 shows the intended phase, so this was an internal inconsistency rather than a convention difference, and was corrected. --> With the four-wavevector of the companion article written as $\tilde{K} = i\omega/c\,e_0 + \mathbf{k}$, the norm form is
 
 $$
 N(\tilde{K}) = \tilde{K}\bar{\tilde{K}} = \left(\frac{i\omega}{c}\right)^2 + \mathbf{k}^2 = -\frac{\omega^2}{c^2} + \mathbf{k}^2 .
@@ -165,7 +168,8 @@ $$
 \tilde{k}\bar{\tilde{k}} = -\frac{m^2c^2}{\hbar^2}.
 $$
 
-The two roots $\omega = \pm\sqrt{c^2\mathbf{k}^2 + m^2c^4/\hbar^2}$ are the two frequency branches, so the positive- and negative-frequency solutions above are the two branches of the single biquaternionic mass-shell condition. The polarization equation $\tilde{k}\tilde{\Psi}_0 = m\tilde{\Psi}_0^\flat$ is the algebraic form of the momentum-space equation; its solution space is the four-dimensional space spanned by the $u^{(r)}$ and $v^{(r)}$.
+The two roots $\omega = \pm\sqrt{c^2\mathbf{k}^2 + m^2c^4/\hbar^2}$ are the two frequency branches, so the positive- and negative-frequency solutions above are the two branches of the single biquaternionic mass-shell condition. The polarization equations $i\tilde{k}\tilde{\Psi}_0^R = m\tilde{\Psi}_0^L$, $i\bar{\tilde{k}}\tilde{\Psi}_0^L = m\tilde{\Psi}_0^R$ are the algebraic form of the momentum-space equation; their solution space is the four-dimensional space spanned by the $u^{(r)}$ and $v^{(r)}$ — two spin states for each of the two frequency branches.
+<!-- EDITORIAL (2026-09-19): this sentence previously claimed that the antilinear polarization equation ktilde Psi0 = m Psi0^flat has the four-dimensional u,v solution space. That equation is not the one whose solution space this article constructs; the linear momentum-space pair is, and the elimination ktilde ktildebar gives the same shell as before, so only the attribution was wrong. -->
 
 ### Spin structure and helicity
 
@@ -458,8 +462,10 @@ whose spin term is the Hermitian observable $-\frac{q\hbar}{2m} i\mathbf{B} \in 
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}}$ | d'Alembertian |
 | $\tilde{\Psi}$ | Biquaternion-valued Dirac field |
-| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate (companion mass-term form) |
-| $\tilde{k} = e_0 k_0 + \mathbf{k}$ | Wave biquaternion |
+| $\tilde{\Psi}^\flat = -\tilde{\Psi}^\dagger$ | Anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
+<!-- EDITORIAL (2026-09-19): this row previously read "(companion mass-term form)"; flat is no longer the mass term. -->
+| $\tilde{k} = i k_0 e_0 + \mathbf{k}$ | Wave biquaternion |
+<!-- EDITORIAL (2026-09-19): this row previously read ktilde = e_0 k_0 + k, which is inconsistent with the article's own norm form N = (i omega/c)^2 + k^2 (the scalar part must be i k_0). Corrected as a self-inconsistency. -->
 | $\tilde{k}\bar{\tilde{k}} = -m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 | $\psi = (\psi_L,\psi_R)$ | Dirac spinor in the chiral basis |
 | $\gamma^\mu$, $\gamma_5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ | Gamma matrices and chirality operator |

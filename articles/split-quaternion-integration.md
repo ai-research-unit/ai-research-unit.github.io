@@ -1,5 +1,5 @@
 
-# Split-Quaternion Integration
+# __Split-Quaternion Integration__
 
 ## Introduction
 

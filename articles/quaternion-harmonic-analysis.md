@@ -1,5 +1,5 @@
 
-# Quaternion Harmonic Analysis
+# __Quaternion Harmonic Analysis__
 
 ## Introduction
 

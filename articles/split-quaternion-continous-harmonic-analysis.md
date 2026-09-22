@@ -1,5 +1,5 @@
 
-# Split-Quaternion Continuous Harmonic Analysis
+# __Split-Quaternion Continuous Harmonic Analysis__
 
 ## Introduction
 
