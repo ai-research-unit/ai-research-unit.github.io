@@ -32,7 +32,7 @@
 
 ## Biquaternion Non Relativistic Quantum Theory
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/quantum-mechanics-foundations-and-structure.html">Quantum Mechanics: Foundations and Structure</a>
 
@@ -68,7 +68,7 @@
 
 ### <a href="articles/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a>
 
-## - particles of spin 0
+## - Particles of spin 0
 
 ### <a href="articles/the-schrodinger-equation-in-biquaternionic-form.html">The Schrödinger Equation in Biquaternionic Form</a>
 
@@ -92,7 +92,7 @@
 
 ### <a href="articles/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a>
 
-## - particles of spin 1/2
+## - Particles of spin 1/2
 
 ### <a href="articles/spin-1-2-quantum-mechanics-in-biquaternionic-form.html">Spin-1/2 Quantum Mechanics in Biquaternionic Form</a>
 
@@ -122,7 +122,7 @@
 
 ### <a href="articles/spin-squeezing-and-the-tavis-cummings-model-in-biquaternionic-form.html">Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form</a>
 
-## - particles of spin 1 and above
+## - Particles of spin 1 and above
 
 ### <a href="articles/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.html">Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form</a>
 
@@ -136,7 +136,7 @@
 
 ### <a href="articles/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html">Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html">The Native Qubit and the Defining Module of the Biquaternion Algebra</a>
 
@@ -187,7 +187,7 @@
 
 ## Biquaternion Non Relativistic Non Quantum Theory
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/lagrangian-and-hamiltonian-mechanics-in-biquaternionic-form.html">Lagrangian and Hamiltonian Mechanics in Biquaternionic Form</a>
 
@@ -204,7 +204,7 @@
 
 ### <a href="articles/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.html">Similitudes Between the Poisson Bracket and the Quantum Commutator</a>
 
-## - effects without intrinsic magnetism (spin 0 origin)
+## - Effects without intrinsic magnetism (spin 0 origin)
 
 ### <a href="articles/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a>
 
@@ -218,7 +218,7 @@
 
 ### <a href="articles/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a>
 
-## - effects with intrinsic magnetism (spin ½ origin)
+## - Effects with intrinsic magnetism (spin ½ origin)
 
 ### <a href="articles/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.html">Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form</a>
 
@@ -226,7 +226,7 @@
 
 ### <a href="articles/the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of g = 2 in Biquaternionic Form</a>
 
-## - effects with higher multipole origins (spin 1+ origin)
+## - Effects with higher multipole origins (spin 1+ origin)
 
 ### <a href="articles/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.html">The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form</a>
 
@@ -234,7 +234,7 @@
 
 ### <a href="articles/why-the-multipole-tower-is-infinite-but-the-biquaternion-algebra-is-not.html">Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/coarse-graining-and-the-biquaternion-entropy-functional.html">Coarse-Graining and the Biquaternion Entropy Functional</a>
 
@@ -317,7 +317,7 @@
 
 ## Biquaternion Relativistic Quantum Theory
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/the-biquaternion-dalembertian-and-its-greens-functions.html">The Biquaternion D'Alembertian and Its Green's Functions</a>
 
@@ -329,7 +329,7 @@
 
 ### <a href="articles/thomson-and-compton-scattering-the-biquaternion-polarization-algebra.html">Thomson and Compton Scattering: The Biquaternion Polarization Algebra</a>
 
-## - particles of spin 0
+## - Particles of spin 0
 
 ### <a href="articles/the-klein-gordon-equation-in-biquaternionic-form.html">The Klein–Gordon Equation in Biquaternionic Form</a>
 
@@ -339,7 +339,7 @@
 
 ### <a href="articles/the-klein-gordon-path-integral-in-biquaternionic-form.html">The Klein–Gordon Path Integral in Biquaternionic Form</a>
 
-## - particles of spin 1/2
+## - Particles of spin 1/2
 
 ### <a href="articles/the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>
 
@@ -377,7 +377,7 @@
 
 ### <a href="articles/supersymmetric-quantum-mechanics-in-the-biquaternion-framework.html">Supersymmetric Quantum Mechanics in the Biquaternion Framework</a>
 
-## - particles of spin 1 and above
+## - Particles of spin 1 and above
 
 ### <a href="articles/the-self-dual-and-anti-self-dual-split-spin-1-from-the-biquaternion-material-sector.html">The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector</a>
 
@@ -387,7 +387,7 @@
 
 ### <a href="articles/higher-spin-from-tensor-products-why-the-biquaternion-algebra-admits-only-spin-0-and-one-half.html">Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.html">The Material-Informational Split as a Superselection Structure in Biquaternionic Form</a>
 
@@ -404,7 +404,7 @@
 
 ## Biquaternion Relativistic Non Quantum Theory
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/the-relativistic-particle-in-biquaternionic-form.html">The Relativistic Particle in Biquaternionic Form</a>
 
@@ -416,25 +416,25 @@
 
 ### <a href="articles/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.html">Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form</a>
 
-## - effects without intrinsic magnetism (spin 0 origin)
+## - Effects without intrinsic magnetism (spin 0 origin)
 
 ### <a href="articles/the-relativistic-central-force-problem-in-biquaternionic-form.html">The Relativistic Central Force Problem in Biquaternionic Form</a>
 
 ### <a href="articles/the-central-scalar-field-classical-dynamics-in-the-biquaternion-center.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Center</a>
 
-## - effects with intrinsic magnetism (spin ½ origin)
+## - Effects with intrinsic magnetism (spin ½ origin)
 
 ### <a href="articles/thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>
 
 ### <a href="articles/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a>
 
-## - effects with higher multipole origins (spin 1+ origin)
+## - Effects with higher multipole origins (spin 1+ origin)
 
 ### <a href="articles/the-relativistic-quadrupole-in-biquaternionic-form.html">The Relativistic Quadrupole in Biquaternionic Form</a>
 
 ### <a href="articles/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.html">Higher Multipoles and the Field-Strength Decomposition in Biquaternionic Form</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.html">Causality and the Light Cone as an Information Barrier in Biquaternionic Form</a>
 
@@ -445,7 +445,7 @@
 
 ## Biquaternion Quantum Fields
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/the-biquaternion-vacuum-as-a-minimal-idempotent.html">The Biquaternion Vacuum as a Minimal Idempotent</a>
 
@@ -491,7 +491,7 @@
 
 ### <a href="articles/the-spectral-triple-of-the-biquaternion-algebra.html">The Spectral Triple of the Biquaternion Algebra</a>
 
-## - particles of spin 0
+## - Particles of spin 0
 
 ### <a href="articles/canonical-quantization-of-the-biquaternion-klein-gordon-field.html">Canonical Quantization of the Biquaternion Klein–Gordon Field</a>
 
@@ -505,7 +505,7 @@
 
 ### <a href="articles/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a>
 
-## - particles of spin 1/2
+## - Particles of spin 1/2
 
 ### <a href="articles/canonical-quantization-of-the-biquaternion-dirac-field.html">Canonical Quantization of the Biquaternion Dirac Field</a>
 
@@ -525,7 +525,7 @@
 
 ### <a href="articles/the-anomalous-magnetic-moment-in-biquaternionic-form.html">The Anomalous Magnetic Moment in Biquaternionic Form</a>
 
-## - particles of spin 1 and above
+## - Particles of spin 1 and above
 
 ### <a href="articles/canonical-quantization-of-the-biquaternion-maxwell-field.html">Canonical Quantization of the Biquaternion Maxwell Field</a>
 
@@ -549,7 +549,7 @@
 
 ### <a href="articles/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/relative-entropy-and-the-biquaternion-framework.html">Relative Entropy and the Biquaternion Framework</a>
 
@@ -576,7 +576,7 @@
 
 ## Biquaternion Particle Physics and Gauge Fields
 
-## - generalities
+## - Generalities
 
 ### <a href="articles/the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>
 
@@ -610,7 +610,7 @@
 
 ### <a href="articles/quantum-chromodynamics-under-the-biquaternion-framework-a-research-agenda.html">Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda</a>
 
-## - particles of spin 0
+## - Particles of spin 0
 
 ### <a href="articles/the-higgs-mechanism-in-biquaternionic-form.html">The Higgs Mechanism in Biquaternionic Form</a>
 
@@ -626,7 +626,7 @@
 
 ### <a href="articles/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a>
 
-## - particles of spin 1/2
+## - Particles of spin 1/2
 
 ### <a href="articles/chiral-fermions-in-the-biquaternion-framework.html">Chiral Fermions in the Biquaternion Framework</a>
 
@@ -650,7 +650,7 @@
 
 ### <a href="articles/the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>
 
-## - particles of spin 1 and above
+## - Particles of spin 1 and above
 
 ### <a href="articles/non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a>
 
@@ -666,7 +666,7 @@
 
 ### <a href="articles/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a>
 
-## - focus on informational aspects
+## - Focus on informational aspects
 
 ### <a href="articles/gauge-redundancy-and-the-information-in-the-gauge-orbit-in-biquaternionic-form.html">Gauge Redundancy and the Information in the Gauge Orbit in Biquaternionic Form</a>
 
