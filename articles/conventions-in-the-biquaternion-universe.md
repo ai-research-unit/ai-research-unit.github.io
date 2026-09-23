@@ -63,7 +63,7 @@ The algebra carries four natural involutions, all of them used in the series:
 
 | Name | Notation | Definition |
 |---|---|---|
-| Quaternion conjugation | $\bar{\tilde{Q}}$ | $e_k \mapsto -e_k$, $i$ fixed |
+| Quaternion conjugation | $\bar{\tilde{Q}}$ | $e_k \mapsto -e_k$, $k = 1, 2, 3$, $i$ fixed |
 | Complex conjugation | $\tilde{Q}^*$ | $i \mapsto -i$, $e_k$ fixed |
 | Hermitian conjugation | $\tilde{Q}^\dagger$ | $\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*}$ |
 | Anti-Hermitian conjugation | $\tilde{Q}^\flat$ | $\tilde{Q}^\flat = -\tilde{Q}^\dagger$ |
@@ -86,21 +86,21 @@ This table is a list of **definitions**, not of relations. How the four subspace
 
 Each of the four is four-dimensional over $\mathbb{R}$, written with its own four real parameters and its own physical coordinates. They are taken one at a time, in the order used throughout the series.
 
-**The material subspace $\mathbb{M}_-$** — fixed by $\flat$, basis $ie_0, e_1, e_2, e_3$; scalar part **purely imaginary**, vector part **real**:
+**The material subspace $\mathbb{M}_-$** — the **anti-Hermitian** subspace, fixed by $\flat$; equivalently the eigenspace of $\dagger$ with eigenvalue $-1$, the elements with $\tilde{Q}^\dagger = -\tilde{Q}$. Basis $ie_0, e_1, e_2, e_3$; scalar part **purely imaginary**, vector part **real**:
 
 $$
 \tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-, \qquad q'_0 = ct, \qquad (q_1, q_2, q_3) = (x, y, z).
 $$
 
-It carries the spacetime coordinate and the four-vectors of the series.
+It carries the spacetime coordinate and the four-vectors of the series. Because $\flat$ is the algebra's **real structure** (*The Real Structure $\flat$*, below), $\mathbb{M}_-$ is its fixed space — the algebra's real form — and that is the sense in which the series calls this subspace **real**: not that its coefficients are real, which they are not, but that it is fixed by the real structure. The two readings must be kept apart, since the subspace of real *coefficients* is $\mathbb{H}_{\mathbb{B}}$, a different subspace of the same algebra.
 
-**The informational subspace $\mathbb{M}_+$** — fixed by $\dagger$, basis $e_0, ie_1, ie_2, ie_3$; scalar part **real**, vector part **purely imaginary**:
+**The informational subspace $\mathbb{M}_+$** — the **Hermitian** subspace, fixed by $\dagger$; equivalently the eigenspace of $\dagger$ with eigenvalue $+1$, the elements with $\tilde{Q}^\dagger = \tilde{Q}$. Basis $e_0, ie_1, ie_2, ie_3$; scalar part **real**, vector part **purely imaginary**:
 
 $$
 \tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+, \qquad q_0 = ct', \qquad (q'_1, q'_2, q'_3) = (x', y', z').
 $$
 
-It carries the Hermitian operators, states and observables.
+It carries the Hermitian operators, states and observables. It is the partner of $\mathbb{M}_-$ under the real structure: $\flat$ acts as $+1$ on $\mathbb{M}_-$ and $-1$ on $\mathbb{M}_+$, and the two are exchanged by multiplication by $i$, $i\mathbb{M}_- = \mathbb{M}_+$.
 
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$** — fixed by ${}^{*}$, basis $e_0, e_1, e_2, e_3$; all four coefficients **real**:
 
