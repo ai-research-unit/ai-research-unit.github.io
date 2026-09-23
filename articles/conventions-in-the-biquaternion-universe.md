@@ -78,7 +78,15 @@ Each involution has a fixed space, and each of these is a named **real** subspac
 | complex conjugation ${}^{*}$, anti-fixed | $i\mathbb{H}_{\mathbb{B}}$ | antiquaternion subspace | $4$ |
 | quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | the center | $2$ |
 
-The antiquaternion subspace is the **anti**-fixed space of complex conjugation — the elements with $\tilde{Q}^* = -\tilde{Q}$ — not the fixed space of an involution of its own. The center is the fifth fixed space, of real dimension two, the scalar line $\{Q_0e_0\}$; it is treated where it is needed, in the matrix-representation article, and not among the four.
+The antiquaternion subspace is the **anti**-fixed space of complex conjugation — the elements with $\tilde{Q}^* = -\tilde{Q}$ — not the fixed space of an involution of its own.
+
+**The center $\mathbb{C}_{\mathbb{B}}$** is the fifth fixed space, and the one that is not a sector: it is the fixed space of quaternion conjugation, the elements with no vector part at all,
+
+$$
+\mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\} = \{Q_0e_0\} = \mathbb{R}e_0 \oplus \mathbb{R}(ie_0), \qquad Q_0 = q_0 + iq'_0 \in \mathbb{C}.
+$$
+
+It is the only one of the five that is two-dimensional over $\mathbb{R}$: purely scalar, it carries no spatial direction of the dictionary and both temporal ones, so it is the two time axes together, $\mathbb{C}_{\mathbb{B}} = T_{\mathrm{i}} \oplus T_{\mathrm{m}}$. It is the **center** in the algebraic sense — the elements commuting with everything, $[\tilde{C}, \tilde{Q}] = 0$ for all $\tilde{Q} \in \mathbb{B}$ — which is what makes it the home of the scalars; and that is not an artefact of the parametrisation, since $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ with the quaternions having center $\mathbb{R}$ gives the center of $\mathbb{B}$ as $\mathbb{C} \otimes_\mathbb{R} \mathbb{R}e_0 = \mathbb{C}_{\mathbb{B}}$ itself. It is therefore a subalgebra isomorphic to $\mathbb{C}$ — a field, and the only commutative one among the five — preserved by every conjugation the algebra has: $\bar{\cdot}$ fixes it pointwise, ${}^{*}$ and with it $\dagger$ negates its second line $ie_0$ while fixing $e_0$, and $\flat$ reverses the two. Under $\Phi$ it is exactly the preimage of the scalar matrices, $\Phi(\mathbb{C}_{\mathbb{B}}) = \mathbb{C}I_2$, so the continuous **central phase** — the global $U(1)$, whose element $e^{i\theta}e_0$ lies here — is a motion within the center, fixed by $\bar{\cdot}$ and conjugated by ${}^{*}$. Its two lines are also the two triple intersections of the subspaces, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$: the directions common to three of the five.
 
 This table is a list of **definitions**, not of relations. How the four subspaces meet, span and cross is the subject of *The Quaternion and Antiquaternion Subspaces*; what is recorded here is only the parametrisation each one carries, which is what the rest of the series assumes.
 
