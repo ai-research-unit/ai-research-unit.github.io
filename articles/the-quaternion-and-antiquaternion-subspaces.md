@@ -276,14 +276,14 @@ $$
 \tilde{Q} \in A \cap B \quad\Longleftrightarrow\quad \tilde{Q}_{\text{block}} = 0 \ \text{ for every block outside } A \ \text{and every block outside } B .
 $$
 
-**Hence the intersection of two subspaces is the sum of the blocks they share**, and it is never four- or two-dimensional: a subspace has two blocks, so two of them share none, one or two, and the dimensions that can occur are $0$ (no shared block), $1$ (one shared temporal block) and $3$ (one shared spatial block).
+**Hence the intersection of two subspaces is the sum of the blocks they share.** A subspace has two blocks, so two of them share none, one, or both; sharing both means they are the same subspace, whose intersection is itself. For two **distinct** subspaces the dimensions are therefore $0$ (no shared block), $1$ (one shared temporal block) and $3$ (one shared spatial block).
 
 | $\cap$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
 |---|---|---|---|---|
-| $\mathbb{M}_-$ | — | $0$ | $X_{\mathrm{m}}$, dim $3$ | $T_{\mathrm{m}}$, dim $1$ |
-| $\mathbb{M}_+$ | $0$ | — | $T_{\mathrm{i}}$, dim $1$ | $X_{\mathrm{i}}$, dim $3$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $X_{\mathrm{m}}$ | $T_{\mathrm{i}}$ | — | $0$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $0$ | — |
+| $\mathbb{M}_-$ | $\mathbb{M}_-$ | $0$ | $X_{\mathrm{m}}$ | $T_{\mathrm{m}}$ |
+| $\mathbb{M}_+$ | $0$ | $\mathbb{M}_+$ | $T_{\mathrm{i}}$ | $X_{\mathrm{i}}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $X_{\mathrm{m}}$ | $T_{\mathrm{i}}$ | $\mathbb{H}_{\mathbb{B}}$ | $0$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $0$ | $i\mathbb{H}_{\mathbb{B}}$ |
 
 **In coordinates.**
 
@@ -305,7 +305,7 @@ Each subspace is one temporal block plus one spatial block, so the four can be a
 | **material time** $T_{\mathrm{m}}$ | $\mathbb{M}_-$<br>$(T_{\mathrm{m}},\,X_{\mathrm{m}})$ | $i\mathbb{H}_{\mathbb{B}}$<br>$(T_{\mathrm{m}},\,X_{\mathrm{i}})$ |
 | **informational time** $T_{\mathrm{i}}$ | $\mathbb{H}_{\mathbb{B}}$<br>$(T_{\mathrm{i}},\,X_{\mathrm{m}})$ | $\mathbb{M}_+$<br>$(T_{\mathrm{i}},\,X_{\mathrm{i}})$ |
 
-Two subspaces in the same row share their time, two in the same column share their space, and no two of the four are equal. The two splits appear as the two diagonals — the sectors pair a time with the space of the same sector, the halves pair a time with the space of the other. The whole intersection table is therefore the grid: **same row gives dimension $1$, same column gives dimension $3$, differing in both gives $0$.** The vanishing pairs are exactly those differing in both entries, which is what the two splits are, and the four nonzero entries have the dimension of the shared block, $3$ for a shared space and $1$ for a shared time. The dimensions $\{0,1,3\}$ are the three-and-one pattern of the blocks, read as an intersection.
+Two subspaces in the same row share their time, two in the same column share their space, and no two of the four are equal. The two splits appear as the two diagonals of this grid — the sectors pair a time with the space of the same sector, the halves pair a time with the space of the other. The whole intersection table is therefore the grid: **for two distinct subspaces, same row gives dimension $1$, same column gives dimension $3$, and differing in both gives $0$.** The vanishing pairs are exactly those differing in both entries, which is what the two splits are, and the four nonzero off-diagonal entries have the dimension of the shared block, $3$ for a shared space and $1$ for a shared time. The dimensions $\{0,1,3\}$ are the three-and-one pattern of the blocks, read as an intersection.
 
 ### $\mathbb{M}_- \cap \mathbb{M}_+ = 0$
 
@@ -518,7 +518,7 @@ The biquaternion algebra admits two independent four-plus-four decompositions: t
 
 - The eight real parameters fall into four blocks: the material time $T_{\mathrm{m}} = \mathbb{R}(ie_0)$, the informational time $T_{\mathrm{i}} = \mathbb{R}e_0$, the material space $X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3)$, and the informational space $X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3)$. The primed parameters $q'_0, q'_k$ are exactly the coefficients that enter with $i$, that is, they span $i\mathbb{H}_{\mathbb{B}}$ — which is the origin of the three-and-one pattern of the primes.
 - Each of the four four-dimensional subspaces is one temporal block plus one spatial block: $\mathbb{M}_- = T_{\mathrm{m}}\oplus X_{\mathrm{m}}$, $\mathbb{M}_+ = T_{\mathrm{i}}\oplus X_{\mathrm{i}}$, $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}}\oplus X_{\mathrm{m}}$, $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}}\oplus X_{\mathrm{i}}$. So $\mathbb{H}_{\mathbb{B}}$ is informational time with material space, and $i\mathbb{H}_{\mathbb{B}}$ is material time with informational space. The sectors pair a time with the space of the same sector; the halves pair a time with the space of the other. The center is the exception: two temporal blocks and no spatial one.
-- The intersections are the shared blocks, so they have dimension $0$, $1$ or $3$ and never $2$ or $4$. Viewed as a two-by-two grid of temporal against spatial block, subspaces in the same row share their time (dimension $1$), those in the same column share their space (dimension $3$), and those differing in both entries — which are exactly the two splits — meet only at $0$. Every pair of distinct subspaces meets except the two split partners: $\mathbb{M}_- \cap \mathbb{M}_+ = 0$ and $\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$. The two splits are maximally crossed: no piece of either lies inside a piece of the other.
+- The intersections are the shared blocks, so two **distinct** subspaces have dimension $0$, $1$ or $3$ and never $2$ or $4$. Viewed as a two-by-two grid of temporal against spatial block, subspaces in the same row share their time (dimension $1$), those in the same column share their space (dimension $3$), and those differing in both entries — which are exactly the two splits — meet only at $0$. Every pair of distinct subspaces meets except the two split partners: $\mathbb{M}_- \cap \mathbb{M}_+ = 0$ and $\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$. The two splits are maximally crossed: no piece of either lies inside a piece of the other.
 - The center, the real quaternions and $\mathbb{M}_+$ share the line $\mathbb{R}e_0$; the center, the antiquaternions and $\mathbb{M}_-$ share $\mathbb{R}(ie_0)$. Each subspace meets the center in exactly one of these two lines, and the center is the only subspace with no spatial part — two-dimensional where the others are four.
 - Only the two splits span: $\mathbb{M}_- + \mathbb{M}_+ = \mathbb{B} = \mathbb{H}_{\mathbb{B}} + i\mathbb{H}_{\mathbb{B}}$, while the mixed pairs span $5$ or $7$ dimensions. An element of $\mathbb{B}$ cannot in general be written as a material part plus a quaternion part.
 - The half split is a $\mathbb{Z}/2$-grading: $\mathbb{H}_{\mathbb{B}}$ is the even part and a subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the odd part and only a module. $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$ is a division algebra.
