@@ -1,4 +1,3 @@
-
 # __Exercise: Spin Precession in a Magnetic Field__
 
 ## Introduction

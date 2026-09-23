@@ -1,4 +1,3 @@
-
 # __The Schwinger–Keldysh Formalism in Biquaternionic Form__
 
 ## Introduction

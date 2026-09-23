@@ -1,4 +1,3 @@
-
 # __The Holevo Bound and Accessible Information in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Schrödinger Path Integral in Biquaternionic Form__
 
 ## Introduction

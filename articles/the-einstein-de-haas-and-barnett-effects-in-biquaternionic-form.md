@@ -1,4 +1,3 @@
-
 # __The Einstein–de Haas and Barnett Effects in Biquaternionic Form__
 
 ## Introduction

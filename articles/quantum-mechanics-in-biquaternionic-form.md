@@ -1,4 +1,3 @@
-
 # __Quantum Mechanics in Biquaternionic Form__
 
 ## Introduction

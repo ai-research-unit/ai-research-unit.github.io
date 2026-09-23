@@ -1,4 +1,3 @@
-
 # __The Harmonic Oscillator in Biquaternionic Form__
 
 ## Introduction

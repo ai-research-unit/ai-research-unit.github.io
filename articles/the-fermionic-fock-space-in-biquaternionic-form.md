@@ -1,4 +1,3 @@
-
 # __The Fermionic Fock Space in Biquaternionic Form__
 
 ## Introduction

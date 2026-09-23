@@ -1,4 +1,3 @@
-
 # __Angular Momentum and Spin in Biquaternionic Form__
 
 ## Introduction

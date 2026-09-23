@@ -1,4 +1,3 @@
-
 # __Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form__
 
 ## Introduction

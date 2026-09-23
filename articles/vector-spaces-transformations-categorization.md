@@ -1,4 +1,3 @@
-
 # __Vector Space Transformations categorization__
 
 ## Introduction

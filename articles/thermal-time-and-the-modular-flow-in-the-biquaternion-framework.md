@@ -1,4 +1,3 @@
-
 # __Thermal Time and the Modular Flow in the Biquaternion Framework__
 
 ## Introduction

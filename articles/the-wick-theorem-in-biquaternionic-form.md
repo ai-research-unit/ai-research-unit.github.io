@@ -1,4 +1,3 @@
-
 # __The Wick Theorem in Biquaternionic Form__
 
 ## Introduction

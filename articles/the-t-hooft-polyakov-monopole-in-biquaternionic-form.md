@@ -1,4 +1,3 @@
-
 # __The 't Hooft–Polyakov Monopole in Biquaternionic Form__
 
 ## Introduction

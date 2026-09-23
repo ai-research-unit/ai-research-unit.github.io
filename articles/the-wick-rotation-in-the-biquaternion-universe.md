@@ -1,4 +1,3 @@
-
 # __The Wick Rotation in the Biquaternion Universe__
 
 ## Introduction
@@ -9,18 +8,18 @@ This article proposes a structural reading of the Wick rotation, in terms of the
 
 This reading explains, in a single structural fact, why the trick is useful and why it sometimes fails. The subspace $\mathbb{H}_{\mathbb{B}}$ is better behaved than $\mathbb{M}_-$: it has a positive-definite quadratic form, no zero divisors, a division-algebra structure, an elliptic differential operator, and a compact symmetry group. When the physics of a problem depends on the Lorentzian structure of $\mathbb{M}_-$ — the light cone, the causal ordering, the phase — the transfer to $\mathbb{H}_{\mathbb{B}}$ destroys this structure, and the trick fails. When the physics is insensitive to the Lorentzian structure — equilibrium, correlation, statistical weight — the transfer is harmless and the resulting problem on $\mathbb{H}_{\mathbb{B}}$ is easier.
 
-The article is organized as follows. First the three natural subspaces of $\mathbb{B}$ are recalled: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{H}_{\mathbb{B}}$ is developed, with the properties of the two subspaces compared. Then the reading is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the reading.
+The article is organized as follows. First the three subspaces involved in the rotation are recalled: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. Then the standard Wick rotation is recalled, and its action on the coordinates is written explicitly. Then the identification with $\mathbb{H}_{\mathbb{B}}$ is developed, with the properties of the two subspaces compared. Then the reading is applied to the standard applications of the Wick rotation, and a split is proposed between applications that transfer harmlessly and applications that resist. The article closes with the status of the reading.
 
 Throughout, $c$ denotes the speed of light in the medium, and the biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
 ## The Three Subspaces of $\mathbb{B}$
 
-The biquaternion algebra $\mathbb{B}$ contains three distinguished four-dimensional real subspaces: the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the material sector $\mathbb{M}_-$, and the informational sector $\mathbb{M}_+$. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
+The biquaternion algebra $\mathbb{B}$ is cut into six distinguished real subspaces, four of them four-dimensional: the material sector $\mathbb{M}_-$, the informational sector $\mathbb{M}_+$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$. The remaining two are the two-dimensional center $\mathbb{C}_{\mathbb{B}}$ and the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$. Three of the four-dimensional subspaces are involved in the Wick rotation and are recalled here. All three are real vector spaces of dimension 4, and all three are subspaces of the same algebra.
 
 **The quaternion subspace $\mathbb{H}_{\mathbb{B}}$.** An element has the form
 
 $$
-\tilde{Q} = q_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = q_0\, e_0 + q_1\, e_1 + q_2\, e_2 + q_3\, e_3 = (ct')\, e_0 + x\, e_1 + y\, e_2 + z\, e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
 $$
 
 All four coefficients are **real**. The quadratic form
@@ -89,7 +88,7 @@ $$
 \tilde{Q}_\mathbb{H} = c\tau\, e_0 + x\, e_1 + y\, e_2 + z\, e_3,
 $$
 
-with **all four coefficients real**.
+with **all four coefficients real**. In the notation of the quaternion subspace these are the four parameters $q_0 = c\tau$, $q_1 = x$, $q_2 = y$, $q_3 = z$.
 
 So the standard Wick rotation is the identification
 
@@ -185,7 +184,7 @@ The split is observed in practice. The successful uses of the Wick rotation (lat
 
 The reading of the Wick rotation as a transfer from $\mathbb{M}_-$ to $\mathbb{H}_{\mathbb{B}}$ is an **interpretation**, not an established result. What is established is the following.
 
-- The biquaternion algebra contains three natural four-dimensional real subspaces: $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_-$, $\mathbb{M}_+$.
+- The biquaternion algebra contains four natural four-dimensional real subspaces: $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$, and $i\mathbb{H}_{\mathbb{B}}$. Three of them — $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ — are involved in the Wick rotation.
 - The three subspaces have distinct signatures: $(4, 0)$, $(3, 1)$, $(1, 3)$.
 - The standard Wick rotation acts on a point of $\mathbb{M}_-$ by relabeling the imaginary coefficient $ict$ as a real coefficient $c\tau$, leaving the spatial coefficients unchanged.
 - The resulting point lies in $\mathbb{H}_{\mathbb{B}}$.
@@ -219,6 +218,11 @@ The reading predicts a split of applications into those that transfer harmlessly
 | $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace: signature $(4, 0)$, elliptic |
 | $\mathbb{M}_-$ | Material sector: signature $(3, 1)$, hyperbolic |
 | $\mathbb{M}_+$ | Informational sector: signature $(1, 3)$, mirror hyperbolic |
+| $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | The remaining four-dimensional subspace, the center, and the vector subspace; not involved in the Wick rotation |
+| $q_0, q_1, q_2, q_3$ | Real parameters on $\mathbb{H}_{\mathbb{B}}$, on $e_0, e_1, e_2, e_3$; the rotated point has $q_0 = c\tau$ |
+| $(ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$ | The same element in physical coordinates; $q_0 = ct'$ and $(q_1,q_2,q_3) = (x,y,z)$ |
+| $q'_0, q_1, q_2, q_3$ | Real parameters on $\mathbb{M}_-$, on $ie_0, e_1, e_2, e_3$; the material point has $q'_0 = ct$ |
+| $q_0, q'_1, q'_2, q'_3$ | Real parameters on $\mathbb{M}_+$, on $e_0, ie_1, ie_2, ie_3$; $q_0 = ct'$ |
 | $c$ | Speed of light in the medium |
 | $t$ | Time coordinate on $\mathbb{M}_-$ |
 | $\tau$ | Euclidean coordinate on $\mathbb{H}_{\mathbb{B}}$ |

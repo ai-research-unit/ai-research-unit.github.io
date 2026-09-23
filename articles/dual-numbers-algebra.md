@@ -1,4 +1,3 @@
-
 # __Dual Numbers Algebra__
 
 ## Introduction

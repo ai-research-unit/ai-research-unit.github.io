@@ -1,4 +1,3 @@
-
 # __Superdense Coding in Biquaternionic Form__
 
 ## Introduction

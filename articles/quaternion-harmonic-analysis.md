@@ -1,4 +1,3 @@
-
 # __Quaternion Harmonic Analysis__
 
 ## Introduction

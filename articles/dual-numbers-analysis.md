@@ -1,4 +1,3 @@
-
 # __Dual Numbers Analysis__
 
 ## Introduction

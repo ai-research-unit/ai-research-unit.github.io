@@ -1,4 +1,3 @@
-
 # __Biquaternion Algebraic Representations__
 
 ## Introduction

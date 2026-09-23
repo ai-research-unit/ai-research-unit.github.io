@@ -1,4 +1,3 @@
-
 # __Algebras: Categorization__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form__
 
 ## Introduction

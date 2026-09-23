@@ -1,4 +1,3 @@
-
 # __Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form__
 
 ## Introduction

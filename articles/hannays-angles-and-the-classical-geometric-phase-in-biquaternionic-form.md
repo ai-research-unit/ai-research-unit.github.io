@@ -1,4 +1,3 @@
-
 # __Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form__
 
 ## Introduction

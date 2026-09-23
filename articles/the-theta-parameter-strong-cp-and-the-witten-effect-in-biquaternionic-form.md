@@ -1,4 +1,3 @@
-
 # __The Theta Parameter, Strong CP, and the Witten Effect in Biquaternionic Form__
 
 ## Introduction

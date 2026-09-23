@@ -1,4 +1,3 @@
-
 # __Anomalies and Anomaly Cancellation in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Biquaternion Algebra__
 
 ## Introduction

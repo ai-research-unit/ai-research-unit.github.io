@@ -1,4 +1,3 @@
-
 # __Real Special Functions__
 
 ## Introduction

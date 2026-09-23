@@ -1,4 +1,3 @@
-
 # __The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form__
 
 ## Introduction
@@ -18,7 +17,7 @@ The companion articles used below are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the action, the Euler–Lagrange equation, the Legendre transform, and the phase-space biquaternion.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor conjugation and the flow on the coadjoint orbit.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the boundary-term construction of conserved quantities.
-- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the norm form and the material-sector structure.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form and the material-sector structure.
 
 ## The Action and Its First Variation
 

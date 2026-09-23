@@ -1,11 +1,10 @@
-
 # __The Newman–Penrose Formalism in Biquaternionic Form__
 
 ## Introduction
 
 The Newman–Penrose formalism rewrites the local geometry of four-dimensional spacetime in a basis adapted to the light cone. In place of an orthonormal frame it uses a **null tetrad** $(l, n, m, \bar m)$: two real null vectors $l$ and $n$, and a complex-conjugate pair $m, \bar m$ that are also null. The ten independent components of the Weyl tensor become five complex scalars $\Psi_0, \dots, \Psi_4$; the connection becomes twelve complex **spin coefficients**; and the Petrov classification of the curvature is read off from which of the five scalars vanish. The formalism is the standard language of the algebraically special solutions of general relativity.
 
-This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*$\mathbb{M}_-$ as the Material Subspace*; *Biquaternion Null Quadric and Projective Geometry*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
+This article places that formalism in the biquaternion framework of the read-list articles, and the placement is not an analogy. The primitive object of the Newman–Penrose construction is a null vector, and the primitive algebraic object of the framework is the **zero divisor**: in the material sector $\mathbb{M}_-$ the light cone *is* the zero-divisor cone, a nonzero null vector is a zero divisor of $\mathbb{B}$, and under the matrix realization $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ it is a rank-one matrix (*The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *Biquaternion Null Quadric and Projective Geometry*). Every leg of a Newman–Penrose tetrad is therefore a zero divisor of the algebra, and the tetrad itself is the image of a normalized spinor dyad under the framework's spinor bilinear. That identification is the centre of this article, and it is verified below rather than asserted.
 
 Three claims organise the discussion.
 
@@ -360,6 +359,6 @@ The gap is the curvature itself. The algebra supplies the tetrad, the dyad, the 
 - *Biquaternion Null Quadric and Projective Geometry*, for the null cone as the zero-divisor cone, the rank-one description, and the factorization of null biquaternions into mixed spinors.
 - *Biquaternion Zero Divisors*, for the norm-form criterion and the classification of zero divisors used throughout.
 - *The Spinor-Helicity Formalism and Biquaternions*, for the factorization of a null momentum into a spinor bilinear, of which the null tetrad is the four-legged version.
-- *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, its norm form, and the identification of its null cone with the zero divisors.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, its norm form, and the identification of its null cone with the zero divisors.
 - *Spinors*, for the two-component spinor conventions.
 

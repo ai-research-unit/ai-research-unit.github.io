@@ -1,4 +1,3 @@
-
 # __Dual Numbers Special Functions__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Elementary Functions__
 
 ## Introduction

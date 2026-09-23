@@ -1,4 +1,3 @@
-
 # __Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Grassmann Coherent States in Biquaternionic Form__
 
 ## Introduction

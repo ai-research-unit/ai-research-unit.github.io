@@ -1,4 +1,3 @@
-
 # __The Wigner–Eckart Theorem and Tensor Operators in Biquaternionic Form__
 
 ## Introduction

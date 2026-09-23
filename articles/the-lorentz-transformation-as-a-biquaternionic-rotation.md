@@ -1,4 +1,3 @@
-
 # __The Lorentz Transformation as a Biquaternionic Rotation__
 
 ## Introduction

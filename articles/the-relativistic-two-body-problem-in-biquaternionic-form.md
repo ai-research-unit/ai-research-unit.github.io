@@ -1,4 +1,3 @@
-
 # __The Relativistic Two-Body Problem in Biquaternionic Form__
 
 ## Introduction

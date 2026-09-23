@@ -1,4 +1,3 @@
-
 # __The Dirac Oscillator in Biquaternionic Form__
 
 ## Introduction

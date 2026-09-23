@@ -1,4 +1,3 @@
-
 # __The Path Integral in Biquaternionic Form__
 
 ## Introduction

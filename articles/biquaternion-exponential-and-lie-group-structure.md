@@ -1,4 +1,3 @@
-
 # __Biquaternion Exponential and Lie Group Structure__
 
 ## Introduction

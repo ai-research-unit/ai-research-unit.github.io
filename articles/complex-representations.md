@@ -1,4 +1,3 @@
-
 # __Complex Representations__
 
 ## Introduction

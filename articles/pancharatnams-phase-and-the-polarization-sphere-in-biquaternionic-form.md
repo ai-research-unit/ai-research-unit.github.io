@@ -1,11 +1,10 @@
-
 # __Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form__
 
 ## Introduction
 
 When polarized light is passed through a sequence of polarizers, the interference phase between the initial and final beams contains a part that is not accumulated by propagation. Pancharatnam showed in 1956 that for three polarizations the effect is a phase equal to minus one half of the solid angle of the spherical triangle they define on the **Poincaré sphere**, the sphere whose points are the polarization states of a monochromatic beam. This **Pancharatnam phase** is the optical geometric phase, and it is classical: it is observed by the shift of interference fringes, with no reference to photons or to a quantised field.
 
-The Poincaré sphere is a level set of the norm form of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose norm-form value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **norm-form cone** of the Hermitian sector, the same cone that the companion article *$\mathbb{M}_+$ as the Informational Subspace* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
+The Poincaré sphere is a level set of the norm form of the biquaternion algebra. The polarization state of a beam is described by its coherence (Stokes) biquaternion, a Hermitian element of the algebra whose norm-form value measures the degree of polarization. The fully polarized states — the points of the Poincaré sphere — are exactly the **norm-form cone** of the Hermitian sector, the same cone that the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with the idempotent states; the unpolarized state is the centre, and the partially polarized states fill the interior. The Pancharatnam phase is the **holonomy** of the natural connection on the cone, and its curvature is half the area form of the sphere:
 
 1. The coherence biquaternion is $\tilde\rho=\frac12(S_0e_0+i\mathbf S\cdot\tilde e)\in\mathbb{M}_+$ with Stokes parameters $S_0,\mathbf S$; the norm form is $N(\tilde\rho)=\frac14(S_0^2-\mathbf S^2)$.
 2. The fully polarized (pure) states are $N(\tilde\rho)=0$, the cone; after normalisation they are the Poincaré sphere.
@@ -18,7 +17,7 @@ The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C
 
 The companion articles are:
 - Companion article *The Symplectic Form and the Biquaternion Norm-Form Cone*, for the norm-form cone and its role as a level set.
-- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector, the idempotents, and the cone.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the idempotents, and the cone.
 - Companion article *Hannay's Angles and the Classical Geometric Phase in Biquaternionic Form*, for the classical dynamical counterpart, whose holonomy is the solid angle itself.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the quantum two-level reading of the same connection.
 

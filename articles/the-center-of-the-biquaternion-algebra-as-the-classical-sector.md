@@ -1,4 +1,3 @@
-
 # __The Center of the Biquaternion Algebra as the Classical Sector__
 
 ## Introduction

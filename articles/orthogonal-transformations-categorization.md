@@ -1,4 +1,3 @@
-
 # __Orthogonal Transformations categorization__
 
 ## Introduction

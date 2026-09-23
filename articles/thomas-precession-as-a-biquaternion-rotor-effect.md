@@ -1,4 +1,3 @@
-
 # __Thomas Precession as a Biquaternion Rotor Effect__
 
 ## Introduction

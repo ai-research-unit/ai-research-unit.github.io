@@ -1,4 +1,3 @@
-
 # __Bilinear and Quadratic Forms__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Biquaternion Null Quadric and Projective Geometry__
 
 ## Introduction

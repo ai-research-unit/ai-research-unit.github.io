@@ -1,4 +1,3 @@
-
 # __Lie Algebras categorization__
 
 ## Introduction

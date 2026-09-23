@@ -1,4 +1,3 @@
-
 # __The Classical Origin of g = 2 in Biquaternionic Form__
 
 ## Introduction

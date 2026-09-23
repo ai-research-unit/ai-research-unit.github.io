@@ -1,4 +1,3 @@
-
 # __Twistor Theory and Biquaternions__
 
 ## Introduction

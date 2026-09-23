@@ -1,4 +1,3 @@
-
 # __Confinement and the Loss of Partonic Information in Biquaternionic Form__
 
 ## Introduction

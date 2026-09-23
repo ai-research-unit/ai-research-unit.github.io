@@ -1,4 +1,3 @@
-
 # __Exercise: The Electromagnetic Field of a Moving Charge__
 
 ## Introduction
@@ -415,8 +414,8 @@ The exercise confirms the parent's field formulas on accelerated worldlines and 
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles/`; the standard textbook references for the Liénard–Wiechert field are listed in the Further Reading section of the parent article.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *$\mathbb{M}_-$ as the Material Subspace* — the four-vectors, the norm form, and the zero-divisor cone on which the null retarded separation sits.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian subspace, the conjugation action, and the trace formula.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, the norm form, and the zero-divisor cone on which the null retarded separation sits.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian subspace, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the gradient, the field strength, the potential and source, and the retarded solution.
 - *The Field-Strength Biquaternion and Its Invariants* — the norm form, the invariants $I_1,I_2$, and the null/zero-divisor characterization of radiation.
 - *Radiation from Accelerated Charges in Biquaternionic Form* — the direct parent: the Liénard–Wiechert potential, the field split, and the radiated power evaluated here.

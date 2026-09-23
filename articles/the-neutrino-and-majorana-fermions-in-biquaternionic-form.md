@@ -1,4 +1,3 @@
-
 # __The Neutrino and Majorana Fermions in Biquaternionic Form__
 
 ## Introduction
@@ -348,4 +347,4 @@ In the biquaternion framework the charge conjugation is the real structure carri
 - Rabindra N. Mohapatra and Palash B. Pal, *Massive Neutrinos in Physics and Astrophysics* (World Scientific, 2004), for the Dirac/Majorana distinction, the see-saw mechanism, and neutrinoless double beta decay.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the classification of real structures on spinor modules by signature.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the relation between spinors, the charge-conjugation operation, and the Lorentz group in a real Clifford algebra.
-- Companion articles: *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; *The Dirac Equation in Biquaternionic Form*; *Chiral Fermions in the Biquaternion Framework*; *Exercise: Chirality and the Weyl Spinors*; *The Electron in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *The Gauge Principle in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *Spinors*; *Spinors categorization*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*; *Introduction to the Biquaternion Universe*.
+- Companion articles: *The Spinor Module in Biquaternionic Form and Its Lorentz Action*; *The Dirac Equation in Biquaternionic Form*; *Chiral Fermions in the Biquaternion Framework*; *Exercise: Chirality and the Weyl Spinors*; *The Electron in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *The Gauge Principle in Biquaternionic Form*; *The Spin–Statistics Theorem in Biquaternionic Form*; *Spinors*; *Spinors categorization*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Introduction to the Biquaternion Universe*.

@@ -1,4 +1,3 @@
-
 # __The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Biquaternion Vacuum as a Minimal Idempotent__
 
 ## Introduction
@@ -295,4 +294,4 @@ For a field the vacuum is a state in a module and not an element of the algebra:
 - F. R. Gantmacher, *The Theory of Matrices*, Vol. I (Chelsea, 1959), for the rank classification of projectors and the determinant as a rank test.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the matrix representation of biquaternions, idempotents, and the fundamental module.
 - J. C. Várilly and J. M. Gracia-Bondía, "Connes' noncommutative differential geometry and the standard model," *Journal of Geometry and Physics* **12** (1993) 223–301, for minimal left ideals as fermion modules in the algebraic reading of particle multiplets.
-- Companion articles: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode ladder, the number operator, and the fermion-parity grading; *The GNS Construction in the Biquaternion Framework*, for the reconstruction that the pure state's minimality makes irreducible; *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the field vacuum as a module state and the absence of a bosonic ladder; *$\mathbb{M}_+$ as the Informational Subspace*, for the state space, the trace pairing, and the Bloch ball.
+- Companion articles: *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode ladder, the number operator, and the fermion-parity grading; *The GNS Construction in the Biquaternion Framework*, for the reconstruction that the pure state's minimality makes irreducible; *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the field vacuum as a module state and the absence of a bosonic ladder; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the state space, the trace pairing, and the Bloch ball.

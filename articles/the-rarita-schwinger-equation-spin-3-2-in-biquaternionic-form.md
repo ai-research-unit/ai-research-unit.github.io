@@ -1,4 +1,3 @@
-
 # __The Rarita–Schwinger Equation: Spin 3/2 in Biquaternionic Form__
 
 ## Introduction

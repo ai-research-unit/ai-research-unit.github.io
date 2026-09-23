@@ -1,4 +1,3 @@
-
 # __Entangled Subsystems in the Biquaternion Framework__
 
 ## Introduction
@@ -256,5 +255,5 @@ The honest position is this. The framework makes certain structural features of 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement, Bell states, and the no-communication theorem.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for the modern understanding of the quantum/classical transition.
 - Robert F. Spekkens, "Evidence for the epistemic view of quantum states: A toy theory," *Physical Review A* **75** (2007) 032110, and subsequent work, for a careful treatment of the quantum/classical divide.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*.
 

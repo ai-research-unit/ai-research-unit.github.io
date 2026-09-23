@@ -1,4 +1,3 @@
-
 # __Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form__
 
 ## Introduction

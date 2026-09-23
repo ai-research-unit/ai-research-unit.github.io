@@ -1,4 +1,3 @@
-
 # __The Klein–Gordon Equation in Biquaternionic Form__
 
 ## Introduction

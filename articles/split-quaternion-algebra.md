@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Algebra__
 
 ## Introduction

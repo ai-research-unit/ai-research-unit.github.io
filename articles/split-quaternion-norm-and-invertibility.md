@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Norm and Invertibility__
 
 ## Introduction

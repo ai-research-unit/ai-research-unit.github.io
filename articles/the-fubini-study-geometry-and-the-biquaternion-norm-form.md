@@ -1,4 +1,3 @@
-
 # __The Fubini–Study Geometry and the Biquaternion Norm Form__
 
 ## Introduction

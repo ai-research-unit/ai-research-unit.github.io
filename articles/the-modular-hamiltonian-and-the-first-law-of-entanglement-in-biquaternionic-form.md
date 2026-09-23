@@ -1,4 +1,3 @@
-
 # __The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form__
 
 ## Introduction

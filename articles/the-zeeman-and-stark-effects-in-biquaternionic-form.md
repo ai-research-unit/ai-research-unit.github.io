@@ -1,4 +1,3 @@
-
 # __The Zeeman and Stark Effects in Biquaternionic Form__
 
 ## Introduction

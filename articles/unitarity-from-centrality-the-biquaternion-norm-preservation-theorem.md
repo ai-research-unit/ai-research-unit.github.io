@@ -1,4 +1,3 @@
-
 # __Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem__
 
 ## Introduction

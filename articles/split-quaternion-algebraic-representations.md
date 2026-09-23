@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Algebraic Representations__
 
 ## Introduction

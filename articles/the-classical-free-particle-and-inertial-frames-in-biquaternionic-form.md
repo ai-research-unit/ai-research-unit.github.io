@@ -1,4 +1,3 @@
-
 # __The Classical Free Particle and Inertial Frames in Biquaternionic Form__
 
 ## Introduction

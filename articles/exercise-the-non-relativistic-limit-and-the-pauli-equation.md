@@ -1,4 +1,3 @@
-
 # __Exercise: The Non-Relativistic Limit and the Pauli Equation__
 
 ## Introduction

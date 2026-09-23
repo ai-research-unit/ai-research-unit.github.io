@@ -1,4 +1,3 @@
-
 # __The Seesaw Mechanism and Majorana Mass in Biquaternionic Form__
 
 ## Introduction

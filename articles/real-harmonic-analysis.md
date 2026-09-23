@@ -1,4 +1,3 @@
-
 # __Real Harmonic Analysis__
 
 ## Introduction

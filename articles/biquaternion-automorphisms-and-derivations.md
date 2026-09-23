@@ -1,4 +1,3 @@
-
 # __Biquaternion Automorphisms and Derivations__
 
 ## Introduction

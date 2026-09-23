@@ -1,4 +1,3 @@
-
 # __Spinors__
 
 ## Introduction

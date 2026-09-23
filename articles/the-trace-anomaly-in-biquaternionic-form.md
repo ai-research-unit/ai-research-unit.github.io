@@ -1,4 +1,3 @@
-
 # __The Trace Anomaly in Biquaternionic Form__
 
 ## Introduction

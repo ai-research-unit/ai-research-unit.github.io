@@ -1,4 +1,3 @@
-
 # __The Photon in Biquaternionic Form__
 
 ## Introduction
@@ -249,4 +248,4 @@ What the framework does not supply is the ladder and the gauge. There is no boso
 - V. B. Berestetskii, E. M. Lifshitz, and L. P. Pitaevskii, *Quantum Electrodynamics* (Pergamon, 1982), and L. H. Ryder, *Quantum Field Theory* (Cambridge, 1996), for the photon, its helicity, and the spin-one representations of the Lorentz group.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the realization of $SU(2)$ and the vector representation in quaternion and Clifford algebras.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of circular polarization and self-duality.
-- The companion articles of this series: *Maxwell's Equations in the Biquaternionic Form*; *The Field-Strength Biquaternion and Its Invariants*; *Canonical Quantization of the Biquaternion Maxwell Field*; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*; *Introduction to the Biquaternion Universe*.
+- The companion articles of this series: *Maxwell's Equations in the Biquaternionic Form*; *The Field-Strength Biquaternion and Its Invariants*; *Canonical Quantization of the Biquaternion Maxwell Field*; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Introduction to the Biquaternion Universe*.

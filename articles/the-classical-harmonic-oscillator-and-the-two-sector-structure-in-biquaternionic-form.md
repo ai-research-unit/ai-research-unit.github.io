@@ -1,4 +1,3 @@
-
 # __The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form__
 
 ## Introduction

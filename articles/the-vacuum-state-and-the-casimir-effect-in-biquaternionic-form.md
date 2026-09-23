@@ -1,4 +1,3 @@
-
 # __The Vacuum State and the Casimir Effect in Biquaternionic Form__
 
 ## Introduction
@@ -366,4 +365,4 @@ Two gaps are left visible. The algebra has no native bosonic ladder, so the phot
 - J. S. Dowker and R. Critchley, "Effective Lagrangian and energy–momentum tensor in de Sitter space," *Physical Review D* **13** (1976) 3224–3232, for the proper-time and heat-kernel method used in the second route.
 - L. H. Ford, "Casimir force between a dielectric and a perfectly conducting wall," *Physical Review A* **48** (1993) 2962–2968, for the material dependence that a native boundary description would have to reproduce.
 - P. W. Milonni, *The Quantum Vacuum: An Introduction to Quantum Electrodynamics* (Academic Press, 1994), for the zero-point energy, normal ordering, and the vacuum-energy interpretation.
-- Companion articles: *Canonical Quantization of the Biquaternion Maxwell Field*; *Canonical Quantization of the Biquaternion Dirac Field*; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Photon in Biquaternionic Form*; *The Harmonic Oscillator in Biquaternionic Form*; *The Partition Function in Biquaternionic Form*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*.
+- Companion articles: *Canonical Quantization of the Biquaternion Maxwell Field*; *Canonical Quantization of the Biquaternion Dirac Field*; *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*; *The Photon in Biquaternionic Form*; *The Harmonic Oscillator in Biquaternionic Form*; *The Partition Function in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

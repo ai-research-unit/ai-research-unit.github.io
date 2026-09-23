@@ -1,4 +1,3 @@
-
 # __Rings categorization__
 
 ## Introduction

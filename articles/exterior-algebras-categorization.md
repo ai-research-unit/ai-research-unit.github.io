@@ -1,4 +1,3 @@
-
 # __Exterior Algebras categorization__
 
 ## Introduction

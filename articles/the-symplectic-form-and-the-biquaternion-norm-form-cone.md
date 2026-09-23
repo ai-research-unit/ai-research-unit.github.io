@@ -1,4 +1,3 @@
-
 # __The Symplectic Form and the Biquaternion Norm-Form Cone__
 
 ## Introduction
@@ -19,7 +18,7 @@ The companion articles are:
 - Companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Form*, for the phase-space biquaternion and the Poisson bracket.
 - Companion article *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form*, for the symplectic potential as the boundary term of the action.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the coadjoint orbit and the Souriau form.
-- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the norm form, the four-vector, and the light cone.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form, the four-vector, and the light cone.
 
 ## The Standard Symplectic Structure
 

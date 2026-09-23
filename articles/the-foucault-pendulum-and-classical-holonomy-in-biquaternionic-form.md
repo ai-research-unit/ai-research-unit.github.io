@@ -1,4 +1,3 @@
-
 # __The Foucault Pendulum and Classical Holonomy in Biquaternionic Form__
 
 ## Introduction

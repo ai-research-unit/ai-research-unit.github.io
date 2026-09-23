@@ -1,4 +1,3 @@
-
 # __Complex Harmonic Analysis__
 
 ## Introduction

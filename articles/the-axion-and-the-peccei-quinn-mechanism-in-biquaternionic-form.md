@@ -1,4 +1,3 @@
-
 # __The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form__
 
 ## Introduction

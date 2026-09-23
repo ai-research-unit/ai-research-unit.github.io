@@ -1,4 +1,3 @@
-
 # __Biquaternion Higher Special Functions__
 
 ## Introduction

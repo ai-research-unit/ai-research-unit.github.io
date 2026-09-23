@@ -1,4 +1,3 @@
-
 # __Maxwell's Equations in the Biquaternionic Formulation__
 
 ## Introduction

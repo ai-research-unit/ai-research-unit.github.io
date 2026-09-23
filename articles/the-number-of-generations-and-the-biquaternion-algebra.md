@@ -1,4 +1,3 @@
-
 # __The Number of Generations and the Biquaternion Algebra__
 
 ## Introduction

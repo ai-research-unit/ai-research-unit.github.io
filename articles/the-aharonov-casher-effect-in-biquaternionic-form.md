@@ -1,4 +1,3 @@
-
 # __The Aharonov–Casher Effect in Biquaternionic Form__
 
 ## Introduction

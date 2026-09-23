@@ -1,4 +1,3 @@
-
 # __Custodial Symmetry and the Rho Parameter in Biquaternionic Form__
 
 ## Introduction

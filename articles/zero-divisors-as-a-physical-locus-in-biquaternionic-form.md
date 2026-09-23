@@ -1,4 +1,3 @@
-
 # __Zero Divisors as a Physical Locus in Biquaternionic Form__
 
 ## Introduction

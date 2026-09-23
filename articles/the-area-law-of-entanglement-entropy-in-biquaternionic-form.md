@@ -1,4 +1,3 @@
-
 # __The Area Law of Entanglement Entropy in Biquaternionic Form__
 
 ## Introduction

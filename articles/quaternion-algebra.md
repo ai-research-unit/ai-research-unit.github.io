@@ -1,4 +1,3 @@
-
 # __Quaternion Algebra__
 
 ## Introduction

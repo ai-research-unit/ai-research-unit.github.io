@@ -1,4 +1,3 @@
-
 # __The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)__
 
 ## Introduction

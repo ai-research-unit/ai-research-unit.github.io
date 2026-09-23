@@ -1,4 +1,3 @@
-
 # __The Conformal Group in Biquaternionic Form__
 
 ## Introduction

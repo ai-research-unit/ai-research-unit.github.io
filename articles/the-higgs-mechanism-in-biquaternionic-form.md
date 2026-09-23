@@ -1,4 +1,3 @@
-
 # __The Higgs Mechanism in Biquaternionic Form__
 
 ## Introduction
@@ -298,8 +297,8 @@ One gap is left visible and is not closed. The framework's scalar lies in the ce
 - *Chiral Fermions in the Biquaternion Framework* — the mass selection rule $q_L = q_R$, the charge operator, and the naming of this article as the compensating-scalar companion.
 - *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar equation whose gauging and vacuum this article uses.
 - *Noether's Theorem in Biquaternionic Form* — the framework's scalar Lagrangian, whose complex-field normalization is discussed in the companion notes.
-- *$\mathbb{M}_-$ as the Material Subspace* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian sector and the trace formula.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector's basis, its four-vectors, and the imaginary-scalar/real-vector structure of the connection.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Form* — the abelian potential and field strength that the gauge field mass modifies.
 - *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* — the left/right matter-representation question that the non-abelian scalar inherits.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which the unitary gauge here chooses rather than derives.

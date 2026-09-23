@@ -1,4 +1,3 @@
-
 # __Vector Space Transformations__
 
 ## Introduction

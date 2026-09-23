@@ -1,4 +1,3 @@
-
 # __Biquaternion Norm and Invertibility__
 
 ## Introduction

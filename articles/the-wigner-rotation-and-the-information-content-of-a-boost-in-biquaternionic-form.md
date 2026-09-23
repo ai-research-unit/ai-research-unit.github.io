@@ -1,4 +1,3 @@
-
 # __The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form__
 
 ## Introduction
@@ -26,7 +25,7 @@ The companion articles supply the pieces:
 - Companion article *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the channel induced by a boost on a momentum superposition.
 - Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity.
 - Companion article *Exercise: The Thomas Precession*, for the precession of a spin in an accelerated frame.
-- Companion article *M- as the Material Subspace*, for four-vectors and the norm form.
+- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for four-vectors and the norm form.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Cartan decomposition and the subgroups.
 
 ## The Boost and Its Rotor

@@ -1,4 +1,3 @@
-
 # __The Bloch Ball as the Trace-One Slice of the Future Light Cone__
 
 ## Introduction

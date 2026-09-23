@@ -1,4 +1,3 @@
-
 # __Galois Theory of ℂ/ℝ__
 
 ## Introduction

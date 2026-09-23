@@ -1,4 +1,3 @@
-
 # __Anyons and Braid Statistics in Biquaternionic Form__
 
 ## Introduction

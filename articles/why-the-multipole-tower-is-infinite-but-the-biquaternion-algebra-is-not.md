@@ -1,4 +1,3 @@
-
 # __Why the Multipole Tower Is Infinite but the Biquaternion Algebra Is Not__
 
 ## Introduction

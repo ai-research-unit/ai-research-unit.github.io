@@ -1,4 +1,3 @@
-
 # __The Skyrme Model and the Topological Baryon in Biquaternionic Form__
 
 ## Introduction

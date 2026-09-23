@@ -1,4 +1,3 @@
-
 # __The Schrödinger Equation in Biquaternionic Form__
 
 ## Introduction

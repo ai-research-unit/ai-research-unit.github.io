@@ -1,4 +1,3 @@
-
 # __Groups categorization__
 
 ## Introduction

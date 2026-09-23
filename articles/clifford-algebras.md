@@ -1,4 +1,3 @@
-
 # __Clifford Algebras__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Theta Vacuum in Biquaternionic Form__
 
 ## Introduction

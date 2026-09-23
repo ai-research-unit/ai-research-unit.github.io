@@ -1,4 +1,3 @@
-
 # __The WKB Approximation and the Hamilton–Jacobi Equation in Biquaternionic Form__
 
 ## Introduction

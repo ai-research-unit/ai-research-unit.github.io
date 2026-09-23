@@ -1,4 +1,3 @@
-
 # __Wilson Loops in Biquaternionic Form__
 
 ## Introduction

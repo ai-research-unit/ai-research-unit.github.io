@@ -1,4 +1,3 @@
-
 # __The Generating Functional and the Effective Action in Biquaternionic Form__
 
 ## Introduction

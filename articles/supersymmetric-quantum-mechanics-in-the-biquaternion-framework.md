@@ -1,4 +1,3 @@
-
 # __Supersymmetric Quantum Mechanics in the Biquaternion Framework__
 
 ## Introduction

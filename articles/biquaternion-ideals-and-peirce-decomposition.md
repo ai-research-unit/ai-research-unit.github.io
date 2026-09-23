@@ -1,4 +1,3 @@
-
 # __Biquaternion Ideals and Peirce Decomposition__
 
 ## Introduction

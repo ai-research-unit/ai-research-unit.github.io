@@ -1,4 +1,3 @@
-
 # __Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Dirac Path Integral in Biquaternionic Form__
 
 ## Introduction

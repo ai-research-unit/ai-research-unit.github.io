@@ -1,4 +1,3 @@
-
 # __Real Representations__
 
 ## Introduction

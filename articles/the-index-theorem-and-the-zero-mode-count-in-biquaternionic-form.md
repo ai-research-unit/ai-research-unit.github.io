@@ -1,4 +1,3 @@
-
 # __The Index Theorem and the Zero-Mode Count in Biquaternionic Form__
 
 ## Introduction

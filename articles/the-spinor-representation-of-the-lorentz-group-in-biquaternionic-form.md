@@ -1,4 +1,3 @@
-
 # __The Spinor Representation of the Lorentz Group in Biquaternionic Form__
 
 ## Introduction

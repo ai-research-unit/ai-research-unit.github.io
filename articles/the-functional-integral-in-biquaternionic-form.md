@@ -1,4 +1,3 @@
-
 # __The Functional Integral in Biquaternionic Form__
 
 ## Introduction
@@ -76,7 +75,7 @@ $$
 \qquad
 \tilde\phi_\pm = \tfrac12\big(\tilde\Phi \pm \tilde\Phi^{\flat}\big)\in \mathbb{M}_\pm ,
 $$
-where $\flat=-\dagger$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace* establish.
+where $\flat=-\dagger$ is the anti-Hermitian conjugation; this is the field-level use of the sector split that *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* establish.
 
 **The action must be a scalar, and the algebra supplies the extraction.** A biquaternion is not a number, so a Lagrangian built from $\tilde\Phi$ is not automatically an action. The framework's scalar extraction is the trace, whose $e_0$ coefficient,
 $$
@@ -296,4 +295,4 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 - L. S. Schulman, *Techniques and Applications of Path Integration* (Wiley, 1981), for the finite-dimensional limits that define both integrals.
 - G. W. Gibbons, S. W. Hawking, and M. J. Perry, "Path integrals and the indefiniteness of the gravitational action," *Nuclear Physics B* **138** (1978) 141–150, for the convergence of the Euclidean functional integral.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the module structure on which the biquaternion field's Gaussian integral is taken.
-- Companion articles: *The Path Integral in Biquaternionic Form*, for the phase, the central imaginary, and the gap for the space of paths; *The Wick Rotation in the Biquaternion Universe*, for the rotation as a sector identification; *The Generating Functional and the Effective Action in Biquaternionic Form*, for $W[\tilde J]$ and $\Gamma[\tilde\Phi]$; *The Functional Determinant in Biquaternionic Form*, for the determinant left by the Gaussian integral; *The Partition Function in Biquaternionic Form*, for the Euclidean trace and the imaginary-time circle; *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace*, for the sector split used in the factorization.
+- Companion articles: *The Path Integral in Biquaternionic Form*, for the phase, the central imaginary, and the gap for the space of paths; *The Wick Rotation in the Biquaternion Universe*, for the rotation as a sector identification; *The Generating Functional and the Effective Action in Biquaternionic Form*, for $W[\tilde J]$ and $\Gamma[\tilde\Phi]$; *The Functional Determinant in Biquaternionic Form*, for the determinant left by the Gaussian integral; *The Partition Function in Biquaternionic Form*, for the Euclidean trace and the imaginary-time circle; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sector split used in the factorization.

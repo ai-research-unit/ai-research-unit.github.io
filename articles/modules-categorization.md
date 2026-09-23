@@ -1,4 +1,3 @@
-
 # __Modules categorization__
 
 ## Introduction

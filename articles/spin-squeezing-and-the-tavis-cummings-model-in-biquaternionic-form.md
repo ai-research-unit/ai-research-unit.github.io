@@ -1,4 +1,3 @@
-
 # __Spin Squeezing and the Tavis–Cummings Model in Biquaternionic Form__
 
 ## Introduction

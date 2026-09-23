@@ -1,4 +1,3 @@
-
 # __The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form__
 
 ## Introduction

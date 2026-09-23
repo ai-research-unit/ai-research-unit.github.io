@@ -1,4 +1,3 @@
-
 # __Groups__
 
 ## Introduction

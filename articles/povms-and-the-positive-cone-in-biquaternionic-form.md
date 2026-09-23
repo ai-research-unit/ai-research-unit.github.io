@@ -1,4 +1,3 @@
-
 # __POVMs and the Positive Cone in Biquaternionic Form__
 
 ## Introduction

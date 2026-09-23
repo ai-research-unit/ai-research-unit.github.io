@@ -1,4 +1,3 @@
-
 # __Canonical Quantization of the Biquaternion Rarita–Schwinger Field__
 
 ## Introduction

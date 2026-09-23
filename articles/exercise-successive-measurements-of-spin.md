@@ -1,4 +1,3 @@
-
 # __Exercise: Successive Measurements of Spin__
 
 ## Introduction

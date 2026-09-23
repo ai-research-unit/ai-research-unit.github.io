@@ -1,4 +1,3 @@
-
 # __Fisher Information and the Biquaternion Norm Form__
 
 ## Introduction

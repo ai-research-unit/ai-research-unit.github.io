@@ -1,4 +1,3 @@
-
 # __The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form__
 
 ## Introduction

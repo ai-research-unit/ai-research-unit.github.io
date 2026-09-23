@@ -1,4 +1,3 @@
-
 # __The Klein–Gordon Propagator and Its Green's Functions in Biquaternionic Form__
 
 ## Introduction

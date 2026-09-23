@@ -1,4 +1,3 @@
-
 # __Lie Algebras: A General Introduction__
 
 ## Introduction

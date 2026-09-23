@@ -1,4 +1,3 @@
-
 # __Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form__
 
 ## Introduction

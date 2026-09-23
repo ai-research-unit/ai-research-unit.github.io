@@ -1,4 +1,3 @@
-
 # __The Field-Strength Biquaternion and Its Invariants__
 
 ## Introduction

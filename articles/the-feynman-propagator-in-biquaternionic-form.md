@@ -1,4 +1,3 @@
-
 # __The Feynman Propagator in Biquaternionic Form__
 
 ## Introduction

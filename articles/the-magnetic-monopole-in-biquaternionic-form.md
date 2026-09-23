@@ -1,4 +1,3 @@
-
 # __The Magnetic Monopole in Biquaternionic Form__
 
 ## Introduction

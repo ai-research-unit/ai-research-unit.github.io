@@ -1,4 +1,3 @@
-
 # __The Biquaternion Involution Lattice: Hermitian, Anti-Hermitian and Reversal__
 
 ## Introduction
@@ -25,8 +24,8 @@ Third, the adjoints. The reason the lattice is not merely bookkeeping is that ad
 The article is organised as follows. The four conjugations are defined and typed, the Klein four-group is established with its composition table, the fixed spaces and their lattice are computed, and the matrix realisation is given. The two pairings — the bilinear one built from reversal and the Hermitian one built from $\dagger$ — are treated next, with their signatures and invariance, and the article closes with the adjoint identities and the central complex structure.
 
 - Companion article *Conventions in the Biquaternion Universe*, for the four conjugations, the two sectors, and the trace formula as the series fixes them.
-- Companion article *M- as the Material Subspace*, for the material sector and its four-vector reading.
-- Companion article *M+ as the Informational Subspace*, for the Hermitian sector and the observables.
+- Companion article *The Anti-Hermitian Subspace M- as the Material Sector*, for the material sector and its four-vector reading.
+- Companion article *The Hermitian Subspace M+ as the Informational Sector*, for the Hermitian sector and the observables.
 - Companion article *The Dirac Algebra and Biquaternions — A Dictionary*, for reversal as Clifford reversion and the $2\times2$ matrix realisation.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for $\flat$ as the real structure and the antilinear operations built from it.
 - Companion article *Exercise: Chirality and the Weyl Spinors*, for the conjugate spinor structures and the opposite d'Alembertian sign convention.
@@ -165,7 +164,7 @@ $$
 \mathbb{M}_- = \ker(\dagger + \mathrm{id}) , \qquad
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- ,
 $$
-with the projections $\frac12(\mathrm{id}+\dagger)$ and $\frac12(\mathrm{id}-\dagger)$. The subspaces are the framework's primary decomposition: the informational sector $\mathbb{M}_+$ is the space of Hermitian elements considered as observables, and the material sector $\mathbb{M}_-$ is the space of anti-Hermitian elements considered as four-vectors. The companion articles *M+ as the Informational Subspace* and *M- as the Material Subspace* develop the interpretation; the algebra of the split is what is established here.
+with the projections $\frac12(\mathrm{id}+\dagger)$ and $\frac12(\mathrm{id}-\dagger)$. The subspaces are the framework's primary decomposition: the informational sector $\mathbb{M}_+$ is the space of Hermitian elements considered as observables, and the material sector $\mathbb{M}_-$ is the space of anti-Hermitian elements considered as four-vectors. The companion articles *The Hermitian Subspace M+ as the Informational Sector* and *The Anti-Hermitian Subspace M- as the Material Sector* develop the interpretation; the algebra of the split is what is established here.
 
 ### The inclusion lattice and the intersections
 

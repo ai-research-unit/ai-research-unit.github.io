@@ -1,4 +1,3 @@
-
 # __Quantum Thermodynamics in Biquaternionic Form__
 
 ## Introduction
@@ -305,5 +304,5 @@ The framework reproduces standard thermodynamics and claims no new law. Its addi
 - R. Haag, N. M. Hugenholtz, and M. Winnink, "On the equilibrium states in quantum statistical mechanics," *Communications in Mathematical Physics* **5** (1967) 215–236, for the KMS characterisation of thermal equilibrium.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the modular Hamiltonian $K=-\log\rho$.
 - M. A. Nielsen and I. L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the von Neumann entropy and its properties.
-- Companion articles: *The Partition Function in Biquaternionic Form*, for the thermal operator and $Z$; *The KMS Condition and the Biquaternion Framework*, for the operator-algebraic characterisation and the modular Hamiltonian; *Quantum Mechanics in Biquaternionic Form*, for the state space, the trace pairing, and the entropy; *$\mathbb{M}_+$ as the Informational Subspace* and *$\mathbb{M}_-$ as the Material Subspace*, for the two sectors; *Exercise: Entanglement Entropy and the Partial Trace*, for the entropy functional $-2\,\mathrm{Sc}(\tilde\rho\log\tilde\rho)$ and its domain; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space; *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular structure in the framework.
+- Companion articles: *The Partition Function in Biquaternionic Form*, for the thermal operator and $Z$; *The KMS Condition and the Biquaternion Framework*, for the operator-algebraic characterisation and the modular Hamiltonian; *Quantum Mechanics in Biquaternionic Form*, for the state space, the trace pairing, and the entropy; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the two sectors; *Exercise: Entanglement Entropy and the Partial Trace*, for the entropy functional $-2\,\mathrm{Sc}(\tilde\rho\log\tilde\rho)$ and its domain; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space; *The Modular Theory of Tomita–Takesaki under the Biquaternion Framework*, for the modular structure in the framework.
 

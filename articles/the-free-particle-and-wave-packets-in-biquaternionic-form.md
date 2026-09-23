@@ -1,4 +1,3 @@
-
 # __The Free Particle and Wave Packets in Biquaternionic Form__
 
 ## Introduction

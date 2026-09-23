@@ -1,4 +1,3 @@
-
 # __The Native Qubit and the Defining Module of the Biquaternion Algebra__
 
 ## Introduction
@@ -238,7 +237,7 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 - **The dimension of composite systems.** The defining module is the single-qubit carrier. The two-qubit arena is the tensor product $\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, whose module $\mathbb{C}^4$ is *not* the defining module of $\mathbb{B}$; it is the defining module of the larger algebra. That the tensor product is the correct composition rule is an additional structure, identified as an open question in *Entangled Subsystems in the Biquaternion Framework*.
 - **Systems of other dimension.** A qutrit would require $M_3(\mathbb{C})$, which is not isomorphic to $\mathbb{B}$. The framework as developed here describes two-level systems; whether it can be extended is a separate question.
 - **A dynamics.** The module fixes the kinematics — carriers, states, observables, probabilities — and says nothing about which Hamiltonian acts.
-- **An interpretation.** That the module is the algebra's own carrier is a structural fact; that it is a physical informational sector is the interpretive hypothesis of *$\mathbb{M}_+$ as the Informational Subspace*, and it is not required by anything in this article.
+- **An interpretation.** That the module is the algebra's own carrier is a structural fact; that it is a physical informational sector is the interpretive hypothesis of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and it is not required by anything in this article.
 
 ## Open Questions
 
@@ -289,4 +288,4 @@ What the module does not supply is the composition rule for several qubits: the 
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the qubit, the density operator, and the correspondence between pure states and rays.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the geometry of the Bloch ball and the statistical interpretation of the trace pairing.
 - J. S. Bell, "On the problem of hidden variables in quantum mechanics," *Reviews of Modern Physics* **38** (1966) 447–452, for the noncontextual hidden-variable model of a single qubit, which illustrates the special position of the two-dimensional module.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Conventions in the Biquaternion Universe*, *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, and *Spin-1/2 Quantum Mechanics in Biquaternionic Form*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Conventions in the Biquaternion Universe*, *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, and *Spin-1/2 Quantum Mechanics in Biquaternionic Form*.

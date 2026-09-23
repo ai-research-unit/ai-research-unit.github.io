@@ -1,4 +1,3 @@
-
 # __The Reeh–Schlieder Theorem under the Biquaternion Framework__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Coarse-Graining and the Biquaternion Entropy Functional__
 
 ## Introduction

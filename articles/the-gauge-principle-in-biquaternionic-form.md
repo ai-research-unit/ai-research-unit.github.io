@@ -1,4 +1,3 @@
-
 # __The Gauge Principle in Biquaternionic Form__
 
 ## Introduction
@@ -186,7 +185,7 @@ $$
 
 the scalar part of $\bar{\tilde{\nabla}}\tilde{A}$ is the divergence $\sum_\mu \partial_\mu A_\mu$ and sees only the symmetric part of $\partial_\mu A_\nu$, while the vector part is antisymmetric in $\mu,\nu$ and sees only $F_{\mu\nu}$. Replacing $\partial_\mu A_\nu$ by $\tfrac{1}{2}(\partial_\mu A_\nu - \partial_\nu A_\mu)$ in the vector part gives the boxed identity. The reading is direct: **the right-hand side is the curvature 2-form $F = \tfrac{1}{2}F_{\mu\nu}\,dx^\mu\wedge dx^\nu$, with the basis 1-forms replaced by the algebra elements $\bar{e}_\mu$ and $e_\nu$.** The field strength is the curvature.
 
-This also explains, structurally, why the field strength is not a four-vector. The biquaternion algebra is the even part of the Clifford algebra $\mathrm{Cl}_{1,3}$, whose even elements are the scalars, the six bivectors, and the pseudoscalar. The six real components of a 2-form sit in the vector part of the biquaternion; the field strength, with vanishing scalar part and a six-real-component vector part, is a bivector, exactly as *$\mathbb{M}_-$ as the Material Subspace* states when it notes that the field strength is not in $\mathbb{M}_-$.
+This also explains, structurally, why the field strength is not a four-vector. The biquaternion algebra is the even part of the Clifford algebra $\mathrm{Cl}_{1,3}$, whose even elements are the scalars, the six bivectors, and the pseudoscalar. The six real components of a 2-form sit in the vector part of the biquaternion; the field strength, with vanishing scalar part and a six-real-component vector part, is a bivector, exactly as *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* states when it notes that the field strength is not in $\mathbb{M}_-$.
 
 ### The field strength as a commutator
 
@@ -370,4 +369,4 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the gauge-theoretic reading of the connection and curvature in geometric algebra.
 - F. Strocchi, *An Introduction to the Non-Perturbative Foundations of Quantum Field Theory* (Oxford, 2013), for the constraint and gauge-structure analysis behind the first-class count.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic Maxwell equation and the operator factorization used here.
-- Companion articles: *Maxwell's Equations in the Biquaternionic Form*; *Canonical Quantization of the Biquaternion Maxwell Field*; *The Dirac Equation in Biquaternionic Form*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*.
+- Companion articles: *Maxwell's Equations in the Biquaternionic Form*; *Canonical Quantization of the Biquaternion Maxwell Field*; *The Dirac Equation in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

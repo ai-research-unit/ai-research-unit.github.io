@@ -1,4 +1,3 @@
-
 # __The Born Rule as a Trace Formula — Derivation and Comparison__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Exercise: Two Spins in the Singlet State__
 
 ## Introduction

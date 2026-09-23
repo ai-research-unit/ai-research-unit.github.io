@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Polar Representations__
 
 ## Introduction

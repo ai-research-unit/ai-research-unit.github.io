@@ -1,4 +1,3 @@
-
 # __Two Spin-Half Particles in Biquaternionic Form__
 
 ## Introduction

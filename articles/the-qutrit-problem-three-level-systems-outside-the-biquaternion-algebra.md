@@ -1,4 +1,3 @@
-
 # __The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra__
 
 ## Introduction

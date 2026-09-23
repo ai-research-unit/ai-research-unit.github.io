@@ -1,4 +1,3 @@
-
 # __Central Forces and the Classical Kepler Problem in Biquaternionic Form__
 
 ## Introduction

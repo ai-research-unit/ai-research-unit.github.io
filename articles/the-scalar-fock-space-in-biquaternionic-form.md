@@ -1,4 +1,3 @@
-
 # __The Scalar Fock Space in Biquaternionic Form__
 
 ## Introduction
@@ -17,7 +16,7 @@ The article is organised as follows. The next section fixes the one-particle spa
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the mode algebra, the Hamiltonian and the charge whose spectrum the Fock space diagonalizes.
 - Companion article *The Quantized Scalar Field in Biquaternionic Form*, for the field operator that acts on the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the one-particle solutions and their two branches.
-- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector, the states, and the trace formula of the Born rule.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian sector, the states, and the trace formula of the Born rule.
 - Companion article *The Vacuum State and the Casimir Effect in Biquaternionic Form*, for the vacuum energy and its regularization.
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The trace formula is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, normalized so that $\mathrm{Tr}(e_0)=2$, and the isomorphism used for the capacity count is $\mathbb{B}\cong M_2(\mathbb{C})$. Natural units $\hbar=c=1$ are used throughout, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and $\mu=mc/\hbar$.
@@ -230,7 +229,7 @@ $$
 
 so the diagonal of the truncated density matrix is the occupation distribution. The vacuum of the truncation is $\rho_0=|0\rangle\langle0|$, with $\langle\hat N\rangle=0$, and the one-particle state is $\rho_1=|1\rangle\langle1|$, with $\langle\hat N\rangle=1$; the trace formula is exact for these finite matrices and is the only sense in which the Born rule applies to the scalar number operator.
 
-The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{M}_+$ is the space of states of the framework's finite-dimensional quantum mechanics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *$\mathbb{M}_+$ as the Informational Subspace* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
+The structural statement is the same one the whole article turns on, seen in the simplest object. The informational sector $\mathbb{M}_+$ is the space of states of the framework's finite-dimensional quantum mechanics; the scalar Fock space is not a subspace of it, and the scalar vacuum is not a density operator in it. The finite-mode truncations are the overlap of the two constructions, and the overlap shrinks to nothing as the truncation is removed. The companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* states the finite-dimensional side; the present article states that the scalar sector lies outside it.
 
 ## Coherent States and the Central Phase
 

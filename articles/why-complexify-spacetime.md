@@ -1,4 +1,3 @@
-
 # __Why Complexify Spacetime?__
 
 ## The Question

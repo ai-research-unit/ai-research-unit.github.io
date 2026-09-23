@@ -1,4 +1,3 @@
-
 # __Radiation from Accelerated Charges in Biquaternionic Form__
 
 ## Introduction

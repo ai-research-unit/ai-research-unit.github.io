@@ -1,4 +1,3 @@
-
 # __Coulomb Scattering and Rutherford's Formula in Biquaternionic Form__
 
 ## Introduction

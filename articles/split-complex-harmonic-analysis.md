@@ -1,4 +1,3 @@
-
 # __Split Complex Harmonic Analysis__
 
 ## Introduction

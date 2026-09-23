@@ -1,4 +1,3 @@
-
 # __What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions__
 
 ## Introduction

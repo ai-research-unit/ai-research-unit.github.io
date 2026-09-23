@@ -1,4 +1,3 @@
-
 # __The KMS Condition and the Biquaternion Framework__
 
 ## Introduction

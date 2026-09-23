@@ -78,19 +78,30 @@ def parse_frontmatter(text):
                     key, _, val = line.partition(":")
                     meta[key.strip()] = val.strip()
             return meta, parts[2].strip()
-    first_line = text.splitlines()[0] if text.splitlines() else ""
-    m = re.match(r"#\s*__(.+?)\s*—\s*(.+?)__", first_line)
-    if m:
-        meta["coordinate"] = m.group(1).strip()
-        meta["title"]      = m.group(2).strip()
-        return meta, "\n".join(text.splitlines()[1:]).strip()
+    # The article's first H1 is its *visible* title: the templates render
+    # {title} only inside <head>, so the on-page heading comes from the body.
+    # Two consequences, both load-bearing:
+    #   * the H1 is never removed from the body — stripping it makes the page
+    #     render with no title at all;
+    #   * the line is located by scanning past leading blank lines, so an
+    #     article that opens with `# __Title__` builds exactly like one that
+    #     opens with a blank line first.
+    # {title} must be the *whole* heading, subtitle included: for the
+    # `__Title — Subtitle__` form the two halves are recorded separately, but
+    # the tab title keeps both.
+    for line in text.splitlines():
+        s = line.strip()
+        if not s:
+            continue
+        m = re.match(r"#\s*__(.+?)__\s*$", s)
+        if m:
+            inner = m.group(1).strip()
+            meta["title"] = inner
+            halves = re.split(r"\s+—\s+", inner, 1)
+            if len(halves) == 2:
+                meta["coordinate"] = halves[0].strip()
+        break
     return meta, text
-
-def strip_title_line(text):
-    lines = text.splitlines()
-    if lines and re.match(r"#\s*__(.+?)__", lines[0]):
-        return "\n".join(lines[1:]).strip()
-    return text
 
 def label_from_stem(stem):
     return stem.replace("-", " ").replace("_", " ").title()
@@ -163,10 +174,8 @@ for f in articles:
     raw = f.read_text()
     meta, body_md = parse_frontmatter(raw)
     # parse_frontmatter always defines "title" (default ""), so .get()'s
-    # default never fires — fall back explicitly. Read the heading before
-    # strip_title_line removes it.
+    # default never fires — fall back explicitly.
     title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
-    body_md = strip_title_line(body_md)
 
     body_html = md_to_html(body_md)
 
@@ -195,7 +204,6 @@ def build_root_page(md_path, out_name, articles):
     if md_path.exists():
         raw = md_path.read_text()
         meta, body_md = parse_frontmatter(raw)
-        body_md = strip_title_line(body_md)
 
         body_html = md_to_html(body_md)
 

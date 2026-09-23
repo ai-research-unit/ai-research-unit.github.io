@@ -1,4 +1,3 @@
-
 # __Hawking Radiation in Biquaternionic Form__
 
 ## Introduction
@@ -213,7 +212,7 @@ and records two algebraic facts that this article uses unchanged: the imaginary 
 
 **What it carries.**
 
-- *The field lives in $\mathbb{M}_-$.* The quantized scalar field and its four-vector kinematics are material-sector objects: a mode is a function on spacetime valued in the framework of *$\mathbb{M}_-$ as the Material Subspace*, and its wave equation is that sector's Klein–Gordon equation. The in and out modes are material-sector modes; the Bogoliubov coefficients that mix them are ordinary complex numbers, not elements of $\mathbb{B}$.
+- *The field lives in $\mathbb{M}_-$.* The quantized scalar field and its four-vector kinematics are material-sector objects: a mode is a function on spacetime valued in the framework of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and its wave equation is that sector's Klein–Gordon equation. The in and out modes are material-sector modes; the Bogoliubov coefficients that mix them are ordinary complex numbers, not elements of $\mathbb{B}$.
 - *The modular generator is in $\mathbb{M}_+$.* The horizon flow's Hamiltonian is represented, as in the sibling article, by a Hermitian element of the informational sector. For a boost in the $e_1$ direction the generator is $G_1=ie_1\in\mathbb{M}_+$, and its action on $\mathbb{M}_-$ is the **two-sided** rotor conjugation $G_1\tilde X+\tilde XG_1$, not the commutator $[G_1,\tilde X]$, which for a Hermitian generator is a rotation and not a boost. This is *Curved Spacetime and the Biquaternion Framework*'s caution, and it is load-bearing at the horizon: the boost is the flow that the thermal statement refers to.
 - *The local light cone is the zero-divisor cone.* At each point of the horizon, the local null directions are the zero divisors of that point's copy of $\mathbb{M}_-$; the horizon's tangent null surface is the zero-divisor cone of the tangent space. This is a local, pointwise statement. The horizon as a global surface is not an object of the pointwise algebra; the sibling article's identification of the *Rindler* horizon with the zero-divisor cone is available here only in the near-horizon approximation, where the geometry is Rindler.
 - *The imaginary time is intrinsic.* The Euclidean continuation $t\to-it$ that makes the thermal period manifest is a continuation along the $ict$ direction of $\mathbb{M}_-$, the same direction in which the parent's KMS strip extends. The framework does not perform the continuation; it is the sector in which the continuation is natural.
@@ -565,7 +564,7 @@ The biquaternion framework supplies the algebraic home for the effect — the ma
 - *The Unruh Effect in Biquaternionic Form*, the sibling article: the Rindler wedge, the boost, the KMS strip, and the temperature from the surface gravity.
 - *The KMS Condition and the Biquaternion Framework*, the parent: the KMS condition, its imaginary-time strip, and the modular Hamiltonian in $\mathbb{M}_+$.
 - *Curved Spacetime and the Biquaternion Framework*, for the frame-field route to the metric and the obstruction to black-hole exteriors in the local-scale class.
-- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace*, for the sectors and their imaginary-time interpretation.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the sectors and their imaginary-time interpretation.
 - *Introduction to the Biquaternion Universe*, for the algebra and the notation.
 - *The Klein–Gordon Equation in Biquaternionic Form*, for the material-sector wave equation whose modes are mixed.
 - *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single-mode occupation and its parity grading.

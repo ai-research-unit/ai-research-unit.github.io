@@ -1,4 +1,3 @@
-
 # __The Jordan–Wigner Transformation in Biquaternionic Form__
 
 ## Introduction

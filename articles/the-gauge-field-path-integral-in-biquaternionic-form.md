@@ -1,4 +1,3 @@
-
 # __The Gauge Field Path Integral in Biquaternionic Form__
 
 ## Introduction

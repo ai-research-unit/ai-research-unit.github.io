@@ -1,4 +1,3 @@
-
 # __Biquaternion Representation Theory__
 
 ## Introduction

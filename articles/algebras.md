@@ -1,4 +1,3 @@
-
 # __Algebras: A General Introduction__
 
 ## Introduction

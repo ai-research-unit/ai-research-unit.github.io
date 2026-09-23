@@ -1,4 +1,3 @@
-
 # __Exercise: The Retarded Potentials and the Green's Function__
 
 ## Introduction
@@ -342,8 +341,8 @@ with all sources at the retarded time $t - R/c$; the retarded solution is automa
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles/`; the standard textbook references for Green's functions, the retarded potentials, and the boundary conditions are listed in the Further Reading sections of those articles.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *$\mathbb{M}_-$ as the Material Subspace* — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian subspace and the trace formula.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the four-vectors, including the four-potential and four-current, and the light cone as the zero-divisor cone.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian subspace and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the direct parent: the potential equation and the source biquaternions.
 - *The Field-Strength Biquaternion and Its Invariants* — the field strength built from the potential by differentiation, and its norm form.
 - *The Lorentz Transformation as a Biquaternionic Rotation* — the covariance of the four-potential, inherited here unchanged.

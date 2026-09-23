@@ -1,4 +1,3 @@
-
 # __Biquaternion Spectral Theory__
 
 ## Introduction

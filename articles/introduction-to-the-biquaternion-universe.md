@@ -1,4 +1,3 @@
-
 # __Introduction to the Biquaternion Universe__
 
 ## Core Proposal

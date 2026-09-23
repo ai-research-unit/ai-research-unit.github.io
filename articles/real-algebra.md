@@ -1,4 +1,3 @@
-
 # __Real Algebra__
 
 ## Introduction

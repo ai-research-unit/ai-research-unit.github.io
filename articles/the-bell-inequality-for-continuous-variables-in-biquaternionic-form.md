@@ -1,4 +1,3 @@
-
 # __The Bell Inequality for Continuous Variables in Biquaternionic Form__
 
 ## Introduction
@@ -283,5 +282,5 @@ well below $2\sqrt{2}$. Different observable families give different boundaries;
 - B. S. Cirel'son (Tsirelson), "Quantum generalizations of Bell's inequality," *Letters in Mathematical Physics* **4** (1980) 93–100, for the bound $2\sqrt{2}$ in the dichotomic case.
 - A. Einstein, B. Podolsky, N. Rosen, "Can quantum-mechanical description of physical reality be considered complete?" *Physical Review* **47** (1935) 777–780, for the EPR state that the infinite-squeezing limit approaches.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the CHSH inequality and Tsirelson's bound in the standard formalism.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *Exercise: The CHSH Inequality and Tsirelson's Bound*, *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, and *The Quantum–Classical Divide in the Biquaternion Framework*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *Exercise: The CHSH Inequality and Tsirelson's Bound*, *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, and *The Quantum–Classical Divide in the Biquaternion Framework*.
 

@@ -1,4 +1,3 @@
-
 # __Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form__
 
 ## Introduction

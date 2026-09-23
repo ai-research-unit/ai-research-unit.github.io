@@ -1,4 +1,3 @@
-
 # __Spin-1/2 Quantum Mechanics in Biquaternionic Form__
 
 ## Introduction

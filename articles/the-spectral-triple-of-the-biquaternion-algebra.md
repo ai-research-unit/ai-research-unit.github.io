@@ -1,4 +1,3 @@
-
 # __The Spectral Triple of the Biquaternion Algebra__
 
 ## Introduction

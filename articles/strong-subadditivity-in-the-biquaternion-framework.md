@@ -1,4 +1,3 @@
-
 # __Strong Subadditivity in the Biquaternion Framework__
 
 ## Introduction
@@ -329,4 +328,4 @@ The tensor power is not a subalgebra of $\mathbb{B}$, whose complex dimension is
 - Companion article *The GNS Construction in the Biquaternion Framework*, for the states of $\mathbb{B}$, the Bloch ball, and the trace state.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the capacity statement: one fermionic mode and no more.
 - Companion article *The Biquaternion Vacuum as a Minimal Idempotent*, for the minimal idempotents and the pure boundary.
-- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian subspace and the trace pairing.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace and the trace pairing.

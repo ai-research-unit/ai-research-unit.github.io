@@ -1,4 +1,3 @@
-
 # __The Higgs Mechanism as an Erasure of Information in Biquaternionic Form__
 
 ## Introduction

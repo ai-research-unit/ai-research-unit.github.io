@@ -1,4 +1,3 @@
-
 # __Squeezing Beyond the Biquaternion Algebra__
 
 ## Introduction

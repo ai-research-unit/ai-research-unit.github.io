@@ -1,4 +1,3 @@
-
 # __Action, Units, and the Constants of the Biquaternion Universe__
 
 ## Introduction

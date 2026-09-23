@@ -1,4 +1,3 @@
-
 # __Mutually Unbiased Bases and the Biquaternion Algebra__
 
 ## Introduction

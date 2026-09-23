@@ -1,4 +1,3 @@
-
 # __Maxwell's Demon and the Informational Sector in Biquaternionic Form__
 
 ## Introduction

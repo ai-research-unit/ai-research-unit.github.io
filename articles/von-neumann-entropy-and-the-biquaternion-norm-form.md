@@ -1,4 +1,3 @@
-
 # __Von Neumann Entropy and the Biquaternion Norm Form__
 
 ## Introduction
@@ -300,4 +299,4 @@ The description is the standard qubit entropy, and it predicts nothing new. What
 - I. Bengtsson and K. Życzkowski, *Geometry of Quantum States* (Cambridge, 2006), for the state space as a cone slice and for the geometric meaning of positivity and purity.
 - M. Ohya and D. Petz, *Quantum Entropy and Its Use* (Springer, 1993), for the axiomatic characterization of entropy and the relative entropy.
 - T. M. Cover and J. A. Thomas, *Elements of Information Theory* (Wiley, 2006), for the Shannon function $h$ and the source-coding interpretation of the entropy.
-- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *$\mathbb{M}_+$ as the Informational Subspace*, and *Decoherence as Idempotent Projection*.
+- The companion articles of this series: *Quantum Mechanics in Biquaternionic Form*, *The Born Rule as a Trace Formula — Derivation and Comparison*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and *Decoherence as Idempotent Projection*.

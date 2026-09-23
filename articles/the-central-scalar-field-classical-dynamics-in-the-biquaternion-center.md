@@ -1,4 +1,3 @@
-
 # __The Central Scalar Field: Classical Dynamics in the Biquaternion Center__
 
 ## Introduction
@@ -321,7 +320,7 @@ The three statements are the field-theoretic form of the spin-zero condition: a 
 
 5. **The relation to the gauge principle.** The central phase is a global symmetry of the central scalar field. Whether it can be gauged, and whether a gauged central phase has a biquaternionic interpretation distinct from ordinary $U(1)$ electromagnetism, is a question for the articles on the gauge principle rather than for a classical scalar field.
 
-6. **Coupling to the informational sector.** The field occupies the center and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{M}_+$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *$\mathbb{M}_+$ as the Informational Subspace*.
+6. **Coupling to the informational sector.** The field occupies the center and therefore one scalar direction of each sector. Whether the scalar direction of $\mathbb{M}_+$ couples to the informational structures of the framework, and how a scalar source would appear to an informational observer, is the central open question shared with the foundational article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 7. **Curved spacetime and the range.** The Yukawa range $\mu^{-1}$ and the $1/r$ tail are computed on flat spacetime. Whether the framework's local complex structure modifies the range in a medium, as it modifies the speed of light, is not addressed.
 

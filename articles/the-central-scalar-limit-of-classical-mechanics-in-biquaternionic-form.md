@@ -1,4 +1,3 @@
-
 # __The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Bosonization in Biquaternionic Form__
 
 ## Introduction

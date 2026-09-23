@@ -1,4 +1,3 @@
-
 # __Klein–Gordon from the Dirac Square in Biquaternionic Form__
 
 ## Introduction

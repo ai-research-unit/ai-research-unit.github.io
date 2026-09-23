@@ -1,4 +1,3 @@
-
 # __Exercise: Boosting a Four-Velocity and Rapidity Composition__
 
 ## Introduction
@@ -342,4 +341,4 @@ The exercise has also tested the parent. The parent's formula (14) is correct on
 - E. P. Wigner, "On Unitary Representations of the Inhomogeneous Lorentz Group," *Annals of Mathematics* **40** (1939) 149–204, and the Thomas precession literature, for the rotation that accompanies the composition of non-collinear boosts.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of boosts and the composition of Lorentz transformations.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$ and the branch of the square root.
-- The companion articles of this series: *Relativistic Mechanics in Biquaternionic Form*, *The Lorentz Transformation as a Biquaternionic Rotation*, and *$\mathbb{M}_-$ as the Material Subspace*.
+- The companion articles of this series: *Relativistic Mechanics in Biquaternionic Form*, *The Lorentz Transformation as a Biquaternionic Rotation*, and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.

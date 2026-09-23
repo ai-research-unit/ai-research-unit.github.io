@@ -1,4 +1,3 @@
-
 # __Biquaternion Roots of Minus One__
 
 ## Introduction

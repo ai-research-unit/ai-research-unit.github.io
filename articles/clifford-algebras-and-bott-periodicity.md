@@ -1,4 +1,3 @@
-
 # __Clifford Algebras and Bott Periodicity__
 
 ## Introduction

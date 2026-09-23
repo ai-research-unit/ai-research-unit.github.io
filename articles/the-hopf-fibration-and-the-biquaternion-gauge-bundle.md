@@ -1,4 +1,3 @@
-
 # __The Hopf Fibration and the Biquaternion Gauge Bundle__
 
 ## Introduction

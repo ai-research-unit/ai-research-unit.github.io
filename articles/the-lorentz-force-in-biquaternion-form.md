@@ -1,4 +1,3 @@
-
 # __The Lorentz Force in Biquaternion Form__
 
 ## Introduction

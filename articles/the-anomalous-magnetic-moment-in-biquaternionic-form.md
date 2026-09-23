@@ -1,4 +1,3 @@
-
 # __The Anomalous Magnetic Moment in Biquaternionic Form__
 
 ## Introduction

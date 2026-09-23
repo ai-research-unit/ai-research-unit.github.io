@@ -1,4 +1,3 @@
-
 # __Biquaternion Zero Divisors__
 
 ## Introduction

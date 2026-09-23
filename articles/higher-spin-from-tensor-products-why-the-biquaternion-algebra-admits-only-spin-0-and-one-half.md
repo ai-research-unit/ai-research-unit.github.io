@@ -1,4 +1,3 @@
-
 # __Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half__
 
 ## Introduction

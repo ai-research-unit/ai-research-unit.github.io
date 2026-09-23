@@ -1,4 +1,3 @@
-
 # __The Relativistic Action and the Stationary-Action Principle in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form__
 
 ## Introduction
@@ -327,7 +326,7 @@ In every one of these uses the coupling pairs the field with its conjugate, and 
 
 ## Further Reading
 
-- Foundational articles: *Introduction to the Biquaternion Universe*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*; *Conventions in the Biquaternion Universe* (the mass-term convention, the real structure $\flat$, and the dispersion failure this article expands).
+- Foundational articles: *Introduction to the Biquaternion Universe*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Conventions in the Biquaternion Universe* (the mass-term convention, the real structure $\flat$, and the dispersion failure this article expands).
 - The Dirac mass in biquaternionic form: *The Dirac Equation in Biquaternionic Form* (the linear chiral pair and the massless limit $\tilde{\nabla}\tilde{\Psi} = 0$); *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*.
 - The Majorana side: *The Neutrino and Majorana Fermions in Biquaternionic Form* (charge conjugation on the module, the Majorana condition, and the obstruction by which $\mathbb{M}_-$ fails to be a reality condition); *Chiral Fermions in the Biquaternion Framework* (why a chiral fermion cannot carry a bare Dirac mass).
 - The antilinear discrete symmetries: *The CPT Theorem in Biquaternionic Form* ($C$ and $T$ antilinear, and why a linear $T$ is not a symmetry).

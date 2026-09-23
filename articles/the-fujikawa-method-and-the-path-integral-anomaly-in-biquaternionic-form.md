@@ -1,4 +1,3 @@
-
 # __The Fujikawa Method and the Path-Integral Anomaly in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Hydrogen Atom in Biquaternionic Form — The Relativistic Case__
 
 ## Introduction
@@ -334,4 +333,4 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 - J. J. Sakurai and Jim Napolitano, *Modern Quantum Mechanics* (Pearson, 2017), for the non-relativistic comparison and the fine structure.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the relation of biquaternions to $M_2(\mathbb{C})$ and the spinor representation.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the Coulomb problem and the spin–orbit coupling.
-- Companion articles: *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *Exercise: The Non-Relativistic Limit and the Pauli Equation*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *Quantum Mechanics in Biquaternionic Form*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*.
+- Companion articles: *The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *Exercise: The Non-Relativistic Limit and the Pauli Equation*; *The Electron in Biquaternionic Form*; *Angular Momentum and Spin in Biquaternionic Form*; *Quantum Mechanics in Biquaternionic Form*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

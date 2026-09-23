@@ -1,4 +1,3 @@
-
 # __Dual Numbers Harmonic Analysis__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Modular Hamiltonian in Biquaternionic Form__
 
 ## Introduction
@@ -410,8 +409,8 @@ The one structural question the finite-dimensional model cannot settle is locali
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS boundary relation, the imaginary-time strip, and the thermal reading of $\tilde K$.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state, the thermal operator, and $\tilde K=\beta\tilde H+(\log Z)e_0$.
 - Companion article *The Unruh Effect in Biquaternionic Form*, for the wedge, the Bisognano–Wichmann identification, and the temperature derived from the two-point function.
-- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
-- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, the four-vectors, and the zero-divisor cone.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-vectors, and the zero-divisor cone.
 - Companion article *The Conformal Group in Biquaternionic Form*, for the boundary that the special conformal generators are not elements of $\mathbb{B}$.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the boost generators $K_k=ie_k$ whose $k=1$ case is the wedge modular Hamiltonian.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the subspaces its generators lie in.

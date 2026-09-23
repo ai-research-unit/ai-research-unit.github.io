@@ -1,4 +1,3 @@
-
 # __Exercise: Quantum Channels and Dephasing in M+__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Conventions in the Biquaternion Universe__
 
 ## Introduction
@@ -7,7 +6,7 @@ A framework built on a non-standard algebra, and on a non-standard choice of whi
 
 This article collects the conventions of the series in one place, states each one, and gives the reason it was chosen. It is meant to be read before any other article is edited, and it has two readers in mind. The first is a reader who meets an equation in a companion article that looks wrong. The second is anyone writing or revising an article in the series, for whom the conventions are load-bearing: a change that looks local — a sign, an operator definition, a factor of $i$ — generally propagates into a dozen dependent articles.
 
-The article is organised in two parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the two sectors, the matrix representation, and the trace. The second gives the **spacetime and field-theoretic** conventions: the material coordinate, the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure.
+The article is organised in two parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the six subspaces, the matrix representation, and the trace. The second gives the **spacetime and field-theoretic** conventions: the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure.
 
 One warning applies throughout. **A convention recorded here is not a claim that the alternative is wrong.** Several of these choices are freely made where either choice would be defensible; they are conventions, not theorems. What is not free is *consistency*: once a convention is fixed, the dependent articles inherit it, and a change to it is a change to all of them. Where a convention is instead forced — where the alternative leads to a demonstrable contradiction — the article says so explicitly, and that distinction is the difference between a convention and a result.
 
@@ -45,7 +44,7 @@ $$
 Q_0 = q_0 + iq'_0, \qquad Q_1 = q_1 + iq'_1, \qquad Q_2 = q_2 + iq'_2, \qquad Q_3 = q_3 + iq'_3, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
-replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the four subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in *The Four Subspaces* and *The Prime Convention* below; nothing in them changes the split stated here.
+replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the six subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in *The Six Subspaces* and *The Prime Convention* below; nothing in them changes the split stated here.
 
 One structural fact governs the whole series, so it is worth isolating. **The scalar unit $i$ is central**: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a *central* phase $e^{i\alpha}$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.
 
@@ -55,9 +54,9 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$
 
-and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The Matrix Representation* below, and the development of the representation — the general element, the four subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The Matrix Representation in the Biquaternion Universe*. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
+and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The Matrix Representation* below, and the development of the representation — the general element, the six subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The Matrix Representation of the Biquaternion Universe*. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
 
-### The Conjugations and the Four Subspaces
+### The Conjugations and the Fixed Spaces
 
 The algebra carries four natural involutions, all of them used in the series:
 
@@ -76,98 +75,153 @@ Each involution has a fixed space, and each of these is a named **real** subspac
 | Hermitian conjugation $\dagger$ | $\mathbb{M}_+$ | informational subspace | $4$ |
 | complex conjugation ${}^{*}$ | $\mathbb{H}_{\mathbb{B}}$ | quaternion subspace | $4$ |
 | complex conjugation ${}^{*}$, anti-fixed | $i\mathbb{H}_{\mathbb{B}}$ | antiquaternion subspace | $4$ |
-| quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | the center | $2$ |
+| quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | center subspace | $2$ |
+| quaternion conjugation $\bar{\cdot}$, anti-fixed | $\mathrm{Vect}(\mathbb{B})$ | vector subspace | $6$ |
 
-The antiquaternion subspace is the **anti**-fixed space of complex conjugation — the elements with $\tilde{Q}^* = -\tilde{Q}$ — not the fixed space of an involution of its own.
+The antiquaternion subspace is the **anti**-fixed space of complex conjugation — the elements with $\tilde{Q}^* = -\tilde{Q}$ — and the vector subspace is the **anti**-fixed space of quaternion conjugation, the elements with $\bar{\tilde{Q}} = -\tilde{Q}$. Neither is the fixed space of an involution of its own; four of the six subspaces are fixed spaces and two are anti-fixed spaces.
 
-**The center $\mathbb{C}_{\mathbb{B}}$** is the fifth fixed space, and the one that is not a sector: it is the fixed space of quaternion conjugation, the elements with no vector part at all,
+The table is a list of **definitions**, not of relations. How the subspaces meet, span and cross is the subject of *Relations Between Subspaces*; the parametrisation each one carries is recorded in *The Six Subspaces* below.
+
+### The Six Subspaces
+
+The eight real parameters of a general element group into **six subspaces**: four four-dimensional ones, the two-dimensional center subspace, and the six-dimensional vector subspace. Each is listed here under both of its names, the **algebraic** one from the property that defines it and the **physical** one from the role it plays, together with its defining condition, its basis, its own real parameters, and the physical coordinates those parameters carry.
+
+The dictionary between the parameters and the physical coordinates is fixed once and for all,
+
+$$
+q'_0 = c\,t, \qquad (q_1, q_2, q_3) = (x, y, z), \qquad q_0 = c\,t', \qquad (q'_1, q'_2, q'_3) = (x', y', z'),
+$$
+
+with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the real spatial vector and $i\mathbf{x}' = i x' e_1 + i y' e_2 + i z' e_3$ its imaginary counterpart. The **material coordinate** $\tilde{Q} = ict\,e_0 + \mathbf{x}$ and the **informational coordinate** $\tilde{Q} = ct'\,e_0 + i\mathbf{x}'$ are the two ends of it, and each subspace keeps whichever part of the dictionary its defining condition leaves free.
+
+| subspace | physical interpretation | defining condition | basis | real parameters | physical coordinates |
+|---|---|---|---|---|---|
+| $\mathbb{M}_-$ (anti-Hermitian) | material sector | $\tilde{Q}^\flat = \tilde{Q}$ | $ie_0,\ e_1,\ e_2,\ e_3$ | $q'_0,\ q_1,\ q_2,\ q_3$ | $ict,\ x,\ y,\ z$ |
+| $\mathbb{M}_+$ (Hermitian) | informational sector | $\tilde{Q}^\dagger = \tilde{Q}$ | $e_0,\ ie_1,\ ie_2,\ ie_3$ | $q_0,\ q'_1,\ q'_2,\ q'_3$ | $ct',\ ix',\ iy',\ iz'$ |
+| $\mathbb{H}_{\mathbb{B}}$ (quaternion) | real sector | $\tilde{Q}^* = \tilde{Q}$ | $e_0,\ e_1,\ e_2,\ e_3$ | $q_0,\ q_1,\ q_2,\ q_3$ | $ct',\ x,\ y,\ z$ |
+| $i\mathbb{H}_{\mathbb{B}}$ (antiquaternion) | imaginary sector | $\tilde{Q}^* = -\tilde{Q}$ | $ie_0,\ ie_1,\ ie_2,\ ie_3$ | $q'_0,\ q'_1,\ q'_2,\ q'_3$ | $ict,\ ix',\ iy',\ iz'$ |
+| $\mathbb{C}_{\mathbb{B}}$ (center) | complex time sector | $\bar{\tilde{Q}} = \tilde{Q}$ | $e_0,\ ie_0$ | $q_0,\ q'_0$ | $ct',\ ict$ |
+| $\mathrm{Vect}(\mathbb{B})$ (vector) | complex space sector | $\bar{\tilde{Q}} = -\tilde{Q}$ | $e_1,\ e_2,\ e_3,\ ie_1,\ ie_2,\ ie_3$ | $q_1,\ q_2,\ q_3,\ q'_1,\ q'_2,\ q'_3$ | $x,\ y,\ z,\ ix',\ iy',\ iz'$ |
+
+**The material subspace $\mathbb{M}_-$** — the **anti-Hermitian** subspace, fixed by $\flat$; equivalently the eigenspace of $\dagger$ with eigenvalue $-1$, the elements with $\tilde{Q}^\dagger = -\tilde{Q}$. Basis $ie_0, e_1, e_2, e_3$; scalar part **purely imaginary**, vector part **real**, so its four parameters are the four-position,
+
+$$
+\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 = ict\,e_0 + \mathbf{x} \in \mathbb{M}_-, \qquad q'_0 = ct, \quad (q_1, q_2, q_3) = (x, y, z).
+$$
+
+It carries the spacetime coordinate and the four-vectors of the series. Because $\flat$ is the algebra's **real structure** (*The Real Structure $\flat$*, below), $\mathbb{M}_-$ is its fixed space — the algebra's real form — and that is the sense in which the series calls this subspace **real**: not that its coefficients are real, which they are not, but that it is fixed by the real structure. The two readings must be kept apart, since the subspace of real *coefficients* is $\mathbb{H}_{\mathbb{B}}$, a different subspace of the same algebra.
+
+**The informational subspace $\mathbb{M}_+$** — the **Hermitian** subspace, fixed by $\dagger$; equivalently the eigenspace of $\dagger$ with eigenvalue $+1$, the elements with $\tilde{Q}^\dagger = \tilde{Q}$. Basis $e_0, ie_1, ie_2, ie_3$; scalar part **real**, vector part **purely imaginary**, so its four parameters are the informational coordinate,
+
+$$
+\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 = ct'\,e_0 + i\mathbf{x}' \in \mathbb{M}_+, \qquad q_0 = ct', \quad (q'_1, q'_2, q'_3) = (x', y', z').
+$$
+
+It carries the Hermitian operators, states and observables. Multiplication by the central $i$ exchanges the two sectors, $i\mathbb{M}_- = \mathbb{M}_+$, and reverses the sign of the norm form; the two coordinates above are the two ends of that exchange.
+
+**The quaternion subspace $\mathbb{H}_{\mathbb{B}}$** — fixed by ${}^{*}$, basis $e_0, e_1, e_2, e_3$; all four coefficients **real**, the condition that no coefficient carries the central $i$. Its four parameters take the informational time together with the material space,
+
+$$
+\tilde{Q} = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = (ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 = ct'\,e_0 + \mathbf{x} \in \mathbb{H}_{\mathbb{B}}, \qquad q_\mu \in \mathbb{R}.
+$$
+
+It is a subalgebra — a copy of $\mathbb{H}$ inside $\mathbb{B}$, hence a division algebra — and it is the home of the rotation rotors. Being free of the central $i$, it carries the Euclidean signature $(4,0)$: the $ict$ convention is not available inside it, and its physical coordinate is the pair $(ct', \mathbf{x})$, with the temporal coefficient real and the spatial ones real.
+
+**The antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$** — anti-fixed by ${}^{*}$, the elements with $\tilde{Q}^* = -\tilde{Q}$; basis $ie_0, ie_1, ie_2, ie_3$; all four coefficients **purely imaginary**, the condition that every coefficient carries the central $i$. Its four parameters take the material time together with the informational space, the reverse assignment,
+
+$$
+\tilde{Q} = iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = ic\,t\,e_0 + ix'\,e_1 + iy'\,e_2 + iz'\,e_3 = ict\,e_0 + i\mathbf{x}' \in i\mathbb{H}_{\mathbb{B}}, \qquad q'_\mu \in \mathbb{R}.
+$$
+
+It is not a subalgebra but a module over $\mathbb{H}_{\mathbb{B}}$, since the product of two of its elements is real.
+
+**The center $\mathbb{C}_{\mathbb{B}}$** — fixed by quaternion conjugation $\bar{\cdot}$, the elements with no vector part at all,
 
 $$
 \mathbb{C}_{\mathbb{B}} = \{\tilde{Q} : \bar{\tilde{Q}} = \tilde{Q}\} = \{Q_0e_0\} = \mathbb{R}e_0 \oplus \mathbb{R}(ie_0), \qquad Q_0 = q_0 + iq'_0 \in \mathbb{C}.
 $$
 
-It is the only one of the five that is two-dimensional over $\mathbb{R}$: purely scalar, it carries no spatial direction of the dictionary and both temporal ones, so it is the two time axes together, $\mathbb{C}_{\mathbb{B}} = T_{\mathrm{i}} \oplus T_{\mathrm{m}}$. It is the **center** in the algebraic sense — the elements commuting with everything, $[\tilde{C}, \tilde{Q}] = 0$ for all $\tilde{Q} \in \mathbb{B}$ — which is what makes it the home of the scalars; and that is not an artefact of the parametrisation, since $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ with the quaternions having center $\mathbb{R}$ gives the center of $\mathbb{B}$ as $\mathbb{C} \otimes_\mathbb{R} \mathbb{R}e_0 = \mathbb{C}_{\mathbb{B}}$ itself. It is therefore a subalgebra isomorphic to $\mathbb{C}$ — a field, and the only commutative one among the five — preserved by every conjugation the algebra has: $\bar{\cdot}$ fixes it pointwise, ${}^{*}$ and with it $\dagger$ negates its second line $ie_0$ while fixing $e_0$, and $\flat$ reverses the two. Under $\Phi$ it is exactly the preimage of the scalar matrices, $\Phi(\mathbb{C}_{\mathbb{B}}) = \mathbb{C}I_2$, so the continuous **central phase** — the global $U(1)$, whose element $e^{i\theta}e_0$ lies here — is a motion within the center, fixed by $\bar{\cdot}$ and conjugated by ${}^{*}$. Its two lines are also the two triple intersections of the subspaces, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$: the directions common to three of the five.
-
-This table is a list of **definitions**, not of relations. How the four subspaces meet, span and cross is the subject of *The Quaternion and Antiquaternion Subspaces*; what is recorded here is only the parametrisation each one carries, which is what the rest of the series assumes.
-
-### The Four Subspaces
-
-Each of the four is four-dimensional over $\mathbb{R}$, written with its own four real parameters and its own physical coordinates. They are taken one at a time, in the order used throughout the series.
-
-**The material subspace $\mathbb{M}_-$** — the **anti-Hermitian** subspace, fixed by $\flat$; equivalently the eigenspace of $\dagger$ with eigenvalue $-1$, the elements with $\tilde{Q}^\dagger = -\tilde{Q}$. Basis $ie_0, e_1, e_2, e_3$; scalar part **purely imaginary**, vector part **real**:
+It is two-dimensional over $\mathbb{R}$ — purely scalar, carrying no spatial direction of the dictionary and both temporal ones, so that its two parameters are the two time coordinates together,
 
 $$
-\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-, \qquad q'_0 = ct, \qquad (q_1, q_2, q_3) = (x, y, z).
+\tilde{Q} = q_0e_0 + q'_0(ie_0) = ct'\,e_0 + ict\,e_0 \in \mathbb{C}_{\mathbb{B}}, \qquad \mathbb{C}_{\mathbb{B}} = T_{\mathrm{i}} \oplus T_{\mathrm{m}} .
 $$
 
-It carries the spacetime coordinate and the four-vectors of the series. Because $\flat$ is the algebra's **real structure** (*The Real Structure $\flat$*, below), $\mathbb{M}_-$ is its fixed space — the algebra's real form — and that is the sense in which the series calls this subspace **real**: not that its coefficients are real, which they are not, but that it is fixed by the real structure. The two readings must be kept apart, since the subspace of real *coefficients* is $\mathbb{H}_{\mathbb{B}}$, a different subspace of the same algebra.
+It is the **center** in the algebraic sense — the elements commuting with everything, $[\tilde{C}, \tilde{Q}] = 0$ for all $\tilde{Q} \in \mathbb{B}$ — which is what makes it the home of the scalars; and that is not an artefact of the parametrisation, since $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ with the quaternions having center $\mathbb{R}$ gives the center of $\mathbb{B}$ as $\mathbb{C} \otimes_\mathbb{R} \mathbb{R}e_0 = \mathbb{C}_{\mathbb{B}}$ itself. It is therefore a subalgebra isomorphic to $\mathbb{C}$ — a field, and the only commutative one among the six subspaces — preserved by every conjugation the algebra has: $\bar{\cdot}$ fixes it pointwise, ${}^{*}$ and with it $\dagger$ negates its second line $ie_0$ while fixing $e_0$, and $\flat$ reverses the two. Under $\Phi$ it is exactly the preimage of the scalar matrices, $\Phi(\mathbb{C}_{\mathbb{B}}) = \mathbb{C}I_2$, so the continuous **central phase** — the global $U(1)$, whose element $e^{i\theta}e_0$ lies here — is a motion within the center, fixed by $\bar{\cdot}$ and conjugated by ${}^{*}$. Its two lines are also the two directions common to three of the six subspaces, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.
 
-**The informational subspace $\mathbb{M}_+$** — the **Hermitian** subspace, fixed by $\dagger$; equivalently the eigenspace of $\dagger$ with eigenvalue $+1$, the elements with $\tilde{Q}^\dagger = \tilde{Q}$. Basis $e_0, ie_1, ie_2, ie_3$; scalar part **real**, vector part **purely imaginary**:
-
-$$
-\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+, \qquad q_0 = ct', \qquad (q'_1, q'_2, q'_3) = (x', y', z').
-$$
-
-It carries the Hermitian operators, states and observables. It is the partner of $\mathbb{M}_-$ under the real structure: $\flat$ acts as $+1$ on $\mathbb{M}_-$ and $-1$ on $\mathbb{M}_+$, and the two are exchanged by multiplication by $i$, $i\mathbb{M}_- = \mathbb{M}_+$.
-
-**The quaternion subspace $\mathbb{H}_{\mathbb{B}}$** — fixed by ${}^{*}$, basis $e_0, e_1, e_2, e_3$; all four coefficients **real**:
+**The vector subspace $\mathrm{Vect}(\mathbb{B})$** — the sixth, and the only one that is not fixed by a conjugation: it is the **anti**-fixed space of quaternion conjugation, the elements with $\bar{\tilde{Q}} = -\tilde{Q}$, whose fixed space is the center above. Equivalently it is the complement of the center, the elements with no scalar part,
 
 $$
-\tilde{Q} = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = (ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{H}_{\mathbb{B}}, \qquad q_\mu \in \mathbb{R}.
+\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\} = \{Q_1e_1 + Q_2e_2 + Q_3e_3\}, \qquad Q_k \in \mathbb{C},
 $$
 
-It is a subalgebra — a copy of $\mathbb{H}$ inside $\mathbb{B}$, hence a division algebra — and it is the home of the rotation rotors.
-
-**The antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$** — anti-fixed by ${}^{*}$, basis $ie_0, ie_1, ie_2, ie_3$; all four coefficients **purely imaginary**:
+of real dimension six — three complex dimensions, the only subspace of the six that is not four- or two-dimensional. Its six parameters take both spatial blocks,
 
 $$
-\tilde{Q} = iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = ic\,t\,e_0 + ix'\,e_1 + iy'\,e_2 + iz'\,e_3 \in i\mathbb{H}_{\mathbb{B}}, \qquad q'_\mu \in \mathbb{R}.
+\tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' \in \mathrm{Vect}(\mathbb{B}), \qquad \mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}},
 $$
 
-It is not a subalgebra but a module over $\mathbb{H}_{\mathbb{B}}$.
+the material space and the informational space together, so it is the spatial counterpart of the center, which is the two temporal blocks together. With the center it gives the third decomposition of the algebra, $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, the decomposition into scalar and traceless part; it is closed under the commutator, being the derived subspace $[\mathbb{B},\mathbb{B}]$, but not under multiplication.
 
-Between them these four parametrisations use the eight real numbers that a general element carries. Two conventions attach to those numbers: how they are primed, and what the four subspaces are called.
+Between them these six parametrisations use the eight real numbers that a general element carries. $\mathbb{M}_-$ and $\mathbb{M}_+$ are the **sectors**; $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are the **real and imaginary halves**, from the coefficient split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$; $\mathbb{C}_{\mathbb{B}}$ is the center and $\mathrm{Vect}(\mathbb{B})$ is what remains. The two names of each subspace, and the two collective names, are set out in *The Naming Convention* below. Each is treated in its own article — $\mathbb{M}_-$ in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, $\mathbb{M}_+$ in *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, $\mathbb{H}_{\mathbb{B}}$ in *The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$ as the Real Sector*, $i\mathbb{H}_{\mathbb{B}}$ in *The Anti-Quaternion Subspace $i\mathbb{H}_{\mathbb{B}}$ as the Imaginary Sector*, $\mathbb{C}_{\mathbb{B}}$ in *The Center Subspace $\mathbb{C}_{\mathbb{B}}$ as the Complex Time Sector*, and $\mathrm{Vect}(\mathbb{B})$ in *The Vector Subspace $\mathrm{Vect}(\mathbb{B})$ as the Complex Space Sector*. Two further conventions attach to the eight numbers: how they are primed, and what the subspaces are called.
 
 ### The Prime Convention
 
-**What the prime marks.** The prime marks the **imaginary part** of a complex coefficient. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
+**What the prime marks.** The prime belongs to the **coefficients**, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
 
 $$
-Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R},
+Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R}, \qquad \mu = 0, 1, 2, 3,
 $$
 
-gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$. The prime is therefore **not** a label of a sector. It is the algebra's real-and-imaginary split, applied to the coefficients: the four unprimed parameters are the coordinates of the real half $\mathbb{H}_{\mathbb{B}}$ and the four primed parameters those of the imaginary half $i\mathbb{H}_{\mathbb{B}}$,
+gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$:
+
+| coefficient | real part | attached to | imaginary part | attached to |
+|---|---|---|---|---|
+| $Q_0$ | $q_0$ | $e_0$ | $q'_0$ | $ie_0$ |
+| $Q_1$ | $q_1$ | $e_1$ | $q'_1$ | $ie_1$ |
+| $Q_2$ | $q_2$ | $e_2$ | $q'_2$ | $ie_2$ |
+| $Q_3$ | $q_3$ | $e_3$ | $q'_3$ | $ie_3$ |
+
+The primed parameter is the one attached to $ie_\mu$, so **the prime marks the slot that carries the $i$**. It is not a label of a subspace, and it has nothing to do with the physical coordinates: the primes live on the $q$'s, which index the four basis elements, while $x, y, z, t, t'$ name the physical directions those $q$'s are read as. Grouped by the algebra's real-and-imaginary split, the four unprimed parameters are the coordinates of the quaternion subspace and the four primed ones those of the antiquaternion subspace,
 
 $$
 q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{H}_{\mathbb{B}}, \qquad iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 \in i\mathbb{H}_{\mathbb{B}} .
 $$
 
-**Per block.** The halves cross the sectors, so the eight parameters fall into four blocks, and each block has a fixed prime status:
+**The three-and-one pattern.** Each of the two sectors is mixed, because each takes its scalar slot from one side of that split and its three vector slots from the other. The material sector is $iq'_0e_0 + q_ke_k$ — primed scalar, unprimed vectors — and the informational sector is $q_0e_0 + iq'_ke_k$ — unprimed scalar, primed vectors. Read by parameter, the primed set $\{q'_0, q'_1, q'_2, q'_3\}$ is therefore one material slot (the material time $q'_0$) and three informational ones (the informational space $q'_k$), rather than four belonging to a single sector; that mixed ownership is the same statement as the crossing of the two decompositions. The two subspaces of the coefficient split are uniform in the opposite direction: $\mathbb{H}_{\mathbb{B}}$ is carried entirely by unprimed parameters, $i\mathbb{H}_{\mathbb{B}}$ entirely by primed ones.
 
-| block | coordinate | parameter | prime | half |
-|---|---|---|---|---|
-| material time | $ict$ | $q'_0$ | yes | $i\mathbb{H}_{\mathbb{B}}$ |
-| informational time | $ct'$ | $q_0$ | no | $\mathbb{H}_{\mathbb{B}}$ |
-| material space | $x, y, z$ | $q_1, q_2, q_3$ | no | $\mathbb{H}_{\mathbb{B}}$ |
-| informational space | $ix', iy', iz'$ | $q'_1, q'_2, q'_3$ | yes | $i\mathbb{H}_{\mathbb{B}}$ |
-
-**The three-and-one pattern.** Because the blocks cross, neither sector is uniform in its primes: each takes one slot of one kind and three of the other. The material sector is $iq'_0e_0 + q_ke_k$ — its scalar primed, its vectors unprimed — and the informational sector is $q_0e_0 + iq'_ke_k$ — its scalar unprimed, its vectors primed. The halves are where the split is clean: $\mathbb{H}_{\mathbb{B}}$ is all four unprimed, $i\mathbb{H}_{\mathbb{B}}$ all four primed. This is the sense in which the primed set is three-and-one rather than four-and-none: read by sector, its four parameters are one material (the material time $q'_0$) and three informational (the informational space $q'_k$), not four belonging to a single sector.
-
-**The alternative, and why it is not used.** The prime could instead have been made to mark the **sector** — all-unprimed $\mathbb{M}_-$ against all-primed $\mathbb{M}_+$ — which is uniform in the opposite direction. The corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the material time $ict$ would be carried by an unprimed parameter although it is imaginary, and the informational time $ct'$ by a primed one although it is real. The real half $\mathbb{H}_{\mathbb{B}}$, which takes its scalar from $\mathbb{M}_+$ and its vectors from $\mathbb{M}_-$, would also be split across the two primes, so that it could no longer be written with a single name. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in *The Quaternion and Antiquaternion Subspaces*.
+**The alternative, and why it is not used.** The prime could instead have been made to mark the **sector** — all-unprimed for $\mathbb{M}_-$ against all-primed for $\mathbb{M}_+$ — which is uniform in the opposite direction. The corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the material time $ict$ would be carried by an unprimed parameter although it is imaginary, and the informational time $ct'$ by a primed one although it is real. $\mathbb{H}_{\mathbb{B}}$, which takes its scalar slot from $\mathbb{M}_+$ and its vector slots from $\mathbb{M}_-$, would also be split across the two primes, so that it could no longer be written with a single name. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in *Relations Between Subspaces*.
 
 ### The Naming Convention
 
-$\mathbb{M}_-$ and $\mathbb{M}_+$ are collectively the **sectors** of the algebra, and individually the **material** and **informational** subspaces, from the roles they carry:
+Each of the six subspaces carries two names: an **algebraic** one, taken from the property that defines it, and a **physical** one, taken from the role it plays. The six companion articles are titled by the physical name.
 
-- the material subspace carries the spacetime coordinate and the four-vectors, and its norm form has signature $(3,1)$;
-- the informational subspace carries the Hermitian operators, states and observables, and its norm form has signature $(1,3)$.
+| subspace | algebraic name (from its defining property) | physical name (from its role) |
+|---|---|---|
+| $\mathbb{M}_-$ | anti-Hermitian: fixed space of $\flat$, $\tilde{Q}^\dagger = -\tilde{Q}$ | material sector: carries the spacetime coordinate and the four-vectors |
+| $\mathbb{M}_+$ | Hermitian: fixed space of $\dagger$, $\tilde{Q}^\dagger = \tilde{Q}$ | informational sector: carries the Hermitian operators, states and observables |
+| $\mathbb{H}_{\mathbb{B}}$ | quaternion: fixed space of ${}^{*}$, a copy of $\mathbb{H}$ inside $\mathbb{B}$ | real sector: the Euclidean, or Wick-rotated, reading of the four-vector space |
+| $i\mathbb{H}_{\mathbb{B}}$ | antiquaternion: anti-fixed space of ${}^{*}$ | imaginary sector: the part written with purely imaginary coefficients |
+| $\mathbb{C}_{\mathbb{B}}$ | the center: fixed space of $\bar{\cdot}$, commuting with everything | complex time sector: the two temporal directions |
+| $\mathrm{Vect}(\mathbb{B})$ | vector: anti-fixed space of $\bar{\cdot}$, the traceless part | complex space sector: the two spatial blocks |
 
-$\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are collectively the **halves**, from the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and individually the **quaternion** and **antiquaternion** subspaces:
+**The algebraic names.** These are intrinsic. Each states which involution fixes the subspace, or where the subspace sits in the algebra, and none of them carries an interpretation: the anti-Hermitian and Hermitian subspaces are the fixed spaces of $\flat$ and $\dagger$; the quaternion and antiquaternion subspaces are the fixed and anti-fixed spaces of ${}^{*}$; the center is the fixed space of $\bar{\cdot}$, the set of elements that commute with everything; and the vector subspace is the anti-fixed space of $\bar{\cdot}$, equivalently the traceless part, equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$.
 
-- the quaternion subspace is the **real half**, the fixed space of complex conjugation, all four coefficients real; it is a subalgebra — a copy of $\mathbb{H}$ inside $\mathbb{B}$, hence a division algebra — and the home of the rotation rotors;
-- the antiquaternion subspace is the **imaginary half**, the anti-fixed space of complex conjugation, all four coefficients purely imaginary; it is not a subalgebra but a module over $\mathbb{H}_{\mathbb{B}}$.
+**The physical names.** These are the interpretation, and they are the ones the series uses in prose and in the titles of its articles. Each records a role. The **material sector** carries the four-positions and four-vectors, and its norm form has signature $(3,1)$; the **informational sector** carries the Hermitian operators, states and observables, with signature $(1,3)$; the **real sector** is the part of the algebra free of the central $i$, carrying a Euclidean four-dimensional geometry in which no direction is singled out as time, which is what the Wick rotation produces; the **imaginary sector** is its complement in the coefficient split, the part every coefficient of which carries the $i$; and the **complex time** and **complex space** sectors are the two temporal directions and the two spatial blocks respectively, so named because they carry the temporal and the spatial part of the physical dictionary.
 
-The two namings are independent, and they cross: every one of the four four-dimensional subspaces is one sector and one half, and no sector is a half. Which half each sector draws on is stated in *The Prime Convention* above — the material sector takes its time from the imaginary half and its space from the real half — and the crossing is examined in *The Quaternion and Antiquaternion Subspaces*.
+**The collective names.** Two of the three decompositions of the algebra pair up the subspaces and give the pairs a name of their own. The decomposition
+
+$$
+\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+
+$$
+
+pairs the two sectors — in this series' usage, *the sectors*, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The decomposition
+
+$$
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}
+$$
+
+is the real-and-imaginary split of the coefficients, and its two members are called the **real and imaginary halves** of the algebra: $\mathbb{H}_{\mathbb{B}}$, written with real coefficients throughout, and $i\mathbb{H}_{\mathbb{B}}$, written with purely imaginary ones. The third decomposition, $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$, pairs the center with the traceless part and needs no collective name beyond those. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as *The Prime Convention* above records.
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
@@ -185,11 +239,11 @@ $$
 
 with the central scalar mapping to $\Phi(i) = iI_2$. Because $\Phi$ is $\mathbb{C}$-linear, the Hermitian units require no separate choice, $\Phi(ie_k) = i\,\Phi(e_k)$.
 
-The assignment is stated here once, because every article depends on it agreeing. Its consequences — the general element $\Phi(\tilde{Q})$, the same four subspaces written as matrices, the conjugations, the trace and the determinant — are developed in *The Matrix Representation in the Biquaternion Universe*, which is the place to look for them. What belongs in this article is not that development but the four rules of writing that a reader is most likely to get wrong.
+The assignment is stated here once, because every article depends on it agreeing. Its consequences — the general element $\Phi(\tilde{Q})$, the same subspaces written as matrices, the conjugations, the trace and the determinant — are developed in *The Matrix Representation of the Biquaternion Universe*, which is the place to look for them. What belongs in this article is not that development but the four rules of writing that a reader is most likely to get wrong.
 
-**The assignment is forced, not chosen.** Neither the factor $i$ nor the sign in the three vector images could have been otherwise: $e_k^2 = -e_0$ requires the factor, and $e_1e_2 = e_3$ fixes the sign. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *The Matrix Representation in the Biquaternion Universe* derives both.
+**The assignment is forced, not chosen.** Neither the factor $i$ nor the sign in the three vector images could have been otherwise: $e_k^2 = -e_0$ requires the factor, and $e_1e_2 = e_3$ fixes the sign. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *The Matrix Representation of the Biquaternion Universe* derives both.
 
-**Never conjugate the matrix entries on their own.** Conjugating the entries of $\Phi(\tilde{Q})$ is *not* the image of any involution of the algebra: it negates the images of $e_1$ and $e_3$ while leaving $\Phi(e_2)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through the matrix formulas recorded in *The Matrix Representation in the Biquaternion Universe*, never by conjugating entries.
+**Never conjugate the matrix entries on their own.** Conjugating the entries of $\Phi(\tilde{Q})$ is *not* the image of any involution of the algebra: it negates the images of $e_1$ and $e_3$ while leaving $\Phi(e_2)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through the matrix formulas recorded in *The Matrix Representation of the Biquaternion Universe*, never by conjugating entries.
 
 **The realisation is a convention of presentation, not of content.** The isomorphisms that preserve the subspace dictionary are the $\Phi' = S\Phi S^{-1}$ with $S$ unitary up to a nonzero complex scalar, and the scalar cancels in $S \cdot S^{-1}$. An arbitrary invertible $S$ destroys the dictionary, and so does a genuine squeeze $S = UP$ with $U$ unitary and $P$ positive definite and $\neq I$: both keep the center, which is scalars, and neither preserves the quaternion subspace or either sector. The practical consequence is that a mistake of translation between the algebra and its matrices is repaired **here** — by correcting the assignment or the explicit factors of $i$ — and never by altering the norm form, the $ict$ assignment or the sector split.
 
@@ -203,76 +257,12 @@ $$
 \mathrm{Tr}(e_0) = 2, \qquad \text{equivalently} \qquad \mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) .
 $$
 
-The factor $2$ — not $1$ — is the convention, and it must not be dropped: every pairing in the series is written with it, the Born rule $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$ among them. The unrestricted form of the identity, for arbitrary elements rather than the pairings of $\mathbb{M}_+$, is recorded with its verification in *The Matrix Representation in the Biquaternion Universe*.
+The factor $2$ — not $1$ — is the convention, and it must not be dropped: every pairing in the series is written with it, the Born rule $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$ among them. The unrestricted form of the identity, for arbitrary elements rather than the pairings of $\mathbb{M}_+$, is recorded with its verification in *The Matrix Representation of the Biquaternion Universe*.
 
 
 ## The Spacetime Conventions
 
-### The Material Coordinate
-
-The spacetime point is an element of the material sector. Written in the sector's own real parameters, and then in the physical coordinates,
-
-$$
-\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_- ,
-$$
-
-the two descriptions are related by $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$: the four parameters are the components of the four-position, the temporal one scaled by $c$.
-
-Two conventions sit in this one line, and both matter.
-
-First, the coefficient of $e_0$ is $ict$, not $ct$: the time coordinate is **imaginary**. This is the $ict$ convention, and it is chosen so that the Minkowski interval emerges as the algebra's own norm form rather than as an extra postulate.
-
-Second, the spatial part is a pure-quaternion **vector**, written $\mathbf{x} = x e_1 + y e_2 + z e_3$, so that $\tilde{Q} = ict\,e_0 + \mathbf{x}$.
-
-The reason for the $ict$ choice is the norm form. On $\mathbb{M}_-$ it is real,
-
-$$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = (iq'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -q'^2_0 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-a quadratic form of signature $(3,1)$: three positive spatial directions and one negative temporal direction. **The Minkowski signature is thus a consequence of $i^2 = -1$**, not an independent input. It vanishes on the cone
-
-$$
-q'^2_0 = q_1^2 + q_2^2 + q_3^2, \qquad \text{that is} \qquad c^2t^2 = x^2 + y^2 + z^2,
-$$
-
-whose nonzero elements are the algebra's **zero divisors**. The complement of the cone has three connected components: the spacelike region and the two time-like components, future and past.
-
-The Lorentz group enters as the group of unit-norm elements,
-
-$$
-SL(2,\mathbb{C}) \cong \{\tilde{\Lambda} \in \mathbb{B} : \tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0\},
-$$
-
-acting on $\mathbb{M}_-$ by rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$. The four-element basis $e_0, e_1, e_2, e_3$ and the $ict$ assignment are the conventions on which all the relativistic articles depend.
-
-### The Informational Coordinate
-
-The mirror paragraph holds on the informational side. The general element of $\mathbb{M}_+$ is written in the sector's own real parameters, and then in the informational coordinates,
-
-$$
-\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+ ,
-$$
-
-with $t', x', y', z'$ real, the two descriptions related by $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$. Two conventions sit in this line as well, and both are the reverse of the material ones.
-
-First, the coefficient of $e_0$ is $ct'$, not $ict$: the temporal coordinate is **real**, not imaginary. Second, the spatial part is **imaginary**, $i\mathbf{x}' = i x' e_1 + i y' e_2 + i z' e_3$, where the material spatial part is real. The two coordinates are not independent objects: multiplication by $i$ exchanges the sectors, $i\mathbb{M}_- = \mathbb{M}_+$, so the informational coordinate is the material one carried through the algebra's complex structure, with the temporal and spatial assignments exchanged.
-
-The mirror assignment is forced the same way, by the definition of $\mathbb{M}_+$ as the fixed space of $\dagger$, and the same norm form reads it off: on $\mathbb{M}_+$ it is
-
-$$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = (ct')^2 - x'^2 - y'^2 - z'^2 ,
-$$
-
-a quadratic form of signature $(1,3)$: one positive temporal direction and three negative spatial ones, the mirror image of the $(3,1)$ carried by $\mathbb{M}_-$. This is the form the series writes as the mostly-minus metric $g = \mathrm{diag}(+1,-1,-1,-1)$, and the correspondence is internal to the algebra rather than an added convention: the Clifford vectors correspond to the Hermitian subspace, so the square of a Clifford vector agrees with the norm form of the biquaternion it represents with no relative sign.
-
-The norm form vanishes on a cone here too,
-
-$$
-q_0^2 = q'^2_1 + q'^2_2 + q'^2_3 ,
-$$
-
-whose nonzero elements are the zero divisors of $\mathbb{M}_+$. It is the same equation as the one written above in the material sector's variables, and not by coincidence: the two forms differ by an overall sign, $N(i\tilde{Q}) = -N(\tilde{Q})$, so multiplication by $i$ carries the cone of $\mathbb{M}_-$ onto the cone of $\mathbb{M}_+$. The unit-norm group acts on the informational side as well: a pure boost is an element of $\mathbb{M}_+$, $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\,\hat{\mathbf{u}}$, while a pure rotation is an element of $\mathbb{H}_{\mathbb{B}}$.
+What remains are the conventions of the forms the physics is written with, once the coordinate dictionary of *The Six Subspaces* above has fixed which parameters carry $ict$ and $\mathbf{x}$ and which carry $ct'$ and $i\mathbf{x}'$. The basis $e_0, e_1, e_2, e_3$ and the $ict$ assignment are the conventions on which every relativistic article depends; the metric, the d'Alembertian and the mass term are the conventions built on them.
 
 ### The Metric: Three Levels
 
@@ -474,7 +464,7 @@ $\flat$ is **not** the mass. The two roles were conflated in the retired form $\
 
 The conventions of the series fall into two groups.
 
-**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations give four distinguished four-dimensional real subspaces, named $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, together with the two-dimensional center $\mathbb{C}_{\mathbb{B}}$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
+**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: four distinguished four-dimensional ones, named $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; and the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
 
 **Spacetime and fields.** The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the norm form, of signature $(3,1)$, vanishing on the zero-divisor cone. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The series d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the Weyl-spinor exercise uses the opposite sign, $\Box = \partial_0^2 - \nabla^2$, and the two mass-term signs are the same equation. The Clifford metric $g$ is a level-3 tool rather than a convention, adopted where an article translates into gamma matrices, and its value is the standard mostly-minus $\mathrm{diag}(+1,-1,-1,-1)$ throughout the series — the $\mathbb{M}_+$ form, since the Clifford vectors correspond to the Hermitian subspace, so that the square of a Clifford vector agrees with the norm form of the biquaternion it represents with no relative sign. The opposite sign is not in use. Either way the norm form, the $ict$ metric and the sector structure are unchanged, and the tool never dictates them. The Dirac mass term is **linear and chirality-off-diagonal**, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it conserves the vector $U(1)$ and breaks the axial symmetry. The retired antilinear form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ was retired for its spacelike dispersion, and $\flat = -\dagger$ is retained as the algebra's real structure.
 
@@ -487,16 +477,17 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | The biquaternion algebra, isomorphic to $M_2(\mathbb{C})$ |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
-| $\tilde{Q}$ | An element of the algebra. The same symbol serves for the general element and for an element of any one of the four subspaces, whichever the passage at hand is about; the complex coefficients are $Q_\mu$, the real parameters of a four-dimensional subspace are $q_\mu$ and $q'_\mu$, the prime marking the slot that carries the $i$. The symbols $\tilde{X}$ and $\tilde{H}$ are **not** used. |
+| $\tilde{Q}$ | An element of the algebra. The same symbol serves for the general element and for an element of any of the subspaces, whichever the passage at hand is about; the complex coefficients are $Q_\mu$, the real parameters of a four-dimensional subspace are $q_\mu$ and $q'_\mu$, the prime marking the slot that carries the $i$. |
 | $\bar{\tilde{Q}}, \tilde{Q}^*, \tilde{Q}^\dagger, \tilde{Q}^\flat$ | Quaternion, complex, Hermitian and anti-Hermitian conjugation |
 | $\bar{\tilde{Q}} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\tilde{Q}^* \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \Phi(-e_2)$ |
 | $\tilde{Q}^\dagger \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |
 | $\flat = -\dagger$ | The anti-Hermitian conjugation, the algebra's real structure |
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_0, e_1, e_2, e_3$, parameters $q'_0, q_1, q_2, q_3$ (real), with $q'_0 = ct$ |
 | $\mathbb{M}_+ = \{ \tilde{Q} : \tilde{Q}^\dagger = \tilde{Q} \}$ | Hermitian subspace, the informational sector; basis $e_0, ie_1, ie_2, ie_3$, parameters $q_0, q'_1, q'_2, q'_3$ (real), with $q_0 = ct'$ |
-| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace (the real half): fixed points of complex conjugation, all four coefficients real; a subalgebra, and the home of the rotation rotors |
-| $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace (the imaginary half): anti-fixed points of complex conjugation, all four coefficients purely imaginary; a module over $\mathbb{H}_{\mathbb{B}}$, not a subalgebra. $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split that crosses the $\mathbb{M}_\pm$ split |
-| $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$ | Complex subspace, fixed points of quaternion conjugation; the center of $\mathbb{B}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, i.e. the real sector (the real half): fixed points of complex conjugation, all four coefficients real; a subalgebra, and the home of the rotation rotors |
+| $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace, i.e. the imaginary sector (the imaginary half): anti-fixed points of complex conjugation, all four coefficients purely imaginary; a module over $\mathbb{H}_{\mathbb{B}}$, not a subalgebra. $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split that crosses the $\mathbb{M}_\pm$ split |
+| $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$ | Center subspace, fixed points of quaternion conjugation; the center of $\mathbb{B}$ and the complex time sector; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$ |
+| $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\}$ | The vector subspace, i.e. the complex space sector: anti-fixed points of quaternion conjugation, real dimension six; parameters $q_k, q'_k$ with $(q_k) = (x,y,z)$ and $(q'_k) = (x',y',z')$. Equivalently the derived subspace $[\mathbb{B},\mathbb{B}]$ |
 | $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | The material coordinate, $\mathbf{x} = x e_1 + y e_2 + z e_3$ |
 | $(ct')\,e_0 + i\mathbf{x}'$ | The informational coordinate, $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form; identity matrix $\mathrm{diag}(+1,+1,+1,+1)$ as a metric on $\mathbb{C}$ (level 1), signature $(3,1)$ on $\mathbb{M}_-$ (level 2) and $(1,3)$ on $\mathbb{M}_+$ |
@@ -522,4 +513,4 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 - F. Reese Harvey, *Spinors and Calibrations* (Academic Press, 1990), for real structures and real forms on Clifford algebras.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the Dirac equation and its mass term.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of the Dirac equation in geometric algebra.
-- *The Quaternion and Antiquaternion Subspaces* (`articles/the-quaternion-and-antiquaternion-subspaces.md`), companion article, for the relations among the four subspaces defined here — their coordinate blocks, intersections, spans, gradings and norm forms.
+- *Relations Between Subspaces* (`articles/relations-between-subspaces.md`), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and norm forms.

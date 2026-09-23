@@ -1,4 +1,3 @@
-
 # __The Quantum–Classical Divide in the Biquaternion Framework__
 
 ## Introduction
@@ -222,5 +221,5 @@ The paper and the framework are complementary. The paper tells us what to look f
 - A. Aiello, F. Töppel, C. Marquardt, E. Giacobino, and G. Leuchs, "Quantum-like nonseparable structures in optical beams," *New Journal of Physics* **17** (2015) 043024, for the mathematical structure of classical non-separability.
 - A. Z. Khoury, "Bell-like inequality for the spin–orbit separability of a laser beam," *Physical Review A* **82** (2010) 033833, for Bell-type experiments with classically non-separable light.
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), §5-4, for the 2D harmonic oscillator example used in Subset IIb.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *Entangled Subsystems in the Biquaternion Framework: What the Reformulation Changes and What It Does Not*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *Why Complexify Spacetime?*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *The Exercise Articles of This Series*, and *Entangled Subsystems in the Biquaternion Framework: What the Reformulation Changes and What It Does Not*.
 

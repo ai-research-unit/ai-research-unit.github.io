@@ -1,4 +1,3 @@
-
 # __Biquaternion Polar Representations__
 
 ## Introduction

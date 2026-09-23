@@ -1,4 +1,3 @@
-
 # __The Majorana Representation in Biquaternionic Form__
 
 ## Introduction

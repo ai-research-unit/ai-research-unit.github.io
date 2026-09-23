@@ -1,4 +1,3 @@
-
 # __Exercise: The CHSH Inequality and Tsirelson's Bound__
 
 ## Introduction
@@ -487,4 +486,4 @@ Two limitations are recorded rather than smoothed over. First, the framework rep
 - A. Peres, *Quantum Theory: Concepts and Methods* (Kluwer, 1995), for the operator-norm derivation of the quantum bound.
 - S. Popescu and D. Rohrlich, "Quantum nonlocality as an axiom," *Foundations of Physics* **24** (1994) 379–385, for the no-signaling maximum $4$.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the CHSH inequality and Tsirelson's bound in the standard formalism.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Entangled Subsystems in the Biquaternion Framework*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The Correlation Function of the Bell States*, and *The Quantum–Classical Divide in the Biquaternion Framework*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Entangled Subsystems in the Biquaternion Framework*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The Correlation Function of the Bell States*, and *The Quantum–Classical Divide in the Biquaternion Framework*.

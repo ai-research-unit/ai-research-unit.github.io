@@ -1,4 +1,3 @@
-
 # __Shock Electromagnetic Waves__
 
 ## Introduction

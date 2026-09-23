@@ -1,4 +1,3 @@
-
 # __The Spin–Statistics Theorem in Biquaternionic Form__
 
 ## Introduction

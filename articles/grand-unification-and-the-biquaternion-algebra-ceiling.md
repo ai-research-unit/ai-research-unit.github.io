@@ -1,4 +1,3 @@
-
 # __Grand Unification and the Biquaternion Algebra Ceiling__
 
 ## Introduction

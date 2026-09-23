@@ -1,4 +1,3 @@
-
 # __Electroweak Theory under the Biquaternion Framework — A Research Agenda__
 
 ## Introduction

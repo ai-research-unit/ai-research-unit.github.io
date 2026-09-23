@@ -1,4 +1,3 @@
-
 # __Bogoliubov Transformations in Biquaternionic Form__
 
 ## Introduction

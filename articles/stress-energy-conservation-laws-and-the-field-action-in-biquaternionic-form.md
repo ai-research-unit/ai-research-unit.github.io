@@ -1,4 +1,3 @@
-
 # __Stress–Energy, Conservation Laws and the Field Action in Biquaternionic Form__
 
 ## Introduction

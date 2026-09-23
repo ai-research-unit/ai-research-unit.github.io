@@ -1,4 +1,3 @@
-
 # __Symmetric Algebras categorization__
 
 ## Introduction

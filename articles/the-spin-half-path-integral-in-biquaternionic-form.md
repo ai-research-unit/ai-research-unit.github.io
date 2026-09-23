@@ -1,4 +1,3 @@
-
 # __The Spin-Half Path Integral in Biquaternionic Form__
 
 ## Introduction
@@ -28,7 +27,7 @@ The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
 - Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin algebra and the two-state space.
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the geometric phase that the Wess–Zumino term reproduces.
-- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the trace pairing used in the coherent-state overlap.
+- Companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, for the trace pairing used in the coherent-state overlap.
 
 ## The Propagator and Its Path Integral
 

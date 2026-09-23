@@ -1,4 +1,3 @@
-
 # __Split Complex Analysis__
 
 ## Introduction

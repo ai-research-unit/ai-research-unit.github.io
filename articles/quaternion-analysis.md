@@ -1,4 +1,3 @@
-
 # __Quaternion Analysis__
 
 ## Introduction

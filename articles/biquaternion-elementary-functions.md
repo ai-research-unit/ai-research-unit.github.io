@@ -1,4 +1,3 @@
-
 # __Biquaternion Elementary Functions__
 
 ## Introduction

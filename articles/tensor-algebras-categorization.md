@@ -1,4 +1,3 @@
-
 # __Tensor Algebras categorization__
 
 ## Introduction

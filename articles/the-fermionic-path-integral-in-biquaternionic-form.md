@@ -1,4 +1,3 @@
-
 # __The Fermionic Path Integral in Biquaternionic Form__
 
 ## Introduction

@@ -1,23 +1,66 @@
-
-# __The Quaternion and Antiquaternion Subspaces__
+# __Relations Between Subspaces__
 
 ## Introduction
 
-The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries **two** four-dimensional decompositions, not one. The first is the split into the material and informational sectors, $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$, fixed respectively by the anti-Hermitian and the Hermitian conjugation. The second is the split into the **quaternion** and **antiquaternion** subspaces,
+The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is eight-dimensional over the reals, and it is cut into six distinguished real subspaces: four four-dimensional ones — the material sector $\mathbb{M}_-$, the informational sector $\mathbb{M}_+$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, and the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ — together with the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$ and the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$. Each has its own article. This article is about how they fit together.
+
+The organising fact is that the eight real dimensions decompose in **three** different ways into two complementary halves:
 
 $$
-\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}},
+\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+, \qquad
+\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}, \qquad
+\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B}).
 $$
 
-fixed and anti-fixed by complex conjugation. The articles on $\mathbb{M}_-$ and on $\mathbb{M}_+$ develop the first; this article develops the second, and above all the way the two interact.
+The first is the **sector** split, by Hermitian conjugation; the second is the **half** split, by complex conjugation; the third separates the scalar from the vector part, that is, the center from the traceless part. There are exactly three such splits, they are all different, and none is a refinement of another.
 
-The two splits are equally natural, and neither is a refinement of the other: both are four-plus-four, and they **cross**. That crossing is the source of most of the structure collected here — the pattern of the primes, the intersections of the four subspaces, the grading of the algebra, and the fact that although $\mathbb{B}$ is not a division algebra, each half of this second split is definite and free of zero divisors.
+Everything collected in this article is a consequence of how those three splits cross. The crossing governs the four coordinate blocks into which the eight real parameters fall, the pattern of the primes, the intersections of the six subspaces, the grading of the algebra, and the fact that although $\mathbb{B}$ is not a division algebra, some of its subspaces are definite and free of zero divisors while others carry the whole of its degeneracy.
 
-A word on the word *real*, which the series uses in two senses. $\mathbb{M}_-$ is called the framework's **real** sector because it is the fixed space of the real structure $\flat$. The subspace $\mathbb{H}_{\mathbb{B}}$ is real in the older and more elementary sense: its coefficients are real numbers. The two usages are both unavoidable and they do not coincide — $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ are different spaces, meeting in three dimensions. Where the ambiguity could bite, this article writes *real-coefficient* for the second sense.
+A word on the word *real*, which the series uses in two senses. The sectors are so called because they are the fixed and anti-fixed spaces of the Hermitian conjugation, the framework's real structure. $\mathbb{H}_{\mathbb{B}}$ is real in the older and more elementary sense: its coefficients are real numbers. The two usages are both unavoidable and they do not coincide — $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ are different spaces, meeting in three dimensions. Where the ambiguity could bite, this article writes *real-coefficient* for the second sense.
 
-## The Two Splits
+## The Three Decompositions
 
-Complex conjugation $\tilde{Q}^*$ ($i \mapsto -i$, $e_k$ fixed) and quaternion conjugation $\bar{\tilde{Q}}$ ($e_k \mapsto -e_k$, $i$ fixed) are two commuting involutions, and their product is the Hermitian conjugation,
+Each of the three splits comes from a structure on the algebra, and comparing them is the point of this section.
+
+### The Sector Decomposition $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$
+
+Hermitian conjugation is the composition of quaternion and complex conjugation,
+
+$$
+\tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = \overline{\tilde{Q}^*},
+$$
+
+an antilinear involution. Its fixed and anti-fixed spaces are the two sectors:
+
+$$
+\mathbb{M}_+ = \{\tilde{Q} : \tilde{Q}^\dagger = \tilde{Q}\}, \qquad \mathbb{M}_- = \{\tilde{Q} : \tilde{Q}^\dagger = -\tilde{Q}\}.
+$$
+
+Each is four-dimensional over $\mathbb{R}$, and together they account for the whole algebra. Neither is a subalgebra: for example $(ie_1)(ie_2) = -e_3$, a product of two elements of $\mathbb{M}_+$ lying in $\mathbb{M}_-$. This is the split with the Lorentzian reading: the anti-Hermitian half is Minkowski space, and the Hermitian half is the space of operators acting on it.
+
+### The Half Decomposition $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$
+
+Complex conjugation is the antilinear involution that negates the scalar imaginary and fixes the quaternion units, $e_k^* = e_k$ and $i^* = -i$. Its fixed and anti-fixed spaces are the two halves:
+
+$$
+\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^* = \tilde{Q}\} = \{q_\mu e_\mu\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} : \tilde{Q}^* = -\tilde{Q}\} = \{iq'_\mu e_\mu\}, \qquad q_\mu, q'_\mu \in \mathbb{R}.
+$$
+
+$\mathbb{H}_{\mathbb{B}}$ is the **real half** and $i\mathbb{H}_{\mathbb{B}}$ the **imaginary half**, again four-dimensional each. This is the only one of the three decompositions whose first summand is a subalgebra: $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$ is a copy of the quaternions inside $\mathbb{B}$, hence a division algebra, while $i\mathbb{H}_{\mathbb{B}}$ is a module over it, since $(ia)(ib) = -ab \in \mathbb{H}_{\mathbb{B}}$ for $a, b \in \mathbb{H}_{\mathbb{B}}$.
+
+### The Scalar–Vector Decomposition $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$
+
+The third split uses no conjugation. It separates the scalar direction from the three vector directions, equivalently the center from the traceless part:
+
+$$
+\mathbb{C}_{\mathbb{B}} = \mathrm{span}_\mathbb{R}\{e_0, i e_0\}, \qquad \mathrm{Vect}(\mathbb{B}) = \mathrm{span}_\mathbb{R}\{e_1, e_2, e_3, i e_1, i e_2, i e_3\}.
+$$
+
+These have real dimensions $2$ and $6$ — the only asymmetric split of the three, and the only one whose summands have different dimensions. $\mathbb{C}_{\mathbb{B}}$ is the center, the set of elements commuting with every element, a copy of the complex numbers and a field. $\mathrm{Vect}(\mathbb{B})$ is the set of pure-vector elements, a three-dimensional complex space, which is not a subalgebra but is the derived subspace $[\mathbb{B}, \mathbb{B}]$.
+
+### Involutions and Fixed Spaces
+
+The splits are visible in the fixed spaces of the algebra's involutions. Complex conjugation and quaternion conjugation commute, and their product is Hermitian conjugation, whose negative is the anti-Hermitian conjugation:
 
 $$
 \tilde{Q}^\dagger = \bar{\tilde{Q}}^{\,*} = \overline{\tilde{Q}^*}, \qquad \tilde{Q}^\flat = -\tilde{Q}^\dagger .
@@ -25,104 +68,65 @@ $$
 
 Because they commute, their fixed and anti-fixed spaces fit together as follows.
 
-| involution | space it fixes | condition | name | real dim |
+| involution | space it fixes | condition | subspace | real dim |
 |---|---|---|---|---|
-| complex conjugation ${}^*$ | $\mathbb{H}_{\mathbb{B}}$ | ${}^*(\tilde{Q}) = \tilde{Q}$ | the quaternion subspace | 4 |
-| $-{}^{*}$ | $i\mathbb{H}_{\mathbb{B}}$ | ${}^*(\tilde{Q}) = -\tilde{Q}$ | the antiquaternion subspace | 4 |
-| Hermitian conjugation $\dagger$ | $\mathbb{M}_+$ | $\dagger(\tilde{Q}) = \tilde{Q}$ | the informational sector | 4 |
-| anti-Hermitian conjugation $\flat = -\dagger$ | $\mathbb{M}_-$ | $\dagger(\tilde{Q}) = -\tilde{Q}$ | the material sector | 4 |
-| quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | $\bar{\cdot}(\tilde{Q}) = \tilde{Q}$ | the center | 2 |
+| complex conjugation ${}^*$ | $\mathbb{H}_{\mathbb{B}}$ | ${}^*(\tilde{Q}) = \tilde{Q}$ | quaternion subspace | 4 |
+| $-{}^{*}$ | $i\mathbb{H}_{\mathbb{B}}$ | ${}^*(\tilde{Q}) = -\tilde{Q}$ | antiquaternion subspace | 4 |
+| Hermitian conjugation $\dagger$ | $\mathbb{M}_+$ | $\dagger(\tilde{Q}) = \tilde{Q}$ | informational sector | 4 |
+| anti-Hermitian conjugation $\flat = -\dagger$ | $\mathbb{M}_-$ | $\dagger(\tilde{Q}) = -\tilde{Q}$ | material sector | 4 |
+| quaternion conjugation $\bar{\cdot}$ | $\mathbb{C}_{\mathbb{B}}$ | $\bar{\cdot}(\tilde{Q}) = \tilde{Q}$ | center | 2 |
+| $-{\bar{\cdot}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\bar{\cdot}(\tilde{Q}) = -\tilde{Q}$ | vector subspace | 6 |
 
-So three of the fixed spaces are four-dimensional — $\mathbb{M}_-$, $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ — and the fourth, the center, is two-dimensional; the antiquaternion subspace is not a fixed space but the *anti*-fixed space of complex conjugation, equivalently the fixed space of $-{}^{*}$. Written out with all four coefficients free,
+Four of the six subspaces are the fixed spaces of the four conjugations themselves: $\mathbb{M}_-$ of $\flat$, $\mathbb{M}_+$ of $\dagger$, $\mathbb{H}_{\mathbb{B}}$ of ${}^{*}$ and $\mathbb{C}_{\mathbb{B}}$ of $\bar{\cdot}$. The remaining two are fixed not by a conjugation but by its negative: the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the *anti*-fixed space of complex conjugation, equivalently the fixed space of $-{}^{*}$, and the vector subspace is the anti-fixed space of quaternion conjugation, equivalently the fixed space of $-{\bar{\cdot}}$. Each of the six is therefore the fixed space of an involution, and the vector subspace, being six-dimensional, is the largest of them.
 
-$$
-\mathbb{H}_{\mathbb{B}} = \{q_\mu e_\mu\}, \qquad i\mathbb{H}_{\mathbb{B}} = \{iq'_\mu e_\mu\}, \qquad q_\mu, q'_\mu \in \mathbb{R}.
-$$
+### Why Exactly Three
 
-$\mathbb{H}_{\mathbb{B}}$ is the **real half** and $i\mathbb{H}_{\mathbb{B}}$ the **imaginary half**. The first is a subalgebra — a copy of $\mathbb{H}$ inside $\mathbb{B}$, hence a division algebra. The second is *not* a subalgebra: for $a, b \in \mathbb{H}_{\mathbb{B}}$ one has $(ia)(ib) = -ab \in \mathbb{H}_{\mathbb{B}}$, so the product of two elements of the imaginary half returns to the real half. It is a module over $\mathbb{H}_{\mathbb{B}}$ rather than an algebra in its own right.
-
-Neither $\mathbb{M}_-$ nor $\mathbb{M}_+$ is a subalgebra either: for example $(ie_1)(ie_2) = -e_3$, a product of two elements of $\mathbb{M}_+$ lying in $\mathbb{M}_-$. Of the subspaces considered here, only $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are closed under multiplication.
-
-## The Quaternion Subspace $\mathbb{H}_{\mathbb{B}}$
-
-### Definition and Basis
-
-The quaternion subspace is the fixed space of complex conjugation. With all four coefficients real,
+The count is forced by the block structure, and the argument is short. Write the four blocks
 
 $$
-\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^* = \tilde{Q}\} = \{q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3\}, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R},
+T_{\mathrm{m}} = \mathbb{R}(ie_0), \qquad T_{\mathrm{i}} = \mathbb{R}e_0, \qquad X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3), \qquad X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3).
 $$
 
-of real dimension four, with basis $e_0, e_1, e_2, e_3$ over $\mathbb{R}$. In the physical coordinates its general element is
+Each of the three splits pairs the four blocks into two complementary groups:
 
-$$
-\tilde{Q} = (ct')\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{H}_{\mathbb{B}},
-$$
-
-so it carries the **informational time** $ct'$ and the **material space** $x, y, z$, and not the other four coordinates. Under the matrix representation it is the set of quaternion matrices,
-
-$$
-\Phi(\mathbb{H}_{\mathbb{B}}) = \left\{\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix} : z, w \in \mathbb{C}\right\}, \qquad z = q_0 - iq_3, \quad w = -iq_1 - q_2 .
-$$
-
-### Properties
-
-- **A subalgebra.** A product of two elements with real coefficients again has real coefficients, so $\mathbb{H}_{\mathbb{B}}$ is closed under multiplication; it is a copy of the real quaternions, $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$, and it is a division algebra.
-- **The home of the rotation rotors.** A rotor is a unit quaternion with real coefficients, so it lies here; in the matrix picture unit determinant gives $\mathrm{SU}(2)$. Spatial rotations are carried by this subspace.
-- **Positive definite norm form.** $N(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2$, which vanishes only at $\tilde{Q} = 0$.
-- **No zero divisors.** Since $N(\tilde{Q}) = 0$ has no nonzero solution on this subspace.
-- **Even part of the grading**, and preserved as a set by all four involutions, with complex conjugation fixing it pointwise.
-- **Not a sector.** It takes its temporal block from one sector and its spatial block from the other: $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$, with $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = T_{\mathrm{i}}$ and $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = X_{\mathrm{m}}$.
-
-## The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
-
-### Definition and Basis
-
-The antiquaternion subspace is the **anti-fixed** space of complex conjugation — the elements it negates:
-
-$$
-i\mathbb{H}_{\mathbb{B}} = \{\tilde{Q} \in \mathbb{B} : \tilde{Q}^* = -\tilde{Q}\} = \{iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3\}, \qquad q'_\mu \in \mathbb{R},
-$$
-
-also of real dimension four, with basis $ie_0, ie_1, ie_2, ie_3$ over $\mathbb{R}$. It is exactly $i$ times the quaternion subspace, $i\mathbb{H}_{\mathbb{B}} = i\,\mathbb{H}_{\mathbb{B}}$, and in the physical coordinates its general element is
-
-$$
-\tilde{Q} = ic\,t\,e_0 + ix'\,e_1 + iy'\,e_2 + iz'\,e_3 \in i\mathbb{H}_{\mathbb{B}},
-$$
-
-carrying the **material time** $ict$ and the **informational space** $ix', iy', iz'$ — precisely the four coordinates that $\mathbb{H}_{\mathbb{B}}$ does not carry. In the matrix picture it is $i$ times the quaternion matrices,
-
-$$
-\Phi(i\mathbb{H}_{\mathbb{B}}) = i\,\Phi(\mathbb{H}_{\mathbb{B}}) = \left\{\begin{pmatrix} iz & iw \\ -i\bar{w} & i\bar{z}\end{pmatrix}\right\}.
-$$
-
-### Properties
-
-- **Not a subalgebra.** For $a, b$ with real coefficients, $(ia)(ib) = -ab$ lies in $\mathbb{H}_{\mathbb{B}}$: the product of two elements of the imaginary half returns to the real half. It is a module over $\mathbb{H}_{\mathbb{B}}$ rather than an algebra in its own right.
-- **Odd part of the grading**, which is the structural reason for the failure above.
-- **Negative definite norm form.** $N(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$, which vanishes only at $\tilde{Q} = 0$.
-- **No zero divisors**, for the same reason.
-- **Multiplication by $i$** carries it onto the quaternion subspace and back, $i(i\mathbb{H}_{\mathbb{B}}) = \mathbb{H}_{\mathbb{B}}$; it is preserved as a set by all four involutions, with complex conjugation negating it pointwise.
-- **Not a sector**, and it crosses the other way: $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$, with $i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = T_{\mathrm{m}}$ and $i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ = X_{\mathrm{i}}$.
-
-### The Mirror Between the Two Halves
-
-The two halves are mirror images, and their properties are best read in parallel:
-
-| | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
+| split | first summand | second summand |
 |---|---|---|
-| under complex conjugation ${}^{*}$ | fixed pointwise | negated pointwise |
-| real dimension | $4$ | $4$ |
-| basis | $e_0, e_1, e_2, e_3$ | $ie_0, ie_1, ie_2, ie_3$ |
-| coordinate content | $ct'$, $x, y, z$ | $ict$, $ix', iy', iz'$ |
-| blocks | $T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ | $T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ |
-| closed under multiplication | yes — subalgebra, $\cong \mathbb{H}$ | no — a module |
-| grading | even | odd |
-| norm form | $+\sum_\mu q_\mu^2$, positive definite | $-\sum_\mu q'^2_\mu$, negative definite |
-| matrix image | the quaternion matrices | $i$ times the quaternion matrices |
-| under multiplication by $i$ | maps to $i\mathbb{H}_{\mathbb{B}}$ | maps to $\mathbb{H}_{\mathbb{B}}$ |
+| scalar–vector | $\mathbb{C}_{\mathbb{B}} = T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$ |
+| sector | $\mathbb{M}_- = T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ | $\mathbb{M}_+ = T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ |
+| half | $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ |
 
-Each half is the image of the other under multiplication by $i$, and together they are the whole algebra. They are not interchangeable, however, because only the real half is closed under multiplication.
+Since a sum of blocks contains an element exactly when it contains each of its block components, a decomposition of $\mathbb{B}$ into two of the distinguished subspaces is exactly a partition of the four blocks into two groups. The pairings displayed above are precisely the three ways to pair four objects:
+
+$$
+\{T_{\mathrm{m}}, T_{\mathrm{i}}\} \mid \{X_{\mathrm{m}}, X_{\mathrm{i}}\}, \qquad
+\{T_{\mathrm{m}}, X_{\mathrm{m}}\} \mid \{T_{\mathrm{i}}, X_{\mathrm{i}}\}, \qquad
+\{T_{\mathrm{m}}, X_{\mathrm{i}}\} \mid \{T_{\mathrm{i}}, X_{\mathrm{m}}\}.
+$$
+
+There are exactly three perfect matchings of four objects, so there are exactly three decompositions of this kind and no fourth exists. The same count organises the six subspaces: choosing one temporal block and one spatial block gives the four four-dimensional subspaces (two times, two spaces, $2 \times 2 = 4$), the two temporal blocks together give the center, and the two spatial blocks together give the vector subspace, for $4 + 1 + 1 = 6$ in all. Of the six, only $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are closed under multiplication.
+
+## The Six Subspaces at a Glance
+
+The block structure classifies the subspaces completely. Choosing one temporal block and one spatial block gives the four four-dimensional subspaces; taking both temporal blocks gives the center; taking both spatial blocks gives the vector subspace.
+
+| subspace | real dim | blocks | defining condition | closed under products | closed under brackets | norm form |
+|---|---|---|---|---|---|---|
+| $\mathbb{M}_-$ — material sector | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{m}}$ | $\tilde{Q}^\dagger = -\tilde{Q}$ | no | yes — $\mathfrak{u}(2)$ | indefinite, $(3,1)$; light cone |
+| $\mathbb{M}_+$ — informational sector | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ | $\tilde{Q}^\dagger = \tilde{Q}$ | no | no | indefinite, $(1,3)$ |
+| $\mathbb{H}_{\mathbb{B}}$ — quaternion subspace | 4 | $T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ | $\tilde{Q}^* = \tilde{Q}$ | yes — a division algebra | yes — $\mathfrak{su}(2)$ | positive definite, $(4,0)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ — antiquaternion subspace | 4 | $T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\tilde{Q}^* = -\tilde{Q}$ | no | no | negative definite, $(0,4)$ |
+| $\mathbb{C}_{\mathbb{B}}$ — center subspace | 2 | $T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | $\tilde{Q}$ central | yes — a field | yes | complex: $z^2$ |
+| $\mathrm{Vect}(\mathbb{B})$ — vector subspace | 6 | $X_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | $\mathrm{Sc}(\tilde{Q}) = 0$ | no | yes — $[\mathbb{B},\mathbb{B}]$ | complex quadratic: $z_1^2+z_2^2+z_3^2$ |
+
+Three entries of the table repay attention, because each is a distinction that is easy to collapse.
+
+**Closure under multiplication is rare.** Only $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are subalgebras, and only $\mathbb{H}_{\mathbb{B}}$ is a subalgebra that is also definite. Every other subspace has a product that leaves it: for the sectors the crossing $(ie_1)(ie_2) = -e_3$ carries a product from $\mathbb{M}_+$ into $\mathbb{M}_-$, and for the halves the return $i\mathbb{H}_{\mathbb{B}} \cdot i\mathbb{H}_{\mathbb{B}} \subseteq \mathbb{H}_{\mathbb{B}}$ carries a product out of the imaginary half altogether.
+
+**Closure under the commutator is a different question.** $\mathbb{M}_-$ and $\mathrm{Vect}(\mathbb{B})$ are Lie subalgebras without being subalgebras at all; $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are both; $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{M}_+$ are neither. All four combinations occur among the six subspaces, so neither notion implies the other.
+
+**Definiteness singles out the halves.** The norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$, negative definite on $i\mathbb{H}_{\mathbb{B}}$, indefinite on both sectors, and on the center and the vector subspace it takes complex values, so it has no definite sign there. The zero divisors of the algebra are therefore excluded from the two halves and carried by the two sectors and the vector subspace. The center is not a carrier: its norm form is complex but anisotropic, $N(ze_0) = z^2e_0$ vanishing only at $z = 0$. The degeneracy of the algebra lies in the sectors and in the vector subspace, and not in the center.
+
+Each of the six subspaces has its own article treating it on its own terms — basis and parameters, algebraic properties, matrix image, and physical reading. What follows here is only what the subspaces do to one another.
 
 ## The Four Coordinate Blocks
 
@@ -143,7 +147,7 @@ The dimensions account for the algebra: $1 + 1 + 3 + 3 = 8$. The blocks are inde
 
 Two features of this table are worth stating explicitly, because both recur below. First, the **imaginary unit distinguishes the blocks from their partners**: the temporal coordinate of the material sector carries the $i$, the spatial coordinates of the informational sector carry it, and the remaining four — the informational time and the three material spatial coordinates — do not. Second, the **primed parameters are exactly the elements of the imaginary half** $i\mathbb{H}_{\mathbb{B}}$: $q'_0$ spans $T_{\mathrm{m}}$ and the three $q'_k$ span $X_{\mathrm{i}}$, and together they are precisely the coefficients that enter with the factor $i$. This is the origin of the three-and-one pattern of the primes, and it is discussed further in the conventions article.
 
-## The Four Subspaces in Coordinates
+## The Four-Dimensional Subspaces in Coordinates
 
 Each of the four four-dimensional subspaces is the sum of **one temporal block and one spatial block**. That is the whole of the structure, and it is easiest to see as a table:
 
@@ -240,7 +244,7 @@ $$
 \mathbf{x} \;\xrightarrow{\ \flat\ }\; \mathbf{x},
 $$
 
-so quaternion conjugation is the reversal $\mathbf{x} \mapsto -\mathbf{x}$ while complex conjugation does nothing at all. This is why it is $\bar{\cdot}$ and not ${}^{*}$ that isolates the **time-like** directions: $\bar{\cdot}$ is the involution that separates the scalar block from the vector block, and the only one whose action on space is a half-turn. The block is closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so it carries the Lie algebra $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ of the rotations that a rotor generates — although it is not closed under the product, since $e_k^2 = -e_0$ leaves the block for $T_{\mathrm{i}}$. It is the **space** of the material sector, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$, and in the norm form it contributes $+3$, positive definite, the Euclidean half of that sector. Under $\Phi$ it is the space of traceless anti-Hermitian matrices, $\Phi(X_{\mathrm{m}}) = \{M : M^\dagger = -M,\ \operatorname{Tr}M = 0\}$.
+so quaternion conjugation is the reversal $\mathbf{x} \mapsto -\mathbf{x}$ while complex conjugation does nothing at all. This is why it is $\bar{\cdot}$ and not ${}^{*}$ that isolates the **time-like** directions: $\bar{\cdot}$ is the involution that separates the scalar block from the vector block, and the only one whose action on space is a half-turn. The block is closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so it carries the Lie algebra $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ of the rotations that a rotor generates — although it is not closed under the product, since $e_k^2 = -e_0$ leaves the block for $T_{\mathrm{i}}$. It is the **space** of the material sector, $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$, and in the norm form it contributes $+3$, positive definite, the Euclidean half of that sector. Under $\Phi$ it is the space of traceless anti-Hermitian matrices, $\Phi(X_{\mathrm{m}}) = \{M : M^\dagger = -M,\ \mathrm{Tr}\,M = 0\}$.
 
 **$X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3)$ — informational space, dimension $3$, coordinates $ix', iy', iz'$, parameters $q'_1, q'_2, q'_3$.** Its row is $(-,-,+,-)$. Each generator $ie_k$ is *imaginary*, so ${}^{*}$ negates it, and each is a *pure quaternion*, so $\bar{\cdot}$ negates it as well; the two minus signs cancel in the composite $\dagger = \bar{\cdot}\circ{}^{*}$, which therefore fixes the block, while $\flat = -\dagger$ negates it. This is the one block carrying the character $(-,-)$ — the only block on which two involutions negate — and that cancellation is exactly why its elements are Hermitian without being real. The general element is
 
@@ -252,7 +256,7 @@ literally $i$ times the vector part, with primed real parameters. Indeed $X_{\ma
 
 Reading the $+$ signs column by column gives the table of subspaces back, and each column is worth stating in full.
 
-**${}^{*}$ — complex conjugation, the half split.** It conjugates the central imaginary unit and leaves the quaternion units alone, so on a block it acts by $+1$ where the coordinate is real and by $-1$ where the coordinate carries an explicit $i$. Its column is $(-,+,-,-)$: it negates precisely $T_{\mathrm{m}}$ and $X_{\mathrm{i}}$. Its fixed space is therefore $T_{\mathrm{i}} \oplus X_{\mathrm{m}} = \mathbb{H}_{\mathbb{B}}$, the real quaternions, and its anti-fixed space is the complementary pair $T_{\mathrm{m}} \oplus X_{\mathrm{i}} = i\mathbb{H}_{\mathbb{B}}$; the two together are the half split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. This is the involution whose fixed space is a division algebra, and the only one of the four whose two eigenspaces are exchanged by multiplication by $i$.
+**${}^{*}$ — complex conjugation, the half split.** It conjugates the central imaginary unit and leaves the quaternion units alone, so on a block it acts by $+1$ where the coordinate is real and by $-1$ where the coordinate carries an explicit $i$. Its column is $(-,+,+,-)$: it negates precisely $T_{\mathrm{m}}$ and $X_{\mathrm{i}}$. Its fixed space is therefore $T_{\mathrm{i}} \oplus X_{\mathrm{m}} = \mathbb{H}_{\mathbb{B}}$, the real quaternions, and its anti-fixed space is the complementary pair $T_{\mathrm{m}} \oplus X_{\mathrm{i}} = i\mathbb{H}_{\mathbb{B}}$; the two together are the half split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$. This is the involution whose fixed space is a division algebra, and the only one of the four whose two eigenspaces are exchanged by multiplication by $i$.
 
 **$\bar{\cdot}$ — quaternion conjugation, the one that separates time from space.** It fixes the scalar unit and negates the three vector units, so it acts by $+1$ on the two temporal blocks and by $-1$ on the two spatial ones; its column is $(+,+,-,-)$. Its fixed space is therefore $T_{\mathrm{m}} \oplus T_{\mathrm{i}} = \mathbb{C}_{\mathbb{B}}$, the center — the only case among the four where the fixed space is not one of the four-dimensional subspaces — and it is the only involution that treats time and space differently at all. That is why it, rather than ${}^{*}$ or $\dagger$, is the one that isolates the time-like directions, and why it is the involution the classical quaternion conjugate is built from.
 
@@ -278,23 +282,37 @@ $$
 
 **Hence the intersection of two subspaces is the sum of the blocks they share.** A subspace has two blocks, so two of them share none, one, or both; sharing both means they are the same subspace, whose intersection is itself. For two **distinct** subspaces the dimensions are therefore $0$ (no shared block), $1$ (one shared temporal block) and $3$ (one shared spatial block).
 
-| $\cap$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ |
-|---|---|---|---|---|
-| $\mathbb{M}_-$ | $\mathbb{M}_-$ | $0$ | $X_{\mathrm{m}}$ | $T_{\mathrm{m}}$ |
-| $\mathbb{M}_+$ | $0$ | $\mathbb{M}_+$ | $T_{\mathrm{i}}$ | $X_{\mathrm{i}}$ |
-| $\mathbb{H}_{\mathbb{B}}$ | $X_{\mathrm{m}}$ | $T_{\mathrm{i}}$ | $\mathbb{H}_{\mathbb{B}}$ | $0$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $0$ | $i\mathbb{H}_{\mathbb{B}}$ |
+| $\cap$ | $\mathbb{M}_-$ | $\mathbb{M}_+$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ |
+|---|---|---|---|---|---|---|
+| $\mathbb{M}_-$ | $\mathbb{M}_-$ | $0$ | $X_{\mathrm{m}}$ | $T_{\mathrm{m}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{m}}$ |
+| $\mathbb{M}_+$ | $0$ | $\mathbb{M}_+$ | $T_{\mathrm{i}}$ | $X_{\mathrm{i}}$ | $T_{\mathrm{i}}$ | $X_{\mathrm{i}}$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $X_{\mathrm{m}}$ | $T_{\mathrm{i}}$ | $\mathbb{H}_{\mathbb{B}}$ | $0$ | $T_{\mathrm{i}}$ | $X_{\mathrm{m}}$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $0$ | $i\mathbb{H}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $X_{\mathrm{i}}$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $T_{\mathrm{m}}$ | $T_{\mathrm{i}}$ | $T_{\mathrm{i}}$ | $T_{\mathrm{m}}$ | $\mathbb{C}_{\mathbb{B}}$ | $0$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $X_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $X_{\mathrm{m}}$ | $X_{\mathrm{i}}$ | $0$ | $\mathrm{Vect}(\mathbb{B})$ |
 
 **In coordinates.**
 
 $$
 \begin{aligned}
-\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}}, \\
+\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}}, &
 \mathbb{M}_- \cap i\mathbb{H}_{\mathbb{B}} &= \mathbb{R}(ie_0) = T_{\mathrm{m}}, \\
-\mathbb{M}_+ \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}e_0 = T_{\mathrm{i}}, \\
-\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} &= \mathbb{R}(ie_1,ie_2,ie_3) = X_{\mathrm{i}} .
+\mathbb{M}_+ \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}e_0 = T_{\mathrm{i}}, &
+\mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} &= \mathbb{R}(ie_1,ie_2,ie_3) = X_{\mathrm{i}}, \\
+\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- &= \mathbb{R}(ie_0) = T_{\mathrm{m}}, &
+\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ &= \mathbb{R}e_0 = T_{\mathrm{i}}, \\
+\mathbb{C}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}e_0 = T_{\mathrm{i}}, &
+\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} &= \mathbb{R}(ie_0) = T_{\mathrm{m}}, \\
+\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_- &= \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}}, &
+\mathrm{Vect}(\mathbb{B}) \cap \mathbb{M}_+ &= \mathbb{R}(ie_1,ie_2,ie_3) = X_{\mathrm{i}}, \\
+\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} &= \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}}, &
+\mathrm{Vect}(\mathbb{B}) \cap i\mathbb{H}_{\mathbb{B}} &= \mathbb{R}(ie_1,ie_2,ie_3) = X_{\mathrm{i}} .
 \end{aligned}
 $$
+
+The remaining pair meets only at the origin, $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$: these are the two complementary summands of the scalar–vector split, and they have no block in common.
+
+Note how the table repeats. The center meets each four-dimensional subspace in that subspace's temporal block, so it meets $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ both in $T_{\mathrm{i}}$ and $\mathbb{M}_-$ and $i\mathbb{H}_{\mathbb{B}}$ both in $T_{\mathrm{m}}$; the vector subspace meets each four-dimensional subspace in that subspace's spatial block, so it meets $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ both in $X_{\mathrm{m}}$ and $\mathbb{M}_+$ and $i\mathbb{H}_{\mathbb{B}}$ both in $X_{\mathrm{i}}$. The two exceptional intersections are the pairs that share no block at all: the two split partners $\mathbb{M}_- \cap \mathbb{M}_+ = 0$ and $\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$, and the one pair of complementary subspaces of the third split, $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$.
 
 ### Why the table has this shape
 
@@ -341,7 +359,7 @@ $$
 \mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = \{\, x\,e_1 + y\,e_2 + z\,e_3 \;:\; x, y, z \in \mathbb{R} \,\} = \mathbb{R}(e_1,e_2,e_3) = X_{\mathrm{m}},
 $$
 
-**The largest intersection.** It is the largest entry in the table and the only three-dimensional one involving $\mathbb{M}_-$. **Pure quaternions.** Its elements are the pure quaternions in the classical sense — the vectors of the algebra — and they are exactly the part closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so the intersection carries the rotation algebra $\mathfrak{su}(2)$ even though neither $\mathbb{M}_-$ nor $\mathbb{H}_{\mathbb{B}}$ is itself closed under the product. It is the **space** of the material sector and simultaneously the space of the quaternion half: the three spatial directions are what the sector and the half hold in common, which is why a rotor built from these units rotates space and nothing else. **Norm form and matrix image.** In the norm form the block contributes $+3$, positive definite, and under $\Phi$ it is the traceless anti-Hermitian matrices. **Two further remarks.** The intersection is a proper subspace of both factors, so neither condition implies the other: being anti-Hermitian constrains the scalar to be imaginary, being real constrains the vectors to be real, and the two agree precisely on the vector part. And since $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$ is the *spatial* block of each, the intersection of a sector with the real half is always the Euclidean part of the pair, never the time.
+**The largest intersection.** It is the largest of the entries that involve two distinct subspaces, and the only three-dimensional intersection that $\mathbb{M}_-$ has with one of the four four-dimensional subspaces. **Pure quaternions.** Its elements are the pure quaternions in the classical sense — the vectors of the algebra — and they are exactly the part closed under the commutator, $[e_i,e_j] = 2\epsilon_{ijk}e_k$, so the intersection carries the rotation algebra $\mathfrak{su}(2)$ even though neither $\mathbb{M}_-$ nor $\mathbb{H}_{\mathbb{B}}$ is itself closed under the product. It is the **space** of the material sector and simultaneously the space of the quaternion half: the three spatial directions are what the sector and the half hold in common, which is why a rotor built from these units rotates space and nothing else. **Norm form and matrix image.** In the norm form the block contributes $+3$, positive definite, and under $\Phi$ it is the traceless anti-Hermitian matrices. **Two further remarks.** The intersection is a proper subspace of both factors, so neither condition implies the other: being anti-Hermitian constrains the scalar to be imaginary, being real constrains the vectors to be real, and the two agree precisely on the vector part. And since $\mathbb{M}_- \cap \mathbb{H}_{\mathbb{B}} = X_{\mathrm{m}}$ is the *spatial* block of each, the intersection of a sector with the real half is always the Euclidean part of the pair, never the time.
 
 ### $\mathbb{M}_- \cap i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}}$
 
@@ -411,22 +429,23 @@ $$
 \mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0),
 $$
 
-while e.g. $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} = 0$. The two lines $\mathbb{R}e_0$ and $\mathbb{R}(ie_0)$ are the only directions common to three of the subspaces, and they are the two central lines. Each of the four subspaces meets the center in exactly one of them: $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ in $\mathbb{R}e_0$, and $\mathbb{M}_-$ and $i\mathbb{H}_{\mathbb{B}}$ in $\mathbb{R}(ie_0)$. The center is the only one of the subspaces with no spatial part at all — which is why it is two-dimensional rather than four, and why every intersection it has with another subspace is a single temporal line. Its two blocks lie one in each sector, $T_{\mathrm{i}} \subset \mathbb{M}_+$ and $T_{\mathrm{m}} \subset \mathbb{M}_-$; but it is not alone in meeting both sectors, since $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ do as well ($T_{\mathrm{i}}$ lies in $\mathbb{M}_+$ while $X_{\mathrm{m}}$ lies in $\mathbb{M}_-$). The matrix-representation article records the two intersections, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.
+while e.g. $\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_+ \cap i\mathbb{H}_{\mathbb{B}} = 0$. The two lines $\mathbb{R}e_0$ and $\mathbb{R}(ie_0)$ are the only directions common to three of the subspaces, and they are the two central lines. Each of the four subspaces meets the center in exactly one of them: $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ in $\mathbb{R}e_0$, and $\mathbb{M}_-$ and $i\mathbb{H}_{\mathbb{B}}$ in $\mathbb{R}(ie_0)$. The center is the only one of the subspaces with no spatial part at all — which is why it is two-dimensional rather than four, and why every intersection it has with one of the four four-dimensional subspaces is a single temporal line. Its two blocks lie one in each sector, $T_{\mathrm{i}} \subset \mathbb{M}_+$ and $T_{\mathrm{m}} \subset \mathbb{M}_-$; but it is not alone in meeting both sectors, since $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ do as well ($T_{\mathrm{i}}$ lies in $\mathbb{M}_+$ while $X_{\mathrm{m}}$ lies in $\mathbb{M}_-$). The matrix-representation article records the two intersections, $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_+ = \mathbb{R}e_0$ and $\mathbb{C}_{\mathbb{B}} \cap \mathbb{M}_- = \mathbb{R}(ie_0)$.
 
 ## Which Pairs Span the Algebra
 
-The intersections say how the subspaces overlap; the sums say how much of $\mathbb{B}$ they cover. There are six pairs, and they fall into three kinds:
+The intersections say how the subspaces overlap; the sums say how much of $\mathbb{B}$ they cover. Among the four four-dimensional subspaces there are six pairs, and with the third split — which pairs the center with the vector subspace — they fall into three kinds:
 
 | pair | dimension | what is missing |
 |---|---|---|
 | $\mathbb{M}_- + \mathbb{M}_+$ | $8$ | nothing — this is a split |
 | $\mathbb{H}_{\mathbb{B}} + i\mathbb{H}_{\mathbb{B}}$ | $8$ | nothing — this is a split |
+| $\mathbb{C}_{\mathbb{B}} + \mathrm{Vect}(\mathbb{B})$ | $8$ | nothing — this is the third split |
 | $\mathbb{M}_- + \mathbb{H}_{\mathbb{B}}$ | $5$ | $X_{\mathrm{i}}$, the informational space |
 | $\mathbb{M}_+ + i\mathbb{H}_{\mathbb{B}}$ | $5$ | $X_{\mathrm{m}}$, the material space |
 | $\mathbb{M}_- + i\mathbb{H}_{\mathbb{B}}$ | $7$ | $T_{\mathrm{i}}$, the informational time |
 | $\mathbb{M}_+ + \mathbb{H}_{\mathbb{B}}$ | $7$ | $T_{\mathrm{m}}$, the material time |
 
-Only the two genuine splits reach dimension $8$. The $5$-dimensional sums are the two pairs that share a whole space and differ in time; the $7$-dimensional sums are the two that share a time and differ in space. The arithmetic is the intersection dimension: sharing a three-dimensional block leaves $4 + 4 - 3 = 5$, and sharing a one-dimensional block leaves $4 + 4 - 1 = 7$. The practical content is that an arbitrary element **cannot** in general be written as a material part plus a quaternion part: $\mathbb{M}_- + \mathbb{H}_{\mathbb{B}}$ omits the informational space entirely, so any element with a nonzero $i x' e_k$ component lies outside it. Since $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ are both natural choices of "the real part", it is worth being aware that they are not complementary.
+Only the three genuine splits reach dimension $8$. The $5$-dimensional sums are the two pairs that share a whole space and differ in time; the $7$-dimensional sums are the two that share a time and differ in space. The arithmetic is the intersection dimension: sharing a three-dimensional block leaves $4 + 4 - 3 = 5$, and sharing a one-dimensional block leaves $4 + 4 - 1 = 7$. The practical content is that an arbitrary element **cannot** in general be written as a material part plus a quaternion part: $\mathbb{M}_- + \mathbb{H}_{\mathbb{B}}$ omits the informational space entirely, so any element with a nonzero $i x' e_k$ component lies outside it. Since $\mathbb{M}_-$ and $\mathbb{H}_{\mathbb{B}}$ are both natural choices of "the real part", it is worth being aware that they are not complementary.
 
 ## The Grading
 
@@ -466,9 +485,9 @@ Restricted to the real half the norm form is the ordinary sum of squares: **posi
 
 **The idempotents and the spinor module lie outside both halves.** The rank-one idempotents $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$ have a scalar part in $T_{\mathrm{i}}$ and a vector part in $X_{\mathrm{i}}$, so they lie in $\mathbb{M}_+$ and cross from one half to the other: neither $\tilde{P}_+$ nor $\tilde{P}_-$ belongs to $\mathbb{H}_{\mathbb{B}}$ or to $i\mathbb{H}_{\mathbb{B}}$. This is required, since they are null elements, $N(\tilde{P}) = 0$, and neither half admits one.
 
-## How the Operations Act on the Two Splits
+## How the Operations Act on the Splits
 
-The two splits respond differently to the algebra's own operations, and the contrast is a useful summary of the structure.
+The two four-dimensional splits — the sector split and the half split — respond differently to the algebra's own operations, and the contrast is a useful summary of the structure.
 
 **Multiplication by $i$ exchanges both splits.** Since $i$ is central, $i(a + ib) = -b + ia$: the real and imaginary parts are interchanged, with a sign. Hence
 
@@ -514,15 +533,15 @@ whose coefficient of $I_2$ is the purely imaginary $iq'_0$ — a coefficient fro
 
 ## Summary
 
-The biquaternion algebra admits two independent four-plus-four decompositions: the sector split $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ by Hermitian conjugation, and the half split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ by complex conjugation. The four involutions have as fixed spaces the three four-dimensional subspaces $\mathbb{M}_-$, $\mathbb{M}_+$ and $\mathbb{H}_{\mathbb{B}}$ together with the two-dimensional center $\mathbb{C}_{\mathbb{B}}$; the antiquaternion subspace is the anti-fixed space of complex conjugation. The two splits cross.
+The biquaternion algebra admits exactly three decompositions into two distinguished subspaces: $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ by Hermitian conjugation, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ by complex conjugation, and $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ into center and vector part. They are the three pairings of the four coordinate blocks, so there is no fourth. The algebra carries six distinguished subspaces in all: the four four-dimensional ones — $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ — together with the two-dimensional center subspace and the six-dimensional vector subspace. The four involutions have as fixed spaces $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$; $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed space of complex conjugation, and the vector subspace is the anti-fixed space of quaternion conjugation. Each of the six is therefore the fixed space of an involution: of one of the four conjugations, or of its negative.
 
 - The eight real parameters fall into four blocks: the material time $T_{\mathrm{m}} = \mathbb{R}(ie_0)$, the informational time $T_{\mathrm{i}} = \mathbb{R}e_0$, the material space $X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3)$, and the informational space $X_{\mathrm{i}} = \mathbb{R}(ie_1,ie_2,ie_3)$. The primed parameters $q'_0, q'_k$ are exactly the coefficients that enter with $i$, that is, they span $i\mathbb{H}_{\mathbb{B}}$ — which is the origin of the three-and-one pattern of the primes.
 - Each of the four four-dimensional subspaces is one temporal block plus one spatial block: $\mathbb{M}_- = T_{\mathrm{m}}\oplus X_{\mathrm{m}}$, $\mathbb{M}_+ = T_{\mathrm{i}}\oplus X_{\mathrm{i}}$, $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}}\oplus X_{\mathrm{m}}$, $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}}\oplus X_{\mathrm{i}}$. So $\mathbb{H}_{\mathbb{B}}$ is informational time with material space, and $i\mathbb{H}_{\mathbb{B}}$ is material time with informational space. The sectors pair a time with the space of the same sector; the halves pair a time with the space of the other. The center is the exception: two temporal blocks and no spatial one.
-- The intersections are the shared blocks, so two **distinct** subspaces have dimension $0$, $1$ or $3$ and never $2$ or $4$. Viewed as a two-by-two grid of temporal against spatial block, subspaces in the same row share their time (dimension $1$), those in the same column share their space (dimension $3$), and those differing in both entries — which are exactly the two splits — meet only at $0$. Every pair of distinct subspaces meets except the two split partners: $\mathbb{M}_- \cap \mathbb{M}_+ = 0$ and $\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$. The two splits are maximally crossed: no piece of either lies inside a piece of the other.
-- The center, the real quaternions and $\mathbb{M}_+$ share the line $\mathbb{R}e_0$; the center, the antiquaternions and $\mathbb{M}_-$ share $\mathbb{R}(ie_0)$. Each subspace meets the center in exactly one of these two lines, and the center is the only subspace with no spatial part — two-dimensional where the others are four.
-- Only the two splits span: $\mathbb{M}_- + \mathbb{M}_+ = \mathbb{B} = \mathbb{H}_{\mathbb{B}} + i\mathbb{H}_{\mathbb{B}}$, while the mixed pairs span $5$ or $7$ dimensions. An element of $\mathbb{B}$ cannot in general be written as a material part plus a quaternion part.
+- The intersections are the shared blocks, so two **distinct** subspaces have dimension $0$, $1$ or $3$ and never $2$ or $4$. Viewed as a two-by-two grid of temporal against spatial block, the four four-dimensional subspaces in the same row share their time (dimension $1$), those in the same column share their space (dimension $3$), and those differing in both entries — which are exactly the two four-dimensional splits — meet only at $0$. Every pair of distinct subspaces fails to meet only for the three complementary pairs: $\mathbb{M}_- \cap \mathbb{M}_+ = 0$, $\mathbb{H}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} = 0$, and $\mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$. Each split is maximally crossed: no piece of either summand lies inside a piece of the other.
+- The center, the real quaternions and $\mathbb{M}_+$ share the line $\mathbb{R}e_0$; the center, the antiquaternions and $\mathbb{M}_-$ share $\mathbb{R}(ie_0)$. Each of the four four-dimensional subspaces meets the center in exactly one of these two lines, while the vector subspace meets it only at $0$. The center is the only subspace with no spatial part — two-dimensional where the others are four or six.
+- Only the three splits span: $\mathbb{M}_- + \mathbb{M}_+ = \mathbb{B} = \mathbb{H}_{\mathbb{B}} + i\mathbb{H}_{\mathbb{B}} = \mathbb{C}_{\mathbb{B}} + \mathrm{Vect}(\mathbb{B})$, while the mixed pairs span $5$ or $7$ dimensions. An element of $\mathbb{B}$ cannot in general be written as a material part plus a quaternion part.
 - The half split is a $\mathbb{Z}/2$-grading: $\mathbb{H}_{\mathbb{B}}$ is the even part and a subalgebra, $i\mathbb{H}_{\mathbb{B}}$ the odd part and only a module. $\mathbb{H}_{\mathbb{B}} \cong \mathbb{H}$ is a division algebra.
-- The norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, so neither half contains a zero divisor. The Lorentzian signature and the whole zero-divisor cone of $\mathbb{B}$ come from mixing the two halves.
+- The norm form is positive definite on $\mathbb{H}_{\mathbb{B}}$ and negative definite on $i\mathbb{H}_{\mathbb{B}}$, so neither half contains a zero divisor; it is indefinite on the two sectors, and complex — hence of no definite sign — on the center and the vector subspace. The Lorentzian signature and the whole zero-divisor cone of $\mathbb{B}$ come from mixing the two halves.
 - Multiplication by $i$ exchanges the halves and exchanges the sectors; quaternion conjugation preserves all four subspaces; complex conjugation fixes the real half and negates the imaginary half, and preserves both sectors.
 
 ## Summary of Notation
@@ -531,7 +550,10 @@ The biquaternion algebra admits two independent four-plus-four decompositions: t
 |---|---|
 | $\mathbb{H}_{\mathbb{B}} = \{q_\mu e_\mu\}$ | The quaternion subspace: the real half, fixed space of complex conjugation, all four coefficients real; a subalgebra, isomorphic to $\mathbb{H}$, and a division algebra |
 | $i\mathbb{H}_{\mathbb{B}} = \{iq'_\mu e_\mu\}$ | The antiquaternion subspace: the imaginary half, anti-fixed space of complex conjugation, all four coefficients purely imaginary; a module over $\mathbb{H}_{\mathbb{B}}$, not a subalgebra |
-| $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ | The half split; a $\mathbb{Z}/2$-grading, and independent of the sector split |
+| $\mathbb{B} = \mathbb{M}_- \oplus \mathbb{M}_+$ | The sector split; fixed and anti-fixed spaces of Hermitian conjugation |
+| $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$ | The half split; a $\mathbb{Z}/2$-grading, fixed and anti-fixed spaces of complex conjugation |
+| $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The scalar–vector split; center against traceless part, the only asymmetric one |
+| The three splits are the three pairings of $T_{\mathrm{m}}, T_{\mathrm{i}}, X_{\mathrm{m}}, X_{\mathrm{i}}$ | Hence exactly three decompositions, with no fourth |
 | $T_{\mathrm{m}} = \mathbb{R}(ie_0)$ | Material time block; coordinate $ict$, parameter $q'_0 = ct$ |
 | $T_{\mathrm{i}} = \mathbb{R}e_0$ | Informational time block; coordinate $ct'$, parameter $q_0 = ct'$ |
 | $X_{\mathrm{m}} = \mathbb{R}(e_1,e_2,e_3)$ | Material space block; coordinates $x, y, z$, parameters $q_1, q_2, q_3$ |
@@ -540,7 +562,8 @@ The biquaternion algebra admits two independent four-plus-four decompositions: t
 | $\mathbb{M}_+ = T_{\mathrm{i}} \oplus X_{\mathrm{i}}$ | The informational sector as one time plus one space, both informational |
 | $\mathbb{H}_{\mathbb{B}} = T_{\mathrm{i}} \oplus X_{\mathrm{m}}$ | Informational time with material space — the crossing |
 | $i\mathbb{H}_{\mathbb{B}} = T_{\mathrm{m}} \oplus X_{\mathrm{i}}$ | Material time with informational space — the other crossing |
-| $\mathbb{C}_{\mathbb{B}} = T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | The center, fixed space of quaternion conjugation: the one subspace with no spatial part, of real dimension two |
+| $\mathbb{C}_{\mathbb{B}} = T_{\mathrm{m}} \oplus T_{\mathrm{i}}$ | The center, fixed space of quaternion conjugation: the one subspace with no spatial part, of real dimension two; a field, and $\mathbb{C}$-linear |
+| $\mathrm{Vect}(\mathbb{B}) = \{Q_1e_1 + Q_2e_2 + Q_3e_3\}$ | The vector subspace: pure-vector elements, $\mathrm{Sc}(\tilde{Q}) = 0$; a complex three-dimensional space, the derived subspace $[\mathbb{B},\mathbb{B}]$, and the anti-fixed space of quaternion conjugation, i.e. the fixed space of $-{\bar{\cdot}}$ |
 | ${}^{*}, \bar{\cdot}, \dagger, \flat = -\dagger$ | Complex, quaternion, Hermitian and anti-Hermitian conjugation; the four involutions, with $\dagger = \bar{\cdot}^{\,*}$ |
 | $\{1, {}^{*}, \bar{\cdot}, \dagger\}$ | The four involutions commute and form a Klein four-group; $\dagger = \bar{\cdot}\circ{}^{*}$, and the signs of ${}^{*}$ and $\bar{\cdot}$ on the four blocks are its four characters |
 | $T_{\mathrm{m}}, T_{\mathrm{i}}, X_{\mathrm{m}}, X_{\mathrm{i}}$ | The four coordinate blocks of $1 + 1 + 3 + 3 = 8$ real parameters |

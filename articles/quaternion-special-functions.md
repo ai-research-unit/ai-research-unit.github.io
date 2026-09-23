@@ -1,4 +1,3 @@
-
 # __Quaternion Special Functions__
 
 ## Introduction

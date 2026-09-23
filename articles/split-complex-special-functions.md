@@ -1,4 +1,3 @@
-
 # __Split Complex Special Functions__
 
 ## Introduction

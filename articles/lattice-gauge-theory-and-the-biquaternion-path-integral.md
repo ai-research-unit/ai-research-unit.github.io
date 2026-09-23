@@ -1,4 +1,3 @@
-
 # __Lattice Gauge Theory and the Biquaternion Path Integral__
 
 ## Introduction

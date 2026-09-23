@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Zero Divisors__
 
 ## Introduction

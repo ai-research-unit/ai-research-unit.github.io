@@ -1,4 +1,3 @@
-
 # __Biquaternion Continuous Harmonic Analysis__
 
 ## Introduction

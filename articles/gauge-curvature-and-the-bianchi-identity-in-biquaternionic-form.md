@@ -1,4 +1,3 @@
-
 # __Gauge Curvature and the Bianchi Identity in Biquaternionic Form__
 
 ## Introduction
@@ -342,6 +341,6 @@ Two things are left visible. First, a **scope limitation**: the curvature is a c
 - *Maxwell's Equations in the Biquaternionic Formulation* — the abelian field equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ whose homogeneous part is the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection $D_\mu\tilde{X}=\partial_\mu\tilde{X}+\tilde{\Gamma}_\mu\tilde{X}+\tilde{X}\tilde{\Gamma}_\mu^\dagger$, distinct from the one-sided gauge connection of this article.
-- *$\mathbb{M}_-$ as the Material Subspace* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis, the imaginary-scalar/real-vector structure, and the Lie-algebra decomposition on which the gauge algebra rests.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations, and the center used throughout.

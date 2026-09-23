@@ -1,4 +1,3 @@
-
 # __Biquaternion Analysis on Subspaces__
 
 ## Introduction

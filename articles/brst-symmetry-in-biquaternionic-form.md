@@ -1,4 +1,3 @@
-
 # __BRST Symmetry in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Discrete Harmonic Analysis__
 
 ## Introduction

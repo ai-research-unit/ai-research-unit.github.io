@@ -1,4 +1,3 @@
-
 # __Spinors categorization__
 
 ## Introduction

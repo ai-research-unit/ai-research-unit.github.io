@@ -1,4 +1,3 @@
-
 # __The Foldy–Wouthuysen Transformation in Biquaternionic Form__
 
 ## Introduction

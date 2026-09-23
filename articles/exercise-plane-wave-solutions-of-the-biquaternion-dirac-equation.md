@@ -1,4 +1,3 @@
-
 # __Exercise: Plane-Wave Solutions of the Biquaternion Dirac Equation__
 
 ## Introduction

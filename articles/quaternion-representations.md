@@ -1,4 +1,3 @@
-
 # __Quaternion Representations__
 
 ## Introduction

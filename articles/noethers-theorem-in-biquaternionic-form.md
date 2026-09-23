@@ -1,4 +1,3 @@
-
 # __Noether's Theorem in Biquaternionic Form__
 
 ## Introduction
@@ -357,5 +356,5 @@ The field translation current is the canonical energy–momentum, $\partial_\mu 
 - *The Gauge Principle in Biquaternionic Form* — the localization of the central phase whose global current is derived here.
 - *The Covariant Derivative and Gauge Connection in Biquaternionic Form* — the connection forced by localizing the same symmetry.
 - *The Lorentz Transformation as a Biquaternionic Rotation* — the rotor whose conjugation carries the four-momentum between frames.
-- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace* — the two sectors that house the conserved objects.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors that house the conserved objects.
 - *Introduction to the Biquaternion Universe* — the algebra, its conjugations, and the local complex structure.

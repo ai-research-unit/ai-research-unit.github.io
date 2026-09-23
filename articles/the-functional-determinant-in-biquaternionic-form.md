@@ -1,4 +1,3 @@
-
 # __The Functional Determinant in Biquaternionic Form__
 
 ## Introduction
@@ -76,7 +75,7 @@ where $\Phi$ is the isomorphism onto $M_2(\mathbb{C})$ and $N$ is the norm form.
 
 **Proof.** Both sides are polynomial functions of the four coefficients of $\tilde Q$, so it suffices to check on a basis. On $\Phi(e_0)=I_2$ both sides are $1$; on $\Phi(e_k)=-i\sigma_k$, $\det(-i\sigma_k)=1$ while $N(e_k)=e_k\bar e_k=-e_k^2=e_0$, giving $1$; and both sides are multiplicative, $\det(\Phi(\tilde A)\Phi(\tilde B))=\det\Phi(\tilde A)\det\Phi(\tilde B)$ and $N(\tilde A\tilde B)=\tilde A\tilde B\overline{\tilde A\tilde B}=\tilde A\,N(\tilde B)\,\bar{\tilde A}=\tilde A\bar{\tilde A}\,N(\tilde B)=N(\tilde A)N(\tilde B)$ using the centrality of $N(\tilde B)$. A basis check plus multiplicativity on a generating set establishes the identity on the whole algebra. $\square$
 
-The determinant of $\tilde Q$ is thus the **norm form**, the same object that supplies the Minkowski interval of *$\mathbb{M}_-$ as the Material Subspace*.
+The determinant of $\tilde Q$ is thus the **norm form**, the same object that supplies the Minkowski interval of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 
 **Proposition (regular representation).** Left multiplication $L_{\tilde Q}:X\mapsto\tilde QX$ and right multiplication $R_{\tilde Q}:X\mapsto X\tilde Q$ on $\mathbb{B}$ regarded as a four-complex-dimensional space both have determinant
 $$
@@ -95,7 +94,7 @@ $$
 $$
 confirming the second. The eigenvalues of $\Phi(\tilde Q)$ are $1.520333+0.407233i$ and $-0.120333-0.007233i$, whose product is $-0.18-0.06i$, as required.
 
-**Interpretation of the result.** The determinant of an element of the framework's algebra is the norm form, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone of *$\mathbb{M}_-$ as the Material Subspace* is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
+**Interpretation of the result.** The determinant of an element of the framework's algebra is the norm form, so a vanishing determinant — a zero divisor — is a vanishing norm, i.e. an element of the zero-divisor cone. This is the algebraic reason the cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* is the light cone and the singular locus of the algebra at once. The regular-representation determinant being the square is the algebraic statement that the left and right actions see the same norm; there is no separate "left determinant" and "right determinant".
 
 ## The Determinant in the Gaussian Integral
 
@@ -276,4 +275,4 @@ For a central fluctuation operator the module determinant is the square of the s
 - A. S. Schwarz, "The partition function of degenerate quadratic functional and Ray–Singer invariants," *Letters in Mathematical Physics* **2** (1978) 247–252, for the phase of the determinant and the Ray–Singer torsion.
 - N. D. Birrell and P. C. W. Davies, *Quantum Fields in Curved Space* (Cambridge, 1982), for the conformal variation of the one-loop determinant.
 - P. Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the determinant and the norm form of the algebra and the module structure.
-- Companion articles: *The Functional Integral in Biquaternionic Form*, for the Gaussian determinant and the module; *The Generating Functional and the Effective Action in Biquaternionic Form*, for the one-loop action $\Gamma_1$ and the proper-time form; *The Trace Anomaly in Biquaternionic Form*, for the conformal variation computed; *The Theta Vacuum in Biquaternionic Form*, for the phase and the topological term; *$\mathbb{M}_-$ as the Material Subspace*, for the norm form and the zero-divisor cone; *The Renormalization Group in Biquaternionic Form*, for the regularization dependence and the scheme.
+- Companion articles: *The Functional Integral in Biquaternionic Form*, for the Gaussian determinant and the module; *The Generating Functional and the Effective Action in Biquaternionic Form*, for the one-loop action $\Gamma_1$ and the proper-time form; *The Trace Anomaly in Biquaternionic Form*, for the conformal variation computed; *The Theta Vacuum in Biquaternionic Form*, for the phase and the topological term; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the norm form and the zero-divisor cone; *The Renormalization Group in Biquaternionic Form*, for the regularization dependence and the scheme.

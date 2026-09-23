@@ -1,4 +1,3 @@
-
 # __The Bell Basis as the Idempotent Basis of B⊗B__
 
 ## Introduction
@@ -412,4 +411,4 @@ All of this is standard finite-dimensional algebra, expressed in the conventions
 - C. H. Bennett, G. Brassard, C. Crépeau, R. Jozsa, A. Peres, and W. K. Wootters, "Teleporting an unknown quantum state via dual classical and Einstein–Podolsky–Rosen channels," *Physical Review Letters* **70** (1993) 1895–1899, for the Bell-basis measurement and its role in quantum information.
 - R. F. Werner, "All teleportation and dense coding schemes," *Journal of Physics A: Mathematical and General* **34** (2001) 7081–7094, for the classification of maximally entangled states and the role of the Bell basis.
 - S. L. Braunstein, A. Mann, and M. Revzen, "Maximal violation of Bell inequalities for mixed states," *Physical Review Letters* **68** (1992) 3259–3261, for the correlation structure of the Bell states.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *Exercise: Two Spins in the Singlet State*, and *Exercise: The Correlation Function of the Bell States*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *Exercise: Two Spins in the Singlet State*, and *Exercise: The Correlation Function of the Bell States*.

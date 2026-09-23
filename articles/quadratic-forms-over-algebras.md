@@ -1,4 +1,3 @@
-
 # __Quadratic Forms over Algebras__
 
 ## Introduction

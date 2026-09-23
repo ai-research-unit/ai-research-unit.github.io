@@ -1,4 +1,3 @@
-
 # __Quantum Mechanics: Foundations and Structure__
 
 ## Introduction

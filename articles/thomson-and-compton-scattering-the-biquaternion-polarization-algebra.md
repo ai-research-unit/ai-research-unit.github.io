@@ -1,4 +1,3 @@
-
 # __Thomson and Compton Scattering: The Biquaternion Polarization Algebra__
 
 ## Introduction

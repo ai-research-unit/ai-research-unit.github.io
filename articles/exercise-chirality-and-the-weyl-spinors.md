@@ -1,4 +1,3 @@
-
 # __Exercise: Chirality and the Weyl Spinors__
 
 ## Introduction
@@ -390,4 +389,4 @@ Seven problems were solved. (1) The chiral projectors $P_L = \tfrac12(I_4-\gamma
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of the Lorentz group and the relation between spinors and four-vectors.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the construction of the Dirac spinor from two Weyl spinors and the mass term.
 - William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the modules of $M_2(\mathbb{C})$, the highest-weight classification, and the Clebsch–Gordan rule.
-- The companion articles of this series: *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, and *$\mathbb{M}_-$ as the Material Subspace*.
+- The companion articles of this series: *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, *The Dirac Equation in Biquaternionic Form*, and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.

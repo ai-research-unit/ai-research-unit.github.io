@@ -1,4 +1,3 @@
-
 # __One-Dimensional Scattering in Biquaternionic Form__
 
 ## Introduction

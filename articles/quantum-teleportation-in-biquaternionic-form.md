@@ -1,4 +1,3 @@
-
 # __Quantum Teleportation in Biquaternionic Form__
 
 ## Introduction
@@ -373,4 +372,4 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 - C. H. Bennett and S. J. Wiesner, "Communication via one- and two-particle operators on Einstein–Podolsky–Rosen states," *Physical Review Letters* **69** (1992) 2881–2884, for dense coding, the dual protocol not developed here.
 - K. Kraus, *States, Effects, and Operations* (Springer, 1983), for the instrument and Kraus-rank language used in the channel reading.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), and Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the rotor formulation of the corrections.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The Correlation Function of the Bell States*, *Exercise: The Reduced State of an Entangled Subsystem*, *Quantum Gates and Circuits in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Measurement Problem in Algebraic Form*, and *Decoherence as Idempotent Projection*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Entangled Subsystems in the Biquaternion Framework*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, *Exercise: The Correlation Function of the Bell States*, *Exercise: The Reduced State of an Entangled Subsystem*, *Quantum Gates and Circuits in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Measurement Problem in Algebraic Form*, and *Decoherence as Idempotent Projection*.

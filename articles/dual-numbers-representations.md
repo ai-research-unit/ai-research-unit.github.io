@@ -1,4 +1,3 @@
-
 # __Dual Numbers Representations__
 
 ## Introduction

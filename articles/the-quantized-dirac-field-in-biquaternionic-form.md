@@ -1,4 +1,3 @@
-
 # __The Quantized Dirac Field in Biquaternionic Form__
 
 ## Introduction

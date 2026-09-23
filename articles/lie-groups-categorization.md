@@ -1,4 +1,3 @@
-
 # __Lie Groups categorization__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Contextuality and the Kochen–Specker Theorem in Biquaternionic Form__
 
 ## Introduction

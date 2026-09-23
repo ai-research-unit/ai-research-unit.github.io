@@ -1,4 +1,3 @@
-
 # __The Reflection and the Rotation in Biquaternionic Form__
 
 ## Introduction
@@ -366,5 +365,5 @@ The claims of this article, in order.
 
 - Companion articles in this series: *The Dirac Algebra and Biquaternions — A Dictionary* (the isomorphism $\Phi$, the sign conventions, and the chirality operator used throughout); *The Dirac Equation in Biquaternionic Form* (the linear, chirality-off-diagonal mass term); *The Spinor Module in Biquaternionic Form and Its Lorentz Action* (the module, the one-sided spinor action, and the two factors $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$); *Exercise: Chirality and the Weyl Spinors* (the projectors and the two Weyl modules); *The Lorentz Transformation as a Biquaternionic Rotation* (the boost rotor, its Hermiticity, and the rotor conjugation); *The Lorentz Group in Biquaternionic Form — Structure and Representations*; *Exercise: The Thomas Precession* (the composition of non-collinear boosts); *Exercise: Boosting a Four-Velocity and Rapidity Composition*.
 - On the physics of chirality: *Chiral Fermions in the Biquaternion Framework*; *The Neutrino and Majorana Fermions in Biquaternionic Form*; *The CPT Theorem in Biquaternionic Form* (the anti-linear discrete symmetries of the last subsection); *Zitterbewegung in Biquaternionic Form* (the mass as the coupling between the chiralities); *Exercise: The Non-Relativistic Limit and the Pauli Equation* (the reduction to the Pauli algebra).
-- Foundational articles: *Introduction to the Biquaternion Universe*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*; *Conventions in the Biquaternion Universe*.
+- Foundational articles: *Introduction to the Biquaternion Universe*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *Conventions in the Biquaternion Universe*.
 - On the Clifford structures used here: *Clifford Algebras*; *Clifford Algebras in finite dimensions*; *Spinors*; *The Spinor Representation of the Lorentz Group in Biquaternionic Form*.

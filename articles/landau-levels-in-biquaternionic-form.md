@@ -1,4 +1,3 @@
-
 # __Landau Levels in Biquaternionic Form__
 
 ## Introduction

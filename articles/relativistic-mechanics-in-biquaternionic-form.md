@@ -1,4 +1,3 @@
-
 # __Relativistic Mechanics in Biquaternionic Form__
 
 ## Introduction

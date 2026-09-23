@@ -1,4 +1,3 @@
-
 # __The Vibrating Ellipsoid and Higher-Multipole Oscillations in Biquaternionic Form__
 
 ## Introduction
@@ -11,7 +10,7 @@ The framework's role here is specific, and it is worth stating before the detail
 
 The biquaternion conventions are those of the companion articles:
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the four-vectors and the vector part.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the four-vectors and the vector part.
 - Companion article *Conventions in the Biquaternion Universe*, for the trace, the metric at its three levels, and the conventions of presentation.
 - Companion article *The Multipole Expansion and the Quadrupole Interaction in Biquaternionic Form*, for the multipole series, the dipole as a vector element, and the quadrupole as a symmetric traceless tensor.
 

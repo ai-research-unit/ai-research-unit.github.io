@@ -1,4 +1,3 @@
-
 # __Quantum Gates and Circuits in Biquaternionic Form__
 
 ## Introduction
@@ -534,4 +533,4 @@ The **contrast with the irreversible channels** is the Kraus-rank dichotomy. A c
 - Daniel Gottesman, "The Heisenberg representation of quantum computers" (1998), for the stabiliser formalism and the Clifford group in the Pauli normaliser picture.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the spin-1/2 formalism underlying the gate representatives.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), and Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the rotor formulation of rotations used here.
-- The companion articles of this series: *Introduction to the Biquaternion Universe*, *$\mathbb{M}_-$ as the Material Subspace*, *$\mathbb{M}_+$ as the Informational Subspace*, *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, and *Decoherence as Idempotent Projection*.
+- The companion articles of this series: *Introduction to the Biquaternion Universe*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, *Quantum Mechanics in Biquaternionic Form*, *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, *Quantum Channels and the Reversible/Irreversible Dichotomy*, *The Bell Basis as the Idempotent Basis of $\mathbb{B}\otimes\mathbb{B}$*, and *Decoherence as Idempotent Projection*.

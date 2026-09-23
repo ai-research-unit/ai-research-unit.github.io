@@ -1,4 +1,3 @@
-
 # __Symmetric Algebras__
 
 ## Introduction

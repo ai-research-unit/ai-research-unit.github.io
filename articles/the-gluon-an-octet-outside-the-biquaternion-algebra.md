@@ -1,4 +1,3 @@
-
 # __The Gluon: An Octet Outside the Biquaternion Algebra__
 
 ## Introduction

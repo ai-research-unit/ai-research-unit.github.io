@@ -1,4 +1,3 @@
-
 # __The Klein–Gordon Path Integral in Biquaternionic Form__
 
 ## Introduction
@@ -18,7 +17,7 @@ Throughout, the conventions are those of the companion articles: $\mathbb{B}=\ma
 - Companion article *The Scalar Field in the Center: Why Spin 0 Escapes the Biquaternion State Module*, for the field's central value space and the exclusion of the state module.
 - Companion article *The Path Integral in Biquaternionic Form*, for the centrality of the phase, the material sector, and the algebra's complex structure.
 - Companion article *The Wick Rotation in the Biquaternion Universe*, for the identification of the material sector with the quaternion subspace.
-- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, the four-wavevector, and the norm form.
+- Companion article *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, for the material sector, the four-wavevector, and the norm form.
 
 ## The Configuration Space and the Action
 

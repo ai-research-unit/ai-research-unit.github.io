@@ -1,4 +1,3 @@
-
 # __Split Complex Representations__
 
 ## Introduction

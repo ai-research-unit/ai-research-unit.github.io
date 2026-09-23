@@ -1,4 +1,3 @@
-
 # __Fundamental and Derived Elements in the Biquaternion Framework__
 
 ## Introduction
@@ -364,4 +363,4 @@ The one gap is left visible rather than closed. The complexification — equival
 - *Biquaternion Polar Representations* (`articles/biquaternion-polar-representations.md`), for the two polar forms whose status as derived constructions is settled here.
 - *Biquaternion Algebraic Representations* (`articles/biquaternion-algebraic-representations.md`), for the matrix model $\mathbb{B}\cong M_2(\mathbb{C})$ used to exhibit the real forms $\mathbb{H}_{\mathbb{B}}$ and $M_2(\mathbb{R})$.
 - *Algebras: A General Introduction* (`articles/algebras.md`), for the notions of algebra, center, simplicity, and base change that the criterion and the base presuppose.
-- *$\mathbb{M}_+$ as the Informational Subspace* (`articles/m-plus-as-the-informational-subspace.md`) and *$\mathbb{M}_-$ as the Material Subspace* (`articles/m-as-the-material-subspace.md`), for the physical interpretations that this article records as posits rather than derivations.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles/the-hermitian-subspace-m-plus-as-the-informational-sector.md`) and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* (`articles/the-anti-hermitian-subspace-m-as-the-material-sector.md`), for the physical interpretations that this article records as posits rather than derivations.

@@ -1,4 +1,3 @@
-
 # __No-Cloning and the Algebraic Obstruction in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Electric Dipole Moment and the Biquaternion Anti-Hermitian Structure__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Higher Special Functions__
 
 ## Introduction

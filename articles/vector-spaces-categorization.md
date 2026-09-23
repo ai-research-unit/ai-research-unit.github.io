@@ -1,4 +1,3 @@
-
 # __Vector Spaces categorization__
 
 ## Introduction

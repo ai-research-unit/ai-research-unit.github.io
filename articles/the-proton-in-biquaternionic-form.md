@@ -1,4 +1,3 @@
-
 # __The Proton in Biquaternionic Form__
 
 ## Introduction
@@ -262,5 +261,5 @@ What the framework does not supply is everything that makes the proton a proton.
 - *Angular Momentum and Spin in Biquaternionic Form* — the spin operators $\tilde{S}_k=\tfrac\hbar2 ie_k$ and the idempotent state structure used implicitly here.
 - *The Neutrino and Majorana Fermions in Biquaternionic Form* — the real structure and the Majorana-versus-Dirac reading that bears on charge conservation.
 <!-- EDITORIAL (2026-09-19): this bullet previously said "the antilinear mass map". The parent's mass is now the linear chiral pair; the Majorana-versus-Dirac reading attaches to the algebra's real structure $\flat$. -->
-- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace* — the two sectors, their bases and the trace formula inherited unchanged.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the two sectors, their bases and the trace formula inherited unchanged.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations and the sector split in which the whole construction is set.

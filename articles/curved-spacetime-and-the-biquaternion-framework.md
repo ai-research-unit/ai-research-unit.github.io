@@ -1,4 +1,3 @@
-
 # __Curved Spacetime and the Biquaternion Framework__
 
 ## Introduction

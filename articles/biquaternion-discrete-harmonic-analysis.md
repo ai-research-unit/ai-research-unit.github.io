@@ -1,4 +1,3 @@
-
 # __Biquaternion Discrete Harmonic Analysis__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism__
 
 ## Introduction
@@ -364,4 +363,4 @@ The interaction current is not a pure biquaternion product. The gauge-invariant,
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the gauge-theoretic reading of the covariant derivative in geometric algebra.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of the Dirac equation in spacetime algebra.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 1 (Cambridge, 1984), for the two-component spinor calculus and the Dirac adjoint.
-- Companion articles: *The Gauge Principle in Biquaternionic Form*; *Maxwell's Equations in the Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *The Electron in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *Canonical Quantization of the Biquaternion Maxwell Field*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*.
+- Companion articles: *The Gauge Principle in Biquaternionic Form*; *Maxwell's Equations in the Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form*; *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit*; *The Electron in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *Canonical Quantization of the Biquaternion Maxwell Field*; *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

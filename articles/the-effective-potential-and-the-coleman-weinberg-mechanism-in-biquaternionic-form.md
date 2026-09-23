@@ -1,4 +1,3 @@
-
 # __The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form__
 
 ## Introduction

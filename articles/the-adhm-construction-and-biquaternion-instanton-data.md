@@ -1,4 +1,3 @@
-
 # __The ADHM Construction and Biquaternion Instanton Data__
 
 ## Introduction

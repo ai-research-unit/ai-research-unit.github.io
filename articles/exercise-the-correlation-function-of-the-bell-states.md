@@ -1,4 +1,3 @@
-
 # __Exercise: The Correlation Function of the Bell States__
 
 ## Introduction

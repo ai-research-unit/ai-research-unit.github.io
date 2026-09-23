@@ -1,4 +1,3 @@
-
 # __The Relativistic Central Force Problem in Biquaternionic Form__
 
 ## Introduction

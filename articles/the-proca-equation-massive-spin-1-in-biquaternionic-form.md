@@ -1,4 +1,3 @@
-
 # __The Proca Equation: Massive Spin 1 in Biquaternionic Form__
 
 ## Introduction

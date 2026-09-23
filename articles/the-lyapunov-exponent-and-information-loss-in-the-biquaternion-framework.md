@@ -1,4 +1,3 @@
-
 # __The Lyapunov Exponent and Information Loss in the Biquaternion Framework__
 
 ## Introduction

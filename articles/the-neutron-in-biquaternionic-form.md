@@ -1,4 +1,3 @@
-
 # __The Neutron in Biquaternionic Form__
 
 ## Introduction
@@ -182,8 +181,8 @@ The neutron's composite character is not reached. The framework has no colour gr
 - *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* — the many-particle space (the antisymmetric tensor algebra of the spinor module) and its operators, the construction that lets a three-fermion *state* be written while supplying no binding.
 - *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda* — the established ceiling on the colour group, the absent confinement mechanism, and the three-way classification the composite section inherits.
 - *Non-Abelian Gauge Fields in Biquaternionic Form* — the compact gauge algebra inside $\mathbb{M}_-$ and the non-abelian machinery that stops short of colour.
-- *$\mathbb{M}_-$ as the Material Subspace* — the sector decomposition, the four-vectors, and the $ict$ convention.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian sector, the rotor action, and the trace formula.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector decomposition, the four-vectors, and the $ict$ convention.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector, the rotor action, and the trace formula.
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, the frame constants, and the open many-particle extension on which a composite construction would depend.
 - *The Spinor Module in Biquaternionic Form and Its Lorentz Action* — the module's Lorentz action and the spinor representation on which the spin-$\tfrac12$ representation rests.
 - *Spin-$\tfrac12$ Quantum Mechanics in Biquaternionic Form* — the qubit/operator dictionary and the trace formula applied to spin states.

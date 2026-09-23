@@ -1,4 +1,3 @@
-
 # __The Biquaternion D'Alembertian and Its Green's Functions__
 
 ## Introduction

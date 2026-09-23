@@ -1,4 +1,3 @@
-
 # __Biquaternion Regular Functions__
 
 ## Introduction

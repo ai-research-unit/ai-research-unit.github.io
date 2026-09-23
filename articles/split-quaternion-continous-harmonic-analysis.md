@@ -1,4 +1,3 @@
-
 # __Split-Quaternion Continuous Harmonic Analysis__
 
 ## Introduction

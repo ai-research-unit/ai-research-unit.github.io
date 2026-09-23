@@ -1,4 +1,3 @@
-
 # __The Matsubara Formalism in Biquaternionic Form__
 
 ## Introduction

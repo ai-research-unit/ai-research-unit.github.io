@@ -1,25 +1,39 @@
 # __Physics__
 
 
+## 01. Biquaternion Universe
 
-
-## Biquaternion Universe
+## - Generalities
 
 ### <a href="articles/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>
 
 ### <a href="articles/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
 
-### <a href="articles/the-matrix-representation-in-the-biquaternion-universe.html">The Matrix Representation in the Biquaternion Universe</a>
+### <a href="articles/the-matrix-representation-of-the-biquaternion-universe.html">The Matrix Representation of the Biquaternion Universe</a>
 
-### <a href="articles/m-as-the-material-subspace.html">M- as the Material Subspace</a>
+## - Subspaces
 
-### <a href="articles/m-plus-as-the-informational-subspace.html">M+ as the Informational Subspace</a>
+### <a href="articles/the-anti-hermitian-subspace-m-as-the-material-sector.html">The Anti-Hermitian Subspace M- as the Material Sector</a>
 
-### <a href="articles/the-quaternion-and-antiquaternion-subspaces.html">The Quaternion and Antiquaternion Subspaces</a>
+### <a href="articles/the-hermitian-subspace-m-plus-as-the-informational-sector.html">The Hermitian Subspace M+ as the Informational Sector</a>
 
-### <a href="articles/action-units-and-the-constants-of-the-biquaternion-universe.html">Action, Units, and the Constants of the Biquaternion Universe</a>
+### <a href="articles/the-quaternion-subspace-hb-as-the-real-sector.html">The Quaternion Subspace HB as the Real Sector</a>
+
+### <a href="articles/the-anti-quaternion-subspace-ihb-as-the-imaginary-sector.html">The Anti-Quaternion Subspace iHB as the Imaginary Sector</a>
+
+### <a href="articles/the-center-subspace-c-b-as-the-complex-time-sector.html">The Center Subspace C_B as the Complex Time Sector</a>
+
+### <a href="articles/the-vector-subspace-vect-b-as-the-complex-space-sector.html">The Vector Subspace Vect(B) as the Complex Space Sector</a>
+
+### <a href="articles/relations-between-subspaces.html">Relations Between Subspaces</a>
+
+
+
+## - Context
 
 ### <a href="articles/why-complexify-spacetime.html">Why Complexify Spacetime?</a>
+
+### <a href="articles/action-units-and-the-constants-of-the-biquaternion-universe.html">Action, Units, and the Constants of the Biquaternion Universe</a>
 
 ### <a href="articles/a-brief-history-of-biquaternions-in-physics.html">A Brief History of Biquaternions in Physics</a>
 
@@ -36,7 +50,7 @@
 
 
 
-## Biquaternion Non Relativistic Quantum Theory
+## 02. Biquaternion Non Relativistic Quantum Theory
 
 ## - Generalities
 
@@ -190,7 +204,7 @@
 
 
 
-## Biquaternion Non Relativistic Non Quantum Theory
+## 03. Biquaternion Non Relativistic Non Quantum Theory
 
 ## - Generalities
 
@@ -254,7 +268,7 @@
 
 
 
-## Biquaternion Electromagnetism
+## 04. Biquaternion Electromagnetism
 
 ### <a href="articles/maxwells-equations-in-biquaternionic-form.html">Maxwell's Equations in the Biquaternionic Formulation</a>
 
@@ -283,7 +297,7 @@
 
 
 
-## Biquaternion Relativity
+## 05. Biquaternion Relativity
 
 ### <a href="articles/relativistic-mechanics-in-biquaternionic-form.html">Relativistic Mechanics in Biquaternionic Form</a>
 
@@ -320,7 +334,7 @@
 
 
 
-## Biquaternion Relativistic Quantum Theory
+## 06. Biquaternion Relativistic Quantum Theory
 
 ## - Generalities
 
@@ -407,7 +421,7 @@
 
 
 
-## Biquaternion Relativistic Non Quantum Theory
+## 07. Biquaternion Relativistic Non Quantum Theory
 
 ## - Generalities
 
@@ -448,7 +462,7 @@
 
 
 
-## Biquaternion Quantum Fields
+## 08. Biquaternion Quantum Fields
 
 ## - Generalities
 
@@ -579,7 +593,7 @@
 
 
 
-## Biquaternion Particle Physics and Gauge Fields
+## 09. Biquaternion Particle Physics and Gauge Fields
 
 ## - Generalities
 
@@ -682,7 +696,7 @@
 
 
 
-## Biquaternion Gravity and Cosmology
+## 10. Biquaternion Gravity and Cosmology
 
 ### <a href="articles/curved-spacetime-and-the-biquaternion-framework.html">Curved Spacetime and the Biquaternion Framework</a>
 
@@ -703,7 +717,7 @@
 
 
 
-## Biquaternion Thermodynamics and Statistical Mechanics
+## 11. Biquaternion Thermodynamics and Statistical Mechanics
 
 ### <a href="articles/the-partition-function-in-biquaternionic-form.html">The Partition Function in Biquaternionic Form</a>
 

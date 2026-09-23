@@ -1,4 +1,3 @@
-
 # __The Hydrogen Atom in Biquaternionic Form — The Non-Relativistic Case__
 
 ## Introduction

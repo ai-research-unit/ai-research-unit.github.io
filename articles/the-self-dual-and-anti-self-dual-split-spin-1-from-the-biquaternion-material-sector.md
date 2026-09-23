@@ -1,4 +1,3 @@
-
 # __The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector__
 
 ## Introduction

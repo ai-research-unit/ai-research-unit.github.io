@@ -1,4 +1,3 @@
-
 # __The Two-Sheeted Cover and the Topology of Boosts in Biquaternionic Form__
 
 ## Introduction

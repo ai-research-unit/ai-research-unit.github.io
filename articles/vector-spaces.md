@@ -1,4 +1,3 @@
-
 # __Vector Spaces : A General Introduction__
 
 ## Introduction

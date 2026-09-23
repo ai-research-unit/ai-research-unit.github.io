@@ -1,4 +1,3 @@
-
 # __Exercise: The Reduced State of an Entangled Subsystem__
 
 ## Introduction

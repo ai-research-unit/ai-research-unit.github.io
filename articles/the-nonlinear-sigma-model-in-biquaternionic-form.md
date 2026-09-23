@@ -1,4 +1,3 @@
-
 # __The Nonlinear Sigma Model in Biquaternionic Form__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Fueter Theory for Biquaternions__
 
 ## Introduction

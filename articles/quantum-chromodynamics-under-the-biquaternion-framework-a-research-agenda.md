@@ -1,4 +1,3 @@
-
 # __Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __The Yang–Mills Equation in Biquaternionic Form__
 
 ## Introduction
@@ -333,6 +332,6 @@ The biquaternionic packaging is exact for the current, $\mathcal{J} = \sum_\nu J
 - *Instantons and Solitons in Biquaternionic Form* — the self-dual truncation $D_\mu F^{\mu\nu} = 0$ and the topological charge built from the Bianchi identity.
 - *Lie Algebras: A General Introduction* — the Jacobi identity, the adjoint action as a derivation, and the commutator bracket on an associative algebra.
 - *Biquaternion Algebra* and *Quaternion Algebra* — the multiplication rule, the conjugations and the center used throughout.
-- *$\mathbb{M}_-$ as the Material Subspace* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathfrak{su}(2)$ gauge factor rests.
-- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
+- *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the sector basis and the imaginary-scalar/real-vector structure on which the $\mathfrak{su}(2)$ gauge factor rests.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the Hermitian sector and the trace formula distinguished here from the matrix trace.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.

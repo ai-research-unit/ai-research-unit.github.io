@@ -1,4 +1,3 @@
-
 # __The Poincaré Group and the Biquaternion Frame__
 
 ## Introduction

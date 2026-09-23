@@ -1,4 +1,3 @@
-
 # __Complex Algebra__
 
 ## Introduction

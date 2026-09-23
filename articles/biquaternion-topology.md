@@ -1,4 +1,3 @@
-
 # __Biquaternion Topology__
 
 ## Introduction

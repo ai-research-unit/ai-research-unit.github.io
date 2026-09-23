@@ -1,4 +1,3 @@
-
 # __Exercise: The Bloch Ball and the Geometry of Mixed States__
 
 ## Introduction

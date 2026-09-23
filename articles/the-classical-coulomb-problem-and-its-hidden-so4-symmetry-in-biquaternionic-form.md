@@ -1,4 +1,3 @@
-
 # __The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form__
 
 ## Introduction

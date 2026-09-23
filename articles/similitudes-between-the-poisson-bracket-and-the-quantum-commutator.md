@@ -1,4 +1,3 @@
-
 # __Similitudes Between the Poisson Bracket and the Quantum Commutator__
 
 ## Introduction
@@ -364,6 +363,6 @@ In the biquaternion framework, the observables are the Hermitian elements of $\m
 - *Spin-1/2 Quantum Mechanics in Biquaternionic Form* (`articles/spin-1-2-quantum-mechanics-in-biquaternionic-form.md`), for the identification of $\mathbb{M}_+$ with the qubit observables and the isomorphism $e_k\mapsto-i\sigma_k$ used throughout the framework section.
 - *The Harmonic Oscillator in Biquaternionic Form* (`articles/the-harmonic-oscillator-in-biquaternionic-form.md`), for the proof that $[\tilde X,\tilde P]=i\hbar e_0$ has no solution in $\mathbb{M}_+$ — the trace obstruction that blocks the canonical sector inside $\mathbb{B}$.
 - *Biquaternion Automorphisms and Derivations* (`articles/biquaternion-automorphisms-and-derivations.md`), for the algebra-level meaning of "derivation" and for the inner derivations $\mathrm{ad}_a=[a,\cdot]$, the biquaternion instance of the commutator-as-derivation used in the article.
-- *$\mathbb{M}_+$ as the Informational Subspace* (`articles/m-plus-as-the-informational-subspace.md`), for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.
+- *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* (`articles/the-hermitian-subspace-m-plus-as-the-informational-sector.md`), for the role of $\mathbb{M}_+$ as the operator space and the reversible/irreversible dichotomy.
 - *Quantum Mechanics: Foundations and Structure* (`articles/quantum-mechanics-foundations-and-structure.md`), for the postulational account of observables, commutators, and the classical limit against which the correspondence is stated.
 - *The Schrödinger Equation in Biquaternionic Form* (`articles/the-schrodinger-equation-in-biquaternionic-form.md`), for the Heisenberg-picture dynamics $\dot{\hat f}=(1/i\hbar)[\hat f,\hat H]$ and the observable/generator split inside the algebra.

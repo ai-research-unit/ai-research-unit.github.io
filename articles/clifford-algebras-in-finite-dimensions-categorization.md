@@ -1,4 +1,3 @@
-
 # __Clifford Algebras in Finite Dimensions categorization__
 
 ## Introduction

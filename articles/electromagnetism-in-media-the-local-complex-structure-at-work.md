@@ -1,4 +1,3 @@
-
 # __Electromagnetism in Media — The Local Complex Structure at Work__
 
 ## Introduction

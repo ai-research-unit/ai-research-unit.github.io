@@ -1,4 +1,3 @@
-
 # __The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form__
 
 ## Introduction

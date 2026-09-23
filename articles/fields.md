@@ -1,4 +1,3 @@
-
 # __Fields__
 
 ## Introduction

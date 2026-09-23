@@ -1,4 +1,3 @@
-
 # __The Empirical Status of the Biquaternion Framework__
 
 ## Introduction
@@ -231,8 +230,8 @@ The main result is therefore negative, and meant to be: the framework currently 
 
 - *Introduction to the Biquaternion Universe*, for the framework hypothesis and its list of open questions.
 - *Why Complexify Spacetime?*, for the motivation of the complex structure and its explicit disclaimer of empirical predictions.
-- *M- as the Material Subspace*, for the identification of the four-vector sector and its signature.
-- *M+ as the Informational Subspace*, for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
+- *The Anti-Hermitian Subspace M- as the Material Sector*, for the identification of the four-vector sector and its signature.
+- *The Hermitian Subspace M+ as the Informational Sector*, for the informational hypothesis, the disclaimer that the imaginary directions are not extra space, and the admission that it makes no distinguishing prediction.
 - *Quantum Mechanics in Biquaternionic Form*, for the exact reproduction of the single-qubit formalism.
 - *Relativistic Mechanics in Biquaternionic Form*, for the transcription of the ten mechanical formulas.
 - *The Electron in Biquaternionic Form*, for the tree-level $g=2$ and the absence of the anomaly.

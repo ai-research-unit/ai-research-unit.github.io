@@ -1,4 +1,3 @@
-
 # __Orthogonal Transformations__
 
 ## Introduction

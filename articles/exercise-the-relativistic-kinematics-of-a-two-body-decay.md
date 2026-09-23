@@ -1,4 +1,3 @@
-
 # __Exercise: The Relativistic Kinematics of a Two-Body Decay__
 
 ## Introduction

@@ -1,4 +1,3 @@
-
 # __Canonical Quantization of the Biquaternion Graviton Field__
 
 ## Introduction

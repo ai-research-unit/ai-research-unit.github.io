@@ -1,4 +1,3 @@
-
 # __Magnetic Resonance and Rabi Oscillations in Biquaternionic Form__
 
 ## Introduction

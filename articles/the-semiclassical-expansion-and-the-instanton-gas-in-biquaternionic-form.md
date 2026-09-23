@@ -1,4 +1,3 @@
-
 # __The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form__
 
 ## Introduction

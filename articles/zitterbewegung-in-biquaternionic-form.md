@@ -1,4 +1,3 @@
-
 # __Zitterbewegung in Biquaternionic Form__
 
 ## Introduction
@@ -241,4 +240,4 @@ The structural claim that motivated the article fails. The positive- and negativ
 - J. J. Sakurai, *Advanced Quantum Mechanics* (Addison-Wesley, 1967), for the Zitterbewegung and the non-relativistic limit.
 - W. Greiner, *Relativistic Quantum Mechanics: Wave Equations* (Springer, 2000), for a detailed step-by-step account of the trembling motion.
 - P. A. M. Dirac, *The Principles of Quantum Mechanics* (Oxford, 1930), for the velocity operator and its eigenvalues.
-- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, *$\mathbb{M}_-$ as the Material Subspace*, and *$\mathbb{M}_+$ as the Informational Subspace*.
+- The companion articles of this series: *The Dirac Equation in Biquaternionic Form*, *The Biquaternion Dirac Equation — Solutions and Non-Relativistic Limit*, *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*, and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.

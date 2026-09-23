@@ -1,4 +1,3 @@
-
 # __Addition of Angular Momenta and Clebsch–Gordan Coefficients in Biquaternionic Form__
 
 ## Introduction

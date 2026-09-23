@@ -1,4 +1,3 @@
-
 # __The Pion and the Chiral Lagrangian in Biquaternionic Form__
 
 ## Introduction

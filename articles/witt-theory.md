@@ -1,4 +1,3 @@
-
 # __Witt Theory__
 
 ## Introduction

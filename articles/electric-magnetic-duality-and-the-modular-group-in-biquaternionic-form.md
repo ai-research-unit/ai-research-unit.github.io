@@ -1,4 +1,3 @@
-
 # __Electric–Magnetic Duality and the Modular Group in Biquaternionic Form__
 
 ## Introduction
