@@ -218,15 +218,13 @@ The three quantized fields of this subcategory — the vector, the Rarita–Schw
 
 In each case the carrier is a tensor product of a lower-spin object with the **material vector index** — the triplet $V$ for the integer cases, the material four-vector for the Rarita–Schwinger field, whose spatial part is the same triplet — on which the adjoint action generates the spin-one rotation: the vector field is $V$ itself, with dimension three; the Rarita–Schwinger field is the material four-vector tensored with the spinor $S$, of dimension sixteen, reduced to twelve by the $\gamma$-trace constraint; and the graviton is the symmetric trace-free square of $V$, with dimension five. In each case a projector built from the algebra's invariant form selects the top-spin component: the metric pairing for the integer cases, the $\gamma$-trace for the half-integer one, and the traceless-and-symmetric projection for the graviton. And in each case the physical count is the standard one: $2s+1$ states for the massive field, and two states of helicity $\pm s$ for the massless field.
 
-$$
-\begin{array}{c|c|c|c}
-s & \text{carrier} & \dim & \text{massive} \to \text{massless} \\
-\hline
-1 & V & 3 & 3 \to 2 \\
-\tfrac32 & (\text{material four-vector})\otimes S & 12\ (4\ \text{on shell}) & 4 \to 2 \\
-2 & (V\odot V)_{\text{traceless}} & 5 & 5 \to 2
-\end{array}
-$$
+
+| $s$ | $\text{carrier}$ | $\dim$ | $\text{massive} \to \text{massless}$ |
+|---|---|---|---|
+| $1$ | $V$ | $3$ | $3 \to 2$ |
+| $\tfrac32$ | $(\text{material four-vector})\otimes S$ | $12\ (4\ \text{on shell})$ | $4 \to 2$ |
+| $2$ | $(V\odot V)_{\text{traceless}}$ | $5$ | $5 \to 2$ |
+
 
 The massless limit takes the count to two in every case, because the gauge symmetry removes the helicities below $s$; the framework sees this as the removal of the lower-spin components that the tensor product contains, and the projector that performs the removal is the same one that defines the field. The pattern is not a derivation of the fields — their existence and their couplings are inputs — but it is a uniform account of why the higher-spin fields have the carriers, the constraints, and the counts that they do.
 

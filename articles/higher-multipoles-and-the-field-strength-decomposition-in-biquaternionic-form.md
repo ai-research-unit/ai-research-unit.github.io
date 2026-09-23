@@ -18,8 +18,8 @@ The two decompositions are independent — they are different splittings of the 
 The conventions are those of the companion articles:
 
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the four-vectors and the material sector.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the four-vectors and the material sector.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector.
 - Companion article *Conventions in the Biquaternion Universe*, for the metric at its three levels, the d'Alembertian, and the conventions of presentation.
 - Companion article *Maxwell's Equations in the Biquaternionic Formulation*, for the potential and field-strength biquaternions.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for $\tilde{F}$, the Riemann–Silberstein vector, the self-dual decomposition, and the invariants.

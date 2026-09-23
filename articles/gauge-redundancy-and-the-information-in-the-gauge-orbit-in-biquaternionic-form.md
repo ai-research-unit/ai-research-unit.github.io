@@ -250,7 +250,7 @@ The framework's gauge group is not put in by hand: it is the unitary part of the
 
 **The orbit is a material-sector structure.** The connection lies in $\mathbb{M}_-$, and the gauge transformation shifts it by the gradient of a real scalar, which is again in $\mathbb{M}_-$. The orbit is therefore an orbit inside the material sector. The gauge group acts on it, but the group is one-dimensional precisely because it is the centre, and a central action on $\mathbb{M}_-$ is a shift by the identity direction.
 
-**The informational sector is blind to the orbit.** As established above, a central phase acts trivially on $\mathbb{M}_+$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational reading of *$\mathbb{M}_+$ as the Informational Space*, the gauge orbit is not an unmeasured variable; it is a **non-variable**. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.
+**The informational sector is blind to the orbit.** As established above, a central phase acts trivially on $\mathbb{M}_+$. The informational sector — states, observables, measurements — carries no variable conjugate to the gauge orbit. In the operational reading of *$\mathbb{M}_+$ as the Informational Subspace*, the gauge orbit is not an unmeasured variable; it is a **non-variable**. There is no observable whose outcome distribution differs across the orbit, so the orbit cannot appear in any information-theoretic accounting of the sector.
 
 **The one place the two sectors meet is the holonomy.** The Wilson loop is the trace of the holonomy — a material connection integrated along a curve and exponentiated into the informational realization of the group — and its gauge invariance is the invariance of the scalar part under the adjoint action. It is the single object in which the orbit's global structure is paired with an informational trace. The reading of that pairing is the open question the Wilson-loop article records; here it is enough to note that the pairing is where the redundancy stops being invisible and starts being a physical number.
 
@@ -271,7 +271,7 @@ The boundary is drawn as in the companion articles.
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the adjoint transformation law and the non-abelian orbit.
 - Companion article *Wilson Loops in Biquaternionic Form*, for the holonomy, the loop as a two-sector bilinear, and the small-loop expansion.
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the constraint structure and the absent gauge-fixing principle.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the state space, the trace, and the absence of an observable conjugate to the central phase.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the state space, the trace, and the absence of an observable conjugate to the central phase.
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the relative entropy and its invariance under unitary conjugation.
 - Companion article *Confinement and the Loss of Partonic Information in Biquaternionic Form*, for the loss case against which this article's redundancy is defined.
 - Companion article *The Higgs Mechanism as an Erasure of Information in Biquaternionic Form*, for the relocation case against which this article's redundancy is defined.

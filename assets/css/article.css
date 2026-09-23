@@ -102,6 +102,49 @@
   line-height: 1.5;
 }
 
+/* ===== Tables =====
+   Ruled-grid style: every cell gets a rule, so a Markdown table reads like the
+   grid tables this series used to write as LaTeX arrays. */
+.article-body table {
+  border-collapse: collapse;
+  margin: 1.4rem 0;
+  font-size: var(--size-base);
+}
+.article-body th,
+.article-body td {
+  border: 1px solid var(--color-border);
+  padding: 0.4rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.article-body thead th {
+  background: var(--color-surface);
+  font-family: var(--font-ui);
+  font-size: var(--size-sm);
+  font-weight: 600;
+}
+.article-body table .katex { font-size: 1em; }
+
+/* Wide tables scroll inside their own box instead of widening the page.
+   The wrapper is added by build.py: a <table> cannot clip its own overflow.
+   `contain: paint` is needed because without it Chrome still counts the
+   table's overflow in the document's scrollable area, giving the page a
+   horizontal scrollbar even though the wrapper clips. */
+.article-body .table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  contain: paint;
+  margin: 1.4rem 0;
+}
+.article-body .table-scroll > table {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .article-body th,
+  .article-body td { padding: 0.3rem 0.45rem; }
+}
+
 /* ===== KaTeX math rendering ===== */
 .article-body .katex-display {
   overflow-x: auto;

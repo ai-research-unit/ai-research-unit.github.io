@@ -298,6 +298,6 @@ The article commits throughout to the agenda's central discipline: no section as
 - *The Spinor-Helicity Formalism and Biquaternions* — the corpus's explicit statement that the framework "does not contain a colored gauge theory"; the transcription boundary this agenda makes systematic.
 - *The Empirical Status of the Biquaternion Framework* — the standing empirical-equivalence result, the caution under which any biquaternionic Standard Model would labour.
 - *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* — the companion agenda whose three-way classification and settling-object discipline this article follows.
-- *$\mathbb{M}_-$ as the Material Space* and *$\mathbb{M}_+$ as the Informational Space* — the two sectors, the four-vectors, and the trace formula on which the whole account rests.
+- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace* — the two sectors, the four-vectors, and the trace formula on which the whole account rests.
 - *Introduction to the Biquaternion Universe* — the algebra, the conjugations, and the research-program framing inherited throughout.
 

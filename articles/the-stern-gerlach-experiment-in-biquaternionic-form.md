@@ -21,7 +21,7 @@ The companion articles supply the pieces:
 - Companion article *Spin-1/2 Quantum Mechanics in Biquaternionic Form*, for the spin operators, the idempotents and the Born rule.
 - Companion article *Exercise: Measuring Spin Along an Arbitrary Direction*, for the rotated-analyser probabilities.
 - Companion article *Exercise: Successive Measurements of Spin*, for the algebra of successive measurements.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the trace formula and the pure-state idempotents.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the trace formula and the pure-state idempotents.
 - Companion article *The Measurement Problem in Algebraic Form*, for the projective rule and the fate of the coherence.
 
 ## The Experiment and the Standard Account
@@ -281,7 +281,7 @@ so the last analyser finds "up" and "down" with equal probability: the intermedi
 
 1. **The continuous Stern–Gerlach effect.** When the field is not perfectly aligned and the beam is not perfectly collimated, the two spots acquire a small asymmetry and the measurement is weak rather than projective. Does the algebra's description of the weak-measurement limit — a partial entanglement with the position — have structural content beyond the partial trace used above?
 
-2. **The spatial wavepacket as a material-sector object.** The deflection lives in the spatial part of $\mathbb{M}_-$, while the spin lives in $\mathbb{M}_+$. Is there a formulation in which the spin–position entanglement is written as an element of a single algebra, rather than as a tensor product of an informational and a material factor? The companion article *$\mathbb{M}_+$ as the Informational Space* leaves the coupling between the sectors open, and the Stern–Gerlach entanglement is a concrete instance of it.
+2. **The spatial wavepacket as a material-sector object.** The deflection lives in the spatial part of $\mathbb{M}_-$, while the spin lives in $\mathbb{M}_+$. Is there a formulation in which the spin–position entanglement is written as an element of a single algebra, rather than as a tensor product of an informational and a material factor? The companion article *$\mathbb{M}_+$ as the Informational Subspace* leaves the coupling between the sectors open, and the Stern–Gerlach entanglement is a concrete instance of it.
 
 3. **The role of the field gradient in the algebra.** The coupling $\tilde{H} = -\gamma B(z)\tilde{S}_3$ uses the material coordinate $z$ as a parameter multiplying an informational observable. Is there an algebraic object that generates this parameter dependence, or is the gradient an external field in the strict sense?
 

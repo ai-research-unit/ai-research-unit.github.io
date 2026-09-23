@@ -292,4 +292,4 @@ The extension is a transcription of standard canonical quantization into the fra
 - F. Strocchi, *An Introduction to the Non-Perturbative Foundations of Quantum Field Theory* (Oxford, 2013), for the constraint and gauge-structure analysis on which the first-class counting rests.
 - I. Białynicki-Birula and Z. Białynicka-Birula, "The role of the Riemann–Silberstein vector in classical and quantum theories of electromagnetism," *Journal of Physics A* **46** (2013) 053001, for the complex-vector formulation and its quantization.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic Maxwell equation and the operator factorization used here.
-- Companion articles: *Maxwell's Equations in the Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *$\mathbb{M}_-$ as the Material Space*; *$\mathbb{M}_+$ as the Informational Space*.
+- Companion articles: *Maxwell's Equations in the Biquaternionic Form*; *Canonical Quantization of the Biquaternion Dirac Field*; *$\mathbb{M}_-$ as the Material Subspace*; *$\mathbb{M}_+$ as the Informational Subspace*.

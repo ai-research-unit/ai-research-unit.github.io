@@ -21,7 +21,7 @@ The article is organised as follows. The next section sets up the background and
 - Companion article *Bogoliubov Transformations in Biquaternionic Form*, for the general theory of the mixing, its canonical normalization, and its realization as a squeezing of the Fock space.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation and its frequency branches.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the conserved $U(1)$ current $\tilde J\in\mathbb{M}_-$ and the charge.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-wavevector and the norm form.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-wavevector and the norm form.
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. Natural units $\hbar=c=1$ are used throughout, with $E_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and $\mu=mc/\hbar$; dimensionful factors are restored where they carry meaning. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex. A dot denotes $\partial_t$.
 

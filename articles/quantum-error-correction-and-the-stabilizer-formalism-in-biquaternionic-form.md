@@ -144,13 +144,11 @@ verified for all $i,j$. A single bit flip is therefore correctable.
 
 A bit flip on the $i$-th qubit anticommutes with the stabilizers that involve $Z_i$, so measuring the two generators yields a two-bit **syndrome** that identifies which qubit flipped:
 
-$$
-\begin{array}{c|cccc}
-\text{error} & e_0^{\otimes3} & X_1 & X_2 & X_3\\[2pt]
-\hline
-\text{syndrome } (s_{Z_1Z_2},\,s_{Z_2Z_3}) & (0,0) & (1,0) & (1,1) & (0,1)
-\end{array}
-$$
+
+| $\text{error}$ | $e_0^{\otimes3}$ | $X_1$ | $X_2$ | $X_3$ |
+|---|---|---|---|---|
+| $\text{syndrome } (s_{Z_1Z_2},\,s_{Z_2Z_3})$ | $(0,0)$ | $(1,0)$ | $(1,1)$ | $(0,1)$ |
+
 
 where the syndrome bit $s_{g}$ is $0$ if the error commutes with the generator $g$ and $1$ if it anticommutes. The four syndromes are distinct, so the error is identified. The measurement is a joint measurement of commuting observables, and in the framework it is the projection onto the joint eigen-idempotents of $Z_1Z_2$ and $Z_2Z_3$ — a Peirce decomposition of the commutative subalgebra they generate. The correction is the application of $X_i$ to the identified qubit.
 

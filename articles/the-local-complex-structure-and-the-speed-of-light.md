@@ -198,8 +198,8 @@ The reading closes no empirical gap and claims no global structure. Its content 
 
 - *Introduction to the Biquaternion Universe*, for the two sectors, the local complex structure, and the statement that $c=1/\sqrt{\epsilon\mu}$ is the local scale factor of the structure.
 - *Why Complexify Spacetime?*, for the $ict$ convention, the $SO(4,\mathbb C)$ rotation picture, and the limitations of the global convention.
-- *$\mathbb{M}_-$ as the Material Space*, for the norm form of signature $(3,1)$, the basis $\{ie_0,e_1,e_2,e_3\}$, and the zero-divisor light cone.
-- *$\mathbb{M}_+$ as the Informational Space*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
+- *$\mathbb{M}_-$ as the Material Subspace*, for the norm form of signature $(3,1)$, the basis $\{ie_0,e_1,e_2,e_3\}$, and the zero-divisor light cone.
+- *$\mathbb{M}_+$ as the Informational Subspace*, for the complementary sector and the exchange $i\mathbb{M}_-=\mathbb{M}_+$ by multiplication by $i$.
 - *A Brief History of Biquaternions in Physics*, for the displacement of the $ict$ convention and its relation to the abandonment of the complex formalism.
 - *Electromagnetism in Media — The Local Complex Structure at Work*, the parent article, for the medium conventions, the local and spectral scale $c(\omega)$, and the boundaries of the structure near absorption.
 - *Maxwell's Equations in the Biquaternionic Formulation*, for the biquaternionic gradient, the d'Alembertian, and the medium form of Maxwell's equations.

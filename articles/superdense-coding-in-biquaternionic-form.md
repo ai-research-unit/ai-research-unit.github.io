@@ -70,16 +70,14 @@ Because $e_k$ is a unit quaternion, the map is an inner automorphism of the firs
 
 Conjugation by $e_k\otimes e_0$ permutes the four Bell idempotents. Explicit computation gives
 
-$$
-\begin{array}{c|c}
-\text{operation} & \text{state received by Bob}\\[2pt]
-\hline
-e_0\ \ (I) & P_{\Phi^+}\\[2pt]
-e_1\ \ (\sigma_1) & P_{\Psi^+}\\[2pt]
-e_2\ \ (\sigma_2) & P_{\Psi^-}\\[2pt]
-e_3\ \ (\sigma_3) & P_{\Phi^-}
-\end{array}
-$$
+
+| $\text{operation}$ | $\text{state received by Bob}$ |
+|---|---|
+| $e_0\ \ (I)$ | $P_{\Phi^+}$ |
+| $e_1\ \ (\sigma_1)$ | $P_{\Psi^+}$ |
+| $e_2\ \ (\sigma_2)$ | $P_{\Psi^-}$ |
+| $e_3\ \ (\sigma_3)$ | $P_{\Phi^-}$ |
+
 
 so that the four operations produce the four distinct Bell states, one for each. The map $k\mapsto$ (Bell state) is a bijection of the four-element encoding set onto the four-element Bell basis: the encoding is the **regular action** of the Klein four-group on its own elements, a sharply transitive abelian group of permutations. Each operation acts as an involution, since conjugation by $e_k$ twice is conjugation by the central element $e_k^2 = -e_0$, which is trivial; the codeword is the group element Alice applied.
 

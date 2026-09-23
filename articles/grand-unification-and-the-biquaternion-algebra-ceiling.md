@@ -11,13 +11,12 @@ $$
 
 into a single simple group $G_{\mathrm{GUT}}$, so that the three independent couplings become one at a high scale and the electric charge is quantised by the group's structure. The standard candidates are Georgi–Glashow $SU(5)$, Pati–Salam $SU(4)\times SU(2)_L\times SU(2)_R$, $SO(10)$ and $E_6$, with characteristic ranks and dimensions:
 
-$$
-\begin{array}{c|cccc}
- & SU(3)\times SU(2)\times U(1) & SU(5) & SO(10) & E_6\\ \hline
-\text{rank} & 2+1+1=4 & 4 & 5 & 6\\
-\text{dimension} & 8+3+1=12 & 24 & 45 & 78
-\end{array}
-$$
+
+|  | $SU(3)\times SU(2)\times U(1)$ | $SU(5)$ | $SO(10)$ | $E_6$ |
+|---|---|---|---|---|
+| $\text{rank}$ | $2+1+1=4$ | $4$ | $5$ | $6$ |
+| $\text{dimension}$ | $8+3+1=12$ | $24$ | $45$ | $78$ |
+
 
 The preceding article of this group, *The Gauge Group Ceiling: Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, proved that the biquaternion algebra's intrinsic compact gauge structure is
 

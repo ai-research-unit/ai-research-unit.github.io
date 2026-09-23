@@ -314,8 +314,8 @@ along $\mathbf{a}\times\mathbf{v}$, and the non-relativistic limit $\boldsymbol{
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe*, for the algebra and the two sectors.
-- *$\mathbb{M}_-$ as the Material Space*, for the four-vectors and the rotor conjugation on $\mathbb{M}_-$.
-- *$\mathbb{M}_+$ as the Informational Space*, for the boost biquaternion as an element of $\mathbb{M}_+$.
+- *$\mathbb{M}_-$ as the Material Subspace*, for the four-vectors and the rotor conjugation on $\mathbb{M}_-$.
+- *$\mathbb{M}_+$ as the Informational Subspace*, for the boost biquaternion as an element of $\mathbb{M}_+$.
 - *Relativistic Mechanics in Biquaternionic Form*, for the four-velocity, four-momentum, and four-force.
 - *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor, the square-root relation, and the polar decomposition.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Wigner angle, its axis, and its leading approximation.

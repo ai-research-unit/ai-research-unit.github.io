@@ -39,11 +39,32 @@ def restore_math(html_text, store):
         html_text = html_text.replace(f"\x00MATH{i}\x00", chunk)
     return html_text
 
+TABLE_RE = re.compile(r"<table>.*?</table>", re.DOTALL)
+
+# Markdown requires a header row, so a table that has none (the bare
+# Mermin-Peres square) comes through with a fully empty <thead>. Drop it, or it
+# renders as a shaded band above the data.
+EMPTY_THEAD_RE = re.compile(
+    r"<thead>\s*<tr>\s*(?:<th[^>]*>\s*</th>\s*)+</tr>\s*</thead>", re.DOTALL)
+
+def drop_empty_thead(html_text):
+    return EMPTY_THEAD_RE.sub("", html_text)
+
+def wrap_tables(html_text):
+    """Wrap each table in its own scroll container.
+
+    A <table> cannot clip its own overflow, and setting display:block on it does
+    not reliably contain the scroll in Chrome (the anonymous table box escapes),
+    so wide tables would widen the whole page. A wrapper div does contain it.
+    """
+    html_text = drop_empty_thead(html_text)
+    return TABLE_RE.sub(lambda m: f'<div class="table-scroll">{m.group(0)}</div>', html_text)
+
 def md_to_html(md_text):
     """Markdown → HTML with math regions preserved verbatim."""
     protected, store = protect_math(md_text)
     html = markdown.markdown(protected, extensions=["extra", "toc"])
-    return restore_math(html, store)
+    return wrap_tables(restore_math(html, store))
 # ──────────────────────────────────────────────────────────────────────────
 
 

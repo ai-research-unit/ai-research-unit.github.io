@@ -95,15 +95,13 @@ $$
 
 On the two-qubit algebra $\mathbb{B}\otimes\mathbb{B}$, tensor these with $e_0$ and with one another to form the nine elements
 
-$$
-\begin{array}{c|c|c}
-\tilde{X}\otimes e_0 & e_0\otimes\tilde{X} & \tilde{X}\otimes\tilde{X}\\[2pt]
-\hline
-e_0\otimes\tilde{Z} & \tilde{Z}\otimes e_0 & \tilde{Z}\otimes\tilde{Z}\\[2pt]
-\hline
-\tilde{X}\otimes\tilde{Z} & \tilde{Z}\otimes\tilde{X} & \tilde{Y}\otimes\tilde{Y}
-\end{array}
-$$
+
+|  |  |  |
+|---|---|---|
+| $\tilde{X}\otimes e_0$ | $e_0\otimes\tilde{X}$ | $\tilde{X}\otimes\tilde{X}$ |
+| $e_0\otimes\tilde{Z}$ | $\tilde{Z}\otimes e_0$ | $\tilde{Z}\otimes\tilde{Z}$ |
+| $\tilde{X}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{X}$ | $\tilde{Y}\otimes\tilde{Y}$ |
+
 
 Each entry is Hermitian and squares to $e_0\otimes e_0$, so each has spectrum $\{\pm1\}$; this is why the array is called a **magic square**. The entries are the framework's transcription of the standard Mermin–Peres observables built from $\sigma_1,\sigma_2,\sigma_3$ and the identity, using the identification $\sigma_k\leftrightarrow ie_k$.
 
@@ -111,17 +109,14 @@ Each entry is Hermitian and squares to $e_0\otimes e_0$, so each has spectrum $\
 
 Within each row and each column the three entries commute, so their product is unambiguous. Direct computation in the biquaternion algebra — using $(x\otimes y)(x'\otimes y') = (xx')\otimes(yy')$ and the products of the units — gives
 
-$$
-\begin{array}{c|c|c||c}
- & \text{column }1 & \text{column }2 & \text{column }3\\[2pt]
-\hline
-\text{row }1 & \tilde{X}\otimes e_0 & e_0\otimes\tilde{X} & \tilde{X}\otimes\tilde{X} & \prod = e_0\otimes e_0\\[2pt]
-\text{row }2 & e_0\otimes\tilde{Z} & \tilde{Z}\otimes e_0 & \tilde{Z}\otimes\tilde{Z} & \prod = e_0\otimes e_0\\[2pt]
-\text{row }3 & \tilde{X}\otimes\tilde{Z} & \tilde{Z}\otimes\tilde{X} & \tilde{Y}\otimes\tilde{Y} & \prod = e_0\otimes e_0\\[2pt]
-\hline
- & \prod = e_0\otimes e_0 & \prod = e_0\otimes e_0 & \prod = -e_0\otimes e_0 &
-\end{array}
-$$
+
+|  | $\text{column }1$ | $\text{column }2$ | $\text{column }3$ | $\text{row product}$ |
+|---|---|---|---|---|
+| **row 1** | $\tilde{X}\otimes e_0$ | $e_0\otimes\tilde{X}$ | $\tilde{X}\otimes\tilde{X}$ | $\prod = e_0\otimes e_0$ |
+| **row 2** | $e_0\otimes\tilde{Z}$ | $\tilde{Z}\otimes e_0$ | $\tilde{Z}\otimes\tilde{Z}$ | $\prod = e_0\otimes e_0$ |
+| **row 3** | $\tilde{X}\otimes\tilde{Z}$ | $\tilde{Z}\otimes\tilde{X}$ | $\tilde{Y}\otimes\tilde{Y}$ | $\prod = e_0\otimes e_0$ |
+| **column product** | $\prod = e_0\otimes e_0$ | $\prod = e_0\otimes e_0$ | $\prod = -e_0\otimes e_0$ |  |
+
 
 That is: the product of every row is $+e_0\otimes e_0$, the products of the first two columns are $+e_0\otimes e_0$, and the product of the third column is $-e_0\otimes e_0$. Each of these statements was verified by explicit multiplication in the algebra of the sixteen basis elements $e_a\otimes e_b$, and each row and column was verified to be a commuting set.
 

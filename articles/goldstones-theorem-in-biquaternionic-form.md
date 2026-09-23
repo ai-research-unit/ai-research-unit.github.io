@@ -21,7 +21,7 @@ The article is organised as follows. The next section states the symmetry and it
 - Companion article *Scalar Pair Creation in Biquaternionic Form*, for the external-background process and the mode equation with a time-dependent mass.
 - Companion article *The Scalar Field Path Integral in Biquaternionic Form*, for the vacuum functional and the effective action.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the construction of the current from the central scalar action.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-wavevector and the norm form.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-wavevector and the norm form.
 
 **Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the central scalar imaginary. The material and informational sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; the center is $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$. The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and $\Box=\tilde{\nabla}\bar{\tilde{\nabla}}=\partial_{ict}^2+\Delta$. The scalar field is $\tilde{\Phi}=\phi\,e_0$ with $\phi$ complex, written in real components as
 

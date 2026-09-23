@@ -25,8 +25,8 @@ The conventions are those of the companion articles. The biquaternion algebra is
 - Companion article *The Schrödinger Equation in Biquaternionic Form*, for the state module and the central Hamiltonian.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the minimal left ideal, the two chiral halves, the Lorentz action, and the bilinear pairings.
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the module-valued Dirac field and its scalar bilinears.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material sector, the four-vectors, and the norm form.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector, the idempotents, and the trace formula.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, the four-vectors, and the norm form.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector, the idempotents, and the trace formula.
 
 ## The State Module and the Spin It Carries
 
@@ -46,7 +46,7 @@ $$
 \hat{\mu}=\mu_1e_1+\mu_2e_2+\mu_3e_3,\quad \mu_1^2+\mu_2^2+\mu_3^2=1,\quad \mu_k\in\mathbb{R},
 $$
 
-are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the reading of the companion article *$\mathbb{M}_+$ as the Informational Space*. The **minimal left ideal**
+are primitive, Hermitian, and of trace one. They lie in $\mathbb{M}_+$, and they are the pure states of the informational sector in the reading of the companion article *$\mathbb{M}_+$ as the Informational Subspace*. The **minimal left ideal**
 
 $$
 \mathbb{B}\tilde{P}(\hat{\mu})=\{\tilde{Q}\tilde{P}(\hat{\mu}) : \tilde{Q}\in\mathbb{B}\}\cong\mathbb{C}^2

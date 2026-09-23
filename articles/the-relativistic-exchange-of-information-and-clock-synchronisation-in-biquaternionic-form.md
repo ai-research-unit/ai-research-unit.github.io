@@ -17,7 +17,7 @@ The article develops the following.
 - **A transported clock runs slow.** The reading of a clock carried along a worldline is the proper time of that worldline, $\Delta\tau = \int\sqrt{1-\mathbf{v}^2/c^2}\,dt \le t_B-t_A$, so a clock carried away and back reads less than one that stayed, and the inertial worldline between two events maximizes the proper time.
 - **Synchronisation is not transitive on a rotating platform.** The Sagnac effect makes the round trip directional, $\Delta t \simeq 4\boldsymbol{\Omega}\cdot\mathbf{A}/c^2$, so synchronising around a closed loop in the two directions gives two different results.
 
-The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *$\mathbb{M}_+$ as the Informational Space*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
+The exchange discussed here is the classical exchange of signals. It is not the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *$\mathbb{M}_+$ as the Informational Subspace*; the two share the algebra, and the information in question is carried by null displacements of $\mathbb{M}_-$.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements $i\alpha\,e_0+\mathbf{a}$ of imaginary scalar part and real vector part. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, the material coordinate is $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$, and the $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict}+\nabla$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and the frequency exchange was checked on a superposition of two wavevectors.
 
@@ -115,7 +115,7 @@ $$
 = \int_{t_A}^{t_B}\sqrt{1-\frac{\mathbf{v}(t)^2}{c^2}}\;dt .
 $$
 
-The biquaternion form has one structural advantage over the component form: the integrand is the norm form of the displacement, so the invariance of $\Delta\tau$ under a change of frame is the invariance of $N$ under the rotor conjugation, established in the companion articles *$\mathbb{M}_-$ as the Material Space* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
+The biquaternion form has one structural advantage over the component form: the integrand is the norm form of the displacement, so the invariance of $\Delta\tau$ under a change of frame is the invariance of $N$ under the rotor conjugation, established in the companion articles *$\mathbb{M}_-$ as the Material Subspace* and *Relativistic Mechanics in Biquaternionic Form*. No separate transformation law for the clock is needed; the clock is an integral of the algebra's own quadratic form.
 
 ### The Clock Four-Velocity
 
@@ -331,8 +331,8 @@ The conventions and the results taken over from the relativity series are those 
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the norm form and the causal trichotomy.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-vector, the interval and the proper-time parametrization.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector and its distinct informational reading.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-vector, the interval and the proper-time parametrization.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector and its distinct informational reading.
 - Companion article *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*, for the causal order, the relative-velocity bound and the cone as the characteristic cone of the wave operator.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion and the idempotent form of the null displacements.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the transformation of the scalar component.

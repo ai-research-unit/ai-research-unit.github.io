@@ -153,16 +153,15 @@ $$
 |\chi\rangle = \frac{1}{\sqrt2}\bigl(|\!\uparrow\uparrow\rangle + |\!\downarrow\downarrow\rangle\bigr)
 $$
 to be a maximally entangled state of $A$ and $B$, let $A$ carry the symmetric two-branch momentum superposition with $\theta = 0.8$ and speed $0.5c$, and let $B$ carry a sharp momentum along the boost axis. Boosting with rapidity $\psi$ gives, for the spin state after tracing the momentum,
-$$
-\begin{array}{c|c|c}
-\psi & C(\tilde{\rho}_{\mathrm{spin}}) & S(\tilde{\rho}_{\mathrm{spin}}) \\ \hline
-0 & 1.00000000 & 0.000000 \\
-0.5 & 0.99514440 & 0.024587 \\
-1.0 & 0.98127650 & 0.076532 \\
-1.5 & 0.96235320 & 0.134782 \\
-2.5 & 0.92765115 & 0.224468
-\end{array}
-$$
+
+| $\psi$ | $C(\tilde{\rho}_{\mathrm{spin}})$ | $S(\tilde{\rho}_{\mathrm{spin}})$ |
+|---:|---:|---:|
+| $0$ | $1.00000000$ | $0.000000$ |
+| $0.5$ | $0.99514440$ | $0.024587$ |
+| $1.0$ | $0.98127650$ | $0.076532$ |
+| $1.5$ | $0.96235320$ | $0.134782$ |
+| $2.5$ | $0.92765115$ | $0.224468$ |
+
 where $C$ is the concurrence and $S$ is the von Neumann entropy of the two-qubit spin state. The concurrence decreases monotonically with the boost rapidity and the entropy increases from zero, because the boost has turned the pure spin state into an equal mixture of two differently rotated copies. For this configuration the concurrence is exactly $\cos\alpha$, where $\alpha$ is the Wigner angle of a branch, so the entanglement loss is the same dephasing factor that the single-particle channel produced; the branch angles are $\alpha = 0.098585$, $0.193815$, $0.275265$, $0.382723$ at the four non-zero rapidities. At $\psi = 1$ the concurrence has fallen by about two per cent and at $\psi = 2.5$ by about seven per cent. The numbers are the exact output of the channel above, computed from the Wigner rotations of the biquaternion construction, and the effect vanishes at $\psi = 0$: the frame dependence is created by the boost and by the momentum spread together, and by neither alone.
 
 If both particles carry momentum superpositions whose branch directions differ, the effect is larger, because then the local channel is non-trivial on both factors. For $A$ superposed in the boost–$x$ plane at $\theta_A = 0.8$ and $B$ superposed in the boost–$y$ plane at $\theta_B = 2.0$, also at speed $0.5c$, the same initial state gives

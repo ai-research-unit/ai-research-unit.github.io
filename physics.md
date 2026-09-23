@@ -7,13 +7,15 @@
 
 ### <a href="articles/introduction-to-the-biquaternion-universe.html">Introduction to the Biquaternion Universe</a>
 
-### <a href="articles/m-as-the-material-space.html">M- as the Material Space</a>
-
-### <a href="articles/m-plus-as-the-informational-space.html">M+ as the Informational Space</a>
-
 ### <a href="articles/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
 
 ### <a href="articles/the-matrix-representation-in-the-biquaternion-universe.html">The Matrix Representation in the Biquaternion Universe</a>
+
+### <a href="articles/m-as-the-material-subspace.html">M- as the Material Subspace</a>
+
+### <a href="articles/m-plus-as-the-informational-subspace.html">M+ as the Informational Subspace</a>
+
+### <a href="articles/the-quaternion-and-antiquaternion-subspaces.html">The Quaternion and Antiquaternion Subspaces</a>
 
 ### <a href="articles/action-units-and-the-constants-of-the-biquaternion-universe.html">Action, Units, and the Constants of the Biquaternion Universe</a>
 
@@ -26,6 +28,8 @@
 ### <a href="articles/the-wick-rotation-in-the-biquaternion-universe.html">The Wick Rotation in the Biquaternion Universe</a>
 
 ### <a href="articles/twistor-theory-and-biquaternions.html">Twistor Theory and Biquaternions</a>
+
+### <a href="articles/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a>
 
 ### <a href="articles/the-empirical-status-of-the-biquaternion-framework.html">The Empirical Status of the Biquaternion Framework</a>
 
@@ -68,7 +72,6 @@
 
 ### <a href="articles/the-measurement-problem-in-algebraic-form.html">The Measurement Problem in Algebraic Form</a>
 
-### <a href="articles/what-the-biquaternion-algebra-cannot-do-a-catalogue-of-algebraic-obstructions.html">What the Biquaternion Algebra Cannot Do: A Catalogue of Algebraic Obstructions</a>
 
 ## - Particles of spin 0
 

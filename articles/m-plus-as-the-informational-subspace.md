@@ -1,5 +1,5 @@
 
-# __$\mathbb{M}_+$ as the Informational Space__
+# __$\mathbb{M}_+$ as the Informational Subspace__
 
 ## Introduction
 
@@ -26,10 +26,18 @@ $$
 where $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$. Explicitly, a biquaternion is in $\mathbb{M}_+$ if and only if it has the form
 
 $$
-\tilde{Q} = q_0\,e_0 + i q_1\,e_1 + i q_2\,e_2 + i q_3\,e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
+\tilde{Q} = q_0\,e_0 + i q'_1\,e_1 + i q'_2\,e_2 + i q'_3\,e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
 $$
 
-The scalar part is **real** and the vector part is **purely imaginary**. Equivalently, if we write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$, then $\tilde{Q} \in \mathbb{M}_+$ iff $Q_0$ is real and $Q_1, Q_2, Q_3$ are purely imaginary.
+The scalar part is **real** and the vector part is **purely imaginary**. Equivalently, if we write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$, then $\tilde{Q} \in \mathbb{M}_+$ iff $Q_0$ is real and $Q_1, Q_2, Q_3$ are purely imaginary — that is, $Q_0 = q_0$ and $Q_k = iq'_k$.
+
+**The two writings.** The four real parameters are the components of the informational coordinate, the temporal one scaled by $c$:
+
+$$
+\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3, \qquad q_0 = ct',\;\; q'_1 = x',\;\; q'_2 = y',\;\; q'_3 = z' .
+$$
+
+The left-hand writing is in the sector's own parameters and is the one used for algebraic statements; the right-hand one is in the coordinates of physics. The prime marks the coefficient that carries the $i$, which in $\mathbb{M}_+$ is the **three vectors** $q'_k$ — the space. The temporal parameter $q_0 = ct'$ is unprimed and real. This is the exact mirror of the material sector, where the prime sits on the scalar and not on the vectors: between them the two sectors use all eight parameters, and a general biquaternion has $Q_\mu = q_\mu + iq'_\mu$.
 
 A natural basis of $\mathbb{M}_+$ is
 
@@ -37,25 +45,25 @@ $$
 \{e_0,\; i\,e_1,\; i\,e_2,\; i\,e_3\}.
 $$
 
-As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3 \in \mathbb{M}_-$. (The square of a single element, by contrast, stays in $\mathbb{M}_+$: for $\tilde{Q} = q_0e_0 + i\mathbf{q}$ one has $\tilde{Q}^2 = q_0^2 + |\mathbf{q}|^2 + 2iq_0\mathbf{q}$.)
+As a real vector space, $\mathbb{M}_+$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: for example, $(ie_1)(ie_2) = -e_3 \in \mathbb{M}_-$. (The square of a single element, by contrast, stays in $\mathbb{M}_+$: for $\tilde{Q} = q_0e_0 + i\mathbf{q}'$ one has $\tilde{Q}^2 = q_0^2 + |\mathbf{q}'|^2 + 2iq_0\mathbf{q}'$.)
 
 ### Properties
 
 **Quadratic form.** The biquaternion **norm form** restricts to a real quadratic form on $\mathbb{M}_+$:
 
 $$
-N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq_1)^2 + (iq_2)^2 + (iq_3)^2 = q_0^2 - q_1^2 - q_2^2 - q_3^2.
+N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + (iq'_1)^2 + (iq'_2)^2 + (iq'_3)^2 = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = c^2t'^2 - x'^2 - y'^2 - z'^2.
 $$
 
-This is a real quadratic form of **signature** $(1,3)$: one positive direction (the scalar component $q_0$) and three negative directions (the vector components $q_1, q_2, q_3$). This is the **mirror image** of the signature on $\mathbb{M}_-$.
+This is a real quadratic form of **signature** $(1,3)$: one positive direction (the temporal one, whose coordinate is $ct'$) and three negative directions (the vector components $q'_1, q'_2, q'_3$). This is the **mirror image** of the signature on $\mathbb{M}_-$.
 
 **Zero divisors.** The norm form vanishes on the cone
 
 $$
-q_0^2 = q_1^2 + q_2^2 + q_3^2,
+q_0^2 = q'^2_1 + q'^2_2 + q'^2_3, \qquad \text{that is} \qquad c^2t'^2 = x'^2 + y'^2 + z'^2,
 $$
 
-which is the mirror image of the light cone of $\mathbb{M}_-$. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < q_1^2 + q_2^2 + q_3^2$, connected) and the two components of the region $N > 0$ ($q_0 > |\mathbf{q}|$ and $q_0 < -|\mathbf{q}|$).
+which is the mirror image of the light cone of $\mathbb{M}_-$. The complement of the cone has three connected components: the region $N < 0$ ($q_0^2 < q'^2_1 + q'^2_2 + q'^2_3$, connected) and the two components of the region $N > 0$ ($q_0 > |\mathbf{q}'|$ and $q_0 < -|\mathbf{q}'|$).
 
 **Not a division algebra.** As for $\mathbb{M}_-$, the presence of the zero divisor cone means that $\mathbb{M}_+$ is not a division algebra.
 
@@ -65,7 +73,9 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-,
 $$
 
-and they are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. Quaternion conjugation, by contrast, preserves each of the two subspaces: it negates the vector part and leaves the scalar part alone, so $iq_0 + \mathbf{q} \mapsto iq_0 - \mathbf{q}$ stays in $\mathbb{M}_-$ and $q_0 + i\mathbf{q} \mapsto q_0 - i\mathbf{q}$ stays in $\mathbb{M}_+$.
+and they are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$ and $i\mathbb{M}_- = \mathbb{M}_+$. Quaternion conjugation, by contrast, preserves each of the two subspaces: it negates the vector part and leaves the scalar part alone, so $iq'_0 + \mathbf{q} \mapsto iq'_0 - \mathbf{q}$ stays in $\mathbb{M}_-$ and $q_0 + i\mathbf{q}' \mapsto q_0 - i\mathbf{q}'$ stays in $\mathbb{M}_+$.
+
+**The halves it draws on.** The algebra splits twice — by real and imaginary part, $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and by Hermitian and anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ — and the two splits **cross**. $\mathbb{M}_+$ draws its scalar from the real half $\mathbb{H}_{\mathbb{B}}$ and its vectors from the imaginary half $i\mathbb{H}_{\mathbb{B}}$, exactly the reverse of $\mathbb{M}_-$; so $\mathbb{H}_{\mathbb{B}}$ is the scalar of $\mathbb{M}_+$ together with the vectors of $\mathbb{M}_-$. This is why the informational vectors $q'_k$ carry the primes while the informational scalar $q_0$ does not — three-and-one, mirroring the material sector, and the reason the prime pattern cannot be made uniform over either split alone.
 
 ### The Structural Mirror with $\mathbb{M}_-$
 
@@ -73,11 +83,14 @@ The two subspaces $\mathbb{M}_-$ and $\mathbb{M}_+$ are structurally complementa
 
 | Property | $\mathbb{M}_-$ (material) | $\mathbb{M}_+$ (informational) |
 |---|---|---|
-| Scalar part | Imaginary ($ict$) | Real ($ct'$) |
-| Vector part | Real ($x, y, z$) | Imaginary ($ix', iy', iz'$) |
-| Norm form | $-q_0^2 + q_1^2 + q_2^2 + q_3^2$ | $q_0^2 - q_1^2 - q_2^2 - q_3^2$ |
+| Element, sector parameters | $iq'_0e_0 + q_ke_k$ | $q_0e_0 + iq'_ke_k$ |
+| Element, physical coordinates | $ict\,e_0 + \mathbf{x}$ | $(ct')\,e_0 + i\mathbf{x}'$ |
+| Scalar part | Imaginary ($ict$), parameter $q'_0$ | Real ($ct'$), parameter $q_0$ |
+| Vector part | Real ($x, y, z$), parameters $q_k$ | Imaginary ($ix', iy', iz'$), parameters $q'_k$ |
+| Norm form, sector parameters | $-q'^2_0 + q_1^2 + q_2^2 + q_3^2$ | $q_0^2 - q'^2_1 - q'^2_2 - q'^2_3$ |
+| Norm form, physical coordinates | $-c^2t^2 + x^2 + y^2 + z^2$ | $c^2t'^2 - x'^2 - y'^2 - z'^2$ |
 | Signature | $(3, 1)$ | $(1, 3)$ |
-| Zero divisor cone | $q_0^2 = q_1^2 + q_2^2 + q_3^2$ | $q_0^2 = q_1^2 + q_2^2 + q_3^2$ |
+| Zero divisor cone | $q'^2_0 = q_1^2 + q_2^2 + q_3^2$, i.e. $c^2t^2 = \mathbf{x}^2$ | $q_0^2 = q'^2_1 + q'^2_2 + q'^2_3$, i.e. $c^2t'^2 = \mathbf{x}'^2$ |
 | Subalgebra? | No | No |
 
 The two subspaces are exchanged by multiplication by $i$: $i\mathbb{M}_+ = \mathbb{M}_-$. Quaternion conjugation does not exchange them, and neither does complex conjugation: both preserve each of the two subspaces. The exchange between the sectors is multiplication by $i$, which is not a conjugation at all. This exchange is the algebraic operation that underlies the extended Wick rotation (see the companion article on the Wick rotation).
@@ -271,7 +284,17 @@ The two subspaces are structural mirror images, and their coordinates reflect th
 - $\mathbb{M}_-$ has an **imaginary temporal coordinate** ($ict$) and **three real spatial coordinates** ($x, y, z$). The temporal direction is "non-material" in the sense that it cannot be touched; the spatial directions are "material" in the sense that they can be.
 - $\mathbb{M}_+$ has a **real temporal coordinate** ($ct'$) and **three imaginary spatial coordinates** ($ix', iy', iz'$). The temporal direction is "material" in the same sense as the spatial directions of $\mathbb{M}_-$; the spatial directions are "imaginary" in the same sense as the temporal direction of $\mathbb{M}_-$.
 
-This mirror structure is a structural feature of the algebra. It is the reason the two subspaces are natural complements.
+Written out in both writings, the mirror is
+
+$$
+\tilde{X} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 = ic\,t\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-,
+$$
+
+$$
+\tilde{H} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 = (ct')\,e_0 + (ix')\,e_1 + (iy')\,e_2 + (iz')\,e_3 \in \mathbb{M}_+,
+$$
+
+with $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$ on the material side and $q_0 = ct'$, $q'_1 = x'$, $q'_2 = y'$, $q'_3 = z'$ on the informational side. The same eight real numbers appear in both sectors; what changes between them is which slot carries the $i$, and hence which four parameters are primed. This mirror structure is a structural feature of the algebra. It is the reason the two subspaces are natural complements.
 
 ### What the Hypothesis Does and Does Not Claim
 
@@ -328,16 +351,20 @@ The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics o
 
 The **physical hypothesis** is that the mathematics reflects physics: that $\mathbb{M}_+$ is not only a mathematical structure but an **informational sector** of the world, physically realised in the same sense as the material sector. The hypothesis is offered as a research program. The mathematical structure is established; the empirical content is not yet specified. The article closes with the open questions that constitute the agenda for developing the hypothesis into a physical theory.
 
-The companion article, *$\mathbb{M}_-$ as the Material Space*, presents the established physics of the material sector. Together, the two articles describe the two complementary subspaces of the biquaternion algebra and the structural relation between them.
+The companion article, *$\mathbb{M}_-$ as the Material Subspace*, presents the established physics of the material sector. Together, the two articles describe the two complementary subspaces of the biquaternion algebra and the structural relation between them.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}$ | Biquaternion algebra |
-| $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector |
-| $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector |
-| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (home of the rotation rotors) |
+| $\mathbb{M}_+$ | Hermitian subspace: real scalar, imaginary vector; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
+| $\mathbb{M}_-$ | Anti-Hermitian subspace: imaginary scalar, real vector; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
+| $Q_\mu = q_\mu + iq'_\mu$ | Complex coefficient of $e_\mu$: $q_\mu$ its real part, $q'_\mu$ its imaginary part |
+| $\tilde{H} = q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
+| $\tilde{X} = iq'_0e_0 + q_ke_k = ict\,e_0 + \mathbf{x}$ | Material element, both writings; $q'_0 = ct$, $q_k = x_k$ |
+| $\mathbb{H}_{\mathbb{B}}$ | Quaternion subspace (the real half): fixed points of complex conjugation; a subalgebra, and the home of the rotation rotors. $\mathbb{M}_+$ takes its scalar from here |
+| $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace (the imaginary half): anti-fixed points of complex conjugation; the partner of $\mathbb{H}_{\mathbb{B}}$ in $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split that crosses the $\mathbb{M}_\pm$ split. $\mathbb{M}_+$ takes its vectors from here |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |

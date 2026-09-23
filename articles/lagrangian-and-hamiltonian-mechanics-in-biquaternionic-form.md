@@ -16,8 +16,8 @@ Three structural statements organise the article, and they are worth stating at 
 The conventions are those of the read list. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; the scalar imaginary $i$ is central with $i^2=-1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar, real vector) is the material sector, and the Hermitian subspace $\mathbb{M}_+$ (real scalar, imaginary vector) is the informational sector, with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$. The real-quaternion subspace is $\mathbb{H}_{\mathbb{B}}$, and the trace is normalized by $\mathrm{Tr}(e_0)=2$. The symbol $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium, and $c_0$ its vacuum value. Throughout, $\tilde q$ denotes a configuration quaternion, $\tilde p$ its conjugate momentum, and the scalar pairing of two real quaternions $\tilde a,\tilde b$ is $\mathrm{Sc}(\bar{\tilde a}\,\tilde b)=\sum_\mu a_\mu b_\mu$.
 
 The companion articles supply the pieces:
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material sector, the norm form, and the four-vectors.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector, the trace formula, and the conjugation action.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, the norm form, and the four-vectors.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector, the trace formula, and the conjugation action.
 - Companion article *Similitudes Between the Poisson Bracket and the Quantum Commutator*, for the classical bracket conventions and the boundary between the classical and quantum brackets.
 - Companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*, for the rotor and the Hamiltonian flow on the coadjoint orbit.
 - Companion article *The Harmonic Oscillator in Biquaternionic Form*, for the phase plane and the sector structure of a mode.

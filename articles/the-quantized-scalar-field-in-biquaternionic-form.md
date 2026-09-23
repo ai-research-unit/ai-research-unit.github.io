@@ -20,7 +20,7 @@ The article is organised as follows. The next section treats the field as an ope
 - Companion article *Canonical Quantization of the Biquaternion Klein–Gordon Field*, for the Lagrangian, the equal-time commutators, the mode algebra, and the Hamiltonian.
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two branches, and the mass-shell condition.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the $U(1)$ current $\tilde J\in\mathbb{M}_-$ and the energy–momentum tensor.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-wavevector, the norm form, and the plane-wave phase.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-wavevector, the norm form, and the plane-wave phase.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument that excludes a bosonic mode from $\mathbb{B}$ and for the Fock construction the field acts on.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the c-number commutator.
 

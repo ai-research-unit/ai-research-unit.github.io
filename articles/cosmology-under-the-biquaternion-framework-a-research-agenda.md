@@ -188,7 +188,7 @@ The two-sector decomposition $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ invit
 
 It is important to state what this is: **a speculation with no derivation.** It is labelled here as speculation and not advanced as a result. Three things are true of it, and they are worth writing down precisely.
 
-1. **The framework supplies no coupling.** *$\mathbb{M}_+$ as the Informational Space* and *Introduction to the Biquaternion Universe* both state that beyond the Lorentz coupling by rotor conjugation there is no specified coupling between the sectors, and no equation of motion for $\mathbb{M}_+$-valued fields. *Curved Spacetime and the Biquaternion Framework* adds that on a curved background even the pointwise trace has no integral analogue. A coupling that sources geometry would have to be an equation of motion for fields in both sectors; none exists.
+1. **The framework supplies no coupling.** *$\mathbb{M}_+$ as the Informational Subspace* and *Introduction to the Biquaternion Universe* both state that beyond the Lorentz coupling by rotor conjugation there is no specified coupling between the sectors, and no equation of motion for $\mathbb{M}_+$-valued fields. *Curved Spacetime and the Biquaternion Framework* adds that on a curved background even the pointwise trace has no integral analogue. A coupling that sources geometry would have to be an equation of motion for fields in both sectors; none exists.
 2. **The only coupling that exists is kinematic and does no cosmological work.** The rotor conjugation $\tilde{X} \mapsto \tilde{\Lambda}\tilde{X}\tilde{\Lambda}^\dagger$ is a Lorentz transformation of the material sector by a unit-norm biquaternion; it preserves the metric and moves no energy, so it cannot source an expansion. Using it as a "coupling" would be a category error: it is a symmetry, not a source.
 3. **A one-sector-sources-the-other mechanism would be visible if it existed.** Any genuine coupling would contribute to an effective $T_{\mu\nu}$ and hence to the Friedmann equations. Its absence is the absence of that contribution.
 
@@ -262,8 +262,8 @@ The speculations are labelled as such. One sector sourcing the other at cosmolog
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, the local complex structure, and the sector-coupling open question this agenda inherits.
-- *$\mathbb{M}_-$ as the Material Space* — the material sector, the four-vectors, the bilinear form, and the interval.
-- *$\mathbb{M}_+$ as the Informational Space* — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
+- *$\mathbb{M}_-$ as the Material Subspace* — the material sector, the four-vectors, the bilinear form, and the interval.
+- *$\mathbb{M}_+$ as the Informational Subspace* — the informational sector, the trace formula, the no-dynamics and no-coupling statements, and the entropy open question.
 - *Curved Spacetime and the Biquaternion Framework* — the frame route, the local-scale route and its metric class, the two-sided covariant derivative, and the informational trace's missing measure; the parent of this agenda.
 - *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda* — the dynamics, the central non-linear question, and the settling object; the Friedmann equations belong to this agenda's central item and are not duplicated here.
 - *The Partition Function in Biquaternionic Form* — the framework's thermodynamics, the qubit partition function, and the boundary this agenda finds the cosmological case against.

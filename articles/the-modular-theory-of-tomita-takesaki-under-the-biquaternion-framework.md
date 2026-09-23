@@ -325,11 +325,11 @@ Two honest limitations. The framework supplies $S$ and a family of faithful stat
 ## Further Reading
 
 - Companion article *The KMS Condition and the Biquaternion Framework*, for the KMS condition, the imaginary-time strip, and the modular Hamiltonian $K=-\log\rho$.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian subspace, the trace formula, and states as elements of $\mathbb{M}_+$.
 - Companion article *The Partition Function in Biquaternionic Form*, for the Gibbs state and $K=\beta H+\log Z\,e_0$.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the single fermionic mode, $\tilde{N}_{\mathrm{tr}}$, and the parity $(-1)^F$.
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material sector and the four-vectors.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector and the four-vectors.
 - Companion article *The Wick Rotation in the Biquaternion Universe*, for the $i$-exchange between the sectors.
 - Companion article *Quantum Mechanics in Biquaternionic Form*, for the operator algebra of the informational sector.
 - M. Takesaki, *Tomita's Theory of Modular Hilbert Algebras and Its Applications* (Springer, 1970), for the original development of the modular theory.

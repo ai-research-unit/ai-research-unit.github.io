@@ -358,7 +358,7 @@ This is what makes each combination close on itself with the same structure cons
 
 **Standard mathematics transcribed.** The classification of nondegenerate complex quadratic forms, the isomorphism $SO(4,\mathbb{C})\cong(SL(2,\mathbb{C})\times SL(2,\mathbb{C}))/\mathbb{Z}_2$, the double cover $SL(2,\mathbb{C})\to SO^+(1,3)$, and the real forms of $\mathfrak{so}(4,\mathbb{C})$ are standard Lie theory. The surjectivity of the rotor map is the standard covering theorem and is cited, not re-derived; what is derived here is the algebraic form of the action and its kernel.
 
-**Interpretation.** The reading of the material slice as physical spacetime, and of its norm-form automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *$\mathbb{M}_-$ as the Material Space* and *Introduction to the Biquaternion Universe* state.
+**Interpretation.** The reading of the material slice as physical spacetime, and of its norm-form automorphisms as the Lorentz group, is the framework's structural hypothesis. The group-theoretic content is exact; the physical assignment is the hypothesis, and it is the same hypothesis that the foundational articles *$\mathbb{M}_-$ as the Material Subspace* and *Introduction to the Biquaternion Universe* state.
 
 ## Open Questions
 
@@ -366,7 +366,7 @@ This is what makes each combination close on itself with the same structure cons
 
 2. **The discrete components.** $O(1,3)$ has four components; the rotor group covers only $SO^+(1,3)$. Parity and time reversal are form automorphisms outside the rotor group. Whether the framework can represent them by an operation on biquaternion fields — rather than on four-vectors — without leaving the algebra is not settled here.
 
-3. **Real forms and the two sectors.** Both $\mathbb{M}_-$ and $\mathbb{M}_+$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{H}_{\mathbb{B}}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *$\mathbb{M}_+$ as the Informational Space*.
+3. **Real forms and the two sectors.** Both $\mathbb{M}_-$ and $\mathbb{M}_+$ restrict the form to a Lorentzian signature — $(3,1)$ on the material slice and $(1,3)$ on the informational one — and $\mathbb{H}_{\mathbb{B}}$ to $(4,0)$. The Euclidean real form is thus available. Is the Euclidean form, and the compact group it defines, the home of the informational sector's own symmetries? The question connects this article to *$\mathbb{M}_+$ as the Informational Subspace*.
 
 4. **The norm form and curved spacetime.** The automorphism characterization is pointwise and flat. Whether it globalizes to a bundle of algebra automorphisms over a curved base, and what plays the role of the form there, is the same open question the foundational articles record for the whole framework.
 

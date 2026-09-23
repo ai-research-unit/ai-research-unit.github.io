@@ -37,7 +37,7 @@ The companion articles supply the pieces:
 - Companion article *The Wigner Rotation and the Information Content of a Boost in Biquaternionic Form*, for the Wigner angle, its momentum dependence, and its holonomy.
 - Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
 - Companion article *Quantum Mechanics in Biquaternionic Form*, for the idempotents, the Born pairing, and the conjugation action.
-- Companion article *M+ as the Informational Space*, for the trace pairing and the Hermitian sector.
+- Companion article *M+ as the Informational Subspace*, for the trace pairing and the Hermitian sector.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the little group and the Casimir invariants.
 
 ## The Spin Entropy of a State
@@ -53,13 +53,11 @@ $$
 S(\tilde{\rho}) = -\sum_i\lambda_i\log_2\lambda_i = h\!\left(\frac{1+|\mathbf{r}|}{2}\right).
 $$
 The entropy is zero on the pure states $|\mathbf{r}| = 1$, maximal and equal to $\log_2 2 = 1$ bit on the maximally mixed state $\mathbf{r} = 0$, and monotonically decreasing in $|\mathbf{r}|$. A short table of the function is
-$$
-\begin{array}{c|ccccc}
-|\mathbf{r}| & 0 & 0.25 & 0.5 & 0.75 & 1 \\
-\hline
-S & 1.000000 & 0.954434 & 0.811278 & 0.543564 & 0
-\end{array}
-$$
+
+| $|\mathbf{r}|$ | $0$ | $0.25$ | $0.5$ | $0.75$ | $1$ |
+|---|---|---|---|---|---|
+| $S$ | $1.000000$ | $0.954434$ | $0.811278$ | $0.543564$ | $0$ |
+
 in bits.
 
 The norm form evaluates on a state to
@@ -149,13 +147,11 @@ $$
 \mathbf{r} = \tanh\psi\,\hat{\mathbf{u}} ,
 $$
 a state *closer to the pure boundary*, with entropy $h((1+\tanh\psi)/2)$ decreasing as the rapidity grows:
-$$
-\begin{array}{c|ccccc}
-\psi & 0.2 & 0.5 & 1.0 & 1.5 & 2.5 \\
-\hline
-h\!\left(\frac{1+\tanh\psi}{2}\right) & 0.971713 & 0.839942 & 0.527065 & 0.275360 & 0.057967
-\end{array}
-$$
+
+| $\psi$ | $0.2$ | $0.5$ | $1.0$ | $1.5$ | $2.5$ |
+|---|---|---|---|---|---|
+| $h\!\left(\frac{1+\tanh\psi}{2}\right)$ | $0.971713$ | $0.839942$ | $0.527065$ | $0.275360$ | $0.057967$ |
+
 A genuine quantum channel is linear and trace-preserving and cannot purify a maximally mixed state; the congruence does, and the demonstration is decisive. The congruence is a map on the algebra — it is the correct action on the spinor ray and on the unnormalized projector — but it is not the transformation of the physical spin state, and the entropy is the quantity that exposes the difference most sharply.
 
 ### The channel at uncertain momentum
@@ -165,14 +161,12 @@ $$
 \tilde{\rho}\ \longmapsto\ \sum_i q_i\,\tilde{W}_i\tilde{\rho}\tilde{W}_i^\dagger, \qquad \tilde{W}_i = \tilde{W}(\tilde{\Lambda},\tilde{U}_i) .
 $$
 The channel is unital — the identity is fixed, because every $\tilde{W}_i$ is unitary — so the maximally mixed state is invariant and the entropy of a state is unchanged only if the state is a fixed point of every branch rotation. In the symmetric two-branch configuration the channel is the dephasing about the Wigner axis, the transverse Bloch components are damped by $\cos\alpha$, and the entropy becomes $h((1+\cos\alpha)/2)$ for a purely transverse initial state. For a particle of speed $0.5c$ at transverse momentum,
-$$
-\begin{array}{c|ccccc}
-\psi & 0.5 & 1.0 & 2.0 & 3.0 & 5.0 \\
-\hline
-\alpha & 7.50939^\circ & 14.11732^\circ & 23.06780^\circ & 27.26584^\circ & 29.61619^\circ \\
-h\!\left(\frac{1+\cos\alpha}{2}\right) & 0.039902 & 0.112969 & 0.242196 & 0.309540 & 0.348220
-\end{array}
-$$
+
+| $\psi$ | $0.5$ | $1.0$ | $2.0$ | $3.0$ | $5.0$ |
+|---|---|---|---|---|---|
+| $\alpha$ | $7.50939^\circ$ | $14.11732^\circ$ | $23.06780^\circ$ | $27.26584^\circ$ | $29.61619^\circ$ |
+| $h\!\left(\frac{1+\cos\alpha}{2}\right)$ | $0.039902$ | $0.112969$ | $0.242196$ | $0.309540$ | $0.348220$ |
+
 The entropy rises with the rapidity and saturates, in the large-rapidity limit, at
 $$
 h\!\left(\frac{1+\sqrt{1-v^2/c^2}}{2}\right) ,
@@ -193,16 +187,15 @@ $$
 S' = h\!\left(\frac{1+|\mathbf{r}'|}{2}\right),
 $$
 and the entropy is unchanged only for $\mathbf{r}\parallel\hat{\mathbf{n}}$ or $\alpha = 0$. Some values for the Wigner angle of a rapidity-$1$ boost at transverse momentum, $\alpha = 14.11732^\circ$ and $\cos\alpha = 0.969798$, are
-$$
-\begin{array}{c|c|c|c}
-|\mathbf{r}| & \angle(\mathbf{r},\hat{\mathbf{n}}) & |\mathbf{r}'| & S' \\ \hline
-1 & 45^\circ & 0.985015 & 0.063669 \\
-1 & 90^\circ & 0.969798 & 0.112969 \\
-0.5 & 45^\circ & 0.492507 & 0.817162 \\
-0.5 & 90^\circ & 0.484899 & 0.823027 \\
-0.25 & 60^\circ & 0.244359 & 0.956488
-\end{array}
-$$
+
+| $|\mathbf{r}|$ | $\angle(\mathbf{r},\hat{\mathbf{n}})$ | $|\mathbf{r}'|$ | $S'$ |
+|---:|---:|---:|---:|
+| $1$ | $45^\circ$ | $0.985015$ | $0.063669$ |
+| $1$ | $90^\circ$ | $0.969798$ | $0.112969$ |
+| $0.5$ | $45^\circ$ | $0.492507$ | $0.817162$ |
+| $0.5$ | $90^\circ$ | $0.484899$ | $0.823027$ |
+| $0.25$ | $60^\circ$ | $0.244359$ | $0.956488$ |
+
 In every case the entropy increases, the increase is larger for a purer state and for transverse orientation, and the maximally mixed state $|\mathbf{r}| = 0$ is fixed for every $\alpha$. The formula also shows the sense in which the boost's effect on a spin is a *partial* dephasing: the component along the Wigner axis is the decoherence-free direction of the channel, and it is only this component that survives the momentum average without loss of purity.
 
 ## Spin Entropy and the Little-Group Representation

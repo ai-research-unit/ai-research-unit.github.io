@@ -361,8 +361,8 @@ The exercise confirms the parent's plane-wave results on cases the parent did no
 The further reading of this exercise is the parent and companion articles of this series, all present in `articles/`; the standard textbook references for media, dispersion, and the Fresnel coefficients are listed in the Further Reading sections of those articles.
 
 - *Introduction to the Biquaternion Universe* — the algebra, the two sectors, and the local complex structure.
-- *$\mathbb{M}_-$ as the Material Space* — the four-vectors, including the four-wavevector, and the light cone as the zero-divisor cone.
-- *$\mathbb{M}_+$ as the Informational Space* — the Hermitian subspace, the conjugation action, and the trace formula.
+- *$\mathbb{M}_-$ as the Material Subspace* — the four-vectors, including the four-wavevector, and the light cone as the zero-divisor cone.
+- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian subspace, the conjugation action, and the trace formula.
 - *Maxwell's Equations in the Biquaternionic Formulation* — the field strength, the source, the gradient, the gauge structure, and the energy–momentum biquaternion.
 - *The Field-Strength Biquaternion and Its Invariants* — the norm form, the Riemann–Silberstein vector, and the invariant classification of the field.
 - *Electromagnetism in Media — The Local Complex Structure at Work* — the direct parent: the medium parameters, dispersion, interfaces, and the plane-wave conventions applied here.

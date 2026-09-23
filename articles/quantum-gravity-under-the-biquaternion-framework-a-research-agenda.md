@@ -248,8 +248,8 @@ The ledger's three columns are the deliverable. **Established:** the kinematical
 - Companion article *The Partition Function in Biquaternionic Form*, for the thermal operator and the Gibbs form of the modular Hamiltonian.
 - Companion article *Quantum Chromodynamics under the Biquaternion Framework — A Research Agenda*, for the sibling ledger and the non-perturbative gap in the gauge sector.
 - Companion article *The Empirical Status of the Biquaternion Framework*, for the framework-level empirical question that the gravitational sector's absence of a quantisation leaves untouched.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material sector, the four-vectors, the norm form, and the zero-divisor cone.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector, the trace formula, and the home of the modular Hamiltonian.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material sector, the four-vectors, the norm form, and the zero-divisor cone.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector, the trace formula, and the home of the modular Hamiltonian.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the boost generators $K_k=ie_k$ and the Lie algebra whose two-sided action drives the obstruction.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the boost rotor and the two-sided action on $\mathbb{M}_-$.
 - Companion article *Introduction to the Biquaternion Universe*, for the algebra and its two sectors.

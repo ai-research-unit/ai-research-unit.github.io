@@ -268,4 +268,4 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 - Companion article *Relative Entropy and the Biquaternion Framework*, for the entropy closed form of a biquaternion state.
 - Companion article *The Modular Hamiltonian and the First Law of Entanglement in Biquaternionic Form*, for the modular Hamiltonian of a reduced state.
 - Companion article *The Area Law of Entanglement Entropy in Biquaternionic Form*, for what the replica moments give in the field.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the state space and the trace pairing.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the state space and the trace pairing.

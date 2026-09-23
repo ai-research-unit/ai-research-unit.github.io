@@ -492,7 +492,7 @@ The biquaternion framework houses the thermodynamics — the material sector $\m
 - *The Unruh Effect in Biquaternionic Form*, the sibling: the Rindler horizon and the surface gravity as a boost parameter.
 - *Curved Spacetime and the Biquaternion Framework*, for the frame-field route to the metric and why the framework generates no black-hole geometry of its own.
 - *The Einstein Field Equations under the Biquaternion Framework — A Research Agenda*, for the status of the dynamics and of an action for the frame.
-- *$\mathbb{M}_-$ as the Material Space* and *$\mathbb{M}_+$ as the Informational Space*, for the sectors, the four-vectors, and the operator algebra.
+- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace*, for the sectors, the four-vectors, and the operator algebra.
 - *Noether's Theorem in Biquaternionic Form*, for the conserved four-momentum, angular momentum, and current that become the horizon charges.
 - *Introduction to the Biquaternion Universe*, for the algebra and the notation.
 - *Quantum Thermodynamics in Biquaternionic Form*, for the standard thermodynamic functionals on $\mathbb{M}_+$ and the Gibbs state of a qubit.

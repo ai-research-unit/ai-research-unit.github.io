@@ -245,8 +245,8 @@ The honest position of the framework's gravity programme is therefore this. It c
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe* — the algebra, its conjugations, and the two-sector decomposition.
-- *$\mathbb{M}_-$ as the Material Space* — the material sector, the four-vectors, and the bilinear form.
-- *$\mathbb{M}_+$ as the Informational Space* — the informational sector and the trace formula.
+- *$\mathbb{M}_-$ as the Material Subspace* — the material sector, the four-vectors, and the bilinear form.
+- *$\mathbb{M}_+$ as the Informational Subspace* — the informational sector and the trace formula.
 - *Curved Spacetime and the Biquaternion Framework* — the frame route, the local-scale route, the connection, and the boundary of the kinematics.
 - *Linearized Gravity in Biquaternionic Form* — the carrier, the counting $16 = 10 + 6$, the gauge structure, and the collapse of the single-biquaternion packaging.
 - *Gravitational Waves in Biquaternionic Form* — the harmonic gauge, the count $10 \to 6 \to 2$, the polarisations, and the quadrupole formula.

@@ -15,7 +15,7 @@ The companion articles supply the pieces:
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the defining module, its irreducibility, and the state correspondence.
 - Companion article *Quantum Mechanics in Biquaternionic Form*, for the Hermitian sector, the idempotents, the Bloch ball, and the conjugation action.
 - Companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, for the geometry of the state space.
-- Companion article *M- as the Material Space*, for four-vectors, the norm form, and the interval.
+- Companion article *M- as the Material Subspace*, for four-vectors, the norm form, and the interval.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for $SL(2,\mathbb{C})$, its subgroups, and the Wigner rotation.
 
 ## The Qubit as the Defining Module

@@ -18,7 +18,7 @@ The interval $N(\tilde{X}_{qp})$ classifies each pair of events as spacelike, nu
 
 The cone is also the characteristic cone of the algebra's wave operator. The standard finite-speed-of-propagation theorem for hyperbolic operators then makes the barrier analytic as well as geometric: a signal generated in a compact region cannot reach a point outside the region's causal future, however the signal is shaped. These results are collected as eight numbered items in the Summary below.
 
-The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *$\mathbb{M}_+$ as the Informational Space*; the two readings share the algebra and nothing else.
+The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *$\mathbb{M}_+$ as the Informational Subspace*; the two readings share the algebra and nothing else.
 
 **Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The norm form is $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{X} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
@@ -62,7 +62,7 @@ The interval has one of three signs, and these signs define the three causal cla
 - **null** ($N(\tilde{X}_{qp}) = 0$): the events can be joined by a light signal;
 - **timelike** ($N(\tilde{X}_{qp}) < 0$): the events can be joined by a signal travelling more slowly than light.
 
-The null displacements are the light cone. The companion article *$\mathbb{M}_-$ as the Material Space* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
+The null displacements are the light cone. The companion article *$\mathbb{M}_-$ as the Material Subspace* records the same classification, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* gives the algebraic characterization of the null set, which the next section recalls.
 
 ### The Causal Order
 
@@ -366,8 +366,8 @@ The conventions and the results taken over from the relativity series are those 
 
 - Companion article *Introduction to the Biquaternion Universe*, for the notation, the norm form and the causal trichotomy.
 - Companion article *Conventions in the Biquaternion Universe*, for the algebra and basis, the four conjugations, the real subspaces and the metric at its three levels.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-vector, the interval and the causal classification.
-- Companion article *$\mathbb{M}_+$ as the Informational Space*, for the Hermitian sector and its distinct informational reading.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-vector, the interval and the causal classification.
+- Companion article *$\mathbb{M}_+$ as the Informational Subspace*, for the Hermitian sector and its distinct informational reading.
 - Companion article *The Light Cone as the Biquaternion Zero-Divisor Cone*, for the zero-divisor criterion, the idempotent form of the real cone and the dispersionless propagation locus.
 - Companion article *The Lorentz Transformation as a Biquaternionic Rotation*, for the rotor conjugation and its component action.
 - Companion article *The Lorentz Group as Biquaternion Norm-Form Automorphisms*, for the orbit structure of the causal classes.

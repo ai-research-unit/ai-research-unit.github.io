@@ -15,7 +15,7 @@ The article is organised as follows. The next section fixes the classical field,
 
 - Companion article *The Klein–Gordon Equation in Biquaternionic Form*, for the field equation, its two frequency branches, the mass-shell condition, and the conserved current.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the scalar Lagrangian, its central scalar form, the $U(1)$ current $\tilde J\in\mathbb{M}_-$, and the energy–momentum tensor.
-- Companion article *$\mathbb{M}_-$ as the Material Space*, for the material four-wavevector, the norm form, and the $ict$ coordinate.
+- Companion article *$\mathbb{M}_-$ as the Material Subspace*, for the material four-wavevector, the norm form, and the $ict$ coordinate.
 - Companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form*, for the trace argument against a bosonic mode in $\mathbb{B}$, and for the exterior and symmetric algebras as the fermionic and bosonic Fock spaces.
 - Companion article *The Spin–Statistics Theorem in Biquaternionic Form*, for the connection between spin and the choice of bracket.
 - Companion article *Canonical Quantization of the Biquaternion Dirac Field*, for the contrasting constrained quantization and the grading the algebra does not supply.

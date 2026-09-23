@@ -26,7 +26,7 @@ The companion articles supply the pieces:
 - Companion article *Frame-Dependent Entanglement and Relativistic Quantum Information in Biquaternionic Form*, for the channel induced by a boost on a momentum superposition.
 - Companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*, for the composition of boosts and the frame four-velocity.
 - Companion article *Exercise: The Thomas Precession*, for the precession of a spin in an accelerated frame.
-- Companion article *M- as the Material Space*, for four-vectors and the norm form.
+- Companion article *M- as the Material Subspace*, for four-vectors and the norm form.
 - Companion article *The Lorentz Group in Biquaternionic Form — Structure and Representations*, for the Cartan decomposition and the subgroups.
 
 ## The Boost and Its Rotor
@@ -141,17 +141,16 @@ $$
 \tan\alpha = \frac{\sinh\psi\,\sinh\chi}{\cosh\psi + \cosh\chi}.
 $$
 For a particle of speed $0.5c$ this gives the following values, with the dephasing factor $\cos\alpha$ and the entropy $h((1+\cos\alpha)/2)$ that the boost imprints on a transverse spin:
-$$
-\begin{array}{c|c|c|c}
-\psi & \alpha & \cos\alpha & h\!\left(\frac{1+\cos\alpha}{2}\right) \\ \hline
-0.25 & 3.81681^\circ & 0.997782 & 0.012486 \\
-0.50 & 7.50939^\circ & 0.991423 & 0.039902 \\
-1.00 & 14.11732^\circ & 0.969798 & 0.112969 \\
-1.50 & 19.31699^\circ & 0.943703 & 0.185020 \\
-2.00 & 23.06780^\circ & 0.920042 & 0.242196 \\
-3.00 & 27.26584^\circ & 0.888891 & 0.309540
-\end{array}
-$$
+
+| $\psi$ | $\alpha$ | $\cos\alpha$ | $h\!\left(\frac{1+\cos\alpha}{2}\right)$ |
+|---:|---:|---:|---:|
+| $0.25$ | $3.81681^\circ$ | $0.997782$ | $0.012486$ |
+| $0.50$ | $7.50939^\circ$ | $0.991423$ | $0.039902$ |
+| $1.00$ | $14.11732^\circ$ | $0.969798$ | $0.112969$ |
+| $1.50$ | $19.31699^\circ$ | $0.943703$ | $0.185020$ |
+| $2.00$ | $23.06780^\circ$ | $0.920042$ | $0.242196$ |
+| $3.00$ | $27.26584^\circ$ | $0.888891$ | $0.309540$ |
+
 The rotation angle grows with the rapidity and saturates at a finite value; the dephasing factor falls and the entropy rises. The asymptotics are worth recording: for large $\psi$ and fixed $\chi$, $\tan\alpha\to\sinh\chi$, so the angle saturates at $\arctan(\sinh\chi)$ — the same finite angle for every transverse spin of the particle, in agreement with the velocity-addition limit — and the dephasing factor saturates at $\cos(\arctan(\sinh\chi)) = 1/\cosh\chi = \sqrt{1-v^2/c^2}$. Only in the ultrarelativistic limit $\chi\to\infty$ does this reach zero and the entropy approach one bit; for $v = 0.5c$ the saturating angle is $30^\circ$, the dephasing factor $0.8660$, and the entropy $0.3546$. For small rapidities the angle is $\alpha\approx\tfrac12\psi\chi\sin\theta$, so the information a slow boost imprints on a spin is second order in the velocities.
 
 **The parameters of a boost and of its rotation.** A boost has three parameters — a direction and a rapidity — while, once the momentum is fixed, its Wigner rotation has its axis determined by the two directions: the axis is perpendicular to both, so the whole rotation is summarised by the single angle $\alpha(\psi,\theta)$. The map from boosts to rotations is therefore not injective, and a spin measurement cannot recover the boost completely: a boost and its rotation share the transverse plane, the rapidity is encoded only through the angle, and many boosts share a Wigner angle. A spin collinear with the boost conveys no information about the boost at all, up to phase.
@@ -189,15 +188,14 @@ $$
 \tilde{P} = \tilde{\Lambda}_{\mathbf{v}_2}\,\tilde{\Lambda}_y(b)\,\tilde{\Lambda}_x(a) .
 $$
 The four-velocity returns to its starting value by construction, so $\tilde{P}$ fixes $ic\,e_0$ and, being unit-norm, lies in $SU(2)$: the path leaves a pure rotation. For four loops,
-$$
-\begin{array}{c|c|c|c}
-a & b & \text{angle} & \text{axis} \\ \hline
-0.5 & 0.5 & 6.86557^\circ & \hat{\mathbf{z}} \\
-1.0 & 0.5 & 12.91464^\circ & \hat{\mathbf{z}} \\
-1.0 & 1.0 & 24.10915^\circ & \hat{\mathbf{z}} \\
-1.5 & 1.0 & 32.71532^\circ & \hat{\mathbf{z}}
-\end{array}
-$$
+
+| $a$ | $b$ | $\text{angle}$ | $\text{axis}$ |
+|---:|---:|---:|---|
+| $0.5$ | $0.5$ | $6.86557^\circ$ | $\hat{\mathbf{z}}$ |
+| $1.0$ | $0.5$ | $12.91464^\circ$ | $\hat{\mathbf{z}}$ |
+| $1.0$ | $1.0$ | $24.10915^\circ$ | $\hat{\mathbf{z}}$ |
+| $1.5$ | $1.0$ | $32.71532^\circ$ | $\hat{\mathbf{z}}$ |
+
 with rotors $\tilde{P} = 0.99821\,e_0 + 0.05988\,e_3$, $0.99366\,e_0 + 0.11246\,e_3$, $0.97795\,e_0 + 0.20884\,e_3$, and $0.95952\,e_0 + 0.28163\,e_3$. Each is unitary, fixes the rest four-velocity, and is a rotation about the normal to the plane of the loop. The first entry is the same rotation as the two-boost composition of the worked example, as it must be: the two constructions differ only in the way the second boost is closed.
 
 **The angle is the area.** For small rapidities the holonomy angle is bilinear in the two loop parameters,

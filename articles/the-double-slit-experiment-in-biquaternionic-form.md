@@ -337,8 +337,8 @@ The algebra supplies the phase's imaginary unit, the sector of its exponent, a s
 ## Further Reading
 
 - *Introduction to the Biquaternion Universe* — the algebra, its two sectors, and the local complex structure.
-- *$\mathbb{M}_-$ as the Material Space* — the anti-Hermitian sector and the four-vectors.
-- *$\mathbb{M}_+$ as the Informational Space* — the Hermitian sector, its idempotents, and the trace formula.
+- *$\mathbb{M}_-$ as the Material Subspace* — the anti-Hermitian sector and the four-vectors.
+- *$\mathbb{M}_+$ as the Informational Subspace* — the Hermitian sector, its idempotents, and the trace formula.
 - *Quantum Mechanics in Biquaternionic Form* — states, observables, the Born rule, and the measurement update.
 - *The Schrödinger Equation in Biquaternionic Form* — the wave function as a spinor in a minimal left ideal, and the central imaginary as the complex structure.
 - *The Path Integral in Biquaternionic Form* — the phase $e^{iS/\hbar}$ as a central unitary, its exponent in $\mathbb{M}_-$, and the measure/paths gap.

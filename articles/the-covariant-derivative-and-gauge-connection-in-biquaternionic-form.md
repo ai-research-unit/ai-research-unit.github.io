@@ -357,6 +357,6 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 - *The Klein–Gordon Equation in Biquaternionic Form* — the free scalar equation $(\Box - (mc/\hbar)^2)\tilde{\Phi} = 0$ whose covariantization is the gap discussed here.
 - *Chiral Fermions in the Biquaternion Framework* — the covariant derivative on the spinor module and the charge-operator representation.
 - *Canonical Quantization of the Biquaternion Maxwell Field* — the framework's inability to fix the gauge, which bounds the gauge orbit treated here.
-- *$\mathbb{M}_-$ as the Material Space* and *$\mathbb{M}_+$ as the Informational Space* — the sector decomposition, the four-vectors, and the trace formula.
+- *$\mathbb{M}_-$ as the Material Subspace* and *$\mathbb{M}_+$ as the Informational Subspace* — the sector decomposition, the four-vectors, and the trace formula.
 - *Curved Spacetime and the Biquaternion Framework* — the two-sided gravitational connection, distinct from the one-sided gauge connection of this article.
 - *Biquaternion Algebra* — the multiplication rule, the conjugations, and the center.
