@@ -39,6 +39,14 @@ $$
 i^2 = -1.
 $$
 
+Everything that follows turns on how each complex coefficient is split, so the split is fixed here, at the outset. Writing every coefficient as a real part plus $i$ times a real part,
+
+$$
+Q_0 = q_0 + iq'_0, \qquad Q_1 = q_1 + iq'_1, \qquad Q_2 = q_2 + iq'_2, \qquad Q_3 = q_3 + iq'_3, \qquad q_\mu, q'_\mu \in \mathbb{R},
+$$
+
+replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the four subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in *The Four Subspaces* and *The Prime Convention* below; nothing in them changes the split stated here.
+
 One structural fact governs the whole series, so it is worth isolating. **The scalar unit $i$ is central**: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a *central* phase $e^{i\alpha}$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.
 
 As a complex algebra $\mathbb{B}$ is isomorphic to the full matrix algebra,
@@ -110,24 +118,34 @@ $$
 
 It is not a subalgebra but a module over $\mathbb{H}_{\mathbb{B}}$.
 
-Between them these four parametrisations use the eight real numbers that a general element carries. Two points about those parameters are conventions in their own right.
+Between them these four parametrisations use the eight real numbers that a general element carries. Two conventions attach to those numbers: how they are primed, and what the four subspaces are called.
 
 ### The Prime Convention
 
-The prime marks the coefficient that enters with the $i$. That one rule produces all four parametrisations above, and it is what makes the primed set three-and-one rather than four-and-none: $q'_0$ is the material scalar and $q'_k$ the informational vectors, while the material vectors $q_k$ and the informational scalar $q_0$ are unprimed. Together the eight real parameters are the real and imaginary parts of the four complex coefficients of a general element,
+**What the prime marks.** The prime marks the **imaginary part** of a complex coefficient. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
 
 $$
 Q_\mu = q_\mu + iq'_\mu, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
-so that a single set of eight numbers serves every subspace. The three-and-one pattern follows from the way the two four-plus-four splits of the algebra **cross**: each sector takes its scalar from one half and its vectors from the other,
+gives $q_\mu$ as the coefficient of $e_\mu$ and $q'_\mu$ as the coefficient of $ie_\mu$ — the same rule for every $\mu$. The prime is therefore **not** a label of a sector. It is the algebra's real-and-imaginary split, applied to the coefficients: the four unprimed parameters are the coordinates of the real half $\mathbb{H}_{\mathbb{B}}$ and the four primed parameters those of the imaginary half $i\mathbb{H}_{\mathbb{B}}$,
 
-| | scalar part | vector part |
-|---|---|---|
-| $\mathbb{H}_{\mathbb{B}}$ (real) | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-| $i\mathbb{H}_{\mathbb{B}}$ (imaginary) | $\mathbb{M}_-$ | $\mathbb{M}_+$ |
+$$
+q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{H}_{\mathbb{B}}, \qquad iq'_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3 \in i\mathbb{H}_{\mathbb{B}} .
+$$
 
-and the prime marks the imaginary half. Labelling by **sector** instead — all-unprimed $\mathbb{M}_-$ against all-primed $\mathbb{M}_+$ — is uniform on the sectors, but it costs two things: the uniform relation $Q_\mu = q_\mu + iq'_\mu$ fails at $\mu = 0$, and $\mathbb{H}_{\mathbb{B}}$ is cut into a primed scalar with unprimed vectors, so that the real half can no longer be written with a single name. Both conventions have been used in the series; the present one is kept because it writes $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ each uniformly, at the price of a single prime on the material scalar. The crossing itself, and the alternatives it allows, are examined in *The Quaternion and Antiquaternion Subspaces*.
+**Per block.** The halves cross the sectors, so the eight parameters fall into four blocks, and each block has a fixed prime status:
+
+| block | coordinate | parameter | prime | half |
+|---|---|---|---|---|
+| material time | $ict$ | $q'_0$ | yes | $i\mathbb{H}_{\mathbb{B}}$ |
+| informational time | $ct'$ | $q_0$ | no | $\mathbb{H}_{\mathbb{B}}$ |
+| material space | $x, y, z$ | $q_1, q_2, q_3$ | no | $\mathbb{H}_{\mathbb{B}}$ |
+| informational space | $ix', iy', iz'$ | $q'_1, q'_2, q'_3$ | yes | $i\mathbb{H}_{\mathbb{B}}$ |
+
+**The three-and-one pattern.** Because the blocks cross, neither sector is uniform in its primes: each takes one slot of one kind and three of the other. The material sector is $iq'_0e_0 + q_ke_k$ — its scalar primed, its vectors unprimed — and the informational sector is $q_0e_0 + iq'_ke_k$ — its scalar unprimed, its vectors primed. The halves are where the split is clean: $\mathbb{H}_{\mathbb{B}}$ is all four unprimed, $i\mathbb{H}_{\mathbb{B}}$ all four primed. This is the sense in which the primed set is three-and-one rather than four-and-none: read by sector, its four parameters are one material (the material time $q'_0$) and three informational (the informational space $q'_k$), not four belonging to a single sector.
+
+**The alternative, and why it is not used.** The prime could instead have been made to mark the **sector** — all-unprimed $\mathbb{M}_-$ against all-primed $\mathbb{M}_+$ — which is uniform in the opposite direction. The corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the material time $ict$ would be carried by an unprimed parameter although it is imaginary, and the informational time $ct'$ by a primed one although it is real. The real half $\mathbb{H}_{\mathbb{B}}$, which takes its scalar from $\mathbb{M}_+$ and its vectors from $\mathbb{M}_-$, would also be split across the two primes, so that it could no longer be written with a single name. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in *The Quaternion and Antiquaternion Subspaces*.
 
 ### The Naming Convention
 
@@ -135,6 +153,13 @@ $\mathbb{M}_-$ and $\mathbb{M}_+$ are collectively the **sectors** of the algebr
 
 - the material subspace carries the spacetime coordinate and the four-vectors, and its norm form has signature $(3,1)$;
 - the informational subspace carries the Hermitian operators, states and observables, and its norm form has signature $(1,3)$.
+
+$\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ are collectively the **halves**, from the real-and-imaginary split $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, and individually the **quaternion** and **antiquaternion** subspaces:
+
+- the quaternion subspace is the **real half**, the fixed space of complex conjugation, all four coefficients real; it is a subalgebra — a copy of $\mathbb{H}$ inside $\mathbb{B}$, hence a division algebra — and the home of the rotation rotors;
+- the antiquaternion subspace is the **imaginary half**, the anti-fixed space of complex conjugation, all four coefficients purely imaginary; it is not a subalgebra but a module over $\mathbb{H}_{\mathbb{B}}$.
+
+The two namings are independent, and they cross: every one of the four four-dimensional subspaces is one sector and one half, and no sector is a half. Which half each sector draws on is stated in *The Prime Convention* above — the material sector takes its time from the imaginary half and its space from the real half — and the crossing is examined in *The Quaternion and Antiquaternion Subspaces*.
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
