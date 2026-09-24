@@ -5,7 +5,7 @@
 
 The collection of all left modules over a ring, together with the linear maps between them, is not merely a class of objects; it has a composition law, identities, and enough structure — a zero object, direct sums, kernels and cokernels — that the whole of linear algebra can be phrased as the study of this one object. It is a **category**, and the linear maps between modules are its **morphisms**. Organising module theory in this way is not decoration: it isolates the constructions that are defined by a universal property from those that depend on a presentation, and it makes precise the sense in which two rings have the same module theory.
 
-This article develops the category $R\text{-}\mathbf{Mod}$ of left modules over a ring $R$, the functors between such categories, and the natural transformations between functors. It records the structural properties of $R\text{-}\mathbf{Mod}$ — the zero object, biproducts, kernels and cokernels with $\operatorname{coim}\cong\operatorname{im}$ — that later articles of this category abstract into the notions of additive and abelian category, and it states the two adjunctions that organise the fundamental functors: the free–forgetful adjunction and the tensor–hom adjunction. It closes with the notion of equivalence of module categories and its relation to Morita equivalence, which is treated in the category *Linear Spaces over Linear Algebras*, and with the relation to the abelian categories of the next article of this category.
+This article develops the category $R\text{-}\mathbf{Mod}$ of left modules over a ring $R$, the functors between such categories, and the natural transformations between functors. It records the structural properties of $R\text{-}\mathbf{Mod}$ — the zero object, biproducts, kernels and cokernels with $\operatorname{coim}\cong\operatorname{im}$ — that other articles of this category abstract into the notions of additive and abelian category, and it states the two adjunctions that organise the fundamental functors: the free–forgetful adjunction and the tensor–hom adjunction. It closes with the notion of equivalence of module categories and its relation to Morita equivalence, which is treated in the category *Linear Spaces over Linear Algebras*, and with the relation to the abelian categories of this category.
 
 Throughout, $R$ is a ring; where a statement needs commutativity that hypothesis is named, and where $R$ is not assumed commutative the side of the modules matters and is stated. The article uses the vocabulary of *Modules*, *Direct Sums, Free Modules and Rank*, *Exact Sequences*, *Projective and Injective Modules*, *The Balanced Product* and *Flatness and Exactness*. It is deliberately free of topology: no distance, no norm, no completion and no topological enrichment occurs, and the categorical constructions are those of pure algebra. The abstract theory of categories is developed in the companion article *Universal Properties and Categories* of the *Foundations of Algebra* category, being written in the same batch; the small amount of category theory needed here is recalled, so that the article is readable on its own.
 
@@ -47,7 +47,7 @@ The requirement is not a convenience: it is the exact sense in which an isomorph
 
 ### The Category of Functors
 
-For fixed $\mathcal{C}$ and $\mathcal{D}$ the functors $\mathcal{C}\to\mathcal{D}$ and the natural transformations between them themselves form a category, the **functor category** $\mathcal{D}^{\mathcal{C}}$, with composition defined componentwise. Taking $\mathcal{D}=\mathbf{Set}$ gives the category of presheaves on $\mathcal{C}$, the construction on which the article *Topoi* builds.
+For fixed $\mathcal{C}$ and $\mathcal{D}$ the functors $\mathcal{C}\to\mathcal{D}$ and the natural transformations between them themselves form a category, the **functor category** $\mathcal{D}^{\mathcal{C}}$, with composition defined componentwise. Taking $\mathcal{D}=\mathbf{Set}$ gives the category of presheaves on $\mathcal{C}$, the construction on which builds.
 
 ## The Category of Modules
 
@@ -69,7 +69,7 @@ The assignment $(M,N)\mapsto\operatorname{Hom}_R(M,N)$ is a functor of two varia
 
 *Proof.* The only linear map $0\to M$ and the only linear map $M\to0$ are the zero maps, so $0$ is initial and terminal. The direct sum $\bigoplus_{i}M_i$ with inclusions $\iota_i$ satisfies the universal property of the coproduct: a family of maps $f_i:M_i\to P$ extends uniquely to $\bigoplus_iM_i$. The direct product $\prod_iM_i$ with projections satisfies the universal property of the product. For a finite family the two objects coincide as constructed in *Direct Sums, Free Modules and Rank*, and the four identities of a biproduct hold. $\square$
 
-The coincidence of finite products and finite coproducts is a strong structural feature. A category with a zero object and biproducts, in which every hom set is an abelian group and composition is bilinear, is called **additive**; $R\text{-}\mathbf{Mod}$ is the basic example, and the axioms and consequences of additivity are developed in the next article of this category.
+The coincidence of finite products and finite coproducts is a strong structural feature. A category with a zero object and biproducts, in which every hom set is an abelian group and composition is bilinear, is called **additive**; $R\text{-}\mathbf{Mod}$ is the basic example, and the axioms and consequences of additivity are not covered here.
 
 ### Kernels and Cokernels
 
@@ -83,7 +83,7 @@ The coincidence of finite products and finite coproducts is a strong structural 
 
 *Proof.* The map is the one induced on the quotient $A/\ker f$ by $f$, and the first isomorphism theorem identifies $A/\ker f$ with $\operatorname{im}f$. $\square$
 
-A category with a zero object, biproducts, and kernels and cokernels in which every such canonical map is an isomorphism is called **abelian**. The category $R\text{-}\mathbf{Mod}$ is abelian; the abstract definition, its consequences and its generalisations are the subject of the next article of this category.
+A category with a zero object, biproducts, and kernels and cokernels in which every such canonical map is an isomorphism is called **abelian**. The category $R\text{-}\mathbf{Mod}$ is abelian; the abstract definition, its consequences and its generalisations are not covered here.
 
 ## Exactness, Additivity and Exact Functors
 
@@ -97,7 +97,7 @@ A category with a zero object, biproducts, and kernels and cokernels in which ev
 
 ### Exact Sequences as Categorical Data
 
-An exact sequence of modules is a diagram in $R\text{-}\mathbf{Mod}$; exactness at a term says that the image of one morphism equals the kernel of the next, both being subobjects of the middle module. The categorical formulation of exactness is the basis of the definition of an abelian category and of the derived-functor theory of the articles *Homological Algebra* and *Derived Functors*. In particular a short exact sequence $0\to A\to B\to C\to0$ is simultaneously a kernel–cokernel diagram, and the snake lemma and the five lemma are statements about the category $R\text{-}\mathbf{Mod}$ that generalise verbatim to every abelian category.
+An exact sequence of modules is a diagram in $R\text{-}\mathbf{Mod}$; exactness at a term says that the image of one morphism equals the kernel of the next, both being subobjects of the middle module. The categorical formulation of exactness is the basis of the definition of an abelian category and of the derived-functor theory of . In particular a short exact sequence $0\to A\to B\to C\to0$ is simultaneously a kernel–cokernel diagram, and the snake lemma and the five lemma are statements about the category $R\text{-}\mathbf{Mod}$ that generalise verbatim to every abelian category.
 
 ### Projectives, Injectives and the Hom Functors
 
@@ -107,7 +107,7 @@ The representability of the functors attached to a module is what makes the clas
 
 *Proof.* These are the theorems of the articles on projective and injective modules and on flatness and exactness, restated as exactness of the corresponding functors. $\square$
 
-**Remark.** Projectivity and injectivity are therefore properties of the functors $\operatorname{Hom}_R(P,-)$ and $\operatorname{Hom}_R(-,I)$, and flatness a property of $-\otimes_RN$. The categories over which every module is projective are exactly the semisimple rings; over a field, for instance, every module is free and hence projective. The categorified statements of the next articles — enough projectives, enough injectives, the derived functors — measure the failure of these functors to be exact.
+**Remark.** Projectivity and injectivity are therefore properties of the functors $\operatorname{Hom}_R(P,-)$ and $\operatorname{Hom}_R(-,I)$, and flatness a property of $-\otimes_RN$. The categories over which every module is projective are exactly the semisimple rings; over a field, for instance, every module is free and hence projective. The categorified statements — enough projectives, enough injectives, the derived functors — measure the failure of these functors to be exact.
 
 ## Adjunctions
 
@@ -181,7 +181,7 @@ The regular module is the object through which the ring is recovered from its ca
 
 **Example.** The matrix ring $M_n(R)$ is Morita equivalent to $R$: the functor $R\text{-}\mathbf{Mod}\to M_n(R)\text{-}\mathbf{Mod}$ sending a module $M$ to the column module $M^n$, with $M_n(R)$ acting on the left by matrix multiplication, is an equivalence, with inverse $N\mapsto e_{11}N$; the progenerator is the left module $R^n$, and $\operatorname{End}_R(R^n)\cong M_n(R)$. Two rings $R$ and $S$ are Morita equivalent if and only if $S\cong\operatorname{End}_R(P)^{\mathrm{op}}$ for a finitely generated projective generator $P$ of $R\text{-}\mathbf{Mod}$; for a right $R$-module progenerator the anti-isomorphism is not needed and $S\cong\operatorname{End}_R(P)$, which is the form in which the Eilenberg–Watts theorem above produces it.
 
-**Remark.** Morita equivalence preserves the categorical properties of modules — projectivity, injectivity, flatness, exactness, the existence of projective covers — but it does not preserve the ring: $R$ and $M_n(R)$ have isomorphic module categories while being different rings, and the centre is preserved up to isomorphism. The precise statement, the construction of the bimodule and the classification of equivalences belong to the companion article *Morita Equivalence* of the category *Linear Spaces over Linear Algebras*; here only the definition and the prototypical example are needed, to record that a module category is an invariant of the ring strictly coarser than the ring itself.
+**Remark.** Morita equivalence preserves the categorical properties of modules — projectivity, injectivity, flatness, exactness, the existence of projective covers — but it does not preserve the ring: $R$ and $M_n(R)$ have isomorphic module categories while being different rings, and the centre is preserved up to isomorphism. The precise statement, the construction of the bimodule and the classification of equivalences belong to of the category *Linear Spaces over Linear Algebras*; here only the definition and the prototypical example are needed, to record that a module category is an invariant of the ring strictly coarser than the ring itself.
 
 ### The Centre and the Category
 
@@ -221,7 +221,7 @@ The left $R$-modules and the $R$-linear maps between them form the category $R\t
 
 The category $R\text{-}\mathbf{Mod}$ has a zero object and finite biproducts, so it is additive; it has all kernels and cokernels, and the canonical map $\operatorname{coim}f\to\operatorname{im}f$ is always an isomorphism, so it is the prototypical abelian category. It is complete and cocomplete, and filtered colimits are exact. The free–forgetful adjunction makes the free functor left adjoint to the forgetful functor, and the tensor–hom adjunction makes $-\otimes_RN$ left adjoint to $\operatorname{Hom}_R(N,-)$; left adjoints preserve colimits and right adjoints preserve limits, which is the reason the tensor product is right exact and $\operatorname{Hom}$ is left exact. The Yoneda lemma identifies universal properties with representability, and the regular module $R$ is a generator whose endomorphism ring is $R$.
 
-Two rings are Morita equivalent when their module categories are equivalent; matrix rings over $R$ are the basic examples, the centre is an invariant so that two commutative rings are Morita equivalent only when they are isomorphic, and the classification is treated in the companion article *Morita Equivalence* of the category *Linear Spaces over Linear Algebras*. The abstract notions of additive and abelian category that $R\text{-}\mathbf{Mod}$ exemplifies, and the Grothendieck categories that generalise it, are the subject of the next article of this category.
+Two rings are Morita equivalent when their module categories are equivalent; matrix rings over $R$ are the basic examples, the centre is an invariant so that two commutative rings are Morita equivalent only when they are isomorphic, and the classification is treated in of the category *Linear Spaces over Linear Algebras*. The abstract notions of additive and abelian category that $R\text{-}\mathbf{Mod}$ exemplifies, and the Grothendieck categories that generalise it, are not covered here.
 
 ## Summary of Notation
 
@@ -243,6 +243,12 @@ Two rings are Morita equivalent when their module categories are equivalent; mat
 | $\operatorname{End}_R(M)$ | ring of endomorphisms of $M$ |
 | $\varinjlim$, $\varprojlim$ | filtered colimit, limit |
 | $M_n(R)$ | ring of $n\times n$ matrices over $R$ |
+
+
+
+
+
+
 
 ## Further Reading
 

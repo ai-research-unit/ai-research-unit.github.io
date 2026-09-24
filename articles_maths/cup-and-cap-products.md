@@ -7,7 +7,7 @@ Cohomology with a ring of coefficients is not merely a graded module: it carries
 
 The construction is entirely formal. The only input beyond the singular chain complex of *Simplicial and Singular Homology* is the **Eilenberg–Zilber** comparison of the chains of a product with the tensor product of the chains of the factors, which is what makes the cross product well defined; and the only algebraic input is the $\operatorname{Tor}$ functor of the planned *Ext and Tor* of Part I, written in parallel, in the Künneth formula for coefficients in a general ring.
 
-The article does not yet use Poincaré duality: the cap product with a fundamental class, the intersection form and the duality theorem itself belong to the companion article *Poincaré Duality*, written next in this batch. The cap product is defined here because its formal properties — associativity with the cup product, naturality, and the projection formula — are needed wherever cohomology acts on homology, and because it is the operation through which duality is later stated.
+The article does not yet use Poincaré duality: the cap product with a fundamental class, the intersection form and the duality theorem itself lie outside this article. The cap product is defined here because its formal properties — associativity with the cup product, naturality, and the projection formula — are needed wherever cohomology acts on homology, and because it is the operation through which duality is later stated.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and all coefficients are in $R$ unless a module $G$ is named. Cohomology is contravariant, $f^*$ is the pullback, and the cohomology of a pair is as in *Cohomology and the Universal Coefficient Theorem*. The degree of a cohomology class $\varphi$ is written $|\varphi|$.
 
@@ -192,7 +192,7 @@ a truncated polynomial algebra on an odd generator over $\mathbb{Z}/2$; integral
 
 **Example.** For $S^m \times S^n$ with $m,n \geq 1$ and field coefficients, the Künneth formula gives $H^k \cong F$ for $k \in \{0,m,n,m+n\}$ with the multiplicity of $m=n$ accounted for, and zero otherwise. For $m \neq n$ the cohomology ring is the graded tensor product $\bigwedge(\alpha_m)\otimes\bigwedge(\beta_n)$ on generators of degrees $m$ and $n$, and both generators square to zero: the only class of degree $m$ is $\alpha_m = x\otimes 1$ with $x^2 = 0$ in $H^*(S^m)$, and likewise for $\beta_n$. For $m = n$ the ring is $\bigwedge(\alpha)\otimes\bigwedge(\beta)$ on two generators of the same degree $m$, still with $\alpha^2 = \beta^2 = 0$ and with $\alpha\beta$ generating the one-dimensional $H^{2m}$; a class $a\alpha + b\beta$ then has square $(a\alpha+b\beta)^2 = ab(\alpha\beta+\beta\alpha) = ab(1+(-1)^m)\alpha\beta$, which vanishes for $m$ odd and equals $2ab\,\alpha\beta$ for $m$ even, so that squares of degree-$m$ classes are nonzero in characteristic not $2$ although the generators are not.
 
-**Example (the Hopf map and $\mathbb{CP}^2$).** The quotient $S^3 \to S^2$ has fibre $S^1$; the associated disc bundle, glued with a $4$-disc, produces $\mathbb{CP}^2$ as the mapping cone of the Hopf map, and this gives a second computation of its cohomology ring from the cell structure with cells in degrees $0,2,4$ and the relation $x^2 = y$. The construction of the Hopf fibration and the general theory of fibrations belong to the companion article *Homotopy Groups and Fibrations*.
+**Example (the Hopf map and $\mathbb{CP}^2$).** The quotient $S^3 \to S^2$ has fibre $S^1$; the associated disc bundle, glued with a $4$-disc, produces $\mathbb{CP}^2$ as the mapping cone of the Hopf map, and this gives a second computation of its cohomology ring from the cell structure with cells in degrees $0,2,4$ and the relation $x^2 = y$. The construction of the Hopf fibration and the general theory of fibrations belong .
 
 ### Ring Structures and the Classification of Surfaces
 
@@ -216,7 +216,7 @@ where $\gamma$ generates $H^2(N_g;\mathbb{Z}/2)\cong\mathbb{Z}/2$; all the squar
 
 ### The Cap Product in Low Degrees
 
-**Example.** For a path-connected space $X$ and a class $\varphi \in H^1(X;R)$ represented by a cochain, the cap product with $\varphi$ is a derivation-like operation $H_n(X;R) \to H_{n-1}(X;R)$; when $\varphi$ is the class dual to a map $X \to S^1$, the cap product with $\varphi$ is the homology operation induced by the corresponding infinite cyclic cover, and it computes the twisted homology that appears in the Leray–Serre theory. The systematic statement uses the fundamental class and Poincaré duality and is given in *Poincaré Duality*.
+**Example.** For a path-connected space $X$ and a class $\varphi \in H^1(X;R)$ represented by a cocha, the cap product with $\varphi$ is a derivation-like operation $H_n(X;R) \to H_{n-1}(X;R)$; when $\varphi$ is the class dual to a map $X \to S^1$, the cap product with $\varphi$ is the homology operation induced by the corresponding infinite cyclic cover, and it computes the twisted homology that appears in the Leray–Serre theory. The systematic statement uses the fundamental class and Poincaré duality and is given.
 
 **Remark.** The cap product is the operation through which a cohomology class acts on homology, and it is therefore the algebraic form of the statement that a cohomology class is a family of subvarieties or of level sets. In the geometric articles of this corpus — the homology of the classical groups, the characteristic classes of *Fibre Bundles, Connections and Curvature*, and the intersection form of Poincaré duality — it is used exactly in this sense.
 
@@ -245,6 +245,10 @@ The Eilenberg–Zilber chain equivalence relates the chains of a product to the 
 | $x \in H^1(\mathbb{RP}^n;\mathbb{Z}/2)$ | Generator; $H^*(\mathbb{RP}^n;\mathbb{Z}/2) \cong (\mathbb{Z}/2)[x]/(x^{n+1})$ |
 | $\Lambda_R(\alpha_1,\ldots,\alpha_n)$ | Exterior algebra; $H^*(T^n;R)$ for $R$ a field or $\mathbb{Z}$ |
 | $T^n = (S^1)^n$ | The $n$-torus |
+
+
+
+
 
 ## Further Reading
 

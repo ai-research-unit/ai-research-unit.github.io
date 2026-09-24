@@ -4,9 +4,9 @@
 
 A field extension is a pair of fields $F \subseteq K$; it is studied by forgetting, temporarily, that $K$ is a field and remembering only that $K$ is a vector space over $F$. The dimension of that vector space is the **degree** $[K:F]$, and almost everything in the theory of extensions is a computation with degrees. The further structure — which elements of $K$ satisfy a polynomial equation over $F$ — is what separates the algebraic from the transcendental case and produces the minimal polynomial of an element.
 
-This article develops the calculus of degrees and minimal polynomials. It proves the tower law, which makes the degree multiplicative over intermediate fields, and it shows that an element is algebraic exactly when it generates a finite extension, in which case the extension is the quotient of a polynomial ring by the irreducible polynomial that vanishes at the element. These are the foundations on which *Splitting Fields and Algebraic Closure*, *Finite Fields* and *Galois Theory* are built.
+This article develops the calculus of degrees and minimal polynomials. It proves the tower law, which makes the degree multiplicative over intermediate fields, and it shows that an element is algebraic exactly when it generates a finite extension, in which case the extension is the quotient of a polynomial ring by the irreducible polynomial that vanishes at the element. These are the foundations on.
 
-Throughout, $F \subseteq K$ are fields, so $\operatorname{char} F = \operatorname{char} K$ by *Fields*, §3, and $K$ is a vector space over $F$ in the sense of *Vector Spaces*. The prime subfield of $F$, the Frobenius map, and the basic field axioms are assumed from *Fields*. Where a result requires that $2$ be invertible, or that a polynomial be separable, this is flagged.
+Throughout, $F \subseteq K$ are fields, so $\operatorname{char} F = \operatorname{char} K$ by *Fields*, §3, and $K$ is a vector space over $F$ in the sense. The prime subfield of $F$, the Frobenius map, and the basic field axioms are assumed from *Fields*. Where a result requires that $2$ be invertible, or that a polynomial be separable, this is flagged.
 
 ---
 
@@ -148,7 +148,7 @@ so $\alpha$ satisfies $x^4 - 10x^2 + 1$; this polynomial is irreducible over $\m
 
 **Proof.** If $\sigma$ is an $F$-embedding then $m_\alpha(\sigma(\alpha)) = \sigma(m_\alpha(\alpha)) = 0$, so $\sigma(\alpha)$ is a conjugate. Conversely every root $\beta$ of $m_\alpha$ admits an $F$-embedding $F(\alpha) \to L$ sending $\alpha$ to $\beta$, because $F(\alpha) \cong F[x]/(m_\alpha)$ and evaluation of $x$ at $\beta$ factors through this quotient. $\square$
 
-Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m_\alpha$ is separable, which is the case in characteristic $0$ and, more generally, for every **perfect** field; the inseparable case is treated in *Splitting Fields and Algebraic Closure*. In $\mathbb{C}$ the conjugates of $\sqrt2$ over $\mathbb{Q}$ are $\pm\sqrt2$, and the conjugates of a primitive $n$-th root of unity $\zeta_n$ over $\mathbb{Q}$ are the $\zeta_n^{k}$ with $\gcd(k,n) = 1$.
+Thus the number of conjugates of $\alpha$ equals $\deg m_\alpha$ exactly when $m_\alpha$ is separable, which is the case in characteristic $0$ , more generally, for every **perfect** field; the inseparable case is treated. In $\mathbb{C}$ the conjugates of $\sqrt2$ over $\mathbb{Q}$ are $\pm\sqrt2$, and the conjugates of a primitive $n$-th root of unity $\zeta_n$ over $\mathbb{Q}$ are the $\zeta_n^{k}$ with $\gcd(k,n) = 1$.
 
 ---
 
@@ -240,7 +240,7 @@ is a subfield of $K$, called the **algebraic closure of $F$ in $K$**.
 
 **Corollary.** Every element of a finite extension is algebraic over the base field, and the algebraic closure of $F$ in $K$ equals $K$ precisely when $K/F$ is algebraic.
 
-The corollary distinguishes the algebraic from the transcendental part of an extension: for $K = \mathbb{C}$ and $F = \mathbb{Q}$, the algebraic closure of $\mathbb{Q}$ in $\mathbb{C}$ is the countable field $\overline{\mathbb{Q}}$, and the complementary part consists of the transcendental numbers. This relative algebraic closure is not to be confused with the absolute algebraic closure $\overline{F}$ constructed in *Splitting Fields and Algebraic Closure*; it is algebraic over $F$ by construction, but it need not be algebraically closed.
+The corollary distinguishes the algebraic from the transcendental part of an extension: for $K = \mathbb{C}$ and $F = \mathbb{Q}$, the algebraic closure of $\mathbb{Q}$ in $\mathbb{C}$ is the countable field $\overline{\mathbb{Q}}$, and the complementary part consists of the transcendental numbers. This relative algebraic closure is not to be confused with the absolute algebraic closure $\overline{F}$ constructed; it is algebraic over $F$ by construction, but it need not be algebraically closed.
 
 ### Simple Extensions and the Primitive Element Theorem
 
@@ -248,7 +248,7 @@ A finite extension that equals $F(\alpha)$ is called simple, and by the theorem 
 
 **Theorem (primitive element theorem).** Every finite separable extension $K/F$ is simple: there exists $\alpha \in K$ with $K = F(\alpha)$.
 
-The proof requires separability, which is developed in *Splitting Fields and Algebraic Closure*, and is given there. Two cases make the theorem concrete: every finite extension of a field of characteristic $0$ is separable, so every finite extension of $\mathbb{Q}$ is simple; and every finite extension of a finite field is separable, so every finite field extension is simple. Separability is genuinely needed: the extension $\mathbb{F}_p(x, y)/\mathbb{F}_p(x^p, y^p)$ has degree $p^2$ but every element outside the base field has degree at most $p$ over it, so it is not simple.
+The proof requires separability, which is developed, and is given there. Two cases make the theorem concrete: every finite extension of a field of characteristic $0$ is separable, so every finite extension of $\mathbb{Q}$ is simple; and every finite extension of a finite field is separable, so every finite field extension is simple. Separability is genuinely needed: the extension $\mathbb{F}_p(x, y)/\mathbb{F}_p(x^p, y^p)$ has degree $p^2$ but every element outside the base field has degree at most $p$ over it, so it is not simple.
 
 ---
 
@@ -283,6 +283,8 @@ The tower law $[K:F] = [K:E][E:F]$ makes degree multiplicative over intermediate
 | $F(x)$ | Rational function field $\operatorname{Frac}(F[x])$ |
 | $EL$ | Compositum of subfields $E$ and $L$ |
 | $\operatorname{Frac}(R)$ | Fraction field of a domain $R$ |
+
+
 
 ## Further Reading
 

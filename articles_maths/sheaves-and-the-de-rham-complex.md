@@ -152,7 +152,7 @@ $$
 1. There is a natural isomorphism $H^k_{c,dR}(M)\cong H^k_c(M;\mathbb{R})$ between the cohomology of the compactly supported de Rham complex and the compactly supported singular cohomology of *Sheaf Cohomology*.
 2. If $M$ is a closed oriented $n$-manifold, integration gives a nondegenerate pairing
    $$H^k_{dR}(M)\times H^{n-k}_{c,dR}(M)\to\mathbb{R}, \qquad ([\alpha],[\beta])\mapsto\int_M\alpha\wedge\beta,$$
-   which is the de Rham form of the Poincaré duality of *Poincaré Duality*, and which identifies the compactly supported cohomology with the dual of the de Rham cohomology.
+ which is the de Rham form of the Poincaré duality of *Poincaré Duality*, and which identifies the compactly supported cohomology with the dual of the de Rham cohomology.
 3. For $M = \mathbb{R}^n$, $H^k_{c,dR}(\mathbb{R}^n) = \mathbb{R}$ for $k = n$ and $0$ otherwise; for the compact manifold $S^n$ the compactly supported cohomology coincides with the ordinary de Rham cohomology, so $H^k_{c,dR}(S^n) = \mathbb{R}$ for $k = 0$ and $k = n$ and $0$ otherwise, in agreement with the compactly supported groups of *Sheaf Cohomology*.
 
 *Proof.* (1) The compactly supported forms are exactly the sections over $M$ of the sheaf obtained by extending by zero the sheaf of forms on the open subsets: the presheaf $U\mapsto\Omega^k_c(U)$ is not a sheaf, but its sheafification is $\Omega^k$, and the compactly supported cohomology is computed by the complex of sections with support in a family, in the sense of *Sheaf Cohomology*; comparing with the compactly supported singular cochains, which compute $H^k_c$, gives the isomorphism. (2) The wedge product of a closed form and a compactly supported closed form is compactly supported and closed, and the integral depends only on the classes by Stokes' theorem; the pairing is nondegenerate by the Poincaré duality of the written article's Hodge-theoretic corollary, the harmonic representatives of the two cohomologies pairing by the integral of their wedge product. (3) is the computation of the compactly supported cohomology of $\mathbb{R}^n$ and of the sphere recorded in *Sheaf Cohomology*, together with (1). $\square$
@@ -196,6 +196,8 @@ The de Rham complex is moreover a sheaf of commutative differential graded algeb
 | $\Omega^k_c$, $H^k_{c,dR}$ | compactly supported forms and their cohomology; $\cong H^k_c(M;\mathbb{R})$ |
 | $\Omega^{p,q}$, $\bar\partial$ | forms of type $(p,q)$ and the Dolbeault operator; Dolbeault complex |
 | $Z^k$ | sheaf of closed $k$-forms; $0\to Z^k\to\Omega^k\to Z^{k+1}\to 0$ |
+
+
 
 ## Further Reading
 

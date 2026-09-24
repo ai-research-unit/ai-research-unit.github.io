@@ -5,7 +5,7 @@
 
 An abelian group is a group whose operation is commutative, and the abelian theory is both richer and more rigid than the general theory. Every subgroup is normal, every quotient is again abelian, and the structure of a finitely generated abelian group is completely determined by two numerical invariants. For infinite abelian groups the classification is genuinely harder: torsion groups decompose into their primary components, divisible groups are classifiable completely, the countable primary groups are classified by the Ulm invariants, but the countable torsion-free groups are already too numerous to admit a comparably simple description.
 
-This article is the tenth of the corpus and the first of the group articles. It stands below the whole foundational layer — *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices*, *Cardinality and the Axiom of Choice*, *Set-Theoretic Foundations*, *Formal Logic and Computability*, *Model Theory*, *Proof Theory and Type Theory* and *Universal Properties and Categories* — and it uses the elementary group theory of *Groups*, the direct and semidirect products of *Generators, Presentations and Free Products*, and the categorical vocabulary of universal properties. It develops the abelian theory for its own sake and because it is used later: the Schur multiplier and the low-dimensional cohomology of *Group Cohomology* take their coefficients in abelian groups, and the homology of a group is computed with abelian coefficients.
+This article is the tenth of the corpus and the first of the group articles. It stands below the whole foundational layer — *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices*, *Cardinality and the Axiom of Choice*, *Set-Theoretic Foundations*, *Formal Logic and Computability*, *Model Theory*, *Proof Theory and Type Theory* and *Universal Properties and Categories* — and it uses the elementary group theory of *Groups*, the direct and semidirect products, and the categorical vocabulary of universal properties. It develops the abelian theory for its own sake and because it is used later: the Schur multiplier and the low-dimensional cohomology take their coefficients in abelian groups, and the homology of a group is computed with abelian coefficients.
 
 Because the article is the first of the group sequence, it also fixes a convention: **abelian groups are written additively** in this and the following group articles whenever the commutativity is essential, with $+$ the operation, $0$ the identity and $-a$ the inverse; a general group is written multiplicatively, as in *Groups*. The two notations are related by the dictionary $+ \leftrightarrow \cdot$, $0 \leftrightarrow e$, $-a \leftrightarrow a^{-1}$, $na \leftrightarrow a^n$ for $n \in \mathbb{Z}$. No distance, no topology and no form appears; the topological theory of abelian groups, including duality, belongs to Part II, and the module-theoretic reading of an abelian group is developed in the module articles, to which this one defers.
 
@@ -57,7 +57,7 @@ $$
 (n + m)a = na + ma, \qquad n(a + b) = na + nb, \qquad (nm)a = n(ma), \qquad 1a = a.
 $$
 
-These are the axioms of a module over the ring $\mathbb{Z}$, so that an abelian group is the same thing as a $\mathbb{Z}$-module and a homomorphism of abelian groups is the same thing as a $\mathbb{Z}$-linear map. The correspondence is used here as a dictionary rather than as a construction. The structure theory of finitely generated modules over a principal ideal domain is standard algebra, obtained from the Smith normal form of a presentation matrix (Lang, cited under **Further Reading**); it gives the structure theorem for finitely generated abelian groups as the special case of the base ring $\mathbb{Z}$, and the article quotes that proof where it is shorter than the group-theoretic one. The general theory of modules over a commutative ring is developed in *Modules*, in the Linear Spaces slot of this Part.
+These are the axioms of a module over the ring $\mathbb{Z}$, so that an abelian group is the same thing as a $\mathbb{Z}$-module and a homomorphism of abelian groups is the same thing as a $\mathbb{Z}$-linear map. The correspondence is used here as a dictionary rather than as a construction. The structure theory of finitely generated modules over a principal ideal domain is standard algebra, obtained from the Smith normal form of a presentation matrix (Lang, cited under **Further Reading**); it gives the structure theorem for finitely generated abelian groups as the special case of the base ring $\mathbb{Z}$, and the article quotes that proof where it is shorter than the group-theoretic one. The general theory of modules over a commutative ring is developed, in the Linear Spaces slot of this Part.
 
 ## Free Abelian Groups and Rank
 
@@ -69,7 +69,7 @@ These are the axioms of a module over the ring $\mathbb{Z}$, so that an abelian 
 
 **Proof.** Take $F(B) = \bigoplus_{b \in B} \mathbb{Z}$ and let $B$ be the set of standard basis elements. Every element is a finite sum $\sum_b n_b b$, and the assignment $\tilde f(\sum_b n_b b) = \sum_b n_b f(b)$ is a homomorphism, unique because it is determined on the generators. $\square$
 
-This is the universal arrow from a set to the forgetful functor, in the sense of *Universal Properties and Categories*, and it is the model of the free construction whose group-theoretic form is the free group of *Generators, Presentations and Free Products*. The free abelian group on $B$ is the abelianisation of the free group on $B$.
+This is the universal arrow from a set to the forgetful functor, in the sense of *Universal Properties and Categories*, and it is the model of the free construction whose group-theoretic form is the free group. The free abelian group on $B$ is the abelianisation of the free group on $B$.
 
 ### Rank
 
@@ -87,7 +87,7 @@ This is the universal arrow from a set to the forgetful functor, in the sense of
 
 **Proof sketch.** Let $B = \{b_1, \ldots, b_n\}$ be a basis. Induct on $n$. For $n = 1$, a subgroup of $\mathbb{Z}$ is $m\mathbb{Z}$, which is free of rank $1$ if $m \neq 0$ and rank $0$ if $m = 0$. For the induction step, let $\pi : F \to \mathbb{Z}$ be the projection onto the last coordinate and let $H' = H \cap \ker\pi$; by induction $H'$ is free of rank at most $n - 1$. If $\pi(H) = 0$ then $H = H'$. Otherwise $\pi(H) = m\mathbb{Z}$ with $m \neq 0$; choose $h \in H$ with $\pi(h) = m$ and show, by subtracting a multiple of $h$ from each element of $H$, that $H = H' \oplus \mathbb{Z} h$, which is free of rank at most $n$. $\square$
 
-The theorem is the abelian case of the Nielsen–Schreier theorem for free groups, which is proved in *Combinatorial Group Theory*; for a free group the conclusion is that a subgroup of a free group is free, without the rank restriction, and rank can only increase. The induction above is written for a finite basis; for an arbitrary basis the same argument is run by transfinite induction along a well-ordered basis, so the theorem holds for free abelian groups of every rank, the well-ordering being the point at which the argument uses *Cardinality and the Axiom of Choice*.
+The theorem is the abelian case of the Nielsen–Schreier theorem for free groups, which is proved; for a free group the conclusion is that a subgroup of a free group is free, without the rank restriction, and rank can only increase. The induction above is written for a finite basis; for an arbitrary basis the same argument is run by transfinite induction along a well-ordered basis, so the theorem holds for free abelian groups of every rank, the well-ordering being the point at which the argument uses *Cardinality and the Axiom of Choice*.
 
 ### Finitely Generated Abelian Groups
 
@@ -169,7 +169,7 @@ The cardinal numbers $|I|$ and $|I_p|$ are uniquely determined by $D$.
 
 **Proof sketch.** Let $T = T(D)$ be the torsion subgroup, which is divisible: if $t \in T$ has order $n$ and $nx = t$, then $n^2x = nt = 0$, so $x \in T$. The torsion divisible group $T$ splits into primary components $T_p$, each of which is divisible and is a direct sum of copies of $\mathbb{Z}[p^\infty]$: in a divisible $p$-group, the subgroup of elements of order dividing $p$ is elementary abelian and the group is the direct sum of the Prüfer groups generated by choosing a basis of that layer and lifting it along the division. The quotient $D/T$ is torsion-free and divisible, hence a direct sum of copies of $\mathbb{Q}$. Uniqueness follows because $D[p] = \mathbb{Z}[p^\infty][p]^{(I_p)}$ is an elementary abelian $p$-group of dimension $|I_p|$ over $\mathbb{F}_p$, so $|I_p|$ is recovered from $D$ as that dimension, and $|I|$ is recovered as the rank of the torsion-free divisible quotient $D/T$. $\square$
 
-The theorem classifies the divisible groups completely, and with it the **injective** abelian groups: an abelian group is injective (a direct summand of every group containing it) if and only if it is divisible, by **Baer's criterion**. The injective objects of a module category are treated in *Modules*; the group-theoretic statement is recorded here because it is the origin of the notion.
+The theorem classifies the divisible groups completely, and with it the **injective** abelian groups: an abelian group is injective (a direct summand of every group containing it) if and only if it is divisible, by **Baer's criterion**. The injective objects of a module category are treated; the group-theoretic statement is recorded here because it is the origin of the notion.
 
 ## The Structure of Infinite Abelian Groups
 
@@ -203,11 +203,11 @@ Ulm's theorem is the classification of countable primary groups, and it is the d
 
 For uncountable $p$-groups the Ulm sequence no longer classifies, and the isomorphism problem for the torsion groups of cardinality $\aleph_1$ is not settled by the invariants of Ulm's theorem; the finer invariants of Shelah and the independence phenomena they exhibit are the subject of set-theoretic group theory and belong to the model-theoretic study of the category of abelian groups. Even in the countable case, the torsion-free groups are not classifiable: the rank-one groups are classified by types, but rank-two torsion-free groups already include families that are not separated by any reasonable complete invariant, and the classification problem for countable torsion-free abelian groups is undecidable in the sense that the isomorphism relation is not smooth. The contrast — a complete classification for the primary groups and none for the torsion-free groups — is the central fact of the structure theory of infinite abelian groups.
 
-**Remark.** The dual theory, in which a group carries a topology and the group of characters $\operatorname{Hom}(A, \mathbb{R}/\mathbb{Z})$ is studied with its own structure, is **Pontryagin duality**, and it belongs to Part II, where a topology is available; the algebraic part of the theory, in which the character group is treated as an abstract group, is developed with the module theory of *Modules*. The present article stops at the algebraic classification.
+**Remark.** The dual theory, in which a group carries a topology and the group of characters $\operatorname{Hom}(A, \mathbb{R}/\mathbb{Z})$ is studied with its own structure, is **Pontryagin duality**, and it belongs to Part II, where a topology is available; the algebraic part of the theory, in which the character group is treated as an abstract group, is developed with the module theory. The present article stops at the algebraic classification.
 
 ## Summary
 
-An abelian group is written additively; every subgroup is normal, the cyclic groups are $\mathbb{Z}$ and $\mathbb{Z}/n\mathbb{Z}$, and their subgroups are cyclic with the divisors of $n$ indexing those of $\mathbb{Z}/n\mathbb{Z}$. Direct sums are the coproducts and, for finitely many factors, the products; an abelian group is the same thing as a module over $\mathbb{Z}$, and this dictionary transfers the module-theoretic structure theory, proved in *Modules*, to the finitely generated case.
+An abelian group is written additively; every subgroup is normal, the cyclic groups are $\mathbb{Z}$ and $\mathbb{Z}/n\mathbb{Z}$, and their subgroups are cyclic with the divisors of $n$ indexing those of $\mathbb{Z}/n\mathbb{Z}$. Direct sums are the coproducts , for finitely many factors, the products; an abelian group is the same thing as a module over $\mathbb{Z}$, and this dictionary transfers the module-theoretic structure theory, proved, to the finitely generated case.
 
 Free abelian groups are the direct sums of copies of $\mathbb{Z}$, characterised by the universal property of extension of functions on a basis; the rank is well defined and is computed by reduction modulo $2$, and subgroups of free abelian groups are free of no larger rank. Every finitely generated abelian group is $\mathbb{Z}^r$ plus a direct sum of cyclic groups of prime-power order, with invariants the rank $r$ and the invariant factors, uniquely determined.
 
@@ -233,6 +233,8 @@ For countable primary groups the structure theory is complete: a countable $p$-g
 | $\mathbb{Z}[p^\infty]$ | Prüfer $p$-group |
 | $U(k,G)$ | $k$-th Ulm invariant of a $p$-group |
 | $D^{(I)}$ | Direct sum of $|I|$ copies of $D$ |
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A universal property describes an object by the maps into or out of it, rather than by its internal construction. The free monoid on a set, the product of two sets, the quotient of a set by an equivalence relation and the type of functions from one type to another are all solutions to problems of the same shape: an object is required, together with a map satisfying a condition, such that every other candidate factors through it uniquely. Category theory is the language in which this shape is stated once and for all. A **category** carries objects and composable maps, a **functor** carries one category into another, a **natural transformation** compares two functors, and the notions of **limit**, **adjoint functor** and **monad** are the general forms of the universal constructions that algebra performs.
 
-The article is the ninth and last of the foundational layer of the corpus, above *Sets, Functions and Relations*, *Order Theory and Lattices*, *Set-Theoretic Foundations*, *Formal Logic and Computability*, *Model Theory* and *Proof Theory and Type Theory*. Its examples are drawn from those articles: the category of sets and functions, the category attached to a partial order and the lattice constructions of *Order Theory and Lattices*, the models and structures of *Model Theory*, and the types and terms of *Proof Theory and Type Theory*. Its purpose is to fix the vocabulary that the remainder of the corpus uses, and in particular the language in which *Group Cohomology* states its constructions. Because it is foundational, it develops no algebra of its own: the examples are the sets, orders, monoids and types that the earlier articles provide, and the algebraic categories whose objects are introduced later — groups, rings, modules, vector spaces — are named and deferred, not developed.
+The article is the ninth and last of the foundational layer of the corpus, above *Sets, Functions and Relations*, *Order Theory and Lattices*, *Set-Theoretic Foundations*, *Formal Logic and Computability*, *Model Theory* and *Proof Theory and Type Theory*. Its examples are drawn from those articles: the category of sets and functions, the category attached to a partial order and the lattice constructions of *Order Theory and Lattices*, the models and structures of *Model Theory*, and the types and terms of *Proof Theory and Type Theory*. Its purpose is to fix the vocabulary that the remainder of the corpus uses, and in particular the language in whichstates its constructions. Because it is foundational, it develops no algebra of its own: the examples are the sets, orders, monoids and types that the earlier articles provide, and the algebraic categories whose objects are introduced later — groups, rings, modules, vector spaces — are named and deferred, not developed.
 
 The article is written under the same restriction as the rest of the foundational layer. No distance, no topology, no form appears. Where a construction has a richer form once a topology is available — the topological group, the completion, the sheaf — the article states the algebraic or order-theoretic version and defers the enrichment to Part II. The general homological algebra over a ring, and the functors $\operatorname{Ext}$ and $\operatorname{Tor}$, belong to the module-theoretic articles and are not developed here; the categorical constructions that those articles use — in particular the universal property of the tensor product — are stated in the form in which they will be applied and are proved there.
 
@@ -38,7 +38,7 @@ The class-and-set distinction is that of *Set-Theoretic Foundations*: the object
 
 **Definition.** A **monoid** is a set $M$ with an associative binary operation and an identity element; a **monoid homomorphism** is a function preserving the operation and the identity. Monoids are used in this article as the simplest algebraic example of a category, and their theory, like that of the groups that refine them, belongs to the algebraic articles of the corpus.
 
-**Example (a monoid as a category).** A monoid $(M, \cdot, e)$ becomes a category with a single object $\ast$, whose morphisms $\ast \to \ast$ are the elements of $M$, with composition the multiplication and the identity $e$. Conversely a category with one object is a monoid. This example shows that the composition axiom is exactly associativity, and it is the reason the categorical formulation of a group action in *Group Actions and Structure* is stated with a single object.
+**Example (a monoid as a category).** A monoid $(M, \cdot, e)$ becomes a category with a single object $\ast$, whose morphisms $\ast \to \ast$ are the elements of $M$, with composition the multiplication and the identity $e$. Conversely a category with one object is a monoid. This example shows that the composition axiom is exactly associativity, and it is the reason the categorical formulation of a group action is stated with a single object.
 
 **Example (the category of types).** The simply typed lambda calculus of *Proof Theory and Type Theory* yields a category $\mathbf{Type}$ whose objects are the types and whose morphisms $A \to B$ are the terms of type $A \to B$ modulo $\beta\eta$-conversion, with composition the substitution of one term into another. The categorical reading of the Curry–Howard correspondence is that this category has, for each pair of types, a product and an exponential, which is the content of the last section.
 
@@ -110,7 +110,7 @@ are equal: $G(f) \circ \eta_A = \eta_B \circ F(f)$. The transformation is a **na
 
 **Example (free monoid).** Let $U : \mathbf{Mon} \to \mathbf{Set}$ be the forgetful functor from monoids to sets. For a set $X$, let $X^*$ be the set of finite words in the alphabet $X$, with concatenation and the empty word as multiplication and identity; this is the **free monoid** on $X$. The insertion $u : X \to U(X^*)$ sending a letter to the one-letter word, with $X^*$, is a universal arrow from $X$ to $U$. Indeed, a monoid homomorphism $X^* \to M$ is determined by its values on the one-letter words, and any function $X \to U(M)$ extends uniquely to a homomorphism.
 
-**Remark.** The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong to *Groups*, *Modules* and *Algebras*. The present article supplies the schema; those articles supply the objects.
+**Remark.** The free group on a set, the free module on a set, the free algebra of a signature and the tensor product of modules are all universal arrows of the same shape, and their constructions belong,andall. The present article supplies the schema; those articles supply the objects.
 
 ## Limits and Colimits
 
@@ -230,7 +230,7 @@ A **comonad** is the dual.
 
 **Proof sketch.** For the first statement, the triangular identities of the adjunction give the two monad laws, and the verification is a calculation with $\eta$ and $\varepsilon$. For the converse, the Kleisli category has the free algebras as its objects, and the Eilenberg–Moore category has all algebras; the two adjunctions induce the given monad because $G \circ F$ recovers $T$ on both. $\square$
 
-**Remark.** The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles and in *Algebras*.
+**Remark.** The monadicity theorem of Beck gives a criterion for a right adjoint to be the Eilenberg–Moore comparison functor, hence for a category to be the category of algebras of a monad over another. The theory is the categorical form of universal algebra, and it is used in the corpus for the algebraic theories whose models are groups, rings and modules, whose constructions are in the corresponding articles .
 
 ## Universal Properties in Algebra
 
@@ -242,7 +242,7 @@ The constructions of algebra are of two related kinds: those that freely add str
 
 **Example (quotient in Set).** The coequaliser of two maps $f, g : A \to B$ in $\mathbf{Set}$ is the quotient of $B$ by the smallest equivalence relation containing all pairs $(f(a), g(a))$, with the universal property that a function on the quotient is a function on $B$ constant on the equivalence classes. The quotients of *Sets, Functions and Relations* are the coequalisers of this form.
 
-**Example (tensor product, stated).** For modules $M$ and $N$ over a commutative ring $R$, the tensor product $M \otimes_R N$ is characterised by the universal property that $R$-bilinear maps $M \times N \to P$ correspond naturally to $R$-linear maps $M \otimes_R N \to P$. The construction and the proof of existence belong to *Modules* and *Linear Spaces*; the universal property is recorded here because it is the prototype of a **representable functor** defined by multilinear data, and because *Group Cohomology* uses the same form of argument.
+**Example (tensor product, stated).** For modules $M$ and $N$ over a commutative ring $R$, the tensor product $M \otimes_R N$ is characterised by the universal property that $R$-bilinear maps $M \times N \to P$ correspond naturally to $R$-linear maps $M \otimes_R N \to P$. The construction and the proof of existence belong and *Linear Spaces*; the universal property is recorded here because it is the prototype of a **representable functor** defined by multilinear data, and becauseuses the same form of argument.
 
 ### The Categorical Content of the Curry–Howard Correspondence
 
@@ -260,7 +260,7 @@ Initial and terminal objects, products and coproducts, and more generally limits
 
 An adjunction $F \dashv G$ is a natural bijection between the morphisms $F(C) \to D$ and $C \to G(D)$; the free-forgetful adjunctions, currying and the Galois connections of order theory are the standard examples. An adjunction is equivalently given by a unit and a counit satisfying the triangular identities, and the adjoint functor theorem gives a criterion for a left adjoint to exist. The Yoneda lemma identifies the natural transformations from a representable presheaf into a presheaf $F$ with the elements of $F(A)$; it makes the Yoneda embedding full and faithful and shows that an object defined by a universal property is determined up to isomorphism.
 
-A monad is a functor with a unit and a multiplication satisfying associativity and the unit laws; the list monad and the power-set monad are the standard examples, and the algebras for the list monad are the monoids. Every adjunction produces a monad, and every monad arises from the Kleisli and Eilenberg–Moore adjunctions. In algebra, free objects are universal arrows from a set to a forgetful functor, quotients are coequalisers, and the tensor product is the representing object of the bilinear maps; the constructions themselves belong to the algebraic articles that follow, and the categorical schema is the one fixed here.
+A monad is a functor with a unit and a multiplication satisfying associativity and the unit laws; the list monad and the power-set monad are the standard examples, and the algebras for the list monad are the monoids. Every adjunction produces a monad, and every monad arises from the Kleisli and Eilenberg–Moore adjunctions. In algebra, free objects are universal arrows from a set to a forgetful functor, quotients are coequalisers, and the tensor product is the representing object of the bilinear maps; the constructions themselves belong to the algebraic other articles, and the categorical schema is the one fixed here.
 
 ## Summary of Notation
 
@@ -284,6 +284,10 @@ A monad is a functor with a unit and a multiplication satisfying associativity a
 | $(T,\eta,\mu)$ | Monad; $\mathcal{C}^T$ Eilenberg–Moore category |
 | $X^*$ | Free monoid on $X$ |
 | $\otimes_R$ | Tensor product over $R$ (universal property stated here) |
+
+
+
+
 
 ## Further Reading
 

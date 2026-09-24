@@ -5,7 +5,13 @@
 
 The transformation groups of *Transformation Groups* come in three levels: the bijections of a set, the automorphisms of a linear structure, and the automorphisms of a linear structure together with a form. The automorphisms of a linear structure are the general linear groups, and the groups at the third level — orthogonal, unitary and symplectic — are the **classical groups**. This article develops them in their matrix form, which is the form in which they are computed with, and establishes the isomorphisms among the small ones that make the beginning of the theory recognisable.
 
-The general theory of the groups $GL(V)$ and $SL(V)$, of transvections and elementary matrices, and of the way row and column operations generate them belongs to the linear companion articles; the general construction of $O(V, g)$, $U(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is the subject of *The Unitary and Symplectic Groups*, written in parallel, and the additive and bilinear preliminaries are in the companion articles *Bilinear Forms* and *Isometries and Orthogonal Transformations*, also written in parallel. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
+The general theory of the groups $GL(V)$ and $SL(V)$, of transvections and elementary matrices, and of the way row and column operations generate them belongs to the linear companion articles; a **bilinear form** on a free module $V$ over a commutative ring $R$ is a map $\beta:V\times V\to R$ linear in each variable, and its **isometry group** is
+
+$$
+O(V,\beta) = \{\,g \in GL(V) : \beta(gx,gy) = \beta(x,y) \ \text{for all } x,y \in V\,\},
+$$
+
+the Hermitian case reading the same way with the form sesquilinear in the second variable and the alternating case with $\beta$ alternating; the symmetric, Hermitian and alternating forms give the three classical families. That is all that is taken from outside this article. The general construction of $O(V, g)$, $U(V, h)$ and $Sp(V, \omega)$ from a form, including the four families $A$, $B$, $C$, $D$ and the quaternionic unitary group, is not covered here. What is assumed here is the definition of a form and of its isometry group, and what is supplied here is: the explicit matrix conditions, the determinant constraints, the compactness and the centres, the realisation of $SU(2)$ as the unit quaternions, and the double covers $SU(2) \to SO(3)$ and $SU(2) \times SU(2) \to SO(4)$.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $K$ a field; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those are meant. The quaternion algebra is $\mathbb{H}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, the norm form is $N(q) = q \bar q$ and $\mathrm{Sc}$, $\mathrm{Vect}$ are the scalar and vector parts. No physics is invoked: the rotation groups appear here as groups of linear transformations preserving a form, never as symmetry groups of a physical system.
 
@@ -65,7 +71,7 @@ and $O(n) = O(n, \mathbb{R})$.
 
 **Proof.** The kernel of a homomorphism is normal and the surjectivity is exhibited. For connectedness, every element of $SO(n)$ is a product of rotations of coordinate planes, and each rotation of a plane can be joined to the identity by a path inside that plane; this is the standard generation of $SO(n)$ by plane rotations, and it exhibits a path. A closed subgroup of index $2$ is both open and closed, so the components of $O(n)$ are $SO(n)$ and the other coset. $\square$
 
-For $n = 2$ the group $SO(2)$ consists of the matrices $\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$ and is isomorphic to the circle group $S^1 = U(1)$; for $n = 1$, $O(1) = \{\pm 1\}$ and $SO(1) = \{1\}$. Every element of $O(n)$ is a product of at most $n$ reflections of hyperplanes, a theorem of Cartan and Dieudonné proved in *Isometries and Orthogonal Transformations*, written in parallel.
+For $n = 2$ the group $SO(2)$ consists of the matrices $\begin{pmatrix} \cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$ and is isomorphic to the circle group $S^1 = U(1)$; for $n = 1$, $O(1) = \{\pm 1\}$ and $SO(1) = \{1\}$. Every element of $O(n)$ is a product of at most $n$ reflections of hyperplanes, a theorem of Cartan and Dieudonné, proved in the cited literature.
 
 ## The Unitary Group
 
@@ -135,7 +141,7 @@ So the compact symplectic group is a subgroup of the special unitary group: $Sp(
 
 ### The Two Uses of the Symbol Sp
 
-The symbol $Sp$ carries two standard meanings that must be distinguished. In this article $Sp(n)$ is the compact quaternionic unitary group of dimension $n(2n+1)$, a compact group acting on $\mathbb{H}^n \cong \mathbb{C}^{2n}$. In the companion article *The Unitary and Symplectic Groups*, written in parallel, $Sp(2n, K)$ denotes the isometry group of a non-degenerate alternating form on $K^{2n}$, an algebraic group whose $\mathbb{C}$-points are a complex Lie group of the same dimension $n(2n+1)$ but which is not compact. The two are related by complexification: the complexification of the compact group $Sp(n)$ is $Sp(2n, \mathbb{C})$. What differs is therefore the indexing: $Sp(n)$ carries the rank $n$ and acts on a quaternionic space of $n$ coordinates, while $Sp(2n, \mathbb{C})$ acts on a complex space of $2n$ coordinates.
+The symbol $Sp$ carries two standard meanings that must be distinguished. In this article $Sp(n)$ is the compact quaternionic unitary group of dimension $n(2n+1)$, a compact group acting on $\mathbb{H}^n \cong \mathbb{C}^{2n}$. In, $Sp(2n, K)$ denotes the isometry group of a non-degenerate alternating form on $K^{2n}$, an algebraic group whose $\mathbb{C}$-points are a complex Lie group of the same dimension $n(2n+1)$ but which is not compact. The two are related by complexification: the complexification of the compact group $Sp(n)$ is $Sp(2n, \mathbb{C})$. What differs is therefore the indexing: $Sp(n)$ carries the rank $n$ and acts on a quaternionic space of $n$ coordinates, while $Sp(2n, \mathbb{C})$ acts on a complex space of $2n$ coordinates.
 
 ## SU(2) and the Unit Quaternions
 
@@ -307,6 +313,10 @@ The representations of the quaternion algebra make the lowest cases explicit. Th
 | $Z(G)$ | Centre of a group |
 | $\mathbb{Z}/n\mathbb{Z}$, $\mu_n$ | Cyclic group of order $n$; $n$-th roots of unity |
 | Dieudonné determinant | Determinant of a matrix over a division ring, valued in $\mathbb{H}^\times/[\mathbb{H}^\times, \mathbb{H}^\times]$ |
+
+
+
+
 
 ## Further Reading
 

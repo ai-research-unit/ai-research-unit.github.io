@@ -150,13 +150,13 @@ In each case the inverse is the conjugate divided by the norm, and the criterion
 
 Let $k$ be a field and $n \geq 2$. The algebra $M_n(k)$ of $n\times n$ matrices has dimension $n^2$, its centre is the scalar matrices $kI_n$, and its group of units is the general linear group $\mathrm{GL}_n(k)$. Its two-sided ideals are only $0$ and $M_n(k)$: the algebra is simple. Indeed, if a nonzero ideal contains a matrix $A$ with a nonzero entry $A_{ij}$, then multiplying by the matrix units $E_{ki}$ and $E_{jl}$ produces every matrix unit, hence the whole algebra.
 
-The zero divisors are the nonzero non-invertible matrices, which exist as soon as $n \geq 2$: the matrix units satisfy $E_{11}E_{22} = 0$ with both factors nonzero, and any nonzero matrix of rank less than $n$ kills a nonzero vector on one side. So $M_n(k)$ is simple but not a division algebra, and the two-sided ideal theory is trivial while the one-sided theory is not: the left ideals of $M_n(k)$ are exactly the sets of matrices whose columns lie in a fixed subspace of $k^n$. The matrix algebra is treated in detail in *Matrix Algebras*.
+The zero divisors are the nonzero non-invertible matrices, which exist as soon as $n \geq 2$: the matrix units satisfy $E_{11}E_{22} = 0$ with both factors nonzero, and any nonzero matrix of rank less than $n$ kills a nonzero vector on one side. So $M_n(k)$ is simple but not a division algebra, and the two-sided ideal theory is trivial while the one-sided theory is not: the left ideals of $M_n(k)$ are exactly the sets of matrices whose columns lie in a fixed subspace of $k^n$. The matrix algebra is treated in detail.
 
 ## Polynomial Algebras
 
 Let $k$ be a field and let $k[x_1, \dots, x_n]$ be the polynomial algebra in $n$ commuting indeterminates. It is commutative, infinite-dimensional over $k$, and an integral domain: a product of nonzero polynomials is nonzero. Its group of units is $k^\times$, because only the nonzero constants have inverses; its ideals are finitely generated for every $n$, by the Hilbert basis theorem, and they are principal for $n = 1$, while for $n \geq 2$ they need not be principal. It is not simple, and it has no nonzero nilpotent elements.
 
-For $n = 1$ the structure is completely described by divisibility: every ideal of $k[x]$ is $(f)$ for a unique monic polynomial $f$, the maximal ideals are $(x - a)$ for $a \in k$ when $k$ is algebraically closed, and the units are the nonzero constants. The polynomial algebra is the free commutative $k$-algebra on one generator, and it is the commutative counterpart of the free algebra of *Tensor Powers and the Free Algebra*; it is treated in *Polynomial Algebras*.
+For $n = 1$ the structure is completely described by divisibility: every ideal of $k[x]$ is $(f)$ for a unique monic polynomial $f$, the maximal ideals are $(x - a)$ for $a \in k$ when $k$ is algebraically closed, and the units are the nonzero constants. The polynomial algebra is the free commutative $k$-algebra on one generator, and it is the commutative counterpart of the free algebra of *Tensor Powers and the Free Algebra*; it is treated.
 
 ## Group Algebras
 
@@ -174,13 +174,13 @@ $$
 \mathbb{C}[G] \cong \prod_{\rho \text{ irreducible}} M_{n_\rho}(\mathbb{C}),
 $$
 
-one factor for each irreducible complex representation, of size equal to its degree; the algebra is simple only for the trivial group. The centre of $k[G]$ consists of the class sums, and it has dimension equal to the number of conjugacy classes. Group algebras are treated in *Group Algebras*, and their operator-algebraic completions in *Operator Algebras*.
+one factor for each irreducible complex representation, of size equal to its degree; the algebra is simple only for the trivial group. The centre of $k[G]$ consists of the class sums, and it has dimension equal to the number of conjugacy classes. Group algebras are treated, and their operator-algebraic completions.
 
 ## Summary
 
 The examples fall into a small number of structural types. The **division algebras** among them are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$; the **fields** are the commutative ones, and the **simple algebras** are those with no nontrivial two-sided ideals, namely $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{B} \cong M_2(\mathbb{C})$ and $M_n(k)$. The algebras with **zero divisors or nilpotents** — $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$, $M_n(k)$ for $n\geq2$, $k[G]$ for $|G|\geq2$ — are exactly the ones that are not division algebras, and the two criteria of size of the centre and existence of zero divisors separate the cases: $\mathbb{H}$ is a division algebra with centre $\mathbb{R}$, $\mathbb{B}$ is simple but not a division algebra with centre $\mathbb{C}$, $\mathbb{D}$ is semisimple but not simple with centre $\mathbb{D}$, and $\mathbb{D}'$ is local with a nilpotent radical.
 
-The table at the head of the article records the data for each algebra, and the remainder of the category develops the individual cases: *Matrix Algebras*, *Polynomial Algebras*, *Group Algebras* and *Division Algebras* for the general families, the number-system articles of the written corpus for the low-dimensional real algebras, and *Worked Examples in the Biquaternion Algebra* for the fully computed case.
+The table at the head of the article records the data for each algebra.
 
 ## Summary of Notation
 
@@ -200,6 +200,8 @@ The table at the head of the article records the data for each algebra, and the 
 | $A^\times$ | Group of units of $A$ |
 | $N(u) = uu^*$ | Norm form, multiplicative |
 | $\pi$ | Augmentation map $k[G] \to k$ |
+
+
 
 ## Further Reading
 

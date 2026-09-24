@@ -20,7 +20,7 @@ The background is *Rings*, *Units, Zero Divisors and Integral Domains*, *Factori
 
 **Example ($\mathbb{Z}/n\mathbb{Z}$).** For $n \geq 1$ the ring $\mathbb{Z}/n\mathbb{Z}$ has $n$ elements and characteristic $n$. Its units are the classes of the integers coprime to $n$, so the group of units is $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$; it is a domain exactly when it is a field, exactly when $n$ is prime, in which case it is $\mathbb{F}_p$; and for composite $n$ every class of a nonunit that is not zero is a zero divisor, since $ab \equiv 0$ with $a,b$ proper divisors of $n$. For $n = 4$ the units are $1, 3$ and the maximal ideal is $(2)$; for $n = 6$ the ring is $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ by the Chinese remainder theorem, with idempotents $0,1$ in each factor giving four idempotents in the product.
 
-**Example (finite fields).** For $q = p^f$ there is, up to isomorphism, exactly one field $\mathbb{F}_q$ with $q$ elements; its group of units is cyclic of order $q-1$, and its prime subfield is $\mathbb{F}_p$. The smallest cases are $\mathbb{F}_2 = \{0,1\}$, $\mathbb{F}_3$, $\mathbb{F}_4 = \mathbb{F}_2[x]/(x^2+x+1)$ and $\mathbb{F}_8 = \mathbb{F}_2[x]/(x^3+x+1)$; these are the fields in which *Finite Fields* and *Linear Codes over Finite Fields*, being written in parallel, work, and each is a simple extension of its prime field by an irreducible polynomial.
+**Example (finite fields).** For $q = p^f$ there is, up to isomorphism, exactly one field $\mathbb{F}_q$ with $q$ elements; its group of units is cyclic of order $q-1$, and its prime subfield is $\mathbb{F}_p$. The smallest cases are $\mathbb{F}_2 = \{0,1\}$, $\mathbb{F}_3$, $\mathbb{F}_4 = \mathbb{F}_2[x]/(x^2+x+1)$ and $\mathbb{F}_8 = \mathbb{F}_2[x]/(x^3+x+1)$; these are the fields in which *Finite Fields* andbeing, work, and each is a simple extension of its prime field by an irreducible polynomial.
 
 **Example (Boolean rings).** In $\mathbb{F}_2^n$ with coordinatewise operations every element is idempotent, $a^2 = a$, and $a+a = 0$; such a ring is a product of copies of $\mathbb{F}_2$ and is not a domain for $n \geq 2$, since the standard basis elements multiply to zero.
 
@@ -137,6 +137,8 @@ The two two-dimensional rings fixed by the conventions appear in their proper pl
 | $M_n(R)$ | Ring of $n\times n$ matrices over $R$ |
 | $K[G]$ | Group ring of a finite group |
 | $\zeta_n$ | Primitive $n$-th root of unity |
+
+
 
 ## Further Reading
 

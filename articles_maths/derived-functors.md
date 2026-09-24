@@ -5,9 +5,9 @@
 
 A half-exact functor loses information: the left exact functor $\operatorname{Hom}_R(M,-)$ turns a short exact sequence into four exact terms and then stops, and the right exact functor $-\otimes_RM$ does the same in the other direction. The loss is measured by a sequence of functors, the **derived functors**, which continue the exact sequence indefinitely and turn the failure of exactness into data. The construction is the one the previous article prepared: apply the functor not to the module but to a projective or an injective resolution, and take the homology of the resulting complex. The comparison theorem guarantees that the answer does not depend on the resolution chosen, so the construction is intrinsic.
 
-This article develops the right derived functors of a left exact functor and the left derived functors of a right exact one, their independence of the resolution, the connecting homomorphism and the long exact sequence, the technique of dimension shifting, the characterisation of derived functors as universal delta-functors, the use of acyclic resolutions, and the elementary vanishing and additivity properties. It is the direct continuation of *Homological Algebra*, and it prepares the articles *Ext and Tor*, *Spectral Sequences*, *Derived Categories*, *K-Theory of Rings* and *Cyclic Homology* of this category.
+This article develops the right derived functors of a left exact functor and the left derived functors of a right exact one, their independence of the resolution, the connecting homomorphism and the long exact sequence, the technique of dimension shifting, the characterisation of derived functors as universal delta-functors, the use of acyclic resolutions, and the elementary vanishing and additivity properties. It is the direct continuation of *Homological Algebra*.
 
-Throughout, $\mathcal{A}$ and $\mathcal{B}$ are abelian categories, $F:\mathcal{A}\to\mathcal{B}$ is an additive functor, and the case $F=\operatorname{Hom}_R(M,-)$ or $F=-\otimes_RM$ over a commutative ring $R$ with $1 \neq 0$ is kept in view. The article assumes the complexes, resolutions, the comparison theorem and the long exact sequence of *Homological Algebra*, and the abelian-category framework of *Abelian and Grothendieck Categories*, in particular the existence of enough projectives or enough injectives. No topology and no form occurs; the words *complex*, *resolution* and *limit* are algebraic, and the applications of the theory to sheaf cohomology and to the cohomology of spaces require a site or a space and therefore belong to Part II, where they are treated in *Sheaves and Cohomology* and *Algebraic Topology*. The general composition of derived functors is stated here and its computational form, the Grothendieck spectral sequence, is developed in *Spectral Sequences*.
+Throughout, $\mathcal{A}$ and $\mathcal{B}$ are abelian categories, $F:\mathcal{A}\to\mathcal{B}$ is an additive functor, and the case $F=\operatorname{Hom}_R(M,-)$ or $F=-\otimes_RM$ over a commutative ring $R$ with $1 \neq 0$ is kept in view. The article assumes the complexes, resolutions, the comparison theorem and the long exact sequence of *Homological Algebra*, and the abelian-category framework of *Abelian and Grothendieck Categories*, in particular the existence of enough projectives or enough injectives. No topology and no form occurs; the words *complex*, *resolution* and *limit* are algebraic, and the applications of the theory to sheaf cohomology and to the cohomology of spaces require a site or a space and therefore belong to Part II, where they are treated in *Sheaves and Cohomology* and *Algebraic Topology*. The general composition of derived functors is stated here and its computational form, the Grothendieck spectral sequence, is developed.
 
 ## The Construction
 
@@ -123,7 +123,7 @@ The construction of the long exact sequence suggests an axiomatic description of
 
 ## Composition of Functors
 
-When two left exact functors are composed, the derived functors of the composite are computed by a spectral sequence from the derived functors of the factors. The full statement and its proof belong to the article *Spectral Sequences*; here the clean case is recorded, in which one functor sends injectives to acyclics.
+When two left exact functors are composed, the derived functors of the composite are computed by a spectral sequence from the derived functors of the factors. The full statement and its proof lie outside this article; here the clean case is recorded, in which one functor sends injectives to acyclics.
 
 **Theorem (Grothendieck, elementary case).** Let $F:\mathcal{A}\to\mathcal{B}$ and $G:\mathcal{B}\to\mathcal{C}$ be left exact functors between abelian categories with enough injectives. Suppose that $F$ sends injective objects of $\mathcal{A}$ to $G$-acyclic objects, that is, $R^nG(F(I))=0$ for every injective $I$ and every $n\ge1$. Then for every object $A$ of $\mathcal{A}$ there are natural isomorphisms
 
@@ -133,7 +133,7 @@ $$
 
 *Proof.* Take an injective resolution $I^\bullet$ of $A$. By hypothesis each $F(I^n)$ is $G$-acyclic, so the resolution $F(I^\bullet)$ of $FA$ by $G$-acyclic objects computes $R^nG(FA)$ by the acyclic-resolution theorem. But $R^n(GF)(A)$ is by definition $H^n(GF(I^\bullet))=H^n(G(F(I^\bullet)))$, which is also $R^nG(FA)$. $\square$
 
-**Remark.** When the hypothesis fails, the two sides are related by the Grothendieck spectral sequence $E_2^{p,q}=R^pG(R^qF(A))\Rightarrow R^{p+q}(GF)(A)$, developed in *Spectral Sequences*. The elementary statement above is the case in which the spectral sequence collapses to its edge; the general statement is the reason the composition of derived functors is the main computational tool of the theory.
+**Remark.** When the hypothesis fails, the two sides are related by the Grothendieck spectral sequence $E_2^{p,q}=R^pG(R^qF(A))\Rightarrow R^{p+q}(GF)(A)$, developed. The elementary statement above is the case in which the spectral sequence collapses to its edge; the general statement is the reason the composition of derived functors is the main computational tool of the theory.
 
 ## Elementary Properties and Examples
 
@@ -143,9 +143,9 @@ $$
 
 *Proof.* If $F$ is exact it preserves the exactness of an injective resolution, so the complex $F(I^\bullet)$ is exact in positive degrees and $R^nF=0$ for $n\ge1$. Conversely, if $R^1F=0$ then the dimension-shifting corollary gives $R^nF=0$ for all $n\ge1$, and the long exact sequence attached to a short exact sequence has $F$ exact in the middle by exactness of the sequence and the vanishing of $R^1F(A)$. The dual argument gives the statement for $G$. $\square$
 
-**Example.** $\operatorname{Hom}_R(M,-)$ is exact if $M$ is projective, so its derived functors vanish in positive degree for projective $M$; $\operatorname{Hom}_R(P,-)$ has zero right derived functors. Dually, $\operatorname{Hom}_R(-,I)$ is exact for injective $I$, so the left exact $\operatorname{Hom}_R(-,I)$ has vanishing right derived functors in positive degree. These observations are the module-level content of the vanishing of $\operatorname{Ext}$ in the next article.
+**Example.** $\operatorname{Hom}_R(M,-)$ is exact if $M$ is projective, so its derived functors vanish in positive degree for projective $M$; $\operatorname{Hom}_R(P,-)$ has zero right derived functors. Dually, $\operatorname{Hom}_R(-,I)$ is exact for injective $I$, so the left exact $\operatorname{Hom}_R(-,I)$ has vanishing right derived functors in positive degree. These observations are the module-level content of the vanishing of $\operatorname{Ext}$.
 
-**Example.** $-\otimes_RM$ is exact when $M$ is flat, so $L_n(-\otimes_RM)=0$ for $n\ge1$ when $M$ is flat. This is the homological characterisation of flatness, and it is used in the article *Flatness and Exactness* for the ideal criterion. The functor $L_n(-\otimes_RM)$ is written $\operatorname{Tor}_n^R(-,M)$, and its theory is developed in *Ext and Tor*.
+**Example.** $-\otimes_RM$ is exact when $M$ is flat, so $L_n(-\otimes_RM)=0$ for $n\ge1$ when $M$ is flat. This is the homological characterisation of flatness, and it is used in the article *Flatness and Exactness* for the ideal criterion. The functor $L_n(-\otimes_RM)$ is written $\operatorname{Tor}_n^R(-,M)$, and its theory is developed.
 
 ### The Functors $\operatorname{Ext}$ and $\operatorname{Tor}$
 
@@ -165,11 +165,11 @@ $$
 
 computed from a projective resolution of $M$.
 
-The identification of the two computations of $\operatorname{Ext}^n$, the interpretation of $\operatorname{Ext}^1$ as extension classes, the universal coefficient theorem, the Künneth formula and the theory of $\operatorname{Tor}$ for two variables are the subject of the next article of this category, *Ext and Tor*. Here the two families are introduced only as the derived functors of the two basic module functors, and their long exact sequences and vanishing properties are those of the general theory.
+The identification of the two computations of $\operatorname{Ext}^n$, the interpretation of $\operatorname{Ext}^1$ as extension classes, the universal coefficient theorem, the Künneth formula and the theory of $\operatorname{Tor}$ for two variables are not covered here. Here the two families are introduced only as the derived functors of the two basic module functors, and their long exact sequences and vanishing properties are those of the general theory.
 
 **Example (group cohomology).** For a group $G$ and a $G$-module $M$, the functor $M\mapsto M^G$ of invariants is left exact, and its right derived functors $H^n(G,M)$ are the group cohomology; the functor of coinvariants is right exact and its left derived functors are the group homology. The category of $G$-modules is the category of left modules over the group ring $\mathbb{Z}[G]$, an algebra object of Part I, so group cohomology is an instance of the theory of this article. The group-cohomological development is given in the companion article *Group Cohomology* of the *Groups* category, being written in the same batch.
 
-**Example (sheaf cohomology, Part II).** For a sheaf of abelian groups on a site, the global-section functor is left exact and its right derived functors are the sheaf cohomology groups $H^n(X,\mathcal{F})$. The algebraic input is this article and *Homological Algebra*; the site, its Grothendieck topology and the geometric meaning of the cohomology are the subject of Part II, where they are treated in *Sheaves and Cohomology*, and of the later articles *Sheaves on Sites* of this category, which supply the categorical framework.
+**Example (sheaf cohomology, Part II).** For a sheaf of abelian groups on a site, the global-section functor is left exact and its right derived functors are the sheaf cohomology groups $H^n(X,\mathcal{F})$. The algebraic input is this article and *Homological Algebra*; the site, its Grothendieck topology and the geometric meaning of the cohomology are the subject of Part II, where they are treated in *Sheaves and Cohomology*, andof this category, which supply the categorical framework.
 
 ### Base Change and Derived Functors
 
@@ -193,7 +193,7 @@ The right derived functors $R^nF$ of a left exact functor $F$ are computed by ap
 
 A short exact sequence produces a long exact sequence of derived functors with natural connecting morphisms, constructed from a short exact sequence of resolutions and the long exact homology sequence. The connecting morphisms yield dimension shifting, which computes a derived functor in high degree from one in low degree and propagates vanishing: if $R^nF=0$ for one $n\ge1$ then all higher ones vanish, and likewise for $L_nG$. Any resolution by $F$-acyclic objects computes $R^\bullet F$, and the derived functors are characterised as the universal effaceable delta-functor with degree-zero term $F$; a functor is exact precisely when its positive derived functors vanish.
 
-The two basic module functors give the named families $\operatorname{Ext}_R^n(M,N)=R^n\operatorname{Hom}_R(M,-)(N)$ and $\operatorname{Tor}_n^R(M,N)=L_n(-\otimes_RN)(M)$, whose detailed theory is the next article of this category. The composition of two left exact functors has derived functors computed by those of the factors when the first sends injectives to acyclics, and in general by the Grothendieck spectral sequence of *Spectral Sequences*. Every statement is algebraic; the sheaf-cohomological realisation needs a site and belongs to Part II.
+The two basic module functors give the named families $\operatorname{Ext}_R^n(M,N)=R^n\operatorname{Hom}_R(M,-)(N)$ and $\operatorname{Tor}_n^R(M,N)=L_n(-\otimes_RN)(M)$, whose detailed theory is not covered here. The composition of two left exact functors has derived functors computed by those of the factors when the first sends injectives to acyclics, and in general by the Grothendieck spectral sequence. Every statement is algebraic; the sheaf-cohomological realisation needs a site and belongs to Part II.
 
 ## Summary of Notation
 
@@ -211,6 +211,10 @@ The two basic module functors give the named families $\operatorname{Ext}_R^n(M,
 | $\operatorname{Tor}_n^R(M,N)$ | left derived functors of $-\otimes_RN$ |
 | $\operatorname{Res}N$ | restriction of scalars along $R\to S$ |
 | $H^n(G,M)$ | group cohomology, an instance over $\mathbb{Z}[G]$ |
+
+
+
+
 
 ## Further Reading
 

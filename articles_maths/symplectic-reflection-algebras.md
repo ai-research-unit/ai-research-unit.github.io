@@ -133,7 +133,7 @@ for a finite-dimensional representation $\tau$ of $G$, on which the elements of 
 
 ### The KZ Functor and the Hecke Algebra
 
-**Theorem (Etingof–Ginzburg; KZ functor).** The Dunkl operators define a local system of differential equations on the complement of the union of the reflection hyperplanes of $V$, with values in the regular representation of $G$, and the monodromy of this local system defines the **KZ functor**, an exact functor from the category $\mathcal{O}$ of $H_{t,c}(V)$ to the category of finite-dimensional representations of the Hecke algebra of the orbifold. For $t \neq 0$ the functor is an equivalence on the category $\mathcal{O}$ when the group is the doubling of a complex reflection group, the case treated in the companion article *Rational Cherednik Algebras*, written in this batch; in general it is the symplectic analogue of the Knizhnik–Zamolodchikov correspondence, and the precise equivalence statements are in the references.
+**Theorem (Etingof–Ginzburg; KZ functor).** The Dunkl operators define a local system of differential equations on the complement of the union of the reflection hyperplanes of $V$, with values in the regular representation of $G$, and the monodromy of this local system defines the **KZ functor**, an exact functor from the category $\mathcal{O}$ of $H_{t,c}(V)$ to the category of finite-dimensional representations of the Hecke algebra of the orbifold. For $t \neq 0$ the functor is an equivalence on the category $\mathcal{O}$ when the group is the doubling of a complex reflection group, the case treated; in general it is the symplectic analogue of the Knizhnik–Zamolodchikov correspondence, and the precise equivalence statements are in the references.
 
 The functor is the analogue of the Knizhnik–Zamolodchikov connection of the rational Cherednik theory and of the quantum group theory; its construction uses the local system of the Dunkl operators on the complement of the reflection hyperplanes and the monodromy of that local system, and the proofs of the equivalence are in the references.
 
@@ -182,6 +182,8 @@ with $t$ a scalar and $c$ an invariant function on the set $S$ of symplectic ref
 | $e$ | Symmetrising idempotent $|G|^{-1}\sum_{g\in G} g$ |
 | $\operatorname{Hilb}^n(\mathbb{C}^2/\Gamma)$ | Hilbert scheme of points; symplectic resolution |
 | KZ functor | Functor from $\mathcal{O}$ to the Hecke algebra representations |
+
+
 
 ## Further Reading
 

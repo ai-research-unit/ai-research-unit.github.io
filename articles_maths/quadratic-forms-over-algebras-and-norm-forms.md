@@ -5,7 +5,7 @@
 
 The forms considered so far have taken values in the base field. When the space is the underlying vector space of an algebra, the natural quadratic forms are the **norm forms** $N(x) = x\bar x$, whose values lie in the centre of the algebra, and the vanishing of $N$ controls the multiplicative structure: the non-invertible elements are exactly the zeros of the norm. Closely related are the **composition laws**, identities $N(xy) = N(x)N(y)$ that turn a quadratic form into a multiplicative invariant, and the classical classification of the algebras carrying such a form.
 
-This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norm forms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution $\bar{\cdot}$ and the reduced norm are from *Hermitian Forms and Involutions*; the biquaternion conventions are from *Biquaternion Algebra*, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm form is not used here but is developed in *The Clifford Algebra*.
+This article develops quadratic forms with values in an algebra, the projective quadrics they define, the norm forms of the algebra of complex numbers, the quaternions and the biquaternions, the Cayley–Dickson doubling that produces the octonions from the quaternions, and the theorem of Hurwitz that a composition law exists only in dimensions one, two, four and eight. The base is a field $F$ of characteristic not $2$. The involution $\bar{\cdot}$ and the reduced norm are from *Hermitian Forms and Involutions*; the biquaternion conventions are, and the split complex and dual numbers are from *Dual Numbers Algebra*. The quadratic-form vocabulary and the notion of isometry are from *Bilinear Forms* and *Quadratic Forms and Polarisation*; the Clifford algebra of a norm form is not used here but is developed.
 
 ## Forms with Values in an Algebra
 
@@ -79,7 +79,7 @@ It is the positive definite form of rank $2$, it is multiplicative, $N(zw) = N(z
 
 ### Over the Complex Numbers
 
-Regarded over $\mathbb{C}$ itself, the form $x^2 + y^2 = (x + iy)(x - iy)$ factors, and it is isotropic: $N$ vanishes on the pair of lines $y = \pm ix$. The change of coordinates $u = x + iy$, $v = x - iy$ brings it to $uv$, and the further change $a = (u + v)/2$, $b = (u - v)/2$ brings that to $a^2 - b^2$; the form is therefore the hyperbolic plane $\langle 1, -1\rangle$ of *Witt's Theorems*, and the quadric is a pair of points. This is the algebraic statement that $\mathbb{C}$ does not carry an anisotropic norm form over $\mathbb{C}$.
+Regarded over $\mathbb{C}$ itself, the form $x^2 + y^2 = (x + iy)(x - iy)$ factors, and it is isotropic: $N$ vanishes on the pair of lines $y = \pm ix$. The change of coordinates $u = x + iy$, $v = x - iy$ brings it to $uv$, and the further change $a = (u + v)/2$, $b = (u - v)/2$ brings that to $a^2 - b^2$; the form is therefore the hyperbolic plane $\langle 1, -1\rangle$, and the quadric is a pair of points. This is the algebraic statement that $\mathbb{C}$ does not carry an anisotropic norm form over $\mathbb{C}$.
 
 ## The Norm Form of the Quaternions
 
@@ -107,7 +107,7 @@ Over $\mathbb{R}$ the norm form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ is anisotropic a
 
 ### Definition
 
-Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_0, e_1, e_2, e_3$ over $\mathbb{C}$, the conventions of *Biquaternion Algebra*. The **norm form** is
+Let $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ be the biquaternion algebra, with central unit $i$ of square $-1$ and basis $e_0, e_1, e_2, e_3$ over $\mathbb{C}$, the conventions. The **norm form** is
 
 $$
 N(\tilde Q) = \tilde Q \bar{\tilde Q} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2, \qquad \tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu,
@@ -125,7 +125,7 @@ a $\mathbb{C}$-valued form that is multiplicative, $N(\tilde Q \tilde R) = N(\ti
 
 **Proof.** An element of a finite-dimensional algebra over a field is invertible if and only if its reduced norm is nonzero, as in *Hermitian Forms and Involutions*; the reduced norm here is the determinant, which vanishes exactly on the singular matrices. A nonzero singular $2 \times 2$ matrix has rank one. $\square$
 
-**Remark.** The split nature of $\mathbb{B}$ is visible in the norm form: writing $\tilde Q = P + iQ$ with $P, Q$ in the real quaternion subspace, one has $N(\tilde Q) = N(P) - N(Q) + 2i\,B_N(P, Q)$ with $B_N$ the polar form of the real quaternion norm, and a positive and a negative contribution both occur, so the form is indefinite. The split quaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, in which the central unit has square $+1$, behave differently: their norm form $\sum_\mu Q_\mu^2$ with $Q_\mu \in \mathbb{D}$ has positive definite real part and is anisotropic, so it does not detect the zero divisors; those are detected instead by the vanishing of an idempotent component, as in *Split-Quaternion Algebra*.
+**Remark.** The split nature of $\mathbb{B}$ is visible in the norm form: writing $\tilde Q = P + iQ$ with $P, Q$ in the real quaternion subspace, one has $N(\tilde Q) = N(P) - N(Q) + 2i\,B_N(P, Q)$ with $B_N$ the polar form of the real quaternion norm, and a positive and a negative contribution both occur, so the form is indefinite. The split quaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$, in which the central unit has square $+1$, behave differently: their norm form $\sum_\mu Q_\mu^2$ with $Q_\mu \in \mathbb{D}$ has positive definite real part and is anisotropic, so it does not detect the zero divisors; those are detected instead by the vanishing of an idempotent component.
 
 ## The Cayley–Dickson Doubling
 
@@ -203,7 +203,7 @@ so that $N_\mu = N \perp (-\mu)N$ as an orthogonal sum of two copies of $N$, the
 
 **Proof.** As for the doubling: $(a,b)(\bar a, -b) = (a\bar a + \mu\overline{(-b)}b, -ba + b\bar{\bar a}) = (N(a) - \mu N(b), 0)$, using $\overline{(-b)} = -\bar b$. $\square$
 
-**Proposition.** If the norm $N$ of $A$ is the $n$-fold Pfister form $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$ of *The Witt Group and the Grothendieck–Witt Ring*, then
+**Proposition.** If the norm $N$ of $A$ is the $n$-fold Pfister form $\langle\!\langle a_1, \ldots, a_n\rangle\!\rangle$, then
 
 $$
 N_\mu \cong \langle\!\langle a_1, \ldots, a_n, \mu\rangle\!\rangle,
@@ -327,6 +327,8 @@ The doubling with a general parameter $\mu$ has $(a,b)(c,d) = (ac + \mu\bar db, 
 | Split octonions | $\mu = +1$ double of $\mathbb{H}_{\mathbb{D}}$, isotropic norm |
 | $M_2(\mathbb{C})$ | $2 \times 2$ complex matrices |
 | Segre embedding | The map $\mathbb{P}^1 \times \mathbb{P}^1 \to \mathbb{P}^3$ |
+
+
 
 ## Further Reading
 

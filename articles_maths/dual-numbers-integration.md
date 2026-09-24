@@ -242,7 +242,7 @@ $$
 The Cauchy–Goursat theorem holds in $\mathbb{D}'$ for a reason that gives it no force. The primitive exists on **every** domain, with no simple-connectivity hypothesis, because each of the two functions $u, c$ is a function of a single real variable and a continuous one-variable function always has an antiderivative. Consequently:
 
 - The theorem is a statement about the differentiability of $f$, not about the shape of $U$; the fundamental group of the domain never enters.
-- Since the primitive exists everywhere, there is no obstruction theory and no period: no closed integral can be non-zero for a differentiable integrand, on any domain.
+- Since the primitive exists everywhere, there is no obstruction theory and no period: no closed integral can be non-zero for a differentiable integr, on any domain.
 - The topological content that the complex Cauchy theorem carries — the winding number, the residue, the distinction between simply connected and multiply connected domains — has no counterpart here.
 
 What does survive of path independence is therefore only the positive direction. The integral of a differentiable function is path-independent, but for the trivial reason that the primitive is explicit, and this path independence carries no information about $U$.
@@ -557,6 +557,8 @@ What replaces the representation half is the **derived** statement. A dual diffe
 | $E = H(y)\delta(x) + y_+\delta'(x)\varepsilon$ | Fundamental solution of $D$, supported on a fibre ray |
 | $\operatorname{Area}(\gamma)$ | Signed area enclosed by a closed contour; $\oint_\gamma \bar z\,dz = 2\operatorname{Area}(\gamma)\varepsilon$ |
 | $\ell_n(f)$ | Coefficient of $\varepsilon^n$ in $f$, the residue functional of $\mathbb{D}'_{R,n}$ |
+
+
 
 ## Further Reading
 

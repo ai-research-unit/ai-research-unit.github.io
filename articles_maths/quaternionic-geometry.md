@@ -7,13 +7,13 @@ A quaternionic structure on a manifold is a family of complex structures on its 
 
 The subject has two levels, and the distinction between them is the organising principle of this article. An **almost quaternionic structure** is the pointwise datum, a rank-three subbundle $\mathcal{Q} \subseteq \mathrm{End}(TM)$ with the quaternionic relations. A **quaternionic structure** is an almost quaternionic structure that admits a torsion-free connection preserving it — the **Obata connection** — and Obata's theorem says that such a connection is unique when it exists. The integrability theory is therefore different in character from the complex case: there is no Nijenhuis tensor for the rank-three bundle, and integrability is expressed by the existence of a canonical connection rather than by the vanishing of a tensor.
 
-Above the quaternionic level sit the metric conditions. A **quaternionic Kähler manifold** is a Riemannian manifold whose Levi-Civita connection preserves the quaternionic structure — equivalently, whose holonomy group lies in $Sp(n)\cdot Sp(1)$ — and such a manifold is automatically Einstein in dimension at least eight. The **hypercomplex** and **hyperkähler** conditions, in which the three complex structures are themselves integrable or Kähler, are the subject of *Hyperkähler Geometry*, and the quaternionic Kähler manifolds with vanishing scalar curvature are exactly the hyperkähler ones.
+Above the quaternionic level sit the metric conditions. A **quaternionic Kähler manifold** is a Riemannian manifold whose Levi-Civita connection preserves the quaternionic structure — equivalently, whose holonomy group lies in $Sp(n)\cdot Sp(1)$ — and such a manifold is automatically Einstein in dimension at least eight. The **hypercomplex** and **hyperkähler** conditions, in which the three complex structures are themselves integrable or Kähler, are the subject, and the quaternionic Kähler manifolds with vanishing scalar curvature are exactly the hyperkähler ones.
 
-**The boundaries of the article.** The quaternion algebra $\mathbb{H}$, its basis $e_0=1,e_1,e_2,e_3$, the conjugations and the norm form are those of *Quaternion Algebra* and *Biquaternion Algebra* in Part I, and the quaternionic inner products and their Hermitian and anti-Hermitian subspaces those of the Part I quaternionic companions; nothing of the algebra is re-derived here. The Riemannian metric, the Levi-Civita connection, the holonomy group and the Ricci tensor are those of the companion article *Riemannian Geometry*, being written in parallel; the pseudo-Riemannian and Lorentzian variants are those of *Pseudo-Riemannian and Lorentzian Geometry*. The complex and Hermitian structures, the fundamental form and the Chern connection are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition those of *Kähler Geometry*. The homogeneous spaces $G/H$ and their isotropy representations are the Lie-theoretic input of *Lie Groups* and its companions, cited throughout. The hyperkähler and Calabi–Yau conditions are developed in *Hyperkähler Geometry* and *Calabi–Yau Manifolds*, being written in parallel, and are introduced here only far enough to locate them. The existence of the Obata connection, the Einstein property and the twistor correspondence are proved by the elliptic and parabolic methods of the analysis of Part III, where the measure and the limit are available; the statements are given here and the proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
+**The boundaries of the article.** The quaternion algebra $\mathbb{H}$, its basis $e_0=1,e_1,e_2,e_3$, the conjugations and the norm form are those andin Part I, and the quaternionic inner products and their Hermitian and anti-Hermitian subspaces those of the Part I quaternionic companions; nothing of the algebra is re-derived here. The Riemannian metric, the Levi-Civita connection, the holonomy group and the Ricci tensor are those of the companion article *Riemannian Geometry*; the pseudo-Riemannian and Lorentzian variants are those of *Pseudo-Riemannian and Lorentzian Geometry*. The complex and Hermitian structures, the fundamental form and the Chern connection are those of *Hermitian Geometry and Almost Complex Structures*, and the Kähler condition those of *Kähler Geometry*. The homogeneous spaces $G/H$ and their isotropy representations are the Lie-theoretic input of *Lie Groups* and its companions, cited throughout. The hyperkähler and Calabi–Yau conditions are developed andbeing, and are introduced here only far enough to locate them. The existence of the Obata connection, the Einstein property and the twistor correspondence are proved by the elliptic and parabolic methods of the analysis of Part III, where the measure and the limit are available; the statements are given here and the proofs cited. The base field is $\mathbb{R}$ and no physics is invoked.
 
 ## Quaternionic Vector Spaces
 
-Let $\mathbb{H}$ be the algebra of quaternions with basis $e_0 = 1, e_1, e_2, e_3$ and relations $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$, $e_ie_j = -e_je_i$ for $i \neq j$, $e_1^2=e_2^2=e_3^2=-e_0$; the algebra is the real division algebra of Part I's *Quaternion Algebra*, and conjugation and the norm are its conjugation and norm form.
+Let $\mathbb{H}$ be the algebra of quaternions with basis $e_0 = 1, e_1, e_2, e_3$ and relations $e_1e_2 = e_3$, $e_2e_3 = e_1$, $e_3e_1 = e_2$, $e_ie_j = -e_je_i$ for $i \neq j$, $e_1^2=e_2^2=e_3^2=-e_0$; the algebra is the real division algebra of Part I'sand conjugation and the norm are its conjugation and norm form.
 
 **Definition.** A **quaternionic vector space** is a left module over $\mathbb{H}$, that is, a real vector space $V$ with an action of $\mathbb{H}$ on the left. If $V \cong \mathbb{H}^n$ then $\dim_{\mathbb{R}} V = 4n$, and the group of $\mathbb{H}$-linear automorphisms is $GL(n,\mathbb{H})$.
 
@@ -85,7 +85,7 @@ A manifold with an almost quaternionic structure is an **almost quaternionic man
 
 **Definition.** An almost quaternionic structure is a **hypercomplex structure** if the bundle $\mathcal{Q}$ admits a global frame $J_1,J_2,J_3$ of **integrable** almost complex structures; a manifold with such a structure is a **hypercomplex manifold**. Equivalently, $\mathcal{Q}$ is trivial as a bundle and each complex structure in the trivialisation is a complex structure.
 
-**Remark.** The distinction between an almost quaternionic structure and a hypercomplex one is the distinction between a bundle with structure group $GL(n,\mathbb{H})\cdot Sp(1)$ and one whose structure group reduces to $GL(n,\mathbb{H})$; the former has an $S^2$-family of almost complex structures through each point (a $\mathbb{CP}^1$ after the metric is chosen), the latter a distinguished triple. The hyperkähler case, in which the triple is simultaneously Kähler for one metric, is the subject of *Hyperkähler Geometry*.
+**Remark.** The distinction between an almost quaternionic structure and a hypercomplex one is the distinction between a bundle with structure group $GL(n,\mathbb{H})\cdot Sp(1)$ and one whose structure group reduces to $GL(n,\mathbb{H})$; the former has an $S^2$-family of almost complex structures through each point (a $\mathbb{CP}^1$ after the metric is chosen), the latter a distinguished triple. The hyperkähler case, in which the triple is simultaneously Kähler for one metric, is not covered here.
 
 ## The Obata Connection
 
@@ -107,7 +107,7 @@ that is, with $\nabla^{\mathrm{Ob}}_X J$ a local section of $\mathcal{Q}$ for ev
 
 **Proof.** If $\nabla J_i = 0$ for the three independent local sections, then $\nabla$ preserves $\mathcal{Q}$, so it is the Obata connection by the theorem. Conversely the Obata connection of a hypercomplex structure annihilates each $J_i$ because the subbundle is trivial and hence generated by parallel sections. A connection whose parallel transport commutes with the ℍ-action has holonomy in the centraliser $GL(n,\mathbb{H})$. $\square$
 
-**Remark.** The Obata connection is not in general compatible with any Riemannian metric: it preserves the quaternionic structure and is torsion-free, but metric compatibility is an additional condition. When a metric $g$ with $\nabla^{\mathrm{Ob}} g = 0$ exists together with $\nabla^{\mathrm{Ob}}\mathcal{Q}\subseteq\mathcal{Q}$, the structure is hyperkähler, and the Obata connection is the Levi-Civita connection of $g$; this is developed in *Hyperkähler Geometry*. The absence of a canonical metric is the main structural difference between the quaternionic and the complex cases, where a Hermitian metric supplies the Chern connection.
+**Remark.** The Obata connection is not in general compatible with any Riemannian metric: it preserves the quaternionic structure and is torsion-free, but metric compatibility is an additional condition. When a metric $g$ with $\nabla^{\mathrm{Ob}} g = 0$ exists together with $\nabla^{\mathrm{Ob}}\mathcal{Q}\subseteq\mathcal{Q}$, the structure is hyperkähler, and the Obata connection is the Levi-Civita connection of $g$; this is developed. The absence of a canonical metric is the main structural difference between the quaternionic and the complex cases, where a Hermitian metric supplies the Chern connection.
 
 ## Quaternionic Kähler Manifolds
 
@@ -192,9 +192,9 @@ with bundle projection $\pi : Z(M) \to M$ whose fibre is $S^2 = \mathbb{CP}^1$.
 
 **Proof sketch.** (a)$\Leftrightarrow$(b): the three parallel complex structures are the reduction of the holonomy group to their common centraliser $Sp(n)$. (a)$\Leftrightarrow$(c) is the definition together with the fact that a hypercomplex structure with a compatible Kähler metric has closed fundamental forms. (b)$\Leftrightarrow$(d): the holonomy $Sp(n)$ sits inside $Sp(n)\cdot Sp(1)$ with vanishing $Sp(1)$-part; that part is exactly the scalar curvature and the Einstein constant, so the vanishing of the scalar curvature is the reduction. $\square$
 
-**Corollary.** A hyperkähler manifold is Ricci-flat, hence a Calabi–Yau manifold in the sense of *Calabi–Yau Manifolds*, beside being quaternionic Kähler. In complex dimension two a hyperkähler manifold is a complex surface with a Ricci-flat Kähler metric, and the compact examples are the $K3$ surfaces and the four-torus.
+**Corollary.** A hyperkähler manifold is Ricci-flat, hence a Calabi–Yau manifold in the sense, beside being quaternionic Kähler. In complex dimension two a hyperkähler manifold is a complex surface with a Ricci-flat Kähler metric, and the compact examples are the $K3$ surfaces and the four-torus.
 
-**Remark.** The hyperkähler manifolds are the quaternionic Kähler manifolds whose structure group reduces from $Sp(n)\cdot Sp(1)$ to $Sp(n)$: the scalar curvature is the obstruction. The metric is then unique in its Kähler class by Yau's theorem, as in *Calabi–Yau Manifolds*. The detailed theory — the twistor space as a complex manifold of a different kind, the hyperkähler quotient, the relation to the Bogomolov decomposition — is that of *Hyperkähler Geometry*, being written in parallel, and the full Calabi–Yau theory is that of *Calabi–Yau Manifolds*.
+**Remark.** The hyperkähler manifolds are the quaternionic Kähler manifolds whose structure group reduces from $Sp(n)\cdot Sp(1)$ to $Sp(n)$: the scalar curvature is the obstruction. The metric is then unique in its Kähler class by Yau's theorem. The detailed theory — the twistor space as a complex manifold of a different kind, the hyperkähler quotient, the relation to the Bogomolov decomposition — is not treated here, and neither is the full Calabi–Yau theory.
 
 ## Summary
 
@@ -202,13 +202,13 @@ A quaternionic structure on a real vector space is an embedding of the quaternio
 
 A quaternionic Kähler manifold is a Riemannian manifold with holonomy in $Sp(n)\cdot Sp(1)$, equivalently with a Levi-Civita-parallel quaternionic structure; such a manifold is Einstein in dimension at least eight and irreducible unless hyperkähler. The positive case is the Wolf classification, the eight families of quaternionic symmetric spaces listed above, of which the quaternionic projective spaces and the two classical Grassmannians are the familiar ones; the negative case is modelled on quaternionic hyperbolic space, the homogeneous examples being the solvable extensions of the Heisenberg-type groups. In dimension four the holonomy condition degenerates, and quaternionic Kähler means self-dual Einstein.
 
-The twistor space $Z(M)$, an $S^2$-bundle of almost complex structures over a quaternionic Kähler manifold, carries a natural integrable complex structure — Kähler when the scalar curvature is positive — and converts the quaternionic geometry of $M$ into the complex geometry of $Z(M)$. Hypercomplex manifolds are those with a global integrable triple, and hyperkähler manifolds are the Ricci-flat quaternionic Kähler ones, equivalently those with holonomy in $Sp(n)$; they are the doorway to *Hyperkähler Geometry* and to *Calabi–Yau Manifolds*.
+The twistor space $Z(M)$, an $S^2$-bundle of almost complex structures over a quaternionic Kähler manifold, carries a natural integrable complex structure — Kähler when the scalar curvature is positive — and converts the quaternionic geometry of $M$ into the complex geometry of $Z(M)$. Hypercomplex manifolds are those with a global integrable triple, and hyperkähler manifolds are the Ricci-flat quaternionic Kähler ones, equivalently those with holonomy in $Sp(n)$; they are the doorway .
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\mathbb{H}$ | The quaternions, with basis $e_0=1,e_1,e_2,e_3$ (from *Quaternion Algebra*) |
+| $\mathbb{H}$ | The quaternions, with basis $e_0=1,e_1,e_2,e_3$ |
 | $G$ | A simple Lie group (this article only in the Wolf list) |
 | $\mathcal{Q}$ | The rank-three subbundle of $\mathrm{End}(TM)$ defining an almost quaternionic structure |
 | $J_1, J_2, J_3$ | Local quaternionic frame: $J_i^2=-\mathrm{id}$, $J_1J_2=J_3$, $J_2J_3=J_1$, $J_3J_1=J_2$ (notation fixed by the shared block) |
@@ -225,6 +225,10 @@ The twistor space $Z(M)$, an $S^2$-bundle of almost complex structures over a qu
 | Wolf spaces | The positive quaternionic Kähler symmetric spaces $G/H$, listed in the table |
 | Hypercomplex | $\mathcal{Q}$ trivial with integrable global frame $J_1,J_2,J_3$ |
 | Hyperkähler | Hypercomplex with all $J_i$ Kähler for $g$; holonomy in $Sp(n)$, $\lambda=0$ |
+
+
+
+
 
 ## Further Reading
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The Lie algebra of a Lie group is the tangent space at the identity, equipped with the bracket obtained by identifying that tangent space with the left-invariant vector fields. This construction loses nothing locally: the exponential map, which integrates a tangent vector to the one-parameter subgroup it generates, is a local diffeomorphism at the identity, so a neighbourhood of the identity in the group is an image of a neighbourhood of zero in the algebra. The group law is recovered from the algebra by the Campbell–Baker–Hausdorff formula, and in this precise local sense a Lie group is determined by its Lie algebra. The global passage from the algebra back to the group, which is not unique, is the subject of the companion article *The Lie Correspondence and the Adjoint Representation*.
+The Lie algebra of a Lie group is the tangent space at the identity, equipped with the bracket obtained by identifying that tangent space with the left-invariant vector fields. This construction loses nothing locally: the exponential map, which integrates a tangent vector to the one-parameter subgroup it generates, is a local diffeomorphism at the identity, so a neighbourhood of the identity in the group is an image of a neighbourhood of zero in the algebra. The group law is recovered from the algebra by the Campbell–Baker–Hausdorff formula, and in this precise local sense a Lie group is determined by its Lie algebra. The global passage from the algebra back to the group, which is not unique, is not covered here.
 
 This article builds the three objects of the title. It identifies the tangent space at the identity with the left-invariant vector fields, defines the bracket, and constructs the exponential map as the flow of a left-invariant field; it computes the exponential for matrix groups, where it is the ordinary exponential series; it shows that the exponential is a local diffeomorphism and computes its differential, with the singularities that the differential formula exposes; and it states the Campbell–Baker–Hausdorff formula, which exhibits the group law in exponential coordinates as a Lie polynomial.
 
@@ -179,7 +179,7 @@ $$
 
 **Proof.** Apply the naturality of $\exp$ to the homomorphism $c_g$, whose differential is $\operatorname{Ad}(g)$ by definition. $\square$
 
-**Corollary.** $\operatorname{Ad}(g)$ is a Lie algebra automorphism of $\mathfrak{g}$ for every $g$, and its Lie algebra differential at the identity is $\operatorname{ad}$: $\operatorname{ad}_v = d(\operatorname{Ad})_e(v)$. This is developed in *The Lie Correspondence and the Adjoint Representation*.
+**Corollary.** $\operatorname{Ad}(g)$ is a Lie algebra automorphism of $\mathfrak{g}$ for every $g$, and its Lie algebra differential at the identity is $\operatorname{ad}$: $\operatorname{ad}_v = d(\operatorname{Ad})_e(v)$. This is developed.
 
 ## The Differential of the Exponential
 
@@ -211,7 +211,7 @@ $$
 \det\bigl(d(\exp)_v\bigr) = \prod_{\alpha \in \Phi} \frac{1 - e^{-\alpha(v)}}{\alpha(v)},
 $$
 
-the product over the roots, and this is the Jacobian of the exponential in exponential coordinates. It vanishes precisely where some $\alpha(v) \in 2\pi i\mathbb{Z}\setminus\{0\}$, in agreement with the corollary above. The description of the exponential in terms of a maximal torus and the roots is the starting point of the Weyl integration formula, and the local structure is the subject of *The Lie Correspondence and the Adjoint Representation*.
+the product over the roots, and this is the Jacobian of the exponential in exponential coordinates. It vanishes precisely where some $\alpha(v) \in 2\pi i\mathbb{Z}\setminus\{0\}$, in agreement with the corollary above. The description of the exponential in terms of a maximal torus and the roots is the starting point of the Weyl integration formula, and the local structure is not covered here.
 
 ## The Campbell–Baker–Hausdorff Formula
 
@@ -243,7 +243,7 @@ defined near the origin of $\mathfrak{g}$ is a local Lie group law with the prop
 
 **Corollary.** If $[X, Y] = 0$ then $Z(X, Y) = X + Y$, so $\exp(X + Y) = \exp(X)\exp(Y)$; this recovers the abelian case and the matrix identity $e^{A+B} = e^A e^B$ for commuting matrices.
 
-**Corollary.** For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is in *The Lie Correspondence and the Adjoint Representation*.
+**Corollary.** For a simply connected Lie group the group law is determined by the Lie algebra, and two simply connected Lie groups with isomorphic Lie algebras are isomorphic. This is one direction of the Lie correspondence; the general statement is.
 
 ### Exponential Coordinates
 
@@ -310,6 +310,10 @@ The exponential map $\exp : \mathfrak{g} \to G$ sends $v$ to the time-one value 
 | $Z(X, Y) = X + Y + \frac12[X,Y] + \frac1{12}[X,[X,Y]] - \frac1{12}[Y,[X,Y]] + \cdots$ | Campbell–Baker–Hausdorff Lie polynomial |
 | $\exp(X)\exp(Y) = \exp(Z(X,Y))$ | Group law in exponential coordinates |
 | $\operatorname{Im}\mathbb{H}$ | Lie algebra of $S^3$, bracket $[u,v] = 2(u\times v)$ |
+
+
+
+
 
 ## Further Reading
 

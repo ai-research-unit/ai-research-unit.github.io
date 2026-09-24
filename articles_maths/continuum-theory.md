@@ -116,7 +116,7 @@ The Jordan curve theorem and the plane separation theorems are proved by the met
 $$
 S^1 \xleftarrow{z \mapsto z^{n_1}} S^1 \xleftarrow{z \mapsto z^{n_2}} S^1 \leftarrow \cdots .
 $$
-The solenoid is a continuum, and it is indecomposable for every sequence with $n_k \geq 2$; the **dyadic solenoid**, with all $n_k = 2$, is the standard example. The solenoid is a compact connected group in its inverse limit topology, and its group structure belongs to *Topological Groups*; the continuum theory records that it is homogeneous and not a Peano continuum, being not locally connected at any point.
+The solenoid is a continuum, and it is indecomposable for every sequence with $n_k \geq 2$; the **dyadic solenoid**, with all $n_k = 2$, is the standard example. The solenoid is a compact connected group in its inverse limit topology, and its group structure belongs; the continuum theory records that it is homogeneous and not a Peano continuum, being not locally connected at any point.
 
 **Example (the pseudo-arc).** A continuum is **arc-like**, or **chainable**, if it is the inverse limit of an inverse sequence of intervals with surjective bonding maps. The **pseudo-arc** is the unique arc-like hereditarily indecomposable continuum with more than one point; it is homogeneous, meaning that for any two of its points there is a homeomorphism carrying one to the other; it contains no arc, although it is arc-like; and it is homeomorphic to each of its nondegenerate subcontinua. The uniqueness and the homogeneity are theorems of Bing and Moise, and the construction of the pseudo-arc is by a careful inverse limit of intervals with bonding maps that wind back and forth.
 
@@ -162,6 +162,8 @@ A continuum $X$ is **unicoherent** if the intersection of any two subcontinua wh
 | pseudo-arc | Unique arc-like hereditarily indecomposable nondegenerate continuum |
 | solenoid | Inverse limit of circles with bonding maps $z \mapsto z^{n_k}$ |
 | inverse limit | Subspace of the product of the terms of an inverse system |
+
+
 
 ## Further Reading
 

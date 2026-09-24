@@ -3,9 +3,9 @@
 
 ## Introduction
 
-This article is the algebra slot of the octonion system. It constructs the octonion algebra $\mathbb{O}$, fixes its multiplication table and its standard conventions, develops the identities that survive the loss of associativity, and states the place the octonions occupy among the finite-dimensional real division algebras. The article is the octonion entry of the ladder that Part IV traverses one number system at a time, and it is the first of the ten octonion articles of this Part; the norm form and the invertibility it governs are the subject of *Octonion Norm and Invertibility*, written in parallel, and the present article introduces only what the multiplication itself requires.
+This article is the algebra slot of the octonion system. It constructs the octonion algebra $\mathbb{O}$, fixes its multiplication table and its standard conventions, develops the identities that survive the loss of associativity, and states the place the octonions occupy among the finite-dimensional real division algebras. The article is the octonion entry of the ladder that Part IV traverses one number system at a time, and it is the first of the ten octonion articles of this Part; the norm form and the invertibility it governs are the subject, and the present article introduces only what the multiplication itself requires.
 
-The article assumes the construction of the real division algebras from the general theory of *Division Algebras*, and the quaternion algebra $\mathbb{H}$ with its basis $e_0 = 1, e_1, e_2, e_3$, its multiplication and its conjugation, from *Quaternion Algebra*; the octonions are the Cayley–Dickson double of $\mathbb{H}$ in the same sense in which $\mathbb{H}$ is the double of $\mathbb{C}$. The basic facts about non-associative algebras — that the associator measures the failure of associativity, that a subalgebra is a subspace closed under multiplication, and that a unit is a two-sided identity — are used in their standard sense; the corpus's general theory of algebras is the Part I companion *Algebras: A General Introduction*. The composition algebras over a field and their norm forms are the subject of *Quadratic Forms over Algebras and Norm Forms*. No structure from the later articles of this Part is used.
+The article assumes the construction of the real division algebras from the general theory of *Division Algebras*, and the quaternion algebra $\mathbb{H}$ with its basis $e_0 = 1, e_1, e_2, e_3$, its multiplication and its conjugation, from *Quaternion Algebra*; the octonions are the Cayley–Dickson double of $\mathbb{H}$ in the same sense in which $\mathbb{H}$ is the double of $\mathbb{C}$. The basic facts about non-associative algebras — that the associator measures the failure of associativity, that a subalgebra is a subspace closed under multiplication, and that a unit is a two-sided identity — are used in their standard sense; the corpus's general theory of algebras is the Part I companion *Algebras: A General Introduction*. The composition algebras over a field and their norm forms are the subject of *Quadratic Forms over Algebras and Norm Forms*. No structure from the other articles of this category is used.
 
 **Conventions.** The base field is $\mathbb{R}$ throughout; the octonions are a real algebra of dimension eight. The basis is $e_0, e_1, \dots, e_7$, with $e_0 = 1$ the identity and
 
@@ -111,7 +111,7 @@ and the **conjugate** is $\bar x = \operatorname{Sc}(x) - \operatorname{Vect}(x)
 
 *Proof.* Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm form in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $x\bar x = N(x)e_0$, and the displayed coordinate expression follows by expansion; the equality $\bar xx = x\bar x$ follows from $\overline{x\bar x} = x\bar x$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $\overline{e_ae_b} = \bar e_c = -e_c$ and $\bar e_b\bar e_a = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3. $\square$
 
-The scalar $\lvert x\rvert^2$ is the **quadratic norm** of $x$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject of *Octonion Norm and Invertibility* and are used here only where the multiplication forces them.
+The scalar $\lvert x\rvert^2$ is the **quadratic norm** of $x$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject and are used here only where the multiplication forces them.
 
 ### The Associator
 
@@ -180,7 +180,7 @@ $$
 
 *Proof.* By Artin's theorem the generated subalgebra is associative; the two-dimensional space $\operatorname{span}(e_0,u)$ with $u$ an imaginary unit is closed under multiplication and is $\mathbb{R}[u]/(u^2+1)\cong\mathbb{C}$, and the four-dimensional space $\operatorname{span}(e_0,u,v,uv)$ with $u,v$ orthogonal imaginary units is closed under multiplication and, by the multiplication table, has the same products as the quaternion basis $e_0,e_1,e_2,e_3$. $\square$
 
-The quaternion subalgebras of $\mathbb{O}$ are parametrised by the oriented two-planes in the imaginary space; each is obtained by choosing an orthonormal pair of imaginary units and adjoining their product. There are, up to the action of the automorphism group $G_2 = \operatorname{Aut}(\mathbb{O})$ of *Octonions and the Exceptional Lie Groups*, exactly two classes of such subalgebras, the class of $\mathbb{C}$ and the class of $\mathbb{H}$, and the automorphism group acts transitively on the imaginary units.
+The quaternion subalgebras of $\mathbb{O}$ are parametrised by the oriented two-planes in the imaginary space; each is obtained by choosing an orthonormal pair of imaginary units and adjoining their product. There are, up to the action of the automorphism group $G_2 = \operatorname{Aut}(\mathbb{O})$, exactly two classes of such subalgebras, the class of $\mathbb{C}$ and the class of $\mathbb{H}$, and the automorphism group acts transitively on the imaginary units.
 
 ### The Seven Lines and the Fano Structure
 
@@ -208,7 +208,7 @@ and it is a **division algebra**: the only octonion $x$ with $xy = 0$ or $yx = 0
 
 *Proof.* Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $x = z$ of the alternating property of the associator. For the division statement, if $xy = 0$ with $y\neq0$ then $x = \lvert y\rvert^{-2}(xy)\bar y = 0$ using the identities of the previous section. $\square$
 
-The **centre** of $\mathbb{O}$ is $\mathbb{R}e_0$: an element commuting and associating with every element is a real scalar. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is the exceptional Lie algebra $\mathfrak{g}_2$, of dimension fourteen, and the automorphism group is the exceptional Lie group $G_2$; both are treated in *Octonions and the Exceptional Lie Groups*.
+The **centre** of $\mathbb{O}$ is $\mathbb{R}e_0$: an element commuting and associating with every element is a real scalar. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is the exceptional Lie algebra $\mathfrak{g}_2$, of dimension fourteen, and the automorphism group is the exceptional Lie group $G_2$; both are treated.
 
 ### Vector Matrices
 
@@ -261,11 +261,11 @@ $$
 \det\begin{pmatrix} \alpha & u\\ v & \beta\end{pmatrix} = \alpha\beta - u\cdot v
 $$
 
-is a quadratic form on the sixteen-dimensional Zorn algebra of signature $(8,8)$; its restriction to the **Hermitian** elements, those with $v = -u$, is a quadratic form of signature $(1,9)$ on a ten-dimensional space, and on the three-dimensional Hermitian matrices over $\mathbb{O}$ the corresponding cubic form defines the exceptional Jordan algebra, treated in *Octonions and the Exceptional Lie Groups*.
+is a quadratic form on the sixteen-dimensional Zorn algebra of signature $(8,8)$; its restriction to the **Hermitian** elements, those with $v = -u$, is a quadratic form of signature $(1,9)$ on a ten-dimensional space, and on the three-dimensional Hermitian matrices over $\mathbb{O}$ the corresponding cubic form defines the exceptional Jordan algebra, treated.
 
 *Proof.* The form $\alpha\beta - u\cdot v$ is the sum of the hyperbolic form $\alpha\beta$ on the two scalar coordinates, of signature $(1,1)$, and of the form $-u\cdot v$ on $\mathbb{R}^{14}$, which pairs the two copies of $\mathbb{R}^7$; the latter has signature $(7,7)$, since it is the standard split form of a real vector space paired with its dual. Hence the total signature is $(8,8)$. On the Hermitian subspace one has $u\cdot v = -u\cdot u = -\lvert u\rvert^2$, so the form is $\alpha\beta - \lvert u\rvert^2$, whose signature is $(1,9)$ because $\alpha\beta$ has signature $(1,1)$ on two variables and the remaining eight variables contribute eight negative directions. $\square$
 
-The $2\times2$ Hermitian matrices form a Jordan algebra under the symmetrised product $\tfrac12(MN + NM)$, of degree two over $\mathbb{R}$; the degree-three analog, the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$, is the object through which the exceptional groups $F_4$, $E_6$, $E_7$ and $E_8$ are constructed, and its treatment belongs to *Octonions and the Exceptional Lie Groups*.
+The $2\times2$ Hermitian matrices form a Jordan algebra under the symmetrised product $\tfrac12(MN + NM)$, of degree two over $\mathbb{R}$; the degree-three analog, the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$, is the object through which the exceptional groups $F_4$, $E_6$, $E_7$ and $E_8$ are constructed, and its treatment belongs.
 
 ## Summary
 
@@ -282,7 +282,7 @@ The algebra has identity $e_0$ and is neither commutative nor associative. Its a
 | $\mathbb{F}$, $(a,b,c)$ | Fano plane and its cyclically ordered lines |
 | $\bar{x}$ | Conjugation, $\bar e_0 = e_0$, $\bar e_k = -e_k$, $\overline{xy} = \bar y\bar x$ |
 | $\operatorname{Sc}(x)$, $\operatorname{Vect}(x)$ | Scalar and vector parts, $\operatorname{Im}\mathbb{O} = \operatorname{Vect}(\mathbb{O})$ |
-| $\lvert x\rvert^2 = x\bar x = \bar xx = \sum_kx_k^2$ | Quadratic norm (developed in *Octonion Norm and Invertibility*) |
+| $\lvert x\rvert^2 = x\bar x = \bar xx = \sum_kx_k^2$ | Quadratic norm (developed) |
 | $[x,y,z] = (xy)z - x(yz)$ | Associator, alternating |
 | $xyx = (xy)x$ | Abbreviation in the Moufang identities |
 | $\mathrm{CD}(A)$ | Cayley–Dickson double of $A$ |
@@ -290,6 +290,10 @@ The algebra has identity $e_0$ and is neither commutative nor associative. Its a
 | $\operatorname{Der}(\mathbb{O}) = \mathfrak{g}_2$, $\operatorname{Aut}(\mathbb{O}) = G_2$ | Derivation algebra and automorphism group |
 | $u\cdot v = \operatorname{Sc}(u\bar v)$, $u\times v = \operatorname{Vect}(uv)$ | Dot and cross products on $\mathbb{R}^7$ |
 | $\det\begin{pmatrix}\alpha & u\\ v & \beta\end{pmatrix} = \alpha\beta - u\cdot v$ | Determinant of a Zorn vector matrix |
+
+
+
+
 
 ## Further Reading
 

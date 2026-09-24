@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Let $G$ be a finite group, let $R$ be an integral domain and let $L$ be an $R[G]$-module which is finitely generated and projective as an $R$-module — an $R[G]$-**lattice**. The study of the lattices is the integral representation theory of $G$: it sits between the ordinary theory of a finite group over a field, treated later in this category in *Representations of Groups*, and the modular theory of *Modular Representation Theory*, in which the base is a field of characteristic dividing the order; the passage from the field to the ring records the arithmetic of the group action, and the integral theory is strictly finer than the rational one, because a module over $\mathbb{Q}[G]$ may split into pieces while an integral lattice with the same rational form does not, and two lattices with the same rational form need not be isomorphic.
+Let $G$ be a finite group, let $R$ be an integral domain and let $L$ be an $R[G]$-module which is finitely generated and projective as an $R$-module — an $R[G]$-**lattice**. The study of the lattices is the integral representation theory of $G$: it sits between the ordinary theory of a finite group over a field, treated, and the modular theory of *Modular Representation Theory*, in which the base is a field of characteristic dividing the order; the passage from the field to the ring records the arithmetic of the group action, and the integral theory is strictly finer than the rational one, because a module over $\mathbb{Q}[G]$ may split into pieces while an integral lattice with the same rational form does not, and two lattices with the same rational form need not be isomorphic.
 
 The article is the twenty-sixth and last of the corpus's category *Linear Spaces over Linear Algebras*, and it follows *Blocks and Defect Groups*; the integral lattice is what underlies a decomposition number there and what makes precise the reduction of an ordinary representation, and the article closes the category by treating the base ring as a genuine ring rather than a field. It develops the lattices and their rational forms, the failure of the rational decomposition over the ring with the two-*dimension example for the cyclic group of order two computed in full and verified, the Krull–Schmidt situation over a discrete valuation ring and over $\mathbb{Z}$, the finiteness of the number of lattices of a given rank by the theorem of **Jordan–Zassenhaus**, the reduction of a lattice to a positive characteristic and its relation to the decomposition matrix, and the classification results: the correspondence of **Latimer–MacDuffee** between the lattices of a cyclic group and the ideal classes of the cyclotomic ring, with the class group as the obstruction to the uniqueness.
 
@@ -107,6 +107,10 @@ Let $G$ be a finite group and $R$ an integral domain with fraction field $K$. An
 | $d_{\chi j}$, $D$, $C = D^{\mathsf{T}}D$ | decomposition numbers, decomposition and Cartan matrices |
 | $\mathbb{Z}[\zeta_n]$, ideal class | cyclotomic ring, Latimer–MacDuffee classification |
 | $G_0(R[G])$ | Grothendieck group of the lattices |
+
+
+
+
 
 ## Further Reading
 

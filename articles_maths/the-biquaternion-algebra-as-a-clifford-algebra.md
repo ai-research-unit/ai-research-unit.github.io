@@ -5,7 +5,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the even subalgebra of the real Clifford algebra $\mathrm{Cl}_{3,1}$ of a four-dimensional form of signature $(3,1)$, and it is likewise the real Clifford algebra $\mathrm{Cl}_{3,0}$ of a three-dimensional positive definite form, the complex Clifford algebra $\mathbb{C}\mathrm{l}_2$ of a two-dimensional complex form, and the complexification of the quaternion algebra $\mathbb{H}$. These descriptions differ in which structure is regarded as scalar — the real numbers, the complex numbers, or the quaternion units — and holding them apart is the key to using the algebra correctly. This article establishes the identification $\mathbb{B}\cong\mathrm{Cl}_{3,1}^{+}$ together with its competing labelling $\mathrm{Cl}_{1,3}$, computes the volume element, exhibits the idempotents and the zero divisors, and derives the Peirce decomposition and the minimal left ideals that carry the defining module.
 
-The Clifford-algebra facts used here are those of the classification layer: $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$, the even parts of $\mathrm{Cl}_{3,1}$ and $\mathrm{Cl}_{1,3}$ are the same algebra $M_2(\mathbb{C})$, the volume element of an odd-dimensional algebra is central, and any idempotent $p$ of an algebra $A$ produces a Peirce decomposition $A=pAp\oplus pAq\oplus qAp\oplus qAq$ with $q=1-p$, together with the left ideal $Ap$. The algebra $\mathbb{B}$ itself, its multiplication, its four conjugations and its norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ are those of the companion articles *Biquaternion Algebra* and *Biquaternion Algebraic Representations*; the idempotents $p,q$, the matrix units and the Peirce decomposition are those of *Biquaternion Ideals and Peirce Decomposition*; and the zero divisors, with their norm-form description, are those of *Biquaternion Zero Divisors*. These are cited rather than re-derived, and the computations below are included only to fix the conventions of the Clifford description. The module-theoretic statement about the defining module is the subject of *The Defining Module of the Biquaternion Algebra* and the spinor statement that of *Spinors and the Biquaternion Spinor Module*, and what is added here is the origin of both in the Clifford structure.
+The Clifford-algebra facts used here are those of the classification layer: $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$, the even parts of $\mathrm{Cl}_{3,1}$ and $\mathrm{Cl}_{1,3}$ are the same algebra $M_2(\mathbb{C})$, the volume element of an odd-dimensional algebra is central, and any idempotent $p$ of an algebra $A$ produces a Peirce decomposition $A=pAp\oplus pAq\oplus qAp\oplus qAq$ with $q=1-p$, together with the left ideal $Ap$. The algebra $\mathbb{B}$ itself, its multiplication, its four conjugations and its norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ are those of ; the idempotents $p,q$, the matrix units and the Peirce decomposition are those; and the zero divisors, with their norm-form description, are those. These, all of them, are cited rather than re-derived, and the computations below are included only to fix the conventions of the Clifford description. The module-theoretic statement about the defining module is the subject of *The Defining Module of the Biquaternion Algebra* and the spinor statement , and what is added here is the origin of both in the Clifford structure.
 
 ## The Identifications
 
@@ -15,7 +15,7 @@ $$
 \mathbb{B}\cong\mathrm{Cl}_{3,1}^{+}.
 $$
 
-It is the even part of an even-dimensional Clifford algebra that acts on the spinor module, so this is the description in which the algebra and its module belong together; the module itself is the subject of *Spinors and the Biquaternion Spinor Module*.
+It is the even part of an even-dimensional Clifford algebra that acts on the spinor module, so this is the description in which the algebra and its module belong together; the module itself is not covered here.
 
 **Proof.** Let $\Gamma_1,\Gamma_2,\Gamma_3,\Gamma_4$ generate $\mathrm{Cl}_{3,1}$, so that $\Gamma_k^2=+1$ for $k=1,2,3$, $\Gamma_4^2=-1$, and $\Gamma_i\Gamma_j=-\Gamma_j\Gamma_i$ for $i\neq j$. In the even part the three products $\Gamma_1\Gamma_2$, $\Gamma_1\Gamma_3$, $\Gamma_2\Gamma_3$ pairwise anticommute and each squares to $-1$, since $(\Gamma_i\Gamma_j)^2=-\Gamma_i^2\Gamma_j^2=-1$; three pairwise anticommuting elements of square $-1$ generate a copy of the quaternion algebra $\mathbb{H}$. The volume element $\Omega=\Gamma_1\Gamma_2\Gamma_3\Gamma_4$ anticommutes with each generator and therefore commutes with every even element of $\mathrm{Cl}_{3,1}$, and it satisfies $\Omega^2=-1$, because it is the product of four anticommuting generators whose squares multiply to $-1$; hence $\mathbb{R}[\Omega]\cong\mathbb{C}$ is a central subfield of $\mathrm{Cl}_{3,1}^{+}$ commuting with that copy of $\mathbb{H}$. Therefore $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ embeds in $\mathrm{Cl}_{3,1}^{+}$. Both sides have real dimension $8$, so the embedding is an isomorphism. $\square$
 
@@ -67,7 +67,7 @@ $$
 \det\Phi(\tilde Q)=N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2.
 $$
 
-Consequently an element $\tilde Q\in\mathbb{B}$ is invertible if and only if $N(\tilde Q)\neq0$, and the zero divisors of $\mathbb{B}$ are exactly the nonzero elements with $N(\tilde Q)=0$. The model is the one of *Biquaternion Algebraic Representations*, where the same isomorphism fixes $\Phi(e_k)=-i\sigma_k$ and $\Phi(i\tilde Q)=i\Phi(\tilde Q)$.
+Consequently an element $\tilde Q\in\mathbb{B}$ is invertible if and only if $N(\tilde Q)\neq0$, and the zero divisors of $\mathbb{B}$ are exactly the nonzero elements with $N(\tilde Q)=0$. The model is the one, where the same isomorphism fixes $\Phi(e_k)=-i\sigma_k$ and $\Phi(i\tilde Q)=i\Phi(\tilde Q)$.
 
 **Proof.** The images of $e_k$ satisfy $-i\sigma_k$ squared $=-I$ and anticommute pairwise, and their products reproduce the quaternion multiplication: with the convention $e_1e_2=e_3$ of the category,
 
@@ -89,7 +89,7 @@ Then $\det\Phi(\tilde Q)=(Q_0-iQ_3)(Q_0+iQ_3)-(-iQ_1-Q_2)(-iQ_1+Q_2)=Q_0^2+Q_3^2
 
 ## Idempotents and Minimal Ideals
 
-**Definition.** An element $p\in\mathbb{B}$ is an **idempotent** if $p^2=p$. It is **minimal** if $pAp=\mathbb{C}p$ as a complex algebra. A **minimal left ideal** of $\mathbb{B}$ is a left ideal that contains no proper nonzero left ideal. The idempotent structure of $\mathbb{B}$ is that of *Biquaternion Ideals and Peirce Decomposition*, and it is recalled here only to identify the module in the Clifford model.
+**Definition.** An element $p\in\mathbb{B}$ is an **idempotent** if $p^2=p$. It is **minimal** if $pAp=\mathbb{C}p$ as a complex algebra. A **minimal left ideal** of $\mathbb{B}$ is a left ideal that contains no proper nonzero left ideal. The idempotent structure of $\mathbb{B}$ is standard, and it is recalled here only to identify the module in the Clifford model.
 
 **Theorem.** The idempotents $p=\tfrac12(e_0+ie_3)$ and $q=\tfrac12(e_0-ie_3)$ are orthogonal, $p+q=e_0$ and $pq=0$, and each is minimal. The left ideal $\mathbb{B}p$ is minimal of complex dimension two, and the map
 
@@ -115,7 +115,7 @@ with $p\mathbb{B}p\cong\mathbb{C}p$ when $p$ is minimal, and the four summands h
 
 **Proof.** Write every $x$ as $x=pxq+pxp+qxp+qxq$ using $p+q=1$; the four terms are independent and lie in the four stated subspaces, and the expansion is unique. Since $p\mathbb{B}p=\mathbb{C}p$ for minimal $p$ and the total dimension is four, the remaining three summands are one-dimensional. The decomposition of the left ideal is the statement that the terms with $q$ on the left vanish. $\square$
 
-**Remark.** The Peirce decomposition is the algebraic skeleton of the matrix structure: the four corners of $2\times2$ matrices, of dimensions $1,1,1,1$ over $\mathbb{C}$, correspond to the four blocks, and the off-diagonal blocks are the spaces of intertwiners between the minimal left ideal and its conjugate. In the biquaternion application, the diagonal blocks are the two scalar sectors and the off-diagonal blocks carry the intertwiners between the two idempotents; the module structure of the algebra is read from this decomposition. The decomposition itself is that of *Biquaternion Ideals and Peirce Decomposition*, where the Peirce spaces are computed from the multiplication table; it is recorded here because the Clifford description uses the same four idempotents.
+**Remark.** The Peirce decomposition is the algebraic skeleton of the matrix structure: the four corners of $2\times2$ matrices, of dimensions $1,1,1,1$ over $\mathbb{C}$, correspond to the four blocks, and the off-diagonal blocks are the spaces of intertwiners between the minimal left ideal and its conjugate. In the biquaternion application, the diagonal blocks are the two scalar sectors and the off-diagonal blocks carry the intertwiners between the two idempotents; the module structure of the algebra is read from this decomposition. The decomposition itself is treated elsewhere, where the Peirce spaces are computed from the multiplication table; it is recorded here because the Clifford description uses the same four idempotents.
 
 **The two minimal ideals.** The algebra $\mathbb{B}$ has, up to isomorphism, one simple module, but it has many minimal left ideals, one for each minimal idempotent. The two diagonal choices give the two columns of the matrix model, $\mathbb{B}p$ and $\mathbb{B}q$, which are isomorphic as abstract modules but distinguished by the idempotent. Their direct sum is $\mathbb{B}p\oplus\mathbb{B}q$, which is isomorphic to $\mathbb{B}$ as a left module, the regular representation being the direct sum of two copies of the simple module; $\mathbb{B}$ itself is free of rank one over itself, with $e_0$ a basis, so the two summands are the simple module written twice rather than a free module of rank two. The isomorphism classes of minimal left ideals are classified by the idempotents up to conjugacy, which is to say that there is exactly one class.
 
@@ -139,7 +139,7 @@ with $p\mathbb{B}p\cong\mathbb{C}p$ when $p$ is minimal, and the four summands h
 
 ## The Defining Module
 
-What the Clifford identification adds to the module is the description of $S$ as a Clifford module; the module-theoretic statement belongs to *The Defining Module of the Biquaternion Algebra* and the spinor statement to *Spinors and the Biquaternion Spinor Module*.
+What the Clifford identification adds to the module is the description of $S$ as a Clifford module; the module-theoretic statement belongs to *The Defining Module of the Biquaternion Algebra* and the spinor statement.
 
 **Theorem.** The minimal left ideal $\mathbb{B}p$ with $p=\tfrac12(e_0+ie_3)$ is a complex vector space of dimension two, and it is the unique simple left $\mathbb{B}$-module up to isomorphism. The action of $\mathbb{B}$ on it is the defining representation of $M_2(\mathbb{C})$.
 
@@ -147,7 +147,7 @@ What the Clifford identification adds to the module is the description of $S$ as
 
 **Corollary.** Every finite-dimensional $\mathbb{B}$-module is a direct sum of copies of $\mathbb{C}^2$, so the module category of $\mathbb{B}$ is the category of complex vector spaces. The further module-theoretic consequences — that $\mathbb{B}$ is free of rank one over itself, the decomposition $\mathbb{B}=S\oplus S$, and the fact that the simple module $S$ is projective but not free, so that projectivity does not imply freeness over $\mathbb{B}$ — are established in *The Defining Module of the Biquaternion Algebra* and are not repeated here.
 
-**Remark.** The defining module is the spinor module of the Clifford algebra. For $\mathrm{Cl}_{3,0}$ the volume element has square $-1$, so the module has no real chirality splitting: the spinor module $S$ is irreducible of real dimension four, and it is the module $\mathbb{B}p$ regarded as a real vector space. Chirality appears only after complexification, where $S\otimes_{\mathbb{R}}\mathbb{C}\cong S_+\oplus S_-$ splits into the two chiral halves and these correspond to the two factors of $\mathbb{C}\mathrm{l}_3=M_2(\mathbb{C})\times M_2(\mathbb{C})$; the two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ of the matrix model are isomorphic to one another, and each of them complexifies to the sum $S_+\oplus S_-$; neither is a chiral half. The identification of the spinor module with the defining module of $\mathbb{B}$ is the bridge between the Clifford layer and the applications, and it is treated in *Spinors and the Biquaternion Spinor Module*.
+**Remark.** The defining module is the spinor module of the Clifford algebra. For $\mathrm{Cl}_{3,0}$ the volume element has square $-1$, so the module has no real chirality splitting: the spinor module $S$ is irreducible of real dimension four, and it is the module $\mathbb{B}p$ regarded as a real vector space. Chirality appears only after complexification, where $S\otimes_{\mathbb{R}}\mathbb{C}\cong S_+\oplus S_-$ splits into the two chiral halves and these correspond to the two factors of $\mathbb{C}\mathrm{l}_3=M_2(\mathbb{C})\times M_2(\mathbb{C})$; the two minimal left ideals $\mathbb{B}p$ and $\mathbb{B}q$ of the matrix model are isomorphic to one another, and each of them complexifies to the sum $S_+\oplus S_-$; neither is a chiral half. The identification of the spinor module with the defining module of $\mathbb{B}$ is the bridge between the Clifford layer and the applications, and it is treated.
 
 ## Summary
 
@@ -176,6 +176,10 @@ In the matrix model $\Phi(e_k)=-i\sigma_k$, $\Phi(i)=iI$, the norm form is the d
 | $\mathbb{B}p\cong\mathbb{C}^2$ | Minimal left ideal, the defining module |
 | $\sigma_1,\sigma_2,\sigma_3$ | Pauli matrices |
 | $\mathbb{C}\mathrm{l}_2=M_2(\mathbb{C})$ | Complex Clifford algebra, the complex-algebra identification |
+
+
+
+
 
 ## Further Reading
 

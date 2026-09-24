@@ -9,9 +9,9 @@ This article develops the group-action theory: the definitions of invariance, er
 
 Three boundaries are held exactly.
 
-- The general measure-theoretic theory of a **single** measure-preserving transformation is the subject of *Ergodic Theory*, the later article of the category. That article develops the theory in the sharp form it takes for one map: Poincaré recurrence, the Birkhoff pointwise theorem and the von Neumann mean theorem with their proofs and maximal inequalities, the ergodic decomposition, Kolmogorov–Sinai entropy, Bernoulli shifts and the Ornstein isomorphism theorem. This article is the *group-action* theory. The two overlap at the von Neumann and Birkhoff theorems for $\mathbb{Z}$; here they are stated once as standard mathematics and used, and there they are proved and generalised. The division is stated again in the introduction of *Ergodic Theory*.
+- The general measure-theoretic theory of a **single** measure-preserving transformation is the subject of another article of the category. That article develops the theory in the sharp form it takes for one map: Poincaré recurrence, the Birkhoff pointwise theorem and the von Neumann mean theorem with their proofs and maximal inequalities, the ergodic decomposition, Kolmogorov–Sinai entropy, Bernoulli shifts and the Ornstein isomorphism theorem. This article is the *group-action* theory. The two overlap at the von Neumann and Birkhoff theorems for $\mathbb{Z}$; both are stated here as standard mathematics, with their proofs in the cited literature, and the sharp form for a single map is not covered here. The division is stated again in the introduction.
 - The general **measure theory** — measurable spaces, measures, the integral, the $L^p$ spaces, convergence almost everywhere, the Radon–Nikodym theorem — belongs to *Measure Theory and Integration*, and the comparison of the modes of convergence to *Modes of Convergence*, both written. The **Haar measure** of an action group and the criterion of **amenability** are Part II's, in *Locally Compact Groups and Haar Measure* and *Amenable Groups*; this article uses both and does not construct them.
-- The **harmonic analysis** used for the spectral criterion is the first six articles of the category, and in particular the decomposition of a unitary representation and the Fourier transform on an abelian group; the **homogeneous** and arithmetic side — lattices, arithmetic groups, homogeneous spaces — is Part II's, and the dynamics on a specific homogeneous space is *Homogeneous Dynamics*, the next article. No physics is invoked.
+- The **harmonic analysis** used for the spectral criterion is the first six articles of the category, and in particular the decomposition of a unitary representation and the Fourier transform on an abelian group; the **homogeneous** and arithmetic side — lattices, arithmetic groups, homogeneous spaces — is Part II's, and the dynamics on a specific homogeneous space belongs to another article. No physics is invoked.
 
 Throughout, $(X, \mathcal{B}, \mu)$ is a probability space — a measure space with $\mu(X) = 1$ — and measurable sets and functions are meant modulo null sets. A measurable map $T : X \to X$ is **measure-preserving** if $\mu(T^{-1}A) = \mu(A)$ for all $A \in \mathcal{B}$, and an action of a locally compact second countable group $G$ is a measurable map $G \times X \to X$, $(g, x) \mapsto gx$, with $ex = x$ and $(gh)x = g(hx)$, such that each $x \mapsto gx$ is measure-preserving. The identity of $G$ is $e$, $dx$ is a left Haar measure, and a statement holds **a.e.** (almost everywhere) if it fails on a set of measure zero; the probabilistic synonym *almost surely* is not used. The Koopman representation is written $U$, the invariant $\sigma$-algebra $\mathcal{I}$, and a Følner sequence $\{F_n\}$ as in *Amenable Groups*.
 
@@ -79,7 +79,7 @@ $$
 
 ### Weak Mixing
 
-Ergodicity is compatible with the presence of a discrete spectrum, so the decay of a single matrix coefficient is too strong a demand. The weaker notion averages over the group.
+Ergodicity is compatible with the presence of a discrete spectrum, so the decay of a single matrix coefficient is too strong a dem. The weaker notion averages over the group.
 
 **Definition.** The action is **weakly mixing** if there is no non-constant measurable function whose orbit under the Koopman representation spans a finite-dimensional subspace; equivalently, if the representation on the mean-zero part has no finite-dimensional subrepresentation.
 
@@ -153,7 +153,7 @@ $$
 
 converge a.e. to the conditional expectation $\mathbb{E}[f \mid \mathcal{I}]$ of $f$ with respect to the invariant $\sigma$-algebra $\mathcal{I}$. In particular, for an ergodic action the limit is the constant $\int f \, d\mu$.
 
-The theorem is stated here as the group-action form of the pointwise result; for $G = \mathbb{Z}$ it is Birkhoff's theorem, whose proof by the maximal inequality and the upcrossing argument is developed in *Ergodic Theory*. The Følner form requires the Følner sequence to be **tempered**, a mild growth condition $\mu_G(F_1 \cdots F_n) \leq C \mu_G(F_n)$ that every amenable group admits, and it is for such sequences that the maximal inequality holds. For groups with a word metric one may use balls in place of Følner sets when the group has subexponential growth, but not in general.
+The theorem is stated here as the group-action form of the pointwise result; for $G = \mathbb{Z}$ it is Birkhoff's theorem, whose proof by the maximal inequality and the upcrossing argument is in the cited literature. The Følner form requires the Følner sequence to be **tempered**, a mild growth condition $\mu_G(F_1 \cdots F_n) \leq C \mu_G(F_n)$ that every amenable group admits, and it is for such sequences that the maximal inequality holds. For groups with a word metric one may use balls in place of Følner sets when the group has subexponential growth, but not in general.
 
 ## Ergodicity Criteria for Group Actions
 
@@ -269,7 +269,7 @@ $$
 u_t = \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}, \qquad U = \left\{u_t : t \in \mathbb{R}\right\},
 $$
 
-and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(e^{t/2}, e^{-t/2})\}$. The Mautner relation $a_s u_t a_s^{-1} = u_{e^{-s}t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed in *Homogeneous Dynamics*.
+and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorname{diag}(e^{t/2}, e^{-t/2})\}$. The Mautner relation $a_s u_t a_s^{-1} = u_{e^{-s}t}$ holds, so the Mautner phenomenon reduces the invariant functions of the geodesic flow to those of the horocycle flow; the horocycle flow is ergodic by a direct argument using the structure of $\Gamma$, and hence so is the geodesic flow. By Howe–Moore the geodesic flow is in fact mixing, with exponential decay of correlations. The horocycle flow, by contrast, is uniquely ergodic but not mixing: it is a distal flow, and its mixing defect measures the presence of the unipotent direction. These examples are the prototypical instances of the general theory, and the dynamics of a general $G/\Gamma$ is developed.
 
 **Example (flows on nilmanifolds).** Let $N$ be a simply connected nilpotent Lie group with a lattice $\Gamma$, and let $\{u_t\}$ be a one-parameter subgroup. The action of $u_t$ on $N/\Gamma$ is ergodic if and only if the flow is not confined to a smaller closed orbit, and the general principle — that the orbit closure is a submanifold and the flow is uniquely ergodic on it — is the content of Ratner's topological theorem for unipotent flows. The rotation flow of the two-torus, the special case in which $N = \mathbb{R}^2$ and $\Gamma = \mathbb{Z}^2$, is the elementary instance; the Heisenberg nilmanifold is the first genuinely non-abelian case and exhibits a unipotent flow that is mixing in the direction of the centre and periodic in the transverse direction.
 
@@ -277,7 +277,7 @@ and the **geodesic flow** is the flow of the diagonal subgroup $A = \{\operatorn
 
 An action of a locally compact group $G$ by measure-preserving transformations of a probability space $(X,\mathcal{B},\mu)$ is ergodic when every invariant set has measure $0$ or $1$, equivalently when every invariant measurable function is constant a.e., and the Koopman representation $U_g f(x) = f(g^{-1}x)$ turns this into the condition that the constants are the only invariant vectors of a unitary representation of $G$. Mixing is the decay $\mu(gA \cap B) \to \mu(A)\mu(B)$ as $g \to \infty$, equivalently the vanishing of the matrix coefficients of the Koopman representation on the mean-zero part; weak mixing replaces the limit by a Følner average and is equivalent to the ergodicity of the product action; and mixing of higher order strengthens the decay of correlations for several translates at once.
 
-For an amenable group, a Følner sequence $\{F_n\}$ supplies the averaging sets, and the mean ergodic theorem asserts that $\mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg \to Pf$ in $L^2$, with $Pf$ the projection onto the invariant vectors; the pointwise theorem of Lindenstrauss asserts convergence a.e. to the conditional expectation on the invariant $\sigma$-algebra for tempered Følner sequences. For a single transformation these are the von Neumann and Birkhoff theorems, stated here as standard and developed in *Ergodic Theory*.
+For an amenable group, a Følner sequence $\{F_n\}$ supplies the averaging sets, and the mean ergodic theorem asserts that $\mu_G(F_n)^{-1}\int_{F_n} U_g f \, dg \to Pf$ in $L^2$, with $Pf$ the projection onto the invariant vectors; the pointwise theorem of Lindenstrauss asserts convergence a.e. to the conditional expectation on the invariant $\sigma$-algebra for tempered Følner sequences. For a single transformation these are the von Neumann and Birkhoff theorems, stated here as standard with their proofs in the cited literature.
 
 The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \to e$; Moore's theorem gives the ergodicity of every non-compact closed subgroup of an irreducible lattice quotient, and the Howe–Moore theorem gives the decay at infinity of the matrix coefficients of a representation without invariant vectors, hence the mixing of an ergodic homogeneous action. Hopf's ratio ergodic theorem is the form of the ergodic theorem that survives the absence of a finite invariant measure, and orbit equivalence — with Dye's theorem that all ergodic amenable actions on a standard non-atomic space are orbit-equivalent — is the coarsest measure-theoretic equivalence of actions. The examples are the rationally independent translations of a torus, which are ergodic and never mixing; the Bernoulli shift, mixing of all orders; the hyperbolic torus automorphisms; and the horocycle and geodesic flows on $SL_2(\mathbb{Z})\backslash SL_2(\mathbb{R})$, where the Mautner relation between the unipotent and diagonal subgroups is what carries ergodicity from one to the other.
 
@@ -306,6 +306,12 @@ The Mautner phenomenon propagates ergodicity along the relation $a^n u a^{-n} \t
 | Kac's lemma | expected return time to $A$ is $1/\mu(A)$ |
 | $T_a(x)=x+a$ | Translation of the torus $T^n=\mathbb{R}^n/\mathbb{Z}^n$ |
 | $u_t$, $a_s$ | Horocycle and diagonal (geodesic) one-parameter subgroups of $SL_2(\mathbb{R})$ |
+
+
+
+
+
+
 
 ## Further Reading
 

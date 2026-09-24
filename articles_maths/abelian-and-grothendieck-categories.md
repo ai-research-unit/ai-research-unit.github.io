@@ -5,7 +5,7 @@
 
 The category $R\text{-}\mathbf{Mod}$ has a structure that the previous article of this category exhibited in detail: a zero object, finite biproducts, kernels and cokernels, and the identity of the coimage with the image. Left and right exactness are defined by these data, and the whole of homological algebra — resolutions, derived functors, long exact sequences — uses nothing else. It is therefore possible to carry that theory to any category with the same structure, and to ask which of the familiar constructions are categorical and which depend on the ring. The answer is the theory of **abelian categories**, invented for exactly this purpose by Buchsbaum, Grothendieck and Mac Lane, and the special class of **Grothendieck categories** in which the homological constructions behave best.
 
-This article develops additive and abelian categories, exact sequences in them, the Freyd–Mitchell embedding theorem that identifies every small abelian category with a full subcategory of a module category, and the Grothendieck categories — the abelian categories with a generator, all colimits and exact filtered colimits — together with the Gabriel–Popescu theorem that describes them as quotients of module categories. It is the abstract framework that the articles *Homological Algebra*, *Derived Functors*, *Derived Categories*, *Topoi*, *Sheaves on Sites* and *Descent Theory* of this category use, and the reason statements about modules are frequently proved once in the abstract setting.
+This article develops additive and abelian categories, exact sequences in them, the Freyd–Mitchell embedding theorem that identifies every small abelian category with a full subcategory of a module category, and the Grothendieck categories — the abelian categories with a generator, all colimits and exact filtered colimits — together with the Gabriel–Popescu theorem that describes them as quotients of module categories. It is the abstract framework of this category, and the reason statements about modules are frequently proved once in the abstract setting.
 
 Throughout, $\mathcal{A}$, $\mathcal{B}$ are additive or abelian categories, and the motivating example is $\mathcal{A}=R\text{-}\mathbf{Mod}$ for a ring $R$. The article assumes the categorical vocabulary of the companion article *Module Categories* — categories, functors, natural transformations, representability, limits and colimits, biproducts — and it uses the module-theoretic results of the articles *Exact Sequences* and *Projective and Injective Modules* only as examples. No topology and no form enters; the words *complete*, *filtered* and *limit* are used in their algebraic and categorical senses, and the article contains no distance, norm or topological enrichment. Where a construction is taken from the theory of sheaves or of schemes it is named, not used, and the reader is directed forward.
 
@@ -59,7 +59,7 @@ is an isomorphism, where $\operatorname{coim}f=\operatorname{coker}(\ker f\to A)
 
 The condition is exactly the categorical form of the first isomorphism theorem, and it is what makes exactness statable: a sequence is exact at a term when the image of the incoming morphism equals the kernel of the outgoing one as subobjects of that term.
 
-**Example.** $R\text{-}\mathbf{Mod}$ is abelian. So is the category of abelian sheaves on a site, and so is the category of left modules over a sheaf of rings; the latter two are named here and developed in *Sheaves on Sites* and, for sheaves on a space, in Part II.
+**Example.** $R\text{-}\mathbf{Mod}$ is abelian. So is the category of abelian sheaves on a site, and so is the category of left modules over a sheaf of rings; the latter two are named here and developed, for sheaves on a space, in Part II.
 
 **Example.** The category of finitely generated free abelian groups is additive and is not abelian, although it has kernels and cokernels as a category. For $f=\cdot 2:\mathbb{Z}\to\mathbb{Z}$ the kernel in the subcategory is $0$ (a map from a finitely generated free group killed by $f$ is zero), so the coimage is $\mathbb{Z}$; the cokernel in the subcategory is likewise $0$ (any map from $\mathbb{Z}$ to a finitely generated free group killing $2$ is zero), so the image is again $\mathbb{Z}$; but the canonical map $\operatorname{coim}f\to\operatorname{im}f$ is multiplication by $2$, which is not an isomorphism. The kernels and the cokernels computed inside the subcategory therefore disagree with those computed in $\mathbf{Ab}$, and the abelian axiom fails.
 
@@ -117,7 +117,7 @@ and the connecting morphism $\partial$ is natural in the diagram.
 
 *Proof.* For projectives, every module is a quotient of a free module. For injectives, embed a module into a product of copies of an injective cogenerator; the general Grothendieck case is the theorem of Grothendieck, proved below. $\square$
 
-Enough projectives and enough injectives are precisely the hypotheses under which the derived functors of the next articles are defined. An abelian category with neither is outside the theory's reach: the full subcategory of finitely generated modules over a ring is abelian, but the injective hull of a finitely generated module need not be finitely generated, so it generally has not enough injectives; and the category of sheaves on a compact space has enough injectives and rarely has enough projectives.
+Enough projectives and enough injectives are precisely the hypotheses under which the derived functors are defined. An abelian category with neither is outside the theory's reach: the full subcategory of finitely generated modules over a ring is abelian, but the injective hull of a finitely generated module need not be finitely generated, so it generally has not enough injectives; and the category of sheaves on a compact space has enough injectives and rarely has enough projectives.
 
 ## The Freyd–Mitchell Embedding Theorem
 
@@ -155,7 +155,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 **Definition.** A **Grothendieck category** is an abelian category satisfying AB5 that has a generator, equivalently — the equivalence is a theorem of Grothendieck — an abelian category satisfying AB5 with a set of generators.
 
-**Example.** The category $R\text{-}\mathbf{Mod}$ is a Grothendieck category. The category of left modules over a sheaf of rings on a site, and the category of presheaves of abelian groups on a small category, are Grothendieck categories; the first is developed in *Sheaves on Sites*, the second is the functor category $\mathbf{Ab}^{\mathcal{C}^{\mathrm{op}}}$ and is the reason the theory applies to sheaves at all.
+**Example.** The category $R\text{-}\mathbf{Mod}$ is a Grothendieck category. The category of left modules over a sheaf of rings on a site, and the category of presheaves of abelian groups on a small category, are Grothendieck categories; the first is developed, the second is the functor category $\mathbf{Ab}^{\mathcal{C}^{\mathrm{op}}}$ and is the reason the theory applies to sheaves at all.
 
 **Theorem.** A Grothendieck category has all small colimits, is complete, has enough injectives, and has an injective cogenerator.
 
@@ -171,7 +171,7 @@ Grothendieck isolated a list of exactness conditions on the coproducts of an abe
 
 *Proof.* Embed $A$ in an injective $I^0$, embed the cokernel in an injective $I^1$, and iterate; the construction is the standard one. The projective case is dual. $\square$
 
-Resolutions are the input to the derived-functor theory of the articles *Homological Algebra* and *Derived Functors*; their existence in a Grothendieck category is what makes sheaf cohomology, which is developed in Part II, a derived-functor theory in the sense of this category.
+Resolutions are the input to the derived-functor theory; their existence in a Grothendieck category is what makes sheaf cohomology, which is developed in Part II, a derived-functor theory in the sense of this category.
 
 ## The Gabriel–Popescu Theorem
 
@@ -203,11 +203,11 @@ Resolutions are the input to the derived-functor theory of the articles *Homolog
 
 ### The Module Theory as the Source of the Notions
 
-Every axiom of an abelian category is an abstracted property of $R\text{-}\mathbf{Mod}$, and every theorem about modules stated in exactness terms — the snake lemma, the five lemma, the splitting lemma, the classification of extensions — is a categorical statement. The article *Exact Sequences* proves these for modules by element chases; the Freyd–Mitchell theorem says that no generality is lost, so the module proofs are proofs of the categorical statements. The article *Homological Algebra* then develops chain complexes and resolutions abstractly, and *Derived Functors* attaches to a left exact functor its right derived functors in any abelian category with enough injectives.
+Every axiom of an abelian category is an abstracted property of $R\text{-}\mathbf{Mod}$, and every theorem about modules stated in exactness terms — the snake lemma, the five lemma, the splitting lemma, the classification of extensions — is a categorical statement. The article *Exact Sequences* proves these for modules by element chases; the Freyd–Mitchell theorem says that no generality is lost, so the module proofs are proofs of the categorical statements. The articlethen develops chain complexes and resolutions abstractly, andattaches to a left exact functor its right derived functors in any abelian category with enough injectives.
 
 ### Where the Abstraction Is Needed
 
-The abstraction is not idle generality. Three of the later articles of this category are set in Grothendieck categories that are not module categories: the category of sheaves of abelian groups on a site, the category of sheaves of modules over a sheaf of rings, and the categories of comodules and descent data; and the derived categories of the article *Derived Categories* are built from abelian categories of this generality. In each case the existence of enough injectives, the exactness of filtered colimits and the presence of a generator are hypotheses that must be checked, and the Gabriel–Popescu theorem is the criterion that decides whether the category is a module category in disguise.
+The abstraction is not idle generality. Three of the settings of this category are Grothendieck categories that are not module categories: the category of sheaves of abelian groups on a site, the category of sheaves of modules over a sheaf of rings, and the categories of comodules and descent data; and the derived categories are built from abelian categories of this generality. In each case the existence of enough injectives, the exactness of filtered colimits and the presence of a generator are hypotheses that must be checked, and the Gabriel–Popescu theorem is the criterion that decides whether the category is a module category in disguise.
 
 ### What Does Not Abstract
 
@@ -239,6 +239,14 @@ The abstraction abstracts the additive part of module theory only. The tensor pr
 | $T=-\otimes_RG$ | left adjoint of $\operatorname{Hom}_{\mathcal{A}}(G,-)$ in the Gabriel–Popescu theorem |
 | $I^\bullet$, $P_\bullet$ | injective and projective resolutions |
 | $R\text{-}\mathbf{Mod}$ | the category of left $R$-modules |
+
+
+
+
+
+
+
+
 
 ## Further Reading
 

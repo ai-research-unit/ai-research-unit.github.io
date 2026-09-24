@@ -23,7 +23,7 @@ $$
 
 both subspaces, of $V$ and $W$ respectively, and $T$ is injective exactly when $\ker T=0$ and surjective exactly when $\operatorname{im}T=W$.
 
-Composition of linear maps is linear, so the endomorphisms $\operatorname{End}_F(V)=\operatorname{Hom}_F(V,V)$ form a ring under addition and composition, and the invertible elements of that ring form the group $\operatorname{GL}(V)$ of **automorphisms** of $V$. This group is the subject of the next article of the category.
+Composition of linear maps is linear, so the endomorphisms $\operatorname{End}_F(V)=\operatorname{Hom}_F(V,V)$ form a ring under addition and composition, and the invertible elements of that ring form the group $\operatorname{GL}(V)$ of **automorphisms** of $V$. This group is not covered here of the category.
 
 ### Kernel, Image and Rank–Nullity
 
@@ -227,7 +227,7 @@ Over a ring, Gaussian elimination fails at the step that divides by a pivot: a n
 
 ## The Trace and the Determinant of a Matrix
 
-The two scalar invariants attached to a square matrix are fixed here because the later articles of the category use them without redefining them.
+The two scalar invariants attached to a square matrix are fixed here because the other articles of this category use them without redefining them.
 
 **Definition.** For $A=(a_{ij}) \in M_n(F)$ the **trace** is $\operatorname{tr}A=\sum_{i=1}^{n}a_{ii}$, and the **determinant** is
 
@@ -241,7 +241,7 @@ the sum running over the symmetric group $S_n$ and $\operatorname{sgn}$ being th
 
 *Proof.* (i) Both sides are $\sum_{i,j}a_{ij}b_{ji}$. (ii) is proved in the article of this category on the special linear group, where the determinant is characterised as the unique alternating multilinear function of the columns normalised to $\det I=1$. (iii) If $AB=I$ then $\det A \det B=1$, so $\det A \neq 0$; conversely a nonzero determinant admits the adjugate formula $A^{-1}=(\det A)^{-1}A^{\mathrm{adj}}$ with $A A^{\mathrm{adj}}=(\det A)I$. (iv) is the theorem on minors above. $\square$
 
-Trace and determinant are therefore similarity invariants, unlike the individual matrix entries, and they are the first two coefficients of the characteristic polynomial $c_A(x)=\det(xI-A)=x^n-(\operatorname{tr}A)x^{n-1}+\cdots+(-1)^n\det A$. They are not complete invariants: the matrices $\operatorname{diag}(1,1)$ and $\operatorname{diag}(2,0)$ over $\mathbb{Q}$ have determinants $1$ and $0$ and are trivially different, while the Jordan block $\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$ and the scalar $\lambda I_2$ have the same trace and determinant and are not similar. Similarity classification requires the full characteristic and minimal polynomials and is treated in the next article and its applications.
+Trace and determinant are therefore similarity invariants, unlike the individual matrix entries, and they are the first two coefficients of the characteristic polynomial $c_A(x)=\det(xI-A)=x^n-(\operatorname{tr}A)x^{n-1}+\cdots+(-1)^n\det A$. They are not complete invariants: the matrices $\operatorname{diag}(1,1)$ and $\operatorname{diag}(2,0)$ over $\mathbb{Q}$ have determinants $1$ and $0$ and are trivially different, while the Jordan block $\begin{pmatrix}\lambda&1\\0&\lambda\end{pmatrix}$ and the scalar $\lambda I_2$ have the same trace and determinant and are not similar. Similarity classification requires the full characteristic and minimal polynomials and is not covered here and its applications.
 
 ## Summary
 
@@ -280,6 +280,10 @@ A linear system $Ax=b$ is consistent exactly when $\operatorname{rk}A=\operatorn
 | $\operatorname{tr}$, $\det$ | trace and determinant |
 | $R^{\times}$ | unit group of a ring $R$ |
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
+
+
+
+
 
 ## Further Reading
 

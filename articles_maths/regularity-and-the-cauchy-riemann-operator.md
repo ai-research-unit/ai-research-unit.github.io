@@ -165,7 +165,7 @@ is left regular for every $v \neq 0$, and distinct $\lambda$ give linearly indep
 - **The maximum principle fails.** Its Euclidean norm satisfies $\|e^{-(x_0-jx_1)^2}\| \leq 1 = \|f(0)\|$, so the maximum is attained at the interior point $0$.
 - **The mean value property fails.** The regular function $x \mapsto \xi_-^2e_+$ has value $0$ at the centre of $B(0,r)$, while its average over the ball is $\frac{1}{\pi r^2}\int_{B(0,r)}(x_0-x_1)^2\,dx = \tfrac{r^2}{2} \neq 0$.
 
-For $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$ the symbol satisfies $\sigma(\xi)\tilde\sigma(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0v = -u'$, the components satisfy the transport equations $\partial_0u = 0$ and $\partial_0v = -\partial_1u$, and the bounded non-constant regular function $1 + \varepsilon e^{-x_1^2}$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods of *Split Complex Analysis* and *Dual Numbers Analysis*.
+For $\mathbb{D}'$ with $D = \partial_0 + \varepsilon\partial_1$ the symbol satisfies $\sigma(\xi)\tilde\sigma(\xi) = \xi_0^2$, vanishing on $\xi_0 = 0$; the regular functions are $f = u(x_1) + \varepsilon v(x_0,x_1)$ with $\partial_0v = -u'$, the components satisfy the transport equations $\partial_0u = 0$ and $\partial_0v = -\partial_1u$, and the bounded non-constant regular function $1 + \varepsilon e^{-x_1^2}$ again defeats Liouville, its norm attaining its maximum along the line $x_1 = 0$. The two degenerate systems are therefore not covered by the theorems of this section, and they are treated by the idempotent and nilpotent methods and *Dual Numbers Analysis*.
 
 ## The Fischer and Stokes Decompositions
 
@@ -177,7 +177,7 @@ $$
 \mathcal{H}_k = \{P \in \mathcal{P}_k : \Delta P = 0\}, \qquad \mathcal{M}_k = \{P \in \mathcal{P}_k : DP = 0\}
 $$
 
-be the **harmonic** and the **left regular** (or **monogenic**) homogeneous polynomials of degree $k$; the space $\mathcal{M}_k$ is the space written $\mathcal{M}_k(A,D)$ in *Hypercomplex Integration*.
+be the **harmonic** and the **left regular** (or **monogenic**) homogeneous polynomials of degree $k$; the space $\mathcal{M}_k$ is the space written $\mathcal{M}_k(A,D)$.
 
 **Lemma (Fischer).** For $k \geq 2$ the Laplacian $\Delta : \mathcal{P}_k \to \mathcal{P}_{k-2}$ is surjective, and the multiplication map $\Lambda : \mathcal{P}_{k-2} \to \mathcal{P}_k$, $Q \mapsto |x|^2Q$, is injective with image meeting $\mathcal{H}_k$ only at $0$.
 
@@ -329,6 +329,8 @@ The homogeneous polynomials organise under ellipticity through the **Fischer lem
 | $\mathcal{H}_k = \ker\Delta \cap \mathcal{P}_k$ | Harmonic homogeneous polynomials |
 | $\mathcal{M}_k = \ker D \cap \mathcal{P}_k$ | Left regular homogeneous polynomials, $= \mathcal{M}_k(A,D)$ |
 | $e_\pm = \tfrac12(1 \pm j)$, $\xi_\pm = x_0 \pm x_1$ | Idempotents and characteristic coordinates of $\mathbb{D}$ |
+
+
 
 ## Further Reading
 

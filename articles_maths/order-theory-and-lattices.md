@@ -5,7 +5,7 @@
 
 A partial order records when one object is below another, and much of algebra is order in disguise: a subgroup is below another when it is contained in it, and a quotient is often the greatest object of a given kind. This article develops the theory of orders for its own sake: it defines partial, total and well-orders, isolates the two binary operations that an order may support — the least upper bound and the greatest lower bound — and studies the structures, the **lattices**, in which those operations are always defined. It then treats the two results that the corpus uses in its analysis: the **Galois connection**, the order-theoretic form of a closure, and the fixed-point theorem of **Knaster and Tarski**.
 
-The article presupposes the language of *Sets, Functions and Relations* — subsets, ordered pairs, relations, equivalence relations and functions — and the propositional logic of *Logic and Proof*, and it uses the natural numbers as basic. Two boundaries are observed. The **axiom of choice** and Zorn's lemma are not proved or used here; they belong to *Cardinality and the Axiom of Choice*, and the article distinguishes the results constructive in the order alone from those that require a choice principle. **Boolean algebra** is developed as a subject in Part IV; the power-set lattice is introduced here as the standard example, and the general theory is deferred.
+The article presupposes the language of *Sets, Functions and Relations* — subsets, ordered pairs, relations, equivalence relations and functions — and the propositional logic of *Logic and Proof*, and it uses the natural numbers as basic. Two boundaries are observed. The **axiom of choice** and Zorn's lemma are not proved or used here; they belong to the foundations, and the article distinguishes the results constructive in the order alone from those that require a choice principle. **Boolean algebra** is developed as a subject in Part IV; the power-set lattice is introduced here as the standard example, and the general theory is deferred.
 
 The article treats no topology. The words *complete*, *closed* and *limit* occur below with their order-theoretic meanings — an order-complete lattice, a closed element of a closure system, the supremum of a chain — and in those senses only. Where a result has a richer statement once a distance exists, the statement is given in the language of order and the enrichment is deferred to Part II.
 
@@ -15,7 +15,7 @@ The article treats no topology. The words *complete*, *closed* and *limit* occur
 
 **Definition.** A **partial order** on a set $P$ is a relation $\leq$ that is reflexive, antisymmetric and transitive; the pair $(P, \leq)$ is a **partially ordered set**, or **poset**. A **strict partial order** is an irreflexive transitive relation $<$, and it is related to a partial order by the equivalences $x < y \iff x \leq y$ and $x \neq y$ and $x \leq y \iff x < y$ or $x = y$.
 
-The standard order on $\mathbb{R}$ and the inclusion on the subsets of a set are partial orders, as noted in *Sets, Functions and Relations*. A partial order is a **total order** (or **linear order**) if any two elements are comparable: $x \leq y$ or $y \leq x$ for all $x, y \in P$. A **chain** in a poset is a subset that is totally ordered by the inherited relation; an **antichain** is a subset in which no two distinct elements are comparable. A **well-order** is a total order in which every nonempty subset has a least element; the usual order on $\mathbb{N}$ is the model, and the general theory of well-orders and of transfinite induction on them belongs to *Set-Theoretic Foundations*.
+The standard order on $\mathbb{R}$ and the inclusion on the subsets of a set are partial orders, as noted in *Sets, Functions and Relations*. A partial order is a **total order** (or **linear order**) if any two elements are comparable: $x \leq y$ or $y \leq x$ for all $x, y \in P$. A **chain** in a poset is a subset that is totally ordered by the inherited relation; an **antichain** is a subset in which no two distinct elements are comparable. A **well-order** is a total order in which every nonempty subset has a least element; the usual order on $\mathbb{N}$ is the model, and the general theory of well-orders and of transfinite induction on them belongs.
 
 **Example.** Let $P = \{1, 2, 3, 4, 6, 12\}$ with $x \leq y$ when $x$ divides $y$. This is a partial order that is not total: $2$ and $3$ are incomparable. The divisibility poset is the standard example in which meets and joins are familiar operations.
 
@@ -36,7 +36,7 @@ A least element, when it exists, is unique by antisymmetry, and it is minimal; a
 
 **Proof.** (1) If $P$ had incomparable $x, y$ then $\{x, y\}$ would have no least element; and the terms of a strictly decreasing sequence form a nonempty subset without a least element. (2) If $S \neq \emptyset$ had no least element, then for each $x \in S$ the set $\{s \in S : s < x\}$ is nonempty, and a nonterminating strictly decreasing sequence is obtained by choosing $x_0 \in S$ and then $x_{n+1} < x_n$ for each $n$, contradicting the hypothesis. $\square$
 
-The two directions are not on the same footing: (1) is a theorem of the order alone, whereas (2) selects infinitely many successive elements, and the selection is an instance of the axiom of dependent choice. Nothing in this article depends on (2); the statement is recorded because the condition of *no infinite descending sequence* is the form in which well-foundedness is verified elsewhere in the corpus, for instance as the termination of a rewriting process, and the choice principle that it hides is treated in *Cardinality and the Axiom of Choice*.
+The two directions are not on the same footing: (1) is a theorem of the order alone, whereas (2) selects infinitely many successive elements, and the selection is an instance of the axiom of dependent choice. Nothing in this article depends on (2); the statement is recorded because the condition of *no infinite descending sequence* is the form in which well-foundedness is verified elsewhere in the corpus, for instance as the termination of a rewriting process, and the choice principle that it hides is treated.
 
 ### Monotone Maps
 
@@ -86,7 +86,7 @@ $$
 
 **Example.** The set of partitions of a set $X$, ordered by refinement, is a lattice: the meet of two partitions is the partition into the nonempty intersections of their blocks, and the join is obtained by the transitive closure of the relation "lies in a common block"; the lattice is isomorphic to that of the equivalence relations on $X$ under inclusion.
 
-**Example.** The set of subgroups of a group, ordered by inclusion, is a lattice with join the generated subgroup and meet the intersection, and the set of normal subgroups is a sublattice of it. These examples are named for orientation and are treated in *Groups*, where the objects are introduced; no result about them is used here.
+**Example.** The set of subgroups of a group, ordered by inclusion, is a lattice with join the generated subgroup and meet the intersection, and the set of normal subgroups is a sublattice of it. These examples are named for orientation and are treated, where the objects are introduced; no result about them is used here.
 
 ### The Algebraic Characterisation
 
@@ -130,7 +130,7 @@ Every complete lattice has a least element $\bigvee \emptyset$ and a greatest el
 
 **Example.** The interval $[0,1] \subseteq \mathbb{R}$ is a complete lattice; the set $(0,1)$ is not, since it fails to have a greatest element and its subsets have no supremum inside it. The rational interval $[0,1] \cap \mathbb{Q}$ is not complete, since $\{q \in \mathbb{Q} : q^2 < 2\}$ has no supremum in it.
 
-**Definition.** A **directed supremum** is the supremum of a subset $D$ that is **directed**: every finite subset of $D$ has an upper bound in $D$. A lattice is **upward directed complete** (a **DCPO**) if every directed subset has a supremum; such orders are the domain of the least-fixed-point theory used in the semantics of recursion, and they are named here so that later articles can use the vocabulary.
+**Definition.** A **directed supremum** is the supremum of a subset $D$ that is **directed**: every finite subset of $D$ has an upper bound in $D$. A lattice is **upward directed complete** (a **DCPO**) if every directed subset has a supremum; such orders are the domain of the least-fixed-point theory used in the semantics of recursion, and they are named here so that other articles can use the vocabulary.
 
 ### Distributive Lattices
 
@@ -160,7 +160,7 @@ Every distributive lattice is modular: expanding by distributivity gives $(x \ve
 
 The two examples are canonical: a lattice is modular if and only if it has no sublattice isomorphic to $N_5$, and distributive if and only if it has no sublattice isomorphic to $N_5$ or $M_3$. This is the characterisation of Dedekind, and it is standard.
 
-**Example.** The lattice of subgroups of a group is modular, and the lattice of normal subgroups is modular; the lattice of submodules of a module and the lattice of ideals of a commutative ring are modular but not distributive in general. These lattices are treated in the categories that introduce their objects — *Groups*, *Modules* and *Rings* — and they are named here as the principal applications of modularity, not used as results.
+**Example.** The lattice of subgroups of a group is modular, and the lattice of normal subgroups is modular; the lattice of submodules of a module and the lattice of ideals of a commutative ring are modular but not distributive in general. These lattices are treated in the categories that introduce their objects —and— and they are named here as the principal applications of modularity, not used as results.
 
 ### Complemented Lattices and Boolean Lattices
 
@@ -239,7 +239,7 @@ are the least and greatest fixed points of $f$.
 
 **Proof.** Put $A = \{x \in L : f(x) \leq x\}$ and $a = \bigwedge A$; the set $A$ is nonempty, since the greatest element $1$ of $L$ satisfies $f(1) \leq 1$. For each $x \in A$ one has $a \leq x$, so by monotonicity $f(a) \leq f(x) \leq x$; hence $f(a)$ is a lower bound of $A$ and $f(a) \leq a$. Applying $f$ to this inequality and using monotonicity gives $f(f(a)) \leq f(a)$, so $f(a) \in A$; then $a \leq f(a)$ because $a$ is a lower bound of $A$. Antisymmetry gives $f(a) = a$, so $a$ is a fixed point, and it is the least because every fixed point lies in $A$. The greatest fixed point is obtained by the dual argument applied to the set $\{x : x \leq f(x)\}$ and its supremum, or equivalently by applying the argument just given to the same map on the lattice with the reverse order.
 
-It remains to record why $\operatorname{Fix}(f)$ is a complete lattice, not merely a set with a least and a greatest element. The set is nonempty, since $f(0) \geq 0$ forces $f(0) = 0$ and dually $f(1) = 1$. For a nonempty $S \subseteq \operatorname{Fix}(f)$ the ambient infimum $a = \bigwedge S$ satisfies $f(a) \leq a$, and the iterates $a \geq f(a) \geq f(f(a)) \geq \cdots$ descend from $a$; the greatest fixed point below every member of $S$ is obtained by continuing the descent along the ordinals until it stabilises, and that construction — the standard proof of the completeness half of the theorem — is the transfinite recursion treated in *Set-Theoretic Foundations*. Granting it, $\operatorname{Fix}(f)$ has arbitrary infima and is therefore a complete lattice by the theorem above. $\square$
+It remains to record why $\operatorname{Fix}(f)$ is a complete lattice, not merely a set with a least and a greatest element. The set is nonempty, since $f(0) \geq 0$ forces $f(0) = 0$ and dually $f(1) = 1$. For a nonempty $S \subseteq \operatorname{Fix}(f)$ the ambient infimum $a = \bigwedge S$ satisfies $f(a) \leq a$, and the iterates $a \geq f(a) \geq f(f(a)) \geq \cdots$ descend from $a$; the greatest fixed point below every member of $S$ is obtained by continuing the descent along the ordinals until it stabilises, and that construction — the standard proof of the completeness half of the theorem — is the transfinite recursion treated. Granting it, $\operatorname{Fix}(f)$ has arbitrary infima and is therefore a complete lattice by the theorem above. $\square$
 
 **Corollary.** Every monotone map of a complete lattice has a least and a greatest fixed point, and every monotone map of a finite lattice has a least and a greatest fixed point.
 
@@ -271,7 +271,7 @@ A partial order is a reflexive, antisymmetric, transitive relation; a total orde
 
 A lattice is a poset in which every pair has a supremum and an infimum, and equivalently a set with two binary operations satisfying idempotence, commutativity, associativity and absorption; a lattice is complete when these operations are defined for arbitrary subsets, and finite lattices are complete. Distributive lattices satisfy the distributive laws, modular lattices the modular law, and Boolean lattices are the distributive complemented ones, in which the complement is unique; the power-set lattice is the standard example. The sublattice characterisations — no $N_5$ for modular, no $N_5$ or $M_3$ for distributive — are Dedekind's.
 
-A Galois connection between posets is a pair of monotone adjoint maps $f \dashv g$ with $f(p) \preceq q \iff p \leq g(q)$; it induces closure operators $gf$ and $fg$, the left adjoint preserves suprema and the right adjoint infima, and the closed elements of a closure operator on a complete lattice form a complete lattice. The Knaster–Tarski theorem states that a monotone map of a complete lattice has a least fixed point $\bigwedge\{x : f(x) \leq x\}$ and a greatest fixed point $\bigvee\{x : x \leq f(x)\}$, and that the fixed points form a complete lattice; the construction uses no choice principle, which is why it is used for inductive definitions while Zorn's lemma, treated in *Cardinality and the Axiom of Choice*, is used for maximal objects.
+A Galois connection between posets is a pair of monotone adjoint maps $f \dashv g$ with $f(p) \preceq q \iff p \leq g(q)$; it induces closure operators $gf$ and $fg$, the left adjoint preserves suprema and the right adjoint infima, and the closed elements of a closure operator on a complete lattice form a complete lattice. The Knaster–Tarski theorem states that a monotone map of a complete lattice has a least fixed point $\bigwedge\{x: f(x) \leq x\}$ and a greatest fixed point $\bigvee\{x: x \leq f(x)\}$, and that the fixed points form a complete lattice; the construction uses no choice principle, which is why it is used for inductive definitions while Zorn's lemma, treated, is used for maximal objects.
 
 ## Summary of Notation
 
@@ -292,6 +292,10 @@ A Galois connection between posets is a pair of monotone adjoint maps $f \dashv 
 | $\mu f$, $\nu f$ | Least and greatest fixed points of $f$ |
 | $\mathcal{P}(X)$ | Power-set lattice, complete, distributive and complemented |
 | DCPO | Poset in which every directed subset has a supremum |
+
+
+
+
 
 ## Further Reading
 

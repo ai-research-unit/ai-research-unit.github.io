@@ -39,7 +39,7 @@ $$
 \dim\mathfrak{so}(3,1) = 6, \qquad \mathfrak{so}(3,1)\cong\mathfrak{so}(1,3)\cong\mathfrak{sl}_2(\mathbb{C}) \ \text{ as complex Lie algebras},
 $$
 
-the last isomorphism being the one established in *The Orthogonal Lie Algebra*. The maximal compact subgroup of $SO^{+}(3,1)$ is the group $SO(3)$ of rotations of the spacelike $3$-plane, the stabiliser of a timelike vector; it is the compact part whose existence is guaranteed by the general structure theory of real Lie groups, and the quotient is a symmetric space, namely hyperbolic three-space. This last identification is developed in *Split-Quaternions and Hyperbolic Geometry*, written in parallel, and is not used below.
+the last isomorphism being the one established in *The Orthogonal Lie Algebra*. The maximal compact subgroup of $SO^{+}(3,1)$ is the group $SO(3)$ of rotations of the spacelike $3$-plane, the stabiliser of a timelike vector; it is the compact part whose existence is guaranteed by the general structure theory of real Lie groups, and the quotient is a symmetric space, namely hyperbolic three-space. This last identification is developed, and is not used below.
 
 ### The Groups $O(2,2)$ and $SO(2,2)$
 
@@ -315,6 +315,8 @@ In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, eac
 | $S(\mathbb{H}_{\mathbb{D}})\cong S^3\times S^3$ | Norm-one unit sphere |
 | $C_0$, $C_{\pm1}$ | Null cone and hyperboloids in $\mathbb{M}_-$ |
 | $\mathbb{H}e_+$, $\mathbb{H}e_-$ | The two ideals, the set of zero divisors |
+
+
 
 ## Further Reading
 

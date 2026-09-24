@@ -5,7 +5,7 @@
 
 A quadratic form can fail to be non-degenerate, and when it does the Clifford algebra acquires a nilpotent factor that is invisible in the non-degenerate theory. The failure is concentrated in the **radical** of the form, the submodule of vectors orthogonal to everything; the radical is totally isotropic, its Clifford generators square to zero and anticommute, and the algebra they generate is the exterior algebra on the radical. The Clifford algebra of a degenerate form is therefore the graded tensor product of the Clifford algebra of the reduced non-degenerate form and an exterior algebra, and the radical generates a nilpotent ideal that is the ring-theoretic radical of the algebra.
 
-This article proves the reduction, identifies the nilpotent factor, computes the rank, and gives the criterion for semisimplicity. The base is a commutative ring $R$ in which $2$ is invertible, the module is free of finite rank, and the form may be degenerate. The construction of the Clifford algebra, the fundamental relation and the graded tensor product are from *The Clifford Algebra*; the radical and non-degeneracy of a form are from *Bilinear Forms*; the exterior algebra is from *The Exterior Algebra*. The non-degenerate case is developed in *Clifford Algebras in Finite Dimensions*, whose basis, filtration and centre are cited rather than repeated.
+This article proves the reduction, identifies the nilpotent factor, computes the rank, and gives the criterion for semisimplicity. The base is a commutative ring $R$ in which $2$ is invertible, the module is free of finite rank, and the form may be degenerate. The construction of the Clifford algebra, the fundamental relation and the graded tensor product are from *The Clifford Algebra*; the radical and non-degeneracy of a form are from *Bilinear Forms*; the exterior algebra is from *The Exterior Algebra*. The non-degenerate case is developed, whose basis, filtration and centre are cited rather than repeated.
 
 ## The Radical of a Quadratic Form
 
@@ -115,7 +115,7 @@ $$
 \operatorname{rank}\mathrm{Cl}(V, q) = 2^{n - r_0} \cdot 2^{r_0} = 2^n.
 $$
 
-**Proof.** The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count of *Clifford Algebras in Finite Dimensions*. $\square$
+**Pro.** The graded tensor product of two free modules of ranks $2^{n - r_0}$ and $2^{r_0}$ is free of rank $2^{n - r_0} \cdot 2^{r_0} = 2^n$. The rank of the non-degenerate factor is the dimension count. $\square$
 
 So the presence of a radical changes the structure but not the rank: it replaces part of the algebra by an exterior algebra on the same number of generators.
 
@@ -223,7 +223,7 @@ $$
 \mathrm{Cl}(\mathbb{R}, 0) \cong \mathbb{R}[\varepsilon]/(\varepsilon^2), \qquad \varepsilon^2 = 0,
 $$
 
-which is the algebra of **dual numbers** $\mathbb{D}'$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry *The Number Systems as Clifford Algebras*, written in parallel with this article.
+which is the algebra of **dual numbers** $\mathbb{D}'$. This is the one-dimensional degenerate Clifford algebra, and its unit $\varepsilon$ is the radical generator; the algebra is local with maximal ideal $(\varepsilon)$, and it is the smallest example of a Clifford algebra with a nonzero radical. It is recorded in the number-system dictionary of the companion entry with this article.
 
 ### A Degenerate Form in Two Variables
 
@@ -294,6 +294,8 @@ The generator $r$ of the radical satisfies $r^2 = 0$, so the exterior algebra is
 | $\mathbb{D}'$ | Dual numbers, $\mathbb{R}[\varepsilon]/(\varepsilon^2)$ |
 | $\mathbb{D}$ | Split complex numbers, $\mathbb{R}[t]/(t^2-1)$ |
 | $\mathbb{R}$ | Real numbers |
+
+
 
 ## Further Reading
 

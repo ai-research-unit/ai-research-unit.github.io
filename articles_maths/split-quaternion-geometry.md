@@ -100,7 +100,7 @@ is a ring isomorphism carrying $S(\mathbb{H}_{\mathbb{D}})$ onto $S^3\times S^3$
 
 *Proof.* The norm form of $\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-$ is $N(\tilde Q_+)e_+ + N(\tilde Q_-)e_-$ because $e_{\pm}$ are orthogonal idempotents, and this equals $e_0 = e_+ + e_-$ exactly when both quaternion norms equal $1$. The identification $S^3\times S^3$ is then immediate. $\square$
 
-The unit sphere is thus a compact Lie group of dimension six. It is not a hyperboloid and not a symmetric space of non-compact type; the hyperboloids of this system are described in *Split-Quaternions and Hyperbolic Geometry*, written in parallel, and are level sets of the Hermitian form rather than of the norm form.
+The unit sphere is thus a compact Lie group of dimension six. It is not a hyperboloid and not a symmetric space of non-compact type; the hyperboloids of this system are described, and are level sets of the Hermitian form rather than of the norm form.
 
 ### The Product Metric
 
@@ -252,6 +252,8 @@ The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3
 | $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
 | $O(4,4)$, $SO^{+}(4,4)$, $O(2,2)$ | Isometry groups of $g$ and of the neutral planes |
 | $e^{\theta j} = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
+
+
 
 ## Further Reading
 

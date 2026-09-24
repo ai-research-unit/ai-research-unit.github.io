@@ -5,7 +5,7 @@
 
 The orthogonal group of a quadratic space splits into two halves according to the sign of the determinant. The half of determinant one is the **rotation group**, and in the definite real case it carries the geometry of angles: its elements act as rotations, it is connected, and in the plane it is the circle group. This article develops that split, the notion of orientation that underlies it and its description through the determinant line, the parity of the Cartan–Dieudonné reflection length, the definite case and the measurement of angles, the normal form of a rotation, the finite rotation groups of the plane, and the rotation groups of the plane and of space.
 
-The base is a field $F$ of characteristic not $2$, and $V$ is finite-dimensional, except where the definite real case is treated. The isometry group, reflections, the equal-norm lemma and the Cartan–Dieudonné theorem are taken from *Isometries and Orthogonal Transformations*; the polar form $B$ and the signature are those of *Quadratic Forms and Polarisation*. The orthogonal Lie algebra appears only in the last section, where the rotation of space is described infinitesimally; the Lie-theoretic development is the subject of *The Orthogonal Lie Algebra*.
+The base is a field $F$ of characteristic not $2$, and $V$ is finite-dimensional, except where the definite real case is treated. The isometry group, reflections, the equal-norm lemma and the Cartan–Dieudonné theorem are taken from *Isometries and Orthogonal Transformations*; the polar form $B$ and the signature are those of *Quadratic Forms and Polarisation*. The orthogonal Lie algebra appears only in the last section, where the rotation of space is described infinitesimally; the Lie-theoretic development is not covered here.
 
 ## Orientation
 
@@ -73,7 +73,7 @@ $$
 d(q) = (-1)^{n(n-1)/2}\,\Delta(q).
 $$
 
-It differs from the discriminant by the factor $(-1)^{n(n-1)/2}$, which is the sign of the reversal of the $n$ factors in the product $e_1 \cdots e_n$ of a basis; equivalently, in the Clifford algebra of $q$ the square of the volume element is the scalar $d(q)$, as recorded in *The Clifford Algebra*. It is the more convenient invariant for the Witt theory of *The Witt Group and the Grothendieck–Witt Ring*, where it is shown to descend to a homomorphism on the fundamental ideal. Here we record only its behaviour, together with that of $\Delta$, under the two operations of the category:
+It differs from the discriminant by the factor $(-1)^{n(n-1)/2}$, which is the sign of the reversal of the $n$ factors in the product $e_1 \cdots e_n$ of a basis; equivalently, in the Clifford algebra of $q$ the square of the volume element is the scalar $d(q)$, as recorded. It is the more convenient invariant for the Witt theory, where it is shown to descend to a homomorphism on the fundamental ideal. Here we record only its behaviour, together with that of $\Delta$, under the two operations of the category:
 
 $$
 \Delta(q \perp q') = \Delta(q)\,\Delta(q'), \qquad \Delta(\langle a\rangle) = a, \qquad \Delta(cq) = c^{\,n}\,\Delta(q),
@@ -169,7 +169,7 @@ the unit circle, and $\operatorname{SO}(2)$ is abelian.
 
 **Proof.** Let $\tau_\phi$ denote the reflection of the plane in the line at angle $\phi$ from the positive $x$-axis. A computation gives $\tau_\phi \tau_\psi = R(2(\phi - \psi))$, so the product of two reflections is a rotation through twice the angle between the lines, and every angle is achieved. $\square$
 
-The parametrisation by the circle is the plane case of the general fact that a compact connected abelian Lie group is a torus; the higher-dimensional tori appear in *The Orthogonal Lie Algebra*.
+The parametrisation by the circle is the plane case of the general fact that a compact connected abelian Lie group is a torus; the higher-dimensional tori appear.
 
 ### The Finite Rotation Groups of the Plane
 
@@ -255,7 +255,7 @@ $$
 T(x) = x\cos\theta + (v \times x)\sin\theta + v\,B(v, x)(1 - \cos\theta),
 $$
 
-where $\times$ denotes the vector product and $B$ the Euclidean inner product. For $v = (0, 0, 1)$ this reduces to the block form $\operatorname{diag}(R(\theta), 1)$. The vector product is itself a bilinear form on $\mathbb{R}^3$ with values in $\mathbb{R}^3$, alternating in its two arguments, and it singles out the three-dimensional case among the vector products; the corresponding Lie-theoretic statement is the isomorphism $\mathfrak{so}(3) \cong \mathbb{R}^3$ of *The Orthogonal Lie Algebra*.
+where $\times$ denotes the vector product and $B$ the Euclidean inner product. For $v = (0, 0, 1)$ this reduces to the block form $\operatorname{diag}(R(\theta), 1)$. The vector product is itself a bilinear form on $\mathbb{R}^3$ with values in $\mathbb{R}^3$, alternating in its two arguments, and it singles out the three-dimensional case among the vector products; the corresponding Lie-theoretic statement is the isomorphism $\mathfrak{so}(3) \cong \mathbb{R}^3$.
 
 **Remark.** The unit quaternions form a group that double covers $\operatorname{SO}(3)$, the axis-angle data being recovered from the real and vector parts of a unit quaternion; the description of this cover, and its complex and indefinite analogues, belongs to the applications of the Clifford layer of this category, written in parallel with this article.
 
@@ -298,6 +298,10 @@ Orientation has a coordinate-free form: an orientation is a choice of one of the
 | $S^1$ | Unit circle, $\operatorname{SO}(2)$ |
 | $\times$ | Vector product on $\mathbb{R}^3$ |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
+
+
+
+
 
 ## Further Reading
 

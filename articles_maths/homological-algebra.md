@@ -5,7 +5,7 @@
 
 Exact sequences measure the failure of a sequence to split and the failure of a functor to be exact, but they compute nothing by themselves. The instrument that computes is the chain complex: a graded module with a square-zero endomorphism, whose homology measures by how much the graded module fails to be exact. A resolution of a module by projective or injective modules is a chain complex that is exact except in one degree, and it is the object on which a functor is evaluated when its failure of exactness is to be measured. Homological algebra is the theory of these complexes, of the maps between them, and of the two facts that make the theory invariant — that maps of resolutions exist and are unique up to chain homotopy, and that a short exact sequence of complexes produces a long exact sequence in homology.
 
-This article develops chain and cochain complexes, their morphisms, chain homotopies and mapping cones, the homology functor and the long exact sequence, projective and injective resolutions, the comparison theorem and the horseshoe lemma, and the tensor product and hom complexes that are used later. It is the foundation on which the articles *Derived Functors*, *Ext and Tor*, *Spectral Sequences* and *Derived Categories* of this category rest, and it supplies the categorical machinery that the articles *Hochschild Homology*, *Cyclic Homology* and *Deformation Theory* apply to algebras.
+This article develops chain and cochain complexes, their morphisms, chain homotopies and mapping cones, the homology functor and the long exact sequence, projective and injective resolutions, the comparison theorem and the horseshoe lemma, and the tensor product and hom complexes that are used later. It is the foundation on which the other articles of this category rest, and it supplies the categorical machinery that they apply to algebras.
 
 Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{Mod}$ for a commutative ring $R$ with $1 \neq 0$; chain complexes are written with lower indices and cochain complexes with upper indices, and the translation between them is the rule $C^n=C_{-n}$. The article uses the exactness language of *Exact Sequences*, the splitting lemma and the snake lemma, and the abelian-category framework of *Abelian and Grothendieck Categories*. It contains no topology: the words *complex*, *resolution*, *boundary* and *cycle* are algebraic throughout. The applications of the theory to sheaf cohomology and to algebraic topology need a space, and they are therefore deferred to Part II; the article states the results in their algebraic form and says explicitly where the geometric form is treated.
 
@@ -19,7 +19,7 @@ Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{M
 
 **Example.** The **Koszul complex** of a sequence $x_1,\dots,x_r$ in a commutative ring $R$ on a free module of rank $r$ has $K_p$ the $p$-th exterior power of $R^r$, and $d_p$ the contraction with $(x_1,\dots,x_r)$; the square-zero identity follows from the alternation of the wedge product. Its homology measures the failure of the sequence to be regular, and the exterior powers it uses are those of the article of this category on multilinear algebra.
 
-**Example.** The **bar complex** of an algebra $A$ has $C_n=A^{\otimes n}$ with a differential built from the multiplication; its homology is the Hochschild homology of the article *Hochschild Homology*, where the convention for the differential is fixed.
+**Example.** The **bar complex** of an algebra $A$ has $C_n=A^{\otimes n}$ with a differential built from the multiplication; its homology is the Hochschild homology , where the convention for the differential is fixed.
 
 ### Cycles, Boundaries and Homology
 
@@ -165,7 +165,7 @@ The reason resolutions are computable is that they are unique up to homotopy, so
 
 **Corollary.** Any two projective resolutions of $M$ are homotopy equivalent, and hence their homologies are isomorphic; the same holds for injective resolutions by the dual argument.
 
-**Corollary.** The identity of $M$ lifts to a chain map between any two projective resolutions, unique up to homotopy. Therefore any construction applied to a projective resolution and invariant under chain homotopy is an invariant of $M$. This is the invariance that the derived functors of the next article use.
+**Corollary.** The identity of $M$ lifts to a chain map between any two projective resolutions, unique up to homotopy. Therefore any construction applied to a projective resolution and invariant under chain homotopy is an invariant of $M$. This is the invariance that the derived functors use.
 
 ### The Horseshoe Lemma
 
@@ -191,7 +191,7 @@ $$
 
 *Proof.* Apply the differential twice: the terms $d_C^2\otimes\operatorname{id}$ and $\operatorname{id}\otimes d_D^2$ vanish, and the two mixed terms $d_C\otimes d_D$ occur with signs $(-1)^p$ and $(-1)^{p-1}$ from the two orderings, so they cancel. $\square$
 
-The tensor product complex is the input to the definition of $\operatorname{Tor}$ in the article *Ext and Tor* and to the Künneth formula, and its homology is computed by the spectral sequences of the article *Spectral Sequences*.
+The tensor product complex is the input to the definition of $\operatorname{Tor}$ , and to the Künneth formula, and its homology is computed by the spectral sequences .
 
 ### The Hom Complex
 
@@ -217,7 +217,7 @@ The differential is square-zero because $f_p$ is compared with $f_{p-1}$ through
 
 *Proof.* The argument is the comparison theorem in degree one at a time: given a family $g$ with $dg=0$ and a partial lift $s$ defined in degrees below $p$, exactness of $D$ exhibits each $g_p - s_{p-1}d^C_p$ as factoring through the surjection $D_{p+n+1}\to\ker(d^D_{p+n})$, and projectivity of $C_p$ lifts it to $s_p$. The induction over the bounded-below degrees produces the required homotopy. $\square$
 
-These statements are the homological form of the comparison theorem, and they are the reason the derived category of the article *Derived Categories* can be described by localising the homotopy category at the quasi-isomorphisms.
+These statements are the homological form of the comparison theorem, and they are the reason the derived category, can be described by localising the homotopy category at the quasi-isomorphisms.
 
 ## Bicomplexes and Total Complexes
 
@@ -231,7 +231,7 @@ These statements are the homological form of the comparison theorem, and they ar
 
 **Definition.** A **filtration** of a complex $C_\bullet$ is an increasing family of subcomplexes $\cdots\subseteq F_{p-1}C\subseteq F_pC\subseteq\cdots$ with union $C$ and intersection $0$ in each degree. A filtration is **bounded** if for each $n$ only finitely many $F_pC_n$ are nonzero.
 
-The homology of a filtered complex is computed from the homologies of the successive quotients by the spectral sequences of the article *Spectral Sequences*: a filtration of a complex produces a spectral sequence converging to the homology of the complex with $E^1$-page the homology of the quotients. That article develops the construction; here only the definitions of bicomplex, total complex and filtration are recorded, since they are the input to the spectral-sequence machinery and to the derived-category constructions.
+The homology of a filtered complex is computed from the homologies of the successive quotients by the spectral sequences of: a filtration of a complex produces a spectral sequence converging to the homology of the complex with $E^1$-page the homology of the quotients. That article develops the construction; here only the definitions of bicomplex, total complex and filtration are recorded, since they are the input to the spectral-sequence machinery and to the derived-category constructions.
 
 ## Where the Applications Belong
 
@@ -239,7 +239,7 @@ The theory above is algebraic: it concerns an abelian category, complexes in it,
 
 The first is **sheaf cohomology**. For a sheaf of abelian groups on a site, or on a topological space, the global-section functor is left exact, and its derived functors — the cohomology of the sheaf — are computed from an injective resolution in the Grothendieck category of sheaves. The algebraic input is exactly the abelian-category theory of this article and the derived-functor theory of the next; the geometric input, which is a space or a site with a topology, belongs to Part II, where it is treated in *Sheaves and Cohomology*.
 
-The second is **algebraic topology**. For a topological space, or a simplicial set, the singular chain complex computes the homology of the space, and the long exact sequence of a pair or a fibration is the long exact sequence of a short exact sequence of complexes; the algebraic machinery is the present article, while the space, its topology and the homotopy invariants built from it belong to Part II, where they are treated in *Algebraic Topology*. The same holds for the Hochschild and cyclic complexes: they are algebraic complexes, and they are developed in the articles *Hochschild Homology* and *Cyclic Homology* of this category.
+The second is **algebraic topology**. For a topological space, or a simplicial set, the singular chain complex computes the homology of the space, and the long exact sequence of a pair or a fibration is the long exact sequence of a short exact sequence of complexes; the algebraic machinery is the present article, while the space, its topology and the homotopy invariants built from it belong to Part II, where they are treated in *Algebraic Topology*. The same holds for the Hochschild and cyclic complexes: they are algebraic complexes, and they are developed in andof this category.
 
 ## Summary
 
@@ -247,7 +247,7 @@ A chain complex is a graded object with a square-zero differential; its cycles, 
 
 A projective resolution of $M$ is an exact complex of projective modules with augmentation onto $M$, and an injective resolution is the dual. Every module has both. The comparison theorem produces a lift of any morphism of the resolved objects to a morphism of resolutions, unique up to chain homotopy; consequently any two projective resolutions of $M$ are homotopy equivalent, and constructions invariant under homotopy are invariants of $M$. The horseshoe lemma assembles resolutions of the ends of a short exact sequence into a resolution of the middle. The tensor product of complexes, with the Koszul sign, and the hom complex, whose $H^0$ is chain maps modulo homotopy, are the two constructions on complexes that the derived functors and the derived category use; double complexes, their total complexes and filtrations are the input to spectral sequences.
 
-Every result is algebraic. The applications to sheaf cohomology and to algebraic topology require a space or a site and belong to Part II, where they are developed in *Sheaves and Cohomology* and *Algebraic Topology*; the algebraic complexes of Hochschild and cyclic homology belong to the later articles of this category.
+Every result is algebraic. The applications to sheaf cohomology and to algebraic topology require a space or a site and belong to Part II, where they are developed in *Sheaves and Cohomology* and *Algebraic Topology*; the algebraic complexes of Hochschild and cyclic homology lie outside this article.
 
 ## Summary of Notation
 
@@ -267,6 +267,14 @@ Every result is algebraic. The applications to sheaf cohomology and to algebraic
 | $\operatorname{Tot}(C)$ | total complex of a bicomplex |
 | $F_pC$ | filtration of a complex |
 | $R$ | commutative ring with identity $1\neq0$ unless stated |
+
+
+
+
+
+
+
+
 
 ## Further Reading
 

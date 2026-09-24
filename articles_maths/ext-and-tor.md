@@ -7,7 +7,7 @@ The two functors that the corpus uses most are the derived functors of the two b
 
 This article develops $\operatorname{Ext}_R^n(M,N)$ and $\operatorname{Tor}_n^R(M,N)$: the two ways of computing each, their long exact sequences in each variable, the extension interpretation of $\operatorname{Ext}^1$ and the Yoneda description of the higher groups, the relation of $\operatorname{Tor}_1$ and $\operatorname{Tor}$ to torsion and to flatness, the universal coefficient theorem, and the identifications with group cohomology and, in Part II, with sheaf cohomology. It follows *Derived Functors* directly, and it uses the resolutions, comparison theorem and long exact sequences of *Homological Algebra*.
 
-Throughout, $R$ is a commutative ring with identity $1\neq0$ and $M,N$ are $R$-modules; statements that need no commutativity are marked, and there the side of the modules is stated. The article is algebraic: no distance, norm, open set or completion occurs, and the sheaf-cohomological realisation of the theory is deferred to Part II, where it is treated in *Sheaves and Cohomology*. The spectral sequences that compute the derived functors of composites are developed in *Spectral Sequences* and are only named here.
+Throughout, $R$ is a commutative ring with identity $1\neq0$ and $M,N$ are $R$-modules; statements that need no commutativity are marked, and there the side of the modules is stated. The article is algebraic: no distance, norm, open set or completion occurs, and the sheaf-cohomological realisation of the theory is deferred to Part II, where it is treated in *Sheaves and Cohomology*. The spectral sequences that compute the derived functors of composites are developed and are only named here.
 
 ## Ext
 
@@ -31,7 +31,7 @@ Equivalently, since $\operatorname{Hom}_R(M,-)$ is left exact, $\operatorname{Ex
 
 *Proof (in outline).* The double complex with entries $\operatorname{Hom}_R(P_p,I^q)$ has two differentials, one induced by $P_\bullet$ and one by $I^\bullet$, and they anticommute. The two spectral sequences of the double complex have $E_2^{p,q}=0$ for $q\neq0$ in one case and for $p\neq0$ in the other, because $P_p$ is projective and $I^q$ injective; both sequences therefore collapse, and their common abutment computes both sides. The degenerate case of the argument can also be run directly by the comparison theorem, comparing two resolutions of $M$. $\square$
 
-The proof is the first place the spectral-sequence machinery is needed; it is carried out in *Spectral Sequences*, and the balance statement is quoted here.
+The proof is the first place the spectral-sequence machinery is needed; it is carried out, and the balance statement is quoted here.
 
 **Proposition.** $\operatorname{Ext}_R^0(M,N)\cong\operatorname{Hom}_R(M,N)$. The groups $\operatorname{Ext}_R^n(M,N)$ are additive functors of $N$ and, in the contravariant sense, of $M$; they vanish for $n\ge1$ whenever $M$ is projective or $N$ is injective.
 
@@ -169,7 +169,7 @@ $$
 
 which splits, though not naturally.
 
-*Proof.* Filter the tensor product complex by the degree of $C$, or apply the spectral sequence of the bicomplex $C_p\otimes_RD_q$; over a principal ideal domain the two rows of the $E^2$-page are the displayed terms and the spectral sequence has only two nonzero rows, so it degenerates to the short exact sequence. The derivation by the spectral sequence is carried out in *Spectral Sequences*, and the direct proof uses the universal coefficient theorem. $\square$
+*Pro.* Filter the tensor product complex by the degree of $C$, or apply the spectral sequence of the bicomplex $C_p\otimes_RD_q$; over a principal ideal domain the two rows of the $E^2$-page are the displayed terms and the spectral sequence has only two nonzero rows, so it degenerates to the short exact sequence. The derivation by the spectral sequence is carried out, and the direct proof uses the universal coefficient theorem. $\square$
 
 **Remark.** The Künneth sequence is the reason $\operatorname{Tor}_1$ occurs in the computation of the homology of a product; the topological instance of the formula needs spaces and belongs to Part II. The algebraic form above is stated for chain complexes of modules, as here.
 
@@ -191,7 +191,7 @@ where $\mathbb{Z}$ is the trivial $G$-module. The group homology is $\operatorna
 
 ### Sheaf Cohomology and the Deferred Statement
 
-**Remark.** For a sheaf of abelian groups on a site the global-section functor is left exact, and the sheaf cohomology $H^n(X,\mathcal{F})$ is by definition its $n$-th right derived functor; the identification of the resulting groups with a derived functor of $\operatorname{Hom}$ in the category of sheaves is the same balance statement proved above in the module case, carried out in a Grothendieck category with enough injectives. The sheaf-theoretic version needs a site and a topology, and it belongs to Part II, where it is treated in *Sheaves and Cohomology*; the categorical framework is supplied by *Sheaves on Sites* and *Descent Theory* of this category. This article develops the algebraic functors and states the comparison in categorical terms only.
+**Remark.** For a sheaf of abelian groups on a site the global-section functor is left exact, and the sheaf cohomology $H^n(X,\mathcal{F})$ is by definition its $n$-th right derived functor; the identification of the resulting groups with a derived functor of $\operatorname{Hom}$ in the category of sheaves is the same balance statement proved above in the module case, carried out in a Grothendieck category with enough injectives. The sheaf-theoretic version needs a site and a topology, and it belongs to Part II, where it is treated in *Sheaves and Cohomology*; the categorical framework is supplied andof this category. This article develops the algebraic functors and states the comparison in categorical terms only.
 
 ### Additivity and Vanishing: a Summary of Computations
 
@@ -209,11 +209,11 @@ where $\mathbb{Z}$ is the trivial $G$-module. The group homology is $\operatorna
 
 ## Summary
 
-For $R$-modules $M,N$, $\operatorname{Ext}_R^n(M,N)$ is the right derived functor of $\operatorname{Hom}_R(M,-)$ evaluated at $N$, equivalently the cohomology of $\operatorname{Hom}_R(P_\bullet,N)$ for a projective resolution of $M$; the two computations agree by the balance theorem, whose proof needs the double complex and is completed in *Spectral Sequences*. $\operatorname{Ext}^0=\operatorname{Hom}$, the functors vanish in positive degree when either argument is projective or injective in the appropriate slot, and they carry two long exact sequences, one in each variable. $\operatorname{Ext}^1_R(M,N)$ classifies the extensions of $M$ by $N$ under the Baer sum, and $\operatorname{Ext}^n_R(M,N)$ classifies the $n$-fold extensions.
+For $R$-modules $M,N$, $\operatorname{Ext}_R^n(M,N)$ is the right derived functor of $\operatorname{Hom}_R(M,-)$ evaluated at $N$, equivalently the cohomology of $\operatorname{Hom}_R(P_\bullet,N)$ for a projective resolution of $M$; the two computations agree by the balance theorem, whose proof needs the double complex and is completed. $\operatorname{Ext}^0=\operatorname{Hom}$, the functors vanish in positive degree when either argument is projective or injective in the appropriate slot, and they carry two long exact sequences, one in each variable. $\operatorname{Ext}^1_R(M,N)$ classifies the extensions of $M$ by $N$ under the Baer sum, and $\operatorname{Ext}^n_R(M,N)$ classifies the $n$-fold extensions.
 
 $\operatorname{Tor}_n^R(M,N)$ is the left derived functor of $-\otimes_RN$ evaluated at $M$, equivalently the homology of $P_\bullet\otimes_RN$; it is symmetric in the two variables, $\operatorname{Tor}_0=M\otimes_RN$, it vanishes in positive degree when either variable is flat, and flatness is exactly the vanishing of $\operatorname{Tor}_1$ against every module. Over a principal ideal domain only $\operatorname{Tor}_1$ survives and it is the torsion product, with $\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m,\mathbb{Z}/n)=\mathbb{Z}/\gcd(m,n)\mathbb{Z}$.
 
-The universal coefficient theorems express the (co)homology of a complex of free modules with coefficients through the integral (co)homology together with an Ext or a Tor term, splitting but not naturally; the Künneth theorem is the same computation for the tensor product of two complexes. Group cohomology is $\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},-)$, sheaf cohomology is the same construction in a Grothendieck category of sheaves and belongs to Part II, and the spectral sequences that compute the derived functors of composites are the subject of *Spectral Sequences*.
+The universal coefficient theorems express the (co)homology of a complex of free modules with coefficients through the integral (co)homology together with an Ext or a Tor term, splitting but not naturally; the Künneth theorem is the same computation for the tensor product of two complexes. Group cohomology is $\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},-)$, sheaf cohomology is the same construction in a Grothendieck category of sheaves and belongs to Part II, and the spectral sequences that compute the derived functors of composites are not covered here.
 
 ## Summary of Notation
 
@@ -230,6 +230,10 @@ The universal coefficient theorems express the (co)homology of a complex of free
 | $\operatorname{Tor}_1^{\mathbb{Z}}(\mathbb{Z}/m,\mathbb{Z}/n)=\mathbb{Z}/\gcd(m,n)\mathbb{Z}$ | the standard computation |
 | $H^n(G,M)$ | group cohomology, $=\operatorname{Ext}^n_{\mathbb{Z}[G]}(\mathbb{Z},M)$ |
 | $R$ | commutative ring with $1\neq0$; a principal ideal domain where stated |
+
+
+
+
 
 ## Further Reading
 

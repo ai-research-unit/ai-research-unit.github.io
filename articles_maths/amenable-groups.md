@@ -9,7 +9,7 @@ Amenability is the exact opposite of paradoxicality: a group is amenable if and 
 
 The article develops the definition by means, the explicit paradoxical decomposition of the free group, the Følner condition and its equivalence with the mean condition, Day's heredity theorem, the examples and the growth connection, the interaction with property (T) and with the ends of a group, and the Tits alternative for linear groups. The metric input is that of *Geometric Group Theory*, where the growth and the ends of a finitely generated group are introduced; the property (T) input is that of the companion article *Property (T)*, which defines weak containment and the Kazhdan condition and where the failure of (T) for amenable groups is recorded; the Haar measure used in the locally compact form is that of *Locally Compact Groups and Haar Measure*. The **mean**, the **Følner condition** and **paradoxical decomposition** are defined in line, since no earlier article introduces them.
 
-The boundary with Part III is the one fixed for this block. What is developed here is the combinatorial and group-theoretic content: means, Følner sets, paradoxical decompositions, heredity, examples and the Tits alternative. What is deferred is the **analytic** theory: the convolution algebra $L^1(G)$ and the approximate identity of Reiter's property, the weak containment of the trivial representation in the regular representation as a statement about $L^2$, the Banach–Tarski paradox itself, which is a theorem about measurable decompositions of the ball, and the ergodic-theoretic characterisations of amenability of actions — all of which belong to *Analysis on Groups* and *Ergodic Theory of Group Actions* in Part III, where the measure and the limit are available. The tree-theoretic characterisation of amenable actions is the subject of *Bass–Serre Theory*, written in parallel with this article. No physics is invoked.
+The boundary with Part III is the one fixed for this block. What is developed here is the combinatorial and group-theoretic content: means, Følner sets, paradoxical decompositions, heredity, examples and the Tits alternative. What is deferred is the **analytic** theory: the convolution algebra $L^1(G)$ and the approximate identity of Reiter's property, the weak containment of the trivial representation in the regular representation as a statement about $L^2$, the Banach–Tarski paradox itself, which is a theorem about measurable decompositions of the ball, and the ergodic-theoretic characterisations of amenability of actions — all of which belong to *Analysis on Groups*, where the measure and the limit are available. The tree-theoretic characterisation of amenable actions is not covered here. No physics is invoked.
 
 ## Invariant Means and the Definition
 
@@ -183,7 +183,7 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 **(c)** A finitely generated group with infinitely many ends is not amenable.
 
-**Proof sketch.** (a) Balls of radius $n$ in the Cayley graph satisfy $|S A_n \smallsetminus A_n|/|A_n| \to 0$ exactly when the growth is subexponential, because the boundary of a ball is contained in the difference of the balls of radius $n+1$ and $n-1$; the Følner condition follows. (b) A group with infinitely many ends splits over a finite subgroup by the Stallings theorem of *Bass–Serre Theory*, and a nontrivial splitting over a finite subgroup with an infinite vertex group produces a free subgroup of rank two, which is not amenable; hence only $0$, $1$ or $2$ ends are possible, and the two-ended case is virtually $\mathbb{Z}$ by the theorem of Hopf. (c) is the contrapositive of (b). $\square$
+**Proof sketch.** (a) Balls of radius $n$ in the Cayley graph satisfy $|S A_n \smallsetminus A_n|/|A_n| \to 0$ exactly when the growth is subexponential, because the boundary of a ball is contained in the difference of the balls of radius $n+1$ and $n-1$; the Følner condition follows. (b) A group with infinitely many ends splits over a finite subgroup by the Stallings theorem, and a nontrivial splitting over a finite subgroup with an infinite vertex group produces a free subgroup of rank two, which is not amenable; hence only $0$, $1$ or $2$ ends are possible, and the two-ended case is virtually $\mathbb{Z}$ by the theorem of Hopf. (c) is the contrapositive of (b). $\square$
 
 ### Quasi-Isometry Invariance
 
@@ -203,7 +203,7 @@ where $\mu$ is the left Haar measure of *Locally Compact Groups and Haar Measure
 
 ### The Boundary with the Ends
 
-**Remark.** For a finitely presented group the amenable groups of *Bass–Serre Theory* have an action-theoretic characterisation: an amenable group acting on a tree fixes a point either in the tree or in the boundary, and this is the group-theoretic shadow of the fixed-point characterisation of amenability. The tree on which the group acts and the splitting it induces are the subject of *Bass–Serre Theory*, written in parallel with this article, and the action of an amenable group on a hyperbolic space and its relation to the boundary at infinity is the subject of *Hyperbolic Groups*.
+**Remark.** For a finitely presented group the amenable groups have an action-theoretic characterisation: an amenable group acting on a tree fixes a point either in the tree or in the boundary, and this is the group-theoretic shadow of the fixed-point characterisation of amenability. The tree on which the group acts and the splitting it induces are the subject, and the action of an amenable group on a hyperbolic space and its relation to the boundary at infinity is the subject of *Hyperbolic Groups*.
 
 ## Linear Groups and the Tits Alternative
 
@@ -222,7 +222,7 @@ The means, the Følner condition and the paradoxes are combinatorial objects; th
 - The **convolution algebra** $L^1(G)$, the **approximate identity** of Reiter's property $P_1$, and the characterisation of amenability by the existence of functions $f_n$ with $\|g\cdot f_n - f_n\|_1 \to 0$ are *Analysis on Groups* in Part III, where the $L^p$ spaces are available.
 - The statement that **the trivial representation is weakly contained in the regular representation** if and only if $G$ is amenable is stated here as an equivalence; the weak containment itself is defined in *Property (T)*, and the $L^2$ form of the statement and the theory of the group von Neumann algebra belong to Part III and to *Von Neumann Algebras* in *Topology on Linear Algebras*.
 - The **Banach–Tarski paradox**, the **Hausdorff paradox** and the measurable forms of the paradoxical decompositions are theorems about measures, hence Part III; the group-theoretic decomposition of the free group is proved here.
-- The **ergodic-theoretic characterisations** of amenability of a measure-preserving action, the **Følner conditions for actions** and the **Ornstein–Weiss theory** are *Ergodic Theory of Group Actions* in Part III.
+- The **ergodic-theoretic characterisations** of amenability of a measure-preserving action, the **Følner conditions for actions** and the **Ornstein–Weiss theory** are.
 - What is *not* deferred: the definition by invariant means; the equivalence of the mean and Følner conditions; paradoxical decompositions and the free-group paradox; Day's closure properties and the elementary amenable class; the examples, the growth and ends theorems, and the quasi-isometry invariance; the incompatibility with property (T); and the Tits alternative for linear groups.
 
 ## Summary
@@ -256,6 +256,10 @@ Amenability is a quasi-isometry invariant of finitely generated groups; an amena
 | $P_1$, Reiter's property | Analytic form of the Følner condition (Part III) |
 | Tits alternative | F.g. linear group: virtually solvable or contains $F_2$ |
 | $\mu(A)$, Haar measure | Used in the locally compact Følner condition (see *Locally Compact Groups and Haar Measure*) |
+
+
+
+
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ This article defines the wedge product, proves that it is associative and unital
 
 Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $M$, $N$ are $R$-modules; over a commutative ring left and right modules coincide, so no side is specified. The field is written $K$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The base is the commutative ring, so all constructions are carried out over $R$; assumptions on the characteristic, and in particular on the invertibility of $2$, are flagged where they enter. No physics is invoked.
 
-The next articles of the category, *The Determinant and Alternating Forms* and *Symplectic Forms and Poisson Brackets*, take up the top exterior power and the alternating forms on it; the applications articles *Grassmann Variables and Berezin Integration* and *Differential Forms and Stokes' Theorem* are being written in parallel and realise $\Lambda$ in two settings.
+Other articles of the category take up the top exterior power and the alternating forms on it; the applications articlesandare and realise $\Lambda$ in two settings.
 
 ## The Graded Module of Exterior Powers
 
@@ -229,9 +229,9 @@ so $I \subseteq J$ and the two ideals coincide. The quotient $R\langle x_1, \ldo
 
 ## The Exterior Algebra in the Wider Corpus
 
-Three later constructions are instances of the exterior algebra. The **Clifford algebra** $\mathrm{Cl}(V, q)$ is the quotient $T(V)/(x \otimes x - q(x))$ for a quadratic form $q$; the exterior algebra is the case $q = 0$, and for a nondegenerate form the associated graded algebra of $\mathrm{Cl}(V, q)$ with respect to the filtration by degree is $\Lambda(V)$, as shown in *Clifford Algebras in Finite Dimensions*. The **algebra of differential forms** on a smooth manifold is the exterior algebra of the cotangent space, varying smoothly over the manifold, and the exterior derivative is a graded derivation of it; this is developed in *Differential Forms and Stokes' Theorem*, being written in parallel with this one. The **Grassmann algebra** of the Berezin calculus is the exterior algebra on a finite set of odd generators, with the integral defined as a linear functional extracting the top coefficient; this is developed in *Grassmann Variables and Berezin Integration*, also being written in parallel.
+Three later constructions are instances of the exterior algebra. The **Clifford algebra** $\mathrm{Cl}(V, q)$ is the quotient $T(V)/(x \otimes x - q(x))$ for a quadratic form $q$; the exterior algebra is the case $q = 0$, and for a nondegenerate form the associated graded algebra of $\mathrm{Cl}(V, q)$ with respect to the filtration by degree is $\Lambda(V)$, as shown. The **algebra of differential forms** on a smooth manifold is the exterior algebra of the cotangent space, varying smoothly over the manifold, and the exterior derivative is a graded derivation of it; this is developed with this one. The **Grassmann algebra** of the Berezin calculus is the exterior algebra on a finite set of odd generators, with the integral defined as a linear functional extracting the top coefficient; this is developed, also.
 
-The top exterior power $\Lambda^m M$ of a free module of rank $m$ is the determinant line, and the scalar by which $\Lambda^m f$ acts is the determinant of an endomorphism $f$. Alternating forms on $M$ are the linear functionals on $\Lambda(M)$; assembled degreewise they form the exterior algebra $\Lambda(M^*)$ of the dual when $M$ is free of finite rank, which is the algebraic model for the algebra of differential forms. The determinant, the minors, and the pairing of complementary exterior powers are treated in *The Determinant and Alternating Forms*.
+The top exterior power $\Lambda^m M$ of a free module of rank $m$ is the determinant line, and the scalar by which $\Lambda^m f$ acts is the determinant of an endomorphism $f$. Alternating forms on $M$ are the linear functionals on $\Lambda(M)$; assembled degreewise they form the exterior algebra $\Lambda(M^*)$ of the dual when $M$ is free of finite rank, which is the algebraic model for the algebra of differential forms. The determinant, the minors, and the pairing of complementary exterior powers are treated.
 
 ## Summary
 
@@ -262,6 +262,8 @@ In characteristic $2$ graded-commutativity becomes ordinary commutativity, but $
 | $\Lambda(M) = T(M)/(x \otimes x)$ | Exterior algebra, the alternating quotient |
 | $\mathrm{Cl}(V, q) = T(V)/(x \otimes x - q(x))$ | Clifford algebra; the case $q = 0$ gives $\Lambda(V)$ |
 | $\Lambda^m M$ | Top exterior power, the determinant line |
+
+
 
 ## Further Reading
 

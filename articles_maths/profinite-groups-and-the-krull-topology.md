@@ -7,7 +7,7 @@ A **profinite group** is a topological group that is the inverse limit of an inv
 
 The topology of a profinite group is not a convenience: it *is* the structure that makes the Galois correspondence a theorem about closed subgroups rather than all subgroups, and it is the reason the Galois group of an infinite extension need not be metrisable. The **Krull topology**, introduced for the Galois group of an arbitrary Galois extension, is the special case of the inverse-limit topology in which the finite groups are the Galois groups of the finite Galois subextensions. That topology is metrisable exactly when there are countably many such subextensions, so it is not induced by any distance for a field with uncountably many finite Galois subextensions; the article exhibits such a group explicitly.
 
-The article develops the inverse limit and its topology, the dictionary of open and closed subgroups, the Krull topology and the Galois correspondence, the profinite completion of an abstract group, and the beginnings of the structure theory — pro-$p$ subgroups, the Frattini subgroup and generation. The abelian theory of the previous articles is used where it is convenient: a profinite *abelian* group is the Pontryagin dual of a discrete torsion group, a fact from *Pontryagin Duality*, and its structure is read off from the classification of discrete torsion groups. The Galois theory that the Krull topology topologises is that of *Galois Theory* and *Splitting Fields and Algebraic Closure* in Part I; the Haar measure of a compact group is that of *Locally Compact Groups and Haar Measure*, and the invariant integration of a profinite group, including its $L^p$ theory, belongs to Part III, where the measure and the limit are available. No physics is invoked.
+The article develops the inverse limit and its topology, the dictionary of open and closed subgroups, the Krull topology and the Galois correspondence, the profinite completion of an abstract group, and the beginnings of the structure theory — pro-$p$ subgroups, the Frattini subgroup and generation. The abelian theory of the previous articles is used where it is convenient: a profinite *abelian* group is the Pontryagin dual of a discrete torsion group, a fact from *Pontryagin Duality*, and its structure is read off from the classification of discrete torsion groups. The Galois theory that the Krull topology topologises is that of *Galois Theory* and *Splitting Fields and Algebraic Closure* in Part I; the Haar measure of a compact group is standard, and the invariant integration of a profinite group, including its $L^p$ theory, belongs to Part III, where the measure and the limit are available. No physics is invoked.
 
 ## Inverse Limits of Finite Groups
 
@@ -49,7 +49,7 @@ the product over all primes, by the Chinese remainder theorem: the inverse syste
 
 **Proof.** A closed subgroup of a profinite group is compact Hausdorff and totally disconnected, hence profinite. A quotient $G/N$ by a closed normal subgroup is compact Hausdorff, and it is totally disconnected because the quotient map is open and the preimage of a connected subset is a union of cosets; alternatively $G/N$ is the inverse limit of the finite quotients $G/M$ with $M$ open normal containing $N$. Products are compact Hausdorff, and a product of totally disconnected spaces is totally disconnected. For the section: the underlying space of a profinite group is compact Hausdorff and totally disconnected, and a continuous surjection of such spaces admits a continuous section, because the compact Hausdorff totally disconnected spaces are the projective objects among compact Hausdorff spaces (Gleason's theorem, quoted as standard here); the section so obtained is a map of spaces and need not be a homomorphism. $\square$
 
-**Remark.** The section statement is special to profinite groups and is the reason many arguments about them proceed by lifting elements through quotients. It fails for general compact groups: the two-to-one quotient $SU(2) \to SO(3)$ of *Matrix Groups and Classical Groups* has no continuous section at all, for a section $s$ would make $(U,\varepsilon) \mapsto s(U)\varepsilon$ a homeomorphism $SO(3) \times \{\pm 1\} \to SU(2)$, giving $\pi_1(SU(2)) = 0$ equal to $\pi_1(SO(3) \times \{\pm 1\}) = \mathbb{Z}/2\mathbb{Z}$.
+**Remark.** The section statement is special to profinite groups and is the reason many arguments about them proceed by lifting elements through quotients. It fails for general compact groups: the two-to-one quotient $SU(2) \to SO(3)$ has no continuous section at all, for a section $s$ would make $(U,\varepsilon) \mapsto s(U)\varepsilon$ a homeomorphism $SO(3) \times \{\pm 1\} \to SU(2)$, giving $\pi_1(SU(2)) = 0$ equal to $\pi_1(SO(3) \times \{\pm 1\}) = \mathbb{Z}/2\mathbb{Z}$.
 
 ## The Topology of a Profinite Group
 
@@ -228,6 +228,8 @@ The Krull topology on a Galois group is the inverse-limit topology over the fini
 | Sylow $p$-subgroup | Maximal pro-$p$ closed subgroup |
 | residually finite | Every nontrivial element survives in a finite quotient |
 | $D \mapsto D^\vee$ | Pontryagin dual of a discrete torsion group, a profinite abelian group; used for the abelian profinite case |
+
+
 
 ## Further Reading
 

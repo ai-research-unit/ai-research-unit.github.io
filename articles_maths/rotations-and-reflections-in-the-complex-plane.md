@@ -6,7 +6,7 @@ This article describes the group of rotations and reflections of the plane as it
 
 The treatment is mathematical throughout. A rotation is an element of $SO(2)$ and a reflection is an element of $O(2)$; no physical object is introduced, and no physical interpretation is invoked.
 
-The complex algebra is taken from *Complex Algebra*, with conjugation $\bar z$, the norm form $N(z) = z\bar z$, and the real inner product $\operatorname{Re}(\bar z w)$. The complex plane and its metric are taken from *Complex Analysis*, and the contour integral and the winding number from *Complex Integration*. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken from *Complex Special Functions*. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
+The complex algebra is taken from *Complex Algebra*, with conjugation $\bar z$, the norm form $N(z) = z\bar z$, and the real inner product $\operatorname{Re}(\bar z w)$. The complex plane and its metric are taken, and the contour integral and the winding number. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are taken. The automorphism group of the field $\mathbb{C}$ is taken from *Galois Theory of $\mathbb{C}/\mathbb{R}$*. The circle of radius $r$ about the origin is written $C(0, r)$, and the unit circle is $C(0, 1) = U(1)$.
 
 ## The Unit Circle and Its Group Structure
 
@@ -130,7 +130,7 @@ $$
 v \mapsto q v q^{-1}.
 $$
 
-In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$; the companion article *Quaternion Rotations and Reflections*, being written in parallel, treats that case. In $\mathbb{C}$ the sandwich is vacuous.
+In the quaternion algebra the unit group acts on the pure imaginary subspace this way, and this is how $SO(3)$ arises from $\mathbb{H}$, treats that case. In $\mathbb{C}$ the sandwich is vacuous.
 
 **Proposition.** Let $u \in U(1)$ and $z \in \mathbb{C}$. Then $u z u^{-1} = z$. Consequently the conjugation action of $U(1)$ on $\mathbb{C}$ is trivial, and the induced map $U(1) \to GL_2(\mathbb{R})$ is the constant map to the identity.
 
@@ -434,6 +434,8 @@ The orthogonal group is $O(2) = U(1) \cup U(1)\bar{\cdot}$, with determinant hom
 | $\mathfrak{so}(2) \cong \mathbb{R}$ | Lie algebra of $SO(2)$; $J = \begin{pmatrix} 0 & -1 \\ 1 & 0\end{pmatrix}$ |
 | $\mathfrak{u}(1) = i\mathbb{R}$ | Lie algebra of $U(1)$ |
 | $\operatorname{Isom}(\mathbb{C}) \cong \mathbb{C} \rtimes O(2)$ | Isometry group of the plane |
+
+
 
 ## Further Reading
 

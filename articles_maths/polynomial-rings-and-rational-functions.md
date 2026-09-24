@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The polynomial ring $R[x]$ over a commutative ring $R$ is the free commutative $R$-ring on one generator, and its fraction field $K(x)$, the field of rational functions, is the simplest field of transcendence degree one over $K$. Between them they carry most of the elementary algebra of the corpus: the division algorithm and the Euclidean algorithm, the content and Gauss's lemma, the universal property of evaluation, the Chinese remainder theorem for coprime moduli, and, over a field, the Euclidean–principal–unique-factorisation chain of *Factorization: PID, UFD and Euclidean Domains*. They are also the two objects of which the applications are most numerous: interpolation, partial fractions, resultants and discriminants, the arithmetic of number fields through $\mathbb{Z}[x]$ and its quotients, the combinatorics of symmetric functions in $R[x_1,\ldots,x_n]$, and the codes of *Linear Codes over Finite Fields*, being written in parallel, are all statements about polynomials and rational functions.
+The polynomial ring $R[x]$ over a commutative ring $R$ is the free commutative $R$-ring on one generator, and its fraction field $K(x)$, the field of rational functions, is the simplest field of transcendence degree one over $K$. Between them they carry most of the elementary algebra of the corpus: the division algorithm and the Euclidean algorithm, the content and Gauss's lemma, the universal property of evaluation, the Chinese remainder theorem for coprime moduli, , over a field, the Euclidean–principal–unique-factorisation chain of *Factorization: PID, UFD and Euclidean Domains*. They are also the two objects of which the applications are most numerous: interpolation, partial fractions, resultants and discriminants, the arithmetic of number fields through $\mathbb{Z}[x]$ and its quotients, the combinatorics of symmetric functions in $R[x_1,\ldots,x_n]$, and the codes, are all statements about polynomials and rational functions.
 
 This article collects the structural facts about $R[x]$ and $K(x)$ that the rest of the corpus uses, and then turns to the applications. It is an applications article of the category *Rings and Fields*, so the emphasis is on what the objects do: a polynomial is an object of a ring and at the same time a function on the ring; a rational function is an element of a fraction field and at the same time a decomposition into partial fractions; and the two readings are related by the universal property, which is the only formal tool needed to pass between them.
 
@@ -70,7 +70,7 @@ $$
 
 **Definition.** For a field $K$ the **field of rational functions** $K(x)$ is the fraction field of $K[x]$, whose elements are the classes of quotients $f/g$ with $g \neq 0$; for $R$ an integral domain the fraction field of $R[x]$ is $\operatorname{Frac}(R)(x)$, and the formation of fractions commutes with the formation of polynomials: $\operatorname{Frac}(R[x]) \cong \operatorname{Frac}(R)(x)$.
 
-**Theorem (degree as a valuation).** Let $K$ be a field and define $\nu(f/g) = \deg f-\deg g$ for $f,g \in K[x]$, $g \neq 0$. Then $\nu$ is a well-defined map $K(x)^\times \to \mathbb{Z}$ with $\nu(uv) = \nu(u)+\nu(v)$ and $\nu(u+v) \geq \min(\nu(u),\nu(v))$, equal to the minimum unless $\nu(u) = \nu(v)$; moreover $\nu$ is the valuation of $K(x)$ at the point at infinity, and its residue field is $K$. The associated absolute value and the completion of $K(x)$ with respect to it — the field of formal Laurent series — belong to *Absolute Values, Valuations and Completions* and to Part II, where the topological language is available.
+**Theorem (degree as a valuation).** Let $K$ be a field and define $\nu(f/g) = \deg f-\deg g$ for $f,g \in K[x]$, $g \neq 0$. Then $\nu$ is a well-defined map $K(x)^\times \to \mathbb{Z}$ with $\nu(uv) = \nu(u)+\nu(v)$ and $\nu(u+v) \geq \min(\nu(u),\nu(v))$, equal to the minimum unless $\nu(u) = \nu(v)$; moreover $\nu$ is the valuation of $K(x)$ at the point at infinity, and its residue field is $K$. The associated absolute value and the completion of $K(x)$ with respect to it — the field of formal Laurent series — belong and to Part II, where the topological language is available.
 
 **Proof.** The degree is additive on products of polynomials and subadditive on sums, and these properties descend to fractions. $\square$
 
@@ -124,9 +124,9 @@ as is checked by putting the right side over the common denominator $x(x^2+1)$: 
 
 **Proof.** (a) is the dimension count for the remainder representation and the standard criterion for a quotient by a maximal ideal; (b) is the Chinese remainder theorem of *Localization and the Fraction Field* and *Rings*, together with the fact that $K[x]/(f_i^{e_i})$ is local with maximal ideal $(f_i)$ and that $f$ is squarefree exactly when no $f_i^2$ divides it. $\square$
 
-**Example.** $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, of dimension $2$; $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$ by the Chinese remainder theorem, with factors corresponding to the two roots; $\mathbb{F}_2[x]/(x^3+x+1)$ is a field of $8$ elements, since $x^3+x+1$ has no root in $\mathbb{F}_2$ and degree $3$. The last example is the construction of the fields used in *Linear Codes over Finite Fields*, written in parallel.
+**Example.** $\mathbb{R}[x]/(x^2+1) \cong \mathbb{C}$, of dimension $2$; $\mathbb{R}[x]/(x^2-1) \cong \mathbb{R}\times\mathbb{R}$ by the Chinese remainder theorem, with factors corresponding to the two roots; $\mathbb{F}_2[x]/(x^3+x+1)$ is a field of $8$ elements, since $x^3+x+1$ has no root in $\mathbb{F}_2$ and degree $3$. The last example is the construction of the fields used.
 
-**Theorem (evaluation).** Let $K$ be a field and $S \subseteq K$ a set of $n$ distinct elements. Then the evaluation map $K[x]_{<k} \to K^S$, $f \mapsto (f(s))_{s\in S}$, is injective for $k \leq n$ and is an isomorphism for $k = n$; for $k \leq n$ its image is a subspace of $K^S$ of dimension $k$ in which any two distinct elements differ in at least $n-k+1$ coordinates, since a nonzero polynomial of degree $<k$ has at most $k-1$ roots. This is the algebraic fact behind the Reed–Solomon codes; the codes themselves and their parameters are *Linear Codes over Finite Fields*, written in parallel.
+**Theorem (evaluation).** Let $K$ be a field and $S \subseteq K$ a set of $n$ distinct elements. Then the evaluation map $K[x]_{<k} \to K^S$, $f \mapsto (f(s))_{s\in S}$, is injective for $k \leq n$ and is an isomorphism for $k = n$; for $k \leq n$ its image is a subspace of $K^S$ of dimension $k$ in which any two distinct elements differ in at least $n-k+1$ coordinates, since a nonzero polynomial of degree $<k$ has at most $k-1$ roots. This is the algebraic fact behind the Reed–Solomon codes; the codes themselves and their parameters are.
 
 **Proof.** Injectivity is the root bound; the dimension count follows, and the coordinate-difference statement is the same root bound applied to the difference. $\square$
 
@@ -154,6 +154,8 @@ The fraction field $K(x)$ is the rational function field, and the degree differe
 | $\nu$ | The valuation $\deg f-\deg g$ at infinity |
 | $K[x]_{<k}$ | Polynomials of degree less than $k$ |
 | $K^S$ | Functions from $S$ to $K$ |
+
+
 
 ## Further Reading
 

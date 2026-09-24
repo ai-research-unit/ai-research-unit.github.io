@@ -7,7 +7,7 @@ The Peter–Weyl theorem is the decomposition theorem of harmonic analysis on a 
 
 The theorem was proved by F. Peter and H. Weyl in 1927 for compact Lie groups; the general compact case was obtained by extending the same argument to arbitrary compact groups through the compactness of the convolution operators. This article states the theorem in its several equivalent forms, gives the analytic proof in the standard sequence of steps, and draws the consequences that the rest of the compact theory uses. It develops the theorem; *Analysis on Compact Groups* develops the analysis built on it, and the two articles divide the material as follows: the orthogonality relations, the inversion and Plancherel formulas, the structure of the dual and the classical examples belong to that article, while the decomposition theorem, its proof, and its structural corollaries — finite-dimensionality, complete reducibility, separation of points, the bound on multiplicities — are here.
 
-The boundaries of the block hold as stated in the two preceding articles. The **representation theory** — unitary representations, irreducibility, Schur's lemma, intertwiners, the unitary dual as an object of Part II, induced representations, Mackey theory, type classification, property (T) — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*. The **Haar measure** is *Locally Compact Groups and Haar Measure*. The **general measure theory** — the integral, $L^p$ spaces, Fubini, the Stone–Weierstrass theorem — is *Measure Theory and Integration* and *Modes of Convergence*, in the Foundations slot of this Part, and the **functional analysis** — the spectral theorem for compact self-adjoint operators, Hilbert–Schmidt operators — is standard and is quoted as it is used, its development in this Part belonging to the later *Banach and Hilbert Spaces* in the Analysis on Linear Spaces slot. The **abelian theory** is *Harmonic Analysis on Groups*, and the **general non-abelian theory** is *Noncommutative Harmonic Analysis* and *The Plancherel Theorem*, both of which quote the present theorem.
+The boundaries of the block hold as stated in the two preceding articles. The **representation theory** — unitary representations, irreducibility, Schur's lemma, intertwiners, the unitary dual as an object of Part II, induced representations, Mackey theory, type classification, property (T) — is Part II's: *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*. The **Haar measure** is *Locally Compact Groups and Haar Measure*. The **general measure theory** — the integral, $L^p$ spaces, Fubini, the Stone–Weierstrass theorem — is *Measure Theory and Integration* and *Modes of Convergence*, in the Foundations slot of this Part, and the **functional analysis** — the spectral theorem for compact self-adjoint operators, Hilbert–Schmidt operators — is standard and is quoted as it is used, its development in this Part belonging to the laterin the Analysis on Linear Spaces slot. The **abelian theory** is *Harmonic Analysis on Groups*, and the **general non-abelian theory** is not developed here.
 
 Throughout, $K$ is a compact Hausdorff group with normalised Haar measure $dk$, $\int_K dk = 1$; $\operatorname{Irr}(K)$ is the set of equivalence classes of irreducible unitary representations, $\mathcal{H}_\pi$ the finite-dimensional representation space, $d_\pi = \dim\mathcal{H}_\pi$, $\pi_{ij}(k) = \langle\pi(k)e_j,e_i\rangle$ the matrix coefficients in an orthonormal basis, $\chi_\pi = \operatorname{Tr}\pi$ the character, $\lambda$ and $\rho$ the left and right regular representations on $L^2(K)$, and $A(K)$ the representative-function algebra. The unitary dual is written $\operatorname{Irr}(K)$, not $\widehat{K}$. No physics is invoked.
 
@@ -48,7 +48,7 @@ f \mapsto \bigl(\hat f(\pi)\bigr)_{\pi\in\operatorname{Irr}(K)},\quad
 \hat f(\pi) = \int_K f(k)\pi(k)\,dk,
 $$
 
-is a unitary equivalence of Hilbert spaces; this is the polarised form of (b), and it is the compact case of the Plancherel theorem of *The Plancherel Theorem*. The finite-dimensional summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ is precisely the space of matrix coefficients of $\pi$, and the transform is the identity between the two descriptions.
+is a unitary equivalence of Hilbert spaces; this is the polarised form of (b), and it is the compact case of the Plancherel theorem, stated as standard. The finite-dimensional summand $\mathcal{H}_\pi\otimes\mathcal{H}_\pi^*$ is precisely the space of matrix coefficients of $\pi$, and the transform is the identity between the two descriptions.
 
 ### The Theorem is the Completeness of the Fourier Expansion
 
@@ -208,6 +208,8 @@ The Peter–Weyl theorem states that for a compact group $K$ the representative-
 | $\lambda_\pi(f) = \int_K f\overline{\chi_\pi}\,dk$ | Character transform of a class function |
 | $-\Delta$, $\lambda_\pi$ | Laplace operator and Casimir eigenvalue |
 | $p_t(x) = \sum_\pi e^{-\lambda_\pi t}d_\pi\chi_\pi(x)$ | Heat kernel on a compact Lie group |
+
+
 
 ## Further Reading
 

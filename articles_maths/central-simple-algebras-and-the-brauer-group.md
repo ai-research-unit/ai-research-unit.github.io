@@ -5,7 +5,7 @@
 
 A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebra with centre exactly $F$ and no two-sided ideal other than $0$ and the algebra itself. These are the algebras that behave, over an arbitrary field, as the matrix algebras behave over an algebraically closed one: every one of them becomes a full matrix algebra after a suitable extension of scalars, and every one of them is a matrix algebra over a division algebra, by Wedderburn's structure theorem. They are the natural home of the Skolem–Noether theorem, of the notion of similarity, and of the tensor product; and the classes of central simple algebras under similarity form a group, the **Brauer group** $\operatorname{Br}(F)$, which is the subject of this article.
 
-The article stands after *Division Algebras*, which develops the elementary theory of division algebras, Frobenius' theorem, Wedderburn's little theorem, the Skolem–Noether theorem and the first appearance of the Brauer group, and after *Tensor Products of Algebras*, which establishes the product formula, the tensor product of central simple algebras and the Wedderburn structure theorem in the form used here. Those results are cited rather than reproved. What this article adds is the systematic theory: the structure and dimension of a central simple algebra, the index and the exponent, splitting fields, the crossed-product description of the classes, and the computation of the Brauer group for the standard fields. The crossed-product construction itself is developed in the companion article *Crossed Products*, and the generalisation from a field to a commutative ring — the Azumaya algebra and the Brauer group of a ring — is developed in *Separable Algebras*.
+The article develops the theory from the definition of a central simple algebra. The facts used are stated as standard: that a finite-dimensional algebra over a field without zero divisors is a division algebra; that the tensor product of central simple algebras is central simple; Frobenius' theorem; Wedderburn's little theorem; and the Skolem–Noether theorem. What this article adds is the systematic theory: the structure and dimension of a central simple algebra, the index and the exponent, splitting fields, the crossed-product description of the classes, and the computation of the Brauer group for the standard fields. The generalisation from a field to a commutative ring is not developed here.
 
 Everything is algebraic. The norm form of a quaternion algebra, the composition of quadratic forms, and the cohomological interpretation of the relative Brauer group over a local or global field are named where they belong and deferred to the articles that own them; in particular, the class-field-theoretic identifications belong to the Part I article *Class Field Theory*, in the category *Rings and Fields*.
 
@@ -19,17 +19,17 @@ Throughout this article $F$ is a field and $A$, $B$ are finite-dimensional unita
 
 **Proposition.** Let $A$ be central simple over $F$.
 
-1. $A$ is a division algebra if and only if $A$ has no zero divisors, by the finite-dimensional criterion of *Division Algebras*.
+1. $A$ is a division algebra if and only if $A$ has no zero divisors, by the standard finite-dimensional criterion (a finite-dimensional algebra over a field with no zero divisors is a division algebra).
 2. Every nonzero two-sided ideal of $A \otimes_F L$ meets $A$ trivially, for every field extension $L/F$; equivalently $A \otimes_F L$ is simple.
 3. The centre of $A \otimes_F L$ is $L \cdot 1$, so $A \otimes_F L$ is central simple over $L$.
 
-*Proof.* Statement 1 is the finite-dimensional criterion of *Division Algebras*. For 2 and 3, the centre statement is proved in *Tensor Products of Algebras* by extending scalars to an algebraic closure, where the algebra becomes a matrix algebra; the simplicity is the standard argument that a nonzero ideal of $A \otimes_F \bar F$ intersects $M_n(\bar F)$ in a nonzero ideal, hence contains a matrix unit, and the matrix units generate. $\square$
+*Proof.* Statement 1 is the standard finite-dimensional criterion. For 2 and 3, the centre statement is standard: it is proved by extending scalars to an algebraic closure, where the algebra becomes a matrix algebra; the simplicity is the standard argument that a nonzero ideal of $A \otimes_F \bar F$ intersects $M_n(\bar F)$ in a nonzero ideal, hence contains a matrix unit, and the matrix units generate. $\square$
 
 Thus centrality and simplicity are preserved by **base change**, which is the technical heart of the theory: an $F$-algebra is central simple exactly when it becomes a matrix algebra over a suitable extension, in a sense made precise by the notion of a splitting field below.
 
 ### Examples
 
-**(a) Matrix algebras.** For every $n \geq 1$, the algebra $M_n(F)$ is central simple: its centre is $F I_n$, by the computation of *Matrix Algebras*, and it is simple because the matrix units generate it from any nonzero element.
+**(a) Matrix algebras.** For every $n \geq 1$, the algebra $M_n(F)$ is central simple: its centre is $F I_n$, by the computation, and it is simple because the matrix units generate it from any nonzero element.
 
 **(b) Division algebras.** A finite-dimensional division algebra $D$ over $F$ is simple, and it is central simple exactly when its centre is $F$.
 
@@ -49,7 +49,7 @@ It is central: $u, v, w$ each anticommute with one another and the only central 
 
 **Theorem.** Let $A$ be central simple over $F$ of finite dimension $n = \dim_F A$. Then $A \otimes_F \bar F \cong M_d(\bar F)$ where $\bar F$ is an algebraic closure of $F$, and $n = d^2$.
 
-*Proof.* By the proposition above, $A \otimes_F \bar F$ is central simple over the algebraically closed field $\bar F$. Over an algebraically closed field the only finite-dimensional division algebra is the field itself, by *Division Algebras*; and Wedderburn's structure theorem writes a central simple algebra over $\bar F$ as $M_d(\bar F)$. Comparing dimensions, $n = d^2$. $\square$
+*Proof.* By the proposition above, $A \otimes_F \bar F$ is central simple over the algebraically closed field $\bar F$. Over an algebraically closed field the only finite-dimensional division algebra is the field itself; and Wedderburn's structure theorem writes a central simple algebra over $\bar F$ as $M_d(\bar F)$. Comparing dimensions, $n = d^2$. $\square$
 
 The integer $d$ is the **degree** of $A$, written $\deg(A)$. It is a numerical invariant of $A$ and not of a presentation: the dimension of a central simple algebra is always a perfect square. The theorem also shows that simplicity is a property detectable after base change, since the matrix algebra $M_d(\bar F)$ is visibly central simple.
 
@@ -59,7 +59,7 @@ The integer $d$ is the **degree** of $A$, written $\deg(A)$. It is a numerical i
 
 **Theorem (Wedderburn, standard).** Every finite-dimensional central simple $F$-algebra $A$ is isomorphic to a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$, with $n \geq 1$ and $D$ determined up to isomorphism. Equivalently, writing $A = \operatorname{End}_D(V)$ for the unique simple $A$-module $V = D^n$, the division algebra is $D = \operatorname{End}_A(V)^{\mathrm{op}}$.
 
-*Proof.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem of *Simple and Semisimple Modules* it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed as in *Matrix Algebras*, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{op}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple. $\square$
+*Pro.* The algebra $A$ is simple and finite-dimensional, so by the Wedderburn–Artin theorem it is $M_n(D)$ for a division algebra $D$; the centre of $M_n(D)$ is the centre of $D$, computed, so centrality of $A$ makes $D$ central over $F$. Uniqueness follows because $D$ is recovered as $\operatorname{End}_A(V)^{\mathrm{op}}$ for the unique simple module $V$, and the simple module is unique because $A$ is simple. $\square$
 
 The theorem reduces the classification of central simple algebras to the classification of central division algebras together with the integer $n$. The division algebra $D$ is called the **division algebra part** of $A$, and
 
@@ -77,7 +77,7 @@ $$
 g(b) = a\, f(b)\, a^{-1} \qquad \text{for all } b \in B .
 $$
 
-The theorem is proved in *Division Algebras*, and two corollaries are used repeatedly.
+The theorem is stated as standard, and two corollaries are used repeatedly.
 
 **Corollary.** For a central simple algebra $A$ the map $A^\times \to \operatorname{Aut}_F(A)$, $a \mapsto (x \mapsto axa^{-1})$, is surjective with kernel $F^\times$, so
 
@@ -119,7 +119,7 @@ the first map being $a \otimes b \mapsto (x \mapsto axb)$, which is an injective
 
 **Theorem.** If $A$ and $B$ are central simple over $F$, then $A \otimes_F B$ is central simple over $F$, of degree $\deg(A)\deg(B)$ and dimension $(\dim_F A)(\dim_F B)$.
 
-The theorem is proved in *Tensor Products of Algebras*: the centre is computed by the proposition on centres, and simplicity follows by extending scalars to a splitting field, where the tensor product of two matrix algebras is a matrix algebra. The theorem is what allows the tensor product to be used as a group operation; without it the classes below would not be closed under multiplication.
+The theorem is standard, and the article uses it as such: the centre is computed from the centre of each factor, and simplicity follows by extending scalars to a splitting field, where the tensor product of two matrix algebras is a matrix algebra. The theorem is what allows the tensor product to be used as a group operation; without it the classes below would not be closed under multiplication.
 
 ### Similarity
 
@@ -174,7 +174,7 @@ Every central simple algebra has a splitting field: an algebraic closure of $F$ 
 
 *Proof.* Statements 1 and 2 are the standard theory of maximal subfields of a division algebra; the dimension count $\dim_F D = e^2$ and the double centralizer theorem give that a maximal subfield has degree $e$. For 3, a maximal subfield $L$ of $D$ has $D \otimes_F L \cong M_e(L)$ because $D$ becomes split over its own maximal subfield, the centralizer of $L$ in $D$ being $L$ itself; and every splitting field has degree divisible by $e$ by the same argument applied to $D \otimes_F L$. For 4, the exponent divides the index: if $K$ is a maximal subfield of $D$, then $[D]$ lies in $\operatorname{Br}(K/F)$, and the restriction–corestriction identity of the cohomological theory gives $[D]^{[K:F]} = [D]^{e} = 0$ in $\operatorname{Br}(F)$, since restriction to $K$ kills the class; alternatively the same conclusion follows from the reduced norm and the theory of the reduced characteristic polynomial. Either argument is the standard one, and both are recorded in the references. $\square$
 
-The two invariants are related by the theorem of the next article: every central simple algebra is a crossed product with respect to a splitting field, and the resulting cohomological description of the Brauer group makes the exponent the order of a cohomology class.
+The two invariants are related by the theorem: every central simple algebra is a crossed product with respect to a splitting field, and the resulting cohomological description of the Brauer group makes the exponent the order of a cohomology class.
 
 ### The relative Brauer group
 
@@ -196,7 +196,7 @@ $$
 \operatorname{Br}(L/F) \;\cong\; H^2(G, L^\times),
 $$
 
-the second cohomology group of $G$ with coefficients in the multiplicative group of $L$, as in *Crossed Products*; the group cohomology is that of *Group Cohomology*. This is the cohomological face of the theory and the reason the exponent of a class is the order of a cohomology class.
+the second cohomology group of $G$ with coefficients in the multiplicative group of $L$; the group cohomology is that of *Group Cohomology*. This is the cohomological face of the theory and the reason the exponent of a class is the order of a cohomology class.
 
 ## Crossed Products and Cyclic Algebras
 
@@ -208,7 +208,7 @@ $$
 (\chi, a) = L \oplus Lz \oplus \cdots \oplus Lz^{n-1}, \qquad z^n = a, \qquad z\ell = \sigma(\ell) z \quad (\ell \in L).
 $$
 
-It is central simple of degree $n$, and its class lies in $\operatorname{Br}(L/F)$. The construction is a special case of the crossed product of *Crossed Products*, with factor set determined by the class of $a$ modulo norms from $L^\times$; the isomorphism classes of such algebras are parametrised by $F^\times/\operatorname{N}_{L/F}(L^\times)$, and the cyclic algebra is split exactly when $a$ is a norm from $L$. In the smallest case $n = 2$, with $L = F(\sqrt a)$ and $\sigma$ the nontrivial automorphism, the cyclic algebra $(\chi, b)$ is the quaternion algebra
+It is central simple of degree $n$, and its class lies in $\operatorname{Br}(L/F)$. The construction is a special case of the crossed product, with factor set determined by the class of $a$ modulo norms from $L^\times$; the isomorphism classes of such algebras are parametrised by $F^\times/\operatorname{N}_{L/F}(L^\times)$, and the cyclic algebra is split exactly when $a$ is a norm from $L$. In the smallest case $n = 2$, with $L = F(\sqrt a)$ and $\sigma$ the nontrivial automorphism, the cyclic algebra $(\chi, b)$ is the quaternion algebra
 
 $$
 (a, b)_F = F(\sqrt a) \oplus F(\sqrt a) z, \qquad z^2 = b, \qquad z \sqrt a = -\sqrt a\, z ,
@@ -226,7 +226,7 @@ $$
 
 and the class of $A$ in $\operatorname{Br}(L/F) \cong H^2(G, L^\times)$ is the cohomology class of the factor set $c$. The factor set is a coboundary exactly when $A$ is split by $F$.
 
-The theorem is the content of *Crossed Products*, where the crossed product $L \rtimes_c G$ is defined and the isomorphism with $H^2(G, L^\times)$ is established; it is cited here because it explains both the name "Brauer group" and the structure of the cyclic algebras above. A central simple algebra need not be a crossed product with respect to every splitting field, and need not be cyclic; the question of which algebras are cyclic is a genuine restriction, settled for local fields by the theorem below and open in general.
+The theorem is the content, where the crossed product $L \rtimes_c G$ is defined and the isomorphism with $H^2(G, L^\times)$ is established; it is cited here because it explains both the name "Brauer group" and the structure of the cyclic algebras above. A central simple algebra need not be a crossed product with respect to every splitting field, and need not be cyclic; the question of which algebras are cyclic is a genuine restriction, settled for local fields by the theorem below and open in general.
 
 ## Computations of the Brauer Group
 
@@ -234,7 +234,7 @@ The theorem is the content of *Crossed Products*, where the crossed product $L \
 
 **Theorem.** If $F$ is algebraically closed, then $\operatorname{Br}(F) = 0$.
 
-*Proof.* Over an algebraically closed field the only finite-dimensional division algebra is $F$ itself, by *Division Algebras*, so every central simple algebra is $M_n(F)$ and is similar to $F$. $\square$
+*Proof.* Over an algebraically closed field the only finite-dimensional division algebra is $F$ itself, so every central simple algebra is $M_n(F)$ and is similar to $F$. $\square$
 
 **Theorem (Wedderburn).** If $F$ is a finite field, then $\operatorname{Br}(F) = 0$.
 
@@ -279,7 +279,7 @@ This is the reciprocity law of class field theory, and it belongs to the article
 
 A **central simple algebra** over a field $F$ is a finite-dimensional $F$-algebra with centre $F$ and no nontrivial two-sided ideal. Its dimension is a perfect square $d^2$, it is a matrix algebra $M_n(D)$ over a central $F$-division algebra $D$ by Wedderburn's structure theorem, and its **index** $\operatorname{ind}(A) = \sqrt{\dim_F D}$ divides its degree $d$ and equals the degree of every maximal subfield of $D$. The **Skolem–Noether theorem** makes every $F$-algebra automorphism of a central simple algebra inner, so $\operatorname{Aut}_F(A) \cong A^\times/F^\times$, and the double centralizer theorem computes the centralizer of a simple subalgebra. The tensor product of two central simple algebras is central simple, so the similarity classes of central simple algebras form an abelian group under the tensor product, the **Brauer group** $\operatorname{Br}(F)$, with identity the class of $F$ and inverse the class of the opposite algebra, since $A \otimes_F A^{\mathrm{op}} \cong M_{d^2}(F)$.
 
-A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_d(L)$; a splitting field of degree $\operatorname{ind}(A)$ always exists, and the **exponent** of $A$, its order in $\operatorname{Br}(F)$, divides its index. For a finite Galois extension $L/F$ with group $G$, every central simple algebra split by $L$ is a crossed product, and the relative Brauer group is $\operatorname{Br}(L/F) \cong H^2(G, L^\times)$, so the Brauer group is the cohomological home of the factor-set classification of the next article; the cyclic algebras $(L/F, \sigma, a)$ are the explicit case. The computations are $\operatorname{Br}(F) = 0$ for algebraically closed and for finite $F$, $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ generated by $[\mathbb{H}]$ with $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{H} \cong M_4(\mathbb{R})$, $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$ for a non-Archimedean local field, and for a number field the Hasse–Brauer–Noether isomorphism onto the families of local invariants with zero sum, which belongs to *Class Field Theory*.
+A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_d(L)$; a splitting field of degree $\operatorname{ind}(A)$ always exists, and the **exponent** of $A$, its order in $\operatorname{Br}(F)$, divides its index. For a finite Galois extension $L/F$ with group $G$, every central simple algebra split by $L$ is a crossed product, and the relative Brauer group is $\operatorname{Br}(L/F) \cong H^2(G, L^\times)$, so the Brauer group is the cohomological home of the factor-set classification; the cyclic algebras $(L/F, \sigma, a)$ are the explicit case. The computations are $\operatorname{Br}(F) = 0$ for algebraically closed and for finite $F$, $\operatorname{Br}(\mathbb{R}) \cong \mathbb{Z}/2$ generated by $[\mathbb{H}]$ with $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{H} \cong M_4(\mathbb{R})$, $\operatorname{Br}(F) \cong \mathbb{Q}/\mathbb{Z}$ for a non-Archimedean local field, and for a number field the Hasse–Brauer–Noether isomorphism onto the families of local invariants with zero sum, which belongs to *Class Field Theory*.
 
 ## Summary of Notation
 
@@ -304,6 +304,10 @@ A splitting field of $A$ is a field extension $L/F$ with $A \otimes_F L \cong M_
 | $(\chi, a)$ or $(L/F, \sigma, a)$ | cyclic algebra, $z^n = a$, $z\ell = \sigma(\ell)z$ |
 | $H^2(G, L^\times)$ | second cohomology, $\cong \operatorname{Br}(L/F)$ for $G = \operatorname{Gal}(L/F)$ |
 | $\operatorname{inv}_v(D)$ | Hasse invariant at a place $v$ |
+
+
+
+
 
 ## Further Reading
 

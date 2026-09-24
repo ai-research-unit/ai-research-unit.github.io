@@ -150,7 +150,7 @@ which is defined because $\varphi_0(A_x)$ is nonempty and bounded above in $F'$.
 
 **Theorem.** $\mathbb{R}$ is real closed; equivalently, every positive real number is a square and every real polynomial of odd degree has a real root.
 
-**Proof.** That every positive real has a square root is the completeness of $\mathbb{R}$ applied to the set $\{y \geq 0 : y^2 \leq x\}$, which is nonempty and bounded above and whose supremum $\sqrt x$ satisfies $(\sqrt x)^2 = x$; the verification that the supremum has this property uses the order and the Archimedean property. For odd degree, a real polynomial $p$ of odd degree takes both signs, say $p(a) < 0 < p(b)$ with $a < b$ chosen far enough out, and the set $S = \{x \in (a,b) : p < 0 \text{ on } (a,x]\}$ is nonempty and bounded above; its supremum $s \in (a,b]$ satisfies $p(s) = 0$, because polynomial functions are continuous for the order topology of *Topological Rings and Fields* and both $p(s) < 0$ and $p(s) > 0$ contradict the definition of $s$. The case of negative leading coefficient is analogous. $\square$
+**Pro.** That every positive real has a square root is the completeness of $\mathbb{R}$ applied to the set $\{y \geq 0: y^2 \leq x\}$, which is nonempty and bounded above and whose supremum $\sqrt x$ satisfies $(\sqrt x)^2 = x$; the verification that the supremum has this property uses the order and the Archimedean property. For odd degree, a real polynomial $p$ of odd degree takes both signs, say $p(a) < 0 < p(b)$ with $a < b$ chosen far enough out, and the set $S = \{x \in (a,b): p < 0 \text{ on } (a,x]\}$ is nonempty and bounded above; its supremum $s \in (a,b]$ satisfies $p(s) = 0$, because polynomial functions are continuous for the order topology and both $p(s) < 0$ and $p(s) > 0$ contradict the definition of $s$. The case of negative leading coefficient is analogous. $\square$
 
 **Theorem (fundamental theorem of algebra, real-closed form).** Let $F$ be a real-closed field and let $i^2 = -1$ in an algebraic closure. Then $F(i)$ is algebraically closed.
 
@@ -218,6 +218,8 @@ An ordered field is order-complete when every nonempty bounded-above subset has 
 | $\mathbb{R}$ | The unique order-complete ordered field |
 | $F(i)$ | Quadratic extension by a square root of $-1$ |
 | $F(t)$ | Rational function field, ordered by leading coefficients |
+
+
 
 ## Further Reading
 

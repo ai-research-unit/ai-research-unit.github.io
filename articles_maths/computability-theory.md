@@ -5,7 +5,7 @@
 
 This is the third article of the Natural Numbers system in Part IV, and it occupies the **algebra slot** of that system in its effective aspect. The system is again the structure $\mathbb{N}$ of *The Natural Numbers*, and the object of study is the class of functions $\mathbb{N}^k \to \mathbb{N}$ that can be computed by a finite procedure, together with the sets and the reducibility relations that this class induces. Where *Peano Arithmetic and Model Theory* studied the sentences true of $\mathbb{N}$ and the incompleteness of any recursive axiomatisation, this article studies the *effective* content of $\mathbb{N}$: which functions are computable, which sets are decidable or recursively enumerable, and how the undecidable sets are stratified by the arithmetical hierarchy and by the Turing degrees.
 
-The general theory of computation — Turing machines, the universal machine, the Church–Turing thesis, the halting problem in its machine form — is the subject of Part I's *Formal Logic and Computability*, and is used here rather than developed; the incompleteness theorems and the arithmetisation of syntax are from *Proof Theory and Type Theory* and from *Peano Arithmetic and Model Theory*. What is developed here is the *synthetic* theory of the computable functions on $\mathbb{N}$: the primitive recursive and recursive definitions, the enumeration $\varphi_e$ of the partial recursive functions, the recursion theorems, the recursively enumerable sets and their completeness, and the two standard stratifications, the arithmetical hierarchy and the Turing degrees. The material on Diophantine equations connects to the model theory of the previous article; the combinatorial functions on $\mathbb{N}$ are the subject of *Combinatorial Functions and Generating Functions*.
+The general theory of computation — Turing machines, the universal machine, the Church–Turing thesis, the halting problem in its machine form — is the subject of Part I's *Formal Logic and Computability*, and is used here rather than developed; the incompleteness theorems and the arithmetisation of syntax are from *Proof Theory and Type Theory* and from *Peano Arithmetic and Model Theory*. What is developed here is the *synthetic* theory of the computable functions on $\mathbb{N}$: the primitive recursive and recursive definitions, the enumeration $\varphi_e$ of the partial recursive functions, the recursion theorems, the recursively enumerable sets and their completeness, and the two standard stratifications, the arithmetical hierarchy and the Turing degrees. The material on Diophantine equations connects to the model theory of the previous article; the combinatorial functions on $\mathbb{N}$ are not covered here.
 
 Throughout, computability is that of *Formal Logic and Computability*: a function is **computable**, or **recursive**, if some Turing machine computes it. The partial recursive functions are enumerated as $\varphi_0, \varphi_1, \varphi_2, \dots$, with $W_e = \operatorname{dom}(\varphi_e)$ the $e$-th **recursively enumerable** (c.e.) set, and $\varphi_e(n)\!\downarrow$ means that the computation halts. The set $K$ is the halting set $\{e : \varphi_e(e)\!\downarrow\}$, and $\emptyset'$ is its Turing degree. Reducibilities are written $\leq_m$ and $\leq_T$, and $\emptyset^{(n)}$ is the $n$-th Turing jump of $\emptyset$.
 
@@ -237,6 +237,10 @@ A set is decidable if its characteristic function is computable and recursively 
 | $\Omega$ | Chaitin's halting probability $\sum_{U(p)\downarrow} 2^{-\lvert p\rvert}$ |
 | $\mathcal{D}$ | Upper semilattice of Turing degrees |
 | $\mathbf{0}$ | Degree of the decidable sets |
+
+
+
+
 
 ## Further Reading
 

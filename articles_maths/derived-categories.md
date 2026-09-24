@@ -5,9 +5,9 @@
 
 The derived functors of a functor that is not exact are computed by a choice of resolution, and the comparison theorem says the choice does not matter: any two resolutions are linked by a chain map unique up to homotopy. The derived category turns this statement into structure. It adjoins to the complexes of an abelian category formal inverses for the quasi-isomorphisms, retaining the homotopy category as its place of computation, and in the derived category the exact functors are precisely those that were merely left or right exact before: $\operatorname{Hom}$ becomes $\operatorname{Hom}$ in the derived category, the tensor product becomes the derived tensor product, and a short exact sequence produces the distinguished triangles that carry the long exact sequences. The construction does not create new homological data; it repackages the data of resolutions, derived functors and spectral sequences into a single additive category in which the triangle replaces the exact sequence.
 
-This article develops the homotopy category of complexes, the localisation of a category at a class of morphisms, the derived category of an abelian category, the structure of triangulated categories and the distinguished triangles, the identification of derived functors with functors on the derived category, the derived functors $\operatorname{RHom}$ and $\otimes^{\mathbb{L}}$, and the equivalences of derived categories that occur for rings of finite global dimension. It follows *Derived Functors*, *Ext and Tor* and *Spectral Sequences*, and it prepares *K-Theory of Rings*, *Hochschild Homology* and *Cyclic Homology*.
+This article develops the homotopy category of complexes, the localisation of a category at a class of morphisms, the derived category of an abelian category, the structure of triangulated categories and the distinguished triangles, the identification of derived functors with functors on the derived category, the derived functors $\operatorname{RHom}$ and $\otimes^{\mathbb{L}}$, and the equivalences of derived categories that occur for rings of finite global dimension. It follows *Derived Functors*, *Ext and Tor* and *Spectral Sequences*, and it prepares.
 
-Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{Mod}$ for a commutative ring $R$ with $1\neq0$, and $D(\mathcal{A})$ is its derived category; $K(\mathcal{A})$ is the homotopy category. The article assumes the complexes, chain homotopies, mapping cones, resolutions and hom complexes of *Homological Algebra*, the derived functors of *Derived Functors*, and the Ext and Tor families of *Ext and Tor*. No topology and no form occurs; the words *localisation*, *limit* and *complete* are used in their algebraic senses. The derived categories of sheaves on a site and the six-functor formalism for a map of schemes belong to Part II, where they are treated in *Sheaves and Cohomology*; the triangulated and higher-categorical machinery that surrounds the theory borders the companion articles *Model Categories and Homotopy Theory* and *Higher Algebra and Higher Categories*, both being written in this same batch, and this article keeps to the algebraic side and cites those companions.
+Throughout, $\mathcal{A}$ is an abelian category, most often $R\text{-}\mathbf{Mod}$ for a commutative ring $R$ with $1\neq0$, and $D(\mathcal{A})$ is its derived category; $K(\mathcal{A})$ is the homotopy category. The article assumes the complexes, chain homotopies, mapping cones, resolutions and hom complexes of *Homological Algebra*, the derived functors of *Derived Functors*, and the Ext and Tor families of *Ext and Tor*. No topology and no form occurs; the words *localisation*, *limit* and *complete* are used in their algebraic senses. The derived categories of sheaves on a site and the six-functor formalism for a map of schemes belong to Part II, where they are treated in *Sheaves and Cohomology*; the triangulated and higher-categorical machinery that surrounds the theory borders andboth being written in this same batch, and this article keeps to the algebraic side and cites those companions.
 
 ## The Homotopy Category
 
@@ -165,7 +165,7 @@ so $-\otimes_R^{\mathbb{L}}N$ is left adjoint to $\mathbb{R}\operatorname{Hom}_R
 
 ### Coherent Sheaves and Perfect Complexes, Named Only
 
-**Remark.** The **perfect complexes** are the complexes quasi-isomorphic to bounded complexes of finitely generated projective modules. They form a full triangulated subcategory of $D(R\text{-}\mathbf{Mod})$, and the derived tensor product restricts to it. In algebraic geometry the corresponding notion for sheaves on a scheme, together with the derived category of coherent sheaves and the six operations, is developed in Part II; here the definition is recorded in the module case as the object on which the K-theory of the next article is built.
+**Remark.** The **perfect complexes** are the complexes quasi-isomorphic to bounded complexes of finitely generated projective modules. They form a full triangulated subcategory of $D(R\text{-}\mathbf{Mod})$, and the derived tensor product restricts to it. In algebraic geometry the corresponding notion for sheaves on a scheme, together with the derived category of coherent sheaves and the six operations, is developed in Part II; here the definition is recorded in the module case as the object on which the K-theory is built.
 
 ### Rings of Finite Global Dimension
 
@@ -209,7 +209,7 @@ The homotopy category $K(\mathcal{A})$ of complexes has as morphisms the chain m
 
 The derived category is triangulated: it carries a translation and a class of distinguished triangles with the cone construction, rotation, the octahedral axiom, and a long exact sequence for every cohomological functor. The hom groups are the Ext groups, $\operatorname{Hom}_{D(\mathcal{A})}(M,N[n])=\operatorname{Ext}^n_{\mathcal{A}}(M,N)$, so the derived category is the natural home of Ext. Every left exact functor with enough injectives has a total right derived functor $\mathbb{R}F$ whose cohomology recovers $R^nF$, and every right exact functor with enough projectives has $\mathbb{L}F$ with homology $L_nF$; the total derived functors are exact, they satisfy the derived tensor–hom adjunction, and the derived tensor product is commutative.
 
-For a ring of finite global dimension the derived category of bounded complexes is equivalent to the homotopy category of bounded complexes of projectives, so the theory adds nothing in that case; the general theory is genuinely larger because the derived category need not be abelian. The derived categories of sheaves, the six operations for schemes and the geometric applications are part of Part II, and the model-category and higher-categorical formulations that underlie the construction are treated in *Model Categories and Homotopy Theory* and *Higher Algebra and Higher Categories*.
+For a ring of finite global dimension the derived category of bounded complexes is equivalent to the homotopy category of bounded complexes of projectives, so the theory adds nothing in that case; the general theory is genuinely larger because the derived category need not be abelian. The derived categories of sheaves, the six operations for schemes and the geometric applications are part of Part II, and the model-category and higher-categorical formulations that underlie the construction are treated .
 
 ## Summary of Notation
 
@@ -228,6 +228,10 @@ For a ring of finite global dimension the derived category of bounded complexes 
 | $M\otimes_R^{\mathbb{L}}N$ | derived tensor product |
 | $\operatorname{Hom}_{D(\mathcal{A})}(M,N[n])=\operatorname{Ext}^n_{\mathcal{A}}(M,N)$ | hom groups of the derived category |
 | $R$ | commutative ring with $1\neq0$ unless stated |
+
+
+
+
 
 ## Further Reading
 

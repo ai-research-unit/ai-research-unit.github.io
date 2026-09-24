@@ -4,7 +4,7 @@
 
 This article treats the **spin factor**, the Jordan algebra of degree two built from a module with a quadratic form, and the **Clifford envelope** that makes it special. The base structure is a **commutative ring** $R$ with identity $1 \neq 0$, and the Jordan conventions are those of *Jordan Algebras*: a commutative product $\circ$, the square $x^2 = x\circ x$, and the identity $[L_x, L_{x^2}] = 0$.
 
-The spin factor is the simplest Jordan algebra after the base ring itself. It carries the same data as a quadratic form, and its linear algebra is the linear algebra of that form. What makes it interesting is the way it is forced to be **special**: there is a canonical embedding of the spin factor into the symmetrisation of the Clifford algebra of the form, and the Clifford relations are exactly the equations that make the embedding a Jordan homomorphism. The abstract construction and its conventions are fixed in *The Clifford Algebra*, and the explicit identification of the real and complex signature algebras is in *Clifford Algebras in Finite Dimensions*. Here the Clifford algebra is constructed explicitly as a quotient of the tensor algebra of *Tensor Powers and the Free Algebra*, built in *Modules*, §13, and only the properties needed for the envelope are used.
+The spin factor is the simplest Jordan algebra after the base ring itself. It carries the same data as a quadratic form, and its linear algebra is the linear algebra of that form. What makes it interesting is the way it is forced to be **special**: there is a canonical embedding of the spin factor into the symmetrisation of the Clifford algebra of the form, and the Clifford relations are exactly the equations that make the embedding a Jordan homomorphism. The Clifford algebra is constructed here explicitly as a quotient of the tensor algebra, and only the properties needed for the envelope are used.
 
 The article defines spin factors and derives their degree-two structure, constructs the Clifford algebra from the tensor algebra, proves the Clifford-envelope embedding, and identifies the degree-two algebras of the classification with the spin factors, including the Hermitian $2 \times 2$ matrix algebras over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ and $\mathbb{O}$.
 
@@ -102,7 +102,7 @@ $$
 v^2 = q(v), \qquad vw + wv = 2B(v, w),
 $$
 
-the second obtained by polarising the first. The algebra inherits from the tensor algebra a filtration and, from the parity of the number of tensor factors, a $\mathbb{Z}/2\mathbb{Z}$-grading; it is associative and unital. The construction and its universal property are treated in *Clifford Algebras in Finite Dimensions*; what is used here is only that $\mathrm{Cl}(V,q)$ is an associative algebra with these relations.
+the second obtained by polarising the first. The algebra inherits from the tensor algebra a filtration , from the parity of the number of tensor factors, a $\mathbb{Z}/2\mathbb{Z}$-grading; it is associative and unital. The construction and its universal property are treated in Part II; what is used here is only that $\mathrm{Cl}(V,q)$ is an associative algebra with these relations.
 
 ### The Universal Property
 
@@ -116,7 +116,7 @@ $$
 \dim_R \mathrm{Cl}(V,q) = 2^{\dim_R V}.
 $$
 
-*Proof.* The relations rewrite any word in the $e_i$ as an alternating word, so the displayed products span; independence follows from a normal-form argument, or from the standard structure theorem of *Clifford Algebras in Finite Dimensions*. $\square$
+*Pro.* The relations rewrite any word in the $e_i$ as an alternating word, so the displayed products span; independence follows from a normal-form argument, or from the standard structure theorem. $\square$
 
 **Remark.** The sign convention is the one fixed by $v^2 = q(v)$: the Clifford relation is $vw + wv = 2B(v,w)$. With the other common convention $vw + wv = -2B(v,w)$ one replaces $q$ by $-q$. The shared notation of the corpus reserves $q$ for the quadratic form and $g$ for a bilinear form, and $\mathrm{Cl}(V,q)$ is written accordingly.
 
@@ -166,7 +166,7 @@ where the Clifford relation $vw + wv = 2B(v,w)$ was used in the third line. Henc
 
 The Clifford algebra is much larger than the spin factor: $\dim \mathrm{Cl}(V,q) = 2^n$ against $\dim JSpin(V) = n + 1$ for $V$ free of rank $n$. The even part $\mathrm{Cl}^0(V,q)$ contains $1$ and the products $vw$ of two vectors; the span of $1$ and $V$ generates the full Clifford algebra by multiplying, since products of odd numbers of vectors sweep out $\mathrm{Cl}^1$, but the linear span of $1$ together with $V$ is only the spin factor. The envelope is therefore a genuine enlargement, and the spin factor is its degree-two part.
 
-**Example.** For $V = R^2$ with $q(v) = v_1^2 + v_2^2$ and orthogonal basis $e_1, e_2$, the Clifford algebra has basis $1, e_1, e_2, e_1e_2$ with $e_1^2 = e_2^2 = 1$, $e_1e_2 = -e_2e_1$, and $(e_1e_2)^2 = -1$; so $\mathrm{Cl}(V,q) \cong M_2(R)$, the algebra of $2 \times 2$ matrices, and $JSpin_2$ is the span of $1, e_1, e_2$ inside it, which is the space of symmetric $2\times2$ matrices under the identification $e_1 \mapsto \begin{pmatrix}1&0\\0&-1\end{pmatrix}$, $e_2 \mapsto \begin{pmatrix}0&1\\1&0\end{pmatrix}$. The general identification of Clifford algebras with matrix algebras over $\mathbb{R}$ and $\mathbb{C}$ is the content of *Clifford Algebras in Finite Dimensions*.
+**Example.** For $V = R^2$ with $q(v) = v_1^2 + v_2^2$ and orthogonal basis $e_1, e_2$, the Clifford algebra has basis $1, e_1, e_2, e_1e_2$ with $e_1^2 = e_2^2 = 1$, $e_1e_2 = -e_2e_1$, and $(e_1e_2)^2 = -1$; so $\mathrm{Cl}(V,q) \cong M_2(R)$, the algebra of $2 \times 2$ matrices, and $JSpin_2$ is the span of $1, e_1, e_2$ inside it, which is the space of symmetric $2\times2$ matrices under the identification $e_1 \mapsto \begin{pmatrix}1&0\\0&-1\end{pmatrix}$, $e_2 \mapsto \begin{pmatrix}0&1\\1&0\end{pmatrix}$. The general identification of Clifford algebras with matrix algebras over $\mathbb{R}$ and $\mathbb{C}$ is the content.
 
 ## Degree-Two Algebras and Hermitian Matrices
 
@@ -188,7 +188,7 @@ $$
 
 **Corollary.** $H_2(\mathbb{R}) \cong JSpin_2$, $H_2(\mathbb{C}) \cong JSpin_3$, $H_2(\mathbb{H}) \cong JSpin_5$, $H_2(\mathbb{O}) \cong JSpin_9$. In particular all of these algebras are special and of degree two, and the exceptional phenomenon of *Special and Exceptional Jordan Algebras* is confined to size at least three.
 
-**Remark.** The case $D=\mathbb{C}$ is the biquaternion case of the corpus. $H_2(\mathbb{C})\cong JSpin_3$ is the spin factor of a three-dimensional definite form, so its Clifford envelope is $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$, the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, equivalently $\mathbb{B}\cong\mathrm{Cl}^{+}_{3,1}$. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with the competing labelling and its sign consequence, is stated in *The Biquaternion Algebra as a Clifford Algebra*, and the algebra itself is the subject of *Biquaternion Algebra*; the biquaternion vocabulary of this corpus is used here unchanged, and none of it is re-derived.
+**Remark.** The case $D=\mathbb{C}$ is the biquaternion case of the corpus. $H_2(\mathbb{C})\cong JSpin_3$ is the spin factor of a three-dimensional definite form, so its Clifford envelope is $\mathrm{Cl}_{3,0}\cong M_2(\mathbb{C})$, the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, equivalently $\mathbb{B}\cong\mathrm{Cl}^{+}_{3,1}$. The identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, with the competing labelling and its sign consequence, is stated, and the algebra itself is not covered here; the biquaternion vocabulary of this corpus is used here unchanged, and none of it is re-derived.
 
 ### The Isometry Class of the Form
 
@@ -228,7 +228,7 @@ whose Lie algebra is the structure algebra, of dimension $\binom{n}{2} + n + 1 =
 
 **Remark.** The norm form is $\langle 1\rangle \perp (-q)$ on the $(n+1)$-dimensional module $R \oplus V$, so the structure group acts on a space one dimension larger than $V$; its Lie algebra has dimension $\binom{n+1}{2} + 1$, larger by $n$ than the dimension $\binom{n}{2} + 1$ of the conformal group $CO(V,q)$ of $q$ itself, whose action on $V$ does not extend to the algebra.
 
-The same description applies to the split forms, with the orthogonal group replaced by the indefinite orthogonal group of the same signature; the structure group is then the conformal orthogonal group of the split norm form, and the spin factor is the coordinate algebra of the corresponding quadric. The structure group acts transitively on the interior of the cone of squares, and this is the link between the spin factors of this article and the symmetric cones of *Jordan Algebras and the Positive Cone*.
+The same description applies to the split forms, with the orthogonal group replaced by the indefinite orthogonal group of the same signature; the structure group is then the conformal orthogonal group of the split norm form, and the spin factor is the coordinate algebra of the corresponding quadric. The structure group acts transitively on the interior of the cone of squares, and this is the link between the spin factors of this article and the symmetric cones.
 
 ## The Spin Group and the Vector Representation
 
@@ -254,7 +254,7 @@ $$
 
 **Theorem.** Let $q$ be definite and of rank at least $2$. The vector representation is a surjective group homomorphism onto $SO(V,q)$ with kernel $\{\pm 1\}$, so $\operatorname{Spin}(V,q)$ is the double cover of $SO(V,q)$; it preserves the quadratic form, and its image is the identity component of $O(V,q)$. For an indefinite form the same statement holds with $SO(V,q)$ replaced by its identity component.
 
-The construction and the classification of the groups $\operatorname{Spin}_{p,q}$ are in *Clifford Algebras in Finite Dimensions*.
+The construction and the classification of the groups $\operatorname{Spin}_{p,q}$ are.
 
 ### Action on the Spin Factor
 
@@ -304,6 +304,10 @@ which is an injective Jordan homomorphism precisely because of the Clifford rela
 | $\bar s$ | Reversal (transpose) anti-automorphism of $\mathrm{Cl}(V,q)$, fixing $V$ pointwise |
 | $\rho(s)(v) = s v s^{-1}$ | Vector representation |
 | $H_2(D)$ | Hermitian $2\times2$ matrices, $\cong JSpin_{1+\dim_{\mathbb{R}}D}$ |
+
+
+
+
 
 ## Further Reading
 

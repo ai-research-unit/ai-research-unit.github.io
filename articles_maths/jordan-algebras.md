@@ -4,7 +4,7 @@
 
 This article introduces **Jordan algebras**: commutative algebras over a commutative ring whose product satisfies a single identity in place of associativity, the **Jordan identity**. The subject is developed here as pure algebra, and no physical interpretation is used anywhere. The treatment is introductory.
 
-The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The corpus's broad sense of "algebra" — a module with a bilinear product, not assumed associative, commutative or unital — is the setting, as in *Algebras*, and the Jordan product fails associativity for the same structural reason that the Lie bracket does, so *Lie Algebras* is the nearest general precedent. Here the product is commutative; the compensating identity is the Jordan identity rather than the Jacobi identity.
+The base structure is a **commutative ring** $R$ with identity $1 \neq 0$. The corpus's broad sense of "algebra" — a module with a bilinear product, not assumed associative, commutative or unital — is the setting, as in *Algebras*, and the Jordan product fails associativity for the same structural reason that the Lie bracket does, sois the nearest general precedent. Here the product is commutative; the compensating identity is the Jordan identity rather than the Jacobi identity.
 
 The product itself has a **symmetric** origin. If $A$ is an associative algebra with product $(x, y) \mapsto xy$, then the symmetrised product
 
@@ -20,7 +20,7 @@ $$
 
 reconstructs $x \circ y$ from squares. The square $x \mapsto x^2$ is the degree-two part of the product, and the symmetrisation is exactly the passage from an ordered product to the unordered one, in the sense of *Symmetric Powers*. The Jordan identity is what survives of associativity after the order of the factors is forgotten.
 
-The article defines Jordan algebras and their symmetrised examples, proves the Jordan identity for $A^+$, establishes power associativity, constructs the trace form and proves its invariance under derivations, describes the Peirce decomposition attached to an idempotent, and states the classification of the formally real finite-dimensional algebras. The companion article *Special and Exceptional Jordan Algebras* treats the matrix algebras $H_n(D)$, the exceptional Albert algebra, and the special/exceptional dichotomy; *Spin Factors and the Clifford Envelope* treats the degree-two case.
+The article defines Jordan algebras and their symmetrised examples, proves the Jordan identity for $A^+$, establishes power associativity, constructs the trace form and proves its invariance under derivations, describes the Peirce decomposition attached to an idempotent, and states the classification of the formally real finite-dimensional algebras. The companion articletreats the matrix algebras $H_n(D)$, the exceptional Albert algebra, and the special/exceptional dichotomy, treats the degree-two case.
 
 ## The Jordan Product
 
@@ -132,15 +132,15 @@ $$
 
 The two expressions are the same four monomials in a different order, so the identity holds over every commutative ring. With the halved product $x \circ y = \tfrac12(xy + yx)$ every coefficient is divided by $2$ and the same cancellation occurs, so the identity holds there too. $\square$
 
-The construction $A \mapsto A^+$ is functorial: an algebra homomorphism $f : A \to B$ is a Jordan homomorphism $A^+ \to B^+$, because $f(xy + yx) = f(x)f(y) + f(y)f(x)$. A Jordan algebra isomorphic to a subalgebra of some $A^+$ is called **special**; one that is not is **exceptional**. The dichotomy is the subject of *Special and Exceptional Jordan Algebras*.
+The construction $A \mapsto A^+$ is functorial: an algebra homomorphism $f: A \to B$ is a Jordan homomorphism $A^+ \to B^+$, because $f(xy + yx) = f(x)f(y) + f(y)f(x)$. A Jordan algebra isomorphic to a subalgebra of some $A^+$ is called **special**; one that is not is **exceptional**. The dichotomy is not covered here.
 
 **Example.** $R^+$ for $R$ commutative is just $R$ with its multiplication, since the product is already commutative; this shows that every commutative associative algebra is a special Jordan algebra.
 
-**Example.** For $A = M_n(R)$ the symmetrised algebra $M_n(R)^+$ is a Jordan algebra in which the product of matrices is the anticommutator. Its symmetric subalgebra $H_n(R)$, defined in *Special and Exceptional Jordan Algebras*, is a Jordan subalgebra for the same reason.
+**Example.** For $A = M_n(R)$ the symmetrised algebra $M_n(R)^+$ is a Jordan algebra in which the product of matrices is the anticommutator. Its symmetric subalgebra $H_n(R)$, defined, is a Jordan subalgebra for the same reason.
 
 ### Hermitian Matrices
 
-Let $D$ be a composition algebra over $R$ with a conjugation, for instance $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$, and let $H_n(D)$ denote the $n \times n$ matrices that are equal to their conjugate transpose, with the symmetrised product. Then $H_n(D)$ is a Jordan algebra, a subalgebra of $M_n(D)^+$ for associative $D$. For $n = 1$ this is the base field with its multiplication. For $n = 2$ and $D = \mathbb{R}$ it is the three-dimensional algebra spanned by orthogonal idempotents $u_+, u_-$ with $u_+ + u_- = 1$ together with an element $w$ satisfying $w \circ w = 1$ and $u_\pm \circ w = \tfrac12 w$; this is the smallest spin factor. These algebras, and the non-associative case $D = \mathbb{O}$, are treated in *Special and Exceptional Jordan Algebras*; here they serve as the main source of examples.
+Let $D$ be a composition algebra over $R$ with a conjugation, for instance $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$, and let $H_n(D)$ denote the $n \times n$ matrices that are equal to their conjugate transpose, with the symmetrised product. Then $H_n(D)$ is a Jordan algebra, a subalgebra of $M_n(D)^+$ for associative $D$. For $n = 1$ this is the base field with its multiplication. For $n = 2$ and $D = \mathbb{R}$ it is the three-dimensional algebra spanned by orthogonal idempotents $u_+, u_-$ with $u_+ + u_- = 1$ together with an element $w$ satisfying $w \circ w = 1$ and $u_\pm \circ w = \tfrac12 w$; this is the smallest spin factor. These algebras, and the non-associative case $D = \mathbb{O}$, are treated; here they serve as the main source of examples.
 
 ### Spin Factors
 
@@ -150,11 +150,11 @@ $$
 (\alpha, v) \circ (\beta, w) = \bigl(\alpha\beta + B(v, w),\ \alpha w + \beta v\bigr).
 $$
 
-Then $JSpin(V)$ is a unital Jordan algebra of **degree two**: every element satisfies the quadratic equation $x^2 - 2\alpha x + (\alpha^2 - q(v))1 = 0$ over its powers, and the idempotents other than $0$ and $1$ are exactly the elements $\tfrac12(1 \pm u)$ with $q(u) = 1$. For $V = R^n$ with the standard form write $JSpin_n$. The Clifford algebra of the form supplies an associative algebra in which $JSpin(V)$ embeds, and the construction of that enveloping algebra is the subject of *Spin Factors and the Clifford Envelope*.
+Then $JSpin(V)$ is a unital Jordan algebra of **degree two**: every element satisfies the quadratic equation $x^2 - 2\alpha x + (\alpha^2 - q(v))1 = 0$ over its powers, and the idempotents other than $0$ and $1$ are exactly the elements $\tfrac12(1 \pm u)$ with $q(u) = 1$. For $V = R^n$ with the standard form write $JSpin_n$. The Clifford algebra of the form supplies an associative algebra in which $JSpin(V)$ embeds, and the construction of that enveloping algebra is not covered here.
 
 ### The Albert Algebra
 
-If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the **Albert algebra**, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are in *Special and Exceptional Jordan Algebras*. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.
+If $\mathbb{O}$ denotes the octonions, the algebra $H_3(\mathbb{O})$ of Hermitian $3 \times 3$ matrices over $\mathbb{O}$ with the symmetrised product is a Jordan algebra of dimension $27$. It is the **Albert algebra**, and it is exceptional: it does not embed into any $A^+$ with $A$ associative. It is the smallest exceptional Jordan algebra and the only one among the finite-dimensional formally real algebras; the details, including the verification that the symmetrised product satisfies the Jordan identity, are. The naive symmetrisation of matrix multiplication works only because the diagonal entries are required to be real, that is, fixed by the octonion conjugation; without that restriction the symmetrised product fails the Jordan identity.
 
 ## The Trace Form and Derivations
 
@@ -218,7 +218,7 @@ $$
 [\delta,\eta](x\circ y) = [\delta,\eta]x \circ y + x \circ [\delta,\eta]y .
 $$
 
-Thus $\operatorname{Der}(J)$ is a **Lie algebra** under the commutator, in the sense of *Lie Algebras*. It is the infinitesimal automorphism algebra of $J$. The **inner derivations** are the elements of the span of the operators $[L_x, L_y]$; that these are derivations is a consequence of the linearised identity of the proposition above, and they form an ideal of $\operatorname{Der}(J)$.
+Thus $\operatorname{Der}(J)$ is a **Lie algebra** under the commutator, in the sense. It is the infinitesimal automorphism algebra of $J$. The **inner derivations** are the elements of the span of the operators $[L_x, L_y]$; that these are derivations is a consequence of the linearised identity of the proposition above, and they form an ideal of $\operatorname{Der}(J)$.
 
 ## The Peirce Decomposition
 
@@ -262,7 +262,7 @@ $$
 J_1 \circ J_1 \subseteq J_1, \quad J_0 \circ J_0 \subseteq J_0, \quad J_1 \circ J_0 = 0, \quad J_1 \circ J_{1/2} \subseteq J_{1/2}, \quad J_0 \circ J_{1/2} \subseteq J_{1/2}, \quad J_{1/2} \circ J_{1/2} \subseteq J_1 \oplus J_0 .
 $$
 
-For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the hyperplane of $V$ orthogonal to the vector part of $e$; this is the form in which the spin factors and the Clifford envelope are analysed in *Spin Factors and the Clifford Envelope*.
+For a Jordan algebra of degree two, such as a spin factor, the Peirce decomposition with respect to a rank-one idempotent $e$ splits the algebra into the two lines $Re$ and $R(1-e)$ together with the hyperplane of $V$ orthogonal to the vector part of $e$; this is the form in which the spin factors and the Clifford envelope are analysed.
 
 **Example.** In $A^+$ for $A = M_n(R)$ and $e = \operatorname{diag}(1, \ldots, 1, 0, \ldots, 0)$ with $r$ ones, the Peirce spaces are the block-diagonal parts $J_1 = A_{11}$, $J_0 = A_{22}$ and the two off-diagonal blocks, which together make up $J_{1/2}$.
 
@@ -276,7 +276,7 @@ $$
 x_1^2 + x_2^2 + \cdots + x_k^2 = 0 \quad \Longrightarrow \quad x_1 = x_2 = \cdots = x_k = 0 .
 $$
 
-This is the algebraic condition that makes the set of sums of squares a pointed convex cone, free of lines through the origin. In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers: $x^2 = 0$ forces $x = 0$, and the set of sums of squares is a pointed cone. The associated **positive cone** and its properties are the subject of *Jordan Algebras and the Positive Cone*. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$, and it forces the trace form to be positive definite when the algebra is finite-dimensional and unital.
+This is the algebraic condition that makes the set of sums of squares a pointed convex cone, free of lines through the orig. In a formally real Jordan algebra a sum of squares vanishes only if every term does, so the squares behave like nonnegative real numbers: $x^2 = 0$ forces $x = 0$, and the set of sums of squares is a pointed cone. The associated **positive cone** and its properties are not covered here. Formal reality rules out nilpotent elements, since $x^n = 0$ with $n \geq 2$ and $x^{n-1} \neq 0$ would give $(x^{n-1})^2 = 0$, and it forces the trace form to be positive definite when the algebra is finite-dimensional and unital.
 
 ### The Classification
 
@@ -289,13 +289,13 @@ This is the algebraic condition that makes the set of sums of squares a pointed 
 5. the quaternionic Hermitian matrix algebras $H_n(\mathbb{H})$, $n \geq 3$;
 6. the exceptional Albert algebra $H_3(\mathbb{O})$.
 
-The list separates the spin factors from the matrix family because the overlap is genuine: $H_2(D) \cong JSpin_{1+\dim_{\mathbb{R}}D}$ for $D = \mathbb{R}, \mathbb{C}, \mathbb{H}$, so the rank-two matrix algebras are spin factors (see *Spin Factors and the Clifford Envelope*), while $H_n(\mathbb{R})$ for $n \geq 3$ is a genuinely different algebra that embeds in no spin factor. The classification is quoted here as standard; the individual families, the verification that they are Jordan algebras, and the proof that the Albert algebra is exceptional are the content of *Special and Exceptional Jordan Algebras* and *Spin Factors and the Clifford Envelope*.
+The list separates the spin factors from the matrix family because the overlap is genuine: $H_2(D) \cong JSpin_{1+\dim_{\mathbb{R}}D}$ for $D = \mathbb{R}, \mathbb{C}, \mathbb{H}$, so the rank-two matrix algebras are spin factors , while $H_n(\mathbb{R})$ for $n \geq 3$ is a genuinely different algebra that embeds in no spin factor. The classification is quoted here as standard; the individual families, the verification that they are Jordan algebras, and the proof that the Albert algebra is exceptional are the content .
 
 **Remark.** Over a general field the classification is much more delicate and was completed only with Zel'manov's theorem on the nilpotency of the radical; the present article and the two that follow its theme restrict to the classical and formally real setting, where the classification is the one above.
 
 ## Summary
 
-A **Jordan algebra** is a commutative $R$-algebra $(J, \circ)$ satisfying the Jordan identity $x^2 \circ (y \circ x) = (x^2 \circ y) \circ x$, equivalently $[L_x, L_{x^2}] = 0$. The symmetrised product $x \circ y = xy + yx$ of an associative algebra $A$ makes $A^+$ a Jordan algebra, and the proof reduces to the equality of the two expansions $2(x^2yx + x^3y + yx^3 + xyx^2)$ and $2(x^2yx + yx^3 + x^3y + xyx^2)$. Every Jordan algebra is power associative, so each element generates a commutative associative subalgebra. The trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ is symmetric, and every derivation is skew for it. An idempotent $e$ produces the Peirce decomposition $J = J_1(e)\oplus J_{1/2}(e)\oplus J_0(e)$, because $L_e$ satisfies $2L_e^3 - 3L_e^2 + L_e = 0$ and has spectrum in $\{0, 1, \tfrac12\}$. Over $\mathbb{R}$, the formally real finite-dimensional Jordan algebras are the direct sums of $\mathbb{R} = JSpin_0$, the spin factors $JSpin_n$ with $n \geq 2$, the Hermitian matrix algebras $H_n$ over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, and the exceptional Albert algebra $H_3(\mathbb{O})$, the last being the subject of *Special and Exceptional Jordan Algebras*.
+A **Jordan algebra** is a commutative $R$-algebra $(J, \circ)$ satisfying the Jordan identity $x^2 \circ (y \circ x) = (x^2 \circ y) \circ x$, equivalently $[L_x, L_{x^2}] = 0$. The symmetrised product $x \circ y = xy + yx$ of an associative algebra $A$ makes $A^+$ a Jordan algebra, and the proof reduces to the equality of the two expansions $2(x^2yx + x^3y + yx^3 + xyx^2)$ and $2(x^2yx + yx^3 + x^3y + xyx^2)$. Every Jordan algebra is power associative, so each element generates a commutative associative subalgebra. The trace form $T(x,y) = \operatorname{tr}(L_{x\circ y})$ is symmetric, and every derivation is skew for it. An idempotent $e$ produces the Peirce decomposition $J = J_1(e)\oplus J_{1/2}(e)\oplus J_0(e)$, because $L_e$ satisfies $2L_e^3 - 3L_e^2 + L_e = 0$ and has spectrum in $\{0, 1, \tfrac12\}$. Over $\mathbb{R}$, the formally real finite-dimensional Jordan algebras are the direct sums of $\mathbb{R} = JSpin_0$, the spin factors $JSpin_n$ with $n \geq 2$, the Hermitian matrix algebras $H_n$ over $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with $n \geq 3$, and the exceptional Albert algebra $H_3(\mathbb{O})$.
 
 ## Summary of Notation
 
@@ -320,6 +320,12 @@ A **Jordan algebra** is a commutative $R$-algebra $(J, \circ)$ satisfying the Jo
 | $e$ | Idempotent, $e^2 = e$ |
 | $J_\lambda(e)$ | Peirce spaces for $\lambda \in \{0, \tfrac12, 1\}$ |
 | Formally real | $\sum x_i^2 = 0 \Rightarrow x_i = 0$ |
+
+
+
+
+
+
 
 ## Further Reading
 

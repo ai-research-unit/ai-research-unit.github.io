@@ -9,7 +9,7 @@ The theory gives the structure theorem for amalgamated free products and HNN ext
 
 The article develops graphs of groups and their fundamental groups, the Bass–Serre tree and the structure theorem, the normal form theorems, the subgroup theory, the fixed-point theorems and Serre's property (FA), the ends and the Stallings theorem, the accessibility theorem of Dunwoody, and the arithmetic examples. The input from above is the theory of graphs, trees, ends, growth and quasi-isometry of *Geometric Group Theory*, and the hyperbolic boundary of *Hyperbolic Groups*; the input from Part I is the theory of free groups, free products, presentations, the Kurosh subgroup theorem and group cohomology, all of *Groups* and *Combinatorial Group Theory*. The **graph of groups** and its **fundamental group** are defined in line, since no earlier article introduces them, and the tree is the topological space of *Metric, Uniform and Complete Spaces* with the graph structure of *Geometric Group Theory*.
 
-The boundary with Part III is the one fixed for this block. What is developed here is the combinatorial and topological content: graphs of groups, the fundamental group, the tree, the structure theorem, normal forms, subgroups, fixed points, ends and the accessibility theory. What is deferred is the **analytic** theory: the measure-theoretic study of the boundary of the tree, the harmonic analysis and the random walks on trees, the spectral theory of the Laplacian of a graph of groups, the Patterson–Sullivan type measures on the ends, and the ergodic theory of the action, all of which belong to *Analysis on Groups*, *Ergodic Theory of Group Actions* and the harmonic analysis of Part III, where the measure and the limit are available. The **Bruhat–Tits tree** of a reductive group over a local field, which is the arithmetic source of the examples, is the subject of *Bruhat–Tits Theory*, and the buildings that generalise the tree are those of *Buildings and Tits Systems*, both written in parallel with this article. No physics is invoked.
+The boundary with Part III is the one fixed for this block. What is developed here is the combinatorial and topological content: graphs of groups, the fundamental group, the tree, the structure theorem, normal forms, subgroups, fixed points, ends and the accessibility theory. What is deferred is the **analytic** theory: the measure-theoretic study of the boundary of the tree, the harmonic analysis and the random walks on trees, the spectral theory of the Laplacian of a graph of groups, the Patterson–Sullivan type measures on the ends, and the ergodic theory of the action, all of which belong to *Analysis on Groups* and the harmonic analysis of Part III, where the measure and the limit are available. The **Bruhat–Tits tree** of a reductive group over a local field, which is the arithmetic source of the examples, is not covered here, and so are the buildings that generalise the tree. No physics is invoked.
 
 ## Graphs of Groups
 
@@ -167,7 +167,7 @@ $$
 SL_2(\mathbb{Z}[1/p]) \cong SL_2(\mathbb{Z}) *_{\Gamma_0(p)} SL_2(\mathbb{Z}) ,
 $$
 
-the two vertex groups being the two copies of $SL_2(\mathbb{Z})$ distinguished by the two embeddings at the two ends of the Bruhat–Tits tree of $SL_2(\mathbb{Q}_p)$, and the edge group being the congruence subgroup stabilising an edge. This is the arithmetic example on which the analysis of the groups $SL_2(\mathcal{O}_S)$ rests; the tree is the Bruhat–Tits tree of *Bruhat–Tits Theory*, written in parallel with this article, and the amalgam is the explicit form in which the $S$-arithmetic lattice of *Arithmetic Groups* is presented.
+the two vertex groups being the two copies of $SL_2(\mathbb{Z})$ distinguished by the two embeddings at the two ends of the Bruhat–Tits tree of $SL_2(\mathbb{Q}_p)$, and the edge group being the congruence subgroup stabilising an edge. This is the arithmetic example on which the analysis of the groups $SL_2(\mathcal{O}_S)$ rests; the tree is the Bruhat–Tits tree, and the amalgam is the explicit form in which the $S$-arithmetic lattice of *Arithmetic Groups* is presented.
 
 ### The Euler Characteristic and the Hierarchy
 
@@ -189,10 +189,10 @@ $$
 
 The theory of this article is combinatorial and topological; the analysis of the tree and of its boundary is Part III.
 
-- The **measure-theoretic boundary** of the Bass–Serre tree, the **harmonic analysis** of the action of the fundamental group, the **random walks** on the tree and the **Poisson boundary** are *Analysis on Groups* and *Ergodic Theory of Group Actions* in Part III.
+- The **measure-theoretic boundary** of the Bass–Serre tree, the **harmonic analysis** of the action of the fundamental group, the **random walks** on the tree and the **Poisson boundary** are *Analysis on Groups* .
 - The **spectral theory** of the graph Laplacian of a quotient graph of groups, the **zeta functions** of a graph and the **prime geodesic** counting for a tree are Part III.
-- The **measured group theory** of the splittings, the **orbit equivalence** of the actions and the **cost** are *Ergodic Theory of Group Actions* in Part III.
-- The **Bruhat–Tits tree** and the **buildings** are *Bruhat–Tits Theory* and *Buildings and Tits Systems*, written in parallel with this article; the tree is the rank-one case of the building and the dictionary of this article is the genus-one case of the building dictionary.
+- The **measured group theory** of the splittings, the **orbit equivalence** of the actions and the **cost** are.
+- The **Bruhat–Tits tree** and the **buildings** areand with this article; the tree is the rank-one case of the building and the dictionary of this article is the genus-one case of the building dictionary.
 - What is *not* deferred: graphs of groups and their fundamental groups; the Bass–Serre tree and the structure theorem; the normal form theorems and Britton's lemma; the subgroup theorem and the Kurosh theorem as consequences; the fixed-point criteria and property (FA); the finiteness and word-problem statements; the ends and the Stallings and Dunwoody theorems; and the arithmetic examples with the Euler characteristic formula.
 
 ## Summary
@@ -224,6 +224,12 @@ A finitely generated group has infinitely many ends exactly when it splits nontr
 | $\Gamma_0(p)$ | Congruence subgroup; edge group of the $SL_2(\mathbb{Z}[1/p])$ amalgam |
 | Minimal subtree $T_H$ | For $H\leq G$, the smallest $H$-invariant subtree |
 | Terminal splitting (Dunwoody) | Canonical decomposition over finite subgroups |
+
+
+
+
+
+
 
 ## Further Reading
 

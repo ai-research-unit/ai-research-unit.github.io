@@ -5,7 +5,7 @@
 
 Hyperbolic geometry is the geometry of constant negative curvature. It is the third of the model geometries of *Curvature and Geodesics*, the one in which the parallel postulate fails in the direction of too many parallels: through a point outside a line there pass infinitely many lines not meeting it, the angles of a triangle sum to less than two right angles, and two geodesics may diverge from one another at an exponential rate. It is the geometry of the algebra $\mathbb{D}$ of split complex numbers with $\omega^2 = +1$, whose hyperbolic rotations are the Lorentz boosts, the $\omega^2 = +1$ case of *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
 
-Hyperbolic geometry is the richest of the three model geometries and the one with the deepest connection to the rest of mathematics. Its isometry group in dimension two is the projective linear group $PSL(2, \mathbb{R})$, so its geometry is the geometry of Möbius transformations and of the Riemann sphere with a real boundary; its discrete subgroups are the Fuchsian and Kleinian groups, whose quotient surfaces carry the moduli spaces of complex structures. It is for this reason that *Teichmüller Theory* and *Mapping Class Groups*, written in parallel, cite this article: the hyperbolic structure on a surface is the geometric realisation of its complex structure, and the deformation theory of the one is the deformation theory of the other.
+Hyperbolic geometry is the richest of the three model geometries and the one with the deepest connection to the rest of mathematics. Its isometry group in dimension two is the projective linear group $PSL(2, \mathbb{R})$, so its geometry is the geometry of Möbius transformations and of the Riemann sphere with a real boundary; its discrete subgroups are the Fuchsian and Kleinian groups, whose quotient surfaces carry the moduli spaces of complex structures. It is for this reason that the hyperbolic structure on a surface is the geometric realisation of its complex structure, and the deformation theory of the one is the deformation theory of the other.
 
 This article develops hyperbolic geometry from its models. It gives the upper half-plane, the Poincaré disk, the hyperboloid and the Beltrami–Klein models, with the isometries between them; computes the geodesics and the distance in each; proves the trigonometric laws, which differ from the spherical and Euclidean ones only in the signs and the hyperbolic functions; relates the angle sum to the area through the hyperbolic Gauss–Bonnet theorem; treats the angle of parallelism and the ideal points at infinity; identifies the isometry group with a projective linear group and classifies its elements; and introduces the discrete groups and the space forms, with the Mostow rigidity theorem and the boundary to the Teichmüller theory of the sibling articles.
 
@@ -135,7 +135,7 @@ $$
 \int_D \frac{dx\,dy}{y^2} = \int_{-1}^{1}\left(\int_{\sqrt{1-x^2}}^{\infty}\frac{dy}{y^2}\right) dx = \int_{-1}^{1}\frac{dx}{\sqrt{1-x^2}} = \bigl[\arcsin x\bigr]_{-1}^{1} = \pi . \qquad \square
 $$
 
-The computation is the elementary integral of the $2$-form $y^{-2}dx\wedge dy$ over a region of $\mathbb{H}^2$, which is the top-form integral of *Differential Forms and Stokes' Theorem* read on an oriented surface patch. The agreement with the angle-sum formula below, in which all three angles of an ideal triangle are zero, is the two-dimensional Gauss–Bonnet theorem.
+The computation is the elementary integral of the $2$-form $y^{-2}dx\wedge dy$ over a region of $\mathbb{H}^2$, which is the top-form integral read on an oriented surface patch. The agreement with the angle-sum formula below, in which all three angles of an ideal triangle are zero, is the two-dimensional Gauss–Bonnet theorem.
 
 ### Hyperbolic Trigonometry
 
@@ -223,7 +223,7 @@ $$
 
 **Proof sketch.** The isomorphism of fundamental groups is realised by a boundary map of the universal covers, equivariant for the two actions by the Mostow extension; the boundary map is conformal, hence Möbius, and therefore extends to an isometry. $\square$
 
-**Remark.** Mostow rigidity fails in dimension two, where the deformation space of a hyperbolic surface is the Teichmüller space of positive dimension. The two-dimensional theory — the Teichmüller space, the mapping class group and its action, the moduli of complex structures, and the Bers and Fenchel–Nielsen coordinates — is the subject of *Teichmüller Theory* and *Mapping Class Groups*, written in parallel, and those articles cite the hyperbolic geometry of this one for the metric, the geodesics, the isometry group and the space-form theorem. What belongs to this article is the geometry and the isometry group; what belongs to the sibling is the deformation theory of the discrete subgroups and of the quotient surfaces.
+**Remark.** Mostow rigidity fails in dimension two, where the deformation space of a hyperbolic surface is the Teichmüller space of positive dimension. The two-dimensional theory — the Teichmüller space, the mapping class group and its action, the moduli of complex structures, and the Bers and Fenchel–Nielsen coordinates — is not developed here. What belongs to this article is the geometry and the isometry group; the deformation theory of the discrete subgroups and of the quotient surfaces is not.
 
 ## Hyperbolic Space Forms and the Trichotomy
 
@@ -233,7 +233,7 @@ $$
 
 **Corollary (surfaces).** Every compact orientable surface of genus $g \geq 2$ admits a hyperbolic structure; the area is $-2\pi\chi(\Sigma) = 4\pi(g-1)$ and the structure is not unique — the Teichmüller space of a genus-$g$ surface has real dimension $6g - 6$.
 
-**Corollary (the trichotomy).** The complete connected constant-curvature geometries are exactly the spherical case of quotients of $S^n$ (finite fundamental group), the Euclidean case of quotients of $\mathbb{R}^n$ (virtually abelian fundamental group, by the Bieberbach theorems), and the hyperbolic case of quotients of $\mathbb{H}^n$ (with fundamental group containing a free group of rank two whenever the quotient is non-compact of finite volume). The three differ by the sign of the curvature, by the parallel postulate, and by the growth of the fundamental group; the comparison is the subject of *Non-Euclidean Geometry*.
+**Corollary (the trichotomy).** The complete connected constant-curvature geometries are exactly the spherical case of quotients of $S^n$ (finite fundamental group), the Euclidean case of quotients of $\mathbb{R}^n$ (virtually abelian fundamental group, by the Bieberbach theorems), and the hyperbolic case of quotients of $\mathbb{H}^n$ (with fundamental group containing a free group of rank two whenever the quotient is non-compact of finite volume). The three differ by the sign of the curvature, by the parallel postulate, and by the growth of the fundamental group; the comparison is not covered here.
 
 ## Summary
 
@@ -265,6 +265,10 @@ The orientation-preserving isometry group is $PSL(2, \mathbb{R})$ in dimension t
 | $\mathbb{H}^n/\Gamma$ | Complete hyperbolic manifold; $\Gamma \cong \pi_1$ |
 | Mostow rigidity | $\dim \geq 3$, finite volume: homotopy equivalent implies isometric |
 | $\mathcal{H}^n = H^{1,n}$ | Hyperboloid model in $\mathbb{R}^{1,n}$ |
+
+
+
+
 
 ## Further Reading
 

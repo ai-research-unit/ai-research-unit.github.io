@@ -7,7 +7,7 @@ A **topological dynamical system** is a topological space $X$ together with a co
 
 The article begins with the orbit, the $\omega$-limit and $\alpha$-limit sets and the invariant subsets, with the elementary fact that the limit sets of a continuous map on a compact space are compact, invariant and nonempty. It then develops recurrence: periodic points, recurrent and almost periodic points, the non-wandering set, and the **Birkhoff recurrence theorem**, that every homeomorphism of a compact metric space has a recurrent point; the measure-theoretic **Poincaré recurrence theorem** is quoted from *Ergodic Theory*. Minimality follows: the existence of minimal sets by compactness, the equivalence of minimality with the density of every orbit, and the examples of the rotations of the circle and of the torus. Topological transitivity and its relation to dense orbits, the mixing conditions, and the structure theory of minimal flows — equicontinuity, distality, proximality and the **enveloping semigroup** of Ellis — are the next blocks, with the theorem of Auslander and Ellis that a minimal equicontinuous flow is a translation flow on a compact homogeneous space. The article then defines **topological entropy** in the two equivalent forms, of Adler–Konheim–McAndrew by open covers and of Bowen by separated sets, proves its elementary properties and computes it for the rotation and the shift, and it closes with the chain recurrent set and Conley's decomposition.
 
-The topological spaces, the compactness, the metric spaces, the Baire category theorem and the homeomorphism group are those of *Topological Spaces*, *Metric, Uniform and Complete Spaces* and *Topological Groups*; the compact-open topology on the spaces of maps is the standard one and is used only in passing. The measure-theoretic recurrence and ergodicity are those of *Ergodic Theory*; the invariant measures, the Birkhoff and von Neumann ergodic theorems and the variational principle are cited there and are not developed here. Symbolic systems, smooth systems, hyperbolic systems, bifurcations and the random systems are the subject of *Symbolic Dynamics*, *Smooth Dynamical Systems*, *Hyperbolic Dynamics and Anosov Systems*, *Bifurcation Theory* and *Random Dynamical Systems*, and the arithmetic and geodesic examples are the subject of *Dynamics and Number Theory* and *The Geodesic Flow*.
+The topological spaces, the compactness, the metric spaces, the Baire category theorem and the homeomorphism group are those of *Topological Spaces*, *Metric, Uniform and Complete Spaces* and *Topological Groups*; the compact-open topology on the spaces of maps is the standard one and is used only in passing. The measure-theoretic recurrence and ergodicity are those of *Ergodic Theory*; the invariant measures, the Birkhoff and von Neumann ergodic theorems and the variational principle are cited there and are not developed here. Symbolic systems, smooth systems, hyperbolic systems, bifurcations.
 
 No physics is invoked.
 
@@ -31,7 +31,7 @@ For a flow $\varphi:\mathbb{R}\times X\to X$, that is, a continuous action of th
 
 **Example (the elementary systems).** (i) For the rotation $R_\theta(z)=e^{2\pi i\theta}z$ of the circle $S^1$, the orbit of $z$ is dense if $\theta$ is irrational, and finite if $\theta$ is rational; in the irrational case $\omega(z)=X$ for every $z$, and in the rational case $\omega(z)$ is the cycle through $z$.
 
-(ii) For the shift $\sigma$ on the sequence space of *Symbolic Dynamics*, a point is recurrent exactly when each of its blocks recurs infinitely often in the appropriate direction; the periodic points and the points of the minimal subshifts are recurrent, an eventually constant sequence is not, its orbit converging to the fixed point $0^\infty$, and the limit sets are the closed invariant subsets of the shift.
+(ii) For the shift $\sigma$ on the sequence space, a point is recurrent exactly when each of its blocks recurs infinitely often in the appropriate direction; the periodic points and the points of the minimal subshifts are recurrent, an eventually constant sequence is not, its orbit converging to the fixed point $0^\infty$, and the limit sets are the closed invariant subsets of the shift.
 
 (iii) For the map $x\mapsto2x\bmod1$ of the circle, $\omega(x)=X$ for every $x$ that is not eventually periodic, because the binary expansion of $x$ produces an orbit hitting every interval; the dyadic rationals are eventually fixed at the origin.
 
@@ -77,7 +77,7 @@ For a homeomorphism the same statements hold with the full orbit $\{T^nx:n \in \
 
 (ii) On the torus $\mathbb{T}^n$ the translation by a vector $\alpha$ is minimal if and only if the coordinates of $\alpha$ together with $1$ are linearly independent over $\mathbb{Q}$; the same argument with the Kronecker theorem in place of the equidistribution of a single irrational rotation gives the result, and it is the **Kronecker flow**.
 
-(iii) The two-sided shift on a finite alphabet is not minimal, since a constant sequence is a fixed point; the minimal subshifts are the strictly ergodic ones, and their theory belongs to *Symbolic Dynamics*.
+(iii) The two-sided shift on a finite alphabet is not minimal, since a constant sequence is a fixed point; the minimal subshifts are the strictly ergodic ones, and their theory lies outside this article.
 
 **Remark.** A minimal translation of a compact abelian group carries a unique invariant probability measure, the Haar measure; a general minimal system need not be uniquely ergodic, and the uniqueness and ergodicity of the invariant measure belong to *Ergodic Theory*.
 
@@ -95,7 +95,7 @@ For a homeomorphism the same statements hold with the full orbit $\{T^nx:n \in \
 
 (ii) The doubling map $x\mapsto2x\bmod1$ is transitive and has dense periodic points; it is not minimal, and its non-wandering set is the whole circle.
 
-(iii) The full shift on $d$ symbols is transitive when $d \ge2$ and is mixing; its subshifts of finite type are the model examples, developed in *Symbolic Dynamics*.
+(iii) The full shift on $d$ symbols is transitive when $d \ge2$ and is mixing; its subshifts of finite type are the model examples, developed.
 
 ### The Structure of Minimal Flows
 
@@ -153,7 +153,7 @@ and the two limits agree with the definition by covers.
 
 **Example (rotation and shift).** (i) If $T$ is an isometry of a compact metric space, then $h_{\mathrm{top}}(T)=0$: a cover by balls of radius $\epsilon/2$ is carried to covers by balls of the same radius, and $H(\mathcal U^n)\le H(\mathcal U)$, so the entropy vanishes. In particular every rotation of the circle and every translation of the torus has entropy zero.
 
-(ii) The full shift on $d$ symbols has $h_{\mathrm{top}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong to *Symbolic Dynamics*.
+(ii) The full shift on $d$ symbols has $h_{\mathrm{top}}(\sigma)=\log d$; the counting of the $n$-blocks gives $d^n$ and the logarithm divided by $n$ tends to $\log d$. The entropy of a subshift is computed by the growth of its language, and the entropy of a subshift of finite type is the logarithm of the spectral radius of its transition matrix; these computations belong.
 
 (iii) The doubling map $x\mapsto2x\bmod1$ has entropy $\log2$, by the conjugacy with the full two-shift modulo the countable set of dyadic rationals; the entropy is finite and positive, and it is the topological measure of the exponential growth of the number of orbits distinguishable at resolution $\epsilon$.
 
@@ -173,7 +173,7 @@ the supremum being over the $T$-invariant Borel probability measures and $h_\mu$
 
 *Proof (sketch).* The chain recurrent set is closed because the property of being the base of an $\epsilon$-chain is open in $\epsilon$ and the points can be perturbed; it is invariant because a chain can be shifted by one step; the decomposition into components is the decomposition of an equivalence relation into classes, and the compactness of the classes follows from the compactness of $X$ and the uniform continuity of $T$. Conley's theorem that the complement is exhausted by the basins of attractors is proved by a Lyapunov function that decreases along orbits off the chain recurrent set. $\square$
 
-**Example.** For the irrational rotation the chain recurrent set is the whole circle and the system is chain transitive; for a gradient flow the chain recurrent set consists of the rest points, each a chain transitive component; for a Morse–Smale flow it consists of the rest points and the periodic orbits, and the basins are the stable and unstable manifolds. The attractors, their basins and the Lyapunov functions are the tools by which the theory of *Smooth Dynamical Systems* and *Hyperbolic Dynamics and Anosov Systems* describes the asymptotic behaviour of a flow.
+**Example.** For the irrational rotation the chain recurrent set is the whole circle and the system is chain transitive; for a gradient flow the chain recurrent set consists of the rest points, each a chain transitive component; for a Morse–Smale flow it consists of the rest points and the periodic orbits, and the basins are the stable and unstable manifolds. The attractors, their basins and the Lyapunov functions are the tools by which the theory, describes the asymptotic behaviour of a flow.
 
 ## Summary
 
@@ -200,6 +200,12 @@ Topological transitivity — $T^n(U)\cap V\neq\varnothing$ for all nonempty open
 | $h_\mu(T)$ | measure-theoretic entropy |
 | $R_\theta$ | rotation of the circle by angle $\theta$ |
 | $\mathbb{T}^n$ | torus |
+
+
+
+
+
+
 
 ## Further Reading
 

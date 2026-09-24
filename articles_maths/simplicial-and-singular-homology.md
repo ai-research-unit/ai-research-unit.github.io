@@ -7,7 +7,7 @@ The fundamental group of *The Fundamental Group and Covering Spaces* is an invar
 
 Two constructions are given. **Simplicial homology** is defined for a simplicial complex, a space built from genuine simplices glued along faces, and it is finite and computable: the chain groups are free of rank equal to the number of $n$-simplices, and the boundary is read from incidence. **Singular homology** is defined for every topological space: the $n$-chains are the formal sums of all continuous maps $\Delta_n \to X$, so the construction is manifestly invariant, at the cost of enormous chain groups; the reward is that functoriality, homotopy invariance, excision and the long exact sequence of a pair are all formal consequences of the definitions. The two theories agree on the spaces where both are defined, and for a CW complex both agree with the cellular homology of *CW Complexes and Cellular Approximation*.
 
-The companion article *CW Complexes and Cellular Approximation* supplies the cell structures, the homotopy extension property and the cellular boundary formula, all of which are used here. The homological algebra — exact sequences, the snake lemma, the five lemma, chain homotopy — is that of *Exact Sequences*, and the general theory of chain complexes over a ring is the planned *Homological Algebra* of Part I, written in parallel; it is cited for the algebraic constructions and not restated. Coefficients are taken in a commutative ring $R$ with identity $1 \neq 0$, so that $H_n(X;R)$ is an $R$-module; the default $R = \mathbb{Z}$ gives abelian groups, and the case of a general coefficient module is treated in the next article. **Reduced homology** is written $\tilde H_n$.
+The companion article *CW Complexes and Cellular Approximation* supplies the cell structures, the homotopy extension property and the cellular boundary formula, all of which are used here. The homological algebra — exact sequences, the snake lemma, the five lemma, chain homotopy — is that of *Exact Sequences*, and the general theory of chain complexes over a ring is the planned *Homological Algebra* of Part I, written in parallel; it is cited for the algebraic constructions and not restated. Coefficients are taken in a commutative ring $R$ with identity $1 \neq 0$, so that $H_n(X;R)$ is an $R$-module; the default $R = \mathbb{Z}$ gives abelian groups, and the case of a general coefficient module is not covered here. **Reduced homology** is written $\tilde H_n$.
 
 ## Simplicial Complexes
 
@@ -117,7 +117,7 @@ A space $X$ with $H_n(X;R) = 0$ for all $n \geq 1$ and $H_0(X;R) \cong R$ is **a
 
 *Proof.* Let $F : X \times I \to Y$ be the homotopy. For a singular $n$-simplex $\sigma$, the maps $\Delta_n \to X \times I$, $x \mapsto (\sigma(x), 0)$ and $x \mapsto (\sigma(x),1)$, and the prism $\Delta_n \times I$ is triangulated into $(n+1)$-simplices; the standard subdivision determines $P_n(\sigma)$ as the alternating sum of the restrictions of $F \circ (\sigma \times \mathrm{id})$, and the identity $\partial P + P \partial = g_\# - f_\#$ is checked simplex by simplex. $\square$
 
-**Remark.** Homotopy invariance is what makes homology an invariant of the homotopy type, as the fundamental group is; the two are related by the Hurewicz theorem in *Homotopy Groups and Fibrations*.
+**Remark.** Homotopy invariance is what makes homology an invariant of the homotopy type, as the fundamental group is; the two are related by the Hurewicz theorem.
 
 ## The Long Exact Sequence and Excision
 
@@ -193,7 +193,7 @@ with coefficients suppressed and the connecting map $\partial$ defined from the 
 
 *Proof.* The cellular chain complex is $0 \to R^{E} \xrightarrow{\partial_1} R^{V} \to 0$. The map $\partial_1$ sends an edge $e$ from $v$ to $w$ to $w - v$, so its image is the submodule of tuples with coordinate sum zero, of rank $V-1$; hence $H_0 \cong R$ and $H_1 \cong \ker\partial_1$ has rank $E - (V-1)$. $\square$
 
-**Corollary.** The rank $E - V + 1$ equals the rank of the free group $\pi_1(X)$, by the Hurewicz theorem of *Homotopy Groups and Fibrations*; the case of a wedge of circles was computed directly there by van Kampen.
+**Corollary.** The rank $E - V + 1$ equals the rank of the free group $\pi_1(X)$, by the Hurewicz theorem; the case of a wedge of circles was computed directly there by van Kampen.
 
 ### Equivalence of Simplicial and Singular Homology
 
@@ -237,6 +237,10 @@ Singular homology is functorial in the strongest sense: a continuous map induces
 | Mayer–Vietoris | Long exact sequence of $A$, $B$ and $A \cap B$ when $X = \operatorname{int}A \cup \operatorname{int}B$ |
 | $\chi(X)$ | Euler characteristic; alternating sum of ranks of $H_n$ |
 | Acyclic | $\tilde H_n = 0$ for all $n$ |
+
+
+
+
 
 ## Further Reading
 

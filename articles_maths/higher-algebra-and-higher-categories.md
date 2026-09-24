@@ -5,9 +5,9 @@
 
 An ordinary category has objects and morphisms; between two parallel morphisms there is only the question whether they are equal. In the homotopy theory of the preceding articles equality is the wrong relation: two maps are the same only up to a homotopy, two homotopies only up to a homotopy of homotopies, and so on without end. A **higher category** is the structure that keeps all of this data: an $\infty$-category has objects, morphisms, $2$-morphisms between parallel morphisms, $3$-morphisms between parallel $2$-morphisms, and so on, with composition defined only up to coherent higher morphisms. When all the $k$-morphisms for $k \geq 2$ are invertible, the result is an **$\infty$-category** in the sense of the term used throughout this corpus, and it is the natural home of the homotopy category of *Model Categories and Homotopy Theory*, of the derived categories and spectra of Part I and of the stable theory below.
 
-The article develops the framework in the form in which it is used: **simplicial categories**, **complete Segal spaces**, and **quasi-categories** as three models of the same homotopy theory; the **homotopy category** and the **mapping spaces** of an $\infty$-category; limits and colimits, adjunctions and monoidal structures; and the **stable** case, in which the loops and suspension functors are inverse and the homotopy category is triangulated. It also introduces the **operadic** algebra of higher structures — $A_\infty$ and $E_n$ algebras and their modules — in the form needed for the recognition principle of *Stable Homotopy Theory* and for the multiplicative structures on algebraic $K$-theory.
+The article develops the framework in the form in which it is used: **simplicial categories**, **complete Segal spaces**, and **quasi-categories** as three models of the same homotopy theory; the **homotopy category** and the **mapping spaces** of an $\infty$-category; limits and colimits, adjunctions and monoidal structures; and the **stable** case, in which the loops and suspension functors are inverse and the homotopy category is triangulated. It also introduces the **operadic** algebra of higher structures — $A_\infty$ and $E_n$ algebras and their modules — in the form needed for the recognition principle and for the multiplicative structures on algebraic $K$-theory.
 
-The *algebraic* constructions are not the business of this article. Operads as algebraic objects, the theory of differential graded categories as a computational device, and the homological algebra of differential graded algebras are treated in the companion articles *Operads* and *Differential Graded Categories* of Part I, written in parallel; they are cited for the constructions, and what is supplied here is the homotopy-theoretic interpretation — the statement that a differential graded category presents an $\infty$-category, that an operad presents an $\infty$-operad, and that the algebraic invariants of Part I are the homotopy invariants of the present article. The triangulated structure of the stable homotopy category and the spectra that inhabit it are the subject of *Stable Homotopy Theory*.
+The *algebraic* constructions are not the business of this article. Operads as algebraic objects, the theory of differential graded categories as a computational device, and the homological algebra of differential graded algebras are treated in the companion articles *Operads* and *Differential Graded Categories* of Part I; they are cited for the constructions, and what is supplied here is the homotopy-theoretic interpretation — the statement that a differential graded category presents an $\infty$-category, that an operad presents an $\infty$-operad, and that the algebraic invariants of Part I are the homotopy invariants of the present article. The triangulated structure of the stable homotopy category and the spectra that inhabit it are not covered here.
 
 Throughout, $\infty$-category means $(\infty,1)$-category: all $k$-morphisms for $k \geq 2$ are invertible. The symbol $\Delta$ denotes the simplex category of *Model Categories and Homotopy Theory*, with $\Delta_n$ the standard simplex of *Simplicial and Singular Homology*.
 
@@ -83,7 +83,7 @@ are weak equivalences of simplicial sets for $n \geq 2$, the fibre products bein
 
 **Example.** The $\infty$-category of spectra with the smash product is symmetric monoidal; so is the $\infty$-category of chain complexes with the tensor product, and the $\infty$-category of spaces with the cartesian product. The homotopy category of a symmetric monoidal $\infty$-category is a symmetric monoidal category in the ordinary sense, but the converse fails: symmetric monoidal structures do not in general lift from homotopy categories, and the obstruction is the higher coherence.
 
-**Remark.** The stable homotopy category is symmetric monoidal, and this is the structure in which the multiplication of the sphere spectrum lives; the language of symmetric monoidal $\infty$-categories is what makes the statement "the sphere spectrum is the unit" meaningful without a choice of model. The details are the subject of *Stable Homotopy Theory*.
+**Remark.** The stable homotopy category is symmetric monoidal, and this is the structure in which the multiplication of the sphere spectrum lives; the language of symmetric monoidal $\infty$-categories is what makes the statement "the sphere spectrum is the unit" meaningful without a choice of model. The details are not covered here.
 
 ## Operadic Higher Algebra
 
@@ -105,7 +105,7 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 **Example (the operads $A_\infty$ and $E_n$).** The **associative** $\infty$-operad $\mathrm{Ass}$ has $\mathrm{Ass}(n)$ a point with the trivial $\Sigma_n$-action; its algebras are the $A_\infty$-algebras, and in the stable setting they are the ring spectra. The **little $n$-discs** $\infty$-operad $E_n$ has as its $k$-th space the configuration space of $k$ disjoint discs in the unit disc of $\mathbb{R}^n$; $\mathrm{Alg}_{E_1}$ is the $\infty$-category of $A_\infty$-algebras, and $\mathrm{Alg}_{E_\infty}$ is the $\infty$-category of $E_\infty$-algebras, whose homotopy categories are the commutative monoids when the coefficient ring contains $\mathbb{Q}$.
 
-**Theorem (May, recognition principle).** A pointed space $X$ is weakly equivalent to a loop space $\Omega^n Y$ for some $Y$ if and only if $X$ is grouplike with respect to an $E_n$-algebra structure; for $n = \infty$ the group-like $E_\infty$-spaces are the infinite loop spaces, and their spectra are the connective spectra. This is the recognition principle of *Stable Homotopy Theory*.
+**Theorem (May, recognition principle).** A pointed space $X$ is weakly equivalent to a loop space $\Omega^n Y$ for some $Y$ if and only if $X$ is grouplike with respect to an $E_n$-algebra structure; for $n = \infty$ the group-like $E_\infty$-spaces are the infinite loop spaces, and their spectra are the connective spectra. This is the recognition principle.
 
 *Proof sketch.* The little discs operad acts on $\Omega^n Y$ by the "configuration of discs" multiplication, and conversely the action of $E_n$ on a grouplike space $X$ allows the construction of a classifying space $BX$ by a bar construction, using the operadic action to define a monad; iterating $n$ times yields $Y$ with $\Omega^n Y \simeq X$. $\square$
 
@@ -119,7 +119,7 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 *Proof sketch.* The construction is the two-sided simplicial bar resolution, whose geometric realisation computes the homotopy quotient; the spectral sequence is the one of *The Leray–Serre Spectral Sequence* applied to the resulting simplicial object. $\square$
 
-**Example.** For a ring spectrum $R$ the $\infty$-category of $R$-modules is stable and symmetric monoidal, with a dualisable theory of perfect modules; this is the framework of **algebraic $K$-theory** in *Higher Algebraic K-Theory*, where the $K$-theory of $R$ is defined as the $K$-theory of the $\infty$-category of perfect $R$-modules.
+**Example.** For a ring spectrum $R$ the $\infty$-category of $R$-modules is stable and symmetric monoidal, with a dualisable theory of perfect modules; this is the framework of **algebraic $K$-theory**, where the $K$-theory of $R$ is defined as the $K$-theory of the $\infty$-category of perfect $R$-modules.
 
 ## The Stable Case
 
@@ -141,13 +141,13 @@ satisfying the associativity, equivariance and unit axioms. The algebraic theory
 
 ### Spectra and the Sphere
 
-**Definition.** A **spectrum** is a sequence of pointed spaces $E_n$ with structure maps $\Sigma E_n \to E_{n+1}$; its **homotopy groups** are $\pi_k(E) = \operatorname{colim}_n \pi_{k+n}(E_n)$. The **sphere spectrum** $\mathbb{S}$ has $E_n = S^n$ with the identity structure maps, and $\pi_k(\mathbb{S}) = \pi_k^s$ the stable stems of *Stable Homotopy Theory*.
+**Definition.** A **spectrum** is a sequence of pointed spaces $E_n$ with structure maps $\Sigma E_n \to E_{n+1}$; its **homotopy groups** are $\pi_k(E) = \operatorname{colim}_n \pi_{k+n}(E_n)$. The **sphere spectrum** $\mathbb{S}$ has $E_n = S^n$ with the identity structure maps, and $\pi_k(\mathbb{S}) = \pi_k^s$ the stable stems.
 
 **Theorem.** The $\infty$-category of spectra is stable, symmetric monoidal under the smash product $\wedge$ with unit $\mathbb{S}$, and the initial object is the zero object; the suspension spectrum functor $\Sigma^\infty : \mathcal{S} \to \mathrm{Sp}$ from spaces is left adjoint to the zero-space functor $\Omega^\infty$, and $\Omega^\infty\Sigma^\infty X$ is the group completion of $X$ as an $E_\infty$-space.
 
 *Proof sketch.* Stability is the statement that $\Sigma$ is an equivalence on spectra, which holds because a spectrum is, by definition, a sequence of spaces in which the shifted structure maps are equivalences in the colimit; the symmetric monoidal structure is the smash product with unit $\mathbb{S}$, constructed on a suitable model. $\square$
 
-**Example.** The **Eilenberg–MacLane spectrum** $H\pi$ for an abelian group $\pi$ has $\pi_0 \cong \pi$ and all other homotopy groups zero, and its associated infinite loop space is $K(\pi,0)$; the general $K(\pi,n)$ of *The Leray–Serre Spectral Sequence* is the $n$-fold delooping of $H\pi$ and corresponds to the spectrum $\Sigma^{-n}H\pi$. The representability of cohomology by spectra is the subject of *Stable Homotopy Theory*.
+**Example.** The **Eilenberg–MacLane spectrum** $H\pi$ for an abelian group $\pi$ has $\pi_0 \cong \pi$ and all other homotopy groups zero, and its associated infinite loop space is $K(\pi,0)$; the general $K(\pi,n)$ of *Classifying Spaces and Cohomology Operations*, is the $n$-fold delooping of $H\pi$ and corresponds to the spectrum $\Sigma^{-n}H\pi$. The representability of cohomology by spectra is not covered here.
 
 ## Summary
 
@@ -176,6 +176,10 @@ The homotopy category of an $\infty$-category has homotopy classes of morphisms 
 | $H\pi$, $K(\pi,n)$ | Eilenberg–MacLane spectrum and space |
 | $\Sigma$, $\Omega$, $\Sigma^\infty$, $\Omega^\infty$ | Suspension, loops, and their stabilisations |
 | $\Delta$, $\Delta_n$ | Simplex category; standard $n$-simplex |
+
+
+
+
 
 ## Further Reading
 

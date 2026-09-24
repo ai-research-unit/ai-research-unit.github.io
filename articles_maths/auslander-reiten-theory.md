@@ -9,7 +9,7 @@ This article develops irreducible morphisms and the radical, almost split sequen
 $$
 D\operatorname{Ext}^1_A(M,N)\cong\operatorname{Hom}_A(N,\tau M),
 $$
-the Auslander–Reiten quiver and its mesh relations, the stable module category and the Nakayama functor, the computation of the translation for a hereditary algebra by the Coxeter transformation, the preprojective, regular and preinjective components of the quiver of a tame algebra, and the examples of the Dynkin quivers and the Kronecker quiver. It follows *Quiver Representations and Representation Type*, *Ext and Tor*, *Projective and Injective Modules* and *Representations of Algebras*, and it prepares *Tilting Theory* and *Cluster Algebras*.
+the Auslander–Reiten quiver and its mesh relations, the stable module category and the Nakayama functor, the computation of the translation for a hereditary algebra by the Coxeter transformation, the preprojective, regular and preinjective components of the quiver of a tame algebra, and the examples of the Dynkin quivers and the Kronecker quiver. It follows *Quiver Representations and Representation Type*, *Ext and Tor*, *Projective and Injective Modules*, and it prepares.
 
 Throughout, $k$ is a field, $A$ is a finite-dimensional $k$-algebra with unit, and modules are finite-dimensional left $A$-modules; $D=\operatorname{Hom}_k(-,k)$ is the $k$-dual, and $\underline{\mathrm{mod}}\,A$ and $\overline{\mathrm{mod}}\,A$ are the stable categories modulo the projective and the injective modules. The ground ring is the field because the existence theorem and the finite-dimensional algebra techniques require it; the results are flagged where finite-dimensionality or the field assumption is used. The categorical and homological machinery of *Homological Algebra*, *Ext and Tor* and *Derived Categories* is used freely. No topology or form occurs.
 
@@ -143,7 +143,7 @@ and the six irreducible morphisms occurring in them are the six arrows of the qu
 
 An irreducible morphism between indecomposable finite-dimensional modules is a morphism in the radical but not in its square, and the quotient of the radical by its square measures the arrows of the Auslander–Reiten quiver. For every indecomposable non-projective module $N$ there is a unique almost split sequence $0\to\tau N\to M\to N\to0$, whose left term defines the Auslander–Reiten translation and whose middle term is the direct sum of the indecomposables occurring in the irreducible morphisms into $N$; dually for the injective end. The Auslander–Reiten formula $D\operatorname{Ext}^1_A(M,N)\cong\underline{\operatorname{Hom}}_A(N,\tau M)$ converts the extension theory into the representation theory, and the translation is computed by the transpose and the Nakayama functor, or on dimension vectors, for a hereditary algebra, by the Coxeter transformation $\Phi=-C^{-1}C^{\mathsf T}$.
 
-The Auslander–Reiten quiver assembles this data into a translation quiver with the mesh relations, locally finite and possibly of several components; for a Dynkin quiver it is finite, for the Kronecker quiver it has a preprojective, a preinjective and a regular component, and for a self-injective algebra the stable category carrying the translation becomes triangulated. The stable categories $\underline{\mathrm{mod}}\,A$ and $\overline{\mathrm{mod}}\,A$ are exchanged by $\tau$, and the theory is the combinatorial backbone of the representation type developed in *Quiver Representations and Representation Type*; it feeds the tilting and cluster theories of the following articles.
+The Auslander–Reiten quiver assembles this data into a translation quiver with the mesh relations, locally finite and possibly of several components; for a Dynkin quiver it is finite, for the Kronecker quiver it has a preprojective, a preinjective and a regular component, and for a self-injective algebra the stable category carrying the translation becomes triangulated. The stable categories $\underline{\mathrm{mod}}\,A$ and $\overline{\mathrm{mod}}\,A$ are exchanged by $\tau$, and the theory is the combinatorial backbone of the representation type developed in *Quiver Representations and Representation Type*; it feeds the tilting and cluster theories.
 
 ## Summary of Notation
 
@@ -162,6 +162,10 @@ The Auslander–Reiten quiver assembles this data into a translation quiver with
 | $\Phi=-C^{-1}C^{\mathsf T}$ | Coxeter transformation |
 | $C$ | Cartan matrix |
 | $S_i$, $P_i$, $I_i$ | simple, indecomposable projective, injective |
+
+
+
+
 
 ## Further Reading
 

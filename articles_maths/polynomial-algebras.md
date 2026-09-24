@@ -95,7 +95,7 @@ $$
 \mathbb{C} = \frac{\mathbb{R}[x]}{(x^2+1)}, \qquad \mathbb{D} = \frac{\mathbb{R}[x]}{(x^2-1)}, \qquad \mathbb{D}' = \frac{\mathbb{R}[x]}{(x^2)} .
 $$
 
-The first is a field because $x^2+1$ is irreducible over $\mathbb{R}$; the second is $\mathbb{R}\times\mathbb{R}$ because $x^2-1 = (x-1)(x+1)$ is a product of distinct linear factors; the third has a nilpotent because $x^2$ is a square. These are the three cases of *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, and they exhaust the two-dimensional cases by the same discriminant argument.
+The first is a field because $x^2+1$ is irreducible over $\mathbb{R}$; the second is $\mathbb{R}\times\mathbb{R}$ because $x^2-1 = (x-1)(x+1)$ is a product of distinct linear factors; the third has a nilpotent because $x^2$ is a square. These are the three cases, and they exhaust the two-dimensional cases by the same discriminant argument.
 
 **Theorem (Chinese remainder, standard).** If $f = f_1\cdots f_r$ with the $f_i$ pairwise coprime, then
 
@@ -190,6 +190,8 @@ The polynomial algebra $k[x]$ has $k$-basis the monomials $x^m$, is a commutativ
 | $\operatorname{Der}_k(k[x_1,\dots,x_n])$ | Module of $k$-derivations |
 | $\vartheta = \sum_i x_i\partial_i$ | Euler derivation |
 | $\operatorname{Aut}_k(k[x])$ | Affine group of the line |
+
+
 
 ## Further Reading
 

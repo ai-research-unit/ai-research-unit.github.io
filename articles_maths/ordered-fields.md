@@ -4,7 +4,7 @@
 
 An ordered field is a field equipped with a total order that is compatible with addition and multiplication. The compatibility has strong algebraic consequences: the field has characteristic $0$, it contains a canonical copy of $\mathbb{Q}$, every nonzero square is positive, and the positive elements form a cone closed under addition and multiplication. The extra structure that distinguishes one ordered field from another is whether the natural numbers are bounded above, and this **Archimedean** condition turns out to be equivalent to the density of $\mathbb{Q}$ and to embeddability into $\mathbb{R}$.
 
-This article develops ordered rings and fields, the positive cone that encodes the order, the order topology in the elementary form needed here, and the Archimedean and non-Archimedean cases, with $\mathbb{Q}$ and $F(t)$ as the two standard examples. The completion theory and the theory of real-closed fields are the subjects of *Real-Closed and Complete Ordered Fields*, and the general theory of topological rings is in *Topological Rings and Fields*; here the topology is used only to record the compatibility of the order with the field operations.
+This article develops ordered rings and fields, the positive cone that encodes the order, the order topology in the elementary form needed here, and the Archimedean and non-Archimedean cases, with $\mathbb{Q}$ and $F(t)$ as the two standard examples. The completion theory and the theory of real-closed fields are the subjects, and the general theory of topological rings is; here the topology is used only to record the compatibility of the order with the field operations.
 
 Throughout, an ordered field is written $F$ and its order $\leq$. The axioms of an ordered field are stated from scratch, so no prior theory of order is assumed; the theory of fields, characteristic, and prime fields is from *Fields*, and divisibility is from *Units, Zero Divisors and Integral Domains*.
 
@@ -104,7 +104,7 @@ is a total order making $F$ an ordered field with positive cone $P$.
 
 **(b)** Every element of $F$ is a difference of two squares.
 
-**(c)** The set of nonzero squares is contained in $P$, and it equals $P$ if and only if every positive element of $F$ has a square root in $F$; every real-closed field satisfies this, but the condition is strictly weaker than real closedness, as the field of real constructible numbers shows (*Real-Closed and Complete Ordered Fields*).
+**(c)** The set of nonzero squares is contained in $P$, and it equals $P$ if and only if every positive element of $F$ has a square root in $F$; every real-closed field satisfies this, but the condition is strictly weaker than real closedness.
 
 **Proof.** (a) Each square is $\geq 0$ by the basic-rules theorem, a sum of nonnegative elements is $\geq 0$, and a sum of nonnegative elements is $0$ only if every term is $0$, since a positive term would make the sum positive. (b) In characteristic $\neq 2$, and here $\operatorname{char} F = 0$,
 
@@ -114,7 +114,7 @@ $$
 
 (c) If $x = a^2 \neq 0$ then $x > 0$, and the converse holds by hypothesis; for the rationals, $2 = 1^2 + 1^2$ is positive and is not a square, so the inclusion of nonzero squares in $P$ is strict there. $\square$
 
-**Remark.** Positivity is a cone condition, not a square condition: in $\mathbb{Q}$ the positive element $2$ is not a square, although it is a sum of squares. The equality $P = \{$nonzero squares$\}$ is a genuine strengthening of the ordered-field axioms; a real-closed field satisfies it, and then its ordering is unique, but it is strictly weaker than real closedness (*Real-Closed and Complete Ordered Fields*).
+**Remark.** Positivity is a cone condition, not a square condition: in $\mathbb{Q}$ the positive element $2$ is not a square, although it is a sum of squares. The equality $P = \{$nonzero squares$\}$ is a genuine strengthening of the ordered-field axioms; a real-closed field satisfies it.
 
 ---
 
@@ -140,7 +140,7 @@ are continuous, and $F$ is a Hausdorff space.
 
 **Proof.** Continuity of addition and negation follows from translation invariance: the preimage of $(a,b)$ under $x \mapsto x+c$ is $(a-c, b-c)$, an open interval, and addition is continuous jointly by the estimate that $x' \in (x - \epsilon, x+\epsilon)$ and $y' \in (y - \epsilon, y+\epsilon)$ give $x'+y' \in (x+y-2\epsilon, x+y+2\epsilon)$. Continuity of multiplication uses $x'y' - xy = x'(y'-y) + y(x'-x)$ and the local boundedness of $x'$ and $y$; continuity of inversion on $F^\times$ follows from $x^{-1} - y^{-1} = (y - x)(xy)^{-1}$ and the continuity of multiplication, since $xy$ is bounded away from $0$ near a nonzero point. Hausdorffness: if $x < y$ then $\tfrac{x+y}{2}$ satisfies $x < \tfrac{x+y}{2} < y$, and the open rays $(-\infty, \tfrac{x+y}{2})$ and $(\tfrac{x+y}{2}, \infty)$ are disjoint neighborhoods of $x$ and $y$ respectively. $\square$
 
-**Corollary.** The order topology on $\mathbb{Q}$ is the usual metric topology, with basis the intervals with rational endpoints, and every rational point has a countable neighborhood basis. The same holds for $\mathbb{R}$. The general theory, including uniformity, completeness and the analogue for valued fields, is developed in *Topological Rings and Fields* and *Absolute Values, Valuations and Completions*.
+**Corollary.** The order topology on $\mathbb{Q}$ is the usual metric topology, with basis the intervals with rational endpoints, and every rational point has a countable neighborhood basis. The same holds for $\mathbb{R}$. The general theory, including uniformity, completeness and the analogue for valued fields, is developed .
 
 ---
 
@@ -192,7 +192,7 @@ $$
 F((t)) = \left\{\sum_{k \geq k_0} a_k t^k : k_0 \in \mathbb{Z},\ a_k \in F\right\}
 $$
 
-is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k t^k > 0$ if the least $k$ with $a_k \neq 0$ has $a_k > 0$. Then $t$ is a positive infinitesimal and $t^{-1}$ is infinite, so $F((t))$ is non-Archimedean. This ordering is the one induced by the $t$-adic valuation: it orders the subfield $F(t)$ by making $t$ infinitesimal, and $F((t))$ is the completion of $F(t)$ for that valuation in the sense of *Absolute Values, Valuations and Completions*. It is therefore a different ordering from the one of the previous example, in which $t$ is infinite, and the two fields are different as well — for $F = \mathbb{Q}$ the series field is uncountable while the rational function field is countable. The field $F((t))$ is complete as a valued field, but it is not order-complete: an order-complete ordered field is Archimedean by *Real-Closed and Complete Ordered Fields*, and $t$ is an infinitesimal here.
+is ordered lexicographically by the lowest-degree nonzero coefficient: $\sum a_k t^k > 0$ if the least $k$ with $a_k \neq 0$ has $a_k > 0$. Then $t$ is a positive infinitesimal and $t^{-1}$ is infinite, so $F((t))$ is non-Archimedean. This ordering is the one induced by the $t$-adic valuation: it orders the subfield $F(t)$ by making $t$ infinitesimal, and $F((t))$ is the completion of $F(t)$ for that valuation in the sense. It is therefore a different ordering from the one of the previous example, in which $t$ is infinite, and the two fields are different as well — for $F = \mathbb{Q}$ the series field is uncountable while the rational function field is countable. The field $F((t))$ is complete as a valued field, but it is not order-complete: an order-complete ordered field is Archimedean, and $t$ is an infinitesimal here.
 
 **Example (non-Archimedean vs not-formally-real).** The ordering of $F(t)$ above is one of many orderings; the field $\mathbb{C}$ has none, and $\mathbb{Q}(\sqrt2)$ has exactly two, one with $\sqrt2 > 0$ and one with $\sqrt2 < 0$. The number of orderings of a field is the subject of the theory of formally real fields and is not needed here.
 
@@ -242,7 +242,7 @@ is an injective order-preserving field homomorphism; hence $F$ is isomorphic, as
 
 **Proof.** The second statement is that $\mathbb{R}$ is Archimedean, which follows from its construction and is proved in *The Real Numbers*; the first is the theorem. $\square$
 
-**Remark.** The theorem separates the two questions of this article and the next. Whether a field embeds in $\mathbb{R}$ is the Archimedean condition; whether it *is* $\mathbb{R}$ is a completeness condition, and completeness is treated in *Real-Closed and Complete Ordered Fields*. The rationals are Archimedean but not complete; the real numbers are Archimedean and complete; and $F(t)$ is neither.
+**Remark.** The theorem separates the two questions of this article and the next. Whether a field embeds in $\mathbb{R}$ is the Archimedean condition; whether it *is* $\mathbb{R}$ is a completeness condition, and completeness is treated. The rationals are Archimedean but not complete; the real numbers are Archimedean and complete; and $F(t)$ is neither.
 
 ---
 
@@ -250,7 +250,7 @@ is an injective order-preserving field homomorphism; hence $F$ is isomorphic, as
 
 An ordered ring is a commutative ring with a total order compatible with addition and multiplication, and an ordered field is an ordered ring that is a field. In an ordered field $1 > 0$, the characteristic is $0$, every nonzero square is positive, inverses of positive elements are positive, the order is dense, and $-1$ is not a sum of squares; the last condition is formal reality, and a field is orderable exactly when it is formally real (Artin–Schreier). An ordering is equivalent to a choice of positive cone $P$, a subset closed under addition and multiplication and making $F = (-P) \cup \{0\} \cup P$ a disjoint union; equivalently the order is determined by the positive cone, and every element of a field of characteristic different from $2$ is a difference of squares.
 
-The order topology has the open intervals as a basis, makes the field a Hausdorff topological field, and agrees with the usual topology on $\mathbb{Q}$ and $\mathbb{R}$; the general theory of topological fields is in *Topological Rings and Fields*. An ordered field is Archimedean when the natural numbers are unbounded, equivalently when $\mathbb{Q}$ is dense, equivalently when every positive element exceeds some $1/n$, equivalently when there is no infinite element and no infinitesimal; $F(t)$ ordered by leading coefficients and $F((t))$ ordered lexicographically are the standard non-Archimedean examples, with $t$ infinite in the former and infinitesimal in the latter. Every ordered field contains a unique copy of $\mathbb{Q}$ as its prime field, with the unique ordering of $\mathbb{Q}$, and every Archimedean ordered field embeds as an ordered subfield of $\mathbb{R}$, so the Archimedean ordered fields are exactly the subfields of $\mathbb{R}$.
+The order topology has the open intervals as a basis, makes the field a Hausdorff topological field, and agrees with the usual topology on $\mathbb{Q}$ and $\mathbb{R}$; the general theory of topological fields is. An ordered field is Archimedean when the natural numbers are unbounded, equivalently when $\mathbb{Q}$ is dense, equivalently when every positive element exceeds some $1/n$, equivalently when there is no infinite element and no infinitesimal; $F(t)$ ordered by leading coefficients and $F((t))$ ordered lexicographically are the standard non-Archimedean examples, with $t$ infinite in the former and infinitesimal in the latter. Every ordered field contains a unique copy of $\mathbb{Q}$ as its prime field, with the unique ordering of $\mathbb{Q}$, and every Archimedean ordered field embeds as an ordered subfield of $\mathbb{R}$, so the Archimedean ordered fields are exactly the subfields of $\mathbb{R}$.
 
 | Ordered field | Archimedean | $\mathbb{Q}$ dense | Contains infinitesimals |
 |---|---|---|---|
@@ -277,6 +277,8 @@ The order topology has the open intervals as a basis, makes the field a Hausdorf
 | $\operatorname{char} F$ | Characteristic of $F$; equals $0$ if $F$ is ordered |
 | $\operatorname{Frac}(R)$ | Fraction field |
 | $\sup$, $\inf$ | Supremum, infimum in an ordered set |
+
+
 
 ## Further Reading
 

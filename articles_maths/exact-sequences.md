@@ -5,7 +5,7 @@
 
 Exactness is the language in which module theory is stated once the objects themselves are understood. Instead of saying separately that a map is injective, that its image is a kernel, and that a quotient is isomorphic to something, one writes a single chain of modules and maps and requires that at each module the image of the incoming map equals the kernel of the outgoing one. The gain is that whole families of isomorphisms and decompositions become the exactness of one sequence, and that functors are classified by how much exactness they preserve.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and modules are left $R$-modules, as in the preceding article of this category. The vocabulary fixed here — exactness, short exact sequence, splitting, left and right exactness, $\operatorname{Ext}$ — is used by every later article of the category. The snake lemma and the five lemma are the two diagram lemmas that make the language computable; both are proved here rather than quoted, because their proofs are the only place where the connecting maps are constructed.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and modules are left $R$-modules, as in the preceding article of this category. The vocabulary fixed here — exactness, short exact sequence, splitting, left and right exactness, $\operatorname{Ext}$ — is used by every other article of the category. The snake lemma and the five lemma are the two diagram lemmas that make the language computable; both are proved here rather than quoted, because their proofs are the only place where the connecting maps are constructed.
 
 Exactness is a condition on a sequence of modules and homomorphisms, and it is preserved by the familiar constructions in a way that is best organised by the language of functors. The article ends by recording which of the two functors attached to a module — $\operatorname{Hom}_R(M,-)$ and $-\otimes_R M$ — preserve which halves of a short exact sequence, since that asymmetry is the origin of the notions of projective, injective and flat module.
 
@@ -221,7 +221,7 @@ Combining the two variables, $\operatorname{Hom}_R(-,-)$ is left exact as a func
 
 ## Exactness of the Tensor Product
 
-The tensor product of modules is defined and developed later in this category; its exactness is recorded here because it is the companion asymmetry to the one just proved. Let $-\otimes_R M$ denote the functor $N \mapsto N \otimes_R M$.
+The tensor product of modules is defined and developed; its exactness is recorded here because it is the companion asymmetry to the one just proved. Let $-\otimes_R M$ denote the functor $N \mapsto N \otimes_R M$.
 
 **Theorem.** The functor $-\otimes_R M$ is **right exact**: if $A \xrightarrow{f} B \xrightarrow{g} C \to 0$ is exact then
 
@@ -243,7 +243,7 @@ So $\operatorname{Hom}$ loses surjectivity and tensor loses injectivity, and the
 
 **Theorem.** Equivalence classes of extensions of $C$ by $A$ form an abelian group under the **Baer sum**, written $\operatorname{Ext}^1_R(C,A)$, in which the class of the split extension $E=A\oplus C$ is the identity. The construction of the Baer sum and the identification of this group with the first derived functor of $\operatorname{Hom}_R(C,-)$, computed from a projective resolution of $C$, are given in the article of this category on projective and injective modules.
 
-Thus the failure of a short exact sequence to split is an element of $\operatorname{Ext}^1_R(C,A)$, and the sequence splits exactly when that element vanishes. A module $P$ is projective precisely when every extension of $P$ by $C$ splits for all $C$, and a module $I$ is injective precisely when every extension of $C$ by $I$ splits for all $C$; these are the characterisations used in the next articles.
+Thus the failure of a short exact sequence to split is an element of $\operatorname{Ext}^1_R(C,A)$, and the sequence splits exactly when that element vanishes. A module $P$ is projective precisely when every extension of $P$ by $C$ splits for all $C$, and a module $I$ is injective precisely when every extension of $C$ by $I$ splits for all $C$; these are the characterisations used.
 
 ### The Long Exact Sequence
 
@@ -280,8 +280,12 @@ A short exact sequence splits exactly when it has a section, equivalently a retr
 | $\delta$ | connecting map of a long exact sequence |
 | $\operatorname{Ext}^1_R(C,A)$ | group of extensions of $C$ by $A$ under Baer sum |
 | $\operatorname{Tor}$ | derived functor of the tensor product, developed later |
-| $\otimes_R$ | tensor product over $R$, developed later in this category |
+| $\otimes_R$ | tensor product over $R$, developed elsewhere in this category |
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
+
+
+
+
 
 ## Further Reading
 

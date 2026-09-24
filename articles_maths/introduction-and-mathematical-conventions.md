@@ -4,14 +4,15 @@
 
 This article is the entry point to the mathematical corpus. It states what the corpus contains, how it is organised into parts and categories, the ordering principle that decides where an article belongs, and the notational conventions the other articles assume. It introduces no mathematics of its own beyond the examples needed to make the organisation intelligible.
 
-The corpus is a single edifice rather than a collection of subjects. One family of objects is built once — sets, groups, rings and fields, linear spaces, algebras — and is then re-examined as further structure is laid on it: first a distance, then the limits and derivatives that a distance makes possible. Each examination is a *Part*. The result is a progression and not an encyclopaedia: an article presupposes the articles before it and none of those after it.
+The corpus is a single edifice rather than a collection of subjects. One family of objects is built once — sets, groups, rings and fields, linear spaces, algebras — and is then re-examined as further structure is laid on it: first a distance, then the limits and derivatives that a distance makes possible. Each examination is a *Part*. The result is a progression and not an encyclopaedia: an article presupposes the categories that precede its own and none of those that follow it.
 
-Two consequences explain most of the decisions recorded below, and they are worth stating at once.
+Three consequences explain most of the decisions recorded below, and they are worth stating at once.
 
 - **An article never uses a structure that the corpus has not yet introduced.** The reader is never asked to know a distance while reading the algebra.
 - **When a new structure is introduced, every earlier object re-read through it belongs to the new category.** The article on topological groups is a topology article, not a group-theory article.
+- **An article depends on nothing.** Within a category the articles are mutually dependent, and a use of something the category introduces further on is stated in line and marked; across a category boundary the dependency is excluded.
 
-Both rules are stated precisely in *The Three Rules of the Ordering* below.
+These rules are stated precisely in *The Three Rules of the Ordering* below.
 
 ## The Four Parts
 
@@ -56,9 +57,9 @@ Three features of the table deserve comment.
 
 **The Foundations slot is first in every part.** A part begins by assembling the language it needs. In Part I that language is set theory, logic and universal properties. In Part II it is the theory of distance itself: metric, uniform and complete spaces, then general topological spaces, then the metrisation and separation axioms that measure the gap between the two. In Part III it is measure and the modes of convergence. Foundations is a slot and not a preface: it has articles, and later slots refer back to them.
 
-**The naming is mechanical in both directions.** A category of Part II is named *Topology on X* and a category of Part III *Analysis on X*, where X is the name of the slot in Part I; Part I's own categories carry the bare slot names, because Part I is the base against which the other two are named. The three parts therefore read in parallel, slot for slot and name for name, and a slot name carries a qualifier exactly where the object requires one. The fourth slot is named *Linear Spaces*, and keeps that name even where the scalars form a ring and the objects are modules, because the slot is the theory of scalars acting on an abelian group. The fifth slot is named *Linear Algebras* rather than *Algebras*, because the multiplication is added to a linear space and not to a set: the name records the layer below it. The objects themselves continue to be called linear spaces and algebras in the articles; the qualified names are the names of the layers.
+**The naming is mechanical in both directions.** A category of Part II is named *Topology on X* and a category of Part III *Analysis on X*, where X is the name of the slot in Part I; Part I's own categories carry the bare slot names, because Part I is the base against which the other two are named. The three parts therefore read in parallel, slot for slot and name for name, and a slot name carries a qualifier exactly where the object requires one. The fourth slot is named *Linear Spaces*, and keeps that name even where the scalars form a ring and the objects are modules, because the slot is the theory of scalars acting on an abelian group. The fifth slot is named *Linear Algebras* rather thanbecause the multiplication is added to a linear space and not to a set: the name records the layer below it. The objects themselves continue to be called linear spaces and algebras in the articles; the qualified names are the names of the layers.
 
-**Each part adds extensions after the spine.** Part I extends its spine with the *Symmetric Linear Algebras*, the *Anti-symmetric Linear Algebras* and the *Linear Spaces over Linear Algebras* — structures internal to algebra. Part II extends with *Quadratic Forms and Clifford Algebras* and with *Geometry and Manifolds*, which a distance makes possible, and then with *Algebraic Topology*, *Sheaves and Cohomology* and *Algebraic Geometry*, which are built on the cohomological machinery those structures supply: algebraic topology measures what a distance leaves invariant, sheaf cohomology is the derived functor theory of Part I read on a space, and algebraic geometry is the geometry of schemes, coherent sheaves and moduli that the sheaf theory supports. Part III extends with *Differential Equations* and then with *Probability and Ergodic Theory* and *Dynamical Systems*, the measure-theoretic subjects that only a limit can define. An extension is where a part's own new structure generates objects that have no analogue in the other parts.
+**Each part adds extensions after the spine.** Part I extends its spine with the *Symmetric Linear Algebras*, the *Anti-symmetric Linear Algebras* and the *Linear Spaces over Linear Algebras* — structures internal to algebra. Part II extends with *Quadratic Forms and Clifford Algebras* and with *Geometry and Manifolds*, which a distance makes possible, and then with *Algebraic Topology*, *Sheaves and Cohomology* andwhich are built on the cohomological machinery those structures supply: algebraic topology measures what a distance leaves invariant, sheaf cohomology is the derived functor theory of Part I read on a space, and algebraic geometry is the geometry of schemes, coherent sheaves and moduli that the sheaf theory supports. Part III extends with *Differential Equations* and then with *Probability and Ergodic Theory* and *Dynamical Systems*, the measure-theoretic subjects that only a limit can define. An extension is where a part's own new structure generates objects that have no analogue in the other parts.
 
 ## The Object Ladder
 
@@ -78,7 +79,7 @@ The ladder is also the reason the parts can be homogeneous. Because each layer a
 
 ## The Three Rules of the Ordering
 
-### Rule 1 — No category may use a structure it has not yet introduced
+### Rule 1 — No layer may use a structure it has not yet introduced
 
 An article may use the language of its own layer and of the layers below it, and nothing else. This is a constraint on the *writing*, not merely on the placement: an article of Part I may not name a distance, a norm, a completion taken as a limit, a form, a manifold, an orthogonal or special orthogonal group, or a rotation. Where such a concept is genuinely needed, the article states the result in the language it has and **defers the enriched statement** to the category that owns the structure, with an explicit forward reference of the form *"this is treated in Part II, where the form and the distance are available"*.
 
@@ -88,6 +89,14 @@ Two clarifications, because the rule is easy to over-apply.
 
 - The rule forbids *using* a structure, not *naming* it. An article may say that a concept will later be enriched, and may point forward. What it may not do is reason with the structure.
 - The rule concerns structure, not vocabulary. The words *open*, *complete*, *limit*, *continuous* and *normal* have purely algebraic meanings in several places — an open condition in a presentation, an order-complete field, an inverse limit of rings, a normal subgroup — and these are legitimate. What is excluded is the topological *meaning* of the word.
+
+**The reading unit is the category.** The rule above governs *structure*. A second constraint, finer, governs the order of the articles themselves:
+
+> No article may depend on anything.
+
+A **category** —*Rings and Fields*, *Quadratic Forms and Clifford Algebras* — is the **reading unit** of the corpus. Inside a single reading unit the articles are a cluster of mutually dependent concepts, and a dependency there may run in either direction. Where an article needs something that its own category introduces further on, it states what it needs in the terms it already has and marks the article that owns it; the full treatment is met when the category reaches it. What is not permitted is a dependency that crosses a category boundary **forward**. An algebra article does not lean on a linear-space article, and a topology article does not lean on an analysis article.
+
+Two or more sibling categories that form one cluster may be **declared a single reading unit**, in which case dependencies among them are internal and permitted. The four categories of the linear-algebra layer — *Linear Algebras*, *Symmetric Linear Algebras*, *Anti-symmetric Linear Algebras* and *Linear Spaces over Linear Algebras* — are declared together in this way. They divide one cluster of mutually dependent concepts, and the division between them is a division of subject matter, not of prerequisite.
 
 ### Rule 2 — The layers are strictly ordered, and algebra is the most fundamental
 
@@ -130,7 +139,7 @@ When a category introduces a new structure, it absorbs every earlier object that
 | Measure and limit | the whole of Part III | all of the above | measure; analytic functions; differential calculus; hypercomplex analysis and integration |
 | Everything at once | every Part IV category | one system at a time | the whole ladder, per system |
 
-The same object therefore appears at several depths, and that is intended. The quaternion group $Q_8$ is a group (in *Groups*). The group of unit quaternions is a Lie group (in *Topology on Groups*). Its representations belong to the representation theory of the algebras (in *Linear Spaces over Linear Algebras*), and its harmonic analysis belongs to the quaternion category of Part IV. Nothing is repeated: each article adds the structure that its category owns.
+The same object therefore appears at several depths, and that is intended. The quaternion group $Q_8$ is a group . The group of unit quaternions is a Lie group (in *Topology on Groups*). Its representations belong to the representation theory of the algebras (in *Linear Spaces over Linear Algebras*), and its harmonic analysis belongs to the quaternion category of Part IV. Nothing is repeated: each article adds the structure that its category owns.
 
 An important corollary: **an object is not moved merely because a later structure could be placed on it.** The rule applies only when an article actually uses the new structure. The integers are a ring (in *Rings and Fields*) and also, with the discrete distance, a topological group (in *Topology on Groups*) and a locally compact group — but the article on the integers as a ring stays in *Rings and Fields*, because it reasons with the ring structure alone.
 
@@ -193,7 +202,7 @@ The reason is the one that governs the order of the parts. An application is a p
 
 A concept that is mathematics but is named after its use is admitted on the same terms as one named from physics, and then only for its mathematical content. Convex optimisation is the study of a convex function and a convex set, and is mathematics; the simplex method is an algorithm for computing with them, and is not an article here. The algebra of a finite field and the arithmetic of an elliptic curve are mathematics; the engineering of a channel or of a protocol that uses them is not.
 
-The word *application* occurs in the menu in a second sense, and the two must not be confused. The slot named *Applications* inside a category of Parts I to III means the concrete instances of the structure of that category — *Finitely Generated Abelian Groups* under Groups, *Matrix Algebras* under Linear Algebras, *Modular Arithmetic and the Ring of Residues* under the Integers. Those are examples, and examples are mathematics. What the corpus excludes is not the example but the use.
+The word *application* occurs in the menu in a second sense, and the two must not be confused. The slot named *Applications* inside a category of Parts I to III means the concrete instances of the structure of that category —under Groups,under Linear Algebras,under the Integers. Those are examples, and examples are mathematics. What the corpus excludes is not the example but the use.
 
 The exclusion of physics, stated in the next section, is the sharpest case of the same rule: a physical theory uses mathematics, and the corpus keeps the mathematics and not the theory. Nothing about the origin of a concept decides whether it is admitted. What decides is whether its mathematical content stands on its own.
 
@@ -293,6 +302,10 @@ The corpus is pure mathematics. No article is about an application of mathematic
 | Rule 1 | no category may use a structure it has not yet introduced |
 | Rule 2 | the layers are strictly ordered; algebra is the most fundamental |
 | Rule 3 | a revisited object belongs to the layer that revisits it |
+
+
+
+
 
 ## Further Reading
 

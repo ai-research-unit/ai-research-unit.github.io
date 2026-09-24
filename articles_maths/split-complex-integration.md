@@ -390,7 +390,7 @@ $$
 f_+(t - i0) - f_+(t + i0) = 2\pi i\, r_+\, \delta(t - a), \qquad r_+ = \operatorname{Res}_L f \text{ in the } e_+ \text{ component},
 $$
 
-so the residue reappears as a measure carried by the null line: it is the density of the jump of the boundary value, exactly as a point residue in $\mathbb{C}$ is the coefficient that makes the primitive acquire a period. The reader will recognise the complexification of the idempotent component as the step already required for the inversion of the split complex Fourier transform in *Split-Complex Harmonic Analysis*.
+so the residue reappears as a measure carried by the null line: it is the density of the jump of the boundary value, exactly as a point residue in $\mathbb{C}$ is the coefficient that makes the primitive acquire a period. The reader will recognise the complexification of the idempotent component as the step already required for the inversion of the split complex Fourier transform.
 
 **Remark.** The surviving residue theorem has no contour form. Its content is that for a split complex differentiable function with a simple pole along a null line, the jump of the component across that line is the residue times a one-dimensional delta supported on the line. The classical statement, in which a residue at a point equals a contour integral, is not available, because there is no contour to take.
 
@@ -471,6 +471,8 @@ The **obstruction to the Cauchy theorem** is the zero divisor. The element $\zet
 | $E = H(z_-)\delta(z_+)e_+ + H(z_+)\delta(z_-)e_-$ | Fundamental solution of $D$, supported on the two null rays |
 | $\operatorname{Res}_L f$ | Residue at a null line $L$, an idempotent coefficient |
 | $\delta$, $\delta_0$ | One-dimensional Dirac distribution, and the two-dimensional one at the origin |
+
+
 
 ## Further Reading
 

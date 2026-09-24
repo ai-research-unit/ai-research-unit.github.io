@@ -5,9 +5,9 @@
 
 The biquaternion algebra is an eight-dimensional real algebra with a norm form of signature $(4,4)$, and inside its unit group sit the rotation and reflection groups of the low-dimensional forms: the unit quaternions $Sp(1)$ with their double cover of $SO(3)$, the norm-one biquaternions $SL(2,\mathbb{C})$ with their double cover of the identity component of $SO(1,3)$, the two-sided action that gives $SO(4)$, the finite groups of the Lipschitz and Hurwitz units, and the Weyl groups of the small root systems that act on the algebra. This article treats these as groups: for each of them it records the generators, the order or dimension, the form preserved, and the way the group sits inside the unit group $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, or acts on the algebra when it is the symmetry group of a lattice rather than a group of units.
 
-The algebra, its conjugations and its norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ are those of *Biquaternion Algebra*; the identification with $\mathrm{Cl}_{3,0}$ and the matrix model are those of *The Biquaternion Algebra as a Clifford Algebra*. The group-theoretic part of the Clifford layer — the Clifford group, the twisted adjoint action, the Pin and Spin groups and the Cartan–Dieudonné theorem — is that of *The Clifford, Pin and Spin Groups*, and the spinor module is that of *Spin Representations and Clifford Modules*, in its biquaternion form *Spinors and the Biquaternion Spinor Module*, which owns the chiral decomposition and the action of $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ on the module. Only the computations special to $\mathbb{B}$ are performed here.
+The algebra, its conjugations and its norm form $N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_\mu Q_\mu^2$ are those; the identification with $\mathrm{Cl}_{3,0}$ and the matrix model are those of *The Biquaternion Algebra as a Clifford Algebra*. The group-theoretic part of the Clifford layer — the Clifford group, the twisted adjoint action, the Pin and Spin groups and the Cartan–Dieudonné theorem — is that of *The Clifford, Pin and Spin Groups*, and the spinor module is that of *Spin Representations and Clifford Modules*, in its biquaternion formwhich owns the chiral decomposition and the action of $SL(2,\mathbb{C})=\mathrm{Spin}(1,3)$ on the module. Only the computations special to $\mathbb{B}$ are performed here.
 
-The six real subspaces of $\mathbb{B}$ introduced in *Biquaternion Algebra* — the center $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_\pm$ — are used throughout, and the restriction of the norm form to each is the form that the corresponding group preserves.
+The six real subspaces of $\mathbb{B}$ introduced — the center $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_\pm$ — are used throughout, and the restriction of the norm form to each is the form that the corresponding group preserves.
 
 ## The Norm Form and its Real Forms
 
@@ -187,6 +187,8 @@ The finite integral structures give the Lipschitz units of order $8$ and the Hur
 | $2O,2I$ | Binary octahedral and icosahedral groups, orders $48$ and $120$ |
 | $\mathcal{L}=\mathbb{Z}e_0\oplus\cdots\oplus\mathbb{Z}e_3$ | Lipschitz order; Hurwitz order its maximal extension |
 | $A_1,B_4,F_4$ | Weyl groups of the root systems realised on a one-dimensional Clifford subspace and on the Lipschitz and Hurwitz lattices; orders $2$, $384$ and $1152$ |
+
+
 
 ## Further Reading
 

@@ -154,7 +154,7 @@ $$
 
 This bracket is bilinear, antisymmetric, and satisfies the Jacobi identity. So $A$, equipped with this bracket, is a Lie algebra.
 
-This construction applies in particular to the Clifford algebras studied in the later articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.
+This construction applies in particular to the Clifford algebras studied in the other articles. Every Clifford algebra is an associative algebra, hence a Lie algebra with the commutator bracket. This is the reason the theory of Lie algebras and the theory of Clifford algebras are connected.
 
 The converse is not true: not every Lie algebra arises from an associative algebra in this way. The cross product on $\mathbb{R}^3$ is an example of a Lie algebra that does not arise from an associative algebra. So the class of Lie algebras is strictly larger than the class of Lie algebras that come from associative algebras.
 
@@ -366,7 +366,9 @@ Let me summarize the main points.
 - The classical structure theory (Levi decomposition, classification of semisimple Lie algebras) requires the base ring to be a field of characteristic zero.
 - The classification of simple Lie algebras by Dynkin diagrams requires the base ring to be a field of characteristic zero.
 
-The next article, *Lie Algebras: Categorization*, gives a classification organized by ring.
+The classification of these Lie algebras is organized by ring.
+
+
 
 ---
 

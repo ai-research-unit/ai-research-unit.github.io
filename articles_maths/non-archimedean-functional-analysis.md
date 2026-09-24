@@ -7,7 +7,7 @@ A norm on a vector space over a non-Archimedean field is required to satisfy the
 
 This article develops the theory from the definitions. It sets out the geometric consequences of the strong triangle inequality for normed spaces, treats the spaces $c_0(I)$ and $\ell^\infty(I)$ and computes the dual of the former, defines orthogonal and orthonormal families and proves that the normed spaces with an orthogonal basis are exactly the spaces isometric to some $c_0(I)$, states and proves the elementary part of the open mapping and closed graph theorems and of the uniform boundedness principle, states Ingleton's theorem characterising the fields for which Hahn–Banach holds, treats spherically complete fields, defines compactoid sets and proves the basic facts about them, and closes with the polar and duality theory and with the connections to the Tate algebra of *Rigid Analytic Functions* and the measures of *p-adic Integration*.
 
-The prerequisites are *Absolute Values, Valuations and Completions* and *Local Fields* for the valued fields, *Normed and Banach Spaces* for the classical theory that is being adapted, *Topological Algebras and Banach Algebras* for the Banach-algebra language, *p-adic Analysis* and *Rigid Analytic Functions* for the examples, and *Modules* for bases and direct sums. The Archimedean theory in its full modern form is in *Banach and Hilbert Spaces*, written in parallel in this Part; the comparison with it is made where it is illuminating, and the reader is referred there for the theorems that have no non-Archimedean analogue. Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute value $\lvert \cdot \rvert$, valuation ring $K^\circ$ and residue field $k$; all vector spaces are over $K$ and all norms take values in the value group of $K$ extended by $0$.
+The prerequisites are *Absolute Values, Valuations and Completions* and *Local Fields* for the valued fields, *Normed and Banach Spaces* for the classical theory that is being adapted, *Topological Algebras and Banach Algebras* for the Banach-algebra language, *p-adic Analysis* and *Rigid Analytic Functions* for the examples, and *Modules* for bases and direct sums. The Archimedean theory in its full modern form is in this Part; the comparison with it is made where it is illuminating, and the reader is referred there for the theorems that have no non-Archimedean analogue. Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute value $\lvert \cdot \rvert$, valuation ring $K^\circ$ and residue field $k$; all vector spaces are over $K$ and all norms take values in the value group of $K$ extended by $0$.
 
 ## Normed Spaces over a Non-Archimedean Field
 
@@ -183,6 +183,8 @@ Duality is governed by spherical completeness. The Hahn–Banach theorem holds f
 | $A^\circ$, $B_\circ$ | Polar of $A \subseteq E$ in $E'$, polar of $B \subseteq E'$ in $E$ |
 | $T_n = K\langle\xi_1,\dots,\xi_n\rangle$ | Tate algebra, isometric to $c_0(\mathbb{N}^n)$ |
 | $\mathbb{Q}_p$, $\mathbb{C}_p$ | Spherically complete; complete but not spherically complete |
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A spectral sequence is a bookkeeping device for the homology of an object that carries a filtration. It replaces a single unknown graded group by a succession of approximations, each an algebraic invariant of the previous one, converging to the graded pieces of the answer. The device is forced on us whenever two homological constructions are composed: the derived functors of a composite functor, the homology of a double complex, the homology of a filtered complex. In each case the spectral sequence computes the answer from a sequence of successive approximations, and the first page is built from data that can be read off directly — the homology of the filtration quotients, or the iterated derived functors of the two factors.
 
-This article develops filtered complexes and their spectral sequences, the pages and differentials, the convergence of a spectral sequence to the homology of the filtered complex, the spectral sequences of a double complex and of a composite of functors, the five-term exact sequence and the edge homomorphisms, and the algebraic applications: the Künneth and base-change spectral sequences and the Lyndon–Hochschild–Serre spectral sequence of a group extension. It follows *Ext and Tor*, whose balance theorems and Künneth theorem it completes, and it supplies the computational tool that the articles *Derived Categories*, *K-Theory of Rings*, *Hochschild Homology* and *Cyclic Homology* use.
+This article develops filtered complexes and their spectral sequences, the pages and differentials, the convergence of a spectral sequence to the homology of the filtered complex, the spectral sequences of a double complex and of a composite of functors, the five-term exact sequence and the edge homomorphisms, and the algebraic applications: the Künneth and base-change spectral sequences and the Lyndon–Hochschild–Serre spectral sequence of a group extension. It follows *Ext and Tor*, whose balance theorems and Künneth theorem it completes, and it supplies the computational tool that other articles use.
 
 Throughout, $R$ is a commutative ring with identity $1\neq0$ and complexes are complexes of $R$-modules unless a general abelian category is named; the theory is algebraic and is stated for an abelian category with enough injectives or enough projectives where resolutions are needed. No distance, norm, open set or completion occurs; the word *convergence* has its purely algebraic meaning, that the successive pages stabilise and the stable terms are the graded pieces of a filtered graded group. The Leray–Serre spectral sequence of a fibration, the spectral sequence of a sheaf and the Atiyah–Hirzebruch spectral sequence all require a space or a site, and they belong to Part II, where they are treated in *Algebraic Topology* and *Sheaves and Cohomology*; the algebraic theory of this article is what those applications use.
 
@@ -211,6 +211,10 @@ Every statement is algebraic. The spectral sequences attached to spaces, fibrati
 | $d_2^{0,1}$ | differential appearing in the five-term exact sequence |
 | $\operatorname{Tor}_p^R$, $R^pG$ | derived functors entering the examples |
 | $R$ | commutative ring with $1\neq0$; $\varphi:R\to S$ a change of rings |
+
+
+
+
 
 ## Further Reading
 

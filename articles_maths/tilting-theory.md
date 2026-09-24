@@ -9,9 +9,9 @@ $$
 $$
 is an equivalence of triangulated categories. In this way two algebras with very different module categories can have the same derived category, and the representation theory of one is transported to the other: the tilting module turns into the free module, the indecomposable summands of $T$ into the indecomposable projectives of $B$, and the modules that are not in the torsion-free class disappear from the module category while remaining in the derived one.
 
-The theory has three faces. The **homological** face is the derived equivalence above and the invariance of the derived category under tilting. The **module-theoretic** face is the Brenner–Butler theorem, which describes the effect of a tilting module as an equivalence between a torsion class in the module category of $A$ and a torsion-free class in the module category of $B$, together with the induced maps on the Grothendieck groups. The **combinatorial** face is the APR construction, which obtains a tilting module over the path algebra of a quiver by reflecting a sink or a source, and which therefore realises the change of orientation of a quiver as a derived equivalence. The cluster-tilting objects and the cluster algebras of the next articles are the further development of the last face.
+The theory has three faces. The **homological** face is the derived equivalence above and the invariance of the derived category under tilting. The **module-theoretic** face is the Brenner–Butler theorem, which describes the effect of a tilting module as an equivalence between a torsion class in the module category of $A$ and a torsion-free class in the module category of $B$, together with the induced maps on the Grothendieck groups. The **combinatorial** face is the APR construction, which obtains a tilting module over the path algebra of a quiver by reflecting a sink or a source, and which therefore realises the change of orientation of a quiver as a derived equivalence. The cluster-tilting objects and the cluster algebras are the further development of the last face.
 
-This article develops tilting modules and tilted algebras, the derived equivalence and its construction, the Brenner–Butler theorem and the torsion pairs, the APR tilting modules and the change of orientation, the classification of the tilting modules over a hereditary algebra, and the examples of the quivers of type $A$ and of the Kronecker quiver. It follows *Derived Categories*, *Auslander–Reiten Theory*, *Ext and Tor*, *Quiver Representations and Representation Type* and *K-Theory of Rings*, and it prepares *Cluster Algebras*.
+This article develops tilting modules and tilted algebras, the derived equivalence and its construction, the Brenner–Butler theorem and the torsion pairs, the APR tilting modules and the change of orientation, the classification of the tilting modules over a hereditary algebra, and the examples of the quivers of type $A$ and of the Kronecker quiver. It follows *Derived Categories*, *Auslander–Reiten Theory*, *Ext and Tor*, *Quiver Representations and Representation Type* and *K-Theory of Rings*, and it prepares.
 
 Throughout, $k$ is a field, $A$ and $B$ are finite-dimensional $k$-algebras, modules are finite-dimensional left modules, and $D^b(A)$ is the bounded derived category of *Derived Categories* with the shift and the triangles of that article. The functor $\operatorname{RHom}$ and the Grothendieck group $K_0$ are those of *Derived Functors*, *Ext and Tor* and *K-Theory of Rings*. The algebra is finite-dimensional only where the tilting theory of finite-dimensional algebras requires it, and this is flagged; the abstract definition of a tilting module over a ring is given first. No topology or form occurs.
 
@@ -88,7 +88,7 @@ Consequently two acyclic quivers with the same underlying graph have derived equ
 
 *Proof (in outline).* The APR tilts provide the derived equivalences for two orientations, and the connectedness of the graph under the reflections gives all orientations. The converse uses the invariance of the Grothendieck group and of the Euler characteristic under a derived equivalence to recover the graph. $\square$
 
-**Remark.** The tilting theory of finite-dimensional algebras is the algebraic model of the derived equivalences of coherent sheaves on algebraic varieties, where tilting complexes and Fourier–Mukai transforms play the same role; the geometric theory belongs to Part II, where the sheaves and their derived categories are available, and is not used here. The cluster-tilting objects of the next article are the analogues of the tilting modules in the cluster category, and the cluster algebras are their combinatorial shadow.
+**Remark.** The tilting theory of finite-dimensional algebras is the algebraic model of the derived equivalences of coherent sheaves on algebraic varieties, where tilting complexes and Fourier–Mukai transforms play the same role; the geometric theory belongs to Part II, where the sheaves and their derived categories are available, and is not used here. The cluster-tilting objects are the analogues of the tilting modules in the cluster category, and the cluster algebras are their combinatorial shadow.
 
 ## Tilting Complexes and Derived Equivalences
 
@@ -108,7 +108,7 @@ Consequently two acyclic quivers with the same underlying graph have derived equ
 
 A tilting module over a ring is a module of projective dimension at most one with no self-extensions and with a two-term presentation of the free module; over a finite-dimensional algebra its endomorphism algebra is the tilted algebra, and the functor $\operatorname{RHom}_A(T,-)$ is an equivalence of bounded derived categories. The Brenner–Butler theorem describes the effect in the module category: the modules with $\operatorname{Ext}^1_A(T,-)$ vanishing form a torsion class, the modules over the tilted algebra with $\operatorname{Tor}_1(-,T)$ vanishing form the corresponding torsion-free class, and the functor is an equivalence between them inducing an isomorphism of Grothendieck groups. The APR construction reflects a sink or a source of an acyclic quiver and produces a tilting module whose tilted algebra is the path algebra of the reflected quiver, so that the orientation of a quiver is invisible to the derived category; for a hereditary algebra the derived equivalence classes are exactly the underlying graphs, and the tilting modules over a simply laced Dynkin quiver are finite in number.
 
-Tilting theory is the bridge between the representation theory of *Quiver Representations and Representation Type* and *Auslander–Reiten Theory* and the cluster theory of *Cluster Algebras*, where the tilting objects become the cluster-tilting objects of a cluster category and the tilting modules over the quivers of finite type correspond to the clusters. The geometric tilting theory, with its complexes and transforms, is deferred to Part II.
+Tilting theory is the bridge between the representation theory of *Quiver Representations and Representation Type* and *Auslander–Reiten Theory* and the cluster theory, where the tilting objects become the cluster-tilting objects of a cluster category and the tilting modules over the quivers of finite type correspond to the clusters. The geometric tilting theory, with its complexes and transforms, is deferred to Part II.
 
 ## Summary of Notation
 
@@ -126,6 +126,10 @@ Tilting theory is the bridge between the representation theory of *Quiver Repres
 | $K_0(A)$ | Grothendieck group |
 | $P_i$, $I_i$, $S_i$ | indecomposable projective, injective, simple module |
 | $\tau$ | Auslander–Reiten translation |
+
+
+
+
 
 ## Further Reading
 

@@ -3,11 +3,11 @@
 
 ## Introduction
 
-A group carries an operation, and to speak of an operation that is *continuous* one needs a topology. This article develops the topology that the rest of the corpus uses: the axioms of a topological space, the constructions that build new spaces from old (subspaces, products, quotients), the two notions of convergence (nets and filters) that survive when sequences do not suffice, the separation axioms that make limits unique and quotients well behaved, and the properties — connectedness and compactness — that topological groups and measure theory actually invoke. It is a preparation for *Topological Groups*, written in parallel, rather than a general course in topology: spaces that are not at least Tychonoff appear only as counterexamples, and the metrisation theory, dimension theory and homotopy theory are omitted.
+A group carries an operation, and to speak of an operation that is *continuous* one needs a topology. This article develops the topology that the rest of the corpus uses: the axioms of a topological space, the constructions that build new spaces from old (subspaces, products, quotients), the two notions of convergence (nets and filters) that survive when sequences do not suffice, the separation axioms that make limits unique and quotients well behaved, and the properties — connectedness and compactness — that topological groups and measure theory actually invoke. It is a preparation, rather than a general course in topology: spaces that are not at least Tychonoff appear only as counterexamples, and the metrisation theory, dimension theory and homotopy theory are omitted.
 
 The material is standard and is stated with proofs or with an explicit citation to the standard literature. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields; the topological examples are mostly $\mathbb{R}$ and $\mathbb{C}$, and the article on *Metric, Uniform and Complete Spaces*, written in parallel, takes up the metric case in detail. The value system is that of the corpus: a topology is described by open sets and their finite intersections and arbitrary unions, and every subsequent statement is checked against that description. No physics is invoked.
 
-The article on *Real Analysis* may be consulted for the concrete theory of the real line, which is the model case of everything below.
+The article onmay be consulted for the concrete theory of the real line, which is the model case of everything below.
 
 ## Topological Spaces
 
@@ -154,7 +154,7 @@ The restriction "all but finitely many" is essential and is the difference betwe
 
 **Proof.** Let $q$ be open and $V \subseteq Y$ with $q^{-1}(V)$ open. Then $V = q(q^{-1}(V))$ is open, so every set with open preimage is open, and the quotient topology consists exactly of those sets; so $q$ is a quotient map. The closed case is dual. Openness and closedness are sufficient conditions for being a quotient map, not necessary ones; standard examples of quotient maps that are neither open nor closed are collected in the counterexample literature. $\square$
 
-The quotient construction is the one topological groups use: if $H$ is a subgroup of a topological group $G$, the quotient $G/H$ of *Transformation Groups*' coset space is given the quotient topology, and the group operations descend to it; this is treated in *Topological Groups*, written in parallel.
+The quotient construction is the one topological groups use: if $H$ is a subgroup of a topological group $G$, the quotient $G/H$ of *Transformation Groups*' coset space is given the quotient topology, and the group operations descend to it; this is treated.
 
 ## Convergence: Nets and Filters
 
@@ -232,7 +232,7 @@ Both are standard, and each implies the other; Urysohn's lemma is the source of 
 
 **Proof.** If $X$ is compact Hausdorff and $A, B$ disjoint closed sets, compactness gives each $a \in A$ a neighbourhood with closure disjoint from $B$; a finite subcover and a second compactness argument separate $A$ from $B$. For a metric space, separate disjoint closed $A, B$ by the open sets $\{x : d(x, A) < d(x, B)\}$ and $\{x : d(x, B) < d(x, A)\}$. $\square$
 
-**Remark.** Hausdorffness is the working hypothesis in this category. It guarantees uniqueness of limits of nets and filters, it is inherited by subspaces and arbitrary products, and it makes a quotient $G/H$ of a topological group Hausdorff exactly when $H$ is closed, as *Topological Groups* shows. Regularity is inherited by subspaces and products; normality is inherited by closed subspaces but not by arbitrary products.
+**Remark.** Hausdorffness is the working hypothesis in this category. It guarantees uniqueness of limits of nets and filters, it is inherited by subspaces and arbitrary products, and it makes a quotient $G/H$ of a topological group Hausdorff exactly when $H$ is closed, asshows. Regularity is inherited by subspaces and products; normality is inherited by closed subspaces but not by arbitrary products.
 
 ## Connectedness
 
@@ -258,7 +258,7 @@ Both are standard, and each implies the other; Urysohn's lemma is the source of 
 
 **Proof.** A path connected space is the union of the images of paths from a fixed base point, each connected, sharing that point. The sine curve is the closure of a connected graph and hence connected; it is not path connected because a path approaching the segment has no limit, so no path reaches it from the graph. $\square$
 
-**Example.** A discrete space with more than one point is totally disconnected. The rationals $\mathbb{Q}$ are totally disconnected: a connected subset is an interval, and no interval of rationals with more than one point is connected. A profinite group, treated in *Topological Groups*, is compact, Hausdorff and totally disconnected, and this is why it is assembled from finite quotients.
+**Example.** A discrete space with more than one point is totally disconnected. The rationals $\mathbb{Q}$ are totally disconnected: a connected subset is an interval, and no interval of rationals with more than one point is connected. A profinite group, treated, is compact, Hausdorff and totally disconnected, and this is why it is assembled from finite quotients.
 
 **Theorem.** The product of connected spaces is connected, and the product of path connected spaces is path connected.
 
@@ -316,7 +316,7 @@ $$
 
 **Example.** The one-point compactification of $\mathbb{R}^n$ is $S^n$; of $\mathbb{R}$ is $S^1$; of a discrete space is the **Alexandrov compactification**, with $\infty$ the only non-isolated point. The one-point compactification of the natural numbers is the convergent sequence $\{0\} \cup \{1/n\}$.
 
-**Remark.** Local compactness and $\sigma$-compactness are the hypotheses under which measure theory produces the standard measures. A locally compact Hausdorff group admits a Haar measure, and a locally compact Hausdorff space has a rich supply of continuous functions of compact support; both facts are used in *Measure Theory and Integration* and *Topological Groups*. The relevant topological input is exhausted by the results above: Tychonoff for products and inverse limits, the quotient topology for coset spaces, and the separation theorems for the construction of functions.
+**Remark.** Local compactness and $\sigma$-compactness are the hypotheses under which measure theory produces the standard measures. A locally compact Hausdorff group admits a Haar measure, and a locally compact Hausdorff space has a rich supply of continuous functions of compact support; both facts are used . The relevant topological input is exhausted by the results above: Tychonoff for products and inverse limits, the quotient topology for coset spaces, and the separation theorems for the construction of functions.
 
 ## Summary
 
@@ -351,6 +351,8 @@ Nets and filters give equivalent accounts of convergence; a space is Hausdorff e
 | connected, path connected | No separation; path-joined |
 | $\sigma$-compact | Countable union of compact sets |
 | $X^+ = X \cup \{\infty\}$ | One-point compactification |
+
+
 
 ## Further Reading
 

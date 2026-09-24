@@ -5,13 +5,13 @@
 
 An automorphic form is a function on a quotient of a reductive group by an arithmetic lattice that satisfies a finite set of analytic conditions — a transformation law under the lattice, a growth condition at infinity, and finiteness under the invariant differential operators. The classical examples are the modular forms of the upper half-plane, and the modern theory reads them as functions on the adelic group $G(\mathbb{A})$, where the arithmetic lattice becomes $G(\mathbb{Q})$ and the transformation law becomes invariance under the discrete subgroup. The altitude of the definition is what makes it powerful: the conditions are local, so an automorphic form decomposes into local pieces, one for each place of $\mathbb{Q}$, and the arithmetic information is carried by those local pieces.
 
-The theory is the meeting point of four streams. The **classical** stream is the analytic theory of modular forms: the transformation law, the $q$-expansion, the Hecke operators, the Petersson inner product. The **representation-theoretic** stream is the decomposition of the space of automorphic forms into irreducible representations of $G(\mathbb{A})$, each a restricted tensor product of local representations, with the unramified local components encoded by a Satake parameter. The **spectral** stream is the decomposition of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$ into the cuspidal spectrum, the residual spectrum and the continuous spectrum of Eisenstein series, and the trace formula that computes it. The **arithmetic** stream is the theory of $L$-functions, the Euler products attached to an automorphic representation, and their functional equations. This article develops the first three and the outline of the fourth; the general conjectural framework that organises them is the subject of *The Langlands Program*, the next article.
+The theory is the meeting point of four streams. The **classical** stream is the analytic theory of modular forms: the transformation law, the $q$-expansion, the Hecke operators, the Petersson inner product. The **representation-theoretic** stream is the decomposition of the space of automorphic forms into irreducible representations of $G(\mathbb{A})$, each a restricted tensor product of local representations, with the unramified local components encoded by a Satake parameter. The **spectral** stream is the decomposition of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$ into the cuspidal spectrum, the residual spectrum and the continuous spectrum of Eisenstein series, and the trace formula that computes it. The **arithmetic** stream is the theory of $L$-functions, the Euler products attached to an automorphic representation, and their functional equations. This article develops the first three and the outline of the fourth; the general conjectural framework that organises them is not treated here.
 
 Three boundaries are held.
 
-- The **classical theory of modular forms** — the upper half-plane, the transformation law, the Petersson inner product, the modular curves — is *Modular Forms*, written in parallel; this article cites it and does not develop it. The **adelic analysis** — the ring of adeles, the ideles, the Haar measure on an adèle group, Tate's local–global zeta integrals — is *Adeles and Ideles* and the neighbouring arithmetic articles; it is cited as the place where the tools are constructed.
+- The **classical theory of modular forms** — the upper half-plane, the transformation law, the Petersson inner product, the modular curves — is; this article cites it and does not develop it. The **adelic analysis** — the ring of adeles, the ideles, the Haar measure on an adèle group, Tate's local–global zeta integrals — is *Adeles and Ideles* and the neighbouring arithmetic articles; it is cited as the place where the tools are constructed.
 - The **representation theory of locally compact groups** — admissibility, the unitary dual, induced representations, the tensor product theorems — is Part II's, in *Representation Theory of Locally Compact Groups* and *Induced Representations of Locally Compact Groups*; this article uses it.
-- The **$L$-functions and zeta functions** in their general form are developed later in the corpus, in *Zeta Functions* and *L-Functions*; this article states the automorphic $L$-function in line as standard mathematics and defers the general theory. The **Langlands correspondence** is the next article. No physics is invoked.
+- The **$L$-functions and zeta functions** in their general form are developed; this article states the automorphic $L$-function in line as standard mathematics and defers the general theory. The **Langlands correspondence** is not covered here. No physics is invoked.
 
 Throughout, $\mathbb{A} = \mathbb{A}_{\mathbb{Q}}$ is the ring of adeles of $\mathbb{Q}$ and $\mathbb{A}^\times$ the ideles; a **place** $v$ of $\mathbb{Q}$ is either the archimedean place $\infty$ with $\mathbb{Q}_\infty = \mathbb{R}$, or a prime $p$ with $\mathbb{Q}_p$ the $p$-adic field; $G$ is a connected reductive group over $\mathbb{Q}$, and for $G = GL_2$ one writes $G(\mathbb{A})$ for the adelic group. The quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ is the arithmetic quotient, and $\Gamma = G(\mathbb{Z})$ is the arithmetic lattice. The Haar measure, the modular character, the centre $Z$, and the algebra $\mathfrak{g}$ of the Lie group $G(\mathbb{R})$ are those of Part II; the differential operators are the elements of the centre $\mathfrak{z}$ of the universal enveloping algebra of $\mathfrak{g}$.
 
@@ -33,7 +33,7 @@ $$
 \dim M_k = \begin{cases}\lfloor k/12\rfloor + 1, & k \not\equiv 2 \pmod{12}, \\ \lfloor k/12\rfloor, & k \equiv 2 \pmod{12},\end{cases}
 $$
 
-so that $\dim M_4 = \dim M_6 = \dim M_8 = \dim M_{10} = 1$ and $\dim M_{12} = 2$. The classical theory, including the congruence subgroups, the modular curves and the Petersson inner product, is the subject of *Modular Forms*.
+so that $\dim M_4 = \dim M_6 = \dim M_8 = \dim M_{10} = 1$ and $\dim M_{12} = 2$. The classical theory, including the congruence subgroups, the modular curves and the Petersson inner product, is not covered here.
 
 ### Hecke Operators
 
@@ -174,7 +174,7 @@ $$
 \Lambda(s,\pi) = N_\pi^{s/2}\prod_{v \leq \infty} L_v(s,\pi_v),
 $$
 
-where $N_\pi$ is the **conductor** of $\pi$ — the product of the local conductors, equal to $1$ when $\pi$ is unramified — and the product includes the archimedean factors. The local factors at the ramified places and at infinity are defined by the local Langlands correspondence, which the next article states; for $GL_2$ the archimedean factor is a product of $\Gamma$-functions determined by the weight and the central character. The $L$-function is the analytic invariant of the automorphic representation, and its study is the arithmetic content of the theory.
+where $N_\pi$ is the **conductor** of $\pi$ — the product of the local conductors, equal to $1$ when $\pi$ is unramified — and the product includes the archimedean factors. The local factors at the ramified places and at infinity are defined by the local Langlands correspondence; for $GL_2$ the archimedean factor is a product of $\Gamma$-functions determined by the weight and the central character. The $L$-function is the analytic invariant of the automorphic representation, and its study is the arithmetic content of the theory.
 
 **Theorem (functional equation).** For a cuspidal automorphic representation $\pi$ of $GL_n$ there is a **root number** $\varepsilon(\pi) \in \mathbb{C}^\times$ with $|\varepsilon(\pi)| = 1$ such that
 
@@ -188,13 +188,13 @@ The functional equation is proved by Tate's thesis for $GL_1$ and by the theory 
 
 ### Rankin–Selberg and the Arithmetic
 
-For two cuspidal automorphic representations $\pi$ of $GL_n$ and $\pi'$ of $GL_m$ the **Rankin–Selberg convolution** $L(s, \pi \times \pi')$ is defined by an Euler product whose local factors are the local Rankin–Selberg factors, and the associated integral representation relates the analytic behaviour of the convolution to the inner product of the forms; the residue at $s=1$ measures the non-vanishing and is connected to the Petersson norm of the corresponding modular form. The general theory of these $L$-functions, their analytic continuation and their special values, is the subject of *L-Functions* and *Zeta Functions*, where the analytic theory is developed.
+For two cuspidal automorphic representations $\pi$ of $GL_n$ and $\pi'$ of $GL_m$ the **Rankin–Selberg convolution** $L(s, \pi \times \pi')$ is defined by an Euler product whose local factors are the local Rankin–Selberg factors, and the associated integral representation relates the analytic behaviour of the convolution to the inner product of the forms; the residue at $s=1$ measures the non-vanishing and is connected to the Petersson norm of the corresponding modular form. The general theory of these $L$-functions, their analytic continuation and their special values, is the subject andwhere the analytic theory is developed.
 
 ## Summary
 
 An automorphic form on a reductive group $G$ over $\mathbb{Q}$ is a function on the arithmetic quotient $G(\mathbb{Q})\backslash G(\mathbb{A})$ that is $K$-finite, finite under the centre of the universal enveloping algebra, of moderate growth, and with a fixed central character. The space of such forms carries a representation of $G(\mathbb{A})$ by right translation, and an automorphic representation is an irreducible subquotient; the cuspidal automorphic forms are those with vanishing constant terms along every proper parabolic, and they are the square-integrable ones. By Flath's theorem every irreducible admissible representation of $G(\mathbb{A})$ is a restricted tensor product of local representations $\pi_v$, unramified at almost all places, and at each unramified place the representation is determined by a Satake parameter in the Langlands dual group through the Satake isomorphism of the spherical Hecke algebra.
 
-The classical modular forms of *Modular Forms* are the weight-and-level components of this picture, the classical Hecke operators are the adelic Hecke operators at the finite places, and the multiplicativity of the Hecke eigenvalues is the multiplicativity of the local parameters; strong multiplicity one says that an automorphic representation is determined by almost all its local components. The spectral decomposition of $L^2$ splits it into the cuspidal spectrum, the residual spectrum and the continuous spectrum of Eisenstein series, and Selberg's trace formula computes the discrete spectrum's multiplicities from the geometry of the conjugacy classes of $G(\mathbb{Q})$. The standard $L$-function of a cuspidal representation is an Euler product with the Satake parameters as coefficients, and it satisfies a functional equation with conductor and root number; Tate's thesis for $GL_1$ and the zeta integrals for $GL_n$ supply the analytic continuation. The general conjectural framework that organises the local parameters, the $L$-groups and the functorial transfer of representations is the subject of *The Langlands Program*.
+The classical modular forms are the weight-and-level components of this picture, the classical Hecke operators are the adelic Hecke operators at the finite places, and the multiplicativity of the Hecke eigenvalues is the multiplicativity of the local parameters; strong multiplicity one says that an automorphic representation is determined by almost all its local components. The spectral decomposition of $L^2$ splits it into the cuspidal spectrum, the residual spectrum and the continuous spectrum of Eisenstein series, and Selberg's trace formula computes the discrete spectrum's multiplicities from the geometry of the conjugacy classes of $G(\mathbb{Q})$. The standard $L$-function of a cuspidal representation is an Euler product with the Satake parameters as coefficients, and it satisfies a functional equation with conductor and root number; Tate's thesis for $GL_1$ and the zeta integrals for $GL_n$ supply the analytic continuation. The general conjectural framework that organises the local parameters, the $L$-groups and the functorial transfer of representations is not covered here.
 
 ## Summary of Notation
 
@@ -221,6 +221,12 @@ The classical modular forms of *Modular Forms* are the weight-and-level componen
 | $L(s,\pi)$, $\Lambda(s,\pi)$ | Standard and completed $L$-function |
 | $N_\pi$, $\varepsilon(\pi)$ | Conductor and root number of $\pi$ |
 | $\pi \times \pi'$ | Rankin–Selberg convolution |
+
+
+
+
+
+
 
 ## Further Reading
 

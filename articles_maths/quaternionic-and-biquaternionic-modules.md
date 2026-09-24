@@ -5,7 +5,7 @@
 
 The quaternion algebra $\mathbb{H}$ is a division algebra and the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is a matrix algebra, and the contrast between these two facts organises the whole module theory of the pair. Over a division algebra every module is free and has a rank, so the module theory of $\mathbb{H}$ is a dimension theory with no structure beyond it; over the matrix algebra $\mathbb{B}$ there is a single irreducible module and the general module is a direct sum of copies of it, so freeness becomes a divisibility condition rather than an automatic one. The passage from $\mathbb{H}$ to $\mathbb{B}$ is base change along $\mathbb{R}\hookrightarrow\mathbb{C}$, and it is the functor that turns the rank theory over $\mathbb{H}$ into the direct-sum theory over $\mathbb{B}$.
 
-This article develops the three layers in order. It treats first the modules over $\mathbb{H}$, where the theory is that of vector spaces over a division ring; then the modules over $\mathbb{B}$, where the defining module $S$ of *The Defining Module of the Biquaternion Algebra* controls everything; and finally the base change $\mathbb{R}\to\mathbb{C}$ relating them, in the language of *Change of Rings*. A section on torsion explains why the naive notion from the commutative theory degenerates here and what replaces it, and a section on dimensions and rank tabulates the invariants. The algebra conventions are those of *Biquaternion Algebra*; the module conventions are those of *Modules over an Algebra*, *Modules over a PID* and *Representations of Algebras*. Everything is mathematical: the modules are modules over rings, and no physical interpretation is attached to any of them.
+This article develops the three layers in order. It treats first the modules over $\mathbb{H}$, where the theory is that of vector spaces over a division ring; then the modules over $\mathbb{B}$, where the defining module $S$ of *The Defining Module of the Biquaternion Algebra* controls everything; and finally the base change $\mathbb{R}\to\mathbb{C}$ relating them, in the language of *Change of Rings*. A section on torsion explains why the naive notion from the commutative theory degenerates here and what replaces it, and a section on dimensions and rank tabulates the invariants. The algebra conventions are those; the module conventions are those of *Modules over an Algebra*, *Modules over a PID* and *Representations of Algebras*. Everything is mathematical: the modules are modules over rings, and no physical interpretation is attached to any of them.
 
 Throughout, $R$ is a commutative ring with identity and $\mathbb{H}$, $\mathbb{B}$ are as in the shared notation: $\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the central unit $i$ with $i^2=-1$. Modules are left modules unless stated. The base field of a module over $\mathbb{H}$ is $\mathbb{R}$; the base field of a module over $\mathbb{B}$ is $\mathbb{C}$.
 
@@ -19,7 +19,7 @@ $$
 \tilde{Q}^{-1}=\frac{\bar{\tilde{Q}}}{N(\tilde{Q})}, \qquad N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}=q_0^2+q_1^2+q_2^2+q_3^2,
 $$
 
-by *Quaternion Algebra*. It has no zero divisors and no nonzero proper one-sided ideals: if $0\neq I\subseteq\mathbb{H}$ is a left ideal and $x\in I$ is nonzero, then $1=x^{-1}x\in I$, so $I=\mathbb{H}$. Consequently $\mathbb{H}$ is a simple ring with $J(\mathbb{H})=0$, and the only simple left $\mathbb{H}$-module is $\mathbb{H}$ itself.
+. It has no zero divisors and no nonzero proper one-sided ideals: if $0\neq I\subseteq\mathbb{H}$ is a left ideal and $x\in I$ is nonzero, then $1=x^{-1}x\in I$, so $I=\mathbb{H}$. Consequently $\mathbb{H}$ is a simple ring with $J(\mathbb{H})=0$, and the only simple left $\mathbb{H}$-module is $\mathbb{H}$ itself.
 
 ### Freeness
 
@@ -265,6 +265,8 @@ Torsion in the naive sense is meaningless over $\mathbb{B}$, because $\mathbb{B}
 | $GL_n(\mathbb{H})$ | automorphisms of $\mathbb{H}^n$ |
 | $J(\mathbb{H})$ | radical, zero because $\mathbb{H}$ is a division ring |
 | $\mathbb{Z}\{e_0,e_1,e_2,e_3\}$ | Lipschitz order, a torsion-free $\mathbb{Z}$-module of rank $4$ |
+
+
 
 ## Further Reading
 

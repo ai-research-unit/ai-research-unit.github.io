@@ -5,7 +5,7 @@
 
 This is the fifth article of the Boolean system in Part IV, and it occupies the **algebra slot** of that system for the *complete* and *topological* reading of the domain. The preceding articles developed the Boolean, Heyting, MV and effect algebras as finitary structures: finite meets, binary joins, a total or partial sum. Here the order is completed — arbitrary joins are available and finite meets distribute over them — and the resulting algebras are the **frames**, the algebraic form of a topological space, together with their non-idempotent generalisation, the **quantales**. This is the last of the algebraic articles of the Boolean category, and it is the one that connects the category to the topological slot.
 
-The boundary against the general theory is deliberate. Topological spaces, open sets, continuity, compactness and sobriety are the subject of *Topological Spaces*, and the open-set lattice is used here as the standard example rather than constructed. The finitary Heyting structure was developed in *Heyting Algebras and Intuitionistic Logic*; the present article completes it. The Boolean case — Stone duality, the prime ideal space, the compact totally disconnected spaces — is the subject of *Boolean Rings and Stone Duality*, the topological slot of this category, and it is cited rather than repeated. The operator-algebraic and measure-theoretic quantales are not developed; only the algebraic theory and the pointfree topology are given.
+The boundary against the general theory is deliberate. Topological spaces, open sets, continuity, compactness and sobriety are the subject of *Topological Spaces*, and the open-set lattice is used here as the standard example rather than constructed. The finitary Heyting structure was developed in *Heyting Algebras and Intuitionistic Logic*; the present article completes it. The Boolean case — Stone duality, the prime ideal space, the compact totally disconnected spaces — is not covered here, the topological slot of this category, and it is cited rather than repeated. The operator-algebraic and measure-theoretic quantales are not developed; only the algebraic theory and the pointfree topology are given.
 
 Throughout, a frame is written $L$ and a quantale $Q$; a locale is a frame read in the opposite category and is also written $L$. The two-element frame is $\mathbf{2} = \{0,1\}$, and the open-set frame of a topological space $X$ is $\mathcal{O}(X)$. The category of frames, with frame homomorphisms, is **Frm**, and the category of locales is its opposite $\mathbf{Loc} = \mathbf{Frm}^{\mathrm{op}}$. The name *frame* is used for the algebra and *locale* for the same object when it is being used as a space; this dual usage is standard and is stated once here.
 
@@ -177,7 +177,7 @@ A frame is a complete lattice in which finite meets distribute over arbitrary jo
 
 A locale is a frame read in the opposite category. The open-set functor $\mathcal{O}$ from spaces to locales is left adjoint to the points functor $\operatorname{pt}$, whose points are the frame homomorphisms to the two-element frame; the adjunction restricts to an equivalence between sober spaces and spatial locales. A locale may have no points, and locality is the generalisation of topology in which the frame is primary. Compactness and the separation axioms translate into the frame, and the Zariski locale of a commutative ring is the algebraic prototype.
 
-A quantale is a complete lattice with an associative multiplication distributing over arbitrary joins; the frames are exactly the idempotent commutative unital quantales with the meet as product. The binary relations on a set under composition, the ideals of a commutative ring under ideal product, the power set of a monoid under convolution and the subsets of a group under convolution and inversion are the standard examples, unital, commutative or involutive as the case may be, and they show that the quantale axioms are strictly weaker than the frame axioms. The Boolean system's algebra thus reaches, at this article, the complete distributive case and its non-idempotent generalisation; the Boolean case itself, with its Stone space, is the subject of *Boolean Rings and Stone Duality*.
+A quantale is a complete lattice with an associative multiplication distributing over arbitrary joins; the frames are exactly the idempotent commutative unital quantales with the meet as product. The binary relations on a set under composition, the ideals of a commutative ring under ideal product, the power set of a monoid under convolution and the subsets of a group under convolution and inversion are the standard examples, unital, commutative or involutive as the case may be, and they show that the quantale axioms are strictly weaker than the frame axioms. The Boolean system's algebra thus reaches, at this article, the complete distributive case and its non-idempotent generalisation; the Boolean case itself, with its Stone space, is not covered here.
 
 ## Summary of Notation
 
@@ -199,6 +199,10 @@ A quantale is a complete lattice with an associative multiplication distributing
 | $e$ | Unit of a unital quantale |
 | ${}^{*}$ | Involution of an involutive quantale |
 | $\mathcal{P}(X\times X)$ | Quantale of relations on $X$ under composition |
+
+
+
+
 
 ## Further Reading
 

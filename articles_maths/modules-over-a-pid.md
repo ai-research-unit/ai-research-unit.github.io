@@ -23,7 +23,7 @@ $$
 
 *Proof.* If $rm=0$ and $sn=0$ with $r,s \neq 0$, then $rs(m+n)=s(rm)+r(sn)=0$ and $rs \neq 0$ because $R$ is a domain, so $m+n \in M_{\mathrm{tor}}$; and $r(am)=a(rm)=0$ for $a \in R$. For the quotient, if the class of $m$ is torsion then $rm \in M_{\mathrm{tor}}$, so $s(rm)=0$ for some $s \neq 0$, whence $(sr)m=0$ and $m \in M_{\mathrm{tor}}$. $\square$
 
-The domain hypothesis is exactly what fails over a general commutative ring: in $\mathbb{Z}/6\mathbb{Z}$ as a module over itself, the elements $2$ and $3$ are torsion but their sum $5$ is a unit and is not, as noted in *Vector Spaces*. The module $M$ is **torsion-free** if $M_{\mathrm{tor}}=0$ and **torsion** if $M=M_{\mathrm{tor}}$; the quotient $M/M_{\mathrm{tor}}$ is always torsion-free.
+The domain hypothesis is exactly what fails over a general commutative ring: in $\mathbb{Z}/6\mathbb{Z}$ as a module over itself, the elements $2$ and $3$ are torsion but their sum $5$ is a unit and is not, as noted. The module $M$ is **torsion-free** if $M_{\mathrm{tor}}=0$ and **torsion** if $M=M_{\mathrm{tor}}$; the quotient $M/M_{\mathrm{tor}}$ is always torsion-free.
 
 ### Annihilators and Cyclic Modules
 
@@ -305,6 +305,8 @@ The Smith normal form is the algorithmic content: elementary row and column oper
 | $\operatorname{diag}(d_1,\dots,d_q)$ | diagonal matrix with the given diagonal |
 | $\mathbb{Z}/n\mathbb{Z}$ | integers modulo $n$ |
 | $\mathbb{Q}/\mathbb{Z}$ | the torsion divisible abelian group |
+
+
 
 ## Further Reading
 

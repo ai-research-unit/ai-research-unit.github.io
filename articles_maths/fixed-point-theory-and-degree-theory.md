@@ -9,7 +9,7 @@ The topological degree in its finite-dimensional form — the degree of a map of
 
 The article begins with the contraction principle, the metric fixed-point theorem that needs completeness and not compactness, and with its extensions. It then develops the compact-mapping theory: the Schauder projection, the Schauder fixed point theorem and its finite-dimensional input from *Degree Theory and the Brouwer Fixed Point Theorem*, and the Leray–Schauder degree with its properties. It proves the continuation and Schaefer theorems, states the theorems of Krasnoselskii, Rothe and Altman, introduces the measures of noncompactness and the fixed-point theorems for condensing maps, and closes with the fixed point index and its applications.
 
-The calculus on normed spaces, the Fréchet derivative and the inverse function theorem are those of *Differential Calculus on Normed Spaces* and *Nonlinear Functional Analysis*; convexity, the subdifferential and the monotone operators are those of *Nonlinear Functional Analysis*. The finite-dimensional degree, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are those of *Degree Theory and the Brouwer Fixed Point Theorem*, and the topological degrees of the classical one-dimensional case are the winding numbers of that article. The compact operators and the Fredholm theory are those of *Fredholm Theory*; the Ascoli–Arzelà theorem and the compactness in the function spaces are those of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Topology on Linear Spaces*; the locally convex version of the fixed point theory (Tychonoff's theorem for locally convex spaces) uses *Topological Modules and Vector Spaces*. The applications to ordinary equations, to elliptic boundary problems and to the Cauchy problem belong to *Differential Equations*, *Partial Differential Equations* and *Sobolev Spaces and Weak Solutions*.
+The calculus on normed spaces, the Fréchet derivative and the inverse function theorem are those of *Differential Calculus on Normed Spaces* and *Nonlinear Functional Analysis*; convexity, the subdifferential and the monotone operators are those of *Nonlinear Functional Analysis*. The finite-dimensional degree, the Brouwer fixed point theorem and the Lefschetz fixed point theorem are those of *Degree Theory and the Brouwer Fixed Point Theorem*, and the topological degrees of the classical one-dimensional case are the winding numbers of that article. The compact operators and the Fredholm theory are those of *Fredholm Theory*; the Ascoli–Arzelà theorem and the compactness in the function spaces are those of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Topology on Linear Spaces*; the locally convex version of the fixed point theory (Tychonoff's theorem for locally convex spaces) uses *Topological Modules and Vector Spaces*. The applications to ordinary equations, to elliptic boundary problems and to the Cauchy problem belong to *Differential Equations*.
 
 No physics is invoked.
 
@@ -81,7 +81,7 @@ The proof is the model of the passage from the finite-dimensional to the infinit
 
 **Corollary (unbounded convex sets).** If $C$ is a closed convex set and $T:C\to C$ is continuous and compact with $T(C)$ bounded, then $T$ has a fixed point: choose $r$ with $T(C)\subseteq B(0,r)$ and apply Schauder's theorem to the closed bounded convex set $C\cap\overline{B(0,r)}$, which is invariant under $T$. If the fixed point is sought in a specified bounded open set rather than anywhere in $C$, the degree theory of the next section is used instead.
 
-**Corollary (compact convex sets).** Let $C$ be a compact convex subset of $X$ and $T:C\to C$ continuous. Then $T$ has a fixed point, since $T$ is compact and $C$ is closed, bounded and convex; in particular every nonexpansive self-map of a compact convex set has a fixed point. The generalisation to a weakly compact convex set and a nonexpansive map, in the form of the Ryll-Nardzewski theorem, needs the weak topology and the existence of an invariant mean, and its statement and proof belong to the topological fixed point theory and to *Topological Dynamics*.
+**Corollary (compact convex sets).** Let $C$ be a compact convex subset of $X$ and $T:C\to C$ continuous. Then $T$ has a fixed point, since $T$ is compact and $C$ is closed, bounded and convex; in particular every nonexpansive self-map of a compact convex set has a fixed point. The generalisation to a weakly compact convex set and a nonexpansive map, in the form of the Ryll-Nardzewski theorem, needs the weak topology and the existence of an invariant mean, and its statement and proof belong to the topological fixed point theory .
 
 ## The Leray–Schauder Degree
 
@@ -195,13 +195,13 @@ $$
 (Tu)(x)=\int_0^1k(x,y)\,g(u(y))\,dy
 $$
 
-is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\|g\|_\infty\int|k|\,dy\le1$ then $T$ maps a ball into itself and Schauder's theorem gives a solution of $u=Tu$. The example is the standard existence theorem for a nonlinear integral equation, and the detailed regularity theory belongs to *Partial Differential Equations* and *Sobolev Spaces and Weak Solutions*.
+is continuous and compact on $C[0,1]$ by the Ascoli–Arzelà theorem, and if $\|g\|_\infty\int|k|\,dy\le1$ then $T$ maps a ball into itself and Schauder's theorem gives a solution of $u=Tu$. The example is the standard existence theorem for a nonlinear integral equation, and the detailed regularity theory belongs andboth.
 
 **Example (the Cauchy problem).** The local existence theorem of Peano for $y'=f(x,y)$ follows by applying Schauder's theorem to the compact operator $u\mapsto y_0+\int_{x_0}^x f(t,u(t))dt$ on a ball in $C[x_0-\delta,x_0+\delta]$; the a priori bound that makes the ball invariant is the boundedness of $f$ on the relevant strip. The theorem, its sharpness and the uniqueness theory belong to *Differential Equations*.
 
-**Example (a semilinear elliptic problem).** For the boundary problem $-\Delta u=g(u)$ on a bounded domain with $u=0$ on the boundary, the inverse of $-\Delta$ with Dirichlet conditions is compact on the appropriate space, and the problem is equivalent to the fixed point equation $u=(-\Delta)^{-1}g(u)$; the growth and sign conditions on $g$ that make the Schauder or Schaefer hypotheses hold are the hypotheses of the existence theory, which belongs to *Sobolev Spaces and Weak Solutions* and *Partial Differential Equations*.
+**Example (a semilinear elliptic problem).** For the boundary problem $-\Delta u=g(u)$ on a bounded domain with $u=0$ on the boundary, the inverse of $-\Delta$ with Dirichlet conditions is compact on the appropriate space, and the problem is equivalent to the fixed point equation $u=(-\Delta)^{-1}g(u)$; the growth and sign conditions on $g$ that make the Schauder or Schaefer hypotheses hold are the hypotheses of the existence theory, which belongs .
 
-**Example (a monotone perturbation).** If $A$ is maximal monotone and $K$ is compact, the equation $Au+Ku\ni0$ is solved by combining the surjectivity theorem for monotone operators of *Nonlinear Functional Analysis* with the Leray–Schauder degree; the abstract scheme is the content of the present article, and the concrete applications are to variational inequalities and to evolution equations, treated in *Partial Differential Equations* and *Differential Equations*.
+**Example (a monotone perturbation).** If $A$ is maximal monotone and $K$ is compact, the equation $Au+Ku\ni0$ is solved by combining the surjectivity theorem for monotone operators of *Nonlinear Functional Analysis* with the Leray–Schauder degree; the abstract scheme is the content of the present article, and the concrete applications are to variational inequalities and to evolution equations, treated and *Differential Equations*.
 
 ## Summary
 
@@ -226,6 +226,10 @@ The **Leray–Schauder degree** $\deg(I-T,\Omega,p)$ is the integer defined for 
 | $\overline{\mathrm{conv}}$ | closed convex hull |
 | $(-\Delta)^{-1}$ | inverse of the Dirichlet Laplacian |
 | $C[0,1]$ | space of continuous functions |
+
+
+
+
 
 ## Further Reading
 

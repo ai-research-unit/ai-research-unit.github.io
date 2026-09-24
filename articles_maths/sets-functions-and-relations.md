@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article fixes the language in which the rest of the corpus is written. A set is a collection of objects, membership is the one primitive relation, and everything algebraic that follows — a group, a ring, a module, an algebra — is a set equipped with further structure. The three notions of the title are therefore not a preliminary to algebra but the alphabet of it: a group law is a function $G \times G \to G$, a subgroup is a subset closed under that function, an action is a function $G \times X \to X$, and a quotient is a set of equivalence classes. The article develops these notions concretely and proves the elementary propositions that later articles use without comment.
+This article fixes the language in which the rest of the corpus is written. A set is a collection of objects, membership is the one primitive relation, and everything algebraic that follows — a group, a ring, a module, an algebra — is a set equipped with further structure. The three notions of the title are therefore not a preliminary to algebra but the alphabet of it: a group law is a function $G \times G \to G$, a subgroup is a subset closed under that function, an action is a function $G \times X \to X$, and a quotient is a set of equivalence classes. The article develops these notions concretely and proves the elementary propositions that other articles use without comment.
 
-The treatment is deliberately naive about the foundations. The operations on sets are written down, the laws they satisfy are proved, and the axiom system that justifies them — the Zermelo–Fraenkel axioms with the axiom of choice, the cumulative hierarchy and the notion of an ordinal — is set out in the companion article *Set-Theoretic Foundations*. The theory of cardinality, including the countability of $\mathbb{Q}$ and the uncountability of $\mathbb{R}$ and the arithmetic of infinite cardinals, belongs to *Cardinality and the Axiom of Choice*; the systematic theory of order, including lattices, completeness and the Knaster–Tarski theorem, belongs to *Order Theory and Lattices*; and the propositional and predicate calculus, with the rules of inference and the structure of a formal proof, belongs to *Logic and Proof*. This article introduces only so much order and so much logic as the language of sets requires, and defers the rest.
+The treatment is deliberately naive about the foundations. The operations on sets are written down, the laws they satisfy are proved, and the axiom system that justifies them — the Zermelo–Fraenkel axioms with the axiom of choice, the cumulative hierarchy and the notion of an ordinal — is assumed as the ambient set theory and is not developed here. The theory of cardinality, including the countability of $\mathbb{Q}$ and the uncountability of $\mathbb{R}$ and the arithmetic of infinite cardinals, belongs; the systematic theory of order, including lattices, completeness and the Knaster–Tarski theorem, belongs; and the propositional and predicate calculus, with the rules of inference and the structure of a formal pro, belongs. This article introduces only so much order and so much logic as the language of sets requires, and defers the rest.
 
-One forward reference deserves to be stated at the outset, because it recurs throughout the corpus. The operations on subsets — union, intersection and complement — satisfy the same laws as the logical connectives of propositional logic, and the resulting structure is the first example of a **Boolean algebra**. That structure is developed as a subject in Part IV, in the synthetic study of the Booleans, and the parallel with the algebra of propositions is drawn in *Logic and Proof*. Nothing in the present article depends on either.
+One forward reference deserves to be stated at the outset, because it recurs throughout the corpus. The operations on subsets — union, intersection and complement — satisfy the same laws as the logical connectives of propositional logic, and the resulting structure is the first example of a **Boolean algebra**. That structure is developed as a subject in Part IV, in the synthetic study of the Booleans, and the parallel with the algebra of propositions is drawn. Nothing in the present article depends on either.
 
 ## Sets and Membership
 
@@ -23,7 +23,7 @@ Extensionality is the principle that a set is determined by its members and by n
 
 The **empty set** $\emptyset$ is the set with no elements. Extensionality makes it unique: if $\emptyset'$ also had no elements, then no $z$ lies in one and not the other, so $\emptyset = \emptyset'$. A set is **nonempty** if it has at least one element, written $X \neq \emptyset$.
 
-Membership is a relation between objects and sets, and it is not symmetric or transitive in general: $x \in X$ and $X \in Y$ do not imply $x \in Y$, and indeed the set-theoretic paradoxes show that not every property defines a set. The corpus avoids the paradoxes by never forming "the set of all sets with property $P$" without restriction; the restricted comprehension and replacement axioms that legitimate the constructions used here are stated in *Set-Theoretic Foundations*. The constructions below — pairing, union, power set, separation, replacement — are the ones the corpus uses, and each is licensed by an axiom named in that article.
+Membership is a relation between objects and sets, and it is not symmetric or transitive in general: $x \in X$ and $X \in Y$ do not imply $x \in Y$, and indeed the set-theoretic paradoxes show that not every property defines a set. The corpus avoids the paradoxes by never forming "the set of all sets with property $P$" without restriction; the restricted comprehension and replacement axioms that legitimate the constructions used here are the standard Zermelo–Fraenkel axioms, assumed as the ambient set theory and not developed here. The constructions below — pairing, union, power set, separation, replacement — are the ones the corpus uses, each licensed by the corresponding axiom of that ambient theory.
 
 ### Subsets
 
@@ -33,7 +33,7 @@ Membership is a relation between objects and sets, and it is not symmetric or tr
 
 **Proof.** Reflexivity and transitivity are immediate from the definition, since a condition true of every element of $A$ is true of every element of $A$, and a condition true of every element of $A$ and of every element of $B \supseteq A$ is true of every element of $A$. Antisymmetry is extensionality: $A \subseteq B$ and $B \subseteq A$ say exactly that $z \in A \iff z \in B$ for all $z$. $\square$
 
-A relation that is reflexive, antisymmetric and transitive is a **partial order**; the subset relation is the model on which the general theory of *Order Theory and Lattices* is built. The symbol $\subseteq$ is the order, and $A \subsetneq B$ is its strict part.
+A relation that is reflexive, antisymmetric and transitive is a **partial order**; the subset relation is the model on which the general theory is built. The symbol $\subseteq$ is the order, and $A \subsetneq B$ is its strict part.
 
 Given a set $X$ and a property $P$, the **separation** (or comprehension) principle lets one form the subset
 
@@ -85,7 +85,7 @@ $$
 
 are proved by the same elementwise argument with a quantifier in place of a finite disjunction. $\square$
 
-The laws listed are exactly the axioms of a **Boolean algebra**, with $\cup$, $\cap$, ${}^{\mathrm{c}}$, $\emptyset$ and $X$ playing the roles of sum, product, complement, zero and unit; the algebra of subsets and the algebra of propositions of *Logic and Proof* are the same set of laws read in two vocabularies.
+The laws listed are exactly the axioms of a **Boolean algebra**, with $\cup$, $\cap$, ${}^{\mathrm{c}}$, $\emptyset$ and $X$ playing the roles of sum, product, complement, zero and unit; the algebra of subsets and the algebra of propositions are the same set of laws read in two vocabularies.
 
 **Remark (duality).** Every law in the list remains true when $\cup$ is interchanged with $\cap$ and $\emptyset$ with $X$. This **duality principle** reflects the symmetry of the defining laws and halves the work of verifying them; the complement is the operation that turns one half of the list into the other, since De Morgan's laws say that complement converts unions into intersections.
 
@@ -97,13 +97,13 @@ $$
 \mathcal{P}(X) = \{A : A \subseteq X\}.
 $$
 
-The power set is a set by the power-set axiom of *Set-Theoretic Foundations*.
+The power set is a set by the power-set axiom of the ambient set theory.
 
 **Proposition.** The power set $\mathcal{P}(X)$, ordered by $\subseteq$, has $\emptyset$ as least element and $X$ as greatest element; the union $A \cup B$ is the least subset of $X$ containing both $A$ and $B$, and the intersection $A \cap B$ is the greatest subset contained in both.
 
 **Proof.** That $\emptyset \subseteq A \subseteq X$ for every $A \subseteq X$ is immediate. If $C \supseteq A$ and $C \supseteq B$, then $C$ contains every element of $A$ and of $B$, hence $C \supseteq A \cup B$; and $A \cup B$ itself contains both, so it is least. Dually, $A \cap B$ is contained in both and contains every set contained in both. $\square$
 
-Thus $\mathcal{P}(X)$ carries a **lattice** structure — a partial order in which every pair has a least upper bound and a greatest lower bound — and the lattice is distributive and complemented, the first example of both a lattice and a Boolean algebra; the general theory is in *Order Theory and Lattices*. The cardinality of $\mathcal{P}(X)$ is treated in *Cardinality and the Axiom of Choice*.
+Thus $\mathcal{P}(X)$ carries a **lattice** structure — a partial order in which every pair has a least upper bound and a greatest lower bound — and the lattice is distributive and complemented, the first example of both a lattice and a Boolean algebra; the general theory is. The cardinality of $\mathcal{P}(X)$ is treated.
 
 ## Ordered Pairs and Products
 
@@ -159,7 +159,7 @@ $$
 
 the set of choice functions selecting one element from each $A_i$.
 
-For a finite index set this agrees with the recursive product above: a function on $\{1, \ldots, n\}$ is a tuple. For an infinite index set it is the general notion, and it is the object to which the axiom of choice is addressed: the assertion that $\prod_i A_i$ is nonempty whenever every $A_i$ is nonempty *is* the axiom of choice, and its equivalence with Zorn's lemma and the well-ordering theorem is treated in *Cardinality and the Axiom of Choice*. The **disjoint union** of the family is
+For a finite index set this agrees with the recursive product above: a function on $\{1, \ldots, n\}$ is a tuple. For an infinite index set it is the general notion, and it is the object to which the axiom of choice is addressed: the assertion that $\prod_i A_i$ is nonempty whenever every $A_i$ is nonempty *is* the axiom of choice, and its equivalence with Zorn's lemma and the well-ordering theorem is treated. The **disjoint union** of the family is
 
 $$
 \bigsqcup_{i \in I} A_i = \bigcup_{i \in I} (\{i\} \times A_i),
@@ -205,7 +205,7 @@ $$
 X / {\sim} = \{[x] : x \in X\},
 $$
 
-and the **quotient map** $\pi : X \to X/{\sim}$, $\pi(x) = [x]$, is surjective. In later articles the quotient of a group by a normal subgroup, of a ring by an ideal, and of a module by a submodule are all quotients of this form, and the universal property of a quotient — that a function on $X$ which is constant on classes factors uniquely through $\pi$ — is the same statement in each case.
+and the **quotient map** $\pi : X \to X/{\sim}$, $\pi(x) = [x]$, is surjective. In other articles the quotient of a group by a normal subgroup, of a ring by an ideal, and of a module by a submodule are all quotients of this form, and the universal property of a quotient — that a function on $X$ which is constant on classes factors uniquely through $\pi$ — is the same statement in each case.
 
 ### Partitions
 
@@ -225,7 +225,7 @@ The theorem gives two ways of presenting a quotient, by the relation or by the p
 
 The subset relation $\subseteq$ on $\mathcal{P}(X)$ is a partial order that is not total as soon as $X$ has two elements: $\{a\}$ and $\{b\}$ are incomparable. The usual order on $\mathbb{R}$ is total. Every partial order gives rise to a strict order by $x < y \iff x \leq y$ and $x \neq y$, and every strict order to a partial order by $x \leq y \iff x < y$ or $x = y$; the two notions carry the same information.
 
-An element $m \in X$ is **maximal** if $m \leq x$ implies $x = m$, and **maximum** (or greatest) if $x \leq m$ for all $x$; the two differ when the order is partial, since a maximum is unique but maxima need not exist. A total order in which every nonempty subset has a least element is a **well-order**, the object on which transfinite induction is performed. The systematic theory of orders is the subject of *Order Theory and Lattices*, and Zorn's lemma is treated with the axiom of choice in *Cardinality and the Axiom of Choice*.
+An element $m \in X$ is **maximal** if $m \leq x$ implies $x = m$, and **maximum** (or greatest) if $x \leq m$ for all $x$; the two differ when the order is partial, since a maximum is unique but maxima need not exist. A total order in which every nonempty subset has a least element is a **well-order**, the object on which transfinite induction is performed. The systematic theory of orders is the subject, and Zorn's lemma is treated with the axiom of choice.
 
 ## Functions
 
@@ -251,7 +251,7 @@ Two functions are equal when they have the same domain, the same codomain and th
 
 **Proof.** For each $x$, both sides of the associativity identity evaluate to $h(g(f(x)))$, so the two functions agree at every point. The identities are immediate from the definitions. $\square$
 
-Associativity makes the set of functions $X \to X$ under composition a monoid, whose invertible elements are the symmetric group $\operatorname{Sym}(X)$ of *Transformation Groups*. Composition is not commutative in general: on $X = \{1,2\}$ the transposition and the constant map do not commute.
+Associativity makes the set of functions $X \to X$ under composition a monoid, whose invertible elements are the symmetric group $\operatorname{Sym}(X)$. Composition is not commutative in general: on $X = \{1,2\}$ the transposition and the constant map do not commute.
 
 ### Injective, Surjective and Bijective Functions
 
@@ -267,7 +267,7 @@ Injectivity says that distinct inputs have distinct outputs, surjectivity that t
 
 **Proof.** (1) If $(g \circ f)(x) = (g \circ f)(x')$ then $g(f(x)) = g(f(x'))$, so $f(x) = f(x')$ by injectivity of $g$ and then $x = x'$ by injectivity of $f$. If $g \circ f$ is injective and $f(x) = f(x')$, then $(g \circ f)(x) = (g \circ f)(x')$, so $x = x'$. (2) If $z \in Z$, surjectivity of $g \circ f$ gives $x$ with $g(f(x)) = z$, so $z$ is the image under $g$ of $f(x)$. If $g \circ f$ is surjective and $z \in Z$, choose $x$ with $(g \circ f)(x) = z$; then $z = g(f(x))$ lies in the image of $g$. (3) Immediate from (1) and (2). $\square$
 
-**Definition.** A **bijection** from $X$ to $Y$ is a bijective function; one writes $X \cong Y$ when a bijection exists, and says that $X$ and $Y$ are **equipotent**. Equipotence is reflexive, symmetric and transitive, and it is the relation on which the theory of cardinality is founded in *Cardinality and the Axiom of Choice*.
+**Definition.** A **bijection** from $X$ to $Y$ is a bijective function; one writes $X \cong Y$ when a bijection exists, and says that $X$ and $Y$ are **equipotent**. Equipotence is reflexive, symmetric and transitive, and it is the relation on which the theory of cardinality is founded.
 
 ### Inverses
 
@@ -275,7 +275,7 @@ Injectivity says that distinct inputs have distinct outputs, surjectivity that t
 
 **Proposition.** A function $f : X \to Y$ is injective if and only if it has a left inverse, surjective if and only if it has a right inverse, and bijective if and only if it has a two-sided inverse, which is then unique.
 
-**Proof.** If $g \circ f = \mathrm{id}_X$ and $f(x) = f(x')$ then $x = g(f(x)) = g(f(x')) = x'$, so $f$ is injective. Conversely, an injective $f$ has a left inverse: fix $x_0 \in X$ when $X \neq \emptyset$ and define $g(y) = x$ if $y = f(x)$, and $g(y) = x_0$ if $y \notin \operatorname{im} f$; the two cases are unambiguous by injectivity. If $f \circ h = \mathrm{id}_Y$ and $y \in Y$, then $y = f(h(y))$ lies in the image, so $f$ is surjective. Conversely a surjective $f$ has a right inverse, whose existence on each fibre is an appeal to the axiom of choice when $Y$ is infinite — the axiom is stated and discussed in *Cardinality and the Axiom of Choice*. Finally, if $f$ is bijective, define $f^{-1}(y)$ to be the unique $x$ with $f(x) = y$; this is a two-sided inverse, and it is unique because any two-sided inverse $g$ satisfies $g = g \circ f \circ f^{-1} = f^{-1}$. $\square$
+**Pro.** If $g \circ f = \mathrm{id}_X$ and $f(x) = f(x')$ then $x = g(f(x)) = g(f(x')) = x'$, so $f$ is injective. Conversely, an injective $f$ has a left inverse: fix $x_0 \in X$ when $X \neq \emptyset$ and define $g(y) = x$ if $y = f(x)$, and $g(y) = x_0$ if $y \notin \operatorname{im} f$; the two cases are unambiguous by injectivity. If $f \circ h = \mathrm{id}_Y$ and $y \in Y$, then $y = f(h(y))$ lies in the image, so $f$ is surjective. Conversely a surjective $f$ has a right inverse, whose existence on each fibre is an appeal to the axiom of choice when $Y$ is infinite — the axiom is stated and discussed. Finally, if $f$ is bijective, define $f^{-1}(y)$ to be the unique $x$ with $f(x) = y$; this is a two-sided inverse, and it is unique because any two-sided inverse $g$ satisfies $g = g \circ f \circ f^{-1} = f^{-1}$. $\square$
 
 **Corollary.** If $f$ is bijective then $(f^{-1})^{-1} = f$, and if $g \circ f$ is a bijection with $f$ and $g$ bijective then $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 
@@ -307,7 +307,7 @@ The notation $f^{-1}(B)$ for the preimage does not presuppose that $f$ is invert
 
 The nine laws listed for $\cup$, $\cap$ and complement are, after the omission of those that follow from the others, the axioms of a **Boolean algebra**: a distributive lattice with a least element $0$ and a greatest element $1$ in which every element has a complement. The subsets of a fixed set, with the operations above, form the **power-set algebra** of $X$, the standard example; under the **characteristic function** $\chi_A : X \to \{0,1\}$, which takes the value $1$ on $A$ and $0$ off it, the operations become the pointwise operations $\min$, $\max$ and $1 - (\cdot)$ on $\{0,1\}$, and $A \mapsto \chi_A$ is a bijection from $\mathcal{P}(X)$ to $\{0,1\}^X$.
 
-**Remark.** The power-set algebra $\mathcal{P}(X)$ and the algebra of propositions built from $|X|$ atoms are the same Boolean algebra, the translation sending a subset to the disjunction of the atoms it contains. The general theory of Boolean algebras — atoms, homomorphisms, quotients, and the representation of a finite one as a power set — belongs to Part IV, and the logical reading to *Logic and Proof*.
+**Remark.** The power-set algebra $\mathcal{P}(X)$ and the algebra of propositions built from $|X|$ atoms are the same Boolean algebra, the translation sending a subset to the disjunction of the atoms it contains. The general theory of Boolean algebras — atoms, homomorphisms, quotients, and the representation of a finite one as a power set — belongs to Part IV, and the logical reading.
 
 ## Summary
 
@@ -315,7 +315,7 @@ A set is determined by its elements (extensionality). Subsets are ordered by inc
 
 Ordered pairs are coded as $\{\{a\},\{a,b\}\}$, which makes $(a,b) = (c,d)$ exactly when $a = c$ and $b = d$; the Cartesian product $X \times Y$ is the set of ordered pairs, the product of a family is the set of choice functions, and the axiom of choice is the assertion that this set is nonempty when every factor is.
 
-A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflexive, symmetric and transitive, its classes partition $X$, and the map from equivalence relations to partitions is a bijection. A partial order is reflexive, antisymmetric and transitive; a total order has every pair comparable; the general theory is in *Order Theory and Lattices*. A function is a relation with exactly one value at each point of the domain; composition is associative; injective, surjective and bijective functions are characterised by the existence of left, right and two-sided inverses; and preimages preserve all the set operations while images preserve only unions in general.
+A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflexive, symmetric and transitive, its classes partition $X$, and the map from equivalence relations to partitions is a bijection. A partial order is reflexive, antisymmetric and transitive; a total order has every pair comparable; the general theory is. A function is a relation with exactly one value at each point of the doma; composition is associative; injective, surjective and bijective functions are characterised by the existence of left, right and two-sided inverses; and preimages preserve all the set operations while images preserve only unions in general.
 
 ## Summary of Notation
 
@@ -346,6 +346,10 @@ A relation on $X$ is a subset of $X \times X$; an equivalence relation is reflex
 | $\operatorname{im} f = f(X)$ | Image of $f$ |
 | $f(A)$, $f^{-1}(B)$ | Image of a subset; preimage of a subset |
 | $X \cong Y$ | Equipotence: a bijection $X \to Y$ exists |
+
+
+
+
 
 ## Further Reading
 

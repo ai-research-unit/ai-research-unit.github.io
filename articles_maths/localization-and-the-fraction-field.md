@@ -279,7 +279,7 @@ $$
 R = \bigcap_{\mathfrak{m}} R_\mathfrak{m},
 $$
 
-the intersection taken over the maximal ideals and computed inside $\operatorname{Frac}(R)$. This identity is the reason a property can be checked locally at maximal ideals; the module-theoretic side of the same principle belongs to *Modules*.
+the intersection taken over the maximal ideals and computed inside $\operatorname{Frac}(R)$. This identity is the reason a property can be checked locally at maximal ideals; the module-theoretic side of the same principle belongs.
 
 **Remark (localization preserves factorization).** If $R$ is a UFD and $S$ is multiplicative, then $S^{-1}R$ is a UFD, since the prime factorization of an element of $S^{-1}R$ is obtained from that of a numerator in $R$ after discarding the factors that become units. In particular $\mathbb{Z}_{(p)}$ is a UFD, as is $\mathbb{Q}[x]_{(x)}$.
 
@@ -315,6 +315,8 @@ The ideals of $S^{-1}R$ are in bijection with the saturated ideals of $R$, those
 | $F((x))$ | Laurent series field $\operatorname{Frac}(F[[x]])$ |
 | $R \setminus R^\times$ | Set of non-units; an ideal exactly when $R$ is local |
 | $\bar{S}$ | Saturation of $S$ |
+
+
 
 ## Further Reading
 

@@ -7,7 +7,7 @@ A module over an algebra is the object obtained when the scalar structure of a m
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$, and $A$ is an **associative unital $R$-algebra**: an $R$-module equipped with an $R$-bilinear associative product and a two-sided unit $1_A$. As in *Modules*, the default base is the commutative ring rather than the field, and every place where a result needs a field, a division ring, characteristic zero, or invertibility of $2$ is flagged. Left modules are the default; a right module is written with the ring as a subscript on the right, as in $M_A$. The unital assumption is essential and is not repeated: $A$ has a unit, module actions are unital, and algebra homomorphisms preserve the unit.
 
-The passage from a ring to an algebra is not a change of axioms — every ring is a $\mathbb{Z}$-algebra — but a change of what may be asserted. An algebra carries a second action, of its base ring, on top of its ring structure, and the extra flexibility of the base ring is what makes the theory of this category different from the theory of category 04. Two facts recur. The first is that a module over an algebra is a module over the algebra's base ring as well, so the module is an $R$-module with additional structure; the second is that the algebra need not be commutative, so left and right modules genuinely differ and the naive tensor product of two modules need not exist. Both are developed below, and the tensor product appropriate to the noncommutative case is the balanced product of the companion article *The Balanced Product over an Algebra*.
+The passage from a ring to an algebra is not a change of axioms — every ring is a $\mathbb{Z}$-algebra — but a change of what may be asserted. An algebra carries a second action, of its base ring, on top of its ring structure, and the extra flexibility of the base ring is what makes the theory of this category different from the theory of category 04. Two facts recur. The first is that a module over an algebra is a module over the algebra's base ring as well, so the module is an $R$-module with additional structure; the second is that the algebra need not be commutative, so left and right modules genuinely differ and the naive tensor product of two modules need not exist. Both are developed below, and the tensor product appropriate to the noncommutative case is the balanced product .
 
 ## Algebras and Their Modules
 
@@ -103,11 +103,11 @@ $$
 
 the summands being the spaces of matrices supported in a single column. Thus the regular module of $M_n(F)$ is $n$ copies of $S$, and $S$ is not free when $n \geq 2$: a free $M_n(F)$-module is $A^k=S^{\oplus nk}$, so the number of copies of $S$ in a free module is a multiple of $n$, whereas $S=S^{\oplus 1}$ is a single copy and $n \nmid 1$ for $n \geq 2$ — this is taken up in §Free, Projective and the Rigidity of the Algebra.
 
-**(f) Group algebras.** For a group $G$ and a commutative ring $R$, the group algebra $R[G]$ is the free $R$-module on the elements of $G$ with the product extending the group multiplication bilinearly; it is a unital associative $R$-algebra, generally noncommutative when $G$ is nonabelian. An $R[G]$-module is exactly a representation of $G$ on an $R$-module, that is, a group homomorphism $G \to \operatorname{Aut}_R(M)$. The theory is developed from the module side in the companion article *Representations of Groups*, and the group algebra is the bridge between group theory and the module theory of this category.
+**(f) Group algebras.** For a group $G$ and a commutative ring $R$, the group algebra $R[G]$ is the free $R$-module on the elements of $G$ with the product extending the group multiplication bilinearly; it is a unital associative $R$-algebra, generally noncommutative when $G$ is nonabelian. An $R[G]$-module is exactly a representation of $G$ on an $R$-module, that is, a group homomorphism $G \to \operatorname{Aut}_R(M)$. The theory is developed from the module side , and the group algebra is the bridge between group theory and the module theory of this category.
 
-**(g) Division algebras.** A unital associative algebra $D$ over a field $F$ is a **division algebra** if every nonzero element is invertible. Then $D$ is a division ring, and by *Modules* §19 every $D$-module is free, so the module theory of $D$ is linear algebra with scalars in a division ring. The quaternions $\mathbb{H}$ are the classical real example, and their modules are the subject of the companion article *Quaternionic and Biquaternionic Modules*.
+**(g) Division algebras.** A unital associative algebra $D$ over a field $F$ is a **division algebra** if every nonzero element is invertible. Then $D$ is a division ring, and by *Modules* §19 every $D$-module is free, so the module theory of $D$ is linear algebra with scalars in a division ring. The quaternions $\mathbb{H}$ are the classical real example, and their modules are not covered here.
 
-**(h) Algebras with zero divisors.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the complexification of $\mathbb{H}$, is a unital associative $\mathbb{C}$-algebra isomorphic to $M_2(\mathbb{C})$. It is not a division algebra; it has zero divisors, and as example (e) shows, not every $\mathbb{B}$-module is free. The simple module is the defining module of the picture algebra, treated in the companion article *The Defining Module of the Biquaternion Algebra*.
+**(h) Algebras with zero divisors.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the complexification of $\mathbb{H}$, is a unital associative $\mathbb{C}$-algebra isomorphic to $M_2(\mathbb{C})$. It is not a division algebra; it has zero divisors, and as example (e) shows, not every $\mathbb{B}$-module is free. The simple module is the defining module of the picture algebra, treated .
 
 **(i) Polynomial algebras.** For a field $F$ and an indeterminate $x$, the polynomial algebra $F[x]$ is commutative, and an $F[x]$-module structure on a vector space $V$ is exactly an $F$-linear operator $T:V\to V$, with $x \cdot v=T(v)$. The finitely generated modules over the principal ideal domain $F[x]$ are classified by the structure theorem of *Modules* §15, and the classification is the rational and Jordan normal forms.
 
@@ -135,11 +135,11 @@ $$
 f(m+m')=f(m)+f(m'), \qquad f(am)=a f(m)
 $$
 
-for all $a \in A$ and $m,m' \in M$. Since $A$ is an $R$-algebra, every $A$-linear map is $R$-linear, but the converse fails, and the gap between the two notions is the subject of the companion article *Automorphisms of Modules over an Algebra*. The **kernel** $\ker f$ and **image** $\operatorname{im} f$ are submodules of $M$ and $N$; $f$ is injective if and only if $\ker f=0$; the **cokernel** is $N/\operatorname{im} f$; and $f$ is an **isomorphism** if it is bijective, in which case the inverse is automatically $A$-linear and we write $M \cong N$.
+for all $a \in A$ and $m,m' \in M$. Since $A$ is an $R$-algebra, every $A$-linear map is $R$-linear, but the converse fails, and the gap between the two notions is not covered here. The **kernel** $\ker f$ and **image** $\operatorname{im} f$ are submodules of $M$ and $N$; $f$ is injective if and only if $\ker f=0$; the **cokernel** is $N/\operatorname{im} f$; and $f$ is an **isomorphism** if it is bijective, in which case the inverse is automatically $A$-linear and we write $M \cong N$.
 
 The set $\operatorname{Hom}_A(M,N)$ of $A$-linear maps is an abelian group under pointwise addition, with zero the zero map. It carries no natural left $A$-module structure when $A$ is noncommutative: the attempt $(af)(m)=a f(m)$ fails to be $A$-linear, since $(af)(bm)=a f(bm)=ab f(m)$ while $b(af)(m)=ba f(m)$, and these differ unless $a$ and $b$ commute. What is available is a module structure over the center. If $z \in Z(A)$ then $(zf)(m)=f(zm)$ defines the same map as $(zf)(m)=z f(m)$, and this makes $\operatorname{Hom}_A(M,N)$ a module over $Z(A)$, hence in particular an $R$-module. More generally, if ${}_B M_A$ is a $(B,A)$-bimodule then $\operatorname{Hom}_A(M,N)$ is a left $B$-module by $(bf)(m)=f(bm)$, the bimodule axiom providing the $A$-linearity of $bf$.
 
-The **endomorphism ring** $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of units is the **automorphism group** $\operatorname{Aut}_A(M)$. Both are studied in the companion article *Automorphisms of Modules over an Algebra*.
+The **endomorphism ring** $\operatorname{End}_A(M)=\operatorname{Hom}_A(M,M)$ is a unital associative ring under composition, its unit the identity, and it is an $R$-algebra through $R \to Z(\operatorname{End}_A(M))$. Its group of units is the **automorphism group** $\operatorname{Aut}_A(M)$. Both are studied .
 
 ### The isomorphism theorems
 
@@ -207,7 +207,7 @@ $$
 \operatorname{Hom}_A(S,T)=0 \text{ if } S \not\cong T, \qquad \operatorname{End}_A(S) \text{ is a division ring.}
 $$
 
-In particular $\operatorname{Aut}_A(S)=\operatorname{End}_A(S)^{\times}$ is the multiplicative group of that division ring. The lemma is developed and applied in the companion articles *Automorphisms of Modules over an Algebra* and *Simple and Semisimple Modules*.
+In particular $\operatorname{Aut}_A(S)=\operatorname{End}_A(S)^{\times}$ is the multiplicative group of that division ring. The lemma is developed and applied in .
 
 A nonzero module is simple if and only if it is isomorphic to $A/\mathfrak{m}$ for a **maximal left ideal** $\mathfrak{m}$: simplicity of $S$ corresponds under the proposition to the absence of left ideals strictly between $\operatorname{Ann}_A(m)$ and $A$ for a nonzero $m$. If $A$ is commutative, the maximal left ideals are the maximal ideals, and this recovers the familiar description of simple modules over a commutative ring.
 
@@ -221,7 +221,7 @@ A left $A$-module $P$ is **projective** if every diagram of $A$-linear maps with
 - Over the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$, the same description holds with $n=2$ and $F=\mathbb{C}$: the defining module $S=\mathbb{C}^2$ is projective but not free, and a finitely generated $\mathbb{B}$-module is free precisely when its complex dimension is divisible by $4$.
 - Over a division algebra, and in particular over $\mathbb{H}$, every module is free, so projectivity is automatic.
 
-The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of the companion article *Quaternionic and Biquaternionic Modules*: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules* §19; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* §10 and when $A$ has a maximal two-sided ideal $\mathfrak{m}$ with $A/\mathfrak{m}$ left artinian — then $A/\mathfrak{m}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathfrak{m}$ over $A$ gives $(A/\mathfrak{m})^{(I)}\cong(A/\mathfrak{m})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
+The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules* §19; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* §10 and when $A$ has a maximal two-sided ideal $\mathfrak{m}$ with $A/\mathfrak{m}$ left artinian — then $A/\mathfrak{m}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathfrak{m}$ over $A$ gives $(A/\mathfrak{m})^{(I)}\cong(A/\mathfrak{m})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
 
 ## Direct Sums, Products and Idempotents
 
@@ -237,7 +237,7 @@ Applying the proposition to the regular module, an idempotent $e \in A$ gives th
 
 ## Nakayama's Lemma over Noncommutative Rings
 
-The Jacobson radical of $A$ is the intersection of its maximal left ideals; equivalently, the intersection of its maximal right ideals, and it is a two-sided ideal $J(A)$. It is treated in the companion article *Simple and Semisimple Modules*. The following form of Nakayama's lemma holds for modules over a noncommutative ring and is the noncommutative counterpart of *Modules* §11.
+The Jacobson radical of $A$ is the intersection of its maximal left ideals; equivalently, the intersection of its maximal right ideals, and it is a two-sided ideal $J(A)$. It is treated . The following form of Nakayama's lemma holds for modules over a noncommutative ring and is the noncommutative counterpart of *Modules* §11.
 
 **Theorem (Nakayama).** Let $I \subseteq J(A)$ be a two-sided ideal contained in the Jacobson radical, let $M$ be a finitely generated left $A$-module, and let $N \subseteq M$ be a submodule. If $M=N+IM$ then $M=N$. In particular, if $IM=M$ then $M=0$.
 
@@ -255,7 +255,7 @@ The commutativity of the base ring plays no role, and it is the two-sidedness of
 
 The left $A$-modules and the $A$-linear maps form a category $\operatorname{Mod}(A)$, also written ${}_A\operatorname{Mod}$. It is an abelian category: $\operatorname{Hom}_A(M,N)$ is an abelian group, composition is bilinear, finite products and coproducts exist and coincide, every map has a kernel and a cokernel, and every map factors as a coimage-isomorphism-image. It has enough projectives, because every module is a quotient of a free module, and enough injectives, because every module embeds in an injective one by the standard construction of the injective envelope. The category is $R$-linear, in that the hom-sets are $R$-modules and composition is $R$-bilinear.
 
-Two algebras $A$ and $B$ are **Morita equivalent** when their module categories are equivalent, $\operatorname{Mod}(A)\simeq\operatorname{Mod}(B)$; this is developed in the companion article *Morita Equivalence*. The equivalence need not come from an isomorphism of algebras; the matrix algebras $M_n(A)$ are all Morita equivalent to $A$, which is why the module theory of the biquaternion algebra is the module theory of $\mathbb{C}$, and why the defining module of $\mathbb{B}$ carries all the module-theoretic information of the algebra.
+Two algebras $A$ and $B$ are **Morita equivalent** when their module categories are equivalent, $\operatorname{Mod}(A)\simeq\operatorname{Mod}(B)$; this is developed . The equivalence need not come from an isomorphism of algebras; the matrix algebras $M_n(A)$ are all Morita equivalent to $A$, which is why the module theory of the biquaternion algebra is the module theory of $\mathbb{C}$, and why the defining module of $\mathbb{B}$ carries all the module-theoretic information of the algebra.
 
 ## Summary
 
@@ -288,6 +288,10 @@ The endomorphism ring $\operatorname{End}_A(M)$ is an $R$-algebra but not in gen
 | $J(A)$ | Jacobson radical of $A$ |
 | $\operatorname{Mod}(A)$ | category of left $A$-modules |
 | $M \cong N$ | isomorphism of modules |
+
+
+
+
 
 ## Further Reading
 

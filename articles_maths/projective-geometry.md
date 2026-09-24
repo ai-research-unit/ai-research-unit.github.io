@@ -5,7 +5,7 @@
 
 Projective geometry is the geometry of the one-dimensional subspaces of a vector space: the **projective space** $\mathbb{P}(V)$ of a vector space $V$ over a field $K$ has as its points the lines through the origin of $V$, and every linear structure of $V$ — the subspaces, the incidence, the linear maps, the bilinear and quadratic forms — descends to a projective structure. The descent loses the scale and keeps the incidence, and it is exactly the loss that makes the theory a geometry: the affine space embeds in the projective space as the complement of a hyperplane, the parallel lines meet at the points of that hyperplane, the conics and the quadrics are the zero sets of the quadratic forms, and the polarity of a nondegenerate quadric is a duality of the projective space, an incidence-preserving correspondence between the points and the hyperplanes. The present article develops the projective spaces and their coordinates, the collineations and the fundamental theorem, the quadrics and their polarity, and the **Klein correspondence**, the identification of the lines of the projective three-space with the points of a quadric in the projective five-space, which is the projective form of the isomorphism of the groups of the six-dimensional quadratic form with the linear group of the four-dimensional space.
 
-The article belongs to the category of the quadratic forms and the Clifford algebras because the projective geometry of a form is the geometry of its quadric, and because the Klein correspondence is the projective face of the spin groups of this Part: the lines of $\mathbb{P}^3$ are the points of the Klein quadric, the incidence of the lines is the polarity of the quadric, and the group of the quadric is the projective orthogonal group $PO(6)$, whose spin double cover is $\operatorname{Spin}(6) \cong SL(4)$ in the complex case. The specific case of the biquaternion norm form, with its null quadric, its two rulings and its Plücker coordinates, is developed in *Biquaternion Null Quadric and Projective Geometry*, and the article cites it for the concrete instance of the correspondence. The algebraic topology of the real and complex projective spaces is cited to the topology of this Part, and the article keeps to the projective geometry of the forms.
+The article belongs to the category of the quadratic forms and the Clifford algebras because the projective geometry of a form is the geometry of its quadric, and because the Klein correspondence is the projective face of the spin groups of this Part: the lines of $\mathbb{P}^3$ are the points of the Klein quadric, the incidence of the lines is the polarity of the quadric, and the group of the quadric is the projective orthogonal group $PO(6)$, whose spin double cover is $\operatorname{Spin}(6) \cong SL(4)$ in the complex case. The specific case of the biquaternion norm form, with its null quadric, its two rulings and its Plücker coordinates, is developed, and the article cites it for the concrete instance of the correspondence. The algebraic topology of the real and complex projective spaces is cited to the topology of this Part, and the article keeps to the projective geometry of the forms.
 
 ## Projective Spaces and Homogeneous Coordinates
 
@@ -53,7 +53,7 @@ computed from any affine coordinates of the four points, and it is independent o
 
 **Proof.** A projective transformation is induced by an invertible linear map, and it carries a frame to a frame; conversely two frames determine an invertible map taking the representatives of the first to the representatives of the second, the common scalar of the representatives being fixed by the relation, and the map is unique up to a scalar, which does not change the projective transformation. For the line, the action of $PGL(2,K)$ on the ordered triples of distinct points is transitive, and the cross ratio of a quadruple with three fixed points determines the fourth, since the stabiliser of $0, 1, \infty$ is trivial. $\square$
 
-**Remark.** The cross ratio is the projective invariant of the one-dimensional case of the article *Möbius and Lie Sphere Geometry*, where the same invariant is expressed through the pairings of the null vectors of the Möbius model; the two expressions agree, and the general projective frame of $\mathbb{P}(V)$ is the higher-dimensional analogue of the four points of the projective line.
+**Remark.** The cross ratio is the projective invariant of the one-dimensional case , where the same invariant is expressed through the pairings of the null vectors of the Möbius model; the two expressions agree, and the general projective frame of $\mathbb{P}(V)$ is the higher-dimensional analogue of the four points of the projective line.
 
 ## Collineations and the Fundamental Theorem
 
@@ -101,7 +101,7 @@ the points of the **null cone** of $q$; the quadric is **nondegenerate** if the 
 $$
 \mathbb{P}^{m} \times \mathbb{P}^{n} \longrightarrow \mathbb{P}^{(m+1)(n+1)-1}, \qquad ([u],[v]) \longmapsto [u \otimes v],
 $$
-has as its image the variety defined by the rank-one condition on the matrices, the **Segre variety**, which for $m = n = 1$ is the quadric surface $\mathbb{P}^1 \times \mathbb{P}^1$ in $\mathbb{P}^3$ with its two rulings; the surface is the model of the Klein quadric in the low-dimensional case and the concrete instance of the rank-one description of the quadrics. The biquaternion case of this construction, with the Segre embedding of $\mathbb{P}^1 \times \mathbb{P}^1$ onto the projective null quadric $Q^2$ of the norm form, the two rulings and the spinor coordinates, is developed in *Biquaternion Null Quadric and Projective Geometry*, and the general rank-one theory is the content of the present remark.
+has as its image the variety defined by the rank-one condition on the matrices, the **Segre variety**, which for $m = n = 1$ is the quadric surface $\mathbb{P}^1 \times \mathbb{P}^1$ in $\mathbb{P}^3$ with its two rulings; the surface is the model of the Klein quadric in the low-dimensional case and the concrete instance of the rank-one description of the quadrics. The biquaternion case of this construction, with the Segre embedding of $\mathbb{P}^1 \times \mathbb{P}^1$ onto the projective null quadric $Q^2$ of the norm form, the two rulings and the spinor coordinates, is developed, and the general rank-one theory is the content of the present remark.
 
 ## The Klein Correspondence
 
@@ -167,6 +167,8 @@ A **projective space** $\mathbb{P}(V)$ of dimension $n$ over a field $K$ is the 
 | $\omega\wedge\omega' = 0$ | Polarity of the Klein quadric; incidence of the lines |
 | $PO(6) \cong PGL(4)$, $\operatorname{Spin}(6)\cong SL(4,\mathbb{C})$ | Group of the split Klein quadric and its spin cover; the split real form is $\operatorname{Spin}(3,3)\cong SL(4,\mathbb{R})$ |
 | $\binom{n}{k}_q$ | Gaussian binomial; number of $k$-subspaces of $\mathbb{F}_q^n$ |
+
+
 
 ## Further Reading
 

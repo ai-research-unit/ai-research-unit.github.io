@@ -472,7 +472,9 @@ The formulas for the operators are **identical** to the biquaternion case, becau
 
 The **idempotent decomposition** is the most important structural tool in the split quaternion analysis. In the idempotent basis, the differential operators act componentwise, and the split quaternion analysis is the quaternion analysis applied to each of the two components separately. This is a consequence of the semisimple structure of the algebra.
 
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is the subject of the following article. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split quaternion integration.
+The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split quaternion integration.
+
+
 
 ## Further Reading
 

@@ -11,7 +11,7 @@ $$
 
 and a **normed division algebra** is an algebra with such a map in which $N(x)\neq0$ for $x\neq0$. The condition is purely algebraic: the norm is a multiplicative function to the ground field, and the requirements mention only the multiplication of $A$ and the field $k$. A real algebra with a multiplicative norm satisfying the extra condition of **anisotropy** is a division algebra, because $x^{-1} = \bar x/N(x)$ for the involution $\bar x$ determined by $N$; the existence of such a norm is a strong restriction on the dimension. **Hurwitz' theorem** states that a finite-dimensional real normed division algebra has dimension $1$, $2$, $4$ or $8$, and that the algebras are, up to isomorphism, the reals, the complexes, the quaternions and the octonions.
 
-The article is the thirteenth and last of the category *Linear Algebras*, and it is the application that closes it. It follows the whole of the structure theory developed in that category — the definition of an algebra of *Algebras*, the division algebras of *Division Algebras*, the examples of *Examples of Algebras* — and it uses the multiplicative norms of the systems introduced in the corpus in *Quaternion Algebra*, *Biquaternion Algebra* and *Dual Numbers Algebra*. It develops the definition of a multiplicative norm and the involution it determines, the **Cayley–Dickson doubling** and the norm bookkeeping that accompanies it, the chain
+The article is the thirteenth and last of the category *Linear Algebras*, and it is the application that closes it. It follows the whole of the structure theory developed in that category — the definition of an algebra of *Algebras*, the division algebras of *Division Algebras*, the examples of *Examples of Algebras* — and it builds the systems that the theorem classifies, from the real numbers to the octonions, by the doubling, computing each norm from the doubling itself, so that no structure is taken from outside this part. The same systems are studied in their own right, together with the biquaternions and the dual numbers, in the synthetic articles of Part IV; those articles are named here for orientation only. It develops the definition of a multiplicative norm and the involution it determines, the **Cayley–Dickson doubling** and the norm bookkeeping that accompanies it, the chain
 
 $$
 \mathbb{R}\longrightarrow\mathbb{C}\longrightarrow\mathbb{H}\longrightarrow\mathbb{O}
@@ -43,7 +43,7 @@ Throughout, $k$ is a field of characteristic $\neq2$; $A$ is a finite-dimensiona
 
 *Proof.* Statement 1: $N(1) = 1$ gives $1\in A_1$, closure under multiplication is multiplicativity, and $u^{-1} = \bar u$ satisfies $u\bar u = 1$ and lies in $A_1$ because $N(\bar u) = N(u) = 1$. Statement 2 is the standard theorem that the norm-one set of a normed algebra with an anisotropic multiplicative norm and an involution is a Moufang loop when the algebra is alternative; statement 3 is immediate from the definitions. The identification of $A_1$ with the unit sphere of Part II, and the Lie-theoretic and differential structure on it, requires the distance and is deferred. $\square$
 
-**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x\bar x = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $e_+e_- = 0$ for the idempotents $e_\pm = \tfrac12(1\pm j)$, so $N(e_+) = N(e_-) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* and *Biquaternion Algebra* record the corresponding degenerations.
+**Example (the four real cases).** For $A = \mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ with the standard conjugation and $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ read as a multiplicative map, $A_1$ is the two-element group, the group of complex numbers of modulus one, and the group of quaternions of norm one. For the octonions $A_1$ is the Moufang loop of norm-one octonions, which is not a group. For the split systems $\mathbb{D}$ and $\mathbb{H}_{\mathbb{D}}$ the standard involution still satisfies $x\bar x = N(x)1$, but the norm is isotropic: for $\mathbb{D}$ one has $e_+e_- = 0$ for the idempotents $e_\pm = \tfrac12(1\pm j)$, so $N(e_+) = N(e_-) = 0$ and the algebra is not anisotropic; for $\mathbb{H}_{\mathbb{D}}$ the same failure occurs along the idempotent decomposition. The split systems are therefore normed but not normed division algebras, and *Dual Numbers Algebra* andrecord the corresponding degenerations.
 
 ## The Cayley–Dickson Doubling
 
@@ -83,7 +83,7 @@ is then an identity of polynomials in the $a_i$ and $b_j$, of degree four, and i
 
 ## The Chain and the Loss of Structure
 
-The doubling costs exactly one algebraic property at each step, and the article records which, in the language of *Algebras* and *Superalgebras and Graded Structures*.
+The doubling costs exactly one algebraic property at each step, and the article records, in the language of *Algebras* .
 
 | Stage | Algebra | $k$-dimension | Property lost | Property that survives |
 |---|---|---|---|---|
@@ -201,6 +201,10 @@ with the multiplicativity of the norm holding through the octonions and failing 
 | $e_\pm = \tfrac12(1\pm j)$ | idempotents of $\mathbb{D}$, with $e_+e_- = 0$ |
 | $e_0 = 1$, $e_1,\dots,e_7$ | bases of $\mathbb{H}$ and $\mathbb{O}$, $e_k^2 = -e_0$ |
 | $\sum_i a_i^2$ | the norm in coordinates; sums-of-squares identities |
+
+
+
+
 
 ## Further Reading
 

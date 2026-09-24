@@ -5,7 +5,7 @@
 
 The structure theory of the companion article *Structure of Lie Algebras* decomposes a semisimple Lie algebra over a field of characteristic zero into simple ideals. This article describes the combinatorial invariant that classifies the simple algebras: the **root system**, a finite configuration of vectors in a Euclidean space, together with its **Dynkin diagram**. The passage from a simple Lie algebra to its root system is the root space decomposition with respect to a Cartan subalgebra; the passage back is the classification theorem of Killing and Cartan, which enumerates the possible root systems and finds exactly the four infinite families $A_n$, $B_n$, $C_n$, $D_n$ and the five exceptional algebras $G_2$, $F_4$, $E_6$, $E_7$, $E_8$.
 
-The classification is the central result of the theory. It reduces a question about Lie algebras to a finite combinatorial computation: a connected Dynkin diagram is a graph of a restricted shape, and the list of such graphs is short and can be derived by hand. Once the root system is known, the algebra is reconstructed, and with it the representation theory of the companion article *Representations of Lie Algebras*.
+The classification is the central result of the theory. It reduces a question about Lie algebras to a finite combinatorial computation: a connected Dynkin diagram is a graph of a restricted shape, and the list of such graphs is short and can be derived by h. Once the root system is known, the algebra is reconstructed, and with it the representation theory .
 
 Throughout, $K$ is an algebraically closed field of characteristic zero, and $\mathfrak{g}$ is a finite-dimensional semisimple Lie algebra over $K$; the classification is a statement over such a field, and real forms and forms over other fields are mentioned only at the end. Lie algebras are written in lowercase fraktur, so $\mathfrak{g}$ is the algebra, $\mathfrak{h}$ a Cartan subalgebra, $\mathfrak{g}_\alpha$ a root space, and $\mathfrak{z}(\mathfrak{g})$ the centre; the field is $K$, $\mathbb{R}$ is used for the ambient Euclidean space of a root system, and the Killing form is $\kappa$, as in *Structure of Lie Algebras*. No physics is invoked.
 
@@ -292,6 +292,8 @@ Choosing a positive system gives the simple roots, a basis of $\mathfrak{h}^*$ w
 | $A = (a_{ij})$, $a_{ij} = 2(\alpha_i,\alpha_j)/(\alpha_i,\alpha_i)$ | Cartan matrix |
 | $A_n, B_n, C_n, D_n, E_6, E_7, E_8, F_4, G_2$ | The connected Dynkin diagrams |
 | $\mathfrak{sl}(n+1), \mathfrak{so}(2n+1), \mathfrak{sp}(2n), \mathfrak{so}(2n)$ | Classical algebras of types $A_n, B_n, C_n, D_n$ |
+
+
 
 ## Further Reading
 

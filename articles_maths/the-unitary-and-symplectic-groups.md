@@ -5,13 +5,13 @@
 
 The isometry group of a form depends on the type of the form. A symmetric bilinear form gives the orthogonal group, a Hermitian form gives the unitary group, and an alternating form gives the symplectic group. These three constructions, together with the general linear group and its determinant-one subgroup, produce the **classical groups**, and over the complex numbers their Lie algebras exhaust the four infinite families $A$, $B$, $C$, $D$ of the classification of simple Lie algebras.
 
-This article develops the three constructions side by side, the standard matrix realisations $U(n)$, $SU(n)$ and $Sp(2n)$, the quaternionic analogue of the unitary group, and the four families with their dimensions and ranks. The base is a field $F$ or the field $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ when the analysis requires it. Symmetric and alternating forms, their radicals and non-degeneracy are from *Bilinear Forms*; the orthogonal group and its determinant are from *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation*. Hermitian forms are used here and developed in *Hermitian Forms and Involutions*; the trace and the reduced norm are cited from the same place. The exterior algebra and the Pfaffian are from *The Determinant and Alternating Forms*. The Lie algebras of these groups are related to *The Orthogonal Lie Algebra*.
+This article develops the three constructions side by side, the standard matrix realisations $U(n)$, $SU(n)$ and $Sp(2n)$, the quaternionic analogue of the unitary group, and the four families with their dimensions and ranks. The base is a field $F$ or the field $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$ when the analysis requires it. Symmetric and alternating forms, their radicals and non-degeneracy are from *Bilinear Forms*; the orthogonal group and its determinant are from *Isometries and Orthogonal Transformations* and *The Rotation Group and Orientation*. Hermitian forms are used here and developed; the trace and the reduced norm are cited from the same place. The exterior algebra and the Pfaffian are from *The Determinant and Alternating Forms*. The Lie algebras of these groups are related to *The Orthogonal Lie Algebra*.
 
 ## The Classical Groups from a Form
 
 ### The Common Pattern
 
-The three families are instances of one construction. Let $V$ be a vector space over a field, let $\sigma$ be an involution of the field — the identity for the orthogonal and symplectic cases, complex conjugation for the unitary case — and let $h : V \times V \to F$ be a form that is $\sigma$-sesquilinear and Hermitian in the sense of *Hermitian Forms and Involutions*. The **isometry group** of $h$ is
+The three families are instances of one construction. Let $V$ be a vector space over a field, let $\sigma$ be an involution of the field — the identity for the orthogonal and symplectic cases, complex conjugation for the unitary case — and let $h: V \times V \to F$ be a form that is $\sigma$-sesquilinear and Hermitian in the sense. The **isometry group** of $h$ is
 
 $$
 \operatorname{Isom}(V, h) = \{T \in GL(V) : h(Tu, Tv) = h(u, v) \text{ for all } u, v \in V\}.
@@ -27,7 +27,7 @@ As in *Bilinear Forms*, these maps form a group, and the group depends only on t
 
 The alternating case is written $\omega$ throughout, to keep it apart from the symmetric and the Hermitian forms $h$; its involution is the identity and its symmetry is the vanishing of $\omega(v, v)$ for every vector.
 
-The general definition of a sesquilinear form relative to an involution, and the proof that the diagonal of a Hermitian form is a quadratic form over the fixed ring, are in *Hermitian Forms and Involutions*; here we take the forms as given.
+The general definition of a sesquilinear form relative to an involution, and the proof that the diagonal of a Hermitian form is a quadratic form over the fixed ring, lie outside this article; here we take the forms as given.
 
 ### Non-Degeneracy and the Special Groups
 
@@ -109,7 +109,7 @@ This is the precise sense in which the unitary group lies between the orthogonal
 
 ### The Gram Matrix of a Hermitian Form
 
-Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space $V$, in the sense of *Hermitian Forms and Involutions*. In a basis $e_1, \ldots, e_n$ the Gram matrix $H$ with $H_{ij} = h(e_i, e_j)$ satisfies $H^{\dagger} = H$, and
+Let $h$ be a Hermitian form on a finite-dimensional $\mathbb{C}$-space $V$, in the sense. In a basis $e_1, \ldots, e_n$ the Gram matrix $H$ with $H_{ij} = h(e_i, e_j)$ satisfies $H^{\dagger} = H$, and
 
 $$
 h(u, v) = u^{\dagger} H v .
@@ -211,7 +211,7 @@ $$
 h(xa, yb) = \sigma(a)\,h(x, y)\,b, \qquad h(y, x) = \sigma(h(x, y)),
 $$
 
-as in *Hermitian Forms and Involutions*. Its isometry group is the **unitary group** $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i \bar{x}_i y_i$ on $\mathbb{H}^n$, the resulting group is the **compact symplectic group** $Sp(n)$, also written $U(n, \mathbb{H})$.
+. Its isometry group is the **unitary group** $\operatorname{U}(V, h)$ of the Hermitian form. For $D = \mathbb{H}$ and the standard form $h(x, y) = \sum_i \bar{x}_i y_i$ on $\mathbb{H}^n$, the resulting group is the **compact symplectic group** $Sp(n)$, also written $U(n, \mathbb{H})$.
 
 **Warning on notation.** The symbol $Sp$ carries two meanings: $Sp(2m, F)$ is the isometry group of an alternating form over a field, a non-compact group, while $Sp(n)$ is the isometry group of a quaternionic Hermitian form, a compact group. The two agree only through the identification of $Sp(n)$ with the compact real form of $Sp(2n, \mathbb{C})$: the complexification of the quaternionic unitary group is the symplectic group $Sp(2n, \mathbb{C})$.
 
@@ -296,6 +296,10 @@ The compact and split forms of the symplectic family meet in the unitary group: 
 | $\mathfrak{sl}, \mathfrak{so}, \mathfrak{sp}$ | The corresponding Lie algebras |
 | $\mathbb{H}$ | Quaternions |
 | $\mathbb{C}, \mathbb{R}$ | Complex and real numbers |
+
+
+
+
 
 ## Further Reading
 

@@ -4,7 +4,7 @@
 
 This article introduces the quaternion algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is defined algebraically, and its identification with rotations is left for a later article.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra is defined algebraically, and its identification with rotations is not covered here.
 
 ## The Quaternions
 
@@ -401,6 +401,8 @@ The tensor product decomposition is the algebraic content of the classification 
 | $\mathbb{R}_{\mathbb{H}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $\mathbb{R}^3_{\mathbb{H}}$ | Vector subspace, fixed-point set of $\tilde{\cdot}$ |
 | $\mathfrak{so}(3)$ | Lie algebra of rotations |
+
+
 
 ## Further Reading
 

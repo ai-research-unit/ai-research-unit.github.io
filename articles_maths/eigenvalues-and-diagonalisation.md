@@ -213,7 +213,7 @@ When the space carries an inner product, diagonalisation can be made orthogonal,
 
 (ii) Over $\mathbb{C}$, if $T$ is **normal**, $TT^*=T^*T$, then $V$ has an orthonormal basis of eigenvectors of $T$; conversely an operator with an orthonormal eigenbasis is normal.
 
-The proof in finite dimension is the standard argument: a self-adjoint operator has a real eigenvalue, and the orthogonal complement of an eigenvector is invariant under $T$, so induction applies; the normal case is reduced to the self-adjoint case by considering real and imaginary parts. The infinite-dimensional version, for bounded self-adjoint and normal operators on a Hilbert space, is developed in the later article of this category on Banach and Hilbert spaces; the finite-dimensional statement here is its matrix shadow.
+The proof in finite dimension is the standard argument: a self-adjoint operator has a real eigenvalue, and the orthogonal complement of an eigenvector is invariant under $T$, so induction applies; the normal case is reduced to the self-adjoint case by considering real and imaginary parts. The infinite-dimensional version, for bounded self-adjoint and normal operators on a Hilbert space, is not covered here; the finite-dimensional statement here is its matrix shadow.
 
 **Corollary.** A real matrix is orthogonally diagonalisable if and only if it is symmetric; a complex matrix is unitarily diagonalisable if and only if it is normal.
 
@@ -280,6 +280,8 @@ When diagonalisation fails one uses invariant subspaces: a generalised eigenspac
 | $J_e(\lambda)=\lambda I_e+N_e$ | Jordan block of size $e$ |
 | $N_e$ | nilpotent superdiagonal shift, $N_e^e=0 \neq N_e^{e-1}$ |
 | $\mathbb{R}$, $\mathbb{C}$ | real and complex numbers; splitting fields for real matrices |
+
+
 
 ## Further Reading
 

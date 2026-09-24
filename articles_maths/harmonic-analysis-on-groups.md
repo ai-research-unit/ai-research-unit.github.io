@@ -5,13 +5,13 @@
 
 Harmonic analysis on a group is the theory of the decomposition of a function on the group into its group-theoretic frequencies, and it is the analytic reading of the duality theory of Part II. For a locally compact abelian group $G$ the frequencies are the **characters** — the continuous homomorphisms $G \to S^1$ — and they form the Pontryagin dual $G^\vee$, itself a locally compact abelian group. The **Fourier transform** carries an integrable function on $G$ to a function on $G^\vee$, convolution of functions becomes pointwise multiplication of transforms, and the pair (inversion theorem, Plancherel theorem) says that the transform is, on the square-integrable functions, an isometry onto its image. Every one of the classical transforms — the Fourier transform on the line, the Fourier series on the circle, the discrete Fourier transform on a finite cyclic group — is one instance of this single construction, and the reason it is one instance is Pontryagin duality.
 
-This article develops the general theory for a locally compact abelian group and records the obstruction that appears as soon as the group is non-abelian. It fixes the notation for the whole harmonic-analysis block of the category. The further development — the compact case, the Peter–Weyl theorem, the convolution algebra, the non-commutative theory and the Plancherel theorem — is carried by the five articles that follow, and the per-system transforms are Part IV's.
+This article develops the general theory for a locally compact abelian group and records the obstruction that appears as soon as the group is non-abelian. It fixes the notation for the whole harmonic-analysis block of the category. The further development — the compact case, the Peter–Weyl theorem, the convolution algebra, the non-commutative theory and the Plancherel theorem — is carried by the five other articles, and the per-system transforms are Part IV's.
 
 Three boundaries are held exactly, and they are the reason the article says as little about representations as it does.
 
 - The **representation theory** of locally compact groups — unitary representations, equivalences, irreducibility, intertwiners, induced representations, Mackey theory, the type classification, property (T) — is the subject of Part II, in *Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory* and *Type I Groups*. What belongs here is the *harmonic analysis*: the spaces $L^p(G)$, the transform on them, the convolution algebra $L^1(G)$ and its completions, and the decomposition theorems for $L^2(G)$.
-- The **Haar measure** and the modular function are constructed in Part II, in *Locally Compact Groups and Haar Measure*; the general measure theory — $\sigma$-algebras, the integral, the $L^p$ spaces, Fubini–Tonelli, the Radon–Nikodym theorem — is *Measure Theory and Integration*, and the comparison of the various modes of convergence is *Modes of Convergence*, both in the Foundations slot of this Part. The functional analysis — Hilbert spaces, orthonormal bases, the spectral theorem, the Riesz representation theorem — is standard and is quoted as it is used, its systematic development in this Part belonging to the later *Banach and Hilbert Spaces* in the Analysis on Linear Spaces slot. The Euclidean transform that the additive groups of the number systems carry is *Fourier Analysis on Euclidean Spaces*.
-- The **per-system** transforms — the Fourier series of the circle, the discrete transform of a finite abelian group, the transform of the $p$-adic line, and their hypercomplex relatives — are Part IV's, in *Real Harmonic Analysis*, *Complex Harmonic Analysis*, *Split-Complex Harmonic Analysis* and the other articles of the harmonic-analysis slots. This article writes the general theory once, and those articles instantiate it.
+- The **Haar measure** and the modular function are constructed in Part II, in *Locally Compact Groups and Haar Measure*; the general measure theory — $\sigma$-algebras, the integral, the $L^p$ spaces, Fubini–Tonelli, the Radon–Nikodym theorem — is *Measure Theory and Integration*, and the comparison of the various modes of convergence is *Modes of Convergence*, both in the Foundations slot of this Part. The functional analysis — Hilbert spaces, orthonormal bases, the spectral theorem, the Riesz representation theorem — is standard and is quoted as it is used, its systematic development in this Part belonging to the laterin the Analysis on Linear Spaces slot. The Euclidean transform that the additive groups of the number systems carry is *Fourier Analysis on Euclidean Spaces*.
+- The **per-system** transforms — the Fourier series of the circle, the discrete transform of a finite abelian group, the transform of the $p$-adic line, and their hypercomplex relatives — are Part IV's,and the other articles of the harmonic-analysis slots. This article writes the general theory once, and those articles instantiate it.
 
 Throughout, $G$ is a locally compact Hausdorff group, written additively when abelian and multiplicatively otherwise, with identity $e$; $dx$ is a left Haar measure, $\Delta$ the modular function, and $G$ is **unimodular** when $\Delta \equiv 1$. The base ring $R$ is commutative with $1 \neq 0$ and $F$, $K$ are fields, as in the corpus conventions. The circle is $S^1 = \{z \in \mathbb{C} : |z| = 1\} = \mathbb{R}/\mathbb{Z}$ and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$. The abelian dual is written $G^\vee$ and the set of equivalence classes of irreducible unitary representations of a general group is written $\operatorname{Irr}(G)$; the hat is not used for a dual, being reserved in this corpus for completions. No physics is invoked.
 
@@ -123,7 +123,7 @@ and it extends uniquely to a unitary equivalence of Hilbert spaces $\mathcal{F} 
 
 **Proof sketch.** For $f \in L^1 \cap L^2$ put $h = f * f^*$, where $f^*(x) = \overline{f(-x)}$ on an abelian group, so that $h \in L^1(G)$ and, by the convolution theorem, $\hat h = |\hat f|^2 \geq 0$ and $\hat h \in L^1(G^\vee)$ because $\hat f \in L^2 \cap L^\infty$ forces $|\hat f|^2 \in L^1$. The inversion theorem applies to $h$ and gives $h(0) = \int_{G^\vee}|\hat f|^2\,d\chi$; but $h(0) = \int_G f(x)\overline{f(x)}\,dx = \|f\|_2^2$. This is the identity. The extension to all of $L^2(G)$ follows because $L^1 \cap L^2$ is dense, and the extension is onto because its image is closed and contains the transform of an approximate identity, which converges weakly to $1$; surjectivity is also a consequence of the inversion formula applied to a dense set. $\square$
 
-**Remark (the two theorems are one).** Inversion and Plancherel are the two halves of the statement that the transform is an isomorphism of the group algebra of $G$ together with its $L^2$ structure. Inversion is the statement at the level of functions, Plancherel the statement at the level of the inner product; for a compact group both are contained in the Peter–Weyl theorem of *The Peter–Weyl Theorem*, and for the abelian case they are the content of the two theorems above.
+**Remark (the two theorems are one).** Inversion and Plancherel are the two halves of the statement that the transform is an isomorphism of the group algebra of $G$ together with its $L^2$ structure. Inversion is the statement at the level of functions, Plancherel the statement at the level of the inner product; for a compact group both are contained in the Peter–Weyl theorem, and for the abelian case they are the content of the two theorems above.
 
 ### The Dual Haar Measure
 
@@ -145,7 +145,7 @@ The convolution theorem says that $\mathcal{F} : (L^1(G), *) \to (C_0(G^\vee), \
 
 **Corollary (Gelfand–Raĭkov).** A locally compact abelian group is determined up to topological isomorphism by its convolution algebra $L^1(G)$, and the group can be recovered as the Gelfand spectrum of $L^1(G)$. Consequently the characters separate the points of $G$.
 
-**Remark (the $C^*$-completion).** The involution $f^*(x) = \overline{f(-x)}$ makes $L^1(G)$ a Banach $*$-algebra, and the transform is a $*$-homomorphism into $C_0(G^\vee)$ with $\widehat{f^*}(\chi) = \overline{\hat f(\chi)}$. The completion of $L^1(G)$ in the norm $\|f\|_{C^*} = \sup\{\|\hat f\|_\infty\}$ is the **group $\mathrm{C}^*$-algebra** $C^*(G)$, and the Gelfand–Naimark theorem gives $C^*(G) \cong C_0(G^\vee)$ for abelian $G$; the transform is that isomorphism. This is the commutative case of the operator-algebraic picture, and the non-abelian replacement is treated in *The Convolution Algebra $L^1(G)$* and *Noncommutative Harmonic Analysis*, with the operator algebras themselves in *Operator Algebras*.
+**Remark (the $C^*$-completion).** The involution $f^*(x) = \overline{f(-x)}$ makes $L^1(G)$ a Banach $*$-algebra, and the transform is a $*$-homomorphism into $C_0(G^\vee)$ with $\widehat{f^*}(\chi) = \overline{\hat f(\chi)}$. The completion of $L^1(G)$ in the norm $\|f\|_{C^*} = \sup\{\|\hat f\|_\infty\}$ is the **group $\mathrm{C}^*$-algebra** $C^*(G)$, and the Gelfand–Naimark theorem gives $C^*(G) \cong C_0(G^\vee)$ for abelian $G$; the transform is that isomorphism. This is the commutative case of the operator-algebraic picture, and the non-abelian replacement is treated andwith the operator algebras themselves in *Operator Algebras*.
 
 ### Positive-Definite Functions and Bochner's Theorem
 
@@ -165,7 +165,7 @@ The measure is unique, and $\varphi(0) = \mu(G^\vee) = \|\mu\|$.
 
 **Proof sketch.** If $\varphi$ is of positive type, the sesquilinear form on $C_c(G)$ given by $\langle f, g\rangle_\varphi = \int\int f(x)\overline{g(y)}\varphi(y-x)\,dx\,dy$ is positive semidefinite; completing and factoring gives a Hilbert space $H_\varphi$ on which $G$ acts unitarily by translation, and the vector $\xi = [\text{an approximate delta}]$ is cyclic. Since $G$ is abelian, the operators of translation commute and Fourier analysis of the commutative algebra they generate identifies the representation with a direct integral of characters; the spectral measure of $\xi$ is the measure $\mu$, and evaluation at $\xi$ gives the displayed formula. Conversely a Fourier–Stieltjes transform of a positive measure is of positive type because $\sum c_i\bar c_j\chi(x_j - x_i) = |\sum_i c_i\chi(x_i)|^2 \geq 0$ and integration preserves positivity. Uniqueness is the invertibility of the transform on measures. This is the standard Gelfand–Naimark–Segal construction; the version used here is in the references below. $\square$
 
-**Corollary (Herglotz and the Wiener–Khinchin theorem).** On $\mathbb{Z}$ a positive-definite sequence is the sequence of Fourier coefficients of a positive measure on the circle; on $\mathbb{R}$ the autocorrelation $R(\tau) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^T f(t+\tau)\overline{f(t)}\,dt$ of a stationary square-integrable process has a positive spectral measure, and the transform of that measure is $R$. The probabilistic reading of Bochner's theorem is the spectral theory of stationary processes of *Ergodic Theory*.
+**Corollary (Herglotz and the Wiener–Khinchin theorem).** On $\mathbb{Z}$ a positive-definite sequence is the sequence of Fourier coefficients of a positive measure on the circle; on $\mathbb{R}$ the autocorrelation $R(\tau) = \lim_{T\to\infty}\frac{1}{2T}\int_{-T}^T f(t+\tau)\overline{f(t)}\,dt$ of a stationary square-integrable process has a positive spectral measure, and the transform of that measure is $R$. The probabilistic reading of Bochner's theorem is the spectral theory of stationary processes.
 
 ## The Standard Cases
 
@@ -191,11 +191,11 @@ $$
 \hat f(\chi) = \frac{1}{|G|}\sum_{x\in G} f(x)\,\overline{\chi(x)} , \qquad f(x) = \sum_{\chi\in G^\vee}\hat f(\chi)\,\chi(x) ,
 $$
 
-and Plancherel reads $\sum_x|f(x)|^2 = |G|\sum_\chi|\hat f(\chi)|^2$ under the normalisations above. The transform identifies the convolution algebra $L^1(G) = \mathbb{C}[G]$ with $\mathbb{C}^{|G|}$, the algebra of functions on the dual with pointwise multiplication; by the Wedderburn–Artin theorem this is the decomposition of the group algebra of a finite abelian group into one-dimensional summands. The finite cyclic case is the transform of *Modular Arithmetic and the Ring of Residues* read through the present theory.
+and Plancherel reads $\sum_x|f(x)|^2 = |G|\sum_\chi|\hat f(\chi)|^2$ under the normalisations above. The transform identifies the convolution algebra $L^1(G) = \mathbb{C}[G]$ with $\mathbb{C}^{|G|}$, the algebra of functions on the dual with pointwise multiplication; by the Wedderburn–Artin theorem this is the decomposition of the group algebra of a finite abelian group into one-dimensional summands. The finite cyclic case is the transform read through the present theory.
 
 ### The $p$-adic Line
 
-For $G = \mathbb{Q}_p$ the dual is $\mathbb{Q}_p$ through the standard additive character $\chi_\xi(x) = e^{2\pi i \{\xi x\}_p}$, where $\{\cdot\}_p$ is the fractional part with values in $\mathbb{Z}[1/p]/\mathbb{Z} \subset \mathbb{Q}/\mathbb{Z}$, and the dual Haar measure is normalised so that $\mathbb{Z}_p$ and its dual both have measure $1$. The transform is the $p$-adic Fourier transform, and its analysis — the radius of convergence, the role of the residue field, the analogue of the Schwartz class — is the subject of *Non-Archimedean Analysis* and *p-adic Analysis* in the Analysis on Rings and Fields slot, together with *Adelic Analysis*. The group-theoretic input is the present section, and it is the exact analogue of the real case.
+For $G = \mathbb{Q}_p$ the dual is $\mathbb{Q}_p$ through the standard additive character $\chi_\xi(x) = e^{2\pi i \{\xi x\}_p}$, where $\{\cdot\}_p$ is the fractional part with values in $\mathbb{Z}[1/p]/\mathbb{Z} \subset \mathbb{Q}/\mathbb{Z}$, and the dual Haar measure is normalised so that $\mathbb{Z}_p$ and its dual both have measure $1$. The transform is the $p$-adic Fourier transform, and its analysis — the radius of convergence, the role of the residue field, the analogue of the Schwartz class — is the subject andin the Analysis on Rings and Fields slot, together. The group-theoretic input is the present section, and it is the exact analogue of the real case.
 
 ## The Obstruction for Non-Abelian Groups
 
@@ -209,7 +209,7 @@ The example shows exactly what fails. For an abelian group the irreducible unita
 
 ### The Matrix-Valued Transform
 
-The general replacement is as follows; the statements are made precise in the articles that follow, and the representation theory they use is Part II's.
+The general replacement is as follows; the statements are made precise in the other articles, and the representation theory they use is Part II's.
 
 Let $G$ be unimodular and $\pi : G \to U(\mathcal{H}_\pi)$ an irreducible unitary representation. For $f \in L^1(G)$ put
 
@@ -217,9 +217,9 @@ $$
 \hat f(\pi) = \int_G f(g)\,\pi(g)\,dg \in B(\mathcal{H}_\pi) ,
 $$
 
-an operator on the representation space, and for $u, v \in \mathcal{H}_\pi$ let $c^\pi_{u,v}(g) = \langle \pi(g)u, v\rangle$ be the **matrix coefficient**. Then the convolution theorem retains its form, $\widehat{f * g}(\pi) = \hat f(\pi)\hat g(\pi)$, with operator multiplication, and the transform is a non-commutative functional calculus on $L^1(G)$ whose values are operators. For a compact group the theory of the transform, the orthogonality relations and the inversion and Plancherel formulas are the subject of *Analysis on Compact Groups* and *The Peter–Weyl Theorem*; for a general unimodular group of type I, the decomposition of $L^2(G)$ as a direct integral over $\operatorname{Irr}(G)$ and the Plancherel theorem are *The Plancherel Theorem*, with the operator-algebraic completions in *The Convolution Algebra $L^1(G)$* and the general theory in *Noncommutative Harmonic Analysis*. The class of groups for which this works well — the type I groups — is classified in Part II's *Type I Groups*, and the failure is exhibited there by the free group on two generators.
+an operator on the representation space, and for $u, v \in \mathcal{H}_\pi$ let $c^\pi_{u,v}(g) = \langle \pi(g)u, v\rangle$ be the **matrix coefficient**. Then the convolution theorem retains its form, $\widehat{f * g}(\pi) = \hat f(\pi)\hat g(\pi)$, with operator multiplication, and the transform is a non-commutative functional calculus on $L^1(G)$ whose values are operators. For a compact group the theory of the transform, the orthogonality relations and the inversion and Plancherel formulas are not covered here; for a general unimodular group of type I, the decomposition of $L^2(G)$ as a direct integral over $\operatorname{Irr}(G)$ and the Plancherel theorem arewith the operator-algebraic completions and the general theory. The class of groups for which this works well — the type I groups — is classified in Part II's *Type I Groups*, and the failure is exhibited there by the free group on two generators.
 
-**Theorem (compact case, quoted).** If $G = K$ is compact, every irreducible unitary representation is finite-dimensional, every unitary representation is a direct sum of irreducibles, and the normalised matrix coefficients $\sqrt{d_\pi}\,c^\pi_{ij}$, with $d_\pi = \dim\mathcal{H}_\pi$, form an orthonormal basis of $L^2(K)$. This is the Peter–Weyl theorem; it is stated and proved with its consequences in *The Peter–Weyl Theorem*, and the associated Fourier inversion and Plancherel formulas in *Analysis on Compact Groups*.
+**Theorem (compact case, quoted).** If $G = K$ is compact, every irreducible unitary representation is finite-dimensional, every unitary representation is a direct sum of irreducibles, and the normalised matrix coefficients $\sqrt{d_\pi}\,c^\pi_{ij}$, with $d_\pi = \dim\mathcal{H}_\pi$, form an orthonormal basis of $L^2(K)$. This is the Peter–Weyl theorem; it is stated and proved with its consequences, and the associated Fourier inversion and Plancherel formul.
 
 **Theorem (abelian case).** If $G$ is abelian, every irreducible unitary representation is one-dimensional, $\operatorname{Irr}(G) = G^\vee$, and the matrix-valued transform reduces to the scalar transform of the present article. This is the content of the proposition of *Representation Theory of Locally Compact Groups*, §The General Case and the Unitary Dual, that the unitary dual of an abelian group is its Pontryagin dual.
 
@@ -229,14 +229,14 @@ The general theory above is instantiated, system by system, in the harmonic-anal
 
 | System | Additive group | Harmonic analysis in Part IV |
 |---|---|---|
-| $\mathbb{R}$ | $\mathbb{R}$ | *Real Harmonic Analysis* |
-| $\mathbb{C}$ | $\mathbb{R}^2$ | *Complex Harmonic Analysis* |
-| $\mathbb{D}$ | $\mathbb{R}^2$ | *Split-Complex Harmonic Analysis* |
-| $\mathbb{D}'$ | $\mathbb{R}^2$ | *Dual-Numbers Harmonic Analysis* |
-| $\mathbb{H}$ | $\mathbb{R}^4$ | *Quaternion Harmonic Analysis* |
-| $\mathbb{B}$ | $\mathbb{R}^8$ | *Biquaternion Continuous Harmonic Analysis* |
+| $\mathbb{R}$ | $\mathbb{R}$ | the real transform |
+| $\mathbb{C}$ | $\mathbb{R}^2$ | the complex transform |
+| $\mathbb{D}$ | $\mathbb{R}^2$ | the split-complex transform |
+| $\mathbb{D}'$ | $\mathbb{R}^2$ | the dual-number transform |
+| $\mathbb{H}$ | $\mathbb{R}^4$ | the quaternion transform |
+| $\mathbb{B}$ | $\mathbb{R}^8$ | the biquaternion transform |
 
-The transform in each row is the transform of the additive group, which is why the several systems share one transform and differ only in the algebra in which convolution multiplies; this observation is made here, in the general theory; the per-system articles of Part IV, among them *Harmonic Analysis over Hypercomplex Systems*, take it up and develop the consequences. The discrete and finite cases of the same construction are the transforms of the finite and discrete groups that those systems contain.
+The transform in each row is the transform of the additive group, which is why the several systems share one transform and differ only in the algebra in which convolution multiplies; this observation is made here, in the general theory; the per-system articles of Part IV, among themtake it up and develop the consequences. The discrete and finite cases of the same construction are the transforms of the finite and discrete groups that those systems conta.
 
 ## Summary
 
@@ -268,6 +268,12 @@ The standard cases are the Fourier transform of $\mathbb{R}^n$, the Fourier seri
 | $d\chi$ | Dual Haar measure, fixed by inversion |
 | $T^n = \mathbb{R}^n/\mathbb{Z}^n$ | The $n$-torus |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$ | $p$-adic line, self-dual, and its unit ball |
+
+
+
+
+
+
 
 ## Further Reading
 

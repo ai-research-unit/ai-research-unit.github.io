@@ -5,7 +5,7 @@
 
 This article is the special functions slot of the octonion system. It sets out the elementary and higher functions of an octonion variable — the exponential, the trigonometric and hyperbolic functions, the logarithm and powers, the gamma function and its relatives, and the class of functions that survives the failure of associativity, namely the axial and the monogenic functions constructed from holomorphic ones.
 
-The article is the octonion member of the special functions slots of this Part and follows the model of *Quaternion Special Functions*, *Split-Quaternion Elementary Functions* and *Split-Quaternion Higher Special Functions*. It takes the operator $D$, the monogenic class and the kernel from *Octonion Analysis* and the constructions of *Octonion Integration*; the harmonic analysis of these functions is the subject of *Octonion Harmonic Analysis*, which closes the octonion ladder.
+The article is the octonion member of the special functions slots of this Part and follows the model of *Quaternion Special Functions*, *Split-Quaternion Elementary Functions* and *Split-Quaternion Higher Special Functions*. It takes the operator $D$, the monogenic class and the kernel from *Octonion Analysis* and the constructions of *Octonion Integration*; the harmonic analysis of these functions is the subject, which closes the octonion ladder.
 
 **Conventions.** $\mathbb{O}$ with basis $e_0,\dots,e_7$, $e_k^2 = -e_0$ for $k\geq1$; $x = x_0 + \underline x$ with $x_0 = \operatorname{Sc}x\in\mathbb{R}$ and $\underline x\in\operatorname{Im}\mathbb{O}$; conjugation $\bar x$, norm $\lvert x\rvert$, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$; the powers of a single element are the unambiguous left-associated powers, $x^n = x(x(\cdots x))$, which coincide with the right-associated powers by power-associativity. The operator $D = \sum_{k=0}^{7}e_k\partial_k$ is the Cauchy–Riemann operator of *Octonion Analysis*. Throughout, "series in $x$" means a series whose general term is a real multiple of a power $x^n$, so that no bracketing question arises; series in two or more octonion variables are marked where they occur.
 
@@ -135,6 +135,8 @@ The functions of two or more variables inherit the failure of associativity, and
 | $D = \sum_ke_k\partial_k$, Fueter-regular | Cauchy–Riemann operator; axial monogenic functions |
 | $\Delta_8$ | Laplacian of $\mathbb{R}^8$, used in the Fueter–Sce construction |
 | $[x,y]$, $[x,y,z]$ | Commutator and associator |
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 An **isometry** of a quadratic space is a linear isomorphism that preserves the quadratic form. The isometries of a fixed form organise themselves into the orthogonal group, and the reflections — the isometries that fix a hyperplane pointwise — generate it. This article develops that circle of ideas: the orthogonal group and the similarity group, the reflection in a non-isotropic vector, the equal-norm lemma, the theorem of Cartan–Dieudonné that every isometry is a product of reflections, and the special orthogonal group of determinant one.
 
-The base is a field $F$ of characteristic not $2$ unless stated otherwise, and the space $V$ is finite-dimensional, so that every isometry is a linear automorphism with an inverse and a determinant. The vocabulary of quadratic forms is that of *Quadratic Forms and Polarisation*: a quadratic form $q$, its polar form $B$ with $q(v) = B(v, v)$, the radical, and non-degeneracy. The orientation of a space, the determinant map as a map of groups, the notion of angle, and the rotation groups of the plane and of space are the subject of *The Rotation Group and Orientation*; here the determinant is used only to define the special orthogonal group and to count reflections. The orthogonal Lie algebra is treated in *The Orthogonal Lie Algebra*, and the corresponding matrix groups in *The Unitary and Symplectic Groups*.
+The base is a field $F$ of characteristic not $2$ unless stated otherwise, and the space $V$ is finite-dimensional, so that every isometry is a linear automorphism with an inverse and a determinant. The vocabulary of quadratic forms is that of *Quadratic Forms and Polarisation*: a quadratic form $q$, its polar form $B$ with $q(v) = B(v, v)$, the radical, and non-degeneracy. The orientation of a space, the determinant map as a map of groups, the notion of angle, and the rotation groups of the plane and of space are not covered here; here the determinant is used only to define the special orthogonal group and to count reflections. The orthogonal Lie algebra is treated, and the corresponding matrix groups.
 
 ## Isometries
 
@@ -121,7 +121,7 @@ $$
 
 ### The Equal-Norm Lemma
 
-The following lemma is the combinatorial heart of the generation theorem. It is also the one-dimensional case of the extension phenomenon treated in *Witt's Theorems*; it is proved here directly by reflections, so that its use there does not presuppose the general theorem.
+The following lemma is the combinatorial heart of the generation theorem. It is also the one-dimensional case of the extension phenomenon treated; it is proved here directly by reflections, so that its use there does not presuppose the general theorem.
 
 **Lemma (equal norms).** Let $(V, q)$ be a non-degenerate quadratic space over a field of characteristic not $2$, and let $x, y \in V$ satisfy $q(x) = q(y) \neq 0$. Then there is an isometry carrying $x$ to $y$, and it is a product of at most two reflections.
 
@@ -171,7 +171,7 @@ $$
 
 Taking $x = 0$ gives $q(Tr) = 0$, and then $2B(Tx, Tr) = 0$ for every $x$, so $Tr \in \operatorname{rad}(q)$ because $T$ is surjective and $2$ is invertible. Hence $T$ preserves the radical and descends to the quotient. A vector $\bar v$ with $\bar{q}(\bar v) \neq 0$ has a lift $v$ with $q(v) = \bar{q}(\bar v)$, because $q$ is constant on the cosets of the radical, and the reflection $\tau_v$ then induces the reflection $\tau_{\bar v}$ of the quotient, since $\bar{B}(\bar x, \bar v) = B(x, v)$ and $\bar{q}(\bar v) = q(v)$. The reduced form is non-degenerate, so Cartan–Dieudonné applies to $\bar{T}$, and lifting its factors writes $T$ as a product of reflections times an isometry inducing the identity on the quotient. $\square$
 
-We state the non-degenerate case of Cartan–Dieudonné only; the refined structure of the isometries that induce the identity on $V/\operatorname{rad}(q)$ is part of Dieudonné's theory of the isometry group of a possibly degenerate space, and the Hermitian analogue is recorded in *Hermitian Forms and Involutions*.
+We state the non-degenerate case of Cartan–Dieudonné only; the refined structure of the isometries that induce the identity on $V/\operatorname{rad}(q)$ is part of Dieudonné's theory of the isometry group of a possibly degenerate space, and the Hermitian analogue is recorded.
 
 ## The Special Orthogonal Group
 
@@ -201,7 +201,7 @@ provided the determinant assumes the value $-1$ on $\operatorname{O}(V, q)$; thi
 
 **Proof.** Each reflection has determinant $-1$ and the determinant is multiplicative, so a product of $k$ reflections has determinant $(-1)^k$. $\square$
 
-The corollary is the algebraic meaning of the distinction between a **rotation** (even reflection length, determinant $+1$) and a **reflection-type** isometry (odd reflection length, determinant $-1$). The geometric reading of this parity, and its dependence on the orientation of the space, is developed in *The Rotation Group and Orientation*.
+The corollary is the algebraic meaning of the distinction between a **rotation** (even reflection length, determinant $+1$) and a **reflection-type** isometry (odd reflection length, determinant $-1$). The geometric reading of this parity, and its dependence on the orientation of the space, is developed.
 
 **Example (the plane).** On $\mathbb{R}^2$ with the standard form, $\tau_v$ for $v = (1,0)$ is $\tau(x, y) = (-x, y)$, and for $v = (0,1)$ it is $\tau(x, y) = (x, -y)$. Their product is $\tau_{(1,0)}\tau_{(0,1)}(x, y) = (-x, -y)$, the rotation through $\pi$, which is a product of two reflections and lies in $\operatorname{SO}(2)$. Every rotation of $\mathbb{R}^2$ is a product of two reflections, and every element of $\operatorname{O}(2)$ is a product of at most two.
 
@@ -319,6 +319,10 @@ In low dimensions the groups are completely explicit. On a line $\operatorname{O
 | $\operatorname{rad}(q)$ | Radical of $q$ |
 | $\mathbb{Q}, \mathbb{R}$ | Rational and real numbers |
 | $\mathbb{Z}/n\mathbb{Z}$ | Integers modulo $n$ |
+
+
+
+
 
 ## Further Reading
 

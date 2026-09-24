@@ -5,7 +5,7 @@
 
 A local field is a field carrying a nontrivial absolute value with respect to which it is complete and locally compact. The two Archimedean examples are $\mathbb{R}$ and $\mathbb{C}$; the non-Archimedean ones are the finite extensions of the $p$-adic fields $\mathbb{Q}_p$ and the finite extensions of the formal Laurent series fields $\mathbb{F}_p((t))$. The definition is topological: it asks that the distance on the field produce enough compactness for the field to behave like a field with a finite residue field and a discrete valuation. That combination of hypotheses is what makes the additive and multiplicative groups tractable — the additive group is locally compact, and the multiplicative group is abelian, locally compact, and built from a discrete copy of $\mathbb{Z}$ and a compact unit group — and it is why the local fields are the local objects of algebraic number theory.
 
-This article develops the definition, the classification theorem, the topology of a non-Archimedean local field, its residue field and ramification invariants, and the structure of its multiplicative group. It assumes *Absolute Values, Valuations and Completions*, from which the absolute values, valuation rings, residue fields and completions are taken, and *Topological Rings and Fields*, from which the $I$-adic topologies and completions are taken. The arithmetic of local fields — class field theory, the local reciprocity law, and the use of local data to describe global fields — belongs to Part I and is cited rather than developed. The analysis over a local field — power series, integration, differential equations, and analytic functions in the non-Archimedean sense — belongs to Part III, where the limit and the measure are available. The application article *The $p$-adic Numbers* develops the standard example concretely later in this category, and the geometry of a valued field — rigid analytic, Berkovich, adic and perfectoid spaces — occupies the articles that follow this one.
+This article develops the definition, the classification theorem, the topology of a non-Archimedean local field, its residue field and ramification invariants, and the structure of its multiplicative group. It assumes *Absolute Values, Valuations and Completions*, from which the absolute values, valuation rings, residue fields and completions are taken, and *Topological Rings and Fields*, from which the $I$-adic topologies and completions are taken. The arithmetic of local fields — class field theory, the local reciprocity law, and the use of local data to describe global fields — belongs to Part I and is cited rather than developed. The analysis over a local field — power series, integration, differential equations, and analytic functions in the non-Archimedean sense — belongs to Part III, where the limit and the measure are available. The application articledevelops the standard example concretely, and the geometry of a valued field — rigid analytic, Berkovich, adic and perfectoid spaces — occupies the other articles of this Part.
 
 Throughout, $F$ is a local field, $\lvert \cdot \rvert$ its absolute value, $\mathcal{O}$ its valuation ring, $\mathfrak{m}$ its maximal ideal, $k = \mathcal{O}/\mathfrak{m}$ its residue field and $\Gamma = \lvert F^\times \rvert$ its value group, in the notation of *Absolute Values, Valuations and Completions*. A uniformiser is written $\pi$, and $q = \lvert k \rvert$ denotes the cardinality of the residue field.
 
@@ -217,7 +217,7 @@ for $n \geq 1$. $\square$
 
 **Proof.** Completion of a global field at a place gives a complete field with a nontrivial absolute value. Local compactness in the non-Archimedean case is the statement that the valuation ring is compact, which holds because the residue field of a place of a global field is finite and the value group is $\mathbb{Z}$; the Archimedean completions of a number field are $\mathbb{R}$ or $\mathbb{C}$. The converse is the classification theorem. $\square$
 
-**Example (the places of $\mathbb{Q}$).** The places of $\mathbb{Q}$ are the Archimedean place $\infty$ with completion $\mathbb{R}$ and the non-Archimedean places $p$ with completions $\mathbb{Q}_p$; the product formula $\lvert x \rvert_\infty \prod_p \lvert x \rvert_p = 1$ of *Absolute Values, Valuations and Completions* holds over all of them. The assembly of all the completions of a global field into a single ring is the adelic construction of *Adeles and Ideles*, the next article of this category.
+**Example (the places of $\mathbb{Q}$).** The places of $\mathbb{Q}$ are the Archimedean place $\infty$ with completion $\mathbb{R}$ and the non-Archimedean places $p$ with completions $\mathbb{Q}_p$; the product formula $\lvert x \rvert_\infty \prod_p \lvert x \rvert_p = 1$ of *Absolute Values, Valuations and Completions* holds over all of them. The assembly of all the completions of a global field into a single ring is the adelic construction, another article of this category.
 
 ---
 
@@ -253,6 +253,12 @@ The multiplicative group decomposes topologically as $F^\times \cong \mathbb{Z} 
 | $K$, $K_w$ | A global field and its completion at a place $w$ |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{F}_p((t))$, $\mathbb{F}_p[[t]]$ | The prime examples |
 | $\mathbb{C}_p$ | Completion of $\overline{\mathbb{Q}_p}$, complete but not locally compact |
+
+
+
+
+
+
 
 ## Further Reading
 

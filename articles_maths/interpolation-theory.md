@@ -7,7 +7,7 @@ The Banach spaces that arise in analysis rarely occur alone: the spaces $L^p$ fo
 
 Two constructions do the work, and the article is organised around them. The **complex method** embeds $A_0$ and $A_1$ as the two edges of a strip in $\mathbb{C}$ and takes the values of bounded analytic functions at an interior point; it is the source of the Riesz–Thorin theorem and of the interpolation of the Fourier transform. The **real method** measures how well an element of $A_0+A_1$ splits into a sum of an element of $A_0$ and an element of $A_1$, and integrates that measure against a weight; it is the source of the Lorentz spaces and of the interpolation of Sobolev spaces, and it produces a second parameter $q$ that the complex method does not see.
 
-Throughout, $\mathbb{K}$ denotes $\mathbb{R}$ or $\mathbb{C}$, all linear spaces are over $\mathbb{K}$, and $X$, $Y$ are Banach spaces. The word *operator* means a bounded linear map; the operator norm and the dual are those of the companion article *Banach and Hilbert Spaces*, and the completeness, quotient and dual-space facts that the constructions need are those of *Normed and Banach Spaces*; the locally convex background, in particular the completeness of the spaces of analytic functions that the complex method uses, is that of *Locally Convex Spaces*. The scalar theory of analytic functions is that of *Analytic Functions and Power Series*, while analytic functions with values in a Banach space are defined in line below, since the complex method cannot dispense with them. Integration is that of *Measure Theory and Integration*. The weak-derivative Sobolev spaces and their embedding theorems belong to the extension of this Part devoted to differential equations, in *Sobolev Spaces and Weak Solutions*; here they are used only through the equivalent Fourier definition, which is recalled and is self-contained. The boundary of the article is deliberate: the interpolation of operators on a single Hilbert space, and the interpolation of abstract operator algebras, are not treated.
+Throughout, $\mathbb{K}$ denotes $\mathbb{R}$ or $\mathbb{C}$, all linear spaces are over $\mathbb{K}$, and $X$, $Y$ are Banach spaces. The word *operator* means a bounded linear map; the operator norm and the dual are those of the companion article *Banach and Hilbert Spaces*, and the completeness, quotient and dual-space facts that the constructions need are those of *Normed and Banach Spaces*; the locally convex background, in particular the completeness of the spaces of analytic functions that the complex method uses, is that of *Locally Convex Spaces*. The scalar theory of analytic functions is that of *Analytic Functions and Power Series*, while analytic functions with values in a Banach space are defined in line below, since the complex method cannot dispense with them. Integration is that of *Measure Theory and Integration*. The weak-derivative Sobolev spaces and their embedding theorems belong to the extension of this Part devoted to differential equations; here they are used only through the equivalent Fourier definition, which is recalled and is self-contained. The boundary of the article is deliberate: the interpolation of operators on a single Hilbert space, and the interpolation of abstract operator algebras, are not treated.
 
 No physics is invoked.
 
@@ -135,7 +135,7 @@ The corollary is the classical application: the two endpoint estimates are trivi
 
 **Theorem (Stein's interpolation of analytic families).** Let $S$ be the strip and let $\{T_z\}$ be a family of linear maps such that $z \mapsto \int (T_zf)g$ is analytic on $S$ and continuous on $\overline S$ for simple $f,g$. Suppose $\|T_{it}\|_{L^{p_0}\to L^{q_0}}\le M_0(t)$ and $\|T_{1+it}\|_{L^{p_1}\to L^{q_1}}\le M_1(t)$ with $\sup_t M_i(t)<\infty$. Then $T_\theta$ maps $L^p$ to $L^q$ for the indices above with norm at most $\sup_tM_0(t)^{1-\theta}\sup_tM_1(t)^{\theta}$.
 
-Stein's theorem is what permits the endpoint norms to vary with the imaginary part, and it is the version used to interpolate the analytic families of operators that arise in harmonic analysis and in the theory of singular integrals; the applications are treated in *Real Harmonic Analysis*, where the Calderón–Zygmund decomposition provides the endpoint hypotheses.
+Stein's theorem is what permits the endpoint norms to vary with the imaginary part, and it is the version used to interpolate the analytic families of operators that arise in harmonic analysis and in the theory of singular integrals; the applications are treated elsewhere, where the Calderón–Zygmund decomposition provides the endpoint hypotheses.
 
 ## The Real Method
 
@@ -244,7 +244,7 @@ $$
 \|u\|_{H^s_p}=\bigl\|\mathcal F^{-1}\bigl((1+|\xi|^2)^{s/2}\hat u\bigr)\bigr\|_{L^p}<\infty .
 $$
 
-For $s=k \in \mathbb{N}$ and $1<p<\infty$ the space $H^k_p$ coincides with the Sobolev space $W^{k,p}$ of functions whose weak derivatives of order at most $k$ lie in $L^p$, with equivalent norms; this identification is the content of *Sobolev Spaces and Weak Solutions*, and only the Fourier description is used here.
+For $s=k \in \mathbb{N}$ and $1<p<\infty$ the space $H^k_p$ coincides with the Sobolev space $W^{k,p}$ of functions whose weak derivatives of order at most $k$ lie in $L^p$, with equivalent norms; this identification is the content, and only the Fourier description is used here.
 
 **Theorem.** For $s_0,s_1 \in \mathbb{R}$, $1<p_0,p_1<\infty$ and $0<\theta<1$,
 
@@ -258,15 +258,15 @@ $$
 (H^{s_0}_p,H^{s_1}_p)_{\theta,q}=B^{s}_{p,q}, \qquad s=(1-\theta)s_0+\theta s_1,
 $$
 
-where $B^s_{p,q}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\xi|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of the companion article *Besov and Triebel–Lizorkin Spaces* of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^s_{p,q}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
+where $B^s_{p,q}$ is the **Besov space**. The first identity is the interpolation of the Fourier multiplier $(1+|\xi|^2)^{s/2}$; the second is the reason the Besov scale has a second parameter, and the Besov and Triebel–Lizorkin spaces are the subject of of this category, where the difference-quotient and Littlewood–Paley descriptions of $B^s_{p,q}$ are given and the two-parameter family is developed. Here the Besov space is used only as the output of the real method.
 
-**Corollary (Sobolev embedding, interpolated).** If $0 \le s_1<s_0$ and $1<p<\infty$, then $H^{s_0}_p\subseteq H^{s_1}_p$, and for $s=(1-\theta)s_1+\theta s_0$ the interpolation identity above exhibits $H^s_p$ as an intermediate space. The classical Sobolev embedding $H^{s}_p\subseteq L^r$ with $1/r=1/p-s/n$, when $s<n/p$, is obtained from the endpoint embeddings at $s=0$ and at a large $s$ by interpolation, and the embedding theorems in the sharp form are those of *Sobolev Spaces and Weak Solutions*.
+**Corollary (Sobolev embedding, interpolated).** If $0 \le s_1<s_0$ and $1<p<\infty$, then $H^{s_0}_p\subseteq H^{s_1}_p$, and for $s=(1-\theta)s_1+\theta s_0$ the interpolation identity above exhibits $H^s_p$ as an intermediate space. The classical Sobolev embedding $H^{s}_p\subseteq L^r$ with $1/r=1/p-s/n$, when $s<n/p$, is obtained from the endpoint embeddings at $s=0$ and at a large $s$ by interpolation, and the embedding theorems in the sharp form are standard.
 
 ### Interpolation of Analytic and Harmonic Spaces
 
 **Theorem (Marcinkiewicz).** Let $T$ be a sublinear map defined on the simple functions of a $\sigma$-finite measure space and taking measurable functions, and suppose $T$ is of weak type $(p_0,p_0)$ with constant $M_0$ and of weak type $(p_1,p_1)$ with constant $M_1$, where $1\le p_0<p_1\le\infty$. Then $T$ is of strong type $(p,p)$ for every $p_0<p<p_1$, with a bound depending only on the constants and the indices.
 
-The proof of Marcinkiewicz's theorem is the standard decomposition of $f$ into a part of large values, controlled by the weak-type hypothesis at $p_0$, and a part of small values, controlled at $p_1$, followed by an application of the $K$-functional calculus in the form $(L^{p_0},L^{p_1})_{\theta,p}=L^p$. The theorem is the real-method counterpart of Riesz–Thorin, and it is the version that applies to singular integral operators, where the endpoint estimate is weak; the operators themselves are treated in *Real Harmonic Analysis*, and the interpolation step is the one recorded here.
+The proof of Marcinkiewicz's theorem is the standard decomposition of $f$ into a part of large values, controlled by the weak-type hypothesis at $p_0$, and a part of small values, controlled at $p_1$, followed by an application of the $K$-functional calculus in the form $(L^{p_0},L^{p_1})_{\theta,p}=L^p$. The theorem is the real-method counterpart of Riesz–Thor, and it is the version that applies to singular integral operators, where the endpoint estimate is weak; the operators themselves are treated, and the interpolation step is the one recorded here.
 
 ## Summary
 
@@ -300,6 +300,8 @@ On the classical families the dictionary reads $[L^{p_0},L^{p_1}]_\theta=L^p$, $
 | $\mathcal F$ | Fourier transform on $\mathbb{R}^n$ |
 | $M_0(t)$, $M_1(t)$ | endpoint norms of an analytic family |
 | $q'$ | conjugate exponent $1/q+1/q'=1$ |
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A group is a set with an operation, but almost every question one asks about a group is really a question about how it *acts*. The elementary theory of *Groups* introduces actions, orbits, stabilisers, conjugacy, the class equation and the Sylow theorems; this article develops the same material as a single structural method, in which the action is the hypothesis and the structure theorem is the conclusion. The emphasis falls on the three places where an action is used to *compute*: the class equation and its corollaries for finite groups, Burnside's lemma and the counting of orbits, and the Sylow theorems, whose proofs are themselves applications of the orbit–stabiliser theorem to a well-chosen action.
 
-The action-theoretic definitions and the notion of a transformation group are as in the companion article *Transformation Groups*, and the notation of *Groups* is kept throughout: $\operatorname{Orb}(x)$ and $\operatorname{Stab}(x)$ for the orbit and stabiliser, $C_G(x)$ for the centraliser, $Z(G)$ for the centre, $[G,G]$ for the commutator subgroup and $G^{\mathrm{ab}} = G/[G,G]$ for the abelianization, $N_G(H)$ for the normaliser. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$, and $F$, $K$ fields; when a numerical invariant such as the order of a group is used, the group is assumed finite and this is said. No physics is invoked. The combinatorial companion *Generators, Presentations and Free Products*, being written in parallel, takes up the constructions of groups and the descriptions of them by generators and relations.
+The action-theoretic definitions and the notion of a transformation group are as in the companion article *Transformation Groups*, and the notation of *Groups* is kept throughout: $\operatorname{Orb}(x)$ and $\operatorname{Stab}(x)$ for the orbit and stabiliser, $C_G(x)$ for the centraliser, $Z(G)$ for the centre, $[G,G]$ for the commutator subgroup and $G^{\mathrm{ab}} = G/[G,G]$ for the abelianization, $N_G(H)$ for the normaliser. Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$, and $F$, $K$ fields; when a numerical invariant such as the order of a group is used, the group is assumed finite and this is said. No physics is invoked. The combinatorial companionbeing, takes up the constructions of groups and the descriptions of them by generators and relations.
 
 ## Actions and the Orbit Decomposition
 
@@ -233,7 +233,7 @@ The last statement is why solvability is detected by the composition factors: $G
 
 A **central series** of $G$ is a subnormal series in which every factor is central in the quotient, $G_i/G_{i-1} \leq Z(G/G_{i-1})$. A group with such a series is **nilpotent**. The **upper central series** is defined by $Z_0 = \{e\}$, $Z_{i+1}/Z_i = Z(G/Z_i)$, and the **lower central series** by $\gamma_1 = G$, $\gamma_{i+1} = [G, \gamma_i]$; nilpotency is equivalent to $Z_c = G$ for some $c$, equivalently to $\gamma_{c+1} = \{e\}$.
 
-Every nilpotent group is solvable, since a central series is a subnormal series with abelian factors, and the converse fails: $S_3$ is solvable but not nilpotent. Every finite $p$-group is nilpotent, because its centre is nontrivial and the same argument applies inductively to the quotient. Nilpotent groups have the **normaliser condition**: every proper subgroup is properly contained in its normaliser, and every maximal subgroup is normal. These are the standard facts that organise the study of $p$-groups and are used in the classification of the small orders in *Finite Groups and Symmetry*.
+Every nilpotent group is solvable, since a central series is a subnormal series with abelian factors, and the converse fails: $S_3$ is solvable but not nilpotent. Every finite $p$-group is nilpotent, because its centre is nontrivial and the same argument applies inductively to the quotient. Nilpotent groups have the **normaliser condition**: every proper subgroup is properly contained in its normaliser, and every maximal subgroup is normal. These are the standard facts that organise the study of $p$-groups and are used in the classification of the small orders.
 
 ## The Sylow Theorems
 
@@ -269,7 +269,7 @@ The coefficient of $X^{p^k}$ is $\binom{p^k m}{p^k}$ on the left and $m$ on the 
 
 ### Applications
 
-**Groups of order $pq$.** Let $p < q$ be primes. Then $n_q$ divides $p$ and $n_q \equiv 1 \pmod q$, so $n_q = 1$; there is a normal $Q \cong C_q$. Also $n_p$ divides $q$ and $n_p \equiv 1 \pmod p$, so $n_p \in \{1, q\}$. If $p \nmid q - 1$ then $n_p = 1$, both Sylow subgroups are normal, and $G \cong C_p \times C_q \cong C_{pq}$. If $p \mid q - 1$ there is, in addition to the cyclic group, exactly one nonabelian group, the semidirect product $C_q \rtimes C_p$ in which $C_p$ acts through an automorphism of $C_q$ of order $p$; the construction is given in *Generators, Presentations and Free Products*.
+**Groups of order $pq$.** Let $p < q$ be primes. Then $n_q$ divides $p$ and $n_q \equiv 1 \pmod q$, so $n_q = 1$; there is a normal $Q \cong C_q$. Also $n_p$ divides $q$ and $n_p \equiv 1 \pmod p$, so $n_p \in \{1, q\}$. If $p \nmid q - 1$ then $n_p = 1$, both Sylow subgroups are normal, and $G \cong C_p \times C_q \cong C_{pq}$. If $p \mid q - 1$ there is, in addition to the cyclic group, exactly one nonabelian group, the semidirect product $C_q \rtimes C_p$ in which $C_p$ acts through an automorphism of $C_q$ of order $p$; the construction is given.
 
 **Groups of order $12$.** Write $|G| = 12 = 2^2 \cdot 3$. Then $n_3 \in \{1, 4\}$ and $n_2 \in \{1, 3\}$. If $n_3 = 4$, the four Sylow $3$-subgroups meet pairwise trivially and contribute $8$ elements of order $3$; with the identity they account for $9$ elements, leaving exactly $3$ non-identity elements besides. A Sylow $2$-subgroup $P$ has order $4$, so its three non-identity elements are among those three, and therefore the elements outside the Sylow $3$-subgroups are exactly the non-identity elements of $P$. Hence $P$ is the only Sylow $2$-subgroup, $n_2 = 1$, and $P$ is normal. The conjugation action on the four Sylow $3$-subgroups is transitive, so its image in $S_4$ has order divisible by $4$ and dividing $12$, hence order $4$ or $12$; order $4$ would give a normal subgroup of order $3$ and force $n_3 = 1$, so the image has order $12$ and is the transitive group $A_4$, whence $G \cong A_4$ and $P \cong V_4$. If $n_3 = 1$ there is a normal $N \cong C_3$ and a Sylow $2$-subgroup $P$ of order $4$ acting on $N$ through a homomorphism $P \to \operatorname{Aut}(C_3) \cong C_2$. If the action is trivial, $G \cong N \times P$, giving $C_{12}$ or $C_6 \times C_2$. If the action is nontrivial, its kernel has order $2$; for $P \cong V_4$ the group is $D_6 \cong S_3 \times C_2$, and for $P \cong C_4$ it is the dicyclic group $C_3 \rtimes C_4$ with the generator acting by inversion. Analysing the possible actions therefore gives exactly five groups of order $12$:
 
@@ -281,7 +281,7 @@ The coefficient of $X^{p^k}$ is $\binom{p^k m}{p^k}$ on the left and $m$ on the 
 | $D_6$ | no | $1$ | $3$ | Sylow $2$ is $V_4$ |
 | $C_3 \rtimes C_4$ | no | $1$ | $3$ | Sylow $2$ is cyclic; unique involution |
 
-The same counting arguments, applied order by order, give the classification of the small groups tabulated in *Finite Groups and Symmetry*: one group of order $p$ up to isomorphism, two of order $p^2$ — namely $C_{p^2}$ and $C_p \times C_p$, by the corollary above — two of order $pq$ when $p \mid q - 1$ and one when $p \nmid q - 1$, and five of order $8$. The Sylow theorems do not by themselves settle every order — they leave the possible actions of a complement on a normal subgroup to be analysed — but they reduce the classification to a finite list of extensions.
+The same counting arguments, applied order by order, give the classification of the small groups tabulated: one group of order $p$ up to isomorphism, two of order $p^2$ — namely $C_{p^2}$ and $C_p \times C_p$, by the corollary above — two of order $pq$ when $p \mid q - 1$ and one when $p \nmid q - 1$, and five of order $8$. The Sylow theorems do not by themselves settle every order — they leave the possible actions of a complement on a normal subgroup to be analysed — but they reduce the classification to a finite list of extensions.
 
 ## Summary
 
@@ -312,6 +312,8 @@ The Sylow theorems assert that a subgroup of order $p^k$ exists when $|G| = p^k 
 | $H a K$ | Double coset of $a$ with respect to $H$ and $K$ |
 | $\operatorname{Syl}_p(G)$, $n_p$ | Set and number of Sylow $p$-subgroups of $G$ |
 | $V_4$ | Klein four group $C_2 \times C_2$ |
+
+
 
 ## Further Reading
 

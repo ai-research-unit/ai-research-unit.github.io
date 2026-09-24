@@ -13,7 +13,7 @@ The reader is assumed to have the definition of $\mathrm{Cl}(V,q)$, the $\mathbb
 
 The conventions are those of the article *The Low-Dimensional Classification*. The base is a field $F$ of characteristic not $2$; the real signature form is $q=\operatorname{diag}(+1^{p},-1^{q})$ and $\mathrm{Cl}_{p,q}$ is its Clifford algebra, so that $p$ counts generators of square $+1$. The volume element of an orthogonal basis $e_1,\dots,e_n$ is $\omega=e_1\cdots e_n$, with $\omega^2=(-1)^{n(n-1)/2}\prod_i q(e_i)$.
 
-The periodicity statements are computations of the small-rank algebras together with the recursive structure of the tensor product; they are the source of the "eightfold way" of the title of the next article, and they organise the entire Clifford layer.
+The periodicity statements are computations of the small-rank algebras together with the recursive structure of the tensor product; they are the source of the "eightfold way" of the title, and they organise the entire Clifford layer.
 
 ## The Stabilisation Recursions
 
@@ -185,7 +185,7 @@ In the simple cases the algebra is $M_k(D)$ with $k$ and the division algebra $D
 
 **Proof.** For $n$ even the volume element anticommutes with every generator and the center is $F$; for $n$ odd the volume element commutes with every generator, so the center is the subalgebra $F[\omega]\cong F[x]/(x^{2}-\delta)$, which is a field when $\delta\notin F^{2}$ and is $F\times F$ when $\delta\in F^{2}$. An algebra whose center is a field and which has no proper nonzero two-sided ideal is central simple over that field, and Artin–Wedderburn then gives the uniqueness of its simple module. In the split case the two central idempotents $\tfrac12(1\pm\omega/\sqrt{\delta})$ exhibit $\mathrm{Cl}(V,q)$ as the product of the two ideals they generate; each factor is simple by the same argument, and the grade involution, which negates $\omega$ because $n$ is odd, is an isomorphism between the two factors, so their simple modules have the same dimension. $\square$
 
-**The spinor module over $\mathbb{R}$.** Over $F=\mathbb{R}$ the type $D$ is one of $\mathbb{R},\mathbb{C},\mathbb{H}$, and the real dimension of the irreducible module is $k\dim_{\mathbb{R}}D$. For the definite forms these dimensions are the classical ones of the spin representations, and they are computed from the table: for $\mathrm{Cl}_{0,n}$ with $n\equiv 0\bmod 8$ the module is real of dimension $2^{n/2}$; with $n\equiv 1\bmod 8$ it is complex of dimension $2^{(n-1)/2}$; with $n\equiv 2\bmod 8$ it is quaternionic of dimension $2^{(n-2)/2}$; and so on around the eight cases. The pattern of dimensions and types is the "eightfold way" in the sense of the different kinds of spinor, and the reality conditions that distinguish them are the subject of the article *Real Spinors and Reality Conditions*.
+**The spinor module over $\mathbb{R}$.** Over $F=\mathbb{R}$ the type $D$ is one of $\mathbb{R},\mathbb{C},\mathbb{H}$, and the real dimension of the irreducible module is $k\dim_{\mathbb{R}}D$. For the definite forms these dimensions are the classical ones of the spin representations, and they are computed from the table: for $\mathrm{Cl}_{0,n}$ with $n\equiv 0\bmod 8$ the module is real of dimension $2^{n/2}$; with $n\equiv 1\bmod 8$ it is complex of dimension $2^{(n-1)/2}$; with $n\equiv 2\bmod 8$ it is quaternionic of dimension $2^{(n-2)/2}$; and so on around the eight cases. The pattern of dimensions and types is the "eightfold way" in the sense of the different kinds of spinor, and the reality conditions that distinguish them are not covered here.
 
 ## Complex Periodicity
 
@@ -205,7 +205,7 @@ $$
 
 **Proof.** Over $\mathbb{C}$ the rank-two form is $\mathbb{C}\mathrm{l}_2\cong M_2(\mathbb{C})$, and the same explicit construction as for $\mathrm{Cl}_{p+1,q+1}$, carried out over $\mathbb{C}$, gives the stabilisation $\mathbb{C}\mathrm{l}_{n+2}\cong M_2(\mathbb{C}\mathrm{l}_n)$: the generators $e_i$ of $\mathbb{C}\mathrm{l}_n$ map to $e_i\sigma_1$, and the two new generators to $\sigma_3$ and $\tau$, with the same verification of the relations. The even case follows by induction from $\mathbb{C}\mathrm{l}_0=\mathbb{C}$ and $\mathbb{C}\mathrm{l}_2=M_2(\mathbb{C})$; the odd case from $\mathbb{C}\mathrm{l}_1=\mathbb{C}\times\mathbb{C}$. $\square$
 
-**Remark.** The real classification is not the restriction of the complex one, because the complexification of $\mathrm{Cl}_{n,0}$ and of $\mathrm{Cl}_{0,n}$ coincide. Period two is what survives of period eight after the sign distinction is forgotten, and the two real forms of a complex Clifford algebra are the two real quadratic spaces of the corresponding signature class. The relation between the periodicities is exactly the relation between the complex and the real forms of a matrix algebra, and it is the algebraic origin of the eightfold way of the next article.
+**Remark.** The real classification is not the restriction of the complex one, because the complexification of $\mathrm{Cl}_{n,0}$ and of $\mathrm{Cl}_{0,n}$ coincide. Period two is what survives of period eight after the sign distinction is forgotten, and the two real forms of a complex Clifford algebra are the two real quadratic spaces of the corresponding signature class. The relation between the periodicities is exactly the relation between the complex and the real forms of a matrix algebra, and it is the algebraic origin of the eightfold way.
 
 ## Summary
 
@@ -238,6 +238,10 @@ The even subalgebra satisfies $\mathrm{Cl}^0_{p,q}\cong\mathrm{Cl}_{p,q-1}\cong\
 | $\omega=e_1\cdots e_n$ | Volume element |
 | $\delta=\omega^{2}=(-1)^{n(n-1)/2}q(e_1)\cdots q(e_n)$ | Square of the volume element; decides whether the center is a field or $F\times F$ when $n$ is odd |
 | $\mathrm{Cl}_{8,0}\cong\mathrm{Cl}_{0,8}\cong M_{16}(F)$ | Bott periodicity algebra |
+
+
+
+
 
 ## Further Reading
 

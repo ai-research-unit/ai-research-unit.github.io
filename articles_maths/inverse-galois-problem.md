@@ -6,7 +6,7 @@ Galois theory attaches to every finite Galois extension $L/K$ a finite group $\o
 
 The prominence of the problem comes from this last fact and from the tool that transfers it. The existence of extensions with prescribed group over $\mathbb{C}(t)$ is the algebraic form of the existence theorem for branched coverings of the projective line, and it is available in this corpus only as a statement, since the topological language needed to state and prove the existence theorem belongs to Part II. The transfer from $\mathbb{C}(t)$ or $\overline{\mathbb{Q}}(t)$ to $\mathbb{Q}$ is Hilbert's irreducibility theorem, which converts an extension of $\mathbb{Q}(t)$ into infinitely many extensions of $\mathbb{Q}$; it is the standard device, and the reason the problem over $\mathbb{Q}$ is studied through the problem over $\mathbb{Q}(t)$, which is called the **regular** inverse Galois problem.
 
-This article states the problem, collects the classes of groups for which it is solved and the fields over which it is completely solved, and describes the two main methods — the rigidity method and the embedding problem with its cohomological obstruction — without developing the geometric existence theorem, which belongs to Part II. The arithmetic input is *Cyclotomic Fields*, *Galois Cohomology*, *Class Field Theory* and *Global Fields*; the rational-function side is *Polynomial Rings and Rational Functions*, being written in parallel; and the rationality questions surrounding the Noether problem are *Invariant Theory*.
+This article states the problem, collects the classes of groups for which it is solved and the fields over which it is completely solved, and describes the two main methods — the rigidity method and the embedding problem with its cohomological obstruction — without developing the geometric existence theorem, which belongs to Part II. The arithmetic input is *Cyclotomic Fields*, *Galois Cohomology*, *Class Field Theory* and *Global Fields*; the rational-function side lies outside this article; and the rationality questions surrounding the Noether problem are *Invariant Theory*.
 
 Throughout, $K$ is a field, $\bar K$ a separable closure, $G_K = \operatorname{Gal}(\bar K/K)$ the absolute Galois group, and for a finite group $G$ one says that $G$ **occurs over $K$** if there is a finite Galois extension $L/K$ with $\operatorname{Gal}(L/K) \cong G$. A group $G$ occurs **regularly** over $K$ if it occurs over $K(t)$ with the extension having no constant field extension, that is, with $\bar K \cap L = K$.
 
@@ -133,6 +133,10 @@ Over $\mathbb{C}(t)$ and over $\overline{\mathbb{Q}}(t)$ every finite group occu
 | $\mathbb{F}_q$, $\hat{\mathbb{Z}}$ | Finite field and its absolute Galois group |
 | $H^2(\bar G,A)$ | Obstruction group of the embedding problem |
 | PAC | Pseudo-algebraically-closed field |
+
+
+
+
 
 ## Further Reading
 

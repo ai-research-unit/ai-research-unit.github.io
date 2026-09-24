@@ -6,7 +6,7 @@ In the ring of integers of a number field, unique factorisation of elements can 
 
 The failure of unique factorisation is measured by the **ideal class group**: the quotient of the group of fractional ideals by the subgroup of principal fractional ideals. Its order is the **class number**, and the ring is a principal ideal domain exactly when the class group is trivial. For the ring of integers of a number field the class group is finite, and its order is one of the most delicate invariants of the field.
 
-This article defines Dedekind domains, proves the unique factorisation of ideals, develops fractional ideals and their invertibility, constructs the ideal class group, and computes it in the basic examples, including the Gaussian integers and $\mathbb{Z}[\sqrt{-5}]$, the classical example of class number $2$. Throughout, $R$ is an integral domain with fraction field $K = \operatorname{Frac}(R)$ and $R \neq$ a field; the theory of integrally closed domains, integral extensions and Krull dimension is from *Integral Extensions and Krull Dimension*, chain conditions and primary decomposition from *Noetherian and Artinian Rings* and *Primary Decomposition*, localisation from *Localization and the Fraction Field*, and divisibility and unique factorisation from *Factorization: PID, UFD and Euclidean Domains*. The valuation-theoretic description of the local rings of a Dedekind domain is in *Valuation Theory and Henselian Rings*, being written in parallel; here the local rings are described by their ideals instead.
+This article defines Dedekind domains, proves the unique factorisation of ideals, develops fractional ideals and their invertibility, constructs the ideal class group, and computes it in the basic examples, including the Gaussian integers and $\mathbb{Z}[\sqrt{-5}]$, the classical example of class number $2$. Throughout, $R$ is an integral domain with fraction field $K = \operatorname{Frac}(R)$ and $R \neq$ a field; the theory of integrally closed domains, integral extensions and Krull dimension is from *Integral Extensions and Krull Dimension*, chain conditions and primary decomposition from *Noetherian and Artinian Rings* and *Primary Decomposition*, localisation from *Localization and the Fraction Field*, and divisibility and unique factorisation from *Factorization: PID, UFD and Euclidean Domains*. The valuation-theoretic description of the local rings of a Dedekind domain is; here the local rings are described by their ideals instead.
 
 ---
 
@@ -48,7 +48,7 @@ The local study of a Dedekind domain is completely explicit, and it avoids the t
 
 **Definition.** A **discrete valuation ring** is a local principal ideal domain that is not a field. Its unique maximal ideal is principal, say $(\pi)$, and every nonzero ideal is a power $(\pi^n)$ of it; the element $\pi$ is a **uniformiser**.
 
-The name is justified in *Valuation Theory and Henselian Rings*, being written in parallel, where it is shown that a discrete valuation ring is exactly the valuation ring of a discrete valuation of its fraction field; that article is the natural place for the valuation-theoretic description, and here only the ideal structure is used.
+The name is justified, where it is shown that a discrete valuation ring is exactly the valuation ring of a discrete valuation of its fraction field; that article is the natural place for the valuation-theoretic description, and here only the ideal structure is used.
 
 **Theorem (local structure).** Let $R$ be a Dedekind domain and let $\mathfrak{m}$ be a nonzero prime ideal. Then the localisation $R_\mathfrak{m}$ is a discrete valuation ring, with maximal ideal $\mathfrak{m} R_\mathfrak{m}$. Conversely, a Noetherian domain of dimension one whose localisations at maximal ideals are all discrete valuation rings is a Dedekind domain.
 
@@ -56,7 +56,7 @@ The name is justified in *Valuation Theory and Henselian Rings*, being written i
 
 **Corollary.** In a Dedekind domain, for each nonzero prime $\mathfrak{m}$ and each nonzero element $x \in K$ there is a unique integer $v_\mathfrak{m}(x) \in \mathbb{Z}$ with $x R_\mathfrak{m} = (\pi_\mathfrak{m})^{v_\mathfrak{m}(x)}$, where $\pi_\mathfrak{m}$ is a uniformiser, and $v_\mathfrak{m}$ is additive. The integer $v_\mathfrak{m}(x)$ is the **order of vanishing** of $x$ at $\mathfrak{m}$.
 
-The functions $v_\mathfrak{m}$ are valuations, and their systematic theory — independent valuations, extensions, the approximation theorem in valuation language — is the subject of *Valuation Theory and Henselian Rings*, being written in parallel. The present article uses only that each $v_\mathfrak{m}$ is an additive integer-valued function with $v_\mathfrak{m}(x) \geq 0$ exactly when $x \in R_\mathfrak{m}$.
+The functions $v_\mathfrak{m}$ are valuations, and their systematic theory — independent valuations, extensions, the approximation theorem in valuation language — is not covered here. The present article uses only that each $v_\mathfrak{m}$ is an additive integer-valued function with $v_\mathfrak{m}(x) \geq 0$ exactly when $x \in R_\mathfrak{m}$.
 
 ---
 
@@ -180,9 +180,9 @@ $$
 M_K = \left(\frac{4}{\pi}\right)^{r_2} \frac{n!}{n^n} \sqrt{\lvert d_K \rvert},
 $$
 
-the **Minkowski bound**, where $d_K$ is the discriminant. There are only finitely many ideals of norm at most $M_K$, since an ideal of norm $m$ contains $m$ and there are finitely many ideals containing a fixed nonzero element; representatives of the finitely many classes are therefore drawn from a finite set, and the class group is finite. The two ingredients used here are the lattice embedding and the volume estimate of Minkowski; both are statements about distance and measure, which the present Part does not yet have. The proof is therefore completed in Part II, where the Euclidean structure of $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ is available, and the algebraic construction of $\mathcal{O}_K$ itself is carried out in *Algebraic Number Theory*, being written in parallel; the statement above is recorded here as the arithmetic consequence of the factorisation theorem. $\square$
+the **Minkowski bound**, where $d_K$ is the discriminant. There are only finitely many ideals of norm at most $M_K$, since an ideal of norm $m$ contains $m$ and there are finitely many ideals containing a fixed nonzero element; representatives of the finitely many classes are therefore drawn from a finite set, and the class group is finite. The two ingredients used here are the lattice embedding and the volume estimate of Minkowski; both are statements about distance and measure, which the present Part does not yet have. The proof is therefore completed in Part II, where the Euclidean structure of $\mathbb{R}^{r_1} \times \mathbb{C}^{r_2}$ is available, and the algebraic construction of $\mathcal{O}_K$ itself is carried out; the statement above is recorded here as the arithmetic consequence of the factorisation theorem. $\square$
 
-**Remark (function fields).** The same ideal theory governs the affine rings of algebraic curves: for a smooth affine algebraic curve over a field $k$, the ring of regular functions is a Dedekind domain, and its class group measures the obstruction to unique factorisation of functions. The projective completion of the curve, its divisor group and the degree-zero part of that group are developed in *Algebraic Curves* and *The Riemann–Roch Theorem for Curves*, both being written in parallel, where the class group acquires a geometric meaning; nothing in the present article depends on that development.
+**Remark (function fields).** The same ideal theory governs the affine rings of algebraic curves: for a smooth affine algebraic curve over a field $k$, the ring of regular functions is a Dedekind doma, and its class group measures the obstruction to unique factorisation of functions. The projective completion of the curve, its divisor group and the degree-zero part of that group are developed andboth, where the class group acquires a geometric meaning; nothing in the present article depends on that development.
 
 ---
 
@@ -228,7 +228,7 @@ $$
 
 The class $[P]$ has order $2$ since $P^2 = (2)$ is principal and $P$ is not principal. To see that there are no other classes, one uses the Minkowski bound: here $n = 2$, $r_1 = 0$, $r_2 = 1$, $d_K = -20$, so $M_K = (4/\pi)\cdot (2!/4)\sqrt{20} = (4/\pi)\cdot \tfrac12 \cdot 2\sqrt5 = 4\sqrt5/\pi \approx 2.85$. Every ideal class contains an integral ideal of norm at most $2.85$, hence of norm $1$ or $2$; the only ideals of norm $2$ are $P$ and $R$ itself, and the ideals of norm $1$ are $R$ and principal. Hence every class is $[R]$ or $[P]$, and $\operatorname{Cl} \cong \mathbb{Z}/2\mathbb{Z}$. $\square$
 
-The same computation classifies the behaviour of the primes: $2$ ramifies, $3$ splits, and an odd prime $p$ splits exactly when $-5$ is a quadratic residue modulo $p$; this is the first instance of the reciprocity laws developed in *Class Field Theory*, being written in parallel.
+The same computation classifies the behaviour of the primes: $2$ ramifies, $3$ splits, and an odd prime $p$ splits exactly when $-5$ is a quadratic residue modulo $p$; this is the first instance of the reciprocity laws developed.
 
 ### Class Numbers of Small Quadratic Fields
 
@@ -246,7 +246,7 @@ For the imaginary quadratic field $\mathbb{Q}(\sqrt{-d})$ with $d > 0$ squarefre
 
 The entry for $d = 5$ is the computation above, and the entry for $d = 14$ is included because its class group is not of exponent $2$. For $\mathbb{Q}(\sqrt{-14})$, of discriminant $-56$, the prime $2$ ramifies and the prime $3$ splits: $2\mathcal{O}_K = P_2^2$ and $3\mathcal{O}_K = P_3P_3'$. The class $[P_2]$ has order $2$: it is not principal, since an element of norm $2$ would give $x^2 + 14y^2 = 2$, which has no integral solution, while $P_2^2 = (2)$ is principal. The class $[P_3]$ is not principal for the same reason, and $[P_3]^2 = [P_2]$; hence $[P_3]$ has order $4$ and the class group is cyclic of order $4$, generated by $[P_3]$.
 
-**Remark.** The class group of a Dedekind domain is the obstruction to its being a principal ideal domain, and the class number is therefore the extent of the failure of unique factorisation of elements. The deeper invariants built from it — the class field, the $L$-function, the analytic class number formula — belong to *Class Field Theory*, being written in parallel, and to the analytic theory of later Parts. The finiteness theorem above makes the class group a finite abelian group, and its structure is one of the central objects of algebraic number theory.
+**Remark.** The class group of a Dedekind domain is the obstruction to its being a principal ideal doma, and the class number is therefore the extent of the failure of unique factorisation of elements. The deeper invariants built from it — the class field, the $L$-function, the analytic class number formula — belong, and to the analytic theory of later Parts. The finiteness theorem above makes the class group a finite abelian group, and its structure is one of the central objects of algebraic number theory.
 
 ---
 
@@ -276,6 +276,10 @@ The class group is the quotient of the group of nonzero fractional ideals by the
 | $\mathcal{O}_K$ | Ring of integers of a number field $K$ |
 | $N(x + y\sqrt{-5})$ | $= x^2 + 5y^2$, the norm on $\mathbb{Z}[\sqrt{-5}]$ |
 | $d_K$, $M_K$ | Discriminant of $K$, Minkowski bound |
+
+
+
+
 
 ## Further Reading
 

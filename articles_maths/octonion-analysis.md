@@ -5,7 +5,7 @@
 
 This article is the analysis slot of the octonion system. It sets up the differential calculus of octonion-valued functions of an octonion variable: the Cauchy–Riemann operator and its conjugate, their factorisation of the Laplacian, the class of monogenic functions, the exact form taken by the product rule when the algebra is not associative, and the consequences of that defect for the algebraic structure of the class of monogenic functions.
 
-The article is the octonion member of the analysis slots of this Part, and it follows the model of the written analysis of the quaternions and the biquaternions and of the split quaternions: *Quaternion Analysis* and *Split-Quaternion Analysis*, with the differential operators and the integration of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. The general theory of hypercomplex analysis in the associative case is that of the Part III companions *Clifford Analysis*, *Clifford Modules and the Twisted Cauchy–Riemann Operator* and *Clifford Analysis in Several Variables*; the present article is the octonion case and states where non-associativity changes the theory rather than restating the general theory. Integration is the subject of *Octonion Integration*, the special functions of *Octonion Special Functions*, and the harmonic analysis of *Octonion Harmonic Analysis*.
+The article is the octonion member of the analysis slots of this Part, and it follows the model of the analysis of the quaternions and the biquaternions and of the split quaternions: *Quaternion Analysis* and *Split-Quaternion Analysis*, with the differential operators and the integration of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. The general theory of hypercomplex analysis in the associative case is that of the Part III companions *Clifford Analysis*, *Clifford Modules and the Twisted Cauchy–Riemann Operator* and *Clifford Analysis in Several Variables*; the present article is the octonion case and states where non-associativity changes the theory rather than restating the general theory. Integration, the special functions and the harmonic analysis are not covered here.
 
 **Conventions.** As throughout the octonion articles, $\mathbb{O}$ has basis $e_0 = 1,e_1,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, $x = \sum_{k=0}^{7}x_ke_k$ is a variable octonion, $\partial_k = \partial/\partial x_k$, the conjugation is $\bar x$ with $\overline{xy} = \bar y\bar x$, the inner product is $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$, and $\lvert x\rvert^2 = \langle x,x\rangle$ is the norm. The associator is $[x,y,z] = (xy)z - x(yz)$ and the commutator $[x,y] = xy - yx$. Functions are octonion-valued on a domain of $\mathbb{R}^8$ identified with $\mathbb{O}$ by the basis.
 
@@ -209,6 +209,10 @@ which vanish identically only when the algebra is associative. Consequences: the
 | $\omega_7 = \pi^4/3$ | Volume of the unit sphere $S^7$ |
 | $n(y)$, $dS$, $dV$ | Outward unit normal, surface measure, volume measure |
 | $\Delta_8$ | Laplacian of $\mathbb{R}^8$ |
+
+
+
+
 
 ## Further Reading
 

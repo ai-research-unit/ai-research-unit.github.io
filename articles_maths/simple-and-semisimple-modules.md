@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A module is simple when it has no proper nonzero submodule, and semisimple when it is a direct sum of simples. These are the two smallest and the two best-behaved classes of modules over an algebra, and the theory built on them — Schur's lemma, the Jacobson radical, the density theorem and the Wedderburn–Artin structure theorem — is the backbone of the representation theory developed in the companion articles *Representations of Groups* and *Representations of Algebras*. The object of this article is the classification of modules by their simple constituents, and the classification of the algebras over which that classification is as simple as possible.
+A module is simple when it has no proper nonzero submodule, and semisimple when it is a direct sum of simples. These are the two smallest and the two best-behaved classes of modules over an algebra, and the theory built on them — Schur's lemma, the Jacobson radical, the density theorem and the Wedderburn–Artin structure theorem — is the backbone of the representation theory developed in . The object of this article is the classification of modules by their simple constituents, and the classification of the algebras over which that classification is as simple as possible.
 
 The conventions are those fixed in *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ is a unital associative $R$-algebra, modules are left modules, $S$ denotes a simple module, $D=\operatorname{End}_A(S)$ its endomorphism division ring, and $J(A)$ is the Jacobson radical. The base is the commutative ring; several results below require the base field and are flagged where they do. Schur's lemma and the density theorem are established in *Automorphisms of Modules over an Algebra* and are used here without reproof.
 
@@ -159,7 +159,7 @@ The radical is thus the obstruction to semisimplicity, and it is a two-sided ide
 
 So every artinian algebra is an extension of a semisimple algebra by a nilpotent radical, and the module theory of $A$ is the module theory of $A/J(A)$ together with the deformations introduced by $J(A)$. The precise statement is that $A$ and $A/J(A)$ have the same simple modules: every simple $A$-module is annihilated by $J(A)$ by characterization (2), hence is a simple $A/J(A)$-module, and conversely by inflation.
 
-**Nakayama's lemma.** For a two-sided ideal $I \subseteq J(A)$ and a finitely generated left $A$-module $M$, if $M=N+IM$ then $M=N$; in particular $IM=M$ forces $M=0$. This is proved in *Modules over an Algebra*. It is the standard tool for lifting generation from $M/IM$ and is used in *Change of Rings*.
+**Nakayama's lemma.** For a two-sided ideal $I \subseteq J(A)$ and a finitely generated left $A$-module $M$, if $M=N+IM$ then $M=N$; in particular $IM=M$ forces $M=0$. This is proved in *Modules over an Algebra*. It is the standard tool for lifting generation from $M/IM$ and is used.
 
 ### Semisimplicity criteria
 
@@ -221,7 +221,7 @@ because $J(A)$ annihilates every simple module, and conversely a module annihila
 
 **(c) Cyclic groups.** For the abelian group $\mathbb{Z}/n\mathbb{Z}$ as a $\mathbb{Z}$-module with $n=p_1^{a_1}\cdots p_r^{a_r}$, the simple submodules are spanned by the elements of order $p_i$, one for each $i$, so $\operatorname{soc}(\mathbb{Z}/n\mathbb{Z})\cong\bigoplus_i\mathbb{Z}/p_i\mathbb{Z}$. For $n=p^a$ this is the unique simple submodule, spanned by the elements of order $p$.
 
-**(d) The biquaternion algebra.** $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple, so $\operatorname{soc}({}_\mathbb{B}\mathbb{B})=\mathbb{B}$; for the defining module $S$ the socle is $S$ itself, and the socle of $S^{\oplus k}$ is $S^{\oplus k}$, in agreement with the classification of *The Defining Module of the Biquaternion Algebra*.
+**(d) The biquaternion algebra.** $\mathbb{B}\cong M_2(\mathbb{C})$ is semisimple, so $\operatorname{soc}({}_\mathbb{B}\mathbb{B})=\mathbb{B}$; for the defining module $S$ the socle is $S$ itself, and the socle of $S^{\oplus k}$ is $S^{\oplus k}$, in agreement with the classification.
 
 ## Composition Series and Length
 
@@ -253,9 +253,9 @@ The length is therefore additive on short exact sequences, and it measures the d
 
 **(e) Local algebras.** The quotient $F[x]/(x^n)$ is a local ring with maximal ideal $(x)/(x^n)$ and radical $J=(x)/(x^n) \neq 0$; its unique simple module is $F$, on which $x$ acts as $0$. It is not semisimple for $n \geq 2$, and its regular module has length $n$ with repeated composition factor $F$.
 
-**(f) Group algebras.** For a finite group $G$ and a field $F$, the group algebra $F[G]$ is semisimple if and only if $\operatorname{char} F$ does not divide $|G|$; this is Maschke's theorem, the module-theoretic form of complete reducibility. When $\operatorname{char} F=p$ divides $|G|$, the radical is nonzero and the theory becomes modular; the simple $F[G]$-modules are then the simple modules of $F[G]/J(F[G])$. The decomposition of $F[G]$ into matrix algebras in the semisimple case is the content of the companion article *Representations of Groups*.
+**(f) Group algebras.** For a finite group $G$ and a field $F$, the group algebra $F[G]$ is semisimple if and only if $\operatorname{char} F$ does not divide $|G|$; this is Maschke's theorem, the module-theoretic form of complete reducibility. When $\operatorname{char} F=p$ divides $|G|$, the radical is nonzero and the theory becomes modular; the simple $F[G]$-modules are then the simple modules of $F[G]/J(F[G])$. The decomposition of $F[G]$ into matrix algebras in the semisimple case is the content .
 
-**(g) Algebras with radical.** For a finite-dimensional algebra over a field the radical is nilpotent, so $A$ is semisimple exactly when $J(A)=0$. Over the $\mathbb{R}$-algebra $\mathbb{H}$ the radical vanishes because $\mathbb{H}$ is a division ring; over $\mathbb{B}$ it vanishes because $\mathbb{B}$ is a matrix algebra. Both are semisimple, and their module theory is as described in *Quaternionic and Biquaternionic Modules*.
+**(g) Algebras with radical.** For a finite-dimensional algebra over a field the radical is nilpotent, so $A$ is semisimple exactly when $J(A)=0$. Over the $\mathbb{R}$-algebra $\mathbb{H}$ the radical vanishes because $\mathbb{H}$ is a division ring; over $\mathbb{B}$ it vanishes because $\mathbb{B}$ is a matrix algebra. Both are semisimple, and their module theory is as described.
 
 ## Summary
 
@@ -287,6 +287,8 @@ The obstruction to semisimplicity is the Jacobson radical $J(A)$, the intersecti
 | $F[G]$ | group algebra of a finite group $G$ over $F$ |
 | $\mathbb{H}$, $\mathbb{B}$ | quaternions and biquaternions |
 | $\operatorname{char} F$ | characteristic of the field $F$ |
+
+
 
 ## Further Reading
 

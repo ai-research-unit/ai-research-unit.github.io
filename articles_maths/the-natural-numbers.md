@@ -5,7 +5,7 @@
 
 This is the first article of the Natural Numbers system in Part IV, and it occupies the **algebra slot** of that system. The system is the semiring $(\mathbb{N}, +, \cdot, 0, 1)$ together with its order, and this article constructs it, establishes its universal property, records its arithmetic and its divisibility, and describes its place among the other systems. Everything about $\mathbb{N}$ that is algebraic follows from one construction: it is the free commutative semiring on no generators, the least inductive set, and the initial object in the category of commutative semirings with identity. It is the system in which addition and multiplication are defined by recursion and in which the induction principle is an algebraic law rather than a theorem about a larger structure.
 
-This article carries out the construction from the Peano axioms and from the von Neumann ordinal $\omega$, establishes the recursion and induction theorems, develops the arithmetic and the order, and describes the divisibility structure, the cardinality and the embeddings into the later systems. The system supports an algebra slot and a special-functions slot and nothing else: there is no geometry of a line to develop, because $\mathbb{N}$ carries no compatible order-complete or metric structure of its own, and the arithmetic functions are the subject of *Combinatorial Functions and Generating Functions*. The model theory of the first-order theory of $\mathbb{N}$ is treated in the companion article *Peano Arithmetic and Model Theory*, being written in parallel, and its computability theory in *Computability Theory*; neither is used here.
+This article carries out the construction from the Peano axioms and from the von Neumann ordinal $\omega$, establishes the recursion and induction theorems, develops the arithmetic and the order, and describes the divisibility structure, the cardinality and the embeddings into the later systems. The system supports an algebra slot and a special-functions slot and nothing else: there is no geometry of a line to develop, because $\mathbb{N}$ carries no compatible order-complete or metric structure of its own, and the arithmetic functions are not covered here. The model theory of the first-order theory of $\mathbb{N}$ is treated, and its computability theory; neither is used here.
 
 Throughout, $\mathbb{N} = \{0,1,2,\dots\}$ is the set of natural numbers including $0$, the successor map is $S : \mathbb{N} \to \mathbb{N}$, and $\omega$ is the first infinite von Neumann ordinal. The standard reference structures for set theory, order and cardinality are *Set-Theoretic Foundations*, *Order Theory and Lattices* and *Cardinality and the Axiom of Choice*; divisibility and factorization are from *Factorization: PID, UFD and Euclidean Domains*. The corpus's default base is the commutative ring; this article's base is the commutative **semiring** $\mathbb{N}$, which is not a ring, and every result below is stated for that base. No concept of analysis enters: $\mathbb{N}$ carries no compatible metric or order-completeness, and the systems $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{R}$ are reached by adjoining structure, not by a construction inside $\mathbb{N}$.
 
@@ -181,6 +181,10 @@ $(\mathbb{N}, +, \cdot, 0, 1)$ is a commutative semiring with identity, and it i
 | $\aleph_0$ | Cardinality of $\mathbb{N}$ |
 | $\binom{n}{k}$, $n!$ | Binomial coefficient and factorial |
 | $\mathcal{P}(\mathbb{N})$ | Power set, of strictly larger cardinality |
+
+
+
+
 
 ## Further Reading
 

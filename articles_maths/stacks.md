@@ -67,7 +67,7 @@ or, in the étale or smooth topology, the derived functors of the global section
 1. The cohomology of $\mathcal{F}$ is computed by the Čech nerve: $H^i(\mathcal{X},\mathcal{F})$ is the $i$-th cohomology of the complex of the simplicial structure, and it agrees with the derived functors of global sections, so the long exact sequences and the spectral sequences of *Sheaf Cohomology* and *Derived Functors and Sheaf Cohomology* hold verbatim for stacks.
 2. If $\mathcal{X}$ is Deligne–Mumford with finite stabilisers over the complex numbers and $X$ is its coarse space, then for the étale cohomology with rational coefficients
    $$H^i(\mathcal{X},\mathbb{Q})\cong H^i(X,\mathbb{Q}),$$
-   so that the stacky refinement does not change the rational cohomology of the moduli problem.
+ so that the stacky refinement does not change the rational cohomology of the moduli problem.
 3. For the classifying stack $BG$ of a finite group $G$ one has $H^i(BG,\mathbb{Q}) = H^i(G,\mathbb{Q})$, the group cohomology in degree $i$, which vanishes for $i>0$ when $G$ is finite and $\mathbb{Q}$ is the coefficient module; hence the comparison of (2) is a statement about finite stabilisers, and the cohomology with integral coefficients, or with coefficients in a nontrivial local system, does see the stack structure.
 
 *Proof.* (1) the descent condition identifies the category of sheaves on $\mathcal{X}$ with the category of descent data, and the derived functor of global sections is then computed by the Čech complex of the nerve, as in *Čech Cohomology*, the nerve being a hypercover of $\mathcal{X}$. (2) is the comparison theorem for Deligne–Mumford stacks, proved by decomposing the atlas into the loci of constant stabiliser and using the finiteness of the stabilisers together with the vanishing of the rational cohomology of a finite group in positive degree. (3) the identification of $H^i(BG,\mathbb{Q})$ with the group cohomology is the definition of $BG$ and the homotopy-invariance of group cohomology for a finite group and rational coefficients. $\square$
@@ -111,6 +111,8 @@ Sheaves on a stack are descent data along an atlas, their cohomology is the coho
 | $H^i(\mathcal{X},\mathcal{F})$ | cohomology of a stack, by descent along an atlas |
 | $\pi : \mathcal{X}\to X$ | coarse moduli space morphism; initial for maps to schemes |
 | $\mathcal{M}_g$, $\overline{\mathcal{M}}_g$, $\mathcal{M}(r,d)$ | moduli stacks of curves, stable curves, semistable bundles |
+
+
 
 ## Further Reading
 

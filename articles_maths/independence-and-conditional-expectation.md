@@ -10,7 +10,7 @@ This article develops both. It defines independent events and independent random
 The place of the article is fixed by two boundaries.
 
 - The **measure-theoretic frame** — probability spaces, random variables, distributions, expectation, moments, the modes of convergence and the characteristic function — is *Measure-Theoretic Probability*, the preceding article, and its notation is held here: $(\Omega,\mathcal{F},\mathbb{P})$, $\mu_X$, $F_X$, $\mathbb{E}$, $\operatorname{Var}$, a.s., $\sigma(X)$, and the four modes of convergence. The **general measure theory** — the Radon–Nikodym theorem, the product measure on two spaces, the monotone class theorem, the disintegration of measures — is *Measure Theory and Integration*, and the **modes of convergence** are *Modes of Convergence*.
-- The **limit theorems** whose proofs use independence are *Laws of Large Numbers and the Central Limit Theorem*, and the **martingale theory** built on the filtration and the conditional expectation is *Martingales*, the article after that. This article constructs the objects; the two later articles use them.
+- The **limit theorems** whose proofs use independence areand the **martingale theory** built on the filtration and the conditional expectation is. This article constructs the objects; two other articles use them.
 
 No physics is invoked. Throughout, $(\Omega,\mathcal{F},\mathbb{P})$ is a probability space as in *Measure-Theoretic Probability*; a **$\pi$-system** is a family of sets closed under finite intersections, a **dynkin system** is a family containing $\Omega$ and closed under complements and countable disjoint unions, and a **filtration** is an increasing family $\{\mathcal{F}_n\}$ of sub-$\sigma$-algebras of $\mathcal{F}$, with $\mathcal{F}_\infty = \sigma(\bigcup_n \mathcal{F}_n)$. The conditional expectation of $X$ given $\mathcal{G}$ is written $\mathbb{E}[X \mid \mathcal{G}]$, and the conditional probability of $A$ given $\mathcal{G}$ is $\mathbb{P}(A \mid \mathcal{G}) = \mathbb{E}[\mathbf{1}_A \mid \mathcal{G}]$.
 
@@ -119,7 +119,7 @@ The Hewitt–Savage theorem contains the Kolmogorov law as a special case, since
 
 ### The Martingale Zero–One Law, Briefly
 
-The zero–one laws have a limiting form in the martingale theory of *Martingales*: if $X$ is bounded and $\mathbb{E}[X \mid \mathcal{F}_n] = \mathbb{E}[X]$ for all $n$ and $\mathcal{F}_\infty = \sigma(\bigcup_n\mathcal{F}_n)$ then $X = \mathbb{E}[X]$ a.s., which is the statement that the tail of the filtration contributes no information. The Lévy downward theorem makes the same point for a decreasing family, and it is the abstract form of the fact that the conditional expectation on a decreasing family of $\sigma$-algebras converges to the conditional expectation on the intersection. This is the point at which the present article hands over to the martingale theory.
+The zero–one laws have a limiting form in the martingale theory: if $X$ is bounded and $\mathbb{E}[X \mid \mathcal{F}_n] = \mathbb{E}[X]$ for all $n$ and $\mathcal{F}_\infty = \sigma(\bigcup_n\mathcal{F}_n)$ then $X = \mathbb{E}[X]$ a.s., which is the statement that the tail of the filtration contributes no information. The Lévy downward theorem makes the same point for a decreasing family, and it is the abstract form of the fact that the conditional expectation on a decreasing family of $\sigma$-algebras converges to the conditional expectation on the intersection. This is the point at which the present article hands over to the martingale theory.
 
 ## Conditional Expectation
 
@@ -205,13 +205,13 @@ The filtration is the mathematical encoding of the information available at time
 
 **Definition.** An adapted integrable process $\{X_n\}$ is a **martingale** if $\mathbb{E}[X_{n+1} \mid \mathcal{F}_n] = X_n$ a.s. for every $n$; a **submartingale** if $\mathbb{E}[X_{n+1} \mid \mathcal{F}_n] \geq X_n$ a.s.; and a **supermartingale** if the inequality reverses. The definitions extend to continuous time with an increasing family $\{\mathcal{F}_t\}_{t\geq0}$.
 
-The **optional stopping** theorem, the **maximal inequalities**, the **Doob decomposition** and the **martingale convergence theorem** are the content of *Martingales*, where the filtration theory is developed in full. The present article has supplied the conditional expectation and the filtration; the martingale theory is the systematic exploitation of the tower property, and its continuous-time form is *Brownian Motion and Stochastic Calculus*.
+The **optional stopping** theorem, the **maximal inequalities**, the **Doob decomposition** and the **martingale convergence theorem** are the content, where the filtration theory is developed in full. The present article has supplied the conditional expectation and the filtration; the martingale theory is the systematic exploitation of the tower property, and its continuous-time form lies outside this article.
 
 ## Summary
 
 A family of events is independent when the probability of every finite intersection is the product of the probabilities, a family of random variables is independent when their $\sigma$-algebras are, and independence is equivalent to the joint law being the product of the marginals, to the factorisation of expectations of products of bounded functions, and to the factorisation of the characteristic function. The product measure on two spaces is the measure-theoretic construction of independence, and the Kolmogorov extension theorem builds the countable product so that an infinite sequence of independent random variables exists; the sequence space with the coordinate process is the canonical model.
 
-The first Borel–Cantelli lemma states that summable probabilities imply finitely many occurrences, with no independence needed; the second states that independent events with divergent probability sum occur infinitely often, almost surely. Kolmogorov's zero–one law states that every tail event of an independent sequence has probability $0$ or $1$, and the Hewitt–Savage theorem extends this to the exchangeable events of an exchangeable sequence. The conditional expectation $\mathbb{E}[X\mid\mathcal{G}]$ is the a.s. unique integrable $\mathcal{G}$-measurable random variable with the same integral as $X$ on every set of $\mathcal{G}$; it exists by the Radon–Nikodym theorem, is the orthogonal projection of $X$ onto $L^2(\mathcal{G})$ when $X \in L^2$, satisfies linearity, positivity, the tower property, pull-out, invariance under independence, Jensen and the conditional convergence theorems, and it is a contraction on every $L^p$. Regular conditional probabilities exist on standard Borel spaces by disintegration, and they give the conditional distribution and the Bayes formula. A filtration is the record of the information available at each time, an adapted process is one known in time, and a martingale is an adapted integrable process whose conditional expectation one step ahead is its present value; the martingale theory is developed in the following articles.
+The first Borel–Cantelli lemma states that summable probabilities imply finitely many occurrences, with no independence needed; the second states that independent events with divergent probability sum occur infinitely often, almost surely. Kolmogorov's zero–one law states that every tail event of an independent sequence has probability $0$ or $1$, and the Hewitt–Savage theorem extends this to the exchangeable events of an exchangeable sequence. The conditional expectation $\mathbb{E}[X\mid\mathcal{G}]$ is the a.s. unique integrable $\mathcal{G}$-measurable random variable with the same integral as $X$ on every set of $\mathcal{G}$; it exists by the Radon–Nikodym theorem, is the orthogonal projection of $X$ onto $L^2(\mathcal{G})$ when $X \in L^2$, satisfies linearity, positivity, the tower property, pull-out, invariance under independence, Jensen and the conditional convergence theorems, and it is a contraction on every $L^p$. Regular conditional probabilities exist on standard Borel spaces by disintegration, and they give the conditional distribution and the Bayes formula. A filtration is the record of the information available at each time, an adapted process is one known in time, and a martingale is an adapted integrable process whose conditional expectation one step ahead is its present value; the martingale theory is not covered here.
 
 ## Summary of Notation
 
@@ -233,6 +233,10 @@ The first Borel–Cantelli lemma states that summable probabilities imply finite
 | $\{\mathcal{F}_n\}$, $\mathcal{F}_\infty$ | Filtration, $\sigma(\bigcup_n\mathcal{F}_n)$ |
 | adapted, predictable | $X_n$ is $\mathcal{F}_n$-measurable; $X_n$ is $\mathcal{F}_{n-1}$-measurable |
 | martingale | $\mathbb{E}[X_{n+1}\mid\mathcal{F}_n]=X_n$ a.s. |
+
+
+
+
 
 ## Further Reading
 

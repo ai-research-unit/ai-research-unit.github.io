@@ -162,7 +162,7 @@ The orbits of poles can be read off the geometry, and this identifies the triple
 
 ### The Binary Polyhedral Groups
 
-The two-to-one cover $SU(2) \to SO(3)$ of *Matrix Groups and Classical Groups* pulls the finite rotation groups back to finite subgroups of $SU(2) = \mathbb{H}^1$.
+The two-to-one cover $SU(2) \to SO(3)$ pulls the finite rotation groups back to finite subgroups of $SU(2) = \mathbb{H}^1$.
 
 **Definition.** The **binary polyhedral groups** are the preimages $2T$, $2O$, $2I$ in $\mathbb{H}^1$ of the tetrahedral, octahedral and icosahedral groups, of orders $24$, $48$ and $120$; the preimage of the cyclic and dihedral groups are the cyclic and dicyclic groups.
 
@@ -287,6 +287,8 @@ The finite groups of rotations of $\mathbb{R}^3$ are classified by counting pole
 | $O(n)$, $SO(n)$ | Orthogonal and rotation groups; $O(n)$ here has an argument, $O$ alone is the octahedral group above |
 | $H^2(P, \Lambda)$ | Second cohomology, classifying the extensions of $\Lambda$ by $P$ |
 | $\operatorname{Isom}(\mathbb{R}^n)$ | Group of Euclidean isometries |
+
+
 
 ## Further Reading
 

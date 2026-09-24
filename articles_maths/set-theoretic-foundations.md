@@ -5,9 +5,9 @@
 
 The preceding four articles used sets naively: they formed unions, intersections, power sets and quotients, and they took for granted that these operations are legitimate. This article supplies the axiomatic basis that justifies them. It states the Zermelo–Fraenkel axioms with the axiom of choice, derives the elementary consequences that the corpus uses — the existence of the natural numbers, the definition of ordered pairs, the formation of images and quotients — and then develops the theory of the **ordinals**, on which the notions of cardinal and of transfinite recursion rest. It concludes with the cumulative hierarchy, the independence of the continuum hypothesis, and a survey of the large-cardinal axioms.
 
-The article is the fifth of the corpus, above *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices* and *Cardinality and the Axiom of Choice*, and it depends on all four. The language in which the axioms are written is the first-order language of *Logic and Proof*; the relations and functions of which the axioms speak are those of *Sets, Functions and Relations*; the well-orderings and fixed points that transfinite recursion uses are those of *Order Theory and Lattices*; and the cardinal arithmetic and the theorem that no set is equipotent to its power set are those of *Cardinality and the Axiom of Choice*. The article's purpose is foundational: it does not create new algebra but it explains why the set-theoretic operations that later articles perform are available.
+The article is the fifth of the corpus, above *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices* and *Cardinality and the Axiom of Choice*, and it depends on all four. The language in which the axioms are written is the first-order language of *Logic and Proof*; the relations and functions of which the axioms speak are those of *Sets, Functions and Relations*; the well-orderings and fixed points that transfinite recursion uses are those of *Order Theory and Lattices*; and the cardinal arithmetic and the theorem that no set is equipotent to its power set are those of *Cardinality and the Axiom of Choice*. The article's purpose is foundational: it does not create new algebra but it explains why the set-theoretic operations that other articles perform are available.
 
-The treatment is honest about what is proved and what is quoted. The axioms, the construction of the ordinals, the definition of the cumulative hierarchy and the elementary theory of cardinal and ordinal arithmetic are proved in full or in outline. The independence of the continuum hypothesis and the existence of large cardinals are quoted as the major theorems of the subject, with the standard references, and the forcing machinery is described only to the extent that its conclusion can be stated. Where a result is a theorem of the metatheory — the reflection principle, for instance — the article says so and cites *Formal Logic and Computability* and *Model Theory*, where the metatheoretic tools are developed. No topology, no distance and no form appears; the article is the last of the foundational layer and closes it.
+The treatment is honest about what is proved and what is quoted. The axioms, the construction of the ordinals, the definition of the cumulative hierarchy and the elementary theory of cardinal and ordinal arithmetic are proved in full or in outline. The independence of the continuum hypothesis and the existence of large cardinals are quoted as the major theorems of the subject, with the standard references, and the forcing machinery is described only to the extent that its conclusion can be stated. Where a result is a theorem of the metatheory — the reflection principle, for instance — the article says so and citesandwhere the metatheoretic tools are developed. No topology, no distance and no form appears; the article is the last of the foundational layer and closes it.
 
 ## The Axioms
 
@@ -199,7 +199,7 @@ $$
 
 where $\varphi^{V_\beta}$ is $\varphi$ with every quantifier relativised to $V_\beta$.
 
-**Proof sketch.** The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed in *Formal Logic and Computability* and revisited in *Model Theory*. $\square$
+**Proof sketch.** The proof is a syntactic induction on $\varphi$, using the absoluteness of $\Delta_0$ formulas and the existence of a closure ordinal for each existential quantifier: for a formula $\exists y\,\psi(y,x_1,\ldots,x_n)$, one collects, for each tuple in a given $V_\beta$, a witness $y$ of smallest rank and takes the supremum of the ranks, iterating $\omega$ times to close under all subformulas. The argument is a theorem of ZFC and belongs to the metatheory of set theory; the arithmetisation of syntax and the metatheoretic techniques used to state it are developed and revisited. $\square$
 
 The reflection principle is the reason a set is a faithful miniature of the universe for any finite list of formulas, and it is the technical heart of the constructions of model theory. It is stated here because it is the bridge between this article and the logical layer that follows.
 
@@ -227,7 +227,7 @@ The method is **forcing**. One begins with a countable transitive model $M$ of a
 
 **Theorem (independence of CH).** If ZFC is consistent, then neither CH nor its negation is provable in ZFC.
 
-**Proof.** Gödel's theorem gives the consistency of CH, Cohen's the consistency of its negation; by the soundness and completeness of first-order logic, discussed in *Formal Logic and Computability*, neither statement is a theorem of a consistent ZFC. $\square$
+**Pro.** Gödel's theorem gives the consistency of CH, Cohen's the consistency of its negation; by the soundness and completeness of first-order logic, discussed, neither statement is a theorem of a consistent ZFC. $\square$
 
 ## Large Cardinals in Outline
 
@@ -237,7 +237,7 @@ The method is **forcing**. One begins with a countable transitive model $M$ of a
 
 **Theorem.** The existence of a strongly inaccessible cardinal is not provable in ZFC, provided ZFC is consistent.
 
-**Proof sketch.** If $\kappa$ is strongly inaccessible then $V_\kappa$ is a set model of ZFC: the axioms of pairing, union, power set and separation hold because $\kappa$ is a limit cardinal closed under power sets; infinity holds because $\omega < \kappa$; replacement holds because $\kappa$ is regular; foundation holds in every transitive set. A model of ZFC cannot be proved to exist from ZFC by Gödel's second incompleteness theorem, quoted and developed in *Formal Logic and Computability*. Hence the existence of $\kappa$ is unprovable. $\square$
+**Proof sketch.** If $\kappa$ is strongly inaccessible then $V_\kappa$ is a set model of ZFC: the axioms of pairing, union, power set and separation hold because $\kappa$ is a limit cardinal closed under power sets; infinity holds because $\omega < \kappa$; replacement holds because $\kappa$ is regular; foundation holds in every transitive set. A model of ZFC cannot be proved to exist from ZFC by Gödel's second incompleteness theorem, quoted and developed. Hence the existence of $\kappa$ is unprovable. $\square$
 
 ### Measurable Cardinals and Beyond
 
@@ -280,6 +280,10 @@ The cumulative hierarchy $V_\alpha$ is built by iterated power sets and unions; 
 | $\varphi^{V_\beta}$ | Relativisation of $\varphi$ to $V_\beta$ |
 | $\mathbb{P}$, $G$, $M[G]$ | Forcing conditions, generic filter, generic extension |
 | ZF, ZFC | Zermelo–Fraenkel axioms; with the axiom of choice |
+
+
+
+
 
 ## Further Reading
 

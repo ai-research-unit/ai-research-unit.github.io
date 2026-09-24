@@ -5,7 +5,7 @@
 
 The dimension of a space is the numerical invariant that measures how many independent directions the space has, and it is a topological invariant: homeomorphic spaces have the same dimension. There are three classical definitions. The **covering dimension** $\dim X$ is defined by refinements of open covers and the order of a cover, and it is the definition that generalises to arbitrary topological spaces and that makes the dimension of the cube $I^n$ equal to $n$ by an argument with the Lebesgue covering lemma. The **small inductive dimension** $\operatorname{ind} X$ and the **large inductive dimension** $\operatorname{Ind} X$ are defined inductively by the boundaries of neighbourhoods of points and of closed sets respectively. For separable metrisable spaces the three agree, by the theorem of Menger, Urysohn and Brouwer, and this is the theorem that fixes the dimension of Euclidean space, of the cube and of a manifold. For general spaces the three can differ, and the differences are themselves a source of examples.
 
-This article develops the three definitions, the inducing theorems of dimension zero, the sum, product and subspace theorems for the covering dimension of metrisable spaces, and the invariance of dimension. The Lebesgue covering lemma is the compactness statement that makes the covering dimension of the cube computable, and the nerve of a cover, introduced in *Paracompactness and Partitions of Unity*, is the combinatorial object whose dimension is one less than the order of the cover. The facts about manifolds used here — that a manifold is locally Euclidean, second countable and Hausdorff, and that it is topologically homogeneous near a point — belong to *Smooth Manifolds and Differential Geometry*; the dimension theory of the manifold is the covering dimension of its underlying topological space, and the manifold structure enters only through the local Euclidean model. No measure, integral or analytic limit is used, and no physics is invoked. The homological proofs of the invariance of dimension belong to the algebraic topology category that follows in this Part, and the arguments here are the point-set ones.
+This article develops the three definitions, the inducing theorems of dimension zero, the sum, product and subspace theorems for the covering dimension of metrisable spaces, and the invariance of dimension. The Lebesgue covering lemma is the compactness statement that makes the covering dimension of the cube computable, and the nerve of a cover, introduced in *Paracompactness and Partitions of Unity*, is the combinatorial object whose dimension is one less than the order of the cover. The facts about manifolds used here — that a manifold is locally Euclidean, second countable and Hausdorff, and that it is topologically homogeneous near a point — lie outside this article; the dimension theory of the manifold is the covering dimension of its underlying topological space, and the manifold structure enters only through the local Euclidean model. No measure, integral or analytic limit is used, and no physics is invoked. The homological proofs of the invariance of dimension belong to the algebraic topology category that follows in this Part, and the arguments here are the point-set ones.
 
 ## The Covering Dimension
 
@@ -150,7 +150,7 @@ The theorem is due to Brouwer and is the local form of the invariance of dimensi
 
 **Corollary.** The dimension of a manifold is a topological invariant, so a connected topological manifold homeomorphic to both an $m$-manifold and an $n$-manifold has $m=n$. The result is the reason the dimension of a manifold can be read from the local Euclidean model, and it is the input to the classification of manifolds by dimension that the geometry articles use.
 
-**Remark.** The manifold facts — the existence of the locally finite cover by coordinate neighbourhoods, the homeomorphism types of Euclidean open sets, and the topological homogeneity of a manifold — belong to *Smooth Manifolds and Differential Geometry*, written in parallel. The dimension-theoretic content is the invariance of dimension and the countable sum theorem, and the two combine into the statement that a manifold's dimension is intrinsic. The same input is used in the dimension theory of the topological groups of the next category, where the dimension of a locally compact group is computed from the dimension of a neighbourhood of the identity.
+**Remark.** The manifold facts — the existence of the locally finite cover by coordinate neighbourhoods, the homeomorphism types of Euclidean open sets, and the topological homogeneity of a manifold — belong. The dimension-theoretic content is the invariance of dimension and the countable sum theorem, and the two combine into the statement that a manifold's dimension is intrinsic. The same input is used in the dimension theory of the topological groups of the next category, where the dimension of a locally compact group is computed from the dimension of a neighbourhood of the identity.
 
 ## Summary
 
@@ -174,6 +174,10 @@ The **Lebesgue covering lemma** gives a Lebesgue number to every open cover of a
 | $N(\mathcal{U})$ | Nerve of the cover $\mathcal{U}$; $\operatorname{order}\mathcal{U} = \dim N(\mathcal{U}) + 1$ |
 | $X_k$, $I^\infty$, $\mathbb{R}^\infty$ | Summands of the countable sum theorem; Hilbert cube; direct limit of the Euclidean spaces |
 | $M$ | Topological $n$-manifold, with $\dim M = n$ |
+
+
+
+
 
 ## Further Reading
 

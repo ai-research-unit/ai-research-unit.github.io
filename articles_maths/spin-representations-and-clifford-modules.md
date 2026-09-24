@@ -59,7 +59,7 @@ $$
 
 **Terminology.** The elements of $\Delta$ are **spinors**; the operator $\varepsilon$ creates a vector and the operator $\iota$ annihilates one, so that $W$ acts by creation and $W'$ by annihilation. This is the algebraic origin of the creation and annihilation operators of the exterior algebra, and it makes the spinor module the exterior algebra of a maximal isotropic subspace. The construction is the Clifford-algebra model of the exterior algebra, the two being related by the symbol of the Clifford multiplication.
 
-**Remark.** Over $\mathbb{R}$ with a definite form there are no nonzero isotropic vectors, so a maximal isotropic subspace of $V$ itself does not exist. The construction is performed on the complexification $V_{\mathbb{C}}$, and the real spinor module is then obtained by a reality condition: the complex module $\Delta$ carries an antilinear structure, and the real spinors are the fixed points or the eigenspaces of that structure. This is the subject of the article *Real Spinors and Reality Conditions*. Over a field where the form is split — for instance over $\mathbb{C}$, or over $\mathbb{R}$ with a form of signature $(m,m)$ — the construction is already defined over the ground field.
+**Remark.** Over $\mathbb{R}$ with a definite form there are no nonzero isotropic vectors, so a maximal isotropic subspace of $V$ itself does not exist. The construction is performed on the complexification $V_{\mathbb{C}}$, and the real spinor module is then obtained by a reality condition: the complex module $\Delta$ carries an antilinear structure, and the real spinors are the fixed points or the eigenspaces of that structure. This is not covered here. Over a field where the form is split — for instance over $\mathbb{C}$, or over $\mathbb{R}$ with a form of signature $(m,m)$ — the construction is already defined over the ground field.
 
 ## The Complex Spin Representation
 
@@ -164,7 +164,7 @@ Over $\mathbb{R}$ the classification of the previous articles gives not one spin
 
 **Proof.** This is the module-theoretic reading of the eightfold table: the algebra $\mathrm{Cl}_{p,q}$ is $M_k(D)$ or a product of two such, and the irreducible module is $D^k$ over the division algebra. The real dimension of the module is $k\dim_{\mathbb{R}}D$, which for the quaternionic and complex cases is twice the complex dimension of the complex spinor module of the same formal dimension; for example for $d\equiv4$ the module is $\mathbb{H}^{2^{(n-2)/2}}$, of real dimension $2^{(n+2)/2}$. For $d\equiv1,5\bmod8$ the algebra is a product of two simple factors and the table lists one of the two irreducible modules, the other having the same division algebra and the same dimension; for $d\equiv3,7\bmod8$ the algebra is simple and the table lists its unique irreducible module. $\square$
 
-**Reality conditions.** The complex spinor module of dimension $2^{\lfloor n/2\rfloor}$ carries a real structure, a complex structure or a quaternionic structure according to the same congruence: this is the meaning of the entry $D$ in the table. The real spinors are the fixed points of the real structure when $D=\mathbb{R}$, the complexification is irreducible when $D=\mathbb{C}$, and the quaternionic structure makes the complex spinor module a quaternionic space whose dimension over $\mathbb{H}$ is half its complex dimension when $D=\mathbb{H}$. The precise bookkeeping of the antilinear structures is the subject of *Real Spinors and Reality Conditions*; the table above records only the outcome.
+**Reality conditions.** The complex spinor module of dimension $2^{\lfloor n/2\rfloor}$ carries a real structure, a complex structure or a quaternionic structure according to the same congruence: this is the meaning of the entry $D$ in the table. The real spinors are the fixed points of the real structure when $D=\mathbb{R}$, the complexification is irreducible when $D=\mathbb{C}$, and the quaternionic structure makes the complex spinor module a quaternionic space whose dimension over $\mathbb{H}$ is half its complex dimension when $D=\mathbb{H}$. The precise bookkeeping of the antilinear structures is not covered here; the table above records only the outcome.
 
 ## The Biquaternion Spinor Module
 
@@ -174,7 +174,7 @@ The two-dimensional complex spinor module is especially transparent for the biqu
 
 **Example.** Let $V=\mathbb{R}^4$ with the form $\operatorname{diag}(+1,+1,+1,+1)$, so that $\mathrm{Cl}_{4,0}\cong M_2(\mathbb{H})$. The complex spinor module has dimension $2^{2}=4$ and splits into half-spinors of dimension two each. The even subalgebra is $\mathbb{H}\times\mathbb{H}$, and the two half-spin representations are the two-dimensional complex representations of the two factors of $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$. This is the module of the two-sided quaternionic action used in the application layer.
 
-**Remark.** In the applications of this category, the spinor module of $\mathbb{B}$ is the defining module $\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$, and its dual is the conjugate module; the invariant bilinear forms on these modules are the forms under which the spin group is defined. The identification of the spinor module with the defining module of the biquaternion algebra is the content of *Spinors and the Biquaternion Spinor Module*, and it is the point at which the spin representations of this article meet the number systems.
+**Remark.** In the applications of this category, the spinor module of $\mathbb{B}$ is the defining module $\mathbb{C}^2$ of $\mathbb{B}\cong M_2(\mathbb{C})$, and its dual is the conjugate module; the invariant bilinear forms on these modules are the forms under which the spin group is defined. The identification of the spinor module with the defining module of the biquaternion algebra is the content, and it is the point at which the spin representations of this article meet the number systems.
 
 ## Summary
 
@@ -208,6 +208,12 @@ Over $\mathbb{R}$ the spinor module is a module over $\mathbb{R}$, $\mathbb{C}$ 
 | $\mathfrak{so}(V,q)\cong\Lambda^2V$ | Orthogonal Lie algebra as bivectors |
 | $D\in\{\mathbb{R},\mathbb{C},\mathbb{H}\}$ | Division algebra of the real spinor module, by $d\bmod8$ |
 | $\mathrm{Spin}(3)\cong Sp(1)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$ | Low-dimensional spin groups |
+
+
+
+
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A finite group is built from its simple composition factors, in the sense of the Jordan–Hölder theorem, and the factors are simple groups; the classification of the finite simple groups is therefore the classification of the atomic objects of finite group theory. The theorem states that every finite simple group belongs to one of four families: the cyclic groups of prime order, the alternating groups of degree at least five, the groups of Lie type, and the twenty-six sporadic groups. Its proof is the longest in mathematics, spread over some hundreds of research papers and ten to fifteen thousand pages, and its consequences pervade finite group theory, representation theory and combinatorics.
 
-This article is the seventeenth of the corpus and the eighth of the group articles, below the foundational layer and *Infinite Abelian Groups*, *Solvable and Nilpotent Groups*, *Combinatorial Group Theory*, *Infinite Groups*, *Coxeter Groups*, *Braid Groups* and *Group Cohomology*. It uses the solvable and nilpotent theory, the group actions of *Group Actions and Structure*, the symmetric groups of *Finite Groups and Symmetry*, and the cohomological machinery of *Group Cohomology* for the statements about automorphisms, Schur multipliers and extensions. The classification is stated here and its families described; the detailed construction of the groups of Lie type as abstract finite groups is the subject of the companion article *Finite Simple Groups of Lie Type*, written in parallel, and the algebraic-group and building-theoretic background belongs to Part II. This article is otherwise self-contained in the language of finite groups.
+This article is the seventeenth of the corpus and the eighth of the group articles, below the foundational layer and *Infinite Abelian Groups*, *Solvable and Nilpotent Groups*, *Combinatorial Group Theory*, *Infinite Groups*, *Coxeter Groups*, *Braid Groups* and *Group Cohomology*. It uses the solvable and nilpotent theory, the group actions of *Group Actions and Structure*, the symmetric groups, and the cohomological machinery of *Group Cohomology* for the statements about automorphisms, Schur multipliers and extensions. The classification is stated here and its families described; the detailed construction of the groups of Lie type as abstract finite groups is not treated here, and the algebraic-group and building-theoretic background belongs to Part II. This article is otherwise self-contained in the language of finite groups.
 
 ## Simple Groups and the Statement
 
@@ -68,7 +68,7 @@ together with the exceptional families $G_2(q)$, $F_4(q)$, $E_6(q)$, $E_7(q)$, $
 
 **Theorem.** The groups of Lie type are simple except for a finite list of small cases: $\mathrm{PSL}_2(2) \cong S_3$ and $\mathrm{PSL}_2(3) \cong A_4$ are not simple, $\mathrm{Sp}_4(2) \cong S_6$ is not simple while its derived subgroup $\mathrm{Sp}_4(2)' \cong A_6$ is, $\mathrm{PSU}_3(2)$ is solvable, and $G_2(2)$ and ${}^2G_2(3)$ are not simple while $G_2(2)' \cong \mathrm{PSU}_3(3)$ and ${}^2G_2(3)' \cong \mathrm{PSL}_2(8)$ are. The group ${}^2F_4(2)'$, the **Tits group**, is simple but is not itself a group of Lie type in the strict sense.
 
-The definitions of these groups as matrix groups require the theory of linear groups, which belongs to the Linear Spaces slot of this Part, and the theory of forms, which belongs to Part II; both are deferred here. The companion article *Finite Simple Groups of Lie Type*, written in this same batch, treats them as abstract finite groups with their orders and their simplicity, and the facts about those orders and that simplicity quoted in this article are the standard ones.
+The definitions of these groups as matrix groups require the theory of linear groups, which belongs to the Linear Spaces slot of this Part, and the theory of forms, which belongs to Part II; both are deferred here. The companion articlewritten in this same batch, treats them as abstract finite groups with their orders and their simplicity, and the facts about those orders and that simplicity quoted in this article are the standard ones.
 
 ### Small Coincidences and the Exceptional Isomorphisms
 
@@ -82,7 +82,7 @@ $$
 \mathrm{PSL}_2(7) \cong \mathrm{PSL}_3(2), \qquad \mathrm{PSU}_4(2) \cong \mathrm{PSp}_4(3), \qquad G_2(2)' \cong \mathrm{PSU}_3(3), \qquad {}^2G_2(3)' \cong \mathrm{PSL}_2(8),
 $$
 
-and among the small non-simple members $A_4 \cong \mathrm{PSL}_2(3)$, $S_4 \cong \mathrm{PGL}_2(3)$ and $S_6 \cong \mathrm{Sp}_4(2)$. The list of coincidences is part of the classification: an isomorphism of abstract groups between members of different families must be registered, or the "list" of simple groups would count $A_5$ twice. The identification of $\mathrm{PSL}$, $\mathrm{PSp}$, $\mathrm{PSU}$ and $\mathrm{P}\Omega$ with the Chevalley and twisted families of the corresponding Dynkin diagrams is standard and is treated in the companion article *Finite Simple Groups of Lie Type*, written in this same batch, so that each abstract simple group has exactly one name in the final list.
+and among the small non-simple members $A_4 \cong \mathrm{PSL}_2(3)$, $S_4 \cong \mathrm{PGL}_2(3)$ and $S_6 \cong \mathrm{Sp}_4(2)$. The list of coincidences is part of the classification: an isomorphism of abstract groups between members of different families must be registered, or the "list" of simple groups would count $A_5$ twice. The identification of $\mathrm{PSL}$, $\mathrm{PSp}$, $\mathrm{PSU}$ and $\mathrm{P}\Omega$ with the Chevalley and twisted families of the corresponding Dynkin diagrams is standard, so that each abstract simple group has exactly one name in the final list.
 
 **Proposition.** The number of isomorphism classes of finite simple groups of order at most $N$ is finite for every $N$, and the classification determines it; the number of finite simple groups of order at most $100$ is $26$: the $25$ cyclic groups of prime order at most $100$ and $A_5$.
 
@@ -171,7 +171,7 @@ The chronology of the classification is itself part of its content. The Feit–T
 
 A finite simple group is one with no nontrivial proper normal subgroup, and by Jordan–Hölder the finite groups are built from simple ones and extensions. The classification states that every finite simple group is cyclic of prime order, alternating of degree at least five, of Lie type, or one of the twenty-six sporadic groups; the groups of Lie type form sixteen infinite families, with a finite list of isomorphisms and solvable exceptions among the small members, and the sporadic groups include the five Mathieu groups, the Conway and Leech-related groups, the Fischer groups, the pariahs and the Monster.
 
-The Feit–Thompson odd order theorem — every finite group of odd order is solvable — implies that every nonabelian finite simple group has even order and hence contains an involution, which makes the local analysis of involution centralisers the engine of the proof; Burnside's $p^aq^b$ theorem rules out orders with two prime factors. The original proof is scattered over many papers; the Gorenstein–Lyons–Solomon series reorganises it into a structured second-generation proof, completed with the quasithin case of Aschbacher and Smith. The smallest nonabelian simple group is $A_5$ of order $60$, and there is no nonabelian simple group of order less than $60$. The classification determines the automorphism groups (the Schreier conjecture) and the Schur multipliers of all finite simple groups, and it underlies the classification of finite permutation groups. The detailed construction of the groups of Lie type is the subject of the companion article *Finite Simple Groups of Lie Type*.
+The Feit–Thompson odd order theorem — every finite group of odd order is solvable — implies that every nonabelian finite simple group has even order and hence contains an involution, which makes the local analysis of involution centralisers the engine of the pro; Burnside's $p^aq^b$ theorem rules out orders with two prime factors. The original proof is scattered over many papers; the Gorenstein–Lyons–Solomon series reorganises it into a structured second-generation pro, completed with the quasithin case of Aschbacher and Smith. The smallest nonabelian simple group is $A_5$ of order $60$, and there is no nonabelian simple group of order less than $60$. The classification determines the automorphism groups (the Schreier conjecture) and the Schur multipliers of all finite simple groups, and it underlies the classification of finite permutation groups. The detailed construction of the groups of Lie type is not covered here.
 
 ## Summary of Notation
 
@@ -190,6 +190,12 @@ The Feit–Thompson odd order theorem — every finite group of odd order is sol
 | $\mathbb{B}, \mathbb{M}$ | Baby Monster and Monster |
 | $\mathrm{Out}(S) = \mathrm{Aut}(S)/\mathrm{Inn}(S)$ | Outer automorphism group |
 | $M(S) = H_2(S,\mathbb{Z})$ | Schur multiplier |
+
+
+
+
+
+
 
 ## Further Reading
 

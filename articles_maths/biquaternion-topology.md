@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article collects the standard topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its group of units, using the algebra and fixed-point subspaces of *Biquaternion Algebra*, the norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and invertibility criterion of *Biquaternion Norm and Invertibility*, the zero divisor set of *Biquaternion Zero Divisors*, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ with $N=\det$ of *Biquaternion Algebraic Representations*, the projective picture of *Biquaternion Null Quadric and Projective Geometry*, and *Lie Groups*. No physics is invoked and no new result is claimed.
+This article collects the standard topology of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ and its group of units, using the algebra and fixed-point subspaces of *Biquaternion Algebra*, the norm form $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ and invertibility criterion of *Biquaternion Norm and Invertibility*, the zero divisor set of *Biquaternion Zero Divisors*, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ with $N=\det$ of *Biquaternion Algebraic Representations*, the projective picture, and *Lie Groups*. No physics is invoked and no new result is claimed.
 
 **Conventions.** The units are $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, the central scalar imaginary is $i$, and $\tilde{Q}=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu=q_\mu+iq'_\mu\in\mathbb{C}$. The norm form is $N(\tilde{Q})=\sum_\mu Q_\mu^2$ and the Euclidean norm is $\|\tilde{Q}\|_E=(\sum_\mu|Q_\mu|^2)^{1/2}$.
 
@@ -132,7 +132,7 @@ $$
 Q\cong P^1\times P^1\cong S^2\times S^2.
 $$
 
-Thus $Q$ is compact, connected and simply connected, of real dimension $4$, with $b_2(Q)=2$ and $\chi(Q)=4$; see *Biquaternion Null Quadric and Projective Geometry* for the projective details. The two factors of $P^1\times P^1$ are the **two rulings**: the lines $\{[u]\}\times P(S)$ and the lines $P(S)\times\{[v]\}$. Each point of $Q$ lies on exactly one line of each ruling, lines of the same ruling are disjoint, and lines of different rulings meet in one point.
+Thus $Q$ is compact, connected and simply connected, of real dimension $4$, with $b_2(Q)=2$ and $\chi(Q)=4$, for the projective details. The two factors of $P^1\times P^1$ are the **two rulings**: the lines $\{[u]\}\times P(S)$ and the lines $P(S)\times\{[v]\}$. Each point of $Q$ lies on exactly one line of each ruling, lines of the same ruling are disjoint, and lines of different rulings meet in one point.
 
 **Grassmannian description.** Since $P(S)=\operatorname{Gr}(1,S)$ is the Grassmannian of lines in $S\cong\mathbb{C}^2$,
 
@@ -351,6 +351,8 @@ while $SU(2)$ and $SL(2,\mathbb{C})$ are their own universal covers. By Hurewicz
 | $P^1 \times P^1 \cong S^2 \times S^2$ | Projectivised null cone (Segre variety), with its two rulings |
 | Light cone in $\mathbb{M}_\pm$ | Real slice of the null cone, with link $S^2 \sqcup S^2$ |
 | $\pi_k$ | Homotopy groups of the spaces above |
+
+
 
 ## Further Reading
 

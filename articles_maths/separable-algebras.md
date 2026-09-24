@@ -5,7 +5,7 @@
 
 A **separable algebra** is an algebra whose multiplication remains as well behaved as possible under every extension of scalars. Over a field it is the same condition as semisimplicity when the field is perfect, and in general it adds to semisimplicity the requirement that the centre be a product of separable field extensions; over a commutative ring it is the condition that the multiplication map split as a map of bimodules, and it becomes the algebraic theory of the **Azumaya algebra** and the **étale algebra**, the two notions that generalise central simple algebras and finite separable field extensions from a field to a ring.
 
-The article is the third of the structure-theoretic articles of the category. It follows *Central Simple Algebras and the Brauer Group* and *Crossed Products*, whose objects it re-reads as the central separable algebras over a field and over a ring, and it precedes the representation-theoretic layer that begins with *Frobenius Algebras*. The separable field extension is treated first, by the elementary test on minimal polynomials, because it is the case in which the definition can be checked directly; the algebra definition is then given, first over a field and then over a commutative ring, and the two are shown to agree.
+The article is the third of the structure-theoretic articles of the category. It follows *Central Simple Algebras and the Brauer Group* and *Crossed Products*, whose objects it re-reads as the central separable algebras over a field and over a ring, and it precedes the representation-theoretic layer that begins. The separable field extension is treated first, by the elementary test on minimal polynomials, because it is the case in which the definition can be checked directly; the algebra definition is then given, first over a field and then over a commutative ring, and the two are shown to agree.
 
 The article is algebraic throughout. The trace form of a field extension, the discriminant of a form, and the non-degeneracy of a bilinear pairing are tools of Part II, where bilinear and quadratic forms are introduced; where the classical theory would use them, this article substitutes the resultant of two polynomials and explicit polynomial identities, which are available here. The étale algebras are the commutative separable algebras of this article; their sheaf-theoretic description over a site belongs to the later Part, and the affine morphisms that they model belong to algebraic geometry.
 
@@ -123,7 +123,7 @@ $$
 A \ \text{is separable over } R \iff (f, f') = R[x] \iff \operatorname{Res}(f, f') \in R^\times ,
 $$
 
-where $\operatorname{Res}$ is the resultant, the determinant of the Sylvester matrix of $f$ and $f'$, as in *The Determinant and Alternating Forms*. The first equivalence is the classical Jacobian criterion for a polynomial quotient and the second holds because the resultant generates the ideal of $R$ cut out by $(f,f')$. For $R = \mathbb{Z}$ and $f = x^2+1$ the resultant is $\operatorname{Res}(x^2+1,2x) = 4$, so $\mathbb{Z}[x]/(x^2+1) = \mathbb{Z}[i]$ is separable over $\mathbb{Z}[\tfrac12]$ but not over $\mathbb{Z}$; over $\mathbb{F}_2$ the polynomial becomes $(x+1)^2$ and the algebra acquires nilpotents, which is the failure of separability made visible.
+where $\operatorname{Res}$ is the resultant, the determinant of the Sylvester matrix of $f$ and $f'$. The first equivalence is the classical Jacobian criterion for a polynomial quotient and the second holds because the resultant generates the ideal of $R$ cut out by $(f,f')$. For $R = \mathbb{Z}$ and $f = x^2+1$ the resultant is $\operatorname{Res}(x^2+1,2x) = 4$, so $\mathbb{Z}[x]/(x^2+1) = \mathbb{Z}[i]$ is separable over $\mathbb{Z}[\tfrac12]$ but not over $\mathbb{Z}$; over $\mathbb{F}_2$ the polynomial becomes $(x+1)^2$ and the algebra acquires nilpotents, which is the failure of separability made visible.
 
 **Example (group algebras and Maschke).** For a finite group $G$ and a field $F$, the group algebra $F[G]$ is separable over $F$ if and only if $\operatorname{char} F$ does not divide $\lvert G\rvert$. The separability idempotent is
 
@@ -131,7 +131,7 @@ $$
 e = \frac{1}{\lvert G\rvert}\sum_{g\in G} g \otimes g^{-1} ,
 $$
 
-which lies in $F[G]\otimes_F F[G]^{\mathrm{op}}$ exactly when $\lvert G\rvert$ is invertible, and it satisfies $\mu(e) = 1$ and the bimodule condition. This is the algebra-level form of Maschke's theorem, and it is developed in *Group Algebras* and *Representations of Groups*.
+which lies in $F[G]\otimes_F F[G]^{\mathrm{op}}$ exactly when $\lvert G\rvert$ is invertible, and it satisfies $\mu(e) = 1$ and the bimodule condition. This is the algebra-level form of Maschke's theorem, and it is developed .
 
 ## Central Separable Algebras and Azumaya Algebras
 
@@ -216,6 +216,8 @@ An **Azumaya algebra** is a central separable algebra over a commutative ring; o
 | $F[G]$ | group algebra; separable iff $\lvert G\rvert \in F^\times$ |
 | perfect field | every algebraic extension is separable |
 | $\mathbb{Z}[i] = \mathbb{Z}[x]/(x^2+1)$ | étale over $\mathbb{Z}[\tfrac12]$, not over $\mathbb{Z}$ |
+
+
 
 ## Further Reading
 

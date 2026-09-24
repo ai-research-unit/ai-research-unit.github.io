@@ -5,7 +5,7 @@
 
 The ideal theory of an algebra records its quotients; the group $\operatorname{Aut}_R(A)$ of its $R$-algebra automorphisms and the Lie algebra $\operatorname{Der}_R(A)$ of its derivations record its symmetries and their infinitesimal counterparts. This article develops both, together with the relation between them: inner automorphisms, the normal subgroup they form, the outer automorphism group that results, the derivation algebra with its bracket, the inner derivations, and the exponential that passes from one to the other when the ground ring permits.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra. Automorphisms are $R$-algebra automorphisms, so they are $R$-linear and multiplicative; the ground ring is named whenever the group depends on it. The pair $(\operatorname{Aut}_R(A), \operatorname{Der}_R(A))$ is the algebra analogue of a Lie group and its Lie algebra, and over a general ring only the algebraic shadow of that correspondence survives; the analytic version requires the topology of a topological or Banach algebra, supplied in *Topological Algebras and Banach Algebras*.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $A$ is an $R$-algebra. Automorphisms are $R$-algebra automorphisms, so they are $R$-linear and multiplicative; the ground ring is named whenever the group depends on it. The pair $(\operatorname{Aut}_R(A), \operatorname{Der}_R(A))$ is the algebra analogue of a Lie group and its Lie algebra, and over a general ring only the algebraic shadow of that correspondence survives; the analytic version requires the topology of a topological or Banach algebra, supplied in Part II.
 
 No metric structure is part of the data of an algebra. An automorphism preserves addition, scalar multiplication and the product, and nothing else; lengths, angles and norm forms are extra structures that an algebra automorphism need not preserve. The final section makes that point with an example.
 
@@ -111,7 +111,7 @@ $$
 \operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong GL_2(\mathbb{C})/\mathbb{C}^\times = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C}).
 $$
 
-Over $\mathbb{R}$ the group is larger, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, the extra coset supplied by complex conjugation. The two ground fields and the Skolem–Noether theorem behind the first case are worked out in *Biquaternion Automorphisms and Derivations*.
+Over $\mathbb{R}$ the group is larger, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, the extra coset supplied by complex conjugation. The two ground fields and the Skolem–Noether theorem behind the first case are worked out in Part IV.
 
 **Matrix algebras.** Let $k$ be a field. Every $k$-algebra automorphism of $M_n(k)$ is inner:
 
@@ -255,7 +255,7 @@ $$
 
 the Lie algebra of the automorphism group $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong SO(3)$ computed above.
 
-**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are in *Biquaternion Automorphisms and Derivations*.
+**Example ($\mathbb{B}$).** The biquaternion algebra is $M_2(\mathbb{C})$ over $\mathbb{C}$, so every $\mathbb{C}$-linear derivation is inner and $\operatorname{Der}_{\mathbb{C}}(\mathbb{B}) \cong \mathfrak{sl}_2(\mathbb{C})$, of complex dimension $3$. Over $\mathbb{R}$ the same space results, because $\mathbb{R}$-linear derivations of $\mathbb{B}$ are automatically $\mathbb{C}$-linear: the centre $\mathbb{C}_{\mathbb{B}}$ is a finite separable field extension of $\mathbb{R}$ and admits no nonzero derivation. The details, including the identification with the traceless part, are.
 
 ## The Exponential Correspondence
 
@@ -293,7 +293,7 @@ $$
 
 This is the identity $\mathrm{Ad}_{e^a} = e^{\mathrm{ad}_a}$ of the adjoint representation, valid whenever both sides converge or whenever $a$ is nilpotent.
 
-**Failure over a general ring.** The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the series $\sum \delta^k/k!$ need not terminate and need not converge, and the coefficients $1/k!$ need not make sense: over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group requires the topological completeness of a Banach algebra, treated in *Topological Algebras and Banach Algebras*. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.
+**Failure over a general ring.** The exponential is not available over an arbitrary commutative ring. If $\delta$ is not nilpotent the series $\sum \delta^k/k!$ need not terminate and need not converge, and the coefficients $1/k!$ need not make sense: over a field of characteristic $p > 0$ the integer $k!$ vanishes for $k \geq p$. There is then no map from derivations to automorphisms in general, and the passage from the Lie algebra to the group requires the topological completeness of a Banach algebra, treated. Nilpotent derivations are the case in which the exponential survives over any $\mathbb{Q}$-algebra, and that is the case used in practice.
 
 ## What an Algebra Automorphism Does Not Preserve
 
@@ -301,7 +301,7 @@ The data of an $R$-algebra $A$ are the module structure and the product. An auto
 
 **Example.** The automorphism $\varphi(\varepsilon) = d\varepsilon$ of $\mathbb{D}'$, $d \neq 1$, has matrix $\begin{pmatrix} 1 & 0 \\ 0 & d \end{pmatrix}$ in the basis $\{1, \varepsilon\}$. It preserves the product because it fixes $1$ and scales $\varepsilon$, but it changes the Euclidean norm: $\|\varphi(\varepsilon)\|_E = |d|$ while $\|\varepsilon\|_E = 1$.
 
-**Example.** Complex conjugation $\kappa$ on $\mathbb{C}$ is an $\mathbb{R}$-algebra automorphism and preserves the quadratic form $a^2 + b^2$, but this is a coincidence of the two-dimensional case, not a general property. On $\mathbb{B} \cong M_2(\mathbb{C})$ the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the determinant of the matrix image (*Worked Examples in the Biquaternion Algebra*), so **every** inner automorphism preserves it, conjugation by a matrix leaving the determinant unchanged. The automorphism that moves the norm form is the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients, which satisfies $N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})}$ and is not inner; on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, $\sigma$ is the identity and $N$ is preserved.
+**Example.** Complex conjugation $\kappa$ on $\mathbb{C}$ is an $\mathbb{R}$-algebra automorphism and preserves the quadratic form $a^2 + b^2$, but this is a coincidence of the two-dimensional case, not a general property. On $\mathbb{B} \cong M_2(\mathbb{C})$ the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the determinant of the matrix image , so **every** inner automorphism preserves it, conjugation by a matrix leaving the determinant unchanged. The automorphism that moves the norm form is the complex conjugation $\sigma(\tilde{Q}) = \tilde{Q}^{*}$ of the coefficients, which satisfies $N(\tilde{Q}^{*}) = \overline{N(\tilde{Q})}$ and is not inner; on the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$, where the coefficients are real, $\sigma$ is the identity and $N$ is preserved.
 
 The group of transformations preserving a quadratic form or an inner product is therefore a different object, generally not contained in $\operatorname{Aut}_R(A)$. Norm-preserving maps and isometries belong to the theory of quadratic forms and Clifford algebras, and are treated in category 14; the algebra automorphism group is the layer below them.
 
@@ -338,6 +338,8 @@ An algebra automorphism preserves the product and nothing more; a norm form, an 
 | $\mathbb{H}$, $\mathbb{B}$ | Quaternions and biquaternions |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace of $\mathbb{B}$ |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form of $\mathbb{B}$; the determinant of the matrix image |
+
+
 
 ## Further Reading
 

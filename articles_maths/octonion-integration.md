@@ -5,7 +5,7 @@
 
 This article is the integration slot of the octonion system. It treats the integration of octonion-valued functions: the boundary integrals of hypercomplex analysis, the Stokes and divergence theorems for the octonionic Cauchy–Riemann operator, the Cauchy integral theorem and its invariance under deformation of the contour, the jump formulas for the boundary values of the Cauchy integral, and the exact places where non-associativity changes the classical theory.
 
-The article is the octonion member of the integration slots of this Part and follows the model of the written *Quaternion Integration* and *Split-Quaternion Integration*, together with the Cauchy theory of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. It takes the operator $D$, the kernel $E$, the monogenic class and the Cauchy–Pompeiu formula from *Octonion Analysis* and does not repeat them; the object here is the integral as an operation. The harmonic analysis on $\mathbb{O}$ is the subject of *Octonion Harmonic Analysis* and the functions of the next slot of *Octonion Special Functions*.
+The article is the octonion member of the integration slots of this Part and follows the model of the *Quaternion Integration* and *Split-Quaternion Integration*, together with the Cauchy theory of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. It takes the operator $D$, the kernel $E$, the monogenic class and the Cauchy–Pompeiu formula from *Octonion Analysis* and does not repeat them; the object here is the integral as an operation. The harmonic analysis on $\mathbb{O}$ is the subject, and the functions of the next slot.
 
 **Conventions.** As in *Octonion Analysis*: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $x = \sum_kx_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$, norm $\lvert x\rvert^2 = x\bar x$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(x) = \bar x/(\omega_7\lvert x\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.
 
@@ -123,7 +123,7 @@ is not in general equal to $\mathcal{C}f$ or to a constant multiple of $f$, and 
 
 *Proof.* The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(y-x),n(y),E(z-y)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral. $\square$
 
-This is the integration-theoretic face of the failure of the Leibniz rule of *Octonion Analysis*: the Cauchy integral is a good operator, but it is not an idempotent projector, and the space of boundary values is not an algebra of holomorphic-type functions in the sense of the complex theory. The harmonic analysis of *Octonion Harmonic Analysis* takes the place of the missing function algebra in the spectral description.
+This is the integration-theoretic face of the failure of the Leibniz rule of *Octonion Analysis*: the Cauchy integral is a good operator, but it is not an idempotent projector, and the space of boundary values is not an algebra of holomorphic-type functions in the sense of the complex theory. The harmonic analysis takes the place of the missing function algebra in the spectral description.
 
 ## Integrals on the Sphere and Orthogonality
 
@@ -133,7 +133,7 @@ This is the integration-theoretic face of the failure of the Leibniz rule of *Oc
 
 *Proof.* Harmonicity is $D\bar D = \Delta_8$; the eigenvalue statement is the standard separation of variables for a homogeneous harmonic polynomial of degree $k$ in eight variables, where the radial equation is $r^{-k-6}(r^8(r^{-k}v)')' = 0$ and gives the shift $k+6$. Orthogonality of different degrees is the standard orthogonality of spherical harmonics; finite-dimensionality is the finite-dimensionality of the space of polynomials of bounded degree. $\square$
 
-The shift $k+6$ is the octonionic case of the general rule $k+n-2$ for spherical harmonics in $n$ variables with $n = 8$; the dimension of $\mathcal{P}_k$ is computed by the theory of the next article, and the orthogonal decomposition of $L^2(S^7)$ into the spaces $\mathcal{P}_k$ is the subject of *Octonion Harmonic Analysis*.
+The shift $k+6$ is the octonionic case of the general rule $k+n-2$ for spherical harmonics in $n$ variables with $n = 8$; the dimension of $\mathcal{P}_k$ is computed by the theory of the harmonic analysis of the octonions, and the orthogonal decomposition of $L^2(S^7)$ into the spaces $\mathcal{P}_k$ is not covered here.
 
 **Proposition.** For a left-monogenic function $f$ on a ball of radius $r$ the surface integral of $f$ over the sphere is computable from the value at the centre,
 
@@ -203,6 +203,10 @@ The single structural difference from the associative cases is therefore the fai
 | $(\mathcal{C}f)^\pm$ | Boundary values from outside and inside |
 | $\mathcal{P}_k$ | Left-monogenic homogeneous polynomials of degree $k$ |
 | $[x,y,z]$, $[x,y]$ | Associator and commutator |
+
+
+
+
 
 ## Further Reading
 

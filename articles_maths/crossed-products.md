@@ -19,7 +19,7 @@ $$
 A^G = \{a \in A : \alpha_\sigma(a) = a \ \text{for all } \sigma \in G\},
 $$
 
-a unital subalgebra of $A$. If $A = \prod_i A_i$ is a product of algebras, an automorphism permutes the factors; the action is **faithful** if $\alpha_\sigma \neq \mathrm{id}$ for $\sigma \neq 1$, and it is **inner** if each $\alpha_\sigma$ is the inner automorphism $a \mapsto u_\sigma a u_\sigma^{-1}$ for some unit $u_\sigma \in A^\times$. Inner actions are the ones that already live inside $A$, and they lead to the identification $A \rtimes_c G \cong A \otimes_F F^\alpha G$ in the cases where the units can be chosen consistently; the general theory of automorphisms is that of *Automorphisms and Derivations of Algebras*.
+a unital subalgebra of $A$. If $A = \prod_i A_i$ is a product of algebras, an automorphism permutes the factors; the action is **faithful** if $\alpha_\sigma \neq \mathrm{id}$ for $\sigma \neq 1$, and it is **inner** if each $\alpha_\sigma$ is the inner automorphism $a \mapsto u_\sigma a u_\sigma^{-1}$ for some unit $u_\sigma \in A^\times$. Inner actions are the ones that already live inside $A$, and they lead to the identification $A \rtimes_c G \cong A \otimes_F F^\alpha G$ in the cases where the units can be chosen consistently; the general theory of automorphisms is .
 
 ### The skew group ring
 
@@ -97,7 +97,7 @@ The last computation is the one used in the central simple case below: when $A =
 
 ### The group algebra as a crossed product
 
-Take $A = F$ with the trivial action and $c \equiv 1$. Then $A \rtimes_c G$ has basis the $u_\sigma$ with $u_\sigma u_\tau = u_{\sigma\tau}$, so it is the group algebra $F[G]$ of *Group Algebras*. More generally, a twisted group algebra is the case of trivial action with a nontrivial factor set, and a skew group ring is the case of trivial factor set with a nontrivial action. The two generalisations are independent and may be combined: the crossed product is exactly what is needed when the group elements fail to multiply correctly up to scalars, and it reduces to the group algebra in the two trivial cases.
+Take $A = F$ with the trivial action and $c \equiv 1$. Then $A \rtimes_c G$ has basis the $u_\sigma$ with $u_\sigma u_\tau = u_{\sigma\tau}$, so it is the group algebra $F[G]$. More generally, a twisted group algebra is the case of trivial action with a nontrivial factor set, and a skew group ring is the case of trivial factor set with a nontrivial action. The two generalisations are independent and may be combined: the crossed product is exactly what is needed when the group elements fail to multiply correctly up to scalars, and it reduces to the group algebra in the two trivial cases.
 
 ## Twisted Group Algebras
 
@@ -123,7 +123,7 @@ $$
 
 *Proof (sketch).* The averaging argument of Maschke applies to the regular representation of $G$ on $F^\alpha G$ because the group elements act by semilinear maps with respect to the twisted multiplication, and the average of an invariant projection exists since $\lvert G\rvert$ is invertible. Statement 2 is the Artin–Wedderburn theorem applied to the semisimple algebra $F^\alpha G$, whose simple modules are the irreducible $\alpha$-projective representations; the dimension count is the sum of the squares of their degrees, since the regular module is a direct sum of $d_\chi$ copies of each simple module of dimension $d_\chi$. $\square$
 
-The irreducible $F^\alpha G$-modules are exactly the **$\alpha$-projective representations** of $G$, the subject of the companion article *Projective Representations*; the twisted group algebra is the device that turns a projective representation of $G$ into an ordinary representation of an algebra.
+The irreducible $F^\alpha G$-modules are exactly the **$\alpha$-projective representations** of $G$; the twisted group algebra is the device that turns a projective representation of $G$ into an ordinary representation of an algebra.
 
 ### Examples
 
@@ -279,6 +279,10 @@ so the relative Brauer group is the second cohomology of the Galois group. The c
 | $(a,b)_F \cong F(\sqrt a)\rtimes_c \mathbb{Z}/2$ | quaternion algebra as a crossed product |
 | $\operatorname{Br}(L/F) \cong H^2(G,L^\times)$ | Noether–Deuring theorem |
 | $\operatorname{N}_{L/F}$ | norm of a field extension |
+
+
+
+
 
 ## Further Reading
 

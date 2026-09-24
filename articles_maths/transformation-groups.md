@@ -7,7 +7,7 @@ A group is an abstract object: a set with an associative multiplication, an iden
 
 Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields, unless a statement says otherwise; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The corpus default base is the commutative ring, so module statements below are made over $R$; where a field, characteristic zero, or the invertibility of $2$ is needed, this is said explicitly. No physics is invoked: a symmetry group here is a group of transformations of a mathematical object, never of a physical system.
 
-The elementary theory of groups — associativity, order and powers, subgroups, homomorphisms, cosets, normal subgroups and the isomorphism theorems — is assumed from *Groups*, and the notation of that article is kept. Two companion articles, *Group Actions and Structure* and *Generators, Presentations and Free Products*, are being written in parallel with this one and deepen, respectively, the orbit-theoretic and the combinatorial sides of the material introduced here.
+The elementary theory of groups — associativity, order and powers, subgroups, homomorphisms, cosets, normal subgroups and the isomorphism theorems — is assumed from *Groups*, and the notation of that article is kept. Two companion articles are written with this one and deepen, respectively, the orbit-theoretic and the combinatorial sides of the material introduced here.
 
 ## Transformations of a Set
 
@@ -151,7 +151,7 @@ $$
 
 The orbit is a subset of $X$; the stabiliser is a subgroup of $G$. The relation $x \sim y$ defined by $y \in \operatorname{Orb}(x)$ is an equivalence relation, since $x = e \cdot x$, since $y = a \cdot x$ gives $x = a^{-1} \cdot y$, and since $y = a \cdot x$, $z = b \cdot y$ give $z = (ba) \cdot x$. Hence the orbits partition $X$, and $X$ is the disjoint union of its orbits.
 
-If $X$ has a single orbit the action is **transitive**; if in addition every point stabiliser is trivial, so that $G$ acts on $X$ freely as well as transitively, the action is **sharply transitive**, and then $X$ may be identified with the underlying set of $G$. The systematic theory of orbits and stabilisers, the orbit–stabiliser theorem and its consequences for the structure of a finite group, is the subject of the companion article *Group Actions and Structure*.
+If $X$ has a single orbit the action is **transitive**; if in addition every point stabiliser is trivial, so that $G$ acts on $X$ freely as well as transitively, the action is **sharply transitive**, and then $X$ may be identified with the underlying set of $G$. The systematic theory of orbits and stabilisers, the orbit–stabiliser theorem and its consequences for the structure of a finite group, is not covered here.
 
 ### Equivariant Maps and Isomorphism of Actions
 
@@ -201,7 +201,7 @@ $$
 D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle,
 $$
 
-and every element is uniquely $r^i s^j$ with $0 \leq i < n$, $j \in \{0, 1\}$; the group is the semidirect product $C_n \rtimes C_2$ with $C_2$ acting by inversion. The finite dihedral groups are treated again, with their conjugacy classes and subgroups, in the applications article *Finite Groups and Symmetry*.
+and every element is uniquely $r^i s^j$ with $0 \leq i < n$, $j \in \{0, 1\}$; the group is the semidirect product $C_n \rtimes C_2$ with $C_2$ acting by inversion. The finite dihedral groups are treated aga, with their conjugacy classes and subgroups, in the applications article.
 
 ### The Symmetry Groups of the Platonic Solids
 
@@ -213,7 +213,7 @@ The linear symmetry group of each Platonic solid may be computed by permuting th
 | Cube, octahedron | dual; $8$ and $6$ vertices | $24 \cong S_4$ | $48 \cong S_4 \times C_2$ |
 | Dodecahedron, icosahedron | dual; $20$ and $12$ vertices | $60 \cong A_5$ | $120 \cong A_5 \times C_2$ |
 
-The orders are the numbers of signed permutation matrices preserving the corresponding figure in suitable coordinates; for the cube the rotations are the $24$ signed permutation matrices of determinant $1$. The finite rotation groups of $\mathbb{R}^3$ are exactly the rotational symmetry groups of these solids together with the cyclic and dihedral groups, a classification stated and used in *Finite Groups and Symmetry*.
+The orders are the numbers of signed permutation matrices preserving the corresponding figure in suitable coordinates; for the cube the rotations are the $24$ signed permutation matrices of determinant $1$. The finite rotation groups of $\mathbb{R}^3$ are exactly the rotational symmetry groups of these solids together with the cyclic and dihedral groups, a classification stated and used.
 
 ### Finite Subgroups of $O(2)$
 
@@ -225,7 +225,7 @@ The classification of the planar case is short enough to give in full, and it ex
 
 ## The Three Levels
 
-The realisation of a group as a transformation group is always with respect to a choice of structure on the set $X$, and the richer the structure, the smaller the group. There are three levels that matter for the later articles of the corpus.
+The realisation of a group as a transformation group is always with respect to a choice of structure on the set $X$, and the richer the structure, the smaller the group. There are three levels that matter for the other articles of this category.
 
 ### Transformations of a Set
 
@@ -259,7 +259,7 @@ $$
 A^{*} \Gamma A = \Gamma
 $$
 
-in all three cases, the star being transposition for the bilinear forms on a real or general field and conjugate transposition for the Hermitian form; $\Gamma$ is symmetric, Hermitian or alternating according to the case. The three families $O$, $U$, $Sp$, and the low-dimensional isomorphisms among them such as $Sp(1) \cong SU(2)$, are the subject of the companion applications article *Matrix Groups and Classical Groups*, written in parallel; the point here is only their position at the third level.
+in all three cases, the star being transposition for the bilinear forms on a real or general field and conjugate transposition for the Hermitian form; $\Gamma$ is symmetric, Hermitian or alternating according to the case. The three families $O$, $U$, $Sp$, and the low-dimensional isomorphisms among them such as $Sp(1) \cong SU(2)$, are the subject of the companion applications article; the point here is only their position at the third level.
 
 ### The Three Levels Compared
 
@@ -310,6 +310,12 @@ Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular
 | $GL(V) = \operatorname{Aut}_R(V)$ | General linear group of a module |
 | $O(V, g)$, $U(V, h)$, $Sp(V, \omega)$ | Groups of invertible linear maps preserving a form |
 | $G \hookrightarrow \operatorname{Sym}(G)$ | Cayley embedding by the left regular action |
+
+
+
+
+
+
 
 ## Further Reading
 

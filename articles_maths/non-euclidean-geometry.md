@@ -7,7 +7,7 @@ Non-Euclidean geometry is the name given to the geometries that satisfy all of E
 
 The organising idea is that the three geometries are one family, read through the sign of a single number. In the synthetic formulation, the three differ in the parallel postulate and in the angle sum of a triangle; in the analytic formulation, they are the three complete simply connected Riemannian manifolds of constant curvature $K > 0$, $K = 0$ and $K < 0$; in the trigonometric formulation, they are the three cases of the same law of cosines with the circular, linear and hyperbolic functions; and in the algebra-of-Part-I formulation, they are the geometries of the three two-dimensional algebras $\mathbb{C}$, $\mathbb{D}'$ and $\mathbb{D}$, whose generators square to $-1$, $0$ and $+1$. The article develops each of the four readings and shows that they agree, so that a statement in one language can be read in the others.
 
-The article assumes *Euclidean Geometry*, *Spherical Geometry* and *Hyperbolic Geometry*, which supply the three geometries in full, and *Curvature and Geodesics*, which supplies the curvature and the classification of the constant-curvature models. It uses *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the algebra trichotomy, *Metric, Uniform and Complete Spaces* for the metric and limit notions that the comparison uses (the limits being those of a sequence of metric spaces, which is the ordinary theory of Part I), *Groups* and *Group Actions and Structure* for the symmetry groups, and *Riemannian Geometry* for the space-form theorems. The general limit theory of a sequence of Riemannian manifolds, which is a different and more delicate object, is *Gromov–Hausdorff Convergence*, written later in this category and in parallel, and it is cited only as the vehicle for the flat limit; the analytic theory of hyperbolic volume and of the spectral geometry of the quotients is Part III's. No physics is invoked.
+The article assumes *Euclidean Geometry*, *Spherical Geometry* and *Hyperbolic Geometry*, which supply the three geometries in full, and *Curvature and Geodesics*, which supplies the curvature and the classification of the constant-curvature models. It uses *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the algebra trichotomy, *Metric, Uniform and Complete Spaces* for the metric and limit notions that the comparison uses (the limits being those of a sequence of metric spaces, which is the ordinary theory of Part I), *Groups* and *Group Actions and Structure* for the symmetry groups, and *Riemannian Geometry* for the space-form theorems. The general limit theory of a sequence of Riemannian manifolds, which is a different and more delicate object, iswritten and in parallel, and it is cited only as the vehicle for the flat limit; the analytic theory of hyperbolic volume and of the spectral geometry of the quotients is Part III's. No physics is invoked.
 
 ## The Three Geometries
 
@@ -99,7 +99,7 @@ The three geometries can be read from the three real two-dimensional algebras of
 
 **Proof sketch.** Transitivity on points and frames is the definition of a space of constant curvature and is verified in each case in the three articles; the dimensions are those of the groups $\mathbb{R}^2 \rtimes O(2)$, $O(3)$ and $PSL(2, \mathbb{R})$, all three-dimensional as Lie groups; the stabiliser identification is the classical fact that a frame at a point of a surface has two degrees of freedom. $\square$
 
-The three homogeneous spaces $E(2)/O(2)$, $O(3)/O(2)$ and $PSL(2, \mathbb{R})/O(2)$ are the three two-dimensional symmetric spaces of rank one, the first non-compact flat, the second compact and the third non-compact; they are the model cases of *Homogeneous Spaces* and *Symmetric Spaces*.
+The three homogeneous spaces $E(2)/O(2)$, $O(3)/O(2)$ and $PSL(2, \mathbb{R})/O(2)$ are the three two-dimensional symmetric spaces of rank one, the first non-compact flat, the second compact and the third non-compact; they are the model cases .
 
 ## The Model Comparison
 
@@ -201,6 +201,10 @@ The circumference and area of a circle grow as the circular, linear and hyperbol
 | $\sum\alpha_i = (n-2)\pi + K\Delta$ | Gauss–Bonnet for a geodesic polygon |
 | $\Pi(d) = 2\arctan(e^{-d})$ | Angle of parallelism; hyperbolic only |
 | Hilbert's theorem | No complete isometric embedding of $\mathbb{H}^2$ in $\mathbb{R}^3$ |
+
+
+
+
 
 ## Further Reading
 

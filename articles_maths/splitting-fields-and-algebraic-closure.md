@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A polynomial over a field need not have a root in that field, and the smallest extension in which all its roots appear is its **splitting field**. Splitting fields are the normal extensions, and they are the fields on which the Galois theory of the next articles operates. Taking the union of all such constructions over a field produces its **algebraic closure**, the field in which every nonconstant polynomial has a root and which is the natural ambient object for the study of extensions.
+A polynomial over a field need not have a root in that field, and the smallest extension in which all its roots appear is its **splitting field**. Splitting fields are the normal extensions, and they are the fields on which the Galois theory operates. Taking the union of all such constructions over a field produces its **algebraic closure**, the field in which every nonconstant polynomial has a root and which is the natural ambient object for the study of extensions.
 
 Two hypotheses control how well extensions behave. An irreducible polynomial may fail to have distinct roots, and a field in which this never happens is **perfect**; the failure is visible only in prime characteristic, and it is exactly the failure of the Frobenius map to be surjective. The second hypothesis is separability, and it is what makes a finite extension simple and what makes the counting of embeddings into an algebraic closure exact.
 
@@ -35,9 +35,9 @@ Condition (b) is a minimality condition: it says that no proper subfield of $K$ 
 
 **(c)** The splitting field of $x^3 - 2$ over $\mathbb{Q}$ is $\mathbb{Q}(\sqrt[3]{2}, \zeta_3)$, of degree $6$: the polynomial is irreducible by Eisenstein, so adjoining a root gives degree $3$, and the remaining factor $x^2 + \sqrt[3]{2}\,x + \sqrt[3]{4}$ has discriminant $-3\sqrt[3]{4}$, which is negative and therefore not a square in the real field $\mathbb{Q}(\sqrt[3]{2})$; the quadratic is thus irreducible over that field and the second step contributes degree $2$. The tower law gives $[K:\mathbb{Q}] = 6$.
 
-**(d)** The splitting field of $x^n - 1$ over $\mathbb{Q}$ is the cyclotomic field $\mathbb{Q}(\zeta_n)$ of *Galois Theory*.
+**(d)** The splitting field of $x^n - 1$ over $\mathbb{Q}$ is the cyclotomic field $\mathbb{Q}(\zeta_n)$.
 
-**(e)** The splitting field of $x^q - x$ over $\mathbb{F}_p$, where $q = p^m$, is the field $\mathbb{F}_q$ of *Finite Fields*.
+**(e)** The splitting field of $x^q - x$ over $\mathbb{F}_p$, where $q = p^m$, is the field $\mathbb{F}_q$.
 
 ### Existence
 
@@ -135,7 +135,7 @@ $$
 
 Hence the inequality is strict, and equality holds if and only if $K/F$ is separable. $\square$
 
-**Corollary.** A finite extension $K/F$ is separable if and only if $\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert = [K:F]$. A finite extension is Galois, in the sense of *Galois Theory*, exactly when it is normal and separable.
+**Corollary.** A finite extension $K/F$ is separable if and only if $\lvert \operatorname{Hom}_F(K, \overline{F}) \rvert = [K:F]$. A finite extension is Galois, in the sense, exactly when it is normal and separable.
 
 ---
 
@@ -176,7 +176,7 @@ by the freshman's dream, so the single root $\alpha$ has multiplicity $p$ and th
 
 **Theorem (primitive element theorem).** Every finite separable extension $K/F$ is simple: there is $\alpha \in K$ with $K = F(\alpha)$.
 
-**Proof sketch.** Suppose first that $F$ is finite. Then $K$ is a finite field, so $K^\times$ is cyclic by *Finite Fields*; if $\alpha$ generates $K^\times$ then every nonzero element of $K$ is a power of $\alpha$, and $K = F(\alpha)$.
+**Proof sketch.** Suppose first that $F$ is finite. Then $K$ is a finite field, so $K^\times$ is cyclic; if $\alpha$ generates $K^\times$ then every nonzero element of $K$ is a power of $\alpha$, and $K = F(\alpha)$.
 
 Assume now that $F$ is infinite. Since $K/F$ is separable, the number of $F$-embeddings $\sigma : K \to \overline{F}$ equals $[K:F]$. It suffices to find $\gamma \in K$ separated by these embeddings, that is, with $\sigma(\gamma) \neq \tau(\gamma)$ for all distinct $\sigma, \tau$: then the restrictions of the embeddings to $F(\gamma)$ are all distinct, so the separable field $F(\gamma)$ has at least $[K:F]$ $F$-embeddings, which forces $[F(\gamma):F] = [K:F]$ and hence $F(\gamma) = K$.
 
@@ -258,11 +258,11 @@ The union is a field because the $K_i$ form a chain, it is algebraic over $F$ by
 
 **(b)** $\overline{\mathbb{Q}}$, the field of algebraic numbers, is an algebraic closure of $\mathbb{Q}$: it is the union of the splitting fields of all polynomials over $\mathbb{Q}$, it is countable, and it is algebraically closed. Note that $\mathbb{C}$ is **not** an algebraic closure of $\mathbb{Q}$, because $\mathbb{C}/\mathbb{Q}$ is transcendental; it contains $\overline{\mathbb{Q}}$ as its algebraic part.
 
-**(c)** $\overline{\mathbb{F}_p} = \bigcup_{n \geq 1} \mathbb{F}_{p^n}$ is an algebraic closure of $\mathbb{F}_p$: each $\mathbb{F}_{p^n}$ is the splitting field of $x^{p^n} - x$, the union is a field, and every polynomial over $\mathbb{F}_p$ splits in some finite field by *Finite Fields*. It is countably infinite.
+**(c)** $\overline{\mathbb{F}_p} = \bigcup_{n \geq 1} \mathbb{F}_{p^n}$ is an algebraic closure of $\mathbb{F}_p$: each $\mathbb{F}_{p^n}$ is the splitting field of $x^{p^n} - x$, the union is a field, and every polynomial over $\mathbb{F}_p$ splits in some finite field. It is countably infinite.
 
 **(d)** If $\operatorname{char} F = p$ then $\overline{F}$ is perfect and contains $\mathbb{F}_p$; if $\operatorname{char} F = 0$ then $\overline{F}$ contains $\mathbb{Q}$.
 
-**Remark.** Every field embeds into an algebraically closed field, namely its algebraic closure, and every algebraically closed field is infinite. The algebraic closure is the smallest algebraically closed extension in the sense that it is algebraic: any algebraically closed extension of $F$ contains a copy of $\overline{F}$. The model-theoretic properties of algebraic closures, and the classification of algebraically closed fields by characteristic and transcendence degree, belong to *Algebraically Closed Fields*.
+**Remark.** Every field embeds into an algebraically closed field, namely its algebraic closure, and every algebraically closed field is infinite. The algebraic closure is the smallest algebraically closed extension in the sense that it is algebraic: any algebraically closed extension of $F$ contains a copy of $\overline{F}$. The model-theoretic properties of algebraic closures, and the classification of algebraically closed fields by characteristic and transcendence degree, belong.
 
 ---
 
@@ -302,6 +302,10 @@ An algebraic closure of $F$ is an algebraically closed algebraic extension; it e
 | $\mathbb{F}_p$, $\mathbb{F}_{p^n}$ | Finite fields |
 | $\overline{\mathbb{Q}}$ | Algebraic numbers |
 | $\varphi : F \to F'$ | Isomorphism of fields, extended to splitting fields and closures |
+
+
+
+
 
 ## Further Reading
 

@@ -4,7 +4,7 @@
 
 This article introduces the complex algebra as an algebraic structure, without yet discussing its representations. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugation.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The complex algebra is defined algebraically, and its identification with the plane is left for a later article.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The complex algebra is defined algebraically, and its identification with the plane is not covered here.
 
 ## The Complex Numbers
 
@@ -315,6 +315,8 @@ In the complex case, the norm form and the Hermitian form coincide, because the 
 | $\|z\|_E = \sqrt{z \bar{z}}$ | Euclidean norm |
 | $\mathbb{R}_{\mathbb{C}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $\mathbb{C}_{\mathbb{C}}$ | Complex subspace, fixed-point set of $\operatorname{id}$ |
+
+
 
 ## Further Reading
 

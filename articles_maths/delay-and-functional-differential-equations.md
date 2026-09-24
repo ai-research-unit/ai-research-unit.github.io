@@ -105,7 +105,7 @@ The example shows that a delay can destabilise a system that is stable without i
 
 *Proof.* The semigroup property is the uniqueness of the solution: the history of the solution at $t+s$ is the history of the solution starting from the history at $t$, and the initial-value problem with a history in $C$ has a unique solution. Strong continuity follows from the continuity of solutions in their initial history, which is the estimate of the next theorem. The compactness for $t \ge r$ is the Arzelà–Ascoli theorem: the operator $T(t)$ maps bounded subsets of $C$ to subsets that are uniformly bounded and equicontinuous, since the solution is Lipschitz on $[t-r,t]$ with a bound depending only on the norm of the history. $\square$
 
-The semigroup property places linear delay equations inside the theory of strongly continuous semigroups of bounded operators, which is developed for general evolution equations later in this Part; here it is used only to state the variation-of-constants formula, and the spectral theory of $T(t)$ is the spectral theory of the characteristic equation.
+The semigroup property places linear delay equations inside the theory of strongly continuous semigroups of bounded operators, which is developed for general evolution equations; here it is used only to state the variation-of-constants formula, and the spectral theory of $T(t)$ is the spectral theory of the characteristic equation.
 
 **Theorem (variation of constants for a delay equation).** Let $y$ solve the inhomogeneous equation $y'(t) = Ay(t) + By(t-r) + b(t)$ on $[\sigma,\infty)$ with history $\phi$ and with $b$ continuous. Then
 
@@ -272,6 +272,8 @@ A functional differential equation $y'(t) = f(t,y_t)$ has the same existence and
 | $L$ | Bounded linear map $C \to X$ of a linear functional equation |
 | $\eta$ | Matrix-valued measure representing $L$ |
 | Razumikhin condition | A decrease condition imposed when $V$ is at its historical maximum |
+
+
 
 ## Further Reading
 

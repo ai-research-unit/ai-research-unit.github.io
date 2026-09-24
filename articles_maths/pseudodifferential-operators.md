@@ -9,7 +9,7 @@ $$
 a(x,D)u(x)=\frac{1}{(2\pi)^n}\int_{\mathbb{R}^n}\int_{\mathbb{R}^n}e^{i(x-y)\cdot\xi}\,a(x,\xi)\,u(y)\,dy\,d\xi .
 $$
 
-The class of operators so obtained is closed under composition, under transposition and under the construction of parametrices, and it contains the differential operators, the inverses of elliptic operators and the smoothing operators, together with a calculus of symbols in which composition corresponds to an asymptotic expansion to all orders. The calculus is the natural home of the elliptic regularity of *Distributions and Fundamental Solutions*, and it is the technical foundation of the microlocal analysis of the following article: the principal symbol lives on the cotangent bundle, and its vanishing set is where the operator fails to be invertible.
+The class of operators so obtained is closed under composition, under transposition and under the construction of parametrices, and it contains the differential operators, the inverses of elliptic operators and the smoothing operators, together with a calculus of symbols in which composition corresponds to an asymptotic expansion to all orders. The calculus is the natural home of the elliptic regularity of *Distributions and Fundamental Solutions*, and it is the technical foundation of the microlocal analysis: the principal symbol lives on the cotangent bundle, and its vanishing set is where the operator fails to be invertible.
 
 The article begins with the **symbol classes** $S^m$ and the asymptotic summation that makes them an algebra; it defines the **quantisation** $a\mapsto a(x,D)$; it proves that the class is closed under composition and adjoint, with the Leibniz-type expansions
 
@@ -19,7 +19,7 @@ $$
 
 where $\{a,b\}$ is the Poisson bracket; it characterises **ellipticity** and constructs the **parametrix** by solving the composition equation order by order; it records the continuity on $L^2$ and on the Sobolev spaces, and Gårding's inequality; and it treats the **Weyl quantisation** and the invariance of the principal symbol under changes of coordinates, which is what allows the calculus to be carried to a manifold.
 
-Throughout, $\mathbb{K}=\mathbb{C}$ for symbols and operators, $x \in \mathbb{R}^n$ is the space variable and $\xi \in \mathbb{R}^n$ the frequency variable, $\alpha,\beta$ are multi-indices, and $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ is the derivative convention fixed in *Distributions and Fundamental Solutions*, so that the symbol of the differential operator $\sum_{|\alpha|\le m}a_\alpha(x)D^\alpha$ is $\sum a_\alpha(x)\xi^\alpha$. The Fourier transform and its normalisation, the distributions $\mathcal D'$, $\mathcal S'$ and their pairings, and the kernel $K(x,y)$ of an operator are those of *Distributions and Fundamental Solutions* and *The Schwartz Kernel Theorem*. The Bessel-potential spaces $H^s_p$ and their interpolation are those of *Interpolation Theory*. Ellipticity, the parametrix and elliptic regularity were stated for differential operators in *Distributions and Fundamental Solutions*; here they are proved in the symbol calculus. The Fredholm property of an elliptic operator, the index and its invariance are those of *Fredholm Theory*. The wavefront set, the propagation of singularities and the microlocal elliptic regularity are the subject of *Microlocal Analysis*; the $\hbar$-dependent form of the calculus, the semiclassical defect measures and Egorov's theorem are the subject of *Semiclassical Analysis*; and the elliptic boundary-value problems and the classical classification of second-order equations are those of *Partial Differential Equations* and *Sobolev Spaces and Weak Solutions*, in the extension of this Part. The principal symbols of the classical operators, and the Cauchy–Riemann operator $e_\mu\partial_\mu$, are treated in the algebra-valued analysis of this Part, in *Dirac Operators* and *Regularity and the Cauchy–Riemann Operator*.
+Throughout, $\mathbb{K}=\mathbb{C}$ for symbols and operators, $x \in \mathbb{R}^n$ is the space variable and $\xi \in \mathbb{R}^n$ the frequency variable, $\alpha,\beta$ are multi-indices, and $D^\alpha=(-i)^{|\alpha|}\partial^\alpha$ is the derivative convention fixed in *Distributions and Fundamental Solutions*, so that the symbol of the differential operator $\sum_{|\alpha|\le m}a_\alpha(x)D^\alpha$ is $\sum a_\alpha(x)\xi^\alpha$. The Fourier transform and its normalisation, the distributions $\mathcal D'$, $\mathcal S'$ and their pairings, and the kernel $K(x,y)$ of an operator are those of *Distributions and Fundamental Solutions* and *The Schwartz Kernel Theorem*. The Bessel-potential spaces $H^s_p$ and their interpolation are those of *Interpolation Theory*. Ellipticity, the parametrix and elliptic regularity were stated for differential operators in *Distributions and Fundamental Solutions*; here they are proved in the symbol calculus. The Fredholm property of an elliptic operator, the index and its invariance are those of *Fredholm Theory*. The wavefront set, the propagation of singularities and the microlocal elliptic regularity are not covered here; the $\hbar$-dependent form of the calculus, the semiclassical defect measures and Egorov's theorem are not covered here; and the elliptic boundary-value problems and the classical classification of second-order equations are those andin the extension of this Part. The principal symbols of the classical operators, and the Cauchy–Riemann operator $e_\mu\partial_\mu$, are treated in the algebra-valued analysis of this Part .
 
 No physics is invoked.
 
@@ -251,7 +251,7 @@ $$
 \operatorname{Re}\langle a(x,D)u,u\rangle \ge c'\|u\|_{H^{m/2}}^2-C\|u\|_{L^2}^2 .
 $$
 
-*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}a$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $a(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs to *Sobolev Spaces and Weak Solutions*. $\square$
+*Proof (sketch).* The sharp Gårding inequality is proved by writing $\operatorname{Re}a$ as a sum of squares modulo a symbol of order $0$, using a partition of the frequency space and a square-root argument for the positive homogeneous part; the elliptic case follows by applying the first to the order-one symbol $a(x,\xi)(1+|\xi|^2)^{-m/2}\langle\xi\rangle^{m}$ composed with a Bessel potential. The inequality is the analytic form of the positivity of an elliptic operator and it is the starting point of the existence theory for the Dirichlet problem, which belongs. $\square$
 
 ## Invariance and Operators on Manifolds
 
@@ -275,7 +275,7 @@ the action of the cotangent lift of $\kappa$; that is, the principal symbol is a
 
 **Theorem.** The pseudodifferential operators of finite order on $M$ form a filtered algebra under composition and adjoint, containing the differential operators, with principal-symbol map a homomorphism onto the homogeneous functions, and with a parametrix for every elliptic operator. Every elliptic operator on a closed manifold is Fredholm between the Sobolev spaces $H^s(M)$ and $H^{s-m}(M)$, and its kernel consists of smooth functions.
 
-The index of such an operator depends only on its principal symbol and is computed by the Atiyah–Singer theorem in *The Atiyah–Singer Index Theorem and K-Theory*; the wavefront set and the propagation of singularities refine the local statement to one on the cotangent bundle and are developed in *Microlocal Analysis*; and the $\hbar$-dependent calculus, in which the symbols are functions on phase space and the composition is governed by the Poisson bracket to leading order, is developed in *Semiclassical Analysis*.
+The index of such an operator depends only on its principal symbol and is computed by the Atiyah–Singer theorem in *The Atiyah–Singer Index Theorem and K-Theory*; the wavefront set and the propagation of singularities refine the local statement to one on the cotangent bundle and are developed; and the $\hbar$-dependent calculus, in which the symbols are functions on phase space and the composition is governed by the Poisson bracket to leading order, is developed.
 
 ## Summary
 
@@ -283,7 +283,7 @@ A symbol of order $m$ is a smooth function $a(x,\xi)$ satisfying $|\partial_\xi^
 
 The calculus is closed: $a(x,D)b(x,D)=c(x,D)$ with $c\sim\sum_\alpha\frac{1}{\alpha!}\partial_\xi^\alpha a\,D_x^\alpha b$, the leading term is the product of the principal symbols, and the commutator has leading order $m+m'-1$ with symbol $\frac1i\{a,b\}$, the Poisson bracket. The adjoint is $a^*(x,\xi)\sim\sum_\alpha\frac{1}{\alpha!}\partial_\xi^\alpha D_x^\alpha\overline{a}$. An elliptic symbol, one bounded below by $c(1+|\xi|)^m$ for large $|\xi|$, has a parametrix $b \in S^{-m}$ with $ab-1$ and $ba-1$ smoothing; hence an elliptic operator is invertible modulo smoothing, is Fredholm between Sobolev spaces, and obeys the elliptic regularity $au \in H^{s-m}_p\Rightarrow u \in H^s_p$, with the smooth case included.
 
-On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, and operators of order $m$ map $H^s_2$ to $H^{s-m}_2$, the $L^p$ version holding for the symbols whose derivatives are bounded, as for the elliptic operators; Gårding's inequality turns the ellipticity and a positivity hypothesis on the symbol into a lower bound for the quadratic form, $\operatorname{Re}\langle au,u\rangle\ge c'\|u\|^2_{H^{m/2}}-C\|u\|^2_{L^2}$. The principal symbol is invariant under diffeomorphisms and transforms by the cotangent lift, so the calculus is defined on any smooth manifold, where the operators form a filtered algebra with elliptic parametrices and Fredholm operators of finite index. The wavefront set and the propagation of singularities, the semiclassical calculus and the index theorem are the following articles' subjects.
+On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, and operators of order $m$ map $H^s_2$ to $H^{s-m}_2$, the $L^p$ version holding for the symbols whose derivatives are bounded, as for the elliptic operators; Gårding's inequality turns the ellipticity and a positivity hypothesis on the symbol into a lower bound for the quadratic form, $\operatorname{Re}\langle au,u\rangle\ge c'\|u\|^2_{H^{m/2}}-C\|u\|^2_{L^2}$. The principal symbol is invariant under diffeomorphisms and transforms by the cotangent lift, so the calculus is defined on any smooth manifold, where the operators form a filtered algebra with elliptic parametrices and Fredholm operators of finite index. The wavefront set and the propagation of singularities, the semiclassical calculus and the index theorem are not covered here' subjects.
 
 ## Summary of Notation
 
@@ -305,6 +305,12 @@ On $L^2$ the operators of order $0$ are bounded, by Calderón–Vaillancourt, an
 | $T^*M$, $\sigma_m(T)$ | cotangent bundle and principal symbol on a manifold |
 | $R_1,R_2$ | smoothing remainders |
 | $M_{x_k}$ | operator of multiplication by $x_k$ |
+
+
+
+
+
+
 
 ## Further Reading
 

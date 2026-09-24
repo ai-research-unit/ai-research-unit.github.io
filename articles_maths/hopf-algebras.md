@@ -5,9 +5,9 @@
 
 A Hopf algebra is an algebra and a coalgebra at once, tied together by the requirement that the comultiplication and the counit be algebra homomorphisms, and equipped with a single extra map — the **antipode** — that plays the role of inversion. The definition is the smallest algebraic structure in which one can add, multiply, and also split elements apart and read off a constant term, in a way that is compatible with the multiplication. Group algebras and universal enveloping algebras are the two primordial examples, and most of the constructions that look like "algebra plus a symmetry operation" — convolution algebras, the dual of a finite group algebra, quantum groups, and the combinatorics of the shuffle and quasi-shuffle products — are Hopf algebras.
 
-This article is the fifth of the category. It follows *Frobenius Algebras*, whose coalgebraic side it takes up and completes: a finite-dimensional Hopf algebra is Frobenius, and the Frobenius functional is precisely an integral. It precedes *Quantum Groups*, where the construction of this article is deformed by a parameter, and it is the algebraic theory of the quantum groups of Part II: the locally compact quantum groups, the von Neumann algebraic and $C^*$-algebraic versions, are a different subject, defined with a topology that this Part does not have, and they are deferred there.
+This article is the fifth of the category. It follows *Frobenius Algebras*, whose coalgebraic side it takes up and completes: a finite-dimensional Hopf algebra is Frobenius, and the Frobenius functional is precisely an integral. It precedeswhere the construction of this article is deformed by a parameter, and it is the algebraic theory of the quantum groups of Part II: the locally compact quantum groups, the von Neumann algebraic and $C^*$-algebraic versions, are a different subject, defined with a topology that this Part does not have, and they are deferred there.
 
-The article develops coalgebras and bialgebras first, so that the definition of a Hopf algebra can be stated coherently; then the antipode and its properties; then the examples, of which the group algebra and the enveloping algebra are the two that generate the theory; then integrals, the Hopf-algebraic Maschke theorem and the Frobenius structure; and finally the fundamental theorem of Hopf modules. Everything is over a field, and no notion of convergence, completion or topology is used: a formal power series algebra appears only as the algebraic object of *Formal Power Series and Completion*.
+The article develops coalgebras and bialgebras first, so that the definition of a Hopf algebra can be stated coherently; then the antipode and its properties; then the examples, of which the group algebra and the enveloping algebra are the two that generate the theory; then integrals, the Hopf-algebraic Maschke theorem and the Frobenius structure; and finally the fundamental theorem of Hopf modules. Everything is over a field, and no notion of convergence, completion or topology is used: a formal power series algebra appears only as the algebraic object.
 
 Throughout, $k$ is a field, all tensor products are over $k$, $H$ is a $k$-vector space, and we use **Sweedler notation**
 
@@ -137,7 +137,7 @@ $$
 \Delta(g) = g\otimes g, \qquad \varepsilon(g) = 1, \qquad S(g) = g^{-1},
 $$
 
-extended linearly. Coassociativity and the counit axioms are immediate from the group axioms; the antipode identity is $g^{-1}g = 1$. Thus *Group Algebras* describes a Hopf algebra, and the group-like elements are exactly the elements of $G$. The algebra is cocommutative, and it is commutative exactly when $G$ is abelian; when $G$ is abelian and $k$ contains the $\lvert G\rvert$-th roots of unity, the dual Hopf algebra is the group algebra of the dual group $\widehat G$, by Pontryagin duality for finite abelian groups.
+extended linearly. Coassociativity and the counit axioms are immediate from the group axioms; the antipode identity is $g^{-1}g = 1$. Thusdescribes a Hopf algebra, and the group-like elements are exactly the elements of $G$. The algebra is cocommutative, and it is commutative exactly when $G$ is abelian; when $G$ is abelian and $k$ contains the $\lvert G\rvert$-th roots of unity, the dual Hopf algebra is the group algebra of the dual group $\widehat G$, by Pontryagin duality for finite abelian groups.
 
 **Example (the universal enveloping algebra).** Let $\mathfrak{g}$ be a Lie algebra over $k$, with bracket $[\cdot,\cdot]$, and let
 
@@ -145,7 +145,7 @@ $$
 U(\mathfrak{g}) = T(\mathfrak{g})\big/\bigl(x\otimes y - y\otimes x - [x,y]\bigr)
 $$
 
-be its universal enveloping algebra, as in *Quotients of the Tensor Algebra*; the systematic theory of $U(\mathfrak{g})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the companion article *Universal Enveloping Algebras*, in the anti-symmetric category. Then $U(\mathfrak{g})$ is a Hopf algebra with
+be its universal enveloping algebra, as in *Quotients of the Tensor Algebra*; the systematic theory of $U(\mathfrak{g})$ and of the Poincaré–Birkhoff–Witt theorem is developed in the anti-symmetric category. Then $U(\mathfrak{g})$ is a Hopf algebra with
 
 $$
 \Delta(x) = x\otimes 1 + 1\otimes x, \qquad \varepsilon(x) = 0, \qquad S(x) = -x \qquad (x \in \mathfrak{g}),
@@ -169,7 +169,7 @@ $$
 \Delta(x_{ij}) = \sum_{\ell=1}^n x_{i\ell}\otimes x_{\ell j}, \qquad \varepsilon(x_{ij}) = \delta_{ij} .
 $$
 
-These formulas make $k[x_{ij}]$ a bialgebra, the comultiplication being the transpose of matrix multiplication; it is not a Hopf algebra, because the antipode would have to be built from the inverse of a matrix and a general matrix is not invertible. Inverting the determinant $D = \det(x_{ij})$ gives the algebra $k[x_{ij},D^{-1}]$, which is a Hopf algebra with $S(x_{ij})$ the $(j,i)$ entry of the inverse matrix, computed by the cofactor formula $S(x_{ij}) = (-1)^{i+j}D^{-1}M_{ji}$ where $M_{ji}$ is the complementary minor. This is the standard source of non-cocommutative examples, and it is the algebra that the quantum groups of the next article deform. The determinant and the minors are the algebraic constructions of *The Determinant and Alternating Forms*.
+These formulas make $k[x_{ij}]$ a bialgebra, the comultiplication being the transpose of matrix multiplication; it is not a Hopf algebra, because the antipode would have to be built from the inverse of a matrix and a general matrix is not invertible. Inverting the determinant $D = \det(x_{ij})$ gives the algebra $k[x_{ij},D^{-1}]$, which is a Hopf algebra with $S(x_{ij})$ the $(j,i)$ entry of the inverse matrix, computed by the cofactor formula $S(x_{ij}) = (-1)^{i+j}D^{-1}M_{ji}$ where $M_{ji}$ is the complementary minor. This is the standard source of non-cocommutative examples, and it is the algebra that the quantum groups deform. The determinant and the minors are the algebraic constructions.
 
 **Example (tensor products).** If $H_1, H_2$ are Hopf algebras then so is $H_1\otimes_k H_2$, with all structure maps applied componentwise and the product on the tensor product as in *Tensor Products of Algebras*; the antipode is $S_1\otimes S_2$. The dual of a tensor product is the tensor product of the duals when both factors are finite-dimensional.
 
@@ -199,7 +199,7 @@ This is the theorem that makes the Hopf algebra Frobenius, and the integral is e
 
 *Proof (sketch).* If $\varepsilon(\Lambda) \neq 0$ then normalising $\Lambda$ to have $\varepsilon(\Lambda) = 1$ and averaging over $H$ with the aid of the comultiplication produces a projection onto the invariants, which is the Maschke argument: for any surjection $M \to N$ of $H$-modules and any $k$-linear splitting $\sigma$, the averaged map $\tilde\sigma(n) = \Lambda_{(1)}\cdot\sigma(S(\Lambda_{(2)})\cdot n)$ is $H$-linear and still splits. Conversely, if $H$ is semisimple then the counit, which is a nonzero $H$-module map onto the trivial module, splits, and the image of $1$ under a splitting is a left integral with $\varepsilon(\Lambda)=1$. The equivalence with separability is the characterisation of separability by the splitting of the multiplication in *Separable Algebras*, applied to the Hopf algebra whose regular module is semisimple. $\square$
 
-**Corollary.** For a finite group $G$ and a field $k$, the group algebra $k[G]$ is semisimple as a Hopf algebra exactly when $\operatorname{char}k \nmid \lvert G\rvert$; the left integral is $\Lambda = \sum_{g\in G}g$ when $\operatorname{char}k = p \mid \lvert G\rvert$, and $\varepsilon(\Lambda) = \lvert G\rvert = 0$ in that case. This is Maschke's theorem in the form of *Representations of Groups*, and the integral is the element that would serve as a normalised average if $\lvert G\rvert$ were invertible. When $\operatorname{char}k = p \mid \lvert G\rvert$ the integral $\sum_g g$ lies in the socle of $k[G]$, which is the module-theoretic form of the failure of semisimplicity.
+**Corollary.** For a finite group $G$ and a field $k$, the group algebra $k[G]$ is semisimple as a Hopf algebra exactly when $\operatorname{char}k \nmid \lvert G\rvert$; the left integral is $\Lambda = \sum_{g\in G}g$ when $\operatorname{char}k = p \mid \lvert G\rvert$, and $\varepsilon(\Lambda) = \lvert G\rvert = 0$ in that case. This is Maschke's theorem in the form, and the integral is the element that would serve as a normalised average if $\lvert G\rvert$ were invertible. When $\operatorname{char}k = p \mid \lvert G\rvert$ the integral $\sum_g g$ lies in the socle of $k[G]$, which is the module-theoretic form of the failure of semisimplicity.
 
 ### The Frobenius structure
 
@@ -265,7 +265,7 @@ $$
 
 so the smash product is the localisation of the first Weyl algebra, the algebra of operators generated by multiplication by $y$ and the shift $x$. This is the standard illustration that a Hopf algebra action on an algebra can be encoded in a larger algebra with a commutation relation, and it is the pattern that the quantum groups repeat with a parameter $q$.
 
-The **quantum plane** is the algebra $k_q[x,y]$ with the single relation $yx = q\,xy$ for $q \in k^\times$. A group-like element $K$ acting by $K\cdot x = x$ and $K\cdot y = q^{-1}y$ extends to an algebra automorphism of $k_q[x,y]$, so the quantum plane is a module algebra over the group algebra $k[\mathbb{Z}]$, with $\mathbb{Z}$ generated by $K$; the smash product $k_q[x,y]\# k[\mathbb{Z}]$ is then an algebra generated by $x, y, K$ with the relations $yx = qxy$ and $KxK^{-1} = x$, $KyK^{-1} = q^{-1}y$. The general theory of these deformations, of the quantised enveloping algebras $U_q(\mathfrak{g})$ and of the quantum groups at roots of unity is developed in *Quantum Groups*, which is the next article; the present article supplies the undeformed structure that the deformation acts on.
+The **quantum plane** is the algebra $k_q[x,y]$ with the single relation $yx = q\,xy$ for $q \in k^\times$. A group-like element $K$ acting by $K\cdot x = x$ and $K\cdot y = q^{-1}y$ extends to an algebra automorphism of $k_q[x,y]$, so the quantum plane is a module algebra over the group algebra $k[\mathbb{Z}]$, with $\mathbb{Z}$ generated by $K$; the smash product $k_q[x,y]\# k[\mathbb{Z}]$ is then an algebra generated by $x, y, K$ with the relations $yx = qxy$ and $KxK^{-1} = x$, $KyK^{-1} = q^{-1}y$. The general theory of these deformations, of the quantised enveloping algebras $U_q(\mathfrak{g})$ and of the quantum groups at roots of unity is developed, which is not covered here; the present article supplies the undeformed structure that the deformation acts on.
 
 **Boundary note.** The word *quantum group* also names the locally compact quantum groups, which are objects of operator algebra theory defined by a comultiplication on a von Neumann algebra together with left and right Haar weights, and the compact quantum groups defined by Woronowicz with a dense $C^*$-subalgebra and a Haar state. Those theories require a topology, a norm and a completion, and they belong to a later Part; the Hopf algebras of this article and the algebraic quantum groups of the next are the algebraic objects, and no topological statement is made here.
 
@@ -300,6 +300,10 @@ The group algebra $k[G]$ with $\Delta(g) = g\otimes g$, $\varepsilon(g)=1$, $S(g
 | $A\# H$ | smash product, $(a\otimes h)(b\otimes g) = a(h_{(1)}\cdot b)\otimes h_{(2)}g$ |
 | $H$-module algebra | $h\cdot(ab) = (h_{(1)}\cdot a)(h_{(2)}\cdot b)$, $h\cdot 1 = \varepsilon(h)1$ |
 | $k_q[x,y]$ | quantum plane, $yx = q\,xy$ |
+
+
+
+
 
 ## Further Reading
 

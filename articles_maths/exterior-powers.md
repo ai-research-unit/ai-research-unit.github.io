@@ -3,9 +3,9 @@
 
 ## Introduction
 
-The tensor powers $M^{\otimes n}$ introduced in *Modules* are the universal recipients of $n$-multilinear maps. Every $n$-multilinear map on a module $M$ factors uniquely through $M^{\otimes n}$, and the tensor algebra $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ records all of them at once. **Alternating** maps are the special multilinear maps that change sign when two arguments are exchanged, and they have their own universal recipient, the **exterior power** $\Lambda^n M$. Passing from $M^{\otimes n}$ to $\Lambda^n M$ is the operation of imposing the relation $x \otimes x = 0$; the graded pieces obtained this way are the subject of this article, and the graded algebra they assemble into is treated in the companion article *The Exterior Algebra*.
+The tensor powers $M^{\otimes n}$ introduced in *Modules* are the universal recipients of $n$-multilinear maps. Every $n$-multilinear map on a module $M$ factors uniquely through $M^{\otimes n}$, and the tensor algebra $T(M) = \bigoplus_{n \geq 0} M^{\otimes n}$ records all of them at once. **Alternating** maps are the special multilinear maps that change sign when two arguments are exchanged, and they have their own universal recipient, the **exterior power** $\Lambda^n M$. Passing from $M^{\otimes n}$ to $\Lambda^n M$ is the operation of imposing the relation $x \otimes x = 0$; the graded pieces obtained this way are the subject of this article, and the graded algebra they assemble into is treated .
 
-The exterior powers are the antisymmetric counterpart of the symmetric powers, and the exterior algebra is the antisymmetric counterpart of the symmetric algebra: the symmetric theory belongs to the category on symmetric algebras, the tensor algebra itself to the category on algebras, and only the alternating case is treated here. The three companion articles *The Exterior Algebra*, *The Determinant and Alternating Forms* and *Symplectic Forms and Poisson Brackets* continue the thread, beginning with the wedge product on the pieces constructed below.
+The exterior powers are the antisymmetric counterpart of the symmetric powers, and the exterior algebra is the antisymmetric counterpart of the symmetric algebra: the symmetric theory belongs to the category on symmetric algebras, the tensor algebra itself to the category on algebras, and only the alternating case is treated here. The three companion articlesandcontinue the thread, beginning with the wedge product on the pieces constructed below.
 
 Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $M$, $N$ are $R$-modules; over a commutative ring left and right modules coincide, so no side is specified. The field is written $K$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The corpus default base is the commutative ring, so the construction is carried out over $R$, and every point where a field, a characteristic assumption, or the invertibility of $2$ is required is flagged. No physics is invoked: an alternating form here is a function of module elements, never of a physical field.
 
@@ -179,7 +179,7 @@ $$
 
 This is a polynomial in the coefficients, hence defined over any commutative ring, and it is alternating because the determinant changes sign under a column exchange and vanishes when two columns agree. By the universal property it gives a linear functional $\bar{f}_J$ on $\Lambda^n M$ with $\bar{f}_J(e_{i_1} \wedge \cdots \wedge e_{i_n}) = 1$ when $(i_1, \ldots, i_n) = J$ and $= 0$ when the tuple is increasing and different from $J$. A linear relation $\sum_J c_J e_J = 0$ among the basis candidates therefore gives $c_J = \bar{f}_J(\sum_J c_J e_J) = 0$ for every $J$. Hence the displayed wedges are independent. $\square$
 
-The determinant used in the proof is developed for its own sake in the companion article *The Determinant and Alternating Forms*; here it is only the explicit alternating form that separates the basis elements.
+The determinant used in the proof is developed for its own sake ; here it is only the explicit alternating form that separates the basis elements.
 
 **Corollary.** Let $V$ be a vector space over a field of dimension $m$. Then $\dim \Lambda^n V = \binom{m}{n}$ for $0 \leq n \leq m$, and $\Lambda^n V = 0$ for $n > m$. In particular $\dim \Lambda^n V = \dim \Lambda^{m-n} V$.
 
@@ -255,7 +255,7 @@ Thus the alternating forms of degree $n$ are exactly the linear functionals on t
 
 **Proposition.** Let $M$ be free of finite rank $m$. Then for each $n$ there is a natural isomorphism $\Lambda^n(M^*) \cong (\Lambda^n M)^*$, so an alternating form of degree $n$ may be regarded as an element of $\Lambda^n(M^*)$.
 
-This identification is the point of departure for the calculus of differential forms: at a point of a smooth manifold the cotangent space plays the role of $M^*$, and a differential $k$-form is a smoothly varying element of $\Lambda^k$ of it. That is the subject of the companion article *Differential Forms and Stokes' Theorem*, being written in parallel with this one.
+This identification is the point of departure for the calculus of differential forms: at a point of a smooth manifold the cotangent space plays the role of $M^*$, and a differential $k$-form is a smoothly varying element of $\Lambda^k$ of it. That is the subject of with this one.
 
 **Definition.** Let $M$ be free of rank $m$. The **top exterior power** is $\Lambda^m M$, a free module of rank $1$, called the **determinant line** of $M$. For an endomorphism $f$ of $M$ the scalar by which $\Lambda^m f$ acts on $\Lambda^m M$ is the **determinant** $\det f$; for a basis $(e_1, \ldots, e_m)$ one has
 
@@ -263,7 +263,7 @@ $$
 \Lambda^m f(e_1 \wedge \cdots \wedge e_m) = \det(f)\, e_1 \wedge \cdots \wedge e_m.
 $$
 
-The determinant, its multiplicativity, and the minors of $\Lambda^n f$ are the content of the companion article *The Determinant and Alternating Forms*.
+The determinant, its multiplicativity, and the minors of $\Lambda^n f$ are the content .
 
 ## Summary
 
@@ -299,6 +299,8 @@ Exterior powers are functorial, so each linear $f$ induces $\Lambda^n f$; they c
 | $\Lambda^m M$ | Top exterior power, the determinant line, when $M$ is free of rank $m$ |
 | $\det f$ | Scalar by which $\Lambda^m f$ acts on the determinant line |
 | $\binom{m}{n}$ | Rank of $\Lambda^n M$ for $M$ free of rank $m$ |
+
+
 
 ## Further Reading
 

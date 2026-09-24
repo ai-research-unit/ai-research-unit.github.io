@@ -128,7 +128,7 @@ $$
 V_{\mathfrak{h}} = U(\mathfrak{h})\otimes_{U(\mathfrak{h}_{\geq0})}k_c
 $$
 
-be the induced module, where $\mathfrak{h}_{\geq0} = \bigoplus_{n\geq0}kb_n\oplus kc$ is the subalgebra of the non-negative modes; the tensor product over the subalgebra is the balanced product of *The Balanced Product over an Algebra*. By the Poincaré–Birkhoff–Witt theorem of *Universal Enveloping Algebras* the module $V_{\mathfrak{h}}$ has the basis $b_{-n_1}\cdots b_{-n_r}|0\rangle$ with $n_1\geq\cdots\geq n_r\geq1$, that is $V_{\mathfrak{h}} = k[b_{-1},b_{-2},\dots]$, identified with the symmetric algebra on the span of the negative modes. Setting $\omega = b_{-1}|0\rangle$ and $Y(\omega,z) = \sum_{n\in\mathbb{Z}}b_nz^{-n-1}$ makes $V_{\mathfrak{h}}$ a vertex algebra, the **Heisenberg vertex algebra** of central charge $1$; the field $Y(\omega,z)$ satisfies the operator product expansion
+be the induced module, where $\mathfrak{h}_{\geq0} = \bigoplus_{n\geq0}kb_n\oplus kc$ is the subalgebra of the non-negative modes; the tensor product over the subalgebra is the balanced product. By the Poincaré–Birkhoff–Witt theorem of *Universal Enveloping Algebras* the module $V_{\mathfrak{h}}$ has the basis $b_{-n_1}\cdots b_{-n_r}|0\rangle$ with $n_1\geq\cdots\geq n_r\geq1$, that is $V_{\mathfrak{h}} = k[b_{-1},b_{-2},\dots]$, identified with the symmetric algebra on the span of the negative modes. Setting $\omega = b_{-1}|0\rangle$ and $Y(\omega,z) = \sum_{n\in\mathbb{Z}}b_nz^{-n-1}$ makes $V_{\mathfrak{h}}$ a vertex algebra, the **Heisenberg vertex algebra** of central charge $1$; the field $Y(\omega,z)$ satisfies the operator product expansion
 
 $$
 Y(\omega,z)Y(\omega,w) = \frac{1}{(z-w)^2}+\text{regular},
@@ -202,7 +202,7 @@ $$
 
 both sums being finite for homogeneous $a$ and extended by linearity.
 
-**Theorem (Zhu, standard).** The algebra $A(V)$ is an associative algebra with unit the class of $|0\rangle$, and the two constructions are compatible with the vertex algebra structure: the assignment $M\mapsto M_0$ of the degree-zero piece of an admissible $V$-module is a bijection between the simple admissible $V$-modules and the simple $A(V)$-modules, up to the appropriate finiteness conditions, and more generally the category of $A(V)$-modules of finite length is equivalent to a subcategory of the admissible $V$-modules. Consequently the representation theory of a vertex algebra is the representation theory of an associative algebra in the sense of *Simple and Semisimple Modules*, and the simple objects are classified by the simple modules of $A(V)$.
+**Theorem (Zhu, standard).** The algebra $A(V)$ is an associative algebra with unit the class of $|0\rangle$, and the two constructions are compatible with the vertex algebra structure: the assignment $M\mapsto M_0$ of the degree-zero piece of an admissible $V$-module is a bijection between the simple admissible $V$-modules and the simple $A(V)$-modules, up to the appropriate finiteness conditions, and more generally the category of $A(V)$-modules of finite length is equivalent to a subcategory of the admissible $V$-modules. Consequently the representation theory of a vertex algebra is the representation theory of an associative algebra in the sense, and the simple objects are classified by the simple modules of $A(V)$.
 
 *Proof (outline).* One shows that $V\circ V$ is a two-sided ideal of $V$ for the product $*$, that the quotient is associative with unit $|0\rangle$, and that for an admissible module the degree-zero piece is a module over $A(V)$ because the operations $\circ$ and $*$ are the degree-zero parts of the vertex algebra products; the inverse construction assigns to an $A(V)$-module the induced admissible module, which is obtained by the universal construction of the modes and in which the degree-zero piece is the given module. The details are the standard theory of the Zhu algebra. $\square$
 
@@ -230,7 +230,7 @@ together with the existence of the vacuum and the creation axiom. A vector space
 
 *Proof (outline).* The bracket is the generating function of the modes $a_{(n)}$ for $n\geq0$, so the first axiom is the finiteness of the singular part of the product; the skew-symmetry is the corresponding form of the commutativity of the fields, and the Jacobi identity is the corresponding form of the mode commutator formula, the bracket on the right being expanded with the shift of the variable; the remaining axioms encode the translation and the vacuum. The equivalence is the theorem of Borcherds and is the content of the standard reference. $\square$
 
-**Remark (the place of the vertex algebras in the corpus).** The $\lambda$-bracket formulation exhibits a vertex algebra as a **Lie-algebra-like object in a category of formal series**: the bracket is parametrised by a formal variable and satisfies the Jacobi identity in that variable, and the vertex algebra itself is recovered by adjoining the product $a_{(-1)}b$ and a vacuum. This is the sense in which vertex algebras belong to the category *Anti-symmetric Linear Algebras*: they are the "Lie algebras in the category of $\mathcal{D}$-modules", or conformal algebras, whose structure constants are the coefficients $a_{(j)}b$, and whose principal examples are built from the universal enveloping algebras and the central extensions of the previous two articles. The general framework of algebraic structures with a parametrised bracket and a Jacobi identity is the subject of *Poisson and Gerstenhaber Algebras* later in this category, where the bracket carries a degree and the identity is the same one.
+**Remark (the place of the vertex algebras in the corpus).** The $\lambda$-bracket formulation exhibits a vertex algebra as a **Lie-algebra-like object in a category of formal series**: the bracket is parametrised by a formal variable and satisfies the Jacobi identity in that variable, and the vertex algebra itself is recovered by adjoining the product $a_{(-1)}b$ and a vacuum. This is the sense in which vertex algebras belong to the category *Anti-symmetric Linear Algebras*: they are the "Lie algebras in the category of $\mathcal{D}$-modules", or conformal algebras, whose structure constants are the coefficients $a_{(j)}b$, and whose principal examples are built from the universal enveloping algebras and the central extensions of the previous two articles. The general framework of algebraic structures with a parametrised bracket and a Jacobi identity is not covered here, where the bracket carries a degree and the identity is the same one.
 
 ## Summary
 
@@ -252,6 +252,10 @@ A **vertex algebra** over a field $k$ of characteristic zero is a vector space $
 | $h^\vee$, $V_c$, $V_\Lambda$, $V^\natural$ | dual Coxeter number, Virasoro, lattice and Monster vertex algebras |
 | $A(V)$, $\circ$, $*$ | Zhu algebra and its two products |
 | $\mathrm{wt}(a)$ | conformal weight of a homogeneous vector |
+
+
+
+
 
 ## Further Reading
 

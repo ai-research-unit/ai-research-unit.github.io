@@ -6,7 +6,7 @@ A ring is Noetherian when its ideals satisfy the ascending chain condition, and 
 
 The reason the chain conditions matter is that they replace an appeal to finiteness of the ring by finiteness of its ideal lattice. A field is Noetherian and Artinian; so are the quotient rings $\mathbb{Z}/n\mathbb{Z}$ and $k[x]/(x^n)$; the polynomial ring $k[x_1, \ldots, x_n]$ over a field is Noetherian by the Hilbert basis theorem, though it is not Artinian and is infinite-dimensional as a vector space. The chain conditions are therefore compatible with a ring being very large.
 
-This article defines the two chain conditions, gives the equivalent formulations in terms of finite generation and of maximal or minimal elements, proves the standard closure properties and the Hilbert basis theorem, establishes the Akizuki–Hopkins theorem and the structure theory of Artinian rings as finite products of Artinian local rings, and introduces the length of a ring by way of composition series. Throughout, $R$ is a commutative ring with $1 \neq 0$; ideals and quotient rings are as in *Rings*, §§6–7, units and zero divisors as in *Units, Zero Divisors and Integral Domains*, and localization as in *Localization and the Fraction Field*. The word *module* is avoided: every statement below concerns ideals, and the passage to finitely generated modules over a Noetherian ring is the subject of *Modules*.
+This article defines the two chain conditions, gives the equivalent formulations in terms of finite generation and of maximal or minimal elements, proves the standard closure properties and the Hilbert basis theorem, establishes the Akizuki–Hopkins theorem and the structure theory of Artinian rings as finite products of Artinian local rings, and introduces the length of a ring by way of composition series. Throughout, $R$ is a commutative ring with $1 \neq 0$; ideals and quotient rings are as in *Rings*, §§6–7, units and zero divisors as in *Units, Zero Divisors and Integral Domains*, and localization as in *Localization and the Fraction Field*. The word *module* is avoided: every statement below concerns ideals, and the passage to finitely generated modules over a Noetherian ring is not covered here.
 
 ---
 
@@ -150,11 +150,11 @@ Let $f \in I$ be nonzero, of degree $d$, with leading coefficient $a$. If $d \le
 
 **Corollary.** If $k$ is a field, then $k[x_1, \ldots, x_n]$ is Noetherian, hence every ideal in it is finitely generated. In particular every algebraic set in $k^n$, defined as the common zero set of a family of polynomials, is already the common zero set of finitely many of them: one takes the family to generate an ideal, which is finitely generated.
 
-The last corollary is the geometric content of the theorem, and it is what makes the ideal theory of polynomial rings algorithmic; the algorithmic side belongs to *Gröbner Bases and Elimination Theory*, being written in parallel.
+The last corollary is the geometric content of the theorem, and it is what makes the ideal theory of polynomial rings algorithmic; the algorithmic side lies outside this article.
 
 ### Graded and Filtered Rings
 
-The Hilbert basis theorem is the first instance of a general principle: finite generation over a Noetherian base is inherited by the structures built from it. Two of its refinements are used in later articles of this category.
+The Hilbert basis theorem is the first instance of a general principle: finite generation over a Noetherian base is inherited by the structures built from it. Two of its refinements are used in other articles of this category.
 
 **Theorem.** Let $R = \bigoplus_{n \geq 0} R_n$ be a graded commutative ring with $R_0$ Noetherian and $R$ generated as an $R_0$-algebra by finitely many homogeneous elements of positive degree. Then $R$ is Noetherian.
 
@@ -200,7 +200,7 @@ The fourth step concludes. The chain $R \supseteq \mathfrak{N} \supseteq \mathfr
 
 **Corollary.** A commutative ring is Artinian if and only if it is Noetherian of Krull dimension zero. Consequently an Artinian ring has finitely many prime ideals, all of them maximal, and its nilradical is nilpotent.
 
-Here the Krull dimension of a ring is the supremum of the lengths of chains of prime ideals, developed in *Integral Extensions and Krull Dimension*, being written in parallel; the corollary is stated here for its content and proved there.
+Here the Krull dimension of a ring is the supremum of the lengths of chains of prime ideals, developed; the corollary is stated here for its content and proved there.
 
 ### The Structure of Artinian Rings
 
@@ -244,7 +244,7 @@ The Artinian rings are the rings of Krull dimension zero, and for Noetherian rin
 
 **Corollary.** For a Noetherian commutative ring, Artinian is equivalent to Krull dimension zero, equivalently to every prime ideal being maximal.
 
-The **principal ideal theorem of Krull** used above states that in a Noetherian ring a minimal prime ideal over a principal ideal $(a)$ has height at most $1$. Its proof belongs with the dimension theory of *Integral Extensions and Krull Dimension*, being written in parallel, and it is cited here as standard. The theorem is the reason the two chain conditions interact so closely: the ascending chain condition bounds the height of primes, while the descending chain condition bounds the ring to dimension zero.
+The **principal ideal theorem of Krull** used above states that in a Noetherian ring a minimal prime ideal over a principal ideal $(a)$ has height at most $1$. Its proof belongs with the dimension theory, and it is cited here as standard. The theorem is the reason the two chain conditions interact so closely: the ascending chain condition bounds the height of primes, while the descending chain condition bounds the ring to dimension zero.
 
 ---
 
@@ -286,9 +286,15 @@ The intermediate notion is finite length: a ring has a composition series exactl
 | $L_n$ | Ideal of leading coefficients in degree $n$ |
 | $I_0 \supsetneq \cdots \supsetneq I_\ell$ | Composition series of length $\ell$ |
 | $\ell(R)$ | Length of a ring of finite length |
-| $\dim R$ | Krull dimension (defined here; developed in *Integral Extensions and Krull Dimension*, being written in parallel) |
+| $\dim R$ | Krull dimension (defined here; developed) |
 | $\mathbb{D}'_F = F[x]/(x^2)$ | Dual numbers, a local Artinian ring |
 | $\operatorname{Spec}(R)$ | The set of prime ideals of $R$ |
+
+
+
+
+
+
 
 ## Further Reading
 

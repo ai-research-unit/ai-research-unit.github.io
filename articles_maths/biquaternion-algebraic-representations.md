@@ -308,7 +308,7 @@ The biquaternion action preserves this inner product when $\tilde{Q}$ is unitary
 
 ### Relation to the Representation Theory Article
 
-The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is treated in the companion article *Biquaternion Representation Theory*, which takes the concrete realization given here as its starting point. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines.
+The spinor module is the defining module of the group of units: a biquaternion of unit norm acts on $\mathbb{C}^2$ by the same $2 \times 2$ matrices, so $SL(2,\mathbb{C})$ acts on spinors. The structure attached to that action — the weights $(\tfrac{1}{2}, 0)$ and $(0, \tfrac{1}{2})$ of the defining module and its conjugate, the vector representation as the tensor product of the spinor with its conjugate, the double covers of the rotation and Lorentz groups, the Clebsch--Gordan rule, and the unitary representations — is not treated here. The present section supplies the realization only: the algebra as operators on $\mathbb{C}^2$, and the module structure that the action defines.
 
 ## The Clifford Algebra Representation
 
@@ -422,6 +422,8 @@ The four-vector representation is the one most familiar from the Lorentz-group l
 | $\mathrm{Cl}_{1,3}$ | Clifford algebra of signature $(1,3)$; $\mathbb{B} \cong \mathrm{Cl}_{1,3}^+$ |
 | $\gamma^\mu$ | Clifford generators, $(\gamma^0)^2 = +1$, $(\gamma^j)^2 = -1$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Pseudoscalar, $\omega^2 = -1$, central in $\mathrm{Cl}_{1,3}^+$ |
+
+
 
 ## Further Reading
 

@@ -161,7 +161,7 @@ $$
 
 is the **index pairing**.
 
-**Proof.** The identification of the first group with $K^0(X)$ is the theorem of the previous section specialised to $B = C(X)$, combined with Swan's theorem; the second is the same statement for the first variable. The product is the Kasparov product, and it is the algebraic form of the pairing between an element of $K$-homology, represented by an elliptic operator, and a $K$-theory class, represented by a bundle: the integer it produces is the index of the operator twisted by the bundle. This is standard; the analytic content of the pairing — the elliptic operators, their symbols and the index theorem — is treated in Part III and in the later articles of this Part. $\square$
+**Proof.** The identification of the first group with $K^0(X)$ is the theorem of the previous section specialised to $B = C(X)$, combined with Swan's theorem; the second is the same statement for the first variable. The product is the Kasparov product, and it is the algebraic form of the pairing between an element of $K$-homology, represented by an elliptic operator, and a $K$-theory class, represented by a bundle: the integer it produces is the index of the operator twisted by the bundle. This is standard; the analytic content of the pairing — the elliptic operators, their symbols and the index theorem — is treated in Part III and in the other articles of this category. $\square$
 
 ### The Rotation Algebras and the Pimsner–Voiculescu Sequence
 
@@ -198,6 +198,8 @@ A $\mathbb{Z}/2$-graded **Hilbert $B$-module** $E = E^0\oplus E^1$ with grading 
 | $\operatorname{Ext}(A,B)$ | Extension group $=KK^1(A,B)$ |
 | $KK_G$, $\mu$ | Equivariant theory; Baum–Connes assembly map |
 | $SA$, $\Sigma A$, $K$ | Suspension; graded suspension; compact operators |
+
+
 
 ## Further Reading
 

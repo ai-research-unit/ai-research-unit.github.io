@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A topological group is a group with a topology for which the group operations are continuous — the combination of the two structures treated separately in *Transformation Groups* and in *Topological Spaces*, *Metric, Uniform and Complete Spaces* and *Measure Theory and Integration*, all written in parallel. The combination is far more rigid than either structure alone: the topology is determined by a neighbourhood base at the identity, it is automatically homogeneous, the group carries two natural uniform structures, and the quotient by a subgroup inherits both a group structure and a topology. Continuity of multiplication then forces a strong interplay between algebra and topology, so that compactness and connectedness become statements about subgroups, and the counting and averaging arguments of *Group Actions and Structure* acquire topological analogues.
+A topological group is a group with a topology for which the group operations are continuous — the combination of the two structures treated separately in *Transformation Groups* and in *Topological Spaces*, *Metric, Uniform and Complete Spaces*. The combination is far more rigid than either structure alone: the topology is determined by a neighbourhood base at the identity, it is automatically homogeneous, the group carries two natural uniform structures, and the quotient by a subgroup inherits both a group structure and a topology. Continuity of multiplication then forces a strong interplay between algebra and topology, so that compactness and connectedness become statements about subgroups, and the counting and averaging arguments of *Group Actions and Structure* acquire topological analogues.
 
 This article develops that interplay: the axioms and their first consequences, the uniformity and the completion, subgroups and quotients, the standard separation and connectedness facts, compactness and local compactness, the profinite case, the Haar measure that integration on a group requires, and the structure theory of locally compact abelian groups with its Pontryagin duality. The final subject is Pontryagin duality, which identifies the category of locally compact abelian groups with its own dual and is the topological counterpart of the duality between a finite abelian group and its character group. The base ring $R$ is a commutative ring with identity $1 \neq 0$ and $F$, $K$ are fields as usual; the groups here are written multiplicatively unless abelian, and the identity is $e$. No physics is invoked.
 
@@ -23,7 +23,7 @@ The equivalence is immediate: the map $g h^{-1}$ is continuous when multiplicati
 
 **Example (the additive groups).** $\mathbb{R}$, $\mathbb{C}$, $\mathbb{Q}$, $\mathbb{Z}$ and $\mathbb{K}^n$ with addition and the usual topology are topological groups, abelian and written additively. The circle group $S^1 = \{z \in \mathbb{C} : |z| = 1\}$ with complex multiplication and the subspace topology is a compact topological group, isomorphic to $\mathbb{R}/\mathbb{Z}$.
 
-**Example (matrix groups).** The general linear group $GL_n(\mathbb{K})$ with the topology induced from $\mathbb{K}^{n^2}$ is a topological group, locally compact, and non-compact for $n \geq 1$; the orthogonal group $O(n)$, the special orthogonal group $SO(n)$ and the unitary group $U(n)$ are compact topological groups. These are treated in *Matrix Groups and Classical Groups*, written in parallel.
+**Example (matrix groups).** The general linear group $GL_n(\mathbb{K})$ with the topology induced from $\mathbb{K}^{n^2}$ is a topological group, locally compact, and non-compact for $n \geq 1$; the orthogonal group $O(n)$, the special orthogonal group $SO(n)$ and the unitary group $U(n)$ are compact topological groups. These are treated.
 
 **Example (discrete and trivial).** Every group with the discrete topology is a topological group, and every group with the trivial topology is one. A discrete group is compact exactly when it is finite, and locally compact always.
 
@@ -183,7 +183,7 @@ where conjugation by $(a, b, c)$ sends $(x, y, z)$ to $(x, y, z - bx + ay)$, so 
 
 ### Local Compactness and Haar Measure
 
-**Theorem.** Every Hausdorff locally compact group carries a nonzero left-invariant Radon measure $\mu$, finite on compact sets, unique up to a positive scalar. This is the **Haar measure**, for which the measure-theoretic apparatus is developed in *Measure Theory and Integration*, written in parallel.
+**Theorem.** Every Hausdorff locally compact group carries a nonzero left-invariant Radon measure $\mu$, finite on compact sets, unique up to a positive scalar. This is the **Haar measure**, for which the measure-theoretic apparatus is developed.
 
 **Definition.** The **modular function** $\Delta : G \to (0, +\infty)$ is defined by $\mu(Ag) = \Delta(g)\mu(A)$ for a left Haar measure $\mu$. It is a continuous homomorphism, and $G$ is **unimodular** when $\Delta \equiv 1$. A left Haar measure is right-invariant exactly when $\Delta \equiv 1$.
 
@@ -296,6 +296,8 @@ A profinite group is a compact Hausdorff totally disconnected group, equivalentl
 | $G^\vee$, $\chi$, $\chi_k$ | Pontryagin dual and a character; characters of $\mathbb{Z}/n\mathbb{Z}$ |
 | $\hat f$ | Fourier transform of $f$ on a locally compact abelian group |
 | $\mu_n$, $\mu_{p^\infty}$ | Group of $n$-th roots of unity, Prüfer group |
+
+
 
 ## Further Reading
 

@@ -245,7 +245,7 @@ so that $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2} = (2\pi
 
 **Proof.** The pairing sends a basis monomial $\theta_I$ of degree $k$ and a basis monomial $\theta_J$ of degree $n-k$ to the top coefficient of $\theta_I\theta_J$, which is $\pm 1$ when $J$ is the complement of $I$ and $0$ otherwise. The resulting matrix is invertible over $R$, its entries being $\pm 1$; hence the pairing is perfect. $\square$
 
-**Corollary.** The Berezin integral is the algebraic form of the integration of a top-degree differential form: in the exterior algebra of a free module of finite rank, the top-degree component is one-dimensional, and the choice of a basis trivialises it, while the integral is the resulting linear functional. This is the point of contact with the differential forms of *Differential Forms and Stokes' Theorem*, being written in parallel with this article.
+**Corollary.** The Berezin integral is the algebraic form of the integration of a top-degree differential form: in the exterior algebra of a free module of finite rank, the top-degree component is one-dimensional, and the choice of a basis trivialises it, while the integral is the resulting linear functional. This is the point of contact with the differential forms.
 
 ## Summary
 
@@ -274,6 +274,8 @@ The Gaussian integral over odd variables gives the Pfaffian, $\int e^{\frac12\th
 | $(2\pi)^{p/2}(\det B)^{-1/2}\operatorname{Pf}(A)$ | Super-Gaussian; $(2\pi)^{p/2}\operatorname{Ber}(\operatorname{diag}(B,A))^{-1/2}$ |
 | $\operatorname{Ber}\operatorname{diag}(B,A) = \det B/\operatorname{Pf}(A)^2$ | Berezinian of a block diagonal supermatrix |
 | $\Lambda^k(V) \times \Lambda^{n-k}(V) \to R$, $(f,g)\mapsto \int fg\,d\theta$ | Perfect top-degree pairing |
+
+
 
 ## Further Reading
 

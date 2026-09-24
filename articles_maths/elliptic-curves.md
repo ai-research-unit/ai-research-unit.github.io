@@ -10,7 +10,7 @@ $$
 
 nonsingular at every point. What makes the object central in arithmetic is that its points form an abelian group by a purely geometric construction — the chord–tangent law — so that an elliptic curve carries both a geometric and an algebraic structure, and the two interact: the group law is defined by rational functions with coefficients in $K$, the endomorphisms of the curve are ring endomorphisms of the group, and over a finite field the Frobenius endomorphism is an algebraic integer whose trace determines the number of points.
 
-This is the *arithmetic* theory of curves over a field. The curve is treated concretely, through its Weierstrass equation, its group law, its torsion, its isogenies and its reduction at a prime; the words scheme, sheaf, cohomology, moduli space and stack do not occur, and the corresponding geometric development belongs to the Part II agent who owns *Algebraic Geometry* and *Sheaves and Cohomology*. The analogues for a general curve are in *Algebraic Curves* and *The Riemann–Roch Theorem for Curves*, being written in parallel; the arithmetic of the base field is in *Algebraic Number Theory*, *Global Fields* and *Class Field Theory*; the finite-field side uses *Finite Fields*; the abstract theory of extensions uses *Galois Theory*, *Field Extensions* and *Splitting Fields and Algebraic Closure*. Heights, local fields, the reduction theory at a complete base field, the $p$-adic Tate module as a module over the completion, and the $L$-function belong to later Parts, because the logarithm, the absolute value and the completion are not available here; where such a statement is needed it is named and deferred.
+This is the *arithmetic* theory of curves over a field. The curve is treated concretely, through its Weierstrass equation, its group law, its torsion, its isogenies and its reduction at a prime; the words scheme, sheaf, cohomology, moduli space and stack do not occur, and the corresponding geometric development belongs to the Part II agent who owns *Sheaves and Cohomology*. The analogues for a general curve are andbeing; the arithmetic of the base field is in *Algebraic Number Theory*, *Global Fields* and *Class Field Theory*; the finite-field side uses *Finite Fields*; the abstract theory of extensions uses *Galois Theory*, *Field Extensions* and *Splitting Fields and Algebraic Closure*. Heights, local fields, the reduction theory at a complete base field, the $p$-adic Tate module as a module over the completion, and the $L$-function belong to later Parts, because the logarithm, the absolute value and the completion are not available here; where such a statement is needed it is named and deferred.
 
 Throughout, $K$ is a field, $\bar K$ an algebraic closure, $E$ an elliptic curve over $K$ given by a Weierstrass equation, $O$ the point at infinity, and $E(K)$ the group of $K$-rational points. The characteristic of $K$ is denoted $p$ when it is positive, and a statement needing $\operatorname{char} K \notin \{2,3\}$ says so.
 
@@ -20,7 +20,7 @@ Throughout, $K$ is a field, $\bar K$ an algebraic closure, $E$ an elliptic curve
 
 ### Definitions and Invariants
 
-**Definition.** An **elliptic curve** over $K$ is a pair $(E, O)$ where $E$ is a nonsingular projective curve of genus $1$ over $K$ and $O \in E(K)$ is a $K$-rational point. By the Riemann–Roch theorem of *The Riemann–Roch Theorem for Curves*, being written in parallel, the space of functions on $E$ with a pole of order at most $2$ at $O$ and no other poles is two-dimensional, and choosing a basis $1, x$ and then a function $y$ with a pole of order $3$ at $O$ embedding the curve into the projective plane gives a Weierstrass equation as displayed in the introduction; conversely every nonsingular Weierstrass equation defines a curve of genus $1$ with the point $O$ at infinity.
+**Definition.** An **elliptic curve** over $K$ is a pair $(E, O)$ where $E$ is a nonsingular projective curve of genus $1$ over $K$ and $O \in E(K)$ is a $K$-rational point. By the Riemann–Roch theorem, the space of functions on $E$ with a pole of order at most $2$ at $O$ and no other poles is two-dimensional, and choosing a basis $1, x$ and then a function $y$ with a pole of order $3$ at $O$ embedding the curve into the projective plane gives a Weierstrass equation as displayed in the introduction; conversely every nonsingular Weierstrass equation defines a curve of genus $1$ with the point $O$ at infinity.
 
 **Definition.** For a Weierstrass equation with $a_i \in K$ one defines, in the general case,
 
@@ -146,7 +146,7 @@ $$
 
 so that $\pi$ satisfies $\pi\hat\pi = q$, with $\hat\pi$ the dual isogeny; the number $a_q$ is the trace $\pi + \hat\pi$ and $q$ is the norm $\pi\hat\pi$, and the displayed inequality is equivalent to the positivity of the degrees $\deg(\pi-m) = m^2-a_qm+q$ for all integers $m$, which is the elementary proof of the bound.
 
-**Proof sketch.** The relation $\pi^2 - a_q\pi + q = 0$ is proved by comparing degrees in $\operatorname{End}(E)$, using $\deg(\pi - 1) = \lvert E(\mathbb{F}_q)\rvert$ together with the identity $\deg(\pi-m) = \deg\pi - m(\pi + \hat\pi) + m^2$ for the reduced trace; the bound then follows from the positivity of the degrees $\deg(\pi - m) \geq 0$ at suitable integers $m$, since $\pi\bar\pi = q$ forces $a_q^2 \leq 4q$; no analysis enters. The same bound is the genus-one case of the Riemann hypothesis for the zeta function of a curve, whose analytic formulation is stated in *Algebraic Curves*, being written in parallel, and belongs to Part III. $\square$
+**Proof sketch.** The relation $\pi^2 - a_q\pi + q = 0$ is proved by comparing degrees in $\operatorname{End}(E)$, using $\deg(\pi - 1) = \lvert E(\mathbb{F}_q)\rvert$ together with the identity $\deg(\pi-m) = \deg\pi - m(\pi + \hat\pi) + m^2$ for the reduced trace; the bound then follows from the positivity of the degrees $\deg(\pi - m) \geq 0$ at suitable integers $m$, since $\pi\bar\pi = q$ forces $a_q^2 \leq 4q$; no analysis enters. The same bound is the genus-one case of the Riemann hypothesis for the zeta function of a curve, whose analytic formulation is stated, and belongs to Part III. $\square$
 
 **Definition.** For an elliptic curve $E$ over $\mathbb{F}_q$ the **zeta function** is
 
@@ -251,6 +251,8 @@ Over a number field $E(K)$ is finitely generated by Mordell–Weil, with the des
 | $r$ | Rank of $E(K)$ |
 | $\tilde E$, $\kappa(\mathfrak{p})$ | Reduced curve, residue field |
 | $\lambda$ | Slope of a chord or tangent; also the Legendre parameter |
+
+
 
 ## Further Reading
 

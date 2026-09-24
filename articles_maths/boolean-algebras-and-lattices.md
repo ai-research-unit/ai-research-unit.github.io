@@ -5,7 +5,7 @@
 
 This is the first article of the Boolean system in Part IV, and it occupies the **algebra slot** of that system. The system is the two-element Boolean domain $\mathbf{2} = \{0,1\}$ together with the propositional connectives, and the article develops the equational algebra that the domain generates: the **Boolean algebras**. It is the synthetic counterpart of the general order theory of Part I, and it states for this one system what *Order Theory and Lattices* states for orders in general.
 
-The boundary against the general theory is deliberate. Lattices, distributivity, modularity, Galois connections and the fixed-point theorems belong to *Order Theory and Lattices* and are used here, not re-derived. The topological slot of the Boolean system is a separate article, *Boolean Rings and Stone Duality*, which supplies the Stone space, the compactness and the total disconnectedness; nothing topological is developed below. Because the Boolean system is finite in a strong sense — every finitely generated Boolean algebra is finite, and the two-element algebra generates the whole variety — the system supports an algebra and no analysis, and the closing section records why.
+The boundary against the general theory is deliberate. Lattices, distributivity, modularity, Galois connections and the fixed-point theorems belong to *Order Theory and Lattices* and are used here, not re-derived. The topological slot of the Boolean system is a separate article,which supplies the Stone space, the compactness and the total disconnectedness; nothing topological is developed below. Because the Boolean system is finite in a strong sense — every finitely generated Boolean algebra is finite, and the two-element algebra generates the whole variety — the system supports an algebra and no analysis, and the closing section records why.
 
 Throughout, a lattice is written $(L, \wedge, \vee)$ with meet $\wedge$ and join $\vee$, and its order is $\leq$. The two-element algebra is $\mathbf{2} = \{0,1\}$ with $0 < 1$, and the power set of a set $X$ is $\mathcal{P}(X)$. The complement of an element $a$ of a Boolean algebra is written $\neg a$. The elementary connectives and the satisfaction relation are those of *Logic and Proof*, and the natural numbers that index the generators are those of *The Natural Numbers*, written in parallel in this Part.
 
@@ -63,7 +63,7 @@ $$
 
 **Proof.** Distributive implies modular is an immediate substitution. The forbidden-sublattice criterion is the theorem of Dedekind and Birkhoff: $N_5$ is modular but not distributive and $M_3$ is not modular, and every non-distributive lattice contains one of them as a sublattice. The proof is in *Order Theory and Lattices* and is not repeated. $\square$
 
-The theorem is the reason the Boolean system is so rigid: a Boolean algebra is a distributive lattice, so it contains neither $M_3$ nor $N_5$, and the congruence lattice of a distributive lattice is itself distributive. Non-distributive logic, which is the subject of *Effect Algebras and Orthomodular Lattices*, begins exactly where this criterion fails.
+The theorem is the reason the Boolean system is so rigid: a Boolean algebra is a distributive lattice, so it contains neither $M_3$ nor $N_5$, and the congruence lattice of a distributive lattice is itself distributive. Non-distributive logic, which is the subject, begins exactly where this criterion fails.
 
 ## Boolean Algebras
 
@@ -87,7 +87,7 @@ $$
 
 so $c \leq d$; the same computation with $c$ and $d$ interchanged gives $d \leq c$, whence $c = d$ by antisymmetry. $\square$
 
-Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices of *Effect Algebras and Orthomodular Lattices*. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.
+Uniqueness is what makes $\neg$ an operation and not merely a relation, and it is what fails in the non-distributive ortholattices. The following identities are then forced, and they are the reason Boolean algebra is an equational theory.
 
 **Theorem.** Let $B$ be a Boolean algebra and $a, b \in B$. Then
 
@@ -167,7 +167,7 @@ where $\oplus$ is addition in $\mathbb{F}_2$ and the product is taken in $\mathb
 
 **Proof.** The $2^n$ reduced monomials are linearly independent over $\mathbb{F}_2$ as functions. Suppose a combination vanishes and let $e$ be an exponent vector with $c_e \neq 0$ minimal for coordinatewise comparison: if $e' < e$ coordinatewise then $c_{e'} = 0$, and evaluating the combination at the point $e$ (read as an element of $\mathbf{2}^n$) kills every monomial $x^{e'}$ with $e'$ not above $e$, while $x^{e}(e) = 1$; hence $c_e = 0$, a contradiction. So the span of the reduced monomials has dimension $2^n$. There are exactly $2^{2^n}$ functions $\mathbf{2}^n \to \mathbf{2}$ and exactly $2^{2^n}$ coefficient vectors $(c_e)$, so the span is everything and the expression is unique. $\square$
 
-The expansion is the **Reed–Muller** expansion. It says that the Boolean functions on $n$ variables form the free $\mathbb{F}_2$-vector space on the $2^n$ reduced monomials, equivalently the free Boolean ring on $n$ generators, discussed in *Boolean Rings and Stone Duality*.
+The expansion is the **Reed–Muller** expansion. It says that the Boolean functions on $n$ variables form the free $\mathbb{F}_2$-vector space on the $2^n$ reduced monomials, equivalently the free Boolean ring on $n$ generators, discussed.
 
 **Corollary.** There are exactly $2^{2^n}$ Boolean functions of $n$ variables. For $n = 0$ there are two, the two constants $0$ and $1$; for $n = 1$ there are four; for $n = 2$ there are sixteen; for $n = 3$ there are two hundred and fifty-six.
 
@@ -224,7 +224,7 @@ $$
 T \vdash \varphi \iff \text{every valuation satisfying } T \text{ satisfies } \varphi .
 $$
 
-**Proof.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem of *Boolean Rings and Stone Duality* — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in *Logic and Proof*. $\square$
+**Pro.** Soundness is induction on the length of a derivation, each axiom being a tautology and each rule preserving truth. For completeness, suppose $T \nvdash \varphi$; then the class of $\varphi$ is not $1$ in the Lindenbaum–Tarski algebra $B$ of $T$, and since $B$ is a nontrivial Boolean algebra it has a homomorphism to $\mathbf{2}$ — in the finite case by the finite representation theorem above, and in general by the prime-filter theorem — pulling back to a valuation satisfying $T$ and falsifying $\varphi$. A direct proof from the syntax is in *Logic and Proof*. $\square$
 
 **Remark.** The completeness theorem identifies the semantic models of propositional logic with the homomorphisms into $\mathbf{2}$. This is the reason the two-element algebra is the object of study: the variety generated by $\mathbf{2}$ is the variety of all Boolean algebras, so the equational theory of the system is the theory of this single finite algebra.
 
@@ -262,7 +262,7 @@ The Boolean system carries an algebra in the strongest sense: a finitely axiomat
 
 There is no distance on a Boolean algebra that the algebra itself supplies, and there is no notion of limit to define: a sequence of elements of a Boolean algebra cannot converge in the algebra, because the only available convergence is eventual constancy, and the completeness theorem above already extracts from the algebra everything a limit could contribute — the homomorphisms to $\mathbf{2}$ — without a metric. Equivalently, the Boolean system is *finite* in the sense that its free algebra on $n$ generators is finite, so every function of finitely many Boolean variables is continuous in every topology that makes $\mathbf{2}$ Hausdorff, and the subject is the algebra of these functions.
 
-The enrichment the system does admit is *topological*, and it belongs to the next article. A Boolean algebra can be read as a ring under symmetric difference and intersection, and the prime ideals of that ring form a compact Hausdorff totally disconnected space whose clopen sets reproduce the algebra; this is Stone duality, the first instance in the corpus of the algebra–topology dictionary that Gelfand duality completes. Even there analysis is absent: the Stone space is totally disconnected, so the only continuous functions that matter are locally constant, and no derivative or integral arises. The Boolean system supports an algebra, a topology, and no analysis.
+The enrichment the system does admit is *topological*, and it lies outside this article. A Boolean algebra can be read as a ring under symmetric difference and intersection, and the prime ideals of that ring form a compact Hausdorff totally disconnected space whose clopen sets reproduce the algebra; this is Stone duality, the first instance in the corpus of the algebra–topology dictionary that Gelfand duality completes. Even there analysis is absent: the Stone space is totally disconnected, so the only continuous functions that matter are locally constant, and no derivative or integral arises. The Boolean system supports an algebra, a topology, and no analysis.
 
 ## Summary
 
@@ -270,7 +270,7 @@ A Boolean algebra is a bounded distributive lattice in which every element has a
 
 The Boolean functions on $n$ variables form a Boolean algebra of $2^{2^n}$ elements, which is simultaneously the free Boolean algebra on $n$ generators and the power set of $\mathbf{2}^n$. Every such function has a unique algebraic normal form as an $\mathbb{F}_2$-combination of the $2^n$ reduced monomials, and dually a disjunctive normal form as a join of minterms; the two are exchanged by the identity $x \vee y = x \oplus y \oplus xy$. The Lindenbaum–Tarski construction turns any propositional theory into a Boolean algebra, and the homomorphisms of that algebra into $\mathbf{2}$ are exactly the valuations, so the completeness theorem of propositional logic is the statement that $\mathbf{2}$ generates the variety of Boolean algebras. Products and filter-quotients of Boolean algebras are Boolean algebras, the product being the categorical product.
 
-The Boolean system supports an algebra and no analysis. Its free algebras are finite, it carries no distance of its own, and the enrichment it admits is the topological one of Stone duality, in which the prime ideals form a compact totally disconnected space. That topology, and with it the representation theorem, is the subject of *Boolean Rings and Stone Duality*.
+The Boolean system supports an algebra and no analysis. Its free algebras are finite, it carries no distance of its own, and the enrichment it admits is the topological one of Stone duality, in which the prime ideals form a compact totally disconnected space. That topology, and with it the representation theorem, is not covered here.
 
 ## Summary of Notation
 
@@ -294,6 +294,10 @@ The Boolean system supports an algebra and no analysis. Its free algebras are fi
 | $B_1 \times B_2$ | Product of Boolean algebras, componentwise |
 | $B/F$ | Quotient by a filter $F$ |
 | $M_3$, $N_5$ | The forbidden sublattices of a non-distributive lattice |
+
+
+
+
 
 ## Further Reading
 

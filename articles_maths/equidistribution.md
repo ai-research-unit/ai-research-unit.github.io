@@ -11,7 +11,7 @@ This article develops the notion and its principal theorems: the definition, Wey
 
 - The **homogeneous flows** — the geodesic and horocycle flows, the nilmanifolds, the ergodic and mixing theorems — are *Homogeneous Dynamics*, and the **classification** of unipotent orbit closures and invariant measures is *Ratner's Theorems*; this article uses both and concentrates on the *distributions* of sequences and orbits and on the quantitative estimates.
 - The **harmonic analysis** used in the criteria is the first articles of the category: the dual group $G^\vee$ and the characters of *Harmonic Analysis on Groups*, the matrix coefficients and the orthogonality of *Analysis on Compact Groups*. The **ergodic theory** is *Ergodic Theory of Group Actions*.
-- The **specific systems** — the distribution of the fractional parts of a particular algebraic number, the equidistribution of the primes, and the equidistribution on a number system — belong to Part IV and to *Analytic Number Theory*, where the arithmetic functions are developed; this article states the general theorems and defers the applications. No physics is invoked.
+- The **specific systems** — the distribution of the fractional parts of a particular algebraic number, the equidistribution of the primes, and the equidistribution on a number system — belong to Part IV, where the arithmetic functions are developed; this article states the general theorems and defers the applications. No physics is invoked.
 
 Throughout, $X$ is a compact metric space with a Borel probability measure $\mu$, and a sequence $(x_n)_{n\geq1}$ in $X$ is **equidistributed** (or **uniformly distributed**) with respect to $\mu$ if
 
@@ -131,7 +131,7 @@ $$
 
 by a theorem of Ostrowski, so the discrepancy is small exactly when the partial quotients are small on average. It is $O((\log N)/N)$ for bounded partial quotients, the golden ratio, whose partial quotients are all $1$, attains this order up to a constant, and $N D_N(\alpha)$ is unbounded as $N \to \infty$ for every irrational $\alpha$.
 
-The theorem is the quantitative theory of the linear sequence, and it is the reason the continued fraction expansion appears throughout equidistribution: the Diophantine properties of $\alpha$ determine the rate, and the theory of continued fractions is the subject of *Diophantine Approximation and Continued Fractions*, where the expansion is developed.
+The theorem is the quantitative theory of the linear sequence, and it is the reason the continued fraction expansion appears throughout equidistribution: the Diophantine properties of $\alpha$ determine the rate, and the theory of continued fractions is the subject, where the expansion is developed.
 
 ## Equidistribution of Orbits
 
@@ -185,7 +185,7 @@ and the convergence is uniform in $x \in X$. Conversely, if the averages converg
 
 ### The Topological Reading
 
-The relevance of unique ergodicity to equidistribution is that it removes the null set from the ergodic theorem. For a measure-preserving transformation the pointwise ergodic theorem holds only almost surely; for a uniquely ergodic continuous map it holds for every point. The mechanism is the continuity of the map, which makes the invariant measures a compact convex set and forces the empirical measures to converge to the only extreme point. The topological dynamics of continuous maps — minimality, recurrence, the structure of the invariant measures — is the subject of *Topological Dynamics*, and this article uses only the equidistribution consequence.
+The relevance of unique ergodicity to equidistribution is that it removes the null set from the ergodic theorem. For a measure-preserving transformation the pointwise ergodic theorem holds only almost surely; for a uniquely ergodic continuous map it holds for every point. The mechanism is the continuity of the map, which makes the invariant measures a compact convex set and forces the empirical measures to converge to the only extreme point. The topological dynamics of continuous maps — minimality, recurrence, the structure of the invariant measures — is not covered here, and this article uses only the equidistribution consequence.
 
 ## Almost Periodic Functions and the Mean
 
@@ -247,6 +247,12 @@ The discrepancy measures the rate, and the Erdős–Turán inequality bounds it 
 | minimal | every orbit is dense |
 | almost periodic, $M(f)$ | Bohr almost periodicity and the mean |
 | $b\mathbb{R}$ | Bohr compactification of the discrete group $\mathbb{R}$ |
+
+
+
+
+
+
 
 ## Further Reading
 

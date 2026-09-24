@@ -5,7 +5,7 @@
 
 This article is the second half of the algebra slot of the octonion system: the norm form, its multiplicative property, the invariance of the associated inner product, and the invertibility theory that the norm governs. The article takes the multiplication, the conjugation and the identities of *Octonion Algebra* as established and does not repeat them; it develops the single quadratic form that the algebra carries and the consequences of its behaviour under multiplication.
 
-The article is the octonion member of the pair of algebra slots that Part IV traverses one number system at a time, and it follows the model of the norm and invertibility theory of the quaternions in *Quaternion Algebra* and of the general theory of *Division Algebras*. The composition algebras over a field, the notion of the norm form of an algebra and the invariance of a quadratic form under multiplication are treated in the Part I companion *Quadratic Forms over Algebras and Norm Forms*; the present article is the octonion case and is not the general theory. The unit sphere constructed here is used in *Octonion Geometry*, the multiplication operators in *Octonion Representations*, and the eight-square identity is used in *Octonion Analysis*.
+The article is the octonion member of the pair of algebra slots that Part IV traverses one number system at a time, and it follows the model of the norm and invertibility theory of the quaternions in *Quaternion Algebra* and of the general theory of *Division Algebras*. The composition algebras over a field, the notion of the norm form of an algebra and the invariance of a quadratic form under multiplication are treated in the Part I companion *Quadratic Forms over Algebras and Norm Forms*; the present article is the octonion case and is not the general theory. The unit sphere constructed here is used, the multiplication operators, and the eight-square identity is used.
 
 **Conventions.** The octonions are $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with basis $e_0,\dots,e_7$, the Fano multiplication rule, and the conjugation $\bar x$ of *Octonion Algebra*; the vector part is written $\operatorname{Vect}(x)$ and the imaginary subspace $\operatorname{Im}\mathbb{O}$. The **norm** of $x = \sum_{k=0}^{7}x_ke_k$ is the real number
 
@@ -101,7 +101,7 @@ $$
 L_xL_y = L_{xy}\quad\text{for all }x,y \iff \mathbb{O}\text{ is associative},
 $$
 
-so the map $L$ is a loop homomorphism and not a group homomorphism; this is the representation-theoretic face of non-associativity and is treated in *Octonion Representations*.
+so the map $L$ is a loop homomorphism and not a group homomorphism; this is the representation-theoretic face of non-associativity and is treated.
 
 ## Invertibility
 
@@ -232,6 +232,8 @@ Every non-zero octonion is invertible, with $x^{-1} = \bar x/\lvert x\rvert^2$, 
 | $e^x = \sum_nx^n/n!$ | Octonion exponential |
 | $\mathrm{CD}(A) = A\oplus A$ | Cayley–Dickson double; $\mathrm{CD}(\mathbb{O})$ the sedenions |
 | $SO(8)$ | Contains $L_u$ and $R_u$ for unit $u$ |
+
+
 
 ## Further Reading
 

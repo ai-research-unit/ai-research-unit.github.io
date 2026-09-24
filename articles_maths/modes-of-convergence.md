@@ -5,9 +5,9 @@
 
 A limit in analysis is only as precise as the notion of convergence that carries it, and on a space of functions there is not one such notion but several. A sequence of functions can converge at every point, or uniformly, or off a null set, or in a mean; these are different conditions, ordered by implication in a definite way, and every theorem of analysis is stated with respect to one of them. This article fixes the vocabulary. It names the modes of convergence that the whole of Part III uses, defines each of them, relates them by the implications that hold and by the counterexamples that show the remaining implications false, and states the theorems that govern the interchange of a limit with an integral, a derivative and an infinite sum.
 
-The article is a contract as much as a piece of mathematics. The names **pointwise**, **uniform**, **locally uniform**, **almost everywhere**, **almost uniform**, **in measure**, **in $L^p$**, **weak** and **weak-$\ast$** are fixed here, with the notation collected in the table at the end, and the later articles of the Part use them in exactly this sense. Where two modes are commonly given the same name — convergence in measure is called convergence in probability on a space of total mass one, and weak convergence of measures is called weak-$\ast$ convergence of the corresponding functionals — the distinction is recorded and the name used by this corpus is the first of the two.
+The article is a contract as much as a piece of mathematics. The names **pointwise**, **uniform**, **locally uniform**, **almost everywhere**, **almost uniform**, **in measure**, **in $L^p$**, **weak** and **weak-$\ast$** are fixed here, with the notation collected in the table at the end, and the other articles of this category use them in exactly this sense. Where two modes are commonly given the same name — convergence in measure is called convergence in probability on a space of total mass one, and weak convergence of measures is called weak-$\ast$ convergence of the corresponding functionals — the distinction is recorded and the name used by this corpus is the first of the two.
 
-The prerequisites are the measure theory of *Measure Theory and Integration* — measurable functions, the integral, the convergence theorems, the $L^p$ spaces, and the notions of almost everywhere and of the product measure — together with the topological background of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Nets, Filters and Convergence*, and the functional-analytic background of *Normed and Banach Spaces*, *Locally Convex Spaces* and *Duality Theory*. Set-theoretic and algebraic vocabulary is used in the sense of Part I. The article deliberately contains no arithmetic: the modes are introduced over a general measure space and a general normed space, and their arithmetic instances — the convergence of Dirichlet series, of $p$-adic sequences, of modular $q$-expansions — belong to the articles of this Part that develop those subjects. The theory of convergence in probability and almost sure convergence belongs to *Measure-Theoretic Probability*, later in this Part and written in parallel. No physics is invoked.
+The prerequisites are the measure theory of *Measure Theory and Integration* — measurable functions, the integral, the convergence theorems, the $L^p$ spaces, and the notions of almost everywhere and of the product measure — together with the topological background of *Metric, Uniform and Complete Spaces*, *Topological Spaces* and *Nets, Filters and Convergence*, and the functional-analytic background of *Normed and Banach Spaces*, *Locally Convex Spaces* and *Duality Theory*. Set-theoretic and algebraic vocabulary is used in the sense of Part I. The article deliberately contains no arithmetic: the modes are introduced over a general measure space and a general normed space, and their arithmetic instances — the convergence of Dirichlet series, of $p$-adic sequences, of modular $q$-expansions — belong to the articles of this Part that develop those subjects. The theory of convergence in probability and almost sure convergence belongs. No physics is invoked.
 
 ## Convergence in a Topological and a Uniform Space
 
@@ -225,7 +225,7 @@ Let $X$ be a normed space over $\mathbb{K}$ with dual $X'$, the Banach space of 
 
 **Theorem (Banach–Alaoglu).** The closed unit ball of $X'$ is compact in the weak-$\ast$ topology. If $X$ is separable, the weak-$\ast$ topology on the ball is metrisable, so the ball is sequentially compact.
 
-Weak-$\ast$ convergence is weaker than weak convergence on $X'$; the two coincide when $X$ is reflexive. The sequence $e_n$ in $\ell^1 = (c_0)'$ satisfies $e_n(x) = x_n \to 0$ for every $x \in c_0$, so $e_n \xrightarrow{w^*} 0$, while $e_n$ has no weak limit in $\ell^1$: the functional $\varphi(y) = \sum_n y_n$ in $(\ell^1)' = \ell^\infty$ has $\varphi(e_n) = 1$ for every $n$, so the only possible weak limit, forced to be $0$ by testing against the coordinate functionals, is not one. Banach–Alaoglu is the compactness theorem that produces minimisers in the variational arguments of *Nonsmooth and Variational Analysis* and *Convex Analysis*, later in this Part, and it is the source of the compactness in the duality theory of *Banach and Hilbert Spaces*.
+Weak-$\ast$ convergence is weaker than weak convergence on $X'$; the two coincide when $X$ is reflexive. The sequence $e_n$ in $\ell^1 = (c_0)'$ satisfies $e_n(x) = x_n \to 0$ for every $x \in c_0$, so $e_n \xrightarrow{w^*} 0$, while $e_n$ has no weak limit in $\ell^1$: the functional $\varphi(y) = \sum_n y_n$ in $(\ell^1)' = \ell^\infty$ has $\varphi(e_n) = 1$ for every $n$, so the only possible weak limit, forced to be $0$ by testing against the coordinate functionals, is not one. Banach–Alaoglu is the compactness theorem that produces minimisers in the variational arguments , and it is the source of the compactness in the duality theory.
 
 ### Convergence of Measures
 
@@ -237,7 +237,7 @@ Let $X$ be a locally compact Hausdorff space and let $M(X)$ be the space of fini
 
 **Example (approximation of the Dirac measure).** On $\mathbb{R}$ let $\mu_n$ be the measure with density $n\,\mathbf{1}_{[0,1/n]}$ with respect to Lebesgue measure. Then $\int \varphi \, d\mu_n \to \varphi(0)$ for every $\varphi \in C_c(\mathbb{R})$, so $\mu_n$ converges vaguely, and weakly, to the Dirac measure $\delta_0$. The sequence of densities converges to $0$ a.e.; the convergence of the measures is a different statement from the a.e. convergence of the densities, and the distinction is the one between the mode of the previous sections and the mode of this one.
 
-These definitions are the ones used for the convergence of measures in *Potential Theory* and in *Geometric Measure Theory*, later in this Part, and for the convergence of the invariant measures in the ergodic theory of the later articles of the Part.
+These definitions are the ones used for the convergence of measures, and for the convergence of the invariant measures in the ergodic theory of the Part.
 
 ## Interchange of Limits
 
@@ -267,7 +267,7 @@ $$
 
 **Proof sketch.** For $x \in (a,b)$ the mean value theorem gives $\|f_m(x) - f_n(x) - (f_m(x_0) - f_n(x_0))\| \leq \|f_m' - f_n'\|_\infty \, |x - x_0|$; the uniform Cauchy hypothesis for the derivatives and the convergence at $x_0$ therefore imply the uniform Cauchy condition for the $f_n$, so there is a uniform limit $f$. Passing to the limit in the difference quotient, the same estimate shows that $f$ is differentiable with derivative $g$. $\square$
 
-The theorem uses the mean value theorem and hence the order of $\mathbb{R}$; it has no general form in a non-Archimedean field, where the mean value theorem fails, and the appropriate substitute in that setting is discussed in *Non-Archimedean Analysis*. Pointwise convergence of the derivatives does not suffice: the functions $f_n(x) = x^n/n$ on $[0,1]$ converge uniformly to $0$, their derivatives $x^{n-1}$ converge pointwise to $0$ on $[0,1)$ and to $1$ at $1$, and the limit of the derivatives is not the derivative of the limit at $1$.
+The theorem uses the mean value theorem and hence the order of $\mathbb{R}$; it has no general form in a non-Archimedean field, where the mean value theorem fails, and the appropriate substitute in that setting is discussed. Pointwise convergence of the derivatives does not suffice: the functions $f_n(x) = x^n/n$ on $[0,1]$ converge uniformly to $0$, their derivatives $x^{n-1}$ converge pointwise to $0$ on $[0,1)$ and to $1$ at $1$, and the limit of the derivatives is not the derivative of the limit at $1$.
 
 ### Limit and Infinite Sum
 
@@ -342,6 +342,14 @@ Finally, each mode is the hypothesis of an interchange theorem: the monotone, Fa
 | $M(X)$, $C_0(X)$, $C_c(X)$ | Finite Radon measures, functions vanishing at infinity, compact support |
 | $\mathbf{1}_A$ | Indicator of a set |
 | $L^p(\mu)$ | Lebesgue space |
+
+
+
+
+
+
+
+
 
 ## Further Reading
 

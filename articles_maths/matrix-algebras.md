@@ -182,7 +182,7 @@ $$
 
 **Corollary (derivations).** Every $k$-derivation of $M_n(k)$ is inner, $\delta(A) = [H, A]$ for some $H \in M_n(k)$.
 
-This is the finite-dimensional case of the innerness theorem for von Neumann algebras in *Operator Algebras*, and it is the worked case promised in *Automorphisms and Derivations of Algebras*: for a matrix algebra the automorphism group is $\mathrm{PGL}_n(k)$, so the outer automorphism group $\operatorname{Out}_k(M_n(k)) = \operatorname{Aut}_k(M_n(k))/\operatorname{Inn}_k(M_n(k))$ is trivial, and the space of outer derivations is zero.
+This is the finite-dimensional case of the innerness theorem for von Neumann algebr, and it is the worked case promised in *Automorphisms and Derivations of Algebras*: for a matrix algebra the automorphism group is $\mathrm{PGL}_n(k)$, so the outer automorphism group $\operatorname{Out}_k(M_n(k)) = \operatorname{Aut}_k(M_n(k))/\operatorname{Inn}_k(M_n(k))$ is trivial, and the space of outer derivations is zero.
 
 ## Summary
 
@@ -208,6 +208,8 @@ The matrix algebra $M_n(R)$ over a commutative ring $R$ has $R$-basis the matrix
 | $\langle A,B\rangle = \operatorname{Tr}(AB)$ | Trace form |
 | $\operatorname{Aut}_k(M_n(k)) \cong \mathrm{PGL}_n(k)$ | Automorphisms, all of them inner; $\operatorname{Out}_k(M_n(k)) = 1$ |
 | $\otimes_k$ | Tensor product of algebras |
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A **bilinear form** on a module is a rule that assigns to two vectors a scalar, linearly in each vector separately. This article develops the theory of such forms over a commutative ring: the basic definition, the matrix that represents a form in a basis, the radical and non-degeneracy, orthogonal direct sums, and the alternating case. It fixes the vocabulary used by the rest of the category.
 
-The treatment is purely mathematical, and the default base is a **commutative ring** $R$ with identity $1 \neq 0$. Modules over a ring need not be free, so a form need not have a matrix; when it does, invertibility of the matrix has to be read in the ring-theoretic sense. Two hypotheses recur and are flagged wherever they are used: the ring may be required to be a field, and the element $2$ may be required to be invertible. We assume familiarity with modules and linear maps as in *Modules*, and with the tensor and exterior constructions as in *Algebras: A General Introduction*. Quadratic forms, and the passage between a quadratic form and the symmetric bilinear form that polarises it, are the subject of the companion article *Quadratic Forms and Polarisation*; a bilinear form here is the datum, not yet a quadratic form.
+The treatment is purely mathematical, and the default base is a **commutative ring** $R$ with identity $1 \neq 0$. Modules over a ring need not be free, so a form need not have a matrix; when it does, invertibility of the matrix has to be read in the ring-theoretic sense. Two hypotheses recur and are flagged wherever they are used: the ring may be required to be a field, and the element $2$ may be required to be invertible. We assume familiarity with modules and linear maps as in *Modules*, and with the tensor and exterior constructions as in *Algebras: A General Introduction*. Quadratic forms, and the passage between a quadratic form and the symmetric bilinear form that polarises it, are not covered here; a bilinear form here is the datum, not yet a quadratic form.
 
 ## Bilinear Forms
 
@@ -202,7 +202,7 @@ and the following are equivalent: (i) $V = W \perp W^\perp$; (ii) $W \cap W^\per
 
 **Proof.** The map $V \to W^*$, $v \mapsto B(v, -)|_W$, has kernel $W^\perp$, and it is surjective: a functional on $W$ extends to a functional on $V$, and non-degeneracy of $B$ realises that extension as $B(v, -)$. Hence $\dim W^\perp = \dim V - \dim W$. The same formula applied to $W^\perp$ gives $\dim (W^\perp)^\perp = \dim W$, and since $W \subseteq (W^\perp)^\perp$ always, the inclusion is an equality. A vector of $W \cap W^\perp$ is orthogonal to all of $W$ and to all of $W^\perp$, hence to all of $V$, so $W \cap W^\perp = 0$ because $B$ is non-degenerate; consequently $W + W^\perp = V$ by the dimension formula. The three conditions are now equivalent: the radical of the restriction of $B$ to $W$ is $W \cap W^\perp$, so (ii) and (iii) hold or fail together, and they hold exactly when $W + W^\perp = V$, which is (i). $\square$
 
-**Remark.** Over a ring, the proof fails at the step that extends a functional from $W$ to $V$: the extension need not be of the form $B(v, -)$, and the dimension formula can fail. This is the source of the additional hypotheses in the ring version of the extension theorem in *Witt's Theorems* and in the discussion of forms with values in an algebra in *Quadratic Forms over Algebras and Norm Forms*.
+**Remark.** Over a ring, the proof fails at the step that extends a functional from $W$ to $V$: the extension need not be of the form $B(v, -)$, and the dimension formula can fail. This is the source of the additional hypotheses in the ring version of the extension theorem and in the discussion of forms with values in an algebra.
 
 ## Alternating Forms
 
@@ -230,7 +230,7 @@ $$
 B(e_i, e_j) = 0, \qquad B(f_i, f_j) = 0, \qquad B(e_i, f_j) = \delta_{ij}.
 $$
 
-In the ordering $e_1, f_1, \ldots, e_m, f_m$ the Gram matrix is the block sum of $m$ copies of $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$; in the ordering $e_1, \ldots, e_m, f_1, \ldots, f_m$, which is the one used in *The Unitary and Symplectic Groups*, it is the block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$ with $I_m$ the identity matrix of size $m$.
+In the ordering $e_1, f_1, \ldots, e_m, f_m$ the Gram matrix is the block sum of $m$ copies of $\begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}$; in the ordering $e_1, \ldots, e_m, f_1, \ldots, f_m$, which is the one used, it is the block matrix $\begin{pmatrix} 0 & I_m \\ -I_m & 0 \end{pmatrix}$ with $I_m$ the identity matrix of size $m$.
 
 **Proof sketch.** If $B \neq 0$ there are $u, v$ with $c = B(u, v) \neq 0$, and $u, v$ are independent because $B$ is alternating; replacing $v$ by $v/c$, which is legal over a field, gives $B(e_1, f_1) = 1$ for $e_1 = u$ and $f_1 = v/c$. The plane $H_1 = \operatorname{span}\{e_1, f_1\}$ is non-degenerate, so $V = H_1 \perp H_1^\perp$ by the restriction proposition, and $H_1^\perp$ carries a non-degenerate alternating form of dimension $\dim V - 2$; induction on $\dim V$ finishes. $\square$
 
@@ -242,7 +242,7 @@ $$
 B\bigl((x_1, y_1), (x_2, y_2)\bigr) = x_1 y_2 - y_1 x_2, \qquad G = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
 $$
 
-is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory of *The Unitary and Symplectic Groups*. The name **hyperbolic plane** is used in this category for the quadratic space of *Witt's Theorems*, whose polar form in a basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ of *Quadratic Forms and Polarisation* in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.
+is alternating and non-degenerate, and the vectors $u = (1, 0)$ and $v = (0, 1)$ satisfy $B(u, v) = 1$. It is the two-dimensional case of the normal form and the elementary block of the symplectic theory. The name **hyperbolic plane** is used in this category for the quadratic space, whose polar form in a basis $e, f$ with $q(e) = q(f) = 0$ and $B(e, f) = 1$ is the symmetric matrix $\begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}$; the two-dimensional alternating space above is a different object, and the symbol $H$ denotes the quadratic one. The same symmetric matrix, with $2$ invertible, is the symmetric form $\langle 1, -1\rangle$ in a suitable basis, and it is not alternating, by the proposition above relating alternating and skew-symmetric forms.
 
 ## Isometries
 
@@ -268,7 +268,7 @@ $$
 
 so $TST^{-1}$ is an isometry of $B'$; the assignment is a homomorphism with inverse $R \mapsto T^{-1}RT$. $\square$
 
-The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed in *Isometries and Orthogonal Transformations* and *The Unitary and Symplectic Groups*.
+The group is written $\operatorname{O}(M, B)$ when $B$ is symmetric, and $\operatorname{Sp}(M, B)$ when $B$ is alternating; the notation and the structure theory of these groups are developed .
 
 ### Congruence and the Discriminant
 
@@ -286,7 +286,7 @@ the image of $\det G$ in the group of square classes.
 
 **Proof.** Immediate from $\det(P^T G P) = (\det P)^2 \det G$ and from scaling $G$ by $c$. $\square$
 
-The discriminant is the first congruence invariant of a non-degenerate symmetric form. It is not a complete invariant: over $\mathbb{R}$ the matrices $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(-1, -1)$ have the same discriminant $1$ but represent forms of opposite signature, treated in *Quadratic Forms and Polarisation*.
+The discriminant is the first congruence invariant of a non-degenerate symmetric form. It is not a complete invariant: over $\mathbb{R}$ the matrices $\operatorname{diag}(1, 1)$ and $\operatorname{diag}(-1, -1)$ have the same discriminant $1$ but represent forms of opposite signature, treated.
 
 ## Summary
 
@@ -296,7 +296,7 @@ On a free module of finite rank a form is represented by its **Gram matrix** $G_
 
 The **radical** $\operatorname{rad}(B) = \{u : B(u, v) = 0 \ \forall v\}$ is the kernel of the map $M \to M^*$, $u \mapsto B(u, -)$. The form is **non-degenerate** when this map is an isomorphism; over a free module of finite rank this means $\det G$ is a unit of $R$. Over a field in finite dimension the conditions collapse: non-degeneracy, vanishing of the radical, invertibility of the Gram matrix, and $\operatorname{rank}(B) = \dim M$ are equivalent, and $\dim \operatorname{rad}(B) = \dim M - \operatorname{rank}(B)$. Over a general ring and in infinite dimension they do not: a form can have zero radical and still be degenerate.
 
-The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a **symplectic basis** $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the **symplectic plane**, which is not the quadratic hyperbolic plane of *Witt's Theorems*. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The **discriminant** $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.
+The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degenerate exactly when both summands are, and its Gram matrix is block diagonal. A non-degenerate alternating form has even rank, and over a field it has a **symplectic basis** $e_1, \ldots, e_m, f_1, \ldots, f_m$ with $B(e_i, f_j) = \delta_{ij}$; the case of rank two is the **symplectic plane**, which is not the quadratic hyperbolic plane. Isometries are the linear isomorphisms preserving $B$; they form the group $\operatorname{O}(M, B)$ for symmetric $B$ and $\operatorname{Sp}(M, B)$ for alternating $B$. The **discriminant** $\Delta(B) = \det G \in F^\times/(F^\times)^2$ is a congruence invariant of a non-degenerate symmetric form over a field.
 
 ## Summary of Notation
 
@@ -321,6 +321,10 @@ The **orthogonal direct sum** $B_1 \perp B_2$ on $M_1 \oplus M_2$ is non-degener
 | $\operatorname{Sp}(M, B)$ | Symplectic group of an alternating form |
 | $\delta_{ij}$ | Kronecker delta |
 | $\Delta(B)$ | Discriminant $\det G \in F^\times/(F^\times)^2$ |
+
+
+
+
 
 ## Further Reading
 

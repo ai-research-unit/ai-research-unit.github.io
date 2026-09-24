@@ -349,7 +349,7 @@ The notion of a division algebra requires $R$ to be at least an integral domain,
 
 **Constructions on algebras** include direct sums, tensor products, quotients, and base change.
 
-The next article, *Algebras: Categorization*, gives a classification organized by ring.
+The classification of these algebras is organized by ring.
 
 ---
 

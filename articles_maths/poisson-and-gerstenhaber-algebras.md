@@ -161,7 +161,7 @@ $$
 
 and the deformation is a **quantisation** of a Poisson structure when this bracket is a Poisson bracket on $A$.
 
-**Theorem (Gerstenhaber, standard).** Let $A$ be an associative $k$-algebra and let $\mu_1$ be the first-order term of a formal deformation. Then the Hochschild differential applied to $\mu_1$ vanishes — the first-order associativity of the deformed product is exactly the condition that $\mu_1$ be a Hochschild two-cocycle — and if the deformation is a quantisation, its semi-classical bracket $\{a,b\} = \mu_1(a,b)-\mu_1(b,a)$ is a Poisson bracket; conversely, if a Poisson bracket $\{\,,\,\}$ on a commutative $A$ is the semi-classical bracket of a deformation, the deformation is called a **deformation quantisation** of the bracket, and the obstruction to the existence of the deformation lies in the third Hochschild cohomology, in the sense of the deformation theory of *Change of Rings* and of the article *Deformation Theory*, written in parallel in this corpus.
+**Theorem (Gerstenhaber, standard).** Let $A$ be an associative $k$-algebra and let $\mu_1$ be the first-order term of a formal deformation. Then the Hochschild differential applied to $\mu_1$ vanishes — the first-order associativity of the deformed product is exactly the condition that $\mu_1$ be a Hochschild two-cocycle — and if the deformation is a quantisation, its semi-classical bracket $\{a,b\} = \mu_1(a,b)-\mu_1(b,a)$ is a Poisson bracket; conversely, if a Poisson bracket $\{\,\,\}$ on a commutative $A$ is the semi-classical bracket of a deformation, the deformation is called a **deformation quantisation** of the bracket, and the obstruction to the existence of the deformation lies in the third Hochschild cohomology, in the sense of the deformation theory and of the article *Deformation Theory* in this corpus.
 
 *Proof (outline).* Associativity of $*$ to first order in $t$ reads $a\mu_1(b,c)-\mu_1(ab,c)+\mu_1(a,bc)-\mu_1(a,b)c = 0$, which is the Hochschild cocycle condition for $\mu_1$; taking the alternating part of the identity and using the cocycle condition, the semi-classical bracket is seen to satisfy the Leibniz rule and the Jacobi identity, the latter being a restatement of the degree-three part of associativity: the associator of the deformed product is the Gerstenhaber bracket of $\mu_1$ with itself, and its vanishing to second order is the condition that the class of $\mu_1$ has square zero and extends. The obstructions to the extension to higher order are the successive products $[\mu_1,\mu_n]_G$, whose classes lie in $HH^3$, and the theory is the standard deformation theory of Gerstenhaber. $\square$
 
@@ -220,6 +220,8 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $\{a,b\} = \mu_1(a,b)-\mu_1(b,a)$ | semi-classical bracket of a deformation |
 | $\Delta$, $\Delta^2 = 0$ | Batalin–Vilkovisky operator |
 | $[a_\lambda b]$ | $\lambda$-bracket of a Poisson vertex algebra |
+
+
 
 ## Further Reading
 

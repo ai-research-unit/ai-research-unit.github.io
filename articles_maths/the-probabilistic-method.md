@@ -11,8 +11,8 @@ The place of the article is fixed by four boundaries.
 
 - The **probability** — the probability space, the expectation, the moments, the inequalities of Markov and Chebyshev, the independence, the laws of large numbers, the martingales and the entropy — is the block *Measure-Theoretic Probability* through *Ergodic Theory*, and this article uses those results throughout: the Markov and Chebyshev inequalities are the first-moment and second-moment engines, the Azuma inequality is the martingale concentration inequality, and the entropy method of the last sections uses the Kolmogorov–Sinai entropy of *Ergodic Theory* and the Shannon entropy of *Measure-Theoretic Probability*.
 - The **combinatorics, the graph theory and the extremal problems** — the Ramsey numbers, the chromatic number, the independence number, the set systems, the hypergraphs, the discrepancy of set systems and the counting arguments — are the subject of the Part I articles on combinatorics and of *Combinatorial Group Theory*, and the finite counting under the action of a group — the orbit-counting lemma, the cycle index, the symmetric group, the generation of a finite group by random elements — is *Combinatorial Group Theory* and the group-theory articles of Part I. The probabilistic statements about the generation of a group and about the Cayley graphs are proved by the method and quoted from there.
-- The **number-theoretic** uses of the method — the random sieve, the distribution of arithmetic functions, the random multiplicative functions and the limiting distributions — are *Probabilistic Number Theory*, and the **arithmetic articles** of Part I, in particular *Modular Arithmetic and the Ring of Residues* and *Analytic Number Theory*, supply the objects. This article does not develop number theory.
-- The **random walks on groups** and the random walks whose trajectories are the objects of the method are *Random Walks on Groups*, and the **applications of the method to the analysis of a fixed number system** are Part IV's. No physics is invoked.
+- The **number-theoretic** uses of the method — the random sieve, the distribution of arithmetic functions, the random multiplicative functions and the limiting distributions — areand the **arithmetic articles** of Part I, in particularand *Analytic Number Theory*, supply the objects. This article does not develop number theory.
+- The **random walks on groups** and the random walks whose trajectories are the objects of the method areand the **applications of the method to the analysis of a fixed number system** are Part IV's. No physics is invoked.
 
 Throughout, $(\Omega,\mathcal{F},\mathbb{P})$ is a probability space as in *Measure-Theoretic Probability*, $\mathbb{E}$ is the expectation, $\mathbf{1}_A$ is the indicator of an event, $\ln$ and $\log$ are natural logarithms, and $X, Y$ are random variables with finite moments when their moments are used. For a finite set $\Omega$ with the uniform probability and a subset $A \subseteq \Omega$ one has $\mathbb{P}(A) = |A|/|\Omega|$, and the **first moment method** refers to the inequality of Markov, the **second moment method** to the inequality of Chebyshev and its refinements, and $O(\cdot)$, $o(\cdot)$ to the usual asymptotic notation.
 
@@ -192,7 +192,7 @@ The probabilistic method proves existence by probability: a random object is cho
 
 The Lovász local lemma replaces the global union bound by a local condition: if every event has probability at most $p$ and depends on at most $d$ others, then $ep(d+1)\leq1$ implies that no event occurs with positive probability, and the general form replaces the constants by a system of inequalities. The alteration method produces a random object, repairs its defects by deletion, and shows that the repair is cheap relative to the object; it is the technique behind Erdős's construction of graphs of large girth and large chromatic number and behind the sharpened Ramsey lower bounds. The entropy method bounds the logarithm of the number of configurations by the sum of the local entropies, and the container method packages the entropy method into the statement that the independent sets of a sparse hypergraph are covered by a small family of sparse containers; both are used in the recent counting results of extremal combinatorics and of *Combinatorial Group Theory*.
 
-The method is completed by the concentration inequalities — Chernoff, Hoeffding, the martingale Azuma–Hoeffding inequality of *Martingales*, and the bounded-difference inequality of McDiarmid — which are proved by the exponential moment method and which convert an expectation estimate into a statement about the typical case. The number-theoretic applications of the same method are *Probabilistic Number Theory*, and the random walks on groups whose generation properties are proved probabilistically are *Random Walks on Groups*.
+The method is completed by the concentration inequalities — Chernoff, Hoeffding, the martingale Azuma–Hoeffding inequality of *Martingales*, and the bounded-difference inequality of McDiarmid — which are proved by the exponential moment method and which convert an expectation estimate into a statement about the typical case. The number-theoretic applications of the same method and the random walks on groups whose generation properties are proved probabilistically lie outside this article.
 
 ## Summary of Notation
 
@@ -212,6 +212,10 @@ The method is completed by the concentration inequalities — Chernoff, Hoeffdin
 | Chernoff, Hoeffding, Azuma, McDiarmid | concentration inequalities |
 | $G(n,p)$ | random graph with independent edges of probability $p$ |
 | Paley graph | graph on $\mathbb{F}_q$ joining square differences |
+
+
+
+
 
 ## Further Reading
 

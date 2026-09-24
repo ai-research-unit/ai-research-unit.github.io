@@ -2,11 +2,11 @@
 
 ## Introduction
 
-A valuation on a field is a homomorphism from its multiplicative group to an ordered abelian group, extended by the convention that the zero element has value infinity; it measures divisibility, and its subring of elements of nonnegative value is the **valuation ring**. When the value group embeds in the real numbers the valuation is equivalent to a non-Archimedean absolute value, and that case — the metric case, with completions and the $p$-adic fields — is the subject of *Absolute Values, Valuations and Completions*. The present article takes the general algebraic theory: value groups of arbitrary rank, the valuation rings and their ideals, the extension of a valuation to an algebraic extension, the approximation theorem for independent valuations, and the identification of the integral closure as an intersection of valuation rings.
+A valuation on a field is a homomorphism from its multiplicative group to an ordered abelian group, extended by the convention that the zero element has value infinity; it measures divisibility, and its subring of elements of nonnegative value is the **valuation ring**. When the value group embeds in the real numbers the valuation is equivalent to a non-Archimedean absolute value, and that case — the metric case, with completions and the $p$-adic fields — is the subject in Part II. The present article takes the general algebraic theory: value groups of arbitrary rank, the valuation rings and their ideals, the extension of a valuation to an algebraic extension, the approximation theorem for independent valuations, and the identification of the integral closure as an intersection of valuation rings.
 
-The second half of the article concerns **Henselian rings**, the local rings in which a factorisation of a polynomial modulo the maximal ideal lifts to a factorisation over the ring. Hensel's lemma, in the form stated for complete non-Archimedean fields in *Absolute Values, Valuations and Completions*, is the model; the general definition does not require completeness, and every local ring has a best Henselian approximation, its **henselization**. Henselian rings are the local rings in which the extension theory of valuations is unambiguous, and the property is what makes the ramification theory of an algebraic number field or of an algebraic curve work.
+The second half of the article concerns **Henselian rings**, the local rings in which a factorisation of a polynomial modulo the maximal ideal lifts to a factorisation over the ring. Hensel's lemma, in the form stated for complete non-Archimedean fields, is the model; the general definition does not require completeness, and every local ring has a best Henselian approximation, its **henselization**. Henselian rings are the local rings in which the extension theory of valuations is unambiguous, and the property is what makes the ramification theory of an algebraic number field or of an algebraic curve work.
 
-This article develops general valuations and their rings, the correspondence between prime ideals and convex subgroups, the existence of extensions of a valuation and the fundamental inequality, the approximation theorem, and the theory of Henselian local rings with their henselizations. Throughout, $K$ is a field, $v : K \to \Gamma \cup \{\infty\}$ is a valuation with value group $\Gamma$, ordered additively, and $\mathcal{O}_v$, $\mathfrak{m}_v$, $k(v)$ are its valuation ring, maximal ideal and residue field as in *Absolute Values, Valuations and Completions*. Integrality and integral closure are from *Integral Extensions and Krull Dimension*, Dedekind domains and localisation from *Dedekind Domains and Ideal Class Groups* and *Localization and the Fraction Field*, and the rank-one case, with completions and the fields $\mathbb{Q}_p$, is the subject of the companion article named above. Nothing here depends on a metric or a completion; where a complete field is used it is cited from the companion.
+This article develops general valuations and their rings, the correspondence between prime ideals and convex subgroups, the existence of extensions of a valuation and the fundamental inequality, the approximation theorem, and the theory of Henselian local rings with their henselizations. Throughout, $K$ is a field, $v : K \to \Gamma \cup \{\infty\}$ is a valuation with value group $\Gamma$, ordered additively, and $\mathcal{O}_v$, $\mathfrak{m}_v$, $k(v)$ are its valuation ring, maximal ideal and residue field. Integrality and integral closure are from *Integral Extensions and Krull Dimension*, Dedekind domains and localisation from *Dedekind Domains and Ideal Class Groups* and *Localization and the Fraction Field*, and the rank-one case, with completions and the fields $\mathbb{Q}_p$, is not developed here. Nothing in the article depends on a metric or a completion.
 
 ---
 
@@ -48,7 +48,7 @@ with the conventions $\gamma + \infty = \infty$ and $\gamma < \infty$ for all $\
 
 **Proof.** (a) From $v(1) = v(1) + v(1)$; from $v(-1) + v(-1) = v(1) = 0$ and the only solutions of $2\gamma = 0$ in an ordered group are $\gamma = 0$; and from $v(x) + v(x^{-1}) = v(1) = 0$. (b) If $v(x) < v(y)$ then $v(x) = v((x+y) - y) \geq \min\{v(x+y), v(y)\}$ forces $v(x+y) \leq v(x)$, while (V3) gives $v(x+y) \geq v(x)$. (c) Closure under addition and multiplication is (V3) and (V2); an element of value $0$ has inverse of value $0$, so it is a unit, and every element of positive value is a non-unit, so $\mathfrak{m}_v$ is exactly the set of non-units, which is then the unique maximal ideal. (d) The kernel of the restriction of the residue map to the value-zero subgroup is $\{0\}$, since $v(x) = 0$ means $x$ is a unit, and the residue field is the quotient by $\mathfrak{m}_v$. $\square$
 
-**Definition.** Two valuations $v, w$ on $K$ are **equivalent** if their valuation rings agree. For rank one this is the notion of equivalence of absolute values of *Absolute Values, Valuations and Completions*, and the correspondence there between non-Archimedean absolute values and rank-one valuations is the reason the two languages agree in that case.
+**Definition.** Two valuations $v, w$ on $K$ are **equivalent** if their valuation rings agree. For rank one this is the usual notion of equivalence of absolute values, and the correspondence between non-Archimedean absolute values and rank-one valuations is the reason the two languages agree in that case.
 
 ### Examples
 
@@ -136,7 +136,7 @@ $$
 \sum_{i=1}^{g} e(w_i/v)\, f(w_i/v) \leq n .
 $$
 
-If $v$ is Henselian, in the sense defined below, then there is exactly one extension and equality holds, $e f = n$. If moreover $L/K$ is separable, equality holds for arbitrary $v$ after replacing $K$ by its completion at $v$; the completion is available in *Absolute Values, Valuations and Completions*, and this is the one point at which that article is used.
+If $v$ is Henselian, in the sense defined below, then there is exactly one extension and equality holds, $e f = n$. If moreover $L/K$ is separable, equality holds for arbitrary $v$; this is the separable case of the fundamental equality, proved by passing to the completion and quoted here as a standard theorem of valuation theory from the literature.
 
 **Proof sketch.** Reduce to the case of a normal extension by passing to a normal closure; the extensions of $v$ are permuted transitively by the Galois group, so all the products $e f$ are equal, and it suffices to bound $[L:K]$ below by $g \cdot e f$. Choose for each $i$ a uniformiser and a residue field basis; the standard norm argument, using a residue field basis and the fact that the $\Gamma_w$-components are comparable only through $\Gamma_v$, shows that the resulting set of $e f$ elements is linearly independent over $K$, giving the inequality. $\square$
 
@@ -164,7 +164,7 @@ $$
 
 **Definition.** A local ring $(R, \mathfrak{m}, k)$ is **Henselian** if for every monic polynomial $f \in R[x]$ whose image $\bar f \in k[x]$ factors as $\bar f = \bar g \, \bar h$ with $\bar g, \bar h$ monic and coprime, there exist monic $g, h \in R[x]$ with $f = gh$ and $\bar g, \bar h$ the respective images. This is the **Henselian property**.
 
-The definition is the general form of the lifting statement proved for complete non-Archimedean fields in *Absolute Values, Valuations and Completions*; there the hypothesis of completeness supplies a metric iteration, whereas here the property is required of the ring directly.
+The definition is the general form of the lifting statement for complete non-Archimedean fields; there the hypothesis of completeness supplies a metric iteration, whereas here the property is required of the ring directly.
 
 **Theorem (equivalent conditions).** For a local ring $(R, \mathfrak{m}, k)$ the following are equivalent.
 
@@ -184,11 +184,11 @@ The definition is the general form of the lifting statement proved for complete 
 
 ### Examples and the Henselization
 
-**Example (complete fields).** A field complete with respect to a non-Archimedean absolute value is Henselian: this is exactly Hensel's lemma as proved in *Absolute Values, Valuations and Completions*, and it is the reason the fields $\mathbb{Q}_p$ are the standard Henselian fields. Completeness is sufficient but not necessary.
+**Example (complete fields).** A field complete with respect to a non-Archimedean absolute value is Henselian: this is exactly Hensel's lemma, quoted from the literature, and it is the reason the fields $\mathbb{Q}_p$ are the standard Henselian fields. Completeness is sufficient but not necessary.
 
 **Example (separably closed fields).** A separably closed field is Henselian with respect to any valuation, since the unique extension property holds trivially. Thus the class of Henselian fields is much larger than the class of complete ones.
 
-**Example (algebraically closed residue field).** If $k(v)$ is algebraically closed and $\Gamma_v$ is divisible, the valuation is Henselian; the standard examples are the fields $\mathbb{C}_p$ of *Absolute Values, Valuations and Completions*.
+**Example (algebraically closed residue field).** If $k(v)$ is algebraically closed and $\Gamma_v$ is divisible, the valuation is Henselian; the standard examples are the fields $\mathbb{C}_p$.
 
 **Example (the $p$-adics and their algebraic extensions).** The valuation of $\mathbb{Q}_p$ is Henselian and extends uniquely to $\mathbb{Q}_{p^n}$ and to the maximal unramified extension; the ramification theory of these extensions is the arithmetic content of Hensel's lemma, with $e$ and $f$ of the fundamental inequality satisfying $ef = n$.
 
@@ -200,11 +200,11 @@ The definition is the general form of the lifting statement proved for complete 
 
 **(c)** if $R$ is a field, $R^h$ is the subfield of an algebraic closure fixed by the inertia group of a chosen extension of the valuation, so that the henselization of $K$ consists of the elements whose minimal polynomial has a simple root reduction.
 
-**Proof sketch.** The filtered colimit in (b) exists, is local with residue field $k$, and is Henselian because every coprime factorisation modulo $\mathfrak{m}$ lifts through one of the finite algebras $S$ by construction; the universal property follows from the lifting property of those algebras, which is exactly what a map to a Henselian local ring can absorb. Part (c) is the description for a valued field: the inertia group fixes precisely the elements whose minimal polynomial reduces to a polynomial with a simple root, and the fixed field is Henselian by the unique extension property. The henselization sits inside the completion, $R^h \subseteq \widehat{R}$ for a valuation ring $R$, with equality exactly when $R$ is already Henselian; the completion is the metric object of *Absolute Values, Valuations and Completions*, and it is used here only for this comparison. $\square$
+**Proof sketch.** The filtered colimit in (b) exists, is local with residue field $k$, and is Henselian because every coprime factorisation modulo $\mathfrak{m}$ lifts through one of the finite algebras $S$ by construction; the universal property follows from the lifting property of those algebras, which is exactly what a map to a Henselian local ring can absorb. Part (c) is the description for a valued field: the inertia group fixes precisely the elements whose minimal polynomial reduces to a polynomial with a simple root, and the fixed field is Henselian by the unique extension property. The henselization sits inside the completion, $R^h \subseteq \widehat{R}$ for a valuation ring $R$, with equality exactly when $R$ is already Henselian; the completion is the metric object, and it is used here only for this comparison. $\square$
 
 **Corollary.** Every local ring has a Henselian closure that is the smallest Henselian local ring through which every map to a Henselian local ring factors; for a discrete valuation ring the henselization is the ring of elements of the completion whose minimal polynomial over the fraction field has a simple root reduction modulo the maximal ideal. In particular, a discrete valuation ring with separably closed residue field is Henselian.
 
-**Remark.** Completeness is a metric condition and belongs to the metric theory of *Absolute Values, Valuations and Completions*; Henselianity is an algebraic condition satisfied by many fields that are not complete. The passage from a local ring to its henselization replaces the analytic operation of passage to the completion by an algebraic one, and this substitution is what makes the ramification theory of valuations purely algebraic.
+**Remark.** Completeness is a metric condition and belongs to the metric theory of valued fields; Henselianity is an algebraic condition satisfied by many fields that are not complete. The passage from a local ring to its henselization replaces the analytic operation of passage to the completion by an algebraic one, and this substitution is what makes the ramification theory of valuations purely algebraic.
 
 ---
 
@@ -234,9 +234,11 @@ A local ring is Henselian when a coprime factorisation modulo the maximal ideal 
 | $(R, \mathfrak{m}, k)$ | Local ring with maximal ideal and residue field |
 | $R^h$ | Henselization of $R$ |
 | Henselian property | Coprime factorisation modulo $\mathfrak{m}$ lifts |
-| $\widehat{R}$ | Completion, from *Absolute Values, Valuations and Completions* |
+| $\widehat{R}$ | Completion of a valued field |
 | $\mathbb{Q}_p$, $\mathbb{Z}_p$, $\mathbb{C}_p$ | Non-Archimedean fields, cited from the companion article |
 | $\overline{R}$ | Integral closure of $R$ in its fraction field |
+
+
 
 ## Further Reading
 

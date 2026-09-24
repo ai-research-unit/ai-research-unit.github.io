@@ -5,9 +5,9 @@
 
 Model theory is the study of first-order theories through their models: the structures in which the sentences of a language are true. It asks which classes of structures a language can describe, which properties of a structure are determined by its first-order theory, and how the statements of a theory constrain the objects that satisfy it. Its two central tools are the compactness theorem, which converts the finite satisfiability of every finite part of a theory into the existence of a model, and the construction of ultraproducts, which builds a model from a family of models and an ultrafilter.
 
-The article stands seventh in the corpus, above *Formal Logic and Computability*, and uses the first-order syntax, the satisfaction relation, soundness and completeness, compactness and the Löwenheim–Skolem theorems of that article and of *Logic and Proof*. It develops the vocabulary of the subject — languages and structures, homomorphisms and embeddings, elementary equivalence, definable sets, quantifier elimination — and then applies it to three classes of examples: algebraically closed fields, real-closed fields and valued fields. The algebraic theory of those objects belongs to *Fields* and to the other articles of Part I that introduce them; here they are used only as structures for a formal language, and the results quoted are the model-theoretic theorems about them.
+The article stands seventh in the corpus, above *Formal Logic and Computability*, and uses the first-order syntax, the satisfaction relation, soundness and completeness, compactness and the Löwenheim–Skolem theorems of that article and of *Logic and Proof*. It develops the vocabulary of the subject — languages and structures, homomorphisms and embeddings, elementary equivalence, definable sets, quantifier elimination — and then applies it to three classes of examples: algebraically closed fields, real-closed fields and valued fields. The algebraic theory of those objects belongs to the other articles of Part I that introduce them; here they are used only as structures for a formal language, and the results quoted are the model-theoretic theorems about them.
 
-The article is written for its own sake and for the use the rest of the corpus makes of it. The ultraproduct construction is used in *Combinatorial Group Theory* and in the study of infinite groups; the compactness theorem underlies the existence of nonstandard models, which the corpus uses to show that certain statements are not first-order; and quantifier elimination is the standard route to the decidability of a theory. No topology and no distance appears. Where a result has a richer form once a topology is available — the Stone space of types, the topology on the space of models — the article states the order-theoretic or set-theoretic version and defers the enrichment to Part II.
+The article is written for its own sake and for the use the rest of the corpus makes of it. The ultraproduct construction is used and in the study of infinite groups; the compactness theorem underlies the existence of nonstandard models, which the corpus uses to show that certain statements are not first-order; and quantifier elimination is the standard route to the decidability of a theory. No topology and no distance appears. Where a result has a richer form once a topology is available — the Stone space of types, the topology on the space of models — the article states the order-theoretic or set-theoretic version and defers the enrichment to Part II.
 
 ## Languages and Structures
 
@@ -17,9 +17,9 @@ The article is written for its own sake and for the use the rest of the corpus m
 
 **Example (the language of order).** The signature $L_{\mathrm{ord}}$ has a single binary relation symbol $<$, no function symbols and no constants. A structure for it is a set with a binary relation; the structures in which the relation is a dense linear order without endpoints form the theory DLO, and $(\mathbb{Q}, <)$ and $(\mathbb{R}, <)$ are its two standard models.
 
-**Example (the language of rings).** The signature $L_{\mathrm{ring}}$ has two binary function symbols $+$ and $\cdot$ and two constants $0$ and $1$. A structure for it is a set with two binary operations and two distinguished elements; the **theory of fields** is the set of sentences in this language expressing the field axioms, and its models are exactly the fields. The algebraic development of that notion is in *Fields*; the model-theoretic questions about the theory are what follow here.
+**Example (the language of rings).** The signature $L_{\mathrm{ring}}$ has two binary function symbols $+$ and $\cdot$ and two constants $0$ and $1$. A structure for it is a set with two binary operations and two distinguished elements; the **theory of fields** is the set of sentences in this language expressing the field axioms, and its models are exactly the fields. The algebraic development of that notion is; the model-theoretic questions about the theory are what follow here.
 
-**Example (the language of groups).** The signature $L_{\mathrm{grp}}$ has a binary function symbol $\cdot$, a unary function symbol ${}^{-1}$ and a constant $e$. The theory of groups is the set of sentences expressing associativity, the identity law and the inverse law, and its models are the groups of *Groups*. This and the preceding example are the two running examples of the article.
+**Example (the language of groups).** The signature $L_{\mathrm{grp}}$ has a binary function symbol $\cdot$, a unary function symbol ${}^{-1}$ and a constant $e$. The theory of groups is the set of sentences expressing associativity, the identity law and the inverse law, and its models are the groups. This and the preceding example are the two running examples of the article.
 
 ### Terms, Formulas and Satisfaction
 
@@ -178,7 +178,7 @@ and the sentence $1 \neq 0$. For a prime $p$ or $p = 0$, the theory $\mathrm{ACF
 
 **Corollary.** Two algebraically closed fields are elementarily equivalent if and only if they have the same characteristic. In particular the algebraic closures of $\mathbb{Q}$, of $\mathbb{F}_p$ and of any two uncountable algebraically closed fields of the same characteristic are elementarily equivalent.
 
-The result explains why the theory of algebraically closed fields is "tame": the first-order language cannot see the transcendence degree, only the characteristic. The finer classification by transcendence degree is a theorem of algebra, stated in *Fields*.
+The result explains why the theory of algebraically closed fields is "tame": the first-order language cannot see the transcendence degree, only the characteristic. The finer classification by transcendence degree is a theorem of algebra, stated as standard.
 
 ### Real-Closed Fields
 
@@ -208,7 +208,7 @@ The set $\mathcal{O}_v = \{x \in K : v(x) \geq 0\}$ is the **valuation ring**, a
 
 **Theorem (Ax–Kochen; Ershov).** Let $(K, v)$ and $(L, w)$ be Henselian valued fields with the same residue characteristic and value group, and suppose that the residue fields are elementarily equivalent or that both are algebraically closed. Then $(K,v)$ and $(L,w)$ are elementarily equivalent; if the residue fields are elementarily equivalent and the value groups are elementarily equivalent as ordered groups, then the valued fields are elementarily equivalent.
 
-The theorem is the model-theoretic content of the classical result that a Henselian field is determined by its residue field and value group, and its proof uses quantifier elimination in a language enriched by predicates for the valuation ring and by a **cross-section** for the value group. The algebraic theory of valuations belongs to *Fields* and the ordered abelian groups to the articles on ordered structures; the theorem is quoted here as an example of the reach of quantifier elimination.
+The theorem is the model-theoretic content of the classical result that a Henselian field is determined by its residue field and value group, and its proof uses quantifier elimination in a language enriched by predicates for the valuation ring and by a **cross-section** for the value group. The algebraic theory of valuations belongs and the ordered abelian groups to the articles on ordered structures; the theorem is quoted here as an example of the reach of quantifier elimination.
 
 ## Ultraproducts
 
@@ -268,6 +268,8 @@ Quantifier elimination reduces every formula to a quantifier-free one and makes 
 | $U$ | Ultrafilter on an index set $I$ |
 | $\prod_U \mathcal{M}_i$, $\mathcal{M}^I/U$ | Ultraproduct; ultrapower |
 | $[f]$ | Equivalence class of $f$ modulo $U$ |
+
+
 
 ## Further Reading
 

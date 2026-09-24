@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The companion article *Lie Algebras* introduces Lie algebras, the Jacobi identity, and the vocabulary of solvable, nilpotent and simple algebras. This article develops the structure theory that organises that vocabulary: the radical, the nilradical, the Killing form, and the two criteria of Cartan, which decide solvability and semisimplicity from a single bilinear form. The theory culminates in the Levi decomposition, which writes every finite-dimensional Lie algebra over a field of characteristic zero as a semidirect product of a semisimple algebra by a solvable one, and in the theorem that a semisimple algebra is a direct sum of simple ideals. Together with the classification of simple algebras by root systems in the companion article *Root Systems and Classification*, this is the structure theory of Lie algebras.
+The companion article *Lie Algebras* introduces Lie algebras, the Jacobi identity, and the vocabulary of solvable, nilpotent and simple algebras. This article develops the structure theory that organises that vocabulary: the radical, the nilradical, the Killing form, and the two criteria of Cartan, which decide solvability and semisimplicity from a single bilinear form. The theory culminates in the Levi decomposition, which writes every finite-dimensional Lie algebra over a field of characteristic zero as a semidirect product of a semisimple algebra by a solvable one, and in the theorem that a semisimple algebra is a direct sum of simple ideals. Together with the classification of simple algebras by root systems, this is the structure theory of Lie algebras.
 
 The theory is carried out over a field $K$ of characteristic zero; this is the setting in which the classical results hold cleanly, and where a result needs more than that — an algebraically closed field, or the finite dimension of the algebra — this is stated explicitly. Lie algebras are written in lowercase fraktur, so $\mathfrak{g}$, $\mathfrak{h}$ are Lie algebras, $\mathfrak{i}$ is an ideal, $\mathfrak{r}$ the radical, $\mathfrak{n}$ the nilradical, and $\mathfrak{z}(\mathfrak{g})$ the centre; the field is $K$, and $R$ is reserved for the commutative-ring statements of the earlier articles. No physics is invoked.
 
-The general facts about Lie algebras used below — the definition, the Jacobi identity, ideals, quotients, homomorphisms, the centre, the derived subalgebra, and the elementary properties of solvable and nilpotent algebras — are assumed from *Lie Algebras*, and the representation-theoretic notions are developed further in the companion article *Representations of Lie Algebras*.
+The general facts about Lie algebras used below — the definition, the Jacobi identity, ideals, quotients, homomorphisms, the centre, the derived subalgebra, and the elementary properties of solvable and nilpotent algebras — are assumed from *Lie Algebras*, and the representation-theoretic notions are developed further .
 
 ## Recapitulation and the Radical
 
@@ -203,7 +203,7 @@ and each $\mathfrak{g}_i$ is simple. The ideals $\mathfrak{g}_i$ are pairwise or
 
 **Proof sketch.** One proves the vanishing of the first cohomology $H^1(\mathfrak{g}, V) = 0$ for every finite-dimensional module $V$, using the Casimir element of the representation. Given a submodule $W \subseteq V$, the short exact sequence $0 \to W \to V \to V/W \to 0$ has a splitting over the field, and the Casimir element corrects that linear splitting to a $\mathfrak{g}$-equivariant one; the corrected splitting exists because the Casimir element acts invertibly on the relevant space for a semisimple $\mathfrak{g}$. $\square$
 
-**Corollary.** Every finite-dimensional representation of a semisimple Lie algebra is a direct sum of irreducible representations, and these are classified by their highest weights, as developed in *Representations of Lie Algebras*.
+**Corollary.** Every finite-dimensional representation of a semisimple Lie algebra is a direct sum of irreducible representations, and these are classified by their highest weights, as developed.
 
 ## The Levi Decomposition
 
@@ -262,6 +262,10 @@ The adjoint map $x \mapsto \operatorname{ad}_x$ is a representation with kernel 
 | $\mathfrak{g}^{\perp}$ | Radical of $\kappa$; an ideal; nonzero iff $\mathfrak{g}$ not semisimple |
 | $\mathfrak{g} = \mathfrak{r} \rtimes \mathfrak{s}$ | Levi decomposition; $\mathfrak{s}$ a semisimple Levi factor |
 | $\mathfrak{gl}(n), \mathfrak{sl}(n), \mathfrak{so}(n)$ | General linear, special linear, orthogonal Lie algebras |
+
+
+
+
 
 ## Further Reading
 

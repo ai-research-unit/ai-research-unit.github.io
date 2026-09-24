@@ -3,7 +3,7 @@
 
 ## Introduction
 
-A Riemannian metric is a positive-definite quadratic form on each tangent space of a manifold, and the **conformal structure** it determines is the class of all metrics obtained from it by multiplication by positive smooth functions: two metrics $g$ and $g'$ are conformally equivalent when $g' = \Omega^2 g$ for a positive function $\Omega$, and a **conformal map** is a diffeomorphism whose pullback changes the metric by such a factor. Conformal geometry is the study of the invariants of a conformal class, and it begins with a linear-algebraic observation: the conformal class remembers the quadratic form only up to a positive scalar at each point, so it is the invariant of the form on which the theory of the quadratic forms of this category bears, and the conformal group — the group of conformal automorphisms of the round sphere — is a group of quadratic forms in disguise, namely a group of pseudo-orthogonal transformations of a space of two dimensions more. The purpose of the article is to develop the conformal structure, the conformal group and the conformal invariants of a form, using the Clifford algebra and the spinor formalism of this Part, and to keep the manifold theory itself to the companion articles *Riemannian Geometry* and *Smooth Manifolds and Differential Geometry*.
+A Riemannian metric is a positive-definite quadratic form on each tangent space of a manifold, and the **conformal structure** it determines is the class of all metrics obtained from it by multiplication by positive smooth functions: two metrics $g$ and $g'$ are conformally equivalent when $g' = \Omega^2 g$ for a positive function $\Omega$, and a **conformal map** is a diffeomorphism whose pullback changes the metric by such a factor. Conformal geometry is the study of the invariants of a conformal class, and it begins with a linear-algebraic observation: the conformal class remembers the quadratic form only up to a positive scalar at each point, so it is the invariant of the form on which the theory of the quadratic-form articles earlier in this Part bears, and the conformal group — the group of conformal automorphisms of the round sphere — is a group of quadratic forms in disguise, namely a group of pseudo-orthogonal transformations of a space of two dimensions more. The purpose of the article is to develop the conformal structure, the conformal group and the conformal invariants of a form, using the Clifford algebra and the spinor formalism of this Part, and to keep the manifold theory itself to the companion articles *Riemannian Geometry* and *Smooth Manifolds and Differential Geometry*, earlier in this Part.
 
 The central facts are these. The conformal group of the round sphere $S^n$ for $n \geq 3$ is the group $O(n+1,1)/\{\pm 1\}$ of the pseudo-orthogonal transformations of the form of signature $(n+1,1)$ of one dimension more, and its action on the sphere is the action of the **Möbius transformations**, the compositions of the rotations, the dilations, the translations and the inversions; by **Liouville's theorem** these are all the conformal maps of a domain of $\mathbb{R}^n$ for $n \geq 3$, and the dimension two is the exceptional case in which the conformal maps are the holomorphic maps of complex analysis. The sphere is the **conformal compactification** of $\mathbb{R}^n$, and it is realised as the projectivised null cone of the space $\mathbb{R}^{n+1,1}$; the conformal group is realised inside the Clifford algebra $\mathrm{Cl}_{n+1,1}$ as a Clifford or Pin group, and the conformal transformations themselves are realised by the two-by-two matrices over the Clifford algebra $\mathrm{Cl}_{0,n}$ of **Vahlen's theorem**. The invariants of the conformal class are carried by the **Weyl tensor** and by the **conformally invariant operators**, of which the conformal Laplacian and the Cauchy–Riemann operator in its conformal weight are the basic examples, and the twistor construction of Penrose is the reduction of the four-dimensional conformal geometry to the complex geometry of a three-dimensional complex manifold.
 
@@ -39,7 +39,7 @@ The theorem is the local conformal flatness theorem, and its proof is the transf
 $$
 \mathcal{L}_X g = \lambda\, g
 $$
-for a smooth function $\lambda$; the conformal Killing fields form a Lie algebra $\mathfrak{conf}(M,g)$ under the commutator of vector fields, the **conformal algebra** of the metric, and it is the Lie algebra of the conformal group, a Lie algebra of vector fields of the type of those of *Metric, Uniform and Complete Spaces* and of the theory of the Lie groups of Part I.
+for a smooth function $\lambda$; the conformal Killing fields form a Lie algebra $\mathfrak{conf}(M,g)$ under the commutator of vector fields, the **conformal algebra** of the metric, and it is the Lie algebra of the conformal group, a Lie algebra of vector fields of the type of those of *Metric, Uniform and Complete Spaces* and of the theory of *Lie Groups*, earlier in this Part.
 
 **Proposition.** The conformal algebra of a Riemannian manifold of dimension $n \geq 3$ is finite-dimensional and of dimension at most
 $$
@@ -125,7 +125,7 @@ so that the operator is conformally covariant with the **conformal weight** of t
 
 ### The Cauchy–Riemann Operator and Conformal Covariance
 
-**Theorem.** Let $(M,g)$ be a spin manifold of dimension $n$ with the spinor bundle $\mathcal{S}$ and the Cauchy–Riemann operator $D$ of *Spin Geometry*, the operator classically named after Dirac, and let $g' = \Omega^2 g$ be a conformal metric with the corresponding spin structure and spinor bundle. Under the conformal change the Cauchy–Riemann operator is conformally covariant in the weight $(n-1)/2$:
+**Theorem.** Let $(M,g)$ be a spin manifold of dimension $n$ with the spinor bundle $\mathcal{S}$ and the Cauchy–Riemann operator $D$, the operator classically named after Dirac, and let $g' = \Omega^2 g$ be a conformal metric with the corresponding spin structure and spinor bundle. Under the conformal change the Cauchy–Riemann operator is conformally covariant in the weight $(n-1)/2$:
 $$
 D_{g'}\bigl(\Omega^{-(n-1)/2}\sigma\bigr) = \Omega^{-(n+1)/2}\,D_g(\sigma) , \qquad \sigma \in \Gamma(\mathcal{S}),
 $$
@@ -137,7 +137,7 @@ the identification of the spinor bundles being the natural one of the conformal 
 
 ### The Twistor Construction
 
-**Remark.** In dimension four the conformal geometry has a complex description. The **twistor space** of the conformal four-sphere is the complex projective space $\mathbb{CP}^3$, with the twistor fibration $\mathbb{CP}^3 \to S^4$ whose fibres are the projective lines, and the conformal structure of the four-sphere is encoded in the complex geometry of the twistor space; the twistor space of the conformal four-space is the complement of a line in $\mathbb{CP}^3$. The **Penrose correspondence** relates the conformally invariant equations of the four-dimensional geometry to the sheaf cohomology of the twistor space: the solutions of the twistor equation, the conformal Killing fields and the solutions of the conformally invariant field equations correspond to cohomology classes, and the twistor space is the projectivisation of the spinor bundle of the conformal structure in the sense of *Spin Geometry*. The Riemannian twistor theory of the compact anti-self-dual four-manifolds is the analogue of the construction, and the details are in the references.
+**Remark.** In dimension four the conformal geometry has a complex description. The **twistor space** of the conformal four-sphere is the complex projective space $\mathbb{CP}^3$, with the twistor fibration $\mathbb{CP}^3 \to S^4$ whose fibres are the projective lines, and the conformal structure of the four-sphere is encoded in the complex geometry of the twistor space; the twistor space of the conformal four-space is the complement of a line in $\mathbb{CP}^3$. The **Penrose correspondence** relates the conformally invariant equations of the four-dimensional geometry to the sheaf cohomology of the twistor space: the solutions of the twistor equation, the conformal Killing fields and the solutions of the conformally invariant field equations correspond to cohomology classes, and the twistor space is the projectivisation of the spinor bundle of the conformal structure in the sense. The Riemannian twistor theory of the compact anti-self-dual four-manifolds is the analogue of the construction, and the details are in the references.
 
 ## Summary
 
@@ -163,6 +163,8 @@ A **conformal structure** on a manifold is the class of metrics $g' = \Omega^2 g
 | $D_{g'}(\Omega^{-(n-1)/2}\sigma) = \Omega^{-(n+1)/2}D_g\sigma$ | Conformal covariance of the Cauchy–Riemann operator |
 | twistor operator | $\nabla_X\sigma - \frac1n X\cdot D\sigma$; kernel = twistor spinors |
 | $\mathbb{CP}^3$ | Twistor space of the conformal four-sphere |
+
+
 
 ## Further Reading
 

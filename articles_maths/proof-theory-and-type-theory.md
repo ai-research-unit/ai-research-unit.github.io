@@ -7,7 +7,7 @@ Proof theory studies derivations as mathematical objects rather than as instrume
 
 The article is the eighth of the corpus, above *Formal Logic and Computability* and *Model Theory*, and it uses the first-order syntax and the formal systems of *Formal Logic and Computability*, the semantic notions of satisfaction and completeness developed there and in *Model Theory*, and the ordinals of *Set-Theoretic Foundations*. It is the second half of the corpus's logical layer: where the earlier articles treated logic through its models, this one treats it through its proofs. It states the natural-deduction and sequent rules, proves the cut-elimination and normalisation theorems in outline, derives their standard consequences — consistency of the logical systems, the disjunction and existence properties, the subformula property — and develops the lambda calculus and its typed versions far enough to state the Curry–Howard correspondence and to describe the principal type theories.
 
-The article does not develop the categorical reading of the correspondence, which requires the language of *Universal Properties and Categories*; it points in that direction and stops. It does not develop the semantics of the intuitionistic propositional calculus, which is the subject of *Model Theory* and of *Set-Theoretic Foundations* through the notion of a Heyting algebra. The results it proves about derivations are finitary and combinatorial, and the only structure it uses beyond first-order syntax is that of the ordinals, for the ordinal analysis at the end.
+The article does not develop the categorical reading of the correspondence, which requires the language; it points in that direction and stops. It does not develop the semantics of the intuitionistic propositional calculus, which is the subject of *Model Theory* and of *Set-Theoretic Foundations* through the notion of a Heyting algebra. The results it proves about derivations are finitary and combinatorial, and the only structure it uses beyond first-order syntax is that of the ordinals, for the ordinal analysis at the end.
 
 ## Natural Deduction
 
@@ -257,7 +257,7 @@ and the corresponding $\beta$-reduction $(\Lambda X.M)B \to M[X:=B]$. System F i
 
 **Definition.** **Martin-Löf type theory** is a dependent type theory with $\Pi$, $\Sigma$, a type of natural numbers, and **identity types** $\mathrm{Id}_A(a,b)$, whose elements are witnesses that $a$ and $b$ are equal. Its **propositions-as-types** reading strengthens the Curry–Howard correspondence: a proposition is a type, a proof is an element, and the equality of two proofs is itself a type. The identity types are the origin of **homotopy type theory**, in which a type is read as a space and its identity types as path spaces; that reading requires the topological language of Part II and is not developed here.
 
-**Remark.** The correspondence between proofs and terms means that a **proof assistant** is a type checker: a formal proof is a term whose type is the theorem, and the correctness of the proof is the correctness of the typing derivation. The strong normalisation of the underlying type theory is what guarantees that a checked proof cannot be circular, and the impossibility of typing the fixed-point combinator is what forbids a proof from referring to itself. The corpus returns to these systems in *Universal Properties and Categories*, where the categorical semantics of the typed calculi — the interpretation of types as objects and terms as morphisms — is available.
+**Remark.** The correspondence between proofs and terms means that a **proof assistant** is a type checker: a formal proof is a term whose type is the theorem, and the correctness of the proof is the correctness of the typing derivation. The strong normalisation of the underlying type theory is what guarantees that a checked proof cannot be circular, and the impossibility of typing the fixed-point combinator is what forbids a proof from referring to itself. The corpus returns to these systems, where the categorical semantics of the typed calculi — the interpretation of types as objects and terms as morphisms — is available.
 
 ## Summary
 
@@ -267,7 +267,7 @@ Gentzen's cut-elimination theorem removes the cut rule from every derivation, yi
 
 The lambda calculus has variables, application and abstraction, with $\beta$- and $\eta$-reduction; it is confluent by the Church–Rosser theorem and computationally universal, and the fixed-point combinator $Y$ gives every term a fixed point and produces terms such as $\Omega$ with no normal form, so the calculus is undecidable. The simply typed lambda calculus and its extensions are strongly normalising; the definable functions are the extended polynomials for $\lambda_\to$ and the provably total functions of second-order arithmetic for System F.
 
-The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs to *Universal Properties and Categories*.
+The Curry–Howard correspondence identifies propositions with types, derivations with terms, and the reduction of detours with $\beta$-reduction; product, sum, empty and unit types realise conjunction, disjunction, falsity and truth, and dependent types realise the quantifiers. Martin-Löf type theory adds identity types and gives the propositions-as-types reading its strongest form, and the lambda cube arranges the typed systems by what depends on what. The categorical semantics of these calculi belongs.
 
 ## Summary of Notation
 
@@ -290,6 +290,8 @@ The Curry–Howard correspondence identifies propositions with types, derivation
 | $\mathrm{Id}_A(a,b)$ | Identity type |
 | $\lambda_\to$, System F | Simply typed and polymorphic lambda calculus |
 | $\varepsilon_0$ | Proof-theoretic ordinal of arithmetic |
+
+
 
 ## Further Reading
 

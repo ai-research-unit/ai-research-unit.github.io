@@ -254,5 +254,17 @@ build_root_page(SRC / "physics.md", "physics.html", nav_articles)
 build_root_page(SRC / "disclaimer.md", "disclaimer.html", nav_articles)
 build_root_page(SRC / "contact.md",    "contact.html",    nav_articles)
 
+# ── Convention check (non-fatal) ──────────────────────────────────────────────
+# Reports shared symbols given conflicting definitions across articles — the class of
+# defect the ordering rules cannot see. Never fails the build; the report is advisory.
+_conv = SRC / "_reserve" / "convention_check.py"
+if _conv.exists():
+    try:
+        import subprocess, sys
+        _r = subprocess.run([sys.executable, str(_conv)], capture_output=True, text=True)
+        print(_r.stdout.strip() or _r.stderr.strip())
+    except Exception as _e:
+        print(f"convention check skipped: {_e}")
+
 print("Done.")
 

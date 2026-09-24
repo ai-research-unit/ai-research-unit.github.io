@@ -13,7 +13,7 @@ $$
 
 so that any acyclic resolution computes the cohomology; the flabby resolution of Godement, the Čech complex, the singular cochain complex and the de Rham complex are all instances, and the last of them is the identification of de Rham cohomology with singular cohomology. The second is the **Grothendieck spectral sequence** of a composite of functors, whose instances on a space include the Leray spectral sequence of a continuous map and the Čech-to-derived spectral sequence. A final section records the derived-functor properties of the direct image functor $f_*$, which are the sheaf-theoretic content of the six operations, and states that the natural home of the theory is the derived category of sheaves of Part I.
 
-The article is the last of the abstract trilogy *Sheaf Cohomology*, *Čech Cohomology*, *Derived Functors and Sheaf Cohomology*; the de Rham and geometric instances of the abstract de Rham theorem are worked out in *Sheaves and the de Rham Complex*, written in this same batch, and the sheaf theory of algebraic geometry in *Sheaves in Algebraic Geometry*. Sheaves on a general Grothendieck site, for which the same theory is available with a site in place of a space, are Part I's *Sheaves on Sites*, and the descent-theoretic questions are Part I's *Descent Theory*.
+The article is the last of the abstract trilogy *Sheaf Cohomology*, *Čech Cohomology*, *Derived Functors and Sheaf Cohomology*; the de Rham and geometric instances of the abstract de Rham theorem are worked out, written in this same batch, and the sheaf theory of algebraic geometry. Sheaves on a general Grothendieck site, for which the same theory is available with a site in place of a space, are Part I's *Sheaves on Sites*, and the descent-theoretic questions are Part I's *Descent Theory*.
 
 ## The Category of Sheaves
 
@@ -78,7 +78,7 @@ induced by lifting $\mathcal{F}\to\mathcal{A}^\bullet$ to injective resolutions 
 
 1. the flabby resolution of Godement of *Sheaf Cohomology*;
 2. the Čech complex of a cover in the limit, when $X$ is paracompact, by *Čech Cohomology*;
-3. the de Rham complex of a smooth manifold, when $\mathcal{F}$ is the constant sheaf and the de Rham complex is a resolution by fine sheaves: $H^i_{dR}(M)\cong H^i(M;\underline{\mathbb{R}})$, the de Rham theorem, developed in *Sheaves and the de Rham Complex*;
+3. the de Rham complex of a smooth manifold, when $\mathcal{F}$ is the constant sheaf and the de Rham complex is a resolution by fine sheaves: $H^i_{dR}(M)\cong H^i(M;\underline{\mathbb{R}})$, the de Rham theorem, developed;
 4. the singular cochain complex, on a locally contractible paracompact space, when $\mathcal{F} = \underline{A}$ is constant: $H^i(X;\underline{A})\cong H^i(X;A)$, the comparison theorem of *Sheaf Cohomology*;
 5. the hypercohomology of a bounded below complex of sheaves, whose two spectral sequences are the subject of the next section.
 
@@ -145,7 +145,7 @@ which is the exact sequence used to compute the cohomology of a fibration and of
 
 *Proof.* (1) is immediate from the definition; for a closed immersion the direct image is exact because the induced map on stalks is an isomorphism or zero. (2) is the Grothendieck spectral sequence applied to $F = f_*$, $G = g_*$; the hypothesis is verified by resolving on $X$, since an injective sheaf on $X$ is flabby and $R^pf_*$ of a flabby sheaf vanishes for $p>0$. (3) and (4) are the standard constructions of the subject, proved by reducing to the affine or the locally free case and using the exactness of $g^{-1}$ and the projection formula for modules. $\square$
 
-**Remark (the derived category and the six operations).** The statements above look asymmetric because the derived functors are taken in one direction only. The symmetric formulation is the derived category $D^+(\mathrm{Sh}(X))$ of *Derived Categories* of Part I: a morphism of spaces $f$ induces $f^* = f^{-1}$ (exact, so no derived functor is needed), the right derived functor $Rf_*$, the proper direct image $Rf_!$ for maps of finite cohomological dimension between locally compact spaces, its right adjoint $f^!$, and the derived tensor product and sheaf hom; the six operations $f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$ satisfy the base change, projection and duality formulae. **Verdier duality** is the adjunction $\mathbb{R}f_! \dashv f^!$, the assertion that the proper direct image has a right adjoint $f^!$ on the derived categories whenever $f$ is of finite cohomological dimension between locally compact spaces; it has a purely topological content, and it specialises for $f$ the map to a point to the Poincaré duality of *Poincaré Duality*: for a closed oriented $n$-manifold with constant coefficients it reads $H^k(M)\cong H_{n-k}(M)^{\vee}$, and its sheaf-theoretic form is the twisted duality of *Sheaf Cohomology*. The derived category is Part I's and is not developed here; the constructions of this section are its degreewise shadow, and the applications to algebraic geometry are in *Sheaves in Algebraic Geometry*.
+**Remark (the derived category and the six operations).** The statements above look asymmetric because the derived functors are taken in one direction only. The symmetric formulation is the derived category $D^+(\mathrm{Sh}(X))$ of *Derived Categories* of Part I: a morphism of spaces $f$ induces $f^* = f^{-1}$ (exact, so no derived functor is needed), the right derived functor $Rf_*$, the proper direct image $Rf_!$ for maps of finite cohomological dimension between locally compact spaces, its right adjoint $f^!$, and the derived tensor product and sheaf hom; the six operations $f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$ satisfy the base change, projection and duality formulae. **Verdier duality** is the adjunction $\mathbb{R}f_! \dashv f^!$, the assertion that the proper direct image has a right adjoint $f^!$ on the derived categories whenever $f$ is of finite cohomological dimension between locally compact spaces; it has a purely topological content, and it specialises for $f$ the map to a point to the Poincaré duality of *Poincaré Duality*: for a closed oriented $n$-manifold with constant coefficients it reads $H^k(M)\cong H_{n-k}(M)^{\vee}$, and its sheaf-theoretic form is the twisted duality of *Sheaf Cohomology*. The derived category is Part I's and is not developed here; the constructions of this section are its degreewise shadow, and the applications to algebraic geometry are.
 
 ## Summary
 
@@ -169,6 +169,8 @@ The **Grothendieck spectral sequence** $E_2^{p,q} = R^pG(R^qF(A)) \Rightarrow R^
 | $f^{-1}\dashv f_*$, $R^qf_*$ | inverse and direct image adjunction; higher direct images |
 | $f^*, f_*, f_!, f^!, \otimes, \mathcal{H}om$ | the six operations of the derived category |
 | Verdier duality | the adjunction $\mathbb{R}f_!\dashv f^!$; for $f$ to a point, $H^k(M)\cong H_{n-k}(M)^{\vee}$ |
+
+
 
 ## Further Reading
 

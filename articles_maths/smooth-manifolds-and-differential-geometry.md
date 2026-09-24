@@ -7,7 +7,7 @@ A **smooth manifold** is a topological space that is locally modelled on $\mathb
 
 This article develops the theory from its definitions. It defines topological and smooth manifolds, atlases and smooth structures, smooth maps and diffeomorphisms, and gives the standard examples — the Euclidean spaces, the spheres, the real projective spaces and the matrix groups. It defines the tangent space at a point both by derivations and by curves and proves the two definitions agree, defines the differential of a smooth map and proves the chain rule, and defines vector fields, their Lie bracket and the Lie algebra of a manifold. It treats submanifolds through the rank theorem and the implicit function theorem, obtains the spheres, the projective spaces and the classical groups as submanifolds of Euclidean or matrix space, and closes with the Riemannian metric, the length of a curve and the distance it induces, which recovers the topology of the manifold.
 
-The article assumes the topological background of *Topological Spaces* and *Metric, Uniform and Complete Spaces*, including second countability, Hausdorffness, compactness and paracompactness; the partitions of unity it uses are those of *Paracompactness and Partitions of Unity*, written in parallel. From Part I it uses the exterior algebra of *The Exterior Algebra*, the determinant of *The Determinant and Alternating Forms*, and the general linear group of *The General Linear Group*. From the quadratic-forms category of this Part it uses the inner product and the orthogonal group of *Bilinear Forms* and *Isometries and Orthogonal Transformations*. The calculus of differential forms is deferred to *Differential Forms and Stokes' Theorem*, the theory of bundles and connections to *Fibre Bundles, Connections and Curvature*, and the curvature and the geodesics of a metric to *Curvature and Geodesics* and *Riemannian Geometry*. The existence and uniqueness theory of the ordinary differential equations that a vector field or a geodesic defines is deferred to Part III, where the limit and the differential equations are available. No physics is invoked.
+The article assumes the topological background of *Topological Spaces* and *Metric, Uniform and Complete Spaces*, including second countability, Hausdorffness, compactness and paracompactness; the partitions of unity it uses are those of *Paracompactness and Partitions of Unity*. From Part I it uses the exterior algebra of *The Exterior Algebra*, the determinant of *The Determinant and Alternating Forms*, and the general linear group of *The General Linear Group*. From the quadratic-forms category of this Part it uses the inner product and the orthogonal group of *Bilinear Forms* and *Isometries and Orthogonal Transformations*. The calculus of differential forms, the theory of bundles and connections, and the curvature and the geodesics of a metric are deferred. The existence and uniqueness theory of the ordinary differential equations that a vector field or a geodesic defines is deferred to Part III, where the limit and the differential equations are available. No physics is invoked.
 
 ## Charts, Atlases and Smooth Structures
 
@@ -135,7 +135,7 @@ $$
 
 with the projection $\pi : TM \to M$ sending $T_pM$ to $p$. The charts of $M$ induce charts of $TM$ making it a smooth manifold of dimension $2n$: over a chart $(U, \varphi)$ with coordinates $x^i$, the map $(p, \sum_i v^i \partial_{x^i}|_p) \mapsto (\varphi(p), v^1, \ldots, v^n)$ is a chart. The **cotangent bundle** $T^*M$ is defined dually.
 
-The bundle structure of $TM$, its sections and its transition functions are the first example of the theory of *Fibre Bundles, Connections and Curvature*, and the tangent bundle is the model on which that theory is built.
+The bundle structure of $TM$, its sections and its transition functions are the first example of the theory, and the tangent bundle is the model on which that theory is built.
 
 ## Vector Fields and the Lie Bracket
 
@@ -205,7 +205,7 @@ Consequently, about a point of constant rank $r$, the map $F$ looks like the pro
 
 **Theorem (Sard).** The set of critical values of a smooth map $F : M \to N$ has empty interior in $N$, equivalently the set of regular values is dense in $N$. The sharper statement, that the critical values form a null set, is proved in Part III, where the measure is available.
 
-The theorem is stated here for completeness, because it guarantees that regular values are dense and hence that the regular-value constructions of topology are always available; its proof uses the measure and the covering arguments of Part III, where the measure is introduced, and it is quoted as standard. The differential-topological consequences — transversality, degree theory, the Whitney embedding theorem — are developed in *Differential Topology*.
+The theorem is stated here for completeness, because it guarantees that regular values are dense and hence that the regular-value constructions of topology are always available; its proof uses the measure and the covering arguments of Part III, where the measure is introduced, and it is quoted as standard. The differential-topological consequences — transversality, degree theory, the Whitney embedding theorem — are developed.
 
 ## The Manifold Structure of the Spheres and Classical Groups
 
@@ -283,9 +283,9 @@ The sum is finite near each point by local finiteness, its coefficients are smoo
 
 **Example (the Euclidean metric).** On $\mathbb{R}^n$ the standard metric is $g_{ij} = \delta_{ij}$, whose value at $x$ is the standard inner product on the tangent space $\mathbb{R}^n$.
 
-**Example (the round sphere).** The inclusion $S^{n-1} \hookrightarrow \mathbb{R}^n$ restricts the standard inner product to the tangent spaces of the sphere, giving the **round metric** of constant curvature; the induced distance is the great-circle distance treated in *Spherical Geometry*.
+**Example (the round sphere).** The inclusion $S^{n-1} \hookrightarrow \mathbb{R}^n$ restricts the standard inner product to the tangent spaces of the sphere, giving the **round metric** of constant curvature; the induced distance is the great-circle distance treated.
 
-**Example (the hyperbolic metric).** On the upper half-space with coordinates $y > 0$ in $\mathbb{R}^n$ the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$ is positive definite, and it is the **hyperbolic metric** whose geometry is developed in *Hyperbolic Geometry*.
+**Example (the hyperbolic metric).** On the upper half-space with coordinates $y > 0$ in $\mathbb{R}^n$ the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$ is positive definite, and it is the **hyperbolic metric** whose geometry is developed.
 
 ### Length and the Induced Distance
 
@@ -301,7 +301,7 @@ $$
 L_g(\gamma) = \int_a^b |\gamma'(t)|_g\, dt,
 $$
 
-the integral being the elementary Riemann integral of the continuous function $t \mapsto |\gamma'(t)|_g$ in any chart covering the image; the value is independent of the chart by the change-of-variables formula. The integral here is one-dimensional and is the integral of *Differential Forms and Stokes' Theorem* read on a curve; the measure-theoretic theory of the length of merely rectifiable curves, and the existence of minimisers in general, belong to Part III, where the measure and the limit are available.
+the integral being the elementary Riemann integral of the continuous function $t \mapsto |\gamma'(t)|_g$ in any chart covering the image; the value is independent of the chart by the change-of-variables formula. The integral here is one-dimensional and is the integral read on a curve; the measure-theoretic theory of the length of merely rectifiable curves, and the existence of minimisers in general, belong to Part III, where the measure and the limit are available.
 
 **Theorem.** The length is invariant under reparametrisation: if $\sigma : [c, d] \to [a, b]$ is a smooth increasing surjection and $\gamma$ a smooth curve, then $L_g(\gamma \circ \sigma) = L_g(\gamma)$. Consequently the length of a piecewise smooth curve depends only on its image and its orientation.
 
@@ -317,9 +317,9 @@ the infimum being taken over all piecewise smooth curves joining the two points;
 
 **Theorem.** The function $d_g$ is a metric on $M$, and its metric topology is the given topology of $M$.
 
-**Proof sketch.** Symmetry and the triangle inequality follow from reversing and concatenating curves; positivity and separation were noted. For the topology, one shows that a point and the complement of a small geodesically convex ball of radius $r$ are at distance at least $r$ from each other, using the fact that the exponential map of the metric of *Curvature and Geodesics* provides a coordinate system in which the metric is close to Euclidean; hence the metric balls generate the given topology. $\square$
+**Proof sketch.** Symmetry and the triangle inequality follow from reversing and concatenating curves; positivity and separation were noted. For the topology, one shows that a point and the complement of a small geodesically convex ball of radius $r$ are at distance at least $r$ from each other, using the fact that the exponential map of the metric provides a coordinate system in which the metric is close to Euclidean; hence the metric balls generate the given topology. $\square$
 
-The metric $d_g$ is the distance that this Part places on the manifold, and it is the object that allows all the topological and metric notions of *Metric, Uniform and Complete Spaces* to be applied to $M$. The finer metric theory — geodesics, completeness, curvature and the comparison theorems — is the subject of the two articles *Curvature and Geodesics* and *Riemannian Geometry*.
+The metric $d_g$ is the distance that this Part places on the manifold, and it is the object that allows all the topological and metric notions of *Metric, Uniform and Complete Spaces* to be applied to $M$. The finer metric theory — geodesics, completeness, curvature and the comparison theorems — is the subject of the two articles.
 
 **Remark (metric versus topological invariants).** Two Riemannian metrics on the same manifold may induce the same topology and different distances, as the metrics $|x - y|$ and $|\arctan x - \arctan y|$ on $\mathbb{R}$ do in *Metric, Uniform and Complete Spaces*. The distance therefore retains information — completeness, boundedness, the growth of balls — that the topology alone discards, and that information is what the geometry of the manifold is about.
 
@@ -331,7 +331,7 @@ The tangent space $T_pM$ may be defined by equivalence classes of curves through
 
 A regular submanifold is one that looks locally like a coordinate subspace, the rank theorem puts every constant-rank map into a normal form, and the implicit function theorem identifies the preimage of a regular value as a submanifold whose tangent space is the kernel of the differential. The spheres, the real projective spaces, and the general linear, orthogonal, unitary and special unitary groups are manifolds by these results, the last three being the classical groups of this Part.
 
-A Riemannian metric is a smooth positive definite inner product on each tangent space, every manifold carries one by a partition-of-unity construction, and it assigns to each piecewise smooth curve a length and to each pair of points the infimum of lengths joining them. That infimum is a metric whose topology is the given one, so the manifold becomes a metric space and the whole of *Metric, Uniform and Complete Spaces* applies. The metric is the structure that the articles *Curvature and Geodesics* and *Riemannian Geometry* develop.
+A Riemannian metric is a smooth positive definite inner product on each tangent space, every manifold carries one by a partition-of-unity construction, and it assigns to each piecewise smooth curve a length and to each pair of points the infimum of lengths joining them. That infimum is a metric whose topology is the given one, so the manifold becomes a metric space and the whole of *Metric, Uniform and Complete Spaces* applies. The metric is the structure that anddevelop.
 
 ## Summary of Notation
 
@@ -358,6 +358,8 @@ A Riemannian metric is a smooth positive definite inner product on each tangent 
 | $d_g(p,q) = \inf_\gamma L_g(\gamma)$ | Riemannian distance; its metric topology is the topology of $M$ |
 | $\operatorname{rank} dF_p$ | Rank of a smooth map at a point; immersion, submersion, embedding |
 | Partition of unity $\{\rho_\alpha\}$ | Smooth functions with locally finite supports summing to $1$ |
+
+
 
 ## Further Reading
 

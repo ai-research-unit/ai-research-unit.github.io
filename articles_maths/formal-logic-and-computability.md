@@ -5,7 +5,7 @@
 
 This article treats first-order logic as a formal system and the notion of effective computation that the syntax of such a system presupposes. It states the completeness theorem, which makes the syntactic notion of derivability coincide with the semantic notion of validity, and draws its two standard consequences, compactness and the Löwenheim–Skolem theorems. It then turns to computability: Turing machines, recursive functions, the Church–Turing thesis, decidability and undecidability, the halting problem, and the incompleteness theorems of Gödel, which show that any formal system strong enough to describe arithmetic must fail to decide some of its own sentences.
 
-The article stands sixth in the corpus, above the foundational layer of *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices*, *Cardinality and the Axiom of Choice* and *Set-Theoretic Foundations*. It uses the language and the inference rules of *Logic and Proof*, the enumeration and diagonal techniques of *Cardinality and the Axiom of Choice*, and the arithmetisation of syntax and the ordinals of *Set-Theoretic Foundations*. Its results are quoted by the articles that follow: the compactness theorem is the tool of *Model Theory*, and the proof-theoretic reading of the completeness and normalisation theorems is the subject of *Proof Theory and Type Theory*. The present article states the theorems of logic and of computability with proof sketches where the argument is illuminating or short, and with references where it is long; the emphasis is on the statements and the definitions, which the later articles use.
+The article stands sixth in the corpus, above the foundational layer of *Sets, Functions and Relations*, *Logic and Proof*, *Order Theory and Lattices*, *Cardinality and the Axiom of Choice* and *Set-Theoretic Foundations*. It uses the language and the inference rules of *Logic and Proof*, the enumeration and diagonal techniques of *Cardinality and the Axiom of Choice*, and the arithmetisation of syntax and the ordinals of *Set-Theoretic Foundations*. Its results are quoted: the compactness theorem is the tool, and the proof-theoretic reading of the completeness and normalisation theorems is not covered here. The present article states the theorems of logic and of computability with proof sketches where the argument is illuminating or short, and with references where it is long; the emphasis is on the statements and the definitions, which the other articles use.
 
 The subject is genuinely part of mathematics, and the article treats it so. Nothing physical is invoked: a Turing machine is a mathematical object, a finite table of instructions, and the claim that it captures intuitive computability is a thesis, not a definition. The results of the article are theorems of the metatheory — of the ordinary mathematical theory of finite objects — and they are proved as such.
 
@@ -19,7 +19,7 @@ For the metatheory it is essential that the syntax of $\mathcal{L}$ be a set of 
 
 **Definition.** A **formal system** (or **deductive system**) for $\mathcal{L}$ consists of a set of **logical axioms** and a set of **inference rules**. A **derivation** is a finite sequence $\varphi_1, \ldots, \varphi_n$ of $\mathcal{L}$-formulas, each of which is a logical axiom, a member of a given set $T$ of nonlogical axioms (the **theory**), or obtained from earlier formulas by an inference rule. The last formula is the **conclusion**; one writes $T \vdash \varphi$ when some derivation from $T$ concludes with $\varphi$, and $\vdash \varphi$ when $T = \emptyset$.
 
-This article uses the natural-deduction rules of *Logic and Proof*, together with the equality axioms, as its formal system. Other choices — Hilbert systems, sequent calculi, resolution — are equivalent in the sense that they derive the same formulas, and the comparison belongs to *Proof Theory and Type Theory*. The **deduction theorem**, proved for natural deduction as the rule of conditional proof, states that $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.
+This article uses the natural-deduction rules of *Logic and Proof*, together with the equality axioms, as its formal system. Other choices — Hilbert systems, sequent calculi, resolution — are equivalent in the sense that they derive the same formulas, and the comparison belongs. The **deduction theorem**, proved for natural deduction as the rule of conditional pro, states that $T \cup \{\varphi\} \vdash \psi$ if and only if $T \vdash \varphi \to \psi$.
 
 **Definition.** A theory $T$ is **consistent** if there is no formula $\varphi$ with $T \vdash \varphi$ and $T \vdash \neg\varphi$; it is **complete** if for every sentence $\sigma$ of its language, $T \vdash \sigma$ or $T \vdash \neg\sigma$; it is **recursively axiomatised** (or **effective**) if the set of its nonlogical axioms is decidable by an algorithm.
 
@@ -158,7 +158,7 @@ The argument is the diagonal argument in the setting of computations: the machin
 
 **Proof sketch.** (1) is the theorem above. (2) reduces the halting problem to the uniform one by a machine that runs a fixed input. (3) is proved by an explicit reduction from the halting problem, exhibiting for each machine a finite list of word pairs whose matching sequences encode the halting computations. (4) follows from the completeness theorem and the arithmetisation of the halting problem: the assertion that a machine halts on an input is an arithmetic sentence, and a machine for deciding validity would decide the halting problem. $\square$
 
-**Remark.** The situation for fragments of first-order logic is delicate. The validity problem for a language with a single binary predicate and no function symbols is undecidable, but for languages with only unary predicates and no function symbols it is decidable, and the decidability of a theory is often the content of a quantifier-elimination theorem. This is the substance of *Model Theory*, where the decidability of the theories of algebraically closed fields and of real-closed fields is proved by exactly that route.
+**Remark.** The situation for fragments of first-order logic is delicate. The validity problem for a language with a single binary predicate and no function symbols is undecidable, but for languages with only unary predicates and no function symbols it is decidable, and the decidability of a theory is often the content of a quantifier-elimination theorem. This is the substance, where the decidability of the theories of algebraically closed fields and of real-closed fields is proved by exactly that route.
 
 ## Gödel's Incompleteness Theorems
 
@@ -256,6 +256,12 @@ Peano arithmetic is the recursively axiomatised theory of the natural numbers. I
 | $\mathrm{Prov}_T(x)$ | Arithmetised provability in $T$ |
 | $G$ | Gödel sentence, asserting its own unprovability |
 | c.e. | Computably enumerable |
+
+
+
+
+
+
 
 ## Further Reading
 

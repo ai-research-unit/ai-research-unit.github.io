@@ -7,11 +7,11 @@ The Langlands program is a web of conjectures and theorems that relates two kind
 
 The program has three layers. The **local** layer is the local Langlands correspondence, a theorem for $GL_n$ over a local field and a conjecture in general, which parameterises the irreducible representations of $G(F)$ by homomorphisms from the local Weil group into the $L$-group ${}^L G$. The **global** layer is the reciprocity conjecture, which asserts that an automorphic representation is the automorphic shadow of a Galois representation and that the two share their $L$-functions. The **functorial** layer is the principle that every homomorphism of $L$-groups transfers automorphic representations from one group to another, and it is the source of the applications: base change, the symmetric power $L$-functions, the endoscopic classification, and the Sato–Tate and Ramanujan problems.
 
-This article states the three layers, records the principal theorems and conjectures, and describes the trace-formula and $L$-function methods by which the theorems are proved. It is the last article of the corpus on the subject and it presupposes *Automorphic Forms*, which supplies the automorphic side; the Galois-side tools — Galois cohomology, class field theory, the arithmetic of local fields — are the arithmetic articles of the corpus, and the analytic theory of $L$-functions is *L-Functions* and *Zeta Functions*. Three boundaries are held.
+This article states the three layers, records the principal theorems and conjectures, and describes the trace-formula and $L$-function methods by which the theorems are proved. It is the last article of the corpus on the subject and it presupposes *Automorphic Forms*, which supplies the automorphic side; the Galois-side tools — Galois cohomology, class field theory, the arithmetic of local fields — are the arithmetic articles of the corpus, and the analytic theory of $L$-functions is. Three boundaries are held.
 
 - The **automorphic side** — adeles, automorphic forms, the spectral decomposition, $L$-functions of automorphic representations — is *Automorphic Forms* and *Adeles and Ideles*, and is used here as established.
 - The **arithmetic side** — Galois groups, Galois cohomology, the fundamental group, class field theory, local fields, global fields — is the subject of the arithmetic articles of the corpus, in particular *Class Field Theory* and *Galois Cohomology*; the geometric side of the function-field case — curves over finite fields, shtukas, moduli of bundles — is the subject of the algebraic-geometry articles and of *Elliptic Curves*. This article states the Langlands programme and does not develop those foundations.
-- The **classical modular forms** are *Modular Forms*, and the **$L$-functions** are *L-Functions*; where a result is theirs, it is cited and not re-derived. No physics is invoked.
+- The **classical modular forms** areand the **$L$-functions** are; where a result is theirs, it is cited and not re-derived. No physics is invoked.
 
 Throughout, $F$ is either a number field or a local field, $\bar F$ a separable closure, $\Gamma_F = \operatorname{Gal}(\bar F/F)$ the absolute Galois group, and $q$ the residue cardinality of a non-archimedean local field. For a reductive group $G$ over $F$, $\hat G$ is the Langlands dual group — the complex reductive group whose root datum is dual to that of $G$ — and ${}^L G = \hat G \rtimes W_F$ is the **$L$-group**, with $W_F$ the Weil group of $F$. An **$L$-parameter** is a continuous homomorphism $W_F \to {}^L G$ satisfying a boundedness condition at infinity; the notation $\pi = \otimes'_v \pi_v$, Satake parameter, and the $L$-function $L(s,\pi)$ are those of *Automorphic Forms*.
 
@@ -222,6 +222,8 @@ The functorial layer is the principle that an $L$-homomorphism ${}^L H \to {}^L 
 | shtuka, Drinfeld, Lafforgue | function-field reciprocity and its proof |
 | modularity | $L(s,E)=L(s,\pi)$ for an elliptic curve $E/\mathbb{Q}$ |
 | geometric Langlands | equivalence of sheaf categories on the moduli of bundles |
+
+
 
 ## Further Reading
 

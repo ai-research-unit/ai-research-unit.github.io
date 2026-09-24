@@ -5,7 +5,7 @@
 
 The classical number systems over the real numbers — the complex numbers, the split complex numbers, the dual numbers, the quaternions, the split quaternions and the biquaternions — are all Clifford algebras of quadratic forms, and the correspondence is not a collection of isolated coincidences but a single dictionary. Each system is the Clifford algebra of a one-, two- or three-dimensional form; the form is read off from the multiplication of the imaginary units; and the properties of the system that one usually establishes by hand — associativity, the existence of a conjugation, the multiplicativity of the norm, the presence of zero divisors — become corollaries of the classification of the preceding articles.
 
-This article states that dictionary. The basic algebra of each number system is not repeated here: the complex numbers are treated in the companion article *Complex Algebra*, the split complex numbers in *Split Complex Algebra*, the dual numbers in *Dual Numbers Algebra*, the quaternions in *Quaternion Algebra*, the split quaternions in *Split-Quaternion Algebra*, and the biquaternions in *Biquaternion Algebra*. What is added here is the identification of each with a Clifford algebra, the reading of its norm form from the Clifford form, and the reason the list stops where it does.
+This article states that dictionary. The basic algebra of each number system is not repeated here: the complex numbers, the split complex numbers in *Split Complex Algebra*, the dual numbers in *Dual Numbers Algebra*, the quaternions, the split quaternions, and the biquaternions. What is added here is the identification of each with a Clifford algebra, the reading of its norm form from the Clifford form, and the reason the list stops where it does.
 
 The conventions are those of the category. The Clifford algebra $\mathrm{Cl}_{p,q}$ has $p$ generators of square $+1$ and $q$ of square $-1$, so that $\mathrm{Cl}_{0,1}\cong\mathbb{C}$, $\mathrm{Cl}_{1,0}\cong\mathbb{D}$ and $\mathrm{Cl}_{0,2}\cong\mathbb{H}$; the even subalgebra is written $\mathrm{Cl}^0$; and the low-dimensional identifications are those of *The Low-Dimensional Classification*. The number systems are written $\mathbb{R},\mathbb{C},\mathbb{D},\mathbb{D}',\mathbb{H},\mathbb{H}_{\mathbb{D}},\mathbb{B}$, with $\mathbb{D}$ the split complex numbers (unit $j$, $j^2=+1$), $\mathbb{D}'$ the dual numbers (unit $\varepsilon$, $\varepsilon^2=0$), $\mathbb{H}$ the quaternions (units $e_1,e_2,e_3$, $e_k^2=-1$), $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ the split quaternions, and $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ the biquaternions.
 
@@ -66,7 +66,7 @@ $$
 N(\tilde Q)=\tilde Q\bar{\tilde Q}=\sum_{\mu=0}^{3}Q_\mu^2,
 $$
 
-with $Q_\mu\in\mathbb{C}$. Writing $Q_\mu=a_\mu+ib_\mu$ this is $N=\sum_\mu(a_\mu^2-b_\mu^2)+2i\sum_\mu a_\mu b_\mu$, so the real part of the norm form is a quadratic form of signature $(4,4)$ and the Hermitian form $\tilde Q\tilde Q^\dagger$ has scalar part the positive definite form $\sum_\mu|Q_\mu|^2$. The biquaternion algebra is thus a norm-form system whose form is complex-valued and indefinite in its real part, and it is not a division algebra; its zero divisors are the subject of the companion article *Biquaternion Zero Divisors*.
+with $Q_\mu\in\mathbb{C}$. Writing $Q_\mu=a_\mu+ib_\mu$ this is $N=\sum_\mu(a_\mu^2-b_\mu^2)+2i\sum_\mu a_\mu b_\mu$, so the real part of the norm form is a quadratic form of signature $(4,4)$ and the Hermitian form $\tilde Q\tilde Q^\dagger$ has scalar part the positive definite form $\sum_\mu|Q_\mu|^2$. The biquaternion algebra is thus a norm-form system whose form is complex-valued and indefinite in its real part, and it is not a division algebra; its zero divisors are not covered here.
 
 **Remark.** The biquaternion algebra is a complex algebra and an eight-dimensional real algebra at once, and the Clifford identification fixes the complex structure: in $\mathrm{Cl}_{3,0}$ the volume element $\omega=\gamma_1\gamma_2\gamma_3$ is central with $\omega^{2}=-1$, so that $\mathbb{R}[\omega]\cong\mathbb{C}$ is the center and $\mathrm{Cl}_{3,0}$ is a complex algebra with $\omega$ in the role of the scalar imaginary; under the identification $\gamma_k\mapsto ie_k$ one has $\omega\mapsto i$, and $\mathrm{Cl}_{3,0}$, $\mathbb{B}$ and $M_2(\mathbb{C})$ are the same algebra in three presentations. The complexification is the larger algebra $\mathbb{C}\mathrm{l}_3=\mathrm{Cl}_{3,0}\otimes_{\mathbb{R}}\mathbb{C}\cong M_2(\mathbb{C})\times M_2(\mathbb{C})$, of complex dimension eight, and it is the complexification, not the biquaternion algebra, that has two simple factors. This is the algebraic origin of the appearance of the pair of conjugate spinor modules in the complexified picture, recorded in *Real Spinors and Reality Conditions*.
 
@@ -146,7 +146,7 @@ $$
 
 **Proof.** The norm form is multiplicative, so $N$ is a group homomorphism from the units to $\mathbb{R}^{\times}$ (or to $\mathbb{C}^{\times}$ for $\mathbb{B}$), and its kernel is the norm-one group. The identifications of the kernels with $U(1)$ and $Sp(1)$ are immediate from the explicit forms; the spin-group identifications are those of the previous articles, in which the unit complex numbers double-cover $SO(2)$ and the unit quaternions double-cover $SO(3)$. For $\mathbb{B}$ the norm form takes values in $\mathbb{C}$ and is not a division-algebra norm; the unit group is the group of invertible $2\times2$ complex matrices, and its norm-one subgroup is $SL(2,\mathbb{C})$. $\square$
 
-**Remark.** The norm-one groups of the definite systems reproduce the compact spin groups of low dimension. The biquaternion unit group $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ is not a spin group; its norm-one subgroup, cut out by $N(Q)=\sum_\mu Q_\mu^2=\det\Phi(Q)=1$, is $SL(2,\mathbb{C})$, the spin group of the signature $(1,3)$ form, and this is the content of *The Rotation and Reflection Groups in the Biquaternion Algebra*. For the biquaternions the algebra norm and the reduced norm of the matrix algebra coincide, since the norm form is the determinant in the identification $\mathbb{B}\cong M_2(\mathbb{C})$; what fails, compared with $\mathbb{C}$ and $\mathbb{H}$, is the positive definiteness of the norm. The norm is complex-valued, so the norm-one group is not compact and is the six-dimensional $SL(2,\mathbb{C})$ rather than a compact spin group.
+**Remark.** The norm-one groups of the definite systems reproduce the compact spin groups of low dimension. The biquaternion unit group $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$ is not a spin group; its norm-one subgroup, cut out by $N(Q)=\sum_\mu Q_\mu^2=\det\Phi(Q)=1$, is $SL(2,\mathbb{C})$, the spin group of the signature $(1,3)$ form, and this is the content. For the biquaternions the algebra norm and the reduced norm of the matrix algebra coincide, since the norm form is the determinant in the identification $\mathbb{B}\cong M_2(\mathbb{C})$; what fails, compared with $\mathbb{C}$ and $\mathbb{H}$, is the positive definiteness of the norm. The norm is complex-valued, so the norm-one group is not compact and is the six-dimensional $SL(2,\mathbb{C})$ rather than a compact spin group.
 
 ## Summary
 
@@ -174,6 +174,12 @@ The composition property of the norm — the multiplicativity $N(xy)=N(x)N(y)$ �
 | $Sp(1)$ | Unit quaternions, $\cong SU(2)\cong\mathrm{Spin}(3)$ |
 | $U(1)$ | Unit complex numbers, $\cong\mathrm{Spin}(2)$ |
 | $\mathbb{O}$ | Octonions, a composition algebra but not associative, hence not a Clifford algebra |
+
+
+
+
+
+
 
 ## Further Reading
 

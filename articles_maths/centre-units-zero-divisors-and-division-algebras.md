@@ -53,7 +53,7 @@ $$
 
 so $\sigma(z)$ is central; applying the same to $\sigma^{-1}$ gives equality of sets. $\square$
 
-This is why restriction to the centre governs the automorphism group; it is used in *Automorphisms and Derivations of Algebras*.
+This is why restriction to the centre governs the automorphism group; it is used.
 
 **Definition.** An algebra $A$ over a commutative ring $R$ is **central** if $Z(A) = R \cdot 1_A$, that is, if the only central elements are the scalars; it is **central simple** if in addition it is simple.
 
@@ -178,7 +178,7 @@ $$
 \tilde{Q}\bar{\tilde{Q}} = N(\tilde{Q}).
 $$
 
-Hence if $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, then $\bar{\tilde{Q}} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $N(\tilde{Q}) \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $N(\tilde{Q}) = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $N \neq 0$, and the zero divisors $N = 0$. The explicit pairs are exhibited in *Worked Examples in the Biquaternion Algebra* and in *Biquaternion Zero Divisors*.
+Hence if $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, then $\bar{\tilde{Q}} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $N(\tilde{Q}) \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $N(\tilde{Q}) = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $N \neq 0$, and the zero divisors $N = 0$. The explicit pairs are exhibited .
 
 **Example (zero divisors in $\mathbb{H}_{\mathbb{D}}$).** The split quaternions contain the central split complex scalars, and the zero divisors of $\mathbb{D}$ are inherited: with $j$ central and $j^2 = +1$,
 
@@ -218,9 +218,9 @@ so $ba = bc = 1$ and $b$ is a two-sided inverse of $a$.
 
 **Corollary.** Let $A$ be a finite-dimensional unital associative algebra over a field $F$. Then $A$ is a division algebra if and only if $A_A$ is simple if and only if $A$ has no zero divisors.
 
-Because $A_A$ is simple for a division algebra, a division algebra has no nonzero proper right ideal, and by the same argument no nonzero proper two-sided ideal: every division algebra is **simple**. The converse fails. The matrix algebra $M_n(k)$ over a field $k$ is simple, as *Matrix Algebras* shows, but $A_A$ is not simple as a module — its nonzero proper right ideals are the column-type subspaces — and $M_n(k)$ has zero divisors. Simplicity of the algebra and simplicity of the regular module are therefore genuinely different conditions; the second is the division condition.
+Because $A_A$ is simple for a division algebra, a division algebra has no nonzero proper right ideal, and by the same argument no nonzero proper two-sided ideal: every division algebra is **simple**. The converse fails. The matrix algebra $M_n(k)$ over a field $k$ is simple, asshows, but $A_A$ is not simple as a module — its nonzero proper right ideals are the column-type subspaces — and $M_n(k)$ has zero divisors. Simplicity of the algebra and simplicity of the regular module are therefore genuinely different conditions; the second is the division condition.
 
-**Example.** The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are the subject of *Division Algebras*. The algebras $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-units and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given in *Division Algebras*.
+**Example.** The division algebras among the standard examples are $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ over their own ground fields, and their finite-dimensional extensions are not covered here. The algebras $\mathbb{D}$, $\mathbb{D}'$, $\mathbb{H}_{\mathbb{D}}$, $\mathbb{B}$, $M_n(k)$ for $n \geq 2$, $k[x]$ and $k[G]$ for $|G| \geq 2$ all have zero divisors or non-units and are not division algebras. Over $\mathbb{R}$ the finite-dimensional associative division algebras are exactly $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$ (Frobenius), so no example beyond these three exists; over $\mathbb{C}$ the only one is $\mathbb{C}$ itself (Wedderburn). The proofs are given.
 
 ## Summary
 
@@ -249,6 +249,10 @@ A unital associative algebra $A$ is a **division algebra** exactly when every no
 | $\mathbb{H}_{\mathbb{D}}$ | Split quaternions, zero divisors inherited from $\mathbb{D}$ |
 | $\mathbb{B}$ | Biquaternions, $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ |
 | $M_n(k)$ | Matrix algebra, centre $k I_n$ |
+
+
+
+
 
 ## Further Reading
 

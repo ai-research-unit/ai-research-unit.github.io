@@ -9,11 +9,11 @@ $$
 \langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle, \qquad (\psi\otimes\varphi)(y,x)=\psi(y)\varphi(x),
 $$
 
-for all $\varphi \in \mathcal D(X)$ and $\psi \in \mathcal D(Y)$. The kernel is written $K(y,x)$ with the variable of the image space first, the convention of *Pseudodifferential Operators*, so that when $K$ happens to be a locally integrable function the formula is the classical $T\varphi(y)=\int K(y,x)\varphi(x)\,dx$; the theorem says that the formula survives, with $K$ a distribution, for *every* continuous operator, and that no information about the operator is lost in the passage.
+for all $\varphi \in \mathcal D(X)$ and $\psi \in \mathcal D(Y)$. The kernel is written $K(y,x)$ with the variable of the image space first, the convention, so that when $K$ happens to be a locally integrable function the formula is the classical $T\varphi(y)=\int K(y,x)\varphi(x)\,dx$; the theorem says that the formula survives, with $K$ a distribution, for *every* continuous operator, and that no information about the operator is lost in the passage.
 
 The theorem is a statement about the duality of tensor products, and it is exactly where the topological structure of the test-function spaces enters: for a pair of general Fréchet spaces the corresponding assertion is false, and it becomes true when the spaces are nuclear, which $\mathcal D(X)$ and $\mathcal S(\mathbb{R}^n)$ are. This article states the theorem in three equivalent forms — the operator form, the tensor-product form and the kernel-distribution form — proves it in the form that the nuclearity of $\mathcal D$ makes available, computes the kernels of the standard operators (identity, derivative, adjoint, composition, integral and pseudodifferential operators) and identifies the smooth kernels with the smoothing operators. The route through nuclearity is the one that shows *why* the theorem holds, and it uses the theory of topological tensor products of Part II rather than reproducing it.
 
-Throughout, $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$ are nonempty open sets, $X \times Y \subseteq \mathbb{R}^{m+n}$ is their product, $\varphi\otimes\psi$ denotes the tensor product of test functions, and $\mathcal L(E,F)$ denotes the continuous linear maps between topological vector spaces, with $\mathcal D'(X)=\mathcal L(\mathcal D(X),\mathbb{K})$. The spaces $\mathcal D$, $\mathcal E$, $\mathcal S$ and their duals, the pairing, convolution, the differentiation of distributions and their Fourier transform are those of *Distributions and Fundamental Solutions*, and the derivative notation $D^\alpha$ fixed there is used without comment. The duality theory of locally convex spaces is that of *Duality Theory*, the Fréchet and LF structures are those of *Locally Convex Spaces*, and the projective and injective tensor products, their completions and the notion of a nuclear space are those of *Topological Tensor Products* and *Nuclear Spaces*. Compact operators and the Hilbert–Schmidt class are those of *Banach and Hilbert Spaces*. The pseudodifferential calculus that computes the kernel of a symbol and the composition of two such kernels is the subject of *Pseudodifferential Operators*; the wavefront-set refinement of the kernel's singularities is the subject of *Microlocal Analysis*; and the use of kernels to define the index and the Fredholm alternative is the subject of *Fredholm Theory*, to which this article is the immediate prerequisite.
+Throughout, $X \subseteq \mathbb{R}^m$ and $Y \subseteq \mathbb{R}^n$ are nonempty open sets, $X \times Y \subseteq \mathbb{R}^{m+n}$ is their product, $\varphi\otimes\psi$ denotes the tensor product of test functions, and $\mathcal L(E,F)$ denotes the continuous linear maps between topological vector spaces, with $\mathcal D'(X)=\mathcal L(\mathcal D(X),\mathbb{K})$. The spaces $\mathcal D$, $\mathcal E$, $\mathcal S$ and their duals, the pairing, convolution, the differentiation of distributions and their Fourier transform are those of *Distributions and Fundamental Solutions*, and the derivative notation $D^\alpha$ fixed there is used without comment. The duality theory of locally convex spaces is that of *Duality Theory*, the Fréchet and LF structures are those of *Locally Convex Spaces*, and the projective and injective tensor products, their completions and the notion of a nuclear space are those of *Topological Tensor Products* and *Nuclear Spaces*. Compact operators and the Hilbert–Schmidt class are those of *Banach and Hilbert Spaces*. The pseudodifferential calculus that computes the kernel of a symbol and the composition of two such kernels is not covered here; the wavefront-set refinement of the kernel's singularities is not covered here; and the use of kernels to define the index and the Fredholm alternative is the subject, to which this article is the immediate prerequisite.
 
 No physics is invoked.
 
@@ -159,7 +159,7 @@ $$
 \langle T\varphi,\psi\rangle=\langle K,\psi\otimes\varphi\rangle, \qquad \varphi \in \mathcal S(\mathbb{R}^m),\ \psi \in \mathcal S(\mathbb{R}^n),
 $$
 
-and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L(\mathcal S(\mathbb{R}^m),\mathcal S'(\mathbb{R}^n))$, the product of variables being identified with $\mathbb{R}^{m+n}$ in the order $(y,x)$. Consequently every continuous operator on the Schwartz space represents, and is represented by, a tempered distribution in two variables; on the Fourier side, the kernel of $T$ corresponds to the distributional symbol of $T$ under the partial transform, which is the starting point of *Pseudodifferential Operators*.
+and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L(\mathcal S(\mathbb{R}^m),\mathcal S'(\mathbb{R}^n))$, the product of variables being identified with $\mathbb{R}^{m+n}$ in the order $(y,x)$. Consequently every continuous operator on the Schwartz space represents, and is represented , a tempered distribution in two variables; on the Fourier side, the kernel of $T$ corresponds to the distributional symbol of $T$ under the partial transform, which is the starting point.
 
 **Example.** The operator of multiplication by a smooth function $a \in C^\infty(\mathbb{R}^n)$ on $\mathcal S(\mathbb{R}^n)$ has kernel $K(y,x)=a(y)\delta(x-y)$: indeed $\langle K,\psi\otimes\varphi\rangle=\iint a(y)\delta(x-y)\psi(y)\varphi(x)\,dx\,dy=\int a(y)\varphi(y)\psi(y)\,dy=\langle a\varphi,\psi\rangle$. The kernel is not a function but a distribution concentrated on the diagonal, and this is the simplest instance of a kernel that no classical integral operator possesses.
 
@@ -179,7 +179,7 @@ and $K\mapsto T$ is an isomorphism $\mathcal S'(\mathbb{R}^{m+n})\cong\mathcal L
 
 *Proof.* Each is verified by pairing with $\varphi\otimes\psi$ and reducing to the definitions: (i) gives $\langle\delta(x-y),\varphi\otimes\psi\rangle=\int\varphi(x)\psi(x)=\langle\varphi,\psi\rangle$; (ii) gives $(-1)^{|\alpha|}\int\varphi(x)\partial^\alpha\psi(x)=\langle\partial^\alpha\varphi,\psi\rangle$; (iii) and (iv) are direct. $\square$
 
-**Remark.** The identity operator is not an integral operator with a locally integrable kernel; its kernel is the delta of the diagonal, and every statement about kernels is a distributional statement. The diagonal is the set on which the classical theory fails, and the restriction to the diagonal of a general kernel — needed to define a trace — is not defined without further hypotheses, which are given microlocally in *Microlocal Analysis*.
+**Remark.** The identity operator is not an integral operator with a locally integrable kernel; its kernel is the delta of the diagonal, and every statement about kernels is a distributional statement. The diagonal is the set on which the classical theory fails, and the restriction to the diagonal of a general kernel — needed to define a trace — is not defined without further hypotheses, which are given microlocally.
 
 ### Adjoint, Composition and Integral Operators
 
@@ -211,7 +211,7 @@ $$
 K(x,y)=\frac{1}{(2\pi)^n}\int e^{i(x-y)\cdot\xi}a(x,\xi)\,d\xi ,
 $$
 
-a distribution whose singularities lie on the diagonal and whose behaviour off the diagonal records the smoothness of $a$. The class of symbols, the composition formula that computes the kernel of a product of two such operators, and the conditions under which the integral converges are those of *Pseudodifferential Operators*, where the calculus is developed; the kernel theorem is what permits the operator and the kernel to be treated as the same object throughout.
+a distribution whose singularities lie on the diagonal and whose behaviour off the diagonal records the smoothness of $a$. The class of symbols, the composition formula that computes the kernel of a product of two such operators, and the conditions under which the integral converges are those, where the calculus is developed; the kernel theorem is what permits the operator and the kernel to be treated as the same object throughout.
 
 ## The Algebraic Form of the Theorem
 
@@ -266,6 +266,10 @@ The standard kernels are the delta of the diagonal for the identity, the derivat
 | $\|T\|_{\mathrm{HS}}$ | Hilbert–Schmidt norm |
 | $a(x,\xi)$ | symbol of an operator |
 | $G(x,y)$ | Green's function |
+
+
+
+
 
 ## Further Reading
 

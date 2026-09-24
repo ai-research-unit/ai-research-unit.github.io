@@ -5,9 +5,9 @@
 
 Convolution turns the integrable functions on a locally compact group into a Banach algebra, and this algebra is the correct algebraic home of harmonic analysis. On the abelian side it is the algebra whose Gelfand transform is the Fourier transform; on the non-abelian side it is a non-commutative Banach $*$-algebra whose nondegenerate representations are exactly the continuous unitary representations of the group, so that representation theory and the spectral theory of an algebra become the same subject. The present article develops the algebra $L^1(G)$: the convolution product and its inequalities, the involution carried by the modular function, approximate identities, the passage to the group $\mathrm{C}^*$-algebras and the group von Neumann algebra, and the abelian Gelfand picture as the commutative case.
 
-The article also fixes the general (not necessarily unimodular) conventions of the harmonic-analysis block: the modular function in the involution, the two conventions for convolution on a non-unimodular group, and the relation between the left and right Haar measures. The later articles of the block use these without restatement.
+The article also fixes the general (not necessarily unimodular) conventions of the harmonic-analysis block: the modular function in the involution, the two conventions for convolution on a non-unimodular group, and the relation between the left and right Haar measures. The other articles of this category use these without restatement.
 
-The boundaries of the block. The **Haar measure**, its invariance and the modular function $\Delta$ are *Locally Compact Groups and Haar Measure*; in particular the convention $\mu(Ag) = \Delta(g)\mu(A)$, the right Haar measure $d\mu_R = \Delta^{-1}d\mu_L$, the inversion identity $\int f(x^{-1})dx = \int f(x)\Delta(x)^{-1}dx$, and the affine group with $\Delta(a,b) = a^{-1}$ are all established there and are used here. The **general integration theory**, the $L^p$ spaces, Hölder, Minkowski and Fubini, is *Measure Theory and Integration* and *Modes of Convergence*, and the **Banach- and Hilbert-space theory** — Banach algebras, spectra, the Gelfand transform, $*$-representations, the GNS construction — is standard and is quoted as it is used, with the operator-algebraic development belonging to *Operator Algebras* and the space theory to the later *Banach and Hilbert Spaces*. The **representation theory** of the group is Part II's (*Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*), and the **abelian transform theory** is *Harmonic Analysis on Groups*; the non-abelian spectral theory is *Noncommutative Harmonic Analysis* and *The Plancherel Theorem*, and the operator-algebraic completions are *Operator Algebras* in the Topology on Linear Algebras slot of Part II. No physics is invoked.
+The boundaries of the block. The **Haar measure**, its invariance and the modular function $\Delta$ are *Locally Compact Groups and Haar Measure*; in particular the convention $\mu(Ag) = \Delta(g)\mu(A)$, the right Haar measure $d\mu_R = \Delta^{-1}d\mu_L$, the inversion identity $\int f(x^{-1})dx = \int f(x)\Delta(x)^{-1}dx$, and the affine group with $\Delta(a,b) = a^{-1}$ are all established there and are used here. The **general integration theory**, the $L^p$ spaces, Hölder, Minkowski and Fubini, is *Measure Theory and Integration* and *Modes of Convergence*, and the **Banach- and Hilbert-space theory** — Banach algebras, spectra, the Gelfand transform, $*$-representations, the GNS construction — is standard and is quoted as it is used, with the operator-algebraic development belonging to *Operator Algebras* and the space theory to the later. The **representation theory** of the group is Part II's (*Representation Theory of Locally Compact Groups*, *Induced Representations of Locally Compact Groups*, *Mackey Theory*, *Type I Groups*), and the **abelian transform theory** is *Harmonic Analysis on Groups*; the non-abelian spectral theory isandand the operator-algebraic completions are *Operator Algebras* in the Topology on Linear Algebras slot of Part II. No physics is invoked.
 
 Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx = d\mu_L(x)$, modular function $\Delta$, and identity $e$; $G$ is **unimodular** when $\Delta \equiv 1$. The convolution is
 
@@ -51,7 +51,7 @@ For $1 \leq p \leq \infty$ the space $L^p(G)$ is taken with respect to $dx$; sin
 
 **Proof.** For $f \in C_c(G)$ the statements are uniform continuity of a compactly supported continuous function together with the compactness of its support; for general $f$ they follow by density of $C_c(G)$ in $L^p(G)$ and the isometry $\|L_xf\|_p = \|f\|_p$, $\|R_xf\|_p = \|f\|_p\Delta(x)^{-1/p}$ for the right translation. Unitarity of $L$ on $L^2(G)$ is the left invariance of $dx$, and unitarity of $R$ follows from the right invariance of $d\mu_R = \Delta^{-1}dx$, equivalently from the computation $\|R_x f\|_2^2 = \int|f(yx)|^2dy = \Delta(x)^{-1}\|f\|_2^2$ compensated by the weight in the inner product of the right regular representation; on a unimodular group both are directly unitary. $\square$
 
-**Remark (the two regular representations).** The left regular representation $\lambda = L$ and the right regular representation $\rho = R$ commute, and on $L^2(G)$ they generate the regular representation of $G \times G$; this is the operator-algebraic frame of the Plancherel theory of *The Plancherel Theorem*.
+**Remark (the two regular representations).** The left regular representation $\lambda = L$ and the right regular representation $\rho = R$ commute, and on $L^2(G)$ they generate the regular representation of $G \times G$; this is the operator-algebraic frame of the Plancherel theory.
 
 ## The Convolution Product
 
@@ -151,7 +151,7 @@ uniformly for $g$ in compact subsets of $G$, where $L_g u_\alpha(x) = u_\alpha(g
 
 **Proof sketch.** Amenability is the existence of an invariant mean on $L^\infty(G)$, the existence of Følner sets for the discrete case and the equivalent formulations of *Amenable Groups*, which states the group-theoretic criteria and defers the analytic ones to this article. If $(u_\alpha)$ satisfies $P_1$, the functionals $f \mapsto \int f\,u_\alpha\,dx$ on $L^\infty(G)$ are means whose limits along a subnet are invariant, giving amenability; conversely, an invariant mean is approximated weakly by absolutely continuous means, and a convexity argument (the mean is a fixed point of the action on the convex set of means, and the absolutely continuous means are weak-$*$ dense) produces a net satisfying $P_1$. The proof is Reiter's and is quoted from the literature. $\square$
 
-**Remark (the invariant approximate identity as the analytic form of amenability).** The contrast with the always-existing approximate identity of the previous theorem is the point: every $L^1(G)$ has a *normalised* approximate identity, but only for an amenable $G$ can it be chosen approximately **invariant** under left translation. The convolution algebra is thus the analytic locus of amenability, and the weak-containment statement "the trivial representation is weakly contained in the regular representation" is its representation-theoretic form; that statement belongs to *Noncommutative Harmonic Analysis*.
+**Remark (the invariant approximate identity as the analytic form of amenability).** The contrast with the always-existing approximate identity of the previous theorem is the point: every $L^1(G)$ has a *normalised* approximate identity, but only for an amenable $G$ can it be chosen approximately **invariant** under left translation. The convolution algebra is thus the analytic locus of amenability, and the weak-containment statement "the trivial representation is weakly contained in the regular representation" is its representation-theoretic form; that statement belongs.
 
 ## Representations and Completions
 
@@ -183,7 +183,7 @@ and the **full group $\mathrm{C}^*$-algebra** $C^*(G)$ is the completion of $L^1
 
 **Theorem.** (a) The map $L^1(G) \to C^*_r(G)$ is a surjective $*$-homomorphism with dense image, so $C^*_r(G)$ is the smallest $\mathrm{C}^*$-algebra generated by the regular representation. (b) The supremum defining the enveloping norm is finite, since $\|\pi(f)\| \leq \|f\|_1$, and $C^*(G)$ is a $\mathrm{C}^*$-algebra; there is a canonical surjection $C^*(G) \to C^*_r(G)$. (c) $\pi$ is a representation of $C^*(G)$ restricted to $L^1(G)$; the reduced representation is the composition with the quotient map precisely when the group is amenable, and otherwise the map is not injective. (d) For abelian $G$, $C^*(G) \cong C_0(G^\vee)$.
 
-**Proof.** (a) and (b) are the properties of the enveloping $\mathrm{C}^*$-norm and the density of $L^1(G)$; (c) is the statement that the regular representation is faithful on $C^*(G)$ exactly in the amenable case (the weak containment of the trivial representation in the regular representation), treated in *Noncommutative Harmonic Analysis*; (d) is the Gelfand–Naimark theorem for the commutative $\mathrm{C}^*$-algebra $L^1(G)$ of *Harmonic Analysis on Groups*, §The Algebra of the Transform. $\square$
+**Pro.** (a) and (b) are the properties of the enveloping $\mathrm{C}^*$-norm and the density of $L^1(G)$; (c) is the statement that the regular representation is faithful on $C^*(G)$ exactly in the amenable case (the weak containment of the trivial representation in the regular representation), treated; (d) is the Gelfand–Naimark theorem for the commutative $\mathrm{C}^*$-algebra $L^1(G)$ of *Harmonic Analysis on Groups*, §The Algebra of the Transform. $\square$
 
 ### The Group von Neumann Algebra
 
@@ -211,7 +211,7 @@ the closed subspace of functions invariant under conjugation; for abelian $G$, $
 
 **Proof.** $f$ is central iff $f*g = g*f$ for every $g \in L^1(G)$. Testing against a $g$ concentrated in a small neighbourhood of a point $z$ gives $f(z^{-1}x) = f(xz^{-1})$ for almost all $x$, which is the conjugation invariance $f(xy) = f(yx)$ after $z = y^{-1}$. Conversely conjugation invariance gives centrality by the same change of variable. The statement about central characters is the spectral theory of the commutative Banach algebra $Z(L^1(G))$ together with the description of its characters by irreducible representations; for compact groups the central characters are the normalised characters $\chi_\pi/d_\pi$ of *Analysis on Compact Groups*. $\square$
 
-**Remark (the abelian side is the whole center).** For $G$ abelian the center is the whole algebra and its Gelfand spectrum is $G^\vee$; for a compact group the center is the algebra of class functions and its spectrum is the dual; for a general unimodular type I group the center is described by the Plancherel measure of *The Plancherel Theorem*. The center is thus the bridge between the commutative and the non-commutative pictures.
+**Remark (the abelian side is the whole center).** For $G$ abelian the center is the whole algebra and its Gelfand spectrum is $G^\vee$; for a compact group the center is the algebra of class functions and its spectrum is the dual; for a general unimodular type I group the center is described by the Plancherel measure. The center is thus the bridge between the commutative and the non-commutative pictures.
 
 ## Examples
 
@@ -269,6 +269,10 @@ For a locally compact group $G$ with left Haar measure $dx$ and modular function
 | $\hat f(\chi) = \int_G f\overline\chi\,dx$ | Gelfand transform in the abelian case |
 | $\ell^1(G)$ | Group algebra of a discrete group |
 | $\tau(a) = \langle a\delta_e,\delta_e\rangle$ | Trace on $L(G)$, $G$ discrete |
+
+
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 This article is the representations slot of the octonion system. Its subject is what can replace the representation theory of an algebra when the algebra is not associative. The article shows that the ordinary notion of a module fails completely for $\mathbb{O}$ — every unital bimodule over the octonions is zero — and that the representations which do exist are of two kinds: the multiplication operators, which are linear and injective but not multiplicative, and the ordinary representations of the structure objects $\operatorname{Der}(\mathbb{O}) = \mathfrak{g}_2$ and $\operatorname{Aut}(\mathbb{O}) = G_2$ together with their relative $\operatorname{Spin}(7)$ and $\operatorname{Spin}(8)$.
 
-The article takes the multiplication and the identities of *Octonion Algebra*, the norm and the invertibility theory of *Octonion Norm and Invertibility*, and the model of the quaternion case from *Quaternion Representations*. The general theory of modules over an associative algebra, of algebras of endomorphisms and of the enveloping algebra of a Lie algebra is that of the Part I companions *Modules*, *Algebras: A General Introduction* and *Universal Enveloping Algebras*; the Clifford algebras and their classification are the subject of *Clifford Algebras in Finite Dimensions* and *Spin Representations and Clifford Modules*, and the identification of the number systems with Clifford algebras is the subject of *The Number Systems as Clifford Algebras*. The finite-dimensional representation theory of $G_2$ and its role in the exceptional groups is taken up again in *Octonions and the Exceptional Lie Groups*; the present article states the representations and does not derive the classification of the exceptional groups.
+The article takes the multiplication and the identities of *Octonion Algebra*, the norm and the invertibility theory of *Octonion Norm and Invertibility*, and the model of the quaternion case from *Quaternion Representations*. The general theory of modules over an associative algebra, of algebras of endomorphisms and of the enveloping algebra of a Lie algebra is that of the Part I companions *Modules*, *Algebras: A General Introduction* and *Universal Enveloping Algebras*; the Clifford algebras and their classification are the subject of *Clifford Algebras in Finite Dimensions* and *Spin Representations and Clifford Modules*, and the identification of the number systems with Clifford algebras is the subject of *The Number Systems as Clifford Algebras*. The finite-dimensional representation theory of $G_2$ and its role in the exceptional groups is taken up aga; the present article states the representations and does not derive the classification of the exceptional groups.
 
 **Conventions.** The octonion algebra has basis $e_0,\dots,e_7$ with the Fano multiplication of *Octonion Algebra*, inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$ and norm $\lvert x\rvert^2 = \langle x,x\rangle$. For $x\in\mathbb{O}$ the operators $L_x,R_x\in\operatorname{End}_{\mathbb{R}}(\mathbb{O})$ are left and right multiplication, $L_x(y) = xy$, $R_y(x) = xy$. The associator is $[x,y,z] = (xy)z - x(yz)$.
 
@@ -119,7 +119,7 @@ $$
 S^6 = G_2/SU(3) .
 $$
 
-*Proof.* The derivations of a composition algebra form the Lie algebra of its automorphism group, and for the octonions this algebra is the exceptional simple Lie algebra of type $G_2$, of dimension fourteen; the statements about $e_0$ and the irreducibility of the action on $\operatorname{Im}\mathbb{O}$ follow because a derivation annihilates the identity and preserves the imaginary subspace, which is irreducible under the automorphism group. The orbit statement is the standard transitivity of $G_2$ on the imaginary units with isotropy $SU(3)$. These are the standard facts, listed with their sources in the Further Reading; the construction of $\mathfrak{g}_2$ from the octonions and its place among the exceptional Lie algebras is the subject of *Octonions and the Exceptional Lie Groups*. $\square$
+*Pro.* The derivations of a composition algebra form the Lie algebra of its automorphism group, and for the octonions this algebra is the exceptional simple Lie algebra of type $G_2$, of dimension fourteen; the statements about $e_0$ and the irreducibility of the action on $\operatorname{Im}\mathbb{O}$ follow because a derivation annihilates the identity and preserves the imaginary subspace, which is irreducible under the automorphism group. The orbit statement is the standard transitivity of $G_2$ on the imaginary units with isotropy $SU(3)$. These are the standard facts, listed with their sources in the Further Reading; the construction of $\mathfrak{g}_2$ from the octonions and its place among the exceptional Lie algebras is not covered here. $\square$
 
 **Theorem (the low-dimensional representations).** As a $\mathfrak{g}_2$-module, $\mathfrak{so}(7)$ decomposes as
 
@@ -137,7 +137,7 @@ that is $49 = 1 + 7 + 14 + 27$, with $\operatorname{Sym}^2\mathbb{R}^7 = \mathbb
 
 *Proof.* The decompositions are the standard branching rules for the exceptional algebra; the dimensions are those of the displayed modules, and the identities $21 = 14+7$, $49 = 1+7+14+27$, $28 = 1+27$ and $21 = 7+14$ are arithmetic. The interpretation of $\Lambda^2\mathbb{R}^7 = \mathbb{R}^7\oplus\mathfrak{g}_2$ is that the cross product and the derivation action together exhaust the alternating square; this is the octonion statement that the multiplication is determined by the derivation algebra up to the vector multiplication itself. $\square$
 
-The module $V_{27}$ is the one that reappears as the traceless part of the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$, whose automorphism group is $F_4$; the passage from the representations of $\mathfrak{g}_2$ to the exceptional groups is taken up in *Octonions and the Exceptional Lie Groups*.
+The module $V_{27}$ is the one that reappears as the traceless part of the exceptional Jordan algebra $\mathfrak{h}_3(\mathbb{O})$, whose automorphism group is $F_4$; the passage from the representations of $\mathfrak{g}_2$ to the exceptional groups is taken up.
 
 ### Triality
 
@@ -177,6 +177,10 @@ The structure objects have ordinary representation theory. The derivation algebr
 | $\mathfrak{g}_2 = \operatorname{Der}(\mathbb{O})$, $G_2 = \operatorname{Aut}(\mathbb{O})$ | Exceptional Lie algebra and group, dimension $14$ |
 | $V_7$, $V_{14} = \mathfrak{g}_2$, $V_{27}$ | Irreducible $\mathfrak{g}_2$-modules; $49 = 1+7+14+27$, $21 = 14+7$ |
 | $\operatorname{Spin}(8)$, $8_v$, $8_s$, $8_c$ | Vector and half-spin representations, permuted by triality |
+
+
+
+
 
 ## Further Reading
 

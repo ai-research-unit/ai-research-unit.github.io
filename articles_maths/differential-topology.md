@@ -7,7 +7,7 @@ Differential topology is the study of smooth manifolds up to diffeomorphism, and
 
 This article develops the subject from the definitions established in *Smooth Manifolds and Differential Geometry*. It treats Sard's theorem and its corollary that regular values are dense, the transversality of a smooth map to a submanifold and Thom's transversality theorem, the oriented and mod-two intersection numbers, the degree of a map between closed oriented manifolds of the same dimension with its regular-value formula, its homotopy invariance and its boundary and product formulas, the Brouwer fixed point theorem and the fundamental theorem of algebra as applications, the Whitney embedding and approximation theorems and the tubular neighbourhood theorem, the elements of Morse theory including the Morse lemma and the Morse inequalities, and the cobordism relation in outline.
 
-The article assumes the manifold theory, the tangent space and the differential, the regular value theorem and the partition of unity of *Smooth Manifolds and Differential Geometry*, together with the topological background of *Topological Spaces* and *Metric, Uniform and Complete Spaces*. It uses the de Rham cohomology of *Differential Forms and Stokes' Theorem* for the Morse inequalities. Sard's theorem and the approximation theorems are stated as standard; the measure-theoretic proof of Sard belongs to Part III, where the measure is available. The cobordism groups, the classifying spaces and the surgery obstruction are algebraic-topological constructions and are deferred to *Cobordism and Surgery Theory*, written in parallel. No physics is invoked.
+The article assumes the manifold theory, the tangent space and the differential, the regular value theorem and the partition of unity of *Smooth Manifolds and Differential Geometry*, together with the topological background of *Topological Spaces* and *Metric, Uniform and Complete Spaces*. The Morse inequalities are stated in the de Rham form as standard. Sard's theorem and the approximation theorems are stated as standard; the measure-theoretic proof of Sard belongs to Part III, where the measure is available. The cobordism groups, the classifying spaces and the surgery obstruction are algebraic-topological constructions and are deferred. No physics is invoked.
 
 ## Regular Values and Sard's Theorem
 
@@ -167,7 +167,7 @@ But the ball is contractible, so the inclusion $\iota$ is nullhomotopic; hence $
 
 ### Tubular Neighbourhoods
 
-**Definition.** Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from *Smooth Manifolds and Differential Geometry*. The **normal bundle** of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $p$ is the orthogonal complement of $T_pS$ with respect to $g_p$. The **exponential map of the metric**, defined in *Curvature and Geodesics*, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.
+**Definition.** Let $S \subseteq M$ be a regular submanifold of a Riemannian manifold $(M, g)$ with metric $g$ from *Smooth Manifolds and Differential Geometry*. The **normal bundle** of $S$ in $M$ is the subbundle $NS \subseteq TM|_S$ whose fibre at $p$ is the orthogonal complement of $T_pS$ with respect to $g_p$. The **exponential map of the metric**, defined, sends a neighbourhood of the zero section of $NS$ diffeomorphically onto a neighbourhood of $S$ in $M$.
 
 **Theorem (tubular neighbourhood).** Every regular submanifold $S$ of a smooth manifold $M$ has an open neighbourhood $U$, the **tubular neighbourhood**, that is the total space of a vector bundle over $S$ — the normal bundle when a metric is chosen — and the inclusion $S \hookrightarrow U$ is a homotopy equivalence.
 
@@ -203,7 +203,7 @@ $$
 
 ### The Morse Inequalities
 
-**Definition.** For a Morse function $f$ on a closed manifold $M$ and a real number $a$ write $M_a = f^{-1}((-\infty, a])$ for the sublevel set. Let $c_k$ be the number of critical points of index $k$ and $b_k = \dim_{\mathbb{R}} H^k_{dR}(M)$ the $k$-th Betti number, the de Rham cohomology being that of *Differential Forms and Stokes' Theorem*.
+**Definition.** For a Morse function $f$ on a closed manifold $M$ and a real number $a$ write $M_a = f^{-1}((-\infty, a])$ for the sublevel set. Let $c_k$ be the number of critical points of index $k$ and $b_k = \dim_{\mathbb{R}} H^k_{dR}(M)$ the $k$-th Betti number, the de Rham cohomology being taken as standard.
 
 **Theorem (weak Morse inequalities).** $c_k \geq b_k$ for every $k$, and
 
@@ -223,7 +223,7 @@ $$
 
 **Example.** A Morse function on the torus $T^2$ has at least one critical point of each index $0, 1, 2, 1$, namely $c_0 \geq 1$, $c_1 \geq 2$, $c_2 \geq 1$, with total signed count $1 - 2 + 1 = 0 = \chi(T^2)$, which matches the Betti numbers $1, 2, 1$ of the torus.
 
-**Remark.** Morse theory is the bridge between the differential topology of a function and the algebraic topology of the manifold, and the handles it attaches are the same handles used in the surgery classification of manifolds. The handle decomposition is the differential-topological input to the algebraic-topological theory of *Cobordism and Surgery Theory*, written in parallel.
+**Remark.** Morse theory is the bridge between the differential topology of a function and the algebraic topology of the manifold, and the handles it attaches are the same handles used in the surgery classification of manifolds. The handle decomposition is the differential-topological input to the algebraic-topological theory.
 
 ## Cobordism in Outline
 
@@ -245,7 +245,7 @@ the boundary components carrying the orientations induced by that of $W$, the ma
 
 **Example.** $\Omega_0^{SO} \cong \mathbb{Z}$, the class of a point, and a closed oriented zero-manifold is a finite signed set; every closed oriented one-manifold bounds, so $\Omega_1^{SO} = 0$; a closed oriented surface bounds a three-manifold, so $\Omega_2^{SO} = 0$; and $\Omega_3^{SO} = 0$, while $\Omega_4^{SO} \cong \mathbb{Z}$ generated by the complex projective plane with its complex orientation.
 
-**Remark.** The computation of the cobordism groups, the classifying spaces, the Pontryagin–Thom construction and the relation to the characteristic classes of *Fibre Bundles, Connections and Curvature* constitute the cobordism theory and the surgery theory of *Cobordism and Surgery Theory*, written in parallel, and they are not developed here. What belongs to differential topology is the relation itself and the fact that it is transverse-friendly: a cobordism can be put into general position relative to a map into a fixed space, which is the mechanism that converts the classification of manifolds up to cobordism into a computation about the topology of the target space. In the unoriented case the mod-two degree of a map to a sphere, defined above, is the first of the numerical invariants of the theory: by Thom's theorem a closed $n$-manifold bounds if and only if all its Stiefel–Whitney numbers vanish, and the characteristic classes are those of *Fibre Bundles, Connections and Curvature*.
+**Remark.** The computation of the cobordism groups, the classifying spaces, the Pontryagin–Thom construction and the relation to the characteristic classes constitute the cobordism theory and the surgery theory, and they are not developed here. What belongs to differential topology is the relation itself and the fact that it is transverse-friendly: a cobordism can be put into general position relative to a map into a fixed space, which is the mechanism that converts the classification of manifolds up to cobordism into a computation about the topology of the target space. In the unoriented case the mod-two degree of a map to a sphere, defined above, is the first of the numerical invariants of the theory: by Thom's theorem a closed $n$-manifold bounds if and only if all its Stiefel–Whitney numbers vanish, and the characteristic classes are standard.
 
 ## Summary
 
@@ -277,6 +277,8 @@ Every smooth manifold embeds in a Euclidean space, by Whitney's embedding theore
 | Morse inequalities | $c_k \geq b_k$ and the alternating stronger forms; $\sum(-1)^k c_k = \chi(M)$ |
 | $\partial W = M_0 \sqcup M_1$ | Cobordism $W$ from $M_0$ to $M_1$ |
 | $\Omega_n^{SO}$, $\mathfrak{N}_n$ | Oriented and unoriented cobordism groups of closed $n$-manifolds |
+
+
 
 ## Further Reading
 

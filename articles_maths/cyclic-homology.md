@@ -5,9 +5,9 @@
 
 The Hochschild complex of an algebra $A$ carries a symmetry that the homology forgets: the $n$-chains are tensors $a_0\otimes a_1\otimes\cdots\otimes a_n$ on which the cyclic group of order $n+1$ acts by cyclically permuting the factors with a sign, and the permutation commutes with the Hochschild boundary only up to that sign. The **cyclic homology** $HC_{\bullet}(A)$ is the homology of a bicomplex built from this action, and it is a different invariant from the Hochschild homology, neither a quotient nor a subgroup of it in any naive sense. It is the natural home of two constructions: the **Connes boundary** $B$, which is not a differential of the Hochschild complex but intertwines it with the cyclic one, and the periodic complex, in which $B$ and the Hochschild boundary $b$ are placed together and the whole becomes $\mathbb{Z}/2$-graded. The result is a long exact sequence — the **Connes sequence**, or $SBI$ sequence — relating the Hochschild and cyclic homologies of $A$, and a second, the change from cyclic to periodic cyclic homology.
 
-This article develops the cyclic category and cyclic modules, the cyclic and periodic cyclic complexes, the Connes boundary and the $SBI$ exact sequence, the computation for smooth commutative algebras in terms of differential forms and the de Rham cohomology, the comparison with Hochschild homology, the Morita invariance, and the trace maps from algebraic K-theory that motivate the theory. It follows *Hochschild Homology*, *K-Theory of Rings* and *Derived Categories*, and it prepares *Deformation Theory* and the higher structures of the category.
+This article develops the cyclic category and cyclic modules, the cyclic and periodic cyclic complexes, the Connes boundary and the $SBI$ exact sequence, the computation for smooth commutative algebras in terms of differential forms and the de Rham cohomology, the comparison with Hochschild homology, the Morita invariance, and the trace maps from algebraic K-theory that motivate the theory. It follows *Hochschild Homology*, *K-Theory of Rings* and *Derived Categories*, and it preparesand the higher structures of the category.
 
-Two distinctions must be stated at the outset. First, **cyclic cohomology is a different invariant despite the name**: it belongs to Part III, where it is treated in the companion article *Cyclic Cohomology*, being written in parallel, and it is built from the same cyclic object by taking the dual, with the additional structure of a topological vector space on which the theory of Part III operates; nothing in the present article depends on it, and the present article supplies its algebraic input. Second, the ground ring is commutative and the algebra is discrete; the analytic completions, the traces on operator algebras and the cyclic cohomology of Fréchet algebras all belong to Part III and are not used.
+Two distinctions must be stated at the outset. First, **cyclic cohomology is a different invariant despite the name**: it belongs to Part III, where it is treated, and it is built from the same cyclic object by taking the dual, with the additional structure of a topological vector space on which the theory of Part III operates; nothing in the present article depends on it, and the present article supplies its algebraic input. Second, the ground ring is commutative and the algebra is discrete; the analytic completions, the traces on operator algebras and the cyclic cohomology of Fréchet algebras all belong to Part III and are not used.
 
 Throughout, $k$ is a commutative ring with $1\neq0$, $A$ is an associative $k$-algebra with unit, and tensors are over $k$; the Hochschild complex, the Kähler differentials $\Omega^p_{A/k}$ and the enveloping algebra $A^{\mathrm{e}}$ are those of *Hochschild Homology*. No distance, norm, open set or completion occurs. A trace means a $k$-linear functional annihilating the commutators, as in *K-Theory of Rings*.
 
@@ -171,7 +171,7 @@ which is a ring homomorphism for the tensor product on the left and the cup prod
 
 *Proof (in outline).* The trace of an idempotent representing a projective module gives a cyclic cycle whose de Rham classes are the Chern classes; naturality and multiplicativity are checked on matrices, and the isomorphism statement is the rational comparison theorem, which uses the degeneration of the Atiyah–Hirzebruch-type spectral sequence of the mixed complex in the smooth case. $\square$
 
-**Remark.** The full statement of the comparison between algebraic K-theory and cyclic homology, and the corresponding rational isomorphism for the higher groups, is the subject of the companion articles *Higher Algebraic K-Theory* and the rational homotopy theory of the K-theory spaces; only the elementary trace and its low-degree form are used here. The topological Chern character, which takes values in the cohomology of a space, belongs to Part II, where it is treated in *Topological K-Theory*.
+**Remark.** The full statement of the comparison between algebraic K-theory and cyclic homology, and the corresponding rational isomorphism for the higher groups, is the subject of and the rational homotopy theory of the K-theory spaces; only the elementary trace and its low-degree form are used here. The topological Chern character, which takes values in the cohomology of a space, belongs to Part II, where it is treated.
 
 ## Morita Invariance and Base Change
 
@@ -191,7 +191,7 @@ The cyclic category $\Lambda$ is the simplicial category with an extra cyclic op
 
 The Connes $SBI$ sequence relates the two theories: $HH_n\to HC_n\to HC_{n-2}\to HH_{n-1}$ is exact in every degree, so the cyclic homology is built from the Hochschild homology of both parities. For a smooth commutative algebra the cyclic homology is the direct sum of the differential forms modulo exact forms and the de Rham cohomology shifted by even degrees; for the polynomial algebra it is $A$ in degree zero, $k$ in the positive even degrees and $0$ in the odd degrees. Cyclic homology is Morita invariant and commutes with flat base change, and it receives the Dennis trace from the algebraic K-theory of *K-Theory of Rings*, whose rational form is the Chern character comparing K-theory with de Rham cohomology.
 
-The cyclic homology of this article is the algebraic invariant of a discrete algebra, computed by the cyclic complex and the $SBI$ sequence. The **cyclic cohomology** of a topological algebra is a different object, despite the shared name, and belongs to Part III, where it is treated in the companion article *Cyclic Cohomology*, being written in parallel; the analytic traces, the dense subalgebras and the topological tensor products of that theory are not available in Part I and are not used here.
+The cyclic homology of this article is the algebraic invariant of a discrete algebra, computed by the cyclic complex and the $SBI$ sequence. The **cyclic cohomology** of a topological algebra is a different object, despite the shared name, and belongs to Part III, where it is treated ; the analytic traces, the dense subalgebras and the topological tensor products of that theory are not available in Part I and are not used here.
 
 ## Summary of Notation
 
@@ -211,6 +211,10 @@ The cyclic homology of this article is the algebraic invariant of a discrete alg
 | $\operatorname{tr}:K_n(R)\to HH_n(R)$ | Dennis trace |
 | $\operatorname{ch}$ | Chern character |
 | $[A,A]$ | commutator submodule, so $A/[A,A]$ is the trace space |
+
+
+
+
 
 ## Further Reading
 

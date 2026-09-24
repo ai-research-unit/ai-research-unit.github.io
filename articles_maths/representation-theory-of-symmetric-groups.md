@@ -4,7 +4,7 @@
 
 A representation of the symmetric group $S_n$ over a field $K$ is an action of $S_n$ on a $K$-module by $K$-linear automorphisms, equivalently a homomorphism $S_n \to \operatorname{Aut}_K(M)$, equivalently a module over the group ring $K[S_n]$ — the ring of formal $K$-linear combinations of group elements with multiplication induced by the group law. The theory is the most explicit in all of representation theory: the irreducible representations are indexed by the partitions of $n$, their dimensions are given by the hook length formula of *Symmetric Functions and Schur Functions*, their characters are computed by the Murnaghan–Nakayama rule, their construction is the tableau calculus of Alfred Young, and their combinatorics — Young diagrams, standard and semistandard tableaux, the Young lattice — is the same combinatorics that indexes the symmetric functions. In characteristic zero the theory is completely understood; in characteristic $p$ it is still the object of an extensive literature, but its structure — the blocks, the $p$-cores, the decomposition numbers — is known in its broad outlines.
 
-This article develops the characteristic-zero theory and states the modular theory. The connection with symmetric functions is the Frobenius characteristic of *Symmetric Functions and Schur Functions*, which identifies the character ring with the ring of symmetric functions and sends the irreducible character $\chi^\lambda$ to the Schur function $s_\lambda$; the connection with the general linear group is Schur–Weyl duality, the subject of *Schur–Weyl Duality*, being written in parallel. The group ring is used only as a ring acting on modules; the systematic theory of algebras — of a module carrying a product — belongs to *Linear Algebras*, and the modules and vector spaces used below are those of *Modules* and *Vector Spaces*. The symmetric-algebra side of the combinatorial theory, the Hecke algebras of type $A$ and their deformations, belongs to *Symmetric Linear Algebras*, owned by another agent of this Part, and is cited rather than developed.
+This article develops the characteristic-zero theory and states the modular theory. The connection with symmetric functions is the Frobenius characteristic of *Symmetric Functions and Schur Functions*, which identifies the character ring with the ring of symmetric functions and sends the irreducible character $\chi^\lambda$ to the Schur function $s_\lambda$; the connection with the general linear group is Schur–Weyl duality. The group ring is used only as a ring acting on modules; the systematic theory of algebras — of a module carrying a product — belongs to *Linear Algebras*, and the modules and vector spaces used below are the standard ones. The symmetric-algebra side of the combinatorial theory, the Hecke algebras of type $A$ and their deformations, belongs to *Symmetric Linear Algebras*, owned by another agent of this Part, and is cited rather than developed.
 
 Throughout, $K$ is a field of characteristic not dividing $n!$ unless a modular statement is explicitly made, so that by Maschke's theorem every representation is a direct sum of irreducibles; $S_n$ is the symmetric group, its **conjugacy classes** are indexed by cycle type, that is, by partitions $\mu$ of $n$; $\lambda$, $\mu$ denote partitions; $M^\lambda$ is a permutation module, $S^\lambda$ the corresponding Specht module, $\chi^\lambda$ its character, and $\lambda'$ the conjugate partition. The hook length formula, the Kostka numbers $K_{\lambda\mu}$, the Hall inner product and the Frobenius characteristic are those of *Symmetric Functions and Schur Functions* and are used freely.
 
@@ -142,7 +142,7 @@ in agreement with the character table of $S_4$ displayed above. Computing the wh
 
 **Example.** For $p = 2$ and $n = 3$: the $2$-cores of the partitions of $3$ are obtained by deleting dominoes, giving $(1)$ for $(3)$ and for $(2,1)$, and $\emptyset$ for $(1,1,1)$. Hence there are two $2$-blocks, $\{(3),(2,1)\}$ and $\{(1,1,1)\}$, and the $2$-regular partitions — those with no part repeated twice — are $(3)$ and $(2,1)$, so there are two irreducible $2$-modular representations, in agreement with the two blocks. In characteristic $2$ the trivial and sign representations of $S_n$ are isomorphic, since $-1 = 1$ in $K$.
 
-**Remark.** The modular theory of $S_n$ is equivalent, through the Schur–Weyl correspondence of *Schur–Weyl Duality*, being written in parallel, to the theory of polynomial representations of the general linear group in the same characteristic, and the decomposition numbers of $S_n$ are the multiplicities in the decomposition of the Weyl modules. The Hecke algebra deformations of the group ring, in which the symmetric-group theory is the case $q = 1$, belong to *Symmetric Linear Algebras* and are not developed here.
+**Remark.** The modular theory of $S_n$ is equivalent, through the Schur–Weyl correspondence, to the theory of polynomial representations of the general linear group in the same characteristic, and the decomposition numbers of $S_n$ are the multiplicities in the decomposition of the Weyl modules. The Hecke algebra deformations of the group ring, in which the symmetric-group theory is the case $q = 1$, belong to *Symmetric Linear Algebras* and are not developed here.
 
 ---
 
@@ -158,7 +158,7 @@ $$
 V^{\otimes d} \cong \bigoplus_{\lambda\vdash d,\ \ell(\lambda)\leq n}S^\lambda\otimes W^\lambda,
 $$
 
-with $S^\lambda$ the Specht module and $W^\lambda$ the irreducible polynomial representation of $GL(V)$ of highest weight $\lambda$; the multiplicity of $S^\lambda$ is $\dim W^\lambda = s_\lambda(1^n)$, and the two endomorphism rings are the homomorphic images of the respective group rings. The proof, the construction of $W^\lambda$ as a Weyl module, and the modular version are *Schur–Weyl Duality*, being written in parallel.
+with $S^\lambda$ the Specht module and $W^\lambda$ the irreducible polynomial representation of $GL(V)$ of highest weight $\lambda$; the multiplicity of $S^\lambda$ is $\dim W^\lambda = s_\lambda(1^n)$, and the two endomorphism rings are the homomorphic images of the respective group rings. The pro, the construction of $W^\lambda$ as a Weyl module, and the modular version arebeing.
 
 **Example.** For $d = 2$ and $n \geq 2$: $V^{\otimes2} = \operatorname{Sym}^2V\oplus\Lambda^2V$, with $S^{(2)}$ acting trivially on the symmetric part and by the sign on the exterior part; the multiplicity of $S^{(2)}$ is $\dim\operatorname{Sym}^2V = \binom{n+1}{2} = s_{(2)}(1^n)$ and that of $S^{(1,1)}$ is $\binom{n}{2} = s_{(1,1)}(1^n)$, in agreement with the dimension formula $s_\lambda(1^n) = \prod_{i<j}\frac{\lambda_i-\lambda_j+j-i}{j-i}$ of *Symmetric Functions and Schur Functions*. For $n = 2$ this gives $3+1 = 4 = 2^2$; for $n = 3$ it gives $6+3 = 9 = 3^2$.
 
@@ -193,6 +193,10 @@ The Frobenius characteristic identifies the character ring of $S_n$ with the sym
 | $p$-core, $p$-block | Modular invariants of a partition and of $S_n$ |
 | $W^\lambda$ | Irreducible polynomial representation of $GL_n$ |
 | $\operatorname{ch}$, $z_\lambda$ | Frobenius characteristic, power-sum normalisation |
+
+
+
+
 
 ## Further Reading
 

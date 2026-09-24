@@ -234,7 +234,7 @@ This is the standard example showing that the first inclusion above is strict; i
 
 ### Content and Primitive Polynomials
 
-Let $R$ be a UFD and let $F = \operatorname{Frac}(R)$ be its fraction field, as constructed in *Localization and the Fraction Field*. For a nonzero $f = a_n x^n + \cdots + a_0 \in R[x]$, the **content** $c(f)$ is a greatest common divisor of the nonzero coefficients $a_0, \ldots, a_n$; it is defined up to associates, and we fix a representative. The polynomial $f$ is **primitive** if $c(f) \sim 1$.
+Let $R$ be a UFD and let $F = \operatorname{Frac}(R)$ be its fraction field, as constructed. For a nonzero $f = a_n x^n + \cdots + a_0 \in R[x]$, the **content** $c(f)$ is a greatest common divisor of the nonzero coefficients $a_0, \ldots, a_n$; it is defined up to associates, and we fix a representative. The polynomial $f$ is **primitive** if $c(f) \sim 1$.
 
 **Lemma.** Every nonzero $f \in R[x]$ can be written $f = c(f) f_0$ with $f_0 \in R[x]$ primitive.
 
@@ -288,7 +288,7 @@ $$
 \Phi_p(x) = \frac{x^p - 1}{x-1} = x^{p-1} + x^{p-2} + \cdots + x + 1
 $$
 
-is irreducible: applying Eisenstein at $p$ to $\Phi_p(x+1)$ gives coefficients $\binom{p}{k}$ divisible by $p$ for $1 \leq k \leq p-1$, leading coefficient $1$, and constant term $p$ with $p^2 \nmid p$. This irreducibility is used in *Galois Theory* to compute $[\mathbb{Q}(\zeta_p) : \mathbb{Q}] = p - 1$.
+is irreducible: applying Eisenstein at $p$ to $\Phi_p(x+1)$ gives coefficients $\binom{p}{k}$ divisible by $p$ for $1 \leq k \leq p-1$, leading coefficient $1$, and constant term $p$ with $p^2 \nmid p$. This irreducibility is used to compute $[\mathbb{Q}(\zeta_p): \mathbb{Q}] = p - 1$.
 
 ---
 
@@ -345,6 +345,8 @@ A Euclidean domain is a domain with a division algorithm, and the division algor
 | PID, UFD | Principal ideal domain, unique factorization domain |
 | $N(z) = a^2 + b^2$ for $z = a + bi$ | Multiplicative norm on $\mathbb{Z}[i]$ |
 | $N(a + b\sqrt{-5}) = a^2 + 5b^2$ | Multiplicative norm on $\mathbb{Z}[\sqrt{-5}]$ |
+
+
 
 ## Further Reading
 

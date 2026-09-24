@@ -5,7 +5,7 @@
 
 This is the second article of the Boolean system in Part IV, and it occupies the **algebra slot** of that system for the *intuitionistic* reading of the two-element domain. The system is still the propositional one, with connectives $\wedge, \vee, \to, \neg$, but the logic is now the intuitionistic propositional calculus rather than the classical calculus, and the algebras are the **Heyting algebras** rather than the Boolean algebras. The article states the algebra, the semantics it supplies, and the precise sense in which the classical case of *Boolean Algebras and Lattices* is the special case in which double negation is the identity.
 
-The boundary against the general theory is again deliberate. The proof theory of intuitionistic logic — natural deduction, the BHK reading, Kripke semantics, the disjunction and existence properties, the negative translation — belongs to *Logic and Proof* and to *Proof Theory and Type Theory*, and is cited rather than re-derived. The complete Heyting algebras, in which arbitrary joins distribute over meet, are the frames of *Quantales and Frames*, and that topological enrichment is not developed here. The many-valued algebras that stand between the Boolean and the intuitionistic case are the subject of *MV-Algebras and Many-Valued Logic*, and the non-distributive case is the subject of *Effect Algebras and Orthomodular Lattices*.
+The boundary against the general theory is again deliberate. The proof theory of intuitionistic logic — natural deduction, the BHK reading, Kripke semantics, the disjunction and existence properties, the negative translation — belongs to *Logic and Proof* and to *Proof Theory and Type Theory*, and is cited rather than re-derived. The complete Heyting algebras, in which arbitrary joins distribute over meet, are the frames, and that topological enrichment is not developed here. The many-valued algebras that stand between the Boolean and the intuitionistic case and the non-distributive case are not covered here.
 
 Throughout, a Heyting algebra is written $(H, \wedge, \vee, \to, 0, 1)$, its order is $\leq$, and its pseudocomplement is $\neg a = a \to 0$. The two-element algebra is $\mathbf{2} = \{0,1\}$, and the power set of a set $X$ is $\mathcal{P}(X)$. The Boolean algebras of *Boolean Algebras and Lattices* are the Heyting algebras in which $\neg\neg a = a$ for every $a$; this is the main theorem of the present article.
 
@@ -140,7 +140,7 @@ D_n = \bigvee_{0 \leq i < j \leq n} (p_i \leftrightarrow p_j), \qquad p_i \leftr
 $$
 In a Heyting algebra with at most $n$ elements every assignment of the $n+1$ variables repeats a value, so some $p_i \leftrightarrow p_j$ receives the value $1$ and $D_n$ receives the value $1$; hence $D_n$ is valid in every Heyting algebra of cardinality at most $n$. Suppose finitely many finite Heyting algebras $H_1,\dots,H_m$ characterise $\mathrm{IPC}$, let $N$ be the largest of their cardinalities, and consider $D_N$. It is valid in each $H_k$ because $\lvert H_k \rvert \leq N$, so by the assumed characterisation $\vdash_{\mathrm{IPC}} D_N$. But $D_N$ is not a theorem: the unit interval $[0,1]$ is a complete chain and hence a Heyting algebra for $a \to b = 1$ when $a \leq b$ and $a \to b = b$ when $a > b$, and the assignment $p_i \mapsto i/(N+1)$ gives $p_i \leftrightarrow p_j = \min(p_i,p_j)$ for $i \neq j$, whose join over all pairs is $N/(N+1) \neq 1$. So $D_N$ is not valid in this Heyting algebra and hence, by soundness, is not a theorem, a contradiction. $\square$
 
-**Remark.** The theorem is the reason $\mathrm{IPC}$ is a *genuinely* non-classical logic rather than a many-valued one in the sense of *MV-Algebras and Many-Valued Logic*: many-valued logics are finitely or continuously valued, while intuitionistic logic has no finite matrix semantics at all. The algebraic semantics by Heyting algebras is not a finite matrix but a variety, and it is the variety that the Lindenbaum construction uses.
+**Remark.** The theorem is the reason $\mathrm{IPC}$ is a *genuinely* non-classical logic rather than a many-valued one in the sense: many-valued logics are finitely or continuously valued, while intuitionistic logic has no finite matrix semantics at all. The algebraic semantics by Heyting algebras is not a finite matrix but a variety, and it is the variety that the Lindenbaum construction uses.
 
 ### The Free Heyting Algebra
 
@@ -170,7 +170,7 @@ $$
 a \to b = \bigvee \{c : c \wedge a \leq b\},
 $$
 
-the join now being arbitrary. Complete Heyting algebras are exactly the **frames** of *Quantales and Frames*, and their study is the pointfree topology of that article; the open sets of a topological space, ordered by inclusion, are the standard example, with implication the interior of the complement union, $U \to V = \operatorname{int}\bigl((X \setminus U) \cup V\bigr)$. The present article stops at the finitary theory, which is what the Lindenbaum construction of a finitely generated logic requires, and the topological enrichment — locales, spatiality, sobriety — is left to the frame article.
+the join now being arbitrary. Complete Heyting algebras are exactly the **frames**, and their study is the pointfree topology of that article; the open sets of a topological space, ordered by inclusion, are the standard example, with implication the interior of the complement union, $U \to V = \operatorname{int}\bigl((X \setminus U) \cup V\bigr)$. The present article stops at the finitary theory, which is what the Lindenbaum construction of a finitely generated logic requires, and the topological enrichment — locales, spatiality, sobriety — is left to the frame article.
 
 **Example (open sets).** Let $X$ be a topological space and $H = \mathcal{O}(X)$ its lattice of open sets. Then $H$ is a complete Heyting algebra, with
 
@@ -188,7 +188,7 @@ A Heyting algebra is a bounded lattice with a binary operation $\to$ satisfying 
 
 The Lindenbaum construction turns any intuitionistic theory into a Heyting algebra, and algebraic completeness states that intuitionistic derivability is exactly validity in all Heyting algebras; the homomorphisms to $\mathbf{2}$ are the prime filters. Unlike the classical case, no finite set of finite Heyting algebras characterises the logic, and the free Heyting algebra on one generator is already countably infinite — the Rieger–Nishimura lattice. Boolean algebras are the Heyting algebras satisfying $\neg\neg a = a$, and the passage from a Heyting algebra to its regular elements is the universal map to a Boolean algebra that preserves the negative identities.
 
-The complete Heyting algebras are the frames, and pointfree topology is the study of the enrichment of this algebra by arbitrary joins. That enrichment, and the relation between frames and spaces, is the subject of *Quantales and Frames*; the non-distributive generalisation, in which uniqueness of the complement fails and orthomodular rather than distributive lattices appear, is the subject of *Effect Algebras and Orthomodular Lattices*.
+The complete Heyting algebras are the frames, and pointfree topology is the study of the enrichment of this algebra by arbitrary joins. That enrichment, and the relation between frames and spaces, is not covered here; the non-distributive generalisation, in which uniqueness of the complement fails and orthomodular rather than distributive lattices appear, is outside its scope.
 
 ## Summary of Notation
 
@@ -207,6 +207,10 @@ The complete Heyting algebras are the frames, and pointfree topology is the stud
 | $\mathcal{O}(X)$ | Lattice of open sets of a topological space, a complete Heyting algebra |
 | $\mathbf{2}$ | The two-element Heyting (and Boolean) algebra |
 | $M_3$, $N_5$ | The forbidden sublattices, as in *Order Theory and Lattices* |
+
+
+
+
 
 ## Further Reading
 

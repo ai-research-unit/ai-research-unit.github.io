@@ -9,7 +9,7 @@ Spherical geometry differs from Euclidean geometry in a way that changes its log
 
 The article first defines the round sphere as a Riemannian manifold and computes its metric, its distance and its geodesics. It then develops spherical trigonometry — the spherical law of cosines, the law of sines, the polar triangle, Girard's theorem on the area of a spherical triangle, and the right-triangle formulae — and relates them to the Euclidean theorems they generalise, with the Euclidean ones recovered as the limit of small triangles. It treats the isometry group $O(n+1)$ and the classification of its finite subgroups, which is the classification of the finite groups of rotations of the sphere and the source of the exceptional groups $A_4$, $S_4$, $A_5$. It develops the elliptic quotient, the three-dimensional sphere and the Hopf fibration, and the spherical space forms, which are the complete constant-curvature manifolds of positive curvature.
 
-The article assumes *Smooth Manifolds and Differential Geometry* for the sphere as a submanifold and the induced metric; *Curvature and Geodesics* and *Riemannian Geometry* for geodesics, curvature and the classification of the space forms; *Euclidean Geometry* for the comparison and the crystallographic restriction; *Groups* and *Group Actions and Structure* for the finite group theory; *Matrix Groups and Classical Groups* for $O(n)$ and $SU(2)$; *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the elliptic case; and *Fibre Bundles, Connections and Curvature* for the Hopf fibration. The classification of the three-dimensional spherical space forms, the lens spaces, is the subject of *Lens Spaces*, written in parallel, and is not developed here. No physics is invoked.
+The article assumes *Smooth Manifolds and Differential Geometry* for the sphere as a submanifold and the induced metric; *Curvature and Geodesics* and *Riemannian Geometry* for geodesics, curvature and the classification of the space forms; *Euclidean Geometry* for the comparison and the crystallographic restriction; *Groups* and *Group Actions and Structure* for the finite group theory; *Matrix Groups and Classical Groups* for $O(n)$ and $SU(2)$; *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the elliptic case; andfor the Hopf fibration. The classification of the three-dimensional spherical space forms, the lens spaces, is the subject, and is not developed here. No physics is invoked.
 
 ## The Sphere and Its Metric
 
@@ -63,7 +63,7 @@ The volume formula uses the Gamma function, which is a closed form of an integra
 
 **Corollary.** Two points are related by an isometry if and only if they have the same distance from a fixed base point, and the round sphere is a homogeneous space $O(n+1)/O(n)$.
 
-**Definition.** The **isometry group** acts with stabiliser $O(n)$ at a point, and the **round sphere is a symmetric space** in the sense of *Symmetric Spaces*, with the geodesic symmetry at $x$ given by the restriction of the reflection $v \mapsto v - 2\langle v, x\rangle x/R^2$.
+**Definition.** The **isometry group** acts with stabiliser $O(n)$ at a point, and the **round sphere is a symmetric space** in the sense, with the geodesic symmetry at $x$ given by the restriction of the reflection $v \mapsto v - 2\langle v, x\rangle x/R^2$.
 
 ## Spherical Trigonometry
 
@@ -187,7 +187,7 @@ using the identification of the imaginary subspace with $\mathbb{R}^3$ and restr
 
 **Theorem.** The Hopf map is a smooth submersion, its fibre over every point is a great circle of $S^3$, and it is a fibre bundle with structure group $U(1) = S^1$; the sphere $S^3$ is the total space of a principal $S^1$-bundle over $S^2$.
 
-**Proof sketch.** The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{e^{i\theta}\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is that of *Fibre Bundles, Connections and Curvature*. $\square$
+**Proof sketch.** The map $\Phi$ has image $SO(3)$ and the stabiliser of a point of $S^2$ is a circle $SO(2)$, so the preimage of a point under the quotient $S^3 \to SO(3) \to S^2$ is a coset of the circle $\{e^{i\theta}\}$, a great circle. The local trivialisations come from local sections of the fibration, and the transition functions are circle-valued. The bundle theory is . $\square$
 
 **Corollary.** The Hopf fibration is the standard nontrivial principal circle bundle and the first example of the relation between the homotopy groups of spheres; it realises $S^3$ as the total space of a bundle whose base is $S^2$ and whose fibre is $S^1$, and it is the geometric form of the double cover $SU(2) \to SO(3)$.
 
@@ -201,9 +201,9 @@ using the identification of the imaginary subspace with $\mathbb{R}^3$ and restr
 
 **Corollary.** The fundamental group of a spherical space form is finite, the first Betti number is zero when the dimension is positive, and all such manifolds are compact with diameter at most $\pi$.
 
-**Corollary (low dimensions).** In dimension two the only spherical space forms are the round sphere and the elliptic plane, by the classification of the finite subgroups of $O(3)$ above. In dimension three the free actions of finite subgroups of $O(4)$ are the cyclic ones giving the **lens spaces** and the other groups giving the remaining three-dimensional spherical space forms; their classification is the content of *Lens Spaces*, written in parallel, and it uses the same space-form theorem proved here. In dimension four and above the classification is not known in general, and it is equivalent to a question about free finite group actions on spheres.
+**Corollary (low dimensions).** In dimension two the only spherical space forms are the round sphere and the elliptic plane, by the classification of the finite subgroups of $O(3)$ above. In dimension three the free actions of finite subgroups of $O(4)$ are the cyclic ones giving the **lens spaces** and the other groups giving the remaining three-dimensional spherical space forms; their classification is the content, and it uses the same space-form theorem proved here. In dimension four and above the classification is not known in general, and it is equivalent to a question about free finite group actions on spheres.
 
-**Remark (the trichotomy).** The spherical space forms complete the positive-curvature end of the trichotomy of *Curvature and Geodesics*: complete connected constant-curvature manifolds are either spherical (finite fundamental group, finite diameter), Euclidean (a finite cover of a flat torus by the Bieberbach theorems) or hyperbolic (infinite fundamental group, exponential volume growth). The Euclidean end is the subject of *Euclidean Geometry* and the hyperbolic end of *Hyperbolic Geometry*; the three together are the content of *Non-Euclidean Geometry*.
+**Remark (the trichotomy).** The spherical space forms complete the positive-curvature end of the trichotomy of *Curvature and Geodesics*: complete connected constant-curvature manifolds are either spherical (finite fundamental group, finite diameter), Euclidean (a finite cover of a flat torus by the Bieberbach theorems) or hyperbolic (infinite fundamental group, exponential volume growth). The Euclidean end is the subject of *Euclidean Geometry* and the hyperbolic end; the three together are the content.
 
 ## Summary
 
@@ -234,6 +234,8 @@ The unit three-sphere is the group of unit quaternions, identified with $SU(2)$ 
 | $\Phi : S^3 \to SO(3)$ | Two-to-one cover by the unit quaternions; $S^3 \cong SU(2)$ |
 | $h : S^3 \to S^2$ | Hopf map; principal $S^1$-bundle with great-circle fibres |
 | Spherical space form | Complete constant-curvature $+1$ manifold $S^n/\Gamma$, $\Gamma$ finite acting freely |
+
+
 
 ## Further Reading
 

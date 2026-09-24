@@ -5,11 +5,11 @@
 
 A **deformation** of an algebra is a family of multiplications on the same underlying module, parameterised by a formal variable, whose value at the origin is the given multiplication. **Deformation quantization** is the deformation theory of the commutative algebra of functions or of the symmetric algebra, in which the first-order term of the deformation is required to be a Poisson bracket: the deformed algebra is then a quantisation of the Poisson structure, and the two structures determine each other up to the appropriate notion of equivalence.
 
-The article is the seventh of the category. It follows *Quantum Groups*, whose quantised enveloping algebras and quantum plane are the motivating examples, and *Hopf Algebras*, whose framework supplies the compatible deformations of a Hopf algebra; it uses the Hochschild cohomology and the deformation theory of the category's homological layer, which is introduced above it in the menu, and it is the article in which the algebra-level statements that the later articles on $A_\infty$-algebras and on Poisson and Gerstenhaber algebras generalise are collected. Its subject is the algebraic theory of the star product.
+The article is the seventh of the category. It follows *Quantum Groups*, whose quantised enveloping algebras and quantum plane are the motivating examples, and *Hopf Algebras*, whose framework supplies the compatible deformations of a Hopf algebra; it uses the Hochschild cohomology and the deformation theory of the category's homological layer, which is introduced above it in the menu, and it is the article in which the algebra-level statements that the other articles on $A_\infty$-algebras and on Poisson and Gerstenhaber algebras generalise are collected. Its subject is the algebraic theory of the star product.
 
 The article is algebraic. A **Poisson structure** here is a bilinear bracket on an algebra satisfying the Leibniz rule and the Jacobi identity; the geometric Poisson structure on a manifold, the symplectic form, the Hamiltonian vector field and the Poisson tensor in coordinates are objects of Part II, where the notion of a manifold and of a form is available, and they are deferred. Likewise the analytic questions of convergence of a star product belong to a later Part; here a star product is a formal series in a parameter and no question of convergence is raised. The operadic machinery used by the formality theorem is the algebra of operads, which is introduced in the menu above this article; the model-category and higher-category formulations are Part II's and are not used.
 
-Throughout, $k$ is a field of characteristic $0$ unless stated otherwise, $A$ is an associative $k$-algebra, $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ is the enveloping algebra of *Separable Algebras*, and $k[[h]]$ is the algebra of formal power series in one variable, the completion of the polynomial algebra as in *Formal Power Series and Completion*. All tensor products are over $k$.
+Throughout, $k$ is a field of characteristic $0$ unless stated otherwise, $A$ is an associative $k$-algebra, $A^{\mathrm{e}} = A\otimes_k A^{\mathrm{op}}$ is the enveloping algebra of *Separable Algebras*, and $k[[h]]$ is the algebra of formal power series in one variable, the completion of the polynomial algebra. All tensor products are over $k$.
 
 ## Formal Deformations of an Algebra
 
@@ -81,7 +81,7 @@ $$
 
 so the bracket is graded antisymmetric with $[f,g] = (-1)^{(\lvert f\rvert-1)(\lvert g\rvert-1)}[g,f]$ and satisfies the graded Jacobi identity, and the bracket has degree $-1$ in the shifted grading.
 
-The Gerstenhaber bracket is the algebraic structure that controls deformations: an element $\mu$ of degree $2$ is an associative multiplication modulo a coboundary exactly when $[\mu,\mu] = 0$, that is, when $[\mu,\mu]$ is a coboundary; the Maurer–Cartan equation $[\mu,\mu]=0$ appears again in *A-Infinity and L-Infinity Algebras*, where it is the defining equation of an $A_\infty$-structure. The Gerstenhaber algebra structure itself is the subject of *Poisson and Gerstenhaber Algebras* in the anti-symmetric category, where the Leibniz and Jacobi identities of the bracket are stated in full.
+The Gerstenhaber bracket is the algebraic structure that controls deformations: an element $\mu$ of degree $2$ is an associative multiplication modulo a coboundary exactly when $[\mu,\mu] = 0$, that is, when $[\mu,\mu]$ is a coboundary; the Maurer–Cartan equation $[\mu,\mu]=0$ appears aga, where it is the defining equation of an $A_\infty$-structure. The Gerstenhaber algebra structure itself is the subject in the anti-symmetric category, where the Leibniz and Jacobi identities of the bracket are stated in full.
 
 ### The operadic formulation
 
@@ -177,7 +177,7 @@ $$
 \sum_{i+j=n+1}\ \sum_{\sigma}(-1)^{\sigma}\varepsilon(\sigma)\,\ell_j\bigl(\ell_i(v_{\sigma(1)},\dots,v_{\sigma(i)}),v_{\sigma(i+1)},\dots,v_{\sigma(n)}\bigr) = 0 ;
 $$
 
-the case $n = 2$ with $\ell_3 = 0$ is an ordinary Lie algebra, and the general structure is the homotopy-coherent version of a Lie algebra. The notion and its morphisms are developed in *A-Infinity and L-Infinity Algebras*, below this article in the menu.
+the case $n = 2$ with $\ell_3 = 0$ is an ordinary Lie algebra, and the general structure is the homotopy-coherent version of a Lie algebra. The notion and its morphisms are developed in the menu.
 
 **Theorem (Kontsevich formality, standard).** Let $A = k[x_1,\dots,x_n]$ be a polynomial algebra, let $T_{\mathrm{poly}}(A)$ be the graded module of polynomial multivectors, with the **Schouten–Nijenhuis bracket**, and let $C^\bullet(A,A)$ be the Hochschild complex with the Gerstenhaber bracket. Then there is an $L_\infty$-quasi-isomorphism
 
@@ -212,7 +212,13 @@ The same formality machinery applies to the deformations of the enveloping algeb
 
 **Theorem (Drinfeld, standard).** The formal deformations of $U(\mathfrak{g})$ as a Hopf algebra over $k[[h]]$ are classified by the second cohomology of $\mathfrak{g}$ with coefficients in $\wedge^2\mathfrak{g}$, equivalently by the **quasi-Lie bialgebra** structures on $\mathfrak{g}$; for $\mathfrak{g}$ semisimple there is a unique nontrivial deformation up to equivalence and up to the choice of the symmetric invariant element used in the normalisation, and it is $U_h(\mathfrak{g})$.
 
-The cohomology that appears in this classification is the Lie algebra cohomology of *Lie Algebra Cohomology* in the anti-symmetric category, and the structure of the quasi-Lie bialgebra is the infinitesimal object that the quantum group deforms.
+The cohomology that appears here is that of the **Chevalley--Eilenberg complex** of $\mathfrak{g}$. For a $\mathfrak{g}$-module $M$ the degree-$n$ cochains are the alternating multilinear maps $f:\mathfrak{g}^n\to M$, with differential
+
+$$
+(df)(x_1,\dots,x_{n+1}) = \sum_{i=1}^{n+1}(-1)^{i+1}x_i\cdot f(x_1,\dots,\widehat{x_i},\dots,x_{n+1}) + \sum_{i<j}(-1)^{i+j}f\bigl([x_i,x_j],x_1,\dots,\widehat{x_i},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
+$$
+
+the hats marking omitted arguments, and the coefficient module of the theorem is $\wedge^2\mathfrak{g}$ with the adjoint action $x\cdot(u\wedge v) = [x,u]\wedge v + u\wedge[x,v]$. The differential is built from the bracket and the action alone, so the cohomology is available here without a general theory of Lie algebra cohomology; the structure of the quasi-Lie bialgebra is the infinitesimal object that the quantum group deforms.
 
 ## Summary
 
@@ -243,6 +249,10 @@ A **Poisson algebra** is a commutative associative algebra with a Lie bracket th
 | $T_{\mathrm{poly}}(A)$ | polynomial multivectors, Schouten–Nijenhuis bracket |
 | $\mathcal{U}$ | Kontsevich $L_\infty$-quasi-isomorphism |
 | $U_h(\mathfrak{g})$ | Hopf-algebraic deformation of $U(\mathfrak{g})$ |
+
+
+
+
 
 ## Further Reading
 

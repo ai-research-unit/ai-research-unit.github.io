@@ -5,7 +5,7 @@
 
 The rigidity of quadratic spaces begins with a single theorem: every isometry between subspaces of a non-degenerate quadratic space extends to an isometry of the whole space. From it follow the existence of orthogonal complements, the invariance of the dimension of a maximal totally isotropic subspace — the **Witt index** — and the **cancellation** theorem that allows a common summand to be removed from an isometry of orthogonal sums. Together these convert the isometry problem for quadratic forms into a finite invariant list.
 
-This article develops the extension theorem, hyperbolic planes, the index and the decomposition theorem, cancellation, and the failure of the whole circle of results in characteristic $2$. The base is a field $F$ of characteristic not $2$ and the forms are non-degenerate; the polar form, the radical and non-degeneracy are from *Bilinear Forms*, the polarisation identity and the invariants of a form from *Quadratic Forms and Polarisation*, and the reflection and the equal-norm lemma from *Isometries and Orthogonal Transformations*. The use of the invariants to classify forms over $\mathbb{R}$, $\mathbb{C}$ and other fields is the subject of *The Witt Group and the Grothendieck–Witt Ring*, and the norm forms of the number systems are in *Quadratic Forms over Algebras and Norm Forms*.
+This article develops the extension theorem, hyperbolic planes, the index and the decomposition theorem, cancellation, and the failure of the whole circle of results in characteristic $2$. The base is a field $F$ of characteristic not $2$ and the forms are non-degenerate; the polar form, the radical and non-degeneracy are from *Bilinear Forms*, the polarisation identity and the invariants of a form from *Quadratic Forms and Polarisation*, and the reflection and the equal-norm lemma from *Isometries and Orthogonal Transformations*. The use of the invariants to classify forms over $\mathbb{R}$, $\mathbb{C}$ and other fields is the subject, and the norm forms of the number systems are in *Quadratic Forms over Algebras and Norm Forms*.
 
 ## Hyperbolic Planes
 
@@ -203,7 +203,7 @@ Then $q_1 \cong q_2$.
 
 **Proof.** Apply the theorem with $q = r$, $q_1$ and $q_2$. $\square$
 
-**Remark.** Cancellation makes the Witt monoid into a group: it is precisely the statement that the orthogonal sum is cancellative on isometry classes of non-degenerate forms. The passage from the monoid to the group is the construction of the Witt group in *The Witt Group and the Grothendieck–Witt Ring*.
+**Remark.** Cancellation makes the Witt monoid into a group: it is precisely the statement that the orthogonal sum is cancellative on isometry classes of non-degenerate forms. The passage from the monoid to the group is the construction of the Witt group.
 
 **Proposition.** Over a field of characteristic not $2$, cancellation for non-degenerate forms and the extension theorem for isometries of non-degenerate subspaces are equivalent, the extension theorem being reduced to the non-degenerate case as above.
 
@@ -257,7 +257,7 @@ Over a field every submodule is a direct summand, and the proofs above use this 
 
 **Theorem (cancellation over a ring, standard).** With the same hypotheses, if $q \perp q_1 \cong q \perp q_2$ and $q$ is Witt and non-degenerate, then $q_1 \cong q_2$.
 
-These statements are the content of the theory of quadratic forms over rings; the point of recording them here is that the field case proved in this article is the special case in which the Witt condition is automatic. Over a ring the condition is a genuine restriction: a submodule on which the form is non-degenerate need not be a direct summand, and the argument by orthogonal complement then fails. The precise formulation, and the examples that show the necessity of the condition, are in the standard references on quadratic forms over rings.
+These statements are the content of the theory of quadratic forms over rings; the point of recording them here is that the field case proved in this article is the special case in which the Witt condition is automatic. Over a ring the condition is a genuine restriction: a submodule on which the form is non-degenerate need not be a direct summ, and the argument by orthogonal complement then fails. The precise formulation, and the examples that show the necessity of the condition, are in the standard references on quadratic forms over rings.
 
 ## Summary
 
@@ -303,6 +303,10 @@ In characteristic $2$ the associated bilinear form $b(v, w) = q(v + w) - q(v) - 
 | $(p, r)$ | Signature over $\mathbb{R}$ |
 | $\mathbb{F}_2$ | Field with two elements |
 | $\mathbb{R}$, $\mathbb{C}$ | Real and complex numbers |
+
+
+
+
 
 ## Further Reading
 

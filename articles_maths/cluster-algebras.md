@@ -86,7 +86,7 @@ Moreover every cluster variable is a Laurent polynomial with nonnegative coeffic
 
 **Example.** For $Q$ of type $A_2$ the cluster category has five indecomposables, three of them in the orbit of the projective indecomposables of the two-vertex quiver and two in the orbit of the simples; the five cluster variables of the cluster algebra correspond to them, and the two clusters to the two cluster-tilting objects, matching the list computed above.
 
-**Remark.** The cluster-tilted algebras are the endomorphism algebras of the cluster-tilting objects, and they are the algebraic relatives of the tilted algebras; their quivers are obtained from the initial quiver by the mutation rule, and their representation theory inherits the description by the cluster category. The full categorical treatment, including the $\infty$-categorical and model-categorical refinements, belongs to Part II, where *Higher Algebra and Higher Categories* treats the homotopy-coherent version, and the present article cites that treatment rather than developing it.
+**Remark.** The cluster-tilted algebras are the endomorphism algebras of the cluster-tilting objects, and they are the algebraic relatives of the tilted algebras; their quivers are obtained from the initial quiver by the mutation rule, and their representation theory inherits the description by the cluster category. The full categorical treatment, including the $\infty$-categorical and model-categorical refinements, belongs to Part II, wheretreats the homotopy-coherent version, and the present article cites that treatment rather than developing it.
 
 ### The Cartan Counterpart and the Classification
 
@@ -131,6 +131,8 @@ The cluster complex records compatibility, the denominator vectors organise the 
 | $A(B)$, $a_{ij}$ | Cartan counterpart of the exchange matrix |
 | $x_1^{a_1}\cdots x_n^{a_n}$ | a cluster monomial |
 | $\mathbf{g}(x)$ | $\mathbf{g}$-vector of a cluster variable |
+
+
 
 ## Further Reading
 

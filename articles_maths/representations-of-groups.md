@@ -39,7 +39,7 @@ The **left regular representation** of $G$ is the action of $G$ on the group alg
 
 ### Basic operations
 
-The **dual** of a representation $V$ is the representation on $V^*=\operatorname{Hom}_F(V,F)$ with $(\rho^*(g)f)(v)=f(\rho(g^{-1})v)$; the inverse is what makes this a left action, since $V^*$ is naturally only a right $F[G]$-module. For a general algebra the dual of a left module is a left module over the opposite algebra, and it is the antipode $g\mapsto g^{-1}$ of the group algebra that converts it back into a left module, as in *Representations of Algebras*. The **direct sum** $V\oplus W$ carries the diagonal action $g\cdot(v\oplus w)=gv\oplus gw$, and the **tensor product** $V\otimes_F W$ carries $g\cdot(v\otimes w)=gv\otimes gw$. The tensor product is a representation because the map
+The **dual** of a representation $V$ is the representation on $V^*=\operatorname{Hom}_F(V,F)$ with $(\rho^*(g)f)(v)=f(\rho(g^{-1})v)$; the inverse is what makes this a left action, since $V^*$ is naturally only a right $F[G]$-module. For a general algebra the dual of a left module is a left module over the opposite algebra, and it is the antipode $g\mapsto g^{-1}$ of the group algebra that converts it back into a left module. The **direct sum** $V\oplus W$ carries the diagonal action $g\cdot(v\oplus w)=gv\oplus gw$, and the **tensor product** $V\otimes_F W$ carries $g\cdot(v\otimes w)=gv\otimes gw$. The tensor product is a representation because the map
 
 $$
 \Delta : F[G] \longrightarrow F[G]\otimes_F F[G], \qquad \Delta(g)=g\otimes g,
@@ -261,7 +261,7 @@ $$
 \mathbb{C}[Q_8] \cong \mathbb{C}^4 \oplus M_2(\mathbb{C}),
 $$
 
-with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8|$. Over $\mathbb{R}$ the two-dimensional factor is replaced by the division algebra $\mathbb{H}$, as in *Morita Equivalence*; the contrast between $\mathbb{C}$ and $\mathbb{R}$ here is the subject of the companion articles *Complex Representations*, *Real Representations* and *Quaternion Representations*.
+with five irreducible characters of degrees $1,1,1,1,2$ and $\sum_i d_i^2=8=|Q_8|$. Over $\mathbb{R}$ the two-dimensional factor is replaced by the division algebra $\mathbb{H}$, as in *Morita Equivalence*; the contrast between $\mathbb{C}$ and $\mathbb{R}$ here is not pursued further.
 
 **(c) The regular representation of a finite cyclic group.** For $G=\mathbb{Z}/n\mathbb{Z}$ the regular representation is $\mathbb{C}[G]$ acting on itself; its character is $n$ at the identity and $0$ elsewhere, and its decomposition $\bigoplus_\zeta V_\zeta$ has each one-dimensional character with multiplicity $1$, matching $\chi_{\mathrm{reg}}=\sum_\zeta\zeta$.
 
@@ -299,6 +299,8 @@ Over $\mathbb{C}$, the character $\chi_V(g)=\operatorname{Tr}\rho(g)$ is a class
 | $J(F[G])$ | Jacobson radical in the modular case |
 | $\widehat{G}$ | character group of an abelian group |
 | $\mathbb{H}$ | quaternions, as an endomorphism division ring over $\mathbb{R}$ |
+
+
 
 ## Further Reading
 

@@ -510,7 +510,7 @@ The **biquaternionic gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial/\parti
 
 The approach is closely related to Fueter's quaternionic analysis and to Clifford analysis. The generalization to the biquaternion algebra includes the complex coefficients and the four conjugations, which enrich the structure.
 
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-Hermitian subspace $\mathbb{M}_-$, and the Hermitian subspace $\mathbb{M}_+$, is the subject of the following article. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
+The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-Hermitian subspace $\mathbb{M}_-$, and the Hermitian subspace $\mathbb{M}_+$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on biquaternion integration.
 
 ## Summary of Notation
 
@@ -529,6 +529,8 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | d'Alembertian (natural second-order operator) |
 | $\tilde{\nabla}^2 = 2\partial_{Q_0}\tilde{\nabla} - \Box$ | Square of the gradient |
 | $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | Convective derivative |
+
+
 
 ## Further Reading
 

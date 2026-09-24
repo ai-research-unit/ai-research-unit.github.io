@@ -5,7 +5,7 @@
 
 A Clifford module is a module over a Clifford algebra, and over a manifold it becomes a bundle of modules twisted by the spinor bundle. On such a twisted module there is a canonical first-order operator, formed by contracting the covariant derivative with Clifford multiplication, which generalises both the Cauchy–Riemann operator of complex analysis and its Clifford-analytic relatives. This article builds the operator, shows that it is elliptic and odd for the natural grading, computes the square — the Weitzenböck formula — and evaluates the index of the resulting elliptic complex.
 
-The Clifford-module theory used here — modules over $\mathrm{Cl}(V,q)$, the spinor module, the chirality grading and the half-spin modules — is from *Spin Representations and Clifford Modules*. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is from *Fibre Bundles, Connections and Curvature*. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is from *Regularity and the Cauchy–Riemann Operator*, and its biquaternion form is from *Biquaternion Regular Functions*; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject of *The Atiyah–Singer Index Theorem and K-Theory*, and only the twisted case is treated here.
+The Clifford-module theory used here — modules over $\mathrm{Cl}(V,q)$, the spinor module, the chirality grading and the half-spin modules — is from *Spin Representations and Clifford Modules*. The differential-geometric input — connections, curvature, the Levi-Civita connection and the Chern–Weil characteristic classes — is. The Clifford-analytic Cauchy–Riemann operator of the hypercomplex theory, with its symbol and ellipticity, is, and its biquaternion form is; the operator of this article is the manifold-valued and twisted form of those operators, and the untwisted biquaternion operator with its Cauchy integral formula is not reproduced here. The general index theorem that the computation feeds is the subject, and only the twisted case is treated here.
 
 ## Clifford Modules
 
@@ -57,7 +57,7 @@ where $T^*M$ is identified with $TM$ by the metric. When $E$ is $\mathbb{Z}/2$-g
 
 **Proof.** The sum $\sum_ic(e_i)\nabla^E_{e_i}$ is a geometric first-order operator: a change of orthonormal frame replaces $e_i$ by $O_{ij}e_j$ with $O$ orthogonal, and the contracted expression is invariant because $c$ is linear and $\sum_iO_{ij}O_{ik}=\delta_{jk}$. Compatibility of $\nabla^E$ with the Clifford action identifies the sum with the composition displayed; oddness is the statement that $c(v)$ is odd and that $\nabla^E$ preserves the grading. $\square$
 
-**Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial_0+i\partial_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator of *Regularity and the Cauchy–Riemann Operator*. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
+**Example (the classical cases).** For $M=\mathbb{R}^2$ with the complex structure and $W$ trivial, the operator $D=\partial_0+i\partial_1$ is the classical Cauchy–Riemann operator, and its kernel is the holomorphic functions; for $M=\mathbb{R}^n$ with trivial twisting it is the generalised Cauchy–Riemann operator. The construction of this article is thus the co-ordinate-free and twisted form of those operators.
 
 ## The Weitzenböck Formula
 
@@ -159,7 +159,7 @@ $$
 
 where $\sigma$ is the signature, by the signature theorem; for a $K3$ surface, $\sigma=-16$ and the index is $2$.
 
-**Remark.** The twisted index formula is the model for the general Atiyah–Singer theorem: the analytic index, which is a difference of kernel dimensions, is computed by a purely topological integral of characteristic classes. The operator here is the one associated with the Clifford module, and the twist by $W$ shows how the coefficient bundle enters. The general statement, its $K$-theoretic formulation and the local index formula are in *The Atiyah–Singer Index Theorem and K-Theory*.
+**Remark.** The twisted index formula is the model for the general Atiyah–Singer theorem: the analytic index, which is a difference of kernel dimensions, is computed by a purely topological integral of characteristic classes. The operator here is the one associated with the Clifford module, and the twist by $W$ shows how the coefficient bundle enters. The general statement, its $K$-theoretic formulation and the local index formula are.
 
 ## Summary
 
@@ -200,6 +200,8 @@ On a compact Riemann surface this reduces to the degree of the twisting line bun
 | $\operatorname{ch}(W)$ | Chern character of the twisting bundle |
 | $\int_M\hat{A}(TM)\operatorname{ch}(W)$ | Twisted index formula |
 | $\sigma(M)$ | Signature of a closed oriented $4$-manifold |
+
+
 
 ## Further Reading
 

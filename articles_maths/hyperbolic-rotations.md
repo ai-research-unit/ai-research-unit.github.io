@@ -7,7 +7,7 @@ This article describes the group of linear transformations of the split complex 
 
 The split complex algebra, its conjugation $\bar z = x - jy$, its norm form $N(z) = z\bar z = x^2 - y^2$ and its idempotents $e_\pm = \tfrac12(1\pm j)$ are taken from *Split-Complex Algebra*. The vocabulary of quadratic forms, polar forms and orthogonal groups is that of *Isometries and Orthogonal Transformations*, and the Lie algebra of a matrix group is that of *The Orthogonal Lie Algebra*. The base field throughout is $\mathbb{R}$, so that $2$ is invertible and every isometry of a non-degenerate form is a linear automorphism; the coefficients $x, y$ of $z = x + jy$ are always real, and $\mathbb{D}$ is written in the basis $\{1, j\}$.
 
-Two features distinguish the theory from its complex counterpart and organise everything below. The norm form $N$ is indefinite, of signature $(1,1)$, so the set $\{N = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{N = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{D}$, so the group theory developed here and the failure of the Cauchy theory recorded in *Split-Complex Integration* have the same locus.
+Two features distinguish the theory from its complex counterpart and organise everything below. The norm form $N$ is indefinite, of signature $(1,1)$, so the set $\{N = 0\}$ is a pair of lines, the **null cone**, rather than the single point of the complex case; and the unit group $\{N = 1\}$ is a hyperbola with two branches rather than a circle, so the rotation group is non-compact and its exponential is injective. The null cone is also the zero-divisor set of $\mathbb{D}$, so the group theory developed here and the failure of the Cauchy theory recorded, have the same locus.
 
 ## The Norm Form and Its Isometries
 
@@ -343,7 +343,7 @@ The fixed condition $S_u(z) = z$ is therefore $z_+ = e^{\phi}z_-$, a line in the
 
 **Proof.** $\overline{e_+} = e_-$ and $\overline{e_-} = e_+$, so $\bar\cdot$ swaps the two null lines $\mathbb{R}e_+$ and $\mathbb{R}e_-$. For $u = \epsilon e^{\phi j} \in \mathcal{H}$ one has $u e_+ = \epsilon e^{\phi}e_+$ and $u e_- = \epsilon e^{-\phi}e_-$, non-zero multiples of $e_+$ and of $e_-$, so multiplication by $u$ preserves each line separately. Hence $S_u$ swaps the lines and $R_u$ fixes them. $\square$
 
-So the null lines are the fixed directions of the rotation group and the exchanged directions of the reflection coset. Since the null lines are the zero-divisor cone of *Split-Complex Algebra* and the characteristic set of the Cauchy–Riemann operator of *Split-Complex Integration*, this is the group-theoretic statement that the rotations preserve the cone and the reflections permute its two halves.
+So the null lines are the fixed directions of the rotation group and the exchanged directions of the reflection coset. Since the null lines are the zero-divisor cone of *Split-Complex Algebra* and the characteristic set of the Cauchy–Riemann operator, this is the group-theoretic statement that the rotations preserve the cone and the reflections permute its two halves.
 
 ### Composition of Two Reflections
 
@@ -438,7 +438,7 @@ So the rotation subgroup is normal and its complement is a single coset, the ext
 
 **Proof.** $N(z) = z_+z_-$, which vanishes exactly when $z_+ = 0$ or $z_- = 0$; these are the lines spanned by $e_-$ and $e_+$ respectively. An element $w$ is a zero divisor exactly when it is not a unit, that is, when $N(w) = 0$, by the unit criterion. $\square$
 
-The cone is therefore at once the zero-divisor set, the complement of the unit group, and, by *Split-Complex Integration*, the obstruction to the Cauchy integral formula. It is the locus common to the algebra, the analysis and the group theory of the plane.
+The cone is therefore at once the zero-divisor set, the complement of the unit group, the obstruction to the Cauchy integral formula. It is the locus common to the algebra, the analysis and the group theory of the plane.
 
 ### The Sectors and the Action
 
@@ -520,6 +520,10 @@ The **reflection** $S_u(z) = u\bar z$ has determinant $-1$, is an involution, fi
 | $\exp : \mathfrak{so}(1,1) \to SO^+(1,1)$ | Matrix exponential, a bijection |
 | $s = \tanh\phi \in (-1,1)$ | Bounded angle coordinate, law $s \star t = \frac{s+t}{1+st}$ |
 | $\rho = \sqrt{\lvert N(z)\rvert}$ | Positive factor of the polar decomposition |
+
+
+
+
 
 ## Further Reading
 

@@ -5,7 +5,7 @@
 
 A **differential graded algebra** is a graded algebra equipped with a degree $-1$ derivation whose square is zero. It is the smallest structure in which an algebra and a complex are the same object, and it is the ambient language of the homological constructions of this Part: the Koszul complex of *Koszul Duality*, the Hochschild complex of *Deformation Quantization*, the bar and cobar constructions of the operadic theory, and the resolutions that compute the derived functors of *Homological Algebra* are all differential graded algebras or modules over them.
 
-The article is the ninth of the category and opens the homotopical layer of this Part. It follows *Koszul Duality*, whose resolution criterion is re-read here as the statement that a Koszul algebra is the homology of a cobar construction, and it precedes *Differential Graded Categories*, *A-Infinity and L-Infinity Algebras* and *Calabi–Yau Algebras*, for which the differential graded language fixed here is the working language. The three structural results recorded are the **homotopy theory of differential graded modules** — homotopies, homotopy equivalences and the statement that a quasi-isomorphism between semi-free differential graded modules is a homotopy equivalence — the **bar and cobar adjunction** $\Omega \dashv B$ with the twisting morphisms that mediate it, and the **formality** of the Koszul and Hochschild complexes.
+The article is the ninth of the category and opens the homotopical layer of this Part. It follows *Koszul Duality*, whose resolution criterion is re-read here as the statement that a Koszul algebra is the homology of a cobar construction, and it precedes, andfor which the differential graded language fixed here is the working language. The three structural results recorded are the **homotopy theory of differential graded modules** — homotopies, homotopy equivalences and the statement that a quasi-isomorphism between semi-free differential graded modules is a homotopy equivalence — the **bar and cobar adjunction** $\Omega \dashv B$ with the twisting morphisms that mediate it, and the **formality** of the Koszul and Hochschild complexes.
 
 The article is algebraic. The homotopy category and the derived category are described algebraically, as localisations of categories of complexes at the quasi-isomorphisms; the model-category, simplicial and stable-homotopy formulations belong to Part II, where the topological constructions they need are available, and they are deferred. No manifold, no differential form on a manifold, no topology and no norm is used.
 
@@ -27,9 +27,9 @@ $$
 \tau : M\otimes_k N \to N\otimes_k M, \qquad \tau(m\otimes n) = (-1)^{\lvert m\rvert\lvert n\rvert}n\otimes m .
 $$
 
-This sign is not a convention of convenience: it is forced by the requirement that the interchange composed with itself be the identity on the one hand and that the suspension functor be compatible with the product on the other, and it is the **Koszul sign rule** of *Superalgebras and Graded Structures*. With it, the tensor product of two graded algebras is a graded algebra, and a graded algebra that is graded-commutative has its opposite algebra identified with itself.
+This sign is not a convention of convenience: it is forced by the requirement that the interchange composed with itself be the identity on the one hand and that the suspension functor be compatible with the product on the other, and it is the **Koszul sign rule**. With it, the tensor product of two graded algebras is a graded algebra, and a graded algebra that is graded-commutative has its opposite algebra identified with itself.
 
-**Example.** The exterior algebra $\Lambda(V)$ on a finite-dimensional space, with the generators in degree $1$, is graded-commutative by the sign rule, since $vw = (-1)^{\lvert v\rvert\lvert w\rvert}wv = -wv$ for odd $v,w$. The symmetric algebra $\operatorname{Sym}(V)$ with generators of even degree is graded-commutative; a polynomial algebra with generators in odd degrees is not, and the graded-commutative version of it is the exterior algebra in those generators. The two algebras of *The Symmetric Algebra* and *The Exterior Algebra* are therefore the even and the odd incarnations of one construction, and the sign rule is what distinguishes them.
+**Example.** The exterior algebra $\Lambda(V)$ on a finite-dimensional space, with the generators in degree $1$, is graded-commutative by the sign rule, since $vw = (-1)^{\lvert v\rvert\lvert w\rvert}wv = -wv$ for odd $v,w$. The symmetric algebra $\operatorname{Sym}(V)$ with generators of even degree is graded-commutative; a polynomial algebra with generators in odd degrees is not, and the graded-commutative version of it is the exterior algebra in those generators. The two algebras andare therefore the even and the odd incarnations of one construction, and the sign rule is what distinguishes them.
 
 **Proposition.** Let $A$ be a graded algebra. Then the tensor product $A\otimes_k A^{\mathrm{op}}$ with the multiplication $(a\otimes b)(a'\otimes b') = (-1)^{\lvert b\rvert\lvert a'\rvert}aa'\otimes bb'$ is a graded algebra, the enveloping algebra of the graded setting, and graded left $A\otimes_kA^{\mathrm{op}}$-modules are the graded $A$-bimodules.
 
@@ -71,7 +71,7 @@ $$
 (d\alpha)(x_1,\dots,x_{n+1}) = \sum_{i<j}(-1)^{i+j}\,\alpha\bigl(x_1,\dots,x_{i-1},[x_i,x_j],x_{i+1},\dots,\widehat{x_j},\dots,x_{n+1}\bigr),
 $$
 
-in which $[x_i,x_j]$ occupies the $i$-th slot and $x_j$ is omitted, satisfies $d^2 = 0$ exactly because of the Jacobi identity of $\mathfrak{g}$, and turns $\wedge^\bullet\mathfrak{g}^*$ into a commutative DGA; the sign convention is the standard one, in which $d\alpha(x,y) = -\alpha([x,y])$ on $1$-cochains, and the alternative conventions differ by the signs of the individual terms. Its homology is the Lie algebra cohomology of *Lie Algebra Cohomology* in the anti-symmetric category, where the construction and its interpretation are developed; it is recorded here because it is the prototype of a commutative DGA whose differential is a bracket.
+in which $[x_i,x_j]$ occupies the $i$-th slot and $x_j$ is omitted, satisfies $d^2 = 0$ exactly because of the Jacobi identity of $\mathfrak{g}$, and turns $\wedge^\bullet\mathfrak{g}^*$ into a commutative DGA; the sign convention is the standard one, in which $d\alpha(x,y) = -\alpha([x,y])$ on $1$-cochains, and the alternative conventions differ by the signs of the individual terms. Its homology is the Lie algebra cohomology in the anti-symmetric category, where the construction and its interpretation are developed; it is recorded here because it is the prototype of a commutative DGA whose differential is a bracket.
 
 **Example (the trivial extension).** Let $A$ be a DGA, let $a \in A$ be a central cycle of even degree $\lvert a\rvert$, and let $A\langle x\rangle/(x^2)$ be the graded algebra obtained by adjoining an odd generator $x$ of degree $\lvert a\rvert+1$ with $x^2 = 0$. There is a unique differential extending $d$ with $dx = a$, and it is well defined: $d(x^2) = (dx)x - x(dx) = ax - xa = 0$ by centrality, the sign being that of the graded Leibniz rule for an odd generator. Thus every central cycle of even degree produces a new DGA that is free over the old one, and the construction is the elementary step of the semi-free resolutions of the next section.
 
@@ -165,7 +165,7 @@ This is the precise sense in which the two constructions of the previous article
 
 *Proof.* For a Koszul algebra the Koszul complex is a semi-free resolution of $k$ with generators in bidegrees $(i,i)$, so the comparison of the complex $\operatorname{End}_A(K(A))$ with its homology $A^!$ is a quasi-isomorphism of DGAs by the dimension count in each bidegree; no room remains for a nontrivial Massey product, and the formality follows. $\square$
 
-**Theorem (Kontsevich formality; statement of the DGA form).** Let $A = k[x_1,\dots,x_n]$ and let $C^\bullet(A,A)$ be its Hochschild complex as a DGA; let $T_{\mathrm{poly}}(A)$ be the graded algebra of polynomial multivectors with the zero differential and the wedge product. Then there is a quasi-isomorphism of DGAs (indeed of $L_\infty$-algebras, as in *Deformation Quantization* and *A-Infinity and L-Infinity Algebras*)
+**Theorem (Kontsevich formality; statement of the DGA form).** Let $A = k[x_1,\dots,x_n]$ and let $C^\bullet(A,A)$ be its Hochschild complex as a DGA; let $T_{\mathrm{poly}}(A)$ be the graded algebra of polynomial multivectors with the zero differential and the wedge product. Then there is a quasi-isomorphism of DGAs (indeed of $L_\infty$-algebras, as in *Deformation Quantization* and)
 
 $$
 \bigl(T_{\mathrm{poly}}(A),\ 0\bigr) \longrightarrow \bigl(C^\bullet(A,A),\ \delta\bigr)
@@ -199,6 +199,8 @@ Homotopy of DG module morphisms is defined by $f-g = d_Nh + hd_M$; the **homotop
 | $\tau : C\to A$, $d\tau + \tau\star\tau = 0$ | twisting morphism, Maurer–Cartan equation |
 | $\langle a_1,\dots,a_n\rangle$ | Massey product |
 | $T_{\mathrm{poly}}(A)$ | multivectors of a commutative algebra, with the wedge product |
+
+
 
 ## Further Reading
 

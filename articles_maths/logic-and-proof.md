@@ -3,11 +3,11 @@
 
 ## Introduction
 
-This article treats logic as the grammar of mathematical assertion and proof as the activity of deriving one assertion from others. It is the second entry of the corpus, below only *Sets, Functions and Relations*, and it supplies the connectives, the quantifiers and the rules of inference that every later article uses without comment. The mathematics of the article is the classical two-valued propositional and predicate calculus, together with the proof principles — direct proof, contraposition, contradiction, induction and recursion — that the corpus applies at every level.
+This article treats logic as the grammar of mathematical assertion and proof as the activity of deriving one assertion from others. It is the second entry of the corpus, below only *Sets, Functions and Relations*, and it supplies the connectives, the quantifiers and the rules of inference that every other article uses without comment. The mathematics of the article is the classical two-valued propositional and predicate calculus, together with the proof principles — direct proof, contraposition, contradiction, induction and recursion — that the corpus applies at every level.
 
-The treatment is foundational but not formalist. The propositional calculus is presented semantically, through truth tables, and syntactically, through a system of inference rules; the two are shown to agree for propositional logic. The predicate calculus is presented as far as the language and its semantics require, with substitution, binding and validity; the completeness and compactness theorems are stated in outline and developed in *Formal Logic and Computability* and *Model Theory*. The axioms of the ambient set theory in which the models live are the subject of *Set-Theoretic Foundations*, and the algebra of propositions is recognised here as an instance of the Boolean algebras of Part IV and of the power-set algebra of *Sets, Functions and Relations*.
+The treatment is foundational but not formalist. The propositional calculus is presented semantically, through truth tables, and syntactically, through a system of inference rules; the two are shown to agree for propositional logic. The predicate calculus is presented as far as the language and its semantics require, with substitution, binding and validity; the completeness and compactness theorems are stated in outline and not developed. The axioms of the ambient set theory in which the models live are not covered here, and the algebra of propositions is recognised here as an instance of the Boolean algebras of Part IV and of the power-set algebra of *Sets, Functions and Relations*.
 
-Two boundaries are worth fixing at the outset. This article is about the logic used throughout the corpus, not about the metalogical study of formal systems: the arithmetisation of syntax, the incompleteness theorems, decidability and the halting problem belong to *Formal Logic and Computability*; the semantics of first-order theories — elementary equivalence, quantifier elimination, ultraproducts — belongs to *Model Theory*; and the proof-theoretic study of calculi and the type-theoretic reading of proofs belong to *Proof Theory and Type Theory*. The present article uses none of those results and points to each of them where the subject begins.
+Two boundaries are worth fixing at the outset. This article is about the logic used throughout the corpus, not about the metalogical study of formal systems: the arithmetisation of syntax, the incompleteness theorems, decidability and the halting problem, the semantics of first-order theories — elementary equivalence, quantifier elimination, ultraproducts — and the proof-theoretic study of calculi and the type-theoretic reading of proofs all lie outside this article. The present article uses none of those results and points to each of them where the subject begins.
 
 ## Propositional Logic
 
@@ -84,7 +84,7 @@ $$
 [[\neg\varphi]] = \{0,1\}^n \setminus [[\varphi]], \qquad [[\varphi \wedge \psi]] = [[\varphi]] \cap [[\psi]], \qquad [[\varphi \vee \psi]] = [[\varphi]] \cup [[\psi]],
 $$
 
-so the map $\varphi \mapsto [[\varphi]]$ carries the logic of $n$ atoms onto the power-set algebra of a set with $2^n$ points. Tautologies are the formulas with $[[\varphi]] = \{0,1\}^n$; contradictions are those with $[[\varphi]] = \emptyset$; and logical equivalence is equality of truth sets. This is the precise sense in which the algebra of propositions and the algebra of subsets are one structure, and both are instances of the **Boolean algebras** developed in Part IV. The number $2^n$ is a cardinality, computed in *Cardinality and the Axiom of Choice*.
+so the map $\varphi \mapsto [[\varphi]]$ carries the logic of $n$ atoms onto the power-set algebra of a set with $2^n$ points. Tautologies are the formulas with $[[\varphi]] = \{0,1\}^n$; contradictions are those with $[[\varphi]] = \emptyset$; and logical equivalence is equality of truth sets. This is the precise sense in which the algebra of propositions and the algebra of subsets are one structure, and both are instances of the **Boolean algebras** developed in Part IV. The number $2^n$ is a cardinality, computed.
 
 ### Logical Consequence
 
@@ -96,7 +96,7 @@ Logical consequence is a relation on formulas, not a connective: $\models$ is a 
 
 **Proof.** Both sides say that there is no assignment making every $\varphi_i$ true and $\psi$ false: the left says it by the definition of consequence, the right because a conditional fails exactly at an assignment that makes its antecedent true and its consequent false. $\square$
 
-A set $\Gamma$ of formulas is **satisfiable** if some single assignment makes every formula in $\Gamma$ true. A finite set is satisfiable exactly when its conjunction is satisfiable. The **compactness** of propositional logic — that $\Gamma$ is satisfiable if every finite subset of $\Gamma$ is — follows from the finiteness of the truth tables and is stated, with its first-order analogue, in *Formal Logic and Computability*.
+A set $\Gamma$ of formulas is **satisfiable** if some single assignment makes every formula in $\Gamma$ true. A finite set is satisfiable exactly when its conjunction is satisfiable. The **compactness** of propositional logic — that $\Gamma$ is satisfiable if every finite subset of $\Gamma$ is — follows from the finiteness of the truth tables and is stated, with its first-order analogue.
 
 ## Predicate Logic
 
@@ -120,7 +120,7 @@ $$
 \mathcal{M} \models \forall x\,\varphi[a] \iff \mathcal{M} \models \varphi[a'] \text{ for every assignment } a' \text{ agreeing with } a \text{ off } x.
 $$
 
-A formula with no free variables is a **sentence**, written $\sigma$; a sentence is **true in** $\mathcal{M}$, written $\mathcal{M} \models \sigma$, if it is satisfied under every assignment, equivalently under any one, since satisfaction of a sentence is independent of the assignment. A sentence is **valid** if it is true in every structure for the language, and a set of sentences $T$ is a **theory**; $\mathcal{M}$ is a **model** of $T$, written $\mathcal{M} \models T$, if it satisfies every sentence of $T$. The systematic study of this notion — elementary equivalence, the compactness and Löwenheim–Skolem theorems, quantifier elimination — is *Model Theory*, and the formal proof systems and their completeness are *Formal Logic and Computability*. Here only the vocabulary is being fixed.
+A formula with no free variables is a **sentence**, written $\sigma$; a sentence is **true in** $\mathcal{M}$, written $\mathcal{M} \models \sigma$, if it is satisfied under every assignment, equivalently under any one, since satisfaction of a sentence is independent of the assignment. A sentence is **valid** if it is true in every structure for the language, and a set of sentences $T$ is a **theory**; $\mathcal{M}$ is a **model** of $T$, written $\mathcal{M} \models T$, if it satisfies every sentence of $T$. The systematic study of this notion — elementary equivalence, the compactness and Löwenheim–Skolem theorems, quantifier elimination — isand the formal proof systems and their completeness are. Here only the vocabulary is being fixed.
 
 ### Free and Bound Occurrences
 
@@ -206,7 +206,7 @@ A **proof of an equivalence** $\varphi \leftrightarrow \psi$ is a pair of direct
 
 ### The Principle of Induction
 
-The natural numbers $\mathbb{N}$ are ordered by $\leq$, and every nonempty subset has a least element; this **well-ordering** of $\mathbb{N}$ is taken as a basic property and is discussed from the set-theoretic side in *Set-Theoretic Foundations*.
+The natural numbers $\mathbb{N}$ are ordered by $\leq$, and every nonempty subset has a least element; this **well-ordering** of $\mathbb{N}$ is taken as a basic property and is discussed from the set-theoretic side.
 
 **Theorem (principle of induction).** Let $P$ be a property of natural numbers. If $P(0)$ holds and $P(n)$ implies $P(n+1)$ for every $n \in \mathbb{N}$, then $P(n)$ holds for every $n \in \mathbb{N}$.
 
@@ -250,7 +250,7 @@ The same principle applies to any set whose elements are generated by finitely m
 
 **Proof.** By the definition of formulas, every formula is built from atomic ones by a finite number of applications of the connectives, and the hypotheses of the theorem reproduce the closure conditions of that definition; a formula of least construction length for which $P$ fails would then be atomic, or built from formulas of smaller length satisfying $P$, either of which is impossible. $\square$
 
-Structural induction is used throughout the article implicitly: the unique extension of a valuation to all formulas, the definition of substitution and the proof that capture-avoiding substitution preserves meaning are all arguments of this shape. The analogous principle for the terms of a type theory appears in *Proof Theory and Type Theory*.
+Structural induction is used throughout the article implicitly: the unique extension of a valuation to all formulas, the definition of substitution and the proof that capture-avoiding substitution preserves meaning are all arguments of this shape. The analogous principle for the terms of a type theory appears.
 
 ## Consistency and Completeness in Outline
 
@@ -258,9 +258,9 @@ A **deductive system** consists of axioms and inference rules; a **derivation** 
 
 **Soundness.** Every derivable formula is valid: if $\vdash \varphi$ then $\models \varphi$. Soundness is proved by induction on the length of the derivation, checking that each axiom is valid and that each rule preserves validity.
 
-**Completeness.** Every valid formula is derivable: if $\models \varphi$ then $\vdash \varphi$. For propositional logic this follows from the truth tables, a proof by induction on the number of atoms. For first-order logic it is the **Gödel completeness theorem**, and the enumeration of symbols and the construction of a term model that its proof requires — together with the compactness and Löwenheim–Skolem theorems and the limits imposed by Gödel's incompleteness theorems — are the subject of *Formal Logic and Computability* and *Model Theory*. The present article states the two directions and uses them; it does not prove the first-order completeness theorem, which is a theorem of the metatheory.
+**Completeness.** Every valid formula is derivable: if $\models \varphi$ then $\vdash \varphi$. For propositional logic this follows from the truth tables, a proof by induction on the number of atoms. For first-order logic it is the **Gödel completeness theorem**, and the enumeration of symbols and the construction of a term model that its proof requires — together with the compactness and Löwenheim–Skolem theorems and the limits imposed by Gödel's incompleteness theorems — are not covered here. The present article states the two directions and uses them; it does not prove the first-order completeness theorem, which is a theorem of the metatheory.
 
-**Convention.** The corpus is classical: the law of excluded middle and the rule of reductio ad absurdum are available. **Intuitionistic** logic, which drops them and is the logic of the type-theoretic reading of proofs, is treated in *Proof Theory and Type Theory*, and the corpus uses it only there. No article of the corpus proves a mathematical result that depends on rejecting classical logic, and the standard corpus vocabulary is classical.
+**Convention.** The corpus is classical: the law of excluded middle and the rule of reductio ad absurdum are available. **Intuitionistic** logic, which drops them and is the logic of the type-theoretic reading of proofs, is treated, and the corpus uses it only there. No article of the corpus proves a mathematical result that depends on rejecting classical logic, and the standard corpus vocabulary is classical.
 
 ## Summary
 
@@ -268,7 +268,7 @@ Propositions are combined by the connectives $\neg, \wedge, \vee, \to, \leftrigh
 
 First-order languages add variables, constants, function and predicate symbols, terms, atomic formulas and the quantifiers $\forall$ and $\exists$. A structure interprets the symbols in a domain, and satisfaction is defined by recursion; a sentence satisfied in every structure is valid, and a set of sentences is a theory. An occurrence of a variable inside a quantifier is bound, otherwise free; a formula with no free variable is a sentence; substitution replaces free occurrences and is carried out so as to avoid capture.
 
-Proof is derivation by rules of inference: modus ponens and modus tollens, introduction and elimination for $\wedge$ and $\vee$, conditional proof, reductio ad absurdum, and the quantifier and equality rules. The standard shapes are direct proof, proof by contrapositive, proof by contradiction, proof by cases and proof of an equivalence. Induction follows from the well-ordering of $\mathbb{N}$ and comes in weak, strong and base-shifted forms; the recursion theorem licenses definitions by recurrence; and structural induction applies to formulas and to any inductively generated set. Soundness and completeness relate derivability to validity, soundness by induction on derivations and completeness for propositional logic by truth tables, while first-order completeness, compactness and the incompleteness phenomena belong to *Formal Logic and Computability* and *Model Theory*.
+Proof is derivation by rules of inference: modus ponens and modus tollens, introduction and elimination for $\wedge$ and $\vee$, conditional pro, reductio ad absurdum, and the quantifier and equality rules. The standard shapes are direct pro, proof by contrapositive, proof by contradiction, proof by cases and proof of an equivalence. Induction follows from the well-ordering of $\mathbb{N}$ and comes in weak, strong and base-shifted forms; the recursion theorem licenses definitions by recurrence; and structural induction applies to formulas and to any inductively generated set. Soundness and completeness relate derivability to validity, soundness by induction on derivations and completeness for propositional logic by truth tables, while first-order completeness, compactness and the incompleteness phenomena belong .
 
 ## Summary of Notation
 
@@ -293,6 +293,10 @@ Proof is derivation by rules of inference: modus ponens and modus tollens, intro
 | $\mathbb{N}$ | The natural numbers, well-ordered by $\leq$, with least element $0$ |
 | $P(n)$, $P(k)$ for $k<n$ | Induction hypothesis; strong induction hypothesis |
 | $u(0)=a$, $u(n+1)=F(n,u(n))$ | Recursive definition of a function $u : \mathbb{N} \to A$ |
+
+
+
+
 
 ## Further Reading
 

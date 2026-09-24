@@ -7,9 +7,9 @@ A metric space is **hyperbolic** in the sense of Gromov if its geodesic triangle
 
 The theory is one of the most complete in geometric group theory. Hyperbolic spaces have a well-behaved theory of quasi-geodesics — the **Morse lemma** says that a quasi-geodesic stays close to a geodesic — and a **boundary at infinity**, the space of geodesic rays up to bounded distance, which is compact for a proper space and carries a visual family of metrics. A quasi-isometry of proper hyperbolic spaces extends to a homeomorphism of the boundaries, so the boundary is a quasi-isometry invariant. For a hyperbolic group this yields a powerful set of consequences: the group is finitely presented, the word problem is solvable by **Dehn's algorithm** in linear time, the **Rips complex** gives a finite model for the classifying space, and a non-elementary hyperbolic group contains a free group of rank two and has one end and exponential growth. The combination of the boundary with the local-to-global structure also gives the rigidity theory: quasi-isometric rigidity of hyperbolic groups, and **Cannon's conjecture**, which asks whether a hyperbolic group whose boundary is a two-sphere acts geometrically on hyperbolic three-space.
 
-The article develops the definition and the first examples, the Morse lemma, the boundary at infinity and its quasi-isometry invariance, the theory of hyperbolic groups with the classification of isometries and the Rips complex, the algorithmic properties, and the rigidity statements. The metric input is that of *Geometric Group Theory*, immediately above: the Cayley graph, the word metric, quasi-isometry and the growth of groups. The geometric input on hyperbolic space is that of *Lattices in Lie Groups*, where $\mathbf{H}^n$ appears as the homogeneous space $SO(n,1)/SO(n)$ with a proper distance; the boundary of $\mathbf{H}^n$ is the sphere $S^{n-1}$. The action of a group on a tree, which is the degenerate case $\delta = 0$, is the subject of *Bass–Serre Theory*, written in parallel with this article.
+The article develops the definition and the first examples, the Morse lemma, the boundary at infinity and its quasi-isometry invariance, the theory of hyperbolic groups with the classification of isometries and the Rips complex, the algorithmic properties, and the rigidity statements. The metric input is that of *Geometric Group Theory*, immediately above: the Cayley graph, the word metric, quasi-isometry and the growth of groups. The geometric input on hyperbolic space is that of *Lattices in Lie Groups*, where $\mathbf{H}^n$ appears as the homogeneous space $SO(n,1)/SO(n)$ with a proper distance; the boundary of $\mathbf{H}^n$ is the sphere $S^{n-1}$. The action of a group on a tree, which is the degenerate case $\delta = 0$, is not covered here.
 
-The boundary with Part III is the one fixed for this block. What is developed here is the metric, topological and combinatorial structure: the thin-triangle condition, quasi-geodesics, the boundary with its topology, the classification of isometries, the Rips complex and the algorithmic properties. What is deferred is the **analytic** theory: the Patterson–Sullivan and quasi-conformal measures on the boundary, the Hausdorff dimension of the limit sets, the ergodic theory of the geodesic flow and the spectral theory of the Laplacian on a hyperbolic quotient, all of which belong to *Analysis on Groups* and *Ergodic Theory of Group Actions* in Part III, where the measure and the limit are available. No physics is invoked.
+The boundary with Part III is the one fixed for this block. What is developed here is the metric, topological and combinatorial structure: the thin-triangle condition, quasi-geodesics, the boundary with its topology, the classification of isometries, the Rips complex and the algorithmic properties. What is deferred is the **analytic** theory: the Patterson–Sullivan and quasi-conformal measures on the boundary, the Hausdorff dimension of the limit sets, the ergodic theory of the geodesic flow and the spectral theory of the Laplacian on a hyperbolic quotient, all of which belong to *Analysis on Groups*, where the measure and the limit are available. No physics is invoked.
 
 ## Gromov Hyperbolic Spaces
 
@@ -185,10 +185,10 @@ The isometry $\gamma$ is **elliptic** if some orbit is bounded (equivalently, if
 
 ## The Boundary with Analysis
 
-- The **Patterson–Sullivan measures** and the **quasi-conformal measures** on the boundary, the **Hausdorff dimension** of the limit set of a Kleinian group and the **critical exponent** of a hyperbolic group are *Analysis on Groups* and *Ergodic Theory of Group Actions* in Part III, where the measure is available.
+- The **Patterson–Sullivan measures** and the **quasi-conformal measures** on the boundary, the **Hausdorff dimension** of the limit set of a Kleinian group and the **critical exponent** of a hyperbolic group are *Analysis on Groups*, where the measure is available.
 - The **ergodicity of the geodesic flow** on a negatively curved quotient, the **spectral theory of the Laplacian**, the **resonances** and the **prime geodesic theorem** are Part III.
 - The **harmonic analysis of the boundary**, the **Martin boundary** and the **random walks** on hyperbolic groups are Part III.
-- The **classifying spaces** and the **Baum–Connes conjecture** for hyperbolic groups are the operator-algebraic topics of *Operator Algebras* and *K-Theory of Operator Algebras* in *Topology on Linear Algebras*, later in this Part.
+- The **classifying spaces** and the **Baum–Connes conjecture** for hyperbolic groups are the operator-algebraic topics andin *Topology on Linear Algebras*.
 - What is *not* deferred: the definition of hyperbolicity and its equivalences, the Morse lemma, the boundary at infinity as a topological space, the visual metrics and quasi-symmetry, the classification of isometries, the Rips complex and the finiteness properties, Dehn's algorithm, and the rigidity statements.
 
 ## Summary
@@ -223,6 +223,12 @@ A finitely generated group is hyperbolic when its Cayley graph is. Hyperbolic gr
 | $P_d(\Gamma)$ | Rips complex: simplices are subsets of diameter $\leq d$ |
 | type $FP_\infty$ | Finiteness property of the group; a consequence of the Rips complex |
 | Cannon's conjecture | Hyperbolic group with boundary $S^2$ acts on $\mathbf{H}^3$ (open) |
+
+
+
+
+
+
 
 ## Further Reading
 

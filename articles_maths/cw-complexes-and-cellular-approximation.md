@@ -5,7 +5,7 @@
 
 A CW complex is a topological space assembled from discs, one dimension at a time: one starts with a discrete set of points, glues on copies of the interval, then copies of the disc, and so on, taking the union with the topology in which a set is open exactly when its intersection with every closed disc is closed. The definition is combinatorial — it is a recipe in terms of attaching maps — and the resulting spaces carry two structures at once. They are general enough to include every space a geometer meets in this corpus, namely the spheres, the projective spaces, the Grassmannians, the classical groups, the surfaces and the simplicial complexes; and they are rigid enough that their algebraic invariants can be computed from the combinatorial data alone.
 
-The companion article *The Fundamental Group and Covering Spaces* supplies homotopy, the fundamental group and the covering theory. The present article adds the assembling procedure, the **homotopy extension property** that makes the gluing homotopically well behaved, the **cellular approximation theorem** that lets a map be deformed until it respects the cell structure, and the **cellular chain complex** that computes the homology of a CW complex from its cells. The homology theory itself, simplicial and singular, is the subject of the companion article *Simplicial and Singular Homology*, written next in this batch; it is used here only in the form of the standard facts that $H_n(S^n) \cong \mathbb{Z}$ and that a map of spheres has an integral degree, both of which are standard mathematics quoted with a citation and are developed in their own place there.
+The companion article *The Fundamental Group and Covering Spaces* supplies homotopy, the fundamental group and the covering theory. The present article adds the assembling procedure, the **homotopy extension property** that makes the gluing homotopically well behaved, the **cellular approximation theorem** that lets a map be deformed until it respects the cell structure, and the **cellular chain complex** that computes the homology of a CW complex from its cells. The homology theory itself, simplicial and singular, is not covered here; it is used here only in the form of the standard facts that $H_n(S^n) \cong \mathbb{Z}$ and that a map of spheres has an integral degree, both of which are standard mathematics quoted with a citation and are developed in their own place there.
 
 Throughout, $D^n = \{x \in \mathbb{R}^n : |x| \leq 1\}$ is the closed unit disc, $S^{n-1} = \partial D^n$ its boundary, and $D^n \setminus S^{n-1}$ its interior, written $\mathring D^n$. A map means a continuous map. No measure, integral or derivative is used; the theory is combinatorial and topological, and where a smooth statement would be natural it is deferred.
 
@@ -67,7 +67,7 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 **Definition.** A pair with the HEP is a **cofibration**; a map $A \hookrightarrow X$ is a cofibration exactly when it has the HEP. Cofibrations are, up to homotopy, the inclusions one may quotient by and attach along without changing the homotopy type.
 
-**Corollary.** If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded in *Simplicial and Singular Homology*: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong \tilde H_n(X/A)$.
+**Corollary.** If $(X,A)$ has the HEP then the quotient map $X \to X/A$ induces an isomorphism on homology and cohomology of the pair in the sense of the excision statement recorded: the pair $(X,A)$ and the pair $(X/A, \ast)$ have isomorphic relative invariants. Consequently $H_n(X,A) \cong \tilde H_n(X/A)$.
 
 *Proof.* By the HEP the inclusion $A \subseteq X$ is a cofibration and the collapse $X \to X/A$ is a homotopy equivalence of pairs. $\square$
 
@@ -81,7 +81,7 @@ in which the left vertical map is the inclusion of the boundary and the upper ho
 
 **Corollary (connectivity of skeleta).** If a connected CW complex $X$ has no cells of dimension $1, \ldots, n$, then $X^n$ is a single point and the pair $(X, X^n)$ has $\pi_k(X, X^n) = 0$ for $k \leq n$; more generally the pair $(X^n, X^{n-1})$ has vanishing homotopy groups in degrees below $n$ and $\pi_n$ free on the $n$-cells.
 
-**Corollary (low-dimensional homotopy of spheres).** Cellular approximation applied to maps $S^k \to S^n$ shows that every such map is null-homotopic when $k < n$. Equivalently, $\pi_k(S^n) = 0$ for $k < n$, and the inclusion $S^n \hookrightarrow S^{n+1}$ induces an isomorphism $\pi_k(S^n) \to \pi_k(S^{n+1})$ for $k \leq n - 1$, both groups being trivial there. This is a first instance of a stability phenomenon, whose sharp form is the **Freudenthal suspension theorem** of the companion article *Homotopy Groups and Fibrations*, written in this batch: the suspension $\sigma : \pi_k(S^n) \to \pi_{k+1}(S^{n+1})$ is an isomorphism for $k < 2n-1$ and a surjection for $k = 2n-1$, which extends the isomorphism far beyond the trivial range obtained here.
+**Corollary (low-dimensional homotopy of spheres).** Cellular approximation applied to maps $S^k \to S^n$ shows that every such map is null-homotopic when $k < n$. Equivalently, $\pi_k(S^n) = 0$ for $k < n$, and the inclusion $S^n \hookrightarrow S^{n+1}$ induces an isomorphism $\pi_k(S^n) \to \pi_k(S^{n+1})$ for $k \leq n - 1$, both groups being trivial there. This is a first instance of a stability phenomenon, whose sharp form is the **Freudenthal suspension theorem** , written in this batch: the suspension $\sigma: \pi_k(S^n) \to \pi_{k+1}(S^{n+1})$ is an isomorphism for $k < 2n-1$ and a surjection for $k = 2n-1$, which extends the isomorphism far beyond the trivial range obtained here.
 
 **Remark.** Cellular approximation is the reason a CW complex is a homotopically economical model: its homotopy type is determined by the attaching data of its cells up to homotopy, and maps may always be assumed to respect that data. The same argument, in the smooth category, produces the statement that a map of manifolds is homotopic to a smooth one; the smooth version needs the approximation theory of Part III and is deferred there.
 
@@ -97,7 +97,7 @@ $$
 
 zero when there are no $n$-cells. The boundary is defined from the attaching maps.
 
-**Definition (degree).** Let $f : S^n \to S^n$ be a map. The induced homomorphism $f_* : H_n(S^n) \to H_n(S^n)$ on the top homology is multiplication by an integer, written $\deg f$, because $H_n(S^n) \cong \mathbb{Z}$; the integer is the **degree** of $f$. It depends only on the homotopy class of $f$, and $\deg(f \circ g) = \deg f \cdot \deg g$, $\deg \mathrm{id} = 1$. This is standard mathematics, quoted here; the systematic treatment of the degree, including its integral representation and the Lefschetz and Brouwer theorems, is the subject of the companion article *Degree Theory and the Brouwer Fixed Point Theorem*, written in this batch.
+**Definition (degree).** Let $f: S^n \to S^n$ be a map. The induced homomorphism $f_*: H_n(S^n) \to H_n(S^n)$ on the top homology is multiplication by an integer, written $\deg f$, because $H_n(S^n) \cong \mathbb{Z}$; the integer is the **degree** of $f$. It depends only on the homotopy class of $f$, and $\deg(f \circ g) = \deg f \cdot \deg g$, $\deg \mathrm{id} = 1$. This is standard mathematics, quoted here; the systematic treatment of the degree, including its integral representation and the Lefschetz and Brouwer theorems, is the subject , written in this batch.
 
 **Definition (cellular boundary).** For an $n$-cell $e^n_\alpha$ let $q_\beta : X^{n-1} \to X^{n-1}/(X^{n-2} \cup \text{other } (n-1)\text{-cells}) \cong S^{n-1}$ be the collapse onto the closed $(n-1)$-cell $e^{n-1}_\beta$, a sphere because the cell is a disc modulo its boundary. The **cellular boundary** of $e^n_\alpha$ is
 
@@ -167,7 +167,7 @@ and the number is independent of the CW structure.
 
 1. If $A\subseteq X$ is a subcomplex, then $X/A$ is a CW complex whose cells are the cells of $X$ not in $A$ together with the collapsed image of $A$ as a single $0$-cell, and the quotient map $X\to X/A$ is cellular.
 2. The product $X\times Y$ of two CW complexes, topologised by the **weak topology** on the product's cells — the topology whose closed subsets are those meeting each closed cell in a closed set, in general finer than the product topology — is a CW complex whose $n$-cells are the products of a $p$-cell with a $q$-cell, $p+q = n$. The two topologies agree when $X$ or $Y$ is locally compact, and the identity map between them is a homotopy equivalence in general.
-3. The smash product $X\wedge Y = (X\times Y)/(X\vee Y)$, the mapping cylinder of a cellular map, the mapping cone and the reduced suspension $\Sigma X = S^1\wedge X$ are CW complexes, and the reduced suspension is the based suspension of *Stable Homotopy Theory* restricted to complexes.
+3. The smash product $X\wedge Y = (X\times Y)/(X\vee Y)$, the mapping cylinder of a cellular map, the mapping cone and the reduced suspension $\Sigma X = S^1\wedge X$ are CW complexes, and the reduced suspension is the based suspension restricted to complexes.
 4. If $p : Y\to X$ is a covering map of a path-connected CW complex, then $Y$ carries a CW structure whose cells are the cells of $X$ lifted along the covering, and the cellular chain complex of $Y$ is the chain complex of $X$ tensored with the free module on the fibre, with the local system of *The Fundamental Group and Covering Spaces* twisting the differentials; in particular $Y$ has the same dimension as $X$.
 
 *Proof.* (1) The characteristic maps of the cells not in $A$ compose with the quotient, and the boundary of the collapsed image inherits a cell structure from the filtration. (2) The weak topology on the product is the standard one making the product of CW complexes a CW complex; that it agrees with the product topology when one factor is locally compact is the usual theorem, and the difference in general is repaired by the homotopy equivalence of the two topologies. (3) Each construction is given its cells by the description of the maps involved, and the reduced suspension is the case $Y = S^1$. (4) The cells of $X$ lift to cells of $Y$ after a subdivision or a cellular approximation of the attaching maps, and the identification of the chain complexes is the standard computation of the cellular chains of a covering space. $\square$
@@ -203,6 +203,10 @@ The cellular chain complex is free on the cells in each degree, with boundary gi
 | $\Sigma X = S^1\wedge X$ | Reduced suspension |
 | $G_k(\mathbb{R}^n)$, $\mathbb{RP}^n$, $\mathbb{CP}^n$, $\mathbb{HP}^n$ | Grassmannian and projective spaces with their cell structures |
 | $\operatorname{rk}$ | Rank of a finitely generated abelian group |
+
+
+
+
 
 ## Further Reading
 

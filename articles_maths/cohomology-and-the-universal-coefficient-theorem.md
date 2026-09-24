@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Homology attaches to a space a graded module $H_n(X;R)$; **cohomology** attaches to it the graded module obtained by dualising the chain complex, and it carries two additional structures that homology does not have. The first is a *contravariant* functoriality: a continuous map $f : X \to Y$ induces $f^* : H^n(Y;G) \to H^n(X;G)$, in the opposite direction to $f$, which is what makes cohomology the natural receptacle for invariants pulled back from a target space — characteristic classes, obstructions, and the classes of the following articles. The second is the **cup product**, which turns the direct sum of the cohomology modules into a graded ring; it is the subject of the companion article *Cup and Cap Products* and is not used here.
+Homology attaches to a space a graded module $H_n(X;R)$; **cohomology** attaches to it the graded module obtained by dualising the chain complex, and it carries two additional structures that homology does not have. The first is a *contravariant* functoriality: a continuous map $f: X \to Y$ induces $f^*: H^n(Y;G) \to H^n(X;G)$, in the opposite direction to $f$, which is what makes cohomology the natural receptacle for invariants pulled back from a target space — characteristic classes, obstructions, and the classes. The second is the **cup product**, which turns the direct sum of the cohomology modules into a graded ring; it is the subject of and is not used here.
 
 The passage from homology to cohomology is not merely dualisation, and the difference is measured by the **universal coefficient theorem**. Dualising a chain complex with $\operatorname{Hom}_R(-,G)$ is a left exact functor, so it loses the information of the quotients, and that loss is precisely an $\operatorname{Ext}^1_R$ term; the theorem states a split short exact sequence exhibiting cohomology as an extension of a $\operatorname{Hom}$ by an $\operatorname{Ext}^1$, with the splitting unnatural. The homological algebra is that of Part I: $\operatorname{Ext}^1_R$ and its long exact sequence are the subject of the planned *Ext and Tor* and *Derived Functors*, written in parallel, and the exactness and diagram lemmas are proved in the written *Exact Sequences*. The present article takes the algebraic input as given and concentrates on the topological content: the cochain complex of a space, the cochain complex of a CW complex, the universal coefficient theorem for spaces, and the **Bockstein homomorphism** that measures how an integral class is transported through a short exact sequence of coefficient modules.
 
@@ -177,7 +177,7 @@ natural in $X$ and in $G$ as an $R$-module, with $E_2^{p,q} = 0$ for $p\geq2$. C
 
 *Proof.* The spectral sequence is the one of the double complex obtained from a projective resolution of $G$ and a projective resolution of the chain complex $C_*(X;R)$, and it is the standard spectral sequence of these two resolutions, as in Part I's *Spectral Sequences* and *Derived Functors*; its $E_2$ page is as stated and it converges to the cohomology of the total complex, which is $H^*(X;G)$. The vanishing of the columns $p\geq2$ forces all differentials out of $E_2$ to land in zero, so $E_2 = E_\infty$, and only the two columns with $p = 0,1$ can contribute to total degree $n$. $\square$
 
-**Remark (what the spectral sequence adds to the short exact sequence).** The short exact sequence of the universal coefficient theorem is the assertion that the two-piece filtration of $H^n(X;G)$ has subquotients as above; the extension is nontrivial in general and is split only after a noncanonical choice, which is one way to see the non-naturality. The spectral-sequence form has the further content that it survives when the coefficient module has higher derived functors: if the ground ring is replaced by a ring of higher global dimension, or if the complex is replaced by one unbounded below, the higher columns are the ones that measure the new phenomena, and the collapsed statement above is exactly the degenerate case. This is the pattern shared by the Künneth theorem, whose spectral sequence is described in the next article.
+**Remark (what the spectral sequence adds to the short exact sequence).** The short exact sequence of the universal coefficient theorem is the assertion that the two-piece filtration of $H^n(X;G)$ has subquotients as above; the extension is nontrivial in general and is split only after a noncanonical choice, which is one way to see the non-naturality. The spectral-sequence form has the further content that it survives when the coefficient module has higher derived functors: if the ground ring is replaced by a ring of higher global dimension, or if the complex is replaced by one unbounded below, the higher columns are the ones that measure the new phenomena, and the collapsed statement above is exactly the degenerate case. This is the pattern shared by the Künneth theorem, whose spectral sequence is described.
 
 ### Lens Spaces, Moore Spaces and Real Projective Spaces
 
@@ -215,7 +215,7 @@ $$
 H_0 = \mathbb{Z},\qquad H_k = \mathbb{Z}/2\ \ (k \text{ odd},\ 0<k<n),\qquad H_k = 0\ \ (k \text{ even},\ 0<k<n),
 $$
 
-with $H_n = \mathbb{Z}$ for $n$ odd and $H_n = 0$ for $n$ even. The universal coefficient theorem then gives $H^k(\mathbb{RP}^n;\mathbb{Z}) \cong \mathbb{Z}/2$ for $k$ even with $0<k<n$, $H^k = 0$ for $k$ odd with $0<k<n$, and at the top degree $H^n \cong \mathbb{Z}$ for $n$ odd, $H^n\cong\mathbb{Z}/2$ for $n$ even. In particular $H^n(\mathbb{RP}^n;\mathbb{Z})$ is not the dual of $H_n(\mathbb{RP}^n;\mathbb{Z})$ in the naive sense, and the discrepancy at the top degree is the first appearance of the orientability class, whose cohomological form is the subject of *Poincaré Duality*.
+with $H_n = \mathbb{Z}$ for $n$ odd and $H_n = 0$ for $n$ even. The universal coefficient theorem then gives $H^k(\mathbb{RP}^n;\mathbb{Z}) \cong \mathbb{Z}/2$ for $k$ even with $0<k<n$, $H^k = 0$ for $k$ odd with $0<k<n$, and at the top degree $H^n \cong \mathbb{Z}$ for $n$ odd, $H^n\cong\mathbb{Z}/2$ for $n$ even. In particular $H^n(\mathbb{RP}^n;\mathbb{Z})$ is not the dual of $H_n(\mathbb{RP}^n;\mathbb{Z})$ in the naive sense, and the discrepancy at the top degree is the first appearance of the orientability class, whose cohomological form is not covered here.
 
 **Remark (the general rule for the computation).** The examples display the two-part structure of the theorem: the free part of $H^n(X;\mathbb{Z})$ is the free part of $H_n(X;\mathbb{Z})$, and the torsion of $H^n(X;\mathbb{Z})$ is the torsion of $H_{n-1}(X;\mathbb{Z})$. Computationally one may therefore read the integral cohomology of a finite CW complex from its integral homology by shifting the torsion up one degree and leaving the free parts in place; with coefficients in a ring $R$ and a module $G$, the same computation uses the structure of the modules $H_n(X;R)$ over $R$, and the naturality of the sequence ensures that the computation is compatible with maps of spaces.
 
@@ -244,6 +244,10 @@ The universal coefficient theorem expresses cohomology in terms of homology: the
 | $\beta$ | Bockstein homomorphism, raising degree by one |
 | $\beta_m : H^n(X;\mathbb{Z}/m) \to H^{n+1}(X;\mathbb{Z})$ | Bockstein of the sequence $0 \to \mathbb{Z} \xrightarrow{m} \mathbb{Z} \to \mathbb{Z}/m \to 0$ |
 | $S^n$, $\mathbb{RP}^n$ | Sphere and real projective space, as computational examples |
+
+
+
+
 
 ## Further Reading
 

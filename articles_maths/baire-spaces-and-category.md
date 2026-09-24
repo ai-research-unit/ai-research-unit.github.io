@@ -102,7 +102,7 @@ The Baire property holds for a class of spaces strictly larger than the complete
 
 **Example (the irrationals).** The set $\mathbb{R} \setminus \mathbb{Q}$ is the intersection over $q \in \mathbb{Q}$ of the open dense sets $\mathbb{R} \setminus \{q\}$, a countable intersection; hence it is a $G_\delta$ in the complete space $\mathbb{R}$ and is completely metrisable, with a complete metric obtained by transporting the metric of $\mathbb{R}$ through the homeomorphism with a closed subspace of a countable product. It is a Baire space in which the rationals, which are dense, form a meagre set, so it exhibits a dense meagre subset of a Baire space.
 
-**Example (a Baire space that is not metrisable).** The space $\{0,1\}^{I}$ for uncountable $I$ is compact Hausdorff and therefore Baire; it is not first countable and hence carries no metric. It is the standard witness that the Baire property does not imply metrisability, and it is the ambient space of the inverse limits of *Profinite Groups and the Krull Topology*, written later in this Part.
+**Example (a Baire space that is not metrisable).** The space $\{0,1\}^{I}$ for uncountable $I$ is compact Hausdorff and therefore Baire; it is not first countable and hence carries no metric. It is the standard witness that the Baire property does not imply metrisability, and it is the ambient space of the inverse limits, written.
 
 ### Permanence and the Local Nature of Baireness
 
@@ -210,6 +210,8 @@ Baireness is local: a space is Baire exactly when it is covered by open Baire su
 | $\mathbb{N}^{\mathbb{N}}$, $\mathcal{N}$ | The Baire space of sequences |
 | $\mathbb{Q}$, $\mathbb{R} \setminus \mathbb{Q}$ | The rationals (meagre, not Baire) and the irrationals (Baire) |
 | $\{0,1\}^{I}$ | Compact Hausdorff non-metrisable Baire space |
+
+
 
 ## Further Reading
 

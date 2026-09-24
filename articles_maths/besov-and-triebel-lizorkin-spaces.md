@@ -7,7 +7,7 @@ The Sobolev space $W^{k,p}$ measures the smoothness of a function by the square 
 
 The article develops the theory from the **Littlewood–Paley decomposition**. A dyadic partition of unity $\{\varphi_j\}_{j\ge0}$ in the frequency variable decomposes a tempered distribution into its frequency layers $\varphi_j(D)f$, and the two families of spaces are defined by the size of the sequences or functions $2^{js}\varphi_j(D)f$ in the appropriate mixed norm: the Besov norm is the $\ell^q$ norm in $j$ followed by the $L^p$ norm in $x$, and the Triebel–Lizorkin norm is the $L^p$ norm followed by the $\ell^q$ norm, so the two differ exactly in the order of the two operations, and coincide only when $p=q$. The theory then consists of the independence of the definition from the partition, the elementary properties of the two scales and their comparison with the classical spaces, the lifting and the Fourier-multiplier properties, the embeddings and the compactness, the trace theorem on a hyperplane, the atomic and molecular decompositions in which the norm is computed from the coefficients of a single expansion, and the interpolation theorems that place the scale exactly at the real and complex interpolation of the Sobolev spaces. The **Bony paraproduct** and the product estimates that follow from the decomposition are recorded, because they are the reason the Besov scale is the natural one for the nonlinear estimates of the theory of partial differential equations.
 
-The Fourier transform, the Schwartz space, the tempered distributions, the Littlewood–Paley maximal function and the Calderón–Zygmund theory are those of *Fourier Analysis on Euclidean Spaces*; the distributional calculus and the convolution of distributions are those of *Distributions and Fundamental Solutions*; the real and complex interpolation methods, and the interpolation of the Sobolev scale, are those of *Interpolation Theory*, to which this article is the supplement of the function spaces. The weak derivatives and the Sobolev spaces $W^{k,p}$ are recalled here in line, as the classical spaces with which the new scales are compared; their systematic development is subsequent to this article, in *Sobolev Spaces and Weak Solutions*, and the scales of this article do not depend on it. The applications of the spaces to elliptic boundary problems, to nonlinear equations and to the calculus of variations belong to *Partial Differential Equations*, *Sobolev Spaces and Weak Solutions* and *The Calculus of Variations*.
+The Fourier transform, the Schwartz space, the tempered distributions, the Littlewood–Paley maximal function and the Calderón–Zygmund theory are those of *Fourier Analysis on Euclidean Spaces*; the distributional calculus and the convolution of distributions are those of *Distributions and Fundamental Solutions*; the real and complex interpolation methods, and the interpolation of the Sobolev scale, are those of *Interpolation Theory*, to which this article is the supplement of the function spaces. The weak derivatives and the Sobolev spaces $W^{k,p}$ are recalled here in line, as the classical spaces with which the new scales are compared; their systematic development is subsequent to this article, and the scales of this article do not depend on it. The applications of the spaces to elliptic boundary problems, to nonlinear equations and to the calculus of variations are not treated here.
 
 No physics is invoked.
 
@@ -87,7 +87,7 @@ $$
 \|f\|_{H^s_p}=\bigl\|(1+|\xi|^2)^{s/2}\hat f\,\check{\ }\bigr\|_{L^p}<\infty ,
 $$
 
-and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,p}$ is the space of $f \in L^p$ whose distributional derivatives of order at most $k$ lie in $L^p$, with the norm $\sum_{|\alpha|\le k}\|\partial^\alpha f\|_{L^p}$. For $s>0$ the **Hölder–Zygmund space** $\Lambda^s=C^s$ is the space of $f \in C_b(\mathbb{R}^n)$ with $\|\Delta_h^kf\|_\infty\le C|h|^s$, where $k$ is the least integer exceeding $s$ and $\Delta_hf=f(\cdot+h)-f(\cdot)$.
+and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,p}$ is the space of $f \in L^p$ whose distributional derivatives of order at most $k$ lie in $L^p$, with the norm $\bigl(\sum_{|\alpha|\le k}\|\partial^\alpha f\|_{L^p}^p\bigr)^{1/p}$ for $p<\infty$ and $\max_{|\alpha|\le k}\|\partial^\alpha f\|_{L^\infty}$ for $p=\infty$. For $s>0$ the **Hölder–Zygmund space** $\Lambda^s=C^s$ is the space of $f \in C_b(\mathbb{R}^n)$ with $\|\Delta_h^kf\|_\infty\le C|h|^s$, where $k$ is the least integer exceeding $s$ and $\Delta_hf=f(\cdot+h)-f(\cdot)$.
 
 **Theorem (identifications).** For $1<p<\infty$, $1\le q\le\infty$, $s \in\mathbb{R}$ and $k \in\mathbb{N}_0$:
 
@@ -100,7 +100,7 @@ and for $k \in\mathbb{N}_0$ and $1\le p\le\infty$ the **Sobolev space** $W^{k,p}
 
 *Proof (sketch).* For (i) one uses the multiplier theorem of *Fourier Analysis on Euclidean Spaces* to compare the norm $\bigl\|(\sum_j|\varphi_j(D)f|^2)^{1/2}\bigr\|_{L^p}$ with $\|(1-\Delta)^{s/2}f\|_{L^p}$, the two multipliers being comparable on the support of each block; (ii) adds Bernstein's inequality to compare the $L^p$ norms of the derivatives; (iii) is the case $p=q=2$ of (i) and the Plancherel theorem; (iv) is the classical characterisation of the Hölder–Zygmund spaces by the decay of the Littlewood–Paley blocks; (v) is the atomic description of the Hardy space and the John–Nirenberg inequality for $\mathrm{BMO}$; and (vi) is the case $s=0$ of (i). These identifications are standard and are cited below. $\square$
 
-**Corollary (the classical scales as one-parameter families).** The Sobolev spaces, the Hölder–Zygmund spaces, the Hardy space and $\mathrm{BMO}$ are all members of the two scales, and the scales therefore carry the classical spaces with their interpolation and their embeddings as special cases; the spaces $W^{k,p}$ and $H^k$ of *Sobolev Spaces and Weak Solutions* are the cases $q=2$ of the Triebel–Lizorkin family, and the embeddings proved there follow from the general embeddings of the next section.
+**Corollary (the classical scales as one-parameter families).** The Sobolev spaces, the Hölder–Zygmund spaces, the Hardy space and $\mathrm{BMO}$ are all members of the two scales, and the scales therefore carry the classical spaces with their interpolation and their embeddings as special cases; the spaces $W^{k,p}$ and $H^k$ are the cases $q=2$ of the Triebel–Lizorkin family, and the embeddings proved there follow from the general embeddings of the next section.
 
 ### Difference and Heat-Kernel Characterisations
 
@@ -138,7 +138,7 @@ The heat-kernel description is the form in which the scale is used for the regul
 
 *Proof (sketch).* By Bernstein's inequality each block $\varphi_j(D)f$ satisfies $\|\varphi_j(D)f\|_{L^{p'}}\le C2^{jn(1/p-1/p')}\|\varphi_j(D)f\|_{L^p}$, and the gain $2^{j(s-s')}$ in the embedding is exactly the factor $2^{jn(1/p-1/p')}$ when $s-\frac np=s'-\frac{n}{p'}$; the sum is then dominated by the Besov norm, giving (i), and (ii) is the case $p'=\infty$. For (iii) one splits the sum into the finitely many low frequencies, which are compact by the Arzelà–Ascoli theorem on a bounded domain, and the tail, whose norm is small uniformly on the unit ball, the strict gain in the smoothness making the tail small and the boundedness of the domain making the low frequencies compact. $\square$
 
-**Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,p}\hookrightarrow L^{p'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,p}=F^k_{p,2}$; the embedding $W^{k,p}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems of *Sobolev Spaces and Weak Solutions*, recovered here from the scale.
+**Corollary (comparison with the Sobolev embeddings).** For $1<p<\infty$ the embedding $W^{k,p}\hookrightarrow L^{p'}$ with $\frac1{p'}=\frac1p-\frac kn$, and its compact form when $p'<\infty$, are the case $q=2$ of the theorem, by the identification $W^{k,p}=F^k_{p,2}$; the embedding $W^{k,p}\hookrightarrow\Lambda^{k-n/p}$ into the Hölder–Zygmund class of exponent $k-n/p$ is the corresponding statement, in the Zygmund convention when $k-\frac np$ is an integer. These are the Sobolev and Rellich–Kondrachov theorems, recovered here from the scale.
 
 ### Traces and the Boundary
 
@@ -152,7 +152,7 @@ and the maps are surjective, with a bounded right inverse (an extension operator
 
 *Proof (sketch).* The Fourier description in the normal variable turns the trace into the restriction of a frequency-localised function, and the factor $2^{-j/p}$ lost in the normal variable is exactly the exponent shift; the extension is obtained by extending each block separately with a Schwartz cutoff. The sharpness is shown by testing on a function that concentrates at the boundary. $\square$
 
-The theorem is the model of the trace theorems of the scale; it shows that the loss of $\frac1p$ derivatives is exactly the price of restriction to a hyperplane, and it is the analytical basis of the boundary-value problems in the scale, whose theory belongs to *Sobolev Spaces and Weak Solutions* and *Partial Differential Equations*. The spaces on a domain $\Omega$ are defined by restriction, $B^s_{p,q}(\Omega)=\{f|_\Omega:f \in B^s_{p,q}(\mathbb{R}^n)\}$ with the quotient norm, and the extension and trace theorems identify them with the intrinsic definitions for the smooth domains.
+The theorem is the model of the trace theorems of the scale; it shows that the loss of $\frac1p$ derivatives is exactly the price of restriction to a hyperplane, and it is the analytical basis of the boundary-value problems in the scale, whose theory belongs andboth. The spaces on a domain $\Omega$ are defined by restriction, $B^s_{p,q}(\Omega)=\{f|_\Omega:f \in B^s_{p,q}(\mathbb{R}^n)\}$ with the quotient norm, and the extension and trace theorems identify them with the intrinsic definitions for the smooth domains.
 
 ## Atomic and Molecular Decompositions
 
@@ -228,7 +228,7 @@ and the same inequality holds for the Triebel–Lizorkin scale with $B$ replaced
 
 *Proof (sketch).* The paraproduct is estimated term by term: in $T_fg$ the frequency of the product is that of $f$, so the derivative of order $s$ is carried by $f$ and $g$ enters only through its $L^{p_2}$ norm; in $R(f,g)$ the frequencies are comparable, so Bernstein's inequality distributes the smoothness; and the mixed norms are estimated by Hölder and Young. $\square$
 
-The paraproduct is the standard tool of the nonlinear theory: the product estimates in the Besov scale are exactly what the fixed-point arguments for quasilinear and nonlinear equations need, and the borderline cases $s=\frac np$ are handled by the refined estimates of the same decomposition. The applications belong to *Partial Differential Equations* and *Sobolev Spaces and Weak Solutions*.
+The paraproduct is the standard tool of the nonlinear theory: the product estimates in the Besov scale are exactly what the fixed-point arguments for quasilinear and nonlinear equations need, and the borderline cases $s=\frac np$ are handled by the refined estimates of the same decomposition. The applications belong .
 
 ## Summary
 
@@ -259,6 +259,8 @@ The classical spaces are members of the scale: $F^s_{p,2}=H^s_p$ is the Bessel p
 | $T_fg$, $R(f,g)$ | Bony paraproduct terms |
 | $a_{j,\nu}$, $\lambda_{j,\nu}$ | atoms and coefficients |
 | $\psi_{j,\nu}$ | wavelet basis |
+
+
 
 ## Further Reading
 

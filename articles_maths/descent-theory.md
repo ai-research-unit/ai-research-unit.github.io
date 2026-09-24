@@ -7,7 +7,7 @@ Descent theory asks when an object of a category can be reconstructed from its p
 
 This article develops fibred and indexed categories, descent data and the descent category for a covering, the comparison functor and effective descent, faithfully flat descent for modules with the Amitsur complex, the monadic form of the theorem through the Barr–Beck theorem, the descent spectral sequence for a covering computed with the machinery of *Spectral Sequences*, the stack condition and the stackification, the example of Galois descent, and the cohomological obstructions to descent. It follows *Sheaves on Sites*, *Topoi*, *Spectral Sequences*, *Ext and Tor*, *Homological Algebra*, *K-Theory of Rings* and *Modules*, and it closes the site-theoretic arc of the category.
 
-Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a morphism, and $\{f_i:c_i\to c\}$ is a covering family; the fibre products are assumed to exist in $\mathcal{C}$. The categories fibred over $\mathcal{C}$ are treated concretely, that is, as indexed families of categories with base-change functors, without the 2-categorical machinery; the passage to the homotopy-coherent theory of $\infty$-categories, to higher stacks and to the derived version of descent belongs to Part II, where *Higher Algebra and Higher Categories* and *Model Categories and Homotopy Theory* treat it, and this article cites it without using it. The topological descent, that is, the descent for sheaves on a space and the continuous maps, belongs to Part II as well.
+Throughout, $(\mathcal{C},J)$ is a site with a terminal object, $f:S'\to S$ is a morphism, and $\{f_i:c_i\to c\}$ is a covering family; the fibre products are assumed to exist in $\mathcal{C}$. The categories fibred over $\mathcal{C}$ are treated concretely, that is, as indexed families of categories with base-change functors, without the 2-categorical machinery; the passage to the homotopy-coherent theory of $\infty$-categories, to higher stacks and to the derived version of descent belongs to Part II, whereandtreat it, and this article cites it without using it. The topological descent, that is, the descent for sheaves on a space and the continuous maps, belongs to Part II as well.
 
 ## Fibred and Indexed Categories
 
@@ -91,7 +91,7 @@ is the **Amitsur cochain complex**, and its cohomology computes the descent obst
 
 **Example.** For the site of a group $G$ with the trivial topology the stacks are the categories with an action of $G$, that is, the $G$-objects in the 2-category of categories; for the étale site of a scheme the stacks are the étale stacks, whose geometric theory belongs to Part II; the stack of the torsors under a sheaf of groups is the classifying stack, and its sections over a cover are the cohomology classes of $H^1$ of the cover.
 
-**Remark.** The homotopy-coherent refinement of the descent, in which the cocycle condition holds only up to higher coherence and the stacks are replaced by the $\infty$-stacks, and the derived refinement, in which the modules are replaced by the complexes and the descent is the descent for the derived categories, belong to Part II, where *Higher Algebra and Higher Categories* and *Model Categories and Homotopy Theory* treat them. The present article uses only the strict, one-categorical form, which is the one needed for the algebraic descent of modules and sheaves.
+**Remark.** The homotopy-coherent refinement of the descent, in which the cocycle condition holds only up to higher coherence and the stacks are replaced by the $\infty$-stacks, and the derived refinement, in which the modules are replaced by the complexes and the descent is the descent for the derived categories, belong to Part II, whereandtreat them. The present article uses only the strict, one-categorical form, which is the one needed for the algebraic descent of modules and sheaves.
 
 ## Summary
 
@@ -115,6 +115,8 @@ In this way descent theory unifies the gluing of the sheaves with the reconstruc
 | $\mathbb{T}$ | monad, $\mathbb{T}=F\circ L$ |
 | $\mathcal{A}^{\mathbb{T}}$ | Eilenberg–Moore category of a monad |
 | $H^p(G,M)$ | group cohomology of the descent |
+
+
 
 ## Further Reading
 

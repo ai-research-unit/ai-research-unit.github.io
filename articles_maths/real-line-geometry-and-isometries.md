@@ -118,7 +118,7 @@ for four distinct points, in the sense that a map preserving it in general posit
 
 **Proof.** By the classification, an orientation-preserving isometry is a translation $T_b$, and if it fixes a point $x$ then $b = 0$, so it is the identity. $\square$
 
-**Remark.** A rotation is, by definition, an orientation-preserving isometry with a fixed point; the theorem therefore rules it out in one dimension, and the first genuine rotation must appear in a two-dimensional system. This is the geometric content of the ladder: the complex plane, whose isometry group contains the rotations $z \mapsto e^{i\theta} z$, is the first system in which rotation is nontrivial, and the real line is its degenerate one-dimensional base case, with the orthogonal group $O(1) = \{\pm 1\}$ in place of $O(2)$. The complex rotations are the subject of *Rotations and Reflections in the Complex Plane*, which belongs to the Complex Numbers system of this Part and completes the ladder begun here.
+**Remark.** A rotation is, by definition, an orientation-preserving isometry with a fixed point; the theorem therefore rules it out in one dimension, and the first genuine rotation must appear in a two-dimensional system. This is the geometric content of the ladder: the complex plane, whose isometry group contains the rotations $z \mapsto e^{i\theta} z$, is the first system in which rotation is nontrivial, and the real line is its degenerate one-dimensional base case, with the orthogonal group $O(1) = \{\pm 1\}$ in place of $O(2)$. The complex rotations are the subject, which belongs to the Complex Numbers system of this Part and completes the ladder begun here.
 
 ## Symmetry of the Line
 
@@ -213,6 +213,8 @@ The similarities $x \mapsto ax+b$ form the affine group $\mathbb{R} \rtimes \mat
 | $D_\infty$, $D_\infty(a)$ | Infinite dihedral group, $a\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ |
 | $(x_1,x_2;x_3,x_4)$ | Cross-ratio |
 | $a\mathbb{Z}$ | Discrete subgroup of translations of step $a$ |
+
+
 
 ## Further Reading
 

@@ -69,7 +69,7 @@ For two submodules the condition reduces to $M=N_1+N_2$ and $N_1\cap N_2=0$. The
 
 **Definition.** A submodule $N \subseteq M$ is a **direct summand** of $M$ if $M=N\oplus N'$ for some submodule $N'$, called a **complement** of $N$.
 
-Over a field every subspace is a direct summand, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is the subject of the later articles of this category, on projective and injective modules and on flatness.
+Over a field every subspace is a direct summ, because a basis of a subspace extends to a basis of the whole space; over a general ring this fails, and the failure is not covered here.
 
 The module-theoretic content of a direct summand is an idempotent endomorphism.
 
@@ -123,7 +123,7 @@ for the free module on a basis indexed by $I$; in particular $R^{(n)}=R^n$ and $
 
 *Proof.* Let $B$ be a generating set of $M$, for instance $B=M$ itself. The universal property extends the inclusion $B \hookrightarrow M$ to a surjection $R^{(B)} \to M$, whose kernel is a submodule $K$. The first isomorphism theorem gives $M \cong R^{(B)}/K$. $\square$
 
-A surjection $L \twoheadrightarrow M$ with $L$ free is a **presentation** of $M$, and $K=\ker(L \to M)$ is the **relation module**. This is the input to the structure theory and to the theory of exact sequences developed later in this category: a module is controlled by the way it is a quotient of a free module. Over a field every relation module is again free and can be made trivial by a change of basis of $L$, which is Gaussian elimination; over $\mathbb{Z}$ the relation module is free but the quotient need not be.
+A surjection $L \twoheadrightarrow M$ with $L$ free is a **presentation** of $M$, and $K=\ker(L \to M)$ is the **relation module**. This is the input to the structure theory and to the theory of exact sequences developed: a module is controlled by the way it is a quotient of a free module. Over a field every relation module is again free and can be made trivial by a change of basis of $L$, which is Gaussian elimination; over $\mathbb{Z}$ the relation module is free but the quotient need not be.
 
 ## Rank and the Invariant Basis Number Property
 
@@ -209,7 +209,7 @@ Principal ideal domains are Noetherian, and so is every finitely generated algeb
 
 ### Over a Field
 
-If $R=F$ is a field then every module is free, every submodule of a free module is free, and the rank of a free module is its **dimension**, written $\dim_F V$. Two finite-dimensional vector spaces are isomorphic exactly when their dimensions agree, because a bijection between bases extends to an isomorphism and, conversely, an isomorphism carries a basis to a basis. This is the whole of the classification of finitely generated $F$-modules, and it is the case against which every other case is measured. The companion article *Vector Spaces* develops it; the point recorded here is that it holds because every element of $F^{\times}$ is a unit, so a nonzero coefficient in a relation can always be divided out.
+If $R=F$ is a field then every module is free, every submodule of a free module is free, and the rank of a free module is its **dimension**, written $\dim_F V$. Two finite-dimensional vector spaces are isomorphic exactly when their dimensions agree, because a bijection between bases extends to an isomorphism , conversely, an isomorphism carries a basis to a basis. This is the whole of the classification of finitely generated $F$-modules, and it is the case against which every other case is measured. The companion articledevelops it; the point recorded here is that it holds because every element of $F^{\times}$ is a unit, so a nonzero coefficient in a relation can always be divided out.
 
 ### Over the Integers
 
@@ -261,7 +261,7 @@ $$
 
 in which every $L_i$ is a free $R$-module. It is **finite** if $L_i=0$ for all $i$ beyond some $N$. The **projective dimension** of $M$ is the least length of a finite projective resolution, or $\infty$ if none exists.
 
-Every module has a free resolution: choose a surjection $\epsilon:L_0 \to M$, then a surjection $L_1 \to \ker \epsilon$, then a surjection $L_2 \to \ker d_1$, and continue. If $M$ is finitely generated over a Noetherian ring, the construction can be performed with finitely generated free modules at every stage, because each kernel is then finitely generated. A module of projective dimension $0$ is a projective module, which is the next topic after rank; over a field every module has projective dimension $0$, and over a principal ideal domain every module has projective dimension at most $1$. The proof that the resolution does not depend on the choices made, in the sense that the derived functors computed from it do not, belongs to the later articles of this category on exact sequences and on projective and injective modules.
+Every module has a free resolution: choose a surjection $\epsilon:L_0 \to M$, then a surjection $L_1 \to \ker \epsilon$, then a surjection $L_2 \to \ker d_1$, and continue. If $M$ is finitely generated over a Noetherian ring, the construction can be performed with finitely generated free modules at every stage, because each kernel is then finitely generated. A module of projective dimension $0$ is a projective module, which is the next topic after rank; over a field every module has projective dimension $0$, and over a principal ideal domain every module has projective dimension at most $1$. The proof that the resolution does not depend on the choices made, in the sense that the derived functors computed from it do not, lies outside this article.
 
 ## Summary
 
@@ -269,7 +269,7 @@ A family of modules is assembled by the direct product, whose elements are arbit
 
 A free module is one with a basis, equivalently a direct sum of copies of the regular module $R$; its universal property says that a map on a basis extends uniquely and is the practical test for freeness. Every module is a quotient of a free module, and the kernel of such a quotient is its relation module, which controls the module. Rank is well defined over every commutative ring with $1 \neq 0$ by the invariant basis number property, proved by reducing modulo a maximal ideal and using the field case; it fails over some noncommutative rings, for instance $\operatorname{End}_k(V)$ for $V$ of infinite dimension.
 
-Finitely generated modules are the quotients of some $R^k$. Nakayama's lemma controls them modulo the Jacobson radical, and over a Noetherian ring their submodules are again finitely generated. A free resolution iterates the presentation of a module by free modules and supplies the input to the homological theory developed in the following articles.
+Finitely generated modules are the quotients of some $R^k$. Nakayama's lemma controls them modulo the Jacobson radical, and over a Noetherian ring their submodules are again finitely generated. A free resolution iterates the presentation of a module by free modules and supplies the input to the homological theory developed.
 
 | Notion | Over a field $F$ | Over a commutative ring $R$ |
 |---|---|---|
@@ -298,6 +298,12 @@ Finitely generated modules are the quotients of some $R^k$. Nakayama's lemma con
 | $J(R)$ | Jacobson radical of $R$ |
 | $IM$ | submodule generated by products $am$, $a \in I$, $m \in M$ |
 | $L_1 \to L_0 \to M \to 0$ | free resolution of a module |
+
+
+
+
+
+
 
 ## Further Reading
 

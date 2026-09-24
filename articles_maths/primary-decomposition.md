@@ -222,7 +222,7 @@ The set $V(I)$ depends only on $\operatorname{rad}(I)$, so the correspondence is
 
 **Theorem (weak Nullstellensatz).** Let $k$ be algebraically closed and let $I \subseteq k[x_1, \ldots, x_n]$ be a proper ideal. Then $V(I) \neq \emptyset$: every proper ideal has a common zero.
 
-**Proof sketch.** A proper ideal is contained in a maximal ideal $\mathfrak{m}$, and it suffices to show that a maximal ideal $\mathfrak{m} \subseteq k[x_1, \ldots, x_n]$ with $k$ algebraically closed has the form $(x_1 - a_1, \ldots, x_n - a_n)$. This is the algebraic form of the statement that $k[x_1, \ldots, x_n]/\mathfrak{m}$ is a finite extension field of $k$, hence equal to $k$ by algebraic closedness. The finiteness of the extension is Zariski's lemma, an instance of the Nullstellensatz that uses the integral extension theory of *Integral Extensions and Krull Dimension*, being written in parallel. $\square$
+**Proof sketch.** A proper ideal is contained in a maximal ideal $\mathfrak{m}$, and it suffices to show that a maximal ideal $\mathfrak{m} \subseteq k[x_1, \ldots, x_n]$ with $k$ algebraically closed has the form $(x_1 - a_1, \ldots, x_n - a_n)$. This is the algebraic form of the statement that $k[x_1, \ldots, x_n]/\mathfrak{m}$ is a finite extension field of $k$, hence equal to $k$ by algebraic closedness. The finiteness of the extension is Zariski's lemma, an instance of the Nullstellensatz that uses the integral extension theory. $\square$
 
 **Theorem (strong Nullstellensatz).** Let $k$ be algebraically closed and let $I \subseteq k[x_1, \ldots, x_n]$ be an ideal. Then
 
@@ -242,13 +242,13 @@ Equivalently, the maps $I \mapsto V(I)$ and $S \mapsto I(S)$ are inverse bijecti
 
 ### Krull's Principal Ideal Theorem Revisited
 
-The dimension theory of the next article takes from primary decomposition one input.
+The dimension theory takes from primary decomposition one input.
 
 **Theorem (Krull's principal ideal theorem).** Let $R$ be Noetherian and let $a \in R$. Then every minimal prime over the principal ideal $(a)$ has height at most $1$.
 
 **Proof sketch.** A minimal prime $\mathfrak{p}$ over $(a)$ is an associated prime in the localization at $\mathfrak{p}$, so it is isolated and its primary component is unique; after localizing one may suppose $R$ is a Noetherian local ring with maximal ideal $\mathfrak{p}$ and $\operatorname{rad}((a)) = \mathfrak{p}$. The argument then shows that the maximal ideal has height at most $1$, by an induction on the number of generators of $\mathfrak{p}$ that uses primary decomposition to identify the minimal primes of the successive quotients. $\square$
 
-The height of a prime ideal is the supremum of the lengths of chains of primes below it, and the theorem is the reason a Noetherian ring has finite-dimensional local behaviour in codimension one; the full development is in *Integral Extensions and Krull Dimension*, being written in parallel.
+The height of a prime ideal is the supremum of the lengths of chains of primes below it, and the theorem is the reason a Noetherian ring has finite-dimensional local behaviour in codimension one; the full development lies outside this article.
 
 ---
 
@@ -279,6 +279,10 @@ Over an algebraically closed field primary decomposition is dual to the decompos
 | $V(I)$ | Zero set of $I$ in $\overline{k}^n$ |
 | $I(S)$ | Ideal of polynomials vanishing on $S$ |
 | $\overline{k}$ | Algebraic closure of $k$ |
+
+
+
+
 
 ## Further Reading
 

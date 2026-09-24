@@ -10,7 +10,7 @@ We assume familiarity with modules, bilinear forms, quadratic forms, and Cliffor
 
 Throughout this article, the module is **finite-dimensional** (that is, free of finite rank). The general definition of the Clifford algebra is treated in the preceding article. The article treats both the **non-degenerate** and the **degenerate** cases, and describes how the degenerate case reduces to the non-degenerate one.
 
-The article treats only the properties that hold over any commutative ring (in which 2 is invertible) or over any field. The specialization to specific rings is the subject of the following article.
+The article treats only the properties that hold over any commutative ring (in which 2 is invertible) or over any field. The specialization to specific rings is not covered here.
 
 A word on the base structure. The classical theory of Clifford algebras assumes that the scalars form a field. But the definition and many of the basic properties carry over to the more general setting where the scalars form a **commutative ring**. This is the setting we adopt here. The main differences from the field case are:
 
@@ -119,7 +119,7 @@ The first family generates $Cl(W, Q|_W) \cong Cl(M/\mathrm{rad}(Q), \bar{Q})$. T
 
 The isomorphism is not canonical: it depends on the choice of complement $W$.
 
-**Key difference from the field case.** Over a field, every module is free, so the complement always exists. Over a general commutative ring, the module need not be free, and the complement need not exist. The decomposition holds under the additional hypothesis that the radical is a direct summand.
+**Key difference from the field case.** Over a field, every module is free, so the complement always exists. Over a general commutative ring, the module need not be free, and the complement need not exist. The decomposition holds under the additional hypothesis that the radical is a direct summ.
 
 ## 7. The Non-Degenerate Factor
 
@@ -418,7 +418,7 @@ In the graded tensor product, odd elements from the two factors anticommute, rat
 
 The decomposition reduces the classification of Clifford algebras to the one-dimensional cases. Over any commutative ring, a free module of finite rank can be written as a direct sum of free submodules of rank 1. So the Clifford algebra decomposes as a graded tensor product of rank-one Clifford algebras.
 
-The classification of the rank-one cases, and the resulting periodic pattern, depend on the ring. This is the subject of the following article.
+The classification of the rank-one cases, and the resulting periodic pattern, depend on the ring. This is not covered here.
 
 **Key difference from the field case.** Over a field, the decomposition is always available because every vector space is free and can be decomposed into one-dimensional subspaces. Over a general commutative ring, the decomposition is available only if the module is free of finite rank. If the module is not free, the decomposition may not exist, and the classification is more subtle.
 
@@ -466,7 +466,7 @@ Let me summarize the main points.
 
 **The radical** is the submodule of vectors orthogonal to every vector. It is the obstruction to non-degeneracy, and it is the source of the nilpotent factor in the decomposition.
 
-**The reduction of the degenerate case.** Over a field, the radical is a direct summand, and the degenerate Clifford algebra decomposes as
+**The reduction of the degenerate case.** Over a field, the radical is a direct summ, and the degenerate Clifford algebra decomposes as
 
 $$
 Cl(M, Q) \cong Cl(M/\mathrm{rad}(Q), \bar{Q}) \hat{\otimes} \Lambda(\mathrm{rad}(Q)).
@@ -489,10 +489,14 @@ The non-degenerate factor is a Clifford algebra of rank $\dim(M/\mathrm{rad}(Q))
 - Over a field, every module is free, so the Clifford algebra has a well-defined dimension. Over a general commutative ring, the module need not be free, so the Clifford algebra need not have a well-defined rank. We assume the module is free of finite rank.
 - Over a field, non-degeneracy is equivalent to the radical being zero. Over a general commutative ring, non-degeneracy requires the induced map $M \to M^*$ to be an isomorphism.
 - The polarization identity requires that 2 is invertible in $R$. Over a field of characteristic not equal to 2, this is automatic. Over a general commutative ring, it is an assumption.
-- The tensor product decomposition of a degenerate Clifford algebra requires the radical to be a direct summand. Over a field, this is automatic. Over a general commutative ring, it is an assumption.
+- The tensor product decomposition of a degenerate Clifford algebra requires the radical to be a direct summ. Over a field, this is automatic. Over a general commutative ring, it is an assumption.
 - The classification of Clifford algebras over a general commutative ring is much more subtle than over a field, and requires the theory of quadratic forms over rings.
 
-The classification of the rank-one cases, and the structure of the Clifford algebras over specific rings, is the subject of the following article.
+The classification of the rank-one cases, and the structure of the Clifford algebras over specific rings, is not covered here.
+
+
+
+
 
 ---
 

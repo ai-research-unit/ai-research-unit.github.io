@@ -5,7 +5,7 @@
 
 This article is the second half of the representations slot of the octonion system. It describes how the exceptional Lie groups are built out of the octonion algebra: the derivation algebra and the automorphism group $G_2$ directly, the group $F_4$ as the automorphism group of the exceptional Jordan algebra of Hermitian $3\times3$ matrices over $\mathbb{O}$, the groups $E_6$, $E_7$ and $E_8$ from the Freudenthal triple systems and from the magic square, and the associated geometries. The article is a construction of these objects from the octonions, not a classification of them: the classification of the simple Lie algebras and of the simple Lie groups is that of the Part I companions *Root Systems and Classification* and *Finite Simple Groups of Lie Type*, and it is cited and not re-derived here.
 
-The article takes the multiplication, the Fano rule and the associator from *Octonion Algebra*, the norm and the inner product from *Octonion Norm and Invertibility*, and the representations of $\mathfrak{g}_2$ and the triality of $\operatorname{Spin}(8)$ from *Octonion Representations*. The exceptional Jordan algebra and the magic square are standard constructions; their sources are listed in the Further Reading. The geometry built on the exceptional groups, and the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ of Part II, are the subject of *Octonions and Exceptional Geometry*, written in parallel.
+The article takes the multiplication, the Fano rule and the associator from *Octonion Algebra*, the norm and the inner product from *Octonion Norm and Invertibility*, and the representations of $\mathfrak{g}_2$ and the triality of $\operatorname{Spin}(8)$ from *Octonion Representations*. The exceptional Jordan algebra and the magic square are standard constructions; their sources are listed in the Further Reading. The geometry built on the exceptional groups, and the holonomy groups $G_2$ and $\operatorname{Spin}(7)$ of Part II, are not covered here.
 
 **Conventions.** As in *Octonion Algebra*, the basis is $e_0,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, the Fano lines oriented as in that article, the conjugation $\bar x$, the imaginary space $\operatorname{Im}\mathbb{O}\cong\mathbb{R}^7$, the inner product $\langle x,y\rangle = \operatorname{Sc}(x\bar y)$ and the cross product $u\times v = \operatorname{Vect}(uv)$ on the imaginary space. The operators $L_x,R_x$ are left and right multiplication; the commutator of endomorphisms is written $[A,B] = AB - BA$, so that the associator and the commutator are distinct notations and must not be confused.
 
@@ -59,7 +59,7 @@ so that $G_2 = \{\,g\in SO(7) : g^*\varphi = \varphi\,\}$.
 
 *Proof.* The isotropy statements are those of the homogeneous space $G_2/SU(3) = S^6$; the stabiliser of a quaternion subalgebra is the automorphism group of $\mathbb{H}$ inside $G_2$, namely $SO(3)\times SO(3)\cong SU(2)\times SU(2)$ up to the central quotient, acting on the two three-dimensional subspaces of the subalgebra. $\square$
 
-The three-form $\varphi$ is the octonionic **associative calibration**: a three-dimensional subspace of $\operatorname{Im}\mathbb{O}$ on which the restriction of $\varphi$ attains the value one is exactly an oriented quaternion subalgebra, that is, one of the Fano lines, and this is the beginning of the geometry of exceptional holonomy treated in *Octonions and Exceptional Geometry*.
+The three-form $\varphi$ is the octonionic **associative calibration**: a three-dimensional subspace of $\operatorname{Im}\mathbb{O}$ on which the restriction of $\varphi$ attains the value one is exactly an oriented quaternion subalgebra, that is, one of the Fano lines, and this is the beginning of the geometry of exceptional holonomy treated.
 
 ## The Exceptional Jordan Algebra
 
@@ -149,7 +149,7 @@ of real dimension $16$, the space of idempotents of trace one in $\mathfrak{h}_3
 
 *Proof.* The homogeneous description is the orbit decomposition of $F_4$ on the rank-one idempotents of $\mathfrak{h}_3(\mathbb{O})$; the compactness and connectedness are those of the groups, the simplicity and rank one follow from the transitivity and the irreducible isotropy representation; the incidence structure is the Moufang plane over $\mathbb{O}$ constructed from the rank-one and rank-two idempotents, where the octonion multiplication is used only through the determinant; the cell decomposition and the cohomology are the standard description of the Cayley plane. The sources are cited in the Further Reading. $\square$
 
-The Cayley plane cannot be coordinatised by a field, and its lines meet in a single point rather than forming a projective geometry in the sense of the associative cases; the obstruction is the non-associativity of $\mathbb{O}$, and the plane is the exact geometric object that survives. The higher exceptional analogues are the **Rosenfeld planes**, the projective planes over $\mathbb{C}\otimes\mathbb{O}$, $\mathbb{H}\otimes\mathbb{O}$ and $\mathbb{O}\otimes\mathbb{O}$, whose automorphism groups are $E_6$, $E_7$ and $E_8$; they are taken up with the exceptional geometry in *Octonions and Exceptional Geometry*.
+The Cayley plane cannot be coordinatised by a field, and its lines meet in a single point rather than forming a projective geometry in the sense of the associative cases; the obstruction is the non-associativity of $\mathbb{O}$, and the plane is the exact geometric object that survives. The higher exceptional analogues are the **Rosenfeld planes**, the projective planes over $\mathbb{C}\otimes\mathbb{O}$, $\mathbb{H}\otimes\mathbb{O}$ and $\mathbb{O}\otimes\mathbb{O}$, whose automorphism groups are $E_6$, $E_7$ and $E_8$; they are taken up with the exceptional geometry.
 
 ## Summary
 
@@ -175,6 +175,10 @@ Geometrically, the octonions produce the Cayley plane $\mathbb{OP}^2 = F_4/\oper
 | $E_6$, $E_7$, $E_8$ | Structure group of the determinant ($78$), Freudenthal triple system ($133$), magic square ($248$) |
 | $\mathbb{OP}^2 = F_4/\operatorname{Spin}(9)$ | Cayley plane, $\dim 16$, Moufang plane |
 | $\mathfrak{L}(A,B)$ | Freudenthal–Tits algebra of a pair of composition algebras |
+
+
+
+
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ $$
 \operatorname{End}_A(M) \quad \text{and} \quad \operatorname{Aut}_A(M)
 $$
 
-for a module $M$ over a possibly noncommutative algebra $A$. The first is a ring and the second its group of units, and the passage from $A$ to this pair records how much freedom an $A$-linear map retains once the whole algebra is required to commute with it. When $A=F$ is a field the requirement is vacuous, and the pair is the full ring of $F$-linear maps together with the full general linear group; over a larger algebra the condition is severe, and the gap between $A$-linear and merely $R$-linear maps is the subject.
+for a module $M$ over a possibly noncommutative algebra $A$. The first is a ring and the second its group of units, and the passage from $A$ to this pair records how much freedom an $A$-linear map retains once the whole algebra is required to commute with it. When $A=F$ is a field the requirement is vacuous, and the pair is the full ring of $F$-linear maps together with the full general linear group; over a larger algebra the condition is severe, and the gap between $A$-linear and merely $R$-linear maps is not covered here.
 
 The conventions are those of the companion article *Modules over an Algebra*: $R$ is a commutative ring with $1 \neq 0$, and $A$ is a unital associative $R$-algebra, generally noncommutative. Modules are left modules unless stated, $A^{\times}$ is the group of units of $A$, and $Z(A)$ is the center. The regular module ${}_A A$ acts on itself by left multiplication, and the endomorphisms of the regular module were identified in the companion article as the right multiplications. That identification is the base case of everything below, and it is the reason the noncommutative case behaves asymmetrically.
 
@@ -238,7 +238,7 @@ $$
 \operatorname{Aut}_{\mathbb{C}\text{-alg}}(\mathbb{B})\cong PGL(2,\mathbb{C}),
 $$
 
-by the Skolem–Noether theorem, and over $\mathbb{R}$ it is $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$; these are computed in the companion article *Biquaternion Automorphisms and Derivations*. The two groups differ: $GL_2(\mathbb{C})$ and $PGL(2,\mathbb{C})$ have different dimensions, and an algebra automorphism need not be a module automorphism of the regular module, nor conversely. The module automorphism group acts on the module and commutes with the algebra; the algebra automorphism group acts on the algebra and preserves its product.
+by the Skolem–Noether theorem, and over $\mathbb{R}$ it is $PGL(2,\mathbb{C})\rtimes\mathbb{Z}/2$; these are computed . The two groups differ: $GL_2(\mathbb{C})$ and $PGL(2,\mathbb{C})$ have different dimensions, and an algebra automorphism need not be a module automorphism of the regular module, nor conversely. The module automorphism group acts on the module and commutes with the algebra; the algebra automorphism group acts on the algebra and preserves its product.
 
 ## Transport along Morita Equivalence
 
@@ -248,7 +248,7 @@ $$
 F: \operatorname{Mod}(A) \to \operatorname{Mod}(B)
 $$
 
-be an $R$-linear equivalence, as in the companion article *Morita Equivalence*. Because an equivalence is fully faithful and additive, it induces a ring isomorphism
+be an $R$-linear equivalence, as . Because an equivalence is fully faithful and additive, it induces a ring isomorphism
 
 $$
 \operatorname{End}_A(M) \xrightarrow{\ \sim\ } \operatorname{End}_B(F(M)), \qquad f \longmapsto F(f),
@@ -274,7 +274,7 @@ $$
 
 The amount by which $\rho$ fails to be surjective is measured exactly by the size of the commutant. If $V$ is finite-dimensional over an algebraically closed field $F$ and is simple, Schur's lemma gives $\operatorname{End}_A(V)=F$, and the density theorem gives that $\rho$ is surjective, so $A/\ker \rho \cong \operatorname{End}_F(V)$: an irreducible finite-dimensional representation over an algebraically closed field is a quotient of the algebra, and the algebra acts as the whole endomorphism ring of its carrier. If $V$ is not simple, the commutant is the ring of intertwiners of the semisimple decomposition and is a product of matrix rings over the endomorphism division rings of the simple constituents.
 
-The group $\operatorname{Aut}_A(V)$ is the group of invertible **intertwining operators**, that is, of equivalences of the representation with itself. For a simple representation it is the unit group of a division ring, by Schur's lemma; for a direct sum $V=S_1\oplus\cdots\oplus S_k$ of pairwise non-isomorphic simple modules it is the product $\prod_i \operatorname{Aut}_A(S_i)$ of division-ring unit groups, since there are no nonzero maps between distinct simple modules; and when repeated simple summands occur, matrices over the division rings appear, by the theorem of §The Case $A=M_n(F)$ applied in each isotypic component. This is the general shape of $\operatorname{Aut}_A(M)$ for a semisimple module, and it is developed in the companion article *Simple and Semisimple Modules*.
+The group $\operatorname{Aut}_A(V)$ is the group of invertible **intertwining operators**, that is, of equivalences of the representation with itself. For a simple representation it is the unit group of a division ring, by Schur's lemma; for a direct sum $V=S_1\oplus\cdots\oplus S_k$ of pairwise non-isomorphic simple modules it is the product $\prod_i \operatorname{Aut}_A(S_i)$ of division-ring unit groups, since there are no nonzero maps between distinct simple modules; and when repeated simple summands occur, matrices over the division rings appear, by the theorem of §The Case $A=M_n(F)$ applied in each isotypic component. This is the general shape of $\operatorname{Aut}_A(M)$ for a semisimple module, and it is developed .
 
 ## Summary
 
@@ -308,6 +308,10 @@ Schur's lemma makes $\operatorname{End}_A(S)$ a division ring for simple $S$, wi
 | $S=\mathbb{C}^2$ | defining module of $\mathbb{B}$ |
 | $N(\tilde{Q})=\tilde{Q}\bar{\tilde{Q}}$ | norm form of $\mathbb{B}$ |
 | $\operatorname{Mod}(A)$ | category of left $A$-modules |
+
+
+
+
 
 ## Further Reading
 

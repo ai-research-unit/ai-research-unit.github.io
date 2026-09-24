@@ -5,7 +5,7 @@
 
 This is the first article of the Integers system in Part IV, and it occupies the **algebra slot** of that system: this article constructs $\mathbb{Z}$ from $\mathbb{N}$, establishes its universal property, records its arithmetic and its divisibility, and describes its place among the other systems. The construction is the group completion of the additive monoid of the naturals: $\mathbb{Z}$ is the **Grothendieck group** of $(\mathbb{N}, +)$, and it is the smallest ring of characteristic $0$. Equivalently, $\mathbb{Z}$ is the free group on one generator for the additive structure, and the initial object in the category of commutative rings with identity.
 
-This article carries out the construction by pairs, verifies that the operations are well defined and satisfy the ring axioms, develops the order and the absolute value, describes the divisibility structure — units, primes, greatest common divisors, the Euclidean algorithm, the principal ideal domain and unique factorisation — and records the quotients $\mathbb{Z}/n\mathbb{Z}$. The system supports an algebra slot and an applications slot: there is no geometry of the integers, no interval structure beyond the discrete order, no analysis, and the arithmetic applications are the modular arithmetic of *Modular Arithmetic and the Ring of Residues*, which is written after this article and is not used here. The divisibility theory of *The Natural Numbers* is the base of the divisibility theory below, and the construction of $\mathbb{Q}$ as the fraction field of $\mathbb{Z}$ belongs to *The Rational Numbers*.
+This article carries out the construction by pairs, verifies that the operations are well defined and satisfy the ring axioms, develops the order and the absolute value, describes the divisibility structure — units, primes, greatest common divisors, the Euclidean algorithm, the principal ideal domain and unique factorisation — and records the quotients $\mathbb{Z}/n\mathbb{Z}$. The system supports an algebra slot and an applications slot: there is no geometry of the integers, no interval structure beyond the discrete order, no analysis, and the arithmetic applications are the modular arithmetic, which is written after this article and is not used here. The divisibility theory of *The Natural Numbers* is the base of the divisibility theory below, and the construction of $\mathbb{Q}$ as the fraction field of $\mathbb{Z}$ belongs to *The Rational Numbers*.
 
 Throughout, $\mathbb{Z}$ is the ring of integers, its elements are written as differences $a - b$ of naturals or as the cosets of the diagonal in $\mathbb{N} \times \mathbb{N}$, $n \mapsto \bar n$ is the embedding $\mathbb{N} \hookrightarrow \mathbb{Z}$, the units are $\pm 1$, and the order is the unique total order making $\mathbb{Z}$ an ordered ring. The corpus's default base is the commutative ring with identity, and $\mathbb{Z}$ is the initial such ring; every result below is stated for that base. The theory of rings, ideals, principal ideal domains and Euclidean domains is from *Rings* and *Factorization: PID, UFD and Euclidean Domains*; the order-theoretic background is from *Order Theory and Lattices*.
 
@@ -176,7 +176,7 @@ up to sign, so that $\gcd(a,b) \cdot \operatorname{lcm}(a,b) = \lvert ab \rvert$
 
 **Proof.** A unital endomorphism is determined by the image of $1$, which must be $1$, so it is the identity; a nonunital endomorphism sends $1$ to an idempotent, and the only idempotents of $\mathbb{Z}$ are $0$ and $1$, giving the zero map and the identity. An additive endomorphism is multiplication by its value at $1$, and it is bijective exactly when that value is $\pm 1$. A derivation $D$ satisfies $D(1) = D(1 \cdot 1) = 2D(1)$, hence $D(1) = 0$ and $D = 0$. $\square$
 
-**Theorem (the subgroups).** Every subgroup of $(\mathbb{Z}, +)$ is cyclic, and the subgroups are exactly the $n\mathbb{Z}$; the subgroup lattice of $\mathbb{Z}$ is the divisibility order of the nonnegative integers, reversed, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is the ring of residues of the next article.
+**Theorem (the subgroups).** Every subgroup of $(\mathbb{Z}, +)$ is cyclic, and the subgroups are exactly the $n\mathbb{Z}$; the subgroup lattice of $\mathbb{Z}$ is the divisibility order of the nonnegative integers, reversed, and the quotient $\mathbb{Z}/n\mathbb{Z}$ is the ring of residues.
 
 **Proof.** A subgroup $H$ is the set of multiples of its least positive element, by the division algorithm; the containment $m\mathbb{Z} \subseteq n\mathbb{Z}$ is equivalent to $n$ dividing $m$. $\square$
 
@@ -207,6 +207,10 @@ $\mathbb{Z}$ is an integral domain of characteristic zero with units $\pm 1$, in
 | $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{F}_p$ | Ring of residues, field with $p$ elements |
 | $\mathbb{Q}$ | The field of fractions of $\mathbb{Z}$, the rational numbers |
 | $\aleph_0$ | Cardinality of $\mathbb{Z}$ |
+
+
+
+
 
 ## Further Reading
 

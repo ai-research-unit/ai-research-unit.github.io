@@ -8,7 +8,7 @@ The complex case is the model case of hypercomplex integration. Because $\mathbb
 
 No physics is invoked. The complex numbers are the coefficient field, the plane $\mathbb{C}$ is the domain of the functions, and the independent variable is a complex number.
 
-For notation, complex numbers are written $z = x + iy$ with $x = \operatorname{Re} z$, $y = \operatorname{Im} z$, and modulus $|z| = \sqrt{x^2+y^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial_{\bar z} = \tfrac12(\partial_x + i \partial_y)$, and a function is holomorphic exactly when $\partial_{\bar z} f = 0$. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken from *Complex Special Functions*. The circle of radius $r$ about $z_0$ is written $C(z_0, r)$ and is always positively oriented unless the opposite is stated.
+For notation, complex numbers are written $z = x + iy$ with $x = \operatorname{Re} z$, $y = \operatorname{Im} z$, and modulus $|z| = \sqrt{x^2+y^2}$, following *Complex Analysis*. The Cauchy–Riemann operator is $\partial_{\bar z} = \tfrac12(\partial_x + i \partial_y)$, and a function is holomorphic exactly when $\partial_{\bar z} f = 0$. The exponential $e^{i\theta} = \cos\theta + i\sin\theta$ and the real trigonometric functions are used where an angle is parametrised and are taken. The circle of radius $r$ about $z_0$ is written $C(z_0, r)$ and is always positively oriented unless the opposite is stated.
 
 ## The Complex Integral
 
@@ -561,6 +561,8 @@ The **residue theorem**, $\frac{1}{2\pi i} \oint_\gamma f \, dz = \sum_k \operat
 | $\mu, \nu$ | Orders of a zero and of a pole |
 | $dA$ | Area measure |
 | $\mathcal{C}\mu$ | Cauchy transform of a complex measure $\mu$ |
+
+
 
 ## Further Reading
 

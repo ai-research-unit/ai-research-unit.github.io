@@ -49,7 +49,7 @@ are the two **chiral halves**, the two Weyl spinor modules of the classical spin
 
 **Remark.** The two chiral halves are the algebraic remnant of chirality in odd dimension, where the volume element is central and no chirality operator with eigenvalues $\pm1$ exists on a single module. Chirality reappears after complexification, where the center of $\mathbb{C}\mathrm{l}_3$ has two idempotents and the center decomposes the module category into two pieces. The biquaternion algebra, being the real form, sees the two halves only through the complexification; its own simple module $S$ is a real form of $S_+\oplus S_-$ in the sense that $S\otimes_{\mathbb{R}}\mathbb{C}\cong S_+\oplus S_-$.
 
-**Remark (the complex spinor module).** In the notation of *Biquaternion Representation Theory* the two halves are the Weyl spinors $S_+=V_{1/2}=(\tfrac12,0)$ and $S_-=\overline{V_{1/2}}=(0,\tfrac12)$, and their direct sum is the complex spinor module
+**Remark (the complex spinor module).** In the notation the two halves are the Weyl spinors $S_+=V_{1/2}=(\tfrac12,0)$ and $S_-=\overline{V_{1/2}}=(0,\tfrac12)$, and their direct sum is the complex spinor module
 $$
 \Delta=V_{1/2}\oplus\overline{V_{1/2}}=S_+\oplus S_-.
 $$
@@ -115,7 +115,7 @@ the positive definite norm associated with the Hermitian form. There is no posit
 
 **Corollary.** There are no Majorana spinors in the biquaternion algebra: a Majorana spinor would be a fixed point of a real structure, and the type being complex means no such structure exists. The four real components of a biquaternion spinor are not the components of a real spinor but the two complex components of a complex spinor, and the conjugation that pairs them is the antilinear identification of $S$ with its conjugate, not an involution on $S$.
 
-**Remark.** The passage to a real spinor requires a change of signature: for the forms of signature difference $d\equiv0,1,2\bmod8$ a real structure exists and Majorana spinors appear. In the biquaternion setting this is achieved by using the split forms, in which the relevant module carries a real structure; the four-dimensional algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with its real module $\mathbb{R}^2$, is the model case, and the eight-dimensional split quaternion algebra $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ of the companion article *Split-Quaternion Algebra* is a different algebra altogether. The present article records only the non-split outcome.
+**Remark.** The passage to a real spinor requires a change of signature: for the forms of signature difference $d\equiv0,1,2\bmod8$ a real structure exists and Majorana spinors appear. In the biquaternion setting this is achieved by using the split forms, in which the relevant module carries a real structure; the four-dimensional algebra $\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$, with its real module $\mathbb{R}^2$, is the model case, and the eight-dimensional split quaternion algebra $\mathbb{H}_{\mathbb{D}}=\mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ of is a different algebra altogether. The present article records only the non-split outcome.
 
 ## The Clifford Multiplication in the Matrix Model
 
@@ -162,6 +162,8 @@ Over the complexified algebra $\mathbb{C}\mathrm{l}_3=M_2(\mathbb{C})\times M_2(
 | $h(u,v)=u^{\dagger}v$ | Hermitian form, invariant under $SU(2)$ only |
 | $\|u\|_h^2=h(u,u)$ | Hermitian spinor norm, positive definite |
 | $d=p-q$, $N(\tilde Q)=\sum_\mu Q_\mu^2$ | Signature difference and norm form |
+
+
 
 ## Further Reading
 

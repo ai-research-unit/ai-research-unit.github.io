@@ -7,7 +7,7 @@ A Riemannian metric is a distance that varies from point to point. It assigns to
 
 This article develops these objects and explains what each measures. It defines the Levi-Civita connection by the Koszul formula and proves uniqueness; it defines parallel transport and the curvature tensor, and proves the symmetries of the curvature and the two Bianchi identities; it defines the sectional, Ricci and scalar curvatures and states what each detects; it writes the geodesic equation, explains why a geodesic minimises length locally, and contrasts the metric exponential with the Lie-algebra exponential; it treats the three simply connected complete surfaces of constant curvature — elliptic, Euclidean and hyperbolic — and identifies them with the geometries of the three two-dimensional algebras of *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*; and it states the Gauss–Bonnet theorem, which relates the integral of the curvature of a compact surface to its Euler characteristic. The point of the article is the final observation: the topology of a manifold is fixed, but the metric on it is not, and curvature is the invariant that distinguishes two metrics with the same underlying space.
 
-The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, tangent spaces, vector fields and the Riemannian metric; *Fibre Bundles, Connections and Curvature* for the general notion of a connection, its curvature and the Bianchi identity, which are specialised here to the tangent bundle; the quadratic forms of *Bilinear Forms*, *Quadratic Forms and Polarisation* and *Isometries and Orthogonal Transformations*; and *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the three model geometries in dimension two. The existence, uniqueness and smooth-dependence theory of the geodesic equation, the first-variation computation and the completeness theory that depend on limits belong to Part III, where the differential equations and the limit are available; they are stated here and not proved. The systematic development of all of this, with the comparison theorems and the submanifold theory, is *Riemannian Geometry*. No physics is invoked.
+The article assumes *Smooth Manifolds and Differential Geometry* for manifolds, tangent spaces, vector fields and the Riemannian metric; it defines the connection on the tangent bundle, its curvature and the Bianchi identity itself; the quadratic forms of *Bilinear Forms*, *Quadratic Forms and Polarisation* and *Isometries and Orthogonal Transformations*; and *The Three Two-Dimensional Algebras and the Three Kinds of Rotation* for the three model geometries in dimension two. The existence, uniqueness and smooth-dependence theory of the geodesic equation, the first-variation computation and the completeness theory that depend on limits belong to Part III, where the differential equations and the limit are available; they are stated here and not proved. The comparison theorems and the submanifold theory are not developed here, and the systematic account of them is not part of this article. No physics is invoked.
 
 ## The Metric as a Distance
 
@@ -21,7 +21,7 @@ $$
 \mathrm{vol}_g = \sqrt{\det(g_{ij})}\; dx^1 \wedge \cdots \wedge dx^n .
 $$
 
-It is the top form whose integral is the Riemannian volume, and its existence is the form theory of *Differential Forms and Stokes' Theorem*.
+It is the top form whose integral is the Riemannian volume, and its existence is the form theory.
 
 ### The Metric Topology and the Distance Function
 
@@ -29,13 +29,13 @@ It is the top form whose integral is the Riemannian volume, and its existence is
 
 **Theorem.** The distance function satisfies $|\nabla r_p|_g = 1$ at every point where it is smooth. Its Hessian and its Laplacian are the invariants that carry the curvature: the Hessian comparison theorem and the Laplacian comparison theorem compare them with the corresponding objects of the constant-curvature model, and their proofs are analytic and belong to Part III, where the differential equations are available. The comparison is the analytical form of the statement that curvature controls the rate at which geodesics spread.
 
-The statement is recorded here because it is the bridge between the metric and the curvature. The Laplace–Beltrami operator, of which $\Delta$ is the case, is the Laplace–de Rham operator of *Differential Forms and Stokes' Theorem* acting on functions, and the comparison theorems for it are proved in Part III with the differential equations.
+The statement is recorded here because it is the bridge between the metric and the curvature. The Laplace–Beltrami operator, of which $\Delta$ is the case, is the Laplace–de Rham operator acting on functions, and the comparison theorems for it are proved in Part III with the differential equations.
 
 ## The Levi-Civita Connection
 
 ### The Koszul Formula
 
-**Definition.** A **connection** on the tangent bundle $TM$ is an $\mathbb{R}$-bilinear map $\nabla : \mathfrak{X}(M) \times \mathfrak{X}(M) \to \mathfrak{X}(M)$ such that $\nabla_{fX}Y = f\nabla_XY$ and $\nabla_X(fY) = X(f)Y + f\nabla_XY$ for $f \in C^\infty(M)$; it is the covariant derivative of *Fibre Bundles, Connections and Curvature* in the case of the tangent bundle. It is **metric** if
+**Definition.** A **connection** on the tangent bundle $TM$ is an $\mathbb{R}$-bilinear map $\nabla : \mathfrak{X}(M) \times \mathfrak{X}(M) \to \mathfrak{X}(M)$ such that $\nabla_{fX}Y = f\nabla_XY$ and $\nabla_X(fY) = X(f)Y + f\nabla_XY$ for $f \in C^\infty(M)$; it is the covariant derivative specialised to the tangent bundle. It is **metric** if
 
 $$
 X\,g(Y, Z) = g(\nabla_XY, Z) + g(Y, \nabla_XZ),
@@ -83,7 +83,7 @@ $$
 
 **Proof.** The parallel field along a reparametrised curve is the reparametrised field; concatenation composes the transports and reversal inverts them, since the equation $\nabla_{\gamma'}V = 0$ is preserved by reversing the curve. $\square$
 
-**Definition.** The **holonomy group** of $\nabla$ at $p$ is the group of isometries of $T_pM$ obtained as parallel transport around piecewise smooth loops based at $p$. It is a subgroup of the orthogonal group of the metric at $p$, and the **restricted holonomy group** is the subgroup obtained from loops homotopic to the constant loop. The Lie algebra of the holonomy group is spanned by the curvature endomorphisms, which is the Ambrose–Singer theorem of *Fibre Bundles, Connections and Curvature*.
+**Definition.** The **holonomy group** of $\nabla$ at $p$ is the group of isometries of $T_pM$ obtained as parallel transport around piecewise smooth loops based at $p$. It is a subgroup of the orthogonal group of the metric at $p$, and the **restricted holonomy group** is the subgroup obtained from loops homotopic to the constant loop. The Lie algebra of the holonomy group is spanned by the curvature endomorphisms, which is the Ambrose–Singer theorem.
 
 ## Geodesics and the Metric Exponential
 
@@ -155,7 +155,7 @@ $$
 
 a $(1, 3)$-tensor, and the associated $(0, 4)$-tensor is $R(X, Y, Z, W) = g(R(X, Y)Z, W)$.
 
-The curvature is the general curvature of *Fibre Bundles, Connections and Curvature* read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = d\theta + \theta \wedge \theta$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.
+The curvature form is read on $TM$: in a coordinate frame the curvature form is the matrix $\mathcal{R} = d\theta + \theta \wedge \theta$, and $R(X, Y)Z$ is its evaluation on $X, Y$ applied to $Z$.
 
 **Theorem (symmetries).** The $(0,4)$-curvature tensor satisfies
 
@@ -175,7 +175,7 @@ $$
 (\nabla_X R)(Y, Z)W + (\nabla_Y R)(Z, X)W + (\nabla_Z R)(X, Y)W = 0.
 $$
 
-**Proof sketch.** The first symmetry is the definition; the second and third follow from metricity and from the vanishing of the torsion; the first Bianchi identity is the cyclic sum of the three curvature terms, in which the bracket terms cancel by the Jacobi identity; the second Bianchi identity is the exterior covariant derivative identity $d^\nabla \mathcal{R} = 0$ of *Fibre Bundles, Connections and Curvature*, read on the tangent bundle. $\square$
+**Proof sketch.** The first symmetry is the definition; the second and third follow from metricity and from the vanishing of the torsion; the first Bianchi identity is the cyclic sum of the three curvature terms, in which the bracket terms cancel by the Jacobi identity; the second Bianchi identity is the exterior covariant derivative identity $d^\nabla \mathcal{R} = 0$, read on the tangent bundle. $\square$
 
 ### Sectional Curvature
 
@@ -195,7 +195,7 @@ $$
 
 **Proof sketch.** The symmetries express a $(0,4)$-tensor as a linear combination of the quadrilateral expressions $R(v, w, w, v)$; polarisation in each argument recovers the full tensor from the values of $K$ on the planes. $\square$
 
-**Remark (what $K$ measures).** The sectional curvature is the curvature of the surface swept out by the geodesics in the plane $\sigma$: it is the Gaussian curvature of the two-dimensional submanifold $\exp_p(\sigma \cap U_p)$. Positive $K$ means that nearby geodesics in that plane converge, as they do on the sphere; negative $K$ means that they diverge, as they do in the hyperbolic plane; $K = 0$ means that they neither converge nor diverge, as they do in the Euclidean plane. This is the statement that curvature measures the spreading of geodesics, and it is the model for the Jacobi-field comparison theory of *Riemannian Geometry*.
+**Remark (what $K$ measures).** The sectional curvature is the curvature of the surface swept out by the geodesics in the plane $\sigma$: it is the Gaussian curvature of the two-dimensional submanifold $\exp_p(\sigma \cap U_p)$. Positive $K$ means that nearby geodesics in that plane converge, as they do on the sphere; negative $K$ means that they diverge, as they do in the hyperbolic plane; $K = 0$ means that they neither converge nor diverge, as they do in the Euclidean plane. This is the statement that curvature measures the spreading of geodesics, and it is the model for the Jacobi-field comparison theory.
 
 **Example.** The round sphere $S^n$ of radius $r$ has $K = 1/r^2$ on every plane; Euclidean space has $K = 0$; the hyperbolic space of curvature $-1/r^2$ has $K = -1/r^2$. These are the three simply connected complete manifolds of constant curvature, and by the classification their universal covers exhaust the possibilities.
 
@@ -265,7 +265,7 @@ It is the geometry in which the parallel postulate holds: through each point out
 
 **Definition.** **Hyperbolic space** $\mathbb{H}^n_r$ is the complete simply connected Riemannian manifold of constant sectional curvature $-1/r^2$; a concrete model is the upper half-space with the metric $g = (dx_1^2 + \cdots + dx_n^2)/y^2$, whose geodesics are the vertical lines and the semicircles orthogonal to the boundary.
 
-Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed in *Hyperbolic Geometry*.
+Hyperbolic space is non-compact, its geodesics diverge exponentially, and through each point outside a given geodesic there are infinitely many geodesics not meeting it: the parallel postulate fails in the direction of too many parallels, and the angle sum of a triangle is less than $\pi$. In dimension two it is the geometry of the algebra $\mathbb{D}$ with $\omega^2 = +1$, whose identity component of the rotation group is $SO(1,1)_0$, the hyperbolic rotation group. The metric is developed.
 
 ### The Comparison Table
 
@@ -291,7 +291,7 @@ $$
 
 **Corollary (angle sums).** A geodesic triangle in the sphere of radius $1$ has angle sum $\pi + \mathrm{area}$; a Euclidean triangle has angle sum $\pi$; a hyperbolic triangle has angle sum $\pi - \mathrm{area}$. This is the quantitative form of the comparison table above: the sign of $K$ is the sign of the deviation of the angle sum from $\pi$.
 
-**Corollary (topological obstruction).** A compact surface admits a metric of constant curvature $+1$ only if $\chi(M) > 0$, a metric of curvature $0$ only if $\chi(M) = 0$, and a metric of constant curvature $-1$ only if $\chi(M) < 0$. The Euler characteristic therefore obstructs the existence of the three geometries, and the classification of the compact surfaces with these geometries is the uniformisation stated in *Hyperbolic Geometry*.
+**Corollary (topological obstruction).** A compact surface admits a metric of constant curvature $+1$ only if $\chi(M) > 0$, a metric of curvature $0$ only if $\chi(M) = 0$, and a metric of constant curvature $-1$ only if $\chi(M) < 0$. The Euler characteristic therefore obstructs the existence of the three geometries, and the classification of the compact surfaces with these geometries is the uniformisation stated.
 
 ### The Higher-Dimensional Case
 
@@ -303,7 +303,7 @@ $$
 
 equals the Euler characteristic.
 
-The form $\operatorname{Pf}(\mathcal{R}/2\pi)$ is the Euler class of the tangent bundle constructed by the Chern–Weil homomorphism of *Fibre Bundles, Connections and Curvature*, and the theorem identifies its integral with the topological Euler characteristic. In dimension two it reduces to the surface case above.
+The form $\operatorname{Pf}(\mathcal{R}/2\pi)$ is the Euler class of the tangent bundle constructed by the Chern–Weil homomorphism, and the theorem identifies its integral with the topological Euler characteristic. In dimension two it reduces to the surface case above.
 
 **Remark (curvature and topology).** The Gauss–Bonnet theorem is the first and simplest instance of a general principle: the integral of a curvature expression is a topological invariant. The principle is made systematic by the Chern–Weil construction, which turns invariant polynomials in the curvature of any connection into characteristic classes of the bundle, and it is the reason curvature, although it is a local differential-geometric datum, computes global topological information. The shape of the metric — which curves are geodesics, how fast they spread, where they focus — is what separates one geometry from another on the same manifold; the topology is what the integral of the curvature cannot change.
 
@@ -342,6 +342,8 @@ The complete simply connected manifolds of constant curvature are the round sphe
 | $S^n_r$, $\mathbb{H}^n_r$ | Round sphere and hyperbolic space of radius $r$ |
 | $\int_M K\,\mathrm{vol}_g = 2\pi\chi(M)$ | Gauss–Bonnet theorem for a compact oriented surface |
 | $\operatorname{Pf}(\mathcal{R}/2\pi)$ | Pfaffian form; its integral is the Euler characteristic |
+
+
 
 ## Further Reading
 

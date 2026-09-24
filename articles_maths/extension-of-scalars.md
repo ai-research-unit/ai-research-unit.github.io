@@ -81,7 +81,7 @@ $$
 
 *Proof.* The displayed product is the unique $S$-bilinear map extending $R$-bilinear multiplication; the details are the standard algebra form of the universal property of $\otimes$, and the multiplication is commutative because $R$ is. $\square$
 
-Base change of algebras is the construction that produces $S$-algebras from $R$-algebras; the algebra-side account belongs to the companion category of *Algebras*, and it is used here only as the ring-theoretic version of the module construction.
+Base change of algebras is the construction that produces $S$-algebras from $R$-algebras; the algebra-side account belongs to the companion category, and it is used here only as the ring-theoretic version of the module construction.
 
 ## Realification and Complexification
 
@@ -123,7 +123,7 @@ as real vector spaces, where $iV=\{i \otimes v\}$.
 
 ### A Quaternionic Base Change
 
-**Example.** For the real algebra $\mathbb{H}$ of quaternions, the base change $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the **biquaternion** algebra $\mathbb{B}$, of real dimension $8$, obtained by adjoining a central imaginary unit $i$ commuting with $e_1,e_2,e_3$. This is an instance of base change of an algebra; the algebra structure of $\mathbb{B}$, its automorphisms and its derivations belong to the companion category of *Algebras*, and only the underlying $8$-dimensional module and the tensor-product formula are used here.
+**Example.** For the real algebra $\mathbb{H}$ of quaternions, the base change $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the **biquaternion** algebra $\mathbb{B}$, of real dimension $8$, obtained by adjoining a central imaginary unit $i$ commuting with $e_1,e_2,e_3$. This is an instance of base change of an algebra; the algebra structure of $\mathbb{B}$, its automorphisms and its derivations belong to the companion category, and only the underlying $8$-dimensional module and the tensor-product formula are used here.
 
 ## Behaviour of Standard Properties under Base Change
 
@@ -162,6 +162,8 @@ The rank behaviour is the field case first: $S \otimes_R R^n \cong S^n$, so over
 | $\kappa$ | conjugate-linear involution of $V_{\mathbb{C}}$ |
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | biquaternions |
 | $e_1,e_2,e_3$ | quaternionic basis units |
+
+
 
 ## Further Reading
 

@@ -7,7 +7,7 @@ The Plancherel theorem is the statement that the Fourier transform on a unimodul
 
 The article states the theorem in its definite and isometric forms, gives the construction of the measure from the trace of the regular representation and Dixmier's abstract theorem, verifies the normalisation in the abelian, compact and finite cases where it reduces to facts already established in this category, and computes the measure in the standard non-compact examples: the Heisenberg group, where the density is $|\lambda|$; the semisimple groups, where the Harish-Chandra formula governs the continuous part and the discrete series contributes point masses; and the nilpotent groups, where the orbit method produces the measure as the pushforward of Lebesgue measure on the coadjoint orbits. It closes with the two ways in which the theorem can fail: the modification required for non-unimodular groups and the total failure for groups that are not of type I.
 
-The boundaries. The **operator-valued transform**, the coefficient algebra and the general decomposition theory are *Noncommutative Harmonic Analysis*; the **convolution algebra** and its completions are *The Convolution Algebra $L^1(G)$*; the **abelian** transform and its inversion and Plancherel theorems are *Harmonic Analysis on Groups*; the **compact** transform and its orthogonality relations are *Analysis on Compact Groups*, and the decomposition theorem behind it is *The Peter–Weyl Theorem*. The **unitary dual, the type I property, the Borel structure of the dual and the uniqueness of the direct-integral decomposition** are Part II's *Type I Groups*, and the **Haar measure and the modular function** are *Locally Compact Groups and Haar Measure*. The functional analysis — the trace-class and Hilbert–Schmidt ideals, the spectral theorem, the polar decomposition — is standard and is quoted as it is used, with the operator-algebraic part belonging to *Operator Algebras* and the space theory to the later *Banach and Hilbert Spaces*; the integration is *Measure Theory and Integration*. No physics is invoked.
+The boundaries. The **operator-valued transform**, the coefficient algebra and the general decomposition theory are *Noncommutative Harmonic Analysis*; the **convolution algebra** and its completions are *The Convolution Algebra $L^1(G)$*; the **abelian** transform and its inversion and Plancherel theorems are *Harmonic Analysis on Groups*; the **compact** transform and its orthogonality relations are *Analysis on Compact Groups*, and the decomposition theorem behind it is *The Peter–Weyl Theorem*. The **unitary dual, the type I property, the Borel structure of the dual and the uniqueness of the direct-integral decomposition** are Part II's *Type I Groups*, and the **Haar measure and the modular function** are *Locally Compact Groups and Haar Measure*. The functional analysis — the trace-class and Hilbert–Schmidt ideals, the spectral theorem, the polar decomposition — is standard and is quoted as it is used, with the operator-algebraic part belonging to *Operator Algebras* and the space theory to the later; the integration is *Measure Theory and Integration*. No physics is invoked.
 
 Throughout, $G$ is a locally compact Hausdorff group with left Haar measure $dx$, modular function $\Delta$, identity $e$; the operator-valued transform is $\hat f(\pi) = \int_G f(g)\pi(g)\,dg$; the unitary dual is $\operatorname{Irr}(G)$; the Plancherel measure is $\mu_P$; and the group von Neumann algebra is $L(G) = \lambda(G)''$. The convolution and involution are those of *The Convolution Algebra $L^1(G)$*, and the direct-integral notation is that of *Noncommutative Harmonic Analysis*. The abelian dual is $G^\vee$; the hat is not used for a dual.
 
@@ -173,7 +173,7 @@ For a connected semisimple Lie group $G$ with finite centre, the unitary dual, t
 
 **The spherical transform.** For $K$ a maximal compact subgroup and $G/K$ the symmetric space, the $K$-invariant functions on $G$ transform by the **spherical transform** against the spherical functions $\varphi_\lambda$, and the spherical Plancherel measure is the part of $\mu_P$ supported on the spherical (class-one) representations. The spherical transform on $G/K$ is the exact analogue of the Fourier transform on $\mathbb{R}^n$ regarded as the symmetric space of the Euclidean motion group, and the Harish-Chandra $c$-function is the analogue of the normalising factor in the Euclidean inversion formula. This is the analytic core of the harmonic analysis of *Symmetric Spaces*.
 
-**Remark (the automorphic case).** The decomposition of $L^2(G/\Gamma)$ for a lattice $\Gamma$ into a discrete spectrum (cuspidal automorphic forms) and a continuous spectrum (Eisenstein series) is the Plancherel theorem for the homogeneous space rather than for the group; it is the spectral theory of *Automorphic Forms* later in this category, and the trace formula is its quantitative form.
+**Remark (the automorphic case).** The decomposition of $L^2(G/\Gamma)$ for a lattice $\Gamma$ into a discrete spectrum (cuspidal automorphic forms) and a continuous spectrum (Eisenstein series) is the Plancherel theorem for the homogeneous space rather than for the group; it is the spectral theory, and the trace formula is its quantitative form.
 
 ## Nilpotent and Solvable Groups
 
@@ -237,6 +237,10 @@ For a second countable unimodular group $G$ of type I the Plancherel theorem sta
 | $\mathbb{R}^2\cup\{\pi_\lambda\}$ | Dual of the Heisenberg group |
 | $\lvert\lambda\rvert\,d\lambda$ | Heisenberg Plancherel density |
 | $F_2$ | Free group on two generators; non-type-I failure |
+
+
+
+
 
 ## Further Reading
 

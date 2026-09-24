@@ -13,7 +13,7 @@ converging to the homology of the total space. It is the machine that computes t
 
 The general theory of spectral sequences — filtered complexes, exact couples, convergence, the comparison theorem — is the subject of the companion article *Spectral Sequences* of Part I, which is being written in parallel, and none of it is re-derived here. What this article does is the *topological* instance: it constructs the filtration of the singular chains of the total space by the skeleta of the base, identifies the $E^2$ page, states the convergence and the multiplicative structure, and computes. This division is deliberate and is the corpus's general organisation: the algebra of derived functors and spectral sequences belongs to Part I, the topological and geometric instances belong here.
 
-Two further articles of this batch depend on the present one: *Homology of Classical Groups and Homogeneous Spaces*, which runs the spectral sequence for the fibrations $G/H \to BH \to BG$, and *Higher Algebraic K-Theory*, which uses the Atiyah–Hirzebruch spectral sequence. The article closes by recording the **Leray–Serre spectral sequence with local coefficients**, in which the fundamental group of the base acts on the homology of the fibre, and the **Wang sequence** of a fibration over a sphere.
+Two further articles of this batch depend on the present one:which runs the spectral sequence for the fibrations $G/H \to BH \to BG$, , which uses the Atiyah–Hirzebruch spectral sequence. The article closes by recording the **Leray–Serre spectral sequence with local coefficients**, in which the fundamental group of the base acts on the homology of the fibre, and the **Wang sequence** of a fibration over a sphere.
 
 Throughout, $R$ is a commutative ring with identity $1 \neq 0$; coefficients are in $R$ unless a coefficient system is named; a fibration means a Serre fibration, as in *Homotopy Groups and Fibrations*. The spectral sequence is indexed homologically unless stated, with total degree $n = p+q$.
 
@@ -166,11 +166,11 @@ $$
 H_k(\Omega S^3;R) \cong \begin{cases} R, & k \text{ even}, \\ 0, & k \text{ odd.}\end{cases}
 $$
 
-The general statement, that $\Omega S^n$ has the homology of a free monoid on a single generator of degree $n-1$, is the content of the James construction and of the Bott–Samelson theorem; the rational statement is used in *Higher Algebraic K-Theory* through the Chern character.
+The general statement, that $\Omega S^n$ has the homology of a free monoid on a single generator of degree $n-1$, is the content of the James construction and of the Bott–Samelson theorem; the rational statement is used through the Chern character.
 
 ### Eilenberg–MacLane Spaces and the Path–Loop Fibration
 
-**Definition.** For an abelian group $\pi$ and $n \geq 1$, an **Eilenberg–MacLane space** $K(\pi,n)$ is a CW complex with $\pi_n \cong \pi$ and all other homotopy groups zero.
+**Definition.** For an abelian group $\pi$ and $n \geq 1$, an **Eilenberg–MacLane space** $K(\pi,n)$ is a CW complex with $\pi_n \cong \pi$ and all other homotopy groups zero; the construction, the functoriality and the standard cases are those of *Classifying Spaces and Cohomology Operations*, above this article, and are used here as they stand there.
 
 **Theorem (the path–loop spectral sequence).** For $n \geq 2$ and $X = K(\pi,n)$ with $\pi$ finitely generated, the path–loop fibration $\Omega X \to PX \to X$ gives a spectral sequence
 
@@ -206,7 +206,7 @@ induced by the cross product and the multiplication of $H^*(F;R)$. The product o
 
 **Corollary.** If the coefficient module $H^*(F;R)$ is free over $R$ and the spectral sequence degenerates, then $E_2 = E_\infty = H^*(B;R)\otimes_R H^*(F;R)$ by the universal coefficient theorem, so $H^*(E;R)$ is the associated graded of a filtration of that tensor product, and the edge homomorphisms assemble into the successive quotients of the filtration. For a fibration $F \to E \to B$ with $B$ simply connected and $R$ a field, the multiplicativity of the spectral sequence makes the computation of $H^*(E;R)$ from the $E_2$ page a computation of rings and not merely of groups.
 
-**Example (the transgression of the Euler class).** For an oriented sphere bundle $S^{n-1} \to E \to B$ with $B$ simply connected, the only possible differential is $d^n : E_n^{0,n-1} \to E_n^{n,0}$, from the fundamental class of the fibre to the top cohomology of the base; the transgression of that class is the **Euler class** $e \in H^n(B;R)$ of the bundle. The Euler class is thus a cohomology class of the base measuring the failure of the sphere bundle to admit a section, and it is the basic example of a characteristic class; the characteristic-class theory itself is the subject of the written *Fibre Bundles, Connections and Curvature* and of *Characteristic Classes*, being written in parallel.
+**Example (the transgression of the Euler class).** For an oriented sphere bundle $S^{n-1} \to E \to B$ with $B$ simply connected, the only possible differential is $d^n : E_n^{0,n-1} \to E_n^{n,0}$, from the fundamental class of the fibre to the top cohomology of the base; the transgression of that class is the **Euler class** $e \in H^n(B;R)$ of the bundle. The Euler class is thus a cohomology class of the base measuring the failure of the sphere bundle to admit a section, and it is the basic example of a characteristic class; the characteristic-class theory itself is the subject of *Fibre Bundles, Connections and Curvature* and of *Characteristic Classes*, both earlier in this Part.
 
 ### Local Coefficients
 
@@ -218,7 +218,7 @@ $$
 E^2_{p,q} = H_p\bigl(B; \mathcal{H}_q(F;R)\bigr) \Longrightarrow H_{p+q}(E;R),
 $$
 
-the homology of $B$ with coefficients in the local system $\mathcal{H}_q(F;R)$; when the monodromy is trivial this is the constant-coefficient statement above. The theory of local coefficients is the sheaf theory of the companion articles *Presheaves and Sheaves* and *Sheaf Cohomology*, written later in this batch, and the identification of $H_*(B;\mathcal{H})$ with the cohomology of the corresponding sheaf is made there.
+the homology of $B$ with coefficients in the local system $\mathcal{H}_q(F;R)$; when the monodromy is trivial this is the constant-coefficient statement above. The theory of local coefficients is the sheaf theory of andwritten later in this batch, and the identification of $H_*(B;\mathcal{H})$ with the cohomology of the corresponding sheaf is made there.
 
 **Remark.** The monodromy is the reason the orientation hypothesis appears with a coefficient twist in the Gysin and Thom sequences of *Fibre Bundles, Connections and Curvature*: an oriented bundle is one whose top local system is constant.
 
@@ -249,6 +249,8 @@ The edge homomorphisms of the spectral sequence are the maps induced by the incl
 | $H_p(B;\mathcal{H})$ | Homology with local coefficients |
 | $\smile$ | Product on the spectral sequence; Leibniz rule with $d_r$ |
 | $R$ | Commutative ring with identity $1 \neq 0$ |
+
+
 
 ## Further Reading
 

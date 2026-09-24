@@ -7,7 +7,7 @@ A nonlinear equation between Banach spaces, $f(u)=v$, has no linear structure to
 
 The article develops both. It begins with nonlinear maps between Banach spaces, their continuity, compactness and differentiability, and the two basic local theorems: the **inverse function theorem**, that a $C^k$ map with invertible derivative at a point is a local $C^k$ diffeomorphism, and the **implicit function theorem**, that a level set with surjective derivative is locally a graph; with them come the constant-rank theorem and Lyusternik's theorem on local surjectivity. It then develops **convex analysis**: the subdifferential of a convex function, its maximal monotonicity, the Legendre–Fenchel conjugate, the sum rule and the minimisation criterion $0 \in\partial f(x)$, together with Ekeland's variational principle, which converts the existence of approximate minimisers into the existence of a point that minimises a perturbed functional. It treats **monotone operators** on a Banach space, for which the maximality and the coercivity give surjectivity, and it treats the **variational methods**: the direct method of the calculus of variations, the Palais–Smale condition, the deformation lemma, the minimax principle and the mountain pass theorem, with the Ljusternik–Schnirelmann theory of the multiplicity of critical points.
 
-The analytic fixed-point theorems — the contraction principle, the Schauder and Leray–Schauder theorems, and the degree theory of which they are consequences — are the subject of *Fixed Point Theory and Degree Theory*; only the contraction principle is quoted here, as a standard tool for the inverse function theorem, and the topological degree is not used. The differential calculus on normed spaces, the Fréchet and Gâteaux derivatives, the mean value inequality and Taylor's theorem are those of *Differential Calculus on Normed Spaces*; the Hahn–Banach theorem, weak topologies, reflexivity and the duality of Banach spaces are those of *Duality Theory*, and the compact operators and Fredholm theory are those of *Fredholm Theory*. The measure theory and integration used in the examples are those of *Measure Theory and Integration*. The applications of the theory to elliptic boundary problems, evolution equations and the calculus of variations belong to *Partial Differential Equations*, *Sobolev Spaces and Weak Solutions*, *Differential Equations* and, in the calculus of variations proper, to *The Calculus of Variations*; they are cited, not developed.
+The analytic fixed-point theorems — the contraction principle, the Schauder and Leray–Schauder theorems, and the degree theory of which they are consequences — are not covered here; only the contraction principle is quoted here, as a standard tool for the inverse function theorem, and the topological degree is not used. The differential calculus on normed spaces, the Fréchet and Gâteaux derivatives, the mean value inequality and Taylor's theorem are those of *Differential Calculus on Normed Spaces*; the Hahn–Banach theorem, weak topologies, reflexivity and the duality of Banach spaces are those of *Duality Theory*, and the compact operators and Fredholm theory are those of *Fredholm Theory*. The measure theory and integration used in the examples are those of *Measure Theory and Integration*. The applications of the theory to elliptic boundary problems, evolution equations and the calculus of variations belong to *Differential Equations* in the calculus of variations proper; they are cited, not developed.
 
 No physics is invoked.
 
@@ -47,9 +47,9 @@ the integral being the Bochner integral of a continuous $Y$-valued function; the
 
 **Example.** (i) The map $f:\mathbb{R}^n\to\mathbb{R}$, $f(x)=\langle Ax,x\rangle$ for a symmetric matrix $A$, has $f'(x)h=2\langle Ax,h\rangle$.
 
-(ii) The map $F:L^2(\Omega)\to\mathbb{R}$, $F(u)=\int_\Omega\bigl(\frac12|\nabla u|^2+g(u)\bigr)dx$ with $g \in C^1$, the model functional of a quasilinear problem, has $F'(u)h=\int_\Omega(\nabla u\cdot\nabla h+g'(u)h)\,dx$, and the critical-point equation $F'(u)=0$ is the weak form of $-\Delta u+g'(u)=0$, whose theory belongs to *Sobolev Spaces and Weak Solutions*.
+(ii) The map $F:L^2(\Omega)\to\mathbb{R}$, $F(u)=\int_\Omega\bigl(\frac12|\nabla u|^2+g(u)\bigr)dx$ with $g \in C^1$, the model functional of a quasilinear problem, has $F'(u)h=\int_\Omega(\nabla u\cdot\nabla h+g'(u)h)\,dx$, and the critical-point equation $F'(u)=0$ is the weak form of $-\Delta u+g'(u)=0$, whose theory belongs.
 
-(iii) The **Nemytskii operator** $u\mapsto g(\cdot,u(\cdot))$ is continuous and bounded from $L^p(\Omega)$ to $L^q(\Omega)$ when $g$ is continuous and satisfies the growth condition $|g(x,s)|\le C(1+|s|^{p/q})$, and its composition with the compact embedding of *Sobolev Spaces and Weak Solutions* is compact; it is the archetype of the nonlinear operators that couple the calculus with the function spaces.
+(iii) The **Nemytskii operator** $u\mapsto g(\cdot,u(\cdot))$ is continuous and bounded from $L^p(\Omega)$ to $L^q(\Omega)$ when $g$ is continuous and satisfies the growth condition $|g(x,s)|\le C(1+|s|^{p/q})$, and its composition with the compact embedding is compact; it is the archetype of the nonlinear operators that couple the calculus with the function spaces.
 
 ## The Inverse and Implicit Function Theorems
 
@@ -61,7 +61,7 @@ the integral being the Bochner integral of a continuous $Y$-valued function; the
 
 **Lemma (contraction mapping principle).** Let $(M,d)$ be a complete metric space and $T:M\to M$ a contraction, $d(Tx,Ty)\le\kappa\,d(x,y)$ with $\kappa<1$. Then $T$ has a unique fixed point $x^*$, and for every $x$ the iterates $T^nx$ converge to $x^*$ with $d(T^nx,x^*)\le\frac{\kappa^n}{1-\kappa}d(x,Tx)$.
 
-The principle is the fixed-point theorem of the metric setting and is proved by showing that the iterates form a Cauchy sequence, summing the geometric series; the uniqueness is immediate. The analytic fixed-point theorems, which extract fixed points from compactness rather than contractivity, are the subject of *Fixed Point Theory and Degree Theory*.
+The principle is the fixed-point theorem of the metric setting and is proved by showing that the iterates form a Cauchy sequence, summing the geometric series; the uniqueness is immediate. The analytic fixed-point theorems, which extract fixed points from compactness rather than contractivity, are not covered here.
 
 **Theorem (Newton's method; Kantorovich).** Let $f:D\to Y$ be $C^1$ with $f'$ Lipschitz of constant $L$ on a ball, let $f'(x_0)^{-1}$ exist with $\|f'(x_0)^{-1}\|\le\beta$, and let $\eta=\|f'(x_0)^{-1}f(x_0)\|$. If $\beta L\eta\le\frac12$ and the ball $B(x_0,r)$ with $r=\frac{1-\sqrt{1-2\beta L\eta}}{\beta L}$ lies in $D$, then $f$ has a zero in $B(x_0,r)$, the Newton iterates $x_{n+1}=x_n-f'(x_n)^{-1}f(x_n)$ are defined and converge to it, and the convergence is quadratic.
 
@@ -187,7 +187,7 @@ $$
 
 for every finite cycle, and then the function is recovered from $A$ by the formula $f(x)=\sup\bigl(\langle a_0,x\rangle+\sum_{j}\langle x_j^*,x_{j+1}-x_j\rangle\bigr)$ over the finite chains in the graph of $A$. The inclusion $0 \in Ax$ is the abstract form of a variational inequality, whose solvability theory follows from the surjectivity theorem above.
 
-**Example (the p-Laplacian).** On $W^{1,p}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong to *Sobolev Spaces and Weak Solutions*.
+**Example (the p-Laplacian).** On $W^{1,p}_0(\Omega)$ the operator $Au=-\operatorname{div}(|\nabla u|^{p-2}\nabla u)$ is monotone, coercive and hemicontinuous, hence maximal monotone and surjective onto $W^{-1,q}(\Omega)$ with $\frac1p+\frac1q=1$; the equation $Au=f$ has a unique solution for every $f$, and the monotonicity is the replacement for the ellipticity that is unavailable in the nonlinear setting. The example and its boundary-value theory belong.
 
 ## Variational Methods
 
@@ -197,7 +197,7 @@ for every finite cycle, and then the function is recovered from $A$ by the formu
 
 *Proof.* Choose a minimising sequence $(x_n)$ with $F(x_n)\to\inf F$; coercivity bounds it, reflexivity gives a weakly convergent subsequence $x_{n_k}\rightharpoonup x$, weak lower semicontinuity gives $F(x)\le\liminf F(x_{n_k})=\inf F$, and hence $F(x)=\inf F$. $\square$
 
-This is the fundamental existence theorem of the calculus of variations; the technical work in its applications is the verification of the weak lower semicontinuity and the coercivity in the function space of the problem, which is the content of *The Calculus of Variations* and of *Sobolev Spaces and Weak Solutions*.
+This is the fundamental existence theorem of the calculus of variations; the technical work in its applications is the verification of the weak lower semicontinuity and the coercivity in the function space of the problem, which is the content .
 
 ### The Palais–Smale Condition and the Deformation Lemma
 
@@ -239,7 +239,7 @@ If $F$ satisfies $(PS)_c$, then $c$ is a critical value of $F$, and the correspo
 
 *Proof (sketch).* The family $\Gamma$ is invariant under the homeomorphisms of $X$ isotopic to the identity fixing $0$ and $v$, so the minimax principle applies. $\square$
 
-**Example (a semilinear problem).** On $H_0^1(\Omega)$ let $F(u)=\frac12\int_\Omega|\nabla u|^2dx-\int_\Omega G(u)\,dx$ with $G'=g$ of subcritical growth and $g(u)=o(u)$ at $0$; the origin is a local minimum, the energy is unbounded below along rays when $G$ is superquadratic, and the mountain pass geometry holds; the Palais–Smale condition follows from the compactness of the embedding $H_0^1\hookrightarrow L^2$ and the growth hypothesis, so the theorem produces a nontrivial solution of $-\Delta u=g(u)$ with $u=0$ on the boundary. The functional-analytic scheme is the content of the present section; the elliptic existence theory, the regularity of the solution and the maximum principle belong to *Sobolev Spaces and Weak Solutions* and *Partial Differential Equations*.
+**Example (a semilinear problem).** On $H_0^1(\Omega)$ let $F(u)=\frac12\int_\Omega|\nabla u|^2dx-\int_\Omega G(u)\,dx$ with $G'=g$ of subcritical growth and $g(u)=o(u)$ at $0$; the origin is a local minimum, the energy is unbounded below along rays when $G$ is superquadratic, and the mountain pass geometry holds; the Palais–Smale condition follows from the compactness of the embedding $H_0^1\hookrightarrow L^2$ and the growth hypothesis, so the theorem produces a nontrivial solution of $-\Delta u=g(u)$ with $u=0$ on the boundary. The functional-analytic scheme is the content of the present section; the elliptic existence theory, the regularity of the solution and the maximum principle belong .
 
 ### Ljusternik–Schnirelmann Theory
 
@@ -259,7 +259,7 @@ $$
 
 and the critical points so produced occur in pairs $\pm u$.
 
-The theory gives multiplicity results — several solutions where the direct method gives one — and it is the functional-analytic input to the existence of multiple solutions of symmetric variational problems, developed in *The Calculus of Variations* and applied to boundary problems in *Partial Differential Equations*.
+The theory gives multiplicity results — several solutions where the direct method gives one — and it is the functional-analytic input to the existence of multiple solutions of symmetric variational problems, developed and applied to boundary problems.
 
 ## Summary
 
@@ -267,7 +267,7 @@ Nonlinear functional analysis replaces the linear algebra of a single operator b
 
 For a convex functional the derivative is replaced by the **subdifferential** $\partial f(x)=\{x^*:f(y)\ge f(x)+\langle x^*,y-x\rangle\}$, which is a convex weak-$*$ closed set, nonempty at interior points of the effective domain, a singleton exactly at the points of Gâteaux differentiability, and the minimiser criterion is $0 \in\partial f(x)$. The Legendre–Fenchel conjugate $f^*(x^*)=\sup_x(\langle x^*,x\rangle-f(x))$ satisfies $f^{**}=f$ exactly for convex l.s.c. proper $f$ and inverts the subdifferential, and Ekeland's variational principle produces, for every $\epsilon>0$, a point that minimises $f(\cdot)+\epsilon\,d(\cdot,x_\epsilon)$ and is therefore an approximate minimiser of $f$; for a convex functional such a point is an approximate critical point. A monotone operator $A:X\rightrightarrows X^*$ with $\langle x^*-y^*,x-y\rangle\ge0$ is maximal exactly when $A+J$ is surjective, by the Minty–Browder theorem, and maximal monotone and coercive operators are surjective; the subdifferential of a convex l.s.c. proper function is maximal monotone, so convex minimisation is a special case of the solvability of variational inequalities.
 
-For a functional that is not convex the global theory is variational. The direct method gives a minimiser for a coercive weakly lower semicontinuous functional on a reflexive space; the Palais–Smale condition and the deformation lemma yield the minimax principle, that $c=\inf_{S\in\mathcal F}\sup_SF$ is a critical value when $\mathcal F$ is invariant under isotopies and $(PS)_c$ holds; the mountain pass theorem is the case of the family of paths joining a point to a point of lower energy, and produces a nontrivial solution of the semilinear problem $-\Delta u=g(u)$ under subcritical growth; and the Ljusternik–Schnirelmann category and genus count the minimax levels and give the multiplicity of critical points for symmetric functionals. The topological fixed-point theorems and the degree are the subject of *Fixed Point Theory and Degree Theory*.
+For a functional that is not convex the global theory is variational. The direct method gives a minimiser for a coercive weakly lower semicontinuous functional on a reflexive space; the Palais–Smale condition and the deformation lemma yield the minimax principle, that $c=\inf_{S\in\mathcal F}\sup_SF$ is a critical value when $\mathcal F$ is invariant under isotopies and $(PS)_c$ holds; the mountain pass theorem is the case of the family of paths joining a point to a point of lower energy, and produces a nontrivial solution of the semilinear problem $-\Delta u=g(u)$ under subcritical growth; and the Ljusternik–Schnirelmann category and genus count the minimax levels and give the multiplicity of critical points for symmetric functionals. The topological fixed-point theorems and the degree are not covered here.
 
 ## Summary of Notation
 
@@ -289,6 +289,12 @@ For a functional that is not convex the global theory is variational. The direct
 | $\operatorname{cat}_X(S)$, $\gamma(S)$ | Ljusternik–Schnirelmann category and genus |
 | $T$ | contraction with constant $\kappa$ |
 | $\eta$ | deformation homeomorphism |
+
+
+
+
+
+
 
 ## Further Reading
 

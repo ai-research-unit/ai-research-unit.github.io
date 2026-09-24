@@ -167,7 +167,7 @@ $$
 \mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}=\mathbb{B},
 $$
 
-the biquaternion algebra, and extension of scalars carries real $\mathbb{H}$-modules to complex $\mathbb{B}$-modules. Since $\mathbb{B}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$, the complexified representation theory is the module theory of $\mathbb{C}$, a reduction used in *Quaternionic and Biquaternionic Modules*.
+the biquaternion algebra, and extension of scalars carries real $\mathbb{H}$-modules to complex $\mathbb{B}$-modules. Since $\mathbb{B}\cong M_2(\mathbb{C})$ is Morita equivalent to $\mathbb{C}$, the complexified representation theory is the module theory of $\mathbb{C}$, a reduction used.
 
 ### The quotient homomorphism
 
@@ -253,7 +253,7 @@ $$
 \operatorname{Hom}_{F[G]}(\operatorname{Ind}_H^G V, W) \cong \operatorname{Hom}_{F[H]}(V, \operatorname{Res}_H^G W).
 $$
 
-Because $F[G]$ is free of rank $[G:H]$ over $F[H]$ on both sides, induction and coinduction are naturally isomorphic, and the rank formula gives $\dim_F \operatorname{Ind}_H^G V=[G:H]\dim_F V$. Restriction is exact always. The representation-theoretic content is developed in *Representations of Groups*.
+Because $F[G]$ is free of rank $[G:H]$ over $F[H]$ on both sides, induction and coinduction are naturally isomorphic, and the rank formula gives $\dim_F \operatorname{Ind}_H^G V=[G:H]\dim_F V$. Restriction is exact always. The representation-theoretic content is developed.
 
 **(f) The quaternion algebra over the reals.** The inclusion $\mathbb{R}\hookrightarrow\mathbb{H}$ makes $\mathbb{H}$ a free $\mathbb{R}$-module, hence flat, so every restriction of an $\mathbb{H}$-module to $\mathbb{R}$ is flat, and extension $\mathbb{H}\otimes_\mathbb{R}-$ is exact. For $\mathbb{R}\hookrightarrow\mathbb{C}$ and $A=\mathbb{H}$, the extension is $\mathbb{B}\cong M_2(\mathbb{C})$, Morita equivalent to $\mathbb{C}$; the functor $\operatorname{Mod}(\mathbb{H})\to\operatorname{Mod}(\mathbb{B})$ is exact, and its target has a single simple module, the defining module $S=\mathbb{C}^2$.
 
@@ -284,6 +284,8 @@ Extension is exact exactly when $B$ is flat as a right $A$-module. Flatness over
 | $J(A)$ | Jacobson radical |
 | $\mathbb{H}$, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | quaternions, biquaternions |
 | $S=\mathbb{C}^2$ | defining module of $\mathbb{B}$ |
+
+
 
 ## Further Reading
 

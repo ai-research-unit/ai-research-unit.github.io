@@ -253,7 +253,7 @@ $$
 
 the second equality because $JaJ \in \mathcal{M}'$ commutes with $\Delta_\omega^{it}$ by the relation above. Hence $JaJ \in \mathcal{M}'$ implies $\Delta_\omega^{it}a\Delta_\omega^{-it} \in J\mathcal{M}'J = \mathcal{M}$, and applying the same argument with $-t$ gives the reverse inclusion. $\square$
 
-**Remark (notation).** The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\xi)$ of the Cauchy–Riemann operator in *Harmonic Analysis over Hypercomplex Systems*, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian of *Hypercomplex Analysis* and its companions; the two are unrelated operators and appear in different articles.
+**Remark (notation).** The modular group is written $\varsigma_t^\omega$ and not $\sigma_t^\omega$: the letter $\sigma$ denotes the spectrum $\sigma(a)$ of an element in this article and the symbol $\sigma(\xi)$ of the Cauchy–Riemann operator, and the three uses are kept apart deliberately. Likewise $\Delta_\omega$ here is the modular operator of Tomita–Takesaki theory, not the Laplacian and its companions; the two are unrelated operators and appear in different articles.
 
 **Theorem (the KMS condition).** The modular group of $\omega$ is determined by the following property: for all $a, b \in \mathcal{M}$ there is a function $F_{a,b}$ bounded and continuous on the closed strip $0 \leq \mathrm{Im}\,z \leq 1$ and holomorphic on its interior such that
 
@@ -392,6 +392,8 @@ The finite-rank ideals of $B(H)$ are the **trace class** $L^1(H)$ and the **Hilb
 | $\log\Delta_\omega$ | Modular generator |
 | $(D\omega' : D\omega)_t$ | Connes cocycle |
 | $\rho$, $\Omega = \rho^{1/2}$ | Density matrix and standard vector in the finite-dimensional case |
+
+
 
 ## Further Reading
 

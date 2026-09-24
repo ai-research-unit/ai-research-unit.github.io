@@ -10,8 +10,8 @@ This article proves both, together with the refinements that make them usable: t
 Three boundaries are held.
 
 - The **notation and the groundwork** are those of *Measure-Theoretic Probability*: $(\Omega,\mathcal{F},\mathbb{P})$, $\mu_X$, $\mathbb{E}$, $\operatorname{Var}$, a.s., $\varphi_X(t) = \mathbb{E}[e^{itX}]$, and the four modes of convergence with the implications established there. The **independence** and the **product measure** are *Independence and Conditional Expectation*, and the **conditional expectation** with its properties is used below.
-- The **martingale theory** — the maximal inequalities of Doob, the optional stopping theorem, the martingale convergence theorem and the martingale central limit theorem — is *Martingales*, and the **functional limit theory** and the invariance principle are *Brownian Motion and Stochastic Calculus*; where a result belongs there it is named and deferred.
-- The **ergodic-theoretic form** of the law of large numbers — the convergence of the time averages of a measure-preserving transformation, with independent sequences as the special case of a Bernoulli shift — is *Ergodic Theory*, and the comparison is made in the prose rather than in the proofs. No physics is invoked.
+- The **martingale theory** — the maximal inequalities of Doob, the optional stopping theorem, the martingale convergence theorem and the martingale central limit theorem — isand the **functional limit theory** and the invariance principle are; where a result belongs there it is named and deferred.
+- The **ergodic-theoretic form** of the law of large numbers — the convergence of the time averages of a measure-preserving transformation, with independent sequences as the special case of a Bernoulli shift — isand the comparison is made in the prose rather than in the proofs. No physics is invoked.
 
 Throughout, $X_1, X_2, \dots$ are independent and identically distributed real random variables with mean $\mu = \mathbb{E}[X_1] \in \mathbb{R}$ and variance $\sigma^2 = \operatorname{Var}(X_1) \in (0,\infty)$ when the variance is finite; $S_n = X_1 + \cdots + X_n$ is the partial sum, $\bar X_n = S_n/n$ the sample mean, and $Z_n = (S_n - n\mu)/(\sigma\sqrt n)$ the standardised sum. The characteristic function is $\varphi(t) = \mathbb{E}[e^{itX_1}]$, the standard normal distribution is $N(0,1)$ with distribution function $\Phi$, and $X_n \xrightarrow{d} X$ denotes convergence in distribution.
 
@@ -83,7 +83,7 @@ $$
 
 The cross term vanishes because $S_k\mathbf{1}_{A_k}$ is $\sigma(X_1,\dots,X_k)$-measurable and $S_n - S_k$ is independent of that $\sigma$-algebra with mean zero; dropping the two nonnegative terms leaves $\mathbb{E}[S_n^2] \geq \sum_k \lambda^2\mathbb{P}(A_k) = \lambda^2\mathbb{P}(A)$. $\square$
 
-The inequality is the martingale-type maximal bound in its independent-sum form, and it is the reason the strong law can be proved before the martingale theory is available; the general maximal inequality of Doob, in *Martingales*, contains it. The proof uses the independence only through the orthogonality of the past and the future, which is exactly the property the martingale theory abstracts.
+The inequality is the martingale-type maximal bound in its independent-sum form, and it is the reason the strong law can be proved before the martingale theory is available; the general maximal inequality of Doob, contains it. The proof uses the independence only through the orthogonality of the past and the future, which is exactly the property the martingale theory abstracts.
 
 ### The Kolmogorov Strong Law
 
@@ -101,7 +101,7 @@ $$
 
 **Theorem (converse).** If the $X_n$ are independent and identically distributed with $\mathbb{E}|X_1| = \infty$ then $\limsup_n |\bar X_n| = \infty$ a.s., so the sample mean does not converge.
 
-The strong law is the probabilistic form of the pointwise ergodic theorem, and the correspondence is exact: the Bernoulli shift has i.i.d. coordinates, the time averages of the shift are the sample means, and the ergodic theorem of *Ergodic Theory* asserts the same almost-sure convergence for every measure-preserving transformation and every stationary process, with the independence and the identical distribution replaced by stationarity and the mean replaced by the space average.
+The strong law is the probabilistic form of the pointwise ergodic theorem, and the correspondence is exact: the Bernoulli shift has i.i.d. coordinates, the time averages of the shift are the sample means, and the ergodic theorem, asserts the same almost-sure convergence for every measure-preserving transformation and every stationary process, with the independence and the identical distribution replaced by stationarity and the mean replaced by the space average.
 
 **Example (Borel's normal numbers).** Let $X_n$ be the $n$-th binary digit of a number $x \in [0,1]$, for $x$ chosen with Lebesgue measure. The digit sequence is i.i.d. Bernoulli$(1/2)$, so by the strong law the frequency of $1$s in the first $n$ digits tends to $1/2$ almost surely; applying the same theorem to the indicators of each finite block of digits shows that the frequency of every block of length $k$ tends to $2^{-k}$. The conclusion is Borel's theorem that almost every real number is normal to base $2$, and the argument extends to every base. Normality is a tail event of the digit sequence, so Kolmogorov's zero–one law already forces its probability to be $0$ or $1$; the strong law identifies it as $1$.
 
@@ -225,11 +225,11 @@ $$
 
 be the linearly interpolated random walk. Then $W_n$ converges in distribution to standard Brownian motion on $[0,1]$, in the topology of uniform convergence on the space of continuous functions.
 
-Donsker's theorem is the functional form of the central limit theorem, and it is the reason the central limit theorem is only the first of an infinite family of asymptotic statements about the random walk: the partial-sum process itself converges, after rescaling, to a Brownian motion, and every continuous functional of the walk converges to the corresponding functional of Brownian motion. The construction of Brownian motion and the stochastic calculus that this theorem initiates are the subject of *Brownian Motion and Stochastic Calculus*, where the invariance principle is developed; the present article records it as the functional closure of the central limit theorem.
+Donsker's theorem is the functional form of the central limit theorem, and it is the reason the central limit theorem is only the first of an infinite family of asymptotic statements about the random walk: the partial-sum process itself converges, after rescaling, to a Brownian motion, and every continuous functional of the walk converges to the corresponding functional of Brownian motion. The construction of Brownian motion and the stochastic calculus that this theorem initiates are not covered here, where the invariance principle is developed; the present article records it as the functional closure of the central limit theorem.
 
 ## Summary
 
-The characteristic function converts convergence in distribution into pointwise convergence: by Lévy's continuity theorem, if the characteristic functions converge to a function continuous at the origin then the measures converge weakly, and the tail estimate behind the proof is the only technical input. The weak law of large numbers asserts that the sample mean converges in probability to the mean; it follows from Chebyshev's inequality when the variance is finite, with the rate $O(1/n)$, and from Khinchin's truncation argument when only the first moment is finite. The strong law asserts almost-sure convergence; it follows from Kolmogorov's maximal inequality, which is the maximal bound for independent partial sums and the precursor of the martingale maximal inequality of *Martingales*, and it holds for pairwise independent variables by Etemadi's refinement and fails exactly when the first moment is infinite. Borel's theorem on normal numbers is the special case of the binary digits.
+The characteristic function converts convergence in distribution into pointwise convergence: by Lévy's continuity theorem, if the characteristic functions converge to a function continuous at the origin then the measures converge weakly, and the tail estimate behind the proof is the only technical input. The weak law of large numbers asserts that the sample mean converges in probability to the mean; it follows from Chebyshev's inequality when the variance is finite, with the rate $O(1/n)$, and from Khinchin's truncation argument when only the first moment is finite. The strong law asserts almost-sure convergence; it follows from Kolmogorov's maximal inequality, which is the maximal bound for independent partial sums and the precursor of the martingale maximal inequality, and it holds for pairwise independent variables by Etemadi's refinement and fails exactly when the first moment is infinite. Borel's theorem on normal numbers is the special case of the binary digits.
 
 The central limit theorem asserts that the standardised sums of independent identically distributed variables with finite positive variance converge in distribution to the standard normal, and the proof is the computation $\varphi(t/\sqrt n)^n \to e^{-t^2/2}$ together with Lévy's theorem. The triangular-array version holds exactly under the Lindeberg condition, and the Lyapunov condition is its practical sufficient form. The rate is governed by the Berry–Esseen theorem, of order $n^{-1/2}$ in the Kolmogorov distance with a constant depending on the standardised third moment, with the Edgeworth expansion supplying the successive corrections from the cumulants; the local limit theorem sharpens the convergence to the point probabilities of a lattice law, and Cramér's theorem gives the exponential rate of the large deviations. The possible limits of sums of independent variables are the infinitely divisible laws, represented by the Lévy–Khintchine formula with the triple $(\gamma,\sigma^2,\nu)$, and the stable laws are the limits in the absence of a finite variance. In several dimensions the Cramér–Wold device reduces the theorem to the one-dimensional case, and in the functional setting Donsker's invariance principle upgrades the central limit theorem to the convergence of the rescaled random walk to Brownian motion.
 
@@ -252,6 +252,10 @@ The central limit theorem asserts that the standardised sums of independent iden
 | stable law, $\alpha$ | self-similar limit law with exponent $\alpha\in(0,2]$ |
 | $W_n(t)$ | Rescaled, interpolated random walk |
 | Cramér–Wold | vector convergence tested against all linear functionals |
+
+
+
+
 
 ## Further Reading
 

@@ -9,7 +9,7 @@ The linear functionals on the exterior powers are the **alternating forms**, and
 
 Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $M$, $N$, $P$ are $R$-modules; over a commutative ring left and right modules coincide, so no side is specified. The field is written $K$, and $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The determinant is defined over an arbitrary commutative ring, and the place where a field, a characteristic assumption, or the invertibility of $2$ is needed is flagged; in particular the sign-based expansions below require no division, while the Pfaffian and the identification of alternating with skew-symmetric forms require care in characteristic $2$. No physics is invoked.
 
-The companion articles *Symplectic Forms and Poisson Brackets* and *Differential Forms and Stokes' Theorem* continue from here; the latter is being written in parallel with this one.
+The companion articlesandcontinue from here; the latter is with this one.
 
 ## Induced Maps and Minors
 
@@ -161,7 +161,7 @@ $$
 
 ### The Prototype of Differential Forms
 
-The algebraic data above are the pointwise model of the differential calculus. On a smooth manifold $M$ one forms the cotangent bundle $T^*M$ and, for each $k$, the bundle $\Lambda^k T^*M$; a **differential $k$-form** is a smooth section of that bundle, and the space of sections $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ is the module of $k$-forms. The wedge product of forms and the pullback of forms along a smooth map are obtained by applying the constructions of this section fibrewise. The exterior derivative, a degree-one derivation $d : \Omega^k(M) \to \Omega^{k+1}(M)$ with $d^2 = 0$, is the further structure that the smooth setting supplies; it is the subject of the companion article *Differential Forms and Stokes' Theorem*, being written in parallel with this one. The determinant reappears there as the change-of-variables factor in the integration of a top-degree form.
+The algebraic data above are the pointwise model of the differential calculus. On a smooth manifold $M$ one forms the cotangent bundle $T^*M$ , for each $k$, the bundle $\Lambda^k T^*M$; a **differential $k$-form** is a smooth section of that bundle, and the space of sections $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ is the module of $k$-forms. The wedge product of forms and the pullback of forms along a smooth map are obtained by applying the constructions of this section fibrewise. The exterior derivative, a degree-one derivation $d: \Omega^k(M) \to \Omega^{k+1}(M)$ with $d^2 = 0$, is the further structure that the smooth setting supplies; it is the subject of with this one. The determinant reappears there as the change-of-variables factor in the integration of a top-degree form.
 
 ## The Cauchy–Binet Formula
 
@@ -207,13 +207,13 @@ $$
 \omega(x, y) = x^{\mathsf{T}} \Omega\, y.
 $$
 
-Such a form is the matrix object studied in *Symplectic Forms and Poisson Brackets*. When $m = 2n$ is even and $\Omega$ is alternating and invertible, its determinant is a square, $\det(\Omega) = \operatorname{Pf}(\Omega)^2$, where the **Pfaffian** $\operatorname{Pf}(\Omega)$ is the polynomial
+Such a form is the matrix object studied. When $m = 2n$ is even and $\Omega$ is alternating and invertible, its determinant is a square, $\det(\Omega) = \operatorname{Pf}(\Omega)^2$, where the **Pfaffian** $\operatorname{Pf}(\Omega)$ is the polynomial
 
 $$
 \operatorname{Pf}(\Omega) = \frac{1}{2^n n!} \sum_{\sigma \in S_{2n}} \operatorname{sgn}(\sigma) \prod_{i=1}^{n} \Omega_{\sigma(2i-1), \sigma(2i)}.
 $$
 
-The Pfaffian and its relation to the symplectic form are treated in *Symplectic Forms and Poisson Brackets*. Over a ring in which $2^n n!$ is invertible, for instance a $\mathbb{Q}$-algebra or a field of characteristic zero, the displayed formula is directly available; the summand is in fact divisible by $2^n n!$ in $\mathbb{Z}[\Omega_{ij}]$, so the Pfaffian is an integral polynomial and is defined over every commutative ring. The identity $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ holds over every commutative ring because both sides are integral polynomials and the identity holds over $\mathbb{Q}$.
+The Pfaffian and its relation to the symplectic form are treated. Over a ring in which $2^n n!$ is invertible, for instance a $\mathbb{Q}$-algebra or a field of characteristic zero, the displayed formula is directly available; the summand is in fact divisible by $2^n n!$ in $\mathbb{Z}[\Omega_{ij}]$, so the Pfaffian is an integral polynomial and is defined over every commutative ring. The identity $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ holds over every commutative ring because both sides are integral polynomials and the identity holds over $\mathbb{Q}$.
 
 ## Summary
 
@@ -250,6 +250,8 @@ The alternating forms of degree $n$ are the linear functionals on $\Lambda^n M$,
 | $\Omega = (\omega_{ij})$ | Matrix of an alternating $2$-form, $\Omega^{\mathsf{T}} = -\Omega$ |
 | $\operatorname{Pf}(\Omega)$ | Pfaffian of an alternating matrix of even size; $\det(\Omega) = \operatorname{Pf}(\Omega)^2$ |
 | $\Omega^k(M) = \Gamma(\Lambda^k T^*M)$ | Module of differential $k$-forms on a smooth manifold |
+
+
 
 ## Further Reading
 

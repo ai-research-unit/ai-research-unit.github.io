@@ -7,7 +7,7 @@ Over a non-Archimedean field the naive notion of an analytic function fails in a
 
 This article develops the affine theory — the Tate algebra, affinoid algebras, the Weierstrass theorems and the maximum modulus principle — then the rigid topology, the affinoid subdomains and Tate's acyclicity theorem, then rigid spaces, coherent sheaves and Kiehl's theorems, and finally the GAGA principle and the relation to formal models. It is the first of the articles of this Part devoted to the geometry of a valued field, and it is deliberately written as geometry: the valuation theory that the constructions use is that of *Absolute Values, Valuations and Completions* and of *Local Fields*, and the reader is referred to those articles rather than given a re-derivation. The non-Archimedean *analysis* — power series on domains, analytic continuation, the theory of the integral and of differential equations over a valued field — belongs to Part III, where the limit and the measure are available; only the algebraic and topological content of the rings of convergent series is used here.
 
-Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute value $\lvert \cdot \rvert$, valuation ring $\mathcal{O} = \{x : \lvert x \rvert \leq 1\}$, maximal ideal $\mathfrak{m}$ and residue field $k = \mathcal{O}/\mathfrak{m}$, as in *Local Fields*; for the geometric statements $K$ is assumed algebraically closed, so that the points of the spectra below are $K$-valued, and the general case is recovered by allowing points with values in finite extensions of $K$. Multi-indices are written $\alpha = (\alpha_1, \dots, \alpha_n) \in \mathbb{N}^n$ and $X^\alpha = X_1^{\alpha_1}\cdots X_n^{\alpha_n}$. A **$K$-Banach algebra** is a $K$-algebra complete for a submultiplicative norm (standard); the general topological- and Banach-algebra theory is developed later in this Part, in *Topological Algebras and Banach Algebras*.
+Throughout, $K$ is a complete non-Archimedean field with a nontrivial absolute value $\lvert \cdot \rvert$, valuation ring $\mathcal{O} = \{x: \lvert x \rvert \leq 1\}$, maximal ideal $\mathfrak{m}$ and residue field $k = \mathcal{O}/\mathfrak{m}$, as in *Local Fields*; for the geometric statements $K$ is assumed algebraically closed, so that the points of the spectra below are $K$-valued, and the general case is recovered by allowing points with values in finite extensions of $K$. Multi-indices are written $\alpha = (\alpha_1, \dots, \alpha_n) \in \mathbb{N}^n$ and $X^\alpha = X_1^{\alpha_1}\cdots X_n^{\alpha_n}$. A **$K$-Banach algebra** is a $K$-algebra complete for a submultiplicative norm (standard); the general topological- and Banach-algebra theory is developed.
 
 ---
 
@@ -222,9 +222,9 @@ and for projective $X$ the analytification functor is fully faithful, $\operator
 
 **Theorem (Raynaud).** Let $R$ be the valuation ring of $K$, viewed as a formal scheme with the $\mathfrak{m}$-adic topology, and write $\mathfrak{X}$ for a formal $R$-scheme of finite type. Then the category of quasi-compact and quasi-separated rigid analytic spaces over $K$ is equivalent to the category of formal $R$-schemes of finite type localised at the admissible blow-ups: the rigid space is the **generic fibre** $\mathfrak{X}_K$ of the formal scheme, and two formal schemes with the same generic fibre differ by an admissible blow-up.
 
-**Proof.** Raynaud's theorem identifies a rigid space with its formal model and shows that the passage to the generic fibre is a localisation; the proof proceeds by constructing a formal model from an admissible affinoid covering and checking that admissible blow-ups do not change the generic fibre. It is quoted here as the standard comparison; the theory of formal schemes itself is the subject of *Formal Schemes* later in this Part, where the completion and the $I$-adic topology of *Topological Rings and Fields* supply the foundations. $\square$
+**Pro.** Raynaud's theorem identifies a rigid space with its formal model and shows that the passage to the generic fibre is a localisation; the proof proceeds by constructing a formal model from an admissible affinoid covering and checking that admissible blow-ups do not change the generic fibre. It is quoted here as the standard comparison; the theory of formal schemes itself is the subject, where the completion and the $I$-adic topology of *Topological Rings and Fields* supply the foundations. $\square$
 
-**Remark.** Raynaud's theorem explains why the rigid topology is the natural one: the admissible blow-ups of a formal model are the formal counterpart of the admissible coverings of the rigid space. The Berkovich approach to the same geometry, which replaces the Grothendieck topology by an honest topological space of seminorms, is treated in *Berkovich Spaces* later in this Part; the adic approach that unifies both is the subject of *Adic Spaces*.
+**Remark.** Raynaud's theorem explains why the rigid topology is the natural one: the admissible blow-ups of a formal model are the formal counterpart of the admissible coverings of the rigid space. The Berkovich approach to the same geometry, which replaces the Grothendieck topology by an honest topological space of seminorms, is treated; the adic approach that unifies both is not covered here.
 
 ---
 
@@ -234,7 +234,7 @@ Tate's **rigid analytic geometry** is the geometry of a complete non-Archimedean
 
 The rigid structure on $\operatorname{Sp} A$ is a **Grothendieck topology**: the admissible opens are the finite unions of rational subdomains, the admissible covers satisfy the Tate condition, and the affinoid subdomains — Weierstrass, Laurent and rational domains — are the basic pieces. **Tate's acyclicity theorem** says that the structure presheaf is a sheaf on this site and that the higher cohomology of the structure sheaf vanishes on affinoids. A **rigid analytic space** is a G-ringed space locally isomorphic to an affinoid space; the closed disc, the rigid affine line as the increasing union of its discs, the open disc, the annuli and the rigid projective line are the standard examples. **Kiehl's theorem** identifies coherent sheaves on an affinoid with finitely generated modules and gives their acyclicity, and **GAGA** identifies the coherent sheaves on the analytification of a projective variety with the algebraic ones.
 
-The constructions above are geometric: they use the valuation only through the norm and the residue field, and the valuation theory is that of *Absolute Values, Valuations and Completions* and *Local Fields*. The non-Archimedean analysis on the resulting spaces, the theory of the integral and of differential equations, belongs to Part III; the formal models of rigid spaces are treated in *Formal Schemes*, the seminorm-theoretic approach in *Berkovich Spaces*, and the unified theory in *Adic Spaces*.
+The constructions above are geometric: they use the valuation only through the norm and the residue field, and the valuation theory is that of *Absolute Values, Valuations and Completions* and *Local Fields*. The non-Archimedean analysis on the resulting spaces, the theory of the integral and of differential equations, belongs to Part III; the formal models of rigid spaces are treated elsewhere, as are the seminorm-theoretic approach and the unified theory.
 
 ## Summary of Notation
 
@@ -259,6 +259,10 @@ The constructions above are geometric: they use the valuation only through the n
 | $X^{\mathrm{an}}$ | Analytification of an algebraic variety |
 | $\operatorname{Coh}(X)$ | The category of coherent sheaves on $X$ |
 | $\mathfrak{X}$, $\mathfrak{X}_K$ | A formal $R$-model and its generic fibre (Raynaud) |
+
+
+
+
 
 ## Further Reading
 

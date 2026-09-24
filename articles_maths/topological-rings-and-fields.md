@@ -2,9 +2,9 @@
 
 ## Introduction
 
-A topological ring is a ring equipped with a topology in which addition, negation and multiplication are continuous; a topological field additionally has inversion continuous on the nonzero elements. The theory is the meeting point of algebra and topology: it makes sense of limits of algebraic operations, of completeness of a ring, and of the passage from a ring to a larger one in which certain limits exist, the **completion**. The two families of examples that matter most are the $I$-adic topologies of commutative algebra, where a descending chain of ideals $I^n$ supplies neighbourhoods of $0$, and the topologies induced by absolute values and valuations, whose completions are the subjects of *Absolute Values, Valuations and Completions*.
+A topological ring is a ring equipped with a topology in which addition, negation and multiplication are continuous; a topological field additionally has inversion continuous on the nonzero elements. The theory is the meeting point of algebra and topology: it makes sense of limits of algebraic operations, of completeness of a ring, and of the passage from a ring to a larger one in which certain limits exist, the **completion**. The two families of examples that matter most are the $I$-adic topologies of commutative algebra, where a descending chain of ideals $I^n$ supplies neighbourhoods of $0$, and the topologies induced by absolute values and valuations, whose completions are not covered here.
 
-This article develops topological rings and fields in the generality needed for the corpus, defines the $I$-adic topology, states the Krull intersection theorem that decides when that topology is Hausdorff, and constructs the $I$-adic completion as an inverse limit of quotients. The metric and valued completions, together with the $p$-adic fields, are the subject of the following article; here they appear only as examples.
+This article develops topological rings and fields in the generality needed for the corpus, defines the $I$-adic topology, states the Krull intersection theorem that decides when that topology is Hausdorff, and constructs the $I$-adic completion as an inverse limit of quotients. The metric and valued completions, together with the $p$-adic fields, are not covered here; here they appear only as examples.
 
 Throughout, $R$ is a commutative ring with $1 \neq 0$, the topology on a topological ring is assumed to make the additive group a topological group, and Cauchy sequences are used rather than filters unless a statement is cleaner in the filter language. Ideals and quotients are from *Rings*, and the $I$-adic ideals $I^n$ are from the same source.
 
@@ -103,7 +103,7 @@ is continuous, where $F^\times$ carries the subspace topology. A **topological f
 | any field | discrete | yes | yes |
 | any field | indiscrete | no if $F \neq 0$ | yes |
 
-**Remark.** The $p$-adic field $\mathbb{Q}_p$ and the field of formal Laurent series $k((t))$ are topological fields whose topologies are neither order topologies nor metric topologies in the naive sense; both are completions, the second of $k(t)$ and the first of $\mathbb{Q}$, and both are treated in *Absolute Values, Valuations and Completions*.
+**Remark.** The $p$-adic field $\mathbb{Q}_p$ and the field of formal Laurent series $k((t))$ are topological fields whose topologies are neither order topologies nor metric topologies in the naive sense; both are completions, the second of $k(t)$ and the first of $\mathbb{Q}$, and both are treated.
 
 ---
 
@@ -219,9 +219,9 @@ $$
 
 the ring of formal power series. Its fraction field is the field $k((t))$ of formal Laurent series, obtained by adjoining $t^{-1}$, and $k((t))$ is the completion of $k(t)$ for the $t$-adic valuation.
 
-**Example (the reals).** The completion of $\mathbb{Q}$ for the usual absolute value is $\mathbb{R}$; this completion is not $I$-adic, because $\mathbb{Q}$ is a field and has no proper nonzero ideal, and it is constructed from the metric instead. That construction, and the corresponding construction of $\mathbb{Q}_p$, belongs to *Absolute Values, Valuations and Completions* and to *The Real Numbers*.
+**Example (the reals).** The completion of $\mathbb{Q}$ for the usual absolute value is $\mathbb{R}$; this completion is not $I$-adic, because $\mathbb{Q}$ is a field and has no proper nonzero ideal, and it is constructed from the metric instead. That construction, and the corresponding construction of $\mathbb{Q}_p$, belongs and to *The Real Numbers*.
 
-**Remark.** The three completions of $\mathbb{Q}$ by the absolute values of *Absolute Values, Valuations and Completions* are $\mathbb{R}$ (the usual absolute value) and $\mathbb{Q}_p$ for each prime $p$ (the $p$-adic absolute values); the fields $\mathbb{Q}_p$ are exactly the completions of $\mathbb{Q}$ that arise from the $(p)$-adic topology on the subring $\mathbb{Z}_{(p)}$ of *Localization and the Fraction Field*.
+**Remark.** The three completions of $\mathbb{Q}$ by the absolute values are $\mathbb{R}$ (the usual absolute value) and $\mathbb{Q}_p$ for each prime $p$ (the $p$-adic absolute values); the fields $\mathbb{Q}_p$ are exactly the completions of $\mathbb{Q}$ that arise from the $(p)$-adic topology on the subring $\mathbb{Z}_{(p)}$ of *Localization and the Fraction Field*.
 
 ---
 
@@ -264,6 +264,10 @@ For an ideal $I$ of a ring $R$ the $I$-adic topology has the powers $I^n$ as a f
 | $k((t))$ | Formal Laurent series field |
 | $\mathbb{Q}_p$ | $p$-adic numbers, fraction field of $\mathbb{Z}_p$ |
 | $\mathbb{R}$ | Metric completion of $\mathbb{Q}$ |
+
+
+
+
 
 ## Further Reading
 

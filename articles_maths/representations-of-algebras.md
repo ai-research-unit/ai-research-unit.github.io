@@ -60,7 +60,7 @@ The lemma is proved in *Automorphisms of Modules over an Algebra* and is the rea
 - Two irreducible representations are isomorphic if and only if there is a nonzero intertwining operator between them.
 - If $F$ is algebraically closed and $V$ is finite-dimensional, then $D=F$. Indeed $D$ is a finite-dimensional division algebra over the algebraically closed field $F$, and the only such is $F$ itself.
 
-The second statement is the reason that over $\mathbb{C}$ every irreducible representation of a finite-dimensional algebra or a finite group has scalar commutant, and its failure over $\mathbb{R}$ and over other fields is exactly where real and arithmetic phenomena enter; the specialisations are the subject of the companion articles *Complex Representations*, *Real Representations* and *Quaternion Representations*.
+The second statement is the reason that over $\mathbb{C}$ every irreducible representation of a finite-dimensional algebra or a finite group has scalar commutant, and its failure over $\mathbb{R}$ and over other fields is exactly where real and arithmetic phenomena enter; the specialisations are not treated here.
 
 ## Density and the Double Centralizer
 
@@ -138,7 +138,7 @@ $$
 
 The contrast between the last two is the contrast of *Automorphisms of Modules over an Algebra*: the defining representation is rigid, with only scalar intertwining operators, while the regular representation carries the full general linear group. For a general algebra $A$ the module theory of $M_n(A)$ is the module theory of $A$, since $A$ and $M_n(A)$ are Morita equivalent by *Morita Equivalence*, with the defining module of $M_n(A)$ playing the role of the regular module of $A$.
 
-For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the theorem applies with $n=2$, $F=\mathbb{C}$: the unique irreducible representation is $S=\mathbb{C}^2$, every representation is a direct sum of copies of $S$, and $\mathbb{B}\cong S\oplus S$. This is the structural statement underlying *The Defining Module of the Biquaternion Algebra* and *Quaternionic and Biquaternionic Modules*.
+For the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$, the theorem applies with $n=2$, $F=\mathbb{C}$: the unique irreducible representation is $S=\mathbb{C}^2$, every representation is a direct sum of copies of $S$, and $\mathbb{B}\cong S\oplus S$. This is the structural statement underlying.
 
 ## The Structure of Group Algebras
 
@@ -223,7 +223,7 @@ The simplest illustrations are the quivers with two vertices and $n$ arrows from
 
 **(e) Group algebras.** As in §The Structure of Group Algebras: $\mathbb{C}[S_3]\cong\mathbb{C}\oplus\mathbb{C}\oplus M_2(\mathbb{C})$ has three irreducible representations of dimensions $1,1,2$ with $1+1+4=6$; $\mathbb{C}[Q_8]\cong\mathbb{C}^4\oplus M_2(\mathbb{C})$ has five irreducible representations of dimensions $1,1,1,1,2$ with sum of squares $8$. Over $\mathbb{R}$ the two-dimensional factor for $Q_8$ is replaced by $\mathbb{H}$, so the commutant of the irreducible representation is a noncommutative division algebra and the representation is not absolutely irreducible.
 
-**(f) The biquaternion algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has the single irreducible representation $S=\mathbb{C}^2$ with commutant $\mathbb{C}$, and $\mathbb{B}\cong S\oplus S$. Every finite-dimensional representation is isomorphic to $S^{\oplus k}$ for a unique $k \geq 0$, so its complex dimension is $2k$; such a module is free if and only if $k$ is even, equivalently if and only if its complex dimension is divisible by four. This is developed in *Quaternionic and Biquaternionic Modules*.
+**(f) The biquaternion algebra.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}\cong M_2(\mathbb{C})$ has the single irreducible representation $S=\mathbb{C}^2$ with commutant $\mathbb{C}$, and $\mathbb{B}\cong S\oplus S$. Every finite-dimensional representation is isomorphic to $S^{\oplus k}$ for a unique $k \geq 0$, so its complex dimension is $2k$; such a module is free if and only if $k$ is even, equivalently if and only if its complex dimension is divisible by four. This is developed.
 
 ## Summary
 
@@ -260,6 +260,8 @@ The structure of group algebras is the principal specialisation: over a field wh
 | $A_n,D_n,E_6,E_7,E_8$ | Dynkin diagrams of finite representation type |
 | $\mathbb{H}$, $\mathbb{B}$ | quaternions, biquaternions |
 | $S=\mathbb{C}^2$ | irreducible representation of $\mathbb{B}\cong M_2(\mathbb{C})$ |
+
+
 
 ## Further Reading
 

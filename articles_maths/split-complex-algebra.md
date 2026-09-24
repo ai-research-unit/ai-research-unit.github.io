@@ -4,7 +4,7 @@
 
 This article introduces the split complex algebra as an algebraic structure. The goal is to define the algebra precisely, establish its basic properties, and describe the distinguished real vector subspaces that arise from the natural conjugations.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically, and its identification with the light cone is left for a later article.
+The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. The idempotent decomposition is defined algebraically, and its identification with the light cone is not covered here.
 
 ## The Split Complex Numbers
 
@@ -362,6 +362,8 @@ which is the indefinite form, not the Euclidean one. The Euclidean inner product
 | $\mathbb{R}_{\mathbb{D}}$ | Real subspace, fixed-point set of $\bar{\cdot}$ |
 | $j \mathbb{R}_{\mathbb{D}}$ | Imaginary subspace, $-1$ eigenspace of $\bar{\cdot}$ |
 | $\mathbb{D} e_+, \mathbb{D} e_-$ | Idempotent ideals |
+
+
 
 ## Further Reading
 

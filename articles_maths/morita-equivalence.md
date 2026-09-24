@@ -5,7 +5,7 @@
 
 Two algebras have the same module theory when their categories of modules are equivalent, even if the algebras themselves are not isomorphic. This is Morita equivalence, and it is the guiding equivalence relation of the category *Linear spaces over Algebras*: it says which differences between algebras are invisible to the modules, and therefore which constructions of representation theory can depend only on the module category. The fundamental example is already visible in the preceding articles — a matrix algebra $M_n(A)$ has exactly the same modules as $A$, with the defining module of $M_n(A)$ playing the role of the regular module of $A$ — and the purpose of this article is to make that observation into a theorem, to isolate the invariant that governs it, and to identify what Morita equivalence does and does not preserve.
 
-The conventions are those of *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ and $B$ are unital associative $R$-algebras, modules are left modules unless stated, and ${}_A P_B$ denotes an $(A,B)$-bimodule. The tensor product over an algebra is the balanced product of the companion article *The Balanced Product over an Algebra*, and the change-of-rings functors used below are those of the companion article *Change of Rings*. Schur's lemma, semisimple modules and the Wedderburn–Artin theorem are used from *Simple and Semisimple Modules*.
+The conventions are those of *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ and $B$ are unital associative $R$-algebras, modules are left modules unless stated, and ${}_A P_B$ denotes an $(A,B)$-bimodule. The tensor product over an algebra is the balanced product , and the change-of-rings functors used below are those . Schur's lemma, semisimple modules and the Wedderburn–Artin theorem are used from *Simple and Semisimple Modules*.
 
 The plan is to define equivalence of module categories, prove that matrix algebras are Morita equivalent to their ground algebra, characterize the equivalence in terms of finitely generated projective generators, and then separate the invariants from the non-invariants. The last two sections treat the two standard applications: group algebras, where Morita equivalence classifies semisimple group algebras by their basic algebra and organizes the modular theory by blocks; and central simple algebras, where Morita equivalence classes are precisely the elements of the Brauer group.
 
@@ -29,7 +29,7 @@ Since an equivalence preserves every categorical notion, Morita equivalent algeb
 
 **Proposition.** $A$ and $M_n(A)$ are Morita equivalent for every $n \geq 1$.
 
-This is proved below as the fundamental example. It shows, in particular, that $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent; since the biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, the module theory of the biquaternion algebra is the module theory of the complex field, a statement used repeatedly in *The Defining Module of the Biquaternion Algebra* and *Quaternionic and Biquaternionic Modules*.
+This is proved below as the fundamental example. It shows, in particular, that $\mathbb{C}$ and $M_2(\mathbb{C})$ are Morita equivalent; since the biquaternion algebra is $\mathbb{B}\cong M_2(\mathbb{C})$, the module theory of the biquaternion algebra is the module theory of the complex field, a statement used repeatedly .
 
 ## The Fundamental Example: Matrix Algebras
 
@@ -43,7 +43,7 @@ $$
 
 given on objects by $M \mapsto P \otimes_A M = A^n \otimes_A M$, is an equivalence of categories.
 
-*Proof.* First, $A^n \otimes_A M \cong M^n$ naturally in $M$, by the isomorphism $(a_1,\dots,a_n)\otimes m \mapsto (a_1 m,\dots,a_n m)$ of *The Balanced Product over an Algebra*; so on objects $\Phi(M)=M^n$, the direct sum of $n$ copies of $M$. The $M_n(A)$-action is the evident one, matrices acting on the columns of $M^n$.
+*Pro.* First, $A^n \otimes_A M \cong M^n$ naturally in $M$, by the isomorphism $(a_1,\dots,a_n)\otimes m \mapsto (a_1 m,\dots,a_n m)$; so on objects $\Phi(M)=M^n$, the direct sum of $n$ copies of $M$. The $M_n(A)$-action is the evident one, matrices acting on the columns of $M^n$.
 
 The functor $\Phi$ has a right adjoint, namely
 
@@ -51,7 +51,7 @@ $$
 \Psi = \operatorname{Hom}_{M_n(A)}(P,-) : \operatorname{Mod}(M_n(A)) \longrightarrow \operatorname{Mod}(A),
 $$
 
-by the tensor–hom adjunction of *Change of Rings*, applied to the bimodule ${}_{M_n(A)}P_A$. We show that the unit and counit of the adjunction are isomorphisms. For $M \in \operatorname{Mod}(A)$ the unit is the natural map
+by the tensor–hom adjunction, applied to the bimodule ${}_{M_n(A)}P_A$. We show that the unit and counit of the adjunction are isomorphisms. For $M \in \operatorname{Mod}(A)$ the unit is the natural map
 
 $$
 M \longrightarrow \operatorname{Hom}_{M_n(A)}(A^n, M^n), \qquad m \longmapsto \bigl(u \mapsto (u_1 m,\dots,u_n m)\bigr),
@@ -162,13 +162,13 @@ $$
 P \otimes_B - : \operatorname{Mod}(B) \to \operatorname{Mod}(A), \qquad \operatorname{Hom}_A(P,-) : \operatorname{Mod}(A) \to \operatorname{Mod}(B)
 $$
 
-are quasi-inverse, and the bimodule $P$ is an **invertible bimodule**: there is a $(B,A)$-bimodule $Q$ with $P\otimes_B Q\cong A$ as $(A,A)$-bimodules and $Q\otimes_A P\cong B$ as $(B,B)$-bimodules, namely $Q=\operatorname{Hom}_A(P,A)$. The tensor product of bimodules, developed in *The Balanced Product over an Algebra*, is the composition of the corresponding functors, so the statement that $P$ is invertible is the statement that the two functors are quasi-inverse. The Picard group $\operatorname{Pic}(A)$ consists of the isomorphism classes of invertible $(A,A)$-bimodules, with product $[M][N]=[M\otimes_A N]$ and identity $[A]$; by the Eilenberg–Watts theorem these are the auto-equivalences of $\operatorname{Mod}(A)$ implemented by bimodules. The full group of auto-equivalences of $\operatorname{Mod}(A)$ up to natural isomorphism is the semidirect product $\operatorname{Pic}(A)\rtimes\operatorname{Out}(A)$, in which an automorphism of $A$ twists the left action on an invertible bimodule and $\operatorname{Out}(A)=\operatorname{Aut}(A)/\operatorname{Inn}(A)$; equivalently, the inner automorphisms of $A$ act trivially on the module category, and only the outer ones are visible there.
+are quasi-inverse, and the bimodule $P$ is an **invertible bimodule**: there is a $(B,A)$-bimodule $Q$ with $P\otimes_B Q\cong A$ as $(A,A)$-bimodules and $Q\otimes_A P\cong B$ as $(B,B)$-bimodules, namely $Q=\operatorname{Hom}_A(P,A)$. The tensor product of bimodules, developed, is the composition of the corresponding functors, so the statement that $P$ is invertible is the statement that the two functors are quasi-inverse. The Picard group $\operatorname{Pic}(A)$ consists of the isomorphism classes of invertible $(A,A)$-bimodules, with product $[M][N]=[M\otimes_A N]$ and identity $[A]$; by the Eilenberg–Watts theorem these are the auto-equivalences of $\operatorname{Mod}(A)$ implemented by bimodules. The full group of auto-equivalences of $\operatorname{Mod}(A)$ up to natural isomorphism is the semidirect product $\operatorname{Pic}(A)\rtimes\operatorname{Out}(A)$, in which an automorphism of $A$ twists the left action on an invertible bimodule and $\operatorname{Out}(A)=\operatorname{Aut}(A)/\operatorname{Inn}(A)$; equivalently, the inner automorphisms of $A$ act trivially on the module category, and only the outer ones are visible there.
 
 The tensor equivalence also explains why Morita equivalence preserves flatness, projectivity and exactness: these are properties of the functors $M\otimes_A-$ or $\operatorname{Hom}_A(M,-)$, and conjugation by an equivalence preserves them.
 
 ## Group Algebras
 
-Let $G$ be a finite group and $F$ a field. The group algebra $F[G]$ is a unital associative $F$-algebra, and $F[G]$-modules are the representations of $G$ over $F$, by the companion article *Representations of Groups*. Morita equivalence therefore compares the representation theories of groups, and the general theory applies directly.
+Let $G$ be a finite group and $F$ a field. The group algebra $F[G]$ is a unital associative $F$-algebra, and $F[G]$-modules are the representations of $G$ over $F$, . Morita equivalence therefore compares the representation theories of groups, and the general theory applies directly.
 
 ### The semisimple case
 
@@ -283,6 +283,8 @@ Morita equivalence is the equivalence relation on algebras generated by having e
 | $\operatorname{Br}(F)$ | Brauer group of $F$ |
 | $\mathbb{H}$, $\mathbb{B}$ | quaternions, biquaternions |
 | $\operatorname{Pic}(A)$ | Picard group of invertible bimodules |
+
+
 
 ## Further Reading
 

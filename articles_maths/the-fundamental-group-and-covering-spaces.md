@@ -5,7 +5,7 @@
 
 A topological space is a set with a distance, or with the open sets that a distance generates; the invariants of the space studied in this article are built from *maps of the interval into it*. Two such maps are identified when one can be deformed into the other through maps with the same endpoints, and the resulting equivalence classes of loops, composed by concatenation, form a group — the **fundamental group**. This is the first algebraic invariant of a space in the corpus, and it is the paradigm of the whole of algebraic topology: a space is replaced by an algebraic object, a continuous map is replaced by a homomorphism, and a question about spaces becomes a question about groups.
 
-The companion article *Topological Spaces* supplies the general topology: open and closed sets, continuity, subspaces, the product and quotient topologies, compactness and connectedness. The companion article *Metric, Uniform and Complete Spaces* supplies the distance, and it is from there that the closed unit interval $I$ and the Euclidean spaces $\mathbb{R}^n$ are taken. The present article uses nothing beyond these, and in particular it introduces no measure and no integral: the whole of the theory is a theory of continuous maps of the interval and the square. Where a later article needs a smooth or a measure-theoretic statement, the deferral is stated at the point where it occurs.
+The companion article *Topological Spaces* supplies the general topology: open and closed sets, continuity, subspaces, the product and quotient topologies, compactness and connectedness. The companion article *Metric, Uniform and Complete Spaces* supplies the distance, and it is from there that the closed unit interval $I$ and the Euclidean spaces $\mathbb{R}^n$ are taken. The present article uses nothing beyond these, and in particular it introduces no measure and no integral: the whole of the theory is a theory of continuous maps of the interval and the square. Where another article needs a smooth or a measure-theoretic statement, the deferral is stated at the point where it occurs.
 
 The article has four parts. The first defines homotopy, the fundamental group and its functorial behaviour, computes $\pi_1(S^1)$, and proves van Kampen's theorem. The second develops covering spaces: the path and homotopy lifting properties, the correspondence between connected coverings of a space and subgroups of its fundamental group, and deck transformations. The third records the universal cover and the classification of the connected coverings of a locally simply connected space. The fourth collects the standard examples and the computations that the rest of the corpus uses, and records where the results pass to a smoother or a more general setting.
 
@@ -97,7 +97,7 @@ and the assignments $X \mapsto \pi_1(X,x_0)$, $f \mapsto f_*$ are functorial: $(
 
 *Proof.* Let $g$ be a homotopy inverse. Then $g_* f_* = (g f)_* = (\mathrm{id})_* = \mathrm{id}$ because a homotopy $gf \simeq \mathrm{id}_X$ relative to $x_0$ produces the equality of induced maps by transporting a loop through the homotopy. Symmetrically $f_* g_* = \mathrm{id}$. The second statement is the same argument applied to a homotopy from $f$ to $g$ that is constant on the basepoint at every time. $\square$
 
-**Remark.** The fundamental group is therefore a functor from the homotopy category of based spaces to groups, and it is the first of a family; the higher homotopy groups, the homology and the cohomology groups of the following articles of this category are its siblings, and the same functoriality statements hold for each.
+**Remark.** The fundamental group is therefore a functor from the homotopy category of based spaces to groups, and it is the first of a family; the higher homotopy groups, the homology and the cohomology groups of this category are its siblings, and the same functoriality statements hold for each.
 
 ### The Fundamental Group of the Circle
 
@@ -241,7 +241,7 @@ $$
 
 *Proof.* The projections induce a homomorphism to the product and the two inclusions a homomorphism from it, and the two composites are the identity by the explicit formulas $F(s) = (f_1(s), f_2(s))$. $\square$
 
-**Corollary.** A retract $A$ of $X$ has $\pi_1(A,x_0)$ a subgroup of $\pi_1(X,x_0)$ with the inclusion and retraction exhibiting the inclusion as injective on $\pi_1$. Consequently $S^1$ is not a retract of $D^2$, since the identity map on $\mathbb{Z}$ would factor through the trivial group; this is the two-dimensional **Brouwer fixed point theorem**, whose full statement and the degree theory behind it belong to the companion article *Degree Theory and the Brouwer Fixed Point Theorem*, written in this same batch.
+**Corollary.** A retract $A$ of $X$ has $\pi_1(A,x_0)$ a subgroup of $\pi_1(X,x_0)$ with the inclusion and retraction exhibiting the inclusion as injective on $\pi_1$. Consequently $S^1$ is not a retract of $D^2$, since the identity map on $\mathbb{Z}$ would factor through the trivial group; this is the two-dimensional **Brouwer fixed point theorem**, whose full statement and the degree theory behind it are not treated here.
 
 ## Summary
 
@@ -271,6 +271,10 @@ A covering space is a map that is locally a disjoint union of homeomorphisms ont
 | $\mathbb{RP}^n$ | Real projective space |
 | $A \ast B$, $F_n$ | Free product of groups; free group on $n$ generators |
 | $\omega(s) = e^{2\pi i s}$ | Standard generator of $\pi_1(S^1,1)$ |
+
+
+
+
 
 ## Further Reading
 

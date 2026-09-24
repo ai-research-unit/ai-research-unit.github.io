@@ -5,11 +5,11 @@
 
 A finite-dimensional algebra over a field is **Frobenius** when it carries a linear functional whose associated pairing with the product is non-degenerate, or equivalently when the algebra is isomorphic, as a module over itself, to its own linear dual. The condition is a duality condition on the algebra, and it is the abstract form of the statement that an algebra has a trace: the trace of a matrix algebra, the coefficient of the identity in a group algebra, and the coefficient of the top power in a truncated polynomial algebra are all instances of a single construction. Frobenius algebras are the algebras over which the regular module is injective as well as projective, and they are the class of algebras on which the duality theory of the symmetric algebra and of the homology of a manifold is modelled.
 
-The article is the first of the representation-theoretic layer of the category. It follows the structure-theoretic articles *Central Simple Algebras and the Brauer Group*, *Crossed Products* and *Separable Algebras*, and it prepares the ground for *Hopf Algebras*, where the existence of an integral is exactly the Frobenius condition, and for *Koszul Duality*, where the Frobenius property of the algebra makes its dual a coalgebra. The two central objects of the article are the Frobenius functional and its Nakayama automorphism; the symmetric algebras are the case in which the automorphism is the identity, and that is where the comparison with *The Symmetric Algebra* is made.
+The article is the first of the representation-theoretic layer of the category. It follows the structure-theoretic articles *Central Simple Algebras and the Brauer Group*, *Crossed Products* and *Separable Algebras*, and it prepares the ground, where the existence of an integral is exactly the Frobenius condition, where the Frobenius property of the algebra makes its dual a coalgebra. The two central objects of the article are the Frobenius functional and its Nakayama automorphism; the symmetric algebras are the case in which the automorphism is the identity, and that is where the comparison is made.
 
 The article is algebraic. The language of a non-degenerate pairing is used only as a device for expressing a duality between an algebra and its dual; the theory of bilinear and quadratic forms — symmetry and skew-symmetry as a classification, diagonalisation, orthogonal groups, and the geometric reading of a pairing — belongs to Part II, and the topological Poincaré duality that a Frobenius algebra models belongs there as well. Everything asserted here is an isomorphism of modules or an identity between elements.
 
-Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra, and $A^* = \operatorname{Hom}_k(A,k)$ is its linear dual. We write $A^{\mathrm{op}}$ for the opposite algebra and $\operatorname{soc}(A)$ for the socle of the regular module, as in *Simple and Semisimple Modules*.
+Throughout, $k$ is a field, $A$ is a finite-dimensional unital associative $k$-algebra, and $A^* = \operatorname{Hom}_k(A,k)$ is its linear dual. We write $A^{\mathrm{op}}$ for the opposite algebra and $\operatorname{soc}(A)$ for the socle of the regular module.
 
 ## The Frobenius Functional
 
@@ -122,7 +122,7 @@ and summing over $i$ gives $\lambda\bigl(\sum_i a\,a_i\,a^i\bigr) = \sum_i c_{ii
 
 ### Examples
 
-**Example (matrix algebras).** $A = M_n(k)$ with $\lambda = \operatorname{Tr}$, the matrix trace. The pairing $(X,Y)\mapsto\operatorname{Tr}(XY)$ is non-degenerate because the trace form is non-degenerate on $M_n(k)$, as in *Matrix Algebras*; and $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$, so $M_n(k)$ is symmetric. The Casimir element is $\sum_{i,j}E_{ij}\otimes E_{ji}$.
+**Example (matrix algebras).** $A = M_n(k)$ with $\lambda = \operatorname{Tr}$, the matrix trace. The pairing $(X,Y)\mapsto\operatorname{Tr}(XY)$ is non-degenerate because the trace form is non-degenerate on $M_n(k)$; and $\operatorname{Tr}(XY) = \operatorname{Tr}(YX)$, so $M_n(k)$ is symmetric. The Casimir element is $\sum_{i,j}E_{ij}\otimes E_{ji}$.
 
 **Example (truncated polynomial algebras).** $A = k[x]/(x^n)$ with basis $1, x, \dots, x^{n-1}$ and $\lambda$ the coefficient of $x^{n-1}$. Then $\lambda(x^ix^j) \neq 0$ exactly when $i+j=n-1$, and $\lambda(x^ix^j) = \lambda(x^jx^i)$, so $A$ is symmetric. The Casimir element is $\sum_{i=0}^{n-1} x^i \otimes x^{n-1-i}$, and $A$ is a local Frobenius algebra with socle spanned by $x^{n-1}$, the unique simple module being $k$.
 
@@ -134,9 +134,9 @@ $$
 \nu(u) = (-1)^{\deg u}\,u ,
 $$
 
-which is the algebra automorphism of *The Exterior Algebra*; it is not inner, because the odd part generates $\Lambda(V)$ as an algebra and a unit conjugating an odd element to its negative would have to be a scalar, while the scalars act trivially. The exterior algebra in an even number of variables is therefore the basic example of a Frobenius algebra whose Nakayama automorphism is not inner, and its sign rule is the Koszul sign rule.
+which is the algebra automorphism; it is not inner, because the odd part generates $\Lambda(V)$ as an algebra and a unit conjugating an odd element to its negative would have to be a scalar, while the scalars act trivially. The exterior algebra in an even number of variables is therefore the basic example of a Frobenius algebra whose Nakayama automorphism is not inner, and its sign rule is the Koszul sign rule.
 
-**Example (semisimple algebras).** Every finite-dimensional semisimple $k$-algebra is symmetric Frobenius. If $A = \prod_i M_{n_i}(D_i)$ with the $D_i$ division algebras, take $\lambda$ to be the sum of the reduced traces of the components; each reduced trace satisfies $\operatorname{Trd}(xy) = \operatorname{Trd}(yx)$ and is non-degenerate, so their sum is a symmetric Frobenius functional. Hence *Simple and Semisimple Modules* describes a subclass of the Frobenius algebras, and the Frobenius condition is the weakening of semisimplicity that keeps the duality of the regular module but drops complete reducibility.
+**Example (semisimple algebras).** Every finite-dimensional semisimple $k$-algebra is symmetric Frobenius. If $A = \prod_i M_{n_i}(D_i)$ with the $D_i$ division algebras, take $\lambda$ to be the sum of the reduced traces of the components; each reduced trace satisfies $\operatorname{Trd}(xy) = \operatorname{Trd}(yx)$ and is non-degenerate, so their sum is a symmetric Frobenius functional. Hencedescribes a subclass of the Frobenius algebras, and the Frobenius condition is the weakening of semisimplicity that keeps the duality of the regular module but drops complete reducibility.
 
 ## The Dual and the Coalgebra Structure
 
@@ -170,7 +170,7 @@ $$
 \Delta(ab) = \sum_i ab\,a_i\otimes a^i
 $$
 
-and the twist by $\nu$ is what makes the two sides agree. The Frobenius algebra is thus simultaneously an algebra and a coalgebra; when the two structures are compatible as in *Hopf Algebras*, the result is a Hopf algebra, and this is one route to the theorem that a finite-dimensional Hopf algebra is Frobenius.
+and the twist by $\nu$ is what makes the two sides agree. The Frobenius algebra is thus simultaneously an algebra and a coalgebra; when the two structures are compatible, the result is a Hopf algebra, and this is one route to the theorem that a finite-dimensional Hopf algebra is Frobenius.
 
 ## Constructions
 
@@ -185,11 +185,11 @@ If $A$ and $B$ are symmetric then so are $A\times B$ and $A\otimes_k B$. The Nak
 
 **Theorem (finite-dimensional Hopf algebras are Frobenius, standard).** Every finite-dimensional Hopf algebra over a field is a Frobenius algebra; more precisely, it possesses a nonzero left integral and a nonzero right integral, and the space of left integrals is one-dimensional.
 
-The theorem belongs to *Hopf Algebras*; it is recorded here as the structural reason the representation theory of a finite-dimensional Hopf algebra has the same duality as that of a Frobenius algebra. The same statement with "Hopf algebra" replaced by "finite-dimensional $k$-algebra with an augmentation and a comultiplication" is false, so both structures are needed.
+The theorem belongs; it is recorded here as the structural reason the representation theory of a finite-dimensional Hopf algebra has the same duality as that of a Frobenius algebra. The same statement with "Hopf algebra" replaced by "finite-dimensional $k$-algebra with an augmentation and a comultiplication" is false, so both structures are needed.
 
 ## Frobenius Algebras and the Symmetric Algebra
 
-The Frobenius condition is a finiteness condition, and it is not satisfied by the polynomial algebra. For $A = k[x_1,\dots,x_n]$ there is no nonzero linear functional vanishing on no nonzero ideal on both sides, and indeed the regular module is not injective; the symmetric algebra $\operatorname{Sym}(V)$ of *The Symmetric Algebra* is not a Frobenius algebra unless it is finite-dimensional, which for a nonzero $V$ never happens. What is true is that the **finite-dimensional quotients** of the symmetric algebra by sufficiently many relations are Frobenius, and they are the standard examples.
+The Frobenius condition is a finiteness condition, and it is not satisfied by the polynomial algebra. For $A = k[x_1,\dots,x_n]$ there is no nonzero linear functional vanishing on no nonzero ideal on both sides, and indeed the regular module is not injective; the symmetric algebra $\operatorname{Sym}(V)$ is not a Frobenius algebra unless it is finite-dimensional, which for a nonzero $V$ never happens. What is true is that the **finite-dimensional quotients** of the symmetric algebra by sufficiently many relations are Frobenius, and they are the standard examples.
 
 **Theorem (complete intersections, standard).** Let $f_1,\dots,f_n \in k[x_1,\dots,x_n]$ be a regular sequence and let $A = k[x_1,\dots,x_n]/(f_1,\dots,f_n)$. Then $A$ is a Frobenius algebra, and it is a symmetric Frobenius algebra when the sequence is a regular sequence of homogeneous polynomials. In the hypersurface case $n = 1$ and $A = k[x]/(f)$ with $\deg f = m$, the Frobenius functional is the coefficient of $x^{m-1}$, and $A$ is symmetric.
 
@@ -201,7 +201,7 @@ The connection with the symmetric algebra is that $k[x_1,\dots,x_n]/(f_1,\dots,f
 
 A finite-dimensional $k$-algebra $A$ is **Frobenius** when it carries a linear functional $\lambda$ whose associated pairing $(a,b) \mapsto \lambda(ab)$ is non-degenerate; equivalently $A \cong A^*$ as left (or right) $A$-modules, equivalently the regular module is injective. The **Nakayama automorphism** $\nu$ of $(A,\lambda)$ is defined by $\lambda(ab) = \lambda(b\nu(a))$, it is an algebra automorphism, and it is determined up to inner automorphisms. The algebra is **symmetric** when $\nu = \mathrm{id}$, that is, when $\lambda(ab) = \lambda(ba)$, and then $\lambda$ is a trace; matrix algebras with the trace, group algebras with the coefficient functional, truncated polynomial algebras $k[x]/(x^n)$, and all finite-dimensional semisimple algebras are symmetric, while the exterior algebra $\Lambda(V)$ is Frobenius with Nakayama automorphism the parity automorphism when $\dim V$ is even. Frobenius algebras are self-injective and quasi-Frobenius, so projectivity and injectivity of modules coincide over them; the **Casimir element** $C = \sum_i a_i\otimes a^i$ built from a basis and its $\lambda$-dual satisfies $\mu(C)=1$ and is invariant under the twisted diagonal action, and its contraction with an element gives the trace of left multiplication.
 
-A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication the transpose of the multiplication transported across $A \cong A^*$ and counit $\lambda$; the Nakayama automorphism measures the twist needed to make the two structures compatible, and this is the point of departure for *Hopf Algebras*, where the existence of an integral makes every finite-dimensional Hopf algebra Frobenius. The Frobenius property is closed under products and tensor products, and the finite-dimensional quotients of the symmetric algebra by a regular sequence are Frobenius complete intersections, with the hypersurface $k[x]/(f)$ as the basic example; the symmetric algebra itself is not Frobenius because it is infinite-dimensional. The topological statement that a Frobenius algebra models, Poincaré duality, and the form theory that a non-degenerate pairing evokes belong to Part II.
+A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication the transpose of the multiplication transported across $A \cong A^*$ and counit $\lambda$; the Nakayama automorphism measures the twist needed to make the two structures compatible, and this is the point of departure, where the existence of an integral makes every finite-dimensional Hopf algebra Frobenius. The Frobenius property is closed under products and tensor products, and the finite-dimensional quotients of the symmetric algebra by a regular sequence are Frobenius complete intersections, with the hypersurface $k[x]/(f)$ as the basic example; the symmetric algebra itself is not Frobenius because it is infinite-dimensional. The topological statement that a Frobenius algebra models, Poincaré duality, and the form theory that a non-degenerate pairing evokes belong to Part II.
 
 ## Summary of Notation
 
@@ -223,6 +223,10 @@ A Frobenius algebra is at once an algebra and a coalgebra, with comultiplication
 | $\operatorname{Tr}$, $\operatorname{Trd}$ | matrix trace, reduced trace |
 | $M_n(k)$, $k[G]$, $k[x]/(x^n)$, $\Lambda(V)$ | standard Frobenius examples |
 | $k[x_1,\dots,x_n]/(f_1,\dots,f_n)$ | complete intersection, Frobenius for a regular sequence |
+
+
+
+
 
 ## Further Reading
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-A topological space remembers which sets are open, and nothing more; the real line has more structure than that, because distances between points can be compared. This article develops the two layers that sit between topology and analysis: **metric spaces**, where a distance function is given, and **uniform spaces**, where only the family of entourages — the relations "closer than $\epsilon$" — is remembered. The distinction matters because the notions the corpus needs most are not topological. Cauchy sequences, completeness, uniform continuity and uniform convergence are properties of a metric or of a uniformity, and a homeomorphism can destroy all of them: the open interval $(0, 1)$ is homeomorphic to $\mathbb{R}$ but is not complete, and the map $x \mapsto 1/x$ is a homeomorphism of $(0, 1)$ onto $(1, \infty)$ that is not uniformly continuous. The uniform structure is exactly what survives, and it is the structure a topological group carries, which is why the completion of a topological group is a construction in uniform spaces rather than in topological spaces. This article is the second of the three preparation articles for *Topological Groups*, written in parallel; the last chapter, **Baire category**, supplies the counting arguments that measure theory and functional analysis use.
+A topological space remembers which sets are open, and nothing more; the real line has more structure than , because distances between points can be compared. This article develops the two layers that sit between topology and analysis: **metric spaces**, where a distance function is given, and **uniform spaces**, where only the family of entourages — the relations "closer than $\epsilon$" — is remembered. The distinction matters because the notions the corpus needs most are not topological. Cauchy sequences, completeness, uniform continuity and uniform convergence are properties of a metric or of a uniformity, and a homeomorphism can destroy all of them: the open interval $(0, 1)$ is homeomorphic to $\mathbb{R}$ but is not complete, and the map $x \mapsto 1/x$ is a homeomorphism of $(0, 1)$ onto $(1, \infty)$ that is not uniformly continuous. The uniform structure is exactly what survives, and it is the structure a topological group carries, which is why the completion of a topological group is a construction in uniform spaces rather than in topological spaces. This article is the second of the three preparation articles; the last chapter, **Baire category**, supplies the counting arguments that measure theory and functional analysis use.
 
-Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields; the metric examples are mostly $\mathbb{R}$, $\mathbb{C}$ and their powers, and $\mathbb{K}$ means $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The topological background — open and closed sets, continuity, products and quotients, nets and filters, compactness — is that of *Topological Spaces*, written in parallel, and the concrete theory of the real line is in *Real Analysis*. No physics is invoked.
+Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields; the metric examples are mostly $\mathbb{R}$, $\mathbb{C}$ and their powers, and $\mathbb{K}$ means $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The topological background — open and closed sets, continuity, products and quotients, nets and filters, compactness — is assumed, and the concrete theory of the real line likewise. No physics is invoked.
 
 ## Metric Spaces
 
@@ -23,7 +23,7 @@ The pair $(X, d)$ is a **metric space**; the last condition is the **triangle in
 
 **Theorem.** The metric topology is a topology, and it is Hausdorff, first countable, normal and metrisable by construction. A set $U$ is open exactly when for every $x \in U$ there is $r > 0$ with $B(x, r) \subseteq U$.
 
-**Proof.** The empty union gives $\emptyset$ and $X = \bigcup_{x} B(x, 1)$; arbitrary unions of balls are open by definition, and if $U, V$ are open and $x \in U \cap V$ choose $r_1, r_2$ with $B(x, r_i)$ inside the respective set; then $B(x, \min(r_1, r_2)) \subseteq U \cap V$. Hausdorffness uses $d(x, y) > 0$ and the balls of radius $d(x,y)/2$; first countability uses the rational radii; normality is shown in *Topological Spaces*. $\square$
+**Pro.** The empty union gives $\emptyset$ and $X = \bigcup_{x} B(x, 1)$; arbitrary unions of balls are open by definition, and if $U, V$ are open and $x \in U \cap V$ choose $r_1, r_2$ with $B(x, r_i)$ inside the respective set; then $B(x, \min(r_1, r_2)) \subseteq U \cap V$. Hausdorffness uses $d(x, y) > 0$ and the balls of radius $d(x,y)/2$; first countability uses the rational radii; normality is shown. $\square$
 
 **Example (Euclidean spaces).** On $\mathbb{K}^n$ the **Euclidean metric** is $d(x, y) = \left(\sum_{i=1}^n |x_i - y_i|^2\right)^{1/2}$, and the **sup metric** $d_\infty(x, y) = \max_i |x_i - y_i|$ induces the same topology; both are special cases of the $\ell^p$ metrics for $1 \leq p \leq \infty$.
 
@@ -113,7 +113,7 @@ by induction on $n$, since integrating the $k$-th term of $f_n$ produces the $(k
 
 **Theorem.** $\mathbb{K}^n$ with the Euclidean metric is complete. More generally, a finite product of complete metric spaces, with any of the standard product metrics, is complete.
 
-**Proof.** A Cauchy sequence in $\mathbb{K}^n$ has Cauchy coordinate sequences, since each coordinate difference is bounded by the norm of the difference. By completeness of $\mathbb{K}$ (*Real Analysis*), each coordinate converges, and the coordinatewise limit is the limit of the sequence because finitely many coordinates are involved. $\square$
+**Pro.** A Cauchy sequence in $\mathbb{K}^n$ has Cauchy coordinate sequences, since each coordinate difference is bounded by the norm of the difference. By completeness of $\mathbb{K}$ , each coordinate converges, and the coordinatewise limit is the limit of the sequence because finitely many coordinates are involved. $\square$
 
 **Example.** $\mathbb{R}^n$ is complete; so is every closed subset of it. The rationals $\mathbb{Q}$ with $|x - y|$ are not complete, the sequence of decimal truncations of $\sqrt{2}$ being Cauchy without a rational limit; nor is $(0, 1)$, nor $\mathbb{Q}$ with the $p$-adic metric, whose completion is $\mathbb{Q}_p$.
 
@@ -183,7 +183,7 @@ The axioms (U1)–(U3) hold, and the uniform topology is the metric topology. Tw
 
 **Example (subspaces and products).** The subspace uniformity on $A \subseteq X$ has entourages $E \cap (A \times A)$; the product uniformity on $\prod_i X_i$ has a base of the sets $\{(x, y) : (x_i, y_i) \in E_i \text{ for all } i\}$ over finite sets of coordinates. Both induce the corresponding topological constructions, and both make the canonical maps uniformly continuous.
 
-**Remark.** Every topological group carries two natural uniform structures, the left and the right uniformity generated by the neighbourhoods of the identity; the group topology is recovered from either, and the group is complete exactly when either uniform structure is complete. The two agree exactly when every neighbourhood of the identity contains a conjugation-invariant neighbourhood, a condition stronger than unimodularity: a locally compact group with such a neighbourhood base is unimodular, while the Heisenberg group is unimodular and its two uniformities nevertheless differ. The details are in *Topological Groups*, written in parallel. A uniformity is thus not an optional refinement: it is the structure a topological group actually has.
+**Remark.** Every topological group carries two natural uniform structures, the left and the right uniformity generated by the neighbourhoods of the identity; the group topology is recovered from either, and the group is complete exactly when either uniform structure is complete. The two agree exactly when every neighbourhood of the identity contains a conjugation-invariant neighbourhood, a condition stronger than unimodularity: a locally compact group with such a neighbourhood base is unimodular, while the Heisenberg group is unimodular and its two uniformities nevertheless differ. The details are. A uniformity is thus not an optional refinement: it is the structure a topological group actually has.
 
 ## Uniform Convergence
 
@@ -290,6 +290,8 @@ Uniform convergence is convergence in the sup metric; it preserves continuity an
 | $f_n \to f$ uniformly | Convergence in the sup metric |
 | nowhere dense, meagre | $\operatorname{int}\overline{A} = \emptyset$; countable union of nowhere dense sets |
 | Baire space | Countable intersection of dense open sets is dense |
+
+
 
 ## Further Reading
 

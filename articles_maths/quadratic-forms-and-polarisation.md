@@ -7,7 +7,7 @@ A **quadratic form** is a scalar-valued function of one vector that is homogeneo
 
 The passage between a quadratic form and a symmetric bilinear form is a bijection when $2$ is invertible in the base ring, and it is a genuine obstruction when $2$ is not; the first half treats the correspondence and the last section measures its failure.
 
-The base is a commutative ring $R$, and the bilinear vocabulary is that of *Bilinear Forms*: a bilinear form $B$, its Gram matrix $G$, the radical $\operatorname{rad}(B)$, and non-degeneracy as an isomorphism $M \to M^*$. We write $B$ for the symmetric bilinear form associated with a quadratic form $q$, so that $q(v) = B(v, v)$; this fixes the convention in which the fundamental relation of the Clifford algebra reads $uv + vu = 2B(u, v)$, as in *The Clifford Algebra*. The number systems and the companion articles on tensor and exterior constructions are used only for the examples.
+The base is a commutative ring $R$, and the bilinear vocabulary is that of *Bilinear Forms*: a bilinear form $B$, its Gram matrix $G$, the radical $\operatorname{rad}(B)$, and non-degeneracy as an isomorphism $M \to M^*$. We write $B$ for the symmetric bilinear form associated with a quadratic form $q$, so that $q(v) = B(v, v)$; this fixes the convention in which the fundamental relation of the Clifford algebra reads $uv + vu = 2B(u, v)$. The number systems and the companion articles on tensor and exterior constructions are used only for the examples.
 
 ## Quadratic Forms
 
@@ -107,7 +107,7 @@ $$
 
 is a quadratic form, and its polar form has Gram matrix $\operatorname{diag}(a_1, \ldots, a_n)$.
 
-**Example (the norm forms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically in *Quadratic Forms over Algebras and Norm Forms*.
+**Example (the norm forms).** The norm $N(z) = z\bar{z}$ on the complex numbers is the quadratic form $a^2 + b^2$ on $\mathbb{R}^2$; its polar form is the Euclidean inner product. The norm $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ on the quaternions is the form $x_0^2 + x_1^2 + x_2^2 + x_3^2$ on $\mathbb{R}^4$. These are the standard examples of positive-definite forms and are treated systematically.
 
 **Example (the hyperbolic plane).** On $R^2$ the form
 
@@ -195,7 +195,7 @@ $$
 b(u, u) = \sum_{i < j} a_{ij}(u_i u_j + u_j u_i) = 0
 $$
 
-in characteristic two; hence by the even-rank theorem of *Bilinear Forms* a non-degenerate quadratic form over $\mathbb{F}_2$ has even dimension, and the same rank of $b$ is shared by all quadratic forms of that dimension. The finer invariant that separates them is the **Arf invariant**, and the classification in characteristic two, together with the failure of Witt cancellation there, is carried out in *Witt's Theorems*.
+in characteristic two; hence by the even-rank theorem of *Bilinear Forms* a non-degenerate quadratic form over $\mathbb{F}_2$ has even dimension, and the same rank of $b$ is shared by all quadratic forms of that dimension. The finer invariant that separates them is the **Arf invariant**, and the classification in characteristic two, together with the failure of Witt cancellation there, is carried out.
 
 ## Diagonalisation
 
@@ -253,7 +253,7 @@ $$
 q'(Tx) = q(x) \qquad (x \in M).
 $$
 
-When $2$ is invertible this is equivalent to $B'(Tx, Ty) = B(x, y)$ for all $x, y$, by the polarisation identities. The forms are **isometric**, written $q \cong q'$, when such a $T$ exists, and an isometry of $(M, q)$ with itself is an **isometry of the form**, an element of the orthogonal group $\operatorname{O}(M, q)$ of *Isometries and Orthogonal Transformations*.
+When $2$ is invertible this is equivalent to $B'(Tx, Ty) = B(x, y)$ for all $x, y$, by the polarisation identities. The forms are **isometric**, written $q \cong q'$, when such a $T$ exists, and an isometry of $(M, q)$ with itself is an **isometry of the form**, an element of the orthogonal group $\operatorname{O}(M, q)$.
 
 **Proposition.** Isometry of forms is an equivalence relation; the identity is an isometry, the inverse of an isometry is an isometry, and a composite of isometries is an isometry. Isometric forms have conjugate isometry groups.
 
@@ -287,7 +287,7 @@ and for real forms the indices and the nullity add, so $\sigma(q \perp q') = \si
 
 **Proof.** The map $(x, x') \mapsto (x', x)$ is an isometry $q \perp q' \to q' \perp q$, and $(M \oplus M') \oplus M'' \to M \oplus (M' \oplus M'')$ is an isometry for the two bracketings; the radical statement is the vanishing of $B(x,y) + B'(x',y')$ for all $y, y'$, which forces $x \in \operatorname{rad}(q)$ and $x' \in \operatorname{rad}(q')$. The Gram matrix of $q \perp q'$ in the union of orthogonal bases is block diagonal, so it is diagonalisable and the rank and discriminant are as claimed; for the indices, diagonalising both real forms gives a diagonal basis of the sum whose positive, negative and zero entries are the combined entries of the two forms, and by Sylvester's law below the index of a real form is the number of positive entries of any diagonal basis, so the indices and the nullity add. $\square$
 
-**Example.** With the diagonal notation, $\langle a \rangle \perp \langle b \rangle \cong \langle a, b\rangle$, and the hyperbolic plane of the example above is $\langle 1 \rangle \perp \langle -1\rangle$, written $\langle 1, -1\rangle$; it is the smallest non-degenerate isotropic real form, and it is the elementary block of the Witt theory of *Witt's Theorems*.
+**Example.** With the diagonal notation, $\langle a \rangle \perp \langle b \rangle \cong \langle a, b\rangle$, and the hyperbolic plane of the example above is $\langle 1 \rangle \perp \langle -1\rangle$, written $\langle 1, -1\rangle$; it is the smallest non-degenerate isotropic real form, and it is the elementary block of the Witt theory.
 
 ## Sylvester's Law of Inertia
 
@@ -311,7 +311,7 @@ $$
 \sigma(q) = p - r.
 $$
 
-Orthogonal direct sums add signatures, positive indices, negative indices and nullities; these facts are used in *The Witt Group and the Grothendieck–Witt Ring*.
+Orthogonal direct sums add signatures, positive indices, negative indices and nullities; these facts are used.
 
 **Example.** On $\mathbb{R}^3$ the form $q(x, y, z) = x^2 + y^2 - z^2$ has signature $1$, indices $p = 2$, $r = 1$, and nullity $0$. It is non-degenerate and indefinite. The form $x^2 + y^2$ on $\mathbb{R}^3$ has $p = 2$, $r = 0$, $z = 1$, signature $2$, and is degenerate.
 
@@ -335,17 +335,17 @@ A real form is **positive definite** if $q(v) > 0$ for all $v \neq 0$, **negativ
 - $q$ is negative definite if and only if $r = n$, equivalently $\sigma(q) = -n$;
 - $q$ is indefinite if and only if $p, r > 0$.
 
-The positive definite forms are exactly the inner products of Euclidean geometry; the existence of a positive definite form on a real space is the algebraic content of the choice of a Euclidean structure, and the orthogonal group of such a form is the compact orthogonal group treated in *Isometries and Orthogonal Transformations*.
+The positive definite forms are exactly the inner products of Euclidean geometry; the existence of a positive definite form on a real space is the algebraic content of the choice of a Euclidean structure, and the orthogonal group of such a form is the compact orthogonal group treated.
 
 ### Isotropic Vectors and Anisotropy
 
-**Definition.** A nonzero vector $v$ with $q(v) = 0$ is **isotropic**, and $q$ is **isotropic** if such a vector exists. A form with no isotropic vector is **anisotropic**. The set of isotropic vectors, projectivised, is the **quadric** of $q$, treated in *Quadratic Forms over Algebras and Norm Forms*.
+**Definition.** A nonzero vector $v$ with $q(v) = 0$ is **isotropic**, and $q$ is **isotropic** if such a vector exists. A form with no isotropic vector is **anisotropic**. The set of isotropic vectors, projectivised, is the **quadric** of $q$, treated.
 
 **Proposition.** A non-degenerate real form with $p, r > 0$ is isotropic, and a non-degenerate real form with $r = 0$ or $p = 0$ is anisotropic. A non-degenerate complex form of dimension at least $2$ is isotropic.
 
 **Proof.** If $p, r > 0$ choose $u$ with $q(u) = 1$ in the positive part and $w$ with $q(w) = -1$ in the negative part; then $q(u + w) = 1 - 1 = 0$ and $u + w \neq 0$. If $r = 0$ then $q$ is positive definite and vanishes only at $0$. For a complex form of dimension at least $2$, in a diagonal basis $a_1 x_1^2 + a_2 x_2^2$ with all $a_i \neq 0$, the vector with $x_1^2 = -a_2/a_1$, $x_2 = 1$ is isotropic. $\square$
 
-The hyperbolic plane $q(x, y) = x^2 - y^2$ is the smallest isotropic non-degenerate real form. Its role as the elementary building block of Witt theory is the subject of *Witt's Theorems*.
+The hyperbolic plane $q(x, y) = x^2 - y^2$ is the smallest isotropic non-degenerate real form. Its role as the elementary building block of Witt theory is not covered here.
 
 ## Summary
 
@@ -390,6 +390,10 @@ Over $\mathbb{R}$ every form has a unique normal form $p\langle 1\rangle \perp r
 | $\operatorname{rank}(q) = p + r$ | Rank of a real form |
 | $\mathbb{R}, \mathbb{C}$ | Real and complex numbers |
 | $\mathbb{H}$ | Quaternions |
+
+
+
+
 
 ## Further Reading
 

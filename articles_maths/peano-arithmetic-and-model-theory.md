@@ -5,7 +5,7 @@
 
 This is the second article of the Natural Numbers system in Part IV, and it occupies the **algebra slot** of that system in its model-theoretic aspect. The system is the structure $\mathbb{N}$ of the previous article, read now through a first-order language, and the object of study is the theory **PA** of Peano arithmetic together with the class of its models. The subject is therefore *model-theoretic* rather than synthetic: the question is not how to define addition and multiplication — that was done in *The Natural Numbers* — but which first-order sentences hold of them, which structures satisfy those sentences, and how far the nonstandard models depart from $\mathbb{N}$.
 
-The general theory of languages, satisfaction, compactness, elementary equivalence, elementary extensions and the Löwenheim–Skolem theorems is the subject of Part I's *Model Theory*, and is used here rather than developed. The proof-theoretic results — the incompleteness theorems, the arithmetical hierarchy, the undefinability of truth — belong to *Proof Theory and Type Theory* and *Formal Logic and Computability*, and are cited. The computability of the arithmetic functions is treated in the companion article *Computability Theory*, being written in parallel, and is not used here. The synthetic construction of $\mathbb{N}$ and the recursion and induction principles are from *The Natural Numbers*.
+The general theory of languages, satisfaction, compactness, elementary equivalence, elementary extensions and the Löwenheim–Skolem theorems is the subject of Part I's *Model Theory*, and is used here rather than developed. The proof-theoretic results — the incompleteness theorems, the arithmetical hierarchy, the undefinability of truth — belong to *Proof Theory and Type Theory* and *Formal Logic and Computability*, and are cited. The computability of the arithmetic functions is treated elsewhere and is not used here. The synthetic construction of $\mathbb{N}$ and the recursion and induction principles are from *The Natural Numbers*.
 
 Throughout, the language of arithmetic is $\mathcal{L}_A = \{0, S, +, \cdot, <\}$, with $0$ a constant, $S$ a unary function symbol, $+$ and $\cdot$ binary function symbols and $<$ a binary relation symbol, all interpreted on $\mathbb{N}$ in the evident way. The structure $\mathbb{N} = (\mathbb{N}, 0, S, +, \cdot, <)$ is the **standard model**, PA is the first-order theory displayed below, Q is Robinson arithmetic, and $\operatorname{Th}(\mathbb{N})$ is the set of sentences true in the standard model. A model of PA is written $\mathcal{M}$, its domain $M$, and its standard part is the initial segment isomorphic to $\mathbb{N}$.
 
@@ -142,7 +142,7 @@ which is a $\Pi_1$ sentence.
 
 **Proof.** The multiplicative structure of $\mathbb{N}$ is the free commutative monoid on the primes of *The Natural Numbers*, and its first-order theory is decidable; the result is Skolem's and is quoted. $\square$
 
-**Remark.** The contrast between the decidability of Presburger and Skolem arithmetic and the undecidability of PA is the model-theoretic expression of the fact that induction over an arbitrary formula is what makes PA strong. Presburger arithmetic has quantifier elimination because the definable sets are eventually periodic; PA cannot have it, because the definable sets are the arithmetical sets, and Tarski's theorem shows that truth is not among them. The real analogue is the quantifier elimination of real closed fields, which makes the theory of $(\mathbb{R}, +, \cdot, <)$ decidable, and this is the model-theoretic theme taken up in *O-Minimality*.
+**Remark.** The contrast between the decidability of Presburger and Skolem arithmetic and the undecidability of PA is the model-theoretic expression of the fact that induction over an arbitrary formula is what makes PA strong. Presburger arithmetic has quantifier elimination because the definable sets are eventually periodic; PA cannot have it, because the definable sets are the arithmetical sets, and Tarski's theorem shows that truth is not among them. The real analogue is the quantifier elimination of real closed fields, which makes the theory of $(\mathbb{R}, +, \cdot, <)$ decidable, and this is the model-theoretic theme taken up.
 
 ## Provable Totality and the Fast-Growing Hierarchy
 
@@ -189,6 +189,8 @@ Gödel's first incompleteness theorem produces, for any consistent recursively a
 | $\operatorname{Th}(\mathbb{N})$ | Set of sentences true in the standard model |
 | $\mathcal{M} \equiv \mathbb{N}$ | Elementary equivalence of models |
 | $B_a$ | $\mathbb{Z}$-block of a nonstandard element $a$ |
+
+
 
 ## Further Reading
 

@@ -7,7 +7,7 @@ Cardinality is the measure of the size of a set, taken not by counting but by ma
 
 The second subject of the article is the axiom of choice and its two great equivalents, Zorn's lemma and the well-ordering theorem. The axiom of choice asserts that every family of nonempty sets admits a function selecting one element from each; it is independent of the other axioms of set theory, it is used constantly and often invisibly, and three of the most important existence theorems of algebra — a maximal ideal in every nontrivial ring, a basis in every vector space, an algebraic closure for every field — are applications of it. The article states the axiom, proves its equivalence with Zorn's lemma and the well-ordering theorem, and catalogues the uses made of it in the corpus.
 
-The article sits fourth in the corpus, above *Sets, Functions and Relations*, *Logic and Proof* and *Order Theory and Lattices*, and uses them freely: the Schröder–Bernstein theorem is proved as an application of the Knaster–Tarski fixed-point theorem of *Order Theory and Lattices*, and the applications of Zorn's lemma are applications to the partial orders of that article. The formal axiomatisation of set theory, the ordinals and the cumulative hierarchy, transfinite induction and recursion, and the independence of the continuum hypothesis are the subject of the companion article *Set-Theoretic Foundations*, which follows this one; the present article uses the well-ordering of $\mathbb{N}$ and only so much of the theory of well-orderings as the statements of its theorems require, and defers the ordinal machinery explicitly where a proof needs it.
+The article sits fourth in the corpus, above *Sets, Functions and Relations*, *Logic and Proof* and *Order Theory and Lattices*, and uses them freely: the Schröder–Bernstein theorem is proved as an application of the Knaster–Tarski fixed-point theorem of *Order Theory and Lattices*, and the applications of Zorn's lemma are applications to the partial orders of that article. The formal axiomatisation of set theory, the ordinals and the cumulative hierarchy, transfinite induction and recursion, and the independence of the continuum hypothesis are the subject , which follows this one; the present article uses the well-ordering of $\mathbb{N}$ and only so much of the theory of well-orderings as the statements of its theorems require, and defers the ordinal machinery explicitly where a proof needs it.
 
 ## Cardinality and Equipotence
 
@@ -21,7 +21,7 @@ For finite sets this is the ordinary number of elements; for infinite sets it is
 
 **Proof.** The identity map is a bijection, so $X \cong X$. If $f : X \to Y$ is a bijection then $f^{-1} : Y \to X$ is a bijection by the results of *Sets, Functions and Relations*, so the relation is symmetric. If $f : X \to Y$ and $g : Y \to Z$ are bijections then $g \circ f : X \to Z$ is a bijection, so the relation is transitive. $\square$
 
-The **cardinals** themselves — canonical sets of each cardinality — are the initial ordinals, and they are constructed in *Set-Theoretic Foundations*. The present article uses the notations $|X|$, $|X| = |Y|$ and $|X| \leq |Y|$ as abbreviations, which is sufficient for every statement made here and avoids presupposing the ordinal machinery.
+The **cardinals** themselves — canonical sets of each cardinality — are the initial ordinals, and they are constructed. The present article uses the notations $|X|$, $|X| = |Y|$ and $|X| \leq |Y|$ as abbreviations, which is sufficient for every statement made here and avoids presupposing the ordinal machinery.
 
 **Remark.** The relation $\leq$ between cardinals is reflexive and transitive. That it is antisymmetric is the Schröder–Bernstein theorem below, and that it is total — that any two sets are comparable — is a consequence of the well-ordering theorem, hence of the axiom of choice.
 
@@ -187,11 +187,11 @@ $$
 
 where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of $\mathbb{R}$ is either countable or of the cardinality of $\mathbb{R}$.
 
-The formulation uses $\aleph_1$, whose construction as the least uncountable cardinal requires the ordinals and is given in *Set-Theoretic Foundations*. The **generalised continuum hypothesis** (GCH) asserts $2^{\aleph_\alpha} = \aleph_{\alpha+1}$ for every ordinal $\alpha$.
+The formulation uses $\aleph_1$, whose construction as the least uncountable cardinal requires the ordinals and is given. The **generalised continuum hypothesis** (GCH) asserts $2^{\aleph_\alpha} = \aleph_{\alpha+1}$ for every ordinal $\alpha$.
 
 **Theorem (Gödel; Cohen).** If the Zermelo–Fraenkel axioms with the axiom of choice are consistent, then neither CH nor its negation is provable from them.
 
-The independence of the continuum hypothesis is one of the great results of set theory. The two halves are Gödel's construction of the constructible universe, in which CH holds, and Cohen's method of forcing, which produces models in which it fails; both belong to *Set-Theoretic Foundations*, where the cumulative hierarchy and the axioms are set out, and the present article records only the statement and its consequence: cardinal arithmetic is not determined by the axioms alone.
+The independence of the continuum hypothesis is one of the great results of set theory. The two halves are Gödel's construction of the constructible universe, in which CH holds, and Cohen's method of forcing, which produces models in which it fails; both belong to the theory, where the cumulative hierarchy and the axioms are set out, and the present article records only the statement and its consequence: cardinal arithmetic is not determined by the axioms alone.
 
 ## The Axiom of Choice
 
@@ -233,7 +233,7 @@ The well-ordering is not produced by an explicit rule; it is a choice of a least
 
 **(Well-ordering $\Rightarrow$ axiom of choice).** Let $(A_i)_{i \in I}$ be a family of nonempty sets with union $U$. Well-order $U$ and define $f(i)$ to be the least element of $A_i$ in that well-ordering. Then $f$ is a choice function.
 
-**(Axiom of choice $\Rightarrow$ Zorn's lemma).** Assume AC and let $(P,\leq)$ be a nonempty poset in which every chain has an upper bound. Suppose that $P$ has no maximal element, so that for every $x \in P$ the set $U(x) = \{y \in P : x < y\}$ is nonempty. By AC there is a function $s$ with $s(x) \in U(x)$ for every $x$. Define by transfinite recursion a function $F$ on the ordinals into $P$ by $F(0) = $ any element of $P$, $F(\alpha+1) = s(F(\alpha))$, and, for a limit ordinal $\lambda$, $F(\lambda) = s(u_\lambda)$ where $u_\lambda$ is an upper bound of the chain $\{F(\beta) : \beta < \lambda\}$, which exists by hypothesis and is selected by a fixed choice function on the nonempty subsets of $P$. The construction makes $F$ strictly increasing, so $F$ is an injection from the proper class of ordinals into the set $P$, which is impossible. Hence $P$ has a maximal element. The transfinite recursion and the fact that the ordinals form a proper class are results of *Set-Theoretic Foundations*; the two implications proved above need only the language of well-orders.
+**(Axiom of choice $\Rightarrow$ Zorn's lemma).** Assume AC and let $(P,\leq)$ be a nonempty poset in which every chain has an upper bound. Suppose that $P$ has no maximal element, so that for every $x \in P$ the set $U(x) = \{y \in P: x < y\}$ is nonempty. By AC there is a function $s$ with $s(x) \in U(x)$ for every $x$. Define by transfinite recursion a function $F$ on the ordinals into $P$ by $F(0) = $ any element of $P$, $F(\alpha+1) = s(F(\alpha))$, , for a limit ordinal $\lambda$, $F(\lambda) = s(u_\lambda)$ where $u_\lambda$ is an upper bound of the chain $\{F(\beta): \beta < \lambda\}$, which exists by hypothesis and is selected by a fixed choice function on the nonempty subsets of $P$. The construction makes $F$ strictly increasing, so $F$ is an injection from the proper class of ordinals into the set $P$, which is impossible. Hence $P$ has a maximal element. The transfinite recursion and the fact that the ordinals form a proper class are results; the two implications proved above need only the language of well-orders.
 
 This completes the cycle $AC \Rightarrow \text{Zorn} \Rightarrow \text{well-ordering} \Rightarrow AC$, so the three statements are equivalent. $\square$
 
@@ -241,16 +241,16 @@ This completes the cycle $AC \Rightarrow \text{Zorn} \Rightarrow \text{well-orde
 
 The axiom of choice enters algebra through Zorn's lemma, and the corpus records the following applications, each in the article where the objects are introduced.
 
-- **Maximal ideals.** Every nonzero commutative ring has a maximal ideal; the poset is the set of proper ideals ordered by inclusion, and the union of a chain of proper ideals is a proper ideal. Treated in *Rings*.
-- **Bases of a vector space.** Every vector space has a basis, and any linearly independent set is contained in a basis; the poset is the set of linearly independent subsets ordered by inclusion. Treated in *Vector Spaces* and, over a general ring, in *Modules*.
-- **Algebraic closure.** Every field has an algebraic closure; the poset is the set of algebraic extensions ordered by inclusion. Treated in *Fields*.
+- **Maximal ideals.** Every nonzero commutative ring has a maximal ideal; the poset is the set of proper ideals ordered by inclusion, and the union of a chain of proper ideals is a proper ideal. Treated.
+- **Bases of a vector space.** Every vector space has a basis, and any linearly independent set is contained in a basis; the poset is the set of linearly independent subsets ordered by inclusion. Treated, over a general ring.
+- **Algebraic closure.** Every field has an algebraic closure; the poset is the set of algebraic extensions ordered by inclusion. Treated.
 - **Maximal filters.** Every filter on a set extends to an ultrafilter; the poset is the set of filters containing a given one, ordered by inclusion, and the union of a chain of filters is a filter. The argument is given below, since it uses only the power-set lattice of *Sets, Functions and Relations* and the order theory of *Order Theory and Lattices*.
 
 **Proposition.** Every filter on a set $X$ is contained in an ultrafilter on $X$.
 
 **Proof.** A **filter** on $X$ is a family $\mathcal{F} \subseteq \mathcal{P}(X)$ that is upward closed ($A \in \mathcal{F}$ and $A \subseteq B$ imply $B \in \mathcal{F}$), closed under finite intersections, and does not contain $\emptyset$; it is an **ultrafilter** if in addition, for every $A \subseteq X$, exactly one of $A$ and $X \setminus A$ lies in $\mathcal{F}$. Let $\mathcal{F}$ be a filter and let $P$ be the set of filters on $X$ containing $\mathcal{F}$, ordered by inclusion. $P$ is nonempty, and the union of a chain of filters is a filter: upward closure and finite intersections are inherited from the members of the chain, and $\emptyset$ is in no member. By Zorn's lemma, choose a maximal element $\mathcal{U} \in P$. If $A \subseteq X$ with neither $A$ nor $X \setminus A$ in $\mathcal{U}$, then $\mathcal{U} \cup \{A \cap B : B \in \mathcal{U}\}$ generates a strictly larger filter, since $A \cap B \neq \emptyset$ for every $B \in \mathcal{U}$ (else $X \setminus A \in \mathcal{U}$ by upward closure of $\mathcal{U}$), contradicting maximality; the case with $X \setminus A$ is symmetric. Hence $\mathcal{U}$ is an ultrafilter. $\square$
 
-The proposition is the set-theoretic form of the **ultrafilter principle**, itself equivalent to a weak form of the axiom of choice; the corpus uses it in the construction of ultraproducts in *Model Theory* and in the Stone representation of Boolean algebras in Part IV.
+The proposition is the set-theoretic form of the **ultrafilter principle**, itself equivalent to a weak form of the axiom of choice; the corpus uses it in the construction of ultraproducts and in the Stone representation of Boolean algebras in Part IV.
 
 ## Summary
 
@@ -279,6 +279,10 @@ The axiom of choice asserts the existence of choice functions on arbitrary famil
 | AC, AC$_\omega$, DC | Axiom of choice; countable choice; dependent choice |
 | Zorn's lemma | Chain-bounded nonempty poset has a maximal element |
 | $\mathcal{U}$, $\mathcal{F}$ | Ultrafilter; filter on a set |
+
+
+
+
 
 ## Further Reading
 

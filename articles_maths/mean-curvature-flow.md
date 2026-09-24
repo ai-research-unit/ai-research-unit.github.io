@@ -87,7 +87,7 @@ $$
 
 with $\kappa$ the curvature and $N$ the inward normal shrinks the curve; a circle of radius $r_0$ shrinks by $r(t)=\sqrt{r_0^2-2t}$ and becomes extinct at $t=r_0^2/2$. The flow is the one-dimensional mean curvature flow, and it is the model case in which the theory is most complete.
 
-**Theorem (Gage–Hamilton, Grayson).** Under curve shortening flow a convex embedded closed plane curve remains convex, shrinks to a point in finite time, and, after rescaling about the extinction point so that the enclosed area is constant, converges to a round circle; moreover every embedded closed plane curve becomes convex after finite time, so the conclusion holds for arbitrary embedded initial curves.
+**Theorem (Gage–Hamilton, Grayson).** Under curve shortening flow a convex embedded closed plane curve remains convex, shrinks to a point in finite time, after rescaling about the extinction point so that the enclosed area is constant, converges to a round circle; moreover every embedded closed plane curve becomes convex after finite time, so the conclusion holds for arbitrary embedded initial curves.
 
 *Proof.* Quoted as standard (Gage–Hamilton for the convex case, Grayson for the reduction to it). The convexity is preserved by the maximum principle applied to the curvature, which satisfies $\partial_t\kappa = \kappa_{ss}+\kappa^3$ in the arclength parameter $s$; the convergence to a circle uses the monotonicity of an isoperimetric ratio; the elimination of the non-convex case is a separate argument controlling the number of inflections. $\square$
 
@@ -203,6 +203,8 @@ Mean curvature flow moves a hypersurface in the direction of its normal with spe
 | $\Phi_{x_0,t_0}$ | Huisken's Gaussian area, monotone in $t$ |
 | level-set equation | $u_t=|\nabla u|\operatorname{div}(\nabla u/|\nabla u|)$ |
 | Brakke flow | Varifold weak solution of the flow |
+
+
 
 ## Further Reading
 

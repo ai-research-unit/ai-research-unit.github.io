@@ -140,7 +140,7 @@ since $\langle v, 1\rangle = x$. The displacement is proportional to the compone
 
 **Proof.** $S(s)(x + y\varepsilon) = x + (y + sx)\varepsilon$, so the real part $x$ is invariant and the infinitesimal part is translated by $sx$. If $x = 0$ the point is fixed for every $s$. If $x \neq 0$, the map $y \mapsto y + sx$ is a bijection of $\mathbb{R}$, so the orbit is the whole fibre and the stabiliser is trivial. $\square$
 
-The orbits of the shear group are therefore the fibres of the augmentation, and the fixed set is the fibre over the origin. This is the group-theoretic statement of the fact that the shear moves along the nilpotent direction: the invariant lines of the action are exactly the lines along which the integration theory of *Dual-Numbers Integration* integrates.
+The orbits of the shear group are therefore the fibres of the augmentation, and the fixed set is the fibre over the orig. This is the group-theoretic statement of the fact that the shear moves along the nilpotent direction: the invariant lines of the action are exactly the lines along which the integration theory, integrates.
 
 ## The One-Parameter Group of Shears
 
@@ -252,7 +252,7 @@ $$
 
 It is abelian, $[E,E] = 0$, and the generator is nilpotent of index two: $E \neq 0$ and $E^2 = 0$. So $\mathfrak{g}$ is a nilpotent Lie algebra of index two and $G = \exp(\mathfrak{g})$ is a **unipotent** group: every element is unipotent, of the form identity plus a nilpotent endomorphism, and the only eigenvalue of every element is $1$.
 
-Under the identification of the regular representation with the algebra, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathfrak{m}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction in *Dual-Numbers Integration*, and its nilpotence is the same $\varepsilon^2 = 0$.
+Under the identification of the regular representation with the algebra, the Lie algebra of the shear group is the line $\mathbb{R}\varepsilon = \mathfrak{m}$ inside $\mathbb{D}'$, with the trivial bracket; the generator is $\varepsilon$ itself. This is the same square-zero endomorphism that generates the fibre direction, and its nilpotence is the same $\varepsilon^2 = 0$.
 
 ### Derivations and Automorphisms
 
@@ -359,6 +359,8 @@ The **Lie algebra** of the shear group is the line $\mathfrak{g} = \mathbb{R}E =
 | $\partial_\varepsilon(a + b\varepsilon) = b\varepsilon$, matrix $\begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix}$ | Generator of $\operatorname{Der}(\mathbb{D}')$, idempotent $\partial_\varepsilon^2 = \partial_\varepsilon$ |
 | $\operatorname{Aut}(\mathbb{D}') \cong \mathbb{R}^\times$ | Unital automorphisms, $\varepsilon \mapsto c\varepsilon$ |
 | $J_\sigma = \begin{pmatrix} 0 & -\sigma \\ 1 & 0 \end{pmatrix}$, $J_\sigma^2 = -\sigma I$ | Contraction family, $J_0 = E$ |
+
+
 
 ## Further Reading
 
