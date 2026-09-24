@@ -1,0 +1,168 @@
+
+# __Gromov–Hausdorff Convergence__
+
+## Introduction
+
+Two metric spaces are close in the **Gromov–Hausdorff sense** when they can be put inside a single metric space in such a way that each lies in a small neighbourhood of the other. The idea is the intrinsic version of the Hausdorff distance between subsets of a fixed space: the subsets have to live somewhere before they can be compared, and the Gromov–Hausdorff distance removes that dependence by taking the best possible common ambient space. The result is a distance between shapes — a pseudometric on the class of compact metric spaces, and a genuine metric on the isometry classes — under which a sequence of spaces converges when the spaces become indistinguishable from the inside, whether or not they resemble one another from any fixed viewpoint. A sequence of finer and finer polygons converges to the circle; a flat torus with one very short period converges to a circle; a family of Riemannian manifolds of bounded curvature and diameter has a convergent subsequence, and its limit may be a space that is not a manifold at all.
+
+This is the convergence notion that a metric space, and only a metric space, supports, and it is the reason the article belongs to this Part. The **Gromov compactness theorem** — a family of compact metric spaces is precompact exactly when it is uniformly totally bounded — is the analogue for metric spaces of the Heine–Borel theorem, and it is enormously consequential: it is what permits the extraction of limits in Riemannian geometry under curvature bounds, and its scaling form is the basis of Gromov's theorem on the growth of finitely generated groups and of the theory of tangent cones of a metric space. Its limit objects are **metric spaces**, generally singular, and their study — the synthetic theory of curvature bounds, of length spaces and of the metric measure spaces — is the subject of *Metric Geometry*, written in parallel, and of Part III where the measure is available.
+
+This article defines the Hausdorff distance and the Gromov–Hausdorff distance, proves that the latter is a metric on isometry classes of compact metric spaces, and gives the standard realisation of the infimum inside a single ambient space by the Kuratowski embedding into $\ell^\infty$. It proves Gromov's precompactness theorem, in the form of the equivalence between precompactness and uniform total boundedness, with the diagonal construction of the limit; it computes the standard examples of convergence and of collapse, including the convergence of the flat torus with a shrinking period to a circle and of the rescaled spheres to a point and to Euclidean space; it compares the Gromov–Hausdorff distance with the Lipschitz and quasi-isometric distances; and it states the applications: the precompactness of the Riemannian manifolds with a curvature bound and a diameter bound, the Gromov polynomial-growth theorem, and the Gromov–Hausdorff tangent cone.
+
+The article assumes *Metric, Uniform and Complete Spaces* for metric spaces, the distance, balls, compactness in metric spaces, completeness, the Cauchy criterion and uniform continuity; *Topological Spaces* for compactness, the finite intersection property and sequential compactness; *Riemannian Geometry* and *Curvature and Geodesics* for the diameter, the injectivity radius, the comparison theorems and the Riemannian examples; and *Fractal Geometry*, in this batch, for the Hausdorff dimension of the limits. *Metric Geometry*, written in parallel, is the home of the length structure, the intrinsic metric, the Alexandrov curvature bounds and the synthetic theory, and the article cites it rather than developing it; *Geometric Group Theory* and *Hyperbolic Groups*, written in parallel, use quasi-isometry, which is compared with the Gromov–Hausdorff distance here and developed there. The measured Gromov–Hausdorff distance, which remembers a measure on each space, and the convergence of the spectral and heat-kernel data are Part III's, where the measure and the integral are available. No physics is invoked.
+
+## The Hausdorff Distance
+
+**Definition.** Let $(Z, d)$ be a metric space and let $A, B \subseteq Z$ be nonempty. For $\epsilon > 0$ let $B_\epsilon(A) = \{z \in Z : d(z, A) < \epsilon\}$ be the open $\epsilon$-neighbourhood. The **Hausdorff distance** between $A$ and $B$ is
+
+$$
+d_H^Z(A, B) = \inf\{\epsilon > 0 : A \subseteq B_\epsilon(B)\ \text{and}\ B \subseteq B_\epsilon(A)\} ,
+$$
+
+equivalently $d_H^Z(A,B) = \max\bigl(\sup_{a\in A}d(a,B), \sup_{b\in B}d(b,A)\bigr)$.
+
+**Proposition.** On the set of nonempty compact subsets of $Z$ the assignment $d_H^Z$ is a metric; on the set of all nonempty closed subsets it is a metric with values in $[0, \infty]$. If $Z$ is complete then so is the space of nonempty compact subsets with the Hausdorff metric, and if $Z$ is compact then so is that space.
+
+**Proof sketch.** Symmetry and the triangle inequality follow from the two equivalent definitions; $d_H^Z(A,B) = 0$ with $A, B$ closed forces $A = B$; the completeness and compactness statements are proved by extracting a diagonal subsequence from a sequence of compact sets, using total boundedness of $Z$ in the compact case. $\square$
+
+**Example.** In $\mathbb{R}$ the Hausdorff distance between the intervals $[0, a]$ and $[0, b]$ is $|a - b|$, and between the finite sets $\{0, 1, 1/2, \ldots, 1/n\}$ and $\{0\}\cup\{1/k : k\geq 1\}$ it tends to $0$; the Cantor set is the Hausdorff limit of its level-$k$ approximations. The Hausdorff distance of two sets is small when each is well approximated by the other, so it measures the shape of a set and not its cardinality or its dimension.
+
+**Theorem (the hyperspace).** If $Z$ is compact, the nonempty compact subsets of $Z$ with the Hausdorff metric form a compact metric space; this is the hyperspace $\mathcal{K}(Z)$, used in *Fractal Geometry* for the attractor of an iterated function system, where the contraction is a contraction of $\mathcal{K}(Z)$.
+
+## The Gromov–Hausdorff Distance
+
+**Definition.** Let $(X, d_X)$ and $(Y, d_Y)$ be compact metric spaces. The **Gromov–Hausdorff distance** is
+
+$$
+d_{GH}(X, Y) = \inf\Bigl\{ d_H^Z\bigl(i(X), j(Y)\bigr) : Z\ \text{a metric space},\ i : X \to Z,\ j : Y \to Z\ \text{isometric embeddings}\Bigr\},
+$$
+
+the infimum over all metric spaces $Z$ in which both $X$ and $Y$ embed isometrically and over all such embeddings.
+
+**Example.** Two points at distance $a$ and two points at distance $b$: the Gromov–Hausdorff distance is $|a - b|/2$, since the best common ambient space is a line and each pair can be translated so that the midpoints coincide. For an interval of length $L$ and a circle of circumference $L$ the distance obeys the general bound $|\operatorname{diam}X - \operatorname{diam}Y| \leq 2\,d_{GH}(X,Y)$, and $\operatorname{diam}[0,L] = L$ while $\operatorname{diam}S^1_L = L/2$, so $d_{GH}([0,L], S^1_L) \geq L/4$: the interval and the circle differ in their diameter by exactly the amount that forces a quarter of the length apart.
+
+**Theorem (the Kuratowski embedding).** Every separable metric space $(X, d)$ embeds isometrically into $\ell^\infty(X)$, the Banach space of bounded real functions on $X$ with the supremum norm, by the map
+
+$$
+\Phi : X \to \ell^\infty(X), \qquad \Phi(x) = d(x, \cdot) - d(x_0, \cdot)
+$$
+
+for a fixed base point $x_0$. Consequently the Gromov–Hausdorff distance of two compact spaces may be computed by embedding both into a single Banach space, and
+
+$$
+d_{GH}(X, Y) = \inf_{i, j} d_H^{\ell^\infty}\bigl(i(X), j(Y)\bigr)
+$$
+
+over the isometric embeddings into $\ell^\infty$.
+
+**Proof sketch.** The isometry of $\Phi$ is the triangle inequality in both directions: $|\Phi(x)(z) - \Phi(y)(z)| = |d(x,z) - d(y,z)| \leq d(x,y)$ with equality at $z = x$; the surjectivity of the infimum onto a single ambient space is a standard gluing argument, adjoining the two images along their common structure and then embedding the result. $\square$
+
+**Theorem.** On the class of compact metric spaces, $d_{GH}$ is a pseudometric: it is symmetric, vanishes on isometric spaces and satisfies the triangle inequality; it is a metric on the set of isometry classes of compact metric spaces, and the resulting metric space is complete. Moreover $d_{GH}(X, Y) = 0$ implies that $X$ and $Y$ are isometric.
+
+**Proof sketch.** Symmetry is clear and the triangle inequality follows by gluing the two common ambient spaces along the intermediate space; the vanishing of the distance gives a sequence of approximate isometries whose limit is an isometry, by a diagonal argument on a countable dense set; completeness is Gromov's theorem and is the content of the compactness theorem below. $\square$
+
+**Remark.** The Kuratowski embedding shows that the class of the common ambient spaces cannot be reduced to a single fixed one in general, because a space is only isometrically embedded in the Banach space of functions on itself; but the infimum is attained at least in the limit, and the completeness of the Gromov–Hausdorff metric means that a Cauchy sequence of compact spaces has a compact limit, constructed by a diagonal choice of dense sequences.
+
+## Convergence and Collapse
+
+**Definition.** A sequence of compact metric spaces $(X_n, d_n)$ **converges in the Gromov–Hausdorff sense** to a compact metric space $(X, d)$ if $d_{GH}(X_n, X) \to 0$. Equivalently, there are **$\epsilon_n$-approximations**: maps $f_n : X_n \to X$ with $\epsilon_n \to 0$ that are $\epsilon_n$-isometries, $|d(f_n(x), f_n(x')) - d_n(x,x')| \leq \epsilon_n$, and whose images are $\epsilon_n$-nets.
+
+**Definition.** For **pointed** proper metric spaces $(X_n, d_n, p_n)$ and $(X,d,p)$, the **pointed Gromov–Hausdorff distance** to radius $R$ is the infimum of the Hausdorff distances of the balls $B_R(p_n)$ and $B_R(p)$ over all isometric embeddings of those balls into a common space that bring $p_n$ close to $p$; the pointed spaces converge when the distance to radius $R$ tends to $0$ for every fixed $R$. Pointed convergence is the form in which unbounded spaces are compared, and it is the form used in the examples and in the definition of the tangent cone below.
+
+**Example (polygons to the circle).** Let $X_n$ be the vertices of the regular $n$-gon inscribed in the unit circle with the metric inherited from the circle. The cyclic group $\mathbb{Z}/n\mathbb{Z}$ with the quotient metric from the circle is $\epsilon_n$-close to the whole circle, with $\epsilon_n = 2\pi/n$ for the metric of the circle; hence $X_n \to S^1$ in the Gromov–Hausdorff sense. The same argument shows that the set $\{k/2^n : k = 0, \ldots, 2^n\}$ converges to the interval, and that the finite subsets of a compact space that are increasingly fine nets converge to the space.
+
+**Example (rescaled spheres).** For $R > 0$ let $S^n(R)$ be the round sphere of radius $R$. As $R \to 0$ the space $S^n(R)$ converges to a single point, since the diameter is $\pi R \to 0$. As $R \to \infty$ the pointed space $(S^n(R), p)$ converges, after rescaling to unit diameter, to the sphere again; but the pointed limit of the spaces $S^n(R)$ themselves, with a fixed base point, is $\mathbb{R}^n$, by the radial comparison with the tangent space: every fixed bounded piece of the sphere is flatter and flatter as $R$ grows, and the pointed Gromov–Hausdorff limit is the Euclidean space. The two limits are the extremes of the theory, a point and a Euclidean space, and both arise from the same family by scaling.
+
+**Example (collapse of a torus to a circle).** Let $T_\epsilon = \mathbb{R}^2/(\mathbb{Z}\times\epsilon\mathbb{Z})$ be the flat torus whose second period is $\epsilon$, with the quotient metric, and choose the base point to be the origin. For points $(x, y), (x', y')$ the distance is $\bigl(d_{\mathbb{Z}}(x,x')^2 + \epsilon^2d_{\mathbb{Z}}(y,y')^2\bigr)^{1/2}$, which tends to $d_{\mathbb{Z}}(x, x')$ as $\epsilon \to 0$. Hence $T_\epsilon$ converges in the pointed Gromov–Hausdorff sense to the circle $\mathbb{R}/\mathbb{Z}$, and the collapse is the disappearance of the short direction: the dimension drops from two to one, so the limit is not homeomorphic to the approximating spaces. This is the basic example of **collapsing**, and it shows that Gromov–Hausdorff convergence does not preserve dimension, topology or local structure.
+
+**Example (the interval as a limit of graphs).** Let $G_n$ be the metric graph obtained by subdividing a segment of length $L$ into $n$ equal edges. The natural map from the vertices of $G_n$ to the segment is an $(L/n)$-isometry onto an $(L/n)$-net, so $G_n \to [0, L]$. Graphs with cycles and increasingly fine subdivision converge to their metric realisations, and this is the way a finitely generated group is approximated by its Cayley graphs in the theorem on polynomial growth below.
+
+**Proposition (completeness without local compactness or separability).** The Gromov–Hausdorff metric on the isometry classes of compact metric spaces is complete but neither locally compact nor separable. The three-point spaces $\{a, b, c\}$ with $d(a,b) = d(a,c) = 1$ and $d(b,c) = t$ for $t \in [1,2]$ are pairwise at Gromov–Hausdorff distance at least $\tfrac12|t - t'|$, since their diameters are $t$ and $t'$ and $|\operatorname{diam}X - \operatorname{diam}Y| \leq 2\,d_{GH}(X,Y)$, so there are uncountably many pairwise equi-separated compact spaces, all at bounded distance from a single point; this family witnesses both the failure of separability and the failure of local compactness.
+
+## Gromov's Compactness Theorem
+
+**Definition.** A family $\mathcal{M}$ of compact metric spaces is **uniformly totally bounded** (or **uniformly compact**) if
+
+**(a)** the diameters are uniformly bounded: $\operatorname{diam}X \leq D$ for a constant $D$ and all $X\in\mathcal{M}$;
+
+**(b)** for every $\epsilon > 0$ there is an integer $N(\epsilon)$ such that every $X \in \mathcal{M}$ contains an $\epsilon$-net of at most $N(\epsilon)$ points, equivalently every $X \in \mathcal{M}$ has covering number $N(X, \epsilon) \leq N(\epsilon)$.
+
+**Theorem (Gromov's precompactness theorem).** A family $\mathcal{M}$ of compact metric spaces is precompact in the Gromov–Hausdorff topology — every sequence in $\mathcal{M}$ has a subsequence converging to a compact metric space — if and only if $\mathcal{M}$ is uniformly totally bounded.
+
+**Proof sketch.** For the sufficiency, let $(X_k)$ be a sequence in $\mathcal{M}$ and use the bounds to choose, for each $m$, a finite $\delta_m$-net $A_{k,m} \subseteq X_k$ of at most $N(\delta_m)$ points, with $\delta_m \to 0$. The net is a finite metric space, and a diagonal argument extracts a subsequence on which the distances between corresponding net points converge for every $m$ and every pair; the limiting distance matrices are the distance matrices of finite subsets of a limit set, and the limit space is the completion of the union of the limiting nets, embedded in $\ell^\infty$ by the Kuratowski embedding. The limit is compact because it is a uniform limit of finite $\delta_m$-nets and totally bounded, and the constructed embeddings give $d_{GH}(X_k, X)\to 0$ along the subsequence. For the necessity, if a family is not uniformly totally bounded then either the diameters are unbounded, and no subsequence can converge because the diameter is continuous for $d_{GH}$, or some $\epsilon > 0$ has spaces with arbitrarily large $\epsilon$-separated sets, and again the Hausdorff distance of two such spaces is bounded below, so no subsequence converges. $\square$
+
+**Corollary (completeness).** The class of isometry classes of compact metric spaces with the Gromov–Hausdorff distance is a complete metric space. Every Cauchy sequence is uniformly totally bounded, so the theorem supplies a convergent subsequence, and the triangle inequality forces the whole sequence to converge to the same limit.
+
+**Corollary (the diameter and the covering numbers).** If $X_n \to X$ in the Gromov–Hausdorff sense then $\operatorname{diam}X_n \to \operatorname{diam}X$, since $|\operatorname{diam}X_n - \operatorname{diam}X| \leq 2\,d_{GH}(X_n,X)$. The covering numbers are lower semicontinuous in the limit: $N(X, 2\epsilon) \leq \liminf_n N(X_n, \epsilon)$ for every $\epsilon > 0$, because a cover of $X_n$ by $N(X_n,\epsilon)$ sets of diameter $\epsilon$ is carried by an approximate isometry to a cover of an $\epsilon$-net of $X$ by sets of diameter at most $2\epsilon$.
+
+**Example (a family that is not precompact).** The family of all compact metric spaces of diameter at most $1$ is not precompact: the finite sets $\{0, 1/m, 2/m, \ldots, 1\}$ with the induced metric have $m$ points pairwise at distance at least $1/m$, so for every $\epsilon > 0$ the covering number $N(X, \epsilon)$ exceeds any bound once $m > 1/\epsilon$. The diameter bound alone does not suffice; the second condition of uniform total boundedness is what fails.
+
+## Comparison with Other Distances
+
+**Definition.** The **Lipschitz distance** between two compact metric spaces is
+
+$$
+d_L(X, Y) = \inf\bigl\{ \log\max\bigl(\mathrm{dil}(f), \mathrm{dil}(f^{-1})\bigr) \bigr\} ,
+$$
+
+the infimum over the bi-Lipschitz homeomorphisms $f : X \to Y$, where $\mathrm{dil}(f) = \sup_{x \neq x'} d(fx, fx')/d(x,x')$ is the best Lipschitz constant; the quantity is finite exactly when the two spaces are bi-Lipschitz homeomorphic, and it vanishes on isometric spaces.
+
+**Theorem.** A bi-Lipschitz homeomorphism of distortion at most $1 + \epsilon$ makes the two spaces $C\epsilon$-close in the Gromov–Hausdorff sense, where $C$ depends only on a common bound on the diameters; hence a sequence converging in the Lipschitz sense converges in the Gromov–Hausdorff sense. The converse fails: the Gromov–Hausdorff topology permits collapse and the Lipschitz topology does not. The Gromov–Hausdorff distance is the weaker of the two, and it is defined on all compact metric spaces rather than only on the bi-Lipschitz homeomorphic pairs.
+
+**Proof sketch.** The two distances are compared through the identity map of the common ambient space: a map $f$ with $d(fx,fx') \leq (1+\epsilon)d(x,x')$ moves points by at most $\epsilon\operatorname{diam}$ from a space $f(X)$ that is itself at Hausdorff distance at most $\epsilon\operatorname{diam}$ from $X$ when $f$ is onto; the details give the constant $C$. The failure of the converse is the collapse example, in which the tori are not homeomorphic to the limit circle, so no invertible map of small distortion exists. $\square$
+
+**Remark (quasi-isometry).** The **quasi-isometry** of geometric group theory is the large-scale analogue: a map $f : X \to Y$ for which $\frac{1}{C}d(x,x') - C \leq d(fx, fx') \leq C\,d(x,x') + C$ and whose image is a coarse net. Quasi-isometry is a coarsening of the Gromov–Hausdorff distance for unbounded spaces and is the right notion for the large-scale geometry of the Cayley graphs; it is the subject of *Geometric Group Theory*, written in parallel, and it is not a metric on compact spaces, where it becomes trivial.
+
+**Theorem (the Gromov–Hausdorff convergence of Riemannian manifolds).** Let $\mathcal{M}(n, D, \Lambda)$ be the class of closed Riemannian $n$-manifolds with diameter at most $D$ and Ricci curvature bounded below by $-(n-1)\Lambda$, and let $\mathcal{M}(n,D)$ be the class with $|\mathrm{Ric}| \leq (n-1)$ and diameter at most $D$. Then both classes are uniformly totally bounded, hence precompact in the Gromov–Hausdorff topology, and the limit of a sequence of such manifolds is a compact metric space, generally not a manifold.
+
+**Proof sketch.** The Bishop–Gromov volume comparison theorem of *Riemannian Geometry* bounds the volume of a ball of radius $r$ below, and the bound together with the diameter bound controls the number of points needed for an $\epsilon$-net: a maximal $\epsilon$-separated set in a manifold has pairwise disjoint balls of radius $\epsilon/2$ whose volume is controlled below, so the cardinality is bounded in terms of the volume bound and $\epsilon$. Precompactness follows by the compactness theorem. $\square$
+
+**Example (singular limits).** A sequence of smooth surfaces can converge to a metric space that is not a surface: two spheres joined by a thin neck converge to a wedge of two spheres; a sequence of two-dimensional tori with a collapsing geodesic converges to a circle; a family of manifolds with a shrinking exceptional divisor converges to a lower-dimensional space. In each case the limit carries a natural length structure, and its metric geometry — the tangent cones, the curvature bounds, the rectifiability — is the synthetic theory of *Metric Geometry*, written in parallel.
+
+## The Tangent Cone and Scaling Limits
+
+**Definition.** Let $(X, d, x_0)$ be a pointed metric space. For $\lambda > 0$ let $\lambda X$ be the space $X$ with the scaled metric $\lambda d$ and the same base point. A pointed **Gromov–Hausdorff tangent cone** of $X$ at $x_0$ is a pointed Gromov–Hausdorff limit of the spaces $(\lambda_n X, x_0)$ for a sequence $\lambda_n \to \infty$.
+
+**Theorem.** If $(X,d,x_0)$ is a pointed proper metric space — every closed ball is compact — then every sequence $\lambda_n \to \infty$ has a subsequence for which the scaled spaces converge in the pointed Gromov–Hausdorff sense, and the limit is a tangent cone; for a Riemannian manifold the tangent cone at every point is the Euclidean space of the same dimension, and for the limit spaces of the curvature-bounded convergence the tangent cone need not be Euclidean or even a cone in a linear space.
+
+**Proof sketch.** The scaled balls of radius $1$ are compact metric spaces of bounded diameter, and the compactness theorem applies to each radius; a diagonal argument over the sequence of radii extracts a subsequence converging on every ball, and the limits are glued into a pointed limit space, which is a tangent cone. The Euclidean case is the exponential map of *Riemannian Geometry*. $\square$
+
+**Remark (the role of the tangent cone).** The tangent cone is the infinitesimal model of a metric space at a point, and the same technique — rescaling and extracting a Gromov–Hausdorff limit — is the definition of the **ultralimit** and of the **asymptotic cone** of an unbounded space, obtained by scaling down rather than up. The asymptotics of an unbounded metric space, its cone at infinity, and the geometry of the group growth at large scale are the domain of *Geometric Group Theory* and *Metric Geometry*, written in parallel, and the measure-theoretic version of the convergence, in which the spaces carry measures, is the measured Gromov–Hausdorff convergence of Part III.
+
+**Remark (arithmetic and spectral consequences).** Gromov–Hausdorff compactness is the engine of several finiteness theorems: the class of closed manifolds with bounded curvature, bounded diameter and bounded volume is finite up to diffeomorphism, by the Cheeger finiteness theorem and its elaborations, and the eigenvalue spectra converge for a sequence converging in the measured sense, which requires the measure and is therefore Part III's. The purely metric consequence used here is that a curvature-and-diameter bound produces a compact parameter space of shapes, which is the content of the precompactness theorem.
+
+## Summary
+
+The Hausdorff distance between two subsets of a metric space is the least $\epsilon$ for which each subset is contained in the $\epsilon$-neighbourhood of the other, and it makes the nonempty compact subsets of a compact space into a compact metric space, the hyperspace. The Gromov–Hausdorff distance between compact metric spaces is the infimum of the Hausdorff distance over all isometric embeddings of the two spaces into a common ambient metric space; it can be computed inside a single Banach space by the Kuratowski embedding $x \mapsto d(x,\cdot) - d(x_0,\cdot)$ into $\ell^\infty$, and it is a complete metric on the isometry classes of compact metric spaces, with $d_{GH}(X,Y) = 0$ exactly when $X$ and $Y$ are isometric.
+
+Gromov's compactness theorem characterises the precompact families: a family of compact metric spaces is precompact in the Gromov–Hausdorff topology exactly when it is uniformly bounded in diameter and uniformly totally bounded, that is, when its $\epsilon$-covering numbers are uniformly bounded for every $\epsilon$; the limit is compact, and the metric space of compacta is complete. Convergence is equivalent to the existence of approximate isometries onto $\epsilon$-nets, and the standard examples are the convergence of finer and finer polygons and subdivisions to their limits, the scaling of spheres to a point and to Euclidean space, and the collapse of a flat torus with a shrinking period to a circle, in which the dimension drops.
+
+The Gromov–Hausdorff distance is weaker than the Lipschitz distance and than a bi-Lipschitz comparison, because it permits collapse; it is the metric form of the large-scale quasi-isometry of geometric group theory. Its principal application is the precompactness of the closed Riemannian manifolds with bounded curvature and bounded diameter, whose limits are metric spaces, generally singular, and whose infinitesimal structure is studied by the tangent cones obtained as pointed Gromov–Hausdorff limits of the rescalings. The synthetic theory of the limit spaces and of the curvature bounds is *Metric Geometry*, written in parallel; the measured version of the convergence, the spectral convergence and the heat-kernel asymptotics are Part III's, where the measure and the integral are available.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $(Z, d)$, $A$, $B$ | Ambient metric space; subsets |
+| $B_\epsilon(A)$ | Open $\epsilon$-neighbourhood of $A$ |
+| $d_H^Z(A,B)$ | Hausdorff distance; least $\epsilon$ with each set in the other's $\epsilon$-neighbourhood |
+| $\mathcal{K}(Z)$ | Hyperspace of nonempty compact subsets with the Hausdorff metric |
+| $d_{GH}(X,Y)$ | Gromov–Hausdorff distance; infimum over common ambient spaces |
+| $\Phi(x) = d(x,\cdot) - d(x_0,\cdot)$ | Kuratowski embedding into $\ell^\infty$ |
+| $\epsilon$-isometry, $\epsilon$-net | Approximate isometry; $\epsilon$-dense finite set |
+| $N(X,\epsilon)$ | Covering number; number of sets of diameter $\epsilon$ needed |
+| Uniformly totally bounded | Bounded diameters and uniform bound on the $\epsilon$-covering numbers |
+| $d_L$, $\mathrm{dil}$ | Lipschitz distance; best Lipschitz constant |
+| $(\lambda X, x_0)$ | Scaled pointed space; $\lambda d$ |
+| Tangent cone, ultralimit | Pointed Gromov–Hausdorff limit of the rescalings; of the rescalings to infinity |
+| $\mathcal{M}(n,D,\Lambda)$ | Closed $n$-manifolds with diameter $\leq D$ and curvature bound; precompact |
+
+## Further Reading
+
+- Mikhael Gromov, *Metric Structures for Riemannian and Non-Riemannian Spaces* (Birkhäuser, 1999), for the Gromov–Hausdorff distance, the compactness theorem and the applications to Riemannian geometry.
+- Dmitri Burago, Yuri Burago and Sergei Ivanov, *A Course in Metric Geometry* (American Mathematical Society, 2001), for the Hausdorff and Gromov–Hausdorff distances and the proofs of the compactness theorems.
+- Peter Petersen, *Riemannian Geometry* (Springer, 3rd edition, 2016), for the Gromov compactness theorem and the convergence of manifolds under curvature bounds.
+- Kenji Fukaya, "Collapsing of Riemannian manifolds and eigenvalues of Laplace operator", *Inventiones Mathematicae* 87 (1987), 517–547, for the behaviour of the metric under collapse.
+- Mikhael Gromov, "Groups of polynomial growth and expanding maps", *Publications Mathématiques de l'IHÉS* 53 (1981), 53–73, for the application of the convergence of Cayley graphs to the growth of groups.
+- Yukio Otsu, "Differential geometric aspects of Alexandrov spaces", in *Comparison Geometry* (MSRI Publications 30, 1997), for the synthetic curvature bounds and the tangent cones.
+- Casimir Kuratowski, "Quelques problèmes concernant les espaces métriques non-séparables", *Fundamenta Mathematicae* 25 (1935), 534–545, for the isometric embedding of a metric space into the space of bounded functions.

@@ -6,11 +6,18 @@ from pathlib import Path
 
 SRC        = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit")
 DEPLOY     = Path("/home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit-deploy")
-DEPLOY_ART = DEPLOY / "articles"
 
-ARTICLES_DIR   = SRC / "articles"
-TEMPLATE       = (SRC / "articles" / "article_template.html").read_text()
+TEMPLATE       = (SRC / "article_template.html").read_text()
 INDEX_TEMPLATE = (SRC / "index_template.html").read_text()
+
+# The corpus is split into two independent collections, each with its own
+# source folder, its own deploy folder, and its own menu page. A slug belongs
+# to exactly one collection — the menus are disjoint — so an article's file
+# location is determined by which menu links it.
+COLLECTIONS = [
+    {"name": "maths",   "src": SRC / "articles_maths",   "deploy": DEPLOY / "articles_maths"},
+    {"name": "physics", "src": SRC / "articles_physics", "deploy": DEPLOY / "articles_physics"},
+]
 
 
 
@@ -153,14 +160,17 @@ def article_sort_key(p):
         group = 2
     return (group, name)
 
-articles = sorted(ARTICLES_DIR.glob("*.md"), key=article_sort_key)
-nav_articles = [p for p in articles if "zexample" not in p.stem.lower()]
-if not articles:
-    print("No md files found in articles/. Add some and re-run.")
+articles = []
+for coll in COLLECTIONS:
+    coll["articles"] = sorted(coll["src"].glob("*.md"), key=article_sort_key)
+
+if not any(c["articles"] for c in COLLECTIONS):
+    print("No md files found in articles_maths/ or articles_physics/. Add some and re-run.")
     exit(0)
 
 DEPLOY.mkdir(parents=True, exist_ok=True)
-DEPLOY_ART.mkdir(parents=True, exist_ok=True)
+for coll in COLLECTIONS:
+    coll["deploy"].mkdir(parents=True, exist_ok=True)
 
 src_assets = SRC / "assets"
 deploy_assets = DEPLOY / "assets"
@@ -170,34 +180,56 @@ if src_assets.exists():
     shutil.copytree(src_assets, deploy_assets)
     print("Copied assets/")
 
-for f in articles:
-    raw = f.read_text()
-    meta, body_md = parse_frontmatter(raw)
-    # parse_frontmatter always defines "title" (default ""), so .get()'s
-    # default never fires — fall back explicitly.
-    title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
+# nav_articles is only used for the {nav} placeholder, which renders the same
+# four links on every page regardless of the current article, so the pool it is
+# drawn from does not matter.
+nav_articles = [p for coll in COLLECTIONS for p in coll["articles"]
+                if "zexample" not in p.stem.lower()]
 
-    body_html = md_to_html(body_md)
+for coll in COLLECTIONS:
+    if not coll["articles"]:
+        print(f"Warning: no md files in {coll['src'].name}/")
+        continue
+    for f in coll["articles"]:
+        raw = f.read_text()
+        meta, body_md = parse_frontmatter(raw)
+        # parse_frontmatter always defines "title" (default ""), so .get()'s
+        # default never fires — fall back explicitly.
+        title = meta.get("title") or heading_title(body_md) or label_from_stem(f.stem)
 
-    html = (TEMPLATE
-        .replace("{title}",      title)
-        .replace("{coordinate}", meta.get("coordinate", ""))
-        .replace("{nav}",        build_nav_article(nav_articles, current_stem=f.stem))
-        .replace("{body}",       body_html)
-    )
-    (DEPLOY_ART / f"{f.stem}.html").write_text(html)
-    print(f"Built: articles/{f.stem}.html")
+        body_html = md_to_html(body_md)
 
-# ── NEW: prune orphaned article HTML ──────────────────────────────────────
+        html = (TEMPLATE
+            .replace("{title}",      title)
+            .replace("{coordinate}", meta.get("coordinate", ""))
+            .replace("{nav}",        build_nav_article(nav_articles, current_stem=f.stem))
+            .replace("{body}",       body_html)
+        )
+        (coll["deploy"] / f"{f.stem}.html").write_text(html)
+        print(f"Built: {coll['src'].name}/{f.stem}.html")
+
+# ── prune orphaned article HTML ───────────────────────────────────────────
 # We only ever write files into the deploy dir, never delete, so a renamed
 # or removed source md leaves its old .html behind — still served, still
 # indexable, and silently diverging from the current article. Drop any
-# deployed article page that no longer has a matching source.
-built = {f"{f.stem}.html" for f in articles}
-for stale in DEPLOY_ART.glob("*.html"):
-    if stale.name not in built:
-        stale.unlink()
-        print(f"Removed orphan: articles/{stale.name}")
+# deployed article page that no longer has a matching source. This also
+# removes pages left in a collection by a file that moved to the other one.
+for coll in COLLECTIONS:
+    built = {f"{f.stem}.html" for f in coll["articles"]}
+    for stale in coll["deploy"].glob("*.html"):
+        if stale.name not in built:
+            stale.unlink()
+            print(f"Removed orphan: {coll['src'].name}/{stale.name}")
+# ──────────────────────────────────────────────────────────────────────────
+
+# ── prune the pre-split deploy directory ──────────────────────────────────
+# Before the split every page was written to <deploy>/articles/. Those pages
+# are now superseded by the two per-collection directories, and leaving them
+# would publish each article twice at the old URL.
+legacy_art = DEPLOY / "articles"
+if legacy_art.is_dir():
+    shutil.rmtree(legacy_art)
+    print("Removed legacy deploy directory: articles/")
 # ──────────────────────────────────────────────────────────────────────────
 
 def build_root_page(md_path, out_name, articles):

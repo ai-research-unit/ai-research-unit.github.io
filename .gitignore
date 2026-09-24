@@ -1,6 +1,7 @@
 .git/
 .venv/
 material/
+_reserve/
 temp/
 temp_/
 temp__/
@@ -22,5 +23,5 @@ BRAINSTORMING*
 *.thinking
 *.suggestions
 *.ideas
-_reserve/
+
 
