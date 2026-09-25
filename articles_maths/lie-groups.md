@@ -349,14 +349,6 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 # Part VI: Summary
 
-## 18. Summary
-
-- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in §3.
-- Its Lie algebra $\mathfrak{g} = T_eG$ is the space of left-invariant vector fields with the commutator bracket; for matrix groups $[X,Y] = XY - YX$.
-- The exponential map is a local diffeomorphism at $0$, natural in homomorphisms, and surjective for connected compact groups, connected nilpotent groups, and $GL_n(\mathbb{C})$, but not in general.
-- Lie group homomorphisms differentiate to Lie algebra homomorphisms, and the differential functor is an equivalence between simply connected Lie groups and finite-dimensional real Lie algebras; Lie subalgebras correspond to connected immersed Lie subgroups, closed subgroups being embedded.
-- The adjoint representation $\operatorname{Ad}$ differentiates to $\operatorname{ad}$, with $\ker\operatorname{Ad} = Z(G)$ for connected $G$; for such $G$, solvability and nilpotency of $G$ and $\mathfrak{g}$ coincide, and quotients by closed normal subgroups have Lie algebra $\mathfrak{g}/\mathfrak{n}$.
-
 ## 19. Lie Groups in the Wider Corpus
 
 - The group of units of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathfrak{gl}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Lie Algebras: Categorization*; the biquaternion exponential is treated in a separate article of the biquaternion series.
@@ -364,6 +356,14 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 - The spin groups $\operatorname{Spin}(n)$ for $n \geq 3$, the universal covers of $SO(n)$, link this article to the Clifford algebra and spinor articles of the series.
 
 ---
+
+## Summary
+
+- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $U(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in §3.
+- Its Lie algebra $\mathfrak{g} = T_eG$ is the space of left-invariant vector fields with the commutator bracket; for matrix groups $[X,Y] = XY - YX$.
+- The exponential map is a local diffeomorphism at $0$, natural in homomorphisms, and surjective for connected compact groups, connected nilpotent groups, and $GL_n(\mathbb{C})$, but not in general.
+- Lie group homomorphisms differentiate to Lie algebra homomorphisms, and the differential functor is an equivalence between simply connected Lie groups and finite-dimensional real Lie algebras; Lie subalgebras correspond to connected immersed Lie subgroups, closed subgroups being embedded.
+- The adjoint representation $\operatorname{Ad}$ differentiates to $\operatorname{ad}$, with $\ker\operatorname{Ad} = Z(G)$ for connected $G$; for such $G$, solvability and nilpotency of $G$ and $\mathfrak{g}$ coincide, and quotients by closed normal subgroups have Lie algebra $\mathfrak{g}/\mathfrak{n}$.
 
 ## Further Reading
 

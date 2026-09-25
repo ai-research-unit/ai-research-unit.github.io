@@ -6,7 +6,7 @@ This article is about the **quaternion subspace** $\mathbb{H}_{\mathbb{B}}$, the
 
 $\mathbb{H}_{\mathbb{B}}$ is the image of the quaternion algebra itself inside $\mathbb{B}$. It is spanned by the four basis elements with real coefficients, so a general element of it is a quaternion in the ordinary sense. Its defining feature is that it is a **subalgebra**, and in fact a **division algebra**: every nonzero element has an inverse, and there are no zero divisors. It is also the sector in which the scalar imaginary $i$ plays no role at all, and this is what the name "real sector" records — in both of the senses that the word "real" carries here, real coefficients and fixed points of the real conjugation.
 
-The article describes the subspace on its own terms: its basis and parameters, its algebraic properties, the reading that gives it its name, its matrix image, its unit group and Lie algebra, and the rotation rotors it contains.
+The article describes the subspace on its own terms: its basis and parameters, its algebraic properties, the reading that gives it its name, its unit group and Lie algebra, and the rotation rotors it contains.
 
 ## Basic Definition and Properties
 
@@ -125,44 +125,6 @@ The name "real sector" is earned in two ways at once, and it is worth separating
 
 The physical reading follows from the first of these. In the $ict$ convention the time component of a four-vector is imaginary, $ict$, and it is the imaginary unit that produces the Lorentzian signature $(3,1)$. Inside $\mathbb{H}_{\mathbb{B}}$ that unit is not available, so the norm form is the positive definite form of signature $(4,0)$, the geometry has no light cone, and no direction is singled out as time. This is a **Euclidean** four-dimensional geometry, and it is exactly what the Wick rotation produces: relabelling the imaginary time coefficient $ict$ as a real one turns the material four-vector space into $\mathbb{H}_{\mathbb{B}}$, with the Lorentzian signature traded for a Euclidean one. In this precise sense the real sector is the Euclidean, or Wick-rotated, read of the four-vector space, and the division property of the quaternions is the algebraic reason the Euclidean picture has no null directions.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the four basis elements map to
-
-$$
-e_0 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
-e_1 \mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
-e_2 \mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
-e_3 \mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}.
-$$
-
-The image of a general element $\tilde{Q} = q_0e_0 + q_ke_k$ is
-
-$$
-\Phi(\tilde{Q}) = q_0 I_2 - i\,(q_1\sigma_1 + q_2\sigma_2 + q_3\sigma_3)
-= \begin{pmatrix} q_0 - iq_3 & -q_2 - iq_1 \\ q_2 - iq_1 & q_0 + iq_3 \end{pmatrix},
-$$
-
-which has the characteristic quaternionic shape
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} a & b \\ -\bar{b} & \bar{a} \end{pmatrix},
-\qquad a = q_0 - iq_3, \quad b = -q_2 - iq_1,
-$$
-
-with $a$ and $b$ arbitrary complex numbers. The image of $\mathbb{H}_{\mathbb{B}}$ is therefore exactly the set of $2\times2$ complex matrices of that shape, a four-dimensional real space. The two invariants are:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2q_0$, twice the scalar parameter.
-- **Determinant.** $\det \Phi(\tilde{Q}) = q_0^2 + q_1^2 + q_2^2 + q_3^2 = N(\tilde{Q})$. The determinant is $|a|^2 + |b|^2$, which is positive for every nonzero element — the matrix statement of the division property. A sector whose elements all have non-negative determinant is exactly a sector with no zero divisors.
-
-Because the determinant never vanishes, the matrix image of the subspace contains no singular nonzero matrix.
-
 ## Advanced Algebraic Properties
 
 **The unit group.** The elements of unit norm form, $N(\tilde{Q}) = e_0$, are the **unit quaternions**. In coordinates they form the unit sphere
@@ -171,7 +133,7 @@ $$
 q_0^2 + q_1^2 + q_2^2 + q_3^2 = 1,
 $$
 
-a three-dimensional sphere, and under the isomorphism they map to the matrices of the shape above with $|a|^2 + |b|^2 = 1$ and determinant one. That is precisely the group $SU(2)$, so the unit group of $\mathbb{H}_{\mathbb{B}}$ is the sphere $S^3$, isomorphic to $SU(2)$.
+a three-dimensional sphere. That is precisely the group $SU(2)$, so the unit group of $\mathbb{H}_{\mathbb{B}}$ is the sphere $S^3$, isomorphic to $SU(2)$.
 
 **The Lie algebra.** The three pure vector units $e_1, e_2, e_3$ are the infinitesimal generators of these rotations. They are anti-Hermitian and satisfy $e_k^2 = -e_0$, and their commutators close on themselves,
 
@@ -180,23 +142,6 @@ $$
 $$
 
 which is the rotation algebra $\mathfrak{su}(2)$ up to the factor $2$. So the subspace carries both the finite rotations and their Lie algebra, entirely within itself.
-
-### The Matrix Example
-
-Take the rotation rotor of unit norm form,
-
-$$
-\tilde{R} = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,e_3 .
-$$
-
-In the quaternionic shape $\Phi(\tilde{Q}) = \begin{pmatrix} a & b \\ -\bar{b} & \bar{a} \end{pmatrix}$ the two parameters are $a = q_0 - iq_3 = e^{-i\theta/2}$ and $b = -q_2 - iq_1 = 0$, so
-
-$$
-\Phi(\tilde{R}) = \begin{pmatrix} e^{-i\theta/2} & 0 \\ 0 & e^{i\theta/2} \end{pmatrix} \in SU(2).
-$$
-
-Its determinant is $|a|^2 + |b|^2 = 1$, and it is exactly the standard $SU(2)$ rotation by $\theta$ about the third axis. The unit group of the subspace is therefore the group of these matrices, and the three matrices $\Phi(e_k)$ generate its Lie algebra.
-
 
 ## Examples
 
@@ -210,11 +155,11 @@ a unit quaternion whose scalar part is the cosine of the half-angle. The appeara
 
 ## Summary
 
-The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its norm form is positive definite of signature $(4,0)$; numerically it is the determinant of the matrix image, and the determinant never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, and there are no zero divisors and no light cone.
+The quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, a four-dimensional real subspace of $\mathbb{B}$ spanned by $e_0, e_1, e_2, e_3$ with real coefficients. It is a subalgebra, and as a real algebra it is the unique four-dimensional division algebra. Its norm form is positive definite of signature $(4,0)$; numerically it is the sum of squares $q_0^2 + q_1^2 + q_2^2 + q_3^2$, which never vanishes on a nonzero element. Every nonzero element is invertible, with $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$, and there are no zero divisors and no light cone.
 
 Its unit group is the sphere $S^3 \cong SU(2)$, the group of rotation rotors, which acts on the subspace by conjugation; the pure vector units $e_1, e_2, e_3$ are the rotation generators, closing under commutation as $\mathfrak{su}(2)$.
 
-In the matrix picture the subspace is the set of matrices of shape $\begin{pmatrix} a & b \\ -\bar{b} & \bar{a} \end{pmatrix}$, with trace $2q_0$ and determinant $|a|^2 + |b|^2$. The physical reading of the sector is the Euclidean one: with the scalar imaginary unavailable inside it, the four-dimensional geometry it carries has no distinguished time direction, and the Wick rotation is exactly the relabelling that turns the Lorentzian four-vector space into this sector.
+The physical reading of the sector is the Euclidean one: with the scalar imaginary unavailable inside it, the four-dimensional geometry it carries has no distinguished time direction, and the Wick rotation is exactly the relabelling that turns the Lorentzian four-vector space into this sector.
 
 ## Summary of Notation
 
@@ -227,7 +172,6 @@ In the matrix picture the subspace is the set of matrices of shape $\begin{pmatr
 | $e_k^2 = -e_0$, $e_1e_2 = e_3$ | Quaternion multiplication rules |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ | Norm form; positive definite, signature $(4,0)$ |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
-| $\Phi(\tilde{Q}) = \begin{pmatrix} a & b \\ -\bar{b} & \bar{a} \end{pmatrix}$ | Matrix image; $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2q_0$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ |
 | $S^3 \cong SU(2)$ | Unit group; the rotation rotors |
 | $\tilde{U} = \cos(\theta/2) + \sin(\theta/2)\hat{\mathbf{n}}\cdot\mathbf{e}$ | Rotation rotor through $\theta$ about $\hat{\mathbf{n}}$ |
 | $\mathfrak{su}(2)$ | Lie algebra of the pure vector units $e_k$ |
@@ -237,7 +181,7 @@ In the matrix picture the subspace is the set of matrices of shape $\begin{pmatr
 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original algebra.
 - Ferdinand Georg Frobenius, "Über lineare Substitutionen und bilineare Formen" (1878), for the classification of real division algebras.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the quaternion algebra and its matrix representations.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the quaternion algebra.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{H}_{\mathbb{B}}$ among the six subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for rotors and the double cover of the rotation group.
 - Gian Carlo Wick, "Properties of Bethe-Salpeter Wave Functions" (1954), for the rotation to imaginary time.

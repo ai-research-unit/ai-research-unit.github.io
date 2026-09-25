@@ -9,35 +9,41 @@
 <!-- the core proposal; the two sectors, material and informational; the complex coordinates; the metric; what the framework achieves; status and open questions. -->
 
 ### <a href="articles_physics/conventions-in-the-biquaternion-universe.html">Conventions in the Biquaternion Universe</a>
-<!-- the algebraic conventions; the spacetime conventions; the Dirac mass term and the linear chirality-off-diagonal convention; the real structure $\flat$. -->
-
-### <a href="articles_physics/the-matrix-representation-of-the-biquaternion-universe.html">The Matrix Representation of the Biquaternion Universe</a>
-<!-- the representation and why the signs are forced; trace, determinant and the norm form; the six subspaces; the ideals as columns and the spinor module; the conjugations in matrix form; spin, qubits and the Bloch vector; the groups; what the matrix form makes visible. -->
+<!-- the algebraic conventions; the spacetime conventions; the Dirac mass term and the linear chirality-off-diagonal convention; the real structure $\flat$; the four-vector, the 4×4 regular and the 2×2 matrix representations. -->
 
 ### - Subspaces
 
 ### <a href="articles_physics/the-anti-hermitian-subspace-m-as-the-material-sector.html">The Anti-Hermitian Subspace M- as the Material Sector</a>
-<!-- definition and basis; the physical reading of the quadratic form and the light cone; the matrix image; algebraic properties; examples. -->
+<!-- definition and basis; the physical reading of the quadratic form and the light cone; the Lorentz group; examples. -->
 
 ### <a href="articles_physics/the-hermitian-subspace-m-plus-as-the-informational-sector.html">The Hermitian Subspace M+ as the Informational Sector</a>
-<!-- definition and basis; algebraic properties; the matrix image; the action by conjugation; the quantum-informational reading; examples. -->
+<!-- definition and basis; algebraic properties; the action by conjugation; the quantum-informational reading; examples. -->
 
 ### <a href="articles_physics/the-quaternion-subspace-hb-as-the-real-sector.html">The Quaternion Subspace HB as the Real Sector</a>
-<!-- definition and basis; the image of the quaternion algebra inside $\mathbb{B}$; physical meaning; matrix representation; algebraic properties; examples. -->
+<!-- definition and basis; the image of the quaternion algebra inside $\mathbb{B}$; physical meaning; algebraic properties; examples. -->
 
 ### <a href="articles_physics/the-anti-quaternion-subspace-ihb-as-the-imaginary-sector.html">The Anti-Quaternion Subspace iHB as the Imaginary Sector</a>
-<!-- definition and basis; the anti-fixed space of complex conjugation; physical meaning; matrix representation; algebraic properties; examples. -->
+<!-- definition and basis; the anti-fixed space of complex conjugation; physical meaning; algebraic properties; examples. -->
 
 ### <a href="articles_physics/the-center-subspace-c-b-as-the-complex-time-sector.html">The Center Subspace C_B as the Complex Time Sector</a>
-<!-- the centre as the fixed space of quaternion conjugation; basis; the physical reading as complex time; matrix representation; algebraic properties; examples. -->
+<!-- the centre as the fixed space of quaternion conjugation; basis; the physical reading as complex time; algebraic properties; examples. -->
 
 ### <a href="articles_physics/the-vector-subspace-vect-b-as-the-complex-space-sector.html">The Vector Subspace Vect(B) as the Complex Space Sector</a>
-<!-- the anti-fixed space of quaternion conjugation; the three vector units; the physical reading as complex space; matrix representation; algebraic properties; examples. -->
+<!-- the anti-fixed space of quaternion conjugation; the three vector units; the physical reading as complex space; algebraic properties; examples. -->
 
 ### <a href="articles_physics/relations-between-subspaces.html">Relations Between Subspaces</a>
 <!-- the three decompositions; the six subspaces at a glance; the four coordinate blocks; the involutions as sign patterns; the intersections; which pairs span the algebra; the grading; the norm form on each half; how the operations act on the splits; the matrix picture. -->
 
+### - Representations
 
+### <a href="articles_physics/the-four-vector-representation-of-biquaternions.html">The Four-Vector Representation of Biquaternions</a>
+<!-- the biquaternion as its four complex coefficients; its real and imaginary parts; the column and the dual row; the product in components and the cross-product term that carries the non-commutativity; the conjugations in coordinates; the six subspaces as coordinate conditions and the quadruple of each one, in the real parameters and in the physical coordinates; the norm form with all four signs positive and its two real restrictions, the material and informational signatures; the four-vectors of relativistic physics it carries, and why no index is raised or lowered. -->
+
+### <a href="articles_physics/the-4x4-regular-matrix-representation-of-biquaternions.html">The 4×4 Regular Matrix Representation of Biquaternions</a>
+<!-- the algebra acting on itself on the left; the Cayley matrix of left multiplication and its multiplicativity; the right regular representation as the opposite algebra, and the plausible transpose identity that is false; the determinant as the square of the norm form and the trace as four times the scalar part; the six distinguished subspaces and the simplified regular matrix of each, in the real parameters and in the physical coordinates; the two minimal left ideals and the reducibility into two chiralities; the double centralizer; the real $8\times8$ form; the two-sided action of the rotor group and the Lorentz transformation of a four-vector. -->
+
+### <a href="articles_physics/the-2x2-matrix-representation-of-biquaternions.html">The 2×2 Matrix Representation of Biquaternions</a>
+<!-- the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ and why the signs are forced; the trace, the determinant and the norm form; the six subspaces as matrices; the ideals as columns and the spinor module; the conjugations in matrix form; spin, qubits and the Bloch vector; the groups; what the matrix form makes visible and what it does not. -->
 
 ### - Context
 

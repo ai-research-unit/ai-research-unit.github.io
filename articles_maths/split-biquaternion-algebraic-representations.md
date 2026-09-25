@@ -390,7 +390,7 @@ Each representation involves a choice, and different choices give equivalent but
 
 Different choices give representations that are related by conjugation or by a change of basis, and the algebraic structure of the split biquaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.
 
-## Summary of Representations
+## Summary
 
 | Representation | Split biquaternion as | Useful for |
 |---|---|---|

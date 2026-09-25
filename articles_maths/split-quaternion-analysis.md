@@ -95,7 +95,7 @@ $$
 D^2 = -\frac{\partial^2}{\partial b^2} + \frac{\partial^2}{\partial c^2} + \frac{\partial^2}{\partial d^2} = \Box_{(2,1)},
 $$
 
-the wave operator of the form of signature $(2,1)$; the operator is hyperbolic, not elliptic, and its characteristic variety is the null cone
+the wave operator of the form of signature $(2,1)$, which is hyperbolic. The first-order operator $D$ itself is not elliptic: its symbol is left multiplication by the frequency vector, invertible exactly when $N \neq 0$, so the set where the symbol degenerates is the null cone
 
 $$
 b^2 - c^2 - d^2 = 0 ,
@@ -105,9 +105,9 @@ which is the zero divisor set of the algebra in the vector subspace.
 
 **Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, whose square is $-\xi_1^2 + \xi_2^2 + \xi_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*The Zero Divisor Set as the Null Cone*, the null cone of the vector subspace is the zero divisor set. $\square$
 
-**Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions: the solutions of $Df = 0$ are the solutions of the wave equation, they do not have the mean-value property, the maximum principle or the elliptic regularity of *Clifford Analysis*, and the zero divisors of the algebra are exactly the characteristic directions of the operator.
+**Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions. Every solution of $Df = 0$ solves the wave equation $\Box_{(2,1)}f = 0$, because $D^2 = \Box_{(2,1)}$, but not conversely: the scalar function $f = bc$ satisfies $\Box_{(2,1)}f = 0$ while $Df = c\,e_1 + b\,e_2 \neq 0$. The monogenic class is therefore a proper subclass of the wave solutions, it is not closed under the operations of the elliptic theory, and its members have neither the mean-value property nor the maximum principle nor the elliptic regularity of *Clifford Analysis*; the zero divisors of the algebra are exactly the characteristic directions of the operator.
 
-**Proof.** An operator whose characteristic variety is a cone of nonzero vectors is not elliptic, and every elliptic-theoretic property fails along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*. $\square$
+**Proof.** The implication is $D^2 = \Box_{(2,1)}$, the counterexample is the displayed computation, and an operator with a cone of nonzero characteristic vectors is not elliptic, so the elliptic-theoretic properties fail along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. That the class is much smaller than the wave solutions, and in particular is not parametrised by arbitrary data on a hypersurface, is the kernel computation of *Split-Quaternion Integration*, §*The Kernel of the Vector Operator*, where the two transported families and the nonzero compactly supported solutions are exhibited. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*. $\square$
 
 **Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $e_1,e_2,e_3$ of $\mathbb{H}_{\mathrm{s}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
 

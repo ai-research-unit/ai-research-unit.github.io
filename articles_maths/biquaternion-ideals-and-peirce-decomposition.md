@@ -125,7 +125,7 @@ $$
 A = eAe \oplus eAf \oplus fAe \oplus fAf,
 $$
 
-whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the other corners are only one-sided pieces.
+whose summands are the **Peirce spaces**. The corner $eAe$ is a subalgebra with identity $e$; the other corners are only one-sided pieces. The expansion, the directness of the four terms and the product rule below are proved in *Unital Algebras*, §*Idempotents and the Peirce Decomposition*, where the case of a **central** idempotent is also separated: for a central $e$ the off-diagonal corners vanish and the sum is a product of algebras. That special case does not arise here, since the idempotents of this article lie in a simple algebra and no nontrivial idempotent of $\mathbb{B}$ is central.
 
 **A complete orthogonal family.** If $\{e_1, \dots, e_n\}$ is complete and pairwise orthogonal, the same expansion gives
 

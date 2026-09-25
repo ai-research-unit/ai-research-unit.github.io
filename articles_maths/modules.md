@@ -34,11 +34,29 @@ where $\operatorname{End}_{\mathbb{Z}}(M)$ is the endomorphism ring of the abeli
 
 ## 3. Examples
 
+The first example is the ring itself. It is the one that reduces the theory of ideals to the theory of modules, and it is used throughout.
+
+**Definition.** Let $R$ be a ring with identity $1$. The **left regular module** ${}_R R$ is the abelian group $(R,+)$ with the scalar multiplication
+
+$$
+R \times R \to R, \qquad (r,m) \mapsto rm,
+$$
+
+the multiplication of $R$. The **right regular module** $R_R$ is $(R,+)$ with $(m,r) \mapsto mr$, and the left and right actions together make $R$ a **bimodule** ${}_R R_R$, the two commuting by associativity. The side on which the scalars are written is recorded by the side of the subscript.
+
+The carrier of ${}_R R$ is the additive group $(R,+)$, which is only an abelian group and carries no multiplication; the multiplication of $R$ is not discarded but retained, and it is the action. Axioms (M1)–(M4) of §1 are then the ring axioms verbatim: the two distributive laws, associativity, and the law $1m=m$. The element $1$ alone is a basis, so ${}_R R$ is the free module of rank one, and the direct sums of its copies are the free modules (§9).
+
+**Theorem.** For $L \subseteq R$: $L$ is a submodule of ${}_R R$ if and only if $L$ is a left ideal of $R$; $L$ is a submodule of $R_R$ if and only if it is a right ideal; and $L$ is a submodule of ${}_R R_R$ if and only if it is a two-sided ideal.
+
+*Proof.* By §4 a submodule of ${}_R R$ is an additive subgroup $L$ with $rl \in L$ for every $r \in R$, $l \in L$; by *Rings* §6 an additive subgroup $L$ is a left ideal under exactly the same condition. The scalar action of ${}_R R$ is by definition the multiplication of $R$, so the two conditions are the same formula and not merely equivalent ones. The right-handed and the two-sided statement are the same argument with the multiplication read on the right, or on both sides. $\square$
+
+The bijection is the identity map on subsets of $R$, so it is an isomorphism of the lattice of submodules of ${}_R R$ onto the lattice of left ideals of $R$: it preserves inclusion, intersection and sum. The one-sided ideal theory of $R$ is therefore the submodule theory of its regular module, and the language of ideals in *Rings* is the language of this example.
+
 **(a)** If $R=F$ is a field, $F$-modules are vector spaces.
 
 **(b)** $\mathbb{Z}$-modules are exactly abelian groups, with the unique action $n \cdot a = a+\cdots+a$. Hence finitely generated abelian groups are the finitely generated $\mathbb{Z}$-modules, and §15 recovers their classification.
 
-**(c)** $R$ is the **regular module**; its submodules are the left ideals of $R$, that is, the ideals when $R$ is commutative. So ideals are modules (*Rings* §6). For an ideal $I$ of commutative $R$, both $I$ and $R/I$ are $R$-modules.
+**(c)** By the theorem above, the submodules of ${}_R R$ are the left ideals of $R$, that is, the ideals when $R$ is commutative, so ideals are modules (*Rings* §6). For an ideal $I$ of commutative $R$, both $I$ and $R/I$ are $R$-modules.
 
 **(d)** $R^n$ is the free $R$-module of rank $n$, and $M_n(R)$ is free of rank $n^2$. For noncommutative $R$, the column space is a left module and the row space a right module.
 
@@ -98,7 +116,7 @@ A **linear combination** of $S \subseteq M$ is a finite sum $\sum r_i s_i$; $S$ 
 
 $R^n$ is free with the **standard basis** $e_1,\dots,e_n$, and $R[x]$ is free on $\{1,x,x^2,\dots\}$. Over $\mathbb{Z}$, the module $\mathbb{Z}$ is free of rank $1$, but $\mathbb{Z}/n\mathbb{Z}$ is not free for $n \geq 2$: a nonzero free $\mathbb{Z}$-module is infinite, while the empty-basis free module is zero.
 
-**Universal property.** A function from a basis $B$ of a free module $F$ to any module $M$ extends uniquely to a homomorphism $F \to M$. Hence $F \cong \bigoplus_{i \in I} R$ for a basis of cardinality $I$, so free modules are exactly the direct sums of copies of the regular module $R$.
+**Universal property.** A function from a basis $B$ of a free module $F$ to any module $M$ extends uniquely to a homomorphism $F \to M$. Hence $F \cong \bigoplus_{i \in I} R$ for a basis of cardinality $I$, so free modules are exactly the direct sums of copies of the regular module ${}_R R$ of §3.
 
 **Every module is a quotient of a free module:** mapping a free basis labelled by the elements of $M$ to those elements gives a surjection $F \to M$, so $M \cong F/\ker \varphi$. Over an integral domain, free modules are torsion-free (§14).
 
@@ -208,7 +226,7 @@ A field is a division ring (*Rings* §13), so $F$-modules are vector spaces and 
 
 # Part V: Summary
 
-## 20. Summary
+## Summary
 
 A module over $R$ is an abelian group with a scalar action of $R$, generalizing a vector space; over a commutative ring left and right modules coincide, matching *Rings* §14. Submodules, quotients, homomorphisms, and the isomorphism theorems behave as for groups and rings. Direct products and sums coincide for finite families, and direct summands are exactly the images of idempotent endomorphisms. Free modules have bases and are direct sums of copies of $R$; rank is well defined over commutative rings and division rings by IBN, and every module is a quotient of a free module. Exactness packages injectivity and surjectivity, the splitting lemma characterizes split sequences, $\operatorname{Hom}$ is left exact, and $\otimes$ is right exact. Tensor products are characterized by bilinearity, distribute over direct sums, implement base change, and define flatness. Over a PID, finitely generated modules decompose uniquely into a free part and cyclic torsion pieces, classifying finitely generated abelian groups and yielding the rational canonical and Jordan forms. Projectives are the direct summands of free modules, and for them surjections split; injectives are their dual, and over a PID they are exactly the divisible modules. Over a division ring every module is free, and module theory becomes linear algebra.
 

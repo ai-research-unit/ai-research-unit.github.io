@@ -2,13 +2,13 @@
 
 ## Introduction
 
-This article is about the **Hermitian subspace** $\mathbb{M}_+$, the fixed space of the Hermitian conjugation: its definition and basis, its algebraic properties, its matrix image, its action by conjugation, and the quantum-information structure it carries.
+This article is about the **Hermitian subspace** $\mathbb{M}_+$, the fixed space of the Hermitian conjugation: its definition and basis, its algebraic properties, its action by conjugation, and the quantum-information structure it carries.
 
 The mathematics of $\mathbb{M}_+$ is standard: it is a four-dimensional real subspace consisting of elements with real scalar part and imaginary vector part. It contains the boost biquaternions, the Hermitian forms, the idempotents, and the identity. It acts on $\mathbb{M}_-$ by rotor conjugation, and its elements satisfy a natural trace formula. All of this is established mathematics.
 
 The **algebraic identification** of $\mathbb{M}_+$ with the operator algebra of a two-state quantum system is now also established: it is developed in detail in the companion article *Quantum Mechanics in Biquaternionic Form*, and it is not a conjecture. What remains a **hypothesis** is whether this algebraic structure is **physically realised** as a distinct sector of the world, in the same sense as the material sector $\mathbb{M}_-$. This is the central question of the article, and the article's honest position is: **we do not yet know, but the structure is rich enough to be worth writing down.**
 
-The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled, together with its matrix image. Then the physical hypothesis is stated clearly, with the honest position on what it does and does not claim. Then the action of $\mathbb{M}_+$ on $\mathbb{M}_-$ and the algebraic identification with the qubit operator algebra are developed. The distinguished elements of $\mathbb{M}_+$ are collected as examples, and the article closes with open questions.
+The article is organized as follows. First the mathematical structure of $\mathbb{M}_+$ is recalled. Then the physical hypothesis is stated clearly, with the honest position on what it does and does not claim. Then the action of $\mathbb{M}_+$ on $\mathbb{M}_-$ and the algebraic identification with the qubit operator algebra are developed. The distinguished elements of $\mathbb{M}_+$ are collected as examples, and the article closes with open questions.
 
 The conventions are those of the companion articles. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the scalar imaginary is $i$, and the biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$. Throughout, the symbol $c$ denotes the **speed of light in the medium**, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ denotes the **vacuum speed of light**. In vacuum, $c = c_0$.
 
@@ -189,38 +189,6 @@ The hypothesis raises several concrete questions. We list them here as a researc
 
 These questions are open, and they constitute the research program associated with the informational hypothesis.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the four basis elements of $\mathbb{M}_+$ map to
-
-$$
-e_0 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
-ie_1 \mapsto \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
-ie_2 \mapsto \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \qquad
-ie_3 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
-$$
-
-These are the three Pauli matrices together with the identity: the image of $\mathbb{M}_+$ is exactly the space of **Hermitian** $2\times2$ complex matrices, a four-dimensional real space. This is the matrix expression of the sector's defining property — membership in $\mathbb{M}_+$ is precisely the statement that the matrix image is Hermitian. The identity and the Pauli matrices are the standard observables of a two-state system, so the matrix picture exhibits the sector as the space of qubit observables.
-
-A general element $\tilde{Q} = q_0e_0 + iq'_ke_k$ has the image
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} q_0 + q'_3 & q'_1 - iq'_2 \\ q'_1 + iq'_2 & q_0 - q'_3 \end{pmatrix},
-$$
-
-and the two invariants are read off directly:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2q_0$. The trace is real, and half of it is the temporal coordinate $ct'$: the scalar part of the sector is the trace.
-- **Determinant.** $\det \Phi(\tilde{Q}) = q_0^2 - q'^2_1 - q'^2_2 - q'^2_3 = N(\tilde{Q})$. The determinant is the norm form, so the signature $(1,3)$ is the statement that the determinant is indefinite on Hermitian matrices.
-
-Two classes stand out in the picture. The **idempotents** are the rank-one Hermitian matrices, of vanishing determinant and unit trace: a pure state is a rank-one projector. The **elements of unit norm form** are those of unit determinant, which among the Hermitian matrices are the boosts, since a boost has $q_0 = \cosh\tfrac{\psi}{2}$ and $\mathbf{q}' = \sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}}$, whence $\cosh^2\tfrac{\psi}{2} - \sinh^2\tfrac{\psi}{2} = 1$.
-
 ## Advanced Algebraic Properties
 
 ### The Action of $\mathbb{M}_+$ on $\mathbb{M}_-$
@@ -243,7 +211,7 @@ so the image is anti-Hermitian, i.e., in $\mathbb{M}_-$. The action maps the mat
 
 **2. The action is linear in $\tilde{Q}_-$.** This follows from the bilinearity of the biquaternion product.
 
-**3. The action preserves the norm form when $\tilde{Q}_+$ has unit norm form.** If $\tilde{Q}_+\bar{\tilde{Q}}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\bar{\tilde{Q}}_-$: by multiplicativity of the norm form, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the norm form and not on $\tilde{Q}_+\tilde{Q}_+^\dagger$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^\dagger = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors are unitary in the matrix sense.
+**3. The action preserves the norm form when $\tilde{Q}_+$ has unit norm form.** If $\tilde{Q}_+\bar{\tilde{Q}}_+ = e_0$ — for example a boost biquaternion, or any element of $SL(2,\mathbb{C})$ — then the action preserves $N(\tilde{Q}_-) = \tilde{Q}_-\bar{\tilde{Q}}_-$: by multiplicativity of the norm form, $N(\tilde{Q}_+\tilde{Q}_-\tilde{Q}_+^\dagger) = N(\tilde{Q}_+)N(\tilde{Q}_-)N(\tilde{Q}_+)^* = N(\tilde{Q}_-)$ when $N(\tilde{Q}_+) = 1$. This is the biquaternion expression of the Lorentz invariance of the Minkowski interval. The condition is on the norm form and not on $\tilde{Q}_+\tilde{Q}_+^\dagger$: a boost biquaternion is Hermitian, so $\tilde{Q}_+\tilde{Q}_+^\dagger = \tilde{Q}_+^2 = \cosh\tfrac{\psi}{2} + i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}} \neq e_0$, and only the rotation rotors satisfy $\tilde{Q}\tilde{Q}^\dagger = e_0$.
 
 **4. The action is a group action.** Compositions of actions compose:
 
@@ -264,7 +232,7 @@ This is the algebraic content of the reading of $\mathbb{M}_+$ as "informational
 
 The elements of $\mathbb{M}_+$ include two important classes.
 
-**Unit-norm-form elements** ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the norm form and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ — unitarity in the matrix representation — is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
+**Unit-norm-form elements** ($\tilde{Q}\bar{\tilde{Q}} = e_0$, i.e. $\tilde{Q} \in SL(2,\mathbb{C})$). These preserve the norm form and act by **reversible** transformations. Examples: the boost biquaternions $\tilde{\Lambda}$ and the spatial rotation rotors. These correspond to Lorentz transformations. The stronger condition $\tilde{Q}\tilde{Q}^\dagger = e_0$ is satisfied by the rotation rotors, which are real quaternions, but not by the boosts.
 
 **Idempotent elements** ($\tilde{Q}^2 = \tilde{Q}$). These do not preserve the norm form (unless $\tilde{Q} = e_0$). They act by **irreversible** projections: $\tilde{Q}_- \mapsto \tilde{P}\tilde{Q}_-\tilde{P}$. Examples: the pure-state projectors $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$. These correspond to quantum-mechanical measurements.
 
@@ -303,7 +271,7 @@ The mathematics of $\mathbb{M}_+$ and its action on $\mathbb{M}_-$ is **structur
 | Reversible evolution $U\rho U^\dagger$ | Rotor conjugation $\tilde{\Lambda}\tilde{\rho}\tilde{\Lambda}^\dagger$ |
 | Projective measurement $\rho \mapsto P\rho P$ | Idempotent projection $\tilde{\rho} \mapsto \tilde{P}\tilde{\rho}\tilde{P}$ |
 
-The correspondence is not an analogy. **It is the same mathematics**, expressed in two different notations. The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ contains the algebra of $2 \times 2$ complex matrices, which is the algebra of observables of a two-state system.
+The correspondence is not an analogy. **It is the same mathematics**, expressed in two different notations: the Hermitian elements of the algebra are the operators of a two-state system.
 
 ### What the Correspondence Is and Is Not
 
@@ -326,25 +294,6 @@ The difference is:
 The compact/non-compact distinction reflects the difference between rotations in a spacelike plane (compact) and boosts in a timelike plane (non-compact). The biquaternion framework extends the spin-1/2 structure to the relativistic setting: the operators generate the Lorentz group rather than the rotation group, and the corresponding observables include boosts (Hermitian biquaternions with imaginary vector part) alongside rotations.
 
 The biquaternion framework can therefore be read as a **relativistic generalisation of the spin-1/2 formalism**, in which the state space is the spinor module of $\mathbb{B}$ and the symmetry group is the Lorentz group.
-
-### The Matrix Example
-
-The trace formula is a matrix trace. Take the state $\tilde{P} = \tfrac{1}{2}(e_0 + ie_1)$ and the observable $\tilde{Q} = h_0e_0 + ih_1e_1$, both in the subspace. Their images are
-
-$$
-\Phi(\tilde{P}) = \tfrac{1}{2}\bigl(I_2 + \sigma_1\bigr), \qquad \Phi(\tilde{Q}) = h_0 I_2 + h_1\sigma_1 = \begin{pmatrix} h_0 & h_1 \\ h_1 & h_0 \end{pmatrix},
-$$
-
-and the trace of the product is
-
-$$
-\mathrm{Tr}\bigl(\Phi(\tilde{P})\Phi(\tilde{Q})\bigr)
-= \tfrac{1}{2}\,\mathrm{Tr}\begin{pmatrix} h_0 + h_1 & h_0 + h_1 \\ h_0 + h_1 & h_0 + h_1 \end{pmatrix}
-= h_0 + h_1 = h_0 + \hat{\boldsymbol\mu}\cdot\mathbf{h},
-$$
-
-with $\hat{\boldsymbol\mu}$ the spatial direction $e_1$. The matrix trace reproduces the expectation value computed in the algebra, which is the content of the trace formula. Both matrices are Hermitian, their determinant is the norm form, and the idempotence $\tilde{P}^2 = \tilde{P}$ is the rank-one condition $\det \Phi(\tilde{P}) = 0$ with $\mathrm{Tr}\,\Phi(\tilde{P}) = 1$.
-
 
 ## Examples
 
@@ -374,8 +323,7 @@ lie in $\mathbb{M}_+$: their scalar part $\tfrac{1}{2}$ is real, and their vecto
 
 - **Hermitian:** $\tilde{P}_\pm^\dagger = \tilde{P}_\pm$, since $\tilde{P}_\pm(\hat{\boldsymbol\mu}) \in \mathbb{M}_+$.
 - **Idempotent:** $\tilde{P}_\pm^2 = \tilde{P}_\pm$.
-- **Trace one:** $\mathrm{Tr}(\tilde{P}_\pm) = 2\,\mathrm{Sc}(\tilde{P}_\pm) = 1$ (using the trace from the matrix representation).
-- **Rank one:** in the matrix representation $\mathbb{B} \cong M_2(\mathbb{C})$, $\tilde{P}_\pm(\hat{\boldsymbol\mu})$ is a rank-one projection matrix.
+- **Unit trace:** $\mathrm{Tr}(\tilde{P}_\pm) = 2\,\mathrm{Sc}(\tilde{P}_\pm) = 1$.
 
 These are the biquaternion analogues of **pure-state density matrices** of quantum mechanics. They are the natural "states" of the informational sector.
 
@@ -387,8 +335,7 @@ $$
 \tilde{Q}\tilde{Q}^\dagger
 $$
 
-is an element of $\mathbb{M}_+$: it is Hermitian by construction. Its scalar part is $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$, the Euclidean norm squared, which is non-negative. In the matrix representation, the Hermitian form corresponds to $M M^\dagger$, whose trace is the Frobenius norm squared.
-
+is an element of $\mathbb{M}_+$: it is Hermitian by construction. Its scalar part is $\|\tilde{Q}\|_E^2 = \sum_\mu |Q_\mu|^2$, the Euclidean norm squared, which is non-negative.
 The Hermitian form is the natural "weight" or "energy" of the state $\tilde{Q}$, and it is the closest biquaternion analogue of the trace of a density matrix.
 
 ### The Identity
@@ -410,8 +357,6 @@ The common feature of these objects is that they are **Hermitian** (fixed under 
 
 The Hermitian subspace $\mathbb{M}_+$ is a four-dimensional real subspace of the biquaternion algebra, consisting of elements with real scalar part and imaginary vector part. Its norm form has signature $(1,3)$, the temporal direction being the single positive one. It contains the identity, the boost biquaternions, the idempotents $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$, and the Hermitian forms $\tilde{Q}\tilde{Q}^\dagger$.
 
-In the matrix picture the sector is the space of Hermitian $2\times2$ complex matrices — the identity and the three Pauli matrices — so its elements are the observables of a two-state system. The scalar part is half the trace, the norm form is the determinant, the idempotents are the rank-one projectors, and the elements of unit norm form are the boosts.
-
 The elements of $\mathbb{M}_+$ act on the material space $\mathbb{M}_-$ by conjugation: $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$. The action is linear, preserves $\mathbb{M}_-$, and preserves the norm form when $\tilde{Q}_+$ has unit norm form. The natural dichotomy between unit-norm-form and idempotent elements corresponds to the dichotomy between reversible evolution and irreversible measurement.
 
 The mathematics of $\mathbb{M}_+$ is structurally identical to the mathematics of quantum information theory for a two-state system. The idempotents are pure-state density matrices, the Hermitian elements are observables, the unitary elements are gates, and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\mathrm{Sc}(\tilde{P}\tilde{Q})$ is the Born rule. The structural correspondence is not an analogy: it is the same mathematics, expressed in the biquaternion algebra.
@@ -428,9 +373,8 @@ The **physical hypothesis** is that this mathematics reflects physics: that $\ma
 | $\tilde{Q} = q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$ | Informational element, both writings; $q_0 = ct'$, $q'_k = x'_k$ |
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
-| $\Phi(\tilde{Q})$ | Matrix image of $\tilde{Q}$ in $M_2(\mathbb{C})$; Hermitian, $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2q_0$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
-| $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$ | Idempotent (pure-state projector); rank-one Hermitian matrix of unit trace |
+| $\tilde{P}_\pm(\hat{\boldsymbol\mu}) = \tfrac{1}{2}(e_0 \pm i\hat{\boldsymbol\mu})$ | Idempotent (pure-state projector) of unit trace |
 | $\tilde{Q}$ | General Hermitian element (observable) |
 | $\tilde{Q}_- \mapsto \tilde{Q}_+\tilde{Q}_-\,\tilde{Q}_+^\dagger$ | Conjugation action of $\mathbb{M}_+$ on $\mathbb{M}_-$ |
 | $\tilde{Q}_+$, $\tilde{Q}_-$ | Hermitian element of $\mathbb{M}_+$ (operator) and anti-Hermitian element of $\mathbb{M}_-$ (acted upon); written $\tilde{Q}$ when only one element is in play |

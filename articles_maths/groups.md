@@ -410,6 +410,14 @@ The **group of units** $R^\times$ of a ring is a group under multiplication, rec
 
 ---
 
+## Summary
+
+A group is a set with a single associative binary operation, an identity element and inverses. The elementary properties follow at once — the identity and inverses are unique and powers obey the usual laws — and subgroups, homomorphisms, cosets and Lagrange's theorem are developed from there. The normal subgroups are exactly those for which the quotient is a group, and the isomorphism theorems relate the homomorphic images to the quotients by the kernels.
+
+The article then develops the structural theory. The center, the commutator subgroup and the abelianization measure how far a group is from abelian. Group actions, with their orbits and stabilizers, give the orbit–stabilizer theorem; the conjugation action gives the conjugacy classes and the class equation, from which the theory of $p$-groups follows. The Sylow theorems describe the subgroups of prime-power order of a finite group, and the cyclic, symmetric and alternating, and dihedral groups are the worked families.
+
+The article closes with the constructions and the classification results: direct and semidirect products, the structure theorem for finitely generated abelian groups, free groups and presentations, and the matrix groups together with the quaternion group $Q_8$. The section on group classes gathers the standard examples in a table, and the final section places the group of units of a ring, and the groups of the wider corpus, in this setting.
+
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991).

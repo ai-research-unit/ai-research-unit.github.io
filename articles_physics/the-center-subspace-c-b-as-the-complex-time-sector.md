@@ -6,7 +6,7 @@ This article is about the **center** of the algebra, $\mathbb{C}_{\mathbb{B}}$, 
 
 $\mathbb{C}_{\mathbb{B}}$ is the set of elements that commute with every element of $\mathbb{B}$. It is two-dimensional over the reals, spanned by the unit $e_0$ and the scalar imaginary $i e_0$, and as an algebra it is a copy of the complex numbers: commutative, a field, with no zero divisors and no idempotents other than $0$ and $e_0$. Precisely because its elements commute with everything, the center is the part of the algebra that is available as a *number system* rather than as an *operator*, and this is why it carries the complex time coordinate and the global phase.
 
-The article describes the subspace on its own terms: its definition and basis, its algebraic properties, the reading that gives it its name, its matrix image, its character as the center, and the elements it contributes to the series.
+The article describes the subspace on its own terms: its definition and basis, its algebraic properties, the reading that gives it its name, its character as the center, and the elements it contributes to the series.
 
 ## Basic Definition and Properties
 
@@ -103,36 +103,6 @@ The name records the parameter pattern of the subspace. $\mathbb{C}_{\mathbb{B}}
 
 It is also the sector of the framework in which the **classical** reading is canonical. A set of operators can be assigned simultaneous definite values only if they commute; the elements of $\mathbb{C}_{\mathbb{B}}$ commute with everything, so a central quantity can be assigned a definite value simultaneously with any other. That is the algebraic content of treating a quantity as a classical number, and it is why the center carries the classical, c-number sector of the framework: complex time, energy as a global scalar, and the global phase.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the two basis elements map to the **scalar matrices**
-
-$$
-e_0 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad
-i e_0 \mapsto \begin{pmatrix} i & 0 \\ 0 & i \end{pmatrix},
-$$
-
-so a general element $z e_0$ maps to
-
-$$
-\Phi(z\,e_0) = z\,I_2 = \begin{pmatrix} z & 0 \\ 0 & z \end{pmatrix}.
-$$
-
-The image of $\mathbb{C}_{\mathbb{B}}$ is therefore exactly the center of $M_2(\mathbb{C})$, the set of scalar matrices, which is a two-dimensional real space of complex matrices. This is the matrix picture of centrality: the matrices that commute with every $2\times2$ matrix are precisely the scalar ones, just as the elements of $\mathbb{C}_{\mathbb{B}}$ commute with every biquaternion.
-
-The two invariants are immediate:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(z e_0) = 2z$, twice the complex parameter.
-- **Determinant.** $\det \Phi(z e_0) = z^2 = N(z e_0)$, the norm form.
-
-The sector is recovered from its image completely: the trace of a scalar matrix determines it, so the map $\mathbb{C}_{\mathbb{B}} \to M_2(\mathbb{C})$ is injective and its image is exactly the set of matrices whose eigenvalues are equal, for which the determinant is the square of half the trace. An element of the sector is singular only when it is zero; the matrices of the image never have determinant zero unless the matrix is the zero matrix, which is the division property in the matrix picture.
-
 ## Advanced Algebraic Properties
 
 That $\mathbb{C}_{\mathbb{B}}$ is exactly the center — and not merely a commutative subalgebra — is the structural fact that gives the subspace its role.
@@ -142,17 +112,6 @@ That $\mathbb{C}_{\mathbb{B}}$ is exactly the center — and not merely a commut
 **It is the unique largest commutative part in this sense.** Every commutative subalgebra of $\mathbb{B}$ is contained in some maximal commutative subalgebra, but only one of them is central. The center is the largest set of elements that commute with *everything*, and it is contained in every maximal commutative subalgebra. Its elements are the ones that no choice of basis or embedding can distinguish from a scalar.
 
 **No non-trivial central idempotents.** A central idempotent is a central element $P$ with $P^2 = P$. Writing $P = ze_0$, the condition is $z^2 = z$, that is $z(z - 1) = 0$ in the field $\mathbb{C}$, so $z \in \{0, 1\}$: the only central idempotents are $0$ and $e_0$. A nonzero central idempotent different from $e_0$ would split the algebra into a direct product of two smaller algebras; there is none, and this is the standard reason the algebra is **simple**. The center therefore also records the indecomposability of $\mathbb{B}$.
-
-### The Matrix Example
-
-Every central element maps to a scalar matrix, $\Phi(ze_0) = zI_2$. The two central idempotents are the extreme cases,
-
-$$
-\Phi(0) = \begin{pmatrix} 0 & 0 \\ 0 & 0 \end{pmatrix}, \qquad \Phi(e_0) = I_2 = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix},
-$$
-
-and there is no third, because $z^2 = z$ has only the roots $z = 0$ and $z = 1$. A central element can be moved past any matrix in a product without changing the result, which is the matrix statement of centrality, and the global phase $e^{i\theta}e_0$ maps to the scalar unitary matrix $e^{i\theta}I_2$, whose action on every state is the same.
-
 
 ## Examples
 
@@ -176,8 +135,6 @@ The center subspace $\mathbb{C}_{\mathbb{B}}$ is the two-dimensional real subspa
 
 Its elements are the complex scalars $z e_0$. It is a subalgebra and closed under multiplication by $i$, hence a complex subspace; it has no zero divisors, its only idempotents are $0$ and $e_0$ — which is the statement that the algebra is simple and has no non-trivial central splitting — and its norm form is the squared complex parameter, $N(ze_0) = z^2e_0$, which is not the modulus. Under Hermitian conjugation the real direction $e_0$ is Hermitian and the imaginary direction $ie_0$ is anti-Hermitian.
 
-In the matrix picture it is the set of scalar matrices $zI_2$, the center of $M_2(\mathbb{C})$, with trace $2z$ and determinant $z^2$.
-
 Physically it carries the complex time coordinate $ict\,e_0$, the Hermitian energy scalar $h_0e_0$ that generates the global phase, and the c-number or classical sector of the framework.
 
 ## Summary of Notation
@@ -193,8 +150,6 @@ Physically it carries the complex time coordinate $ict\,e_0$, the Hermitian ener
 | $N(ze_0) = z^2 e_0$ | Norm form: the squared complex parameter, not the modulus |
 | $(ze_0)^{-1} = z^{-1}e_0$ | Inverse; exists for every nonzero element |
 | $0$ and $e_0$ | The only central idempotents; hence $\mathbb{B}$ is simple |
-| $\Phi(ze_0) = zI_2$ | Matrix image: the scalar matrices, the center of $M_2(\mathbb{C})$ |
-| $\mathrm{Tr}\,\Phi(ze_0) = 2z$, $\det\Phi(ze_0) = z^2$ | Trace and determinant of the image |
 | $ict\,e_0$ | Complex time coordinate; the imaginary central direction |
 | $h_0e_0$, $h_0 \in \mathbb{R}$ | Hermitian central scalar; generator of the global phase $\exp(-ih_0t/\hbar)$ |
 
@@ -203,6 +158,6 @@ Physically it carries the complex time coordinate $ict\,e_0$, the Hermitian ener
 - Israel Nathan Herstein, *Topics in Algebra* (Blaisdell, 1964), for the center of an algebra, simplicity, and central idempotents.
 - Emil Artin, *Geometric Algebra* (Interscience, 1957), for the structure theory of simple algebras and the proof that the center of a simple algebra is the base field.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathbb{C}_{\mathbb{B}}$ among the six subspaces.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the center of the biquaternion algebra and its matrix representation.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the center of the biquaternion algebra.
 - Lev Landau and Evgeny Lifshitz, *Quantum Mechanics: Non-Relativistic Theory* (Pergamon, 1977), for global phases and their unobservability.
 - Cornelius Lanczos, *The Variational Principles of Mechanics* (Toronto, 1949), for the classical reading of commuting quantities.

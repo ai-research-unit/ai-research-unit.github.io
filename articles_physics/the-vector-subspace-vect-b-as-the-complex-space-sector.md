@@ -6,7 +6,7 @@ This article is about the **vector subspace** $\mathrm{Vect}(\mathbb{B})$, the a
 
 $\mathrm{Vect}(\mathbb{B})$ is spanned by the three vector units $e_1, e_2, e_3$ with complex coefficients, so its elements are the pure-vector biquaternions. It is six-dimensional over the reals but **three-dimensional over the complex numbers**, because multiplication by the scalar imaginary carries it into itself: it is a complex vector space, and this is what the name "complex space sector" records. It is not a subalgebra — the square of a vector unit is a scalar — but it **is** a Lie algebra, and in fact it is the algebra's derived subspace, spanned by all commutators. Its norm form is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, and it therefore has a complex null cone rather than a real one.
 
-The article describes the subspace on its own terms: its definition and basis, its algebraic properties, the reading that gives it its name, its matrix image, its Lie-algebraic structure, and the physical objects it carries.
+The article describes the subspace on its own terms: its definition and basis, its algebraic properties, the reading that gives it its name, its Lie-algebraic structure, and the physical objects it carries.
 
 ## Basic Definition and Properties
 
@@ -38,10 +38,10 @@ $$
 
 so the subspace is closed under multiplication by the central scalar and is a $\mathbb{C}$-subspace, not merely an $\mathbb{R}$-subspace.
 
-The parameter pattern carries six real parameters, the real and imaginary parts of the three complex coefficients of a general biquaternion on the vector directions, and the scalar coefficient is absent entirely. In the matrix picture, the vanishing of the scalar part is the vanishing of the trace, so the subspace is exactly the trace-zero part of the algebra:
+The parameter pattern carries six real parameters, the real and imaginary parts of the three complex coefficients of a general biquaternion on the vector directions, and the scalar coefficient is absent entirely. The vanishing of the scalar part is the defining condition:
 
 $$
-\tilde{Q} \in \mathrm{Vect}(\mathbb{B}) \iff \mathrm{Tr}\,\Phi(\tilde{Q}) = 0.
+\tilde{Q} \in \mathrm{Vect}(\mathbb{B}) \iff \mathrm{Sc}(\tilde{Q}) = 0.
 $$
 
 ### The Defining Involution
@@ -131,43 +131,6 @@ The name records the defining property of the subspace: it is a **complex** vect
 
 **The complex structure is physical.** The complex structure is not decorative. It is the Hodge dual on the field strength, the electric–magnetic duality rotation, and the algebraic device that combines the rotation generators and the boost generators into a single complex three-dimensional Lie algebra. A complex three-vector in this subspace is simultaneously a field configuration and a generator, which is exactly the role the sector plays in the physics of spin one.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the three vector units map to the three matrices
-
-$$
-e_1 \mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
-e_2 \mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
-e_3 \mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
-$$
-
-each of which is traceless, and the imaginary vector units are obtained by multiplying these by $i$. The image of $\mathrm{Vect}(\mathbb{B})$ is therefore exactly the space of **traceless** $2\times2$ complex matrices:
-
-$$
-\mathrm{Vect}(\mathbb{B}) \cong \mathfrak{sl}(2,\mathbb{C}) = \{M \in M_2(\mathbb{C}) : \mathrm{Tr}\,M = 0\}.
-$$
-
-This is a three-dimensional complex Lie algebra, the complexification of $\mathfrak{su}(2)$, and it is the Lie algebra of $SL(2,\mathbb{C})$. The matrix picture thus makes both properties visible at once: tracelessness is the vanishing of the scalar part, and the bracket closes because the commutator of traceless matrices is traceless.
-
-A general element $\tilde{Q} = z_1e_1 + z_2e_2 + z_3e_3$ has the image
-
-$$
-\Phi(\tilde{Q}) = -i\begin{pmatrix} z_3 & z_1 - iz_2 \\ z_1 + iz_2 & -z_3 \end{pmatrix} = -i\,(z_1\sigma_1 + z_2\sigma_2 + z_3\sigma_3),
-$$
-
-and the two invariants are:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(\tilde{Q}) = 0$ identically, which is the defining property of the subspace.
-- **Determinant.** $\det \Phi(\tilde{Q}) = z_1^2 + z_2^2 + z_3^2 = N(\tilde{Q})$, the complex quadratic form. So an element of the subspace is a zero divisor exactly when its matrix image is singular, and the complex null cone is precisely the set of singular traceless matrices.
-
-Because the trace vanishes identically, the determinant is here the only invariant, and it is complex rather than real — the matrix expression of the absence of a Hermitian structure on the subspace.
-
 ## Advanced Algebraic Properties
 
 **A Lie subalgebra.** The commutator of two pure vectors is again a pure vector, and the brackets close:
@@ -184,7 +147,7 @@ $$
 [\mathbb{B}, \mathbb{B}] \subseteq \mathrm{Vect}(\mathbb{B}),
 $$
 
-and in fact the two spaces coincide: the commutators of the basis elements span a space of real dimension $6$, which is the dimension of the subspace. So the vector subspace is exactly the derived subspace of $\mathbb{B}$ — the smallest subspace containing all commutators. This gives an intrinsic characterization of the subspace that does not mention the vector units at all: it is the set of elements that can be written as $[\tilde{Q},\tilde{Y}]$, equivalently the kernel of the trace.
+and in fact the two spaces coincide: the commutators of the basis elements span a space of real dimension $6$, which is the dimension of the subspace. So the vector subspace is exactly the derived subspace of $\mathbb{B}$ — the smallest subspace containing all commutators. This gives an intrinsic characterization of the subspace that does not mention the vector units at all: it is the set of elements that can be written as $[\tilde{Q},\tilde{Y}]$, equivalently the elements with vanishing scalar part.
 
 **The Lorentz algebra.** The six real dimensions of the subspace also carry the generators of the Lorentz group: the three real vector units $e_1, e_2, e_3$ generate rotations, and the three imaginary vector units $ie_1, ie_2, ie_3$ generate boosts. Their brackets, listed above, are the brackets of the Lorentz algebra $\mathfrak{so}(1,3)$, written in the complex form in which rotations and boosts are the two real three-dimensional parts of a single complex three-dimensional algebra. The same object — a complex three-vector — therefore carries both the field strength and the generators of the transformations that rotate it, which is the reason the field strength is naturally a representation of the Lorentz group of a kind that a four-vector is not.
 
@@ -195,23 +158,6 @@ $$
 $$
 
 in the real-time convention where $\star^2 = -1$. The complex structure $i$ of the sector is thus not a formal device but the Hodge duality operation, and the real and imaginary parts of a complex vector in the subspace are an electric–magnetic pair related by duality. The duality rotation $\mathbf{V} \mapsto e^{-i\theta}\mathbf{V}$, which rotates the electric into the magnetic field, is multiplication by a unit complex number inside the same sector.
-
-### The Matrix Example
-
-The element $e_1 + ie_2$ is a null vector of the complex null cone, $(e_1 + ie_2)^2 = 0$. Its image is
-
-$$
-\Phi(e_1 + ie_2) = -i\sigma_1 + \sigma_2 = \begin{pmatrix} 0 & -2i \\ 0 & 0 \end{pmatrix},
-$$
-
-which is nilpotent,
-
-$$
-\bigl(\Phi(e_1 + ie_2)\bigr)^2 = \begin{pmatrix} 0 & -2i \\ 0 & 0 \end{pmatrix}^2 = 0,
-$$
-
-as the algebra requires. In the matrix picture the complex null cone of the subspace is the set of nilpotent traceless matrices, and the defining condition $\mathrm{Sc}(\tilde{Q}) = 0$ is the vanishing of the trace of the image. The two real blocks of the subspace, spanned by $\{e_k\}$ and by $\{ie_k\}$, are the anti-Hermitian traceless part and the Hermitian traceless part of the image respectively.
-
 
 ## Examples
 
@@ -225,13 +171,13 @@ $$
 
 whose three components are complex. The corresponding biquaternion is a pure-vector element of $\mathrm{Vect}(\mathbb{B})$, so the field strength lives in the sector, not in the four-vector sector. The complex coefficients are not a convenience: they are the three complex dimensions of the subspace, and the electric and magnetic parts are the real and imaginary parts of one complex object.
 
-The complex null cone of the norm form has a physical reading in this picture. Its elements are the null field configurations, and the nilpotent element $e_1 + ie_2$ constructed above is the algebraic prototype: the norm $\mathbf{V}\cdot\mathbf{V} = z_1^2 + z_2^2 + z_3^2$ is the complex combination of the two classical invariants of the electromagnetic field, $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = c\,\mathbf{E}\cdot\mathbf{B}$, so the vanishing of the norm form is the joint vanishing of both field invariants. Because the form is complex, its zero set is four-real-dimensional, which is why the null configurations are not a single cone of directions but a richer structure.
+The complex null cone of the norm form has a physical reading in this picture. Its elements are the null field configurations, and the element $e_1 + ie_2$, whose square vanishes, is the algebraic prototype: the norm $\mathbf{V}\cdot\mathbf{V} = z_1^2 + z_2^2 + z_3^2$ is the complex combination of the two classical invariants of the electromagnetic field, $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = c\,\mathbf{E}\cdot\mathbf{B}$, so the vanishing of the norm form is the joint vanishing of both field invariants. Because the form is complex, its zero set is four-real-dimensional, which is why the null configurations are not a single cone of directions but a richer structure.
 
 ## Summary
 
 The vector subspace $\mathrm{Vect}(\mathbb{B})$ is the set of biquaternions with vanishing scalar part, spanned over $\mathbb{R}$ by $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and over $\mathbb{C}$ by $e_1, e_2, e_3$. It is a six-dimensional real space and a three-dimensional complex space.
 
-It is not a subalgebra — the square of a vector unit is $-e_0$ — but it is a Lie subalgebra under the commutator, and in fact it is exactly the derived subspace $[\mathbb{B},\mathbb{B}]$, equivalently the kernel of the trace. In the matrix picture it is the space of traceless $2\times2$ complex matrices, $\mathfrak{sl}(2,\mathbb{C})$.
+It is not a subalgebra — the square of a vector unit is $-e_0$ — but it is a Lie subalgebra under the commutator, and in fact it is exactly the derived subspace $[\mathbb{B},\mathbb{B}]$, equivalently the set of elements with vanishing scalar part.
 
 Its norm form is the complex quadratic form $z_1^2 + z_2^2 + z_3^2$, which is not Hermitian and not real-valued; it vanishes on a complex null cone of real dimension $4$, so the subspace contains zero divisors, the nilpotent element $e_1 + ie_2$ being the prototype. There is no positive definite or indefinite real form, and hence no timelike/spacelike division of directions.
 
@@ -245,14 +191,13 @@ Physically the subspace carries the **field strength** — the Riemann–Silbers
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace (complex space sector): elements with vanishing scalar part |
 | $\{e_1,e_2,e_3,ie_1,ie_2,ie_3\}$ | Real basis; complex dimension $3$, real dimension $6$ |
 | $z_k = q_k + iq'_k$ | Complex coefficients on $e_k$; six real parameters $q_k, q'_k$ |
-| $\mathrm{Sc}(\tilde{Q}) = 0 \iff \mathrm{Tr}\,\Phi(\tilde{Q}) = 0$ | Defining condition, in coordinates and in the matrix picture |
+| $\mathrm{Sc}(\tilde{Q}) = 0$ | Defining condition: the scalar part vanishes |
 | $e_k^2 = -e_0$ | Products leave the subspace: it is not a subalgebra |
 | $[e_1,e_2] = 2e_3$, $[e_1,ie_2] = 2ie_3$, $[ie_1,ie_2] = -2e_3$ | Brackets close: a Lie subalgebra |
 | $[\mathbb{B},\mathbb{B}] = \mathrm{Vect}(\mathbb{B})$ | The subspace is the derived subspace |
 | $N(\tilde{Q}) = (z_1^2+z_2^2+z_3^2)e_0$ | Complex quadratic norm form; not Hermitian |
 | $z_1^2+z_2^2+z_3^2 = 0$ | Complex null cone; real dimension $4$; zero divisors |
 | $(e_1+ie_2)^2 = 0$ | Nilpotent element; prototype of the null cone |
-| $\mathfrak{sl}(2,\mathbb{C})$ | Image of the subspace: the traceless matrices |
 | $\mathbf{V} = \mathbf{E} + ic\,\mathbf{B}$ | Riemann–Silberstein vector; the field strength |
 | $\star\tilde{F} = -i\tilde{F}$ | Hodge dual as the complex structure |
 | $e_k$, $ie_k$ | Rotation and boost generators of the Lorentz algebra |
@@ -263,5 +208,5 @@ Physically the subspace carries the **field strength** — the Riemann–Silbers
 - Carsten A. Mead, *Collective Electrodynamics* (MIT, 2000), for a modern account of the Riemann–Silberstein vector.
 - *Conventions in the Biquaternion Universe* and *Relations Between Subspaces*, the companion articles, for the notation and for the place of $\mathrm{Vect}(\mathbb{B})$ among the six subspaces.
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for bivectors, the Hodge dual, and the Lorentz algebra in the spacetime algebra.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for $\mathfrak{sl}(2,\mathbb{C})$ and the complexification of $\mathfrak{su}(2)$.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the complexification of $\mathfrak{su}(2)$.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time* (Cambridge, 1984), for the self-dual and anti-self-dual decomposition of the field strength.

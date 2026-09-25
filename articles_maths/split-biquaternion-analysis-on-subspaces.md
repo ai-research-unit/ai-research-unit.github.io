@@ -504,5 +504,20 @@ The following questions are not answered in this article and are left for later 
 
 4. **The interaction between the subspaces.** If a function is defined on two of the subspaces, how do the analyses on the two subspaces interact?
 
-5. **The relation to the biquaternion subspaces.** The biquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$ have
+5. **The relation to the biquaternion subspaces.** The biquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$ have their own analyses, developed in the companion articles; how the analysis on each of the four subspaces of this article relates to the analysis on the corresponding biquaternion subspace remains to be made precise.
 
+## Summary
+
+This article studies the four distinguished real subspaces of the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ and the analysis on them, continuing the general treatment of split biquaternion analysis. The four subspaces are the fixed-point sets of the four conjugations: the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, of real dimension two, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, of dimension four, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$. Each is defined precisely, its elements are described explicitly, and the four are compared.
+
+The subspaces are then related to one another and to the idempotent decomposition of the algebra: the conjugations preserve and permute them, and each is described in terms of the idempotent components, so that the analysis on each subspace is the analysis on the corresponding component factor.
+
+The differential operators of the general theory are restricted to the four subspaces and the resulting operators are gathered in a table; the formulas are the same on each subspace, with the appropriate dimension. The final sections record the intersection of the zero divisor set of $\mathbb{H}_{\mathbb{D}}$ with each subspace, and the questions that the article leaves open for later work.
+
+## Further Reading
+
+- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and biquaternions.
+- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
+- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
+- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the algebra of the biquaternions.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of the real algebras.

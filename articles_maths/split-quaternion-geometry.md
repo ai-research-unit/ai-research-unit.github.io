@@ -109,7 +109,7 @@ $$
 \{N = -1\} \subset V \ \cong\ \mathrm{SO}^{+}(2,1)/SO(1,1),
 $$
 
-and the nappes of the light cone are orbits with stabiliser the two-dimensional solvable group of *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
+and the nappes of the light cone are orbits with stabiliser the one-parameter unipotent group of null transvections of *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
 
 **Proof.** Transitivity on each level set and the computation of the stabilisers are that section, and the orbit–stabiliser theorem gives the display. $\square$
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This article treats the integration of split-quaternion-valued functions. It fixes the orientation of the vector subspace, proves integration by parts and the divergence theorem for the algebra, derives Green's formulas for the vector operator, constructs the fundamental solution, and explains why there is no Cauchy integral formula, comparing the situation with the quaternion and split-complex cases.
+This article treats the integration of split-quaternion-valued functions. It fixes the orientation of the vector subspace, proves integration by parts and the divergence theorem for the algebra, derives Green's formulas for the vector operator, constructs the fundamental solution, and explains what replaces the Cauchy integral formula and what fails in its place, comparing the situation with the quaternion and split-complex cases.
 
 The split-quaternion algebra, its norm form, its conjugation and its subspaces are assumed from *Split-Quaternion Algebra*; the Lorentzian geometry of the vector subspace, including the sign convention of the form $b^2-c^2-d^2$ as three-dimensional Minkowski space, from *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*, and *Split-Quaternion Geometry*; the operators, the metric structure and the failure of the naive derivative from *Split-Quaternion Analysis*, and the operators of the subspaces from *Split-Quaternion Analysis on Subspaces*. The theory of distributions and fundamental solutions is that of *Distributions and Fundamental Solutions*, the quaternion case that of *Quaternion Integration*, and the two-dimensional hyperbolic case that of *Split-Complex Integration*. Nothing physical is invoked.
 
@@ -19,15 +19,33 @@ and it is the Bochner integral of a function with values in the finite-dimension
 
 **Definition (Orientation).** The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, e_1, e_2, e_3)$, so the volume element is $\mathrm{d}a\,\mathrm{d}b\,\mathrm{d}c\,\mathrm{d}d$. The vector subspace $V$ with the coordinates $(b,c,d)$ is oriented by $(e_1,e_2,e_3)$; the form restricted to it is $b^2-c^2-d^2$, and this is the three-dimensional Minkowski space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
 
-**Theorem (The Boundary and the Normal).** Let $\partial\Omega$ be a smooth hypersurface with a **non-characteristic** normal, that is a normal vector $n$ with $N(n) \neq 0$, scaled so that $N(n) = \pm 1$. Then the boundary carries the Riemannian or Lorentzian area element induced by the Euclidean metric of $\mathbb{R}^4$ restricted to the hypersurface, the outward normal $n$ is a split-quaternion vector field, and the divergence theorem holds:
+**Theorem (The Boundary and the Normal).** Let $\partial\Omega$ be a piecewise smooth hypersurface with outward unit normal $(n_a,n_b,n_c,n_d)$ in the Euclidean metric of $\mathbb{R}^4$, and let
 
 $$
-\int_\Omega \partial_a f \;=\; \int_{\partial\Omega} f\, n_a, \qquad \int_\Omega \partial_b f \;=\; \int_{\partial\Omega} f\, n_b, \qquad \int_\Omega \partial_c f \;=\; \int_{\partial\Omega} f\, n_c, \qquad \int_\Omega \partial_d f \;=\; \int_{\partial\Omega} f\, n_d ,
+n = n_a + n_b e_1 + n_c e_2 + n_d e_3
 $$
 
-for every $f$ with continuous first derivatives on the closure, where $(n_a,n_b,n_c,n_d)$ are the coordinates of the outward unit Euclidean normal. If the normal is characteristic, that is if $N(n) = 0$, then $n$ cannot be normalised and the induced form on the boundary is degenerate.
+be the corresponding split-quaternion; it satisfies $n_a^2+n_b^2+n_c^2+n_d^2 = 1$. Then for every $f$ with continuous first derivatives on the closure,
 
-**Proof.** The identities are the divergence theorem in the four coordinates, valid for each component; the normalisation uses the non-degeneracy of the Euclidean metric, and the last statement is *Split-Quaternion Norm and Invertibility*, §*Isotropy*. $\square$
+$$
+\int_\Omega \partial_a f \;=\; \int_{\partial\Omega} f\, n_a \,\mathrm{d}\sigma, \quad \int_\Omega \partial_b f \;=\; \int_{\partial\Omega} f\, n_b \,\mathrm{d}\sigma, \quad \int_\Omega \partial_c f \;=\; \int_{\partial\Omega} f\, n_c \,\mathrm{d}\sigma, \quad \int_\Omega \partial_d f \;=\; \int_{\partial\Omega} f\, n_d \,\mathrm{d}\sigma,
+$$
+
+with $\mathrm{d}\sigma$ the Euclidean surface element, and taking scalar parts and summing,
+
+$$
+\int_\Omega \operatorname{Sc}\big(D f\big) \;=\; \int_{\partial\Omega} \operatorname{Sc}\big(f\, n\big) .
+$$
+
+The normalisation is the Euclidean one, which exists on every smooth hypersurface. What degenerates on a boundary tangent to the light cone is not the normalisation but the boundary term: if $N(n) = 0$ at a point, then $n$ is a zero divisor there and the functional $f \mapsto \operatorname{Sc}(fn)$ has a kernel, so the boundary term loses information. The algebra-valued form $\int_\Omega Df = \int_{\partial\Omega} fn$ with the normal on the right is *not* valid as it stands; the componentwise theorem gives $\int_\Omega Df = \int_{\partial\Omega}\sum_i (e_if)n_i$, and only after taking the scalar part does the sum collapse to the single product $fn$.
+
+**Proof.** The four displays are the divergence theorem in the four coordinates, applied to the components of $f$. For the scalar-part form, $\operatorname{Sc}(Df) = \sum_i\operatorname{Sc}(e_i\partial_if)$ and $\int_\Omega\partial_if = \int_{\partial\Omega}fn_i$; since $e_i$ is constant and the scalar part is linear and invariant under cyclic permutations,
+
+$$
+\int_\Omega\operatorname{Sc}(Df) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(e_ifn_i) = \sum_i\int_{\partial\Omega}\operatorname{Sc}(fn_ie_i) = \int_{\partial\Omega}\operatorname{Sc}\Big(f\sum_i n_ie_i\Big) = \int_{\partial\Omega}\operatorname{Sc}(fn),
+$$
+
+because $\sum_in_ie_i = n$. If $N(n) = 0$ then $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Zero Divisor Set as the Null Cone*, so there is a nonzero $y$ with $ny = 0$ and $\operatorname{Sc}(yn) = \operatorname{Sc}(ny) = 0$; a boundary layer with constant values $y$ therefore contributes nothing to the boundary term. $\square$
 
 ## Integration by Parts and Green's Formulas
 
@@ -39,35 +57,84 @@ $$
 
 and the associated pairing is real-valued and non-degenerate in each variable pointwise.
 
-**Theorem (The Adjoint of the Vector Operator).** Left multiplication by $e_i$ has adjoint left multiplication by $-e_i$ with respect to the pointwise pairing $\operatorname{Sc}(f\bar g)$:
+**Theorem (The Adjoint of Left Multiplication).** For $i = 1,2,3$, left multiplication by $e_i$ has adjoint left multiplication by $-e_i$ with respect to the pointwise pairing $\operatorname{Sc}(f\bar g)$:
 
 $$
-\operatorname{Sc}\big((e_i f)\bar g\big) = -\operatorname{Sc}\big(f\,\overline{e_i g}\big) .
+\operatorname{Sc}\big((e_i f)\bar g\big) = -\operatorname{Sc}\big(f\,\overline{e_i g}\big) , \qquad i = 1,2,3,
 $$
 
-Consequently the vector operator $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ is formally skew-adjoint on functions vanishing on the boundary: $D^* = -D$.
+while for the identity generator $e_0 = 1$ the same identity holds with the sign $+$.
 
-**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(xyz) = \operatorname{Sc}(yzx)$, since it is a multiple of the trace in the matrix model; hence $\operatorname{Sc}(e_if\bar g) = \operatorname{Sc}(f\bar g e_i) = \operatorname{Sc}(f\,\overline{\bar e_i g})$ because $x \mapsto \bar{x}$ is an anti-automorphism, and $\bar e_i = -e_i$. The last statement is the integration by parts of the divergence theorem with vanishing boundary term. $\square$
+**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(xyz) = \operatorname{Sc}(yzx)$, since it is a multiple of the trace in the matrix model; hence $\operatorname{Sc}(e_if\bar g) = \operatorname{Sc}(f\bar g e_i) = \operatorname{Sc}(f\,\overline{\bar e_i g})$ because $x \mapsto \bar{x}$ is an anti-automorphism. Now $\bar e_i = -e_i$ for $i = 1,2,3$ and $\bar e_0 = e_0$, which gives the two signs; they are confirmed by evaluating both sides on the basis. $\square$
 
-**Theorem (Green's Formulas).** For $f, g$ with continuous first derivatives on the closure of a domain with non-characteristic boundary,
-
-$$
-\int_\Omega \big[(Df)\,g + f\,(Dg)\big] = \int_{\partial\Omega} f\, n\, g ,
-$$
-
-where $n$ is the vector normal of the boundary and the products are the products of the algebra. In particular, if $f$ and $g$ vanish on the boundary, $\int_\Omega (Df)g = -\int_\Omega f(Dg)$; if $Df = 0$ and $g$ vanishes on the boundary, then $\int_\Omega f(Dg) = 0$; and if both $Df = 0$ and $Dg = 0$ and one of them vanishes on the boundary, then $\int_{\partial\Omega} fng = 0$.
-
-**Proof.** Expand $D(fg) = (Df)g + f(Dg)$ using the Leibniz rule and the anticommutation of the generators with the gradient in the vector direction; integrate over $\Omega$ with the divergence theorem of the first section, using that $\int_\Omega D(fg)$ is the boundary integral of $fng$ componentwise. $\square$
-
-**Corollary (The Classical Green Identities).** Applying the formulas to the scalar and vector parts separately gives the classical Green identities for the wave operator $\Box_{(2,1)} = D^2$: for scalar functions,
+**Corollary (The Formal Adjoint of the Vector Operator).** The operator $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ is formally *self-adjoint* with respect to the scalar product $\langle f,g\rangle = \int\operatorname{Sc}(f\bar g)$: the two signs cancel in
 
 $$
-\int_\Omega \big(u\,\Box v - v\,\Box u\big) = \int_{\partial\Omega} \big(u\,\partial_n v - v\,\partial_n u\big),
+(e_i\partial_i)^* = \partial_i^*\,\big(\text{left multiplication by } e_i\big)^* = (-\partial_i)(-e_i) = e_i\partial_i ,
 $$
 
-with the sign of $\partial_n$ taken from the normal vector of the Minkowski form.
+so that $D^* = D$. With the boundary term retained, integration by parts gives
 
-**Proof.** Apply the formula to $Du$ and $v$, to $u$ and $Dv$, subtract, and use $D^* = -D$. $\square$
+$$
+\langle Df, g\rangle = \langle f, Dg\rangle + \int_{\partial\Omega}\operatorname{Sc}\big(f\,n\,\bar g\big) .
+$$
+
+**Proof.** Integration by parts with a vanishing boundary term gives $\partial_i^* = -\partial_i$, and the adjoint of left multiplication by $e_i$ is left multiplication by $-e_i$ by the theorem, for $i = 1,2,3$; the product of the two signs is $+1$. The boundary term is the contribution of the boundary term in that integration by parts, its form taken from the divergence theorem of the first section. $\square$
+
+**Theorem (Green's Formula and the Two-Sided Operator).** Let $\bar D$ be the operator that multiplies on the right,
+
+$$
+\bar D g = (\partial_b g)e_1 + (\partial_c g)e_2 + (\partial_d g)e_3 .
+$$
+
+For $f, g$ with continuous first derivatives on the closure,
+
+$$
+\int_\Omega \Big[\operatorname{Sc}\big((Df)\,g\big) + \operatorname{Sc}\big(f\,(\bar D g)\big)\Big] = \int_{\partial\Omega} \operatorname{Sc}\big(f\, g\, n\big) .
+$$
+
+Two features of the algebra are responsible for the form of this formula, and both are statements that are true for scalar-valued functions and false in general.
+
+1. The operators $D$ and $\bar D$ agree on functions with values in a commutative subalgebra, and in particular on scalar-valued functions, but they differ in general:
+$$
+\bar Dg - Dg = \sum_i\big((\partial_ig)e_i - e_i(\partial_ig)\big) ,
+$$
+a sum of commutators, which vanishes exactly when the values of $g$ commute with the generators.
+2. The two-term Leibniz rule is false. One has
+$$
+D(fg) = (Df)g + \sum_i e_i f\,(\partial_i g), \qquad \sum_i e_i f\,(\partial_ig) - f(Dg) = \sum_i [e_i,f]\,\partial_ig ,
+$$
+so that $D(fg) = (Df)g + f(Dg)$ holds exactly when $f$ is central; the failure is visible on $f = e_1$, $g = e_2$ at $i = 2$, where $e_2(e_1e_2) = -e_1$ while $(e_2e_1)e_2 + e_1(e_2e_2) = 0$. What does survive without centrality is the scalar-part statement displayed above, because the scalar part is invariant under cyclic permutations: $\operatorname{Sc}(e_if\,\partial_ig) = \operatorname{Sc}(f\,\partial_ig\,e_i)$.
+
+**Proof.** Apply the scalar-part divergence theorem of the first section to the algebra-valued function $fg$:
+
+$$
+\int_\Omega\operatorname{Sc}\big(D(fg)\big) = \int_{\partial\Omega}\operatorname{Sc}\big(fgn\big).
+$$
+
+Now $D(fg) = \sum_ie_i\big[(\partial_if)g + f(\partial_ig)\big]$, whose scalar part is $\operatorname{Sc}((Df)g) + \sum_i\operatorname{Sc}(e_if\partial_ig)$. By the cyclic invariance of the scalar part, $\operatorname{Sc}(e_if\partial_ig) = \operatorname{Sc}(f\partial_ig e_i) = \operatorname{Sc}(f(\bar Dg))$, and the display follows. The failure of the two-term Leibniz rule is the computation on the stated generators, and the sum-of-commutators form of the difference is immediate. $\square$
+
+**Corollary (The Classical Green Identities).** If $g$ is scalar-valued then $\bar Dg = Dg$ and
+
+$$
+\int_\Omega\big[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(Dg))\big] = \int_{\partial\Omega}\operatorname{Sc}(fgn) .
+$$
+
+In particular, for scalar-valued $u$ and $v$,
+
+$$
+\int_\Omega\big(u\,\Box_{(2,1)} v - v\,\Box_{(2,1)} u\big) = \int_{\partial\Omega}\big(u\,\partial_n v - v\,\partial_n u\big), \qquad \partial_n u = -n_b\partial_bu + n_c\partial_cu + n_d\partial_du = \operatorname{Sc}(nDu),
+$$
+
+the classical Green identity for the wave operator, with the normal derivative carrying the signs of the form.
+
+**Proof.** For scalar-valued $g$ each $\partial_ig$ is scalar and commutes with the generators, so the two operators agree and the first display is the theorem. For the second, apply the first display to the pair $(Du, v)$ and to the pair $(Dv, u)$ with scalar $u, v$, and subtract: the mixed terms are $\operatorname{Sc}((Du)(Dv))$ and $\operatorname{Sc}((Dv)(Du))$, which are equal by the symmetry $\operatorname{Sc}(xy) = \operatorname{Sc}(yx)$ of the scalar part and therefore cancel, while $\operatorname{Sc}((\Box u)v) = v\,\Box u$ because $v$ is scalar. The boundary terms are
+
+$$
+\int_{\partial\Omega}\operatorname{Sc}(Du\,v\,n) - \int_{\partial\Omega}\operatorname{Sc}(Dv\,u\,n) = \int_{\partial\Omega}\big(v\operatorname{Sc}(nDu) - u\operatorname{Sc}(nDv)\big),
+$$
+
+which is the display because $\operatorname{Sc}(nDu) = -n_b\partial_bu + n_c\partial_cu + n_d\partial_du = \partial_nu$; the scalar part of $nD$ is the conormal operator of the form $-\partial_b^2+\partial_c^2+\partial_d^2$, the signs being those of the form, not of the Euclidean gradient. $\square$
 
 ## The Divergence Theorem and the Stokes Theorem
 
@@ -103,35 +170,51 @@ $$
 E_D = D E ,
 $$
 
-the distribution obtained by applying $D$ to the fundamental solution of the wave operator; it satisfies $D E_D = \delta$ because $D^2 = \Box_{(2,1)}$. Its singular support is the light cone, so the propagation governed by $D$ is at speed one, in contrast with the elliptic case, where the singular support of the fundamental solution is a single point.
+the distribution obtained by applying $D$ to the fundamental solution of the wave operator; it satisfies $D E_D = \delta$ because $D^2 = \Box_{(2,1)}$. Its singular support is the light cone, so the propagation governed by $D$ is at speed one, in contrast with the elliptic case, where the singular support of the fundamental solution is a single point. Both $E$ and $E_D$ depend on the vector coordinates $(b,c,d)$ alone and are independent of the scalar coordinate $a$; $E$ is homogeneous of degree $-1$ and $E_D = DE$ of degree $-2$ in those three variables, and the $\delta$ in the two equations is the delta distribution of the vector subspace.
 
 **Proof.** $D(D E) = D^2E = \Box_{(2,1)}E = \delta$; the singular support is contained in that of $E$ and is not smaller because $E_D$ is not smooth across the cone. The elliptic comparison is the fundamental solution of the Laplacian in *Clifford Analysis*. $\square$
 
 ## The Cauchy Integral Formula and Its Failure
 
-**Theorem (No Cauchy Integral Formula).** There is no formula of the form
+### The Kernel of the Vector Operator
+
+**Theorem (The Kernel of the Vector Operator).** The kernel of $D$ is large. For every smooth scalar function $h$ of one variable,
 
 $$
-f(y) = \frac{1}{\omega}\int_{\partial\Omega} K(x-y)\, f(x)
+D\big(u_+\, h(b-d)\big) = 0 \qquad\text{and}\qquad D\big(h(b+d)\,u_-\big) = 0 ,
 $$
 
-reproducing every solution of $Df = 0$ with a kernel $K$ that is smooth off the light cone and homogeneous of degree $-2$ in the four-dimensional sense; the natural candidate $K(x-y) = (x-y)^{-1}$ fails because $x-y$ is a zero divisor whenever $x-y$ is null, so the kernel has a singular set of dimension three, not of codimension four, and the boundary integral cannot reproduce interior values.
+with $u_\pm = \tfrac12(1\pm e_2)$ the idempotents. Both families contain nonzero compactly supported functions: $u_+\chi(b-d)$ with $\chi$ a smooth bump vanishes outside a strip and is not zero.
 
-**Proof.** A reproducing kernel of the stated homogeneity must be a fundamental solution of $D$ whose singular support is the boundary of the domain; but every fundamental solution of $D$ has singular support the light cone, by the preceding theorem, so its singular set has codimension one and the boundary integral cannot isolate a point. Against the candidate kernel: the inverse is defined only off the zero divisor set and blows up along it, by *Split-Quaternion Analysis*, §*Singularities*. $\square$
-
-**Theorem (The Cauchy–Pompeiu Replacement).** For every test function $f$ with compact support,
+**Proof.** The products of a generator with an idempotent are
 
 $$
-f = E_D * (Df),
+e_1u_+ = e_3u_+ = \tfrac12(e_1+e_3), \qquad e_2u_+ = u_+, \qquad e_1u_- = -e_3u_- = \tfrac12(e_1-e_3), \qquad e_2u_- = -u_- ,
 $$
 
-the convolution with the fundamental solution of the vector operator, and consequently a solution of $Df = 0$ with compact support is zero. The formula is the replacement of the Cauchy integral formula: the interior values of $f$ are recovered from the values of $Df$ in the interior, not from the boundary values of $f$.
+so for a scalar function $h$
 
-**Proof.** Convolution by a fundamental solution inverts the operator: $D(E_D * f) = (D E_D)*f = \delta * f = f$, and the commutation of $D$ with the convolution is the constancy of the coefficients; interchanging the roles of $f$ and $Df$ gives the display. For the second statement, $Df = 0$ gives $f = 0$. $\square$
+$$
+D(u_+h) = \tfrac12(e_1+e_3)\big(\partial_bh+\partial_dh\big) + u_+\,\partial_ch, \qquad D(hu_-) = \tfrac12(e_1-e_3)\big(\partial_bh-\partial_dh\big) - u_-\,\partial_ch ,
+$$
 
-**Corollary (Consequences and the Contrast).** There is no maximum principle, no mean value property, no Liouville theorem in the elliptic form and no removable singularity theorem of the elliptic type for the solutions of $Df = 0$; the local behaviour of the solutions is governed by the propagation along the light cone, and the singularities of the solutions are concentrated on characteristic surfaces. In the quaternion case all of these theorems hold, because the Dirac operator there is elliptic and its fundamental solution is singular only at a point.
+and both right-hand sides vanish for the stated $h$, since $\partial_ch = 0$ and $\partial_bh = \mp\partial_dh$ for $h = h(b\mp d)$. The four elements $u_+$, $u_-$, $\tfrac12(e_1+e_3)$, $\tfrac12(e_1-e_3)$ occurring here are a basis of the algebra, so the two identities are read off the multiplication table and are exact. $\square$
 
-**Proof.** Each failed property is a consequence of the representation of the solutions by a kernel with singular support on the cone, and the elliptic properties in the quaternion case are those of *Quaternion Integration* and *Clifford Analysis*. $\square$
+**Corollary (Consequences of the Kernel).** No unique continuation, no identity theorem, no maximum principle and no Liouville theorem hold for the solutions of $Df = 0$: the function $u_+\chi(b-d)$ with $\chi$ supported in $[1,2]$ is a nonzero solution vanishing on the open half-space $b-d<1$, so the zero set of a nonzero solution can have interior points and no rigidity of the elliptic type survives.
+
+**Corollary (No Right Inverse).** There is no identity $f = E_D*(Df)$ valid for all compactly supported smooth $f$, and therefore no Cauchy–Pompeiu formula of the elliptic type: the identity would give $f = E_D*0 = 0$ for the nonzero compactly supported solutions of the kernel theorem.
+
+**Theorem (The Inversion on the Left).** What holds is the inversion on the left,
+
+$$
+f = D\,(E_D * f),
+$$
+
+for every $f$ with compact support, so that $E_D*f$ is a solution of the inhomogeneous equation $Dg = f$ for every datum $f$, while the homogeneous solutions are as numerous as the kernel theorem says.
+
+**Proof.** $D(E_D*f) = (DE_D)*f = \delta*f = f$, the differentiation passing through the convolution because the coefficients are constant. $\square$
+
+**Remark (What Fails in Place of the Cauchy Formula).** Three structural features of the quaternionic Cauchy integral formula are absent here. First the kernel: $(x-y)^{-1}$ has no counterpart, since $x-y$ is a zero divisor exactly when it is null, so its reciprocal does not exist on the light cone and the singular set of the available kernel is a three-dimensional cone through the point rather than the point itself. Second analyticity: the solutions of $Df = 0$ satisfy a first-order system whose characteristic variety is the light cone, and by the kernel theorem they include nonzero compactly supported functions, so they are not analytic and carry no identity theorem. Third inversion: the inversion available is one-sided, by the theorem above, and the boundary formula of Green is valued in the trace pairing, so the boundary data do not pass to the interior values through a single multiplication kernel.
 
 ## Principal Values and the Distributional Inverse
 
@@ -143,17 +226,17 @@ $$
 \Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|N(x)|>\varepsilon}\frac{\varphi(x)}{N(x)}\,\mathrm{d}x ,
 $$
 
-and the limit exists because the level sets of $N$ have finite area and the singularity is odd with respect to $x \mapsto -x$ after symmetrisation. The distribution $\mathrm{pv}(1/N)$ satisfies the identity
+and the limit exists because the level sets of $N$ have finite area and the singularity is odd with respect to $x \mapsto -x$ after symmetrisation. Off the null cone the reciprocal is an ordinary function and $N(x)\cdot(1/N(x)) = 1$ identically, so the difference
 
 $$
-N(x)\cdot \mathrm{pv}\frac{1}{N(x)} = 1 + c\,\delta ,
+N(x)\cdot \mathrm{pv}\frac{1}{N(x)} \;-\; 1
 $$
 
-for a constant $c$ determined by the normalisation of the cone, the correction being supported on the null cone.
+is a distribution of degree zero supported on the null cone; in the standard regularisations it is a multiple of $\delta$, with a factor that depends on the normalisation of the cone.
 
-**Proof.** The convergence of the principal value is the homogeneity of $N$ of degree two and the oddness of the integrand about the origin; the displayed product is the standard computation of the product of a homogeneous quadratic form with the principal value of its reciprocal, as in *Distributions and Fundamental Solutions*, and the constant depends on the measure of the link of the cone. $\square$
+**Proof.** The convergence of the principal value is the homogeneity of $N$ of degree two and the oddness of the integrand about the origin; the support statement follows because the two sides agree off the null cone, and the identification of the correction with a multiple of $\delta$ in the standard regularisations is the computation of *Distributions and Fundamental Solutions*. $\square$
 
-**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\hat E_D = -\xi/(2\pi\mathrm{i}N(\xi))$ is displayed; the factor $1/N(\xi)$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
+**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\hat E_D = \xi/(2\pi\mathrm{i}N(\xi))$ is displayed; the factor $1/N(\xi)$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
 
 **Proof.** Combine the displayed transform with the definition of the principal value above. $\square$
 
@@ -163,20 +246,20 @@ for a constant $c$ determined by the normalisation of the cone, the correction b
 |---|---|---|---|
 | operator | Dirac, elliptic | wave operator, hyperbolic | wave operator in one variable |
 | fundamental solution | Poisson kernel, singular at a point | distribution supported on the cone | supported on the two characteristic lines |
-| Cauchy integral formula | holds | fails; replaced by Cauchy–Pompeiu | fails; replaced by d'Alembert |
+| Cauchy integral formula | holds | fails; replaced by the one-sided inversion $f = D(E_D*f)$ | fails; replaced by d'Alembert |
 | Green's formula | holds, with the elliptic boundary term | holds on non-characteristic boundaries | holds |
-| compactly supported solutions | none, by Liouville | only zero | only zero |
+| compactly supported solutions of the monogenic equation | none, by Liouville | many: the kernel of $D$ is large | many, by the same zero-divisor mechanism |
 | singularities of solutions | off a point, removable | on characteristic surfaces | on characteristic lines |
 
 The quaternion column is the content of *Quaternion Integration* and the split-complex column that of *Split-Complex Integration*. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 
 ## Summary
 
-The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,e_1,e_2,e_3)$ and the orientation of the vector subspace by $(e_1,e_2,e_3)$, the form $b^2-c^2-d^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on domains with non-characteristic boundary; on a characteristic boundary the normal is a zero divisor, cannot be normalised and the boundary term degenerates.
+The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,e_1,e_2,e_3)$ and the orientation of the vector subspace by $(e_1,e_2,e_3)$, the form $b^2-c^2-d^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on every domain with piecewise smooth boundary, with the Euclidean normal; on a boundary tangent to the light cone the normal is a zero divisor and the boundary term degenerates.
 
-The vector operator has formal adjoint $-D$, and Green's formulas read $\int_\Omega[(Df)g + f(Dg)] = \int_{\partial\Omega} fng$, with the classical Green identities for the wave operator as corollaries. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the light cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
+The vector operator is formally self-adjoint, $D^* = D$, and Green's formula reads $\int_\Omega[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int_{\partial\Omega}\operatorname{Sc}(fgn)$, with the classical Green identities for the wave operator as corollaries; the two-sided form is forced by the failure of the two-term Leibniz rule in the non-commutative algebra. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the light cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
 
-There is no Cauchy integral formula: the candidate kernel $(x-y)^{-1}$ has its singular set on the light cone, of codimension one, and cannot reproduce interior values from a boundary integral. The replacement is the Cauchy–Pompeiu formula $f = E_D * (Df)$, from which it follows that a compactly supported solution of $Df = 0$ vanishes; the maximum principle, the mean value property and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
+There is no Cauchy integral formula: the candidate kernel $(x-y)^{-1}$ does not exist on the light cone, where the difference of two points is a zero divisor. The inversion that holds is one-sided, $f = D(E_D*f)$; the formula $f = E_D*(Df)$ of the elliptic theory fails, as the large kernel of $D$ shows, and the maximum principle, the mean value property, the identity theorem and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
 
 ## Summary of Notation
 
@@ -185,12 +268,14 @@ There is no Cauchy integral formula: the candidate kernel $(x-y)^{-1}$ has its s
 | $\int_\Omega f$ | the componentwise volume integral | this article |
 | $(1,e_1,e_2,e_3)$, $(e_1,e_2,e_3)$ | the orientations of the algebra and of the vector subspace | this article |
 | $(b,c,d)$ with $b^2-c^2-d^2$ | the three-dimensional Minkowski space of the system | *Split-Quaternion Rotations and the Lorentz Group* |
-| $n$, non-characteristic boundary | the normal vector with $N(n) \neq 0$ | this article |
-| $D^* = -D$ | the formal adjoint of the vector operator | this article |
-| $\int[(Df)g + f(Dg)] = \int fng$ | Green's formula | this article |
+| $n$ | the Euclidean unit normal, read as a split-quaternion | this article |
+| $D^* = D$ | the formal adjoint of the vector operator | this article |
+| $\bar D = \partial_b e_1 + \partial_c e_2 + \partial_d e_3$ | the operator acting on the right | this article |
+| $\int[\operatorname{Sc}((Df)g) + \operatorname{Sc}(f(\bar Dg))] = \int\operatorname{Sc}(fgn)$ | Green's formula | this article |
 | $E$ | the fundamental solution of $\Box_{(2,1)}$, supported on the cone | *Distributions and Fundamental Solutions* |
 | $E_D = DE$ | the fundamental solution of $D$ | this article |
-| $f = E_D*(Df)$ | the Cauchy–Pompeiu replacement | this article |
+| $f = D(E_D*f)$ | the inversion on the left | this article |
+| $u_+h(b-d)$, $h(b+d)u_-$ | the two families in the kernel of $D$ | this article |
 | $C$, $\partial C$ | the future cone and the light cone | *Split-Quaternion Geometry* |
 
 ## Further Reading

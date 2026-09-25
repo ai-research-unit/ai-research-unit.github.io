@@ -287,6 +287,14 @@ Commutative rings are the natural setting for:
 
 ---
 
+## Summary
+
+The article develops the theory of vector spaces over a commutative ring. An $R$-module is an abelian group with a scalar multiplication by $R$, and the treatment begins by carrying the vocabulary of linear algebra into that setting: submodules, quotient modules, homomorphisms, linear independence, free modules, rank and torsion, with their elementary properties and the isomorphism theorems.
+
+The second half separates what survives the passage from a field to a ring from what does not. Submodules, quotients, homomorphisms and the isomorphism theorems carry over unchanged; free modules need not exist, not every submodule is a direct summand, and rank is well defined only when the ring has the invariant basis property. The comparison with the field case is recorded together with the two cases the rest of the corpus uses: the ring $\mathbb{Z}$, where the theory is the theory of abelian groups and the structure theorem classifies the finitely generated ones, and the split complex algebra $\mathbb{D}$, where the zero divisors make torsion and non-freeness possible.
+
+The article closes with the role of commutative rings in the wider corpus, among them algebraic geometry, number theory, and the theory of quadratic forms and Clifford algebras over rings.
+
 ## Further Reading
 
 - Michael Artin, *Algebra* (Prentice Hall, 1991).

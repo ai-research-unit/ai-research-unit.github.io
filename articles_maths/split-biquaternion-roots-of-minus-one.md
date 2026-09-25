@@ -264,12 +264,6 @@ $$
 
 The isomorphism is given by $\xi \mapsto (\mu_+, \mu_-)$, where $\xi = \mu_+ e_+ + \mu_- e_-$ and $\mu_\pm$ are unit pure real quaternions.
 
-So the root set is a compact four-dimensional manifold (the product of two two-dimensional spheres is four-dimensional as a manifold, but here we are using the fact that each $\mathbb{S}^2$ is two-dimensional; the product is four-dimensional). Wait, each $\mathbb{S}^2$ is two-dimensional, so the product is four-dimensional. But earlier I said the root set is six-dimensional. Let me recheck.
-
-The unit pure real quaternions form the unit sphere $\mathbb{S}^2$ in $\mathbb{R}^3$, which is two-dimensional. The set of pairs $(\mu_+, \mu_-)$ is therefore the product $\mathbb{S}^2 \times \mathbb{S}^2$, which is four-dimensional. So the root set has real dimension 4, not 6.
-
-I made an error earlier. Let me correct: the unit pure real quaternions form the two-sphere $\mathbb{S}^2$, which is two-dimensional, not three-dimensional. So the root set is $\mathbb{S}^2 \times \mathbb{S}^2$, which is four-dimensional. The parametrization is by a pair of points on the two-sphere, and the dimension is $2 + 2 = 4$.
-
 So the root set of $-1$ in $\mathbb{H}_{\mathbb{D}}$ is a compact four-dimensional manifold, isomorphic to $\mathbb{S}^2 \times \mathbb{S}^2$.
 
 ### Comparison with the Biquaternion Root Set

@@ -278,7 +278,7 @@ A real number is **constructible** if it can be obtained from the rationals by f
 
 # Part V: Summary
 
-## 21. Summary
+## Summary
 
 A field is a commutative ring with $1 \neq 0$ in which every nonzero element is invertible. Every field is an integral domain, has characteristic $0$ or a prime, and has prime subfield $\mathbb{Q}$ or $\mathbb{F}_p$; for a field $F$, the ring $F[x]$ is a principal ideal domain and $F[x]/(f)$ is a field exactly when $f$ is irreducible.
 

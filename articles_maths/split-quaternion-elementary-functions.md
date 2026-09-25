@@ -54,12 +54,14 @@ The exponential is therefore never zero and always invertible, its norm is $e^{2
 **Theorem (The Image of the Exponential).** The image is
 
 $$
-\exp(\mathbb{H}_{\mathrm{s}}) = \big\{x : N(x) > 0 \ \text{and}\ \operatorname{Sc}(x) \geq -\sqrt{N(x)}\big\}.
+\exp(\mathbb{H}_{\mathrm{s}}) = \big\{x : N(x) > 0,\ \operatorname{Sc}(x) > -\sqrt{N(x)}\big\} \cup \{x \in \mathbb{R} : x < 0\},
 $$
 
-In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(x) < -\sqrt{N(x)}$, such as the element $-2$ with $N(-2) = 4$ and $\operatorname{Sc}(-2) = -2$, are not exponentials.
+the open set on which the norm is positive and the scalar part exceeds $-\sqrt{N}$, together with the negative scalar line. Equivalently, it is the set $\{N>0,\ \operatorname{Sc} \geq -\sqrt N\}$ with the elements $a + v$ removed for which $a < 0$ and $v \neq 0$ is nilpotent, these being exactly the non-scalar elements with $\operatorname{Sc} = -\sqrt N$.
 
-**Proof.** Write $x = \lambda u$ with $\lambda = \sqrt{N(x)} > 0$ and $N(u) = 1$, so that $u$ lies in the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$. Under the matrix model the exponential of $\mathbb{H}_{\mathrm{s}}$ is the exponential of $M_2(\mathbb{R})$ and the image of the exponential of $\mathrm{SL}_2(\mathbb{R})$ is the set of matrices of trace at least $-2$, as treated in *The Lie Algebra and the Exponential Map*; the trace of $\Phi(x)$ is $2\operatorname{Sc}(x)$, so the condition is $\operatorname{Sc}(x) \geq -\sqrt{N(x)}$, and $\Phi(x)$ has positive determinant by hypothesis. The example $-2$ has $\operatorname{Sc} = -2 < -\sqrt{4} = -2$, and the inequality is strict. $\square$
+In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(x) < -\sqrt{N(x)}$ are not exponentials, the element $x = -3+2e_3$, with $N(x) = 9-4 = 5$ and $\operatorname{Sc}(x) = -3 < -\sqrt5$, being an example, and neither are the boundary elements: the element $x = -1+e_1+e_2$, with $N(x) = 1$ and $\operatorname{Sc}(x) = -1 = -\sqrt{N(x)}$, is one of them.
+
+**Proof.** Under $\Phi$ the exponential is the exponential of $M_2(\mathbb{R})$, the norm is the determinant and twice the scalar part is the trace, so the question is the image of the real exponential of a $2\times2$ matrix. If $A = \exp X$ is real, then $\det A = e^{\operatorname{tr}X} > 0$, and each eigenvalue of $A$ is the exponential of an eigenvalue of $X$; a negative eigenvalue of $A$ therefore comes from an eigenvalue $\alpha \pm \mathrm{i}\pi$ of $X$ with an odd multiple of $\pi$, and the conjugate pair forces $X$, hence $A$, to be diagonalisable with both eigenvalues equal to $-e^\alpha$, so that $A = -e^\alpha I$. A non-scalar element of the image thus has no negative eigenvalue, which for a positive determinant is exactly $\operatorname{tr}A > -2\sqrt{\det A}$. Conversely, if $\det A > 0$ and $\operatorname{tr}A > -2\sqrt{\det A}$, then either the eigenvalues of $A$ are real and positive, when the logarithm exists by the series of the logarithms of the eigenvalues, or they are a non-real conjugate pair $\alpha \pm \mathrm{i}\beta$, when $X = sI + t(A - \alpha I)$ with $t\beta \in (0,\pi)$ determined by $\tan(t\beta) = \beta/\alpha$ and $e^s\cos(t\beta) = \alpha$ satisfies $\exp X = A$, the inequality being automatic in this case; and the negative scalars are attained, $-\mu I = \exp((\log\mu)I + \pi\xi)$ for every root $\xi$ of $-1$. Finally, a non-scalar matrix with $\det A > 0$ and $\operatorname{tr}A = -2\sqrt{\det A}$ has the negative eigenvalue $-\sqrt{\det A}$ repeated with a single Jordan block, so its commutant is $\{pI + qN\}$ with $N$ nilpotent and $\exp(pI+qN) = e^p(I+qN)$ has the positive eigenvalue $e^p$; such a matrix is therefore not an exponential. Translating back gives $N > 0$, $\operatorname{Sc} > -\sqrt N$, and the boundary described by $\operatorname{Sc} = -\sqrt N$, that is $N(\operatorname{Vec}x) = 0$ with $\operatorname{Sc}(x) < 0$. $\square$
 
 **Theorem (The Kernel of the Exponential).** The solutions of $\exp y = 1$ are
 
@@ -133,15 +135,21 @@ $$
 
 the second term being an element of $V$ obtained from the matrix logarithm of the traceless part.
 
-**Theorem (Existence and Branch).** On the domain
+**Theorem (Existence and Branch).** The derivative of the exponential at $x$ is invertible if and only if no two eigenvalues of the matrix model $\Phi(x)$ differ by a nonzero multiple of $2\pi\mathrm{i}$. The eigenvalues of $\Phi(x)$ are $\operatorname{Sc}(x) \pm \sqrt{-N(\operatorname{Vec} x)}$, so they are complex conjugate when $N(\operatorname{Vec} x) > 0$ and real when $N(\operatorname{Vec} x) \leq 0$. The condition therefore reads
 
 $$
-\mathcal{D} = \big\{x : N(x) > 0,\ \operatorname{Sc}(x) > -\sqrt{N(x)}\big\}
+N(\operatorname{Vec} x) \notin \{(\pi k)^2 : k = 1, 2, 3, \dots\},
 $$
 
-the exponential is a local diffeomorphism and has a smooth inverse; on the norm-one group the logarithm is defined on the open set of elements of trace greater than $-2$ and takes values in $V$, and $\log(1+v) = v$ for every nilpotent $v \in V$ of square zero. The logarithm is multivalued on the whole of $\{N>0\}$ because the exponential has the kernel of the preceding section.
+and on the open set where it holds the exponential is a local diffeomorphism with a smooth local inverse, mapping the open set $\{N>0,\ \operatorname{Sc} > -\sqrt N\}$ onto itself. The failure set is exactly
 
-**Proof.** The derivative of the exponential at $x$ is invertible when the eigenvalues of the matrix model avoid $2\pi i k$, which holds on the stated domain; the nilpotent case is the finite series $\log(1+v) = v - v^2/2 + \dots = v$. The multivaluedness is the kernel computation. $\square$
+$$
+\big\{x = a + v : N(v) = (\pi k)^2,\ k \geq 1\big\},
+$$
+
+on which $\Phi(x)$ has the eigenvalues $a \pm \pi k\,\mathrm{i}$ and the exponential folds: the simplest failure point is $x = \pi e_1$, where $\exp(\pi e_1) = -1$. On the norm-one group the logarithm takes values in $V$, $\log(1+v) = v$ for every nilpotent $v \in V$ of square zero, and the logarithm is multivalued exactly at the nonzero real scalars and at the elements with $N(\operatorname{Vec}x) > 0$, whose matrix model has a non-real pair of eigenvalues: at those points the infinitely many values differ by the kernel of the preceding section, while at the elements whose matrix model has real positive eigenvalues the value is unique, the logarithm being a polynomial in the element there.
+
+**Proof.** The eigenvalues of $\Phi(x)$ have sum $2\operatorname{Sc}(x)$ and product $N(x)$, so they are $\operatorname{Sc}(x) \pm \sqrt{\operatorname{Sc}(x)^2 - N(x)}$ with $\operatorname{Sc}(x)^2 - N(x) = -N(\operatorname{Vec}x)$; the derivative of the exponential of a $2\times2$ matrix is singular exactly when the matrix has two eigenvalues differing by a nonzero multiple of $2\pi\mathrm{i}$, the divided difference of the exponential being zero in that case. In the real case the difference of the eigenvalues is $2\sqrt{-N(\operatorname{Vec}x)}$, real and nonzero unless $N(\operatorname{Vec}x) = 0$, where the eigenvalues coincide and the derivative is still invertible; in the complex case the difference is $2\mathrm{i}\sqrt{N(\operatorname{Vec}x)}$, which is a nonzero multiple of $2\pi\mathrm{i}$ exactly when $\sqrt{N(\operatorname{Vec} x)} = \pi k$. At $x = \pi e_1$ one has $\exp(\pi e_1) = \cos\pi + e_1\sin\pi = -1$, so the value is a negative scalar and two distinct points of the domain share it, which is the folding. The nilpotent case is the finite series $\log(1+v) = v - v^2/2 + \dots = v$, and the multivaluedness at the scalars and at the elements with timelike vector part is the ambiguity of the arguments of the eigenvalues of the matrix model, the various values differing by multiples of $2\pi$ times a complex structure that commutes with the logarithm. $\square$
 
 **Corollary (The Logarithm on the Split-Complex Plane).** On the positive component of the split-complex plane, in the null coordinates $x = p\,n_+ + q\,n_-$ with $n_\pm = \tfrac12(1\pm e_2)$ and $p,q > 0$,
 
@@ -193,7 +201,7 @@ so $1$ is a root of unity of every order, while $e_2 = u_+ - u_-$ has $e_2^2 = 1
 | $\exp v$ | $c_0(N(v)) + c_1(N(v))v$ | all $v \in V$ |
 | $\exp v$ | $1 + v$ | $N(v) = 0$ |
 | $N(\exp x)$ | $e^{2\operatorname{Sc}(x)}$ | all $x$ |
-| $\exp(\mathbb{H}_{\mathrm{s}})$ | $\{N>0,\ \operatorname{Sc} \geq -\sqrt{N}\}$ | image of the exponential |
+| $\exp(\mathbb{H}_{\mathrm{s}})$ | $\{N>0,\ \operatorname{Sc} > -\sqrt{N}\} \cup \{x < 0\}$ | image of the exponential |
 | kernel of $\exp$ | $\{0\} \cup 2\pi\mathbb{Z}\cdot\Sigma$ | $\Sigma$ the root set of $-1$ |
 | $\cos^2v+\sin^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
 | $\cosh^2v-\sinh^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
@@ -204,9 +212,9 @@ so $1$ is a root of unity of every order, while $e_2 = u_+ - u_-$ has $e_2^2 = 1
 
 ## Summary
 
-The exponential converges everywhere and factors as $\exp(a+v) = e^a\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the norm of $v$; it is never zero, its norm is $e^{2\operatorname{Sc}(x)}$, and its image is the set of elements of positive norm whose scalar part is at least $-\sqrt{N}$, so it is not surjective onto the units. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
+The exponential converges everywhere and factors as $\exp(a+v) = e^a\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the norm of $v$; it is never zero, its norm is $e^{2\operatorname{Sc}(x)}$, and its image is the set of elements of positive norm whose scalar part exceeds $-\sqrt{N}$ together with the negative scalars, so it is not surjective onto the units. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
 
-The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|N(v)|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the norm commute with the exponential in the expected way. The logarithm exists on the domain where the scalar part exceeds $-\sqrt{N}$, is $v$ on the nilpotents, is a pair of real logarithms in the split-complex null coordinates, and is multivalued on the whole of the open set $\{N>0\}$ because of the kernel of the exponential. The roots of unity include the split elements $u_+ + \lambda u_-$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
+The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|N(v)|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the norm commute with the exponential in the expected way. The logarithm exists on the image of the exponential, that is where the scalar part exceeds $-\sqrt{N}$ or where the element is a negative scalar; it is $v$ on the nilpotents, it is a pair of real logarithms in the split-complex null coordinates, and it is multivalued exactly at the nonzero real scalars and at the elements with $N(\operatorname{Vec}x) > 0$, the several values differing by the kernel of the exponential. The roots of unity include the split elements $u_+ + \lambda u_-$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
 
 ## Summary of Notation
 

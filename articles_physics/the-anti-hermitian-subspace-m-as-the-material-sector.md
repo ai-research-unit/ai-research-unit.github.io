@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article is about the **anti-Hermitian subspace** $\mathbb{M}_-$, the fixed space of the anti-Hermitian conjugation: its definition and basis, its algebraic properties, the physical reading of its quadratic form and light cone, its matrix image, its Lorentz action, and the four-vectors of relativistic physics that live in it.
+This article is about the **anti-Hermitian subspace** $\mathbb{M}_-$, the fixed space of the anti-Hermitian conjugation: its definition and basis, its algebraic properties, the physical reading of its quadratic form and light cone, its Lorentz action, and the four-vectors of relativistic physics that live in it.
 
 The mathematical content of this article is standard: $\mathbb{M}_-$ is, as a real vector space with a quadratic form, isomorphic to Minkowski space $\mathbb{R}^{3,1}$ (three space-like directions and one time-like one), and it is the natural home of the four-vectors of relativistic physics. The physical content is also standard: the four-position, four-velocity, four-momentum, four-force, four-potential, and four-current of a relativistic system all lie in $\mathbb{M}_-$.
 
@@ -44,7 +44,7 @@ $$
 \{i\,e_0,\; e_1,\; e_2,\; e_3\}.
 $$
 
-As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_0$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator $[\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q}$, and with that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$, identified in the matrix picture below as $\mathfrak{u}(2)$. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life.
+As a real vector space, $\mathbb{M}_-$ has dimension $4$. It is **not** a subalgebra of $\mathbb{B}$: the product of two elements of $\mathbb{M}_-$ need not lie in $\mathbb{M}_-$ — for example $(ie_0)(ie_0) = -e_0$, whose scalar part is real, so the product lies outside. It **is** closed under the commutator $[\tilde{Q},\tilde{Y}] = \tilde{Q}\tilde{Y} - \tilde{Y}\tilde{Q}$, so with that bracket $\mathbb{M}_-$ is a Lie algebra of dimension $4$. This is the structural reason the four-vectors have a Lie-algebraic life alongside their vector-space life.
 
 ### The Defining Involution
 
@@ -162,38 +162,6 @@ The nonzero elements of the light cone are **zero divisors** of the biquaternion
 
 From the physical point of view, the zero divisors of $\mathbb{M}_-$ are the **null four-vectors**: the four-vectors of light signals, which have zero rest mass and propagate at the speed of light. The massless particles of relativistic physics correspond to the zero divisors of the biquaternion algebra. This is a structural fact of the algebra, not an additional assumption.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the four basis elements of $\mathbb{M}_-$ map to
-
-$$
-ie_0 \mapsto \begin{pmatrix} i & 0 \\ 0 & i \end{pmatrix}, \qquad
-e_1 \mapsto \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
-e_2 \mapsto \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
-e_3 \mapsto \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}.
-$$
-
-All four images are **anti-Hermitian**, $M^\dagger = -M$, and conversely every anti-Hermitian $2\times2$ complex matrix is a real linear combination of them. The image of $\mathbb{M}_-$ is therefore exactly the space of anti-Hermitian matrices, which as a Lie algebra under the commutator is $\mathfrak{u}(2)$; its traceless part, spanned by the images of $e_1, e_2, e_3$, is $\mathfrak{su}(2)$, the rotation algebra. Anti-Hermitian matrices are the standard generators of a unitary group, so the matrix picture reproduces the statement that $\mathbb{M}_-$ is the Lie algebra of the unitary group.
-
-A general element $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ has the image
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} i(q'_0 - q_3) & -iq_1 - q_2 \\ -iq_1 + q_2 & i(q'_0 + q_3) \end{pmatrix},
-$$
-
-and the two invariants of the sector are read off directly:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2iq'_0$. The trace is purely imaginary, and its imaginary part is twice the time component: the time coordinate of the four-vector is the trace, up to the factor $2$.
-- **Determinant.** $\det \Phi(\tilde{Q}) = -q'^2_0 + q_1^2 + q_2^2 + q_3^2 = N(\tilde{Q})$. The determinant is the Minkowski quadratic form itself, so the Lorentzian signature is the statement that a determinant is indefinite on anti-Hermitian matrices.
-
-Two further readings of the same picture. The **light cone** is the set of elements whose matrix image is singular, $\det\Phi(\tilde{Q}) = 0$ — a null four-vector is exactly a singular generator of the unitary group. And the **Lorentz transformation** is a conjugation, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ becoming $M \mapsto S\,M\,S^\dagger$ with $S = \Phi(\tilde{\Lambda})$ of unit determinant; the group of such $S$ is $SL(2,\mathbb{C})$, the double cover of the Lorentz group, and it acts on anti-Hermitian matrices preserving the determinant.
-
 ## Advanced Algebraic Properties
 
 ### The Lorentz Group
@@ -209,32 +177,6 @@ where $\tilde{\Lambda}$ is a **unit-norm biquaternion**, i.e. an element of the 
 The full development of the Lorentz transformation, including the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article. Here we only recall that the rotor conjugation **preserves** $\mathbb{M}_-$: if $\tilde{Q} \in \mathbb{M}_-$ and $\tilde{\Lambda}$ is a unit-norm biquaternion, then $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger \in \mathbb{M}_-$.
 
 This is the biquaternion expression of the statement that the Lorentz group acts on the four-vector space and leaves it invariant. The rotor $\tilde{\Lambda}$ is a general unit-norm biquaternion in $\mathbb{B}$, Hermitian for pure boosts and real for pure rotations; the space on which the rotor acts is $\mathbb{M}_-$.
-
-### The Matrix Example
-
-The bracket of the matrix images reproduces the bracket in the algebra. With the images of the three vector units,
-
-$$
-\Phi(e_1) = \begin{pmatrix} 0 & -i \\ -i & 0 \end{pmatrix}, \qquad
-\Phi(e_2) = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}, \qquad
-\Phi(e_3) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix},
-$$
-
-the two products are
-
-$$
-\Phi(e_1)\Phi(e_2) = \begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}, \qquad
-\Phi(e_2)\Phi(e_1) = \begin{pmatrix} i & 0 \\ 0 & -i \end{pmatrix},
-$$
-
-so that
-
-$$
-[\Phi(e_1),\,\Phi(e_2)] = \begin{pmatrix} -2i & 0 \\ 0 & 2i \end{pmatrix} = 2\,\Phi(e_3) = \Phi\big([e_1,\,e_2]\big).
-$$
-
-The isomorphism carries the commutator to the commutator, so the three images generate $\mathfrak{su}(2)$ inside $\mathfrak{u}(2)$ exactly as the three vector units generate it inside the subspace. The same computation with $\Phi(ie_0) = iI_2$ in place of a vector unit shows that the scalar direction is the centre of the image, the identity generator that commutes with the rest.
-
 
 ## Examples
 
@@ -294,8 +236,6 @@ The **light cone** of Minkowski space is the zero divisor cone of $\mathbb{M}_-$
 
 The subspace $\mathbb{M}_-$ is specifically the **vector representation** of the Lorentz group.
 
-In the matrix picture the sector is the space of anti-Hermitian $2\times2$ complex matrices, the Lie algebra $\mathfrak{u}(2)$. The time coordinate is half the trace, the Minkowski quadratic form is the determinant, and the light cone is the set of elements whose matrix image is singular.
-
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -308,8 +248,6 @@ In the matrix picture the sector is the space of anti-Hermitian $2\times2$ compl
 | $c = 1/\sqrt{\epsilon\mu}$ | Speed of light in the medium |
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | Speed of light in vacuum |
 | $N(\tilde{Q}) = \tilde{Q}\bar{\tilde{Q}}$ | Norm form |
-| $\Phi(\tilde{Q})$ | Matrix image of $\tilde{Q}$ in $M_2(\mathbb{C})$; anti-Hermitian, $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2iq'_0$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ |
-| $\mathfrak{u}(2)$ | Lie algebra of anti-Hermitian $2\times2$ matrices; the image of $\mathbb{M}_-$ |
 | $s^2 = N(d\tilde{Q}) = d\tilde{Q}\,\overline{d\tilde{Q}}$ | Invariant interval |
 | $\tilde{\Lambda} \in \mathbb{B}$, $\tilde{\Lambda}\bar{\tilde{\Lambda}} = e_0$ | Lorentz rotor (unit-norm biquaternion) |
 | $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^\dagger$ | Rotor conjugation |

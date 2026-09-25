@@ -6,7 +6,7 @@ This article is about the **anti-quaternion subspace** $i\mathbb{H}_{\mathbb{B}}
 
 $i\mathbb{H}_{\mathbb{B}}$ is the image of the quaternion algebra multiplied by the scalar imaginary. Its elements are the products $i\tilde{Q}$ with $\tilde{Q}$ a real quaternion, so every coefficient is imaginary and no coefficient is real. It is **not** a subalgebra, and its norm form is **negative definite**, negative in every direction. Multiplication of its elements does not close inside it: the product of two of its elements is an element with real coefficients.
 
-The article describes the subspace on its own terms: its basis and parameters, its algebraic behaviour under multiplication and commutation, the reading that gives it its name, its matrix image, its Lie-algebraic structure, and the boost generators and complex-time axis it contains.
+The article describes the subspace on its own terms: its basis and parameters, its algebraic behaviour under multiplication and commutation, the reading that gives it its name, its Lie-algebraic structure, and the boost generators and complex-time axis it contains.
 
 ## Basic Definition and Properties
 
@@ -126,45 +126,6 @@ The name is earned by a parameter pattern and by a conjugation.
 
 The physical reading follows from the negative definiteness. A quadratic form that is negative in every direction describes a geometry with no null directions and no light cone, and all of whose directions have the same character. Relabelling the imaginary time coefficient of the material four-vector space as a real one turns the Lorentzian signature $(3,1)$ into a Euclidean one, and the anti-quaternion subspace is the device the framework uses to carry the imaginary coefficients in that relabelled description. The absence of null directions is the algebraic reason there is no light cone in the Euclidean reading, just as the presence of null directions in the material sector is the reason there is one in the Lorentzian reading.
 
-## Matrix Representation
-
-Under the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ fixed by the series convention,
-
-$$
-e_0 \mapsto I_2, \qquad e_1 \mapsto -i\sigma_1, \qquad e_2 \mapsto -i\sigma_2, \qquad e_3 \mapsto -i\sigma_3,
-$$
-
-the four basis elements of $i\mathbb{H}_{\mathbb{B}}$ map to
-
-$$
-i e_0 \mapsto \begin{pmatrix} i & 0 \\ 0 & i \end{pmatrix}, \qquad
-i e_1 \mapsto \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \qquad
-i e_2 \mapsto \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}, \qquad
-i e_3 \mapsto \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}.
-$$
-
-The three imaginary vector units map to the three Pauli matrices and the imaginary scalar to $iI_2$; the sign flip relative to the quaternion subspace is the factor $i$ applied to $e_0$ and absorbed into the Pauli matrices. The image of $i\mathbb{H}_{\mathbb{B}}$ is therefore
-
-$$
-\mathrm{span}_\mathbb{R}\{iI_2,\; \sigma_1,\; \sigma_2,\; \sigma_3\}
-= \{\, \mathbf{h}\cdot\boldsymbol{\sigma} + iq'_0\,I_2 \,\},
-$$
-
-the set of matrices that are a **Hermitian traceless Pauli part plus an imaginary scalar**. It is a four-dimensional real space, and it is not the Hermitian subspace: the scalar term is imaginary, so a general element is not Hermitian.
-
-The image of a general element $\tilde{Q} = iq'_0e_0 + iq'_ke_k$ is
-
-$$
-\Phi(\tilde{Q}) = \begin{pmatrix} iq'_0 + q'_3 & q'_1 - iq'_2 \\ q'_1 + iq'_2 & iq'_0 - q'_3 \end{pmatrix},
-$$
-
-and the two invariants are:
-
-- **Trace.** $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2iq'_0$, purely imaginary, twice the scalar parameter.
-- **Determinant.** $\det \Phi(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3) = N(\tilde{Q})$, non-positive, vanishing only at the origin.
-
-The determinant is the matrix statement of the negative definiteness: no nonzero element of the subspace has a singular image, which is the division property seen through the isomorphism. Note also that $\mathrm{Re}\,\mathrm{Tr}\,\Phi(\tilde{Q}) = 0$ for every element: the image consists exactly of the matrices whose trace has vanishing real part *and* whose Pauli part is Hermitian.
-
 ## Advanced Algebraic Properties
 
 **Not a Lie subalgebra.** The commutator of two elements of $i\mathbb{H}_{\mathbb{B}}$ leaves the subspace. For example
@@ -184,19 +145,6 @@ $$
 $$
 
 a **finite boost**, whose scalar part is real. A finite boost therefore has a real scalar coefficient and does not lie in $i\mathbb{H}_{\mathbb{B}}$: the subspace contains the infinitesimal generators of the boosts, and the boosts themselves are obtained by leaving it. The rapidity $\psi$ is the parameter along the boost direction, and the hyperbolic functions appear instead of the trigonometric ones because the corresponding directions of the norm form are negative.
-
-### The Matrix Example
-
-The boost generator $ie_1$ has the Hermitian traceless image $\Phi(ie_1) = \sigma_1$. Exponentiating it with a rapidity parameter,
-
-$$
-\exp\Bigl(\tfrac{\psi}{2}\,\Phi(ie_1)\Bigr) = \exp\Bigl(\tfrac{\psi}{2}\,\sigma_1\Bigr)
-= \cosh\tfrac{\psi}{2}\,I_2 + \sinh\tfrac{\psi}{2}\,\sigma_1
-= \begin{pmatrix} \cosh\frac{\psi}{2} & \sinh\frac{\psi}{2} \\[2pt] \sinh\frac{\psi}{2} & \cosh\frac{\psi}{2} \end{pmatrix},
-$$
-
-a Hermitian matrix of determinant $\cosh^2\tfrac{\psi}{2} - \sinh^2\tfrac{\psi}{2} = 1$: the standard boost matrix. The generator lies in the image of the subspace, and the finite boost does not. The image of the subspace consists of the matrices whose $I_2$ coefficient $iq'_0$ is purely imaginary, and the exponential has a real $I_2$ coefficient $\cosh\tfrac{\psi}{2}$, so it lies outside. This is the matrix picture of the statement that the subspace contains the infinitesimal generators of the boosts and not the boosts themselves.
-
 
 ## Examples
 
@@ -220,8 +168,6 @@ The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is the anti-fixed-point 
 
 It is neither a subalgebra nor a Lie subalgebra: the product of two of its elements, and the commutator of two of its elements, both have real coefficients and so lie outside it. Its norm form is negative definite of signature $(0,4)$, so it contains no zero divisors and every nonzero element of it is invertible, even though it is not closed under multiplication.
 
-In the matrix picture it is the set of matrices that are a Hermitian traceless Pauli part plus an imaginary scalar, $\mathbf{h}\cdot\boldsymbol{\sigma} + iq'_0\,I_2$, with trace $2iq'_0$ purely imaginary and determinant $-(q'^2_0 + |\mathbf{q}'|^2)$.
-
 Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of the complex-time axis $ie_0$. The generators lie in the subspace; the finite boosts do not, since exponentiation produces a real scalar part.
 
 ## Summary of Notation
@@ -236,7 +182,6 @@ Physically it is the home of the **boost generators** $ie_1, ie_2, ie_3$ and of 
 | $[ie_1, ie_2] = -2e_3$ | Commutators also leave the subspace |
 | $N(\tilde{Q}) = -(q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3)$ | Norm form; negative definite, signature $(0,4)$ |
 | $\tilde{Q}^{-1} = \bar{\tilde{Q}}/N(\tilde{Q})$ | Inverse; exists for every nonzero element |
-| $\Phi(\tilde{Q}) = \mathbf{h}\cdot\boldsymbol{\sigma} + iq'_0\,I_2$ | Matrix image; $\mathrm{Tr}\,\Phi(\tilde{Q}) = 2iq'_0$, $\det\Phi(\tilde{Q}) = N(\tilde{Q})$ |
 | $ie_1, ie_2, ie_3$ | Boost generators of the Lorentz algebra |
 | $ie_0$ | Complex-time axis of the $ict$ convention |
 | $\cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}\cdot\mathbf{e}$ | Finite boost; has a real scalar part, so it is not in the subspace |

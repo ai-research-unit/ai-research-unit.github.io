@@ -170,7 +170,7 @@ An algebra over a commutative ring $R$ equipped with a commutative product satis
 
 ### The Hierarchy of Algebraic Structures
 
-Let me lay out the hierarchy of algebraic structures over a fixed commutative ring $R$, from weakest to strongest:
+The hierarchy of algebraic structures over a fixed commutative ring $R$, from weakest to strongest, is as follows:
 
 1. **Module over $R$.** A set with addition and scalar multiplication, satisfying the module axioms. No product of vectors.
 2. **Algebra over $R$.** A module over $R$ with a bilinear product. No further requirements.
@@ -314,9 +314,7 @@ with the natural $S$-module structure. This is a common construction: for exampl
 
 ---
 
-## Part V: Summary
-
-Let me summarize the main points.
+## Summary
 
 **A module over a commutative ring $R$** is a set of vectors that can be added and multiplied by scalars in $R$. When $R$ is a field, this is exactly a vector space.
 

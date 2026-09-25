@@ -71,9 +71,9 @@ $$
 \mathbb{R}[\xi] = \{p + q\xi : p, q \in \mathbb{R}\} \cong \mathbb{C},
 $$
 
-a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$; the correspondence $\xi \mapsto \mathbb{R}[\xi]$ is a bijection between the solutions and the subalgebras of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$.
+a copy of the complex numbers inside $\mathbb{H}_{\mathrm{s}}$, and every subalgebra of $\mathbb{H}_{\mathrm{s}}$ isomorphic to $\mathbb{C}$ arises in this way. The correspondence is two-to-one: $-\xi$ is again a solution and $\mathbb{R}[-\xi] = \mathbb{R}[\xi]$, so the map $\xi \mapsto \mathbb{R}[\xi]$ induces a bijection between the antipodal pairs $\{\pm\xi\}$ and the copies of $\mathbb{C}$, the two members of a pair lying on the two different sheets.
 
-**Proof.** $\xi^2 = -1$ gives the isomorphism $p + q\xi \mapsto p + iq$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element $\xi$ with $\xi^2 = -1$, and that element determines the subalgebra. $\square$
+**Proof.** $\xi^2 = -1$ gives the isomorphism $p + q\xi \mapsto p + \mathrm{i}q$; conversely a subalgebra isomorphic to $\mathbb{C}$ is generated over $\mathbb{R}$ by an element with square $-1$, which is a solution, so the map is onto. For the fibres: the elements of $\mathbb{R}[\xi]$ with square $-1$ are the $p + q\xi$ with $pq = 0$ and $p^2 - q^2 = -1$, that is $p = 0$, $q = \pm1$, namely $\pm\xi$; and $\xi$ and $-\xi$ lie on the two sheets, their coefficients of $e_1$ being opposite. $\square$
 
 The identification is the reason the matrix model is decisive here: the condition $\xi^2 = -1$ is a condition on a linear map, and the statement that the solutions are the complex structures of the plane is invisible in the generator description $b^2 - c^2 - d^2 = 1$ but immediate in the matrix description.
 
@@ -194,7 +194,7 @@ The algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ of the not
 
 The solutions of $\xi^2 = -1$ in the split-quaternion algebra are exactly the elements of the vector subspace $V$ with $N(\xi) = 1$, that is, the points of the two-sheeted hyperboloid $b^2 - c^2 - d^2 = 1$; no solution has a nonzero scalar part, and every solution has norm one, so every solution is a unit and none is a zero divisor.
 
-Under the matrix model the solutions correspond to the complex structures of $\mathbb{R}^2$, the matrices $X$ with $X^2 = -I$, equivalently the matrices with trace $0$ and determinant $1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is a bijection.
+Under the matrix model the solutions correspond to the complex structures of $\mathbb{R}^2$, the matrices $X$ with $X^2 = -I$, equivalently the matrices with trace $0$ and determinant $1$; each solution generates a copy of $\mathbb{C}$ inside the algebra, and the map from the solutions to the copies of $\mathbb{C}$ is two-to-one, $\xi$ and $-\xi$ generating the same copy, so that the antipodal pairs correspond bijectively to the copies of $\mathbb{C}$, one point of each pair on each sheet.
 
 The solutions form a single conjugacy class, the class of $e_1$; the stabiliser of $e_1$ is its centraliser $\mathbb{C}^{\times}$, so the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times} \cong GL_2(\mathbb{R})/GL_1(\mathbb{C})$, of real dimension two. The norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$ acts with two orbits, the two sheets, and each sheet is a copy of the hyperbolic plane $\mathrm{SL}_2(\mathbb{R})/SO(2)$.
 

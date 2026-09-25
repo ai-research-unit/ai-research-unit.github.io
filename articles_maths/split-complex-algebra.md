@@ -289,7 +289,7 @@ $$
 e_+ = \frac{1 + j}{2}, \qquad e_- = \frac{1 - j}{2}.
 $$
 
-Both satisfy $N(e_+) = N(e_-) = 0$, and $e_+ e_- = 0$. Every zero divisor of $\mathbb{D}$ is a real multiple of $e_+$ or $e_-$, or a sum of such multiples.
+Both satisfy $N(e_+) = N(e_-) = 0$, and $e_+ e_- = 0$. In the idempotent coordinates $z = z_+ e_+ + z_- e_-$ of §*Idempotent Decomposition* a nonzero element is a zero divisor exactly when $z_+ = 0$ or $z_- = 0$, that is, exactly when it is a real multiple of $e_+$ or of $e_-$; when both coordinates are nonzero, $z$ is a unit with inverse $z^{-1} = z_+^{-1} e_+ + z_-^{-1} e_-$, so the zero divisors are precisely the two lines $\mathbb{R}e_+$ and $\mathbb{R}e_-$ with the origin removed, and their union is the light cone.
 
 ## The Hermitian Form
 

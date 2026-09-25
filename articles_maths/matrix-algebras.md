@@ -152,6 +152,14 @@ $$
 
 As a left module over itself $M_2(k)$ decomposes as the sum of the two minimal left ideals $I_{ke_1} = kE_{11} \oplus kE_{21}$ and $I_{ke_2} = kE_{12} \oplus kE_{22}$, each a copy of the simple module $k^2$.
 
+The idempotents $E_{11}$ and $E_{22}$ are orthogonal and complete, and the Peirce decomposition of $M_2(k)$ with respect to $E_{11}$ is the matrix-unit decomposition
+
+$$
+M_2(k) = kE_{11} \oplus kE_{12} \oplus kE_{21} \oplus kE_{22},
+$$
+
+the four one-dimensional Peirce spaces being the matrix units themselves. The off-diagonal spaces are $E_{11}M_2E_{22} = kE_{12}$ and $E_{22}M_2E_{11} = kE_{21}$. The idempotent $E_{11}$ is not central, since $E_{11}E_{12} = E_{12}$ while $E_{12}E_{11} = 0$, so the two off-diagonal spaces do not vanish and the decomposition is not a product of algebras; consistently with the simplicity of $M_2(k)$, none of the four spaces is a two-sided ideal. The general theorem, with the product decomposition that a central idempotent gives instead, is *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. The column decomposition above groups $E_{11}$ with $E_{21}$ and the Peirce decomposition groups $E_{11}$ with $E_{12}$: the two groupings are the left-ideal and the corner decompositions of the same four matrix units.
+
 ## The Trace Form and Skolem–Noether
 
 **Proposition (the trace form).** The bilinear form on $M_n(k)$ defined by

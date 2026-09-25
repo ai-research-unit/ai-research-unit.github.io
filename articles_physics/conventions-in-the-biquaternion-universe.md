@@ -6,7 +6,7 @@ A framework built on a non-standard algebra, and on a non-standard choice of whi
 
 This article collects the conventions of the series in one place, states each one, and gives the reason it was chosen. It is meant to be read before any other article is edited, and it has two readers in mind. The first is a reader who meets an equation in a companion article that looks wrong. The second is anyone writing or revising an article in the series, for whom the conventions are load-bearing: a change that looks local — a sign, an operator definition, a factor of $i$ — generally propagates into a dozen dependent articles.
 
-The article is organised in two parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the six subspaces, the matrix representation, and the trace. The second gives the **spacetime and field-theoretic** conventions: the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure.
+The article is organised in two parts. The first gives the **algebraic** conventions: the algebra, its basis, its conjugations, the six subspaces, the three representations of the algebra, and the trace. The second gives the **spacetime and field-theoretic** conventions: the metric, the d'Alembertian, the convention for the Dirac mass term, and the algebra's real structure.
 
 One warning applies throughout. **A convention recorded here is not a claim that the alternative is wrong.** Several of these choices are freely made where either choice would be defensible; they are conventions, not theorems. What is not free is *consistency*: once a convention is fixed, the dependent articles inherit it, and a change to it is a change to all of them. Where a convention is instead forced — where the alternative leads to a demonstrable contradiction — the article says so explicitly, and that distinction is the difference between a convention and a result.
 
@@ -54,7 +54,7 @@ $$
 \mathbb{B} \cong M_2(\mathbb{C}),
 $$
 
-and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The Matrix Representation* below, and the development of the representation — the general element, the six subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The Matrix Representation of the Biquaternion Universe*. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
+and this identification is used constantly. It is fixed by a single isomorphism, written $\Phi$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The 2×2 Matrix Representation* below, and the development of the representation — the general element, the six subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The 2×2 Matrix Representation of Biquaternions*. Its two **minimal left ideals** are the algebra's two chiralities. They are the reason the Dirac field is carried by the spinor module rather than by the whole algebra, and the reason the mass term has the shape it has, as discussed below.
 
 ### The Conjugations and the Fixed Spaces
 
@@ -225,9 +225,53 @@ is the real-and-imaginary split of the coefficients, and its two members are cal
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element. The more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way: an anti-Hermitian generator is the standard choice for the Lie algebra of a unitary group, and it is $\mathbb{M}_-$ that carries that role here. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
-### The Matrix Representation
+### The Four-Vector Representation
 
-The identification $\mathbb{B} \cong M_2(\mathbb{C})$ is fixed by a single isomorphism, written $\Phi$, and every numerical check in the series is performed with it. The four basis elements are assigned the matrices
+The algebra is read as the quadruple of its complex coefficients, in *The Four-Vector Representation of Biquaternions*. Each unit is one coordinate place,
+
+$$
+e_0 \longleftrightarrow (1,0,0,0), \qquad e_1 \longleftrightarrow (0,1,0,0), \qquad e_2 \longleftrightarrow (0,0,1,0), \qquad e_3 \longleftrightarrow (0,0,0,1),
+$$
+
+so that an element is its quadruple of coefficients,
+
+$$
+\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \;\longleftrightarrow\; (Q^0, Q^1, Q^2, Q^3), \qquad Q^0 = Q_0, \quad (Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3),
+$$
+
+and the index is written in the upper position. **No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict$ convention is what puts the metric into the coefficient — $(ict, \mathbf{x})$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components and the column-and-dual-row convention.
+
+### The 4×4 Regular Matrix Representation
+
+Multiplication is read as a linear map on that quadruple, in *The 4×4 Regular Matrix Representation of Biquaternions*. The four units act by
+
+$$
+\rho_L(e_0) = I_4 = \begin{pmatrix} 1 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \end{pmatrix}, \qquad
+\rho_L(e_1) = \begin{pmatrix} 0 & -1 & 0 & 0 \\ 1 & 0 & 0 & 0 \\ 0 & 0 & 0 & -1 \\ 0 & 0 & 1 & 0 \end{pmatrix},
+$$
+
+$$
+\rho_L(e_2) = \begin{pmatrix} 0 & 0 & -1 & 0 \\ 0 & 0 & 0 & 1 \\ 1 & 0 & 0 & 0 \\ 0 & -1 & 0 & 0 \end{pmatrix}, \qquad
+\rho_L(e_3) = \begin{pmatrix} 0 & 0 & 0 & -1 \\ 0 & 0 & -1 & 0 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0 \end{pmatrix},
+$$
+
+and each of the three vector matrices squares to $-I_4$, as $e_k^2 = -e_0$ requires. For a general element, left multiplication by $\tilde{Q}$ is the matrix $\rho_L(\tilde{Q})$ whose $\nu$-th column is the column of $\tilde{Q}e_\nu$,
+
+$$
+\rho_L(\tilde{Q})\,\cdot\,\text{(column of } \tilde{R}) = \text{column of } \tilde{Q}\tilde{R},
+$$
+
+and right multiplication is the same construction with $e_\nu\tilde{Q}$, giving $\rho_R(e_0) = I_4$ and $\rho_R(e_k) = \eta\,\rho_L(e_k)^{\mathsf{T}}\eta$, with $\eta = \operatorname{diag}(-1,+1,+1,+1)$. The two sides are distinguished on purpose and are not interchangeable: $\rho_R(\tilde{Q})$ is not $\rho_L(\tilde{Q})^{\mathsf{T}}$, and what relates them is the metric, not a relabelling. That relation, and the determinant and trace of the two matrices, belong to the article just named.
+
+### The 2×2 Matrix Representation
+
+The algebra is read as the complex $2 \times 2$ matrices, under the isomorphism
+
+$$
+\Phi : \mathbb{B} \to M_2(\mathbb{C}),
+$$
+
+in *The 2×2 Matrix Representation of Biquaternions*, and this is the representation every numerical check in the series is performed with. The four unit images are fixed here, once, because every article depends on them agreeing. The three vector units are the Pauli matrices times $-i$:
 
 $$
 \Phi(e_0) = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix} = I_2, \qquad
@@ -239,26 +283,21 @@ $$
 
 with the central scalar mapping to $\Phi(i) = iI_2$. Because $\Phi$ is $\mathbb{C}$-linear, the Hermitian units require no separate choice, $\Phi(ie_k) = i\,\Phi(e_k)$.
 
-The assignment is stated here once, because every article depends on it agreeing. Its consequences — the general element $\Phi(\tilde{Q})$, the same subspaces written as matrices, the conjugations, the trace and the determinant — are developed in *The Matrix Representation of the Biquaternion Universe*, which is the place to look for them. What belongs in this article is not that development but the four rules of writing that a reader is most likely to get wrong.
+**The trace is the trace of this image.** The series writes
 
-**The assignment is forced, not chosen.** Neither the factor $i$ nor the sign in the three vector images could have been otherwise: $e_k^2 = -e_0$ requires the factor, and $e_1e_2 = e_3$ fixes the sign. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *The Matrix Representation of the Biquaternion Universe* derives both.
+$$
+\operatorname{Tr}(\tilde{Q}) := \operatorname{Tr}\Phi(\tilde{Q}).
+$$
 
-**Never conjugate the matrix entries on their own.** Conjugating the entries of $\Phi(\tilde{Q})$ is *not* the image of any involution of the algebra: it negates the images of $e_1$ and $e_3$ while leaving $\Phi(e_2)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through the matrix formulas recorded in *The Matrix Representation of the Biquaternion Universe*, never by conjugating entries.
+On the units $\operatorname{Tr}(e_0) = 2$ and $\operatorname{Tr}(e_k) = 0$, so on a general element $\operatorname{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$. That factor $2$ is not a normalisation but a consequence of $\Phi(e_0) = I_2$: it comes with the four images above, it cannot be divided out, and every pairing in the series is written with it, the Born rule $p = \operatorname{Tr}(\tilde{P}\tilde{\rho})$ among them. An unsubscripted trace means this one; a regular matrix has its own, written with its subscript. The unrestricted identity $\operatorname{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\operatorname{Sc}(\tilde{Q}_1\tilde{Q}_2)$ is recorded with its verification in the article just named.
+
+**The assignment is forced, not chosen.** Neither the factor $i$ nor the sign in the three vector images could have been otherwise: $e_k^2 = -e_0$ requires the factor, and $e_1e_2 = e_3$ fixes the sign. A reviewer must not "correct" the assignment by making the three images real, nor by negating all three. *The 2×2 Matrix Representation of Biquaternions* derives both.
+
+**Never conjugate the matrix entries on their own.** Conjugating the entries of $\Phi(\tilde{Q})$ is *not* the image of any involution of the algebra: it negates the images of $e_1$ and $e_3$ while leaving $\Phi(e_2)$, which has real entries, untouched, and so it destroys the sector dictionary. The four conjugations $\bar{\phantom{Q}}$, ${}^*$, $\dagger$ and $\flat$ are evaluated through the matrix formulas recorded in *The 2×2 Matrix Representation of Biquaternions*, never by conjugating entries.
 
 **The realisation is a convention of presentation, not of content.** The isomorphisms that preserve the subspace dictionary are the $\Phi' = S\Phi S^{-1}$ with $S$ unitary up to a nonzero complex scalar, and the scalar cancels in $S \cdot S^{-1}$. An arbitrary invertible $S$ destroys the dictionary, and so does a genuine squeeze $S = UP$ with $U$ unitary and $P$ positive definite and $\neq I$: both keep the center, which is scalars, and neither preserves the quaternion subspace or either sector. The practical consequence is that a mistake of translation between the algebra and its matrices is repaired **here** — by correcting the assignment or the explicit factors of $i$ — and never by altering the norm form, the $ict$ assignment or the sector split.
 
 **A bare $\Phi$ means this isomorphism and nothing else.** A plain $\Phi$, with no subscript, superscript or tilde, is reserved throughout the series for this isomorphism alone. The other uses a reader may meet are marked differently: $\varphi$ is an abstract homomorphism on the mathematics pages and an angle in the Thomas-precession exercise, $\tilde{\Phi} = \varphi\,e_0$ is the central scalar field of the Higgs articles, and $\Phi_{\tilde{U}}$ is the quantum channel of the gates article. None of these is the isomorphism, and a bare $\Phi$ is not any of them.
-
-### The Trace
-
-The trace is taken in the $2 \times 2$ matrix representation afforded by $\Phi$, normalised so that
-
-$$
-\mathrm{Tr}(e_0) = 2, \qquad \text{equivalently} \qquad \mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q}) .
-$$
-
-The factor $2$ — not $1$ — is the convention, and it must not be dropped: every pairing in the series is written with it, the Born rule $p = \mathrm{Tr}(\tilde{P}\tilde{\rho})$ among them. The unrestricted form of the identity, for arbitrary elements rather than the pairings of $\mathbb{M}_+$, is recorded with its verification in *The Matrix Representation of the Biquaternion Universe*.
-
 
 ## The Spacetime Conventions
 
@@ -464,7 +503,7 @@ $\flat$ is **not** the mass. The two roles were conflated in the retired form $\
 
 The conventions of the series fall into two groups.
 
-**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: four distinguished four-dimensional ones, named $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; and the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
+**Algebraic.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry. The conjugations cut the algebra into six real subspaces: four distinguished four-dimensional ones, named $\mathbb{M}_-$, $\mathbb{M}_+$, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$; the two-dimensional center subspace $\mathbb{C}_{\mathbb{B}}$; and the six-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})$. Each carries its own real parameters and its own slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. With complex coefficients the norm form $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ is the identity matrix on $\mathbb{B}$; its Minkowski signature appears only on the real sectors, and the $i$ is what supplies the minus. The matrix representation $\Phi$ is fixed by its four basis images, with the Hermitian units following as $\Phi(ie_k) = i\,\Phi(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it. The algebra has three representations — the coefficient quadruple, the regular matrix, and the matrix image $\Phi$ — each developed in its own article, and it is the trace of $\Phi$ that the series calls the trace.
 
 **Spacetime and fields.** The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the norm form, of signature $(3,1)$, vanishing on the zero-divisor cone. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. The series d'Alembertian is $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \partial_{ict}^2 + \Delta$; the Weyl-spinor exercise uses the opposite sign, $\Box = \partial_0^2 - \nabla^2$, and the two mass-term signs are the same equation. The Clifford metric $g$ is a level-3 tool rather than a convention, adopted where an article translates into gamma matrices, and its value is the standard mostly-minus $\mathrm{diag}(+1,-1,-1,-1)$ throughout the series — the $\mathbb{M}_+$ form, since the Clifford vectors correspond to the Hermitian subspace, so that the square of a Clifford vector agrees with the norm form of the biquaternion it represents with no relative sign. The opposite sign is not in use. Either way the norm form, the $ict$ metric and the sector structure are unchanged, and the tool never dictates them. The Dirac mass term is **linear and chirality-off-diagonal**, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$, $\bar{\tilde{\nabla}}\tilde{\Psi}_L = m\tilde{\Psi}_R$; it conserves the vector $U(1)$ and breaks the axial symmetry. The retired antilinear form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$ was retired for its spacelike dispersion, and $\flat = -\dagger$ is retained as the algebra's real structure.
 
@@ -498,6 +537,7 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $\Box_{\text{Weyl}} = -\Box$ | d'Alembertian of the Weyl-spinor exercise, opposite sign |
 | $\mathrm{Tr}(\tilde{Q}_1\tilde{Q}_2) = 2\,\mathrm{Sc}(\tilde{Q}_1\tilde{Q}_2)$ | Trace pairing, unrestricted; the case $\tilde{P}\in\mathbb{M}_+$, $\tilde{Q}\in\mathbb{M}_+$ is the real one. $\mathrm{Tr}(e_0) = 2$ |
 | $\Phi : \mathbb{B} \to M_2(\mathbb{C})$ | The matrix representation, with $\Phi(e_0) = I_2$ and $\Phi(e_k)$ as given above; the Hermitian units follow as $\Phi(ie_k) = i\,\Phi(e_k)$. Fixed up to a unitary change of basis, and no further |
+| $Q^\mu$ | The coefficients of an element, in the upper position, $Q^0 = Q_0$ and $(Q^1,Q^2,Q^3) = (Q_1,Q_2,Q_3)$; never raised or lowered, there being no metric on $\mathbb{C}^4$ |
 | $\tilde{\Psi} = \tilde{\Psi}_L + \tilde{\Psi}_R$ | Chiral decomposition of the Dirac field |
 | $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ | The linear, chirality-off-diagonal mass term (canonical form) |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions, the Lorentz group on $\mathbb{M}_-$ |
@@ -514,3 +554,6 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 - Chris Doran and Anthony Lasenby, *Geometric Algebra for Physicists* (Cambridge, 2003), for the geometric-algebra treatment of the Dirac equation and its mass term.
 - David Hestenes, *Space-Time Algebra* (Gordon and Breach, 1966), for the original formulation of the Dirac equation in geometric algebra.
 - *Relations Between Subspaces* (`articles_physics/relations-between-subspaces.md`), companion article, for the relations among the subspaces defined here — their coordinate blocks, intersections, spans, gradings and norm forms.
+- *The Four-Vector Representation of Biquaternions* (`articles_physics/the-four-vector-representation-of-biquaternions.md`), companion article, for the coefficient space, the column and the dual row, and the index that is never raised or lowered.
+- *The 4×4 Regular Matrix Representation of Biquaternions* (`articles_physics/the-4x4-regular-matrix-representation-of-biquaternions.md`), companion article, for the two regular matrices, the relation between them, and the reduction into the two chiralities.
+- *The 2×2 Matrix Representation of Biquaternions* (`articles_physics/the-2x2-matrix-representation-of-biquaternions.md`), companion article, for the isomorphism $\Phi$, the trace and the determinant, and the ideals as columns.

@@ -216,14 +216,6 @@ $$
 \partial_{q_\mu}\left(\frac{1}{\|\tilde Q\|_E^4}\right) = -\frac{2}{\|\tilde Q\|_E^6} \partial_{q_\mu}\|\tilde Q\|_E^2 = -\frac{2 \cdot 2 Q_\mu}{\|\tilde Q\|_E^6} = -\frac{4 Q_\mu}{\|\tilde Q\|_E^6}.
 $$
 
-Let us be precise: $\partial_{q_\mu}(r^{-4})$ where $r = \|\tilde Q\|_E^2$. Chain rule: $\partial_{q_\mu}(r^{-4}) = -4 r^{-5} \partial_{q_\mu} r = -4 r^{-5} \cdot 2 Q_\mu = -8 Q_\mu r^{-5} = -8 Q_\mu / \|\tilde Q\|_E^{10}$.
-
-Hmm, careful: $r^{-5} = (\|\tilde Q\|_E^2)^{-5} = \|\tilde Q\|_E^{-10}$. But we want to write the result as $-4 Q_\mu/\|\tilde Q\|_E^6$. Let me redo.
-
-$r = \|\tilde Q\|_E^2$. $\partial_{q_\mu}(r^{-2}) = -2r^{-3}\partial_{q_\mu} r = -2r^{-3}\cdot 2Q_\mu = -4Q_\mu/r^3 = -4Q_\mu/\|\tilde Q\|_E^6$. ✓
-
-So $\partial_{q_\mu}(\|\tilde Q\|_E^{-4}) = -4Q_\mu/\|\tilde Q\|_E^6$. ✓
-
 Therefore
 
 $$

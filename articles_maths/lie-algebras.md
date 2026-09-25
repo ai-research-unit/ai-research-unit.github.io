@@ -344,9 +344,7 @@ This is the reason Lie algebras were introduced in the first place. Sophus Lie, 
 
 ---
 
-## Part VIII: Summary
-
-Let me summarize the main points.
+## Summary
 
 **A Lie algebra** is a module over a commutative ring equipped with a bilinear, antisymmetric product satisfying the Jacobi identity.
 
