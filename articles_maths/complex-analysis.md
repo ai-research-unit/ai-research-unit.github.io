@@ -504,6 +504,14 @@ where $\operatorname{ord}(f, z_k)$ is the order of the zero and $\operatorname{o
 
 **Proof.** Write $p(z) = a_n z^n + \dots + a_0$. On a large circle, $|a_n z^n| > |a_{n-1} z^{n-1} + \dots + a_0|$, so by Rouché, $p$ has the same number of zeros as $a_n z^n$, which is $n$. $\square$
 
+## Summary
+
+Complex analysis is the study of complex-valued functions of a complex variable that possess a derivative in the complex sense. The plane carries the modulus $\lvert z\rvert = \sqrt{x^2 + y^2}$, and with it the distance, the convergent sequences, the continuous functions and the open sets on which the subject is built.
+
+The derivative $f'(z_0) = \lim_{h \to 0} (f(z_0 + h) - f(z_0))/h$ is the central object, and the article records how much stronger it is than its real analogue: a function that has it at every point of an open set is holomorphic, holomorphy is equivalent to the Cauchy–Riemann equations, and it forces the function to be analytic. Where the derivative is nonzero the map is conformal, preserving the angles between curves.
+
+Integration along paths defines the contour integral, and the theorems the derivative buys are the substance of the subject: Cauchy's theorem, the Cauchy integral formula, the Liouville theorem, and the residue theorem, which evaluates an integral by summing the local contributions of the singularities. Power series, Taylor series and Laurent series describe the local behaviour of a holomorphic function, and the Laurent expansion classifies the isolated singularities as removable, a pole, or essential. The article closes by applying the residue theorem to the evaluation of real integrals.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

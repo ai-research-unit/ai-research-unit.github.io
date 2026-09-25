@@ -6,7 +6,7 @@ An ordered field is a field equipped with a total order that is compatible with 
 
 This article develops ordered rings and fields, the positive cone that encodes the order, the order topology in the elementary form needed here, and the Archimedean and non-Archimedean cases, with $\mathbb{Q}$ and $F(t)$ as the two standard examples. The completion theory and the theory of real-closed fields are the subjects, and the general theory of topological rings is; here the topology is used only to record the compatibility of the order with the field operations.
 
-Throughout, an ordered field is written $F$ and its order $\leq$. The axioms of an ordered field are stated from scratch, so no prior theory of order is assumed; the theory of fields, characteristic, and prime fields is from *Fields*, and divisibility is from *Units, Zero Divisors and Integral Domains*.
+Throughout, an ordered field is written $F$ and its order $\leq$. The axioms of an ordered field are stated from scratch, so no prior theory of order is assumed; the theory of fields, characteristic, and prime fields is from *Fields*, and divisibility is from *Integral Domains*.
 
 ---
 

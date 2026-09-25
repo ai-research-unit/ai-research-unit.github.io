@@ -394,6 +394,14 @@ the algebra of polynomials in two commuting nilpotent variables. This is four-di
 
 The tensor product is **not** the truncated polynomial algebra $R[\varepsilon]/(\varepsilon^3)$, because the two nilpotents are independent. The truncated polynomial algebra has a single nilpotent of index three, while the tensor product has two commuting nilpotents of index two. The two are not isomorphic.
 
+## Summary
+
+The dual number algebra $\mathbb{D}'_R$ is the two-dimensional free $R$-module with basis $e_0 = 1$, $e_1 = \varepsilon$ and the single relation $\varepsilon^2 = 0$. It is commutative and associative with unit, and it is not a field: the element $\varepsilon$ is a nonzero nilpotent. A general element is written $z = a + b\varepsilon$, with $a$ its real part and $b$ its infinitesimal part.
+
+Dual conjugation is the involution sending $a + b\varepsilon$ to $a - b\varepsilon$. Its fixed points form the real submodule $R_{\mathbb{D}'}$ and its anti-fixed points the infinitesimal submodule $\varepsilon R_{\mathbb{D}'}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every dual number decomposes uniquely both as a real part plus an infinitesimal part and as the sum of the two eigencomponents.
+
+The algebra is characterised by its maximal ideal. The ideal $\mathfrak{m} = (\varepsilon)$ is the set of elements of vanishing real part; it is nilpotent of index two, $\mathfrak{m}^2 = 0$, and it is the unique maximal ideal, so $\mathbb{D}'_R$ is a local ring. The norm form $N(z) = z\bar{z} = a^2$ depends only on the real part and controls invertibility: an element is a unit exactly when its real part is a unit of $R$. Because the algebra is commutative the commutator vanishes identically and the Lie algebra structure is abelian; the article closes with the tensor product decomposition, in which the dual algebra of a direct sum is the tensor product of the dual algebras of the summands.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

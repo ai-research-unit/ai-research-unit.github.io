@@ -3,328 +3,228 @@
 
 ## Introduction
 
-This article is the rotation slot of the split quaternion system. It determines which Lorentzian geometry the algebra $\mathbb{H}_{\mathbb{D}}$ carries, identifies the isometry groups of the quadratic forms that the algebra presents, and describes how much of those isometry groups the algebra itself realises. The **Lorentz group** is used here in its mathematical sense throughout: it is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$ on a real vector space of dimension four. Nothing physical is attached to the word; it names a position in the classification of forms, and the companion statements about forms of signature $(2,2)$ are made in the same spirit. The two-dimensional model, where the corresponding group is the hyperbolic rotation group of the split complex numbers, is the article *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*, and the general theory of forms of indefinite signature, of their isometry groups and of the geometry they define is the article *Pseudo-Riemannian and Lorentzian Geometry* in Part II, written in parallel; both are cited rather than reproduced.
+This article studies the action of the unit split-quaternions on the vector subspace. It identifies the unit groups, computes the adjoint action, proves the double cover $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ of the Lorentz group of signature $(2,1)$, describes the elliptic and hyperbolic one-parameter subgroups, and classifies the elements of the vector subspace as timelike, lightlike or spacelike according to their orbits.
 
-The article assumes the split quaternion algebra from *Split-Quaternion Algebra*: $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, of real dimension eight, with the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger}$ and ${}^{\flat} = -{}^{\dagger}$, with the idempotents $e_{\pm} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ and the theory of its invertibility from *Split-Quaternion Norm and Invertibility*, the description of the zero divisors from *Split-Quaternion Zero Divisors*, the classification of the roots of $-e_0$ from *Split-Quaternion Roots of Minus One*, and the polar forms of the units from *Split-Quaternion Polar Representations*. It uses the hyperbolic rotations of the split complex plane from *Hyperbolic Rotations*, and the quaternion rotation theory — the double cover $Sp(1)\to SO(3)$ and the two-sided action giving $SO(4)$ — from *Quaternion Rotations and Reflections*. It does not restate any of them; the rotation theory of the quaternions is used only as the compact model against which the split quaternion case is compared. The Lie algebra $\mathfrak{so}(3,1)$ and its complexification are treated in *The Orthogonal Lie Algebra* in Part I, where the isomorphism $\mathfrak{so}(1,3)\cong\mathfrak{sl}_2(\mathbb{C})$ is established.
+The split-quaternion algebra, its vector subspace $V$, its norm form $N$, its conjugation and its idempotents are assumed from *Split-Quaternion Algebra*; the group of units, the norm-one group and the signature of the restricted form are assumed from *Split-Quaternion Norm and Invertibility*. The defining module and the matrix model are assumed from *Split-Quaternion Matrix Representations*, and the representations of the algebra from *Split-Quaternion Representations*. The Lorentz groups and the orthogonal groups are those of *The Orthogonal Lie Algebra* and *Isometries and Orthogonal Transformations*; the hyperbolic plane that the sheets carry is the subject of *Split-Quaternions and Hyperbolic Geometry*, to which the last step of this article points. Nothing physical is invoked.
 
-The article follows the shared conventions. The quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the split complex unit is $j$ with $j^2 = +e_0$, commuting with every $e_k$; a split quaternion is $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{D}$, written $\tilde Q = a + jb$ with $a, b\in\mathbb{H}$ and, equivalently, $\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-$ with $\tilde Q_{\pm}\in\mathbb{H}$. The Hermitian conjugation is $\tilde Q^{\dagger} = \bar{\tilde Q}^{*}$, and the four invariant subspaces are as in *Split-Quaternion Algebra*.
+## The Unit Split-Quaternions
 
-## The Lorentz Group as an Isometry Group
-
-### The Definition
-
-**Definition.** Let $V$ be a real vector space of dimension $n$ and let $g$ be a non-degenerate symmetric bilinear form on $V$. Write $(p,q)$ for its **signature**, where $p$ is the number of positive and $q$ the number of negative entries in a diagonalisation, so that $p + q = n$. The **orthogonal group** $O(p,q)$ is the group of linear isomorphisms $T$ of $V$ with
+**Definition.** The **norm-one group** of the algebra is
 
 $$
-g(Tx, Ty) = g(x,y) \qquad\text{for all } x, y\in V .
+U = \{x \in \mathbb{H}_{\mathrm{s}} : N(x) = 1\},
 $$
 
-When $(p,q) = (3,1)$ the group $O(3,1)$ is called the **Lorentz group**, and the form a **Lorentzian form**; when $(p,q) = (2,2)$ the group is written $O(2,2)$ and the form is called **neutral** or **of Kleinian signature**.
-
-**Proposition.** For every non-degenerate symmetric form the group $O(p,q)$ is a closed subgroup of $GL_n(\mathbb{R})$, hence a Lie group; it contains the finite central subgroup $\{\pm 1\}$; its Lie algebra is
+and the set of elements of norm $\pm 1$ is
 
 $$
-\mathfrak{so}(p,q) = \{X\in\mathfrak{gl}_n(\mathbb{R}) : g(Xx,y) + g(x,Xy) = 0\ \text{for all } x,y\},
+U^{\pm} = \{x \in \mathbb{H}_{\mathrm{s}} : N(x) = \pm 1\} = \mathrm{SL}_2^{\pm}(\mathbb{R}).
 $$
 
-of dimension $\tfrac{1}{2}n(n-1)$; and its identity component has index at most four in it.
+Both are groups under multiplication, and $U$ is a subgroup of $U^{\pm}$.
 
-*Proof.* Closure is continuity of the defining equations. The differential condition is obtained by differentiating $g(e^{tX}x, e^{tX}y) = g(x,y)$ at $t = 0$. The dimension is the dimension of the space of $g$-skew endomorphisms, which is $\tfrac{1}{2}n(n-1)$ because $g$ identifies $V$ with $V^{*}$ and skewness is a condition of that dimension. The four components are separated by the sign of the determinant and by the sign of the restriction of the form to the invariant subspace on which it is definite; for a Lorentzian form the invariant is $\det T$ together with the sign of $g(Tu,u)$ for one timelike $u$. $\square$
-
-### The Groups $O(3,1)$, $SO(3,1)$ and $SO^{+}(3,1)$
-
-For a Lorentzian form of signature $(3,1)$ the determinant takes the two values $\pm1$ and $\det T = +1$ singles out $SO(3,1)$, of index two. The identity component $SO^{+}(3,1)$ is the subgroup of $SO(3,1)$ carrying a chosen timelike vector to a vector in the same half of the timelike cone; it has index two in $SO(3,1)$ and index four in $O(3,1)$. Both $SO(3,1)$ and $SO^{+}(3,1)$ have dimension six, and their Lie algebras agree:
+**Theorem (The Two Components).** The group $U$ is isomorphic to $\mathrm{SL}_2(\mathbb{R})$ and is connected; the group $U^{\pm}$ has exactly two connected components,
 
 $$
-\dim\mathfrak{so}(3,1) = 6, \qquad \mathfrak{so}(3,1)\cong\mathfrak{so}(1,3)\cong\mathfrak{sl}_2(\mathbb{C}) \ \text{ as complex Lie algebras},
+U = \mathrm{SL}_2(\mathbb{R}) \quad \text{and} \quad \{x : N(x) = -1\} = \mathrm{SL}_2^{-}(\mathbb{R}),
 $$
 
-the last isomorphism being the one established in *The Orthogonal Lie Algebra*. The maximal compact subgroup of $SO^{+}(3,1)$ is the group $SO(3)$ of rotations of the spacelike $3$-plane, the stabiliser of a timelike vector; it is the compact part whose existence is guaranteed by the general structure theory of real Lie groups, and the quotient is a symmetric space, namely hyperbolic three-space. This last identification is developed, and is not used below.
-
-### The Groups $O(2,2)$ and $SO(2,2)$
-
-For a neutral form of signature $(2,2)$ the determinant again takes the values $\pm1$, $\dim\mathfrak{so}(2,2) = 6$, and
+and the two components are interchanged by multiplication by $e_2$. The full group of units is
 
 $$
-\mathfrak{so}(2,2)\cong\mathfrak{sl}_2(\mathbb{R})\oplus\mathfrak{sl}_2(\mathbb{R}), \qquad
-SO^{+}(2,2)\cong( SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\},
+\mathbb{H}_{\mathrm{s}}^{\times} = \{N \neq 0\} \cong GL_2(\mathbb{R}),
 $$
 
-the latter a standard isomorphism, obtained as follows: $SL_2(\mathbb{R})$ acts on the space of symmetric $2\times2$ matrices by $X\mapsto AXA^{t}$, preserving the determinant, which is a form of signature $(2,1)$, and the product acts on all $2\times2$ matrices by $(A,B)\cdot X = AXB^{-1}$, preserving the determinant, which is a form of signature $(2,2)$. The maximal compact subgroup of $SO^{+}(2,2)$ is the two-dimensional torus $SO(2)\times SO(2)$, larger than in the Lorentzian case relative to the dimension; the difference between the two signatures is exactly the difference between the ranks of the associated symmetric spaces.
+its centre is $\mathbb{R}^{\times}$, and it has the two components $\{N > 0\} = GL_2^{+}(\mathbb{R})$ and $\{N < 0\} = GL_2^{-}(\mathbb{R})$.
 
-The two signatures are not unrelated. Over $\mathbb{C}$ a non-degenerate symmetric form has no signature, and the complexifications $O(3,1)_{\mathbb{C}}$ and $O(2,2)_{\mathbb{C}}$ coincide with $O(4,\mathbb{C})$; the two real forms classified by $(3,1)$ and $(2,2)$ are the two real structures of the same complex group, one with real points the Lorentz group and one with real points the neutral group. The complex quadric $\{g = 0\}\subset\mathbb{P}^3$, which describes both, is doubly ruled: through each of its points pass two lines, and the two families are interchanged by the Galois action. This is the sense in which the definite case has one kind of rotation and the indefinite case has three, and it explains why the classification of one-parameter subgroups below has three entries rather than one.
+**Proof.** The identification $U \cong \mathrm{SL}_2(\mathbb{R})$ and the isomorphism $\mathbb{H}_{\mathrm{s}}^{\times} \cong GL_2(\mathbb{R})$ are (*Split-Quaternion Norm and Invertibility*, §*The Group of Units*), where the connectedness of $\mathrm{SL}_2(\mathbb{R})$ and the splitting of the units into the two components $\{N>0\}$, $\{N<0\}$ are recorded. The element $e_2$ has $N(e_2) = -1$ and $e_2^{-1} = e_2$, so multiplication by $e_2$ exchanges the two norm levels; it therefore identifies the two components of $U^{\pm}$, and since $U$ is connected, $U^{\pm}$ has exactly two components. The centre is $\mathbb{R}$ by (*Split-Quaternion Algebra*, §*The Centre and Simplicity*), so the central units are the nonzero scalars. $\square$
 
-## The Hermitian Form on the Split Quaternions
+**Remark (Two readings of "the unit split-quaternions").** The norm-one group $U$ is connected and has no two-component structure; the two components appear for the group $U^{\pm}$ of units of norm $\pm 1$. Both readings occur in the literature, and this article keeps them apart: the double cover below is a statement about $U = \mathrm{SL}_2(\mathbb{R})$, and the second component of $U^{\pm}$ is reached by $e_2$ and acts by isometries reversing the time direction.
 
-### The Hermitian Scalar Form and Its Signature
+## The Adjoint Action on the Vector Subspace
 
-The algebra carries a natural real bilinear form, built from the Hermitian conjugation alone.
-
-**Definition.** The **Hermitian scalar form** on $\mathbb{H}_{\mathbb{D}}$ is
+For a unit $u$ define the conjugation map
 
 $$
-g(\tilde P, \tilde Q) = \operatorname{Sc}\!\left(\tilde P\tilde Q^{\dagger}\right),
+\Theta(u) : V \to V, \qquad \Theta(u)v = u v u^{-1}.
 $$
 
-where $\operatorname{Sc}$ is the scalar part, the coefficient of $e_0$ in the developed form.
-
-**Proposition.** The Hermitian scalar form is symmetric, real-valued and $\mathbb{R}$-bilinear, and its signature is $(4,4)$. In the real basis $(e_0, e_1, e_2, e_3, je_0, je_1, je_2, je_3)$ it is diagonal with entries $(+1,+1,+1,+1,-1,-1,-1,-1)$.
-
-*Proof.* Symmetry: $\operatorname{Sc}(\tilde P\tilde Q^{\dagger}) = \operatorname{Sc}(\overline{\tilde Q\tilde P^{\dagger}}) = \operatorname{Sc}(\tilde Q\tilde P^{\dagger})$, because the scalar part is fixed by $\bar{\cdot}$ and by ${}^{*}$ separately, hence by ${}^{\dagger}$. Bilinearity is clear. For the signature, write $\tilde Q = a + jb$ with $a, b\in\mathbb{H}$; then $\tilde Q^{\dagger} = \bar a - j\bar b$ and
+**Theorem (The Adjoint Representation).** For every unit $u$, the map $\Theta(u)$ is a real-linear automorphism of $V$ preserving the form $N$; the assignment $u \mapsto \Theta(u)$ is a group homomorphism
 
 $$
-\tilde P\tilde Q^{\dagger} = \left(a\bar c - b\bar d\right) + j\left(b\bar c - a\bar d\right)
+\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \longrightarrow O(V, N) \cong O(2,1),
 $$
 
-for $\tilde P = a + jb$, $\tilde Q = c + jd$, so that $g(\tilde P,\tilde Q) = \operatorname{Sc}(a\bar c - b\bar d)$ with $\operatorname{Sc}$ now the quaternion scalar part. On the basis elements this gives $g(e_\mu,e_\nu) = \delta_{\mu\nu}$, $g(je_\mu,je_\nu) = -\delta_{\mu\nu}$ and $g(e_\mu,je_\nu) = 0$, since $\operatorname{Sc}(a\bar c)$ and $-\operatorname{Sc}(b\bar d)$ are the two contributions and the cross terms vanish. $\square$
-
-The form is non-degenerate, of signature $(4,4)$, so it is neutral on the algebra as a whole, with four positive and four negative directions. This is the ambient form of the split quaternion rotations: every rotation considered below is required to preserve it.
-
-### The Hermitian and the Anti-Hermitian Subspaces
-
-**Definition.** The **Hermitian subspace** $\mathbb{M}_+$ and the **anti-Hermitian subspace** $\mathbb{M}_-$ are the fixed-point sets of ${}^{\dagger}$ and of ${}^{\flat} = -{}^{\dagger}$:
+whose kernel is the centre $\mathbb{R}^{\times}$ and whose image lies in $SO(2,1)$. On the norm-one group the restriction
 
 $$
-\mathbb{M}_+ = \{\tilde Q : \tilde Q^{\dagger} = \tilde Q\}, \qquad \mathbb{M}_- = \{\tilde Q : \tilde Q^{\flat} = \tilde Q\} = \{\tilde Q : \tilde Q^{\dagger} = -\tilde Q\}.
+\Theta : U \cong \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
 $$
 
-**Proposition.** Both subspaces are four-dimensional and real, they are orthogonal to one another, and $\mathbb{H}_{\mathbb{D}} = \mathbb{M}_+\oplus\mathbb{M}_-$ is an orthogonal direct sum. Concretely,
+has kernel $\{\pm 1\}$.
+
+**Proof.** *The maps land in $V$.* Conjugation by $u$ is an algebra automorphism, and it commutes with the conjugation, since $\overline{uvu^{-1}} = \bar{u}\,\bar{v}\,\bar{u}^{-1}$ and $\overline{u^{-1}} = \bar{u}^{-1}$. The vector subspace is the $-1$ eigenspace of the conjugation by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), so it is mapped to itself. *The form is preserved.* $N(uvu^{-1}) = N(u)N(v)N(u)^{-1} = N(v)$ by multiplicativity, since $N$ is real and nonzero on a unit. Hence $\Theta(u) \in O(V,N)$. *Kernel.* If $\Theta(u) = \mathrm{id}$ then $u$ commutes with every element of $V$; since $1$ and $V$ generate the algebra, $u$ is central, so $u \in \mathbb{R}^{\times}$. Conversely every nonzero scalar is in the kernel. *Determinant.* The map $\det\circ\,\Theta : \mathbb{H}_{\mathrm{s}}^{\times} \to \{\pm 1\}$ is a continuous homomorphism. Its domain has the two components $\{N>0\}$ and $\{N<0\}$; the first is $GL_2^{+}(\mathbb{R})$, which is connected, so $\det\Theta \equiv 1$ there. On the second component, $\Phi(e_2) = K$ is a reflection, and the computation of (*Split-Quaternion Algebra*, §*The Multiplication Table*) gives $e_2e_1e_2 = -e_1$, $e_2e_2e_2 = e_2$, $e_2e_3e_2 = -e_3$, so $\Theta(e_2) = \operatorname{diag}(-1,1,-1)$ in the basis $e_1,e_2,e_3$ and $\det\Theta(e_2) = +1$. Hence $\det\Theta \equiv 1$ and the image lies in $SO(2,1)$. *The restricted kernel.* The kernel on $U$ is the centre intersected with $\{N=1\}$, that is $\{\pm 1\}$. $\square$
+
+**Corollary (The Image of the Unit Group).** The image of the full unit group is
 
 $$
-\mathbb{M}_+ = \{a + jb : a\in\mathbb{R}\,e_0,\ b\in\operatorname{Im}\mathbb{H}\}, \qquad
-\mathbb{M}_- = \{a + jb : a\in\operatorname{Im}\mathbb{H},\ b\in\mathbb{R}\,e_0\},
+\Theta(\mathbb{H}_{\mathrm{s}}^{\times}) = SO(2,1) \cong PGL_2(\mathbb{R}),
 $$
 
-so that $\mathbb{M}_+$ has the orthonormal basis $(e_0, je_1, je_2, je_3)$ and $\mathbb{M}_-$ the orthogonal basis $(je_0, e_1, e_2, e_3)$.
+and the image of the norm-one group is $\Theta(U) = SO^{+}(2,1)$, the identity component.
 
-*Proof.* The subspaces are the $\pm1$-eigenspaces of the involution ${}^{\dagger}$, hence complementary. If $\tilde P^{\dagger} = \tilde P$ and $\tilde Q^{\dagger} = -\tilde Q$, then $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger}) = -\operatorname{Sc}(\tilde P\tilde Q)$, and $g(\tilde Q,\tilde P) = \operatorname{Sc}(\tilde Q\tilde P^{\dagger}) = \operatorname{Sc}(\tilde Q\tilde P) = \operatorname{Sc}(\tilde P\tilde Q)$; by symmetry the two are equal, so both vanish. For the explicit descriptions, write $\tilde Q = a + jb$; then $\tilde Q^{\dagger} = \bar a - j\bar b$, and $\tilde Q^{\dagger} = \tilde Q$ gives $\bar a = a$ and $\bar b = -b$, while $\tilde Q^{\dagger} = -\tilde Q$ gives $\bar a = -a$ and $\bar b = b$. $\square$
+**Proof.** The image of $\mathbb{H}_{\mathrm{s}}^{\times}$ is a subgroup of $SO(2,1)$ containing the image of the connected group $U$, which is connected and contains the identity, so the image contains the identity component; the domain has exactly two components and the image lies in $SO(2,1)$, which has two components, so the image is all of $SO(2,1)$. The second statement is proved below, where $\Theta(U)$ is identified with $\mathrm{SO}^{+}(2,1)$ through the double cover. $\square$
 
-**Theorem.** The restrictions of the Hermitian scalar form have signatures
+## The Double Cover of $\mathrm{SO}^{+}(2,1)$
 
-$$
-g\big|_{\mathbb{M}_+} \sim (1,3), \qquad g\big|_{\mathbb{M}_-} \sim (3,1).
-$$
-
-Consequently $\mathbb{M}_-$ is a Lorentzian four-space with the form $g$, and $O(3,1)$ is the isometry group of $(\mathbb{M}_-,g)$; $\mathbb{M}_+$ carries the opposite Lorentzian form, and $O(1,3)\cong O(3,1)$ is its isometry group.
-
-*Proof.* On $\mathbb{M}_+$ the basis $(e_0, je_1, je_2, je_3)$ gives diagonal entries $g(e_0,e_0) = +1$ and $g(je_k,je_k) = -1$, hence signature $(1,3)$. On $\mathbb{M}_-$ the basis $(je_0, e_1, e_2, e_3)$ gives $g(je_0,je_0) = -1$ and $g(e_k,e_k) = +1$, hence signature $(3,1)$. The identification of the isometry group is the definition of $O(3,1)$. $\square$
-
-The element $je_0$ is therefore a **timelike** vector of the algebra, of $g$-norm $-1$; the elements $e_1, e_2, e_3$ are **spacelike**, of $g$-norm $+1$; and $\mathbb{M}_-$ is the Lorentzian four-space attached to the split quaternion algebra. In the identity $u = u_+ + u_-$ with $u_{\pm}$ the projections onto $\mathbb{M}_{\pm}$, the form is $g(u,u) = |u_+|^2_{+} + |u_-|^2_{-}$ where the two summands carry opposite signs.
-
-### Neutral Planes and the $(2,2)$ Form
-
-**Definition.** A real subspace $W\subset\mathbb{H}_{\mathbb{D}}$ is **neutral** if $\dim W = 4$ and $g\big|_W$ has signature $(2,2)$. Such a subspace is **totally isotropic** if $g\big|_W = 0$ and $\dim W = 4$; the maximal $g$-totally-isotropic subspaces of $\mathbb{H}_{\mathbb{D}}$ are four-dimensional.
-
-**Proposition.** Let $\mu\neq\nu$ be two distinct elements of $\{0,1,2,3\}$. The $\mathbb{D}$-span
+**Theorem (The Double Cover).** The adjoint action restricted to the norm-one group is a surjective group homomorphism
 
 $$
-\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu = \mathbb{R}e_\mu\oplus\mathbb{R}je_\mu\oplus\mathbb{R}e_\nu\oplus\mathbb{R}je_\nu
+\Theta : \mathrm{SL}_2(\mathbb{R}) \longrightarrow \mathrm{SO}^{+}(2,1)
 $$
 
-is a neutral four-plane, with the orthonormal basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ and the diagonal form $(+1,-1,+1,-1)$; the isometry group of this plane is $O(2,2)$. Every neutral four-plane of $\mathbb{H}_{\mathbb{D}}$ is carried to one of these by the symmetries of the algebra.
-
-*Proof.* The basis is orthogonal because distinct basis elements of the quaternion basis are $g$-orthogonal and because $g(e_\mu,je_\mu) = 0$ by the cross-term computation above; the diagonal values are $g(e_\mu,e_\mu) = +1$ and $g(je_\mu,je_\mu) = -1$, and likewise for $\nu$. The form is therefore of signature $(2,2)$, and its isometry group is $O(2,2)$ by definition. The last assertion is the standard fact that a non-degenerate subspace of a given signature is unique up to the isometry group of the ambient form, applied with the ambient form $g$; the transitivity needed is that of the group preserving the quaternion structure of the index set, which acts transitively on unordered pairs of distinct indices. $\square$
-
-So the split quaternion algebra carries Lorentzian four-planes of both relevant signatures: the two eigenspaces of the Hermitian conjugation with $(3,1)$ and $(1,3)$, and the neutral four-planes spanned by two quaternion coordinates with $(2,2)$. The Lorentz group and the neutral group are both isometry groups of forms that the algebra presents, and this is the precise sense in which the split quaternions are the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$.
-
-## The Unit Sphere of the Algebra
-
-### The Norm-One Group
-
-**Definition.** The **unit sphere** of the split quaternion algebra is
+with kernel $\{\pm 1\}$. It is therefore a double cover, and it induces an isomorphism
 
 $$
-S(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : N(\tilde S) = e_0\}.
+\mathrm{SL}_2(\mathbb{R})/\{\pm 1\} = \mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1).
 $$
 
-**Theorem.** An element $\tilde S$ has norm form $e_0$ if and only if its two idempotent components are unit quaternions, so that
+**Proof.** By the preceding theorem the homomorphism is well defined and has kernel $\{\pm 1\}$. Its differential at the identity is the representation of the Lie algebra $\mathfrak{sl}_2(\mathbb{R}) = V$ with the commutator bracket (by *Split-Quaternion Algebra*, §*The Lie Algebra Structure*) on the Lie algebra $\mathfrak{so}(2,1)$ of the isometry algebra of the signature-$(2,1)$ form; it is injective because the kernel of $\Theta$ is discrete, and both Lie algebras have dimension $3$, so the differential is an isomorphism, by *The Orthogonal Lie Algebra*, §*The Lie Algebra of Skew Transformations*. The image of a Lie group homomorphism with injective differential is an open Lie subgroup of the target; since the target $\mathrm{SO}^{+}(2,1)$ is connected, an open subgroup containing the identity is the whole group, by *The Lie Correspondence and the Adjoint Representation*. Hence $\Theta$ is surjective, and the first isomorphism theorem for groups gives $\mathrm{SL}_2(\mathbb{R})/\{\pm 1\} \cong \mathrm{SO}^{+}(2,1)$. $\square$
+
+**Corollary (A Double Cover That Is Not the Universal Cover).** The group $\mathrm{SL}_2(\mathbb{R})$ is connected but not simply connected: its fundamental group is infinite cyclic. The double cover of the theorem is therefore not the universal cover of $\mathrm{SO}^{+}(2,1)$; the universal cover is the infinite cyclic cover of $\mathrm{SL}_2(\mathbb{R})$, and the intermediate cover of degree two is the object of the theorem.
+
+**Proof.** The fundamental group of $\mathrm{SL}_2(\mathbb{R})$ is computed in *Matrix Groups and Classical Groups*, where the maximal compact subgroup $SO(2)$ is seen to generate the fundamental group; the covering theory gives the rest. $\square$
+
+This is a structural difference from the quaternion case and it is worth naming: the quaternion unit sphere is the three-sphere, which is simply connected, so there the double cover of $SO(3)$ is the universal cover, whereas here the double cover of $\mathrm{SO}^{+}(2,1)$ sits under an infinite tower.
+
+**Corollary (Fixed Directions).** A non-identity elliptic isometry $\Theta(g(\theta))$ fixes the positive-norm direction $\mathbb{R}\xi$ and no other direction of $V$; a non-identity hyperbolic isometry $\Theta(h(t))$ fixes the negative-norm direction $\mathbb{R}\eta$ and the two isotropic directions of the plane $\eta^{\perp}$. Neither fixes any other direction.
+
+**Proof.** The fixed directions of the first two kinds are computed in the two theorems below. An isometry of $V$ with three fixed directions in general position is the identity, because the form is nondegenerate and such directions span $V$; a nontrivial elliptic isometry acts on the definite plane $\xi^{\perp}$ as a rotation by the nonzero angle $2\theta$, so it fixes no direction there, and a nontrivial hyperbolic isometry acts on the indefinite plane $\eta^{\perp}$ as a hyperbolic rotation, which is the identity only for $t = 0$. $\square$
+
+## The Lorentz Group of Signature $(2,1)$
+
+**Definition.** The **Lorentz group of signature $(2,1)$** is the isometry group $O(V,N) \cong O(2,1)$ of the form $N = b^2 - c^2 - d^2$ on the three-dimensional vector subspace; its **identity component** is $\mathrm{SO}^{+}(2,1)$, the group of isometries of determinant $+1$ preserving the time orientation.
+
+**Theorem (The Structure of the Group).** The group $O(2,1)$ has four connected components, distinguished by the signs of $\det$ and of the coordinate $b$ of a timelike vector; the subgroup $SO(2,1)$ of determinant $+1$ has two components, and its identity component is $\mathrm{SO}^{+}(2,1)$, a three-dimensional group isomorphic to $\mathrm{PSL}_2(\mathbb{R})$. The full group of units of the algebra maps onto $SO(2,1)$ with kernel $\mathbb{R}^{\times}$, and the norm-one group maps onto $\mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$.
+
+**Proof.** The components of $O(2,1)$ are described in *Isometries and Orthogonal Transformations*; the isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ is the double cover of the preceding section, and the statement about the images and kernels is the theorem on the adjoint representation and its corollary. $\square$
+
+**Remark (Signature $(2,1)$, not $(3,1)$).** The form restricted to the vector subspace has signature $(2,1)$ by (*Split-Quaternion Algebra*, §*The Restricted Form on the Vector Subspace*), and the group acting on the vector subspace is therefore the three-dimensional Lorentz group $\mathrm{SO}^{+}(2,1)$. The group $\mathrm{SO}^{+}(3,1)$ is the Lorentz group of four-dimensional Minkowski space and does not occur here; the split-quaternion system carries three-dimensional Lorentzian geometry and the hyperbolic plane, not four-dimensional geometry and hyperbolic three-space.
+
+## Elliptic and Hyperbolic One-Parameter Subgroups
+
+The solutions of $\xi^2 = -1$ and of $\eta^2 = +1$ generate the two kinds of one-parameter subgroup of $U$.
+
+**Theorem (Elliptic Subgroups).** Let $\xi \in V$ with $\xi^2 = -1$. Then the elements
 
 $$
-S(\mathbb{H}_{\mathbb{D}}) = \left\{\tilde S_+e_+ + \tilde S_-e_- : \lvert\tilde S_+\rvert = \lvert\tilde S_-\rvert = 1\right\}\cong S^3\times S^3,
+g(\theta) = \cos\theta + \xi \sin\theta, \qquad \theta \in \mathbb{R},
 $$
 
-a compact group of dimension six. Under the identification $\tilde S = a + jb$ it is
+form a subgroup of $U$ isomorphic to $SO(2)$, and
 
 $$
-S(\mathbb{H}_{\mathbb{D}}) = \left\{a + jb : \lvert a + b\rvert = \lvert a - b\rvert = 1\right\}.
+\Theta(g(\theta)) \xi = \xi, \qquad \Theta(g(\theta)) : \xi^{\perp} \to \xi^{\perp} \text{ is a rotation by } 2\theta .
 $$
 
-*Proof.* By the idempotent decomposition of *Split-Quaternion Algebra*, the norm form is $N(\tilde S) = N(\tilde S_+)e_+ + N(\tilde S_-)e_-$, since $e_+e_- = 0$ and $e_{\pm}$ are orthogonal idempotents; this equals $e_0 = e_+ + e_-$ exactly when the two quaternion norms are both $1$. The relation $\tilde S_{\pm} = a\pm b$ gives the second description. $\square$
+The subgroups obtained from the solutions of $\xi^2 = -1$ are the compact subgroups of $U$, and they exhaust the conjugacy classes of maximal compact subgroups.
 
-The unit sphere is thus a product of two copies of the quaternion unit sphere, and in particular it is **compact**. This is the first substantive difference from the classical description of a rotation group attached to an indefinite form: the set of units of the split quaternion algebra is not a hyperboloid, and it is not diffeomorphic to a non-compact symmetric space. The hyperboloids appear only when the Hermitian form $g$ is used, and they are subsets of $\mathbb{M}_-$, as described below. The split complex unit group, by contrast, is the hyperbola $\{u\in\mathbb{D} : N(u) = 1\}$, a two-branched curve each branch of which is an isomorphic copy of $\mathbb{R}$, as in *Hyperbolic Rotations*; the difference is that in $\mathbb{H}_{\mathbb{D}}$ the norm form is definite on each quaternion component.
+**Proof.** The norm is $N(g(\theta)) = \cos^2\theta \cdot 1 + \sin^2\theta \cdot N(\xi) = \cos^2\theta + \sin^2\theta = 1$, using $\xi^2 = -N(\xi) = -1$; the addition formula for $g$ follows from $\xi^2 = -1$. The element $g$ commutes with $\xi$, so $\xi$ is fixed; and $\xi^{\perp}$ is the orthogonal plane of dimension two, which is definite because $\xi$ has positive norm, so that conjugation by $g$ acts on it as a rotation; the explicit computation with $\xi = e_1$ in the basis $e_2,e_3$ gives $\Theta(g(\theta))e_2 = \cos 2\theta\, e_2 + \sin 2\theta\, e_3$ and $\Theta(g(\theta))e_3 = -\sin 2\theta\, e_2 + \cos 2\theta\, e_3$, a rotation by $2\theta$, as in the quaternion case of *Quaternion Algebra*, §*The Rotation Group*. $\square$
 
-### The Two-Sided Action and the Comparison with the Quaternion Sphere
-
-**Proposition.** The unit sphere acts on $\mathbb{H}_{\mathbb{D}}$ by the two-sided action
+**Theorem (Hyperbolic Subgroups).** Let $\eta \in V$ with $\eta^2 = +1$, that is $N(\eta) = -1$. Then the elements
 
 $$
-\Phi_{(\tilde S,\tilde T)}(\tilde X) = \tilde S\tilde X\tilde T^{-1},
+h(t) = \cosh t + \eta \sinh t, \qquad t \in \mathbb{R},
 $$
 
-which preserves the norm form; the resulting homomorphism $S^3\times S^3\times S^3\times S^3\to GL_8(\mathbb{R})$ has image of dimension eight, and the restriction to the quaternion subspace $\mathbb{H}\subset\mathbb{H}_{\mathbb{D}}$, on which the action is $X\mapsto \tilde S_+X\tilde S_-^{-1}$, realises $SO(4)$ on each idempotent component, as in *Quaternion Rotations and Reflections*.
-
-*Proof.* Multiplicativity of the norm form shows that $\tilde S\tilde X\tilde T^{-1}$ has norm form $N(\tilde S)N(\tilde X)N(\tilde T)^{-1} = N(\tilde X)$ when $\tilde S,\tilde T$ have norm form $e_0$. The image is the product of the two commuting $SO(4)$s corresponding to the two idempotent components, of dimension $3+3$ for the components plus the two-dimensional diagonal scaling, that is eight. The restriction statement is the two-sided action of the quaternion unit sphere, established in *Quaternion Rotations and Reflections*. $\square$
-
-The comparison with the quaternion sphere is then as follows. In the quaternion algebra the unit sphere $S^3$ is the whole group of units; in the split quaternion algebra the unit sphere is $S^3\times S^3$, and the group of all units is four times as large in dimension, $\mathbb{H}^\times\times\mathbb{H}^\times$. The compactness of $S^3$ is not lost but doubled. What is lost is the divisibility: the split quaternion algebra has zero divisors, so the set of elements of norm one is a proper subset of the units, and the polar representations of the units are governed by the idempotent decomposition rather than by a single unit quaternion, as in *Split-Quaternion Polar Representations*.
-
-## Realising the Rotations in the Algebra
-
-### The Unitary Group and the Elliptic Rotations
-
-**Definition.** The **unitary group** of the Hermitian form is
+form a subgroup of $U$ isomorphic to $\mathbb{R}$, and
 
 $$
-U(\mathbb{H}_{\mathbb{D}}) = \{\tilde S\in\mathbb{H}_{\mathbb{D}} : \tilde S\tilde S^{\dagger} = e_0\}.
+\Theta(h(t)) \eta = \eta, \qquad \Theta(h(t)) : \eta^{\perp} \to \eta^{\perp}
 $$
 
-**Theorem.** The unitary group is four-dimensional and isomorphic to the direct product $Sp(1)\times\mathbb{R}$. Concretely,
+acts on the plane $\eta^{\perp}$ of signature $(1,1)$ as a hyperbolic rotation with parameter $2t$: it fixes the two isotropic lines of that plane setwise and translates along the hyperbolas $N = \text{constant}$.
 
-$$
-U(\mathbb{H}_{\mathbb{D}}) = \left\{u\,e^{\psi j} : u\in Sp(1),\ \psi\in\mathbb{R}\right\}, \qquad e^{\psi j} = \cosh\psi + j\sinh\psi,
-$$
+**Proof.** The norm is $N(h(t)) = \cosh^2 t + \sinh^2 t \cdot 1 = \cosh^2 t - \sinh^2 t = 1$, using $N(\eta) = -1$; the addition formula follows from $\eta^2 = 1$. The element $h(t)$ commutes with $\eta$, so $\eta$ is fixed; the orthogonal plane $\eta^{\perp}$ has signature $(1,1)$ because $\eta$ is spacelike, and an isometry of a $(1,1)$ plane with a fixed nonzero vector acts as a hyperbolic rotation, fixing the two isotropic directions setwise. $\square$
 
-and its action on $\mathbb{M}_-$ given by $\tilde X\mapsto \tilde S\tilde X\tilde S^{\dagger}$ is by isometries of $g$; it fixes the timelike vector $je_0$ and acts on the spacelike three-plane $\operatorname{Im}\mathbb{H} = \mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$ by
+**Corollary (The Trichotomy of Subgroups).** The subgroup generated by a solution of $\xi^2 = -1$ is compact and consists of elements without real eigenvalues; the subgroup generated by a solution of $\eta^2 = +1$ is non-compact and its non-identity elements have the two real eigenvalues $e^{\pm t}$ of the isometry. The three families correspond to the three conjugacy classes of one-parameter subgroups of $U$: the elliptic class, the hyperbolic class, and the parabolic class, the last consisting of the subgroups generated by the nilpotents of $V$ and acting by parabolic isometries fixing a single isotropic line.
 
-$$
-v\longmapsto u\,v\,\bar u ,
-$$
+**Proof.** The first two statements are the computations of the two theorems; the parabolic case uses the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*), whose exponentials are the elements $1 + t\xi$ with $\xi^2 = 0$ and $N(\xi) = 0$. $\square$
 
-so that the image is the group $SO(3)$ of rotations of the spacelike three-plane. The factor $e^{\psi j}$ lies in the kernel of the action.
+## The Trichotomy of Timelike, Lightlike and Spacelike Elements
 
-*Proof.* Write $\tilde S = a + jb$. Then $\tilde S\tilde S^{\dagger} = (a\bar a - b\bar b) + j(b\bar a - a\bar b) = e_0$ gives the two conditions $a\bar a - b\bar b = 1$ and $a\bar b = b\bar a$; the second says $a\bar b$ is real. Writing $b = tu$ with $t = \lvert b\rvert$ and $u\in Sp(1)$, the first condition forces $a = \pm\sqrt{1 + t^2}\,u$, so $\tilde S = \pm u(\cosh\psi + j\sinh\psi)$ with $\sinh\psi = t$, and since $j$ is central the factor $\cosh\psi + j\sinh\psi = e^{\psi j}$ commutes with $u$; the sign is absorbed into $u$, giving the stated decomposition, of dimension $3+1$. For the action, let $\tilde X = a' + jb'$ with $a'\in\operatorname{Im}\mathbb{H}$ and $b'\in\mathbb{R}$, so that $\tilde X\in\mathbb{M}_-$. Then $\tilde X^{\dagger} = -a' - jb' = -\tilde X$, and
+The form $N$ is isotropic, so the trichotomy is real: all three classes are nonempty, unlike in the quaternion case, where the form is definite and only the analogue of the timelike class occurs.
 
-$$
-\tilde S\tilde X\tilde S^{\dagger} = u(a' + jb')e^{\psi j}\big(\bar u - j\bar u\,\sinh\psi\big)
-= u a'\bar u + j\,b' ,
-$$
+**Definition.** A nonzero element $v \in V$ is **timelike** when $N(v) > 0$, **lightlike** when $N(v) = 0$, and **spacelike** when $N(v) < 0$. The lightlike elements are the nilpotents of (*Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*).
 
-because $j$ is central, $e^{\psi j}$ is central with $e^{\psi j}e^{\psi j}{}^{\dagger} = e^{-\psi j}e^{\psi j} = e_0$, and $b'$ is real and therefore commutes with $u$. Hence the first component is the adjoint action $a'\mapsto ua'\bar u$ on the imaginary quaternions and the second is unchanged. The adjoint action of $Sp(1)$ on $\operatorname{Im}\mathbb{H}$ is the standard surjection $Sp(1)\to SO(3)$ with kernel $\{\pm1\}$, by *Quaternion Rotations and Reflections*, so the image is $SO(3)$. Preservation of $g$ follows because the displayed formula has $g$-norms $\lvert a'\rvert^2 - (b')^2$ unchanged. Finally the action of $e^{\psi j}$ alone is trivial, so this factor lies in the kernel. $\square$
+**Theorem (The Orbits).** The action of $\mathrm{SO}^{+}(2,1)$ on $V$ has the following orbits.
 
-The unitary group therefore realises the **elliptic** part of the Lorentz group: the compact subgroup $SO(3)\subset SO^{+}(3,1)$ of spacelike rotations, which fixes the timelike direction $je_0$ and acts on the spacelike three-plane. The rotations obtained are exactly the conjugates of the quaternion rotations into the split quaternion algebra.
+| Orbit | Criterion | Structure |
+|---|---|---|
+| $\{0\}$ | $v = 0$ | one point |
+| two timelike orbits | $N(v) = 1$, the two sheets $b \geq 1$ and $b \leq -1$ | each a copy of the hyperbolic plane |
+| two lightlike orbits | $v \neq 0$, $N(v) = 0$ | the two nappes of the cone, each a homogeneous space of dimension $2$ |
+| one spacelike orbit | $N(v) = -1$ | the one-sheeted hyperboloid, a homogeneous space of dimension $2$ |
 
-### The Split-Complex Units and the Hyperbolic Rotations
+Each nontrivial orbit is a level set of $N$ scaled to $\pm 1$ or $0$, and the stabiliser of a timelike point is a copy of $SO(2)$, the stabiliser of a spacelike point is a copy of $SO(1,1) \cong \mathbb{R}$, and the stabiliser of a lightlike point is a two-dimensional solvable group.
 
-The hyperbolic part is realised not on $\mathbb{M}_-$ but on the neutral planes and on the split complex lines. Let
+**Proof.** The form and its action are those of the preceding sections; the level sets are invariant because $\Theta$ preserves $N$, and transitivity on each level set is the standard transitivity of the Lorentz group on each hyperboloid, proved in *Isometries and Orthogonal Transformations*, together with the orbit–stabiliser theorem. The stabiliser of a timelike vector is the group of isometries of the positive-definite orthogonal complement, namely $SO(2)$; that of a spacelike vector is the group of isometries of the signature-$(1,1)$ complement, namely $SO(1,1)$; and that of a lightlike vector preserves the radical of the orthogonal complement, giving the two-dimensional group of Euclidean motions of the plane. $\square$
 
-$$
-C = \mathbb{R}\,e_0\oplus\mathbb{R}\,j \subset\mathbb{H}_{\mathbb{D}}
-$$
+**Corollary (The Two Sheets and the Hyperbolic Plane).** Each sheet of $N = 1$ is a copy of the hyperbolic plane, and the identity component of its isometry group is $\mathrm{SO}^{+}(2,1) \cong \mathrm{PSL}_2(\mathbb{R})$. The model is built on the split-quaternions in *Split-Quaternions and Hyperbolic Geometry*, which carries the geometry; the present article supplies the group action, not the model.
 
-be the copy of the split complex algebra generated by $j$; it is central in $\mathbb{H}_{\mathbb{D}}$, and the split complex conjugation ${}^{*}$ of the algebra restricts to the conjugation $c + js\mapsto c - js$ of $C$.
+**Proof.** The orbit of a timelike unit vector is $\mathrm{SO}^{+}(2,1)/SO(2)$, and this quotient is a model of the hyperbolic plane by *Hyperbolic Geometry*; the identification of the sheets with the hyperboloid model is (*Split-Quaternion Norm and Invertibility*, §*Isotropy*) combined with the transitivity above. $\square$
 
-**Proposition.** The group of units $H = \{u\in C : uu^{*} = e_0\}$ is
+**Corollary (The Sign of the Norm and the Fixed Vectors).** An isometry $\Theta(g)$ with a nonzero fixed vector of $V$ has that vector timelike, lightlike or spacelike according to its type: elliptic isometries fix a timelike vector if they are non-trivial, hyperbolic isometries fix a spacelike vector and the two lightlike directions of its orthogonal plane, and parabolic isometries fix a unique lightlike line and no other direction.
 
-$$
-H = \left\{e^{\theta j} = \cosh\theta + j\sinh\theta : \theta\in\mathbb{R}\right\}\cup\left\{-e^{\theta j} : \theta\in\mathbb{R}\right\}\cong\mathbb{R}\times\mathbb{Z}/2\mathbb{Z},
-$$
+**Proof.** The fixed vectors of $g$ are the eigenvectors of $g$ in $V$, and the stated eigenvectors are those computed in the three cases of the one-parameter subgroups. $\square$
 
-its identity component is the one-parameter group of the split complex hyperbolic rotations, and its action on $\mathbb{D}e_\mu$ by left multiplication, for each $\mu$, is the same hyperbolic rotation of the real plane $\mathbb{R}e_\mu\oplus\mathbb{R}je_\mu$:
+## Comparison with the Quaternion and Split-Biquaternion Cases
 
-$$
-e^{\theta j}\left(c\,e_\mu + s\,je_\mu\right) = \left(c\cosh\theta + s\sinh\theta\right)e_\mu + \left(c\sinh\theta + s\cosh\theta\right)je_\mu .
-$$
+### The Quaternion Case
 
-*Proof.* In $C$ one has $uu^{*} = c^2 - s^2$ for $u = c + js$, so $uu^{*} = 1$ is the hyperbola $c^2 - s^2 = 1$, whose two branches are parametrised by $c = \cosh\theta$, $s = \sinh\theta$ and by their negatives. Since $j$ is central and $je_\mu = e_\mu j$, the product $e^{\theta j}e_\mu = (\cosh\theta)e_\mu + (\sinh\theta)je_\mu$ and $e^{\theta j}je_\mu = (\sinh\theta)e_\mu + (\cosh\theta)je_\mu$, giving the displayed formula, which is the matrix of a hyperbolic rotation. $\square$
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ |
+|---|---|---|
+| unit group | $Sp(1) \cong S^3$, compact, simply connected | $\mathrm{SL}_2(\mathbb{R})$, non-compact, not simply connected |
+| norm levels | $N = 1$ only | $N = \pm 1$, two components |
+| isometry group produced | $SO(3)$, by the adjoint action on $\operatorname{Im}\mathbb{H}$ | $\mathrm{SO}^{+}(2,1)$, by the adjoint action on $V$ |
+| cover | universal double cover | double cover, not universal |
+| form on the vector part | definite, signature $(3,0)$ | isotropic, signature $(2,1)$ |
+| trichotomy | only one class, all nonzero vectors equivalent | timelike, lightlike, spacelike, all nonempty |
 
-**Proposition.** Left multiplication by $e^{\theta j}$ preserves the Hermitian scalar form $g$ on every neutral four-plane $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ with $\mu\neq\nu$, and it does not preserve $\mathbb{M}_-$. On the neutral plane it acts as a simultaneous hyperbolic rotation in the two coordinate planes $\mathbb{R}e_\mu\oplus\mathbb{R}je_\mu$ and $\mathbb{R}e_\nu\oplus\mathbb{R}je_\nu$, so that one obtains a two-dimensional subgroup
+The quaternion column is the classical description of the unit quaternions as the double cover of the rotation group, recorded in *Quaternion Algebra*, §*The Rotation Group*, and in *Quaternion Rotations and Reflections*. The single structural cause of every difference is the sign pattern: a definite form gives a compact sphere and one class of vectors, an isotropic form gives a non-compact hyperboloid and the full trichotomy.
 
-$$
-SO(1,1)\times SO(1,1)\subset SO^{+}(2,2).
-$$
+### The Split-Biquaternion Case
 
-*Proof.* The basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ of the neutral plane is $g$-orthonormal of signature $(+1,-1,+1,-1)$. In each coordinate plane the map is the hyperbolic rotation with matrix $\begin{pmatrix}\cosh\theta & \sinh\theta\\ \sinh\theta & \cosh\theta\end{pmatrix}$ in the basis $(e_\rho, je_\rho)$, and this matrix preserves the form $\operatorname{diag}(+1,-1)$ because $\cosh^2\theta - \sinh^2\theta = 1$ and the cross term $\cosh\theta\sinh\theta - \sinh\theta\cosh\theta$ vanishes; two blocks therefore preserve the form of signature $(2,2)$. It does not preserve $\mathbb{M}_-$: the image of $je_0$ is $\sinh\theta\,e_0 + \cosh\theta\,je_0$, whose $e_0$-component is real and non-zero for $\theta\neq0$, whereas an element of $\mathbb{M}_-$ has a purely imaginary $e_0$-component. $\square$
-
-Two geometrically distinct families of isometries are thus realised inside the algebra: the elliptic group $SO(3)$ of the unitary action, on the Lorentzian four-plane $\mathbb{M}_-$, and the hyperbolic groups $SO(1,1)\times SO(1,1)$ of the split complex units, on the neutral four-planes. The two families commute: the unitary action is conjugation by quaternion units and fixes the central split complex scalars, while left multiplication by $e^{\theta j}$ is central and commutes with conjugation by any element.
-
-### The Parabolic Case and the Absence of Nilpotents
-
-The classification of the one-parameter subgroups of $SO^{+}(3,1)$ has three entries, matching the three kinds of rotation of the two-dimensional algebras. A non-zero generator $N\in\mathfrak{so}(3,1)$ has a non-trivial kernel on the complexification of $\mathbb{R}^{3,1}$, and the kernel always contains a real vector; the one-parameter subgroup $t\mapsto\exp(tN)$ is called **elliptic** if that kernel contains a timelike vector, **hyperbolic** if it contains a spacelike vector and no timelike one, and **parabolic** if it contains a null vector and no non-null one. Every elliptic one-parameter subgroup is conjugate to a rotation of a spacelike two-plane; every hyperbolic one is conjugate to a boost, with a fixed spacelike two-plane and two real null eigenvectors; every parabolic one is conjugate to a transvection
-
-$$
-T_t = 1 + tN, \qquad N^2 = 0,
-$$
-
-fixing a null vector and no other, with $N$ nilpotent.
-
-The elliptic type is realised in the algebra by the exponentials of the quaternion vector fields in the unitary group of the preceding subsection; the hyperbolic type is realised by the split complex units $e^{\psi j}$ and by their conjugates; both are exponents of elements with square $-e_0$ and $+e_0$ respectively in the algebra, in the sense of the exponentials of *Split-Quaternion Roots of Minus One*. The parabolic type is not realised in the algebra at all, and the reason is structural:
-
-**Proposition.** The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ contains no non-zero nilpotent element, and consequently no element of $\mathbb{H}_{\mathbb{D}}$ exponentiates to a parabolic one-parameter subgroup; the parabolic one-parameter subgroups exist only in the isometry group of the Lorentzian form, not in the algebra acting on itself.
-
-*Proof.* By *Split-Quaternion Algebra*, $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ as a ring, a direct sum of two division rings, hence a semisimple ring; a semisimple ring has no non-zero nilpotent elements, since a nilpotent element would generate a nilpotent ideal, contradicting semisimplicity. The exponential of a nilpotent element is unipotent of the form $1 + tN$ with $N^2 = 0$, so the absence of nilpotents removes parabolic generators from the algebra. In the isometry group of a $(3,1)$ form the transvections exist regardless, because $\mathfrak{so}(3,1)$ contains nilpotent elements although the algebra of coefficients does not. $\square$
-
-This is the precise content of the split in the classification: the elliptic and the hyperbolic one-parameter subgroups are separated because the form is indefinite, and only these two are contributed by the coefficient algebra. The dual number construction, which realises the parabolic rotation of the plane by the exponential of a square-zero element, has no counterpart in $\mathbb{H}_{\mathbb{D}}$, as recorded in *The Three Two-Dimensional Algebras and the Three Kinds of Rotation*.
-
-## The Hyperboloid, the Null Cone and the Rulings
-
-The subsets of $\mathbb{M}_-$ on which $g$ takes constant values carry the geometry of the Lorentzian form.
-
-**Definition.** In the Lorentzian four-space $(\mathbb{M}_-,g)$ the **null cone** is $C_0 = \{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = 0\}$, and the **hyperboloids** are the level sets $C_{\pm1} = \{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = \pm1\}$.
-
-**Theorem.** In coordinates $\tilde X = a\,je_0 + v$ with $a\in\mathbb{R}$ and $v\in\operatorname{Im}\mathbb{H}$, the form is $g(\tilde X,\tilde X) = \lvert v\rvert^2 - a^2$, so that the level sets are
-
-$$
-C_{-1} = \{a^2 = 1 + \lvert v\rvert^2\}, \qquad C_{+1} = \{\lvert v\rvert^2 = 1 + a^2\}, \qquad C_0 = \{\lvert v\rvert = \lvert a\rvert\}.
-$$
-
-The set $C_{-1}$ is a **hyperboloid of two sheets**, each sheet diffeomorphic to $\mathbb{R}^3$; the set $C_{+1}$ is a **hyperboloid of one sheet**, diffeomorphic to $S^2\times\mathbb{R}$; and $C_0$ is the cone over the two-sphere $S^2$ with apex at the origin. The group $SO^{+}(3,1)$ acts transitively on each sheet of $C_{-1}$ and on $C_{+1}$, with isotropy $SO(3)$ at a point of $C_{+1}$ and at a point of a sheet of $C_{-1}$; the elliptic one-parameter subgroups are those fixing a timelike direction, the hyperbolic ones those fixing a spacelike direction, and the parabolic ones those fixing a null direction of $C_0$.
-
-*Proof.* The coordinate expression for $g$ is the one computed in the previous section. The equation $g(\tilde X,\tilde X) = -1$ is $a^2 = 1 + \lvert v\rvert^2$, giving the two sheets $a = \pm\sqrt{1+\lvert v\rvert^2}$, each parametrised by $v\in\mathbb{R}^3$ and therefore diffeomorphic to $\mathbb{R}^3$. The equation $g(\tilde X,\tilde X) = +1$ is $\lvert v\rvert^2 = 1 + a^2$; for each $a\in\mathbb{R}$ this is the sphere of radius $\sqrt{1+a^2}$ in the $v$-variable, so the assignment $\tilde X\mapsto(v/\lvert v\rvert, a)$ is a diffeomorphism $C_{+1}\to S^2\times\mathbb{R}$, and $C_{+1}$ is connected. The equation $g(\tilde X,\tilde X) = 0$ is $\lvert v\rvert = \lvert a\rvert$, the cone over $S^2$. The transitivity and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*; the classification of one-parameter subgroups by the type of the vectors they fix is the standard normal form theory of $\mathfrak{so}(3,1)$, in the three cases listed. $\square$
-
-Two warnings are needed, because they are the points at which the split quaternion geometry differs from what the definite case would suggest.
-
-**Proposition.** Every zero divisor of $\mathbb{H}_{\mathbb{D}}$ is isotropic for the ambient form $g$: if $\tilde X$ is a zero divisor then $g(\tilde X,\tilde X) = 0$. The converse fails, and the null cone of $g$ is strictly larger than the zero divisor set; moreover the two ideals meet the Lorentzian four-plane $\mathbb{M}_-$ only at the origin, so the null vectors of $(\mathbb{M}_-,g)$ are not zero divisors.
-
-*Proof.* By *Split-Quaternion Zero Divisors* the zero divisors are exactly the elements with $\tilde Q_+ = 0$ or $\tilde Q_- = 0$, that is, the union of the two ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$. Let $\tilde Q = \tilde Q_-e_-$, so that $\tilde Q_+ = 0$. Since ${}^{\dagger} = \bar{\cdot}\,{}^{*}$ and ${}^{*}$ interchanges $e_+$ and $e_-$, one has $\tilde Q^{\dagger} = \bar{\tilde Q}_-e_+$, whence
-
-$$
-\tilde Q\tilde Q^{\dagger} = \tilde Q_-\bar{\tilde Q}_-e_-e_+ = 0,
-$$
-
-because $e_-e_+ = 0$; therefore $g(\tilde Q,\tilde Q) = \operatorname{Sc}(0) = 0$. The same argument applies to the other ideal. For the failure of the converse, the element $\tilde X = e_1 + je_0$ satisfies $g(\tilde X,\tilde X) = 1 - 1 = 0$, so it lies on the null cone of $g$ in $\mathbb{M}_-$, while $\tilde X_+ = e_1 + e_0$ and $\tilde X_- = e_1 - e_0$ are both non-zero, so $\tilde X$ is not a zero divisor. Finally, if $\tilde Q = \tilde Q_+e_+$ lies in $\mathbb{M}_-$, then writing $\tilde Q = a + jb$ gives $a = b = \tfrac{1}{2}\tilde Q_+$; the condition $a\in\operatorname{Im}\mathbb{H}$ forces $\tilde Q_+\in\operatorname{Im}\mathbb{H}$ and the condition $b\in\mathbb{R}$ forces $\tilde Q_+\in\mathbb{R}$, so $\tilde Q_+ = 0$ and $\tilde Q = 0$; the same holds for the other ideal. $\square$
-
-The second warning is that the non-compactness appears only on the isometry-group side. The unit sphere of the algebra is compact, being $S^3\times S^3$; the Lorentzian hyperboloids $C_{\pm1}$ are non-compact and are orbits of the non-compact group $SO^{+}(3,1)$; and the zero divisor cone, which is the union of the two isotropic ideals, lives in the ambient eight-dimensional space and meets $\mathbb{M}_-$ only at the origin, so it is not the null cone of the Lorentzian form. In the quaternion case the compact sphere $S^3$ is simultaneously the set of units and an orbit of the compact rotation group; here the set of units and the Lorentzian hyperboloid are different objects, one compact and one not, and the bridge between them is the idempotent decomposition.
+The eight-dimensional algebra $\mathbb{H}_{\mathbb{D}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here. The one thing worth stating from the conventions is a warning about size: the present article's isometry group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ acting on the three-dimensional vector subspace of a four-dimensional algebra, and the eight-dimensional relative is a different system with its own, larger, geometry, treated later. The name *split quaternions* belongs to the four-dimensional algebra of this category and not to $\mathbb{H}_{\mathbb{D}}$.
 
 ## Summary
 
-The Lorentz group is the isometry group of a non-degenerate symmetric bilinear form of signature $(3,1)$; it is a Lie group of dimension six with Lie algebra $\mathfrak{so}(3,1)\cong\mathfrak{sl}_2(\mathbb{C})$ as complex Lie algebras, its identity component $SO^{+}(3,1)$ has maximal compact subgroup $SO(3)$, and the neutral signature $(2,2)$ gives $SO^{+}(2,2)\cong(SL_2(\mathbb{R})\times SL_2(\mathbb{R}))/\{\pm1\}$. The two signatures are the two real forms of the same complex group.
+The norm-one group of the split-quaternion algebra is $U \cong \mathrm{SL}_2(\mathbb{R})$, connected; the group of units of norm $\pm 1$ is $\mathrm{SL}_2^{\pm}(\mathbb{R})$, with the two components $U$ and the norm $-1$ component interchanged by $e_2$; and the full group of units is $GL_2(\mathbb{R})$ with centre $\mathbb{R}^{\times}$.
 
-The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ carries the Hermitian scalar form $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$, of signature $(4,4)$, diagonal in the basis $(e_0,e_1,e_2,e_3,je_0,je_1,je_2,je_3)$. The Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ are four-dimensional, orthogonal, complementary, and carry the forms of signature $(1,3)$ and $(3,1)$; the $\mathbb{D}$-span of any two quaternion coordinates is a neutral four-plane of signature $(2,2)$. Hence $O(3,1)$ and $O(2,2)$ both occur as isometry groups of forms that the algebra presents.
+Conjugation by a unit preserves the vector subspace and the form, giving a homomorphism from the group of units onto $SO(2,1) \cong PGL_2(\mathbb{R})$ with kernel $\mathbb{R}^{\times}$, and a homomorphism $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ with kernel $\{\pm 1\}$, hence a double cover and an isomorphism $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The double cover is not the universal cover, because $\mathrm{SL}_2(\mathbb{R})$ has infinite cyclic fundamental group. The Lorentz group of the system is the three-dimensional $\mathrm{SO}^{+}(2,1)$, the group of the signature-$(2,1)$ form, and not $\mathrm{SO}^{+}(3,1)$.
 
-The unit sphere $\{\tilde S : N(\tilde S) = e_0\}\cong S^3\times S^3$ is compact and six-dimensional, the product of the two idempotent components. The unitary group $\{\tilde S : \tilde S\tilde S^{\dagger} = e_0\}\cong Sp(1)\times\mathbb{R}$ acts on $\mathbb{M}_-$ by isometries, fixes the timelike vector $je_0$, and realises exactly the compact group $SO(3)$ of spacelike rotations; the split complex units $e^{\theta j}$ preserve the neutral four-planes and realise there the group $SO(1,1)\times SO(1,1)$, and the two families commute. The parabolic one-parameter subgroups are not realised in the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
-
-In $(\mathbb{M}_-,g)$ the level set $g = -1$ is a hyperboloid of two sheets, each an $\mathbb{R}^3$, and $g = +1$ is a hyperboloid of one sheet, an $S^2\times\mathbb{R}$; the null cone is the cone over $S^2$. Every zero divisor of the algebra is isotropic for the ambient form $g$, so the union of the two ideals lies inside the ambient null cone and meets $\mathbb{M}_-$ only at the origin; the Lorentzian null cone is strictly larger than the zero divisor set, since $e_1 + je_0$ is null and not a zero divisor. The compact unit sphere and the non-compact Lorentzian hyperboloids are different objects, bridged by the idempotent decomposition.
+The roots of $\xi^2 = -1$ generate the compact (elliptic) one-parameter subgroups, isomorphic to $SO(2)$ and fixing a timelike direction and rotating its orthogonal plane; the roots of $\eta^2 = +1$ generate the non-compact (hyperbolic) subgroups, fixing a spacelike direction and acting as hyperbolic rotations on its orthogonal plane of signature $(1,1)$; the nilpotents generate the parabolic subgroups. The nonzero vectors of the vector subspace fall into two timelike orbits (the sheets of the hyperboloid $N=1$, each a hyperbolic plane), two lightlike orbits (the nappes of the cone) and one spacelike orbit, with the trichotomy nonempty because the form is isotropic. The quaternion case has a compact simply connected unit sphere, a universal double cover of $SO(3)$, a definite vector form and a single class of vectors; the eight-dimensional relative is a later system of Part V, named here only.
 
 ## Summary of Notation
 
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | The split quaternion algebra, real dimension $8$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $j$ | Split complex unit, $j^2 = +e_0$, central |
-| $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu = a + jb = \tilde Q_+e_+ + \tilde Q_-e_-$ | General split quaternion |
-| $e_{\pm} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $e_+e_- = 0$ |
-| $\bar{\cdot},\ {}^{*},\ {}^{\dagger} = \bar{\cdot}\,{}^{*},\ {}^{\flat} = -{}^{\dagger}$ | The four conjugations |
-| $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ | Norm form |
-| $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, signatures $(1,3)$, $(3,1)$ |
-| $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
-| $O(p,q)$, $SO(p,q)$, $SO^{+}(p,q)$ | Orthogonal group of a form, its determinant-one part, its identity component |
-| $\mathfrak{so}(p,q)$ | Lie algebra of $g$-skew endomorphisms, dimension $\tfrac{1}{2}n(n-1)$ |
-| $U(\mathbb{H}_{\mathbb{D}}) = \{\tilde S : \tilde S\tilde S^{\dagger} = e_0\}\cong Sp(1)\times\mathbb{R}$ | Unitary group |
-| $e^{\psi j} = \cosh\psi + j\sinh\psi$ | Split complex unit, hyperbolic one-parameter group |
-| $S(\mathbb{H}_{\mathbb{D}})\cong S^3\times S^3$ | Norm-one unit sphere |
-| $C_0$, $C_{\pm1}$ | Null cone and hyperboloids in $\mathbb{M}_-$ |
-| $\mathbb{H}e_+$, $\mathbb{H}e_-$ | The two ideals, the set of zero divisors |
-
-
+| Symbol | Meaning | Article |
+|---|---|---|
+| $U = \{N=1\}$ | the norm-one group, $\cong \mathrm{SL}_2(\mathbb{R})$ | *Split-Quaternion Norm and Invertibility* |
+| $U^{\pm} = \{N = \pm 1\}$ | $\mathrm{SL}_2^{\pm}(\mathbb{R})$, two components | this article |
+| $\mathbb{H}_{\mathrm{s}}^{\times} \cong GL_2(\mathbb{R})$ | the group of units | *Split-Quaternion Norm and Invertibility* |
+| $\Theta(u)v = uvu^{-1}$ | the adjoint action on $V$ | this article |
+| $(V,N) \cong \mathbb{R}^{2,1}$ | the vector subspace with its signature-$(2,1)$ form | *Split-Quaternion Algebra* |
+| $O(2,1)$, $SO(2,1)$, $\mathrm{SO}^{+}(2,1)$ | the Lorentz group, its determinant-one part, its identity component | this article |
+| $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ | the double cover | this article |
+| $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isomorphism induced by the cover | this article |
+| $g(\theta) = \cos\theta + \xi\sin\theta$ | the elliptic one-parameter subgroup | this article |
+| $h(t) = \cosh t + \eta\sinh t$ | the hyperbolic one-parameter subgroup | this article |
+| timelike, lightlike, spacelike | $N>0$, $N=0$, $N<0$ on $V$ | this article |
+| nilpotents of $V$ | the lightlike elements and the parabolic generators | *Split-Quaternion Zero Divisors* |
 
 ## Further Reading
 
-- Robert Gilmore, *Lie Groups, Lie Algebras, and Some of Their Applications* (Wiley, 1974), for the isometry groups of quadratic forms and the classification of one-parameter subgroups of the Lorentz group.
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the restricted Lorentz group, its maximal compact subgroup and the associated symmetric spaces.
-- Jean Dieudonné, *La géométrie des groupes classiques* (Springer, 1955), for the orthogonal groups and the classification of their real forms.
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991), for the identification of $\mathfrak{so}(3,1)$ with $\mathfrak{sl}_2(\mathbb{C})$ and the two real forms.
-- Michael Eastwood and Paul Tod, "Edth-a differential operator on the sphere", *Mathematical Proceedings of the Cambridge Philosophical Society* **92** (1982), 317–330, for the doubly ruled complex quadric and the two real forms.
-- Dirk J. Struik, *Lectures on Classical Differential Geometry* (Dover, 1988), for the doubly ruled quadrics and their two families of lines.
-- Rafael López, "Differential geometry of curves and surfaces in Lorentz–Minkowski space" (arXiv:0810.3351), for the hyperboloids and the null cone of a Lorentzian four-space.
-- Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the neutral signature geometry and the Kleinian quadric.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the adjoint action of a Clifford group on the vector space and the classical identifications of the low-dimensional orthogonal groups.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the split quaternions as the even Clifford algebra $\mathrm{Cl}_{1,1}^{0}$ and their rotation and boost interpretation.
+- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the one-parameter subgroups, the exponential map and the relation between $\mathrm{SL}_2(\mathbb{R})$ and $\mathrm{SO}^{+}(2,1)$.
+- Serge Lang, *$\mathrm{SL}_2(\mathbb{R})$* (Addison-Wesley, 1975), for the covering groups of $\mathrm{SL}_2(\mathbb{R})$ and the elliptic, hyperbolic and parabolic classifications.

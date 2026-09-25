@@ -1,396 +1,229 @@
+
 # __Split-Quaternion Elementary Functions__
 
 ## Introduction
 
-This article introduces the elementary functions of a split quaternion variable. It follows the article on split quaternion polar representations, which defined the exponential and the two polar forms, and it uses the article on split quaternion roots of minus one, which classified the roots of $-1$.
+This article develops the elementary functions of a split-quaternion variable: the exponential, the trigonometric and hyperbolic functions, the logarithm, the power functions and the roots of unity. It records the domains, the periodicity, the identities that hold and the identities that fail, and it compares the situation with the quaternion and split-complex cases.
 
-The treatment is purely mathematical. No physics is invoked. No examples are given. The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ is assumed from the basic algebra article, together with its conjugations, its four fixed-point subspaces, and its three decompositions. The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$, and the idempotent decomposition of a split quaternion is $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$.
-
-The key structural fact is that the elementary functions of a split quaternion are determined by the **idempotent decomposition** and by the **powers** of the split quaternion. Because the split quaternion algebra is the direct sum of two copies of the quaternion algebra, the elementary functions of a split quaternion reduce to the elementary functions of two ordinary quaternions, one for each idempotent component. This is the fundamental simplification relative to the biquaternion case, where the elementary functions involve a complex angle and the roots of $-1$.
-
-There is, however, a second way to compute the elementary functions, via the **exponential polar form**, which is useful when the split quaternion is given as the exponential of another. The two approaches agree, and the article develops both.
-
-Throughout, a split quaternion is written
-
-$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
-$$
-
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
-
-The **idempotent components** of $\tilde{Q}$ are the real quaternions
-
-$$
-\tilde{Q}_+ = \sum_{\mu=0}^{3} (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_{\mu=0}^{3} (q_\mu - q'_\mu) e_\mu.
-$$
-
-The **quaternion polar form** of a nonzero quaternion $q \in \mathbb{H}$ is
-
-$$
-q = r \exp(\mu \theta) = r(\cos\theta + \mu \sin\theta),
-$$
-
-where $r = |q| \geq 0$, $\mu$ is a unit pure real quaternion (the axis), and $\theta \in \mathbb{R}$ is the angle. The axis is defined when the vector part of $q$ is nonzero; when $q$ is a real scalar, the polar form reduces to $q = r$ (or $q = -r$, with $\theta = \pi$).
+The split-quaternion algebra, its norm form, its conjugation, its idempotents and its split-complex subalgebras are assumed from *Split-Quaternion Algebra*; the units and the three-way classification from *Split-Quaternion Norm and Invertibility*; the roots of $\xi^2=-1$ from *Split-Quaternion Roots of Minus One*; the null cone and the nilpotents from *Split-Quaternion Zero Divisors*; the matrix model from *Split-Quaternion Matrix Representations*; and the convergence of power series from *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*. The exponential map of a Lie group is that of *The Lie Algebra and the Exponential Map*; the elementary functions of the division-algebra case are those of *Quaternion Special Functions*, and of the two-dimensional hyperbolic case those of *Split-Complex Special Functions*. Nothing physical is invoked.
 
 ## The Exponential
 
-### Definition
-
-The **exponential** of a split quaternion $\tilde{Q}$ is defined by the power series
+**Definition.** The **exponential** is
 
 $$
-\exp(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^n}{n!}.
+\exp x = \sum_{n \geq 0} \frac{x^n}{n!},
 $$
 
-The series converges for every $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$, because the algebra is finite-dimensional and the Euclidean norm grows at most exponentially with $n$. So the exponential is an entire function on $\mathbb{H}_{\mathbb{D}}$.
+a series with real coefficients convergent for every $x$ by *Split-Quaternion Analysis*, §*Power Series and Analytic Functions*.
 
-### Computation via the Idempotent Decomposition
-
-The exponential is multiplicative on commuting elements, and the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$. So for $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$,
+**Theorem (The Exponential of a Vector).** For $v \in V$ the square $v^2 = -N(v)$ is a real scalar, and
 
 $$
-\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-,
+\exp v = c_0(\lambda) + c_1(\lambda)\, v, \qquad \lambda = N(v),
 $$
 
-where $\exp(\tilde{Q}_\pm)$ is the ordinary quaternion exponential of the component $\tilde{Q}_\pm \in \mathbb{H}$. The quaternion exponential is
+where
 
 $$
-\exp(\tilde{Q}_\pm) = e^{q_0^\pm} \left(\cos|\mathbf{Q}_\pm| + \frac{\sin|\mathbf{Q}_\pm|}{|\mathbf{Q}_\pm|} \mathbf{Q}_\pm\right),
+c_0(\lambda) = \begin{cases} \cos\sqrt{\lambda}, & \lambda > 0,\\ 1, & \lambda = 0,\\ \cosh\sqrt{-\lambda}, & \lambda < 0,\end{cases}
+\qquad
+c_1(\lambda) = \begin{cases} \dfrac{\sin\sqrt{\lambda}}{\sqrt{\lambda}}, & \lambda > 0,\\ 1, & \lambda = 0,\\ \dfrac{\sinh\sqrt{-\lambda}}{\sqrt{-\lambda}}, & \lambda < 0.\end{cases}
 $$
 
-where $\tilde{Q}_\pm = q_0^\pm + \mathbf{Q}_\pm$ is the scalar-vector decomposition of the component, and $|\mathbf{Q}_\pm|$ is the ordinary quaternion modulus of the vector part. When the vector part vanishes, the formula reduces to $\exp(\tilde{Q}_\pm) = e^{q_0^\pm}$.
+In every case $N(\exp v) = 1$, so $\exp v$ lies in the norm-one group $U$.
 
-So the exponential of a split quaternion is the pair of the quaternion exponentials of its two idempotent components:
+**Proof.** For $v \in V$ one has $v^2 = -N(v)$ because the generators anticommute, as in the multiplication table of (*Split-Quaternion Algebra*, §*The Multiplication Table*). If $v^2 = -\lambda$ is a scalar then the even and odd parts of the series are the power series of the displayed functions, by the standard reduction of a power series of an element with scalar square. The norm: $N(\exp v) = c_0^2 + c_1^2 N(v)$ because $1$ and $v$ are orthogonal, and the identity $\cos^2 + \sin^2 = 1$ or $\cosh^2 - \sinh^2 = 1$ gives $1$ in all three cases; the nilpotent case gives $N(1+v) = 1$. $\square$
 
-$$
-\boxed{\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-}.
-$$
-
-This is the cleanest form of the exponential, and it is the reason the split quaternion exponential is simpler than the biquaternion exponential.
-
-### Computation via the Exponential Polar Form
-
-The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{D}$ and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The scalar part commutes with everything, so
+**Theorem (Factoring the Exponential).** For $x = a + v$ with $a$ real and $v \in V$,
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \exp(\mathbf{Q}),
+\exp x = e^{a} \exp v ,
 $$
 
-where $e^{Q_0}$ is the split complex exponential and $\exp(\mathbf{Q})$ is the exponential of the vector part.
-
-The split complex exponential is
+and hence
 
 $$
-e^{Q_0} = e^{q_0}(\cosh q'_0 + j \sinh q'_0), \qquad Q_0 = q_0 + j q'_0.
+N(\exp x) = e^{2a} > 0 .
 $$
 
-The exponential of the vector part depends on the split complex norm
+The exponential is therefore never zero and always invertible, its norm is $e^{2a}$, and it maps $\mathbb{H}_{\mathrm{s}}$ into the open set $\{N > 0\}$ of units.
+
+**Proof.** The scalar $a$ is central and commutes with $v$, so the series splits, $\exp(a+v) = e^a\exp v$; the norm follows from multiplicativity and the theorem above. $\square$
+
+**Theorem (The Image of the Exponential).** The image is
 
 $$
-\theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}.
+\exp(\mathbb{H}_{\mathrm{s}}) = \big\{x : N(x) > 0 \ \text{and}\ \operatorname{Sc}(x) \geq -\sqrt{N(x)}\big\}.
 $$
 
-Since $\mathbf{Q}^2 = -\theta^2 e_0$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \theta^{2m}/(2m)!$ and $\sum_m (-1)^m \theta^{2m+1}/(2m+1)!$, so
+In particular the exponential is not surjective onto the units: the elements of $\{N>0\}$ with $\operatorname{Sc}(x) < -\sqrt{N(x)}$, such as the element $-2$ with $N(-2) = 4$ and $\operatorname{Sc}(-2) = -2$, are not exponentials.
+
+**Proof.** Write $x = \lambda u$ with $\lambda = \sqrt{N(x)} > 0$ and $N(u) = 1$, so that $u$ lies in the norm-one group $U \cong \mathrm{SL}_2(\mathbb{R})$. Under the matrix model the exponential of $\mathbb{H}_{\mathrm{s}}$ is the exponential of $M_2(\mathbb{R})$ and the image of the exponential of $\mathrm{SL}_2(\mathbb{R})$ is the set of matrices of trace at least $-2$, as treated in *The Lie Algebra and the Exponential Map*; the trace of $\Phi(x)$ is $2\operatorname{Sc}(x)$, so the condition is $\operatorname{Sc}(x) \geq -\sqrt{N(x)}$, and $\Phi(x)$ has positive determinant by hypothesis. The example $-2$ has $\operatorname{Sc} = -2 < -\sqrt{4} = -2$, and the inequality is strict. $\square$
+
+**Theorem (The Kernel of the Exponential).** The solutions of $\exp y = 1$ are
 
 $$
-\exp(\mathbf{Q}) = \cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q},
+y = 0 \quad\text{or}\quad y = 2\pi k\,\xi \quad (k \in \mathbb{Z}\setminus\{0\}, \ \xi \in V, \ N(\xi) = 1).
 $$
 
-where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\theta$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\theta/\theta$ depends on $\theta^2$ alone). No hyperbolic function occurs here. When $\theta^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_0 + (\sin r/r)\mathbf{Q}$. The real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, so $\theta^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.
+Hence the kernel of the exponential is the union of the scaled copies $2\pi k\,\Sigma$ of the sphere $\Sigma$ of the roots of $-1$, together with the origin; the exponential is not injective and is periodic along the whole root set of $-1$.
 
-### The Nilpotent Case
+**Proof.** Write $y = a + v$. From $\exp y = e^a\exp v = 1$ and $N(\exp y) = e^{2a}$ one gets $a = 0$, and then $\exp v = 1$ with the three cases of the first theorem: for $\lambda = 0$ one needs $1 + v = 1$, so $v = 0$; for $\lambda > 0$ one needs $\cos\sqrt{\lambda} = 1$ and $\sin\sqrt{\lambda} = 0$, so $\sqrt{\lambda} = 2\pi k$ with $k \neq 0$; for $\lambda < 0$ one needs $\cosh\sqrt{-\lambda} = 1$, which forces $v = 0$. The elements with $\lambda = (2\pi k)^2$ and $N(v) > 0$ are exactly the multiples $2\pi k\xi$ of the roots of $-1$ by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*. $\square$
 
-If the vector part is nilpotent, i.e., $\mathbf{Q}^2 = 0$, then $\theta = 0$ and the formula degenerates. In the split quaternion algebra this happens only for $\mathbf{Q} = 0$: since $\mathbf{Q}^2 = -\theta^2 e_0$ and the real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, the equation $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, and then $\exp(\mathbf{Q}) = e_0$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\mathbf{Q} = (1 - j)e_1 \in Z_+$ one has $\mathbf{Q}^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{H}_{\mathbb{D}}$ has no nonzero nilpotent vector part.
+**Corollary (The Two Real Periods).** Along a commutative subalgebra generated by an element of square $-1$ the exponential has period $2\pi$; along a split-complex subalgebra there is no real period, and the exponential of a split-complex element is injective on each branch of the positive cone. The two behaviours coexist in the algebra and must not be interchanged.
 
-### Properties
+**Proof.** The first is the case $\xi^2=-1$ of the kernel; the second is the formula $\exp(a + c e_2) = e^a(\cosh c + e_2\sinh c)$, whose components $e^{a\pm c}$ are injective in the two null coordinates, with no periodicity. $\square$
 
-**Non-vanishing.** The exponential is never zero, because both idempotent components are nonzero: $\exp(\tilde{Q}_\pm) \neq 0$ since the quaternion exponential is never zero.
+## Trigonometric and Hyperbolic Functions
 
-**Multiplicativity.** The exponential satisfies $\exp(\tilde{P} + \tilde{Q}) = \exp(\tilde{P}) \exp(\tilde{Q})$ whenever $\tilde{P}$ and $\tilde{Q}$ commute, but commutativity is not necessary: for example $\tilde{P} = 2\pi e_1$ and $\tilde{Q} = -\pi e_1 + \pi\sqrt{3}\,e_2$ do not commute and all three exponentials equal $e_0$. In general, the exponential is not multiplicative.
-
-**Derivative.** The exponential is its own derivative in the sense of the directional derivative along the scalar direction: $\partial_0 \exp(\tilde{Q}) = \exp(\tilde{Q})$.
-
-## The Trigonometric and Hyperbolic Functions
-
-### Definitions
-
-The trigonometric and hyperbolic functions are defined by the same power series as in the complex case:
+**Definition.** The **hyperbolic** and **trigonometric** functions are the series
 
 $$
-\sin(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{(-1)^n \tilde{Q}^{2n+1}}{(2n+1)!}, \qquad \cos(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{(-1)^n \tilde{Q}^{2n}}{(2n)!},
+\cosh x = \sum_{n \geq 0} \frac{x^{2n}}{(2n)!}, \qquad \sinh x = \sum_{n \geq 0}\frac{x^{2n+1}}{(2n+1)!},
 $$
 
 $$
-\sinh(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^{2n+1}}{(2n+1)!}, \qquad \cosh(\tilde{Q}) = \sum_{n=0}^{\infty} \frac{\tilde{Q}^{2n}}{(2n)!}.
+\cos x = \sum_{n \geq 0} (-1)^n \frac{x^{2n}}{(2n)!}, \qquad \sin x = \sum_{n \geq 0} (-1)^n \frac{x^{2n+1}}{(2n+1)!},
 $$
 
-### Computation via the Idempotent Decomposition
+all convergent for every $x$. The exponential splits by parity: $\exp x = \cosh x + \sinh x$.
 
-Because the idempotent decomposition separates the algebra into two commuting copies of $\mathbb{H}$, the trigonometric and hyperbolic functions also decompose:
-
-$$
-\sin(\tilde{Q}) = \sin(\tilde{Q}_+) e_+ + \sin(\tilde{Q}_-) e_-,
-$$
-
-and similarly for the other three functions. The quaternion trigonometric and hyperbolic functions are
+**Theorem (The Values on a Vector).** For $v \in V$ with $\lambda = N(v)$,
 
 $$
-\sin(\tilde{Q}_\pm) = \sin(q_0^\pm) \cosh|\mathbf{Q}_\pm| + \cos(q_0^\pm) \sinh|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
+\cos v = \begin{cases} \cosh\sqrt{\lambda}, & \lambda > 0\\ 1, & \lambda = 0\\ \cos\sqrt{-\lambda}, & \lambda < 0\end{cases}, \qquad
+\sin v = \begin{cases} \dfrac{\sinh\sqrt{\lambda}}{\sqrt{\lambda}}\, v, & \lambda > 0\\ v, & \lambda = 0\\ \dfrac{\sin\sqrt{-\lambda}}{\sqrt{-\lambda}}\, v, & \lambda < 0\end{cases},
 $$
 
-$$
-\cos(\tilde{Q}_\pm) = \cos(q_0^\pm) \cosh|\mathbf{Q}_\pm| - \sin(q_0^\pm) \sinh|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
-$$
+and the hyperbolic functions are obtained by the same reduction with the two cases interchanged:
 
 $$
-\sinh(\tilde{Q}_\pm) = \sinh(q_0^\pm) \cos|\mathbf{Q}_\pm| + \cosh(q_0^\pm) \sin|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
+\cosh v = \begin{cases} \cos\sqrt{\lambda}, & \lambda > 0\\ 1, & \lambda = 0\\ \cosh\sqrt{-\lambda}, & \lambda < 0\end{cases}, \qquad
+\sinh v = \begin{cases} \dfrac{\sin\sqrt{\lambda}}{\sqrt{\lambda}}\, v, & \lambda > 0\\ v, & \lambda = 0\\ \dfrac{\sinh\sqrt{-\lambda}}{\sqrt{-\lambda}}\, v, & \lambda < 0\end{cases}.
 $$
 
-$$
-\cosh(\tilde{Q}_\pm) = \cosh(q_0^\pm) \cos|\mathbf{Q}_\pm| + \sinh(q_0^\pm) \sin|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|}.
-$$
+The two families are therefore interchanged by a change of sign of the norm of the argument: for the elliptic direction, with $\lambda > 0$, the trigonometric series of $v$ gives the hyperbolic values and conversely, because $v^2 = -\lambda$ and the sign of the square is what the parity terms of the series see. A trigonometric identity read off one subalgebra does not transport to another.
 
-These are the standard quaternion formulas, and they reduce to the real formulas when the vector part vanishes.
+**Proof.** The reduction of the even and odd series is the same as for the exponential, and the explicit cases are read from the sign of $\lambda$. $\square$
 
-### Computation via the Exponential
-
-The trigonometric and hyperbolic functions can also be expressed in terms of the exponential:
+**Theorem (The Identities That Hold and the Identities That Fail).** The identities
 
 $$
-\sinh(\tilde{Q}) = \frac{\exp(\tilde{Q}) - \exp(-\tilde{Q})}{2}, \qquad \cosh(\tilde{Q}) = \frac{\exp(\tilde{Q}) + \exp(-\tilde{Q})}{2},
+\exp x \exp(-x) = 1, \qquad \overline{\exp x} = \exp \bar{x}, \qquad \cos^2 v + \sin^2 v = 1, \qquad \cosh^2 v - \sinh^2 v = 1
 $$
 
-which reduces the computation of the hyperbolic functions to the exponential formula. The trigonometric functions are not obtained this way: since $j$ is central with $j^2 = +1$, the combinations $\frac{\exp(j\tilde{Q}) \mp \exp(-j\tilde{Q})}{2}$ are $\cosh \tilde{Q} \mp j \sinh\tilde{Q}$, that is, the hyperbolic functions again, and there is no central element of $\mathbb{H}_{\mathbb{D}}$ with square $-1$ that could produce $\sin$ and $\cos$. The trigonometric functions are defined by their power series, equivalently as the ordinary quaternion trigonometric functions of the two idempotent components.
+hold, the last two for every $v \in V$ with $N(v) \neq 0$, in both signs of the norm. The addition formulas
 
-Note: in the biquaternion case, the trigonometric functions are defined using the scalar imaginary $i$, which satisfies $i^2 = -1$. In the split quaternion case, the centre is $\mathbb{D}$, and $(a + bj)^2 = a^2 + b^2 + 2abj$ is never $-1$, so no such scalar imaginary exists. This is a fundamental difference: the split complex unit does not produce trigonometric functions, it produces hyperbolic functions.
+$$
+\exp(x+y) = \exp x \exp y, \qquad \sin(x+y) = \sin x\cos y + \cos x\sin y
+$$
 
-### Properties
+hold when $xy = yx$ and fail in general; the failure is measured by the Baker–Campbell–Hausdorff series in the commutator.
 
-**Pythagorean identity.** The identity $\sin^2(\tilde{Q}) + \cos^2(\tilde{Q}) = e_0$ holds for every split quaternion: componentwise it is the quaternion identity $\sin^2(q) + \cos^2(q) = 1$, and $\sin\tilde{Q}$ and $\cos\tilde{Q}$ both lie in the commutative subalgebra generated by $\tilde{Q}$ and the idempotents, so they commute and the two components add to $e_+ + e_- = e_0$. Non-commutativity obstructs only identities involving two independent variables.
-
-**Hyperbolic identity.** Similarly, $\cosh^2(\tilde{Q}) - \sinh^2(\tilde{Q}) = e_0$ holds in the idempotent basis for each component.
+**Proof.** The first identity is the series for $x$ and $-x$, which commute; the second holds because the coefficients are real and conjugation is an anti-automorphism; the Pythagorean identities are computed from the scalar square of $v$. The addition formulas hold for commuting elements by the binomial theorem, and fail when the binomial expansion does not collapse, as it does not for the anticommuting generators. $\square$
 
 ## The Logarithm
 
-### Definition
-
-The **logarithm** of a split quaternion $\tilde{Q}$ is defined as the inverse of the exponential:
+**Definition.** The **logarithm** is the inverse of the exponential on a domain on which the exponential is injective; on the dense open set where the power series of the matrix logarithm converges it is
 
 $$
-\log(\tilde{Q}) = \tilde{L} \iff \exp(\tilde{L}) = \tilde{Q}.
+\log x = \log \sqrt{N(x)} + \log\big(x/\sqrt{N(x)}\big) ,
 $$
 
-The logarithm is multivalued in general, as in the complex case. We compute the principal branch.
+the second term being an element of $V$ obtained from the matrix logarithm of the traceless part.
 
-### Computation via the Idempotent Decomposition
-
-In the idempotent basis, the logarithm decomposes:
+**Theorem (Existence and Branch).** On the domain
 
 $$
-\log(\tilde{Q}) = \log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-,
+\mathcal{D} = \big\{x : N(x) > 0,\ \operatorname{Sc}(x) > -\sqrt{N(x)}\big\}
 $$
 
-where $\log(\tilde{Q}_\pm)$ is the ordinary quaternion logarithm of the component. The quaternion logarithm is
+the exponential is a local diffeomorphism and has a smooth inverse; on the norm-one group the logarithm is defined on the open set of elements of trace greater than $-2$ and takes values in $V$, and $\log(1+v) = v$ for every nilpotent $v \in V$ of square zero. The logarithm is multivalued on the whole of $\{N>0\}$ because the exponential has the kernel of the preceding section.
+
+**Proof.** The derivative of the exponential at $x$ is invertible when the eigenvalues of the matrix model avoid $2\pi i k$, which holds on the stated domain; the nilpotent case is the finite series $\log(1+v) = v - v^2/2 + \dots = v$. The multivaluedness is the kernel computation. $\square$
+
+**Corollary (The Logarithm on the Split-Complex Plane).** On the positive component of the split-complex plane, in the null coordinates $x = p\,n_+ + q\,n_-$ with $n_\pm = \tfrac12(1\pm e_2)$ and $p,q > 0$,
 
 $$
-\log(\tilde{Q}_\pm) = \log|\tilde{Q}_\pm| + \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|} \arccos\left(\frac{q_0^\pm}{|\tilde{Q}_\pm|}\right),
+\log x = (\log p)\, n_+ + (\log q)\, n_- ,
 $$
 
-where $|\tilde{Q}_\pm|$ is the quaternion modulus, and $\arccos$ is the ordinary real arccosine. When the vector part vanishes, the logarithm reduces to $\log(\tilde{Q}_\pm) = \log|q_0^\pm|$ (with a branch ambiguity of $2\pi$ in the argument).
+which shows again the absence of a real period in the split directions and the presence of the two independent real logarithms.
 
-So the logarithm of a split quaternion is the pair of the quaternion logarithms of its two idempotent components.
+**Proof.** Apply the exponential formula of the split-complex subalgebra in the null basis. $\square$
 
-### The Domain of Definition
+## Power Functions and Roots of Unity
 
-The logarithm is defined when both idempotent components are nonzero, i.e., when $\tilde{Q}$ is invertible. If one component vanishes, the corresponding logarithm is not defined, and the split quaternion is a zero divisor.
+**Definition.** For real $\alpha$ and $x$ in the domain of a branch of the logarithm, the **power** is $x^\alpha = \exp(\alpha\log x)$; the **$n$-th roots** are the solutions of $y^n = x$.
 
-### Properties
-
-**Multiplicativity.** The logarithm satisfies $\log(\tilde{P} \tilde{Q}) = \log(\tilde{P}) + \log(\tilde{Q})$ if and only if $\tilde{P}$ and $\tilde{Q}$ commute. In general, the logarithm is not multiplicative.
-
-**Multivaluedness.** The logarithm is multivalued. The branches are parameterized by the branches of the quaternion logarithm in each component, which are determined by the addition of $2\pi$ to the argument of each component.
-
-## The Power Functions
-
-### Definition
-
-For $\tilde{Q} \in \mathbb{H}_{\mathbb{D}}$ and $\alpha \in \mathbb{D}$, the **power function** is defined by
+**Theorem (The Split Roots of Unity).** The elements $u_+ + \lambda u_-$ with $\lambda \in \{\pm 1\}$ satisfy
 
 $$
-\tilde{Q}^\alpha = \exp(\alpha \log \tilde{Q}).
+(u_+ + \lambda u_-)^n = u_+ + \lambda^n u_-, \qquad (\lambda = \pm 1),
 $$
 
-The power function inherits the multivaluedness of the logarithm. For non-integer $\alpha$, it is multivalued, and the principal branch is obtained from the principal logarithm.
+so $1$ is a root of unity of every order, while $e_2 = u_+ - u_-$ has $e_2^2 = 1$ and is a root of unity of order two; the reflection $e_3$ is likewise of order two. The roots of unity in the elliptic plane are the elements $\cos\theta + \xi\sin\theta$ with $\xi^2 = -1$ and $\theta$ a rational multiple of $2\pi$, in accordance with the kernel of the exponential.
 
-### Computation via the Idempotent Decomposition
+**Proof.** The first identity follows from $u_+u_- = 0$ and $u_\pm^2 = u_\pm$ by the binomial theorem, the cross terms vanishing. The order-two statements are $e_2^2 = e_3^2 = 1$, and the elliptic elements are the one-parameter subgroups of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*. $\square$
 
-In the idempotent basis, the power function decomposes:
+**Corollary (Roots of Unity of Order Two and the Power Functions).** The solutions of $y^2 = 1$ are $y = \pm 1$ together with the elements $y = 2p - 1$ for $p$ a rank-one idempotent; equivalently they are the reflections, that is the matrices conjugate to $\operatorname{diag}(-1,1)$ in the matrix model, a two-dimensional family. The power functions inherit the ambiguity of the logarithm: $x^{1/n}$ is generally multiple-valued, and two values differ by a root of unity.
 
-$$
-\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-,
-$$
-
-where $\alpha = \alpha_+ e_+ + \alpha_- e_-$ with $\alpha_\pm \in \mathbb{R}$ (or, more generally, $\alpha_\pm \in \mathbb{H}$ if $\alpha$ has a non-scalar component), and $\tilde{Q}_\pm^{\alpha_\pm}$ is the quaternion power of the component. The quaternion power is defined by
-
-$$
-\tilde{Q}_\pm^{\alpha_\pm} = \exp(\alpha_\pm \log \tilde{Q}_\pm).
-$$
-
-When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power function is the pair of the quaternion powers of the two components with the same exponent.
-
-### Special Cases
-
-**Integer powers.** For integer $n$, the power function is single-valued and reduces to the ordinary power $\tilde{Q}^n$.
-
-**Square root.** The square root $\tilde{Q}^{1/2}$ is multivalued, and the branches correspond to the branches of the quaternion square root in each component.
-
-### Properties
-
-**Multiplicativity.** In general, $(\tilde{P} \tilde{Q})^\alpha \neq \tilde{P}^\alpha \tilde{Q}^\alpha$, because the logarithm is not multiplicative.
-
-**Idempotent reduction.** The power function is the pair of the quaternion powers of the two idempotent components.
-
-## Relations to the Quaternion and Split Complex Cases
-
-### The Quaternion Case
-
-The split quaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $q = q_0 + \mathbf{q}$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
-
-$$
-\exp(\tilde{Q}) = \exp(q) e_+ + \exp(q) e_- = \exp(q),
-$$
-
-$$
-\log(\tilde{Q}) = \log(q) e_+ + \log(q) e_- = \log(q),
-$$
-
-and so on. So the elementary functions of a split quaternion that lies in the quaternion subspace are the ordinary quaternion elementary functions.
-
-### The Split Complex Case
-
-The split quaternion algebra contains the split complex algebra $\mathbb{D}$ as the subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, which is the fixed-point set of quaternion conjugation. For a split complex scalar $Q_0 = q_0 + j q'_0$, the idempotent components are the real scalars
-
-$$
-\tilde{Q}_+ = q_0 + q'_0, \qquad \tilde{Q}_- = q_0 - q'_0.
-$$
-
-So the elementary functions reduce to the ordinary real elementary functions applied to the two real scalars:
-
-$$
-\exp(Q_0 e_0) = e^{q_0 + q'_0} e_+ + e^{q_0 - q'_0} e_-.
-$$
-
-In the standard basis, this is
-
-$$
-\exp(Q_0 e_0) = e^{q_0}(\cosh q'_0 + j \sinh q'_0),
-$$
-
-which is the split complex exponential.
-
-### The Relation Between the Two
-
-The quaternion case and the split complex case are the two extremes of the split quaternion case: the quaternion case is the case where the two idempotent components are equal, and the split complex case is the case where the two components are real scalars. The general split quaternion case interpolates between the two, with the two idempotent components being arbitrary quaternions.
+**Proof.** $y^2 = 1$ is $(y-1)(y+1) = 0$; in the matrix model the minimal polynomial of $\Phi(y)$ divides $(t-1)(t+1)$, so $\Phi(y)$ is diagonalisable with eigenvalues in $\{\pm1\}$; if $y \neq \pm1$ it has both eigenvalues and $p = (y+1)/2$ is a rank-one idempotent, whose family is two-dimensional as computed in *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*. The multivaluedness of the power is the multivaluedness of the logarithm of the preceding section. $\square$
 
 ## Non-Commutativity and the One-Variable Case
 
-The elementary functions of a split quaternion variable are as simple as they are because the idempotent decomposition reduces them to two independent quaternion elementary functions. The reduction works because the two idempotents $e_+$ and $e_-$ commute with everything, and the algebra is the direct sum of two commuting copies of $\mathbb{H}$.
+**Theorem (One-Variable Case).** If $x$ lies in a commutative subalgebra of $\mathbb{H}_{\mathrm{s}}$, that is in one of the planes $\operatorname{span}\{1,\xi\}$ with $\xi^2 = \pm 1$, then all the elementary identities of the real and split-complex one-variable calculus hold for $x$, with the sine and cosine replaced by the hyperbolic functions when $\xi^2 = +1$.
 
-For functions of **two or more split quaternion variables**, the situation is different. The powers of a sum $\tilde{P} + \tilde{Q}$ involve the products $\tilde{P} \tilde{Q}$ and $\tilde{Q} \tilde{P}$, which are not equal in general. The binomial expansion does not hold, and the exponential of a sum is not the product of the exponentials unless the two split quaternions commute. So the elementary functions of several split quaternion variables are much more complicated than the elementary functions of one variable, and their theory is largely open.
+**Proof.** In a commutative subalgebra the binomial theorem applies to the series, and the subalgebra is isomorphic to $\mathbb{C}$ or to $\mathbb{D}$ according to the sign of $\xi^2$. $\square$
 
-This is the same situation as in the biquaternion case, and it is the fundamental reason the theory of the elementary functions of a single split quaternion is tractable.
+**Theorem (The General Case).** For general $x,y$ the identities fail: $\exp(x+y) \neq \exp x\exp y$ unless $xy = yx$, and the failure is exactly the Baker–Campbell–Hausdorff correction. The conjugation however always behaves well: $\overline{\exp x} = \exp\bar{x}$, $N(\exp x) = e^{2\operatorname{Sc}(x)}$, and $\exp x$ is a unit for every $x$.
 
-## Summary of Formulas
+**Proof.** The failure of the addition formula is the non-commutativity of the series; the conjugation identity and the norm formula are the theorems above. $\square$
 
-| Function | Idempotent form | Standard form |
+**Corollary (The Trap of the Split-Complex Case).** In the split-complex plane the exponential is $\exp(a + ce_2) = e^a(\cosh c + e_2\sinh c)$ and its image is one component of the positive cone, not the whole of it; the corresponding statement in the split-quaternion algebra is the theorem on the image of the exponential, and neither statement should be read off the other. In particular the sinusoidal and hyperbolic parts of $\exp v$ for $v \in V$ depend on the sign of $N(v)$, so an identity valid for one sign of the norm is generally false for the other.
+
+**Proof.** The split-complex formula is *Split-Complex Special Functions*, and the general statement is the theorem on the exponential of a vector above. $\square$
+
+## Summary of the Identities
+
+| Object | Value or identity | Domain or hypothesis |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\mathbf{Q})$ |
-| $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) e_+ + \sin(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) e_+ + \cos(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) e_+ + \sinh(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\cosh(\tilde{Q})$ | $\cosh(\tilde{Q}_+) e_+ + \cosh(\tilde{Q}_-) e_-$ | (computed from the exponential) |
-| $\log(\tilde{Q})$ | $\log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-$ | (computed from the components) |
-| $\tilde{Q}^\alpha$ | $\tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-$ | $\exp(\alpha \log \tilde{Q})$ |
-
-The idempotent form is the primary one, because it reduces the elementary functions of a split quaternion to the elementary functions of two ordinary quaternions. The standard form, in terms of the scalar-vector decomposition and the split complex exponential, is useful when the split complex structure is the natural language.
-
-## Comparison with the Biquaternion Case
-
-| | $\mathbb{B}$ (biquaternion) | $\mathbb{H}_{\mathbb{D}}$ (split quaternion) |
-|---|---|---|
-| Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
-| Primary decomposition | Quaternion decomposition | Idempotent decomposition |
-| Exponential | $e^{Q_0}(\cos\theta \, e_0 + \sin\theta \, \hat{n})$ with $\theta$ complex | $\exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-$ |
-| Trigonometric functions | Defined via the scalar imaginary $i$ | Defined by the same power series, or componentwise by the quaternion trigonometric functions (no central scalar imaginary exists) |
-| Hyperbolic functions | Defined via the exponential | Defined via the exponential, or via $j$ |
-| Logarithm | $Q_0 e_0 + \theta \hat{n}$ with $\theta$ complex | $\log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-$ |
-| Power function | $e^{\alpha Q_0}(\cos(\alpha\theta) \, e_0 + \sin(\alpha\theta) \, \hat{n})$ | $\tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-$ |
-| Angle | Complex | Real (in each component) |
-| Modulus | Complex scalar | Pair of real moduli |
-
-The key differences are:
-
-1. **The idempotent decomposition is the primary tool.** In the biquaternion case, the elementary functions use the quaternion decomposition and the complex scalar imaginary. In the split quaternion case, they use the idempotent decomposition and reduce to two copies of the quaternion functions.
-
-2. **The angles are real.** In the biquaternion case, the angle in the exponential is a complex number. In the split quaternion case, the angles in the idempotent components are real numbers.
-
-3. **The split complex unit produces hyperbolic functions, not trigonometric.** In the biquaternion case, the scalar imaginary $i$ produces trigonometric functions via the identity $e^{i\theta} = \cos\theta + i\sin\theta$. In the split quaternion case, the split complex unit $j$ produces hyperbolic functions via the identity $e^{j\theta} = \cosh\theta + j\sinh\theta$.
-
-4. **The logarithm and power function are simpler.** In the biquaternion case, the logarithm and power function involve the complex angle and the roots of $-1$. In the split quaternion case, they reduce to the quaternion logarithm and power function in each component.
-
-5. **The zero divisors play a role.** In the split quaternion case, the logarithm is not defined when one of the idempotent components vanishes, i.e., when the split quaternion is a zero divisor. In the biquaternion case, the logarithm is not defined when the norm form vanishes, which is a different condition.
-
-## Open Questions
-
-1. **Functions of several variables.** How do the elementary functions extend to functions of two or more split quaternion variables? The non-commutativity is a serious obstruction, and the theory is largely open.
-
-2. **The general case for the exponential.** For a general split quaternion with both scalar and vector parts nonzero and with a general split complex norm, is the exponential always expressible in terms of the idempotent components, or are there cases where the direct formula is simpler?
-
-3. **The logarithm and the zero divisors.** What is the structure of the logarithm on the complement of the zero divisor set? Are there natural branches that are continuous on the complement?
-
-4. **The power function and the roots of $-1$.** In the biquaternion case, the power function is related to the roots of $-1$ through the complex angle. In the split quaternion case, the roots of $-1$ are a four-dimensional family, but they do not appear in the power function directly. What is the role of the roots of $-1$ in the split quaternion power function?
-
-5. **The relation to the polar representations.** How do the elementary functions interact with the two polar representations (the idempotent polar form and the exponential polar form)?
-
-6. **The relation to the analysis.** How do the elementary functions interact with the differential operators of the analysis? For example, what is $\tilde{\nabla} \exp(\tilde{Q})$ for a general split quaternion $\tilde{Q}$?
+| $\exp(a+v)$ | $e^a\exp v$ | $a$ real, $v \in V$ |
+| $\exp v$ | $c_0(N(v)) + c_1(N(v))v$ | all $v \in V$ |
+| $\exp v$ | $1 + v$ | $N(v) = 0$ |
+| $N(\exp x)$ | $e^{2\operatorname{Sc}(x)}$ | all $x$ |
+| $\exp(\mathbb{H}_{\mathrm{s}})$ | $\{N>0,\ \operatorname{Sc} \geq -\sqrt{N}\}$ | image of the exponential |
+| kernel of $\exp$ | $\{0\} \cup 2\pi\mathbb{Z}\cdot\Sigma$ | $\Sigma$ the root set of $-1$ |
+| $\cos^2v+\sin^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
+| $\cosh^2v-\sinh^2v$ | $1$ | $v \in V$, $N(v) \neq 0$ |
+| $\overline{\exp x}$ | $\exp\bar{x}$ | all $x$ |
+| $\exp(x+y)$ | $\exp x\exp y$ | if and only if $xy = yx$ |
+| $\log(1+v)$ | $v$ | $v$ nilpotent |
+| $(u_+ + \lambda u_-)^n$ | $u_+ + \lambda^nu_-$ | $\lambda = \pm1$ |
 
 ## Summary
 
-The elementary functions of a split quaternion variable are the exponential, the trigonometric and hyperbolic functions, the logarithm, and the power functions.
+The exponential converges everywhere and factors as $\exp(a+v) = e^a\exp v$, with $\exp v$ given in closed form by the functions $c_0$ and $c_1$ of the norm of $v$; it is never zero, its norm is $e^{2\operatorname{Sc}(x)}$, and its image is the set of elements of positive norm whose scalar part is at least $-\sqrt{N}$, so it is not surjective onto the units. Its kernel is the origin together with the scaled copies $2\pi k\Sigma$ of the sphere of the roots of $-1$; the exponential has a real period along every direction that squares to $-1$ and no real period in the split directions.
 
-The key structural fact is the **idempotent decomposition**: the split quaternion algebra is the direct sum of two copies of the quaternion algebra, and the idempotents $e_\pm$ commute with everything. So every elementary function of a split quaternion reduces to the corresponding elementary function of two ordinary quaternions, one for each idempotent component:
+The trigonometric and hyperbolic functions are the parity parts of the exponential and reduce on the vector subspace to the classical functions of $\sqrt{|N(v)|}$, with sine and cosine interchanged with the hyperbolic functions when the sign of the norm changes; the Pythagorean identities hold, the addition formulas hold exactly for commuting arguments and fail otherwise, the failure being the Baker–Campbell–Hausdorff correction. The conjugation and the norm commute with the exponential in the expected way. The logarithm exists on the domain where the scalar part exceeds $-\sqrt{N}$, is $v$ on the nilpotents, is a pair of real logarithms in the split-complex null coordinates, and is multivalued on the whole of the open set $\{N>0\}$ because of the kernel of the exponential. The roots of unity include the split elements $u_+ + \lambda u_-$ and the elliptic elements; the power functions inherit the ambiguity of the logarithm. The comparison with the quaternion and split-complex cases is by way of the sign pattern of the form only, and identities must not be transported from one system to another.
 
-$$
-\exp(\tilde{Q}) = \exp(\tilde{Q}_+) e_+ + \exp(\tilde{Q}_-) e_-,
-$$
+## Summary of Notation
 
-$$
-\log(\tilde{Q}) = \log(\tilde{Q}_+) e_+ + \log(\tilde{Q}_-) e_-,
-$$
-
-$$
-\tilde{Q}^\alpha = \tilde{Q}_+^{\alpha_+} e_+ + \tilde{Q}_-^{\alpha_-} e_-,
-$$
-
-and similarly for the trigonometric and hyperbolic functions.
-
-The exponential can also be computed directly from the scalar-vector decomposition:
-
-$$
-\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q}\right),
-$$
-
-where $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\theta^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\theta^2$ alike, and a negative real $\theta^2$ cannot occur.
-
-The elementary functions of a split quaternion are **simpler** than the elementary functions of a biquaternion, because the idempotent decomposition reduces them to two copies of the quaternion case, the angles are real numbers, and the split complex unit produces hyperbolic functions rather than trigonometric ones. The main complication is the zero divisor set, on which the logarithm is not defined.
-
-The elementary functions of several split quaternion variables are largely open, because the non-commutativity prevents the simple reductions that work for a single variable.
+| Symbol | Meaning | Article |
+|---|---|---|
+| $\exp$, $\log$ | the exponential and its inverse branch | this article |
+| $c_0(\lambda)$, $c_1(\lambda)$ | the coefficient functions of $\exp v$ | this article |
+| $\Sigma$ | the sphere of the roots of $-1$ | *Split-Quaternion Roots of Minus One* |
+| $\cos$, $\sin$, $\cosh$, $\sinh$ | the trigonometric and hyperbolic series | this article |
+| $n_\pm = \tfrac12(1\pm e_2)$ | the null basis of the split-complex plane | *Split-Quaternion Algebra* |
+| $x^\alpha = \exp(\alpha\log x)$ | the power function | this article |
+| $u_+ + \lambda u_-$ | the split roots of unity | this article |
+| BCH | the Baker–Campbell–Hausdorff correction | this article |
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and their complexification.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), Chapter 3, for the elementary functions of split quaternions.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
-- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
-
+- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the exponential map, its kernel and its image for the classical groups.
+- Roger Carter, Graeme Segal and Ian Macdonald, *Lectures on Lie Groups and Lie Algebras* (Cambridge University Press, 1995), for the exponential of a matrix algebra and the trace condition for $\mathrm{SL}_2(\mathbb{R})$.
+- Nicholas J. Higham, *Functions of Matrices: Theory and Computation* (SIAM, 2008), for the matrix exponential, the logarithm and the power functions, and their branches.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the elementary functions of the low-dimensional Clifford algebras and the role of the sign pattern.

@@ -132,7 +132,7 @@ The subring $F[\alpha_1, \ldots, \alpha_n]$ is defined analogously, as the small
 | $\zeta_3 = \tfrac{-1+\sqrt{-3}}{2}$ | $\mathbb{Q}$ | $x^2 + x + 1$ | $2$ |
 | $x$ (transcendental) | $\mathbb{C}$ | none | infinite |
 
-The irreducibility of $x^2 - 2$ over $\mathbb{Q}$ is the irrationality of $\sqrt2$; that of $x^3 - 2$ and of $\Phi_p$ follows from Eisenstein's criterion as in *Factorization: PID, UFD and Euclidean Domains*. For $\alpha = \sqrt2 + \sqrt3$ one computes
+The irreducibility of $x^2 - 2$ over $\mathbb{Q}$ is the irrationality of $\sqrt2$; that of $x^3 - 2$ and of $\Phi_p$ follows from Eisenstein's criterion as in *Unique Factorisation Domains*. For $\alpha = \sqrt2 + \sqrt3$ one computes
 
 $$
 \alpha^2 = 5 + 2\sqrt6, \qquad \alpha^4 = 49 + 20\sqrt6, \qquad \alpha^4 - 10\alpha^2 + 1 = 0,

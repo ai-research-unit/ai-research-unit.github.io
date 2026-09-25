@@ -323,6 +323,14 @@ The representation theory of $\mathbb{D}'$ differs from that of the split comple
 
 **The representation ring.** For $\mathbb{D}$, the representation ring is $\mathbb{Z} \oplus \mathbb{Z}$, with the two irreducibles as generators, and the multiplication is componentwise. For $\mathbb{D}'$, the representation ring is also $\mathbb{Z} \oplus \mathbb{Z}$, but the multiplication is not defined in the same way, because the tensor product of two non-trivial representations is not a representation.
 
+## Summary
+
+A representation of $\mathbb{D}'$ is an $R$-module $V$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{D}' \to \operatorname{End}_R(V)$. The classification reduces the theory to linear algebra: the representations on $V$ are in bijection with the square-zero endomorphisms $E \in \operatorname{End}_R(V)$, the representation being recovered from $E$ as the action of $\varepsilon$.
+
+The theory is not semisimple. Because $\mathbb{D}'$ is a local ring with nilpotent maximal ideal rather than a field, the category of representations is abelian but not semisimple, and the indecomposable representations are not the irreducible ones. Schur's lemma still holds, so an endomorphism of an irreducible representation is a scalar multiple of the identity, while the classification of the indecomposables is governed by the Jordan structure of the nilpotent $E$.
+
+The article also records the representation ring $R(\mathbb{D}')$, the dual or contragredient representation on $V^*$, and the homomorphisms, the $R$-linear maps $T$ with $T \circ E = F \circ T$. The final section compares the theory with that of the split complex algebra, where the two nontrivial idempotents take the place of the nilpotent and the algebra is correspondingly decomposable.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

@@ -11,7 +11,7 @@ This article develops the notion and its principal theorems: the definition, Wey
 
 - The **homogeneous flows** — the geodesic and horocycle flows, the nilmanifolds, the ergodic and mixing theorems — are *Homogeneous Dynamics*, and the **classification** of unipotent orbit closures and invariant measures is *Ratner's Theorems*; this article uses both and concentrates on the *distributions* of sequences and orbits and on the quantitative estimates.
 - The **harmonic analysis** used in the criteria is the first articles of the category: the dual group $G^\vee$ and the characters of *Harmonic Analysis on Groups*, the matrix coefficients and the orthogonality of *Analysis on Compact Groups*. The **ergodic theory** is *Ergodic Theory of Group Actions*.
-- The **specific systems** — the distribution of the fractional parts of a particular algebraic number, the equidistribution of the primes, and the equidistribution on a number system — belong to Part IV, where the arithmetic functions are developed; this article states the general theorems and defers the applications. No physics is invoked.
+- The **specific systems** — the distribution of the fractional parts of a particular algebraic number, the equidistribution of the primes, and the equidistribution on a number system — belong to Part V, where the arithmetic functions are developed; this article states the general theorems and defers the applications. No physics is invoked.
 
 Throughout, $X$ is a compact metric space with a Borel probability measure $\mu$, and a sequence $(x_n)_{n\geq1}$ in $X$ is **equidistributed** (or **uniformly distributed**) with respect to $\mu$ if
 

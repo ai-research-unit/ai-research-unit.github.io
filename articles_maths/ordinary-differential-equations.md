@@ -7,7 +7,7 @@ An ordinary differential equation relates a function of one real variable to its
 
 The scalar field is $\mathbb{K} = \mathbb{R}$ or $\mathbb{C}$, and the ambient space is a Banach space $X$ over $\mathbb{K}$ in the sense of *Banach and Hilbert Spaces*; in the linear theory $X$ is finite-dimensional and the operator is a matrix. The calculus used is the differential calculus on normed spaces and its completeness-based cornerstones. Where a result needs completeness of $X$ rather than merely a norm, this is said. Nothing below needs the ground ring to be a field other than through the scalar field $\mathbb{K}$; the analysis of an ordinary differential equation is a real or complex construction.
 
-The article proceeds from the local to the global and from the nonlinear to the linear. It establishes the Picard–Lindelöf theorem and the maximal interval of existence, the Gronwall inequality and continuous dependence on the data, the reduction of a higher-order equation to a first-order system, the matrix exponential with the variation of constants formula, linear equations with constant coefficients and the characteristic equation, boundary-value problems with their Green's functions, the Sturm–Liouville eigenvalue problem and its eigenfunction expansion, and finally the phase portrait of an autonomous planar system with the classification of equilibria by the eigenvalues of the linearisation. The special equations of mathematical physics — Bessel's equation and Legendre's equation among them — are introduced here as linear equations with regular singular points, and their solutions are the special functions treated per system in Part IV.
+The article proceeds from the local to the global and from the nonlinear to the linear. It establishes the Picard–Lindelöf theorem and the maximal interval of existence, the Gronwall inequality and continuous dependence on the data, the reduction of a higher-order equation to a first-order system, the matrix exponential with the variation of constants formula, linear equations with constant coefficients and the characteristic equation, boundary-value problems with their Green's functions, the Sturm–Liouville eigenvalue problem and its eigenfunction expansion, and finally the phase portrait of an autonomous planar system with the classification of equilibria by the eigenvalues of the linearisation. The special equations of mathematical physics — Bessel's equation and Legendre's equation among them — are introduced here as linear equations with regular singular points, and their solutions are the special functions treated per system in Part V.
 
 ## The First-Order Equation
 
@@ -97,7 +97,7 @@ solves the problem for every $c \ge 0$, so the solution is not unique; this is p
 
 ### Gronwall and Continuous Dependence
 
-**Lemma (Gronwall).** Let $u, \beta : [t_0,t_1] \to \mathbb{R}$ be continuous with $\beta \ge 0$ and let $a \ge 0$. If
+**Lemma (Bellman–Grönwall).** Let $u, \beta : [t_0,t_1] \to \mathbb{R}$ be continuous with $\beta \ge 0$ and let $a \ge 0$. If
 
 $$
 u(t) \le a + \int_{t_0}^{t}\beta(s)\,u(s)\,ds \qquad (t \in [t_0,t_1]),
@@ -279,7 +279,7 @@ $$
 
 at least one of $(\alpha_1,\alpha_2)$ and one of $(\beta_1,\beta_2)$ being nonzero. The function $w$ is the **weight**.
 
-In the **regular** case $p$ is positive and continuous on the closed interval and $w$ is positive and continuous there; a **singular** endpoint is one at which $p$ vanishes or the interval is unbounded, and it is **limit-circle** or **limit-point** according to the behaviour of the solutions of the equation at it. Bessel's equation and Legendre's equation are singular Sturm–Liouville problems, and they are the origin of the special functions of Part IV.
+In the **regular** case $p$ is positive and continuous on the closed interval and $w$ is positive and continuous there; a **singular** endpoint is one at which $p$ vanishes or the interval is unbounded, and it is **limit-circle** or **limit-point** according to the behaviour of the solutions of the equation at it. Bessel's equation and Legendre's equation are singular Sturm–Liouville problems, and they are the origin of the special functions of Part V.
 
 **Theorem (self-adjointness).** On the Hilbert space $L^2((a,b), w\,dx)$ of *Measure Theory and Integration* the operator $Ly = \frac{1}{w}(-(py')' + qy)$ with domain the smooth functions satisfying the boundary conditions is symmetric,
 

@@ -3,224 +3,200 @@
 
 ## Introduction
 
-This article is the hyperbolic-geometric slot of the split quaternion system. It presents hyperbolic three-space as a model carried by the split quaternion algebra: the points are the elements of the anti-Hermitian four-plane $\mathbb{M}_-$ whose Hermitian norm is $-1$, the isometry group is the restricted Lorentz group realised on that plane, and the boundary and the geodesics are read off from the null cone and from the two-dimensional subspaces of the algebra. The article continues the geometry of the same system from *Split-Quaternion Geometry* and uses the Lorentz group of *Split-Quaternion Rotations and the Lorentz Group*; it does not restate the forms, the invariant subspaces or the classification of isometries that are established there, but develops from them the metric geometry of the hyperbolic space itself.
+This article builds the model of the hyperbolic plane on the split-quaternion algebra. It presents the hyperboloid model on the timelike sheet of the vector subspace, records the unit condition and the two-sheeted structure, identifies the upper half-plane and the disc as matrix models in which the group acts by fractional linear transformations, classifies the isometries, and relates the model to the rotations and the Lorentz group of the system and to the hyperbolic geometry of Part II.
 
-The two-dimensional analogue is the hyperbolic geometry of the split complex plane, treated in *Hyperbolic Rotations* and in *Hyperbolic Geometry* in Part II; the general theory of hyperbolic manifolds, of their geodesics and of their boundaries is the subject of *Hyperbolic Geometry* and of *Pseudo-Riemannian and Lorentzian Geometry*, written in parallel, and is cited rather than reproduced. The corresponding construction for the biquaternion algebra, in which hyperbolic three-space appears through Hermitian matrices and $SL_2(\mathbb{C})$, is the subject of *Biquaternion Null Quadric and Projective Geometry* and of the written biquaternion articles; the present article is the split quaternion realisation and not that one. The quaternion sphere $S^3$ is used as the comparison object throughout, as in *Quaternion Geometry*.
-
-**Conventions.** The split quaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ with the basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the central split complex unit $j$, $j^2 = +e_0$. The Hermitian scalar form is $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$, of signature $(4,4)$ on $\mathbb{H}_{\mathbb{D}}$; its restrictions to the Hermitian subspace $\mathbb{M}_+$ and to the anti-Hermitian subspace $\mathbb{M}_-$ have signatures $(1,3)$ and $(3,1)$. The anti-Hermitian subspace is
-
-$$
-\mathbb{M}_- = \left\{a\,je_0 + v : a\in\mathbb{R},\ v\in\operatorname{Im}\mathbb{H}\right\}
-= \left\{a\,je_0 + v_1e_1 + v_2e_2 + v_3e_3\right\},
-$$
-
-a real four-space with the $g$-orthogonal basis $(je_0,e_1,e_2,e_3)$ and the form
-
-$$
-g(\tilde X,\tilde X) = -a^2 + v_1^2 + v_2^2 + v_3^2 .
-$$
-
-An element of $\mathbb{M}_-$ of $g$-norm $-1$ is called a **split quaternion of unit norm**; this is the indefinite unit condition, and it is the condition that selects the points of the hyperbolic space.
+The split-quaternion algebra, its vector subspace $V$, its norm form and its matrix model are assumed from *Split-Quaternion Algebra*; the roots of $\xi^2 = -1$ and the conjugacy-class description of the root set from *Split-Quaternion Roots of Minus One*; the adjoint action, the double cover and the elliptic, hyperbolic and parabolic one-parameter subgroups from *Split-Quaternion Rotations and the Lorentz Group*; and the induced metrics on the hyperboloids from *Split-Quaternion Geometry*, which supplies the geometry of the two forms. The hyperbolic plane itself, its models, its geodesics and its isometry classification are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*; this article does not rebuild them, it realises them. Nothing physical is invoked.
 
 ## The Hyperboloid Model
 
-### The Hyperbolic Three-Space
-
-**Definition.** The **hyperboloid model** of hyperbolic three-space is
+**Definition.** The **timelike sheet** is the connected component of the level set $\{v \in V : N(v) = 1\}$ containing $e_1$:
 
 $$
-H^3 = \left\{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = -1,\ a > 0\right\},
+\mathbb{H}^{+} = \{v = b e_1 + c e_2 + d e_3 : b^2 - c^2 - d^2 = 1, \ b > 0\}.
 $$
 
-where $\tilde X = a\,je_0 + v$; the sign condition $a > 0$ selects one of the two connected components of the level set $g = -1$.
-
-**Theorem.** $H^3$ is a connected smooth three-dimensional submanifold of $\mathbb{M}_-$, diffeomorphic to $\mathbb{R}^3$; the diffeomorphism is
+By *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, the group $\mathrm{SO}^{+}(2,1)$ acts transitively on $\mathbb{H}^{+}$ with stabiliser a copy of $SO(2)$, so that
 
 $$
-v\longmapsto \sqrt{1 + \lvert v\rvert^2}\,je_0 + v, \qquad v\in\operatorname{Im}\mathbb{H}\cong\mathbb{R}^3,
+\mathbb{H}^{+} \cong \mathrm{SO}^{+}(2,1)/SO(2) \cong \mathrm{PSL}_2(\mathbb{R})/SO(2).
 $$
 
-with inverse $\tilde X\mapsto\operatorname{Vect}(\tilde X)$. The tangent space at $\tilde X\in H^3$ is the $g$-orthogonal complement of $\tilde X$, and $g$ is positive definite on it.
-
-*Proof.* The map displayed has $g$-norm $-(1+\lvert v\rvert^2) + \lvert v\rvert^2 = -1$ and $a = \sqrt{1+\lvert v\rvert^2} > 0$, so it lands in $H^3$; its inverse is the vector part, and the two are smooth and mutually inverse, so $H^3\cong\mathbb{R}^3$. For the tangent space, differentiate the relation $g(\tilde X,\tilde X) = -1$ along a curve in $H^3$ to obtain $g(\tilde X,\dot{\tilde X}) = 0$, so the tangent space lies in the orthogonal complement, which has dimension three because $g(\tilde X,\tilde X)\neq0$; hence they agree. The form is positive definite on that complement: the index of a form is additive over orthogonal direct sums of non-degenerate subspaces, the ambient form on $\mathbb{M}_-$ has index one, and the line $\mathbb{R}\tilde X$ already carries the negative direction, so the orthogonal complement has index zero. $\square$
-
-The second component of the level set $g = -1$ is the image of $H^3$ under the central reflection $\tilde X\mapsto-\tilde X$, and is the second sheet; the two sheets together form the full level set and are interchanged by the group $O(3,1)$. The manifold $H^3$ is non-compact and simply connected, and its curvature is constant and negative.
-
-### The Metric
-
-**Definition.** The **hyperbolic distance** on $H^3$ is
+**Theorem (The Hyperboloid Model).** The form $-B$ restricted to the tangent spaces of $\mathbb{H}^{+}$ is a Riemannian metric of constant curvature $-1$, and with this metric $\mathbb{H}^{+}$ is a model of the hyperbolic plane. The distance is
 
 $$
-d_H(\tilde X,\tilde Y) = \operatorname{arcosh}\!\left(-g(\tilde X,\tilde Y)\right), \qquad \tilde X,\tilde Y\in H^3 .
+\cosh d(v,w) = B(v,w) \qquad (v, w \in \mathbb{H}^{+}),
 $$
 
-**Theorem.** The hyperbolic distance is a metric on $H^3$, it is invariant under every linear isometry of $(\mathbb{M}_-,g)$ that preserves the sheet, and $H^3$ with this metric is a complete Riemannian manifold of constant sectional curvature $-1$. Its isometry group is
+and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action. The geodesics are the intersections of $\mathbb{H}^{+}$ with the planes through the origin of $V$.
+
+**Proof.** The induced metric and its curvature are (*Split-Quaternion Geometry*, §*The Unit Hyperboloids and Their Metrics*), where it is also shown that the induced form is definite on the sheet and that the geodesics are the central sections. The distance formula is the standard one for a hyperboloid model: for $v = w$ both sides are $1 = \cosh 0$, and for distinct points in the same sheet $B(v,w) \geq 1$ because the sheet lies in the closed half-space $b \geq 1$ and $B(e_1,w) = w_1 \geq 1$, with the general case following by transitivity. The group action is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*, and the identification of the quotient with the hyperbolic plane is *Hyperbolic Geometry*. $\square$
+
+The model is the hyperboloid model of the hyperbolic plane, and the vector space in which it sits is the vector subspace of the algebra, of signature $(2,1)$; the points of the model are precisely the solutions of $\xi^2 = -1$ in the sheet, by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*.
+
+## The Unit Condition and the Two-Sheeted Structure
+
+**Theorem (The Two Sheets).** The level set $\{N = 1\}$ in $V$ has exactly two connected components, the timelike sheet $\mathbb{H}^{+}$ and its mirror $\mathbb{H}^{-} = \{b < 0\}$. The two sheets are exchanged by $v \mapsto -v$, by the conjugation $\bar{\cdot}$, and by the adjoint action of any unit of norm $-1$, such as $e_2$. The identity component $\mathrm{SO}^{+}(2,1)$ preserves each sheet; the full isometry group $O(2,1)$ exchanges them.
+
+**Proof.** The two sheets are the intersections with the half-spaces $b>0$ and $b<0$, each diffeomorphic to a plane by *Split-Quaternion Roots of Minus One*, §*The Equation and the Reduction to the Vector Subspace*. Both $v \mapsto -v$ and the conjugation reverse the sign of $b$; the conjugation reverses it because the fixed-point decomposition $v = \operatorname{Sc}(v) + \operatorname{Vec}(v)$ with $\bar{v} = -v$ for $v \in V$ by (*Split-Quaternion Algebra*, §*The Two Eigenspaces*). The adjoint action of $e_2$ sends $e_1$ to $-e_1$ by the computation of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Representation*, and has norm $-1$; the connected group $\mathrm{SO}^{+}(2,1)$ cannot exchange the two sheets because it cannot leave the connected component of the identity in the full isometry group, whose other components exchange the sheets. $\square$
+
+**Corollary (The Unit Condition Selects an Orientation).** A hyperbolic-plane point on the split-quaternions is a split-quaternion $\xi$ with $\xi \in V$ and $N(\xi) = 1$ together with the choice of a sheet; the choice of sheet is the choice of orientation of the plane, and the group $\mathrm{PSL}_2(\mathbb{R})$ acts on each sheet.
+
+**Proof.** Immediate from the two-sheeted structure and the transitivity of $\mathrm{PSL}_2(\mathbb{R})$ on each sheet. $\square$
+
+The unit condition is therefore not simply $N = 1$ but "$N = 1$ and one sheet", and the two sheets are the two orientations. In the projective picture the two sheets have the same image, because $v$ and $-v$ define the same point of $\mathbb{P}(V)$.
+
+## The Upper Half-Plane as a Matrix Model
+
+The matrix model identifies the sheet with the upper half-plane by an explicit formula.
+
+**Definition.** For $\xi = b e_1 + c e_2 + d e_3$ in the timelike sheet define
 
 $$
-\operatorname{Isom}(H^3) = O^{\uparrow}(3,1),
+\zeta(\xi) = \frac{c - b}{d + i} = \frac{(c-b)(d-i)}{1 + d^2} \in \mathbb{C},
 $$
 
-the subgroup of $O(3,1)$ preserving the chosen sheet, of index two in $O(3,1)$ and with identity component
+the ratio of the components of an eigenvector of $\Phi(\xi)$ for the eigenvalue $i$.
+
+**Theorem (The Eigenline Model).** The map $\zeta$ is a bijection from the timelike sheet onto the upper half-plane
 
 $$
-\operatorname{Isom}(H^3)_0 = SO^{+}(3,1)\cong PSL_2(\mathbb{C}) ,
+\mathbb{H} = \{z \in \mathbb{C} : \operatorname{Im} z > 0\},
 $$
 
-acting transitively and with isotropy at a point the group $SO(3)$; hence
+with
 
 $$
-H^3\cong SO^{+}(3,1)/SO(3)\cong PSL_2(\mathbb{C})/PSU(2)
+\operatorname{Im}\zeta(\xi) = \frac{b - c}{1 + d^2} > 0,
 $$
 
-as a homogeneous space, and the stabiliser of a point acts on the tangent space by the standard representation of $SO(3)$.
-
-*Proof.* The argument $-g(\tilde X,\tilde Y)$ is at least $1$ for $\tilde X,\tilde Y$ on the same sheet, because the reverse Schwarz inequality for a form of signature $(3,1)$ gives $g(\tilde X,\tilde Y)^2\geq g(\tilde X,\tilde X)g(\tilde Y,\tilde Y) = 1$ with the negative sign of $g$; so the arcosh is defined and non-negative, and it vanishes exactly at $\tilde X = \tilde Y$. The triangle inequality is the corresponding form of the reverse Schwarz inequality, applied to the three pairs. Invariance under a linear isometry preserving the sheet is immediate from the invariance of $g$. Completeness is the completeness of the hyperboloid in the ambient Euclidean space. The curvature computation is the standard one for the hyperboloid model. The group $O(3,1)$ has four components, and the subgroup preserving a chosen sheet is of index two; its identity component is $SO^{+}(3,1)$, which is isomorphic to $PSL_2(\mathbb{C})$ by the standard two-to-one covering $SL_2(\mathbb{C})\to SO^{+}(3,1)$, and has trivial centre so that no further quotient is needed. The orbit and isotropy statements are the orbit theory of the Lorentzian form, treated in *Pseudo-Riemannian and Lorentzian Geometry*. $\square$
-
-### Geodesics and Two-Dimensional Subspaces
-
-**Theorem.** The geodesics of $H^3$ through a point $\tilde X$ are the intersections of $H^3$ with the two-dimensional real subspaces of $\mathbb{M}_-$ through the origin that are spanned by $\tilde X$ and a tangent vector, and are therefore the curves
+and it is equivariant: for $g \in \mathrm{SL}_2(\mathbb{R})$ with $\Phi(g) = \begin{pmatrix}\alpha & \beta \\ \gamma & \delta\end{pmatrix}$,
 
 $$
-t\longmapsto \cosh t\,\tilde X + \sinh t\,\tilde V, \qquad \tilde X\in H^3,\ \tilde V\in T_{\tilde X}H^3,\ g(\tilde V,\tilde V) = 1,\ g(\tilde X,\tilde V) = 0 .
+\zeta(g \xi g^{-1}) = \frac{\alpha\,\zeta(\xi) + \beta}{\gamma\,\zeta(\xi) + \delta}.
 $$
 
-Every geodesic is the orbit of a hyperbolic one-parameter subgroup of $SO^{+}(3,1)$, and the intersection of the geodesic with the plane $\operatorname{span}(\tilde X,\tilde V)$ is the hyperbola $\{-a^2 + \text{(one coordinate)}^2 = -1\}$ in that plane.
+The metric on the sheet is carried to the hyperbolic metric of the half-plane, $\mathrm{d}s^2 = |\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$, and the two-sheeted structure corresponds to the pair consisting of the upper and the lower half-planes.
 
-*Proof.* A geodesic of the hyperboloid model is the intersection of $H^3$ with a two-dimensional linear subspace $P$ on which the ambient form has signature $(1,1)$, because the second fundamental form of the hyperboloid in $\mathbb{M}_-$ is minus the ambient form and the geodesic curvature vanishes on such intersections. Parametrising the plane $P$ by an orthonormal pair $(\tilde X,\tilde V)$ with $g(\tilde X,\tilde X) = -1$, $g(\tilde V,\tilde V) = +1$, $g(\tilde X,\tilde V) = 0$ gives the displayed curve, which has $g$-norm $-1$ and is the unit hyperbola in the plane. The one-parameter group statement is the classification of the hyperbolic generators of $\mathfrak{so}(3,1)$; it is the second row of the three-row table of *Split-Quaternion Rotations and the Lorentz Group*. $\square$
-
-## The Boundary and the Conformal Model
-
-### The Sphere at Infinity
-
-**Definition.** The **boundary at infinity** of the hyperboloid model is the set of rays of the null cone,
+**Proof.** *Positivity.* On the sheet, $b = \sqrt{1 + c^2 + d^2}$, so $b - c > 0$ and the displayed formula gives $\operatorname{Im}\zeta > 0$. *Bijectivity.* Given $z = x + iy \in \mathbb{H}$, put
 
 $$
-\partial H^3 = \left\{[\tilde X] : \tilde X\in\mathbb{M}_-,\ \tilde X\neq 0,\ g(\tilde X,\tilde X) = 0\right\},
+M(z) = \begin{pmatrix} x/y & -(x^2+y^2)/y \\ 1/y & -x/y \end{pmatrix},
 $$
 
-the projectivisation of the null cone in $\mathbb{M}_-$.
+which is traceless with determinant $1$; the element $\xi = \Phi^{-1}(M(z))$ then lies in $V$, has $N(\xi) = \det M(z) = 1$ and $b > 0$, so it lies in the sheet, and its matrix has $(z,1)$ as an eigenvector for $i$, so $\zeta(\xi) = z$. The two constructions are inverse, so $\zeta$ is a bijection. *Equivariance.* The eigenvector of $\Phi(g\xi g^{-1}) = \Phi(g)\Phi(\xi)\Phi(g)^{-1}$ for the eigenvalue $i$ is $\Phi(g)$ applied to the eigenvector of $\Phi(\xi)$, and the action of $\Phi(g)$ on the ratios of components of eigenvectors is exactly the fractional linear transformation displayed. *The metric.* The metric $-B$ on the sheet is invariant under the adjoint action, and the half-plane metric is invariant under the fractional linear action; the two metrics are proportional and agree at the point $\zeta = i$, so they agree. $\square$
 
-**Theorem.** The boundary is a two-sphere,
+The formula for $\zeta$ is the explicit form of the general statement of *Split-Quaternion Roots of Minus One*, §*The Root Set as a Homogeneous Space*: the root set is the homogeneous space $\mathbb{H}_{\mathrm{s}}^{\times}/\mathbb{C}^{\times}$, whose two components are the two copies of the hyperbolic plane, here presented as the upper and lower half-planes.
 
-$$
-\partial H^3\cong S^2 ,
-$$
+**Corollary (The Sheet as the Quotient).** The sheet is the quotient $\mathrm{SL}_2(\mathbb{R})/SO(2)$ with the coset description $\zeta(g \cdot i)$, and the isotropy group of the point $i$ is the group of elliptic elements fixing $i$, namely the image of $SO(2)$.
 
-and the map $\tilde X = a\,je_0 + v\mapsto v/\lvert v\rvert$ realises the boundary as the unit sphere of $\operatorname{Im}\mathbb{H}$, the boundary point of a null vector being its direction. On the boundary the group $SO^{+}(3,1)$ acts by the conformal transformations of the round sphere, and the boundary carries a conformal structure rather than a Riemannian one.
+**Proof.** The action on $\mathbb{H}$ is transitive because $\mathrm{SL}_2(\mathbb{R})$ contains the translations and the dilations, and the stabiliser of $i$ is the group of matrices with $(\alpha i + \beta)/(\gamma i + \delta) = i$, which is the rotation group $SO(2)$. $\square$
 
-*Proof.* A null vector has $-a^2 + \lvert v\rvert^2 = 0$, so $a = \pm\lvert v\rvert$ with $v\neq0$; the ray is determined by the direction of $v$ in the unit sphere of $\operatorname{Im}\mathbb{H}$, which is $S^2$, and by the sign of $a$, and two null vectors on the same ray have the same direction and the same sign. The conformal action is the standard boundary action of the isometry group of a hyperbolic space. $\square$
+## The Disc as a Matrix Model
 
-### The Boundary as the Projective Line Over the Complex Numbers
-
-The boundary sphere has a preferred conformal structure, and it is the same structure that the complex projective line carries.
-
-**Proposition.** The boundary sphere $\partial H^3$ is conformally equivalent to the Riemann sphere $\mathbb{C}P^1$; the equivalence is realised by stereographic projection from the null cone of $\mathbb{M}_-$ onto the plane $\{a = 1\}$ in the coordinates $\tilde X = a\,je_0 + v$, which is a copy of $\mathbb{R}^2$ completed by one point. Under this equivalence the action of $SO^{+}(3,1)$ on $\partial H^3$ becomes the action of $PSL_2(\mathbb{C})$ on $\mathbb{C}P^1$ by Möbius transformations,
+**Definition.** The **Cayley transform** is
 
 $$
-z\longmapsto\frac{\alpha z + \beta}{\gamma z + \delta}, \qquad \begin{pmatrix}\alpha & \beta\\ \gamma & \delta\end{pmatrix}\in SL_2(\mathbb{C}),
+w(\zeta) = \frac{\zeta - i}{\zeta + i},
 $$
 
-and the isomorphism $SO^{+}(3,1)\cong PSL_2(\mathbb{C})$ is the isomorphism of their boundary actions.
-
-*Proof.* Stereographic projection is conformal and sends the round sphere to the plane completed by a point, which is $\mathbb{C}P^1$; the identification of the boundary action with the Möbius action is the classical identification of the conformal group of the two-sphere with $PGL_2(\mathbb{C})$, and the isomorphism of $SO^{+}(3,1)$ with $PSL_2(\mathbb{C})$ is the standard exceptional isomorphism of the corresponding Lie algebras. $\square$
-
-This is the point at which the complex numbers enter the split quaternion description of hyperbolic three-space, and it is the reason why the isometry group of this hyperbolic space is also the group $SL_2(\mathbb{C})$ of the biquaternion algebra; the biquaternion realisation of the same geometry, through $2\times2$ Hermitian matrices, is treated in *Biquaternion Null Quadric and Projective Geometry* and is a different presentation of the same group.
-
-### The Ball Model and the Upper Half-Space Model
-
-**Definition.** The **Klein model** is the image of $H^3$ under the central projection of the hyperboloid onto the affine plane $\{a = 1\}$ along rays from the origin; it is the open unit ball of $\operatorname{Im}\mathbb{H}$.
-
-**Proposition.** The central projection is a diffeomorphism from $H^3$ onto the open unit ball of $\mathbb{R}^3$, and it carries the geodesics of $H^3$ to the straight chords of the ball. The composition of the central projection with the inverse of the stereographic projection is the **Poincaré ball model**, in which the geodesics are circular arcs orthogonal to the boundary sphere and the metric is $4\lvert dv\rvert^2/(1 - \lvert v\rvert^2)^2$. The **upper half-space model** is obtained by a conformal transformation of the boundary sphere carrying a point of the boundary to infinity; in that model the geodesics are vertical rays and the semicircles orthogonal to the boundary plane, and the metric is $\lvert dv\rvert^2/v_3^2$ for a coordinate $v_3 > 0$.
-
-*Proof.* The central projection sends the ray through $\tilde X = aje_0 + v$ to $v/a$ with $\lvert v\rvert < a$, and $a^2 = 1+\lvert v\rvert^2$ gives $\lvert v/a\rvert < 1$, so the image is the open unit ball, and it is a diffeomorphism because the inverse is $v\mapsto\sqrt{1+\lvert v\rvert^2}\,je_0 + v$ with $v$ in the ball. Lines through the origin of the ball are the intersections of two-dimensional subspaces with the hyperboloid and are therefore geodesics; conversely every geodesic lies in such a subspace, so the geodesics are the chords. The conformal statements are the standard equivalences of the models of hyperbolic space, in *Hyperbolic Geometry*. $\square$
-
-## The Isometries and Their Classification
-
-### The Three Types
-
-The classification of one-parameter subgroups established in *Split-Quaternion Rotations and the Lorentz Group* acquires a geometric meaning in the action on $H^3$.
-
-**Theorem.** Every non-identity element of $SO^{+}(3,1)$ is of exactly one of the following three types, according to the behaviour of its action on $H^3$:
-
-- **Elliptic.** The element fixes a point of $H^3$; its geodesic displacement is zero; it rotates the tangent space at the fixed point. The elliptic elements form the conjugates of the maximal compact subgroup $SO(3)$.
-- **Hyperbolic.** The element fixes no point of $H^3$ and fixes exactly two points of $\partial H^3$; it translates along the geodesic joining them, by a distance $\ell > 0$ called the translation length, and the geodesic is the unique invariant geodesic.
-- **Parabolic.** The element fixes no point of $H^3$ and fixes exactly one point of $\partial H^3$; it translates every point by an unbounded amount and preserves the horospheres based at the fixed boundary point.
-
-*Proof.* The fixed points of an element of $SO^{+}(3,1)$ on $H^3\cup\partial H^3$ correspond to the lines in $\mathbb{M}_-$ spanned by eigenvectors of the corresponding linear map, and the type is determined by the sign of the $g$-norm of such an eigenvector: timelike (a point of $H^3$), spacelike (a geodesic, whose endpoints are two null eigenvectors) or null (a boundary point). The normal forms are those of the generator, given by the three-row table of *Split-Quaternion Rotations and the Lorentz Group*. $\square$
-
-**Proposition.** The elliptic type is realised inside the split quaternion algebra by the unitary group of *Split-Quaternion Rotations and the Lorentz Group*, which acts on $H^3$ by rotations about the fixed point $je_0$; the hyperbolic type is realised by the split complex hyperbolic units acting on the neutral planes, transported to $H^3$; the parabolic type is not realised by an element of the algebra, because $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ is semisimple and has no non-zero nilpotent element.
-
-*Proof.* The assertions about the elliptic and parabolic types are those of the cited article, transported through the identification $H^3 = SO^{+}(3,1)\cdot je_0$; the hyperbolic displacements are the split complex units, which furnish one-parameter subgroups of hyperbolic type after conjugation into $SO^{+}(3,1)$. $\square$
-
-### Horospheres and the Busemann Function
-
-**Definition.** For a boundary point $\xi = [\tilde N]\in\partial H^3$ and a real number $s$, the **horosphere** centred at $\xi$ is
+a biholomorphic map from the upper half-plane onto the unit disc
 
 $$
-\operatorname{Hor}(\xi,s) = \left\{\tilde X\in H^3 : -\log\!\left(-g(\tilde X,\tilde N)\right) = s\right\},
+\mathbb{D} = \{w \in \mathbb{C} : |w| < 1\}.
 $$
 
-where $\tilde N$ is a null vector on the ray $\xi$, normalised so that the sign of $g(\tilde X,\tilde N)$ is positive for all $\tilde X\in H^3$.
+**Theorem (The Disc Model).** The Cayley transform carries the hyperbolic metric of the half-plane to the metric
 
-**Proposition.** Every horosphere is a smooth surface diffeomorphic to $\mathbb{R}^2$, it is orthogonal to every geodesic ending at $\xi$, and the parabolic one-parameter subgroups act simply transitively on it. In the upper half-space model with $\xi$ the point at infinity, the horospheres are the horizontal planes.
+$$
+\mathrm{d}s^2 = \frac{4\,|\mathrm{d}w|^2}{(1 - |w|^2)^2}
+$$
 
-*Proof.* The function $\tilde X\mapsto-\log(-g(\tilde X,\tilde N))$ is the Busemann function of the ray $\xi$; its level sets are the horospheres, and the standard properties of the Busemann function give the orthogonality to the geodesics ending at $\xi$ and the transitivity of the parabolic stabiliser, whose Lie algebra is the nilpotent part of the Iwasawa decomposition of $\mathfrak{so}(3,1)$; in the upper half-space model the level sets of the height function are horizontal planes. $\square$
+on the disc, and the isometry group of the disc with this metric is the conjugate of $\mathrm{PSL}_2(\mathbb{R})$ in $\mathrm{PSL}_2(\mathbb{C})$, acting by fractional linear transformations preserving the disc. Under this identification the sheet of the hyperboloid model is carried to the disc, the boundary circle of the disc is the set of ideal points, and the group acts on the disc by matrices.
 
-Note that the parabolic subgroups of $SO^{+}(3,1)$ are represented by nilpotent elements of the Lie algebra although the split quaternion algebra contains no nilpotent; the nilpotents reside in the Lie algebra of the isometry group and not in the coefficient algebra. This is the geometric form of the negative statement of *Split-Quaternion Rotations and the Lorentz Group*.
+**Proof.** The Cayley transform is a biholomorphism of the two domains, and the pullback of the displayed metric is the half-plane metric; the isometry group of a Riemannian metric is transported by an isometry, so it is the conjugate of $\mathrm{PSL}_2(\mathbb{R})$; the boundary correspondence and the fractional linear form are the standard Cayley transform of the Möbius action. $\square$
 
-## Comparison with the One-Dimensional and the Spherical Cases
+**Corollary (The Three Matrix Models).** The hyperbolic plane on the split-quaternions therefore has three presentations, all carried by the same group of matrices: the hyperboloid sheet $\mathbb{H}^{+} \subset V$ with the metric $-B$ and the adjoint action; the upper half-plane with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; and the disc with the Cayley-transformed action. The three are isometric by explicit formulas, and the passage between them is by the eigenline map and the Cayley transform.
 
-The split quaternion hyperbolic geometry is the three-dimensional member of a family that begins in dimension one with the split complex plane and continues in the opposite direction with the quaternion sphere.
+**Proof.** Composition of the isometries supplied by the two theorems. $\square$
 
-| Feature | $\mathbb{D}$ (dimension $1$) | $\mathbb{H}_{\mathbb{D}}$ (dimension $3$) | $\mathbb{H}$ (sphere) |
-|---|---|---|---|
-| Ambient form | $x^2 - y^2$ on $\mathbb{D}$ | $g$ on $\mathbb{M}_-\sim(3,1)$ | $\lvert q\rvert^2$ on $\mathbb{H}$ |
-| Level set | hyperbola $c^2 - s^2 = 1$ | hyperboloid $g = -1$ | sphere $S^3$ |
-| Space | $H^1\cong\mathbb{R}$ | $H^3\cong\mathbb{R}^3$ | $S^3$ |
-| Curvature | $-1$ | $-1$ | $+1$ |
-| Isometry group | $O^{\uparrow}(1,1)$ | $O^{\uparrow}(3,1)$ | $O(4)$ |
-| Identity component | $SO^{+}(1,1)$, one-dimensional | $SO^{+}(3,1)\cong PSL_2(\mathbb{C})$ | $SO(4)\cong(S^3\times S^3)/\{\pm1\}$ |
-| Boundary | two points | $S^2\cong\mathbb{C}P^1$ | empty |
-| Geodesics | the two branches | hyperbolas in $(1,1)$-planes | great circles |
-| Stabiliser of a point | trivial | $SO(3)$ | $SO(3)$ |
-| Isometries | hyperbolic only | elliptic, hyperbolic, parabolic | elliptic only |
+## The Classification of Isometries
 
-Two features of the table deserve emphasis. First, the one-dimensional case has only hyperbolic isometries: the group $SO^{+}(1,1)$ is a single one-parameter family, and the three types of the three-dimensional case collapse to one because there is no compact isotropy and no nilpotent part. The passage to dimension three creates the compact rotations of $\operatorname{Im}\mathbb{H}$ and, at the same time, the parabolic boundary-fixing isometries. Second, the compact case is exactly complementary: the quaternion sphere has only elliptic isometries, no boundary, and the form is definite, while the split quaternion hyperbolic space has a boundary of dimension two, a non-compact isometry group and a non-compact space.
+**Theorem (The Three Types).** Let $g \in \mathrm{SL}_2(\mathbb{R})$ have trace $\tau = \alpha + \delta$. Then the isometry of the hyperbolic plane induced by $g$ is
 
-The relation to the split complex plane is not merely an analogy: the split complex hyperbolic one-parameter group $\{e^{\theta j}\}$ of *Hyperbolic Rotations* sits inside the split quaternion algebra as the one-parameter group of the neutral plane, and its action on $H^1$ is the restriction of the action on $H^3$ to the invariant geodesic of a hyperbolic isometry. In this sense the one-dimensional hyperbolic geometry is the skeleton of the three-dimensional one, the remaining content being the compact rotations of the two-sphere at infinity and the parabolic translations.
+1. **elliptic**, if $|\tau| < 2$; it has a fixed point in the interior, and in the sheet description it is conjugate to an element of the compact subgroup $SO(2)$;
+2. **hyperbolic**, if $|\tau| > 2$; it has two fixed points on the boundary and no interior fixed point, and it translates along the geodesic joining them;
+3. **parabolic**, if $|\tau| = 2$ and $g \neq \pm 1$; it has exactly one fixed point on the boundary and no interior fixed point.
+
+The three types correspond to the three classes of the adjoint action of the unit group on the vector subspace: the elliptic isometries fix a vector of positive norm, the hyperbolic isometries fix a vector of negative norm and the two lightlike directions of its orthogonal plane, and the parabolic isometries fix a lightlike direction.
+
+**Proof.** The classification of elements of $\mathrm{SL}_2(\mathbb{R})$ by trace is the standard one, treated in *Hyperbolic Geometry* and in *Hyperbolic Rotations*; the translation to the vector subspace is the fixed-direction computation of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups* and §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*. $\square$
+
+**Corollary (The Isometry Types and the Roots of $\pm 1$).** The elliptic one-parameter subgroups are generated by the solutions of $\xi^2 = -1$, which are the points of the sheet; the hyperbolic subgroups are generated by the solutions of $\eta^2 = +1$, which are spacelike vectors and not points of the sheet; the parabolic subgroups are generated by the nilpotents.
+
+**Proof.** The three statements are the classification of the one-parameter subgroups in *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups* and §*Elliptic and Hyperbolic One-Parameter Subgroups*, together with the identification of the sheet with the solutions of $\xi^2 = -1$. $\square$
+
+## The Relation to the Rotations and the Lorentz Group
+
+**Theorem (Equivariance of the Model).** The identification of the sheet with the hyperbolic plane intertwines the adjoint action of $\mathrm{SL}_2(\mathbb{R})$ on the sheet with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$ on the half-plane, and the double cover $\mathrm{SL}_2(\mathbb{R}) \to \mathrm{SO}^{+}(2,1)$ is the statement that the same group of matrices acts by adjoint transformations on the hyperboloid and by Möbius transformations on the half-plane. The centre $\{\pm 1\}$ acts trivially in both descriptions.
+
+**Proof.** The equivariance is the theorem on the eigenline model; the double cover is *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*; the triviality of the centre is the statement that $\mathrm{PSL}_2(\mathbb{R})$ is the effective group of the action. $\square$
+
+The model is therefore a realisation of the homogeneous space of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Action on the Vector Subspace*, and the group action of the two articles is the same action in two presentations. The orbit of a point of the sheet is the sheet, and the stabiliser is the compact subgroup, so the geometry of the model is exactly the quotient $\mathrm{PSL}_2(\mathbb{R})/SO(2)$.
+
+## The Relation to the Hyperbolic Geometry of Part II
+
+**Theorem (Dictionary with Part II).** Under the identification of the sheet with the hyperbolic plane, the following objects correspond: the geodesics of the model are the intersections of the sheet with the central planes of $V$, and under $\zeta$ they are the vertical lines and the semicircles orthogonal to the real axis of the half-plane; the ideal points are the isotropic lines of the form, that is the points of the null cone, and under $\zeta$ they are the real axis together with the point at infinity; the angle between two geodesics is the angle measured by the metric $-B$ on the sheet and by the hyperbolic metric in the half-plane; the area element is the invariant measure $\mathrm{d}x\,\mathrm{d}y/y^2$; and the isometry group is $\mathrm{PSL}_2(\mathbb{R})$.
+
+**Proof.** The geodesics of a hyperboloid model are the central sections by *Split-Quaternion Geometry*, §*The Lorentzian Geometry of the Vector Subspace*, and their images under the biholomorphism $\zeta$ are the standard geodesics of the half-plane; the identification of the boundary with the null cone is the statement that the boundary of the hyperbolic plane in this model is the set of isotropic directions, which is the light cone; the remaining identifications are those of *Hyperbolic Geometry*. $\square$
+
+**Corollary (The Boundary Is the Projective Null Quadric of the Subspace).** The ideal boundary of the hyperbolic plane in this model is the projective null cone of the restricted form, a circle; the full projective null quadric $Q$ of the algebra, a torus, is a different object, the boundary being the projection of the cone of $V$ only.
+
+**Proof.** The boundary is the projective image of the lightlike directions of $V$, a circle by *Split-Quaternion Norm and Invertibility*, §*Isotropy*; the quadric $Q$ of the algebra is the torus of *Split-Quaternion Geometry*, §*The Null Quadric and the Ruling*, and it contains the boundary circle as a subvariety. $\square$
+
+## The Invariant Distance and the Area Form
+
+**Theorem (Distance and Area in the Three Models).** In the half-plane model the distance and the area element are
+
+$$
+\cosh d(z,w) = 1 + \frac{|z-w|^2}{2\,\operatorname{Im}z\,\operatorname{Im}w}, \qquad \mathrm{d}A = \frac{\mathrm{d}x\,\mathrm{d}y}{y^2},
+$$
+
+in the disc model they are obtained from these by the Cayley transform, and in the hyperboloid model they are the distance $\cosh d(v,w) = B(v,w)$ and the area element induced by $-B$ on the sheet. The three expressions agree under the identifications of the previous sections, and the function $\cosh d$ is the one whose value at the identity determines the metric.
+
+**Proof.** The half-plane formulas are the standard ones of *Hyperbolic Geometry*; the agreement is by the invariance under the group action, which acts transitively and preserves all three expressions. $\square$
+
+**Corollary (The Geodesics Are the Invariant Curves).** The geodesics are the images of the vertical lines and the semicircles orthogonal to the boundary in the half-plane; in the disc they are the diameters and the arcs orthogonal to the boundary circle; and in the hyperboloid model the central sections. The boundary is at infinity: no geodesic reaches it in finite time, and the metric is complete.
+
+**Proof.** The geodesics of the hyperboloid model are the central sections, the Cayley transform and the eigenline map are isometries, and completeness is the standard property of the hyperboloid model. $\square$
 
 ## Summary
 
-The anti-Hermitian four-plane $\mathbb{M}_-$ of the split quaternion algebra, with the Hermitian form $g$ of signature $(3,1)$, carries the hyperboloid model of hyperbolic three-space: the points are the elements of Hermitian norm $-1$ with a positive $je_0$-coordinate, the space is diffeomorphic to $\mathbb{R}^3$, and its metric is $d_H(\tilde X,\tilde Y) = \operatorname{arcosh}(-g(\tilde X,\tilde Y))$, complete of constant curvature $-1$. Its isometry group is $O(3,1)/\{\pm1\}$, acting transitively with isotropy $SO(3)$, so that $H^3\cong SO^{+}(3,1)/SO(3)$.
+The hyperbolic plane is realised on the split-quaternion algebra by the timelike sheet $\mathbb{H}^{+}$ of the hyperboloid $N = 1$ in the vector subspace, with the metric $-B$ of constant curvature $-1$, the distance given by $\cosh d(v,w) = B(v,w)$, and the isometry group $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ acting by the adjoint action. The sheet is the homogeneous space $\mathrm{PSL}_2(\mathbb{R})/SO(2)$, the points of the model are the solutions of $\xi^2 = -1$ lying in the sheet, and the geodesics are the central sections.
 
-The geodesics are the intersections of $H^3$ with the two-dimensional subspaces of signature $(1,1)$, equivalently the orbits of the hyperbolic one-parameter subgroups, and they are hyperbolas in their planes. The boundary at infinity is the projectivised null cone and is a two-sphere, conformally equivalent to the Riemann sphere, on which $SO^{+}(3,1)$ acts as $PSL_2(\mathbb{C})$ by Möbius transformations. The Klein model is the open unit ball with chords as geodesics; the Poincaré ball and upper half-space models are obtained conformally.
+The unit condition is $N = 1$ together with a choice of sheet; the level set has two sheets, exchanged by $v \mapsto -v$, by the conjugation and by any unit of norm $-1$, and preserved by the identity component of the isometry group. The two sheets are the two half-planes of the matrix model.
 
-The isometries are of three types: elliptic, fixing a point and rotating about it, and conjugate into the compact $SO(3)$; hyperbolic, translating along a unique geodesic and fixing its two boundary points; and parabolic, fixing a single boundary point and acting simply transitively on horospheres. The elliptic type is the one realised by the unitary group inside the split quaternion algebra; the parabolic type is not realised by any element of the algebra, since the algebra is semisimple and has no non-zero nilpotent, and the nilpotents belong to the Lie algebra of the isometry group alone. The comparison with the split complex case collapses the three types to one and the comparison with the quaternion sphere collapses them to the elliptic type only.
+The matrix models are explicit. The eigenline map $\zeta(\xi) = (c-b)/(d+i)$ is a bijection from the sheet onto the upper half-plane with inverse given by the traceless determinant-one matrix $M(z)$, and it intertwines the adjoint action with the fractional linear action of $\mathrm{SL}_2(\mathbb{R})$; the metric becomes $|\mathrm{d}\zeta|^2/(\operatorname{Im}\zeta)^2$. The Cayley transform carries the half-plane to the disc with the metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ and the conjugated matrix action. The isometries are classified by the trace into elliptic, hyperbolic and parabolic types, matching the three classes of one-parameter subgroups generated by the roots of $-1$, the roots of $+1$ and the nilpotents. The ideal boundary is the projective null cone of the vector subspace, a circle, and the full null quadric of the algebra, a torus, is the larger projective object.
 
 ## Summary of Notation
 
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | The split quaternion algebra |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $j$ | Split complex unit, $j^2 = +e_0$, central |
-| $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
-| $\mathbb{M}_- = \{a\,je_0 + v\}$ | Anti-Hermitian subspace, signature $(3,1)$ |
-| $g(\tilde X,\tilde X) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{M}_-$ |
-| $H^3 = \{\tilde X\in\mathbb{M}_- : g(\tilde X,\tilde X) = -1,\ a > 0\}$ | Hyperboloid model of hyperbolic three-space |
-| $d_H(\tilde X,\tilde Y) = \operatorname{arcosh}(-g(\tilde X,\tilde Y))$ | Hyperbolic distance |
-| $SO^{+}(3,1)$, $O^{\uparrow}(3,1)$ | Restricted Lorentz group and its sheet-preserving extension |
-| $\partial H^3$ | Boundary at infinity, the projectivised null cone $\cong S^2$ |
-| $PSL_2(\mathbb{C})$ | Isometry group of $H^3$ through its boundary action |
-| $\operatorname{Hor}(\xi,s)$ | Horosphere centred at the boundary point $\xi$ |
-| $H^1\cong\mathbb{R}$ | One-dimensional hyperbolic space, the split complex case |
-| $e^{\theta j} = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
+| Symbol | Meaning | Article |
+|---|---|---|
+| $\mathbb{H}^{+}$ | the timelike sheet of $\{N=1\}$ in $V$ | this article |
+| $-B$ on $\mathbb{H}^{+}$ | the hyperbolic metric of curvature $-1$ | *Split-Quaternion Geometry* |
+| $\cosh d(v,w) = B(v,w)$ | the hyperbolic distance on the sheet | this article |
+| $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$ | the isometry group | *Split-Quaternion Rotations and the Lorentz Group* |
+| $\zeta(\xi) = (c-b)/(d+i)$ | the eigenline map to the upper half-plane | this article |
+| $\mathbb{H}$ | the upper half-plane | *Hyperbolic Geometry* |
+| $M(z)$ | the traceless determinant-one matrix of a point of the half-plane | this article |
+| $w = (\zeta-i)/(\zeta+i)$ | the Cayley transform to the disc | this article |
+| $\mathbb{D}$ | the unit disc, with metric $4|\mathrm{d}w|^2/(1-|w|^2)^2$ | this article |
+| elliptic, hyperbolic, parabolic | the three types of isometry, by the trace | *Hyperbolic Geometry* |
+| ideal boundary | the projective null cone of $V$, a circle | this article |
+| $Q$ | the null quadric of the algebra, a torus | *Split-Quaternion Geometry* |
 
 ## Further Reading
 
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for the hyperboloid model, the Iwasawa decomposition and the horospheres.
-- John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, 2006), for the models of hyperbolic space and their conformal equivalences.
-- Lars V. Ahlfors, *Möbius Transformations in Several Dimensions* (University of Minnesota, 1981), for the boundary action and the identification of the conformal group of the sphere.
-- Alan F. Beardon, *The Geometry of Discrete Groups* (Springer, 1983), for the classification of isometries into elliptic, hyperbolic and parabolic types.
-- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the reverse Schwarz inequality for forms of signature $(3,1)$ and the geodesics of the hyperboloid.
-- Bruno P. Zimmermann, *Computational Group Theory and Physics* (Cambridge University Press, 1994), for the exceptional isomorphism $SO^{+}(3,1)\cong PSL_2(\mathbb{C})$ from the Lie-algebra side.
+- John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, 2006), for the hyperboloid, half-plane, disc and Klein models and the classification of the isometries.
+- Alan F. Beardon, *The Geometry of Discrete Groups* (Springer, 1983), for the action of $\mathrm{SL}_2(\mathbb{R})$ by Möbius transformations and the trace classification.
+- Joseph Lehner, *A Short Course in Automorphic Functions* (Holt, Rinehart and Winston, 1966), for the Cayley transform, the disc model and the boundary of the hyperbolic plane.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the hyperboloid model of the hyperbolic plane inside a Clifford algebra of signature $(2,1)$.

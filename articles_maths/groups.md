@@ -6,7 +6,7 @@ This article introduces the theory of groups, the algebraic structures that form
 
 The treatment is introductory and purely mathematical. We assume familiarity with sets, functions, and the basic theory of rings and algebras from *Rings: A General Introduction* and *Algebras: A General Introduction*. Rings carry two operations and algebras add a product; a group carries one. Every ring $(R, +, \cdot)$ contains the additive group $(R, +)$ and the group of units $(R^\times, \cdot)$, and every unital associative algebra $A$ has a group of units $A^\times$.
 
-We begin with the definition and elementary properties of groups, then develop the fundamental constructions: subgroups, homomorphisms, cosets, quotient groups, and group actions. We then study the standard classes of groups (cyclic, symmetric, alternating, dihedral, matrix, and quaternion groups) and the two structure theorems that organize the theory, the Sylow theorems for finite groups and the classification of finitely generated abelian groups.
+We begin with the definition and elementary properties of groups, then develop the fundamental constructions: subgroups, homomorphisms, cosets, quotient groups, and group actions. We then study the standard classes of groups (cyclic, symmetric, alternating, dihedral, matrix, and quaternion group) and the two structure theorems that organize the theory, the Sylow theorems for finite groups and the classification of finitely generated abelian groups.
 
 ---
 
@@ -30,7 +30,7 @@ called **multiplication** or **composition**, satisfying the following axioms.
 
 A group is **abelian** (or **commutative**) if $a b = b a$ for all $a, b \in G$; in that case the operation is often written additively as $a + b$, with identity $0$ and inverse $-a$. The **order** of a group, written $|G|$, is the cardinality of its underlying set, and $G$ is **finite** if $|G|$ is finite.
 
-**Examples.** The additive groups $(\mathbb{Z}, +)$, $(\mathbb{Q}, +)$, $(\mathbb{R}, +)$, $(\mathbb{C}, +)$ and the multiplicative groups $\mathbb{Q}^\times$, $\mathbb{R}^\times$, $\mathbb{C}^\times$ are abelian; $\mathbb{Z} \setminus \{0\}$ is not a group under multiplication, since only $\pm 1$ are invertible in $\mathbb{Z}$. For $n \geq 1$, $(\mathbb{Z}/n\mathbb{Z}, +)$ is abelian of order $n$. The **symmetric group** $S_n$ of bijections of $\{1, \ldots, n\}$ has order $n!$ and is nonabelian for $n \geq 3$, and the **general linear group** $GL_n(F)$ of invertible matrices over a field $F$ is a group. For any ring $R$, the units $R^\times$ form a group.
+**Examples.** The additive groups $(\mathbb{Z}, +)$ and $(\mathbb{Z}/n\mathbb{Z}, +)$, the latter of order $n$, are abelian; $\mathbb{Z} \setminus \{0\}$ is not a group under multiplication, since only $\pm 1$ are invertible in $\mathbb{Z}$. The **symmetric group** $S_n$ of bijections of $\{1, \ldots, n\}$ has order $n!$ and is nonabelian for $n \geq 3$, and the **general linear group** $GL_n(F)$ of invertible matrices over a field $F$ is a group. For any ring $R$, the units $R^\times$ form a group.
 
 ## 2. Elementary Properties
 
@@ -74,7 +74,7 @@ and its order equals the order of $a$. A group $G$ is **cyclic** if $G = \langle
 
 A nonempty subset $H \subseteq G$ is a **subgroup** if $a b^{-1} \in H$ for all $a, b \in H$. Equivalently, $H$ is closed under multiplication and inversion and contains $e$. A subgroup is itself a group under the inherited operation.
 
-**Examples.** The trivial subgroup $\{e\}$ and $G$ itself; $n \mathbb{Z} \subseteq \mathbb{Z}$; the **special linear group** $SL_n(F) = \{A : \det A = 1\}$; the **orthogonal group** $O_n(\mathbb{R}) = \{A : A^{\mathsf{T}} A = I\}$ and $SO_n(\mathbb{R}) = O_n(\mathbb{R}) \cap SL_n(\mathbb{R})$; and any cyclic subgroup $\langle a \rangle$. Intersections of subgroups are subgroups, but unions generally are not.
+**Examples.** The trivial subgroup $\{e\}$ and $G$ itself; $n \mathbb{Z} \subseteq \mathbb{Z}$; the **special linear group** $SL_n(F) = \{A : \det A = 1\}$; and any cyclic subgroup $\langle a \rangle$. Intersections of subgroups are subgroups, but unions generally are not.
 
 The **center** of $G$ is
 
@@ -304,13 +304,13 @@ Two permutations are conjugate in $S_n$ if and only if they have the same cycle 
 
 ## 16. Dihedral Groups
 
-For $n \geq 3$, the **dihedral group** $D_n$ is the group of symmetries of the regular $n$-gon, consisting of $n$ rotations and $n$ reflections, so $|D_n| = 2n$. It has the presentation
+For $n \geq 3$, the **dihedral group** $D_n$ is the group of order $2n$ with presentation
 
 $$
 D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle,
 $$
 
-and every element is uniquely $r^i s^j$ with $0 \leq i < n$ and $j \in \{0, 1\}$. The rotation subgroup $\langle r \rangle \cong C_n$ is normal of index $2$, so
+and every element is uniquely $r^i s^j$ with $0 \leq i < n$ and $j \in \{0, 1\}$. The cyclic subgroup $\langle r \rangle \cong C_n$ is normal of index $2$, so
 
 $$
 D_n \cong C_n \rtimes C_2.
@@ -362,15 +362,13 @@ The **free group** $F(X)$ on a set $X$ consists of the reduced words in the lett
 
 A **presentation** $\langle X \mid R \rangle$ exhibits a group as a quotient $F(X)/N$, where $N$ is the normal closure of the relations $R$; every group is a quotient of a free group, and examples include $\langle x \mid x^n \rangle$ for $C_n$ and $\langle r, s \mid r^n, s^2, (s r)^2 \rangle$ for $D_n$.
 
-## 20. Matrix Groups and the Quaternion Groups
+## 20. Matrix Groups and the Quaternion Group
 
 For a field $F$, the center of $GL_n(F)$ is the group of scalar matrices $\{a I : a \in F^\times\} \cong F^\times$, and the determinant is a surjective homomorphism onto $F^\times$ with kernel $SL_n(F)$, so that
 
 $$
 GL_n(F) / SL_n(F) \cong F^\times.
 $$
-
-The orthogonal group $O_n(\mathbb{R})$ has $SO_n(\mathbb{R})$ as a normal subgroup of index $2$, being the kernel of the determinant on $O_n(\mathbb{R})$. Over $\mathbb{C}$ the corresponding groups are the unitary group $U_n$ and the special unitary group $SU_n$.
 
 Over the finite field $\mathbb{F}_q$, the general linear group is finite of order
 
@@ -383,12 +381,10 @@ by choosing the columns successively as linearly independent vectors. For instan
 The **quaternion group** is
 
 $$
-Q_8 = \{\pm 1, \pm i, \pm j, \pm k\} \subseteq \mathbb{H},
+Q_8 = \{\pm 1, \pm i, \pm j, \pm k\},
 $$
 
 with the relations $i^2 = j^2 = k^2 = i j k = -1$. It has order $8$ and is nonabelian, with element orders $1, 2, 4, 4, 4, 4, 4, 4$. Its center is $\{\pm 1\}$, and $Q_8 / Z(Q_8) \cong C_2 \times C_2$. Every subgroup of $Q_8$ is normal, the proper nontrivial ones being $\{\pm 1\}$ and the three cyclic subgroups $\langle i \rangle$, $\langle j \rangle$, $\langle k \rangle$ of order $4$. A nonabelian group all of whose subgroups are normal is called **Hamiltonian**; $Q_8$ is the smallest nonabelian example.
-
-The **unit quaternions** $Sp(1) = \{q \in \mathbb{H} : \|q\| = 1\}$, where $\|q\|^2 = q \overline{q}$, form a subgroup of the multiplicative group $\mathbb{H}^\times$ of the division ring $\mathbb{H}$, since $\|q\| = 1$ implies $q^{-1} = \overline{q}$. It is isomorphic to $SU(2)$, and since every nonzero quaternion is $q = \|q\| u$ with $u \in Sp(1)$, we have $\mathbb{H}^\times \cong \mathbb{R}_{>0} \times Sp(1)$. Finally, the homomorphism $Sp(1) \to SO_3(\mathbb{R})$ is surjective with kernel $\{\pm 1\}$, so $SO_3(\mathbb{R}) \cong Sp(1)/\{\pm 1\}$: a rotation in three dimensions corresponds to two unit quaternions of opposite sign.
 
 ---
 
@@ -405,13 +401,12 @@ The **unit quaternions** $Sp(1) = \{q \in \mathbb{H} : \|q\| = 1\}$, where $\|q\
 | $D_n$, $n \geq 3$ | $2n$ | no | no | no |
 | $Q_8$ | $8$ | no | no | no |
 | $GL_n(F)$, $n \geq 2$ | depends on $F$ | no | no | no |
-| $Sp(1) \cong SU(2)$ | infinite | no | no | no |
 
 The cyclic groups of prime order are the abelian simple groups. The Sylow theorems describe the $p$-subgroups of a finite group and constrain its possible orders, while the structure theorem for finitely generated abelian groups classifies the abelian case.
 
 ## 22. Groups in the Wider Corpus
 
-The **group of units** $R^\times$ of a ring is a group under multiplication, recovering $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$, the multiplicative groups $F^\times$ of fields, and $M_n(F)^\times = GL_n(F)$. The biquaternion algebra $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H} \cong M_2(\mathbb{C})$ is not a division ring, so its units are $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, strictly fewer than its nonzero elements, which include zero divisors. The groups $SL_2(\mathbb{C})$ and $SU(2) \cong Sp(1)$ are the ones most relevant to the quaternionic and biquaternionic structures treated later in this series.
+The **group of units** $R^\times$ of a ring is a group under multiplication, recovering $(\mathbb{Z}/n\mathbb{Z})^\times$ of order $\varphi(n)$, the multiplicative groups $F^\times$ of fields, and $M_n(F)^\times = GL_n(F)$.
 
 ---
 

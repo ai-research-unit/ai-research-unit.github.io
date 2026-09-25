@@ -1,5 +1,5 @@
 
-# __Multilinear Algebra__
+# __Multilinear Spaces__
 
 ## Introduction
 

@@ -3,9 +3,9 @@
 
 ## Introduction
 
-A group is an abstract object: a set with an associative multiplication, an identity and inverses. The reason groups occur throughout mathematics is that they are *realised*: the elements of a group can be exhibited as transformations of some set, and the group multiplication then becomes composition of transformations. This article develops that realisation, which is the common thread running through the whole category. We treat transformations of a bare set, automorphisms of a set carrying structure, group actions as homomorphisms into a symmetric group, and the three levels at which a group is realised: as permutations of a set, as invertible linear maps of a module, and as invertible linear maps preserving a form.
+A group is an abstract object: a set with an associative multiplication, an identity and inverses. The reason groups occur throughout mathematics is that they are *realised*: the elements of a group can be exhibited as transformations of some set, and the group multiplication then becomes composition of transformations. This article develops that realisation, which is the common thread running through the whole category. We treat transformations of a bare set, automorphisms of a set carrying structure, group actions as homomorphisms into a symmetric group, and the principle that a group of automorphisms is determined by what it is required to preserve.
 
-Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields, unless a statement says otherwise; $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$ when only those two are meant. The corpus default base is the commutative ring, so module statements below are made over $R$; where a field, characteristic zero, or the invertibility of $2$ is needed, this is said explicitly. No physics is invoked: a symmetry group here is a group of transformations of a mathematical object, never of a physical system.
+Throughout, $R$ denotes a commutative ring with identity $1 \neq 0$ and $F$, $K$ denote fields, unless a statement says otherwise. No physics is invoked: a transformation group here is a group of transformations of a mathematical object, never of a physical system.
 
 The elementary theory of groups — associativity, order and powers, subgroups, homomorphisms, cosets, normal subgroups and the isomorphism theorems — is assumed from *Groups*, and the notation of that article is kept. Two companion articles are written with this one and deepen, respectively, the orbit-theoretic and the combinatorial sides of the material introduced here.
 
@@ -59,15 +59,11 @@ A **structure** on a set $X$ is any collection of distinguished data attached to
 
 The verification that $\operatorname{Aut}(X)$ is a subgroup of $\operatorname{Sym}(X)$ is formal: the identity preserves the data, a composition of two bijections preserving the data preserves the data, and the inverse of a preserving bijection preserves the data by definition. The content lies in the examples, where "preserve the data" is spelled out.
 
-**Example.** Let $X$ be a set with a single relation, say a partial order $\leq$. An automorphism is a bijection $\sigma$ with $x \leq y \iff \sigma(x) \leq \sigma(y)$, the **order automorphisms**. For a chain such as $\mathbb{Q}$ with its order, the order automorphisms are far more numerous than the identity.
+**Example.** Let $X$ be a set with a single relation, say a partial order $\leq$. An automorphism is a bijection $\sigma$ with $x \leq y \iff \sigma(x) \leq \sigma(y)$, the **order automorphisms**. For a chain such as $\mathbb{Z}$ with its order, the order automorphisms are far more numerous than the identity.
 
 **Example.** Let $X$ be a graph, a set with a set of two-element subsets, the edges. An automorphism is a bijection permuting vertices that maps edges to edges and non-edges to non-edges. For the complete graph on $n$ vertices every bijection qualifies, so $\operatorname{Aut}(K_n) = S_n$, whereas for a path with $n \geq 2$ vertices there are exactly two automorphisms.
 
 **Example.** Let $X = G$ be a group. An automorphism of the group structure is a bijection $\sigma$ with $\sigma(ab) = \sigma(a)\sigma(b)$ for all $a, b \in G$, and these form the group $\operatorname{Aut}(G)$ of *Groups*, §5. For each $u \in G$ the conjugation $c_u(x) = u x u^{-1}$ is an automorphism, the map $u \mapsto c_u$ has image the normal subgroup $\operatorname{Inn}(G)$ of inner automorphisms, and $\operatorname{Inn}(G) \cong G / Z(G)$.
-
-**Example.** Let $X = V$ be a left $R$-module. An automorphism of the module structure is a bijective $R$-linear map $V \to V$; the group is written $\operatorname{Aut}_R(V)$ and is the general linear group $GL(V)$ of the module. Its elements preserve addition and scalar multiplication and nothing more.
-
-**Example.** Let $X$ be a topological space. An automorphism of the topology is a bijection $\sigma$ with $\sigma(U)$ open for every open $U$ and $\sigma^{-1}(U)$ open for every open $U$, that is, a **homeomorphism** of $X$ onto itself.
 
 **Example.** Let $X$ be a set with no structure at all. Every bijection is an automorphism, so $\operatorname{Aut}(X) = \operatorname{Sym}(X)$. The symmetric group is thus the automorphism group of the weakest structure and the largest group of transformations of $X$.
 
@@ -77,7 +73,7 @@ $$
 \operatorname{Aut}(X, \text{structure}) \leq \operatorname{Sym}(X).
 $$
 
-This monotonicity in the structure is the organising principle of the three levels treated later in the article.
+This monotonicity in the structure is the organising principle of the article.
 
 ### Automorphisms and Endomorphisms
 
@@ -87,7 +83,7 @@ $$
 \operatorname{Aut}(X) = \operatorname{End}(X)^\times.
 $$
 
-For a module $V$ this reads $\operatorname{Aut}_R(V) = \operatorname{End}_R(V)^\times$: the invertible linear maps are the units of the endomorphism ring. Invertibility is not automatic for a self-map of a set: for a finite set a self-map is injective exactly when it is surjective, whereas for an infinite set injectivity is strictly weaker, the map $x \mapsto x + 1$ of $\mathbb{N}$ being injective and not surjective, hence an endomorphism of $\mathbb{N}$ that is not an automorphism.
+Invertibility is not automatic for a self-map of a set: for a finite set a self-map is injective exactly when it is surjective, whereas for an infinite set injectivity is strictly weaker, the map $x \mapsto x + 1$ of $\mathbb{N}$ being injective and not surjective, hence an endomorphism of $\mathbb{N}$ that is not an automorphism.
 
 ## Actions of Groups
 
@@ -119,7 +115,7 @@ The homomorphism $\rho$ is the **permutation representation** attached to the ac
 
 **Example.** The **natural action** of $S_n$ on $\{1, \ldots, n\}$, and its induced action on $k$-element subsets.
 
-**Example.** The action of $GL(V)$ on the module $V$ by evaluation, and its induced action on the set of lines, that is, on the one-dimensional submodules, and on the set of subspaces of any fixed dimension.
+**Example.** The action of a group $G$ on the set of its subgroups by conjugation, $a \cdot H = a H a^{-1}$, and its induced action on the set of subgroups of any fixed order.
 
 ### Faithful Actions and the Kernel
 
@@ -171,111 +167,19 @@ Cayley's theorem is the precise sense in which abstract groups and transformatio
 
 **Remark.** The permutation representation is not the only realisation. The **right regular action** $a \cdot x = x a$ is a right action, equivalently a left action of the opposite group; and for any subgroup $H$ the coset action realises $G$ as a group of permutations of the smaller set $G/H$, with kernel the **core** $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$.
 
-## Symmetry Groups of Figures
+## Structure and the Size of the Automorphism Group
 
-### Figures and Their Symmetries
-
-A **figure** in $\mathbb{K}^n$ is a subset $\Phi \subseteq \mathbb{K}^n$; for instance a polygon, a curve, or a finite point set. Its symmetries are the transformations of the ambient space preserving both the figure and the relevant structure of the space.
-
-**Definition.** The **linear symmetry group** of a figure $\Phi \subseteq \mathbb{K}^n$ is
+The realisation of a group as a transformation group is always with respect to a choice of structure on the set $X$, and the richer the structure, the smaller the group:
 
 $$
-G_\Phi = \{A \in O(n, \mathbb{K}) : A\Phi = \Phi\},
+\operatorname{Aut}(X, \text{structure}) \ \leq \ \operatorname{Sym}(X).
 $$
 
-where $O(n, \mathbb{K})$ is the group of invertible linear maps preserving the standard bilinear form $g(x, y) = \sum_i x_i y_i$, in the real case $O(n) = O(n, \mathbb{R})$. This is a subgroup of $O(n, \mathbb{K})$, being the stabiliser of the subset $\Phi$ under the action of $O(n, \mathbb{K})$ on the power set of $\mathbb{K}^n$; the subscript keeps the notation apart from the symmetric group $\operatorname{Sym}(X)$ of bijections of a set.
+At the level of a bare set the structure is empty, so every bijection is an automorphism, the group is $\operatorname{Sym}(X)$, and by Cayley's theorem every group occurs. This level is universal and has no invariant theory: there is nothing for a transformation to preserve, so no classification beyond the cardinality of $X$ is possible.
 
-Symmetries that involve translations, such as the reflections of a figure not containing the origin, are isometries of an affine space; these are treated with the affine group in the companion category and are not needed here. Every figure may be translated so that its centroid is at the origin, after which its symmetry group is the linear one above.
+Each further piece of structure placed on $X$ cuts the group of automorphisms down to those bijections that preserve it. The two further levels that the corpus uses are the linear structure, where $X$ is a module over a ring and an automorphism is a bijective linear map, giving the general linear group; and a linear structure together with a form, where an automorphism must preserve the form as well, giving the orthogonal, unitary and symplectic groups. Both are stated in terms of structures that this category has not reached — the scalars, the modules and the forms are introduced later — and both are developed where those structures are available: *The General Linear Group*, in the Linear Spaces slot of this Part, treats the first, and *Isometries and Orthogonal Transformations* treats the second in Part II, where a form and a distance are available. They are named here only to record the position of this article in the sequence.
 
-### The Symmetry Group of the Regular Polygon
-
-Let $n \geq 3$ and let $P_n \subseteq \mathbb{R}^2$ be the regular $n$-gon with vertices on the unit circle at angles $2\pi k / n$. Its linear symmetry group is the **dihedral group** $D_n$.
-
-**Proposition.** The symmetry group of $P_n$ consists of $n$ rotations and $n$ reflections, so $|D_n| = 2n$.
-
-**Proof.** A linear symmetry $A$ preserves the centre, which is the origin, and preserves the set of vertices, the extreme points of the convex hull. The vertices form a regular $n$-gon, and a symmetry is determined by the image of one vertex together with the orientation. There are $n$ possible images for a chosen vertex and two possible orientations, so $|D_n| \leq 2n$; the $n$ rotations of the circle group preserving the vertex set and the $n$ reflections $\theta \mapsto 2\pi k/n - \theta$ supply $2n$ distinct elements. $\square$
-
-The rotations form the cyclic subgroup $C_n \cong \mathbb{Z}/n\mathbb{Z}$, normal of index $2$. Writing $r$ for the rotation through $2\pi/n$ and $s$ for the reflection in the $x$-axis,
-
-$$
-D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle,
-$$
-
-and every element is uniquely $r^i s^j$ with $0 \leq i < n$, $j \in \{0, 1\}$; the group is the semidirect product $C_n \rtimes C_2$ with $C_2$ acting by inversion. The finite dihedral groups are treated aga, with their conjugacy classes and subgroups, in the applications article.
-
-### The Symmetry Groups of the Platonic Solids
-
-The linear symmetry group of each Platonic solid may be computed by permuting the vertices it is the convex hull of, and the rotation group acts faithfully on the vertex set. The identification with the symmetric or alternating group is read off from a faithful action on four or five objects: the rotations of the tetrahedron permute the four vertices, those of the cube permute the four space diagonals, and those of the icosahedron permute the five tetrahedra inscribed in it, dual to the five cubes inscribed in the dodecahedron.
-
-| Solid | Vertex set | Rotations | Full symmetry group |
-|---|---|---|---|
-| Tetrahedron | $4$ vertices | $12 \cong A_4$ | $24 \cong S_4$ |
-| Cube, octahedron | dual; $8$ and $6$ vertices | $24 \cong S_4$ | $48 \cong S_4 \times C_2$ |
-| Dodecahedron, icosahedron | dual; $20$ and $12$ vertices | $60 \cong A_5$ | $120 \cong A_5 \times C_2$ |
-
-The orders are the numbers of signed permutation matrices preserving the corresponding figure in suitable coordinates; for the cube the rotations are the $24$ signed permutation matrices of determinant $1$. The finite rotation groups of $\mathbb{R}^3$ are exactly the rotational symmetry groups of these solids together with the cyclic and dihedral groups, a classification stated and used.
-
-### Finite Subgroups of $O(2)$
-
-The classification of the planar case is short enough to give in full, and it exhibits the two families that recur in the applications.
-
-**Theorem.** A finite subgroup of $O(2)$ is cyclic $C_n$ or dihedral $D_n$.
-
-**Proof.** Let $G \leq O(2)$ be finite and let $H = G \cap SO(2)$, the subgroup of elements of determinant $1$. Under the identification of $SO(2)$ with the unit circle $\{e^{i\theta}\}$, a finite subgroup is cyclic: if $\theta_0$ is the smallest positive angle occurring, then for any angle $\theta$ in $H$, division with remainder gives $\theta = k\theta_0 + \rho$ with $0 \leq \rho < \theta_0$, and $\rho \in H$ because $e^{i\theta}(e^{i\theta_0})^{-k} \in H$, so $\rho = 0$ by minimality of $\theta_0$. Hence $H = C_n$ for some $n \geq 1$, generated by the rotation through $\theta_0 = 2\pi/n$. If $G = H$ the group is cyclic. Otherwise $G$ contains a reflection $s$; the composite $s \cdot h$ has determinant $-1$, so the determinant homomorphism $G \to \{\pm 1\}$ is surjective, $H$ is its kernel and therefore normal of index $2$, and $G = H \rtimes \langle s \rangle$ with $s^2 = e$. Conjugation by $s$ inverts the rotation, so $G \cong D_n$. $\square$
-
-## The Three Levels
-
-The realisation of a group as a transformation group is always with respect to a choice of structure on the set $X$, and the richer the structure, the smaller the group. There are three levels that matter for the other articles of this category.
-
-### Transformations of a Set
-
-At the first level $X$ is a bare set and the structure is empty, so every bijection is an automorphism, the group is $\operatorname{Sym}(X)$, and by Cayley's theorem every group occurs. This level is universal and has no invariant theory: there is nothing for a transformation to preserve, so no classification beyond the cardinality of $X$ is possible.
-
-### Transformations of a Linear Space
-
-At the second level $X = V$ is a left $R$-module and the structure consists of addition and the action of $R$, so an automorphism is a bijective $R$-linear map and the group is
-
-$$
-GL(V) = \operatorname{Aut}_R(V) \leq \operatorname{Sym}(V).
-$$
-
-After a choice of basis of a free module of rank $n$, this is the group of invertible $n \times n$ matrices, and the determinant is a homomorphism $\det : GL_n(F) \to F^\times$ for $V = F^n$ with $F$ a field. The linear structure is enough to make the group computable: kernels, images, eigenvalues and the rank–nullity theorem are available. The linear groups themselves, and the determinant, belong to the companion category on linear spaces; here only their place in the three-level picture is needed.
-
-### Transformations Preserving a Form
-
-At the third level the module carries, besides its linear structure, a form: a bilinear form $g$, a Hermitian form $h$, or an alternating form $\omega$. An automorphism must then preserve both the module structure and the form, so the group is smaller again.
-
-**Definition.** Let $V$ be a free $F$-module of finite rank and let $g$ be a bilinear form on $V$. The **orthogonal group** of $g$ is
-
-$$
-O(V, g) = \{A \in GL(V) : g(Au, Av) = g(u, v) \ \text{for all } u, v \in V\}.
-$$
-
-If instead $h$ is a Hermitian form on a complex vector space, the **unitary group** is $U(V, h) = \{A \in GL(V) : h(Au, Av) = h(u, v)\}$; and if $\omega$ is a nondegenerate alternating form, the **symplectic group** is $Sp(V, \omega) = \{A \in GL(V) : \omega(Au, Av) = \omega(u, v)\}$. Each is a subgroup of $GL(V)$ because the form is preserved by a composite and by an inverse when it is preserved by a map.
-
-For a quadratic form $q$ on $V$, whose associated bilinear form is $g_q(u, v) = q(u + v) - q(u) - q(v)$, preserving $q$ is the stronger condition, and the corresponding group is written $O(V, q)$; over a field of characteristic different from $2$ one has $q(u) = \tfrac{1}{2} g_q(u, u)$ and the two conditions agree, so that this is exactly where the invertibility of $2$ is required. In matrix form, with $\Gamma$ the matrix of the form in a basis, the defining condition is
-
-$$
-A^{*} \Gamma A = \Gamma
-$$
-
-in all three cases, the star being transposition for the bilinear forms on a real or general field and conjugate transposition for the Hermitian form; $\Gamma$ is symmetric, Hermitian or alternating according to the case. The three families $O$, $U$, $Sp$, and the low-dimensional isomorphisms among them such as $Sp(1) \cong SU(2)$, are the subject of the companion applications article; the point here is only their position at the third level.
-
-### The Three Levels Compared
-
-| Level | Structure on the object | Group | What is preserved |
-|---|---|---|---|
-| $1$ | none; $X$ a set | $\operatorname{Sym}(X)$ | nothing but the cardinality |
-| $2$ | linear; $V$ an $R$-module | $GL(V) = \operatorname{Aut}_R(V)$ | addition and scalar multiplication |
-| $3$ | linear plus a form | $O(V, g)$, $U(V, h)$, $Sp(V, \omega)$ | the linear structure and the form |
-
-The inclusions
-
-$$
-O(V, g),\ U(V, h),\ Sp(V, \omega) \ \leq \ GL(V) \ \leq \ \operatorname{Sym}(V)
-$$
-
-and, for an abstract group $G$, the Cayley embedding $G \hookrightarrow \operatorname{Sym}(G)$, are all instances of one principle: a transformation group is determined by what it is required to preserve, and more structure means fewer automorphisms. The three levels are those at which the corpus uses the principle: permutations of a set, invertible linear maps, and isometries of a form.
+The principle in one sentence: a transformation group is determined by what it is required to preserve, and more structure means fewer automorphisms.
 
 ## Summary
 
@@ -283,7 +187,7 @@ A transformation of a set $X$ is a function $X \to X$, and the invertible transf
 
 An action of a group $G$ on $X$ is a function $G \times X \to X$ with $e \cdot x = x$ and $(ab)\cdot x = a \cdot (b \cdot x)$, equivalently a homomorphism $\rho : G \to \operatorname{Sym}(X)$, the permutation representation. The action is faithful when $\rho$ is injective; in general the image is $G/\ker\rho$, so every action is a faithful action of a quotient. The orbits partition $X$, the stabilisers are subgroups, and every transitive $G$-set is isomorphic to a coset space $G/H$ with $H$ a point stabiliser.
 
-Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular representation, identifies abstract groups with transformation groups of their own underlying sets. The symmetry group of a figure is the stabiliser of that figure in the relevant transformation group; for the regular $n$-gon it is the dihedral group of order $2n$, and the finite subgroups of $O(2)$ are exactly the cyclic and dihedral groups. Finally, groups of transformations occur at three levels — permutations of a set, invertible linear maps of a module, and invertible linear maps preserving a form — and the groups $GL$, then $O$, $U$, $Sp$, are obtained by successively requiring more to be preserved.
+Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular representation, identifies abstract groups with transformation groups of their own underlying sets. The group of automorphisms of a structure is determined by what it preserves, and adding structure can only shrink it: at the level of a bare set the group is $\operatorname{Sym}(X)$. The further levels — a module over a ring, and a module carrying a form — require the scalars, the modules and the forms of later categories, and are developed there.
 
 ## Summary of Notation
 
@@ -292,7 +196,6 @@ Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular
 | $X$, $Y$ | Sets, or structured sets, on which transformations act |
 | $\mathrm{id}_X$ | Identity transformation of $X$ |
 | $\operatorname{Sym}(X)$ | Symmetric group of all bijections $X \to X$ |
-| $G_\Phi$ | Linear symmetry group of a figure $\Phi \subseteq \mathbb{K}^n$, a subgroup of $O(n, \mathbb{K})$ |
 | $S_n$ | $\operatorname{Sym}(\{1, \ldots, n\})$; order $n!$ |
 | $G^{\mathrm{op}}$ | Opposite group, multiplication $a \cdot b = b a$ |
 | $\operatorname{Aut}(X)$ | Group of automorphisms of a structure on $X$ |
@@ -304,11 +207,6 @@ Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular
 | $\operatorname{Orb}(x)$ | Orbit of $x$ |
 | $\operatorname{Stab}(x)$ | Stabiliser of $x$; $x \sim y \iff y \in \operatorname{Orb}(x)$ partitions $X$ |
 | $G/H$ | Coset space, a transitive $G$-set |
-| $P_n$, $D_n$ | Regular $n$-gon and its symmetry group, of order $2n$ |
-| $O(n, \mathbb{K})$, $O(n)$ | Orthogonal group of the standard bilinear form; $O(n) = O(n, \mathbb{R})$ |
-| $g$, $q$, $h$, $\omega$ | Bilinear form, quadratic form, Hermitian form, alternating form |
-| $GL(V) = \operatorname{Aut}_R(V)$ | General linear group of a module |
-| $O(V, g)$, $U(V, h)$, $Sp(V, \omega)$ | Groups of invertible linear maps preserving a form |
 | $G \hookrightarrow \operatorname{Sym}(G)$ | Cayley embedding by the left regular action |
 
 
@@ -319,10 +217,9 @@ Cayley's theorem, that $G$ embeds in $\operatorname{Sym}(G)$ by the left regular
 
 ## Further Reading
 
-- Michael Artin, *Algebra* (Prentice Hall, 1991), for transformation groups and the symmetry of figures treated concretely.
+- Michael Artin, *Algebra* (Prentice Hall, 1991), for transformation groups treated concretely.
 - David S. Dummit and Richard M. Foote, *Abstract Algebra* (Wiley, 3rd ed. 2004), for group actions, Cayley's theorem and the standard examples.
 - Joseph J. Rotman, *An Introduction to the Theory of Groups* (Springer, 4th ed. 1995), for a systematic treatment of permutation representations and group actions.
 - John S. Rose, *A Course on Group Theory* (Dover, 1994), for the orbit decomposition and coset spaces developed from first principles.
 - Derek J. S. Robinson, *A Course in the Theory of Groups* (Springer, 2nd ed. 1996), for group actions as a structural tool.
 - John D. Dixon and Brian Mortimer, *Permutation Groups* (Springer, Graduate Texts in Mathematics 163, 1996), for faithful actions of small degree and permutation group theory.
-- Larry C. Grove, *Classical Groups and Geometric Algebra* (American Mathematical Society, Graduate Studies in Mathematics 39, 2002), for the groups $O$, $U$, $Sp$ defined by forms.

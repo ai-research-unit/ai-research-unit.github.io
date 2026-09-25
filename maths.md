@@ -1,7 +1,7 @@
 # __AI Maths__
 
 ### <a href="articles_maths/introduction-and-mathematical-conventions.html">Introduction and Mathematical Conventions</a>
-<!-- the entry point to the corpus: what the four parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Linear Algebras shared by Parts I to III, and the extensions each part adds after it; the object ladder; the three rules of the ordering and the category rule of the reading unit; distance as the boundary between algebra and topology, and geometry as the second intent of the same layer; the synthetic progression of Part IV; the exclusion of physics; the notational and corpus conventions. -->
+<!-- the entry point to the corpus: what the five parts are and what each does; the five-slot spine Foundations, Groups, Rings and Fields, Linear Spaces and Linear Algebras shared by Parts I to III, and the extensions each part adds after it; the object ladder; the three rules of the ordering and the category rule of the reading unit; distance as the boundary between algebra and topology, and geometry as the second intent of the same layer; the synthetic progression of Part V; the transversal catalogues of Part IV; the exclusion of physics; the notational and corpus conventions. -->
 
 # Part I : Algebra
 
@@ -10,16 +10,16 @@
 ### - Theory
 
 ###<a href="articles_maths/sets-functions-and-relations.html">Sets, Functions and Relations</a>
-<!-- sets and the membership relation; subsets, the power set and the algebra of subsets; ordered pairs and the Cartesian product; relations and their properties; equivalence relations, partitions and quotients; order relations, partial and total; functions as a special kind of relation, injective, surjective and bijective maps, composition and inverse; families and indexed sets; the algebra of subsets as the first example of a Boolean algebra, forward-referenced to Part IV. -->
+<!-- sets and the membership relation; subsets, the power set and the algebra of subsets; ordered pairs and the Cartesian product; relations and their properties; equivalence relations, partitions and quotients; order relations, partial and total; functions as a special kind of relation, injective, surjective and bijective maps, composition and inverse; families and indexed sets; the algebra of subsets as the first example of a Boolean algebra, forward-referenced to Part V. -->
 
 ###<a href="articles_maths/logic-and-proof.html">Logic and Proof</a>
-<!-- propositional logic: the connectives, truth tables and tautologies; the laws of the algebra of propositions and their identity with the algebra of subsets, forward-referenced to the Boolean algebras of Part IV; predicate logic: variables, quantifiers, free and bound occurrences; the rules of inference and the structure of a formal proof; direct, contrapositive and contradiction arguments; induction and recursion as proof principles; consistency and completeness in outline; the notational conventions used throughout this corpus. -->
+<!-- propositional logic: the connectives, truth tables and tautologies; the laws of the algebra of propositions and their identity with the algebra of subsets, forward-referenced to the Boolean algebras of Part V; predicate logic: variables, quantifiers, free and bound occurrences; the rules of inference and the structure of a formal proof; direct, contrapositive and contradiction arguments; induction and recursion as proof principles; consistency and completeness in outline; the notational conventions used throughout this corpus. -->
 
 ###<a href="articles_maths/order-theory-and-lattices.html">Order Theory and Lattices</a>
-<!-- partial orders, total orders and well-orders; lattices, complete, distributive and modular lattices; Galois connections; the Knaster–Tarski theorem; the lattice of subsets, forward-referenced to the Boolean algebras of Part IV. -->
+<!-- partial orders, total orders and well-orders; lattices, complete, distributive and modular lattices; Galois connections; the Knaster–Tarski theorem; the lattice of subsets, forward-referenced to the Boolean algebras of Part V. -->
 
 ###<a href="articles_maths/cardinality-and-the-axiom-of-choice.html">Cardinality and the Axiom of Choice</a>
-<!-- finite and infinite sets; equipotence and cardinality; countable and uncountable sets, the countability of $\mathbb{Q}$ and the uncountability of $\mathbb{R}$; Cantor's theorem and the cardinality of the power set; the continuum hypothesis; the axiom of choice, Zorn's lemma and the well-ordering theorem, and their equivalence; the uses of Zorn's lemma in this corpus: maximal ideals, bases of a vector space, algebraic closure, maximal filters; cardinal arithmetic. -->
+<!-- finite and infinite sets; equipotence and cardinality; countable and uncountable sets, the countability of $\mathbb{N} \times \mathbb{N}$ and of $\mathbb{Z}$, the uncountability of the power set of $\mathbb{N}$; Cantor's theorem and the cardinality of the power set; the continuum hypothesis; the axiom of choice, Zorn's lemma and the well-ordering theorem, and their equivalence; the uses of Zorn's lemma in this corpus: maximal ideals, bases of a vector space, algebraic closure, maximal filters; cardinal arithmetic. -->
 
 ###<a href="articles_maths/set-theoretic-foundations.html">Set-Theoretic Foundations</a>
 <!-- the Zermelo–Fraenkel axioms and the axiom of choice; ordinals and cardinals; transfinite induction and recursion; the cumulative hierarchy; the independence of the continuum hypothesis; large cardinals in outline. -->
@@ -47,7 +47,7 @@
 <!-- abelian groups as modules over $\mathbb{Z}$; free abelian groups and rank; torsion and torsion-free groups; divisible groups and their classification; the structure of infinite abelian groups, the finitely generated case being treated separately. -->
 
 ### <a href="articles_maths/transformation-groups.html">Transformation Groups</a>
-<!-- a transformation of a set; composition and invertibility; the symmetric group $\operatorname{Sym}(X)$ and $\operatorname{Aut}(X)$ for a structure $X$; a group acting on a set as a homomorphism $G\to\operatorname{Sym}(X)$; faithful and effective actions; Cayley's theorem; the permutation representation; symmetry groups of figures; the linear case, the transformations of a vector space. -->
+<!-- a transformation of a set; composition and invertibility; the symmetric group $\operatorname{Sym}(X)$ and $\operatorname{Aut}(X)$ for a structure $X$; a group acting on a set as a homomorphism $G\to\operatorname{Sym}(X)$; faithful and effective actions; Cayley's theorem; the permutation representation; the automorphism group of a structure and its monotonicity in the structure. -->
 
 ### <a href="articles_maths/group-actions-and-structure.html">Group Actions and Structure</a>
 <!-- group actions, orbits, stabilisers, the orbit–stabiliser theorem, Burnside's lemma, the centre, the commutator subgroup and abelianization, composition series, the Sylow theorems. -->
@@ -89,16 +89,35 @@
 ### - Theory
 
 ### <a href="articles_maths/rings.html">Rings</a>
-<!-- definition (associative, unital), elementary properties, subrings, homomorphisms, commutative rings, ideals, quotient rings, zero divisors, units, fields, integral domains, division rings, modules, free modules, algebras over rings. -->
+<!-- definition of an associative ring with $1 \neq 0$, elementary properties, subrings, ring homomorphisms and quotients of rings; ideals, left, right and two-sided, generated ideals, the correspondence theorem, quotient rings; units, zero divisors, nilpotents and idempotents as vocabulary; prime and maximal ideals with their quotient characterisations. **This is the Ring rung of the chain that follows.** The former multi-rung article has been apportioned: the commutative law to *Commutative Rings*, nilpotent structure to *Reduced Rings and the Nilradical*, the domain to *Integral Domains*, fields to *Fields*, division rings to *Division Rings*, the factorisation rungs to *Unique Factorisation Domains*, *Principal Ideal Domains* and *Euclidean Domains*, and modules and algebras to *Modules* and *Algebras*. -->
 
-### <a href="articles_maths/units-zero-divisors-and-integral-domains.html">Units, Zero Divisors and Integral Domains</a>
-<!-- units, zero divisors, nilpotents, integral domains, characteristic, division rings, fields viewed as rings. -->
+### <a href="articles_maths/commutative-rings.html">Commutative Rings</a>
+<!-- the commutative law and what it adds: the binomial and multinomial theorems, the commutativity of the product of ideals, sums, products and intersections of ideals and the radical of an ideal; coprime ideals and the Chinese remainder theorem; the commutative theory of prime and maximal ideals — a quotient by a prime ideal is a domain and a quotient by a maximal ideal is a field; $\operatorname{Spec} R$ as a poset; the failure of each statement without commutativity. Ideals and quotient rings themselves are owned by *Rings*, §§6–7. -->
 
-### <a href="articles_maths/factorization-pid-ufd-and-euclidean-domains.html">Factorization: PID, UFD and Euclidean Domains</a>
-<!-- divisibility, irreducibles and primes, principal ideal domains, unique factorisation domains, Euclidean and norm-Euclidean domains, Gauss's lemma, examples. -->
+### <a href="articles_maths/reduced-rings-and-the-nilradical.html">Reduced Rings and the Nilradical</a>
+<!-- nilpotents as a class; a ring is reduced when it has no nonzero nilpotent, equivalently when its nilradical vanishes; the nilradical as the intersection of the prime ideals and as the radical of the zero ideal; reduced rings as subrings of products of domains; $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}\times\mathbb{Z}$ as the counterexamples that fix the rung. -->
+
+### <a href="articles_maths/integral-domains.html">Integral Domains</a>
+<!-- a commutative ring with $1 \neq 0$ and no zero divisors; cancellation; associates and divisibility; irreducibles and primes; the characteristic and the embedding of the prime field; the root theorem, that a polynomial over a domain of degree $< m$ with $m$ roots is zero; $\mathbb{Z}$ and $K[x]$ as the standard examples; the fraction field once localization is available; the domain that is not a unique factorisation domain is deferred to the rung below. -->
+
+### <a href="articles_maths/gcd-domains.html">GCD Domains</a>
+<!-- the greatest common divisor and the least common multiple in a domain; the gcd of two elements always existing; a GCD domain as the most general rung at which divisibility is governed by a gcd; the ideal-theoretic characterisation; UFD and Bézout domains as the two incomparable strengthenings, forward-referenced. -->
+
+### <a href="articles_maths/bezout-domains.html">Bézout Domains</a>
+<!-- Bézout's identity promoted to a definition: every finitely generated ideal is principal; the relation to the gcd; a Bézout domain is a GCD domain, and the converse fails; the principal ideal domains as the Noetherian Bézout domains, forward-referenced; the ring of all algebraic integers as the standard non-Noetherian example. -->
+
+### <a href="articles_maths/unique-factorisation-domains.html">Unique Factorisation Domains</a>
+<!-- irreducibles and primes; existence and uniqueness of factorisation into irreducibles; a domain is a unique factorisation domain exactly when every irreducible is prime; Euclid's lemma; the failure of unique factorisation in $\mathbb{Z}[\sqrt{-5}]$; content and Gauss's lemma; Eisenstein's criterion; the transfer of unique factorisation to the polynomial ring and the factorisation of polynomials over a field; $c(f)$. -->
+
+### <a href="articles_maths/principal-ideal-domains.html">Principal Ideal Domains</a>
+<!-- every ideal principal; a principal ideal domain is a unique factorisation domain; the ideal structure of the quotient by a prime ideal; the maximal ideals; $\mathbb{Z}[x]$ as the unique factorisation domain that is not principal. -->
+
+### <a href="articles_maths/euclidean-domains.html">Euclidean Domains</a>
+<!-- the Euclidean degree function $N$, division with remainder, the Euclidean algorithm and the extended form giving Bézout coefficients; a Euclidean domain is a principal ideal domain and hence a unique factorisation domain, giving the chain Euclidean $\Rightarrow$ principal $\Rightarrow$ unique factorisation; norm-Euclidean domains; $\mathbb{Z}[i]$ and the Gaussian primes as the standard worked example; $\mathbb{Z}[(1+\sqrt{-19})/2]$ as the principal ideal domain that is not Euclidean. -->
 
 ### <a href="articles_maths/localization-and-the-fraction-field.html">Localization and the Fraction Field</a>
 <!-- multiplicative sets, localization, $\operatorname{Frac}(R)$, local rings, the universal property. -->
+
 
 ###<a href="articles_maths/noetherian-and-artinian-rings.html">Noetherian and Artinian Rings</a>
 <!-- the ascending and descending chain conditions; the Hilbert basis theorem; the Akizuki–Hopkins theorem; the relation to the finitely generated modules of Part I. -->
@@ -187,6 +206,24 @@
 ### <a href="articles_maths/algebraically-closed-fields.html">Algebraically Closed Fields</a>
 <!-- algebraic closure, the fundamental theorem of algebra, Artin–Schreier, the non-orderability of $\mathbb{C}$. -->
 
+### <a href="articles_maths/semiprime-rings.html">Semiprime Rings</a>
+<!-- the non-commutative analogue of a reduced ring: a ring with no nonzero nilpotent ideal; the lower nilradical as the intersection of the prime ideals; a semiprime ring as a subdirect product of prime rings; the commutative case is *Reduced Rings and the Nilradical*. -->
+
+### <a href="articles_maths/prime-rings.html">Prime Rings</a>
+<!-- a ring in which a product of two nonzero ideals is nonzero; prime ideals in the non-commutative sense and the failure of the commutative correspondence with quotients; every prime ring is semiprime and the converse fails; every domain is prime and the converse fails. -->
+
+### <a href="articles_maths/non-commutative-domains.html">Non-Commutative Domains</a>
+<!-- a ring with $1 \neq 0$ and no zero divisors, without the commutative hypothesis; cancellation on both sides; the asymmetry of the left and the right ideals; $\mathbb{H}$, the free algebra, the Weyl algebra and the group ring of a torsion-free group; the intersection with the commutative rung is exactly the integral domains. -->
+
+### <a href="articles_maths/ore-domains-and-division-rings-of-fractions.html">Ore Domains and Division Rings of Fractions</a>
+<!-- the Ore condition and the Ore domain; the division ring of fractions of an Ore domain, the non-commutative analogue of the fraction field; Malcev–Neumann series over an ordered group; the division ring of fractions of the Weyl algebra; the free algebra as the standard non-Ore domain; no completion and no adic topology are used. -->
+
+### <a href="articles_maths/division-rings.html">Division Rings</a>
+<!-- a ring with $1 \neq 0$ in which every nonzero element is a unit, without the commutative hypothesis; a skew field; the centre is a field and the division ring is an algebra over it, possibly of infinite dimension there; a commutative division ring is a field; Wedderburn's little theorem, that every finite division ring is a field; $\mathbb{H}$ and the division ring of fractions of the Weyl algebra as the two kinds of example. -->
+
+### <a href="articles_maths/von-neumann-regular-rings.html">Von Neumann Regular Rings</a>
+<!-- a ring in which every principal left ideal is generated by an idempotent, equivalently every finitely generated left ideal is idempotent-generated; the commutative von Neumann regular rings as exactly the reduced rings of Krull dimension zero, equivalently those whose localization at every maximal ideal is a field; reduced von Neumann regular rings as the strongly regular rings; Boolean rings as the examples of characteristic two, and $\mathbb{Z}$, $k[x]$, $\mathbb{Z}/4\mathbb{Z}$ and the local rings as the non-examples; the failure of the class to be closed under quotients, and the place of the class among the rings of *Reduced Rings and the Nilradical*. -->
+
 ###<a href="articles_maths/real-algebraic-geometry.html">Real Algebraic Geometry</a>
 <!-- real algebraic sets and semialgebraic sets; the Tarski–Seidenberg theorem; the relation to the real-closed fields of this part. -->
 
@@ -241,7 +278,7 @@
 ### <a href="articles_maths/affine-spaces-and-translations.html">Affine Spaces and Translations</a>
 <!-- an affine space as a set on which $V$ acts simply transitively (a torsor); translations as the additive group $V$; a translation has no fixed point and is not linear; the affine group $\operatorname{Aff}(V)=V\rtimes GL(V)$; affine independence, barycentres and affine combinations; points, lines and planes; the isometry group of an affine space is treated in Part II, where a form and a distance are introduced. -->
 
-###<a href="articles_maths/multilinear-algebra.html">Multilinear Algebra</a>
+###<a href="articles_maths/multilinear-spaces.html">Multilinear Spaces</a>
 <!-- multilinear maps and the tensor product; the universal property; the relation to the tensor, symmetric and exterior algebras of this part. -->
 
 ### <a href="articles_maths/the-balanced-product.html">The Balanced Product</a>
@@ -256,63 +293,6 @@
 ### <a href="articles_maths/localization-and-completion-of-modules.html">Localization and Completion of Modules</a>
 <!-- $S^{-1}M$, $I$-adic completion, flatness, behaviour under closure of the base. -->
 
-###<a href="articles_maths/module-categories.html">Module Categories</a>
-<!-- the category of modules over a ring; functors and natural transformations between module categories. -->
-
-###<a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
-<!-- additive and abelian categories; kernels, cokernels and exact sequences; the Freyd–Mitchell embedding theorem; the relation to the module categories of this part; the Grothendieck categories, the categories with a generator and all colimits, and the Gabriel–Popescu theorem. -->
-
-###<a href="articles_maths/homological-algebra.html">Homological Algebra</a>
-<!-- chain complexes and homology; exact sequences and the snake lemma; projective and injective resolutions; the relation to the modules of this part. -->
-
-###<a href="articles_maths/derived-functors.html">Derived Functors</a>
-<!-- left and right derived functors; the long exact sequence. -->
-
-###<a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
-<!-- the functors Ext and Tor and their interpretations; the universal coefficient theorem; the Künneth formula; the applications to algebraic topology belong to Part II. -->
-
-###<a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
-<!-- the notion of a spectral sequence; filtration and convergence; the Grothendieck spectral sequence; the Leray–Serre sequence of a fibration belongs to Part II. -->
-
-###<a href="articles_maths/derived-categories.html">Derived Categories</a>
-<!-- the derived category of an abelian category; triangulated categories; the relation to derived functors. -->
-
-###<a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
-<!-- the Grothendieck group $K_0$ of a ring and the projective modules that generate it; $K_1$ and the determinant; the higher K-groups are treated in Part II, where the topological constructions they need are available. -->
-
-###<a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
-<!-- the Hochschild homology and cohomology of an algebra; the relation to the trace and to the determinant. -->
-
-###<a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
-<!-- cyclic homology and its relation to Hochschild homology; the cyclic bicomplex; the Connes exact sequence relating the two; the trace map from Hochschild homology; the applications to the spectral triples and the noncommutative geometry of Part II. -->
-
-###<a href="articles_maths/deformation-theory.html">Deformation Theory</a>
-<!-- deformations of algebras and of modules; the Kodaira–Spencer map; obstruction theory; the applications to moduli belong to Part II. -->
-
-###<a href="articles_maths/operads.html">Operads</a>
-<!-- operads and their algebras; the little disks operad; the relation to the algebras of this part; the homotopy-theoretic applications belong to Part II; the bar and cobar constructions, and the algebra of operads. -->
-
-###<a href="articles_maths/quiver-representations-and-representation-type.html">Quiver Representations and Representation Type</a>
-<!-- quivers and their representations; path algebras; Gabriel's theorem on finite representation type; the finite, tame and wild representation types and the Drozd theorem. -->
-
-###<a href="articles_maths/auslander-reiten-theory.html">Auslander–Reiten Theory</a>
-<!-- almost split sequences; the Auslander–Reiten quiver; the representation type of an algebra. -->
-
-###<a href="articles_maths/tilting-theory.html">Tilting Theory</a>
-<!-- tilting modules and tilted algebras; the Brenner–Butler theorem; the relation to the derived categories of this part. -->
-
-###<a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
-<!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
-
-###<a href="articles_maths/topoi.html">Topoi</a>
-<!-- elementary and Grothendieck topoi; the logical and categorical content; the relation to the categories of this part; sheaves on a topological space belong to Part II. -->
-
-###<a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
-<!-- Grothendieck topologies and sites; sheaves on a site; the categorical content; the cohomological theory on a topological space belongs to Part II. -->
-
-###<a href="articles_maths/descent-theory.html">Descent Theory</a>
-<!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
-
 ### - Applications
 
 ### <a href="articles_maths/finitely-generated-abelian-groups.html">Finitely Generated Abelian Groups</a>
@@ -324,15 +304,18 @@
 ### <a href="articles_maths/vector-spaces-over-finite-fields.html">Vector Spaces over Finite Fields</a>
 <!-- counting subspaces, the Gaussian binomial coefficients, $GL_n(\mathbb{F}_q)$ and its order. -->
 
-### <a href="articles_maths/lattices-and-the-quaternion-lattice.html">Lattices and the Quaternion Lattice</a>
-<!-- free $\mathbb{Z}$-modules, rank, the Lipschitz and Hurwitz lattices in $\mathbb{R}^4$, base change $\mathbb{H}(\mathbb{Z})\otimes_{\mathbb{Z}}\mathbb{R}=\mathbb{H}$; the strictly module-level content underlying $\mathbb{H}$ (the product is added at the *Linear Algebras* level). -->
-
 ## Linear Algebras
 
 ### - Theory
 
 ### <a href="articles_maths/algebras.html">Algebras</a>
 <!-- modules over a commutative ring; what an algebra is (an $R$-module with a bilinear product); the relation to modules; associativity, unit and commutativity; ideals and quotients; constructions, including the tensor and free algebras. -->
+
+### <a href="articles_maths/associative-algebras.html">Associative Algebras</a>
+<!-- the associative algebras; associativity as a polynomial identity; the associator, and the power-associativity that outlives it; the free associative algebra and the tensor algebra; the universal enveloping algebra of a Lie algebra as the associative algebra attached to a non-associative one; the algebras that fail associativity. -->
+
+### <a href="articles_maths/unital-algebras.html">Unital Algebras</a>
+<!-- the algebras with an identity, and the rings with identity read as algebras; the unit group and the invertible elements; the unitisation of a non-unital algebra by adjoining a unit; the homomorphisms that preserve the identity and those that do not; the non-unital algebras of the corpus, among them the convolution algebra $L^1(G)$ and the algebras of compact operators. -->
 
 ### <a href="articles_maths/ideals-and-quotients-of-algebras.html">Ideals and Quotients of Algebras</a>
 <!-- subalgebras, ideals, quotient algebras, algebra homomorphisms, the isomorphism theorems. -->
@@ -388,10 +371,55 @@
 ###<a href="articles_maths/calabi-yau-algebras.html">Calabi–Yau Algebras</a>
 <!-- Calabi–Yau algebras and their Hochschild homology; the relation to the derived categories of this part. -->
 
+###<a href="articles_maths/module-categories.html">Module Categories</a>
+<!-- the category of modules over a ring; functors and natural transformations between module categories. -->
+
+###<a href="articles_maths/abelian-and-grothendieck-categories.html">Abelian and Grothendieck Categories</a>
+<!-- additive and abelian categories; kernels, cokernels and exact sequences; the Freyd–Mitchell embedding theorem; the relation to the module categories of this part; the Grothendieck categories, the categories with a generator and all colimits, and the Gabriel–Popescu theorem. -->
+
+###<a href="articles_maths/homological-algebra.html">Homological Algebra</a>
+<!-- chain complexes and homology; exact sequences and the snake lemma; projective and injective resolutions; the relation to the modules of this part. -->
+
+###<a href="articles_maths/derived-functors.html">Derived Functors</a>
+<!-- left and right derived functors; the long exact sequence. -->
+
+###<a href="articles_maths/ext-and-tor.html">Ext and Tor</a>
+<!-- the functors Ext and Tor and their interpretations; the universal coefficient theorem; the Künneth formula; the applications to algebraic topology belong to Part II. -->
+
+###<a href="articles_maths/spectral-sequences.html">Spectral Sequences</a>
+<!-- the notion of a spectral sequence; filtration and convergence; the Grothendieck spectral sequence; the Leray–Serre sequence of a fibration belongs to Part II. -->
+
+###<a href="articles_maths/derived-categories.html">Derived Categories</a>
+<!-- the derived category of an abelian category; triangulated categories; the relation to derived functors. -->
+
+###<a href="articles_maths/k-theory-of-rings.html">K-Theory of Rings</a>
+<!-- the Grothendieck group $K_0$ of a ring and the projective modules that generate it; $K_1$ and the determinant; the higher K-groups are treated in Part II, where the topological constructions they need are available. -->
+
+###<a href="articles_maths/hochschild-homology.html">Hochschild Homology</a>
+<!-- the Hochschild homology and cohomology of an algebra; the relation to the trace and to the determinant. -->
+
+###<a href="articles_maths/cyclic-homology.html">Cyclic Homology</a>
+<!-- cyclic homology and its relation to Hochschild homology; the cyclic bicomplex; the Connes exact sequence relating the two; the trace map from Hochschild homology; the applications to the spectral triples and the noncommutative geometry of Part II. -->
+
+###<a href="articles_maths/deformation-theory.html">Deformation Theory</a>
+<!-- deformations of algebras and of modules; the Kodaira–Spencer map; obstruction theory; the applications to moduli belong to Part II. -->
+
+###<a href="articles_maths/operads.html">Operads</a>
+<!-- operads and their algebras; the little disks operad; the relation to the algebras of this part; the homotopy-theoretic applications belong to Part II; the bar and cobar constructions, and the algebra of operads. -->
+
+###<a href="articles_maths/topoi.html">Topoi</a>
+<!-- elementary and Grothendieck topoi; the logical and categorical content; the relation to the categories of this part; sheaves on a topological space belong to Part II. -->
+
+###<a href="articles_maths/sheaves-on-sites.html">Sheaves on Sites</a>
+<!-- Grothendieck topologies and sites; sheaves on a site; the categorical content; the cohomological theory on a topological space belongs to Part II. -->
+
+###<a href="articles_maths/descent-theory.html">Descent Theory</a>
+<!-- descent for sheaves and for modules; the relation to Grothendieck topologies; the geometric applications belong to Part II. -->
+
 ### - Applications
 
 ### <a href="articles_maths/examples-of-algebras.html">Examples of Algebras</a>
-<!-- the small zoo built up concretely: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{D}$, the dual numbers, $\mathbb{H}$, the split quaternions, $\mathbb{B}$, $M_n(k)$, the polynomial algebra $k[x]$ and the group algebra $k[G]$; for each, the dimension, the centre, the units, the zero divisors, the one- and two-sided ideals, and whether it is a division algebra, simple or semisimple. -->
+<!-- the small zoo built up concretely: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{D}$, the dual numbers, $\mathbb{H}$, the split biquaternions, $\mathbb{B}$, $M_n(k)$, the polynomial algebra $k[x]$ and the group algebra $k[G]$; for each, the dimension, the centre, the units, the zero divisors, the one- and two-sided ideals, and whether it is a division algebra, simple or semisimple. -->
 
 ### <a href="articles_maths/matrix-algebras.html">Matrix Algebras</a>
 <!-- $M_n(k)$, matrix units, trace and determinant, simplicity, centre, tensor products of matrix algebras. -->
@@ -401,6 +429,9 @@
 
 ### <a href="articles_maths/group-algebras.html">Group Algebras</a>
 <!-- $k[G]$, the regular representation, the augmentation ideal, group algebras of finite groups. -->
+
+### <a href="articles_maths/non-associative-algebras-and-the-property-ladder.html">Non-Associative Algebras and the Property Ladder</a>
+<!-- the identities between associativity and non-associativity: alternativity, flexibility, power-associativity and the Moufang identities; which of them the octonions satisfy and which they fail; the relation to the Jordan algebras of this part and to the Hurwitz theorem of this category. -->
 
 ### <a href="articles_maths/division-algebras.html">Division Algebras</a>
 <!-- Frobenius' theorem over $\mathbb{R}$, Wedderburn's theorem, Hurwitz' theorem, why the chain of real division algebras stops at the octonions, the chain itself being developed in the article that follows; the classification of the composition algebras proper is a statement about a norm form and is treated in Part II with the other norm forms. -->
@@ -538,6 +569,18 @@
 ###<a href="articles_maths/integral-representations.html">Integral Representations</a>
 <!-- representations over the integers; the relation to the modular representation theory and to the representations of finite groups. -->
 
+###<a href="articles_maths/quiver-representations-and-representation-type.html">Quiver Representations and Representation Type</a>
+<!-- quivers and their representations; path algebras; Gabriel's theorem on finite representation type; the finite, tame and wild representation types and the Drozd theorem. -->
+
+###<a href="articles_maths/auslander-reiten-theory.html">Auslander–Reiten Theory</a>
+<!-- almost split sequences; the Auslander–Reiten quiver; the representation type of an algebra. -->
+
+###<a href="articles_maths/tilting-theory.html">Tilting Theory</a>
+<!-- tilting modules and tilted algebras; the Brenner–Butler theorem; the relation to the derived categories of this part. -->
+
+###<a href="articles_maths/cluster-algebras.html">Cluster Algebras</a>
+<!-- cluster algebras and their seeds; the Laurent phenomenon; the relation to quiver representations. -->
+
 ### - Applications
 
 ### <a href="articles_maths/representations-of-groups.html">Representations of Groups</a>
@@ -552,7 +595,7 @@
 ### <a href="articles_maths/quaternionic-and-biquaternionic-modules.html">Quaternionic and Biquaternionic Modules</a>
 <!-- $\mathbb{H}$-modules as quaternionic vector spaces, rank over a division ring, why $\mathbb{B}$-modules need not be free, zero divisors as obstructions to bases. -->
 
-# Part II : Topology
+# Part II : Topology and Geometry
 
 ## Foundations of Topology
 
@@ -863,6 +906,9 @@
 ### <a href="articles_maths/the-number-systems-as-clifford-algebras.html">The Number Systems as Clifford Algebras</a>
 <!-- The dictionary $\mathbb{C}$, $\mathbb{D}$, $\mathbb{H}$, split-$\mathbb{H}$, $M_2(\mathbb{R})$, $\mathbb{B}$; the norm form; Hurwitz's theorem. -->
 
+### <a href="articles_maths/lattices-and-the-quaternion-lattice.html">Lattices and the Quaternion Lattice</a>
+<!-- an integral lattice as a free $\mathbb{Z}$-module carrying a positive definite form: rank, index, covolume, duality and base change; the Lipschitz and Hurwitz lattices in $\mathbb{R}^4$, of covolume $1$ and $\tfrac12$ and index $2$ in each other, realising the norm form of $\mathbb{H}$ and containing the $8$ Lipschitz and $24$ Hurwitz units. An instance of a quadratic space, which is why it sits in this category; the multiplicative structure of $\mathbb{H}$ is from *Division Algebras*. -->
+
 ### <a href="articles_maths/the-biquaternion-algebra-as-a-clifford-algebra.html">The Biquaternion Algebra as a Clifford Algebra</a>
 <!-- $\mathbb{B}\cong\mathbb{C}l_2\cong Cl_{3,0}$, complexification of $\mathbb{H}$, the volume element, idempotents and zero divisors, ideals and the Peirce decomposition. -->
 
@@ -972,6 +1018,9 @@
 ###<a href="articles_maths/homogeneous-spaces.html">Homogeneous Spaces</a>
 <!-- homogeneous spaces $G/H$; the representation-theoretic and the geometric treatments are brought together here. -->
 
+### <a href="articles_maths/transformation-groups-and-the-erlangen-program.html">Transformation Groups and the Erlangen Program</a>
+<!-- Klein's principle: a geometry is the study of the invariants of a transformation group, and a Klein geometry is a pair $(G,H)$ with $G$ a Lie group and $H$ a closed subgroup together with the homogeneous space $G/H$, as in *Homogeneous Spaces* and *Lie Groups*; Euclidean, spherical, hyperbolic, affine, projective, conformal and Möbius geometry each read through the group that defines it; the correspondence $G \to \operatorname{Aut}(X)$ and the hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure})$ of *Transformation Groups*; the limits of the principle, a Riemannian manifold of general curvature not being a Klein geometry, and the place of the principle in the classification of the geometries of constant curvature. -->
+
 ###<a href="articles_maths/symmetric-spaces.html">Symmetric Spaces</a>
 <!-- symmetric spaces and their classification; the relation to the homogeneous spaces and to the Lie groups of this part. -->
 
@@ -980,6 +1029,9 @@
 
 ###<a href="articles_maths/mapping-class-groups.html">Mapping Class Groups</a>
 <!-- mapping class groups and their properties. -->
+
+### <a href="articles_maths/thompson-groups-and-the-cantor-set.html">Thompson Groups and the Cantor Set</a>
+<!-- the three Thompson groups $F$, $T$ and $V$ as the groups of the piecewise-linear homeomorphisms of the interval, the circle and the Cantor set defined by pairs of finite binary trees, with tree diagrams, the Cantor set $\{0,1\}^{\mathbb{N}}$ and the prefix-replacement description of $V$; $F$ and $T$ finitely presented, $V$ finitely generated and not finitely presented; the simplicity of $F$, $T$ and $V$ and the place of $F$ among the infinite finitely presented simple groups; the relation to *Diffeomorphism Groups* and to *Continuum Theory*. -->
 
 ###<a href="articles_maths/fractal-geometry.html">Fractal Geometry</a>
 <!-- fractals and their properties; the Hausdorff dimension; the relation to the metric geometry of this part and to the dynamical systems of Part III. -->
@@ -1004,6 +1056,9 @@
 
 ###<a href="articles_maths/cobordism-and-surgery-theory.html">Cobordism and Surgery Theory</a>
 <!-- cobordism theory and its properties; the relation to surgery theory and to the algebraic topology of this part; the surgery of manifolds and the surgery exact sequence. -->
+
+### <a href="articles_maths/wild-and-exotic-manifolds.html">Wild and Exotic Manifolds</a>
+<!-- the manifolds that escape the smooth classification: the Whitehead manifold, a contractible open three-manifold not homeomorphic to $\mathbb{R}^3$, with *Low-Dimensional Topology*; the exotic spheres, smooth manifolds homeomorphic but not diffeomorphic to $S^7$ and the classes of them in the higher dimensions, with *Cobordism and Surgery Theory*; the Alexander horned sphere and the wild embeddings of spheres and cells; the failure of the Schoenflies theorem in dimension three; the existence of manifolds with a topological and no smooth structure, and the relation between the smooth, the piecewise-linear and the topological categories. -->
 
 ###<a href="articles_maths/supergeometry.html">Supergeometry</a>
 <!-- supermanifolds and their geometry; the relation to the superalgebras of Part I and to the graded structures of this part. -->
@@ -1115,6 +1170,9 @@
 ### <a href="articles_maths/measure-theory-and-integration.html">Measure Theory and Integration</a>
 <!-- $\sigma$-algebras and measurable spaces; measures and their elementary properties; outer measure and the Carathéodory extension; measurable functions; the Lebesgue integral on a general measure space and its convergence theorems, monotone and dominated; Lebesgue measure on $\mathbb{R}^n$; the $L^p$ spaces, completeness and duality, with $L^2$ as the basic case; product measures and the Fubini–Tonelli theorems; signed and complex measures and the Radon–Nikodym theorem. -->
 
+### <a href="articles_maths/algorithmic-randomness-and-chaitins-omega.html">Algorithmic Randomness and Chaitin's $\Omega$</a>
+<!-- the effective refinement of measure theory: computable real numbers and computably enumerable sets, effective null sets, and the Martin-Löf random reals as those that lie in no effective null set; the Kolmogorov and prefix complexity of a finite string and the incompressibility criterion of randomness; Chaitin's $\Omega$ as the halting probability of a prefix-free universal machine, a computably enumerable real that is random and therefore not computable; the halting problem and the immunity properties of the random reals; the failure of the randomness classes to be closed under the arithmetic operations. -->
+
 ###<a href="articles_maths/modes-of-convergence.html">Modes of Convergence</a>
 <!-- convergence of a sequence in a metric or uniform space; pointwise and uniform convergence of a sequence of functions, and the distinction that the topology cannot see; convergence almost everywhere and in measure; convergence in the $L^p$ norms, and the implications and counterexamples relating all the modes; the theorems that justify exchanging two limits, and the conditions for interchanging limit with integral, with derivative and with an infinite sum; Egorov's and Lusin's theorems; the role of completeness and of uniform integrability. -->
 
@@ -1141,7 +1199,7 @@
 ### - Theory
 
 ###<a href="articles_maths/harmonic-analysis-on-groups.html">Harmonic Analysis on Groups</a>
-<!-- the Fourier transform on a locally compact abelian group; characters and Pontryagin duality; Haar measure and the convolution theorem; the inversion and Plancherel theorems; the compact, discrete and finite cases; the group algebra; the obstruction for non-abelian groups and the role of the irreducible representations; the general theory that the per-system transforms of Part IV instantiate. -->
+<!-- the Fourier transform on a locally compact abelian group; characters and Pontryagin duality; Haar measure and the convolution theorem; the inversion and Plancherel theorems; the compact, discrete and finite cases; the group algebra; the obstruction for non-abelian groups and the role of the irreducible representations; the general theory that the per-system transforms of Part V instantiate. -->
 
 ###<a href="articles_maths/analysis-on-compact-groups.html">Analysis on Compact Groups</a>
 <!-- Haar measure on a compact group and its normalisation; characters and the orthogonality relations; the classification of the irreducible representations for the classical groups; the non-abelian counterpart of Pontryagin duality and the obstruction to a full duality; the worked cases $SU(2)$, $SO(3)$ and the circle. -->
@@ -1182,6 +1240,9 @@
 
 ###<a href="articles_maths/analytic-functions-and-power-series.html">Analytic Functions and Power Series</a>
 <!-- power series over a valued field; the radius of convergence and the ultrametric rigidity of the convergence domain; analytic functions, their uniqueness and the identity theorem; the exponential, logarithm and binomial series where they converge; differentiation and integration term by term; the failure of the classical theory when the field is not complete, not ordered, or not of characteristic zero. -->
+
+### <a href="articles_maths/elliptic-functions-and-integrals.html">Elliptic Functions and Integrals</a>
+<!-- the elliptic integrals of the first, second and third kind and the elliptic functions obtained by inverting them; the Jacobi elliptic functions and the Weierstrass $\wp$ function with its addition theorem; the period lattice $\Lambda = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2$ and the complex torus $\mathbb{C}/\Lambda$; the elliptic curve attached to a lattice and the analytic content of the group law of *Elliptic Curves*; the modular function and the classification of the lattices by the modular parameter; the complete elliptic integrals, the arithmetic–geometric mean and the theta functions. -->
 
 ###<a href="articles_maths/non-archimedean-analysis.html">Non-Archimedean Analysis</a>
 <!-- analysis over a field with a non-Archimedean absolute value: the strong triangle inequality and its geometric consequences, every triangle isosceles, balls are nested or disjoint, no interval is connected; convergence of series and the irrelevance of absolute convergence, which coincides with convergence; the $p$-adic exponential and logarithm; the classical theorems that fail and what replaces them; the comparison with the Archimedean case and the role of the residue field. -->
@@ -1270,7 +1331,7 @@
 ### - Theory
 
 ### <a href="articles_maths/hypercomplex-analysis.html">Hypercomplex Analysis</a>
-<!-- what becomes of analyticity when the ground algebra is no longer a field: the obstructions, non-commutativity, zero divisors, a one-sided module structure and the dimension; the ambiguity of the derivative defined by a difference quotient, and why it is over-determined; the two notions that survive, holomorphy inside a commutative subalgebra and regularity with respect to a first-order operator; the Cauchy–Riemann operator $D=\sum_i e_i\partial_i$ as the generalisation of $\bar\partial$, its square as the Laplacian, and the class of regular functions it defines; the general form of the Cauchy integral formula and the hypotheses that must replace the classical ones, with the failure of Morera, Liouville and the maximum principle in each setting; the parallel structure of the theory for $\mathbb{C}$, the split complex numbers, the dual numbers, $\mathbb{H}$ and the split quaternions, with forward references to the per-system articles; the role of the Clifford algebra in the construction of the operator. -->
+<!-- what becomes of analyticity when the ground algebra is no longer a field: the obstructions, non-commutativity, zero divisors, a one-sided module structure and the dimension; the ambiguity of the derivative defined by a difference quotient, and why it is over-determined; the two notions that survive, holomorphy inside a commutative subalgebra and regularity with respect to a first-order operator; the Cauchy–Riemann operator $D=\sum_i e_i\partial_i$ as the generalisation of $\bar\partial$, its square as the Laplacian, and the class of regular functions it defines; the general form of the Cauchy integral formula and the hypotheses that must replace the classical ones, with the failure of Morera, Liouville and the maximum principle in each setting; the parallel structure of the theory for $\mathbb{C}$, the split complex numbers, the dual numbers, $\mathbb{H}$ and the split biquaternions, with forward references to the per-system articles; the role of the Clifford algebra in the construction of the operator. -->
 
 ### <a href="articles_maths/regularity-and-the-cauchy-riemann-operator.html">Regularity and the Cauchy–Riemann Operator</a>
 <!-- the first-order operator $D$ assembled from a frame of the algebra, and the class of functions it annihilates; the classical Cauchy–Riemann equations in $\mathbb{C}$, their generalisation and the several distinct meanings the equation $Df=0$ takes once multiplication is one-sided; monogenic and regular functions; the relation between regularity and holomorphy inside a commutative subalgebra; the square of the operator as the Laplacian, and the harmonicity of regular functions; the Cauchy integral formula and the hypotheses that replace the classical ones; the mean value property, the maximum principle and Liouville's theorem, with the systems in which each fails; the Fischer and Stokes decompositions; forward references to the per-system analysis articles. -->
@@ -1282,7 +1343,7 @@
 <!-- Fueter's theory of regular functions of a quaternionic variable; the Cauchy–Fueter integral formula; the relation to the hypercomplex analysis of this part. -->
 
 ### <a href="articles_maths/hypercomplex-integration.html">Hypercomplex Integration</a>
-<!-- integration of functions with values in a hypercomplex algebra; the contour integral and the obstruction to a Cauchy theorem when the algebra is not a field; the splitting into idempotent or characteristic coordinates, which reduces the integral to two ordinary integrals; the residue theory that survives and the systems where it degenerates; path independence and the role of the zero divisors; the relation to the measure-theoretic integral, which supplies the underlying integration of an algebra-valued function and is treated in the general theory; the Cauchy integral formula as the boundary form of the theory; forward references to the per-system integration articles for $\mathbb{C}$, the split complex numbers, the dual numbers, $\mathbb{H}$, $\mathbb{B}$ and the split quaternions. -->
+<!-- integration of functions with values in a hypercomplex algebra; the contour integral and the obstruction to a Cauchy theorem when the algebra is not a field; the splitting into idempotent or characteristic coordinates, which reduces the integral to two ordinary integrals; the residue theory that survives and the systems where it degenerates; path independence and the role of the zero divisors; the relation to the measure-theoretic integral, which supplies the underlying integration of an algebra-valued function and is treated in the general theory; the Cauchy integral formula as the boundary form of the theory; forward references to the per-system integration articles for $\mathbb{C}$, the split complex numbers, the dual numbers, $\mathbb{H}$, $\mathbb{B}$ and the split biquaternions. -->
 
 ### <a href="articles_maths/harmonic-analysis-over-hypercomplex-systems.html">Harmonic Analysis over Hypercomplex Systems</a>
 <!-- the transform theory a hypercomplex algebra supports, and why it depends on the underlying additive group rather than on the multiplication; the Fourier transform on $\mathbb{C}$, on the split complex numbers, on the dual numbers and on the quaternion groups; the discrete and continuous cases; convolution and the algebra it defines; the Plancherel and Paley–Wiener theorems; the Laplace, Hilbert, Mellin and Radon transforms; the Calderón–Zygmund theory of singular integrals; the obstruction in the non-commutative and zero-divisor cases, and the reduction to the factor algebra; forward references to the per-system harmonic analysis articles. -->
@@ -1301,7 +1362,7 @@
 ### - Theory
 
 ###<a href="articles_maths/ordinary-differential-equations.html">Ordinary Differential Equations</a>
-<!-- the first-order equation $y'=f(t,y)$ and the existence and uniqueness theorem of Picard–Lindelöf; the Lipschitz condition, the contraction mapping argument and the maximal interval of existence; systems of equations, and the reduction of a higher-order equation to a first-order system; linear systems, the matrix exponential, the fundamental matrix and the variation of constants formula; linear equations with constant coefficients and the characteristic equation; the phase portrait of a planar system, its equilibria and their stability, and the classification of the linearised flow by the eigenvalues; Sturm–Liouville problems, their eigenvalues and the eigenfunction expansion they give; Green's functions for a linear boundary-value problem; the equations of Bessel and Legendre, whose solutions are the special functions of Part IV. -->
+<!-- the first-order equation $y'=f(t,y)$ and the existence and uniqueness theorem of Picard–Lindelöf; the Lipschitz condition, the contraction mapping argument and the maximal interval of existence; systems of equations, and the reduction of a higher-order equation to a first-order system; linear systems, the matrix exponential, the fundamental matrix and the variation of constants formula; linear equations with constant coefficients and the characteristic equation; the phase portrait of a planar system, its equilibria and their stability, and the classification of the linearised flow by the eigenvalues; Sturm–Liouville problems, their eigenvalues and the eigenfunction expansion they give; Green's functions for a linear boundary-value problem; the equations of Bessel and Legendre, whose solutions are the special functions of Part V. -->
 
 ###<a href="articles_maths/delay-and-functional-differential-equations.html">Delay and Functional Differential Equations</a>
 <!-- delay differential equations and their properties; the method of steps; the relation to the ordinary differential equations of this part; the functional differential equations of which the delay equations are the first case. -->
@@ -1422,7 +1483,271 @@
 ###<a href="articles_maths/the-geodesic-flow.html">The Geodesic Flow</a>
 <!-- the geodesic flow of a Riemannian manifold; its ergodic properties; the relation to the Riemannian geometry of Part II and to the hyperbolic dynamics of this part. -->
 
-# Part IV : Synthetic Studies
+
+# Part IV : Catalogues
+
+A catalogue gathers the objects of one kind that the corpus meets, wherever in Parts I to III they are introduced. A catalogue names an object and points to the article or articles that introduce it; it introduces nothing and it proves nothing. The one condition on what a catalogue may list is that its object has been introduced somewhere in Parts I to III, whether or not an article is devoted to it. The warnings a list carries — the quaternions are a division ring but not a field, the octonions are a division algebra but not a ring, the orthogonal group is not a group-layer object because it is defined by a form — are statements about where each object is introduced, with a reference to that article.
+
+A catalogue lists examples and non-examples side by side. Beside the objects that have the property it gathers, it records the objects that fail it, the failure named and the entry pointed to the article that records it: $\mathbb{Z}[\sqrt{-5}]$ is a domain but not a unique factorisation domain, $\mathbb{Z}[x]$ is a unique factorisation domain but not a principal ideal domain, $M_2(\mathbb{R})$ is a ring but not a division ring, the octonions are a division algebra but not an algebra. The non-examples are what fix a list: they show that each class is a proper subclass of the one above it, and they are recorded with the same care as the examples.
+
+## Catalogue of Algebra
+
+### <a href="articles_maths/list-of-algebraic-structures.html">List of Algebraic Structures</a>
+<!-- the axiom ladder from a magma to an algebra: closure, associativity, identity, inverses, commutativity, distributivity; which objects satisfy which combination, and the name fixed for each rung. -->
+
+### <a href="articles_maths/list-of-universal-properties.html">List of Universal Properties</a>
+<!-- the objects defined by a universal property — free objects, quotients, tensor products, localizations, completions, products and coproducts — each with the article that owns it. -->
+
+### <a href="articles_maths/list-of-categories.html">List of Categories</a>
+<!-- the categories met in the corpus, their objects, their morphisms and the functors between them; the abelian and the derived categories. -->
+
+### <a href="articles_maths/list-of-groups.html">List of Groups</a>
+<!-- every group the corpus introduces, with its order, its centre, its derived subgroup and the article that owns it, from $\mathbb{Z}/n\mathbb{Z}$ to the Monster. -->
+
+### <a href="articles_maths/list-of-finite-simple-groups.html">List of Finite Simple Groups</a>
+<!-- the classes of the classification — cyclic, alternating, the sixteen families of Lie type and the twenty-six sporadics — with their orders. -->
+
+### <a href="articles_maths/list-of-abelian-groups.html">List of Abelian Groups</a>
+<!-- the finitely generated, the torsion, the torsion-free, the divisible and the profinite abelian groups, with the structure theorem that classifies each family. -->
+
+### <a href="articles_maths/list-of-group-constructions.html">List of Group Constructions</a>
+<!-- direct, semidirect and wreath products, extensions, free products with amalgamation, HNN extensions and quotients; what each construction preserves. -->
+
+### <a href="articles_maths/list-of-group-actions.html">List of Group Actions</a>
+<!-- the actions of the corpus on sets, spaces, lattices and algebras, with the orbit, the stabiliser and the representation each one furnishes. -->
+
+### <a href="articles_maths/list-of-automorphism-groups.html">List of Automorphism Groups</a>
+<!-- Aut(G), Inn(G), Out(G) for a group; Aut(R) for a ring; Aut(X) for a space; Gal(L/K) as the automorphism group of a field extension; the transformation-group framing of each, and the exact sequences $1 \to \operatorname{Inn}(G) \to \operatorname{Aut}(G) \to \operatorname{Out}(G) \to 1$. -->
+
+### <a href="articles_maths/list-of-representations.html">List of Representations</a>
+<!-- the representations of the corpus — of finite groups, of Lie groups and Lie algebras, of associative algebras and of quivers; characters, weights, highest weight theory and the theorems of Maschke, Schur and Weyl. -->
+
+### <a href="articles_maths/list-of-rings.html">List of Rings</a>
+<!-- every ring, commutative or not, with its units, its zero divisors, its ideals and its chain conditions. -->
+
+### <a href="articles_maths/list-of-structures-from-rings-to-fields.html">List of Structures from Rings to Fields</a>
+<!-- the linear progression Ring → Commutative ring → Reduced ring → Integral domain → UFD → PID → Euclidean domain → Field; which property is lost or gained at each step, and the counterexample that shows each implication is strict. -->
+
+### <a href="articles_maths/list-of-structures-from-rings-to-division-rings.html">List of Structures from Rings to Division Rings</a>
+<!-- the non-commutative ladder Ring → Domain → Ore domain → Division ring → Field; where $\mathbb{H}$ sits, where the biquaternions sit, and why commutativity is a separate branch. -->
+
+### <a href="articles_maths/list-of-maximal-structures-before-failure.html">List of Maximal Structures Before Failure</a>
+<!-- for each property in the ladder, the strongest structure that still lacks it: reduced commutative rings for integral domain, UFDs for PID, PIDs for Euclidean domain, and the exact counterexample at each boundary. -->
+
+### <a href="articles_maths/list-of-commutative-rings.html">List of Commutative Rings</a>
+<!-- $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$, $\mathbb{Z}[\sqrt{-5}]$, $\mathbb{Z}[i]$, $k[x_1,\dots,x_n]$, the split-complex numbers, the dual numbers and the product rings, with the dimension, the units and the zero divisors of each. -->
+
+### <a href="articles_maths/list-of-reduced-local-and-product-rings.html">List of Reduced, Local and Product Rings</a>
+<!-- the three-way split of commutative Artinian rings: products of fields (reduced, semisimple), local rings (may be non-reduced), and their mixtures; where split-$\mathbb{C}$, the dual numbers and $\mathbb{Z}/4\mathbb{Z}$ each sit. -->
+
+### <a href="articles_maths/list-of-local-rings-and-valuations.html">List of Local Rings and Valuations</a>
+<!-- the local rings, the valuation rings and the completions, with the maximal ideal and the value group of each. -->
+
+### <a href="articles_maths/list-of-commutative-integral-domains.html">List of Commutative Integral Domains</a>
+<!-- the domains and the ladder down from them: $\mathbb{Z}$; $\mathbb{Z}[\sqrt{-5}]$, which is a domain but not a unique factorisation domain; $\mathbb{Z}[x]$, which is a unique factorisation domain but not a principal ideal domain. -->
+
+### <a href="articles_maths/list-of-non-commutative-domains.html">List of Non-Commutative Domains</a>
+<!-- the non-commutative domains, in which there are no zero divisors and cancellation holds: $\mathbb{H}$, the free algebra, the Weyl algebra and the group ring of a torsion-free group. -->
+
+### <a href="articles_maths/list-of-unique-factorisation-domains.html">List of Unique Factorisation Domains</a>
+<!-- the unique factorisation domains, with the failure of unique factorisation recorded for each non-example and the irreducibles of each example. -->
+
+### <a href="articles_maths/list-of-principal-ideal-and-euclidean-domains.html">List of Principal Ideal and Euclidean Domains</a>
+<!-- the principal ideal, the Euclidean and the Bézout domains, the divisions defined on them, and the strict inclusions between the three classes. -->
+
+### <a href="articles_maths/list-of-commutative-fields.html">List of Commutative Fields</a>
+<!-- every field the corpus introduces — $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, the finite fields, $\mathbb{Q}_p$, $k(x)$, $k((t))$ and the real algebraic numbers — with the characteristic and the extensions of each. -->
+
+### <a href="articles_maths/list-of-finite-fields.html">List of Finite Fields</a>
+<!-- $\mathbb{F}_p$ and $\mathbb{F}_{p^n}$, their orders, their subfields, the Frobenius and the multiplicative group. -->
+
+### <a href="articles_maths/list-of-non-commutative-division-rings.html">List of Non-Commutative Division Rings</a>
+<!-- the division rings, finite-dimensional and not: $\mathbb{H}$ and the central simple algebras over a field, the division ring of fractions of the Weyl algebra and the free field; the centre of each, over which it is an algebra; Wedderburn's little theorem and the fact that every skew field is infinite. -->
+
+### <a href="articles_maths/list-of-non-commutative-rings.html">List of Non-Commutative Rings</a>
+<!-- the matrix rings, the quaternions, the biquaternions, the split-biquaternions, the group rings, the Weyl algebra and the free algebra; what is lost by comparison with the commutative case. -->
+
+### <a href="articles_maths/list-of-zero-divisors-and-nilpotents.html">List of Zero Divisors and Nilpotents</a>
+<!-- the objects with zero divisors and with nilpotents — the dual numbers, $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $M_2(\mathbb{R})$, the product rings and the biquaternions — separating the idempotent from the nilpotent and the torsion case. -->
+
+### <a href="articles_maths/list-of-zero-divisors-and-prime-ideals.html">List of Zero Divisors and Prime Ideals</a>
+<!-- the theorem $Z(R) = \bigcup$ associated primes; the annihilator ideal $\operatorname{Ann}(a)$; why zero divisors form a union of primes and not an ideal; the idempotent-generated ideals as direct summands. -->
+
+### <a href="articles_maths/list-of-rings-by-their-idempotents.html">List of Rings by Their Idempotents</a>
+<!-- the idempotents of each ring, the direct sum decompositions they induce, the Peirce decomposition of modules, and the rings in which every ideal is idempotent-generated (von Neumann regular) versus those in which idempotents are scarce (domains, local rings). -->
+
+### <a href="articles_maths/list-of-artinian-and-noetherian-rings.html">List of Artinian and Noetherian Rings</a>
+<!-- the descending and ascending chain conditions, Akizuki–Hopkins–Levitzki (Artinian $\Rightarrow$ Noetherian), Krull dimension $0$, the Wedderburn–Artin theorem, and where $\mathbb{H}$, split-$\mathbb{C}$, the biquaternions and $M_2(\mathbb{R})$ sit. -->
+
+### <a href="articles_maths/list-of-homological-algebra-constructions.html">List of Homological Algebra Constructions</a>
+<!-- the resolutions, the derived functors, the Tor and Ext, the spectral sequences, the derived categories and the triangulated categories; what each construction measures and the exact sequences it produces. -->
+
+### <a href="articles_maths/list-of-modules.html">List of Modules</a>
+<!-- the modules and the vector spaces of the corpus, with the rank, the basis, the torsion and the freeness of each. -->
+
+### <a href="articles_maths/list-of-algebras.html">List of Algebras</a>
+<!-- the algebras over a field by their axioms and their examples, with the dimension, the centre and the ideals of each. -->
+
+### <a href="articles_maths/list-of-associative-algebras.html">List of Associative Algebras</a>
+<!-- the associative algebras of the corpus, with the associator that vanishes and the power-associativity that outlives it; the free associative algebra and the tensor algebra; the universal enveloping algebra of a Lie algebra; the matrix algebras as the model associative algebra; the algebras that fail associativity. -->
+
+### <a href="articles_maths/list-of-unital-algebras.html">List of Unital Algebras</a>
+<!-- the algebras and the rings that carry an identity, with the unit group of each; the unitisation of an algebra that has none; the homomorphisms that preserve the identity and those that do not; the non-unital algebras of the corpus, among them the convolution algebra $L^1(G)$ and the algebras of operators. -->
+
+### <a href="articles_maths/list-of-central-simple-algebras.html">List of Central Simple Algebras</a>
+<!-- the central simple algebras over a field, with the degree of each and the division algebra it is a matrix algebra over; the Brauer group of similarity classes; the central division algebras, which are central simple; the algebras that fail centrality or simplicity. -->
+
+### <a href="articles_maths/list-of-matrix-rings.html">List of Matrix Rings</a>
+<!-- the matrix rings $M_n(R)$ over the commutative rings and the matrix algebras over the fields, with the matrix units, the centre, the units and the ideals of each; the rings that are a matrix ring over a division ring; the rings and the algebras that are not of that form. -->
+
+### <a href="articles_maths/list-of-algebras-by-dimension.html">List of Algebras by Dimension</a>
+<!-- the real algebras of dimension $1$, $2$, $4$ and $8$ gathered together, with the classification in each dimension. -->
+
+### <a href="articles_maths/list-of-number-systems-by-property.html">List of Number Systems by Property</a>
+<!-- the number systems as a table: commutative, associative, alternative, power-associative, with or without zero divisors, a division algebra or not, a field or not, and the property lost at each step of the doubling. -->
+
+### <a href="articles_maths/list-of-division-algebras.html">List of Division Algebras</a>
+<!-- Frobenius' theorem over $\mathbb{R}$, Wedderburn's theorem over a finite field, the Hurwitz theorem on the normed division algebras, and the central division algebras over a general field. -->
+
+### <a href="articles_maths/list-of-non-examples-and-counter-examples-in-algebra.html">List of Non-Examples and Counter-Examples in Algebra</a>
+<!-- the objects that fail exactly one axiom: $\mathbb{Z}[\sqrt{-5}]$, which is not a unique factorisation domain; $\mathbb{Z}[x]$, which is not a principal ideal domain; the split-complex numbers and the dual numbers, which are not domains; $M_2(\mathbb{R})$, which is not a division ring; and the octonions, whose multiplication is not associative. -->
+
+## Catalogue of Topology and Geometry
+
+A catalogue of the spaces, the structures on them, and the groups that act on them: the topological structures (continuity, compactness, homotopy, homology) and the geometric structures (metric, curvature, forms, symmetry), interleaved so that each entry follows from the one before it.
+
+### <a href="articles_maths/list-of-topological-spaces.html">List of Topological Spaces</a>
+<!-- the spaces met in the corpus, each with its separation, its compactness and its connectedness, and the article that owns it. -->
+
+### <a href="articles_maths/list-of-topological-spaces-by-separation-and-compactness.html">List of Topological Spaces by Separation and Compactness</a>
+<!-- the separation axioms $T_0$ to $T_4$ and the compactness conditions, and the matrix of which spaces satisfy which. -->
+
+### <a href="articles_maths/list-of-metric-and-uniform-spaces.html">List of Metric and Uniform Spaces</a>
+<!-- the distances and the uniformities, with the completion and the metrisation theorem of each; the metric side is geometric, the uniform side topological, and the entry bridges the two. -->
+
+### <a href="articles_maths/list-of-topological-groups.html">List of Topological Groups</a>
+<!-- the topological, the locally compact, the profinite and the $p$-adic groups, with the topology each carries. -->
+
+### <a href="articles_maths/list-of-topological-homology-and-cohomology.html">List of Topological Homology and Cohomology</a>
+<!-- the homology and cohomology theories of the corpus — singular, de Rham, sheaf, group, Galois and Hochschild — and the coefficients each takes. -->
+
+### <a href="articles_maths/list-of-homotopy-theories.html">List of Homotopy Theories</a>
+<!-- the homotopy groups, the fibrations and cofibrations, the CW complexes and the model categories; the fundamental group, the covering spaces and the higher homotopy groups, with the theorems of van Kampen, Whitehead and Blakers–Massey. -->
+
+### <a href="articles_maths/list-of-lie-groups.html">List of Lie Groups</a>
+<!-- the Lie groups, their Lie algebras and the correspondence between them, with the dimension and the rank of each. -->
+
+### <a href="articles_maths/list-of-transformation-groups.html">List of Transformation Groups</a>
+<!-- the umbrella notion: a group acting faithfully on a set with structure, the correspondence $G \to \operatorname{Aut}(X)$, the Erlangen program of *Transformation Groups and the Erlangen Program*, and the hierarchy $\operatorname{Sym}(X) \supset \operatorname{Aut}(X, \text{structure}) \supset \cdots$; the entry point for the linear, classical, affine, isometry, Möbius, conformal and automorphism families. -->
+
+### <a href="articles_maths/list-of-geometric-forms.html">List of Geometric Forms</a>
+<!-- the bilinear, quadratic, Hermitian, alternating and symplectic forms, with the signature, the radical and the classification over the classical fields. -->
+
+### <a href="articles_maths/list-of-linear-geometric-groups.html">List of Linear Geometric Groups</a>
+<!-- $GL(n,F)$, $SL(n,F)$, $PGL(n,F)$, $PSL(n,F)$ over a general field; the determinant sequence $1 \to SL \to GL \to F^\times \to 1$; the centre and the projective quotient; the finite versions $GL(n,q)$, $SL(n,q)$, $PGL(n,q)$, $PSL(n,q)$ with their orders; the simplicity of $PSL(n,q)$ and the exceptional isomorphisms $PSL(2,4) \cong PSL(2,5) \cong A_5$, $PSL(2,7) \cong GL(3,2)$, $PSL(2,9) \cong A_6$, $PSL(4,2) \cong A_8$. -->
+
+### <a href="articles_maths/list-of-classical-geometric-groups.html">List of Classical Geometric Groups</a>
+<!-- $O(V,Q)$, $SO(V,Q)$, $U(V,h)$, $SU(V,h)$ and $Sp(V,\omega)$, each with the form it preserves and the article that defines it. -->
+
+### <a href="articles_maths/list-of-projective-geometric-groups.html">List of Projective Geometric Groups</a>
+<!-- PGL, PSL, PO, PSO, PU, PSU, PSp: the quotients of the linear and classical groups by their centres; the projective space $P(V)$ as the homogeneous space $GL(V)/\text{stabiliser}$; the simplicity list of the projective classical groups and the exceptions. -->
+
+### <a href="articles_maths/list-of-clifford-algebras-and-spin-groups.html">List of Clifford Algebras and Spin Groups</a>
+<!-- the Clifford algebras $Cl_{p,q}$, their periodicity, the Pin and Spin groups and the spinor modules. -->
+
+### <a href="articles_maths/list-of-affine-and-euclidean-groups.html">List of Affine and Euclidean Groups</a>
+<!-- $\operatorname{Aff}(n) = GL(n) \ltimes \mathbb{R}^n$, $E(n) = O(n) \ltimes \mathbb{R}^n$, $SE(n) = SO(n) \ltimes \mathbb{R}^n$, $\operatorname{Sim}(n) = (\mathbb{R}^+ \times O(n)) \ltimes \mathbb{R}^n$; translations, rotations, reflections and dilatations as the generators; the Cartan–Dieudonné theorem that every isometry is a product of at most $n+1$ reflections; the affine group as the automorphism group of affine space. -->
+
+### <a href="articles_maths/list-of-isometry-and-symmetry-groups.html">List of Isometry and Symmetry Groups</a>
+<!-- $\operatorname{Isom}(\mathbb{R}^n) = E(n)$, $\operatorname{Isom}(\mathbb{H}^n) = O(n,1)$, $\operatorname{Isom}(S^n) = O(n+1)$, the crystallographic and wallpaper groups, the frieze groups and the symmetry groups of polytopes; each as the isometry group of a metric space. -->
+
+### <a href="articles_maths/list-of-discrete-geometric-groups.html">List of Discrete Geometric Groups</a>
+<!-- the crystallographic groups in dimensions $1$, $2$ and $3$, the seventeen wallpaper groups, the seven frieze groups, the triangle groups, the Bianchi groups and the arithmetic lattices; discreteness, cocompactness and the quotient orbifold. -->
+
+### <a href="articles_maths/list-of-mobius-and-conformal-groups.html">List of Möbius and Conformal Groups</a>
+<!-- $PSL(2,\mathbb{C})$ on the Riemann sphere, $PSL(2,\mathbb{R})$ on the upper half-plane, $\operatorname{Conf}(\mathbb{R}^n)$ and $\operatorname{Conf}(S^n) \cong O(n+1,1)$; the exceptional isomorphisms $PSL(2,\mathbb{R}) \cong SO^+(2,1)$ and $PSL(2,\mathbb{C}) \cong SO^+(3,1)$; the classification of Möbius transformations by their fixed points. -->
+
+### <a href="articles_maths/list-of-diffeomorphism-and-homeomorphism-groups.html">List of Diffeomorphism and Homeomorphism Groups</a>
+<!-- $\operatorname{Homeo}(X)$ and $\operatorname{Diff}(M)$ as infinite-dimensional transformation groups; the mapping class group, the group of birational maps $\operatorname{Bir}(X)$, and the automorphism group of a smooth or topological structure; the relation to the group of homeomorphisms of the Cantor set and the Thompson groups of *Thompson Groups and the Cantor Set*. -->
+
+### <a href="articles_maths/list-of-klein-geometries.html">List of Klein Geometries</a>
+<!-- the pairs $(G,H)$ with $G$ a Lie group and $H$ a closed subgroup, and the homogeneous space $G/H$ as in *Homogeneous Spaces*: Euclidean, spherical, hyperbolic, affine, projective, conformal and Möbius geometry; the classification of the geometries of constant curvature and the space forms. -->
+
+### <a href="articles_maths/list-of-erlangen-program-geometries.html">List of Erlangen Program Geometries</a>
+<!-- Klein's principle, that a geometry is the study of the invariants of a transformation group, as introduced in *Transformation Groups and the Erlangen Program*; the correspondence between geometries and their automorphism groups; Euclidean, affine, projective, hyperbolic, conformal, Möbius and symplectic geometry as instances. -->
+
+### <a href="articles_maths/list-of-geometric-manifolds.html">List of Geometric Manifolds</a>
+<!-- the manifolds and the smooth structures of the corpus, with their dimension, their curvature and their invariants. -->
+
+### <a href="articles_maths/list-of-riemannian-geometries.html">List of Riemannian Geometries</a>
+<!-- the Riemannian metrics, the Levi-Civita connection, the curvature tensor, the geodesics and the comparison theorems; the model spaces of constant curvature and the space forms. -->
+
+### <a href="articles_maths/list-of-symplectic-geometries.html">List of Symplectic Geometries</a>
+<!-- the symplectic manifolds, the Darboux theorem, the Poisson brackets, the moment maps and the symplectic reduction; the relation to the Hamiltonian systems of Part III and to the symplectic group. -->
+
+### <a href="articles_maths/list-of-geometric-bundles-and-invariants.html">List of Geometric Bundles and Invariants</a>
+<!-- the vector and principal bundles and the connections on them, with the characteristic classes that measure each. -->
+
+### <a href="articles_maths/list-of-geometric-lattices-and-integral-forms.html">List of Geometric Lattices and Integral Forms</a>
+<!-- the lattices, their covolumes, their duals and the integral forms they carry, from $\mathbb{Z}^n$ to the Lipschitz and Hurwitz lattices. -->
+
+### <a href="articles_maths/list-of-geometric-surfaces-and-curves.html">List of Geometric Surfaces and Curves</a>
+<!-- the surfaces by genus and Euler characteristic, and the curves with their genera, their Jacobians and their points. -->
+
+### <a href="articles_maths/list-of-geometric-schemes-and-varieties.html">List of Geometric Schemes and Varieties</a>
+<!-- the schemes, the varieties and the moduli spaces, with the invariants attached to each. -->
+
+### <a href="articles_maths/list-of-non-examples-in-topology.html">List of Non-Examples in Topology</a>
+<!-- the standard counterexamples: the topologist's sine curve, the Warsaw circle, the pseudo-arc, the long line, the Alexander horned sphere and the comb space, with the property each one breaks. -->
+
+### <a href="articles_maths/list-of-non-examples-in-geometry.html">List of Non-Examples in Geometry</a>
+<!-- the objects that fail one geometric property: the Alexander horned sphere (not a manifold), the Whitehead manifold of *Wild and Exotic Manifolds* (contractible but not homeomorphic to $\mathbb{R}^3$), the exotic spheres (homeomorphic but not diffeomorphic to $S^7$), and the non-orientable surfaces, with the property each one breaks. -->
+
+## Catalogue of Analysis
+
+### <a href="articles_maths/list-of-function-spaces.html">List of Function Spaces</a>
+<!-- $L^p$, $C^k$, $C^\infty$, the Sobolev, the Hölder, the Hardy and the analytic spaces, with the norm and the completeness of each. -->
+
+### <a href="articles_maths/list-of-norms-and-seminorms.html">List of Norms and Seminorms</a>
+<!-- the norms and the seminorms of the corpus, and the completeness each one gives. -->
+
+### <a href="articles_maths/list-of-measures.html">List of Measures</a>
+<!-- the counting, Lebesgue, Haar, Hausdorff and product measures, with the sets each one measures. -->
+
+### <a href="articles_maths/list-of-modes-of-convergence.html">List of Modes of Convergence</a>
+<!-- pointwise, uniform, almost everywhere, in measure, in $L^p$, weak and weak-star convergence, and the implications between them. -->
+
+### <a href="articles_maths/list-of-inequalities.html">List of Inequalities</a>
+<!-- the classical inequalities — Cauchy–Schwarz, Hölder, Minkowski, Jensen, Young, Hardy, Sobolev, Bellman–Grönwall and the isoperimetric inequality. -->
+
+### <a href="articles_maths/list-of-integral-transforms.html">List of Integral Transforms</a>
+<!-- the Fourier, Laplace, Mellin, Hilbert, Hankel, Radon and wavelet transforms, with the kernel and the inversion theorem of each. -->
+
+### <a href="articles_maths/list-of-special-functions.html">List of Special Functions</a>
+<!-- the gamma, hypergeometric, orthogonal polynomial, Bessel, Legendre, Airy and elliptic functions, with the equation each one solves. -->
+
+### <a href="articles_maths/list-of-orthogonal-polynomials.html">List of Orthogonal Polynomials</a>
+<!-- the Jacobi, Legendre, Chebyshev, Laguerre and Hermite polynomials, with the weight and the recurrence of each. -->
+
+### <a href="articles_maths/list-of-constants.html">List of Constants</a>
+<!-- $\pi$, $e$, $\gamma$, $\log 2$, the Catalan and Khinchin constants, the Feigenbaum constant and Chaitin's $\Omega$, with the irrationality or transcendence proved for each. -->
+
+### <a href="articles_maths/list-of-differential-operators-and-equations.html">List of Differential Operators and Equations</a>
+<!-- the operators and the equations of the corpus, with the order, the symbol and the solution theory of each. -->
+
+### <a href="articles_maths/list-of-distributions.html">List of Distributions</a>
+<!-- the distributions and the generalised functions, with the operations each one supports. -->
+
+### <a href="articles_maths/list-of-probability-distributions-and-processes.html">List of Probability Distributions and Processes</a>
+<!-- the distributions of probability and the processes built on them, with the moments and the convergence theorems. -->
+
+### <a href="articles_maths/list-of-dynamical-systems.html">List of Dynamical Systems</a>
+<!-- the systems of the corpus, with their entropy, their ergodicity and their mixing properties. -->
+
+### <a href="articles_maths/list-of-non-examples-in-analysis.html">List of Non-Examples in Analysis</a>
+<!-- the standard counterexamples: the Weierstrass function, continuous and nowhere differentiable; Volterra's function, differentiable with a bounded derivative that is not Riemann integrable; Dirichlet's function; a non-measurable set; and a function smooth but not analytic. -->
+
+# Part V : Synthetic Studies
 
 ## Booleans
 
@@ -1693,6 +2018,67 @@
 ### <a href="articles_maths/quaternion-harmonic-analysis.html">Quaternion Harmonic Analysis</a>
 <!-- $\mathbb{H}$ as a locally compact abelian group; the quaternion Fourier transform; convolution; distributions; the Hilbert transform; maximal functions; the Calderón–Zygmund theory; the Mellin, Radon and wavelet transforms; the structure principle. -->
 
+## Split-Quaternions
+
+### - Algebra
+
+### <a href="articles_maths/split-quaternion-algebra.html">Split-Quaternion Algebra</a>
+<!-- $\mathbb{H}_{\mathrm{s}}$ on $\mathbb{R}^4$; the generators with $e_1^2=-1$ and $e_2^2=e_3^2=+1$, anticommuting and with $e_1e_2=e_3$; the identification $\mathbb{H}_{\mathrm{s}}\cong\mathrm{Cl}_{1,1}\cong M_2(\mathbb{R})$ and the matrix model; the conjugations and their fixed-point subspaces; the determinant form of signature $(2,2)$; the idempotents $\frac12(1\pm e_2)$ and the split-complex and vector subspaces; the Lie algebra structure; comparison with $\mathbb{H}$ and with $\mathbb{H}_{\mathbb{D}}$. -->
+
+### <a href="articles_maths/split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>
+<!-- the norm form and the determinant form of signature $(2,2)$; isotropy; the invertibility criterion $\det\neq0$; the group of units and its relation to $GL_2(\mathbb{R})$; the three-way classification of the elements; the distribution of the invertible elements; comparison with the quaternion and split-biquaternion cases. -->
+
+### <a href="articles_maths/split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>
+<!-- definition and criterion; the zero divisor set as the null cone of the determinant form; the rank-one matrices and the isotropic lines; the structure of the two families; the existence of nonzero nilpotents, in contrast with $\mathbb{H}$ and with $\mathbb{H}_{\mathbb{D}}$; the distribution of the zero divisors. -->
+
+### <a href="articles_maths/split-quaternion-roots-of-minus-one.html">Split-Quaternion Roots of Minus One</a>
+<!-- the classification of the solutions of $\xi^2=-1$; their identification with the complex structures of $\mathbb{R}^2$; the root set as a single conjugacy class and as a homogeneous space; the relation to the idempotents and to the zero divisors; comparison with the quaternion and biquaternion cases. -->
+
+### <a href="articles_maths/split-quaternion-matrix-representations.html">Split-Quaternion Matrix Representations</a>
+<!-- the faithful $2\times2$ real matrix representation, its existence and its uniqueness up to conjugacy; the determinant as norm form and the trace as scalar part; the image of the algebra as a linear subspace of $M_2(\mathbb{R})$; comparison with $\mathbb{H}$ and with the absence of such a representation for $\mathbb{H}_{\mathbb{D}}$. -->
+
+### - Representations
+
+### <a href="articles_maths/split-quaternion-representations.html">Split-Quaternion Representations</a>
+<!-- the representations of $\mathbb{H}_{\mathrm{s}}\cong M_2(\mathbb{R})$ and their classification; semisimplicity and the irreducible representations; the representation ring; the relation to the representations of the Lie algebra $\mathfrak{sl}_2(\mathbb{R})$; the double cover of the Lorentz group of signature $(2,1)$; comparison with the quaternion case. -->
+
+### - Geometry
+
+### <a href="articles_maths/split-quaternion-rotations-and-the-lorentz-group.html">Split-Quaternion Rotations and the Lorentz Group</a>
+<!-- the unit split-quaternions, their two components and the group $\mathrm{SL}_2(\mathbb{R})$; the adjoint action on the vector subspace and the double cover $\mathrm{SL}_2(\mathbb{R})\to\mathrm{SO}^+(2,1)$; the three-dimensional Lorentz group of signature $(2,1)$; hyperbolic rotations and the trichotomy of timelike, lightlike and spacelike elements; comparison with the quaternion and split-biquaternion cases. -->
+
+### <a href="articles_maths/split-quaternion-geometry.html">Split-Quaternion Geometry</a>
+<!-- split-quaternion geometry and its properties; the two quadratic forms and the geometry each determines; the relation to the split-quaternion algebra and to the split-quaternion rotations and the Lorentz group of this system; the relation to the Lorentzian geometry of Part II. -->
+
+### <a href="articles_maths/split-quaternions-and-hyperbolic-geometry.html">Split-Quaternions and Hyperbolic Geometry</a>
+<!-- the model of the hyperbolic plane on the split-quaternions; the unit condition and the two-sheeted structure; the upper half-plane and the disc as matrix models; the relation to the split-quaternion rotations and the Lorentz group of this system and to the hyperbolic geometry of Part II. -->
+
+### - Analysis
+
+### <a href="articles_maths/split-quaternion-analysis.html">Split-Quaternion Analysis</a>
+<!-- the metric structure of $\mathbb{H}_{\mathrm{s}}$; limits and continuity; the problem of differentiability and why the naive derivative is ambiguous; the one-variable and several-variable cases; the differential operators and the role of the zero divisors; power series; singularities. -->
+
+### <a href="articles_maths/split-quaternion-analysis-on-subspaces.html">Split-Quaternion Analysis on Subspaces</a>
+<!-- the split-complex, vector, Hermitian and anti-Hermitian subspaces; the differential operators on each; comparison and relations between them; the idempotent decomposition and the subspaces; the summary of the operators; the role of the zero divisors on each. -->
+
+### - Integration
+
+### <a href="articles_maths/split-quaternion-integration.html">Split-Quaternion Integration</a>
+<!-- the integral of a split-quaternion-valued function on a domain in $\mathbb{H}_{\mathrm{s}}$; integration by parts; the divergence theorem; Green's formulas; the fundamental solution; the Cauchy integral formula and its consequences; comparison with the quaternion and split-biquaternion cases. -->
+
+### - Special Functions
+
+### <a href="articles_maths/split-quaternion-elementary-functions.html">Split-Quaternion Elementary Functions</a>
+<!-- the exponential; trigonometric and hyperbolic functions; the logarithm; power functions; the roots of unity and the periodicity; the relations to the quaternion and split complex cases; non-commutativity and the one-variable case; the summary of the identities. -->
+
+### <a href="articles_maths/split-quaternion-higher-special-functions.html">Split-Quaternion Higher Special Functions</a>
+<!-- Bessel functions; orthogonal polynomials; the hypergeometric function; the Gamma function; the special functions that arise from the matrix model; the special functions from the analysis; the general principle. -->
+
+### - Harmonic Analysis
+
+### <a href="articles_maths/split-quaternion-harmonic-analysis.html">Split-Quaternion Harmonic Analysis</a>
+<!-- $\mathbb{H}_{\mathrm{s}}$ as a locally compact abelian group; the split-quaternion Fourier transform; convolution; the convolution theorem; the vanishing-determinant issue and its effect on inversion; distributions; the relation to the matrix model and to the quaternion and split-biquaternion transforms. -->
+
 ## Biquaternions
 
 ### - Algebra
@@ -1782,68 +2168,68 @@
 ### <a href="articles_maths/biquaternion-continuous-harmonic-analysis.html">Biquaternion Continuous Harmonic Analysis</a>
 <!-- the Fourier kernel; the continuous transform pair; factorization into complex Fourier transforms; the convolution theorem; the relation to the differential operators; the vanishing-norm issue; the relation to the discrete transform. -->
 
-## Split-Quaternions
+## Split-Biquaternions
 
 ### - Algebra
 
-### <a href="articles_maths/split-quaternion-algebra.html">Split-Quaternion Algebra</a>
+### <a href="articles_maths/split-biquaternion-algebra.html">Split-Biquaternion Algebra</a>
 <!-- $\mathbb{H}_{\mathbb{D}}$, the coquaternions; the four fixed-point subspaces; the quaternion, idempotent and Hermitian decompositions; the quadratic form and inner product; the Lie algebra structure. -->
 
-### <a href="articles_maths/split-quaternion-norm-and-invertibility.html">Split-Quaternion Norm and Invertibility</a>
+### <a href="articles_maths/split-biquaternion-norm-and-invertibility.html">Split-Biquaternion Norm and Invertibility</a>
 <!-- the norm form; the Hermitian form; the Euclidean norm; the invertibility criterion; the group of units; the three-way classification; the distribution of the invertible elements. -->
 
-### <a href="articles_maths/split-quaternion-zero-divisors.html">Split-Quaternion Zero Divisors</a>
+### <a href="articles_maths/split-biquaternion-zero-divisors.html">Split-Biquaternion Zero Divisors</a>
 <!-- definition and criterion; the two families of zero divisors; their structure; comparison with the split complex and biquaternion cases; the distribution of the zero divisors; the zero divisor set as a variety; the reduced norm and the inverse. -->
 
-### <a href="articles_maths/split-quaternion-roots-of-minus-one.html">Split-Quaternion Roots of Minus One</a>
+### <a href="articles_maths/split-biquaternion-roots-of-minus-one.html">Split-Biquaternion Roots of Minus One</a>
 <!-- the classification of the solutions of $\xi^2=-1$; the relation to the idempotents and to the zero divisors; the root set as a manifold; comparison with the biquaternion case. -->
 
-### <a href="articles_maths/split-quaternion-algebraic-representations.html">Split-Quaternion Algebraic Representations</a>
+### <a href="articles_maths/split-biquaternion-algebraic-representations.html">Split-Biquaternion Algebraic Representations</a>
 <!-- the split complex four-vector, idempotent, module and Clifford algebra representations; the absence of a $2\times2$ matrix representation; the relations between them; the role of choices. -->
 
 ### - Representations
 
-### <a href="articles_maths/split-quaternion-polar-representations.html">Split-Quaternion Polar Representations</a>
+### <a href="articles_maths/split-biquaternion-polar-representations.html">Split-Biquaternion Polar Representations</a>
 <!-- the idempotent polar form and the exponential polar form; their comparison; behaviour under the four conjugations; comparison with the biquaternion case. -->
 
 ### - Geometry
 
-###<a href="articles_maths/split-quaternion-rotations-and-the-lorentz-group.html">Split-Quaternion Rotations and the Lorentz Group</a>
-<!-- the split quaternions as the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$; the unit sphere as a hyperboloid of one sheet on which the induced form is Lorentzian, and its two rulings; the three types of one-parameter subgroup, elliptic, hyperbolic and parabolic, and their fixed points on the null cone; the realisation of the hyperbolic and the elliptic one-parameter subgroups, and the separation of the two because the form is indefinite; the relation to the split-complex hyperbolic rotations and to the biquaternion treatment; the comparison with the quaternion sphere $S^3$, and how the zero divisors and the non-compactness replace the compact case. -->
+###<a href="articles_maths/split-biquaternion-rotations-and-the-lorentz-group.html">Split-Biquaternion Rotations and the Lorentz Group</a>
+<!-- the split biquaternions as the algebra of the Lorentz groups $SO(3,1)$ and $SO(2,2)$; the unit sphere as a hyperboloid of one sheet on which the induced form is Lorentzian, and its two rulings; the three types of one-parameter subgroup, elliptic, hyperbolic and parabolic, and their fixed points on the null cone; the realisation of the hyperbolic and the elliptic one-parameter subgroups, and the separation of the two because the form is indefinite; the relation to the split-complex hyperbolic rotations and to the biquaternion treatment; the comparison with the quaternion sphere $S^3$, and how the zero divisors and the non-compactness replace the compact case. -->
 
-###<a href="articles_maths/split-quaternion-geometry.html">Split-Quaternion Geometry</a>
-<!-- split-quaternion geometry and its properties; the relation to the split-quaternion algebra and to the split-quaternion rotations and the Lorentz group of this system; the relation to the Lorentzian geometry of Part II. -->
+###<a href="articles_maths/split-biquaternion-geometry.html">Split-Biquaternion Geometry</a>
+<!-- split-biquaternion geometry and its properties; the relation to the split-biquaternion algebra and to the split-biquaternion rotations and the Lorentz group of this system; the relation to the Lorentzian geometry of Part II. -->
 
-###<a href="articles_maths/split-quaternions-and-hyperbolic-geometry.html">Split-Quaternions and Hyperbolic Geometry</a>
-<!-- the model of hyperbolic three-space on the split-quaternions of unit norm; the relation to the split-quaternion rotations and the Lorentz group of this system and to the hyperbolic geometry of Part II. -->
+###<a href="articles_maths/split-biquaternions-and-hyperbolic-geometry.html">Split-Biquaternions and Hyperbolic Geometry</a>
+<!-- the model of hyperbolic three-space on the split-biquaternions of unit norm; the relation to the split-biquaternion rotations and the Lorentz group of this system and to the hyperbolic geometry of Part II. -->
 
 ### - Analysis
 
-### <a href="articles_maths/split-quaternion-analysis.html">Split-Quaternion Analysis</a>
+### <a href="articles_maths/split-biquaternion-analysis.html">Split-Biquaternion Analysis</a>
 <!-- the metric structure of $\mathbb{H}_{\mathbb{D}}$; limits and continuity; the problem of differentiability; the general four-dimensional subspace; the differential operators; the role of the zero divisors; the relation to Fueter and Clifford analysis. -->
 
-### <a href="articles_maths/split-quaternion-analysis-on-subspaces.html">Split-Quaternion Analysis on Subspaces</a>
+### <a href="articles_maths/split-biquaternion-analysis-on-subspaces.html">Split-Biquaternion Analysis on Subspaces</a>
 <!-- the split complex, quaternion, Hermitian and anti-Hermitian subspaces; comparison and relations; the idempotent decomposition and the subspaces; the summary of the operators; the role of the zero divisors. -->
 
 ### - Integration
 
-### <a href="articles_maths/split-quaternion-integration.html">Split-Quaternion Integration</a>
-<!-- the integral of a split-quaternion-valued function; integration by parts; the divergence theorem; Green's formulas; the fundamental solution; the Cauchy integral formula and its consequences; the residue theory; the role of the zero divisors; the relation to complex, quaternionic and split complex analysis. -->
+### <a href="articles_maths/split-biquaternion-integration.html">Split-Biquaternion Integration</a>
+<!-- the integral of a split-biquaternion-valued function; integration by parts; the divergence theorem; Green's formulas; the fundamental solution; the Cauchy integral formula and its consequences; the residue theory; the role of the zero divisors; the relation to complex, quaternionic and split complex analysis. -->
 
 ### - Special Functions
 
-### <a href="articles_maths/split-quaternion-elementary-functions.html">Split-Quaternion Elementary Functions</a>
+### <a href="articles_maths/split-biquaternion-elementary-functions.html">Split-Biquaternion Elementary Functions</a>
 <!-- the exponential; trigonometric and hyperbolic functions; the logarithm; power functions; relations to the quaternion and split complex cases; non-commutativity and the one-variable case; the summary of formulas; comparison with the biquaternion case. -->
 
-### <a href="articles_maths/split-quaternion-higher-special-functions.html">Split-Quaternion Higher Special Functions</a>
+### <a href="articles_maths/split-biquaternion-higher-special-functions.html">Split-Biquaternion Higher Special Functions</a>
 <!-- Bessel functions; orthogonal polynomials; the hypergeometric function; the Gamma function; the zeta function; the special functions from the analysis; the general principle. -->
 
 ### - Harmonic Analysis
 
-### <a href="articles_maths/split-quaternion-discrete-harmonic-analysis.html">Split-Quaternion Discrete Harmonic Analysis</a>
+### <a href="articles_maths/split-biquaternion-discrete-harmonic-analysis.html">Split-Biquaternion Discrete Harmonic Analysis</a>
 <!-- the Fourier kernel; the discrete transform pair; factorization into complex Fourier transforms; the convolution theorem; the vanishing-norm issue; the two-dimensional transform; higher-dimensional transforms. -->
 
-### <a href="articles_maths/split-quaternion-continuous-harmonic-analysis.html">Split-Quaternion Continuous Harmonic Analysis</a>
+### <a href="articles_maths/split-biquaternion-continuous-harmonic-analysis.html">Split-Biquaternion Continuous Harmonic Analysis</a>
 <!-- the Fourier kernel; the continuous transform pair; factorization into quaternion and complex Fourier transforms; the convolution theorem; the relation to the differential operators; the vanishing-norm issue; the relation to the discrete transform. -->
 
 ## Octonions
@@ -1854,7 +2240,7 @@
 <!-- the octonions on $\mathbb{R}^8$; the multiplication and its non-associativity; the norm form; the conjugation; the relation to the normed division algebras and to the Hurwitz theorem of Part I; the relation to the Clifford algebras of Part II. -->
 
 ###<a href="articles_maths/octonion-norm-and-invertibility.html">Octonion Norm and Invertibility</a>
-<!-- the norm form on the octonions; the invertibility criterion; the group of units and the fact that the octonions have no zero divisors, in contrast to the biquaternions and the split-quaternions; the relation to the octonion algebra and to the division algebras of Part I. -->
+<!-- the norm form on the octonions; the invertibility criterion; the group of units and the fact that the octonions have no zero divisors, in contrast to the biquaternions and the split-biquaternions; the relation to the octonion algebra and to the division algebras of Part I. -->
 
 ### - Representations
 
@@ -1885,7 +2271,7 @@
 ### - Special Functions
 
 ###<a href="articles_maths/octonion-special-functions.html">Octonion Special Functions</a>
-<!-- special functions of an octonion variable; the relation to the octonion analysis of this system and to the special functions of Part IV. -->
+<!-- special functions of an octonion variable; the relation to the octonion analysis of this system and to the special functions of Part V. -->
 
 ### - Harmonic Analysis
 

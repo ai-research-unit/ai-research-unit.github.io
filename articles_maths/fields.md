@@ -80,7 +80,7 @@ Thus every field is an extension of a prime field and a vector space over it, an
 
 **(d)** For $n \geq 2$, the matrix ring $M_n(F)$ is neither commutative nor free of zero divisors.
 
-**(e)** The quaternions $\mathbb{H}$ form a division ring but not a field. By Wedderburn's little theorem every finite division ring is a field, so $\mathbb{H}$ is infinite (*Rings*, §13).
+**(e)** A division ring that is not commutative is not a field. By Wedderburn's little theorem every finite division ring is a field, so every **skew field** is infinite (*Rings*, §13).
 
 **(f)** The split-complex numbers $\mathbb{D}$ are commutative but have zero divisors.
 

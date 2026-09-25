@@ -31,7 +31,7 @@ The word problem has a positive solution in every free group, and the algorithm 
 
 **Proof sketch.** The proof introduces the length sum $\sum_i |a_i|$ and shows that a nontrivial tuple can be shortened by a Nielsen transformation unless the generators already can be read off a common "Nielsen reduced" form, in which case they are automatically independent. The inductive argument on the length sum shows that primitive tuples — those that are generating and as short as possible — are retrievable by Nielsen moves, and the technical heart is the **Nielsen reduction**: a tuple is Nielsen reduced if no cancellation occurs on more than half of any generator when it is multiplied by the others, and a Nielsen reduced tuple freely generates the subgroup it generates. $\square$
 
-The theorem is the free-group form of the Euclidean algorithm: within a free group, the reduction of a generating tuple by Nielsen transformations is the analogue of reducing a generating set of a subgroup of $\mathbb{Z}$, and it computes the rank.
+The theorem is the free-group form of the division algorithm of $\mathbb{Z}$: within a free group, the reduction of a generating tuple by Nielsen transformations is the analogue of reducing a generating set of a subgroup of $\mathbb{Z}$, and it computes the rank.
 
 ## Presentations and the Word Problem
 

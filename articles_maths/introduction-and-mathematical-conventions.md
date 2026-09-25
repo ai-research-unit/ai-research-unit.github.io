@@ -14,7 +14,7 @@ Three consequences explain most of the decisions recorded below, and they are wo
 
 These rules are stated precisely in *The Three Rules of the Ordering* below.
 
-## The Four Parts
+## The Five Parts
 
 ### Part I : Algebra
 
@@ -22,17 +22,32 @@ Algebra builds the objects themselves, and nothing else. It begins with sets, fu
 
 Nothing in Part I refers to a distance, a norm, a limit, a form or a manifold. This is the meaning of the statement that **algebra is clean**: the part is developed without topology, and every concept that would require it is deferred to Part II.
 
-### Part II : Topology
+### Part II : Topology and Geometry
 
 Topology is what becomes available once a **distance** is placed on the objects of Part I. From a distance come balls, open sets, neighbourhoods, continuity, convergence, completeness and compactness. The part begins with distance and its general theory, and then lays a distance — or the weaker and more general notion of a topology — on each object of Part I in turn: on groups, rings and fields, linear spaces and algebras. A **form** is the second structure of the part, since a bilinear or quadratic form defines a distance-like pairing and generates the classical groups, the Clifford algebras and the spinors. Part II closes with the geometry and the manifolds that these structures produce, with the algebraic topology that measures what a distance leaves invariant, and with the sheaves and the algebraic geometry that the cohomological machinery of the part makes possible.
 
 ### Part III : Analysis
 
-Analysis is what becomes available once limits exist. It begins with measure and integration and with the modes of convergence; it then develops analytic functions, differential calculus, the transform theory and the differential equations that the preceding parts make possible, on the objects the preceding parts supply. It closes with the two measure-theoretic subjects that only a limit can define, probability and ergodic theory, and with the dynamical systems those support. The general analysis that underlies the per-system articles is deliberately thin: each transform, each integral and each special function is developed in the category of the system to which it belongs, in Part IV.
+Analysis is what becomes available once limits exist. It begins with measure and integration and with the modes of convergence; it then develops analytic functions, differential calculus, the transform theory and the differential equations that the preceding parts make possible, on the objects the preceding parts supply. It closes with the two measure-theoretic subjects that only a limit can define, probability and ergodic theory, and with the dynamical systems those support. The general analysis that underlies the per-system articles is deliberately thin: each transform, each integral and each special function is developed in the category of the system to which it belongs, in Part V.
 
-### Part IV : Synthetic Studies
+### Part IV : Catalogues
 
-Parts I to III develop the general theory layer by layer. Part IV reverses the direction and studies one system at a time, taking each system through the whole ladder. Its categories are the number systems and their relatives — the Booleans, the naturals, the integers, the rationals, the reals, the complex numbers, the split-complex numbers, the dual numbers, the quaternions, the biquaternions, the split-quaternions and the octonions — and its articles take that system through the layers of Parts I to III. Part IV is described in *The Synthetic Progression* below.
+Parts I to III are organised by structure, and Part V by system. Part IV is organised by **object**. Its three categories are the three layers of the corpus — *Catalogue of Algebra*, *Catalogue of Topology and Geometry* and *Catalogue of Analysis* — and each of their articles is a transversal list of the objects of one kind that the corpus meets. The second is the wider of the three: a geometry is a structure placed on a topological space, so the spaces, the forms and the groups that act on them are listed together. A catalogue of fields collects every field, a catalogue of forms every form with its signature, a catalogue of spaces every space. The part answers the question that a progression by layers cannot: which objects have been met, and how do they compare.
+
+The catalogues are the one part that adds no structure and proves no theorem. Their articles obey a rule of their own:
+
+> A catalogue names an object and points to the article or articles that introduce it. It introduces
+> nothing and it proves nothing.
+
+The one condition on what a catalogue may list is that its object has been **introduced somewhere in Parts I to III**. It need not have an article of its own: an object introduced in a single line of an article, or in one of its examples, is a legitimate entry, and the catalogue points to that article rather than to an owner. What a catalogue may not do is name an object that appears nowhere in Parts I to III, or bring in a concept of its own — if a list needs one, the corpus writes the article that introduces it first.
+
+A catalogue lists examples and non-examples side by side. Beside the objects that have the property it gathers it records the objects that fail it, each failure named and pointed to the article that records it — $\mathbb{Z}[\sqrt{-5}]$ is a domain but not a unique factorisation domain, $\mathbb{Z}[x]$ is a unique factorisation domain but not a principal ideal domain, $M_2(\mathbb{R})$ is a ring but not a division ring — and the non-examples are what show that each class is a proper subclass of the one above it. They are recorded with the same care as the examples.
+
+A catalogue also records a warning where an object is expected and does not appear — $\mathbb{H}$ is a division ring but not a field, $\mathbb{O}$ is a division algebra but not a ring, the orthogonal group is not a group-layer object because it is defined by a form — each with the article in which the object is introduced. Every list is assembled from the introductions and the *Summary of Notation* sections of the articles of Parts I to III, which is what keeps it true as the corpus grows.
+
+### Part V : Synthetic Studies
+
+Parts I to III develop the general theory layer by layer. Part V reverses the direction and studies one system at a time, taking each system through the whole ladder. Its categories are the number systems and their relatives — the Booleans, the naturals, the integers, the rationals, the reals, the complex numbers, the split-complex numbers, the dual numbers, the quaternions, the split-quaternions, the biquaternions, the split-biquaternions and the octonions — and its articles take that system through the layers of Parts I to III. Part V is described in *The Synthetic Progression* below.
 
 The sizes of the parts are deliberately not recorded here. Articles are written continuously, so a census that is accurate today is stale tomorrow; the menu is the only authority on what exists and on what is still planned. What is stable is the structure, and the structure is what the rest of this article describes.
 
@@ -44,7 +59,7 @@ Each of Parts I, II and III is organised by the **same five-slot spine**. The sl
 
 The spine is what makes the parts comparable. Part II is not a collection of topology articles; it is the spine of Part I, category for category, with a distance added. The same holds for Part III with limits. The correspondence is exact, and it is the structural claim of the whole corpus:
 
-| Slot | Part I : Algebra | Part II : Topology | Part III : Analysis |
+| Slot | Part I : Algebra | Part II : Topology and Geometry | Part III : Analysis |
 |---|---|---|---|
 | Foundations | Foundations of Algebra | Foundations of Topology | Foundations of Analysis |
 | Groups | Groups | Topology on Groups | Analysis on Groups |
@@ -57,9 +72,9 @@ Three features of the table deserve comment.
 
 **The Foundations slot is first in every part.** A part begins by assembling the language it needs. In Part I that language is set theory, logic and universal properties. In Part II it is the theory of distance itself: metric, uniform and complete spaces, then general topological spaces, then the metrisation and separation axioms that measure the gap between the two. In Part III it is measure and the modes of convergence. Foundations is a slot and not a preface: it has articles, and later slots refer back to them.
 
-**The naming is mechanical in both directions.** A category of Part II is named *Topology on X* and a category of Part III *Analysis on X*, where X is the name of the slot in Part I; Part I's own categories carry the bare slot names, because Part I is the base against which the other two are named. The three parts therefore read in parallel, slot for slot and name for name, and a slot name carries a qualifier exactly where the object requires one. The fourth slot is named *Linear Spaces*, and keeps that name even where the scalars form a ring and the objects are modules, because the slot is the theory of scalars acting on an abelian group. The fifth slot is named *Linear Algebras* rather thanbecause the multiplication is added to a linear space and not to a set: the name records the layer below it. The objects themselves continue to be called linear spaces and algebras in the articles; the qualified names are the names of the layers.
+**The naming is mechanical in both directions.** A category of Part II is named *Topology on X* and a category of Part III *Analysis on X*, where X is the name of the slot in Part I; Part I's own categories carry the bare slot names, because Part I is the base against which the other two are named. The three parts therefore read in parallel, slot for slot and name for name, and a slot name carries a qualifier exactly where the object requires one. The fourth slot is named *Linear Spaces*, and keeps that name even where the scalars form a ring and the objects are modules, because the slot is the theory of scalars acting on an abelian group. The fifth slot is named *Linear Algebras* rather than *Algebras* because the multiplication is added to a linear space and not to a set: the name records the layer below it. The objects themselves continue to be called linear spaces and algebras in the articles; the qualified names are the names of the layers.
 
-**Each part adds extensions after the spine.** Part I extends its spine with the *Symmetric Linear Algebras*, the *Anti-symmetric Linear Algebras* and the *Linear Spaces over Linear Algebras* — structures internal to algebra. Part II extends with *Quadratic Forms and Clifford Algebras* and with *Geometry and Manifolds*, which a distance makes possible, and then with *Algebraic Topology*, *Sheaves and Cohomology* andwhich are built on the cohomological machinery those structures supply: algebraic topology measures what a distance leaves invariant, sheaf cohomology is the derived functor theory of Part I read on a space, and algebraic geometry is the geometry of schemes, coherent sheaves and moduli that the sheaf theory supports. Part III extends with *Differential Equations* and then with *Probability and Ergodic Theory* and *Dynamical Systems*, the measure-theoretic subjects that only a limit can define. An extension is where a part's own new structure generates objects that have no analogue in the other parts.
+**Each part adds extensions after the spine.** Part I extends its spine with the *Symmetric Linear Algebras*, the *Anti-symmetric Linear Algebras* and the *Linear Spaces over Linear Algebras* — structures internal to algebra. Part II extends with *Quadratic Forms and Clifford Algebras* and with *Geometry and Manifolds*, which a distance makes possible, and then with *Algebraic Topology*, *Sheaves and Cohomology* and *Algebraic Geometry*, which are built on the cohomological machinery those structures supply: algebraic topology measures what a distance leaves invariant, sheaf cohomology is the derived functor theory of Part I read on a space, and algebraic geometry is the geometry of schemes, coherent sheaves and moduli that the sheaf theory supports. Part III extends with *Differential Equations* and then with *Probability and Ergodic Theory* and *Dynamical Systems*, the measure-theoretic subjects that only a limit can define. An extension is where a part's own new structure generates objects that have no analogue in the other parts.
 
 ## The Object Ladder
 
@@ -119,7 +134,7 @@ Applying the test explains several placements that might otherwise look arbitrar
 - A **derivative** needs a linear structure and a limit, so it belongs to Part III, and in the linear-spaces slot because the linear structure is what it differentiates.
 - A **Lie group** fails the test for algebra. A Lie group is a group that is also a smooth manifold; a manifold needs a topology, and a topology needs a distance. A Lie group is therefore not an algebra object, and its articles belong to *Topology on Groups*. Its **Lie algebra**, by contrast, is defined by the bracket alone and is pure algebra: it stays in Part I. The passage between the two — the exponential map, the correspondence, the adjoint representation — is a topology article, because it is the passage that needs the manifold.
 - The **orthogonal and special orthogonal groups** fail for the same reason in the group slot: they are defined as the transformations preserving a form, and a form is a structure of Part II. They therefore appear not in the group slot but in the category that introduces the form, together with the isometries and the rotations that form generates.
-- A **rotation** is not an algebra word. It requires an orientation and a measure, and both require the distance. Rotations appear in Part II and in the geometry slot of each Part IV system.
+- A **rotation** is not an algebra word. It requires an orientation and a measure, and both require the distance. Rotations appear in Part II and in the geometry slot of each Part V system.
 
 The ordering also explains why algebra can be presented, as it is here, with no warning that topology will follow: it is a complete subject on its own. The converse is false, which is the sense in which algebra is more fundamental than topology.
 
@@ -137,11 +152,13 @@ When a category introduces a new structure, it absorbs every earlier object that
 | A form and its distance | Quadratic Forms and Clifford Algebras | groups, linear spaces, Lie algebras | isometries; orthogonal, unitary and symplectic groups; Clifford algebras; spinors; Witt theory |
 | A smooth structure | Geometry and Manifolds | forms, groups | manifolds and differential geometry; curvature and geodesics; bundles, connections and curvature; differential forms |
 | Measure and limit | the whole of Part III | all of the above | measure; analytic functions; differential calculus; hypercomplex analysis and integration |
-| Everything at once | every Part IV category | one system at a time | the whole ladder, per system |
+| Everything at once | every Part V category | one system at a time | the whole ladder, per system |
 
-The same object therefore appears at several depths, and that is intended. The quaternion group $Q_8$ is a group . The group of unit quaternions is a Lie group (in *Topology on Groups*). Its representations belong to the representation theory of the algebras (in *Linear Spaces over Linear Algebras*), and its harmonic analysis belongs to the quaternion category of Part IV. Nothing is repeated: each article adds the structure that its category owns.
+The same object therefore appears at several depths, and that is intended. The quaternion group $Q_8$ is a group . The group of unit quaternions is a Lie group (in *Topology on Groups*). Its representations belong to the representation theory of the algebras (in *Linear Spaces over Linear Algebras*), and its harmonic analysis belongs to the quaternion category of Part V. Nothing is repeated: each article adds the structure that its category owns.
 
 An important corollary: **an object is not moved merely because a later structure could be placed on it.** The rule applies only when an article actually uses the new structure. The integers are a ring (in *Rings and Fields*) and also, with the discrete distance, a topological group (in *Topology on Groups*) and a locally compact group — but the article on the integers as a ring stays in *Rings and Fields*, because it reasons with the ring structure alone.
+
+**Part IV is outside the correspondence.** *Catalogues* is not a layer and carries no new structure: its categories cut across the five slots rather than repeating them, and its articles gather the objects of Parts I to III into lists without adding to them. It is placed after the three parts, whose objects it lists, and before *Synthetic Studies*.
 
 ## Distance: the Boundary Between Algebra and Topology
 
@@ -155,15 +172,15 @@ Under this rule three familiar mathematical families change address.
 
 **The Lie groups.** A Lie group is a group that is a manifold. Manifolds, bundles and connections belong to *Geometry and Manifolds*, and the Lie groups to the group slot of Part II, where a topological group has already been introduced. The Lie algebras remain in Part I, and the exponential map and the correspondence that join the two lie with the groups, because it is the manifold side of that correspondence that needs the topology.
 
-**Rotations and reflections.** These are not algebra words. A reflection is defined by a form; a rotation is an orientation-preserving isometry; both need a measure. They appear when the form is available, and then per system in Part IV.
+**Rotations and reflections.** These are not algebra words. A reflection is defined by a form; a rotation is an orientation-preserving isometry; both need a measure. They appear when the form is available, and then per system in Part V.
 
 ### Topology and geometry are the same layer
 
-Since geometry begins with a distance, the corpus does not treat geometry as a fifth part. It treats it as a second intent within the same layer. Part II's foundations study the distance as a **tool**: they extract what all distances have in common — the open sets, the topology — and prove that many different distances give the same answer. The geometry category studies the distance as an **object**: its shape, its curvature, its geodesics, its isometries, and the figures and congruences it defines. The two are complementary readings of one structure, and that is why the geometry articles of Part II sit beside the forms and the Clifford algebras, and why each Part IV system carries a geometry slot.
+Since geometry begins with a distance, the corpus does not treat geometry as a fifth part. It treats it as a second intent within the same layer. Part II's foundations study the distance as a **tool**: they extract what all distances have in common — the open sets, the topology — and prove that many different distances give the same answer. The geometry category studies the distance as an **object**: its shape, its curvature, its geodesics, its isometries, and the figures and congruences it defines. The two are complementary readings of one structure, and that is why the geometry articles of Part II sit beside the forms and the Clifford algebras, and why each Part V system carries a geometry slot.
 
 ## The Synthetic Progression
 
-Parts I to III are general: each category is about a structure, and the objects of that category are whatever satisfies it. Part IV is concrete: each category is a single system, and the article slots are the layers of Parts I to III applied to that system. The slots recur across the systems:
+Parts I to III are general: each category is about a structure, and the objects of that category are whatever satisfies it. Part IV is transversal: its categories cut across the three, and each of its articles lists the objects of one kind. Part V is concrete: each category is a single system, and the article slots are the layers of Parts I to III applied to that system. The slots recur across the systems:
 
 > Algebra · Topology · Geometry · Representations · Analysis · Integration · Spectral Theory · Special Functions · Harmonic Analysis
 
@@ -180,8 +197,9 @@ A system carries those of them that exist for it, which is a fact about the syst
 | split-complex $\mathbb{D}$ | a hyperbola rather than a circle |
 | dual numbers $\mathbb{D}'$ | a nilpotent direction |
 | $\mathbb{H}$ | non-commutativity |
+| split-quaternions $\mathbb{H}_{\mathrm{s}}$ | a matrix model; isotropic vectors |
 | $\mathbb{B}$ (biquaternions) | complexification; zero divisors |
-| split-quaternions $\mathbb{H}_{\mathbb{D}}$ | an indefinite form |
+| split-biquaternions $\mathbb{H}_{\mathbb{D}}$ | an indefinite form |
 | octonions $\mathbb{O}$ | non-associativity |
 
 The systems are listed in the order in which the corpus reaches them.
@@ -212,7 +230,7 @@ The mathematical corpus contains no article about a physical theory. There is no
 
 The rule is not that mathematical concepts with a physical origin are forbidden. It is that the **mathematical content must be autonomous**. Where a concept was named first in physics and is by now an ordinary mathematical object, the name may be kept, provided everything physical about it is dropped.
 
-The clearest case is the **Lorentz group**. The Lorentz group is the group of linear transformations preserving a quadratic form of signature $(3,1)$. That is a complete definition in pure algebra, and the group is treated as such: its structure, its subgroups, its one-parameter subgroups and its relation to the split-quaternions are ordinary mathematics. What the corpus does not write is *spacetime*, *the speed of light*, *an observer*, *a clock* or *a measurement*.
+The clearest case is the **Lorentz group**. The Lorentz group is the group of linear transformations preserving a quadratic form of signature $(3,1)$. That is a complete definition in pure algebra, and the group is treated as such: its structure, its subgroups, its one-parameter subgroups and its relation to the split-biquaternions are ordinary mathematics. What the corpus does not write is *spacetime*, *the speed of light*, *an observer*, *a clock* or *a measurement*.
 
 The same discipline applies to vocabulary that carries a physical flavour more strongly than its mathematical content. Where a mathematical synonym exists it is preferred: a **hyperbolic rotation** rather than a *boost*, the **null cone of a quadratic form** rather than a *light cone*, and **signature** rather than any metrical vocabulary from relativity. A reader coming from physics will recognise these objects; the corpus describes them as the algebra and the geometry that they are.
 
@@ -231,7 +249,8 @@ The conventions below are those used throughout the corpus. They are stated once
 | $\mathbb{D}$ | the split-complex numbers, $\mathbb{R}[x]/(x^2-1)$ |
 | $\mathbb{D}'$ | the dual numbers, $\mathbb{R}[x]/(x^2)$ |
 | $\mathbb{B}$ | the biquaternions, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\mathbb{H}_{\mathbb{D}}$ | the split-quaternions (coquaternions) |
+| $\mathbb{H}_{\mathbb{D}}$ | the split-biquaternions, $\mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ |
+| $\mathbb{H}_{\mathrm{s}}$ | the split-quaternions, $\mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$ |
 | $\mathbb{O}$ | the octonions |
 | $G$ | a group; $R$ a ring; $k$, $F$ a field; $V$ a vector space; $M$ a module; $A$ an algebra |
 | $\mathfrak{g}, \mathfrak{h}, \mathfrak{sl}_n$ | Lie algebras, in Fraktur |
@@ -269,7 +288,7 @@ The articles are rendered with KaTeX on the page, and the following rules are ob
 
 The corpus has a small number of working conventions that are not mathematical.
 
-**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with this article, outside the four parts, since it describes the corpus rather than belonging to one of its layers.
+**The menus.** Every article is registered in exactly one menu: `maths.md` for the mathematical corpus and `physics.md` for the physics corpus. An entry has the form of a link to the article followed by a comment that lists the contents of the article in outline. The mathematical menu opens with this article, outside the five parts, since it describes the corpus rather than belonging to one of its layers. An entry that begins with `+` is a **planned** article, one that is registered in the menu and not yet written; an entry without the marker has its article on disk.
 
 **The category names and numbers.** The menu numbers its categories, and an article elsewhere in the corpus may address one by number rather than by name: *category n* means the n-th category of the mathematical menu, read in order. This article refers to categories by **name** throughout, because the names are the stable thing and the numbers shift whenever a category is inserted or split. A reader who meets a bare number in another article can resolve it in the menu.
 
@@ -281,11 +300,13 @@ The corpus has a small number of working conventions that are not mathematical.
 
 ## Summary
 
-The mathematical corpus is organised in four parts. Part I, Algebra, builds the objects — sets, groups, rings and fields, linear spaces, linear algebras — and uses nothing but those objects. Part II, Topology, places a distance on each of them in turn, and then studies the forms, the classical groups, the Clifford algebras and the geometry that the distance makes possible, together with the algebraic topology, the sheaves and the algebraic geometry built on its cohomology. Part III, Analysis, uses the limits that the distance supplies, down to the probability, the ergodic theory and the dynamical systems that only a limit can define. Part IV, Synthetic Studies, re-traverses the whole ladder one system at a time, from the Booleans to the octonions.
+The mathematical corpus is organised in five parts. Part I, Algebra, builds the objects — sets, groups, rings and fields, linear spaces, linear algebras — and uses nothing but those objects. Part II, Topology and Geometry, places a distance on each of them in turn, and then studies the forms, the classical groups, the Clifford algebras and the geometry that the distance makes possible, together with the algebraic topology, the sheaves and the algebraic geometry built on its cohomology. Part III, Analysis, uses the limits that the distance supplies, down to the probability, the ergodic theory and the dynamical systems that only a limit can define. Part IV, Catalogues, gathers the objects of Parts I to III into transversal lists, one kind of object per article, naming each object and pointing to the articles that introduce it without introducing or proving anything. Part V, Synthetic Studies, re-traverses the whole ladder one system at a time, from the Booleans to the octonions.
 
 Parts I to III share one five-slot spine — Foundations, Groups, Rings and Fields, Linear Spaces, Linear Algebras — and each part adds its own extensions after it. The spine follows the object ladder, in which each layer adds exactly one structure to the layer above.
 
 Three rules fix the placement of every article. No category may use a structure it has not yet introduced. The layers are strictly ordered, and algebra, which needs no distance, is the most fundamental. And an object re-read through a new structure belongs to the new category, not the old one: once a distance exists, the topological groups, the classical groups, the Lie groups and the isometries are topology articles, however algebraic their objects.
+
+The catalogues of Part IV obey a rule of their own. A catalogue names an object and points to the articles that introduce it; it introduces nothing and it proves nothing. The one condition on what it may list is that the object has been introduced somewhere in Parts I to III, whether or not an article is devoted to it.
 
 Distance is the boundary between the parts and the diagnostic for placing anything: if a concept needs a distance, a norm, a limit or an open set, it is not algebraic. Under this rule geometry is not a fifth part but the second intent of the same layer — topology studies the distance as a tool, geometry studies it as an object — and the classical groups and the rotations arrive with the forms, not with the groups.
 
@@ -295,7 +316,7 @@ The corpus is pure mathematics. No article is about an application of mathematic
 
 | Symbol | Meaning |
 |---|---|
-| Part I, II, III, IV | Algebra, Topology, Analysis, Synthetic Studies |
+| Part I, II, III, IV, V | Algebra, Topology and Geometry, Analysis, Catalogues, Synthetic Studies |
 | Foundations, Groups, Rings and Fields, Linear Spaces, Linear Algebras, Extensions | the five-slot spine shared by Parts I to III, and the extensions each part adds after it |
 | Rule 1 | no category may use a structure it has not yet introduced |
 | Rule 2 | the layers are strictly ordered; algebra is the most fundamental |
@@ -315,5 +336,5 @@ The corpus is pure mathematics. No article is about an application of mathematic
 - James R. Munkres, *Topology*, 2nd ed. (Prentice Hall, 2000). Metric and topological spaces, and metrisation.
 - Serge Lang, *Algebra*, 3rd ed. (Springer, 2002). The reference for the object ladder of Part I.
 - Michael Artin, *Algebra*, 2nd ed. (Pearson, 2011). An account in which the examples precede the general theory.
-- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991). The representations that recur in the Part IV slots.
+- William Fulton and Joe Harris, *Representation Theory: A First Course* (Springer, 1991). The representations that recur in the Part V slots.
 - John C. Baez, "The Octonions", *Bulletin of the American Mathematical Society* 39 (2002), 145–205. The chain of real division algebras that ends the ladder of the number systems.

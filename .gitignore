@@ -24,4 +24,6 @@ BRAINSTORMING*
 *.suggestions
 *.ideas
 
-
+# Persistent memory - agent-written, never committed from a project tree
+.openhands/
+MEMORY*

@@ -297,6 +297,14 @@ The norm form and the Hermitian form coincide, while the inner product is a dist
 
 In the complex case, the norm form and the Hermitian form coincide, because the conjugation is the only non-trivial involution and the algebra is commutative. This is a degeneracy of the two-dimensional case, and it is the reason the complex numbers are often treated as a trivial example rather than as a case study.
 
+## Summary
+
+The complex algebra $\mathbb{C}$ is the real algebra of dimension $2$ with basis $e_0 = 1$, $e_1 = i$ and the single relation $e_1^2 = -e_0$. With its multiplication it is a field: commutative, associative and unital, with every nonzero element invertible. A general element is written in developed form as $z = a e_0 + b e_1$.
+
+Complex conjugation is the nontrivial $\mathbb{R}$-linear involution, and its two fixed-point subspaces are the real subspace $\mathbb{R}_{\mathbb{C}}$, on which the conjugation acts as the identity, and the imaginary subspace $i\mathbb{R}_{\mathbb{C}}$, which it negates. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every complex number decomposes uniquely in each of the two ways the article records: as a real part plus an imaginary part, and as the sum of the $+1$ and $-1$ eigencomponents.
+
+Three quadratic objects are attached to the algebra. The norm form $N(z) = z\bar{z} = a^2 + b^2$ is positive definite and multiplicative, $N(zw) = N(z)N(w)$, and it vanishes only at $z = 0$; it is the form that controls invertibility. The Hermitian form is the same expression, while the inner product $\langle z, w\rangle = \bar{z}w$ is a genuinely two-variable Hermitian object, complex-valued in general and linear in the second argument. That the norm form and the Hermitian form coincide is a degeneracy of the commutative two-dimensional case, and it is the reason the complex numbers are commonly treated as a trivial example rather than as a case study.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

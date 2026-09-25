@@ -417,6 +417,14 @@ The differences between dual numbers analysis and complex analysis are consequen
 
 The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The dual case is also rigid: differentiability forces the real part to be independent of the infinitesimal direction, and leaves two ordinary differentiable functions of one variable (the real part and the value of the infinitesimal part along $y = 0$).
 
+## Summary
+
+Dual numbers analysis is the study of differentiable functions of a dual variable $z = x + y\varepsilon$ with $\varepsilon^2 = 0$. The plane carries the Euclidean norm inherited from $R^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
+
+The derivative is defined as in the complex case, but its behaviour differs because $\varepsilon$ is nilpotent. The structure theorem for dual differentiability records the consequence: the infinitesimal part of a dual differentiable function is determined by the derivative of its real part, so a dual function carries its own derivative inside itself. The maximal ideal $\mathfrak{m} = (\varepsilon)$, nilpotent of index two, is the infinitesimal direction, and it is the source of that rigidity.
+
+The article develops what the nilpotent structure supports: contour integrals along paths, power series with their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The final sections record the relation of the dual calculus to ordinary differentiation and compare the subject with complex analysis, where the square of the imaginary unit vanishes rather than equalling $-1$.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

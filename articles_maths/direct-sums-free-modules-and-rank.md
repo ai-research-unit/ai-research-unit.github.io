@@ -77,7 +77,7 @@ The module-theoretic content of a direct summand is an idempotent endomorphism.
 
 *Proof.* If $M=N\oplus N'$, let $e$ be the projection onto $N$ along $N'$; it is $R$-linear, $e(M)=N$ and $e^2=e$. Conversely, given $e^2=e$, put $N=e(M)$; then $\operatorname{id}-e$ is idempotent with image $\ker e$, and every $m=e(m)+(\operatorname{id}-e)(m)$ with $e(m) \in N$ and $m-e(m) \in \ker e$, so $M=N+\ker e$. If $m \in N \cap \ker e$ then $m=e(m')$ and $0=e(m)=e^2(m')=e(m')=m$, so the sum is direct. $\square$
 
-The complement of $N=e(M)$ is $\ker e$, and the correspondence is with the set of idempotents of $\operatorname{End}_R(M)$. Idempotents are thus the algebraic encoding of projections; they reappear for projective modules and, over a commutative ring, in the decomposition of $R$ itself as a product of rings.
+The complement of $N=e(M)$ is $\ker e$, and the correspondence is with the set of idempotents of $\operatorname{End}_R(M)$. Idempotents are thus the algebraic encoding of projections; they reappear for projective modules and, over a commutative ring, in the decomposition of $R$ itself as a product of rings. When the idempotent is taken in the ring rather than in its endomorphism ring, $e\in R$, the same computation gives $M=eM\oplus(1-e)M$ together with $R=Re\oplus R(1-e)$, the **Peirce decomposition** of the module and of the ring with respect to $e$.
 
 ## Free Modules
 
@@ -149,7 +149,7 @@ Second, a free module has a well-defined rank but a submodule of a free module n
 
 ### Rank over Division Rings and the Failure of IBN
 
-Over a division ring the classical argument works: a maximal linearly independent subset of a module is a basis, since a relation with nonzero coefficient on an outside element can be solved by invertibility. Hence every module over a division ring is free and any two bases of a finitely generated module have the same cardinality. In particular $\mathbb{H}$-modules obey the vector-space theory, as recorded in *Modules*.
+Over a division ring the classical argument works: a maximal linearly independent subset of a module is a basis, since a relation with nonzero coefficient on an outside element can be solved by invertibility. Hence every module over a division ring is free and any two bases of a finitely generated module have the same cardinality. In particular every module over a division ring $D$ obeys the vector-space theory, as recorded in *Modules*; the quaternion algebra is treated in *Division Algebras*.
 
 Invariant basis number is not a formality. Let $k$ be a field and let $V$ be a $k$-vector space of countably infinite dimension, and put $R=\operatorname{End}_k(V)$, a noncommutative ring. Decompose $V=V_0 \oplus V_1$ into two subspaces each of countable dimension, so that $V_0 \cong V_1 \cong V$; then $R \cong \operatorname{Hom}_k(V_0 \oplus V_1,V)$ as left $R$-modules, and
 

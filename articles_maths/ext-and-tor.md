@@ -191,7 +191,7 @@ where $\mathbb{Z}$ is the trivial $G$-module. The group homology is $\operatorna
 
 ### Sheaf Cohomology and the Deferred Statement
 
-**Remark.** For a sheaf of abelian groups on a site the global-section functor is left exact, and the sheaf cohomology $H^n(X,\mathcal{F})$ is by definition its $n$-th right derived functor; the identification of the resulting groups with a derived functor of $\operatorname{Hom}$ in the category of sheaves is the same balance statement proved above in the module case, carried out in a Grothendieck category with enough injectives. The sheaf-theoretic version needs a site and a topology, and it belongs to Part II, where it is treated in *Sheaves and Cohomology*; the categorical framework is supplied andof this category. This article develops the algebraic functors and states the comparison in categorical terms only.
+**Remark.** For a sheaf of abelian groups on a site the global-section functor is left exact, and the sheaf cohomology $H^n(X,\mathcal{F})$ is by definition its $n$-th right derived functor; the identification of the resulting groups with a derived functor of $\operatorname{Hom}$ in the category of sheaves is the same balance statement proved above in the module case, carried out in a Grothendieck category with enough injectives. The sheaf-theoretic version needs a site and a topology, and it belongs to Part II, where it is treated in *Sheaves and Cohomology*; the categorical framework is supplied by *Abelian and Grothendieck Categories*. This article develops the algebraic functors and states the comparison in categorical terms only.
 
 ### Additivity and Vanishing: a Summary of Computations
 

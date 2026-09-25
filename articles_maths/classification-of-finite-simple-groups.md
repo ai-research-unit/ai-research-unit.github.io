@@ -40,7 +40,7 @@ Consequently a finite group is determined, in the coarse sense of its factor mul
 
 **Corollary (Burnside).** A group of order $p^a q^b$ for primes $p, q$ is solvable; hence no nonabelian finite simple group has an order divisible by only two distinct primes.
 
-**Proof sketch of the corollary.** Burnside's theorem is proved by character theory: a nonabelian group of order $p^aq^b$ has a faithful irreducible representation over $\mathbb{C}$ of degree $>1$, and the class equation forces the existence of a nontrivial conjugacy class of size a power of a prime, which forces the character to vanish..., giving a contradiction. The full proof is the $p^aq^b$ theorem of Burnside, and the odd order theorem is much deeper; both are character-theoretic and are cited as standard. $\square$
+**Proof sketch of the corollary.** Burnside's theorem is proved by character theory, a tool of the representation theory of finite groups developed in *Representations of Groups*, in the category *Linear Spaces over Linear Algebras* of this Part; the character-theoretic argument is deferred to that article. The full proof is the $p^aq^b$ theorem of Burnside, and the odd order theorem is much deeper; both are character-theoretic and are cited as standard. $\square$
 
 **Corollary.** The smallest nonabelian finite simple group is $A_5$, of order $60$; there is a unique simple group of order $60$ up to isomorphism. There is no nonabelian simple group of order less than $60$.
 

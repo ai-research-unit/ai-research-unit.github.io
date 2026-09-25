@@ -451,6 +451,28 @@ $$
 
 The dual wavelet transform is used in infinitesimal signal processing, where it provides both the value and the derivative information.
 
+## The Structure Principle
+
+The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case on $\mathbb{R}^2$. Whenever the analysis involves the algebra structure, the nilpotence of $\varepsilon$ makes the theory degenerate.
+
+**Theorem (Structure Principle for harmonic analysis).** Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the dual analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^2$, stated in dual notation. If $\mathcal{T}$ depends on the algebra structure, then the dual analogue is degenerate, and the degeneracy is controlled by the nilpotence of $\varepsilon$.
+
+**Consequences.**
+
+- The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory, because they depend only on the additive group and the Euclidean norm.
+- The Fourier transform, the convolution theorem, and the Radon transform are degenerate, because they depend on the algebra structure through the characters.
+- The degeneracy is always of the same form: the real part of the transform is constant or affine, and the infinitesimal part is linear in the dual variable.
+
+This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform. The theory is useful in the cases where the additive group structure is all that matters, and degenerate in the cases where the algebra structure enters.
+
+## Summary
+
+Harmonic analysis on the dual plane $\mathbb{D}'$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the nilpotent structure in an essential role. The dual plane is first a locally compact abelian group under addition, isomorphic to $R^2$, and its characters are the exponentials built from $\varepsilon$.
+
+The dual Fourier transform is defined by a kernel that truncates in the infinitesimal direction, and it is developed both on the full plane and on a bounded interval, together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along lines, and the continuous wavelet transform.
+
+The section on the structure principle states what organises the subject: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case agrees with the real case on $R^2$, and the nilpotent structure contributes exactly the first-order term in the infinitesimal direction.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -467,20 +489,6 @@ The dual wavelet transform is used in infinitesimal signal processing, where it 
 | $Rf$ | Dual Radon transform |
 | $W_\psi f$ | Dual wavelet transform |
 | $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
-
-## The Structure Principle
-
-The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the dual case is identical to the real case on $\mathbb{R}^2$. Whenever the analysis involves the algebra structure, the nilpotence of $\varepsilon$ makes the theory degenerate.
-
-**Theorem (Structure Principle for harmonic analysis).** Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the dual analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^2$, stated in dual notation. If $\mathcal{T}$ depends on the algebra structure, then the dual analogue is degenerate, and the degeneracy is controlled by the nilpotence of $\varepsilon$.
-
-**Consequences.**
-
-- The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory, because they depend only on the additive group and the Euclidean norm.
-- The Fourier transform, the convolution theorem, and the Radon transform are degenerate, because they depend on the algebra structure through the characters.
-- The degeneracy is always of the same form: the real part of the transform is constant or affine, and the infinitesimal part is linear in the dual variable.
-
-This is the fundamental limitation of dual harmonic analysis: the nilpotence of $\varepsilon$ means that the characters are too simple to resolve the function, and the transform is a moment map rather than a true Fourier transform. The theory is useful in the cases where the additive group structure is all that matters, and degenerate in the cases where the algebra structure enters.
 
 ## Further Reading
 

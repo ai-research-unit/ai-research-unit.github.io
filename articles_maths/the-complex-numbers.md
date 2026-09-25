@@ -32,7 +32,7 @@ $$
 (a + bi) + (c + di) = (a+c) + (b+d)i, \qquad (a+bi)(c+di) = (ac - bd) + (ad + bc)i .
 $$
 
-**Proof.** $x^2 + 1$ has no real root and has degree $2$, so it is irreducible; the quotient of a ring by an irreducible polynomial is a field, by *Factorization: PID, UFD and Euclidean Domains*. The normal form $a + bi$ is the division algorithm in $\mathbb{R}[x]$ modulo $x^2+1$, and the multiplication formula is the reduction of the product using $i^2 = -1$. The characteristic is that of $\mathbb{R}$, namely $0$. $\square$
+**Proof.** $x^2 + 1$ has no real root and has degree $2$, so it is irreducible; the quotient of a ring by an irreducible polynomial is a field, by *Fields*. The normal form $a + bi$ is the division algorithm in $\mathbb{R}[x]$ modulo $x^2+1$, and the multiplication formula is the reduction of the product using $i^2 = -1$. The characteristic is that of $\mathbb{R}$, namely $0$. $\square$
 
 **Corollary.** $\mathbb{C}$ is a splitting field of $x^2 + 1$ over $\mathbb{R}$, and $\{1, i\}$ is a basis of $\mathbb{C}$ as an $\mathbb{R}$-vector space; the theory of that vector-space structure belongs to *Vector Spaces*, and only the basis and the degree $[\mathbb{C}:\mathbb{R}] = 2$ are used here.
 
@@ -236,7 +236,7 @@ $$
 N(z/w - q) = \left(\operatorname{Re}(z/w) - m\right)^2 + \left(\operatorname{Im}(z/w) - n\right)^2 \leq \tfrac14 + \tfrac14 = \tfrac12 < 1,
 $$
 
-so for $r = z - qw$ we get $N(r) = N(w)N(z/w - q) < N(w)$. This is the Euclidean division property, and the consequences are those of *Factorization: PID, UFD and Euclidean Domains*. $\square$
+so for $r = z - qw$ we get $N(r) = N(w)N(z/w - q) < N(w)$. This is the Euclidean division property, and the consequences are those of *Euclidean Domains*. $\square$
 
 **Corollary (the primes of $\mathbb{Z}[i]$).** Let $p$ be a rational prime. If $p \equiv 3 \pmod 4$ then $p$ remains prime in $\mathbb{Z}[i]$; if $p \equiv 1 \pmod 4$ then $p$ splits as $p = \pi\bar\pi$ with $\pi$ and $\bar\pi$ nonassociate primes; and $2 = -i(1+i)^2$ ramifies.
 

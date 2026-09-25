@@ -1,486 +1,201 @@
+
 # __Split-Quaternion Integration__
 
 ## Introduction
 
-This article introduces the integration theory of split-quaternion-valued functions. It follows the article on split quaternion analysis, which defined limits, continuity, and the differential operators on a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$. The goal here is to define the integral of a split-quaternion-valued function, establish the standard properties, and derive the integral formulas that are the counterparts of the Cauchy integral formula and its consequences.
+This article treats the integration of split-quaternion-valued functions. It fixes the orientation of the vector subspace, proves integration by parts and the divergence theorem for the algebra, derives Green's formulas for the vector operator, constructs the fundamental solution, and explains why there is no Cauchy integral formula, comparing the situation with the quaternion and split-complex cases.
 
-The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+The split-quaternion algebra, its norm form, its conjugation and its subspaces are assumed from *Split-Quaternion Algebra*; the Lorentzian geometry of the vector subspace, including the sign convention of the form $b^2-c^2-d^2$ as three-dimensional Minkowski space, from *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*, and *Split-Quaternion Geometry*; the operators, the metric structure and the failure of the naive derivative from *Split-Quaternion Analysis*, and the operators of the subspaces from *Split-Quaternion Analysis on Subspaces*. The theory of distributions and fundamental solutions is that of *Distributions and Fundamental Solutions*, the quaternion case that of *Quaternion Integration*, and the two-dimensional hyperbolic case that of *Split-Complex Integration*. Nothing physical is invoked.
 
-Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
+## Volume Integrals and the Orientation
 
-The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-quaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, and the convective derivative $\tilde{D}$ are assumed from the preceding articles.
-
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is
+**Definition.** Let $\Omega \subset \mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ be a domain with piecewise smooth boundary. The **volume integral** of a split-quaternion-valued function $f$ on $\Omega$ is defined componentwise in the basis $1, e_1, e_2, e_3$:
 
 $$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
+\int_\Omega f = \Big(\int_\Omega f_0\Big) + \Big(\int_\Omega f_1\Big) e_1 + \Big(\int_\Omega f_2\Big) e_2 + \Big(\int_\Omega f_3\Big) e_3 ,
 $$
 
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
+and it is the Bochner integral of a function with values in the finite-dimensional normed space with the Euclidean norm of *Split-Quaternion Analysis*, §*The Metric Structure*.
 
-## The Integral of a Split-Quaternion-Valued Function
+**Definition (Orientation).** The algebra $\mathbb{H}_{\mathrm{s}} \cong \mathbb{R}^4$ is oriented by the frame $(1, e_1, e_2, e_3)$, so the volume element is $\mathrm{d}a\,\mathrm{d}b\,\mathrm{d}c\,\mathrm{d}d$. The vector subspace $V$ with the coordinates $(b,c,d)$ is oriented by $(e_1,e_2,e_3)$; the form restricted to it is $b^2-c^2-d^2$, and this is the three-dimensional Minkowski space whose Lorentz group is $\mathrm{SO}^{+}(2,1)$ by *Split-Quaternion Rotations and the Lorentz Group*, §*The Lorentz Group of Signature $(2,1)$*. Both orientations are fixed once and for all; no factor of $i$ or of any other non-real element is introduced into any integral in this article.
 
-### Definition
-
-Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, with coordinates $x_0, x_1, x_2, x_3$. Let $\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}$ be a split-quaternion-valued function, written in components as
+**Theorem (The Boundary and the Normal).** Let $\partial\Omega$ be a smooth hypersurface with a **non-characteristic** normal, that is a normal vector $n$ with $N(n) \neq 0$, scaled so that $N(n) = \pm 1$. Then the boundary carries the Riemannian or Lorentzian area element induced by the Euclidean metric of $\mathbb{R}^4$ restricted to the hypersurface, the outward normal $n$ is a split-quaternion vector field, and the divergence theorem holds:
 
 $$
-\tilde{F}(\tilde{X}) = \sum_{\mu=0}^{3} F_\mu(x_0, x_1, x_2, x_3) e_\mu, \qquad F_\mu \in \mathbb{D}.
+\int_\Omega \partial_a f \;=\; \int_{\partial\Omega} f\, n_a, \qquad \int_\Omega \partial_b f \;=\; \int_{\partial\Omega} f\, n_b, \qquad \int_\Omega \partial_c f \;=\; \int_{\partial\Omega} f\, n_c, \qquad \int_\Omega \partial_d f \;=\; \int_{\partial\Omega} f\, n_d ,
 $$
 
-Let $\Omega \subset V$ be a domain. The **integral** of $\tilde{F}$ over $\Omega$ is
+for every $f$ with continuous first derivatives on the closure, where $(n_a,n_b,n_c,n_d)$ are the coordinates of the outward unit Euclidean normal. If the normal is characteristic, that is if $N(n) = 0$, then $n$ cannot be normalised and the induced form on the boundary is degenerate.
+
+**Proof.** The identities are the divergence theorem in the four coordinates, valid for each component; the normalisation uses the non-degeneracy of the Euclidean metric, and the last statement is *Split-Quaternion Norm and Invertibility*, §*Isotropy*. $\square$
+
+## Integration by Parts and Green's Formulas
+
+**Definition.** The **scalar product** of two functions is
 
 $$
-\int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
+\langle f, g\rangle = \int_{\Omega} \operatorname{Sc}\big(f\, \bar{g}\big),
 $$
 
-where each $F_\mu$ is a split-complex-valued function on $\Omega$. Writing $F_\mu = u_\mu + j v_\mu$ with $u_\mu, v_\mu \in \mathbb{R}$, the integral is
+and the associated pairing is real-valued and non-degenerate in each variable pointwise.
+
+**Theorem (The Adjoint of the Vector Operator).** Left multiplication by $e_i$ has adjoint left multiplication by $-e_i$ with respect to the pointwise pairing $\operatorname{Sc}(f\bar g)$:
 
 $$
-\int_\Omega F_\mu \, dV = \left(\int_\Omega u_\mu \, dV\right) + j \left(\int_\Omega v_\mu \, dV\right),
+\operatorname{Sc}\big((e_i f)\bar g\big) = -\operatorname{Sc}\big(f\,\overline{e_i g}\big) .
 $$
 
-where each of the eight real-valued integrals is the ordinary Lebesgue integral with respect to the Lebesgue measure on $V \cong \mathbb{R}^4$.
+Consequently the vector operator $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ is formally skew-adjoint on functions vanishing on the boundary: $D^* = -D$.
 
-The integral is defined component-wise. It exists whenever each of the eight real-valued functions is integrable over $\Omega$.
+**Proof.** The scalar part is invariant under cyclic permutations, $\operatorname{Sc}(xyz) = \operatorname{Sc}(yzx)$, since it is a multiple of the trace in the matrix model; hence $\operatorname{Sc}(e_if\bar g) = \operatorname{Sc}(f\bar g e_i) = \operatorname{Sc}(f\,\overline{\bar e_i g})$ because $x \mapsto \bar{x}$ is an anti-automorphism, and $\bar e_i = -e_i$. The last statement is the integration by parts of the divergence theorem with vanishing boundary term. $\square$
 
-### Linearity
-
-**Theorem (linearity).** For any $\alpha, \beta \in \mathbb{D}$ and integrable functions $\tilde{F}, \tilde{G}$,
+**Theorem (Green's Formulas).** For $f, g$ with continuous first derivatives on the closure of a domain with non-characteristic boundary,
 
 $$
-\int_\Omega (\alpha \tilde{F} + \beta \tilde{G}) \, dV = \alpha \int_\Omega \tilde{F} \, dV + \beta \int_\Omega \tilde{G} \, dV.
+\int_\Omega \big[(Df)\,g + f\,(Dg)\big] = \int_{\partial\Omega} f\, n\, g ,
 $$
 
-**Proof.** This follows from the component-wise definition and the linearity of the Lebesgue integral. $\square$
+where $n$ is the vector normal of the boundary and the products are the products of the algebra. In particular, if $f$ and $g$ vanish on the boundary, $\int_\Omega (Df)g = -\int_\Omega f(Dg)$; if $Df = 0$ and $g$ vanishes on the boundary, then $\int_\Omega f(Dg) = 0$; and if both $Df = 0$ and $Dg = 0$ and one of them vanishes on the boundary, then $\int_{\partial\Omega} fng = 0$.
 
-### Additivity
+**Proof.** Expand $D(fg) = (Df)g + f(Dg)$ using the Leibniz rule and the anticommutation of the generators with the gradient in the vector direction; integrate over $\Omega$ with the divergence theorem of the first section, using that $\int_\Omega D(fg)$ is the boundary integral of $fng$ componentwise. $\square$
 
-**Theorem (additivity).** If $\Omega = \Omega_1 \cup \Omega_2$ with $\Omega_1 \cap \Omega_2$ of measure zero, then
-
-$$
-\int_\Omega \tilde{F} \, dV = \int_{\Omega_1} \tilde{F} \, dV + \int_{\Omega_2} \tilde{F} \, dV.
-$$
-
-**Proof.** This follows from the additivity of the Lebesgue integral. $\square$
-
-### The Fundamental Estimate
-
-**Theorem (fundamental estimate).** If $\|\tilde{F}\|_E \leq M$ on $\Omega$ and $\mathrm{vol}(\Omega)$ is the volume of $\Omega$, then
+**Corollary (The Classical Green Identities).** Applying the formulas to the scalar and vector parts separately gives the classical Green identities for the wave operator $\Box_{(2,1)} = D^2$: for scalar functions,
 
 $$
-\left\| \int_\Omega \tilde{F} \, dV \right\|_E \leq M \cdot \mathrm{vol}(\Omega).
+\int_\Omega \big(u\,\Box v - v\,\Box u\big) = \int_{\partial\Omega} \big(u\,\partial_n v - v\,\partial_n u\big),
 $$
 
-**Proof.** For each of the eight real components,
+with the sign of $\partial_n$ taken from the normal vector of the Minkowski form.
+
+**Proof.** Apply the formula to $Du$ and $v$, to $u$ and $Dv$, subtract, and use $D^* = -D$. $\square$
+
+## The Divergence Theorem and the Stokes Theorem
+
+**Theorem (Divergence and Stokes for the Algebra).** For a split-quaternion-valued function $F = F_0 + F_1e_1 + F_2e_2 + F_3e_3$ with continuous first derivatives,
 
 $$
-\left| \int_\Omega u_\mu \, dV \right| \leq \int_\Omega |u_\mu| \, dV \leq \int_\Omega \|\tilde{F}\|_E \, dV \leq M \cdot \mathrm{vol}(\Omega),
+\int_\Omega \Big(\frac{\partial F_0}{\partial a} + \frac{\partial F_1}{\partial b} + \frac{\partial F_2}{\partial c} + \frac{\partial F_3}{\partial d}\Big) = \int_{\partial\Omega} \big(F_0 n_a + F_1 n_b + F_2 n_c + F_3 n_d\big),
 $$
 
-and similarly for $v_\mu$. So each component is bounded by $M \cdot \mathrm{vol}(\Omega)$, and the Euclidean norm, which is equivalent to the maximum of the absolute values of the eight components, is bounded by the same constant. $\square$
+and the Stokes theorem holds for the three-form of the vector subspace with the orientation fixed above.
 
-### Integrability
+**Proof.** The divergence theorem is applied to each coordinate component, and the Stokes theorem is the usual one for the oriented three-dimensional vector subspace. $\square$
 
-**Theorem (integrability).** If $\tilde{F}$ is continuous on a compact domain $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.
+**Corollary (The Role of the Null Boundary).** On a hypersurface containing a characteristic direction, the boundary term of Green's formula degenerates along that direction: the normal vector is a zero divisor, its product with the boundary values annihilates a part of the algebra, and the boundary integral loses information.
 
-**Proof.** A continuous real-valued function on a compact subset of $\mathbb{R}^4$ is bounded and Lebesgue-integrable. Applying this to each of the eight real components and using the component-wise definition gives the result. $\square$
-
-**Theorem (absolute integrability).** If $\|\tilde{F}\|_E$ is integrable over $\Omega$, then $\tilde{F}$ is integrable over $\Omega$.
-
-**Proof.** Since $|u_\mu| \leq \|\tilde{F}\|_E$ and $|v_\mu| \leq \|\tilde{F}\|_E$ for each $\mu$, the integrability of $\|\tilde{F}\|_E$ implies the integrability of each component. $\square$
-
-### The Integral in the Idempotent Basis
-
-Because the split quaternion algebra is the direct sum of two copies of the quaternion algebra, the integral can be computed in the idempotent basis. Writing $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$,
-
-$$
-\int_\Omega \tilde{F} \, dV = \left(\int_\Omega \tilde{F}_+ \, dV\right) e_+ + \left(\int_\Omega \tilde{F}_- \, dV\right) e_-,
-$$
-
-where each of the two integrals is the quaternion-valued integral of the corresponding component. So the integration of split-quaternion-valued functions reduces to the integration of two quaternion-valued functions, one for each idempotent component.
-
-This is the same reduction as for the differential operators: the split quaternion analysis is the quaternion analysis applied to each of the two components separately.
-
-## Integration by Parts
-
-### The Scalar Case
-
-**Theorem (integration by parts).** Let $\phi$ be a scalar function and $\tilde{F}$ a split-quaternion-valued function, both continuously differentiable on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then for each $\mu$,
-
-$$
-\int_\Omega (\partial_\mu \phi) \tilde{F} \, dV = \int_{\partial \Omega} \phi \tilde{F} \, n_\mu \, dS - \int_\Omega \phi (\partial_\mu \tilde{F}) \, dV,
-$$
-
-where $n_\mu$ is the $\mu$-th component of the outward unit normal on $\partial \Omega$ and $dS$ is the surface measure.
-
-**Proof.** This is the standard integration by parts formula in $\mathbb{R}^4$, applied to the scalar function $\phi$ and each of the eight real components of $\tilde{F}$. Summing over the components gives the result. $\square$
-
-### The Vector Case
-
-**Theorem (integration by parts for the gradient).** Let $\tilde{F}$ and $\tilde{G}$ be continuously differentiable split-quaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
-
-$$
-\int_\Omega (\tilde{\nabla}\tilde{F}) \tilde{G} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \tilde{G} \, dS - \int_\Omega \tilde{F} (\tilde{\nabla}\tilde{G}) \, dV,
-$$
-
-where $\tilde{n} = \sum_\mu n_\mu e_\mu$ is the split-quaternion-valued outward unit normal.
-
-**Proof.** This follows from the scalar integration by parts applied to each component of $\tilde{\nabla}\tilde{F}$ and the product rule for the gradient. $\square$
-
-## The Divergence Theorem
-
-**Theorem (divergence theorem).** Let $\tilde{F}$ be a continuously differentiable split-quaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
-
-$$
-\int_\Omega \tilde{\nabla} \tilde{F} \, dV = \int_{\partial \Omega} \tilde{n} \tilde{F} \, dS,
-$$
-
-where $\tilde{n} = \sum_{\mu=0}^{3} n_\mu e_\mu$ is the split-quaternion-valued outward unit normal.
-
-**Proof.** The gradient $\tilde{\nabla}\tilde{F}$ is a split-quaternion-valued function with components
-
-$$
-(\tilde{\nabla}\tilde{F})_\nu = \sum_{\mu=0}^{3} (\partial_\mu F_\nu) e_\mu e_\nu.
-$$
-
-Integrating each component over $\Omega$ and applying the ordinary divergence theorem in $\mathbb{R}^4$ gives
-
-$$
-\int_\Omega \partial_\mu F_\nu \, dV = \int_{\partial \Omega} F_\nu n_\mu \, dS.
-$$
-
-Multiplying by $e_\mu e_\nu$ and summing gives the result. $\square$
-
-**Theorem (divergence theorem for the quaternion conjugate).** Under the same hypotheses,
-
-$$
-\int_\Omega \bar{\tilde{\nabla}} \tilde{F} \, dV = \int_{\partial \Omega} \bar{\tilde{n}} \tilde{F} \, dS,
-$$
-
-where $\bar{\tilde{n}} = n_0 e_0 - \sum_{k=1}^{3} n_k e_k$ is the quaternion conjugate of the outward unit normal.
-
-**Proof.** This is the same computation as above, with the signs of the vector components reversed. $\square$
-
-## Green's Formulas
-
-### First Green's Formula
-
-**Theorem (first Green's formula).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-quaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
-
-$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} + \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \tilde{F} \tilde{n} \bar{\tilde{G}} \, dS.
-$$
-
-**Proof.** Apply the divergence theorem to the product $\tilde{F} \bar{\tilde{G}}$ and use the product rule for the gradient. $\square$
-
-### Second Green's Formula
-
-**Theorem (second Green's formula).** Under the same hypotheses,
-
-$$
-\int_\Omega \left[ (\tilde{\nabla}\tilde{F}) \bar{\tilde{G}} - \tilde{F} (\bar{\tilde{\nabla}}\bar{\tilde{G}}) \right] dV = \int_{\partial \Omega} \left[ \tilde{F} \tilde{n} \bar{\tilde{G}} - \tilde{G} \tilde{n} \bar{\tilde{F}} \right] dS.
-$$
-
-The precise form of the second Green's formula depends on the choice of the differential operators and the boundary terms; the version above is the one that follows from the first formula by exchanging $\tilde{F}$ and $\tilde{G}$ and subtracting.
-
-### Green's Formula for the d'Alembertian
-
-**Theorem (Green's formula for $\Box$).** Let $\tilde{F}$ and $\tilde{G}$ be twice continuously differentiable split-quaternion-valued functions on $\Omega$ with piecewise smooth boundary $\partial \Omega$. Then
-
-$$
-\int_\Omega \left[ (\Box \tilde{F}) \tilde{G} - \tilde{F} (\Box \tilde{G}) \right] dV = \int_{\partial \Omega} \left[ (\tilde{n} \tilde{F}) \tilde{G} - \tilde{F} (\tilde{n} \tilde{G}) \right] dS,
-$$
-
-where $\Box = \partial_0^2 + \Delta$ is the four-dimensional Laplacian.
-
-**Proof.** Apply the second Green's formula with $\tilde{F}$ replaced by $\tilde{\nabla}\tilde{F}$ and $\bar{\tilde{G}}$ replaced by $\bar{\tilde{G}}$, and use the definition of $\Box$. $\square$
+**Proof.** If $n$ is null then $n^2 = 0$ and $n$ is a zero divisor by *Split-Quaternion Zero Divisors*, §*The Zero Divisor Set as the Null Cone*; the products $fng$ depend on $f$ and $g$ only through the components that do not annihilate $n$, exactly as in the matrix model. $\square$
 
 ## The Fundamental Solution
 
-### Definition
-
-The **fundamental solution** of the gradient operator $\tilde{\nabla}$ is the split-quaternion-valued function
+**Theorem (Fundamental Solution of the Wave Operator).** The operator $\Box_{(2,1)} = -\partial_b^2 + \partial_c^2 + \partial_d^2$ has a fundamental solution $E$ in the vector subspace, a distribution supported in the closed future cone
 
 $$
-\tilde{G}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4},
+C = \{(b,c,d) : b \geq 0, \ b^2 \geq c^2 + d^2\},
 $$
 
-where $\bar{\tilde{X}}$ is the quaternion conjugate of $\tilde{X}$ and $\|\tilde{X}\|_E^4 = (\|\tilde{X}\|_E^2)^2$ is the fourth power of the Euclidean norm.
+whose singular support is the light cone $\partial C$, and which is homogeneous of degree $-1$. The solution has support in the solid cone, not only on its boundary: the sharp Huygens principle fails, as it does for every wave operator in two spatial dimensions, and the tail is the interior part of the cone.
 
-The function $\tilde{G}$ is defined for $\tilde{X} \neq 0$. It is homogeneous of degree $-3$: $\tilde{G}(\lambda \tilde{X}) = \lambda^{-3} \tilde{G}(\tilde{X})$ for $\lambda > 0$.
+**Proof.** The construction of the fundamental solution of a wave operator is that of *Distributions and Fundamental Solutions*, where the support and the homogeneity are established; the boundary behaviour is the statement that the fundamental solution is singular precisely on the characteristic cone, and the failure of the sharp Huygens principle in two spatial dimensions is the standard count of dimensions. $\square$
 
-The formula is identical to the biquaternion case. The reason is that the fundamental solution depends only on the Euclidean structure of the underlying real vector space $\mathbb{R}^4$ and on the quaternion conjugate, not on the sign of the extra unit.
-
-### The Gradient of the Fundamental Solution
-
-**Theorem.** For $\tilde{X} \neq 0$,
+**Theorem (Fundamental Solution of the Vector Operator).** The vector operator $D$ has a fundamental solution
 
 $$
-\tilde{\nabla} \tilde{G}(\tilde{X}) = 0.
+E_D = D E ,
 $$
 
-**Proof.** Write $\tilde{X} = \sum_\mu x_\mu e_\mu$ and $\|\tilde{X}\|_E^2 = \sum_\mu x_\mu^2$. The quaternion conjugate is $\bar{\tilde{X}} = x_0 e_0 - \sum_k x_k e_k$. So
+the distribution obtained by applying $D$ to the fundamental solution of the wave operator; it satisfies $D E_D = \delta$ because $D^2 = \Box_{(2,1)}$. Its singular support is the light cone, so the propagation governed by $D$ is at speed one, in contrast with the elliptic case, where the singular support of the fundamental solution is a single point.
+
+**Proof.** $D(D E) = D^2E = \Box_{(2,1)}E = \delta$; the singular support is contained in that of $E$ and is not smaller because $E_D$ is not smooth across the cone. The elliptic comparison is the fundamental solution of the Laplacian in *Clifford Analysis*. $\square$
+
+## The Cauchy Integral Formula and Its Failure
+
+**Theorem (No Cauchy Integral Formula).** There is no formula of the form
 
 $$
-\tilde{G}(\tilde{X}) = \frac{x_0 e_0 - \sum_k x_k e_k}{(\sum_\mu x_\mu^2)^2}.
+f(y) = \frac{1}{\omega}\int_{\partial\Omega} K(x-y)\, f(x)
 $$
 
-A direct computation gives
+reproducing every solution of $Df = 0$ with a kernel $K$ that is smooth off the light cone and homogeneous of degree $-2$ in the four-dimensional sense; the natural candidate $K(x-y) = (x-y)^{-1}$ fails because $x-y$ is a zero divisor whenever $x-y$ is null, so the kernel has a singular set of dimension three, not of codimension four, and the boundary integral cannot reproduce interior values.
+
+**Proof.** A reproducing kernel of the stated homogeneity must be a fundamental solution of $D$ whose singular support is the boundary of the domain; but every fundamental solution of $D$ has singular support the light cone, by the preceding theorem, so its singular set has codimension one and the boundary integral cannot isolate a point. Against the candidate kernel: the inverse is defined only off the zero divisor set and blows up along it, by *Split-Quaternion Analysis*, §*Singularities*. $\square$
+
+**Theorem (The Cauchy–Pompeiu Replacement).** For every test function $f$ with compact support,
 
 $$
-\tilde{\nabla} \tilde{G} = \sum_\mu e_\mu \partial_\mu \left( \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^4} \right) = \frac{\tilde{\nabla} \bar{\tilde{X}}}{\|\tilde{X}\|_E^4} + \bar{\tilde{X}} \tilde{\nabla} \left( \frac{1}{\|\tilde{X}\|_E^4} \right).
+f = E_D * (Df),
 $$
 
-The first term is $\sum_\mu e_\mu \partial_\mu \bar{\tilde{X}} = \sum_\mu e_\mu \bar{e}_\mu = e_0 - e_1^2 - e_2^2 - e_3^2 = e_0 + e_0 + e_0 + e_0 = 4 e_0$. The second term is
+the convolution with the fundamental solution of the vector operator, and consequently a solution of $Df = 0$ with compact support is zero. The formula is the replacement of the Cauchy integral formula: the interior values of $f$ are recovered from the values of $Df$ in the interior, not from the boundary values of $f$.
+
+**Proof.** Convolution by a fundamental solution inverts the operator: $D(E_D * f) = (D E_D)*f = \delta * f = f$, and the commutation of $D$ with the convolution is the constancy of the coefficients; interchanging the roles of $f$ and $Df$ gives the display. For the second statement, $Df = 0$ gives $f = 0$. $\square$
+
+**Corollary (Consequences and the Contrast).** There is no maximum principle, no mean value property, no Liouville theorem in the elliptic form and no removable singularity theorem of the elliptic type for the solutions of $Df = 0$; the local behaviour of the solutions is governed by the propagation along the light cone, and the singularities of the solutions are concentrated on characteristic surfaces. In the quaternion case all of these theorems hold, because the Dirac operator there is elliptic and its fundamental solution is singular only at a point.
+
+**Proof.** Each failed property is a consequence of the representation of the solutions by a kernel with singular support on the cone, and the elliptic properties in the quaternion case are those of *Quaternion Integration* and *Clifford Analysis*. $\square$
+
+## Principal Values and the Distributional Inverse
+
+The singularities of the inverse on the null cone are treated distributionally, exactly as in the theory of the wave operator.
+
+**Theorem (The Principal Value of the Inverse).** The locally integrable function $1/N(x)$ on the algebra, and the distribution $x^{-1} = \bar{x}/N(x)$ on the vector subspace, have well-defined principal values: for a test function $\varphi$,
 
 $$
-\bar{\tilde{X}} \tilde{\nabla} \left( \frac{1}{\|\tilde{X}\|_E^4} \right) = \bar{\tilde{X}} \sum_\mu e_\mu \partial_\mu \left( \frac{1}{\|\tilde{X}\|_E^4} \right) = \bar{\tilde{X}} \sum_\mu e_\mu \left( -\frac{4 x_\mu}{\|\tilde{X}\|_E^6} \right) = -\frac{4 \bar{\tilde{X}} \tilde{X}}{\|\tilde{X}\|_E^6}.
+\Big\langle \mathrm{pv}\frac{1}{N},\, \varphi\Big\rangle = \lim_{\varepsilon\to0}\int_{|N(x)|>\varepsilon}\frac{\varphi(x)}{N(x)}\,\mathrm{d}x ,
 $$
 
-Since $\bar{\tilde{X}} \tilde{X} = \|\tilde{X}\|_E^2 e_0$, the second term is $-4 \|\tilde{X}\|_E^2 / \|\tilde{X}\|_E^6 \cdot e_0 = -4 e_0 / \|\tilde{X}\|_E^4$. So the two terms cancel, and $\tilde{\nabla} \tilde{G} = 0$. $\square$
-
-### The Distributional Gradient
-
-**Theorem.** In the sense of distributions,
+and the limit exists because the level sets of $N$ have finite area and the singularity is odd with respect to $x \mapsto -x$ after symmetrisation. The distribution $\mathrm{pv}(1/N)$ satisfies the identity
 
 $$
-\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0,
+N(x)\cdot \mathrm{pv}\frac{1}{N(x)} = 1 + c\,\delta ,
 $$
 
-where $\delta_0$ is the delta distribution at the origin and $2\pi^2$ is the surface area of the unit three-sphere in $\mathbb{R}^4$.
+for a constant $c$ determined by the normalisation of the cone, the correction being supported on the null cone.
 
-**Proof.** The function $\tilde{G}$ is locally integrable and smooth away from the origin. For a test function $\phi$ with compact support, the pairing $\langle \tilde{\nabla} \tilde{G}, \phi \rangle$ is defined by integration by parts:
+**Proof.** The convergence of the principal value is the homogeneity of $N$ of degree two and the oddness of the integrand about the origin; the displayed product is the standard computation of the product of a homogeneous quadratic form with the principal value of its reciprocal, as in *Distributions and Fundamental Solutions*, and the constant depends on the measure of the link of the cone. $\square$
 
-$$
-\langle \tilde{\nabla} \tilde{G}, \phi \rangle = -\int_{\mathbb{R}^4} \tilde{G} (\tilde{\nabla} \phi) \, dV = -\lim_{\varepsilon \to 0} \int_{\|\tilde{X}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV.
-$$
+**Corollary (The Transfer to the Fundamental Solution).** The transform of the fundamental solution of the vector operator involves exactly this principal value, by the corollary of *Split-Quaternion Harmonic Analysis*, §*The Algebra-Valued Transform and the Vanishing Determinant*, where the formula $\hat E_D = -\xi/(2\pi\mathrm{i}N(\xi))$ is displayed; the factor $1/N(\xi)$ must be read as the principal value, and the correction supported on the cone is the distributional content of the cone support of $E_D$.
 
-Applying the divergence theorem to the domain $\|\tilde{X}\|_E > \varepsilon$ and using $\tilde{\nabla} \tilde{G} = 0$ away from the origin gives
+**Proof.** Combine the displayed transform with the definition of the principal value above. $\square$
 
-$$
-\int_{\|\tilde{X}\|_E > \varepsilon} \tilde{G} (\tilde{\nabla} \phi) \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS - \int_{\|\tilde{X}\|_E > \varepsilon} (\tilde{\nabla} \tilde{G}) \phi \, dV = \int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS.
-$$
+## Comparison with the Quaternion and Split-Complex Cases
 
-On the sphere $\|\tilde{X}\|_E = \varepsilon$, the outward unit normal of the region $\|\tilde{X}\|_E > \varepsilon$ points away from the origin, i.e. inward across this inner sphere, so $\tilde{n} = -\tilde{X}/\varepsilon$, and $\tilde{G} = \bar{\tilde{X}}/\varepsilon^4$. So
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{D}$ |
+|---|---|---|---|
+| operator | Dirac, elliptic | wave operator, hyperbolic | wave operator in one variable |
+| fundamental solution | Poisson kernel, singular at a point | distribution supported on the cone | supported on the two characteristic lines |
+| Cauchy integral formula | holds | fails; replaced by Cauchy–Pompeiu | fails; replaced by d'Alembert |
+| Green's formula | holds, with the elliptic boundary term | holds on non-characteristic boundaries | holds |
+| compactly supported solutions | none, by Liouville | only zero | only zero |
+| singularities of solutions | off a point, removable | on characteristic surfaces | on characteristic lines |
 
-$$
-\tilde{G} \tilde{n} = \frac{\bar{\tilde{X}}}{\varepsilon^4} \cdot \left(-\frac{\tilde{X}}{\varepsilon}\right) = -\frac{\|\tilde{X}\|_E^2}{\varepsilon^5} e_0 = -\frac{\varepsilon^2}{\varepsilon^5} e_0 = -\frac{1}{\varepsilon^3} e_0.
-$$
-
-So
-
-$$
-\int_{\|\tilde{X}\|_E = \varepsilon} \tilde{G} \tilde{n} \phi \, dS = -\frac{1}{\varepsilon^3} \int_{\|\tilde{X}\|_E = \varepsilon} \phi \, dS \cdot e_0.
-$$
-
-As $\varepsilon \to 0$, the average of $\phi$ over the sphere tends to $\phi(0)$, and the surface area of the sphere of radius $\varepsilon$ is $2\pi^2 \varepsilon^3$. So the integral tends to $-2\pi^2 \phi(0) e_0$. Therefore
-
-$$
-\langle \tilde{\nabla} \tilde{G}, \phi \rangle = 2\pi^2 \phi(0) e_0,
-$$
-
-which is the distributional identity $\tilde{\nabla} \tilde{G} = 2\pi^2 \delta_0 e_0$, in agreement with the statement of the theorem. $\square$
-
-## The Cauchy Integral Formula
-
-### Statement
-
-**Theorem (Cauchy integral formula).** Let $\tilde{F}$ be a continuously differentiable split-quaternion-valued function on a domain $\Omega$ with piecewise smooth boundary $\partial \Omega$, and let $\tilde{X}_0$ be an interior point of $\Omega$. Then
-
-$$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV(\tilde{X}),
-$$
-
-where $\tilde{G}$ is the fundamental solution defined above, $\tilde{n}$ is the split-quaternion-valued outward unit normal, and $dS$ is the surface measure.
-
-### The Regular Case
-
-**Theorem (Cauchy integral formula for regular functions).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on $\Omega$ (the split quaternion analogue of the Cauchy–Riemann equations), then
-
-$$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}).
-$$
-
-### Proof of the Cauchy Integral Formula
-
-Apply the divergence theorem to the product $\tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X})$ on the domain $\Omega_\varepsilon = \Omega \setminus B(\tilde{X}_0, \varepsilon)$, where $B(\tilde{X}_0, \varepsilon)$ is the ball of radius $\varepsilon$ centered at $\tilde{X}_0$. The boundary of $\Omega_\varepsilon$ consists of $\partial \Omega$ and the sphere $\partial B(\tilde{X}_0, \varepsilon)$.
-
-By the divergence theorem,
-
-$$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X}) \right) dV = \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS + \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS.
-$$
-
-On the small sphere, the outward normal of $\Omega_\varepsilon$ points toward $\tilde{X}_0$, so $\tilde{n} = -(\tilde{X} - \tilde{X}_0)/\varepsilon$, and the computation of the boundary term gives
-
-$$
-\int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS \to -2\pi^2 \tilde{F}(\tilde{X}_0) \quad \text{as } \varepsilon \to 0.
-$$
-
-The volume integral on the left is
-
-$$
-\int_{\Omega_\varepsilon} \tilde{\nabla} \left( \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{F}(\tilde{X}) \right) dV = \int_{\Omega_\varepsilon} \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV,
-$$
-
-using the product rule and the fact that $\tilde{\nabla}\tilde{G} = 0$ away from $\tilde{X}_0$.
-
-Combining and taking the limit $\varepsilon \to 0$, we obtain
-
-$$
-\int_\Omega \tilde{G}(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F})(\tilde{X}) \, dV = \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS - 2\pi^2 \tilde{F}(\tilde{X}_0).
-$$
-
-Rearranging gives the stated formula. $\square$
-
-### The Cauchy Integral Formula in the Idempotent Basis
-
-In the idempotent basis, the Cauchy integral formula decomposes into two copies of the quaternion Cauchy integral formula. Writing $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ and $\tilde{G} = \tilde{G}_+ e_+ + \tilde{G}_- e_-$,
-
-$$
-\tilde{F}_\pm(\tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}_\pm(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}_\pm(\tilde{X}) \, dS(\tilde{X}) - \frac{1}{2\pi^2} \int_\Omega \tilde{G}_\pm(\tilde{X} - \tilde{X}_0) (\tilde{\nabla}\tilde{F}_\pm)(\tilde{X}) \, dV(\tilde{X}),
-$$
-
-where each formula is the quaternion Cauchy integral formula for the component. So the split quaternion Cauchy integral formula is the pair of the quaternion Cauchy integral formulas, one for each component.
-
-## Consequences of the Cauchy Integral Formula
-
-### The Mean Value Property
-
-**Theorem (mean value property).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{X}_0, r)$, then
-
-$$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi^2 r^3} \int_{\partial B(\tilde{X}_0, r)} \tilde{F}(\tilde{X}) \, dS(\tilde{X}),
-$$
-
-where $2\pi^2 r^3$ is the surface area of the three-sphere of radius $r$ in $\mathbb{R}^4$.
-
-**Proof.** Apply the Cauchy integral formula to the ball $B(\tilde{X}_0, r)$ and use the explicit form of the fundamental solution. The kernel becomes constant on the sphere, and the integral reduces to the average of $\tilde{F}$ over the sphere. $\square$
-
-### The Maximum Principle
-
-**Theorem (maximum principle).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a domain $\Omega$ and $\|\tilde{F}\|_E$ attains its maximum at an interior point of $\Omega$, then $\tilde{F}$ is constant on $\Omega$.
-
-**Proof.** Use the mean value property: if $\|\tilde{F}\|_E$ attains its maximum at $\tilde{X}_0$, then $\tilde{F}(\tilde{X}_0)$ equals the average of $\tilde{F}$ over every small sphere around $\tilde{X}_0$, so $\|\tilde{F}(\tilde{X}_0)\|_E \leq$ the average of $\|\tilde{F}\|_E \leq \|\tilde{F}(\tilde{X}_0)\|_E$; both inequalities are equalities, so $\|\tilde{F}\|_E$ is constant on each such sphere. The Cauchy estimates for the first derivatives then give $\partial_\mu \tilde{F}(\tilde{X}_0) = 0$, so $\tilde{F}$ is constant in a neighbourhood of $\tilde{X}_0$, and iterating over a connected chain of spheres, $\tilde{F}$ is constant on $\Omega$. $\square$
-
-### Liouville's Theorem
-
-**Theorem (Liouville).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on all of $V$ and $\|\tilde{F}\|_E$ is bounded, then $\tilde{F}$ is constant.
-
-**Proof.** Apply the Cauchy integral formula to a large ball of radius $R$ centered at $\tilde{X}_0$, and estimate the boundary integral using the boundedness of $\tilde{F}$. The kernel $\tilde{G}(\tilde{X} - \tilde{X}_0)$ is of order $R^{-3}$ on the sphere of radius $R$, and the surface area is of order $R^3$, so the boundary integral is of order $R^0$, i.e., bounded. As $R \to \infty$, the boundary integral tends to zero (using the decay of the kernel and the boundedness of $\tilde{F}$), so $\tilde{F}(\tilde{X}_0)$ is independent of $\tilde{X}_0$. $\square$
-
-### The Identity Theorem
-
-**Theorem (identity theorem).** If two functions $\tilde{F}$ and $\tilde{G}$ satisfying $\tilde{\nabla}\tilde{F} = \tilde{\nabla}\tilde{G} = 0$ on a connected domain $\Omega$ agree on an open subset of $\Omega$, then they agree on all of $\Omega$.
-
-**Proof.** The difference $\tilde{H} = \tilde{F} - \tilde{G}$ satisfies $\tilde{\nabla}\tilde{H} = 0$ and vanishes on an open subset. By the maximum principle applied to $\tilde{H}$ and to $-\tilde{H}$, the modulus of $\tilde{H}$ cannot attain a maximum at an interior point unless $\tilde{H}$ is constant, and since $\tilde{H}$ vanishes on an open subset, the constant is zero. $\square$
-
-### The Cauchy Estimates
-
-**Theorem (Cauchy estimates).** If $\tilde{F}$ satisfies $\tilde{\nabla}\tilde{F} = 0$ on a ball $B(\tilde{X}_0, R)$ and $\|\tilde{F}\|_E \leq M$ on the boundary, then for every multi-index $\alpha$,
-
-$$
-\|\partial^\alpha \tilde{F}(\tilde{X}_0)\|_E \leq \frac{C_\alpha M}{R^{|\alpha|}},
-$$
-
-where $C_\alpha$ is a constant depending on $\alpha$ and $|\alpha|$ is the total order of the multi-index.
-
-**Proof.** Differentiate the Cauchy integral formula with respect to $\tilde{X}_0$ and estimate the resulting integral using the bound on $\tilde{F}$. $\square$
-
-## The Residue Theory
-
-### The Residue
-
-The Cauchy integral formula for a function that is regular except at isolated singularities leads to a residue theory. However, the non-commutativity of $\mathbb{H}_{\mathbb{D}}$ and the presence of the zero divisor set make the definition of the residue more delicate than in the complex case.
-
-**Definition (isolated singularity).** A point $\tilde{X}_0$ is an **isolated singularity** of $\tilde{F}$ if $\tilde{F}$ is defined and regular on a punctured neighborhood $0 < \|\tilde{X} - \tilde{X}_0\|_E < r$ of $\tilde{X}_0$.
-
-**Definition (residue).** The **residue** of $\tilde{F}$ at an isolated singularity $\tilde{X}_0$ is the split quaternion
-
-$$
-\mathrm{Res}(\tilde{F}, \tilde{X}_0) = \frac{1}{2\pi^2} \int_{\partial B(\tilde{X}_0, \varepsilon)} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}),
-$$
-
-where $\varepsilon$ is small enough that the sphere does not enclose any other singularity.
-
-### The Residue Theorem
-
-**Theorem (residue theorem).** Let $\tilde{F}$ be regular on a domain $\Omega$ except at isolated singularities $\tilde{X}_1, \dots, \tilde{X}_n$. Then
-
-$$
-\frac{1}{2\pi^2} \int_{\partial \Omega} \tilde{G}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, dS(\tilde{X}) = \sum_{k=1}^{n} \mathrm{Res}(\tilde{F}, \tilde{X}_k)
-$$
-
-for any $\tilde{X}_0$ outside the singularities.
-
-**Proof.** Apply the Cauchy integral formula to the domain with small spheres removed around each singularity, and use the definition of the residue. $\square$
-
-### The Residue in the Idempotent Basis
-
-In the idempotent basis, the residue decomposes into two quaternion residues:
-
-$$
-\mathrm{Res}(\tilde{F}, \tilde{X}_0) = \mathrm{Res}(\tilde{F}_+, \tilde{X}_0) e_+ + \mathrm{Res}(\tilde{F}_-, \tilde{X}_0) e_-,
-$$
-
-where each of the two residues is the quaternion residue of the corresponding component. So the split quaternion residue theory is the pair of the quaternion residue theories, one for each component.
-
-## The Role of the Zero Divisors
-
-The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the integration theory, the zero divisors play the following roles.
-
-**In the fundamental solution.** The fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$ is defined for every $\tilde{X} \neq 0$, including the nonzero zero divisors, since its denominator is the Euclidean norm. On the split complex directions the identity $\bar{\tilde{X}}\tilde{X} = \|\tilde{X}\|_E^2 e_0$ fails (for $\tilde{X} = 1 + j$ one has $\bar{\tilde{X}}\tilde{X} = 2 + 2j \neq 2$), and with it the proof that $\tilde{\nabla}\tilde{G} = 0$; the only singularity of $\tilde{G}$ is the origin.
-
-**In the Cauchy integral formula.** The formula requires the function $\tilde{F}$ to be continuously differentiable on the domain. If the domain intersects the zero divisor set, the formula requires care, because the proof that the kernel is annihilated by the gradient fails on the intersection.
-
-**In the residue theory.** The definition of the residue involves an integral over a small sphere around the singularity. If the sphere intersects the zero divisor set, the integral requires care.
-
-**In the idempotent basis.** In the idempotent basis, the zero divisor set is described by the conditions $\tilde{F}_+ = 0$ or $\tilde{F}_- = 0$. The integration theory on the two components is the quaternion integration theory, which does not have zero divisors. So the zero divisor issue is isolated to the points where one of the components vanishes.
-
-## The Relation to Complex and Quaternionic Analysis
-
-The integration theory developed in this article is the split quaternion analogue of the Cauchy integral theory in complex analysis and of the Fueter theory in quaternionic analysis.
-
-**Complex analysis.** In complex analysis, the Cauchy integral formula expresses the value of a holomorphic function at an interior point in terms of its boundary values, with the kernel $1/(z - z_0)$. The split quaternion analogue uses the kernel $\tilde{G}(\tilde{X} - \tilde{X}_0) = \overline{(\tilde{X} - \tilde{X}_0)}/\|\tilde{X} - \tilde{X}_0\|_E^4$, which is the fundamental solution of the gradient operator in four dimensions.
-
-**Quaternionic analysis.** In Fueter's quaternionic analysis, the analogue of the Cauchy integral formula involves the kernel $q^{-1}/\|q\|^2$ and the quaternion-valued integration over the boundary of a domain in $\mathbb{R}^4$. The split quaternion case is the generalization to split complex coefficients, and the idempotent decomposition reduces it to two copies of the quaternion case.
-
-**Clifford analysis.** The general Clifford analysis on $\mathbb{R}^n$ uses the kernel $x^{-1}/\|x\|^{n-2}$, equivalently $\bar{x}/\|x\|^n$ (homogeneous of degree $1 - n$), and the Clifford algebra-valued integration. The split quaternion case is the case $n = 4$ of this general theory, with the specific structure of the even subalgebra of a definite (Euclidean) Clifford algebra.
-
-## The Relation to the Split Complex Case
-
-In the split complex algebra $\mathbb{D}$, the integration theory is different because the algebra is two-dimensional. The Cauchy integral formula for split complex functions involves the kernel $1/(z - z_0)$, whose singular locus is the translate $z_0 + \mathbb{R}(1 \pm j)$ of the zero divisor set of $\mathbb{D}$. The integral formula is
-
-$$
-f(z_0) = \frac{1}{2\pi i_{\mathbb{D}}} \oint_\gamma \frac{f(z)}{z - z_0} \, dz,
-$$
-
-where $i_{\mathbb{D}}$ is the "imaginary" unit of the split complex algebra. But the split complex algebra has no imaginary unit, so the formula is not directly analogous to the complex case. Instead, the split complex integration theory is expressed in the idempotent basis, where it reduces to two copies of the real integration theory.
-
-The split quaternion integration theory is the extension of the split complex integration theory by the quaternion units. The idempotent decomposition reduces it to two copies of the quaternion integration theory, which is the cleanest way to understand its structure.
-
-## Open Questions
-
-The following questions are not answered in this article and are left for later work:
-
-1. **The residue theory in the non-commutative case.** The definition of the residue given above is one of several possible definitions. What is the correct definition that makes the residue theorem hold in the strongest form?
-
-2. **The Cauchy integral formula for other domains.** What is the form of the Cauchy integral formula for domains with non-smooth boundaries, or for domains that are not simply connected?
-
-3. **The role of the zero divisor set.** How do the integral formulas behave when the domain intersects the zero divisor set?
-
-4. **The relation to the polar representations.** How do the polar representations of the split quaternion algebra interact with the integration theory?
-
-5. **The relation to the integral formulas of Clifford analysis.** How does the split quaternion integration theory relate to the general Clifford analysis with split signature?
-
-6. **Applications.** What are the applications of the split quaternion integration theory to the solution of partial differential equations?
-
-7. **The integration of functions on the split complex subspace.** How does the integration theory extend to the two-dimensional split complex subspace, and what replaces the four-dimensional Cauchy integral formula?
+The quaternion column is the content of *Quaternion Integration* and the split-complex column that of *Split-Complex Integration*. The single cause of the difference is again the indefiniteness of the form, equivalently the presence of the zero divisors: the characteristic cone of the operator is the zero divisor set, and the fundamental solution must be singular along it. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here.
 
 ## Summary
 
-The integral of a split-quaternion-valued function on a four-dimensional subspace $V \subset \mathbb{H}_{\mathbb{D}}$ is defined component-wise with respect to the Lebesgue measure. It is linear, additive, and satisfies the fundamental estimate. The standard theorems of integration carry over: integration by parts, the divergence theorem, and Green's formulas.
+The integration of split-quaternion-valued functions is componentwise, with the orientation of the algebra fixed by the frame $(1,e_1,e_2,e_3)$ and the orientation of the vector subspace by $(e_1,e_2,e_3)$, the form $b^2-c^2-d^2$ being the three-dimensional Minkowski form of the system. The divergence theorem holds on domains with non-characteristic boundary; on a characteristic boundary the normal is a zero divisor, cannot be normalised and the boundary term degenerates.
 
-The **fundamental solution** of the gradient operator is $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$, which satisfies
+The vector operator has formal adjoint $-D$, and Green's formulas read $\int_\Omega[(Df)g + f(Dg)] = \int_{\partial\Omega} fng$, with the classical Green identities for the wave operator as corollaries. The wave operator $\Box_{(2,1)} = D^2$ has a fundamental solution supported in the closed future cone with singular support the light cone, and the vector operator has the fundamental solution $D E$; the propagation is at speed one, and the sharp Huygens principle fails, as in every two-spatial-dimensional wave problem.
 
+There is no Cauchy integral formula: the candidate kernel $(x-y)^{-1}$ has its singular set on the light cone, of codimension one, and cannot reproduce interior values from a boundary integral. The replacement is the Cauchy–Pompeiu formula $f = E_D * (Df)$, from which it follows that a compactly supported solution of $Df = 0$ vanishes; the maximum principle, the mean value property and the elliptic Liouville and removable-singularity theorems all fail. The quaternion case, with its elliptic operator and its point singularity, is the opposite extreme, and the differences are all traced to the indefiniteness of the form and the presence of the zero divisors. The eight-dimensional relative is a later system of Part V, named only.
+
+## Summary of Notation
+
+| Symbol | Meaning | Article |
+|---|---|---|
+| $\int_\Omega f$ | the componentwise volume integral | this article |
+| $(1,e_1,e_2,e_3)$, $(e_1,e_2,e_3)$ | the orientations of the algebra and of the vector subspace | this article |
+| $(b,c,d)$ with $b^2-c^2-d^2$ | the three-dimensional Minkowski space of the system | *Split-Quaternion Rotations and the Lorentz Group* |
+| $n$, non-characteristic boundary | the normal vector with $N(n) \neq 0$ | this article |
+| $D^* = -D$ | the formal adjoint of the vector operator | this article |
+| $\int[(Df)g + f(Dg)] = \int fng$ | Green's formula | this article |
+| $E$ | the fundamental solution of $\Box_{(2,1)}$, supported on the cone | *Distributions and Fundamental Solutions* |
+| $E_D = DE$ | the fundamental solution of $D$ | this article |
+| $f = E_D*(Df)$ | the Cauchy–Pompeiu replacement | this article |
+| $C$, $\partial C$ | the future cone and the light cone | *Split-Quaternion Geometry* |
+
+## Further Reading
+
+- Lars Hörmander, *The Analysis of Linear Partial Differential Operators I* (Springer, 1990), for the characteristic variety of a first-order operator, the propagation of singularities and the absence of a reproducing kernel in the hyperbolic case.
+- Fritz John, *Partial Differential Equations*, 4th ed. (Springer, 1991), for the wave equation, its fundamental solution and the failure of the sharp Huygens principle in two spatial dimensions.
+- Robert P. Gilbert and James L. Buchanan, *First Order Elliptic Systems: A Function Theoretic Approach* (Academic Press, 1983), for the elliptic comparison and the Cauchy integral formula that the hyperbolic case lacks.
+- Ricardo Estrada and Ram P. Kanwal, *A Distributional Approach to Asymptotics* (Birkhäuser, 2002), for the homogeneous distributions supported on cones and their use as fundamental solutions.

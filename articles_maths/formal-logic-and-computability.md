@@ -65,7 +65,7 @@ Compactness is the most used theorem of model theory, and the corpus uses it in 
 
 **Proof sketch.** Add $\lambda$ new constant symbols and the sentences $c_\alpha \neq c_\beta$ for $\alpha \neq \beta$; every finite subset of the resulting theory is satisfiable in the given infinite model, so by compactness the whole theory is satisfiable, and any model has cardinality at least $\lambda$; the downward theorem then gives one of cardinality exactly $\lambda$. $\square$
 
-The two theorems together give the **Löwenheim–Skolem paradox**: a first-order theory with an infinite model has models of every infinite cardinality, so no first-order theory can characterise $\mathbb{R}$ up to isomorphism, and the theory of the real numbers has countable models. The paradox is not a contradiction: a countable model is countable *in the metatheory*, while the statement "every bounded set has a least upper bound" is interpreted internally, over the subsets of the model that the model can see, of which there may be only countably many.
+The two theorems together give the **Löwenheim–Skolem paradox**: a first-order theory with an infinite model has models of every infinite cardinality, so no first-order theory can characterise an infinite structure up to isomorphism, and a theory with an infinite model has countable models. The paradox is not a contradiction: a countable model is countable *in the metatheory*, while a statement such as "every bounded subset has a least upper bound" is interpreted internally, over the subsets of the model that the model can see, of which there may be only countably many.
 
 ## Computability
 

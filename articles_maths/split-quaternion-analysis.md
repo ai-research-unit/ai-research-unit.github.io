@@ -1,482 +1,216 @@
+
 # __Split-Quaternion Analysis__
 
 ## Introduction
 
-This article introduces the analysis of split-quaternion-valued functions. It follows the polar representations article, which defined the exponential and the two polar forms, and it uses the zero divisors article, which characterized the zero divisors as the union of two four-dimensional linear subspaces.
+This article treats the analysis of functions of a split-quaternion variable. It records the metric and topological structure, defines limits and continuity, explains why the naive derivative fails, presents the differential operators of the system and identifies their type, treats power series, and describes the singularities caused by the zero divisors.
 
-The treatment is purely mathematical. The independent variables are four real variables. They are the coordinates of $\mathbb{R}^4$, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+The split-quaternion algebra, its norm form, its matrix model and its idempotents are assumed from *Split-Quaternion Algebra*; the units and the zero divisors from *Split-Quaternion Norm and Invertibility* and *Split-Quaternion Zero Divisors*; the metric and the geometry of the forms from *Split-Quaternion Geometry*. The analytic theory of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional hyperbolic case that of *Split-Complex Integration*; the differential operators of the definite (Clifford) case are those of *Clifford Analysis*, *Dirac Operators* and *Regularity and the Cauchy–Riemann Operator*. Nothing physical is invoked.
 
-Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
+## The Metric Structure
 
-The integral theory of split-quaternion-valued functions is the subject of the companion article on split quaternion integration. The specialization to the four fixed-point subspaces is the subject of the article on split quaternion analysis on subspaces.
-
-Throughout, a split quaternion is written
+**Definition.** Identify $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ by $x = a + b e_1 + c e_2 + d e_3$, and put
 
 $$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
+|x|^2 = a^2 + b^2 + c^2 + d^2 .
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, with $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}}$.
+This is the **Euclidean norm** of the algebra. The norm form $N(x) = a^2 + b^2 - c^2 - d^2$ is indefinite and is not a norm.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is
-
-$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
-
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
-
-## The Metric Structure of $\mathbb{H}_{\mathbb{D}}$
-
-### The Euclidean Norm
-
-The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ is a real vector space of dimension $8$. The **Euclidean norm** is
+**Theorem (The Algebra Is a Normed Algebra up to a Constant).** For all $x,y \in \mathbb{H}_{\mathrm{s}}$,
 
 $$
-\|\tilde{Q}\|_E = \sqrt{\sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu)}.
+|x y| \leq \sqrt{2}\,|x|\,|y| .
 $$
 
-It is a genuine norm on the real vector space $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^8$: positive-definite, subadditive, and homogeneous of degree one. It satisfies
+The map $\Phi$ to $M_2(\mathbb{R})$ satisfies $|\Phi(x)|_{\mathrm{F}} = \sqrt{2}\,|x|$, where $|\cdot|_{\mathrm{F}}$ is the Frobenius norm; the Euclidean norm induces the product topology of $\mathbb{R}^4$.
+
+**Proof.** Write $\Phi(x) = \begin{pmatrix} a-d & c-b \\ b+c & a+d\end{pmatrix}$. Then
 
 $$
-\|\tilde{Q} + \tilde{R}\|_E \leq \|\tilde{Q}\|_E + \|\tilde{R}\|_E, \qquad \|\lambda \tilde{Q}\|_E = |\lambda| \|\tilde{Q}\|_E, \qquad \lambda \in \mathbb{R}.
+|\Phi(x)|_{\mathrm{F}}^2 = (a-d)^2 + (c-b)^2 + (b+c)^2 + (a+d)^2 = 2a^2 + 2b^2 + 2c^2 + 2d^2 = 2|x|^2 .
 $$
 
-The Euclidean norm is **not** the square root of the norm form or of the Hermitian form. The norm form is split complex-valued and is not positive-definite; the Hermitian form is real but indefinite of signature $(4, 4)$. The Euclidean norm is defined separately, and it is the norm that gives $\mathbb{H}_{\mathbb{D}}$ its structure as a metric space.
+The Frobenius norm is submultiplicative, $|\Phi(x)\Phi(y)|_{\mathrm{F}} \leq |\Phi(x)|_{\mathrm{F}}|\Phi(y)|_{\mathrm{F}}$, so $\sqrt{2}|xy| \leq 2|x||y|$ and the bound follows. The topology statement is the identification of $\mathbb{R}^4$ with the Frobenius-normed matrix space, which preserves the topology. $\square$
 
-### The Distance
+**Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $U$ and the norm-form level sets are closed subsets.
 
-The **distance** between two split quaternions is
+**Proof.** The units are $\{N \neq 0\}$, the complement of the closed level set $N = 0$; the zero divisors are $\{x \neq 0, N(x)=0\} \cup \{0\}$, the intersection of a closed set with a closed set; the group operations are continuous by the bound, and the level sets are closed because $N$ is continuous. $\square$
 
-$$
-d(\tilde{Q}, \tilde{R}) = \|\tilde{Q} - \tilde{R}\|_E.
-$$
+**Corollary (No Multiplicative Norm).** There is no norm on the algebra satisfying $|xy| = |x||y|$ for all $x,y$.
 
-It is a genuine metric on $\mathbb{H}_{\mathbb{D}}$: positive-definite, symmetric, and satisfying the triangle inequality. The pair $(\mathbb{H}_{\mathbb{D}}, d)$ is a metric space isometric to $\mathbb{R}^8$.
-
-### Balls and Neighborhoods
-
-The **open ball** of radius $r > 0$ centered at $\tilde{Q}_0$ is
-
-$$
-B(\tilde{Q}_0, r) = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \|\tilde{Q} - \tilde{Q}_0\|_E < r\}.
-$$
-
-A **neighborhood** of $\tilde{Q}_0$ is any set containing some $B(\tilde{Q}_0, r)$. The topology generated by the open balls is the ordinary Euclidean topology of $\mathbb{R}^8$.
+**Proof.** Such a norm would force $x \neq 0 \neq y \Rightarrow xy \neq 0$, which fails for the zero divisors of *Split-Quaternion Zero Divisors*. $\square$
 
 ## Limits and Continuity
 
-### Limits of Functions
+**Definition.** A function $f : \mathbb{H}_{\mathrm{s}} \to \mathbb{H}_{\mathrm{s}}$ has **limit** $L$ at $x_0$ when for every $\varepsilon > 0$ there is $\delta > 0$ with $|f(x)-L| < \varepsilon$ whenever $0 < |x - x_0| < \delta$; and $f$ is **continuous** at $x_0$ when the limit there is $f(x_0)$.
 
-**Definition (limit).** Let $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ be a function, $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ a point, and $\tilde{L} \in \mathbb{H}_{\mathbb{D}}$ a split quaternion. We say that $\tilde{F}(\tilde{Q})$ **tends to** $\tilde{L}$ as $\tilde{Q}$ tends to $\tilde{Q}_0$, and write
+**Theorem (Continuity of the Algebraic Operations).** The maps $(x,y) \mapsto x+y$, $(x,y)\mapsto xy$, $x \mapsto \lambda x$, $x\mapsto \bar{x}$, $x \mapsto \operatorname{Sc}(x)$ and $x \mapsto \operatorname{Vec}(x)$ are continuous on $\mathbb{H}_{\mathrm{s}}$, and $x \mapsto x^{-1}$ is continuous on the open set of units.
 
-$$
-\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L},
-$$
+**Proof.** The sum and scalar product are linear in the coordinates; the product satisfies $|xy - x_0y_0| \leq |x-x_0||y| + |x_0||y-y_0|$ for the coordinate norm up to a constant, hence is continuous; the involutions and the projections are linear in the coordinates. For the inverse, $x^{-1}-x_0^{-1} = x^{-1}(x_0-x)x_0^{-1}$ and $x \mapsto x^{-1}$ is bounded near $x_0$ by the continuity of the coordinates of the inverse, which are rational functions of the coordinates with denominator $N(x)$. $\square$
 
-if for every $\varepsilon > 0$ there exists $\delta > 0$ such that
+**Corollary (Entrywise Description).** Continuity, limits and convergence of sequences in the algebra are equivalent to the corresponding statements for the four matrices entries of the matrix model $\Phi$.
 
-$$
-0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon.
-$$
+**Proof.** The map $\Phi$ is a homeomorphism onto its image with the topology of the Frobenius norm, and all norms on a finite-dimensional space are equivalent. $\square$
 
-The punctured condition $0 < \|\tilde{Q} - \tilde{Q}_0\|_E$ ensures that the value of $\tilde{F}$ at $\tilde{Q}_0$ itself does not affect the limit.
+## The Naive Derivative and Why It Fails
 
-**Theorem (uniqueness).** If the limit exists, it is unique.
-
-**Proof.** Suppose $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{F}(\tilde{Q}) \to \tilde{L}'$ as $\tilde{Q} \to \tilde{Q}_0$, with $\tilde{L} \neq \tilde{L}'$. Let $\varepsilon = \|\tilde{L} - \tilde{L}'\|_E/2 > 0$. By the definition, there exist $\delta_1, \delta_2 > 0$ such that $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_1$, and $\|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < \varepsilon$ when $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta_2$. Choose $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \min(\delta_1, \delta_2)$. Then
+**Definition.** The **naive derivative** of $f$ at $x$ is the limit of the difference quotients
 
 $$
-\|\tilde{L} - \tilde{L}'\|_E \leq \|\tilde{L} - \tilde{F}(\tilde{Q})\|_E + \|\tilde{F}(\tilde{Q}) - \tilde{L}'\|_E < 2\varepsilon = \|\tilde{L} - \tilde{L}'\|_E,
+\lim_{h \to 0} \big(f(x+h)-f(x)\big) h^{-1}, \qquad \lim_{h \to 0} h^{-1}\big(f(x+h)-f(x)\big),
 $$
 
-a contradiction. $\square$
+when the limits exist; the first is the left quotient and the second is the right quotient, and they differ in general because the algebra is not commutative.
 
-**Theorem (sequential criterion).** $\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{L}$ if and only if for every sequence $(\tilde{Q}_n)$ in $\mathbb{H}_{\mathbb{D}} \setminus \{\tilde{Q}_0\}$ with $\tilde{Q}_n \to \tilde{Q}_0$, we have $\tilde{F}(\tilde{Q}_n) \to \tilde{L}$.
-
-**Proof.** The forward direction is immediate from the definition. For the converse, suppose the limit is not $\tilde{L}$. Then there exists $\varepsilon > 0$ such that for every $\delta > 0$ there exists $\tilde{Q}$ with $0 < \|\tilde{Q} - \tilde{Q}_0\|_E < \delta$ and $\|\tilde{F}(\tilde{Q}) - \tilde{L}\|_E \geq \varepsilon$. Taking $\delta = 1/n$ gives a sequence $\tilde{Q}_n \to \tilde{Q}_0$ with $\tilde{F}(\tilde{Q}_n) \not\to \tilde{L}$, contradicting the hypothesis. $\square$
-
-**Theorem (algebra of limits).** If $\tilde{F}(\tilde{Q}) \to \tilde{L}$ and $\tilde{G}(\tilde{Q}) \to \tilde{M}$ as $\tilde{Q} \to \tilde{Q}_0$, then
+**Theorem (The Naive Derivative Fails Already for Squares).** For $f(x) = x^2$ and every $x$,
 
 $$
-\tilde{F}(\tilde{Q}) + \tilde{G}(\tilde{Q}) \to \tilde{L} + \tilde{M}, \qquad \tilde{F}(\tilde{Q}) \circ \tilde{G}(\tilde{Q}) \to \tilde{L} \circ \tilde{M}.
+\big(f(x+h)-f(x)\big) h^{-1} = x + h x h^{-1} + h
 $$
 
-**Proof.** For the sum, use the triangle inequality:
+for every invertible $h$, and the quotient depends on $h$ unless $x$ is central. Consequently $x^2$ has no naive derivative at any point, and the only functions with a naive derivative on an open set are built from central elements.
 
-$$
-\|(\tilde{F} + \tilde{G}) - (\tilde{L} + \tilde{M})\|_E \leq \|\tilde{F} - \tilde{L}\|_E + \|\tilde{G} - \tilde{M}\|_E.
-$$
+**Proof.** Expand: $(x+h)^2 - x^2 = xh + hx + h^2$, and $(xh)h^{-1} = x$, $h^2h^{-1} = h$, so the display follows. The quotient depends on $h$ through $h x h^{-1}$, which is the conjugate of $x$ by $h$; by (*Split-Quaternion Algebra*, §*Conjugations and Fixed-Point Subspaces*) this varies with $h$ unless $x$ is central. If a naive derivative exists at every point of an open set then $x \mapsto x^2$ would have to be differentiable there, which it is not. $\square$
 
-For the product, use the identity
+**Corollary (The Obstruction Is the Non-Commutativity, Not the Zero Divisors).** The failure displayed is due to the non-commutativity of the algebra; the zero divisors add a second obstruction, because the difference quotient requires $h$ invertible and the invertible elements do not contain a neighbourhood of every point of the interior of the zero divisor set.
 
-$$
-\tilde{F} \tilde{G} - \tilde{L} \tilde{M} = (\tilde{F} - \tilde{L}) \tilde{G} + \tilde{L} (\tilde{G} - \tilde{M}),
-$$
+**Proof.** The first statement is the computation; the second is the definition of the zero divisor set and the openness of the units. $\square$
 
-and the fact that $\tilde{G}$ is bounded near $\tilde{Q}_0$ (because it has a limit). $\square$
-
-### Continuity
-
-**Definition (continuity).** A function $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ is **continuous at a point** $\tilde{Q}_0 \in \mathbb{H}_{\mathbb{D}}$ if the limit exists and equals the value of the function at that point:
-
-$$
-\lim_{\tilde{Q} \to \tilde{Q}_0} \tilde{F}(\tilde{Q}) = \tilde{F}(\tilde{Q}_0).
-$$
-
-Equivalently, for every $\varepsilon > 0$ there exists $\delta > 0$ such that
-
-$$
-\|\tilde{Q} - \tilde{Q}_0\|_E < \delta \implies \|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \varepsilon.
-$$
-
-The function is **continuous on an open set** if it is continuous at every point of the set.
-
-**Theorem (basic properties).** If $\tilde{F}$ and $\tilde{G}$ are continuous at $\tilde{Q}_0$, then so are $\tilde{F} + \tilde{G}$ and $\tilde{F} \circ \tilde{G}$. If $\tilde{F}$ is continuous at $\tilde{Q}_0$ and $\tilde{G}$ is continuous at $\tilde{F}(\tilde{Q}_0)$, then $\tilde{G} \circ \tilde{F}$ is continuous at $\tilde{Q}_0$.
-
-**Proof.** The first two claims follow from the algebra of limits. The third follows from the definition: given $\varepsilon > 0$, choose $\eta > 0$ with $\|\tilde{G}(\tilde{R}) - \tilde{G}(\tilde{F}(\tilde{Q}_0))\|_E < \varepsilon$ when $\|\tilde{R} - \tilde{F}(\tilde{Q}_0)\|_E < \eta$, and then choose $\delta > 0$ with $\|\tilde{F}(\tilde{Q}) - \tilde{F}(\tilde{Q}_0)\|_E < \eta$ when $\|\tilde{Q} - \tilde{Q}_0\|_E < \delta$. $\square$
-
-**Theorem (component-wise continuity).** A function $\tilde{F} = \sum_\mu F_\mu e_\mu$ is continuous at $\tilde{Q}_0$ if and only if each split complex-valued coefficient $F_\mu$ is continuous at $\tilde{Q}_0$, which in turn holds if and only if each of the eight real-valued functions $\Re(F_\mu)$, $\Im(F_\mu)$ (with respect to $j$) is continuous at $\tilde{Q}_0$.
-
-**Proof.** The Euclidean norm is equivalent to the maximum of the moduli of the coefficients, and the modulus of a split complex number is equivalent to the maximum of the absolute values of its real and split parts. So convergence in $\mathbb{H}_{\mathbb{D}}$ is equivalent to convergence of each of the eight real components. $\square$
-
-**Theorem (uniform continuity).** A continuous function on a compact subset of $\mathbb{H}_{\mathbb{D}}$ is uniformly continuous.
-
-**Proof.** This is the standard argument: if $\tilde{F}$ is not uniformly continuous, there exist $\varepsilon > 0$ and sequences $(\tilde{Q}_n)$, $(\tilde{R}_n)$ in the compact set with $\|\tilde{Q}_n - \tilde{R}_n\|_E \to 0$ but $\|\tilde{F}(\tilde{Q}_n) - \tilde{F}(\tilde{R}_n)\|_E \geq \varepsilon$. By compactness, pass to a subsequence with $\tilde{Q}_n \to \tilde{Q}$. Then $\tilde{R}_n \to \tilde{Q}$, and by continuity $\tilde{F}(\tilde{Q}_n) \to \tilde{F}(\tilde{Q})$ and $\tilde{F}(\tilde{R}_n) \to \tilde{F}(\tilde{Q})$, contradicting the inequality. $\square$
-
-## The Problem of Differentiability
-
-### The Naive Definition
-
-The derivative of a function $\tilde{F} : \mathbb{H}_{\mathbb{D}} \to \mathbb{H}_{\mathbb{D}}$ at a point $\tilde{Q}_0$ would be defined, in analogy with ordinary calculus, as the limit
-
-$$
-\tilde{F}'(\tilde{Q}_0) = \lim_{\tilde{H} \to 0} \frac{\tilde{F}(\tilde{Q}_0 + \tilde{H}) - \tilde{F}(\tilde{Q}_0)}{\tilde{H}},
-$$
-
-where $\tilde{H}$ is a split quaternion and the quotient is a split quaternion quotient. This definition runs into two difficulties, both specific to the non-commutative and non-division structure of $\mathbb{H}_{\mathbb{D}}$.
-
-### The First Obstruction: Left and Right Division
-
-In a non-commutative algebra, the quotient $\tilde{A} / \tilde{H}$ is ambiguous. There are two natural definitions:
-
-- **Left division:** $\tilde{A} / \tilde{H}$ means $\tilde{H}^{-1} \tilde{A}$, multiplying by $\tilde{H}^{-1}$ on the left.
-- **Right division:** $\tilde{A} / \tilde{H}$ means $\tilde{A} \tilde{H}^{-1}$, multiplying by $\tilde{H}^{-1}$ on the right.
-
-These two conventions give different results in general. So the derivative would depend on the convention, and there would be two distinct notions: the **left derivative** and the **right derivative**. Neither is privileged over the other.
-
-### The Second Obstruction: Zero Divisors
-
-The quotient $\tilde{A} / \tilde{H}$ requires $\tilde{H}^{-1}$ to exist. In a division algebra, every nonzero element has an inverse, so this is automatic. In $\mathbb{H}_{\mathbb{D}}$, however, the zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, and for $\tilde{H}$ in this set (with $\tilde{H} \neq 0$), the inverse does not exist.
-
-So the limit defining the derivative cannot be evaluated along directions in which $\tilde{H}$ is a zero divisor. The zero divisor set in the split quaternion case is a union of two linear subspaces, which is a different geometry from the complex cone of the biquaternion case. In particular, the zero divisor set has real codimension 4, while the biquaternion zero divisor set, being the zero set of the complex norm form, has real codimension 2 (complex dimension 3, real dimension 6). Neither set has interior points, so a generic direction in the ambient algebra is a zero divisor in neither case; what distinguishes the split quaternion case is that its zero divisor set is a finite union of linear subspaces rather than a cone cut out by a single complex equation.
-
-### The Standard Approach
-
-Together, these two difficulties make a direct definition of differentiability with respect to the split quaternion variable problematic. The standard approach in quaternionic analysis (Fueter and his descendants) avoids the problem by working with **four real variables** rather than with a quaternion variable. The function is defined on $\mathbb{R}^4$, and the quaternionic structure is used to define a special class of "regular" functions, the quaternionic analogue of holomorphic functions.
-
-We adopt this approach for the split quaternion algebra. The function is defined on a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$, the coordinates are four real variables, and the split quaternion structure is used to define the differential operators.
-
-## The General Four-Dimensional Subspace
-
-### Definition
-
-Let $V$ be a four-dimensional real subspace of $\mathbb{H}_{\mathbb{D}}$. A general element of $V$ is written
-
-$$
-\tilde{X} = x_0 f_0 + x_1 f_1 + x_2 f_2 + x_3 f_3,
-$$
-
-where $\{f_0, f_1, f_2, f_3\}$ is a basis of $V$ and $x_0, x_1, x_2, x_3 \in \mathbb{R}$ are the **coordinates**. The four real numbers $x_\mu$ are the independent variables.
-
-In the applications below, the basis $\{f_\mu\}$ is one of:
-- $\{e_0, e_1, e_2, e_3\}$ (the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$).
-- $\{j e_0, e_1, e_2, e_3\}$ (the anti-Hermitian subspace $\mathbb{M}_-$).
-- $\{e_0, j e_1, j e_2, j e_3\}$ (the Hermitian subspace $\mathbb{M}_+$).
-- $\{e_0, j e_0, e_1, e_2\}$ or similar (subspaces involving the split complex subspace).
-
-The general theory is independent of the choice of basis; only the interpretation of the coordinates and the algebraic properties of the subspace depend on it.
-
-### Functions on $V$
-
-A **split-quaternion-valued function on $V$** is a map
-
-$$
-\tilde{F} : V \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
-$$
-
-Writing $\tilde{X} = \sum_\mu x_\mu f_\mu$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the four real variables $x_0, x_1, x_2, x_3$:
-
-$$
-\tilde{F}(\tilde{X}) = F_0(x_0, x_1, x_2, x_3) e_0 + F_1(x_0, x_1, x_2, x_3) e_1 + F_2(x_0, x_1, x_2, x_3) e_2 + F_3(x_0, x_1, x_2, x_3) e_3.
-$$
-
-The restriction to $V$ reduces the number of independent real variables from eight to four.
-
-### Partial Derivatives
-
-For each $\mu = 0, 1, 2, 3$, we define the **partial derivative** of $\tilde{F}$ with respect to $x_\mu$ by
-
-$$
-\frac{\partial \tilde{F}}{\partial x_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial x_\mu} e_\nu.
-$$
-
-The partial derivative acts component-wise on the coefficients. Since the quaternion units $e_\nu$ are constants, the rules of ordinary differential calculus apply to each coefficient separately.
-
-We write $\partial_\mu$ for $\partial/\partial x_\mu$. The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.
+**Conclusion.** The naive derivative is not the right notion on this algebra. The replacement is the operator calculus of the next section, in the tradition of Clifford analysis, together with the entrywise calculus transported from the matrix model.
 
 ## The Differential Operators
 
-### The Split-Quaternion Gradient
-
-The **split-quaternion gradient** is the operator
+**Definition.** With the coordinates $x = a + b e_1 + c e_2 + d e_3$, the **vector operator** of the system is
 
 $$
-\tilde{\nabla} = e_0 \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3 = \sum_{\mu=0}^{3} e_\mu \partial_\mu.
+D = e_1 \frac{\partial}{\partial b} + e_2 \frac{\partial}{\partial c} + e_3 \frac{\partial}{\partial d},
 $$
 
-It acts on a split-quaternion-valued function $\tilde{F}$ on $V$ by the rule
+acting on functions of the four coordinates, and the **scalar** derivative is $\partial_a = \partial/\partial a$.
+
+**Theorem (The Square of the Operator Is the Wave Operator).** Using $e_1^2 = -1$, $e_2^2 = e_3^2 = +1$ and $e_ie_j = -e_je_i$ for $i \neq j$,
 
 $$
-\tilde{\nabla} \tilde{F} = \left(\sum_{\mu=0}^{3} e_\mu \partial_\mu\right)\left(\sum_{\nu=0}^{3} F_\nu e_\nu\right) = \sum_{\mu=0}^{3} \sum_{\nu=0}^{3} (\partial_\mu F_\nu) \, e_\mu e_\nu.
+D^2 = -\frac{\partial^2}{\partial b^2} + \frac{\partial^2}{\partial c^2} + \frac{\partial^2}{\partial d^2} = \Box_{(2,1)},
 $$
 
-The tilde on $\tilde{\nabla}$ signals that it is a split-quaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its "scalar" parts are the partial derivatives $\partial_\mu$.
-
-Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain
+the wave operator of the form of signature $(2,1)$; the operator is hyperbolic, not elliptic, and its characteristic variety is the null cone
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\partial_0 F_0 - \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+b^2 - c^2 - d^2 = 0 ,
 $$
 
-where
+which is the zero divisor set of the algebra in the vector subspace.
+
+**Proof.** Expanding the square, the cross terms cancel because the generators anticommute and the second derivatives commute, and the diagonal terms carry the signs of the squares of the generators; the symbol of $D$ is $e_1 \xi_1 + e_2 \xi_2 + e_3 \xi_3$, whose square is $-\xi_1^2 + \xi_2^2 + \xi_3^2$, vanishing exactly on the null cone. By *Split-Quaternion Zero Divisors*, §*The Zero Divisor Set as the Null Cone*, the null cone of the vector subspace is the zero divisor set. $\square$
+
+**Corollary (No Elliptic Theory).** There is no analogue of the elliptic theory of monogenic functions: the solutions of $Df = 0$ are the solutions of the wave equation, they do not have the mean-value property, the maximum principle or the elliptic regularity of *Clifford Analysis*, and the zero divisors of the algebra are exactly the characteristic directions of the operator.
+
+**Proof.** An operator whose characteristic variety is a cone of nonzero vectors is not elliptic, and every elliptic-theoretic property fails along the characteristic directions; the identification of the characteristic variety with the zero divisors is the theorem. The elliptic case is *Clifford Analysis* and *Regularity and the Cauchy–Riemann Operator*. $\square$
+
+**Corollary (The Operators on the Algebra and on the Vector Subspace).** The operator $D$ acts on functions whose variable lies in the vector subspace, or on the vector part of a function of the full algebra. The operator associated with the full form of signature $(2,2)$ is the Clifford operator of the algebra $\mathrm{Cl}_{2,2}$, whose generators are not the generators $e_1,e_2,e_3$ of $\mathbb{H}_{\mathrm{s}}$ alone; the two operators are different, and the analysis of the full algebra is not the analysis of its vector part.
+
+**Proof.** The generators of $\mathbb{H}_{\mathrm{s}}$ have the sign pattern $(-,+,+)$ and span a three-dimensional subspace, so they generate the Clifford algebra of the restricted form, not of the form on the algebra; the operator of the (2,2) form requires four anticommuting generators. $\square$
+
+**Remark (One Variable and Several Variables).** In the one-variable tradition of *Quaternion Analysis* the derivative is taken with respect to the full variable and the operator is the Dirac operator of the ambient form; in the several-variable tradition of the Part III articles the operator is a fixed first-order system. On this algebra the second reading is the only one available: the first leads to the wave operator above, whose theory is hyperbolic.
+
+## Power Series and Analytic Functions
+
+**Definition.** A **power series** with coefficients in the algebra is a series $\sum_{n \geq 0} c_n x^n$ with $c_n \in \mathbb{H}_{\mathrm{s}}$; it is **absolutely convergent** at $x$ when $\sum |c_n|\,|x|^n$ converges.
+
+**Theorem (Convergence and the Matrix Model).** A power series converges absolutely on the open ball of radius $R = 1/\limsup |c_n|^{1/n}$ and defines a continuous function there; under the matrix model the series converges if and only if each of its four entries converges, and the value is $\Phi^{-1}$ of the entrywise sum. In particular the exponential, the logarithm and the elementary series of *Split-Quaternion Elementary Functions* are defined on their balls of convergence in the entrywise sense.
+
+**Proof.** Absolute convergence follows from the bound $|c_nx^n| \leq (\sqrt{2})^n|c_n||x|^n$, which reduces to the real majorant series; continuity follows from the continuity of the algebraic operations and the entrywise statement from the homeomorphism $\Phi$. $\square$
+
+**Corollary (No Identity Theorem).** Two convergent power series that agree on an open set need not agree on their common domain; the identity theorem fails.
+
+**Proof.** The algebra has zero divisors, so a nonzero element can act as zero on a factor: if $z \neq 0$ has $z^2 = 0$, then the function $x \mapsto z(x - x_0)$ vanishes on the set $x - x_0 \in z\mathbb{H}_{\mathrm{s}}$, which contains a point but not an open set, while $x \mapsto z(x-x_0)^2$ vanishes on a larger set; the standard connectedness argument of the identity theorem requires a product ring with no nilpotents. The failure is the nilpotent phenomenon of *Split-Quaternion Zero Divisors*, §*Nonzero Nilpotents*. $\square$
+
+## Singularities
+
+**Theorem (The Inverse and Its Singular Set).** The function $x \mapsto x^{-1}$ is defined and continuous on the open set of units and has no extension to the null cone. In coordinates, if $x = a + v$ with $v \in V$, then
 
 $$
-\mathrm{div}\,\mathbf{F} = \sum_{k=1}^{3} \partial_k F_k, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} (\partial_k F_0) e_k, \qquad \mathrm{rot}\,\mathbf{F} = \sum_{j,k,l=1}^{3} \epsilon_{jkl} (\partial_j F_k) e_l.
+x^{-1} = \frac{\bar{x}}{N(x)} = \frac{a - v}{a^2 - N(v)},
 $$
 
-The formula is identical to the biquaternion case. The reason is that the operator acts on functions of four real variables, and the multiplication of the coefficients is the same as in the biquaternion case up to the sign of the extra unit.
+which blows up as the denominator tends to zero, and the limit depends on the direction of approach: along a null direction the inverse is unbounded, and along the split-complex subalgebra directions the denominator vanishes on the isotropic lines.
 
-### The Quaternion Conjugate of the Gradient
+**Proof.** The formula for the inverse is that of *Split-Quaternion Algebra*, §*The Norm Form*; the denominator is $N(x)$, which vanishes exactly on the zero divisor set by *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*; the unboundedness along the null directions is immediate from the formula, since the numerator does not vanish there. $\square$
 
-The **quaternion conjugate** of $\tilde{\nabla}$ is obtained by negating the vector part:
+**Corollary (Removable Singularities Fail).** A function that is continuous on the complement of a point of the null cone and bounded near it need not extend across it, because the zero divisors of $x$ make the algebraic operations degenerate along the cone.
 
-$$
-\bar{\tilde{\nabla}} = e_0 \partial_0 - e_1 \partial_1 - e_2 \partial_2 - e_3 \partial_3.
-$$
+**Proof.** The inverse on a sequence approaching a null point along a null direction is unbounded, and other functions built from $x^{-1}$ acquire directional limits; the removable-singularity theorem of one complex variable requires a normed division algebra and fails here. The distributional treatment of the singularities is the subject of *Split-Quaternion Integration*. $\square$
 
-The product $\bar{\tilde{\nabla}}\tilde{F}$ is computed in the same way:
+## The Calculus in the Peirce Coordinates
 
-$$
-\bar{\tilde{\nabla}}\tilde{F} = \left(\partial_0 F_0 + \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
-$$
+The idempotents of the algebra give coordinates in which the algebraic operations become explicit, and they turn the calculus into an entrywise calculus.
 
-### The d'Alembertian
-
-The **d'Alembertian** is the second-order operator obtained by composing the gradient with its quaternion conjugate:
+**Definition.** With $u_{\pm} = \tfrac12(1 \pm e_2)$, the **Peirce coordinates** of $x$ are
 
 $$
-\Box = \tilde{\nabla} \bar{\tilde{\nabla}} = \bar{\tilde{\nabla}} \tilde{\nabla}.
+x = \sum_{\epsilon,\eta \in \{+,-\}} u_\epsilon\, x\, u_\eta,
 $$
 
-We compute both products and show that they are equal.
+and the four components $u_\epsilon x u_\eta$ are one-dimensional real subspaces.
 
-**Computation of $\tilde{\nabla}\bar{\tilde{\nabla}}$.** We compute $\tilde{\nabla}\bar{\tilde{\nabla}}$ as a product of operators, using the fact that the $e_\mu$ are constants:
-
-$$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \left(\sum_{\mu=0}^{3} e_\mu \partial_\mu\right)\left(\sum_{\nu=0}^{3} \bar{e}_\nu \partial_\nu\right),
-$$
-
-where $\bar{e}_0 = e_0$ and $\bar{e}_k = -e_k$ for $k = 1, 2, 3$. Expanding and separating the cases, the cross terms cancel, and we obtain
+**Theorem (The Peirce Coordinates Are the Matrix Entries).** The map
 
 $$
-\tilde{\nabla}\bar{\tilde{\nabla}} = e_0 (\partial_0^2 + \Delta),
+x \longmapsto \big(u_+xu_+,\ u_+xu_-,\ u_-xu_+,\ u_-xu_-\big)
 $$
 
-where $\Delta = \partial_1^2 + \partial_2^2 + \partial_3^2$ is the ordinary three-dimensional Laplacian.
-
-**Computation of $\bar{\tilde{\nabla}}\tilde{\nabla}$.** By the same computation,
+is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ and identifies with the four entries of the matrix model: it is, up to the fixed basis, the map $\Phi$. Multiplication becomes the row-column rule in these coordinates:
 
 $$
-\bar{\tilde{\nabla}}\tilde{\nabla} = e_0 (\partial_0^2 + \Delta).
+(u_\epsilon x u_\eta)(u_{\eta'} y u_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
 $$
 
-**Equality.** We have shown
+and, when $\eta = \eta'$, the product is $u_\epsilon (x u_\eta y) u_{\epsilon'}$.
 
-$$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\partial_0^2 + \Delta\right) e_0.
-$$
+**Proof.** The decomposition of the identity $1 = u_+ + u_-$ with $u_+u_- = u_-u_+ = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $u_\eta u_{\eta'} = 0$ for $\eta \neq \eta'$. The identification with the matrix model is the Peirce decomposition in the basis of $E_{ij}$, as in *Split-Quaternion Matrix Representations*, §*The Image as a Linear Subspace*. $\square$
 
-The operator $\partial_0^2 + \Delta$ is the **four-dimensional Laplacian**, and we write
+**Corollary (Partial Derivatives and Smoothness).** A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates, that is, when its matrix-model entries are smooth; the partial derivatives with respect to the Peirce coordinates are the entries of the matrix-model derivatives, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.
 
-$$
-\Box = \partial_0^2 + \Delta.
-$$
+**Proof.** The map to the Peirce coordinates is a linear isomorphism, hence a diffeomorphism, and the definition of smoothness is transported along it; the operators have constant coefficients in the coordinates $(a,b,c,d)$ and therefore in the linear coordinates. $\square$
 
-The operator $\Box$ is a scalar operator: it multiplies a split quaternion by the identity $e_0$. It acts component-wise on the coefficients of $\tilde{F}$.
+## Comparison with the Quaternion and Split-Complex Cases
 
-### The Product $\tilde{\nabla}^2$
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ | $\mathbb{D}$ |
+|---|---|---|---|
+| norm | definite, multiplicative | indefinite, not multiplicative | indefinite, not multiplicative |
+| zero divisors | none | the null cone | the isotropic lines |
+| naive derivative | fails for squares | fails for squares | fails for squares |
+| natural operator | the Dirac operator, elliptic | the wave operator, hyperbolic | the wave operator in one variable |
+| characteristic variety | none (elliptic) | the null cone | the isotropic lines |
+| regularity | elliptic (monogenic) | hyperbolic, no elliptic regularity | hyperbolic |
+| identity theorem | holds on connected domains | fails | fails |
 
-We now compute the product $\tilde{\nabla}\tilde{\nabla}$, which is different from the d'Alembertian because it uses the gradient twice, without the quaternion conjugate.
-
-$$
-\tilde{\nabla}\tilde{\nabla} = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} e_\mu e_\nu \partial_\mu \partial_\nu.
-$$
-
-Separating the cases as before, we obtain
-
-$$
-\tilde{\nabla}\tilde{\nabla} = e_0 \left(\partial_0^2 - \Delta\right) + 2\sum_{k=1}^{3} e_k \partial_0 \partial_k.
-$$
-
-In scalar-vector form,
-
-$$
-\tilde{\nabla}\tilde{\nabla} = \left(\partial_0^2 - \Delta\right) + 2\sum_{k=1}^{3} e_k \partial_0 \partial_k.
-$$
-
-The scalar part is $\partial_0^2 - \Delta$, which is the **wave operator**, and the vector part is $2\sum_k e_k \partial_0 \partial_k$.
-
-The two products differ:
-
-$$
-\tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = \left(\partial_0^2 + \Delta\right) e_0,
-$$
-
-$$
-\tilde{\nabla}\tilde{\nabla} = \left(\partial_0^2 - \Delta\right) + 2\sum_{k=1}^{3} e_k \partial_0 \partial_k.
-$$
-
-The d'Alembertian is a scalar operator with $\partial_0^2 + \Delta$. The product $\tilde{\nabla}\tilde{\nabla}$ is a split-quaternion-valued operator with scalar part $\partial_0^2 - \Delta$ and vector part $2\sum_k e_k \partial_0 \partial_k$.
-
-This is a key structural fact: the gradient has **two** natural second-order products, the d'Alembertian (via the conjugate) and the square (via the product with itself). The formulas are identical to the biquaternion case.
-
-### The Convective Derivative
-
-Let
-
-$$
-\tilde{U} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
-$$
-
-be a split quaternion with real coefficients. The **split-quaternion convective derivative** is the operator
-
-$$
-\tilde{D} = \bar{\tilde{U}} \tilde{\nabla},
-$$
-
-where $\bar{\tilde{U}} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
-
-We compute it explicitly:
-
-$$
-\tilde{D} = \left(\sum_{\mu=0}^{3} \bar{u}_\mu e_\mu\right)\left(\sum_{\nu=0}^{3} e_\nu \partial_\nu\right) = \sum_{\mu=0}^{3}\sum_{\nu=0}^{3} \bar{u}_\mu e_\mu e_\nu \partial_\nu,
-$$
-
-where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.
-
-Separating the cases and collecting terms, we obtain
-
-$$
-\tilde{D} = \left(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u}),
-$$
-
-where $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial_k$ is a scalar and $\mathrm{rot}(\mathbf{u}) = \sum_{j,k,l} \epsilon_{jkl} u_j \partial_k e_l$ is a split quaternion.
-
-The **scalar part** of $\tilde{D}$ is
-
-$$
-\mathrm{Sc}(\tilde{D}) = u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}.
-$$
-
-This is the convective derivative in four dimensions. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial_0 + \mathbf{u}\cdot\mathrm{grad}$ for a field advected by a flow with velocity $\mathbf{u}$.
-
-The **vector part** of $\tilde{D}$ is
-
-$$
-\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u}).
-$$
-
-This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.
-
-### The Operators in the Idempotent Basis
-
-Because the split quaternion algebra is the direct sum of two copies of the quaternion algebra, the differential operators can be expressed in the idempotent basis. For a function $\tilde{F} = \tilde{F}_+ e_+ + \tilde{F}_- e_-$ with $\tilde{F}_\pm \in \mathbb{H}$, the gradient acts componentwise:
-
-$$
-\tilde{\nabla} \tilde{F} = (\tilde{\nabla} \tilde{F}_+) e_+ + (\tilde{\nabla} \tilde{F}_-) e_-,
-$$
-
-where $\tilde{\nabla}$ on the right is the quaternion gradient acting on each component. The d'Alembertian and the convective derivative act in the same way.
-
-So the split quaternion analysis is the quaternion analysis applied to each of the two idempotent components separately. This is the cleanest way to understand the structure of the theory, and it is a consequence of the semisimple structure of the algebra.
-
-## The Relation to Fueter and Clifford Analysis
-
-The approach in this article is the split quaternion analogue of the quaternionic analysis of Fueter. The key features are:
-
-- The function is defined on a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with four real coordinates.
-- The differential operators are split-quaternion-valued: the gradient $\tilde{\nabla}$ and its quaternion conjugate $\bar{\tilde{\nabla}}$.
-- The "regular" functions are those satisfying $\tilde{\nabla}\tilde{F} = 0$, the split quaternion analogue of the Cauchy–Riemann equations.
-
-This approach is closely related to **Clifford analysis**, which generalizes the theory to $\mathbb{R}^n$ with Clifford algebra coefficients. The split quaternion algebra is isomorphic to the even subalgebra of a definite (Euclidean) Clifford algebra, $\mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{0,4}^+ \cong \mathrm{Cl}_{4,0}^+ \cong \mathrm{Cl}_{0,3}$, and the split quaternion analysis developed here is the four-dimensional case of the general Clifford analysis.
-
-The main difference from the quaternion Fueter theory is that the functions are split-quaternion-valued rather than quaternion-valued, and the coefficients are split complex. This allows for the idempotent decomposition, which reduces the analysis to two copies of the quaternion analysis.
-
-## The Role of the Zero Divisors
-
-The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$. In the analysis, the zero divisors play a role in the following ways.
-
-**In the definition of differentiability.** The naive derivative is not defined along directions in $Z_+$ or $Z_-$, because the inverse of the increment does not exist.
-
-**In the restriction to four-dimensional subspaces.** On a four-dimensional subspace $V$, the intersection with the zero divisor set is:
-- $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-) = \{0\}$ (the quaternion subspace contains no zero divisors).
-- $\mathbb{M}_+ \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $q_0 e_0 + \sum_k q'_k (j e_k)$ has idempotent components $q_0 \pm \sum_k q'_k e_k$, both nonzero).
-- $\mathbb{M}_- \cap (Z_+ \cup Z_-) = \{0\}$ (a nonzero element $j q'_0 e_0 + \sum_k q_k e_k$ has idempotent components $\pm q'_0 + \sum_k q_k e_k$, both nonzero).
-- $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-)$ is a one-dimensional subset (the zero divisors of the split complex algebra).
-
-**In the integration theory.** The fundamental solution of the gradient has singularities on the zero divisor set, and the integral formulas require careful treatment on or near the zero divisors.
-
-## Open Questions
-
-The following questions are not answered in this article and are left for later work:
-
-1. **Invariance.** Under what transformations of the four-dimensional subspace $V$ do the operators $\tilde{\nabla}$, $\Box$, and $\tilde{\nabla}^2$ transform in a simple way?
-
-2. **Solutions of $\tilde{\nabla}\tilde{F} = 0$.** What is the structure of split-quaternion-valued functions on $V$ that satisfy $\tilde{\nabla}\tilde{F} = 0$? This is the split quaternion analogue of the Cauchy–Riemann equations.
-
-3. **Solutions of $\Box\tilde{F} = 0$.** What is the structure of solutions of the four-dimensional Laplace equation?
-
-4. **The convective operator.** What is the complete structure of $\tilde{D}\tilde{\nabla}$, and what does it represent mathematically?
-
-5. **The general case.** Can the analysis be extended from a four-dimensional subspace $V$ to the full split quaternion algebra $\mathbb{H}_{\mathbb{D}}$?
-
-6. **Differentiability on the split complex subspace.** How does the analysis extend to the two-dimensional split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, and what replaces the quaternion gradient?
-
-7. **The relation to the polar representations.** How do the polar representations of the split quaternion algebra interact with the analysis on the four-dimensional subspaces?
+The quaternion column is the content of *Quaternion Analysis*, and the split-complex column that of *Split-Complex Integration*. The single cause of every difference is the presence of zero divisors, equivalently the indefiniteness of the form: the definiteness of the quaternion norm is exactly what makes its Dirac operator elliptic and its analysis regular.
 
 ## Summary
 
-The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$ is a real vector space of dimension 8, with a Euclidean norm and the associated metric topology. Limits and continuity are defined in the usual way, and the basic properties hold.
+The algebra is a normed algebra up to the constant $\sqrt{2}$ in the Euclidean norm, with the product topology of $\mathbb{R}^4$, the units open and the zero divisors closed. Limits and continuity are the entrywise notions of the matrix model. The naive derivative fails already for $x \mapsto x^2$, because the difference quotient involves the conjugate $hxh^{-1}$, and it fails again near the null cone, where $h$ need not be invertible.
 
-A direct definition of differentiability with respect to the split quaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with four real coordinates, and to define the differential operators on this subspace.
+The natural operators are the vector operator $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$, whose square is the wave operator of the form of signature $(2,1)$ with characteristic variety the null cone, and the operators of the matrix model. The operator is hyperbolic, so there is no elliptic theory of monogenic functions: the contrast with *Clifford Analysis* is the indefiniteness of the form, and the zero divisors are exactly the characteristic directions. Power series converge on a ball and may be evaluated entrywise, but the identity theorem fails because of the nilpotents. The inverse is given by $\bar{x}/N(x)$ and has its singular set on the null cone, where removable singularities fail. The corresponding analysis of the division-algebra case is that of *Quaternion Analysis*, and of the two-dimensional case that of *Split-Complex Integration*; the operators of the definite case are those of Part III.
 
-The **split-quaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ is a split-quaternion-valued first-order operator. Its quaternion conjugate $\bar{\tilde{\nabla}}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = (\partial_0^2 + \Delta)e_0$ is a scalar second-order operator. The **square** $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-quaternion-valued second-order operator. The **convective derivative** $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ is a split-quaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+## Summary of Notation
 
-The formulas for the operators are **identical** to the biquaternion case, because the operators act on functions of four real variables and the multiplication of the coefficients is the same up to the sign of the extra unit. What is different is the algebraic structure of the domains on which the operators are defined:
-
-- The zero divisor set is the union of two four-dimensional linear subspaces $Z_+$ and $Z_-$, in contrast to the complex cone of complex dimension 3 (real dimension 6) of the biquaternion case.
-- The Hermitian form is indefinite of signature $(4, 4)$, not positive-definite.
-- The invertibility criterion is linear in the idempotent basis, not quadratic.
-- The idempotent decomposition reduces the analysis to two copies of the quaternion analysis.
-
-The **idempotent decomposition** is the most important structural tool in the split quaternion analysis. In the idempotent basis, the differential operators act componentwise, and the split quaternion analysis is the quaternion analysis applied to each of the two components separately. This is a consequence of the semisimple structure of the algebra.
-
-The specialization to specific four-dimensional subspaces, including the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the Hermitian subspace $\mathbb{M}_+$, and the anti-Hermitian subspace $\mathbb{M}_-$, is not covered here. The integral theory, including the Cauchy integral formula, is the subject of the companion article on split quaternion integration.
-
-
+| Symbol | Meaning | Article |
+|---|---|---|
+| $|x|^2 = a^2+b^2+c^2+d^2$ | the Euclidean norm | this article |
+| $N(x) = a^2+b^2-c^2-d^2$ | the norm form, indefinite, not a norm | *Split-Quaternion Algebra* |
+| $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ | the vector operator | this article |
+| $D^2 = \Box_{(2,1)}$ | the wave operator of signature $(2,1)$ | this article |
+| $b^2-c^2-d^2=0$ | the characteristic variety, equal to the zero divisor set | *Split-Quaternion Zero Divisors* |
+| $x^{-1} = \bar{x}/N(x)$ | the inverse, singular on the null cone | *Split-Quaternion Algebra* |
+| power series $\sum c_nx^n$ | convergence on a ball, evaluation entrywise | this article |
+| $\mathrm{Cl}_{2,2}$ | the Clifford algebra of the full form, different from $\mathbb{H}_{\mathrm{s}}$ | *Clifford Algebras in Finite Dimensions* |
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (1853),
-
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the Dirac operator of an indefinite form and its hyperbolic character.
+- John E. Gilbert and Margaret A. M. Murray, *Clifford Algebras and Dirac Operators in Harmonic Analysis* (Cambridge University Press, 1991), for the elliptic theory against which the hyperbolic case is contrasted.
+- Richard S. Pierce, *Associative Algebras* (Springer, 1982), for the failure of the identity theorem in an algebra with nilpotents.
+- Vladimir I. Arnold, *Lectures on Partial Differential Equations* (Springer, 2004), for the wave operator, its characteristic cone and its lack of elliptic regularity.

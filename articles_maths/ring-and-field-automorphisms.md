@@ -2,11 +2,11 @@
 
 ## Introduction
 
-An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by a unit, and the Skolem–Noether theorem says that for central simple algebras this source is the only one.
+An automorphism of a ring is an isomorphism of the ring with itself, and the automorphisms of a structure form a group whose size and internal structure measure how symmetric the structure is. For fields the group is constrained by the subfields that the automorphisms fix, and this is the substance of the Galois correspondence; for noncommutative rings there is a second, internal source of automorphisms, namely conjugation by a unit, and these are the inner automorphisms.
 
-This article studies automorphism groups of rings and of fields, the fixed subrings and fixed fields they determine, and the arithmetic automorphism supplied by the Frobenius map. It separates the commutative theory, in which conjugation is trivial, from the noncommutative theory of inner automorphisms, and it records the boundary where the two diverge, since the consequences for the quaternion and biquaternion systems are used elsewhere in the corpus.
+This article studies automorphism groups of rings and of fields, the fixed subrings and fixed fields they determine, and the arithmetic automorphism supplied by the Frobenius map. It separates the commutative theory, in which conjugation is trivial, from the noncommutative theory of inner automorphisms, and it records the boundary where the two diverge.
 
-Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from *Galois Theory*; the vocabulary of units, zero divisors and idempotents is from *Units, Zero Divisors and Integral Domains*.
+Throughout, $R$ is a commutative ring with $1 \neq 0$ unless the noncommutative case is explicitly signalled, and $K/F$ is a field extension. Automorphisms are unital: $\sigma(1) = 1$. The Galois correspondence and its lemmas are from *Galois Theory*; the vocabulary of units, zero divisors and idempotents is from *Rings*.
 
 ---
 
@@ -129,7 +129,7 @@ The group $\operatorname{Aut}(K) = \operatorname{Aut}_{\mathbb{Z}}(K)$ of all au
 
 **Example.** For $\mathbb{Q}(\sqrt2)/\mathbb{Q}$ the minimal polynomial $x^2 - 2$ splits in $\mathbb{Q}(\sqrt2)$, so the automorphism group has order $2$. For $\mathbb{Q}(\sqrt[3]{2})/\mathbb{Q}$ the minimal polynomial $x^3 - 2$ has only one root in the field, so the group is trivial, even though the extension is not Galois and $\lvert \operatorname{Aut} \rvert < [K:F]$.
 
-**Example.** For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Factorization: PID, UFD and Euclidean Domains* and standard in general.
+**Example.** For the cyclotomic field $\mathbb{Q}(\zeta_n)$, every automorphism sends $\zeta_n \mapsto \zeta_n^{k}$ for a unique $k$ with $\gcd(k,n)=1$, giving $\operatorname{Gal}(\mathbb{Q}(\zeta_n)/\mathbb{Q}) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$; the count uses the irreducibility of the cyclotomic polynomial, proved for prime $n$ by Eisenstein's criterion in *Unique Factorisation Domains* and standard in general.
 
 ### Termination of the Correspondence for Finite Extensions
 
@@ -169,9 +169,9 @@ When $[K:F] = 2$ this fixed field is $F$ itself, and if in addition $\operatorna
 
 ---
 
-## Conjugation, Anti-Automorphisms and Skolem–Noether
+## Conjugation and Anti-Automorphisms
 
-### Conjugation and Anti-Automorphisms
+### Anti-Automorphisms and Involutions
 
 **Definition.** An **anti-automorphism** of a ring $A$ is a bijection $\tau : A \to A$ with $\tau(1) = 1$, $\tau(x+y) = \tau(x)+\tau(y)$, and
 
@@ -179,33 +179,11 @@ $$
 \tau(xy) = \tau(y)\tau(x).
 $$
 
-An anti-automorphism with $\tau^2 = \mathrm{id}$ is an **involution** (anti-involution). The fixed set $A^\tau = \{a : \tau(a)=a\}$ is an additive subgroup containing $1$; for $a, b \in A^\tau$ one has $\tau(ab) = ba$, so $A^\tau$ is closed under multiplication, and hence a subring, exactly when its elements commute pairwise. That holds in the commutative case, where $\tau$ is an automorphism, and for the two standard examples below: complex conjugation has fixed set $\mathbb{R}$, and quaternion conjugation has fixed set the centre $\mathbb{R}$ of $\mathbb{H}$. It fails for the transpose anti-involution of $\mathbb{M}_n(k)$ with $n \geq 2$, whose fixed set is the symmetric matrices, since a product of two symmetric matrices need not be symmetric.
+An anti-automorphism with $\tau^2 = \mathrm{id}$ is an **involution** (anti-involution). The fixed set $A^\tau = \{a : \tau(a)=a\}$ is an additive subgroup containing $1$; for $a, b \in A^\tau$ one has $\tau(ab) = ba$, so $A^\tau$ is closed under multiplication, and hence a subring, exactly when its elements commute pairwise. That holds in the commutative case, where $\tau$ is an automorphism, and for complex conjugation, whose fixed set is $\mathbb{R}$. It fails for the transpose anti-involution of $\mathbb{M}_n(k)$ with $n \geq 2$, whose fixed set is the symmetric matrices, since a product of two symmetric matrices need not be symmetric.
 
-**Examples.** Complex conjugation is an anti-automorphism of $\mathbb{C}$; since $\mathbb{C}$ is commutative it is simply the nontrivial automorphism. Quaternion conjugation $\bar{\cdot}$ on $\mathbb{H}$, which negates the vector part, is an anti-automorphism with $\bar{\bar{x}} = x$, and it is **not** an automorphism, since it reverses the order of products: $\overline{xy} = \bar y \bar x$. Its fixed ring is the centre $\mathbb{R}$, and the norm form $N(\tilde Q) = \tilde Q \bar{\tilde Q}$ is invariant under anti-automorphisms of $\mathbb{H}$; the split and dual variants are treated in the quaternion and dual-number articles.
+**Examples.** Complex conjugation is an anti-automorphism of $\mathbb{C}$; since $\mathbb{C}$ is commutative it is simply the nontrivial automorphism. The transpose $X \mapsto X^{\mathsf{T}}$ is an anti-automorphism of the matrix ring $\mathbb{M}_n(k)$, an involution with fixed set the symmetric matrices, and it is **not** an automorphism for $n \geq 2$, since it reverses the order of products: $(XY)^{\mathsf{T}} = Y^{\mathsf{T}}X^{\mathsf{T}}$.
 
-**Remark.** In a commutative ring every anti-automorphism is an automorphism, so the distinction is only visible noncommutatively. The quaternionic and biquaternionic systems of this corpus have nontrivial anti-automorphisms; the resulting involutions on $\mathbb{H}$ and $\mathbb{B}$ are computed, where the corresponding derivations are also determined.
-
-### Skolem–Noether
-
-**Definition.** A **central simple algebra** over a field $k$ is a finite-dimensional $k$-algebra $A$ with centre $Z(A) = k$ and no two-sided ideal other than $0$ and $A$. The quaternion algebra $\mathbb{H}$ is central simple over $\mathbb{R}$, and the matrix algebra $\mathbb{M}_n(k)$ is central simple over $k$.
-
-**Theorem (Skolem–Noether).** Let $A$ be a finite-dimensional central simple algebra over a field $k$. Then every $k$-algebra automorphism of $A$ is inner:
-
-$$
-\operatorname{Aut}_k(A) = \operatorname{Inn}(A) \cong A^\times / k^\times.
-$$
-
-In particular $\operatorname{Out}_k(A) = 1$.
-
-**Proof sketch.** One shows that any $k$-algebra automorphism $\sigma$ of $A$ is compatible with the left $A$-module structure on a suitable module, so that $\sigma$ is induced by an $A$-linear automorphism, and by the structure theory of modules over a simple algebra such an automorphism is multiplication by a unit. The full argument uses the double centralizer theorem and is given in the references. $\square$
-
-**Corollary.** $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) = \operatorname{Inn}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times \cong \operatorname{SO}(3)$. Every automorphism of $\mathbb{H}$ is conjugation by a unit quaternion, and it preserves the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$; the kernel of the map $\mathbb{H}^\times \to \operatorname{Inn}(\mathbb{H})$ is the centre $\mathbb{R}^\times$, while on the unit sphere $\mathbb{H}_1$ the kernel of $\mathbb{H}_1 \to \operatorname{SO}(3)$ is $\{\pm 1\}$.
-
-**Proof.** The inner automorphism group is $\mathbb{H}^\times/Z(\mathbb{H})^\times = \mathbb{H}^\times/\mathbb{R}^\times$; the unit sphere $\mathbb{H}_1$ maps onto it with kernel $\mathbb{H}_1 \cap \mathbb{R}^\times = \{\pm1\}$, and the resulting group is the rotation group $\operatorname{SO}(3)$. Norm invariance follows from multiplicativity of $N$: $N(uQu^{-1}) = N(u)N(Q)N(u)^{-1} = N(Q)$. $\square$
-
-**Corollary.** $\operatorname{Aut}_k(\mathbb{M}_n(k)) = \operatorname{PGL}_n(k)$ for every field $k$.
-
-**Corollary (commutative boundary).** For a commutative ring the inner automorphism group is trivial, so Skolem–Noether has no commutative content: it identifies the automorphisms of a central simple algebra over a field with its inner automorphisms, a statement with no commutative analogue. The theorem is one of the reasons the automorphism theory of the quaternion and biquaternion systems can be read off from their unit groups.
+**Remark.** In a commutative ring every anti-automorphism is an automorphism, so the distinction is only visible noncommutatively, and the matrix transpose above is the standard instance. The rigidity of the automorphisms of a central simple algebra — the Skolem–Noether theorem, that every such automorphism is inner — belongs to the algebra layer and is treated in *Automorphisms and Derivations of Algebras* and *Central Simple Algebras and the Brauer Group*.
 
 ---
 
@@ -215,7 +193,7 @@ The automorphisms of a unital ring form a group $\operatorname{Aut}(R)$ that pre
 
 For a field $K$ and a subgroup $G \leq \operatorname{Aut}(K)$, the fixed field $K^G$ is a subfield, the map $G \mapsto K^G$ reverses inclusions, and Artin's lemma gives $[K:K^G] \leq \lvert G \rvert$ for finite $G$. A finite extension $K/F$ is Galois exactly when $\lvert \operatorname{Gal}(K/F) \rvert = [K:F]$, and then $F$ is the fixed field of the relative automorphism group; an $F$-automorphism of a simple extension $F(\alpha)$ is determined by the image of $\alpha$, which must be a root of $m_\alpha$ lying in the field. In positive characteristic the Frobenius map $x \mapsto x^p$ is an automorphism of $K$ exactly when $K$ is perfect, and on $\mathbb{F}_{p^n}$ it generates the cyclic automorphism group of order $n$.
 
-Anti-automorphisms reverse multiplication; complex and quaternion conjugation are the standard involutive examples, and on a commutative ring they coincide with automorphisms. The Skolem–Noether theorem states that every $k$-algebra automorphism of a central simple algebra is inner, so $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times \cong \operatorname{SO}(3)$ and $\operatorname{Aut}_k(\mathbb{M}_n(k)) \cong \operatorname{PGL}_n(k)$, with all outer automorphisms trivial.
+Anti-automorphisms reverse multiplication; complex conjugation is the standard involutive example in the commutative case, where it coincides with an automorphism, and the matrix transpose is the standard genuinely noncommutative one. The rigidity of the automorphisms of a central simple algebra is treated in the algebra layer.
 
 | Ring or field | $\operatorname{Aut}$ | Inner part |
 |---|---|---|
@@ -226,7 +204,6 @@ Anti-automorphisms reverse multiplication; complex and quaternion conjugation ar
 | $F[x]$ | $F \rtimes F^\times$, $x \mapsto ax+b$ | $1$ |
 | $F(x)$ | $\operatorname{PGL}_2(F)$ | $1$ |
 | $\mathbb{Q}(\zeta_n)$ | $(\mathbb{Z}/n\mathbb{Z})^\times$ | $1$ |
-| $\mathbb{H}$ (over $\mathbb{R}$) | $\mathbb{H}^\times/\mathbb{R}^\times \cong \operatorname{SO}(3)$ | all |
 | $\mathbb{M}_n(k)$ (over $k$) | $\operatorname{PGL}_n(k)$ | all |
 | $\mathbb{C}$ | $2^{2^{\aleph_0}}$, wild | $1$ |
 
@@ -248,20 +225,14 @@ Anti-automorphisms reverse multiplication; complex and quaternion conjugation ar
 | $\varphi(x) = x^p$ | Frobenius map |
 | $\operatorname{Gal}(\overline{F}/F)$ | Absolute Galois group |
 | $\zeta_n$ | Primitive $n$-th root of unity |
-| $\mathbb{H}$ | Quaternions; $\bar{\cdot}$ quaternion conjugation |
-| $\mathbb{B}$ | Biquaternions |
-| $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ | Norm form |
 | $\mathbb{M}_n(k)$, $\operatorname{PGL}_n(k)$ | Matrix algebra and its projective general linear group |
-| $\operatorname{SO}(3)$ | Rotation group; $\cong \mathbb{H}^\times/\mathbb{R}^\times$ |
 | $Z(A)$, $A^\times$ | Centre and unit group of an algebra $A$ |
 
 
 
 ## Further Reading
 
-- Thorvald Skolem, "Zur Theorie der assoziativen Zahlensysteme", *Skrifter utgitt av Det Norske Videnskaps-Akademi i Oslo* (1927), and Emmy Noether, "Hyperkomplexe Grössen und Darstellungstheorie", *Mathematische Zeitschrift* 30 (1929), for the original inner-automorphism theorem.
-- Nicolas Bourbaki, *Algebra II* (Springer, 2003), for the double centralizer theorem and the modern proof of Skolem–Noether.
 - Paul M. Cohn, *Skew Fields: Theory of General Division Rings* (Cambridge University Press, 1995), for automorphisms and anti-automorphisms of division rings.
-- Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for inner automorphisms and central simple algebras.
+- Israel Nathan Herstein, *Noncommutative Rings* (Mathematical Association of America, 1968), for inner automorphisms of rings.
 - Serge Lang, *Algebra* (Springer, 3rd ed. 2002), for absolute Galois groups and the arithmetic of automorphisms.
 - Ian Stewart, *Galois Theory* (Chapman & Hall/CRC, 4th ed. 2015), for fixed fields, Artin's lemma and the automorphism groups of simple extensions.

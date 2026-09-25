@@ -15,7 +15,7 @@ The article is written for its own sake and for the use the rest of the corpus m
 
 **Definition.** A **signature** (or **language**) $L$ consists of a set of **function symbols**, a set of **relation symbols** and a set of **constant symbols**, each function and relation symbol being assigned a nonnegative integer, its **arity**. A **structure** $\mathcal{M}$ for $L$ consists of a nonempty set $M$, the **domain** (or **universe**), together with, for each constant symbol $c$, an element $c^{\mathcal{M}} \in M$; for each $n$-ary function symbol $f$, a function $f^{\mathcal{M}} : M^n \to M$; and for each $n$-ary relation symbol $R$, a subset $R^{\mathcal{M}} \subseteq M^n$.
 
-**Example (the language of order).** The signature $L_{\mathrm{ord}}$ has a single binary relation symbol $<$, no function symbols and no constants. A structure for it is a set with a binary relation; the structures in which the relation is a dense linear order without endpoints form the theory DLO, and $(\mathbb{Q}, <)$ and $(\mathbb{R}, <)$ are its two standard models.
+**Example (the language of order).** The signature $L_{\mathrm{ord}}$ has a single binary relation symbol $<$, no function symbols and no constants. A structure for it is a set with a binary relation; the structures in which the relation is a dense linear order without endpoints form the theory DLO, and the orders of the rationals and of the reals of *Rings and Fields* are its two standard models.
 
 **Example (the language of rings).** The signature $L_{\mathrm{ring}}$ has two binary function symbols $+$ and $\cdot$ and two constants $0$ and $1$. A structure for it is a set with two binary operations and two distinguished elements; the **theory of fields** is the set of sentences in this language expressing the field axioms, and its models are exactly the fields. The algebraic development of that notion is; the model-theoretic questions about the theory are what follow here.
 
@@ -79,13 +79,13 @@ $$
 
 $\mathcal{M}$ is an **elementary substructure** of $\mathcal{N}$, written $\mathcal{M} \preceq \mathcal{N}$, if the inclusion is elementary.
 
-Elementary equivalence is the case of an elementary embedding in which no parameters are named; an elementary embedding is stronger than an embedding, because it preserves formulas with quantifiers and parameters. The two notions differ: the inclusion $\mathbb{Z} \hookrightarrow \mathbb{Q}$ of ordered sets is an embedding, but it is not elementary, because the density sentence
+Elementary equivalence is the case of an elementary embedding in which no parameters are named; an elementary embedding is stronger than an embedding, because it preserves formulas with quantifiers and parameters. The two notions differ: the inclusion $\mathbb{N} \hookrightarrow \mathbb{Z}$ of ordered sets is an embedding, but it is not elementary, because the element $0$ has no predecessor in $\mathbb{N}$, and the density sentence
 
 $$
 \forall x \forall y\,(x < y \to \exists z\,(x < z \wedge z < y))
 $$
 
-is true in $\mathbb{Q}$ and false in $\mathbb{Z}$, where $x = 0$ and $y = 1$ have no element strictly between them. Hence $\mathbb{Z}$ and $\mathbb{Q}$ are not elementarily equivalent as ordered sets.
+is true in every dense linear order without endpoints and false in $\mathbb{Z}$, where $x = 0$ and $y = 1$ have no element strictly between them. Hence the dense linear orders and the order of $\mathbb{Z}$ are not elementarily equivalent.
 
 **Theorem (Tarski–Vaught criterion).** Let $\mathcal{M}$ be a substructure of $\mathcal{N}$. Then $\mathcal{M} \preceq \mathcal{N}$ if and only if, for every formula $\varphi(x, \vec y)$ and every tuple $\vec a \in M$, whenever $\mathcal{N} \models \exists x\,\varphi(x,\vec a)$ there is $b \in M$ with $\mathcal{N} \models \varphi(b, \vec a)$.
 
@@ -123,7 +123,7 @@ The compactness theorem was proved in *Formal Logic and Computability* and is re
 
 **Example (nonstandard arithmetic).** Let $\operatorname{Th}(\mathbb{N})$ be the set of sentences true in $(\mathbb{N}, +, \cdot, 0, 1, <)$, and add a new constant $c$ together with the sentences $c > \bar n$ for every numeral $\bar n$. Every finite subset is satisfied in $\mathbb{N}$ by interpreting $c$ as a sufficiently large natural number, so by compactness the whole theory has a model $\mathcal{N}$. In $\mathcal{N}$ the element $c^{\mathcal{N}}$ is larger than every standard natural number, and $(\mathbb{N}, +,\cdot,<)$ is an elementary substructure of $\mathcal{N}$. The model $\mathcal{N}$ is nonstandard, and it shows that the property "every element is a numeral" cannot be expressed by finitely many first-order sentences.
 
-**Example (nonstandard analysis).** Applying the same construction to $(\mathbb{R}, +, \cdot, <, 0, 1)$ produces a real-closed field with infinitesimal elements, the basis of the elementary treatment of the calculus. The construction is quoted here and developed in Part II, where the objects of analysis are available.
+**Example (nonstandard analysis).** Applying the same construction to a real-closed ordered field, in the sense of *Real-Closed and Complete Ordered Fields*, produces a real-closed field with infinitesimal elements, the basis of the elementary treatment of the calculus. The construction is quoted here and developed in Part II, where the objects of analysis are available.
 
 ### Löwenheim–Skolem Revisited
 
@@ -176,7 +176,7 @@ and the sentence $1 \neq 0$. For a prime $p$ or $p = 0$, the theory $\mathrm{ACF
 
 **Proof sketch.** Quantifier elimination is verified by the criterion: the substructures of a field are its subrings, and a quantifier-free formula with parameters in a subring $A$ is a finite Boolean combination of polynomial equations $f(\vec x) = 0$. Whether such a combination has a solution in an algebraically closed field containing $A$ is decided by the ideal generated by the polynomials together with the equations and inequations of the combination, and the decision is expressible by quantifier-free conditions on the coefficients: this is the content of Chevalley's theorem on the constructible image of a constructible set, and the details are in the standard references. Completeness follows from Vaught's test, since $\mathrm{ACF}_p$ has no finite models and is $\kappa$-categorical for uncountable $\kappa$; decidability follows from the quantifier elimination because the quantifier-free sentences of the language of rings reduce to equations between integers, which are decidable. $\square$
 
-**Corollary.** Two algebraically closed fields are elementarily equivalent if and only if they have the same characteristic. In particular the algebraic closures of $\mathbb{Q}$, of $\mathbb{F}_p$ and of any two uncountable algebraically closed fields of the same characteristic are elementarily equivalent.
+**Corollary.** Two algebraically closed fields are elementarily equivalent if and only if they have the same characteristic. In particular any two uncountable algebraically closed fields of the same characteristic are elementarily equivalent.
 
 The result explains why the theory of algebraically closed fields is "tame": the first-order language cannot see the transcendence degree, only the characteristic. The finer classification by transcendence degree is a theorem of algebra, stated as standard.
 
@@ -186,7 +186,7 @@ The result explains why the theory of algebraically closed fields is "tame": the
 
 **Theorem (Tarski–Seidenberg).** The theory $\mathrm{RCF}$ of real-closed fields, in the language of ordered rings, admits quantifier elimination and is complete and decidable.
 
-**Proof sketch.** Quantifier elimination is verified by the criterion in the form of a sign-changing argument: for a quantifier-free formula $\varphi(x,\vec a)$ whose atomic parts are polynomial equations and inequalities, the set of $x$ satisfying $\varphi$ is a finite union of intervals and points, and whether it is nonempty is decided by evaluating the polynomials at the finitely many roots of the polynomials occurring in $\varphi$ and their derivatives together with the parameters, using the intermediate value property of odd-degree polynomials. Completeness follows because $\mathbb{R}$ and every real-closed field satisfy the same sentences; decidability follows from the quantifier elimination and the decidability of the quantifier-free sentences. $\square$
+**Proof sketch.** Quantifier elimination is verified by the criterion in the form of a sign-changing argument: for a quantifier-free formula $\varphi(x,\vec a)$ whose atomic parts are polynomial equations and inequalities, the set of $x$ satisfying $\varphi$ is a finite union of intervals and points, and whether it is nonempty is decided by evaluating the polynomials at the finitely many roots of the polynomials occurring in $\varphi$ and their derivatives together with the parameters, using the intermediate value property of odd-degree polynomials. Completeness follows because any two real-closed fields satisfy the same sentences, which is the algebraic form of Tarski's theorem in *Real-Closed and Complete Ordered Fields*; decidability follows from the quantifier elimination and the decidability of the quantifier-free sentences. $\square$
 
 **Definition.** A theory $T$ extending the theory of ordered fields is **o-minimal** if every definable subset of the domain in one variable is a finite union of points and intervals with endpoints in the model.
 

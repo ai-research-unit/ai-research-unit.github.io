@@ -121,15 +121,15 @@ because each orbit contributes $|\mathcal{O}| \cdot (1/|\mathcal{O}|) = 1$. Comp
 
 ### Example: Colourings of a Square
 
-Let the vertices of a square be coloured with $q$ colours, two colourings being identified when one is carried to the other by a symmetry of the square. The symmetry group is the dihedral group $D_4$ of order $8$, acting on the four vertices, and Burnside's lemma counts the orbits of colourings.
+Let the vertices of a square be coloured with $q$ colours, two colourings being identified when one is carried to the other by an element of the dihedral group $D_4$ of order $8$, acting on the four vertices; its realisation as the symmetry group of the square belongs to Part II. Burnside's lemma counts the orbits of colourings.
 
 | Element of $D_4$ | Cycle structure on vertices | Number of fixed colourings |
 |---|---|---|
 | identity | $1^4$ | $q^4$ |
-| rotation by $\pm 90^\circ$ | $4^1$ | $q$ |
-| rotation by $180^\circ$ | $2^2$ | $q^2$ |
-| two reflections through opposite vertices | $1^2 2^1$ | $q^3$ |
-| two reflections through midpoints of opposite edges | $2^2$ | $q^2$ |
+| $r, r^3$ (order $4$) | $4^1$ | $q$ |
+| $r^2$ (order $2$) | $2^2$ | $q^2$ |
+| $s, r^2 s$ (involutions) | $1^2 2^1$ | $q^3$ |
+| $rs, r^3 s$ (involutions) | $2^2$ | $q^2$ |
 
 A colouring is fixed by a permutation exactly when it is constant on each cycle, so the number of fixed colourings is $q^{c}$, where $c$ is the number of cycles. Summing the last column,
 

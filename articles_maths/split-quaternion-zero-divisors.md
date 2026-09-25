@@ -1,453 +1,236 @@
+
 # __Split-Quaternion Zero Divisors__
 
 ## Introduction
 
-This article studies the zero divisors of the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$. It follows the article on split quaternion norm and invertibility, which established the criterion for invertibility and the three-way classification of the elements of $\mathbb{H}_{\mathbb{D}}$. The goal here is to characterize the zero divisors, to describe their structure, and to compare them with the zero divisors of the split complex algebra and of the biquaternion algebra.
+This article studies the zero divisors of the split-quaternion algebra. It defines them, proves the criterion that identifies them with the null cone of the determinant form, describes them as the rank-one matrices of the matrix model, exhibits the two families into which the null cone splits, proves the existence of nonzero nilpotents, and describes the distribution of the zero divisors among the distinguished subspaces.
 
-The treatment is mathematically honest: every claim is either proved or stated as a definition. No physics is invoked. No examples are given. The quaternion algebra $\mathbb{H}$ is assumed from the article on quaternion algebra. The split complex algebra $\mathbb{D}$ is assumed from the article on split complex algebra, together with its idempotents $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$ and the isomorphism $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$. The split quaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ is assumed from the preceding articles, together with its four conjugations, its four fixed-point subspaces, its three decompositions, and its norm form.
-
-Throughout, a split quaternion is written
-
-$$
-\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
-$$
-
-The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$. The norm form is $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$.
-
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is
-
-$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
-
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions. The norm form in the idempotent basis is
-
-$$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-,
-$$
-
-where $N_{\mathbb{H}}(\tilde{Q}_\pm) = \tilde{Q}_\pm \bar{\tilde{Q}}_\pm$ is the ordinary quaternion norm, a non-negative real number.
+The split-quaternion algebra, its matrix model $\Phi$, its norm form $N$, its idempotents $u_\pm$ and its subspaces $S$, $V$, $\mathbb{D}_2$, $\mathbb{D}_3$ are assumed from *Split-Quaternion Algebra*. The invertibility criterion and the identification of the norm form with the determinant are assumed from *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion* and §*The Norm Form and the Determinant Form*; the criterion is not re-proved here. The rank and the kernel of a $2 \times 2$ matrix are assumed from *Matrix Algebras*. Nothing physical is invoked.
 
 ## Definition and Criterion
 
-### Definition
-
-A split quaternion $\tilde{Q}$ is a **zero divisor** if it is **nonzero** and there exists a **nonzero** split quaternion $\tilde{R}$ such that
+**Definition.** A nonzero element $x \in \mathbb{H}_{\mathrm{s}}$ is a **zero divisor** if there exists a nonzero $y \in \mathbb{H}_{\mathrm{s}}$ with $xy = 0$ or a nonzero $z \in \mathbb{H}_{\mathrm{s}}$ with $zx = 0$. The **zero divisor set** is
 
 $$
-\tilde{Q} \circ \tilde{R} = 0 \quad \text{or} \quad \tilde{R} \circ \tilde{Q} = 0.
+Z = \{x \in \mathbb{H}_{\mathrm{s}} : x \neq 0 \text{ and } x \text{ is a zero divisor}\}.
 $$
 
-The requirement that both $\tilde{Q}$ and $\tilde{R}$ be nonzero is essential. In particular, the element $\tilde{Q} = 0$ is **not** a zero divisor, even though $0 \circ \tilde{R} = 0$ for any $\tilde{R}$.
-
-### Criterion
-
-**Theorem.** A nonzero split quaternion $\tilde{Q}$ is a zero divisor if and only if at least one of its two idempotent components vanishes:
+**Theorem (The Criterion).** Let $x$ be nonzero. Then $x$ is a zero divisor if and only if $N(x) = 0$. Equivalently, the zero divisor set is the null cone of the determinant form with the origin removed:
 
 $$
-\tilde{Q} \neq 0 \quad \text{and} \quad (\tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0).
+Z = \{x \neq 0 : N(x) = 0\} = \{x \neq 0 : \det \Phi(x) = 0\}.
 $$
 
-**Proof.** In the idempotent basis the product is $\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_-$, so $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_+ \tilde{R}_+ = 0$ and $\tilde{Q}_- \tilde{R}_- = 0$. If $\tilde{Q}_+ = 0$ and $\tilde{Q} \neq 0$, then $\tilde{Q}_- \neq 0$, and $\tilde{R} = e_+ \neq 0$ satisfies $\tilde{Q} \tilde{R} = 0$, so $\tilde{Q}$ is a zero divisor. Conversely, if $\tilde{Q} \tilde{R} = 0$ with $\tilde{R} \neq 0$, then $\tilde{R}_+ \neq 0$ or $\tilde{R}_- \neq 0$; in the first case $\tilde{Q}_+ \tilde{R}_+ = 0$ with $\tilde{R}_+ \neq 0$ forces $\tilde{Q}_+ = 0$, since $\mathbb{H}$ is a division algebra, and in the second case $\tilde{Q}_- = 0$. $\square$
+**Proof.** The criterion is the corollary of the invertibility criterion proved in *Split-Quaternion Norm and Invertibility*, §*The Invertibility Criterion*: a nonzero element is a zero divisor exactly when it is not invertible, and it is invertible exactly when $N(x) \neq 0$. The second form is the identity $N(x) = \det \Phi(x)$ proved in the same article, §*The Norm Form and the Determinant Form*. $\square$
 
-**Remark.** The norm form is not the criterion: as the closing section computes, $N(\tilde{Q}) = 0$ forces $\tilde{Q} = 0$. The zero divisor condition is **linear** in the idempotent basis.
-
-### The Three-Way Classification
-
-Combining the criterion for invertibility from the preceding article with the criterion for zero divisors, the elements of $\mathbb{H}_{\mathbb{D}}$ are partitioned into three classes:
-
-| Condition on the idempotent components | Condition on $\tilde{Q}$ | Conclusion |
-|---|---|---|
-| $\tilde{Q}_+ \neq 0$ and $\tilde{Q}_- \neq 0$ | (automatically $\tilde{Q} \neq 0$) | $\tilde{Q}$ is invertible |
-| $\tilde{Q}_+ = 0$ and $\tilde{Q}_- = 0$ | $\tilde{Q} = 0$ | $\tilde{Q}$ is the zero element |
-| exactly one of $\tilde{Q}_+$, $\tilde{Q}_-$ vanishes | $\tilde{Q} \neq 0$ | $\tilde{Q}$ is a zero divisor |
-
-The zero divisors are exactly the nonzero elements with at least one vanishing idempotent component.
-
-### The Criterion in the Idempotent Basis
-
-In the idempotent basis, the criterion takes a particularly simple form. Writing $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ with $\tilde{Q}_\pm \in \mathbb{H}$,
+The set
 
 $$
-N(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) e_+ + N_{\mathbb{H}}(\tilde{Q}_-) e_-.
+\mathcal{N} = \{x : N(x) = 0\} = Z \cup \{0\}
 $$
 
-Since $N_{\mathbb{H}}(\tilde{Q}_\pm)$ are non-negative real numbers, $N(\tilde{Q}) = 0$ if and only if
+is the **null cone** of $N$. It is a cone: if $N(x) = 0$ then $N(\lambda x) = \lambda^2 N(x) = 0$ for every real $\lambda$. It is closed, it has real dimension $3$, and its only singular point is the origin; away from the origin it is a smooth three-dimensional cone. The complement of $Z$ in $\mathbb{H}_{\mathrm{s}} \setminus \{0\}$ is the set of units, an open dense set of full measure by *Split-Quaternion Norm and Invertibility*, §*Distribution of the Invertible Elements*.
+
+The zero divisor set is **connected**. Indeed, every isotropic vector $x$ is a positive multiple of a vector $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$ by *Split-Quaternion Norm and Invertibility*, §*Isotropy*, and the parametrisation is continuous in the pair of angles; the set of isotropic vectors is therefore homeomorphic to a cone on a connected base, and removing the vertex leaves it connected.
+
+## The Zero Divisor Set as the Null Cone
+
+The null cone has a concrete description in the matrix model.
+
+**Theorem (The Zero Divisors Are the Rank-One Matrices).** Let $x$ be nonzero. Then $x$ is a zero divisor if and only if $\Phi(x)$ is a **rank-one** matrix. Consequently
 
 $$
-N_{\mathbb{H}}(\tilde{Q}_+) = 0 \quad \text{and} \quad N_{\mathbb{H}}(\tilde{Q}_-) = 0.
+\Phi(Z) = \{M \in M_2(\mathbb{R}) : M \neq 0, \ \operatorname{rank} M = 1\},
 $$
 
-Since $\mathbb{H}$ is a division algebra, $N_{\mathbb{H}}(\tilde{Q}_\pm) = 0$ if and only if $\tilde{Q}_\pm = 0$. So $N(\tilde{Q}) = 0$ if and only if $\tilde{Q} = 0$: the norm form is anisotropic, and the criterion for zero divisors is the vanishing of one idempotent component rather than of the norm form.
+and every nonzero singular $2 \times 2$ matrix is the image of a zero divisor.
+
+**Proof.** The matrix $\Phi(x)$ is singular exactly when $\det \Phi(x) = N(x) = 0$. For a nonzero $2 \times 2$ matrix, singularity means rank one, since the rank can only be $0$ or $1$; rank $0$ is excluded because $x \neq 0$ and $\Phi$ is injective. Thus $\Phi(Z)$ is exactly the set of nonzero singular matrices, which is the set of rank-one matrices. $\square$
+
+**Corollary (The Rank-One Description).** Every zero divisor has the form
 
 $$
-\tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
+x = \Phi^{-1}(u v^{\top}), \qquad u, v \in \mathbb{R}^2 \setminus \{0\},
 $$
 
-This is the cleanest form of the criterion. It is a **linear** condition in the idempotent basis: the element is a zero divisor if and only if at least one of its two idempotent components vanishes, and it is not the zero element.
+and the pair $(u,v)$ is determined by $x$ up to the replacement $(u,v) \mapsto (\lambda u, \lambda^{-1} v)$ for $\lambda \in \mathbb{R}^{\times}$. The line $\mathbb{R}u$ is the **image line** of $x$ and the line $\mathbb{R}v$ is the **kernel line**; together they characterise $x$ up to a nonzero scalar.
 
-## The Two Families of Zero Divisors
+**Proof.** A rank-one matrix is $uv^{\top}$ for nonzero column vectors $u$ and $v$, and two such representations give the same matrix exactly when the pairs differ by the stated replacement. The image of $uv^{\top}$ is $\mathbb{R}u$, and its kernel is $\{v\}^{\perp} = \mathbb{R} v^{\perp}$ where $v^{\perp} = (-v_2, v_1)$; the statement follows. $\square$
 
-The criterion in the idempotent basis shows that the zero divisor set splits into two families.
-
-### The Two Subspaces
-
-Define
+**Corollary (The Isotropic Lines).** Every isotropic line $\mathbb{R}x$ is a line of rank-one matrices, and the isotropic lines are precisely the projective null quadric
 
 $$
-Z_+ = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}_+ = 0\},
+Q = \{[x] \in \mathbb{P}^3 : N(x) = 0\}.
 $$
 
-$$
-Z_- = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}_- = 0\}.
-$$
+The line of $x$ determines, and is determined by, the pair consisting of the image line and the kernel line of $\Phi(x)$.
 
-Each of these is a **four-dimensional real linear subspace** of $\mathbb{H}_{\mathbb{D}}$.
+**Proof.** Immediate from the criterion and the rank-one description: an isotropic line consists of scalar multiples of one zero divisor, and a zero divisor is a rank-one matrix. $\square$
 
-**$Z_+$.** An element of $Z_+$ satisfies $\tilde{Q} e_+ = 0$, i.e., $\tilde{Q}(1 + j) = 0$. Writing $\tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ with $Q_\mu \in \mathbb{D}$, the condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 - j$. Since the ideal generated by $1 - j$ in $\mathbb{D}$ is the one-dimensional real subspace $\mathbb{R}(1 - j)$, the condition is
+## The Two Families
 
-$$
-Q_\mu = t_\mu (1 - j), \qquad t_\mu \in \mathbb{R}.
-$$
+A rank-one matrix carries two one-dimensional data, its image line and its kernel line, and the maximal totally isotropic subspaces organise these data into two families.
 
-There are four real parameters $t_0, t_1, t_2, t_3$, so $Z_+$ is four-dimensional. It is isomorphic to $\mathbb{H}$ via the map $\tilde{Q} \mapsto (t_0, t_1, t_2, t_3)$.
+### The Two Families of Maximal Isotropic Subspaces
 
-**$Z_-$.** An element of $Z_-$ satisfies $\tilde{Q} e_- = 0$, i.e., $\tilde{Q}(1 - j) = 0$. The condition is that each coefficient $Q_\mu$ is a split complex multiple of $1 + j$:
+**Definition.** For a line $\ell \subset \mathbb{R}^2$, define
 
 $$
-Q_\mu = s_\mu (1 + j), \qquad s_\mu \in \mathbb{R}.
+R_\ell = \{M \in M_2(\mathbb{R}) : \operatorname{im} M \subseteq \ell\}, \qquad
+K_\ell = \{M \in M_2(\mathbb{R}) : \ker M \supseteq \ell\}.
 $$
 
-There are four real parameters $s_0, s_1, s_2, s_3$, so $Z_-$ is four-dimensional. It is isomorphic to $\mathbb{H}$.
+Both are real linear subspaces of $M_2(\mathbb{R})$, and both are **totally isotropic** for the determinant form and **maximal** with that property.
 
-### The Zero Divisor Set
-
-The zero divisor set is
+**Theorem (The Two Families).** For every line $\ell$, the subspaces $R_\ell$ and $K_\ell$ are two-dimensional, they satisfy $\det M = 0$ for every $M$ in them, and they are maximal totally isotropic. Every maximal totally isotropic subspace of $M_2(\mathbb{R})$ is one of the $R_\ell$ or one of the $K_\ell$. The two collections
 
 $$
-\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}.
+\mathcal{R} = \{R_\ell : \ell \in \mathbb{P}^1\}, \qquad \mathcal{K} = \{K_\ell : \ell \in \mathbb{P}^1\}
 $$
 
-The two subspaces intersect at the origin:
+are the **two families** of the null cone; each is parametrised by the projective line $\mathbb{P}^1$, and the two families are disjoint.
+
+**Proof.** *Dimension.* The condition $\operatorname{im} M \subseteq \ell$ restricts the two columns of $M$ to a one-dimensional space, leaving two real parameters, so $\dim R_\ell = 2$; dually, the condition $\ker M \supseteq \ell$ restricts the two rows of $M$ to the annihilator of $\ell$, again leaving two parameters, so $\dim K_\ell = 2$. *Isotropy.* If $\operatorname{im} M \subseteq \ell$ then the columns of $M$ are linearly dependent, so $\operatorname{rank} M \leq 1$ and $\det M = 0$; if $\ker M \supseteq \ell$ then $M$ has a nonzero kernel, so $M$ is singular, so $\det M = 0$. *Maximality.* The form has signature $(2,2)$, so a totally isotropic subspace has dimension at most $2$, by the inertia law of *Quadratic Forms and Polarisation*; since $R_\ell$ and $K_\ell$ have dimension $2$ and are isotropic, they are maximal. *Classification.* Let $P$ be a two-dimensional totally isotropic subspace. Then $P$ contains a nonzero matrix, and every nonzero matrix of $P$ is singular because $P$ is isotropic, hence of rank one; so $P = \operatorname{span}\{M, N\}$ with $M = uv^{\top}$ and $N = xy^{\top}$ for nonzero column vectors $u, v, x, y$. The condition that every element of $P$ be singular is the single condition $B(M,N) = 0$, since $\det(M + tN)$ is a quadratic polynomial in $t$ whose vanishing for all $t$ forces the vanishing of its three coefficients, which are $\det M$, $B(M,N)$ and $\det N$. Now $M + N = [\,u \ x\,]\,[\,v \ y\,]^{\top}$ in block form, so by the multiplicativity of the determinant
 
 $$
-Z_+ \cap Z_- = \{0\}.
+B(M,N) = \det(M+N) = \det(u, x) \cdot \det(v, y),
 $$
 
-Indeed, an element in both would have all coefficients both multiples of $1 - j$ and multiples of $1 + j$. Since $(1 - j)$ and $(1 + j)$ are linearly independent in $\mathbb{D}$, this forces all coefficients to vanish, i.e., $\tilde{Q} = 0$.
+where $\det(u,x) = u_1 x_2 - u_2 x_1$. Hence $x$ is proportional to $u$, or $y$ is proportional to $v$. In the first case $N$ and $M$ both have image contained in the line $\mathbb{R}u$, so $P \subseteq R_{\mathbb{R}u}$, and the two dimensions force $P = R_{\mathbb{R}u}$. In the second case $N$ and $M$ both have kernel containing the line $\mathbb{R}v^{\perp}$, so $P \subseteq K_{\mathbb{R}v^{\perp}}$, and again $P = K_{\mathbb{R}v^{\perp}}$. The two cases cannot occur together, since their conjunction would place $P$ in the one-dimensional space $R_{\mathbb{R}u} \cap K_{\mathbb{R}v^{\perp}} = \operatorname{span}\{uv^{\top}\}$. *Disjointness.* Were $R_\ell = K_{\ell'}$, the space $R_\ell \cap K_{\ell'}$ would be two-dimensional; but $R_\ell \cap K_{\ell'}$ consists of the matrices $uv^{\top}$ with $\mathbb{R}u = \ell$ and $\mathbb{R}v^{\perp} = \ell'$, a one-dimensional space. Hence the two families are disjoint. $\square$
 
-So the zero divisor set is the union of two four-dimensional linear subspaces that intersect only at the origin.
-
-### Dimension
-
-The zero divisor set has real dimension $4$ in the sense that each of the two components is four-dimensional. The union $Z_+ \cup Z_-$ is not a manifold at the origin, but away from the origin it is a disjoint union of two four-dimensional submanifolds.
-
-## The Structure of the Zero Divisors
-
-### Algebraic Structure of the Two Families
-
-Each of $Z_+$ and $Z_-$ is a **left ideal** and a **right ideal** of $\mathbb{H}_{\mathbb{D}}$. Indeed:
-
-- If $\tilde{Q} \in Z_+$ and $\tilde{R} \in \mathbb{H}_{\mathbb{D}}$, then $(\tilde{Q} \tilde{R}) e_+ = \tilde{Q} (\tilde{R} e_+) = \tilde{Q} e_+ \tilde{R}_+ = 0 \cdot \tilde{R}_+ = 0$, so $\tilde{Q} \tilde{R} \in Z_+$. So $Z_+$ is a right ideal.
-- Similarly, $(\tilde{R} \tilde{Q}) e_+ = \tilde{R} (\tilde{Q} e_+) = 0$, so $\tilde{R} \tilde{Q} \in Z_+$. So $Z_+$ is a left ideal.
-
-So $Z_+$ and $Z_-$ are two-sided ideals of $\mathbb{H}_{\mathbb{D}}$. This is the algebraic content of the idempotent decomposition: the two ideals $\mathbb{H} e_+$ and $\mathbb{H} e_-$ are the two summands of the semisimple algebra.
-
-### The Idempotents
-
-The idempotents of $\mathbb{H}_{\mathbb{D}}$ are the elements $\tilde{P}$ with $\tilde{P}^2 = \tilde{P}$. In the idempotent basis, an element $\tilde{P} = \tilde{P}_+ e_+ + \tilde{P}_- e_-$ is idempotent if and only if
+**Corollary (Each Zero Divisor Lies in One Plane of Each Family).** Let $x$ be a zero divisor with image line $\ell_1$ and kernel line $\ell_2$ under $\Phi$. Then
 
 $$
-\tilde{P}_+^2 = \tilde{P}_+, \qquad \tilde{P}_-^2 = \tilde{P}_-.
+\Phi(x) \in R_{\ell_1} \cap K_{\ell_2},
 $$
 
-In the quaternion algebra $\mathbb{H}$, the idempotents are only $0$ and $1$. So the idempotents of $\mathbb{H}_{\mathbb{D}}$ are the four elements
+and $R_{\ell_1}$ is the unique member of $\mathcal{R}$ containing $\Phi(x)$, while $K_{\ell_2}$ is the unique member of $\mathcal{K}$ containing it. Hence the null cone is the union of the planes of the two families, and through every isotropic line pass exactly two maximal isotropic planes, one from each family.
+
+**Proof.** The image of $\Phi(x)$ is $\ell_1$, so $\Phi(x) \in R_{\ell_1}$; if also $\Phi(x) \in R_{\ell'}$ then $\operatorname{im}\Phi(x) \subseteq \ell \cap \ell'$, which is zero for $\ell \neq \ell'$ and would force $\Phi(x) = 0$; hence $\ell_1 = \ell'$ and the member is unique. The kernel statement is dual. Every zero divisor is a rank-one matrix and therefore belongs to the two displayed planes. $\square$
+
+**Corollary (Transposition Swaps the Families).** The transpose $M \mapsto M^{\top}$ is an anti-automorphism of $M_2(\mathbb{R})$ and satisfies
 
 $$
-0, \qquad e_+, \qquad e_-, \qquad e_+ + e_- = 1.
+R_\ell^{\top} = K_{\ell^{\perp}} \qquad (\ell \in \mathbb{P}^1),
 $$
 
-These are the only idempotents. The two nontrivial idempotents $e_+$ and $e_-$ are the ones associated with the two ideals $Z_-$ and $Z_+$ respectively (note the reversal: $e_+$ is annihilated by $Z_+$, i.e., $e_+ \in Z_-$).
+where $\ell^{\perp}$ is the orthogonal line with respect to the standard inner product of $\mathbb{R}^2$. In the algebra, the corresponding anti-automorphism $\tau = \Phi^{-1} \circ (\cdot)^{\top} \circ \Phi$ satisfies $\tau(e_1) = -e_1$, $\tau(e_2) = e_2$, $\tau(e_3) = e_3$, and it exchanges the two families.
 
-Each of the idempotents $e_+$ and $e_-$ is a zero divisor, because $e_+ e_- = 0$ with both $e_+$ and $e_-$ nonzero.
+**Proof.** $\operatorname{im} M \subseteq \ell$ is equivalent to $\operatorname{im} M \perp \ell^{\perp}$, which is equivalent to $\ell^{\perp} \subseteq \ker M^{\top}$. This gives the identity of the subspaces, and it exhibits the exchange of families. The action of $\tau$ on the generators is read from the matrices $\Phi(e_k)$ of (*Split-Quaternion Algebra*, §*The Matrix Model*): the transpose of the rotation matrix $\Phi(e_1) = \begin{pmatrix}0&-1\\1&0\end{pmatrix}$ is its negative, while $\Phi(e_2)$ and $\Phi(e_3)$ are symmetric. $\square$
 
-### The Annihilators
+### The Two Families in the Algebra
 
-For an element $\tilde{Q} \in Z_+$ (i.e., $\tilde{Q}_+ = 0$), the left annihilator is
+Transporting the two families back through $\Phi$ gives a statement about the algebra itself.
 
-$$
-\{\tilde{R} : \tilde{R} \tilde{Q} = 0\} = \{\tilde{R} : \tilde{R} \tilde{Q}_- e_- = 0\} = \{\tilde{R} : \tilde{R}_- \tilde{Q}_- = 0\}.
-$$
-
-Since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$ (unless $\tilde{Q} = 0$), the condition is $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$. So the left annihilator of a nonzero element of $Z_+$ is $Z_-$ itself.
-
-Similarly, the right annihilator of a nonzero element of $Z_+$ is $Z_-$. If $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, and the product $\tilde{Q} \tilde{R}$ in the idempotent basis is
+**Definition.** For a line $\ell \subset \mathbb{R}^2$, put
 
 $$
-\tilde{Q} \tilde{R} = \tilde{Q}_+ \tilde{R}_+ e_+ + \tilde{Q}_- \tilde{R}_- e_- = \tilde{Q}_- \tilde{R}_- e_-.
+\mathcal{R}_\ell = \Phi^{-1}(R_\ell), \qquad \mathcal{K}_\ell = \Phi^{-1}(K_\ell).
 $$
 
-So $\tilde{Q} \tilde{R} = 0$ if and only if $\tilde{Q}_- \tilde{R}_- = 0$, which (since $\mathbb{H}$ is a division algebra and $\tilde{Q}_- \neq 0$) is equivalent to $\tilde{R}_- = 0$, i.e., $\tilde{R} \in Z_-$.
+These are the two families of **maximal isotropic subspaces of the algebra**: each is a two-dimensional real subspace of $\mathbb{H}_{\mathrm{s}}$ on which $N$ vanishes identically.
 
-So the annihilator of a nonzero element of $Z_+$ is $Z_-$ on both sides: the two annihilators agree, and they are the other component of the zero divisor set, not the component containing the element. Indeed $e_+ \in Z_-$ annihilates every element of $Z_+$, while the elements of $Z_+$ do not annihilate one another.
-
-By symmetry, the annihilator of a nonzero element of $Z_-$ is $Z_+$ on both sides.
-
-## Comparison with the Split Complex Case
-
-The zero divisor structure of $\mathbb{H}_{\mathbb{D}}$ is the higher-dimensional analogue of the zero divisor structure of $\mathbb{D}$.
-
-### The Split Complex Case
-
-In $\mathbb{D}$, the zero divisors are the elements of the form $t(1 + j)$ or $t(1 - j)$ with $t \in \mathbb{R}$, $t \neq 0$. They form the union of two real lines through the origin:
+**Proposition (The Minimal Ideals Are Members of the Families).** Let $\ell_v$ be the line spanned by $v = (1,1)$ and $\ell_w$ the line spanned by $w = (1,-1)$. Then
 
 $$
-\{t(1 + j) : t \in \mathbb{R}\} \cup \{t(1 - j) : t \in \mathbb{R}\}.
+u_+ \mathbb{H}_{\mathrm{s}} = \mathcal{R}_{\ell_v}, \qquad \mathbb{H}_{\mathrm{s}} u_+ = \mathcal{K}_{\ell_w}, \qquad
+u_- \mathbb{H}_{\mathrm{s}} = \mathcal{R}_{\ell_w}, \qquad \mathbb{H}_{\mathrm{s}} u_- = \mathcal{K}_{\ell_v}.
 $$
 
-Each line is the ideal generated by the corresponding idempotent, and the two lines intersect only at the origin.
+Thus the four minimal ideals of the algebra are the four distinguished members of the two families, and the total isotropy of the minimal ideals proved in *Split-Quaternion Norm and Invertibility*, §*The Minimal Left and Right Ideals* is the statement that they are members of the families.
 
-### The Split Quaternion Case
+**Proof.** In the matrix model, $u_+ \mapsto \tfrac12(I + K) = \tfrac12 vv^{\top}$ with $v = (1,1)$, and $u_- \mapsto \tfrac12(I - K) = \tfrac12 ww^{\top}$ with $w = (1,-1)$. A product $u_+ M \propto v v^{\top} M$ has image contained in $\mathbb{R}v$, so $u_+ M_2(\mathbb{R}) = R_{\ell_v}$; a product $M u_+ \propto M v v^{\top}$ is annihilated on the right by every vector orthogonal to $v$, so its kernel contains $\ell_w$, and $\mathbb{H}_{\mathrm{s}} u_+ = K_{\ell_w}$. The other two identities are identical with $v$ and $w$ exchanged. $\square$
 
-In $\mathbb{H}_{\mathbb{D}}$, the zero divisors are the union of two four-dimensional real subspaces $Z_+$ and $Z_-$. Each is the ideal generated by the corresponding idempotent, and the two subspaces intersect only at the origin.
+## Nonzero Nilpotents
 
-### The Analogy
+**Definition.** A nonzero element $x$ is **nilpotent** if $x^2 = 0$.
 
-The analogy is exact:
-
-| | $\mathbb{D}$ | $\mathbb{H}_{\mathbb{D}}$ |
-|---|---|---|
-| Dimension | 2 | 8 |
-| Norm form | $r^2 - s^2$ | $\sum_\mu (q_\mu^2 + q'^2_\mu) + 2j \sum_\mu q_\mu q'_\mu$ |
-| Zero divisor set | Union of two lines | Union of two four-dimensional subspaces |
-| Each component | Real line | Real four-dimensional space |
-| Intersection | $\{0\}$ | $\{0\}$ |
-| Shape | X (two lines) | Two transverse four-spaces |
-
-In the split complex case the zero divisor set is exactly the **null cone** of the norm form $r^2 - s^2$, a union of two lines. In the split quaternion case this is no longer so: the norm form $N(\tilde{Q})$ is anisotropic, so its null set is the origin, and the zero divisor set is instead the zero set of the **reduced norm** $N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-)$, a quartic that vanishes exactly on $Z_+ \cup Z_-$. The name "cone" is appropriate in the sense that the set is invariant under scaling, but the set is not the zero set of a quadratic form: it is a union of two four-dimensional subspaces, which is a special feature of the split signature.
-
-## Comparison with the Biquaternion Case
-
-The zero divisor structure of $\mathbb{H}_{\mathbb{D}}$ is fundamentally different from that of the biquaternion algebra $\mathbb{B}$.
-
-### The Biquaternion Case
-
-In $\mathbb{B}$, the zero divisors are the elements with $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ in $\mathbb{C}$. This is a complex equation, equivalent to two real equations:
+**Theorem (The Nilpotents).** A nonzero element $x$ is nilpotent if and only if
 
 $$
-q_0^2 + q_1^2 + q_2^2 + q_3^2 = q'^2_0 + q'^2_1 + q'^2_2 + q'^2_3,
+x \in V \quad \text{and} \quad N(x) = 0,
 $$
 
-$$
-q_0 q'_0 + q_1 q'_1 + q_2 q'_2 + q_3 q'_3 = 0.
-$$
-
-The zero divisor set is a **six-dimensional cone** in $\mathbb{B} \cong \mathbb{R}^8$: it is a complex hypersurface of complex dimension $3$. It is not a union of linear subspaces; it is a single quadratic cone.
-
-### The Split Quaternion Case
-
-In $\mathbb{H}_{\mathbb{D}}$, the zero divisors are the elements with $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$. This is a **linear** condition, and the zero divisor set is the union of two four-dimensional linear subspaces.
-
-### The Comparison Table
-
-| Property | $\mathbb{B}$ (biquaternion) | $\mathbb{H}_{\mathbb{D}}$ (split quaternion) |
-|---|---|---|
-| Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
-| Norm form | Complex | Split complex |
-| Zero divisor condition | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = 0$ in $\mathbb{C}$ | $\tilde{Q}_+ = 0$ or $\tilde{Q}_- = 0$ |
-| Real equations | 2 quadratic | 4 linear on each component |
-| Dimension of $\mathcal{Z}$ | 6 | 4 (each component) |
-| $\mathcal{Z}$ is a cone | Yes | Yes |
-| $\mathcal{Z}$ is linear | No | Yes |
-| Nilpotents | Yes (pure case) | No (nonzero) |
-
-### The Key Difference
-
-The key difference is the sign of the extra unit: $i^2 = -1$ in $\mathbb{B}$ and $j^2 = +1$ in $\mathbb{H}_{\mathbb{D}}$. This sign change has the following consequences:
-
-- In $\mathbb{B}$, the norm form is complex-valued, and its vanishing is a quadratic condition; since $\mathbb{C}$ is a field, that condition is the zero divisor criterion, and the zero divisor set is a cone.
-- In $\mathbb{H}_{\mathbb{D}}$, the norm form is split-complex-valued and anisotropic, so its vanishing is **not** the zero divisor criterion: it forces $\tilde{Q} = 0$. The criterion is instead the linear vanishing of one idempotent component, and the zero divisor set is a union of two linear subspaces.
-
-The biquaternion zero divisor set is larger in dimension (6 out of 8) and conical. The split quaternion zero divisor set is smaller in dimension (4 out of 8 per component) and linear.
-
-### The Absence of Nilpotents
-
-In $\mathbb{B}$, the zero divisors split into nilpotents (pure case) and complex multiples of idempotents (non-pure case). In $\mathbb{H}_{\mathbb{D}}$, there are **no nonzero nilpotents**. The reason is that $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is a product of two division algebras, so $\tilde{Q}^2 = 0$ forces $\tilde{Q}_+^2 = 0$ and $\tilde{Q}_-^2 = 0$, hence $\tilde{Q}_+ = \tilde{Q}_- = 0$ and $\tilde{Q} = 0$. (Semisimplicity alone would not suffice: the full matrix algebra $M_2(\mathbb{R})$ is simple and has nonzero nilpotents.) More precisely, a nonzero zero divisor $\tilde{Q}$ satisfies $\tilde{Q} \in Z_+$ or $\tilde{Q} \in Z_-$, and in either case $\tilde{Q}^2$ is a nonzero element of the same subspace, so $\tilde{Q}$ is not nilpotent.
-
-Indeed, if $\tilde{Q} \in Z_+$ with $\tilde{Q} \neq 0$, then $\tilde{Q}_+ = 0$ and $\tilde{Q}_- \neq 0$, so
+that is, if and only if $x$ is a nonzero vector of the vector subspace lying on the light cone $b^2 = c^2 + d^2$. The set of nilpotents is therefore a two-dimensional cone, and in particular
 
 $$
-\tilde{Q}^2 = \tilde{Q}_-^2 e_-,
+(e_1 + e_3)^2 = e_1^2 + e_1 e_3 + e_3 e_1 + e_3^2 = -1 + 0 + 1 = 0 .
 $$
 
-which is nonzero because $\tilde{Q}_- \neq 0$ and $\mathbb{H}$ is a division algebra. So $\tilde{Q}^2 \neq 0$, and $\tilde{Q}$ is not nilpotent.
+Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.
+
+**Proof.** Write $x = a + u$ with $a \in S$ and $u \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is
+
+$$
+x^2 = a^2 + 2au + u^2 = a^2 + 2au - N(u),
+$$
+
+where $u^2 = -N(u)$ is the identity for pure vectors recorded in (*Split-Quaternion Algebra*, §*The Restricted Form on the Vector Subspace*). If $x^2 = 0$, then comparing the components in $S$ and in $V$ gives $2au = 0$, so $a = 0$ or $u = 0$. If $u = 0$ then $a^2 = 0$, so $a = 0$ and $x = 0$, excluded by hypothesis; hence $a = 0$ and $x = u \in V$. Then $x^2 = -N(x)$, so $x^2 = 0$ exactly when $N(x) = 0$. Conversely every such $x$ has $x^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $N(x)^2 = N(x^2) = 0$, hence $N(x) = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $N(1+e_2) = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper. $\square$
+
+The nilpotent set is the light cone of the signature-$(2,1)$ form of $V$; by *Split-Quaternion Norm and Invertibility*, §*Isotropy*, its lines are the circle $\mathbb{R}(e_1 + \cos\theta\, e_2 + \sin\theta\, e_3)$.
+
+### The Contrast with the Division Algebras
+
+The existence of nilpotents is the sharpest structural contrast the category has.
+
+**Theorem (No Nilpotents in the Division Algebras).** The quaternion algebra $\mathbb{H}$ has no nonzero nilpotent, and the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ has no nonzero nilpotent.
+
+**Proof.** The quaternion algebra is a division algebra by *Quaternion Algebra*, so $x \neq 0$ implies $x$ invertible, and $x^2 = 0$ would give $x = 0$ after multiplying by $x^{-1}$. The eight-dimensional algebra is a product of two copies of $\mathbb{H}$ by the dictionary of *The Number Systems as Clifford Algebras*, and a nilpotent in a product of algebras would have a nilpotent component in one of the factors; a division algebra has none, so the product has none. $\square$
+
+**Remark.** The comparison isolates the phenomenon. A **simple** real algebra with nilpotents, such as $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$, and a **semisimple, non-simple** product of division algebras without nilpotents, such as $\mathbb{H}_{\mathbb{D}}$, lie on opposite sides of the line that the nilpotent draws. The eight-dimensional algebra is treated later in Part V, under Split-Biquaternions; nothing of it is used here beyond the identification already stated in *The Number Systems as Clifford Algebras*.
 
 ## Distribution of the Zero Divisors
 
-We now examine how the zero divisors are distributed among the four fixed-point subspaces of $\mathbb{H}_{\mathbb{D}}$.
+The zero divisors are distributed over the distinguished subspaces as follows. The subspaces are those of *Split-Quaternion Algebra*.
 
-### The Split Complex Subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
+| Subspace | Zero divisors | Description |
+|---|---|---|
+| $S = \mathbb{R}\cdot 1$ | none | every nonzero scalar is a unit |
+| $V$ | the nonzero vectors with $b^2 = c^2 + d^2$ | the light cone, a two-dimensional cone, every nonzero point of which is nilpotent |
+| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | the nonzero multiples of $1 \pm e_2$ | two isotropic lines |
+| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | the nonzero multiples of $1 \pm e_3$ | two isotropic lines |
+| $\mathbb{H}_{\mathrm{s}} u_\pm$, $u_\pm \mathbb{H}_{\mathrm{s}}$ | the whole subspace minus the origin | four maximal isotropic planes |
+| $u_\pm$ themselves | $u_+$ and $u_-$ | the two non-central idempotents |
 
-An element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ has the form $\tilde{Q} = Q_0 e_0$ with $Q_0 \in \mathbb{D}$. The norm form is $N(\tilde{Q}) = Q_0^2$, which vanishes only when $Q_0 = 0$. The element $Q_0 e_0$ is a zero divisor exactly when $Q_0$ is a zero divisor of $\mathbb{D}$, i.e., $Q_0 = t(1 \pm j)$ with $t \neq 0$. So the split complex subspace contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
+The table is completed by the following observations.
 
-These zero divisors are in $Z_+$ (if $Q_0$ is a multiple of $1 - j$) or in $Z_-$ (if $Q_0$ is a multiple of $1 + j$). They form a one-dimensional subset of the four-dimensional subspaces $Z_\pm$.
+**The vector subspace.** On $V$ the zero divisors are exactly the lightlike vectors, and by *Nonzero Nilpotents* they are exactly the nonzero nilpotents. Every zero divisor of $V$ has square zero; this is peculiar to the traceless part and does not hold in the whole algebra.
 
-### The Quaternion Subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$
+**The idempotents.** The idempotents $u_\pm = \tfrac12(1 \pm e_2)$ are zero divisors with $u_+ u_- = 0$; they are not nilpotent, since $u_\pm^2 = u_\pm \neq 0$. Together with $0$ and $1$ they are two of the idempotents of the algebra: the general non-scalar idempotent is $\tfrac12(1 \pm \eta)$ for a root $\eta$ of $+1$ in the vector subspace, a one-sheeted hyperboloid's worth of idempotents, as recorded in *Split-Quaternion Roots of Minus One*.
 
-An element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ has real coefficients, and its norm form is a sum of squares of real numbers, which vanishes only at the origin. So the quaternion subspace contains no zero divisors.
+**The splitting.** The zero divisor set is connected, and it is the union of the planes of the two families of *The Two Families*. The nilpotent set is the two-dimensional subcone of $V$, and the non-scalar idempotents form a one-sheeted hyperboloid of points of the zero divisor set lying outside that subcone.
 
-### The Hermitian Subspace $\mathbb{M}_+$
-
-An element of $\mathbb{M}_+$ has the form
-
-$$
-\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = q_0^2 + (q'_1)^2 + (q'_2)^2 + (q'_3)^2,
-$$
-
-since $(j q'_k)^2 = j^2 (q'_k)^2 = +(q'_k)^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_+$ contains no zero divisors: a nonzero element of $\mathbb{M}_+$ has $\tilde{Q}_+ = q_0 + \sum_k q'_k e_k$ and $\tilde{Q}_- = \overline{\tilde{Q}_+}$ both nonzero, hence is invertible.
-
-### The Anti-Hermitian Subspace $\mathbb{M}_-$
-
-An element of $\mathbb{M}_-$ has the form
-
-$$
-\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3.
-$$
-
-The norm form is
-
-$$
-N(\tilde{Q}) = r_0^2 + q_1^2 + q_2^2 + q_3^2,
-$$
-
-since $(j r_0)^2 = +r_0^2$. This is a sum of squares, so it vanishes only at the origin, and $\mathbb{M}_-$ contains no zero divisors: a nonzero element of $\mathbb{M}_-$ is invertible.
-
-### Summary of the Distribution
-
-Of the four fixed-point subspaces:
-
-- $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors, which are the images of the zero divisors of $\mathbb{D}$.
-- $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ contains no zero divisors.
-- $\mathbb{M}_+$ contains no zero divisors.
-- $\mathbb{M}_-$ contains no zero divisors.
-
-In all cases, the zero divisors lie in the two subspaces $Z_+$ and $Z_-$, and the intersection of any fixed-point subspace with the zero divisor set is a subset of $Z_+ \cup Z_-$.
-
-## The Zero Divisor Set as a Variety
-
-The union $Z_+ \cup Z_-$ is a real algebraic variety: it is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$, a reducible variety with two irreducible components that meet only at the origin. The zero divisor set $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ is this variety with the origin removed.
-
-### The Norm Form Is Not the Defining Equation
-
-The norm form is **anisotropic**. As computed above,
-$$
-N(\tilde{Q}) = \sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) + 2j \sum_{\mu=0}^{3} q_\mu q'_\mu,
-$$
-so the two real equations $\mathrm{Re}\,N(\tilde{Q}) = 0$ and $\mathrm{Im}\,N(\tilde{Q}) = 0$ read
-$$
-\sum_{\mu=0}^{3} (q_\mu^2 + q'^2_\mu) = 0, \qquad \sum_{\mu=0}^{3} q_\mu q'_\mu = 0.
-$$
-The first is a sum of eight squares, so it forces all eight real components to vanish, and the common solution is the origin. The null set of the norm form is therefore $\{0\}$, and the zero divisor set is **not** the null set of $N$.
-
-The reason the norm form does not detect the zero divisors is that it takes values in $\mathbb{D}$, which is not a field: a nonzero norm need not be invertible. The element $\tilde{Q} = e_+$ has $N(\tilde{Q}) = e_+$, a nonzero zero divisor of $\mathbb{D}$, and $\tilde{Q}$ is itself a zero divisor of $\mathbb{H}_{\mathbb{D}}$, since $e_+ e_- = 0$. So $N(\tilde{Q}) \neq 0$ does not imply that $\tilde{Q}$ is invertible.
-
-### The Reduced Norm
-
-It is the product of the two idempotent norms that defines the zero divisor set. Define the **reduced norm** of $\tilde{Q}$ by
-$$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R},
-$$
-where $N(\tilde{Q})^*$ is the split complex conjugate of the norm form. It is a real quartic form, the product of the two ordinary quaternion norms, and it is the determinant of the algebra in the sense of the reduced norm: the determinant of left multiplication by $\tilde{Q}$ is $\Delta(\tilde{Q})^2$. In the idempotent basis,
-$$
-\Delta(\tilde{Q}) = 0 \iff \tilde{Q}_+ = 0 \ \text{or}\ \tilde{Q}_- = 0.
-$$
-The zero divisor set is therefore
-$$
-\mathcal{Z} = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \Delta(\tilde{Q}) = 0\} \setminus \{0\}.
-$$
-In the split complex algebra the zero divisor set is the null cone of the quadratic norm form $r^2 - s^2$. In the split quaternion algebra the defining form is instead a **quartic**, and the zero divisor set is not the zero set of any quadratic form: a nonzero quadratic form on $\mathbb{R}^8$ has a null set of dimension at least $7$, whereas $Z_+ \cup Z_-$ has dimension $4$. The set is invariant under scaling, so it is a cone, but it is a cone that is a union of two linear subspaces, and it is not a quadric.
-
-## The Reduced Norm and the Inverse
-
-### The Inverse Formula
-
-The norm form alone does not give an inverse. The formula
-$$
-\tilde{Q}^{-1} = \bar{\tilde{Q}} \, N(\tilde{Q})^{-1},
-$$
-which holds in the quaternion and biquaternion algebras, requires $N(\tilde{Q})$ to be **invertible in** $\mathbb{D}$, not merely nonzero. Since $\mathbb{D} \cong \mathbb{R} \oplus \mathbb{R}$ has zero divisors, non-vanishing is not enough: when $\tilde{Q}$ is a zero divisor, $N(\tilde{Q})$ is a nonzero zero divisor of $\mathbb{D}$, and $N(\tilde{Q})^{-1}$ does not exist.
-
-In the idempotent basis the inverse of a unit of $\mathbb{D}$ is computed componentwise. Writing $N(\tilde{Q}) = N_+ e_+ + N_- e_-$ with $N_\pm = N_{\mathbb{H}}(\tilde{Q}_\pm) \in \mathbb{R}$,
-$$
-N(\tilde{Q})^{-1} = \frac{e_+}{N_+} + \frac{e_-}{N_-} = \frac{N(\tilde{Q})^*}{\Delta(\tilde{Q})},
-$$
-where $N(\tilde{Q})^* = N_- e_+ + N_+ e_-$ is the split complex conjugate. Substituting this into $\tilde{Q}^{-1} = \bar{\tilde{Q}} N(\tilde{Q})^{-1}$ expresses the inverse through the determinant:
-$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})}, \qquad \Delta(\tilde{Q}) \neq 0.
-$$
-The identity is forced by multiplicativity of the norm form: $\tilde{Q} \bar{\tilde{Q}} N(\tilde{Q})^* = N(\tilde{Q}) N(\tilde{Q})^* = \Delta(\tilde{Q}) e_0$, so the right-hand side is a two-sided inverse of $\tilde{Q}$ whenever $\Delta(\tilde{Q}) \neq 0$.
-
-### Invertibility and Zero Divisors
-
-The reduced norm gives the invertibility criterion in its sharpest form:
-$$
-\tilde{Q} \text{ is invertible} \iff \Delta(\tilde{Q}) \neq 0 \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
-$$
-Equivalently, $\tilde{Q}$ is invertible if and only if $N(\tilde{Q}) \in \mathbb{D}^\times$, that is, if and only if the norm form is a unit of the split complex algebra. The three classes are separated by the reduced norm:
-$$
-\Delta(\tilde{Q}) \neq 0 : \ \tilde{Q} \text{ invertible}, \qquad
-\Delta(\tilde{Q}) = 0, \ \tilde{Q} \neq 0 : \ \tilde{Q} \text{ a zero divisor}, \qquad
-\tilde{Q} = 0 : \ \tilde{Q} \text{ the zero element}.
-$$
-The difference from the biquaternion algebra is the field. There $\mathbb{C}$ is a field, so $N(\tilde{Q}) \neq 0$ is already the invertibility criterion, and the zero divisors are exactly the nonzero elements with $N(\tilde{Q}) = 0$. In $\mathbb{H}_{\mathbb{D}}$ the norm form takes values in $\mathbb{D}$, which is not a field, so the criterion is the invertibility of $N(\tilde{Q})$ in $\mathbb{D}$, equivalently $\Delta(\tilde{Q}) \neq 0$.
+**Measure.** The zero divisor set is closed and has Lebesgue measure zero in $\mathbb{R}^4$, since it is the zero set of a nonconstant polynomial; the units are its open dense complement.
 
 ## Summary
 
-The zero divisors of the split quaternion algebra are the nonzero elements with at least one vanishing idempotent component:
-$$
-\tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
-$$
-The condition is **linear** in the idempotent basis, and the zero divisor set is the union of the two four-dimensional real subspaces $Z_+$ and $Z_-$, which meet only at the origin. Each is a two-sided ideal of $\mathbb{H}_{\mathbb{D}}$, and the annihilator of a nonzero element of one component is the other component on both sides. The only idempotents are $0$, $e_+$, $e_-$, and $e_0$; the two nontrivial ones are zero divisors, and there are no nonzero nilpotents.
+A nonzero split-quaternion is a zero divisor exactly when $N(x) = 0$, and the zero divisor set is the null cone of the determinant form with the origin removed. Under the matrix model it is the set of rank-one $2 \times 2$ real matrices, and a zero divisor is described by its image line and its kernel line.
 
-The norm form $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ is anisotropic: it vanishes only at the origin, so it does not detect the zero divisors. The invertibility criterion is that the norm form be invertible in $\mathbb{D}$, equivalently that the **reduced norm**
-$$
-\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^* \in \mathbb{R}
-$$
-be nonzero. The reduced norm is a real quartic, the product of the two ordinary quaternion norms, and the zero divisors are exactly its nonzero zeros. When $\Delta(\tilde{Q}) \neq 0$ the inverse is
-$$
-\tilde{Q}^{-1} = \frac{\bar{\tilde{Q}} \, N(\tilde{Q})^*}{\Delta(\tilde{Q})},
-$$
-which reduces to $\bar{\tilde{Q}}/N(\tilde{Q})$ when $N(\tilde{Q})$ is a unit of $\mathbb{D}$.
+The null cone splits into the two families of maximal totally isotropic subspaces, $\mathcal{R}_\ell$ and $\mathcal{K}_\ell$, indexed by the lines $\ell$ of $\mathbb{R}^2$; each is two-dimensional, each consists of singular matrices, and they are the two rulings of the projective null quadric. Every zero divisor lies in exactly one member of each family, the two families are exchanged by transposition, and the four minimal ideals of the algebra are members of the families: $u_+ \mathbb{H}_{\mathrm{s}} = \mathcal{K}_{\ell_w}$, $\mathbb{H}_{\mathrm{s}} u_+ = \mathcal{R}_{\ell_v}$, and their analogues.
 
-The union $Z_+ \cup Z_-$ is a reducible real algebraic variety with two irreducible components, the two four-dimensional subspaces, and it is invariant under scaling; the zero divisor set is that union with the origin removed. It is not the null set of the norm form and not a quadric: unlike the split complex case, where the zero divisors are the null cone of the quadratic norm form, here they are the nonzero zeros of the quartic $\Delta$. The split complex subspace contains zero divisors, inherited from $\mathbb{D}$; the quaternion, Hermitian, and anti-Hermitian subspaces contain none. In the biquaternion algebra, by contrast, the zero divisor set is a single complex cone of complex dimension $3$ (real dimension $6$), because $\mathbb{C}$ is a field and the norm form itself is the criterion.
+The algebra has nonzero nilpotents: a nonzero element is nilpotent exactly when it lies in the vector subspace and on its light cone, and $(e_1 + e_3)^2 = 0$. The quaternion algebra and the eight-dimensional $\mathbb{H}_{\mathbb{D}}$ have no nonzero nilpotent, the first because it is a division algebra and the second because it is a product of division algebras. The zero divisor set is a connected three-dimensional cone of measure zero, the nilpotents form its two-dimensional subcone inside $V$, and the two non-central idempotents are two further points of it.
 
 ## Summary of Notation
 
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{H}_{\mathbb{D}}$ | Split quaternion algebra |
-| $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split quaternion |
-| $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $e_+ = \tfrac{1}{2}(1 + j)$ | Positive idempotent |
-| $e_- = \tfrac{1}{2}(1 - j)$ | Negative idempotent |
-| $\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-$ | Idempotent decomposition |
-| $N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = \sum_\mu Q_\mu^2$ | Norm form |
-| $N_{\mathbb{H}}(\tilde{Q}_\pm)$ | Ordinary quaternion norm of an idempotent component |
-| $\Delta(\tilde{Q}) = N_{\mathbb{H}}(\tilde{Q}_+) N_{\mathbb{H}}(\tilde{Q}_-) = N(\tilde{Q}) N(\tilde{Q})^*$ | Reduced norm (determinant) |
-| $Z_+ = \{\tilde{Q} : \tilde{Q}_+ = 0\}$ | Zero-divisor subspace with vanishing $+$ component |
-| $Z_- = \{\tilde{Q} : \tilde{Q}_- = 0\}$ | Zero-divisor subspace with vanishing $-$ component |
-| $\mathcal{Z} = (Z_+ \cup Z_-) \setminus \{0\}$ | Zero divisor set |
+| Symbol | Meaning | Article |
+|---|---|---|
+| $Z$ | the zero divisor set $\{x \neq 0 : N(x) = 0\}$ | this article |
+| $\mathcal{N}$ | the null cone $\{x : N(x) = 0\}$ | this article |
+| $\Phi(Z)$ | the rank-one matrices of $M_2(\mathbb{R})$ | this article |
+| image line, kernel line | the two lines attached to a rank-one matrix | this article |
+| $\mathbb{R}x$, $[x]$ | an isotropic line of the projective null quadric $Q$ | this article |
+| $R_\ell$, $K_\ell$ | $\{M : \operatorname{im} M \subseteq \ell\}$, $\{M : \ker M \supseteq \ell\}$ | this article |
+| $\mathcal{R}$, $\mathcal{K}$ | the two families of maximal isotropic subspaces | this article |
+| $\mathcal{R}_\ell$, $\mathcal{K}_\ell$ | the same, transported to $\mathbb{H}_{\mathrm{s}}$ | this article |
+| $\tau$ | the anti-automorphism $\Phi^{-1}\circ(\cdot)^{\top}\circ\Phi$ | this article |
+| nilpotent | nonzero $x$ with $x^2 = 0$ | this article |
+| $\ell_v, \ell_w$ | the lines $\mathbb{R}(1,1)$ and $\mathbb{R}(1,-1)$ | this article |
+| $u_\pm = \tfrac12(1 \pm e_2)$ | the non-central idempotents | *Split-Quaternion Algebra* |
+| $N(x) = \det \Phi(x)$ | the norm and determinant form | *Split-Quaternion Norm and Invertibility* |
 
 ## Further Reading
 
-- William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the original formulation of quaternions and their complexification.
-- J. P. Ward, *Quaternions and Cayley Numbers: Algebra and Applications* (Kluwer, Dordrecht, 1997), for the algebraic structure, the norm form, and the zero divisors of the split quaternions.
-- Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
-- F. Brackx, R. Delanghe, and F. Sommen, *Clifford Analysis* (Pitman, 1982), for the general Clifford analysis.
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the coquaternions, their idempotents and their nilpotents.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for maximal isotropic subspaces and the ruling of the null quadric.
+- T. Y. Lam, *Introduction to Quadratic Forms over Fields* (American Mathematical Society, 2005), for isotropic forms, the inertia law and the geometry of the null cone.
+- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the split composition algebras and their zero divisors.

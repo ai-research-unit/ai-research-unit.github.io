@@ -442,6 +442,14 @@ $$
 
 The complex wavelet transform is used in image processing, where it provides both magnitude and phase information, and in the analysis of oriented textures.
 
+## Summary
+
+Harmonic analysis on $\mathbb{C}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the complex structure playing an essential part. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters $\chi_\xi(z) = e^{2\pi i \operatorname{Re}(\bar{\xi}z)}$ are the exponentials from which the transform is built.
+
+The Fourier transform on $\mathbb{C}$ is the transform on that group, written in the complex variable, and convolution is the group convolution on $\mathbb{R}^2$. The Paley–Wiener theorem relates the decay of the transform to the holomorphic extension of the function. The article then takes up the interaction of the transform with holomorphy: the Cauchy–Riemann operator and the Laplacian, the Hardy spaces of holomorphic functions on the disc, and the theorems describing how harmonic analysis restricts to the holomorphic category.
+
+The last three sections extend the transform beyond the group setting: the Mellin transform on the multiplicative half-line, the Radon transform of a function on $\mathbb{R}^2$ along lines, and the continuous wavelet transform. In each case the definition, the basic properties and the relation to the Fourier transform are recorded.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

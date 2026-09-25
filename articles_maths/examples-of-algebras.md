@@ -5,7 +5,7 @@
 
 The preceding articles developed the general theory of algebras over a commutative ring: ideals and quotients, the centre, units and zero divisors, automorphisms and derivations, the tensor constructions, the topological layer and the operator-algebraic layer. This article collects the standard examples and records, for each, the data the theory associates with it — the dimension, the centre, the group of units, the zero divisors, the ideals, and the position of the algebra in the classification into division, simple and semisimple algebras. It is a reference article: the individual algebras are treated in their own articles, and the purpose here is to make the data comparable at a glance.
 
-The ground ring is a field $k$ unless a different ring is stated, and the finite-dimensional algebras are over their ground field. The number systems are those of the shared conventions: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{D}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{D}'$ with unit $\varepsilon$, $\varepsilon^2 = 0$, the quaternions $\mathbb{H}$, the split quaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
+The ground ring is a field $k$ unless a different ring is stated, and the finite-dimensional algebras are over their ground field. The number systems are those of the shared conventions: $\mathbb{R}$, $\mathbb{C}$, the split complex numbers $\mathbb{D}$ with unit $j$, $j^2 = +1$, the dual numbers $\mathbb{D}'$ with unit $\varepsilon$, $\varepsilon^2 = 0$, the quaternions $\mathbb{H}$, the split biquaternions $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, and the biquaternions $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$.
 
 ## The Data Table
 
@@ -72,7 +72,7 @@ $$
 
 which vanishes only at $q = 0$; hence every nonzero quaternion is a unit and $\mathbb{H}$ is a division algebra. Its centre is $\mathbb{R}\cdot 1$, it has no nonzero zero divisors, and its only ideals are $0$ and $\mathbb{H}$: it is a division ring, hence simple. It is non-commutative, so it is the first example in the list that is neither a field nor commutative.
 
-### The Split Quaternions
+### The Split Biquaternions
 
 $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_\mathbb{R}\mathbb{H}$ is eight-dimensional over $\mathbb{R}$ and four-dimensional over the split complex numbers. Since $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$ as a real algebra, distributivity of the tensor product gives
 
@@ -106,7 +106,7 @@ where the $D_i$ are finite-dimensional division algebras over $k$. The algebra i
 
 **Theorem (Jacobson radical, standard).** The radical $J(A)$ of a finite-dimensional $k$-algebra is a nilpotent two-sided ideal containing every nilpotent one-sided ideal, and $A$ is semisimple if and only if $J(A) = 0$. For a finite-dimensional algebra this is equivalent to the absence of a nonzero nilpotent two-sided ideal, and for a commutative algebra it is equivalent to the algebra being a product of fields.
 
-These two theorems explain the entries of the table. The split complex numbers decompose as $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, a product of two fields, hence $r = 2$, $n_1 = n_2 = 1$, $D_1 = D_2 = \mathbb{R}$; the split quaternions decompose as $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\times\mathbb{H}$, hence $r = 2$ and $D_1 = D_2 = \mathbb{H}$; the biquaternions are $M_2(\mathbb{C})$, hence $r = 1$; and the dual numbers have $J(\mathbb{D}') = (\varepsilon)\neq0$, so they are not semisimple. The classification is not a mere list: each algebra is placed by its decomposition into matrix algebras over division algebras.
+These two theorems explain the entries of the table. The split complex numbers decompose as $\mathbb{D} \cong \mathbb{R}\times\mathbb{R}$, a product of two fields, hence $r = 2$, $n_1 = n_2 = 1$, $D_1 = D_2 = \mathbb{R}$; the split biquaternions decompose as $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H}\times\mathbb{H}$, hence $r = 2$ and $D_1 = D_2 = \mathbb{H}$; the biquaternions are $M_2(\mathbb{C})$, hence $r = 1$; and the dual numbers have $J(\mathbb{D}') = (\varepsilon)\neq0$, so they are not semisimple. The classification is not a mere list: each algebra is placed by its decomposition into matrix algebras over division algebras.
 
 ## The Centre Computed
 
@@ -191,7 +191,7 @@ The table at the head of the article records the data for each algebra.
 | $\mathbb{D}$ | Split complex numbers, unit $j$, $j^2 = +1$ |
 | $\mathbb{D}'$ | Dual numbers, unit $\varepsilon$, $\varepsilon^2 = 0$ |
 | $\mathbb{H}$ | Quaternions, basis $e_0 = 1, e_1, e_2, e_3$ |
-| $\mathbb{H}_{\mathbb{D}}$ | Split quaternions, $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, $\dim_\mathbb{R} = 8$ |
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternions, $\mathbb{D}\otimes_\mathbb{R}\mathbb{H}$, $\dim_\mathbb{R} = 8$ |
 | $\mathbb{B}$ | Biquaternions, $\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ |
 | $M_n(k)$ | $n\times n$ matrices over $k$ |
 | $k[x_1,\dots,x_n]$ | Polynomial algebra |

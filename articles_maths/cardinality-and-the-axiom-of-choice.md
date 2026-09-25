@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Cardinality is the measure of the size of a set, taken not by counting but by matching: two sets have the same size when a bijection between them exists. This definition is one of the most economical in mathematics and one of the most consequential, because it applies to infinite sets, where it produces results that are not available to any finite counting: the set of rationals has the same size as the set of natural numbers, the set of reals is strictly larger than either, and there is no largest size at all, since the power set of a set is always strictly larger than the set. The article develops this theory: equipotence and the Schröder–Bernstein theorem, the distinction between countable and uncountable sets, Cantor's theorem and the arithmetic of infinite cardinals.
+Cardinality is the measure of the size of a set, taken not by counting but by matching: two sets have the same size when a bijection between them exists. This definition is one of the most economical in mathematics and one of the most consequential, because it applies to infinite sets, where it produces results that are not available to any finite counting: the set of integers has the same size as the set of natural numbers, the power set of a set is always strictly larger than the set, and there is no largest size at all. The article develops this theory: equipotence and the Schröder–Bernstein theorem, the distinction between countable and uncountable sets, Cantor's theorem and the arithmetic of infinite cardinals.
 
 The second subject of the article is the axiom of choice and its two great equivalents, Zorn's lemma and the well-ordering theorem. The axiom of choice asserts that every family of nonempty sets admits a function selecting one element from each; it is independent of the other axioms of set theory, it is used constantly and often invisibly, and three of the most important existence theorems of algebra — a maximal ideal in every nontrivial ring, a basis in every vector space, an algebraic closure for every field — are applications of it. The article states the axiom, proves its equivalence with Zorn's lemma and the well-ordering theorem, and catalogues the uses made of it in the corpus.
 
@@ -91,9 +91,11 @@ lists every pair exactly once. Either argument exhibits a bijection. $\square$
 
 **Proof.** If one of the sets is finite then the product is finite, by induction on the number of elements. If both are countably infinite, transport the bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ of the theorem along bijections $A \to \mathbb{N}$ and $B \to \mathbb{N}$. $\square$
 
-**Theorem.** $\mathbb{Q}$ is countably infinite.
+**Theorem.** $\mathbb{Z}$ is countably infinite, and so is $\mathbb{N}^k$ for every $k \geq 1$.
 
-**Proof.** Every rational has a unique representation $a/b$ with $b > 0$ and $\gcd(a,b) = 1$. The map sending $a/b$ to the pair $(\operatorname{sgn}(a), (|a|, b))$, and then to a natural number by the bijection of the previous theorem, is injective from $\mathbb{Q}$ into $\mathbb{N}$; and $\mathbb{N} \to \mathbb{Q}$, $n \mapsto n$ is injective. By Schröder–Bernstein, $\mathbb{Q}$ is countably infinite. $\square$
+**Proof.** The map $\mathbb{Z} \to \mathbb{N}$ sending $n \geq 0$ to $2n$ and $n < 0$ to $-2n - 1$ is a bijection, so $\mathbb{Z}$ is countably infinite. For $\mathbb{N}^k$ we argue by induction on $k$: the case $k = 1$ is the definition, and $\mathbb{N}^{k+1} = \mathbb{N}^k \times \mathbb{N}$ is countable by the corollary on products. $\square$
+
+**Remark.** The same argument applies to a quotient of $\mathbb{Z} \times \mathbb{Z}$, so the field of rationals of the later categories is countably infinite; that statement is a statement about the fraction field of $\mathbb{Z}$ and is proved in *Localization and the Fraction Field*.
 
 **Theorem.** A countable union of countable sets is countable, and more generally, if $I$ is countable and each $A_i$ is countable then $\bigcup_{i \in I} A_i$ is countable.
 
@@ -119,13 +121,13 @@ Cantor's theorem is the diagonal argument in its purest form; the set $D$ is con
 
 **Proof.** $\mathcal{P}(\mathbb{N})$ is not finite, and by the theorem it is not equipotent to $\mathbb{N}$. For the second statement, if $\kappa$ is a cardinal then $\kappa < 2^{\kappa}$ by the theorem, so no cardinal is largest. $\square$
 
-**Theorem.** $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})| = |(0,1)| = |\mathbb{R}^n|$ for every $n \geq 1$, and $\mathbb{R}$ is uncountable.
+**Corollary.** $|\mathcal{P}(\mathbb{N})| = 2^{\aleph_0}$, and $|\mathcal{P}(\mathbb{N})^n| = 2^{\aleph_0}$ for every $n \geq 1$.
 
-**Proof sketch.** The identification $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})|$ is the binary expansion: a real number has a binary expansion, which is a function $\mathbb{N} \to \{0,1\}$ modulo the ambiguity of the expansions ending in $1$s, and the standard reduction to the non-ambiguous expansions gives a bijection with a subset of $\mathcal{P}(\mathbb{N})$; Schröder–Bernstein, applied to the inclusion and to a suitable injection the other way, gives the equality. The interval $(0,1)$ is equipotent to $\mathbb{R}$ by the rational function $x \mapsto (2x-1)/(x(1-x))$, which is a bijection from $(0,1)$ onto $\mathbb{R}$: it is strictly increasing, tends to $-\infty$ as $x$ tends to $0$ and to $+\infty$ as $x$ tends to $1$, and every real value is attained. Finally $\mathbb{R}^n \cong \mathbb{R}$ follows by interleaving the binary expansions of the coordinates, with the ambiguity of the expansions that terminate handled as in the case $n = 1$; the two injections $|\mathbb{R}| \leq |\mathbb{R}^n|$ and $|\mathbb{R}^n| \leq |\mathcal{P}(\mathbb{N})| \cdot \ldots \cdot |\mathcal{P}(\mathbb{N})| = |\mathcal{P}(\mathbb{N})|$ are then compared by Schröder–Bernstein. Uncountability is then immediate from the previous corollary. $\square$
+**Proof.** The first statement is the definition $|\mathcal{P}(X)| = 2^{|X|}$ at $X = \mathbb{N}$. For the second, $|\mathcal{P}(\mathbb{N})^n| = |\mathcal{P}(\mathbb{N})|^n = \kappa^n = \kappa$ for the infinite cardinal $\kappa = 2^{\aleph_0}$, by the cardinal arithmetic proved below. $\square$
 
-**Remark.** The bijection $(0,1) \to \mathbb{R}$ is given by a rational function, so the cardinality statement uses no analysis; the limiting language in the description of the map is only a way of saying that the values become arbitrarily large in absolute value near the endpoints, and the rigorous statement of that fact belongs to Part II, where the order on $\mathbb{R}$ is enriched by a distance. For the cardinality result the explicit formula alone is sufficient.
+**Remark.** The set of reals of the later categories is equipotent to $\mathcal{P}(\mathbb{N})$, and so are its interval and its finite powers; these are statements about the order-complete field $\mathbb{R}$ and are proved in *Real-Closed and Complete Ordered Fields*. Nothing here needs them: the power set of $\mathbb{N}$ already realises the cardinality.
 
-**Definition.** The cardinality of $\mathbb{R}$ is the **cardinality of the continuum**, written $\mathfrak{c}$; the cardinality of $\mathbb{N}$ is written $\aleph_0$. Thus
+**Definition.** The cardinality of $\mathcal{P}(\mathbb{N})$ is written $\mathfrak{c}$ and is called the **cardinality of the continuum**; the cardinality of $\mathbb{N}$ is written $\aleph_0$. Thus
 
 $$
 \mathfrak{c} = 2^{\aleph_0}.
@@ -185,7 +187,7 @@ $$
 2^{\aleph_0} = \aleph_1,
 $$
 
-where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of $\mathbb{R}$ is either countable or of the cardinality of $\mathbb{R}$.
+where $\aleph_1$ is the least uncountable cardinal; equivalently, that every subset of a set of cardinality $\mathfrak{c}$ is either countable or of cardinality $\mathfrak{c}$.
 
 The formulation uses $\aleph_1$, whose construction as the least uncountable cardinal requires the ordinals and is given. The **generalised continuum hypothesis** (GCH) asserts $2^{\aleph_\alpha} = \aleph_{\alpha+1}$ for every ordinal $\alpha$.
 
@@ -250,13 +252,13 @@ The axiom of choice enters algebra through Zorn's lemma, and the corpus records 
 
 **Proof.** A **filter** on $X$ is a family $\mathcal{F} \subseteq \mathcal{P}(X)$ that is upward closed ($A \in \mathcal{F}$ and $A \subseteq B$ imply $B \in \mathcal{F}$), closed under finite intersections, and does not contain $\emptyset$; it is an **ultrafilter** if in addition, for every $A \subseteq X$, exactly one of $A$ and $X \setminus A$ lies in $\mathcal{F}$. Let $\mathcal{F}$ be a filter and let $P$ be the set of filters on $X$ containing $\mathcal{F}$, ordered by inclusion. $P$ is nonempty, and the union of a chain of filters is a filter: upward closure and finite intersections are inherited from the members of the chain, and $\emptyset$ is in no member. By Zorn's lemma, choose a maximal element $\mathcal{U} \in P$. If $A \subseteq X$ with neither $A$ nor $X \setminus A$ in $\mathcal{U}$, then $\mathcal{U} \cup \{A \cap B : B \in \mathcal{U}\}$ generates a strictly larger filter, since $A \cap B \neq \emptyset$ for every $B \in \mathcal{U}$ (else $X \setminus A \in \mathcal{U}$ by upward closure of $\mathcal{U}$), contradicting maximality; the case with $X \setminus A$ is symmetric. Hence $\mathcal{U}$ is an ultrafilter. $\square$
 
-The proposition is the set-theoretic form of the **ultrafilter principle**, itself equivalent to a weak form of the axiom of choice; the corpus uses it in the construction of ultraproducts and in the Stone representation of Boolean algebras in Part IV.
+The proposition is the set-theoretic form of the **ultrafilter principle**, itself equivalent to a weak form of the axiom of choice; the corpus uses it in the construction of ultraproducts and in the Stone representation of Boolean algebras in Part V.
 
 ## Summary
 
 Two sets are equipotent when a bijection between them exists; equipotence is an equivalence relation, and $|X| \leq |Y|$ means that an injection $X \to Y$ exists. A set is finite when it is equipotent to $\{1,\ldots,n\}$ for some $n$, and infinite otherwise; the number of elements of a finite set is well defined by the pigeonhole principle. A Dedekind-infinite set — one equipotent to a proper subset — is infinite, and the converse needs countable choice. The Schröder–Bernstein theorem, proved from the Knaster–Tarski fixed-point theorem, states that injections in both directions yield a bijection, so $\leq$ is antisymmetric.
 
-$\mathbb{N} \times \mathbb{N}$, $\mathbb{Z}$ and $\mathbb{Q}$ are countably infinite; a countable union of countable sets is countable, by countable choice. Cantor's theorem, $|X| < |\mathcal{P}(X)|$, makes $\mathcal{P}(\mathbb{N})$ and $\mathbb{R}$ uncountable and shows that there is no largest cardinal. Cardinal sum, product and exponentiation are defined by disjoint union, product and function set, satisfy the usual arithmetic laws, and satisfy $2^{\kappa} = |\mathcal{P}(X)|$ for $|X| = \kappa$; for infinite cardinals under the axiom of choice, $\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa,\lambda)$ and $\kappa^n = \kappa$. The continuum hypothesis asserts $2^{\aleph_0} = \aleph_1$ and is independent of the Zermelo–Fraenkel axioms with choice.
+$\mathbb{N} \times \mathbb{N}$, $\mathbb{Z}$ and $\mathbb{N}^k$ are countably infinite; a countable union of countable sets is countable, by countable choice. Cantor's theorem, $|X| < |\mathcal{P}(X)|$, makes $\mathcal{P}(\mathbb{N})$ uncountable and shows that there is no largest cardinal. Cardinal sum, product and exponentiation are defined by disjoint union, product and function set, satisfy the usual arithmetic laws, and satisfy $2^{\kappa} = |\mathcal{P}(X)|$ for $|X| = \kappa$; for infinite cardinals under the axiom of choice, $\kappa + \lambda = \kappa \cdot \lambda = \max(\kappa,\lambda)$ and $\kappa^n = \kappa$. The continuum hypothesis asserts $2^{\aleph_0} = \aleph_1$ and is independent of the Zermelo–Fraenkel axioms with choice.
 
 The axiom of choice asserts the existence of choice functions on arbitrary families and is equivalent to the assertion that every surjection has a right inverse; Zorn's lemma asserts that a nonempty poset in which every chain has an upper bound has a maximal element; the well-ordering theorem asserts that every set can be well-ordered. The three are equivalent: Zorn gives the well-ordering by a maximal well-orderable subset, the well-ordering gives choice by selecting least elements, and choice gives Zorn by an unbounded transfinite recursion. The corpus uses Zorn's lemma for maximal ideals, bases of vector spaces, algebraic closures and ultrafilters, and the ultrafilter case is carried out here from the power-set lattice alone.
 
@@ -267,10 +269,10 @@ The axiom of choice asserts the existence of choice functions on arbitrary famil
 | $X \cong Y$, $|X| = |Y|$ | Equipotence: a bijection $X \to Y$ exists |
 | $|X| \leq |Y|$, $|X| < |Y|$ | Injection $X \to Y$ exists; injection but no bijection |
 | $\{1,\ldots,n\}$ | Canonical finite set of $n$ elements |
-| $\mathbb{N}$, $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | Natural numbers, integers, rationals, reals, complexes |
+| $\mathbb{N}$, $\mathbb{Z}$ | Natural numbers and integers; the further number systems belong to *Rings and Fields* |
 | $\aleph_0 = |\mathbb{N}|$ | First infinite cardinal, the countable one |
 | $\aleph_1$ | Least uncountable cardinal |
-| $\mathfrak{c} = 2^{\aleph_0}$ | Cardinality of the continuum, $|\mathbb{R}|$ |
+| $\mathfrak{c} = 2^{\aleph_0}$ | Cardinality of the continuum, $|\mathcal{P}(\mathbb{N})|$ |
 | $\mathcal{P}(X)$ | Power set; $|\mathcal{P}(X)| = 2^{|X|}$ |
 | $\sqcup$, $\kappa + \lambda$ | Disjoint union; sum of cardinals |
 | $X \times Y$, $\kappa \cdot \lambda$ | Product; product of cardinals |

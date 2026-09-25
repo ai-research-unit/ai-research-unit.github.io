@@ -169,7 +169,7 @@ The identification of the two computations of $\operatorname{Ext}^n$, the interp
 
 **Example (group cohomology).** For a group $G$ and a $G$-module $M$, the functor $M\mapsto M^G$ of invariants is left exact, and its right derived functors $H^n(G,M)$ are the group cohomology; the functor of coinvariants is right exact and its left derived functors are the group homology. The category of $G$-modules is the category of left modules over the group ring $\mathbb{Z}[G]$, an algebra object of Part I, so group cohomology is an instance of the theory of this article. The group-cohomological development is given in the companion article *Group Cohomology* of the *Groups* category, being written in the same batch.
 
-**Example (sheaf cohomology, Part II).** For a sheaf of abelian groups on a site, the global-section functor is left exact and its right derived functors are the sheaf cohomology groups $H^n(X,\mathcal{F})$. The algebraic input is this article and *Homological Algebra*; the site, its Grothendieck topology and the geometric meaning of the cohomology are the subject of Part II, where they are treated in *Sheaves and Cohomology*, andof this category, which supply the categorical framework.
+**Example (sheaf cohomology, Part II).** For a sheaf of abelian groups on a site, the global-section functor is left exact and its right derived functors are the sheaf cohomology groups $H^n(X,\mathcal{F})$. The algebraic input is this article and *Homological Algebra*; the site, its Grothendieck topology and the geometric meaning of the cohomology are the subject of Part II, where they are treated in *Sheaves and Cohomology*; the categorical framework is supplied by *Abelian and Grothendieck Categories*.
 
 ### Base Change and Derived Functors
 

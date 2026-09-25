@@ -5,7 +5,7 @@
 
 This article is the second half of the algebra slot of the octonion system: the norm form, its multiplicative property, the invariance of the associated inner product, and the invertibility theory that the norm governs. The article takes the multiplication, the conjugation and the identities of *Octonion Algebra* as established and does not repeat them; it develops the single quadratic form that the algebra carries and the consequences of its behaviour under multiplication.
 
-The article is the octonion member of the pair of algebra slots that Part IV traverses one number system at a time, and it follows the model of the norm and invertibility theory of the quaternions in *Quaternion Algebra* and of the general theory of *Division Algebras*. The composition algebras over a field, the notion of the norm form of an algebra and the invariance of a quadratic form under multiplication are treated in the Part I companion *Quadratic Forms over Algebras and Norm Forms*; the present article is the octonion case and is not the general theory. The unit sphere constructed here is used, the multiplication operators, and the eight-square identity is used.
+The article is the octonion member of the pair of algebra slots that Part V traverses one number system at a time, and it follows the model of the norm and invertibility theory of the quaternions in *Quaternion Algebra* and of the general theory of *Division Algebras*. The composition algebras over a field, the notion of the norm form of an algebra and the invariance of a quadratic form under multiplication are treated in the Part I companion *Quadratic Forms over Algebras and Norm Forms*; the present article is the octonion case and is not the general theory. The unit sphere constructed here is used, the multiplication operators, and the eight-square identity is used.
 
 **Conventions.** The octonions are $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ with basis $e_0,\dots,e_7$, the Fano multiplication rule, and the conjugation $\bar x$ of *Octonion Algebra*; the vector part is written $\operatorname{Vect}(x)$ and the imaginary subspace $\operatorname{Im}\mathbb{O}$. The **norm** of $x = \sum_{k=0}^{7}x_ke_k$ is the real number
 
@@ -13,7 +13,7 @@ $$
 \lvert x\rvert^2 = x\bar x = \bar xx = \sum_{k=0}^{7}x_k^2 ,
 $$
 
-and the symbol $N(x)$ is reserved in this Part for the split complex valued norm form of *Split-Quaternion Norm and Invertibility*; the octonion norm is written $\lvert x\rvert^2$ throughout the octonion articles, and the associated bilinear form is written $\langle x,y\rangle$.
+and the symbol $N(x)$ is reserved in this Part for the split complex valued norm form of *Split-Biquaternion Norm and Invertibility*; the octonion norm is written $\lvert x\rvert^2$ throughout the octonion articles, and the associated bilinear form is written $\langle x,y\rangle$.
 
 ## The Norm Form and the Inner Product
 
@@ -209,7 +209,7 @@ The exponential exhibits the unit sphere as the image of a single function of th
 | $\mathbb{O}$ | $8$ | $\sum_{k=0}^{7}x_k^2$ | yes | yes | none |
 | $\mathrm{CD}(\mathbb{O})$ | $16$ | $\sum_{k=0}^{15}x_k^2$ | no | no | many |
 
-The table is the octonion entry of the register of number systems that this Part traverses one system at a time: the norm form is positive definite for the four composition algebras, becomes the split complex valued form $N$ for the split quaternions, and loses multiplicativity at the sedenions.
+The table is the octonion entry of the register of number systems that this Part traverses one system at a time: the norm form is positive definite for the four composition algebras, becomes the split complex valued form $N$ for the split biquaternions, and loses multiplicativity at the sedenions.
 
 ## Summary
 

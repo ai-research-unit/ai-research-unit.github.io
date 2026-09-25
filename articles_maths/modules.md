@@ -46,7 +46,7 @@ where $\operatorname{End}_{\mathbb{Z}}(M)$ is the endomorphism ring of the abeli
 
 **(f)** For a group $G$ and commutative ring $R$, the group ring $R[G]$ is an $R$-algebra, and $R[G]$-modules are exactly the $R$-linear representations of $G$.
 
-**(g)** The quaternions $\mathbb{H}$ are a division ring, so $\mathbb{H}$-modules are $\mathbb{H}$-vector spaces (§19). Rings with zero divisors, such as the split-complex numbers $\mathbb{D}$ or the biquaternions, are not division rings, and their module theory follows their ideal structure.
+**(g)** A division ring $D$ has no zero divisors, so $D$-modules are $D$-vector spaces (§19); a field is the commutative case. Rings with zero divisors, such as the split-complex numbers $\mathbb{D}$, are not division rings, and their module theory follows their ideal structure. The quaternion algebra is treated in *Division Algebras*.
 
 ## 4. Submodules
 
@@ -202,7 +202,7 @@ Let $D$ be a division ring. Since every nonzero element is invertible, the analo
 
 Consequently every $D$-module has a basis, any two bases have the same cardinality (the **dimension**), every submodule is a direct summand, every short exact sequence splits, and every module is projective, injective, and flat. The step that fails over general rings is the solvability of $ax=b$ for $a \neq 0$: over $\mathbb{Z}$ the linearly independent set $\{2\}$ is maximal but does not span.
 
-The quaternions $\mathbb{H}$ are a division ring (*Rings* §13), so $\mathbb{H}$-modules are $\mathbb{H}$-vector spaces and enjoy the theory above. Rings with zero divisors, such as the split-complex numbers or the biquaternions, are not division rings, so these results do not apply to them.
+A field is a division ring (*Rings* §13), so $F$-modules are vector spaces and enjoy the theory above; the theorem applies to every division ring, commutative or not. Rings with zero divisors, such as the split-complex numbers, are not division rings, so these results do not apply to them. The quaternion algebra is treated in *Division Algebras*.
 
 ---
 

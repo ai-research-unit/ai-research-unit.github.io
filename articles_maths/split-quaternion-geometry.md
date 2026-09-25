@@ -3,263 +3,211 @@
 
 ## Introduction
 
-This article is the geometry slot of the split quaternion system. It describes the geometric structures that the algebra $\mathbb{H}_{\mathbb{D}}$ carries in its own right: the two quadratic forms attached to it, the unit sphere and its metric, the zero divisor cone and its two ruling ideals, the quadric defined by the Hermitian form, and the incidence geometry of the neutral planes. The article is the geometric companion of the written algebraic articles of the same system and the split-quaternion entry of the ladder that Part IV traverses one number system at a time.
+This article describes the geometry carried by the split-quaternion algebra. It separates the two quadratic forms of the system, the signature-$(2,2)$ form on the algebra and its restriction of signature $(2,1)$ to the vector subspace, and describes the geometry each determines: the null quadric with its ruling, and the hyperboloids and the Lorentzian geometry of the vector subspace. It records the isometry groups and the homogeneous descriptions, and compares the situation with the neighbouring systems. The skeleton follows the sibling articles *Quaternion Geometry* and *Split-Biquaternion Geometry*, named only; no result of theirs is used, and the definite case of the first and the signature-$(4,2)$ case of the second share nothing beyond the shape.
 
-The article assumes the split quaternion algebra from *Split-Quaternion Algebra*: the tensor product $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$, the basis $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the central split complex unit $j$ with $j^2 = +e_0$, the four conjugations $\bar{\cdot}$, ${}^{*}$, ${}^{\dagger} = \bar{\cdot}\,{}^{*}$ and ${}^{\flat} = -{}^{\dagger}$, the idempotents $e_{\pm} = \tfrac{1}{2}(1\pm j)$ and the isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$. It assumes the norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$, its non-invertibility exactly on the zero divisors, and the idempotent description of invertibility, from *Split-Quaternion Norm and Invertibility*; the description of the zero divisors as the union of the two ideals from *Split-Quaternion Zero Divisors*; the classification of the roots of $-e_0$ from *Split-Quaternion Roots of Minus One*; and the polar and idempotent representations of the units from *Split-Quaternion Polar Representations*, whose algebraic content is used here only as the input to a geometric statement and is not restated. The Hermitian scalar form and its two Lorentzian and neutral restrictions are established in *Split-Quaternion Rotations and the Lorentz Group*, and are used here as the metric datum. The general theory of quadrics, of isotropic subspaces and of the isometry groups of forms is the subject of the Part II companion *Pseudo-Riemannian and Lorentzian Geometry* and of the Part I companions *Quadratic Forms and Polarisation*, *Bilinear Forms* and *Isometries and Orthogonal Transformations*, written in parallel; the present article treats only the structures of this one algebra.
+The split-quaternion algebra, its vector subspace $V$, its norm form $N$, its matrix model and its idempotents are assumed from *Split-Quaternion Algebra*; the signature of the restricted form and the isotropy are assumed from *Split-Quaternion Norm and Invertibility*, the null cone and its two families of maximal isotropic subspaces from *Split-Quaternion Zero Divisors*, the adjoint action and the Lorentz group from *Split-Quaternion Rotations and the Lorentz Group*, and the hyperbolic-plane model on the split-quaternions from *Split-Quaternions and Hyperbolic Geometry*, which owns the model. The Lorentzian and pseudo-Riemannian geometry of Part II is that of *Pseudo-Riemannian and Lorentzian Geometry*, the hyperboloid model and the hyperbolic isometries are those of *Hyperbolic Geometry* and *Hyperbolic Rotations*, and the projective geometry of the quadric is that of *Projective Geometry*. Nothing physical is invoked.
 
-Throughout, $\tilde Q = \sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu$ and $q_\mu, q'_\mu\in\mathbb{R}$, and the real coordinates of $\tilde Q$ are $(q_0,q_1,q_2,q_3,q'_0,q'_1,q'_2,q'_3)$. Two quadratic forms are used: the **Euclidean form**
+## The Two Quadratic Forms and the Geometry Each Determines
 
-$$
-\lvert\tilde Q\rvert^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right),
-$$
-
-which is positive definite of signature $(8,0)$ and is the norm form of $\mathbb{H}_{\mathbb{D}}$ as a real vector space, and the **Hermitian scalar form**
+**Definition.** The two quadratic forms of the system are
 
 $$
-g(\tilde P,\tilde Q) = \operatorname{Sc}\!\left(\tilde P\tilde Q^{\dagger}\right),
+N : \mathbb{H}_{\mathrm{s}} \to \mathbb{R}, \quad N(x) = a^2 + b^2 - c^2 - d^2,
 $$
 
-which is non-degenerate of signature $(4,4)$. The involution ${}^{\dagger}$ and its two eigenspaces $\mathbb{M}_{\pm}$ are those of *Split-Quaternion Rotations and the Lorentz Group*.
-
-## The Norm Form and Its Zero Set
-
-### The Norm Form as a Quadratic Map
-
-**Definition.** The **norm form** is the map
+of signature $(2,2)$ on the four-dimensional algebra, and its restriction
 
 $$
-N : \mathbb{H}_{\mathbb{D}}\longrightarrow\mathbb{D}, \qquad N(\tilde Q) = \tilde Q\bar{\tilde Q}.
+N|_{V} : V \to \mathbb{R}, \quad N(b e_1 + c e_2 + d e_3) = b^2 - c^2 - d^2,
 $$
 
-**Proposition.** The norm form is multiplicative, $N(\tilde P\tilde Q) = N(\tilde P)N(\tilde Q)$, and quadratic over $\mathbb{R}$: for real $\lambda$ one has $N(\lambda\tilde Q) = \lambda^2N(\tilde Q)$, and the polarisation
+of signature $(2,1)$ on the three-dimensional vector subspace. The two associated geometries are the **projective geometry** of the quadric $N = 0$ in $\mathbb{P}^3$, on the algebra, and the **Lorentzian geometry** of the vector subspace with the form of signature $(2,1)$.
+
+**Theorem (The Two Geometries Are Related by Restriction and by the Ruling).** The vector subspace is the $-1$ eigenspace of the conjugation inside the algebra, and the restriction of $N$ to it is the form of the Lorentzian geometry. The null cone of the restriction is the intersection of the null cone of $N$ with $V$, and the two families of maximal isotropic subspaces of the algebra meet $V$ in the isotropic lines and planes of the restricted form.
+
+**Proof.** The identification of $V$ with the $-1$ eigenspace of the conjugation is (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), and the restriction of the form is computed in the same article, §*The Restricted Form on the Vector Subspace*. The statements about the cones and the isotropic subspaces are the definitions of *Split-Quaternion Norm and Invertibility*, §*Isotropy*, and *Split-Quaternion Zero Divisors*, §*The Two Families*. $\square$
+
+The two geometries are genuinely different, and the geometry of the algebra is not the geometry of the vector subspace. The form on the algebra has four variables and produces a surface in projective three-space; the form on the vector subspace has three variables and produces the Lorentzian geometry of three-dimensional Minkowski space. The algebra structure relates them: conjugation is the involution whose $-1$ eigenspace is $V$, and the algebra automorphisms are the isometries of the restricted form, not of the full $(2,2)$ form.
+
+## The Null Quadric and the Ruling
+
+**Definition.** The **null quadric** of the algebra is the real projective quadric
 
 $$
-N(\tilde P + \tilde Q) - N(\tilde P) - N(\tilde Q) = \tilde P\bar{\tilde Q} + \tilde Q\bar{\tilde P}
+Q = \{[x] \in \mathbb{P}^3 : N(x) = 0\} = \{[x] : x \neq 0, \ N(x) = 0\},
 $$
 
-is $\mathbb{R}$-bilinear. In coordinates,
+that is, the set of isotropic lines of the form.
+
+**Theorem (The Quadric Is Doubly Ruled).** The quadric $Q$ is a smooth surface, and it is the union of the lines of the two families of maximal isotropic planes of (*Split-Quaternion Zero Divisors*, §*The Two Families*):
 
 $$
-N(\tilde Q) = \sum_{\mu=0}^{3}Q_\mu^2
-= \left(\sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right)\right) + 2j\left(\sum_{\mu=0}^{3}q_\mu q'_\mu\right).
+Q = \bigcup_{\ell \in \mathbb{P}^1} \mathbb{P}(R_\ell) = \bigcup_{\ell \in \mathbb{P}^1} \mathbb{P}(K_\ell),
 $$
 
-*Proof.* Multiplicativity is the multiplicativity of the quaternion norm extended $\mathbb{D}$-linearly, established in *Split-Quaternion Algebra*; quadraticity follows by expanding the product. The coordinate formula is the expansion of $\sum_\mu(q_\mu + jq'_\mu)^2$ using $j^2 = +e_0$. $\square$
+where $\mathbb{P}(R_\ell)$ denotes the projective line of the plane $R_\ell$. Every point of $Q$ lies in exactly one plane of the first family and exactly one plane of the second; the two families are parametrised by the same projective line and are exchanged by transposition.
 
-The norm form is therefore the sum of a positive definite real quadratic form and a second real quadratic form multiplied by $j$. The two are
+**Proof.** An isotropic line is a line of rank-one matrices by *Split-Quaternion Zero Divisors*, §*The Zero Divisor Set as the Null Cone*, and a rank-one matrix lies in exactly one plane of each family by the corollary of the theorem on the two families there. Each plane $\mathbb{P}(R_\ell)$ is a projective line contained in $Q$, since the plane $R_\ell$ is totally isotropic; and the union of these lines is $Q$, because every isotropic line lies in some plane of the family. $\square$
 
-$$
-R(\tilde Q) = \lvert\tilde Q\rvert^2 = \sum_{\mu=0}^{3}\left(q_\mu^2 + (q'_\mu)^2\right), \qquad
-I(\tilde Q) = 2\sum_{\mu=0}^{3}q_\mu q'_\mu,
-$$
-
-so that $N = R + jI$. The form $R$ is the Euclidean form of the introduction; the form $I$ is the polarisation of the product of each real coordinate with its split partner.
-
-### The Zero Set
-
-**Definition.** The **null set** of the norm form, also called the **zero divisor cone**, is
+**Corollary (The Quadric Is a Torus).** The quadric $Q$ is homeomorphic to a two-dimensional torus:
 
 $$
-Z = \{\tilde Q\in\mathbb{H}_{\mathbb{D}} : N(\tilde Q) = 0\}.
+Q \cong \mathbb{P}^1 \times \mathbb{P}^1 \cong S^1 \times S^1 .
 $$
 
-**Theorem.** The zero divisor cone has the following description. The norm form vanishes at $\tilde Q$ if and only if the split complex number $N(\tilde Q)$ is a zero divisor of $\mathbb{D}$, that is, if and only if the idempotent component $\tilde Q_+$ or the idempotent component $\tilde Q_-$ is the quaternion zero. Equivalently,
+**Proof.** Send a point of $Q$ to the pair consisting of the plane of the first family containing it, which is an element of $\mathbb{P}^1$, and its position inside that plane, which is a point of the projective line $\mathbb{P}(R_\ell) \cong \mathbb{P}^1$. The theorem shows that the map is a bijection; both $\mathbb{P}^1$ and the family of planes are circles over the reals, so the product is a torus. $\square$
+
+**Corollary (The Ruling in Coordinates).** In the angular coordinates of *Split-Quaternion Norm and Invertibility*, §*Isotropy*, a point of $Q$ is the line of $(\cos\alpha, \sin\alpha, \cos\beta, \sin\beta)$, and the ruling is described by the two combinations $\alpha+\beta$ and $\alpha-\beta$: the image line of the rank-one matrices depends only on $\alpha+\beta$, so the family of the planes $R_\ell$ is the family of loci of constant $\alpha+\beta$, while the kernel line depends only on $\alpha-\beta$, so the family $K_\ell$ is the family of loci of constant $\alpha-\beta$. The identification $(\alpha,\beta) \sim (\alpha+\pi,\beta+\pi)$ leaves both combinations of angles unchanged, so the two combinations are coordinates on the torus of lines, and the two rulings are its two families of circles.
+
+The quadric is the projective image of the ruling by maximal isotropic planes, and it is the natural projective object of the system: a smooth quadric surface with the two rulings, on which the algebra's structure group acts.
+
+**Theorem (The Group Action on the Quadric).** The unit group acts on $Q$ by conjugation, and the action descends to an action of $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$, of dimension three, on the torus $Q$; the kernel of the action is the centre $\mathbb{R}^{\times}$ of the unit group.
+
+**Proof.** Conjugation by a unit is an algebra automorphism and preserves $N$, so it maps isotropic lines to isotropic lines; this gives the action of $\mathbb{H}_{\mathrm{s}}^{\times}$ on $Q$. The kernel of the action on the projective space is the set of units acting trivially on all lines of $\mathbb{H}_{\mathrm{s}}$, which is the centre $\mathbb{R}^{\times}$; the quotient is $\mathrm{PGL}_2(\mathbb{R})$ by the corollary of *Split-Quaternion Rotations and the Lorentz Group*, §*The Adjoint Representation*. $\square$
+
+## The Unit Hyperboloids and Their Metrics
+
+The level sets of the two forms carry metrics of opposite character.
+
+**Theorem (The Level Set in the Algebra).** The set
 
 $$
-Z = \mathbb{H}e_+\cup\mathbb{H}e_- = \{\tilde Q : \tilde Q_+ = 0\}\cup\{\tilde Q : \tilde Q_- = 0\},
+U = \{x \in \mathbb{H}_{\mathrm{s}} : N(x) = 1\}
 $$
 
-the union of the two ideals, and each of the two sets is a real four-dimensional subspace; the two meet only at the origin, and $Z$ is the union of two four-dimensional subspaces of the eight-dimensional real space $\mathbb{H}_{\mathbb{D}}$. In terms of the decomposition $N = R + jI$ the cone is the locus $\lvert I(\tilde Q)\rvert = R(\tilde Q)$, which for the two real forms $R$ and $I$ is the equality case of the Cauchy–Schwarz inequality.
+is a connected smooth three-dimensional submanifold of $\mathbb{R}^4$, equal as a set to the norm-one group $\mathrm{SL}_2(\mathbb{R})$. The polar form $B$ restricts to a pseudo-Riemannian metric of signature $(2,1)$ on it, and the metric is bi-invariant under left and right translations, so that $U$ is a three-dimensional Lorentzian group manifold.
 
-*Proof.* In the split complex algebra an element $u = c + js$ is a zero divisor if and only if $c^2 = s^2$, that is, if and only if $u$ has the form $\lambda(1\pm j)$ with $\lambda\in\mathbb{R}$; equivalently $uu^{*} = 0$ (see *Split Complex Algebra*). Since $N(\tilde Q) = N(\tilde Q_+)e_+ + N(\tilde Q_-)e_-$ under the idempotent decomposition, the norm form is a zero divisor of $\mathbb{D}$ exactly when one of the two quaternion norms vanishes, and a quaternion norm vanishes only at the quaternion zero. This gives the two ideals, and each ideal is four-dimensional over $\mathbb{R}$ because it is a copy of $\mathbb{H}$. They meet only at the origin because $\tilde Q_+ = 0$ and $\tilde Q_- = 0$ together give $\tilde Q = 0$. For the last statement, $N(\tilde Q) = R + jI$ with $R = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ and $I = 2\sum_\mu q_\mu q'_\mu$, so the idempotent components of $N(\tilde Q)$ are $R \pm I = \sum_\mu(q_\mu\pm q'_\mu)^2$, which vanish exactly when $q'_\mu = \mp q_\mu$ for all $\mu$; this is the equality case of $\lvert\sum_\mu q_\mu q'_\mu\rvert \leq \sqrt{\sum_\mu q_\mu^2}\sqrt{\sum_\mu (q'_\mu)^2}$. $\square$
+**Proof.** The set is the level set of a regular value of $N$, since the gradient $2x$ does not vanish on it, so it is a smooth three-dimensional submanifold; it is connected because $\{N>0\}$ is connected by *Split-Quaternion Norm and Invertibility*, §*The Group of Units*, and the map $x \mapsto x/\sqrt{N(x)}$ is a retraction of $\{N>0\}$ onto it. The identification with the norm-one group is the same section. At the identity the tangent space is $V$, on which $B$ has signature $(2,1)$; left translations carry this form to a metric on all of $U$, and the form is invariant under left and right translations because $B$ is associative. $\square$
 
-The description of the zero divisor set is the geometric counterpart of the algebraic statement of *Split-Quaternion Zero Divisors*: the set of non-invertible elements is a union of two subspaces, not a hypersurface, and it is not a cone in the sense of a single quadratic cone but the union of the two ruling subspaces.
+The quadric $U$ in $\mathbb{R}^{2,2}$ is the three-dimensional Lorentzian space form of signature $(2,1)$, the analogue for this signature of the de Sitter and anti-de Sitter quadrics; the Part II treatment of the space forms is in *Pseudo-Riemannian and Lorentzian Geometry*.
 
-**Proposition.** Both ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$ are totally isotropic for the Hermitian scalar form $g$: $g(\tilde P,\tilde Q) = 0$ for all $\tilde P,\tilde Q$ in the same ideal. They are four-dimensional and maximal with this property, since the maximal totally isotropic subspaces of a neutral form of signature $(4,4)$ are four-dimensional.
+**Theorem (The Level Sets in the Vector Subspace).** In the vector subspace, the level sets of the restricted form are as follows.
 
-*Proof.* If $\tilde Q = \tilde Q_-e_-$ then $\tilde Q^{\dagger} = \bar{\tilde Q}_-e_+$, so $\tilde Q\tilde Q^{\dagger} = \tilde Q_-\bar{\tilde Q}_-e_-e_+ = 0$ and hence $g(\tilde Q,\tilde Q) = 0$; polarisation gives $g(\tilde P,\tilde Q) = 0$ within the ideal, since $\tilde P\tilde Q^{\dagger}$ has the same form with $\tilde P_-,\tilde Q_-$ and $\operatorname{Sc}(\tilde P_-\bar{\tilde Q}_-e_-e_+) = 0$ because every element of the form $\tilde R e_+$ has scalar part $\tfrac{1}{2}\operatorname{Sc}(\tilde R)$ and $\tilde P_-\bar{\tilde Q}_-e_-e_+ = 0$. By Witt's theorem the maximal totally isotropic subspaces of a non-degenerate form of signature $(4,4)$ have dimension the minimum of the two indices, which is four. $\square$
+1. The set $\{v \in V : N(v) = 1\}$ is a hyperboloid of two sheets. The induced form $B$ is definite on each sheet; hence $-B$ is a Riemannian metric of constant curvature $-1$, and each sheet is a copy of the hyperbolic plane, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser $SO(2)$.
+2. The set $\{v \in V : N(v) = -1\}$ is a one-sheeted hyperboloid, connected. The induced form $B$ is indefinite of signature $(1,1)$ on it, and it is a Lorentzian surface, on which $\mathrm{SO}^{+}(2,1)$ acts transitively with stabiliser the one-parameter hyperbolic subgroup.
+3. The set $\{v \in V : N(v) = 0\}$ is the light cone, a singular cone on the circle of isotropic lines.
 
-## The Unit Sphere and Its Metric
+**Proof.** *Induced metric.* At $v = e_1$ the tangent space to the level set $\{N=1\}$ is $v^{\perp} = \operatorname{span}\{e_2,e_3\}$, on which $B$ is negative definite; the group acts transitively on the level set by *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*, so definiteness holds everywhere and the metric is Riemannian up to sign. At $v = e_2$ the tangent space to the level set $\{N=-1\}$ is $v^{\perp} = \operatorname{span}\{e_1,e_3\}$, on which $B = b'^2 - d'^2$ is indefinite of signature $(1,1)$, and transitivity again carries the statement everywhere. The curvature and the identification of each sheet with the hyperbolic plane are the hyperboloid model of *Hyperbolic Geometry*; the model built on the split-quaternions is *Split-Quaternions and Hyperbolic Geometry*. *Singularity of the cone.* The gradient of the restricted form vanishes at the origin, and the cone is a cone on its link, which is the circle of isotropic lines. The stabilisers are those computed in *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*. $\square$
 
-### The Unit Sphere
-
-**Definition.** The **unit sphere** of the split quaternion algebra is
-
-$$
-S(\mathbb{H}_{\mathbb{D}}) = \{\tilde Q\in\mathbb{H}_{\mathbb{D}} : N(\tilde Q) = e_0\}.
-$$
-
-**Theorem.** The unit sphere is the product $S^3\times S^3$ of two round three-spheres, exhibited by the idempotent decomposition: an element $\tilde Q$ has norm form $e_0$ if and only if $\lvert\tilde Q_+\rvert = \lvert\tilde Q_-\rvert = 1$, and the map
-
-$$
-\mathbb{H}e_+\oplus\mathbb{H}e_-\longrightarrow\mathbb{H}\oplus\mathbb{H}, \qquad
-\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-\longmapsto(\tilde Q_+,\tilde Q_-)
-$$
-
-is a ring isomorphism carrying $S(\mathbb{H}_{\mathbb{D}})$ onto $S^3\times S^3$. In particular $S(\mathbb{H}_{\mathbb{D}})$ is a compact six-dimensional manifold, and it is a group under multiplication.
-
-*Proof.* The norm form of $\tilde Q = \tilde Q_+e_+ + \tilde Q_-e_-$ is $N(\tilde Q_+)e_+ + N(\tilde Q_-)e_-$ because $e_{\pm}$ are orthogonal idempotents, and this equals $e_0 = e_+ + e_-$ exactly when both quaternion norms equal $1$. The identification $S^3\times S^3$ is then immediate. $\square$
-
-The unit sphere is thus a compact Lie group of dimension six. It is not a hyperboloid and not a symmetric space of non-compact type; the hyperboloids of this system are described, and are level sets of the Hermitian form rather than of the norm form.
-
-### The Product Metric
-
-**Definition.** The **product metric** on $S(\mathbb{H}_{\mathbb{D}})\cong S^3\times S^3$ is
-
-$$
-d\left((u_+,u_-),(v_+,v_-)\right)^2 = d_{S^3}(u_+,v_+)^2 + d_{S^3}(u_-,v_-)^2,
-$$
-
-where $d_{S^3}$ is the geodesic distance of the quaternion sphere, $d_{S^3}(u,v) = \arccos\operatorname{Sc}(u\bar v)$.
-
-**Proposition.** The product metric is a bi-invariant metric on the group $S^3\times S^3$, it is the metric induced by the Euclidean form restricted to the unit sphere in the directions tangent to it, and its geodesics are the products of great circles. Its diameter is $\pi$ in each coordinate, the cut locus of a point is the product of the two antipodes, and the volume of the unit sphere with respect to the induced Riemannian volume is
-
-$$
-\operatorname{vol}(S^3\times S^3) = (2\pi^2)^2 = 4\pi^4 .
-$$
-
-*Proof.* The group $S^3\times S^3$ is a direct product of compact Lie groups, and the product of bi-invariant metrics is bi-invariant, since translations act coordinatewise. The product of the tangent spaces at the identity is $\operatorname{Im}\mathbb{H}\oplus\operatorname{Im}\mathbb{H}$, on which the product of the quaternion invariant inner products is invariant under the adjoint action. The geodesics of a Riemannian product are the products of geodesics, and the cut locus and diameter statements follow. The volume of $S^3$ with the round metric of radius one is $2\pi^2$, and volumes multiply in a Riemannian product. $\square$
-
-The unit sphere therefore carries the geometry of a product of two round spheres; its curvature is not of constant sign but non-negative, and its fundamental group is trivial. The two-sided action of the unit sphere on itself, giving left and right translations, is the geometric expression of the group structure, and it extends to the whole algebra by multiplication.
-
-### The Quotients
-
-The unit sphere contains two distinguished compact subgroups, the two factors $S^3\times\{1\}$ and $\{1\}\times S^3$, and the diagonal $\Delta S^3$. Their geometric quotients are the following.
-
-**Proposition.** The quotients
-
-$$
-(S^3\times S^3)/\Delta S^3\cong S^3, \qquad (S^3\times S^3)/(S^3\times\{1\})\cong S^3, \qquad (S^3\times S^3)/\{\pm(1,1)\}
-$$
-
-are respectively the quaternion sphere, the quaternion sphere again, and a compact six-dimensional group covered two-to-one by the unit sphere. The first two identifications show that the split quaternion unit sphere fibres over the quaternion unit sphere, with a fibre the diagonal copy of $S^3$ in the first case and a right coset in the second.
-
-*Proof.* The diagonal acts freely by $(u,v)\mapsto(uw,vw)$, and the map $(u,v)\mapsto uw$ for $w = v^{-1}$ exhibits the orbit space as the set of ratios $uv^{-1}$, which is all of $S^3$ because $S^3$ is a group; the stabiliser is the diagonal. The quotient by the first factor is the set of second coordinates. The last quotient is the quotient by the centre, computed from the centre of the product. $\square$
-
-These quotients are the split-quaternion counterpart of the projective quotient $\mathbb{H}P^1 = S^4$ of the quaternion theory; the difference is that here the quotients are again three-spheres rather than a four-sphere, because the split quaternion unit group is a product and its quotients by the factors are the factors themselves.
-
-## The Projective and Incidence Geometry
-
-### The Quadric of the Hermitian Form
-
-The Hermitian scalar form defines a quadric, and its isotropic subspaces carry an incidence geometry.
-
-**Definition.** Let $\mathbb{P}(\mathbb{H}_{\mathbb{D}})$ be the real projective space of seven dimensions on the real vector space $\mathbb{H}_{\mathbb{D}}$. The **Hermitian quadric** is
-
-$$
-Q(g) = \left\{[\tilde Q]\in\mathbb{P}(\mathbb{H}_{\mathbb{D}}) : g(\tilde Q,\tilde Q) = 0\right\},
-$$
-
-the projectivisation of the null cone of $g$; it is a non-degenerate quadric of dimension six and of signature $(4,4)$, called a quadric of Kleinian type.
-
-**Proposition.** The quadric $Q(g)$ contains two families of four-dimensional totally isotropic subspaces, namely the projectivisations of the maximal totally isotropic subspaces of $g$; through each point of $Q(g)$ there passes at least one member of each family, and the two families are interchanged by the symmetries of the quaternion index set. The ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$ project to two members of these families, so the zero divisor set of the algebra is a union of two ruling subspaces of the quadric.
-
-*Proof.* The zero divisor ideals are totally isotropic of dimension four by the proposition above, so their projectivisations are three-dimensional projective subspaces contained in $Q(g)$; in the projective space $\mathbb{P}^7$ the maximal projective subspaces of a $(4,4)$ quadric have dimension three, since the maximal totally isotropic vector subspaces have dimension four. The incidence statement is the standard description of the maximal isotropic subspaces of a form of signature $(4,4)$, whose two families are parametrised by the choice of a maximal positive subspace of dimension four and its orthogonal complement; the identification with the quaternion index set is made through the pairing $\mu\leftrightarrow$ the coordinate $e_\mu$ and the split partner. $\square$
-
-The zero divisor set therefore has a projective interpretation: it is not a hypersurface but a union of two families of maximal linear spaces on the quadric. This is the sense in which the split quaternion geometry has two rulings, and it is the geometric content of the algebraic decomposition into two ideals.
-
-### The Neutral Planes and Their Incidence
-
-**Definition.** A **neutral plane** in $\mathbb{H}_{\mathbb{D}}$ is a four-dimensional real subspace on which $g$ has signature $(2,2)$. A neutral plane is **totally isotropic** if the restriction of $g$ to it is zero, which with dimension four is the maximal isotropic case.
-
-**Proposition.** Let $\mu\neq\nu$ be distinct elements of $\{0,1,2,3\}$. The $\mathbb{D}$-span $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ is a neutral plane with $g$-orthonormal basis $(e_\mu, je_\mu, e_\nu, je_\nu)$ and signature $(+1,-1,+1,-1)$; the group $O(2,2)$ is its isometry group. Two such planes intersect in the two-dimensional split complex line $\mathbb{D}e_\mu$ when they share exactly one index, and in the origin otherwise.
-
-*Proof.* The orthogonality and the diagonal values are the computation of *Split-Quaternion Rotations and the Lorentz Group*; the intersection statement is immediate from the direct sum decomposition of $\mathbb{H}_{\mathbb{D}}$ into the four split complex lines $\mathbb{D}e_\mu$. $\square$
-
-The neutral planes are the geometric home of the hyperbolic rotations of the system: by the results of *Split-Quaternion Rotations and the Lorentz Group*, left multiplication by a unit $e^{\theta j}$ of the split complex part acts on each neutral plane as a simultaneous hyperbolic rotation in the two coordinate planes, giving a two-dimensional subgroup of $SO^{+}(2,2)$.
+**Corollary (The Three Geometries of the Level Sets).** The level sets of the two forms give three geometries of different character: the Riemannian hyperbolic plane on each sheet of the timelike hyperboloid, the Lorentzian geometry of the one-sheeted hyperboloid and of the four-dimensional unit hyperboloid, and the degenerate light-cone geometry of the null level set. All three are acted on by the same group $\mathrm{SO}^{+}(2,1)$ in the vector subspace, and by the norm-one group in the algebra.
 
 ## The Isometry Group and the Homogeneous Description
 
-### The Group Preserving the Hermitian Form
+**Theorem (The Isometry Groups).** The isometry group of the restricted form is $O(2,1)$, whose identity component is $\mathrm{SO}^{+}(2,1) \cong \mathrm{PSL}_2(\mathbb{R})$; the isometry group of the full form is $O(2,2)$, of dimension six. The algebra automorphisms form the subgroup $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$, which is strictly smaller than the isometry group of the full form.
 
-The geometry of the Hermitian form is governed by its isometry group.
+**Proof.** The orthogonal groups of the two forms are described in *Isometries and Orthogonal Transformations*, and the identification of the identity component of the first with $\mathrm{PSL}_2(\mathbb{R})$ is the double cover of *Split-Quaternion Rotations and the Lorentz Group*, §*The Double Cover of $\mathrm{SO}^{+}(2,1)$*. The automorphism group is $\mathrm{PGL}_2(\mathbb{R})$ by *Split-Quaternion Matrix Representations*, §*Uniqueness up to Conjugacy*, and it acts on the algebra preserving $N$, hence is a subgroup of $O(2,2)$; it is not all of it, since $\dim O(2,2) = 6$ and $\dim PGL_2(\mathbb{R}) = 3$. $\square$
 
-**Definition.** The **isometry group** of $g$ is
-
-$$
-O(4,4) = \{T\in GL_8(\mathbb{R}) : g(T\tilde P,T\tilde Q) = g(\tilde P,\tilde Q)\ \text{for all }\tilde P,\tilde Q\},
-$$
-
-with identity component $SO^{+}(4,4)$ and maximal compact subgroup $O(4)\times O(4)$.
-
-**Proposition.** $\dim O(4,4) = 28$, the maximal compact subgroup of $SO^{+}(4,4)$ is $SO(4)\times SO(4)$, and the quadric $Q(g)$ is the compact dual of the symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$, which is of dimension sixteen and rank four.
-
-*Proof.* The dimension of $O(p,q)$ is $\tfrac{1}{2}(p+q)(p+q-1) = \tfrac{1}{2}\cdot 8\cdot 7 = 28$. The maximal compact subgroup is $O(p)\times O(q)$ for a form of signature $(p,q)$ with $p,q > 0$, giving $O(4)\times O(4)$; its identity component is $SO(4)\times SO(4)$. The symmetric space $SO^{+}(p,q)/(SO(p)\times SO(q))$ is the Grassmannian of maximal positive subspaces, of dimension $pq = 16$ and rank $\min(p,q) = 4$, and the quadric is its compact dual, the standard duality of the symmetric space and the quadric associated to a form of signature $(p,q)$ with $p = q$. $\square$
-
-**Proposition.** The subgroup of $GL_8(\mathbb{R})$ preserving the algebra structure of $\mathbb{H}_{\mathbb{D}}$ and the Hermitian form $g$ is a closed subgroup of $O(4,4)$; it contains the compact group $Sp(1)\times Sp(1)$ of two-sided multiplication by unit quaternions, acting on the quaternion subspace and inducing $SO(4)$, and the split complex unit group $e^{\theta j}$ of the neutral planes.
-
-*Proof.* The algebra automorphisms and the two-sided multiplications preserve the algebra structure, and the claim is that those among them preserve $g$. The two-sided multiplication by $\tilde S_+,\tilde S_-\in Sp(1)$ acts on the quaternion part by $SO(4)$, which preserves the definite form on the quaternion subspace of the algebra; combined with the identity action on the split partners it preserves $g$. The split complex units preserve $g$ on each neutral plane by the proposition of the previous article. $\square$
-
-### The Algebra as a Normed Space
-
-The Euclidean form $\lvert\cdot\rvert^2$ gives $\mathbb{H}_{\mathbb{D}}$ the structure of a normed real vector space of dimension eight, and the multiplication is continuous in that norm but not norm-multiplicative. The sharp inequality is
+**Theorem (The Homogeneous Descriptions).** The level sets are homogeneous spaces of the isometry group:
 
 $$
-\lvert\tilde P\tilde Q\rvert \leq \sqrt{2}\,\lvert\tilde P\rvert\lvert\tilde Q\rvert,
+\{N = 1\} \subset V \ \cong\ \mathrm{SO}^{+}(2,1)/SO(2),
 $$
 
-and the constant $\sqrt{2}$ is attained, for instance at $\tilde P = \tilde Q = (1+j)e_0$. This follows from multiplicativity of $N = R + jI$: writing $R_{\tilde P} = \lvert\tilde P\rvert^2$ and $I_{\tilde P}$ for the second form, one has $R_{\tilde P\tilde Q} = R_{\tilde P}R_{\tilde Q} + I_{\tilde P}I_{\tilde Q}$, and $\lvert I_{\tilde P}I_{\tilde Q}\rvert \leq R_{\tilde P}R_{\tilde Q}$ by the inequality $\lvert I(\tilde X)\rvert\leq R(\tilde X)$ established above, so $R_{\tilde P\tilde Q}\leq 2R_{\tilde P}R_{\tilde Q}$; equality holds exactly when both $\tilde P$ and $\tilde Q$ lie on the zero divisor cone with $I_{\tilde P}I_{\tilde Q} > 0$, as for the displayed example, where $R = 2$, $I = 2$ and $\lvert\tilde P^2\rvert = \sqrt{8} = \sqrt2\,\lvert\tilde P\rvert^2$. The polar decomposition of a non-zero element is
+each sheet being one connected component of the coset space; and
 
 $$
-\tilde Q = \lvert\tilde Q\rvert\,\frac{\tilde Q}{\lvert\tilde Q\rvert},
+\{N = -1\} \subset V \ \cong\ \mathrm{SO}^{+}(2,1)/SO(1,1),
 $$
 
-with the second factor a point of the Euclidean unit sphere of $\mathbb{H}_{\mathbb{D}}$, not of the unit sphere $S(\mathbb{H}_{\mathbb{D}})$; the two spheres are different, and the geometric content of the difference is exactly that the Euclidean sphere meets both the zero divisor cone and the algebraic unit sphere in lower-dimensional sets. The polar representations of the units of the algebra, established in *Split-Quaternion Polar Representations*, describe which units occur; the geometric statement kept here is that the set of units is not the Euclidean unit sphere and not the algebraic unit sphere, but the complement of the zero divisor cone.
+and the nappes of the light cone are orbits with stabiliser the two-dimensional solvable group of *Split-Quaternion Rotations and the Lorentz Group*, §*The Trichotomy of Timelike, Lightlike and Spacelike Elements*.
+
+**Proof.** Transitivity on each level set and the computation of the stabilisers are that section, and the orbit–stabiliser theorem gives the display. $\square$
+
+**Corollary (The Decomposition of the Vector Subspace).** The vector subspace decomposes into the orbits
+
+$$
+V = \{0\} \ \sqcup\ \{N = 1\} \ \sqcup\ \{N = -1\} \ \sqcup\ \{N = 0, v \neq 0\},
+$$
+
+and the last term is the union of the two nappes of the cone. The trichotomy of timelike, lightlike and spacelike elements is the orbit decomposition of the Lorentzian geometry.
+
+## The Lorentzian Geometry of the Vector Subspace
+
+The geometry of $V$ is three-dimensional Minkowski geometry, and its features are those of Part II.
+
+**Theorem (The Causal Structure and the Hyperbolic Geometry).** The form $N$ on $V$ is indefinite and isotropic, so the vector subspace carries the full causal trichotomy: every nonzero vector is timelike ($N > 0$), lightlike ($N = 0$) or spacelike ($N < 0$), and the lightlike vectors form a cone, which the quaternion case does not have. The hyperboloid model of the hyperbolic plane is the sheet $N = 1$, with the metric $-B$; the isometry group of that metric is $\mathrm{PSL}_2(\mathbb{R})$, acting by the adjoint action, and the geodesics of the model are the intersections of the sheet with the planes through the origin.
+
+**Proof.** The causal trichotomy is the orbit decomposition above; the metric and curvature on the sheet are the theorem on the level sets; the geodesics of a hyperboloid model are the orthogonal intersections with central planes, as treated in *Hyperbolic Geometry*, and the group action is the double cover. $\square$
+
+**Corollary (The Lorentzian Surfaces).** The one-sheeted hyperboloid $N = -1$ and the nappes of the light cone carry the Lorentzian and degenerate geometries of the three-dimensional Minkowski space, with the causality relations inherited from $V$; the intersections of the hyperboloids with the central planes through the origin are the geodesics, timelike, lightlike or spacelike according to the type of the plane.
+
+**Proof.** The induced metrics are those computed above; the geodesic statement is the standard reduction to central planes, as in *Pseudo-Riemannian and Lorentzian Geometry*. $\square$
+
+## The Incidence Geometry of the Ruling
+
+The two families of maximal isotropic planes give the quadric an incidence structure, and it is the projective geometry of the product $\mathbb{P}^1\times\mathbb{P}^1$.
+
+**Theorem (The Incidence of the Two Families).** Every plane of the first family meets every plane of the second family in exactly one point of the quadric, and the resulting map
+
+$$
+\mathbb{P}^1 \times \mathbb{P}^1 \longrightarrow Q, \qquad (\ell, \ell') \longmapsto R_\ell \cap K_{\ell'},
+$$
+
+is a bijection. Two distinct planes of the same family meet only in the origin, so no two lines of the same family meet in $Q$; two lines of different families meet in exactly one point.
+
+**Proof.** By the computation in *Split-Quaternion Zero Divisors*, §*The Two Families*, the intersection $R_\ell \cap K_{\ell'}$ consists of the matrices $uv^{\top}$ with $\mathbb{R}u = \ell$ and $\mathbb{R}v^{\perp} = \ell'$, a one-dimensional space; its projectivisation is a single point of $Q$. For the bijectivity, a point of $Q$ determines the plane of each family containing it, and the two planes determine the point back; the statement about the intersection of two planes of the same family follows because $\operatorname{im} M \subseteq \ell \cap \ell' = 0$ for distinct $\ell, \ell'$. $\square$
+
+**Corollary (The Action on the Ruling).** The inner automorphisms of the algebra, that is the action of $\mathrm{PSL}_2(\mathbb{R})$, preserve each of the two families and act on each by Möbius transformations of the parameter $\mathbb{P}^1$; the anti-automorphism $\tau$ of transposition exchanges the two families. The group therefore acts on $Q = \mathbb{P}^1\times\mathbb{P}^1$ diagonally, on each factor by a Möbius transformation.
+
+**Proof.** For a unit $g$, conjugation sends a rank-one matrix $M$ to $gMg^{-1}$, whose image is $g(\operatorname{im} M)$ and whose kernel is $g(\ker M)$; hence it carries $R_\ell$ to $R_{g\ell}$ and $K_{\ell'}$ to $K_{g\ell'}$, preserving each family. The action of an invertible matrix on the lines of $\mathbb{R}^2$ is the Möbius action on $\mathbb{P}^1$. Transposition exchanges the families by *Split-Quaternion Zero Divisors*, §*The Two Families*. $\square$
+
+## The Geometry of the Distinguished Subspaces
+
+Every distinguished subspace of the algebra inherits a form, and the inherited form determines a geometry of lower dimension.
+
+| Subspace | Inherited form | Geometry |
+|---|---|---|
+| $S = \mathbb{R}\cdot 1$ | $a^2$ | definite; the unit level set is $\{\pm 1\}$ |
+| $V$ | $b^2 - c^2 - d^2$, signature $(2,1)$ | the Lorentzian geometry of the vector subspace |
+| $\mathbb{R}[e_1] = \operatorname{span}\{1,e_1\}$ | $a^2 + b^2$ | definite; a copy of the complex plane as a metric plane |
+| $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ | $a^2 - c^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_2)$; the unit hyperbola $a^2 - c^2 = 1$ |
+| $\mathbb{D}_3 = \operatorname{span}\{1,e_3\}$ | $a^2 - d^2$, signature $(1,1)$ | two null lines, $\mathbb{R}(1\pm e_3)$ |
+| $\mathbb{H}_{\mathrm{s}}u_\pm$, $u_\pm\mathbb{H}_{\mathrm{s}}$ | identically zero | isotropic planes, ruling the quadric |
+
+**Theorem (The Two-Dimensional Geometries).** On each split-complex subalgebra the inherited form has signature $(1,1)$; the null lines are the lines $\mathbb{R}(1\pm e_2)$ and $\mathbb{R}(1\pm e_3)$, and they are the two isotropic lines of the subalgebra. The isometry group of the subalgebra form is the group $O(1,1)$ of hyperbolic rotations, acting on the hyperbola $a^2 - c^2 = 1$ with two orbits, the two branches; the distance on a branch is the logarithm of the ratio of the two coordinates in the null basis. The subalgebra $\mathbb{R}[e_1]$ is definite, its form is positive definite, and its geometry is Euclidean; its unit circle is the compact group $SO(2)$ of the elliptic subgroup of *Split-Quaternion Rotations and the Lorentz Group*, §*Elliptic and Hyperbolic One-Parameter Subgroups*.
+
+**Proof.** The forms are read from the norm form on the corresponding coordinates. In the null basis $n_{\pm} = \tfrac12(1 \pm e_2)$ of the split-complex subalgebra the form $a^2 - c^2$ becomes a product, $N(p n_+ + q n_-) = pq$, so the null lines are the coordinate axes and the hyperbola is $pq = 1$; hyperbolic rotations are the maps $(p,q)\mapsto(\lambda p, \lambda^{-1} q)$, and the invariant distance is $\log(\lambda)$. The definite case is the standard Euclidean geometry of the plane. $\square$
 
 ## Comparison with the Neighbouring Systems
 
-The geometry of the split quaternions is best read against the two geometries it generalises and against the quaternion geometry it doubles.
+| | $\mathbb{H}$ | $\mathbb{H}_{\mathrm{s}}$ |
+|---|---|---|
+| form on the algebra | definite, signature $(4,0)$ | indefinite, signature $(2,2)$ |
+| null quadric | empty | a torus, doubly ruled |
+| form on the vector part | definite, signature $(3,0)$ | indefinite, signature $(2,1)$, isotropic |
+| level set of norm one | the sphere $S^3$, compact | the quadric $U \cong \mathrm{SL}_2(\mathbb{R})$, a Lorentzian three-manifold |
+| level sets in the vector part | the sphere $S^2$ | two hyperbolic planes and a one-sheeted hyperboloid |
+| causality | none | the full trichotomy |
+| isometry group of the vector form | $O(3)$ | $O(2,1)$, with identity component $\mathrm{PSL}_2(\mathbb{R})$ |
 
-| Feature | $\mathbb{C}$ | $\mathbb{D}$ | $\mathbb{H}$ | $\mathbb{H}_{\mathbb{D}}$ |
-|---|---|---|---|---|
-| Real dimension | $2$ | $2$ | $4$ | $8$ |
-| Norm form | $z\bar z > 0$ | $c^2 - s^2$ indefinite | $q\bar q > 0$ | $N = R + jI$ split complex |
-| Zero divisors | none | two lines | none | two four-dimensional ideals |
-| Unit sphere | $S^1$ | two hyperbola branches | $S^3$ | $S^3\times S^3$ |
-| Unit sphere compact | yes | no | yes | yes |
-| Isometry group of the form | $O(2)$ | $O(1,1)$ | $O(4)$ | $O(4,4)$ |
-| Signature of the ambient form | $(2,0)$ | $(1,1)$ | $(4,0)$ | $(4,4)$ |
-| Projective line | $\mathbb{C}P^1=S^2$ | — | $\mathbb{H}P^1 = S^4$ | quotient $S^3$ |
-
-Two features separate the split quaternion system from both the complex and the quaternion systems. First, the norm form is not real-valued but split complex valued, so it does not define a distance; the metric that $\mathbb{H}_{\mathbb{D}}$ carries is the Euclidean metric $\lvert\cdot\rvert^2$, and the norm form instead defines the zero divisor cone. Second, the zero divisor cone is not a hypersurface but a union of two linear subspaces; the geometry of the system is therefore affine and incidence-theoretic rather than conformal. Against the split complex system, the split quaternion system replaces the two-branched hyperbola of units by the compact group $S^3\times S^3$: naively passing from $\mathbb{D}$ to $\mathbb{D}\otimes\mathbb{H}$ restores compactness, because the quaternion factor is definite even though the split complex factor is not.
+The quaternion column is the definite geometry of *Quaternion Geometry*, in which the unit sphere is compact and there is no cone. The single cause of every difference is the sign pattern of the form. The eight-dimensional relative $\mathbb{H}_{\mathbb{D}}$ of the notation table is a later system of Part V, treated under Split-Biquaternions, and nothing of it is used here; the geometry of the present system is the three-dimensional Lorentzian geometry of the vector subspace together with the ruled quadric of the algebra, and the eight-dimensional system carries a different geometry.
 
 ## Summary
 
-The split quaternion algebra carries two quadratic forms. The Euclidean form $\lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ is positive definite of signature $(8,0)$ and gives the metric of the underlying real vector space. The norm form $N(\tilde Q) = \tilde Q\bar{\tilde Q}$ is split complex valued, equal to $R + jI$ with $R = \lvert\tilde Q\rvert^2$ and $I = 2\sum_\mu q_\mu q'_\mu$, and multiplicative. Its zero set is the union of the two ideals $\mathbb{H}e_+$ and $\mathbb{H}e_-$, each a real four-dimensional subspace, meeting only at the origin; the zero divisors are therefore a union of two ruling subspaces rather than a hypersurface.
+The split-quaternion system carries two quadratic forms: the form $N$ of signature $(2,2)$ on the four-dimensional algebra, and its restriction of signature $(2,1)$ to the three-dimensional vector subspace. The first determines the projective null quadric $Q$, a smooth doubly ruled surface homeomorphic to a torus, whose two rulings are the families of maximal isotropic planes; the unit group acts on it through $\mathrm{PSL}_2(\mathbb{R}) \cong \mathrm{SO}^{+}(2,1)$. The set $\{N=1\}$ in the algebra is the connected Lorentzian three-manifold $U \cong \mathrm{SL}_2(\mathbb{R})$ with a bi-invariant metric of signature $(2,1)$.
 
-The unit sphere $\{\tilde Q : N(\tilde Q) = e_0\}$ is the product $S^3\times S^3$, a compact six-dimensional group with the product of the round metrics, of volume $4\pi^4$, bi-invariant, with geodesics the products of great circles. Its quotients by the diagonal and by either factor are three-spheres. The Hermitian scalar form $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ is non-degenerate of signature $(4,4)$; its projectivised null cone is a Kleinian quadric of dimension six, on which the two zero divisor ideals project to two maximal totally isotropic subspaces; the $\mathbb{D}$-span of two quaternion coordinates is a neutral plane of signature $(2,2)$ with isometry group $O(2,2)$. The isometry group of $g$ is $O(4,4)$, of dimension twenty-eight, with maximal compact subgroup $O(4)\times O(4)$, and the quadric is the compact dual of the Hermitian symmetric space $SO^{+}(4,4)/(SO(4)\times SO(4))$.
+The second form determines the Lorentzian geometry of the vector subspace. The level set $N=1$ is a two-sheeted hyperboloid, each sheet a copy of the hyperbolic plane with the metric $-B$ and the group $\mathrm{SO}^{+}(2,1)$ acting transitively with stabiliser $SO(2)$; the level set $N=-1$ is a connected one-sheeted hyperboloid with an induced Lorentzian metric; and the level set $N=0$ is the light cone, a singular cone on the circle of isotropic lines. The nonzero vectors split into the timelike, lightlike and spacelike classes, so the full causal trichotomy is present, unlike in the quaternion case, where the form is definite and only the sphere occurs. The isometry group of the restricted form is $O(2,1)$ with identity component $\mathrm{PSL}_2(\mathbb{R})$, and the algebra automorphisms form the smaller group $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ inside the six-dimensional isometry group $O(2,2)$ of the full form. The eight-dimensional relative is a later system of Part V, named only.
 
 ## Summary of Notation
 
-| Symbol | Meaning |
-|---|---|
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D}\otimes_{\mathbb{R}}\mathbb{H}$ | The split quaternion algebra, real dimension $8$ |
-| $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $j$ | Split complex unit, $j^2 = +e_0$, central |
-| $Q_\mu = q_\mu + jq'_\mu$ | Split complex coefficients, $q_\mu, q'_\mu\in\mathbb{R}$ |
-| $e_{\pm} = \tfrac{1}{2}(1\pm j)$ | Idempotents, $e_+e_- = 0$ |
-| $\bar{\cdot},\ {}^{*},\ {}^{\dagger},\ {}^{\flat}$ | Quaternion, split complex, Hermitian and anti-Hermitian conjugations |
-| $N(\tilde Q) = \tilde Q\bar{\tilde Q} = R + jI$ | Norm form, split complex valued |
-| $R = \lvert\tilde Q\rvert^2 = \sum_\mu(q_\mu^2 + (q'_\mu)^2)$ | Euclidean form, signature $(8,0)$ |
-| $I = 2\sum_\mu q_\mu q'_\mu$ | Split part of the norm form |
-| $Z = \mathbb{H}e_+\cup\mathbb{H}e_-$ | Zero divisor cone, the two ideals |
-| $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $g(\tilde P,\tilde Q) = \operatorname{Sc}(\tilde P\tilde Q^{\dagger})$ | Hermitian scalar form, signature $(4,4)$ |
-| $S(\mathbb{H}_{\mathbb{D}}) = \{\tilde Q : N(\tilde Q) = e_0\}\cong S^3\times S^3$ | Unit sphere, compact group |
-| $d_{S^3}(u,v) = \arccos\operatorname{Sc}(u\bar v)$ | Geodesic distance on $S^3$ |
-| $\Delta S^3$ | Diagonal subgroup of $S^3\times S^3$ |
-| $Q(g)$ | Hermitian quadric in $\mathbb{P}^7$, Kleinian type $(4,4)$ |
-| $\mathbb{D}e_\mu\oplus\mathbb{D}e_\nu$ | Neutral four-plane, signature $(2,2)$ |
-| $O(4,4)$, $SO^{+}(4,4)$, $O(2,2)$ | Isometry groups of $g$ and of the neutral planes |
-| $e^{\theta j} = \cosh\theta + j\sinh\theta$ | Split complex unit, hyperbolic one-parameter group |
-
-
+| Symbol | Meaning | Article |
+|---|---|---|
+| $N(x) = a^2+b^2-c^2-d^2$ | the form of signature $(2,2)$ on the algebra | *Split-Quaternion Algebra* |
+| $N|_{V} = b^2-c^2-d^2$ | the restricted form of signature $(2,1)$ | *Split-Quaternion Algebra* |
+| $Q \subset \mathbb{P}^3$ | the projective null quadric, the set of isotropic lines | this article |
+| $R_\ell$, $K_\ell$ | the two families of maximal isotropic planes | *Split-Quaternion Zero Divisors* |
+| $Q \cong S^1 \times S^1$ | the quadric as a torus, with its rulings | this article |
+| $U = \{N=1\} \cong \mathrm{SL}_2(\mathbb{R})$ | the unit quadric in the algebra, a Lorentzian three-manifold | this article |
+| $\{N=1\}$, $\{N=-1\}$, $\{N=0\}$ in $V$ | the two-sheeted hyperboloid, the one-sheeted hyperboloid, the light cone | this article |
+| $-B$ on a sheet | the hyperbolic metric of curvature $-1$ | this article |
+| $O(2,1)$, $\mathrm{SO}^{+}(2,1) \cong \mathrm{PSL}_2(\mathbb{R})$ | the isometry group of the restricted form | *Split-Quaternion Rotations and the Lorentz Group* |
+| $O(2,2)$ | the isometry group of the full form | this article |
+| $\mathrm{PGL}_2(\mathbb{R}) \cong SO(2,1)$ | the algebra automorphism group | *Split-Quaternion Matrix Representations* |
+| timelike, lightlike, spacelike | the causal trichotomy in $V$ | *Split-Quaternion Rotations and the Lorentz Group* |
 
 ## Further Reading
 
-- Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces* (Academic Press, 1978), for symmetric spaces, their compact duals and the maximal compact subgroups of the orthogonal groups.
-- Jacques Faraut and Adam Korányi, *Analysis on Symmetric Cones* (Clarendon Press, 1994), for the geometry of positive cones and the Jordan-theoretic description of the associated symmetric spaces.
-- Dirk J. Struik, *Lectures on Classical Differential Geometry* (Dover, 1988), for the classification of ruled quadrics and their two families of rulings.
-- Walter Benz, *Classical Geometries in Modern Contexts* (Birkhäuser, 2005), for the incidence geometry of quadrics of arbitrary signature.
-- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the null cone, the totally isotropic subspaces and the classification of forms of signature $(p,q)$.
-- John Stillwell, *Naive Lie Theory* (Springer, 2008), for the product of compact Lie groups and the quotient geometry of $S^3\times S^3$.
+- Barrett O'Neill, *Semi-Riemannian Geometry with Applications to Relativity* (Academic Press, 1983), for the causal structure of Minkowski space, the hyperboloids and their induced metrics.
+- John G. Ratcliffe, *Foundations of Hyperbolic Manifolds* (Springer, 2006), for the hyperboloid model, its geodesics and the classification of isometries.
+- Igor R. Shafarevich, *Basic Algebraic Geometry 1* (Springer, 2013), for quadric surfaces, their rulings and their projective geometry.
+- Ian R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995), for the orthogonal groups of the low-dimensional indefinite forms and their spin covers.

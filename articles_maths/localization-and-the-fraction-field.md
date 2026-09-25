@@ -4,7 +4,7 @@
 
 Localization is the operation of adjoining inverses for a chosen set of elements. It is the ring-theoretic analogue of passing from $\mathbb{Z}$ to $\mathbb{Q}$, and it is the basic tool that lets one study a ring near a prime ideal while forgetting the rest. Two constructions are its extreme cases: inverting every nonzero element of an integral domain produces the **fraction field** $\operatorname{Frac}(R)$, and inverting every element outside a prime ideal produces a **local ring** $R_\mathfrak{p}$, one in which a single maximal ideal controls the whole structure.
 
-The construction is carried out here in full, including the equivalence relation, because for rings with zero divisors the naive rule $r/s = r'/s'$ if and only if $rs' = r's$ is wrong and must be replaced by a rule that permits clearing annihilators. Throughout, $R$ is a commutative ring with $1 \neq 0$; it need not be a domain, and where a domain is required this is stated. Units, zero divisors and associates are as in *Units, Zero Divisors and Integral Domains*, and ideals and quotients are as in *Rings*, §§6–7.
+The construction is carried out here in full, including the equivalence relation, because for rings with zero divisors the naive rule $r/s = r'/s'$ if and only if $rs' = r's$ is wrong and must be replaced by a rule that permits clearing annihilators. Throughout, $R$ is a commutative ring with $1 \neq 0$; it need not be a domain, and where a domain is required this is stated. Units and zero divisors are as in *Rings*, §§8–9, associates as in *Integral Domains*, and ideals and quotients are as in *Rings*, §§6–7.
 
 ---
 
@@ -26,7 +26,7 @@ $$
 
 **(c)** $S = R \setminus \mathfrak{p}$ for a prime ideal $\mathfrak{p}$. This is multiplicative exactly because $\mathfrak{p}$ is prime: if $s, t \notin \mathfrak{p}$ and $st \in \mathfrak{p}$, then $s \in \mathfrak{p}$ or $t \in \mathfrak{p}$, a contradiction. This is the case that produces local rings.
 
-**(d)** $S$, the set of nonzero elements of $R$ that are not zero divisors: the set used for the total ring of fractions. It contains $1$ and is multiplicatively closed by *Units, Zero Divisors and Integral Domains*, where the convention that $0$ is not a zero divisor is fixed. For a domain, $S = R \setminus \{0\}$.
+**(d)** $S$, the set of nonzero elements of $R$ that are not zero divisors: the set used for the total ring of fractions. It contains $1$ and is multiplicatively closed by *Rings*, where the convention that $0$ is not a zero divisor is fixed. For a domain, $S = R \setminus \{0\}$.
 
 **(e)** $S = \{1\}$. Localizing at $\{1\}$ changes nothing either.
 
@@ -271,7 +271,7 @@ $$
 
 a local domain with maximal ideal $p\mathbb{Z}_{(p)}$ and residue field $\mathbb{F}_p$. It is the ring of rational numbers whose denominator is prime to $p$, and it is a subring of $\mathbb{Q}$; its fraction field is $\mathbb{Q}$.
 
-**Example (localization at an idempotent).** Let $R = R_1 \times R_2$ with both factors nonzero and let $S = \{1, e\}$ where $e = (1, 0)$ is idempotent. Then $e$ is a unit of $S^{-1}R$, so $e = 1$ there and $(0,1) = 1 - e = 0$. Hence $S^{-1}R \cong R_1$. Localizing at one idempotent isolates the complementary factor of the product decomposition of *Units, Zero Divisors and Integral Domains*. Concretely, in $\mathbb{Z}/6\mathbb{Z}$ with $S = \{1, 4\}$ one gets $(\mathbb{Z}/6\mathbb{Z})_4 = \mathbb{Z}/6\mathbb{Z}[1/4] \cong \mathbb{Z}/3$, the factor on which $4$ acts as the identity.
+**Example (localization at an idempotent).** Let $R = R_1 \times R_2$ with both factors nonzero and let $S = \{1, e\}$ where $e = (1, 0)$ is idempotent. Then $e$ is a unit of $S^{-1}R$, so $e = 1$ there and $(0,1) = 1 - e = 0$. Hence $S^{-1}R \cong R_1$. Localizing at one idempotent isolates the complementary factor of the product decomposition of *Rings*. Concretely, in $\mathbb{Z}/6\mathbb{Z}$ with $S = \{1, 4\}$ one gets $(\mathbb{Z}/6\mathbb{Z})_4 = \mathbb{Z}/6\mathbb{Z}[1/4] \cong \mathbb{Z}/3$, the factor on which $4$ acts as the identity.
 
 **Remark.** Localization at a prime is compatible with the ideal theory in both directions: an ideal $I$ of $R$ is contained in $\mathfrak{p}$ if and only if $I R_\mathfrak{p}$ is proper, and for an integral domain
 
@@ -284,6 +284,20 @@ the intersection taken over the maximal ideals and computed inside $\operatornam
 **Remark (localization preserves factorization).** If $R$ is a UFD and $S$ is multiplicative, then $S^{-1}R$ is a UFD, since the prime factorization of an element of $S^{-1}R$ is obtained from that of a numerator in $R$ after discarding the factors that become units. In particular $\mathbb{Z}_{(p)}$ is a UFD, as is $\mathbb{Q}[x]_{(x)}$.
 
 ---
+
+## The Countability of $\mathbb{Q}$
+
+**Theorem.** $\mathbb{Q}$ is countably infinite.
+
+**Proof.** Every rational has a unique representation $a/b$ with $b > 0$ and $\gcd(a,b) = 1$. The map sending $a/b$ to the pair $(\operatorname{sgn}(a), (|a|, b))$, and then to a natural number by the bijection $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$, is injective from $\mathbb{Q}$ into $\mathbb{N}$; and $\mathbb{N} \to \mathbb{Q}$, $n \mapsto n$ is injective. By the Schröder–Bernstein theorem of *Cardinality and the Axiom of Choice*, $\mathbb{Q}$ is countably infinite. $\square$
+
+The statement is a cardinality statement about the fraction field of $\mathbb{Z}$, and it is proved here because this is where $\mathbb{Q}$ is introduced; the cardinality theory it uses — the countability of $\mathbb{N} \times \mathbb{N}$, the corollary on products and the Schröder–Bernstein theorem — is the subject of *Cardinality and the Axiom of Choice*, which states the result for $\mathbb{Q}$ and defers the reasoning to this article.
+
+## The Additive Group of $\mathbb{Q}$
+
+The fraction field of $\mathbb{Z}$ carries, besides its ring structure, the structure of its additive group. As an abelian group, $\mathbb{Q}$ is torsion-free of rank one and divisible: for every $q \in \mathbb{Q}$ and every $n > 0$ the equation $nx = q$ has the solution $q/n$. These two properties determine it up to isomorphism, so the additive group of $\mathbb{Q}$ is the standard model of the abstract rank-one divisible torsion-free group that *Infinite Abelian Groups*, in the category *Groups*, writes $D_1$ and reasons with group-theoretically; the identification of $D_1$ with the additive group of $\mathbb{Q}$ is the content of this section.
+
+Two group-theoretic facts about the additive group are worth recording here. It is not finitely generated: a finite set of rationals has denominators dividing a common positive integer $N$, so it generates only rationals whose denominators divide $N$, whereas $\mathbb{Q}$ contains $1/p$ for every prime $p$. And it is the injective hull of $\mathbb{Z}$ in the category of abelian groups, the minimal divisible group containing $\mathbb{Z}$; the corresponding torsion divisible group is $\mathbb{Q}/\mathbb{Z}$, the direct sum over the primes of the Prüfer groups, and the subgroups of the additive group are classified up to isomorphism by their types, the invariant of the group article.
 
 ## Summary
 

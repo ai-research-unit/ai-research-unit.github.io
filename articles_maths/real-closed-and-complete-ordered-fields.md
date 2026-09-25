@@ -187,6 +187,14 @@ forcing $u = 0$, although $u \geq \epsilon > 0$. Hence $\widehat{F}$ is a comple
 
 ---
 
+## The Cardinality of $\mathbb{R}$
+
+**Theorem.** $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})| = 2^{\aleph_0}$; in particular $\mathbb{R}$ is uncountable, and the cardinal $\mathfrak{c}$ of *Cardinality and the Axiom of Choice* is its cardinality.
+
+**Proof sketch.** The identification $|\mathbb{R}| = |\mathcal{P}(\mathbb{N})|$ is the binary expansion: a real number has a binary expansion, which is a function $\mathbb{N} \to \{0,1\}$ modulo the ambiguity of the expansions ending in $1$s, and the standard reduction to the non-ambiguous expansions gives a bijection between $\mathbb{R}$ and a subset of $\mathcal{P}(\mathbb{N})$; order-completeness supplies the expansion, since each digit is decided by a bounded-above set, and Schröder–Bernstein, applied to the inclusion and to a suitable injection the other way, gives the equality. Uncountability is then immediate from Cantor's theorem. $\square$
+
+**Remark.** The powers $\mathbb{R}^n$ are equipotent to $\mathbb{R}$, by interleaving binary expansions of the coordinates; the interval $(0,1)$ is equipotent to $\mathbb{R}$ by the rational function $x \mapsto (2x-1)/(x(1-x))$, which is strictly increasing on $(0,1)$ and carries it onto $\mathbb{R}$. The limiting language that the description of that map invites is only a way of saying that the values become arbitrarily large in absolute value near the endpoints; the rigorous statement of that fact belongs to Part II, where the order is enriched by a distance, and the cardinality result itself uses only the explicit formula. The arithmetic of the cardinal $\mathfrak{c} = 2^{\aleph_0}$ is treated in *Cardinality and the Axiom of Choice*.
+
 ## Summary
 
 An ordered field is real closed when every positive element is a square and every polynomial of odd degree has a root. This is equivalent to $F$ being formally real with no proper formally real algebraic extension, to $F(i)$ being algebraically closed, and, by Tarski's theorem, to $F$ being elementarily equivalent to $\mathbb{R}$; a real-closed field carries a unique ordering, determined by the field structure through the identity $P = \{a^2 : a \neq 0\}$, so all isomorphisms of real-closed fields preserve the order. Every ordered field has a real closure, unique up to order-preserving isomorphism fixing the base field: the real closure of $\mathbb{Q}$ is the countable field of real algebraic numbers, while the real closure of $\mathbb{R}(t)$ with $t$ infinite is a field of generalized Puiseux series that does not sit inside $\mathbb{R}$.

@@ -666,6 +666,14 @@ $$
 
 The Lambert W function solves equations of the form $a e^z + b z + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the solution of the time-dependent Schrödinger equation for certain potentials.
 
+## Summary
+
+The complex special functions are the named functions that recur in complex analysis and in differential equations. The exponential is defined by its series and is entire, and the trigonometric and hyperbolic functions are built from it; the logarithm is its multivalued inverse and is the first function of the article whose domain is more than the plane.
+
+Integral representations supply the next family: the gamma function as $\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}\,dt$ for $\operatorname{Re} z > 0$ together with its analytic continuation, the Riemann zeta function as the Dirichlet series that continues meromorphically, and the incomplete gamma and beta functions that refine them. The error function, the orthogonal polynomials and the Bessel functions carry the same pattern to integrals and to the solutions of the classical differential equations.
+
+The article closes with the higher transcendental functions: the Airy functions as contour integrals, the Gauss hypergeometric function ${}_2F_1(a,b;c;z)$ and its analytic continuation, the elliptic integrals and elliptic functions, and the Lambert $W$ function as the multivalued inverse of $w \mapsto we^w$. Each is defined precisely, and its elementary properties, its differential equation and its relations to the others are recorded.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

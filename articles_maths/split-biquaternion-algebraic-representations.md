@@ -1,23 +1,23 @@
-# __Split-Quaternion Algebraic Representations__
+# __Split-Biquaternion Algebraic Representations__
 
 ## Introduction
 
-The basic algebra article defined the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, and its four fixed-point subspaces. This article describes the **algebraic representations** of the split quaternion algebra: concrete ways of writing split quaternions as objects we can compute with, using only the algebra operations and the underlying vector space structure.
+The basic algebra article defined the split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, and its four fixed-point subspaces. This article describes the **algebraic representations** of the split biquaternion algebra: concrete ways of writing split biquaternions as objects we can compute with, using only the algebra operations and the underlying vector space structure.
 
 The word "representation" is used here in the sense of "a concrete realization of the algebra as a collection of computable objects." It is not used in the technical sense of algebra representation theory, in which a representation of an algebra $A$ is a vector space $V$ together with an algebra homomorphism $\rho : A \to \mathrm{End}(V)$. The two uses are related — the module representation below is a representation in both senses — but they are not the same. We use the word in the first sense throughout.
 
-The word "algebraic" is used to contrast with "polar." The representations in this article use only the algebra operations, the split complex unit, and the underlying vector space structure. They do not use the exponential or the roots of $-1$ as a primary tool. The polar representations, which do use the exponential and the roots of $-1$, are treated in the companion article on split quaternion polar representations.
+The word "algebraic" is used to contrast with "polar." The representations in this article use only the algebra operations, the split complex unit, and the underlying vector space structure. They do not use the exponential or the roots of $-1$ as a primary tool. The polar representations, which do use the exponential and the roots of $-1$, are treated in the companion article on split biquaternion polar representations.
 
 The representations we discuss in this article are:
 
-1. **Split complex four-vector representation.** A split quaternion as a split complex four-vector.
-2. **Idempotent representation.** A split quaternion as a pair of ordinary quaternions.
-3. **Module representation.** A split quaternion as an operator on a module over the quaternion algebra.
-4. **Clifford algebra representation.** A split quaternion as an element of a Clifford algebra of split signature.
+1. **Split complex four-vector representation.** A split biquaternion as a split complex four-vector.
+2. **Idempotent representation.** A split biquaternion as a pair of ordinary quaternions.
+3. **Module representation.** A split biquaternion as an operator on a module over the quaternion algebra.
+4. **Clifford algebra representation.** A split biquaternion as an element of a Clifford algebra of split signature.
 
-The matrix representation, which is the primary algebraic representation in the biquaternion case, is **not** available in the split quaternion case in the same form. The reason is discussed in a separate section: the split quaternion algebra is not isomorphic to a matrix algebra over $\mathbb{R}$ or over $\mathbb{D}$. The idempotent representation plays the role that the matrix representation plays in the biquaternion case, and it is the primary representation of the split quaternion algebra.
+The matrix representation, which is the primary algebraic representation in the biquaternion case, is **not** available in the split biquaternion case in the same form. The reason is discussed in a separate section: the split biquaternion algebra is not isomorphic to a matrix algebra over $\mathbb{R}$ or over $\mathbb{D}$. The idempotent representation plays the role that the matrix representation plays in the biquaternion case, and it is the primary representation of the split biquaternion algebra.
 
-Throughout, we use the notation of the basic algebra article: a split quaternion is written
+Throughout, we use the notation of the basic algebra article: a split biquaternion is written
 
 $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
@@ -33,7 +33,7 @@ with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The split complex unit 
 
 The quaternion conjugate is $\bar{\tilde{Q}} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\tilde{Q}^* = Q_0^* e_0 + \mathbf{Q}^*$, where $Q_\mu^* = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^\dagger = \bar{\tilde{Q}}^*$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^\dagger$.
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is
+The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
 $$
 \tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
@@ -45,7 +45,7 @@ with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
 
 ### Definition
 
-A split quaternion $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ can be written as a split complex four-vector
+A split biquaternion $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ can be written as a split complex four-vector
 
 $$
 Q^\mu = (Q^0, Q^1, Q^2, Q^3),
@@ -57,11 +57,11 @@ $$
 Q^0 = Q_0, \qquad (Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3).
 $$
 
-The split scalar part of the split quaternion becomes the time component of the four-vector; the split vector part becomes the spatial components. This is the most direct representation.
+The split scalar part of the split biquaternion becomes the time component of the four-vector; the split vector part becomes the spatial components. This is the most direct representation.
 
 ### Multiplication in Four-Vector Form
 
-The product of two split quaternions in four-vector form separates into a scalar part and a vector part:
+The product of two split biquaternions in four-vector form separates into a scalar part and a vector part:
 
 $$
 (\tilde{Q} \circ \tilde{R})^0 = Q^0 R^0 - \sum_{k=1}^{3} Q^k R^k,
@@ -126,15 +126,15 @@ which is positive definite, of signature $(4, 0)$. The indefinite form of signat
 
 ### Why the Four-Vector Representation Is Useful
 
-The four-vector representation is the bridge between the algebraic split quaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian form, and its scalar part on the anti-Hermitian subspace is expressed as a Lorentzian norm.
+The four-vector representation is the bridge between the algebraic split biquaternion and the standard tensor formalism. It is the representation in which the split signature is most visible: the real and split parts enter with opposite signs in the Hermitian form, and its scalar part on the anti-Hermitian subspace is expressed as a Lorentzian norm.
 
-It is also the representation in which the split quaternion looks least like a split quaternion. The algebraic structure — the non-commutative product, the two conjugations, the zero divisors — is hidden. This is why the four-vector representation, while useful, is not the fundamental one.
+It is also the representation in which the split biquaternion looks least like a split biquaternion. The algebraic structure — the non-commutative product, the two conjugations, the zero divisors — is hidden. This is why the four-vector representation, while useful, is not the fundamental one.
 
 ## The Idempotent Representation
 
 ### Definition
 
-The **idempotent representation** of a split quaternion is the expression
+The **idempotent representation** of a split biquaternion is the expression
 
 $$
 \tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
@@ -182,7 +182,7 @@ $$
 \tilde{Q}_+ = \sum_\mu (q_\mu + q'_\mu) e_\mu, \qquad \tilde{Q}_- = \sum_\mu (q_\mu - q'_\mu) e_\mu.
 $$
 
-Conversely, given two real quaternions $\tilde{Q}_\pm = \sum_\mu q_\mu^\pm e_\mu$, the split quaternion is recovered by
+Conversely, given two real quaternions $\tilde{Q}_\pm = \sum_\mu q_\mu^\pm e_\mu$, the split biquaternion is recovered by
 
 $$
 \tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
@@ -229,7 +229,7 @@ $$
 N(\tilde{Q}) = \frac{N_{\mathbb{H}}(\tilde{Q}_+) + N_{\mathbb{H}}(\tilde{Q}_-)}{2} + j \frac{N_{\mathbb{H}}(\tilde{Q}_+) - N_{\mathbb{H}}(\tilde{Q}_-)}{2}.
 $$
 
-**Invertibility.** The split quaternion $\tilde{Q}$ is invertible if and only if both idempotent components are nonzero:
+**Invertibility.** The split biquaternion $\tilde{Q}$ is invertible if and only if both idempotent components are nonzero:
 
 $$
 \tilde{Q} \text{ is invertible} \iff \tilde{Q}_+ \neq 0 \text{ and } \tilde{Q}_- \neq 0.
@@ -237,7 +237,7 @@ $$
 
 This is the cleanest form of the invertibility criterion.
 
-**Zero divisors.** The split quaternion $\tilde{Q}$ is a zero divisor if and only if it is nonzero and at least one idempotent component vanishes:
+**Zero divisors.** The split biquaternion $\tilde{Q}$ is a zero divisor if and only if it is nonzero and at least one idempotent component vanishes:
 
 $$
 \tilde{Q} \text{ is a zero divisor} \iff \tilde{Q} \neq 0 \text{ and } (\tilde{Q}_+ = 0 \text{ or } \tilde{Q}_- = 0).
@@ -245,7 +245,7 @@ $$
 
 ### Why the Idempotent Representation Is the Primary One
 
-The idempotent representation plays the role in the split quaternion algebra that the matrix representation plays in the biquaternion algebra. It has the following advantages.
+The idempotent representation plays the role in the split biquaternion algebra that the matrix representation plays in the biquaternion algebra. It has the following advantages.
 
 **It reveals the structure.** The isomorphism $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ is the most important structural fact about the algebra: it shows that the algebra is semisimple, that it is the direct sum of two simple algebras, and that its representation theory is the representation theory of $\mathbb{H}$ taken twice.
 
@@ -261,7 +261,7 @@ The idempotent representation plays the role in the split quaternion algebra tha
 
 ### Definition
 
-The split quaternion algebra acts on itself by left multiplication. This gives a representation of $\mathbb{H}_{\mathbb{D}}$ on the vector space $\mathbb{H}_{\mathbb{D}}$, which is a module over $\mathbb{H}$ in the following sense: the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} e_+ \oplus \mathbb{H} e_-$ exhibits $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two copies of the quaternion algebra $\mathbb{H}$, each of which is a left module over $\mathbb{H}$.
+The split biquaternion algebra acts on itself by left multiplication. This gives a representation of $\mathbb{H}_{\mathbb{D}}$ on the vector space $\mathbb{H}_{\mathbb{D}}$, which is a module over $\mathbb{H}$ in the following sense: the idempotent decomposition $\mathbb{H}_{\mathbb{D}} = \mathbb{H} e_+ \oplus \mathbb{H} e_-$ exhibits $\mathbb{H}_{\mathbb{D}}$ as a direct sum of two copies of the quaternion algebra $\mathbb{H}$, each of which is a left module over $\mathbb{H}$.
 
 The **module representation** of $\mathbb{H}_{\mathbb{D}}$ is the pair of representations
 
@@ -289,13 +289,13 @@ so the representation $\rho_\pm$ is evaluation at the idempotent $e_\pm$.
 
 **Irreducibility.** Each of the two representations is irreducible as a representation of the algebra $\mathbb{H} \oplus \mathbb{H}$ on the corresponding summand.
 
-**The analogue of the spinor representation.** In the biquaternion case, the spinor representation is the action of $\mathbb{B} \cong M_2(\mathbb{C})$ on $\mathbb{C}^2$. In the split quaternion case, the module representation is the action of $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ on $\mathbb{H} \oplus \mathbb{H}$, which is the direct sum of the two natural actions on the two copies of $\mathbb{H}$.
+**The analogue of the spinor representation.** In the biquaternion case, the spinor representation is the action of $\mathbb{B} \cong M_2(\mathbb{C})$ on $\mathbb{C}^2$. In the split biquaternion case, the module representation is the action of $\mathbb{H}_{\mathbb{D}} \cong \mathbb{H} \oplus \mathbb{H}$ on $\mathbb{H} \oplus \mathbb{H}$, which is the direct sum of the two natural actions on the two copies of $\mathbb{H}$.
 
 ## The Clifford Algebra Representation
 
 ### Definition
 
-The split quaternion algebra is isomorphic to the even subalgebra of a Clifford algebra of split signature:
+The split biquaternion algebra is isomorphic to the even subalgebra of a Clifford algebra of split signature:
 
 $$
 \mathbb{H}_{\mathbb{D}} \cong \mathrm{Cl}_{2,2}^+(\mathbb{R}) \cong \mathrm{Cl}_{1,1,1,1}^+(\mathbb{R}),
@@ -319,41 +319,41 @@ and the split complex unit $j$ to another bivector, for example $\gamma^0 \gamma
 
 ### Properties
 
-**Multiplication.** The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the split quaternion product.
+**Multiplication.** The Clifford product of two even elements is even, so the even subalgebra is closed under multiplication. Under the isomorphism, the Clifford product corresponds to the split biquaternion product.
 
-**Norm.** The Clifford norm on the even subalgebra corresponds to the split quaternion norm form.
+**Norm.** The Clifford norm on the even subalgebra corresponds to the split biquaternion norm form.
 
 ### Why the Clifford Algebra Representation Is Useful
 
 The Clifford algebra representation is useful because:
 
-1. **It places the split quaternion algebra in the general Clifford classification.** The split quaternion algebra is one of the real Clifford algebras, and the representation shows how it fits into the general theory.
+1. **It places the split biquaternion algebra in the general Clifford classification.** The split biquaternion algebra is one of the real Clifford algebras, and the representation shows how it fits into the general theory.
 2. **It generalizes.** The Clifford algebra construction works in any dimension and any signature.
 
 ## The Absence of a Matrix Representation
 
 ### Statement
 
-Unlike the biquaternion algebra, which is isomorphic to the matrix algebra $M_2(\mathbb{C})$, the split quaternion algebra is **not** isomorphic to a matrix algebra over a field or a ring in the same way.
+Unlike the biquaternion algebra, which is isomorphic to the matrix algebra $M_2(\mathbb{C})$, the split biquaternion algebra is **not** isomorphic to a matrix algebra over a field or a ring in the same way.
 
 ### Reason
 
 The reason is the following. The quaternion algebra $\mathbb{H}$ is a division algebra over $\mathbb{R}$ and is central simple. It is not isomorphic to a matrix algebra over $\mathbb{R}$: the only finite-dimensional division algebras over $\mathbb{R}$ are $\mathbb{R}$, $\mathbb{C}$, and $\mathbb{H}$, and the finite-dimensional simple algebras over $\mathbb{R}$ are the matrix algebras $M_n(\mathbb{R})$, $M_n(\mathbb{C})$, and $M_n(\mathbb{H})$ for $n \geq 1$. The quaternion algebra $\mathbb{H}$ is not a matrix algebra over $\mathbb{R}$; it only becomes one after complexification: $\mathbb{H} \otimes_{\mathbb{R}} \mathbb{C} \cong M_2(\mathbb{C})$.
 
-The split quaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H} \cong \mathbb{H} \oplus \mathbb{H}$. It is semisimple but not simple, and its simple summands are both isomorphic to $\mathbb{H}$. It is not isomorphic to a matrix algebra over a field, because a matrix algebra over a field is simple (for $M_n$ with $n \geq 1$), and $\mathbb{H}_{\mathbb{D}}$ is not simple.
+The split biquaternion algebra is $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H} \cong \mathbb{H} \oplus \mathbb{H}$. It is semisimple but not simple, and its simple summands are both isomorphic to $\mathbb{H}$. It is not isomorphic to a matrix algebra over a field, because a matrix algebra over a field is simple (for $M_n$ with $n \geq 1$), and $\mathbb{H}_{\mathbb{D}}$ is not simple.
 
 The algebra $\mathbb{H}_{\mathbb{D}}$ is isomorphic to a subalgebra of $M_2(\mathbb{H})$, namely the subalgebra of matrices of the form $\begin{pmatrix} \tilde{Q}_+ & 0 \\ 0 & \tilde{Q}_- \end{pmatrix}$ with $\tilde{Q}_\pm \in \mathbb{H}$. This is a faithful representation, but it is not surjective onto $M_2(\mathbb{H})$.
 
 ### Comparison with the Biquaternion Case
 
-| | $\mathbb{B}$ (biquaternion) | $\mathbb{H}_{\mathbb{D}}$ (split quaternion) |
+| | $\mathbb{B}$ (biquaternion) | $\mathbb{H}_{\mathbb{D}}$ (split biquaternion) |
 |---|---|---|
 | Extra unit | $i$, $i^2 = -1$ | $j$, $j^2 = +1$ |
 | Structure | Simple | Semisimple |
 | Matrix representation | $\mathbb{B} \cong M_2(\mathbb{C})$ | $\mathbb{H}_{\mathbb{D}} \subset M_2(\mathbb{H})$, not surjective |
 | Primary algebraic representation | Matrix | Idempotent |
 
-The absence of a matrix representation is a consequence of the fact that the split quaternion algebra is semisimple, not simple. The two summands are copies of the quaternion algebra, which is not a matrix algebra over $\mathbb{R}$.
+The absence of a matrix representation is a consequence of the fact that the split biquaternion algebra is semisimple, not simple. The two summands are copies of the quaternion algebra, which is not a matrix algebra over $\mathbb{R}$.
 
 ## Relations Between the Representations
 
@@ -388,11 +388,11 @@ Each representation involves a choice, and different choices give equivalent but
 - **Module representation:** the choice of the module (left or right), which is a matter of convention.
 - **Clifford algebra representation:** the choice of the Clifford generators and the signature.
 
-Different choices give representations that are related by conjugation or by a change of basis, and the algebraic structure of the split quaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.
+Different choices give representations that are related by conjugation or by a change of basis, and the algebraic structure of the split biquaternion algebra is the same in all of them. The choices are a matter of convention and convenience, not of content.
 
 ## Summary of Representations
 
-| Representation | Split quaternion as | Useful for |
+| Representation | Split biquaternion as | Useful for |
 |---|---|---|
 | Split complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms |
 | Idempotent | $(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$ | Structure, norm form, invertibility, zero divisors |
@@ -401,13 +401,13 @@ Different choices give representations that are related by conjugation or by a c
 
 The four-vector representation is the one most familiar from the tensor formalism. The idempotent representation is the primary algebraic representation, and it is the one that reveals the semisimple structure of the algebra. The module and Clifford algebra representations place the algebra in the larger contexts of representation theory and Clifford algebra theory.
 
-Unlike the biquaternion algebra, the split quaternion algebra does **not** have a faithful matrix representation over a field or over $\mathbb{D}$ that is surjective. The idempotent representation plays the role that the matrix representation plays in the biquaternion case.
+Unlike the biquaternion algebra, the split biquaternion algebra does **not** have a faithful matrix representation over a field or over $\mathbb{D}$ that is surjective. The idempotent representation plays the role that the matrix representation plays in the biquaternion case.
 
 ## Further Reading
 
 - William Rowan Hamilton, *Lectures on Quaternions* (1853), for the original formulation.
 - William Kingdon Clifford, "Preliminary Sketch of Biquaternions" (1873), for the first systematic treatment of biquaternions and their relatives.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge, 2001), for the connection to Clifford algebras.
-- J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the algebraic representations of split quaternions.
+- J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), Chapter 3, for the algebraic representations of split biquaternions.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the classification of real algebras.
 

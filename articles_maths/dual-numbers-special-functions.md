@@ -485,6 +485,30 @@ defined wherever the denominator is invertible.
 
 The dual Lambert W function has two real branches, corresponding to the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function. On the region where $x > -1/e$, the principal branch is defined, and it is dual differentiable.
 
+## The Structure Principle
+
+The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.
+
+**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $z = x + y\varepsilon$ with $x \in I$,
+
+$$
+\tilde{F}(z) = F(x) + y F'(x) \varepsilon.
+$$
+
+**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$. $\square$
+
+This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
+
+## Summary
+
+The dual special functions are the named functions of dual numbers analysis. All of them are governed by one structural fact: a dual differentiable function is determined by its values on the real axis together with its derivative, so the infinitesimal part of each function below is fixed by the derivative of the corresponding real function.
+
+The exponential is defined by its series, which truncates at the first order in $\varepsilon$; the dual logarithm is its inverse and is the ordinary logarithm together with a term in the infinitesimal direction; the dual power function is defined by $z^a = \exp(a\log z)$; and the trigonometric and hyperbolic functions are built from the dual exponential as in the real case.
+
+Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, each obtained by carrying the corresponding real definition to the dual variable, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.
+
+The section on the structure principle states what organises all of the definitions: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -503,20 +527,6 @@ The dual Lambert W function has two real branches, corresponding to the two real
 | ${}_pF_q$ | Dual generalized hypergeometric function |
 | $W(z)$ | Dual Lambert W function |
 | $\mathfrak{m} = (\varepsilon)$ | Maximal ideal |
-
-## The Structure Principle
-
-The pattern in all the definitions above is the same: every dual special function is the ordinary real special function applied to the real part, plus its derivative times the infinitesimal part. This is not a coincidence; it is a theorem.
-
-**Theorem (Structure Principle).** Let $F$ be a special function of one real variable that is differentiable on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the dual numbers defined by the same formula. Then for $z = x + y\varepsilon$ with $x \in I$,
-
-$$
-\tilde{F}(z) = F(x) + y F'(x) \varepsilon.
-$$
-
-**Proof.** The extension $\tilde{F}$ is dual differentiable, and by the structure theorem it is of the form $u(x) + (y u'(x) + c(x))\varepsilon$. Evaluating at $y = 0$ gives $u(x) = F(x)$, hence $u'(x) = F'(x)$. The coefficient of $y$ in the infinitesimal part is therefore $F'(x)$, and the term $c(x)$ is the value of the infinitesimal part at $y = 0$, which is zero because the extension reduces to the real function $F$ when $y = 0$. $\square$
-
-This theorem is the reason dual special functions are simpler than complex or split complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, one for each idempotent. In the dual case, the special functions are the real special functions plus their derivatives, because the dual algebra is local and the infinitesimal direction is nilpotent.
 
 ## Further Reading
 

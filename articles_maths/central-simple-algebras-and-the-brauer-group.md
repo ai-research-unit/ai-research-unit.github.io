@@ -87,6 +87,8 @@ $$
 
 In particular two matrix algebras $M_n(D)$ and $M_m(D')$ over division algebras are isomorphic if and only if $n = m$ and $D \cong D'$, and the embeddings of a separable subfield of $A$ into $A$ are conjugate.
 
+**Example (the real quaternions, and the commutative boundary).** For $A = \mathbb{H}$ over $\mathbb{R}$ the corollary gives $\operatorname{Aut}_{\mathbb{R}}(\mathbb{H}) \cong \mathbb{H}^\times/\mathbb{R}^\times$: every $\mathbb{R}$-automorphism of $\mathbb{H}$ is conjugation by a unit, the kernel of $\mathbb{H}^\times \to \operatorname{Inn}(\mathbb{H})$ being the centre $\mathbb{R}^\times$, and each such automorphism preserves the norm form $N(Q) = Q\bar Q$. The same computation is carried out in *Division Algebras*. In the commutative case the statement is empty, because $\operatorname{Inn}(A)$ is trivial there; for example $\mathbb{C}$ is simple over $\mathbb{R}$ but not central, and complex conjugation is an $\mathbb{R}$-automorphism of $\mathbb{C}$ that is not inner. Centrality is exactly what the theorem needs and cannot be dropped.
+
 **Corollary (the double centralizer theorem).** Let $B$ be a simple $F$-subalgebra of $A$ with centre $L$. Then the centralizer $C_A(B)$ is simple, $B \otimes_L C_A(B) \cong A$ as $L$-algebras, and
 
 $$

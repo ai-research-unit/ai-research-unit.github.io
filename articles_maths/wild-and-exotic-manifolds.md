@@ -1,0 +1,121 @@
+
+# __Wild and Exotic Manifolds__
+
+## Introduction
+
+This article stands in *Geometry and Manifolds*, immediately after *Cobordism and Surgery Theory*, and it collects the manifolds that escape the smooth classification: an open contractible three-manifold that is not euclidean space, spheres that are homeomorphic but not diffeomorphic, and embeddings that are wild. The article assumes the smooth, the piecewise-linear and the topological categories and the relations between them, all of which are already available: *Smooth Manifolds and Differential Geometry* and *Differential Topology* earlier in this category, *Topological Spaces* earlier in this Part. The exotic spheres it uses are the objects of *Cobordism and Surgery Theory*, immediately above, and the dimension of the Whitehead manifold is the business of *Low-Dimensional Topology*, earlier in this category; both are cited. The Alexander horned sphere is a non-example of the same kind as those of the catalogue *List of Non-Examples in Topology*, which is cited rather than duplicated.
+
+---
+
+## The Whitehead Manifold
+
+**Theorem.** There is a contractible open three-dimensional manifold $W$, the **Whitehead manifold**, that is not homeomorphic to $\mathbb{R}^3$.
+
+**Construction.** Let $T_0$ be a solid torus in $S^3$ and let $T_1$ be a solid torus contained in the interior of $T_0$ whose core curve is a Whitehead double of the core of $T_0$: a curve of winding number zero in $T_0$ that is linked with itself in the manner of the Whitehead link, so that it is null-homotopic in $T_0$ but not isotopic to a curve in a ball. Iterating the pattern, that is choosing $T_{i+1}$ inside $T_i$ in the same way, gives a nested sequence
+
+$$
+T_0 \supset T_1 \supset T_2 \supset \cdots
+$$
+
+and $W = S^3 \setminus \bigcap_{i \geq 0} T_i$ is the complement of the compact limit continuum $\bigcap_{i \geq 0} T_i$ in $S^3$. Equivalently, writing $E_i = S^3 \setminus \operatorname{int}(T_i)$ for the complementary solid torus of $T_i$, the manifold is the increasing union $W = \bigcup_{i \geq 0} E_i$, since the tori are nested with $T_{i+1} \subset \operatorname{int}(T_i)$.
+
+**Proof.** The inclusion $T_{i+1} \to T_i$ is null-homotopic, the core curve of $T_{i+1}$ being null-homotopic in $T_i$ by the definition of the Whitehead double, and dually the inclusion $E_i \to E_{i+1}$ of the complementary tori is null-homotopic: the core curve of $E_i$ is null-homotopic in $E_{i+1}$, which is the same statement read in the complement of the Whitehead link. Since $W$ is the increasing union of the $E_i$, every compact subset of $W$ lies in some $E_i$ and every homotopy group of $W$ is the direct limit of the homotopy groups of the $E_i$ under maps that are zero from some stage on; hence all the homotopy groups of $W$ vanish, and $W$ is contractible by the Whitehead theorem, an open manifold being homotopy equivalent to a CW complex. It is not homeomorphic to $\mathbb{R}^3$, and the standard reason is that $W$ is not simply connected at infinity whereas $\mathbb{R}^3$ is: the complementary tori $E_i$ form a neighbourhood basis of the end, and a loop in one of them that is not null-homotopic there is null-homotopic in the next, so that the fundamental group at infinity is nontrivial while the fundamental group of the space is trivial. (The construction and its verification are standard and cited from the literature; the article states the result and the reason, not the full verification.) Moreover $W \times \mathbb{R}$ is homeomorphic to $\mathbb{R}^4$, a theorem of the same circle of ideas, cited from the literature. $\square$
+
+**Remark.** The manifold is the standard illustration of a general principle: in dimension three a contractible open manifold need not be homeomorphic to the euclidean space of the same dimension, so the classification of open manifolds is not determined by their homotopy type alone. The definition of the manifold's dimension, and the classification of three-manifolds in whose context it is studied, are *Low-Dimensional Topology*, earlier in this category.
+
+---
+
+## The Exotic Spheres
+
+**Definition.** Two smooth manifolds are **exotic** to one another if they are homeomorphic but not diffeomorphic. The **exotic spheres** are the smooth manifolds homeomorphic but not diffeomorphic to $S^n$; the set of their diffeomorphism classes up to $h$-cobordism, written $\Theta_n$, is the group described in *Cobordism and Surgery Theory*, above.
+
+**Theorem (Milnor).** There are exotic spheres: for $n \geq 7$ there are smooth manifolds homeomorphic but not diffeomorphic to $S^n$. In particular $\Theta_7$ is cyclic of order $28$, and $\Theta_n$ is a finite abelian group for every $n$.
+
+**Proof.** The construction is Milnor's, and it is cited from the literature. Plumb one copy of the tangent disc bundle of $S^4$ for each vertex of the $E_8$ diagram, according to the edges of that diagram: the result is a compact smooth eight-dimensional manifold $W$ whose intersection form in the middle dimension is the $E_8$ form, of signature $8$ and rank $8$, whose boundary $\Sigma$ is an integral homology sphere, and which is almost parallelizable, that is $p_1(W) = 0$. The last property holds because $\langle p_1(TS^4), [S^4]\rangle = 3\sigma(S^4) = 0$ by the signature theorem in dimension four, so $p_1$ vanishes for each of the plumbed disc bundles and hence for the plumbing. The plumbing graph is connected and its bases are simply connected, so $\Sigma$ is simply connected as well, and $\Sigma$ is therefore a homotopy seven-sphere. Suppose it were diffeomorphic to the standard sphere and glue an eight-ball along it. The closed smooth eight-manifold $M$ so obtained again has $p_1(M) = 0$, and for a closed eight-manifold the signature theorem of *Characteristic Classes*, earlier in this category, reads
+
+$$
+\sigma(M) = \frac{7p_2[M] - p_1(M)^2[M]}{45} = \frac{7\,p_2[M]}{45} .
+$$
+
+The signature is an integer and $7$ is coprime to $45$, so $45$ divides $p_2[M]$ and $\sigma(M)$ is a multiple of $7$; but $\sigma(M) = \sigma(W) = 8$, which is not a multiple of $7$. Hence $\Sigma$ is not diffeomorphic to the standard sphere. That it is homeomorphic to $S^7$ is the Poincaré conjecture in dimension seven, and that $h$-cobordant simply connected manifolds of dimension at least five are diffeomorphic is the $h$-cobordism theorem, both from *Differential Topology* and *Cobordism and Surgery Theory*, above. The order of $\Theta_7$ is the computation of the surgery exact sequence in that dimension, and the finiteness of $\Theta_n$ for every $n$ is the standard finiteness of the group of homotopy spheres: both are cited from the literature and from *Cobordism and Surgery Theory*. $\square$
+
+**Example (the low-dimensional values).** The groups of exotic spheres begin
+
+| $n$ | 7 | 8 | 9 | 10 | 11 |
+|---|---|---|---|---|---|
+| $\Theta_n$ | $\mathbb{Z}/28$ | $\mathbb{Z}/2$ | $(\mathbb{Z}/2)^2$ | $\mathbb{Z}/6$ | $\mathbb{Z}/992$ |
+
+and $\Theta_n$ is trivial for $n \leq 6$, so that every smooth manifold homeomorphic to $S^n$ for $n \leq 6$ is diffeomorphic to it. The values are the standard table, computed by surgery, and are cited from the literature; they are the content of the corresponding catalogue entries of Part IV.
+
+**Remark.** The existence of exotic spheres is the sharpest statement that the smooth and the topological classifications of manifolds differ, and it is a phenomenon of the smooth category: in the piecewise-linear category the groups of homotopy spheres agree with the smooth ones for $n \leq 6$ and differ from them in general, the difference being detected by the surgery exact sequence of *Cobordism and Surgery Theory*, above.
+
+---
+
+## The Alexander Horned Sphere and Wild Embeddings
+
+**Theorem.** There is a subset of $S^3$ homeomorphic to $S^2$, the **Alexander horned sphere**, whose embedding in $S^3$ is wild: one of the two complementary regions is simply connected, the other is not, so that the two regions are not homeomorphic to the standard complementary regions of a round sphere.
+
+**Construction.** Start with a torus in $S^3$, cut out a small disc from it, and add two interlocking tori in the holes so obtained; iterate, and intersect the decreasing sequence of solid regions. The limit is a set homeomorphic to $S^2$: the construction gives it as an inverse limit of finite unions of spheres joined by cylinders, which is a sphere topologically, and the embedding is wild because the "horns" accumulate on a Cantor set on the sphere.
+
+**Proof.** The limit set is homeomorphic to $S^2$ by the standard inverse-limit argument, cited from the literature. The exterior region contains a loop, one around each of the accumulating pairs of horns, that cannot be contracted without crossing the set, so the exterior is not simply connected; a round sphere has simply connected exterior. Hence the embedding is wild. The embedding is also not locally flat: at a point where the horns accumulate, no neighbourhood of that point in $S^3$ is carried to the standard pair $(\mathbb{R}^3, \mathbb{R}^2)$ by a homeomorphism, so the sphere is not locally collared there. The standard proof is cited from the literature. $\square$
+
+**Theorem (failure of the Schoenflies theorem in dimension three).** The classical Schoenflies theorem states that every Jordan curve in the plane extends to a homeomorphism of the plane; in dimension three the corresponding statement is false, and the horned sphere is a counterexample.
+
+**Proof.** In dimension two the theorem is true by the classical result; in dimension three, a homeomorphism of $S^3$ carrying the horned sphere to a round sphere would carry the exterior of the horned sphere to the exterior of the round sphere, hence would carry a non-simply-connected space to a simply connected one, the fundamental group being a homeomorphism invariant, which is impossible. So no such homeomorphism exists and the Schoenflies statement fails. $\square$
+
+**Remark.** The horned sphere is also the source of the Whitehead manifold: taking the closed exterior of a suitable wild sphere and removing its boundary gives an open manifold, and the Whitehead manifold of the first section is one of these. Wild embeddings of spheres and of cells, and the wild arcs used in the two constructions, belong to the same circle of ideas, and the horned sphere as a non-example is listed in the catalogue *List of Non-Examples in Topology* of Part IV, which this article cites rather than duplicates.
+
+---
+
+## The Three Categories and the Smoothing Problem
+
+**Theorem.** Every piecewise-linear manifold is a topological manifold, and every smooth manifold of dimension not equal to four admits a compatible piecewise-linear structure. In dimensions at most three every topological manifold admits both a piecewise-linear and a smooth structure, so that the three categories have the same objects there. In dimensions at least five the topological category is strictly larger than the other two, and the smooth and the piecewise-linear categories differ from one another as well, the group of homotopy spheres being $\Theta_7$ of order $28$ in the smooth category and trivial in the piecewise-linear one. Dimension four is the exceptional case, and it is treated in the next theorem.
+
+**Proof.** That every piecewise-linear manifold is a topological manifold is immediate from the definitions. The existence of a compatible piecewise-linear structure on a smooth manifold in dimensions other than four is the standard theorem of Whitehead and Munkres, cited from the literature, and the coincidence of the categories in dimensions at most three is the same theorem together with the triangulation theorems in low dimensions. The strictness of the inclusion in dimensions at least five is the content of the next theorem, which exhibits topological manifolds with no piecewise-linear structure, and in dimension seven the smooth and piecewise-linear homotopy spheres are already different: every piecewise-linear homotopy seven-sphere is standard, while the smooth ones form $\Theta_7$ of order $28$ by the previous section. $\square$
+
+**Theorem.** There are topological manifolds that admit no smooth structure and no piecewise-linear structure, and there are topological manifolds that admit no triangulation.
+
+**Proof.** In dimensions at least five non-smoothable and non-triangulable examples come from the Kirby–Siebenmann theory of the smoothing of topological manifolds and from the surgery theory of *Cobordism and Surgery Theory*, above, and the failure of the triangulation conjecture in dimension at least five is due to Manolescu, cited from the literature. In dimension four the $E_8$ manifold of Freedman is a closed topological four-manifold whose intersection form is the $E_8$ form; if it carried a smooth structure then that form would be diagonalisable over the integers, by Donaldson's theorem on the intersection forms of smooth four-manifolds, and the $E_8$ form is not. Hence it admits no smooth structure. The corresponding questions for piecewise-linear and triangulated structures in dimension four are more delicate, and the known examples and their limitations are cited from the literature. $\square$
+
+**Remark.** In dimension four the phenomena are extreme: $\mathbb{R}^4$ carries uncountably many smooth structures, no two of which are diffeomorphic, and the standard four-dimensional manifolds of the corpus are studied as smooth objects with that in mind. The classification in the topological and the piecewise-linear categories, and the invariants that separate them, are the subject of *Low-Dimensional Topology*, earlier in this category, and of *Knot Theory*; the smooth structures on four-manifolds are those of *Smooth Manifolds and Differential Geometry*.
+
+**Remark.** Wild arcs and wild cells occur throughout the constructions above: the Whitehead manifold is built from a wild arc, and the horned sphere is built from the same pattern of interlocking tori. The general statement is that an embedding of a ball or a sphere into a manifold of dimension at least three need not be locally flat, and that the complement of a wild embedding need not be a manifold with boundary; the two-dimensional case is the exception, by the Schoenflies theorem, which is why the phenomena of this article begin in dimension three.
+
+---
+
+## The Role of Dimension
+
+**Theorem.** The phenomena of this article are dimension-dependent: no exotic sphere exists in dimension at most six, no contractible open surface other than the plane exists, and the smoothing and triangulation questions have different answers in each of dimensions three, four and at least five.
+
+**Proof.** The vanishing of $\Theta_n$ for $n \leq 6$ is the standard computation of the group of homotopy spheres in the low dimensions, cited from the literature and obtained from the classification of the smooth structures on spheres. In dimension two every contractible open surface is homeomorphic to the plane, by the classification of surfaces, so the Whitehead phenomenon begins in dimension three. The four-dimensional case is where the topological and the smooth classifications diverge most sharply, by the work of Freedman and Donaldson cited above, and the triangulation and smoothing questions in dimensions at least five are those of the surgery theory of *Cobordism and Surgery Theory*. $\square$
+
+**Remark.** The pattern is that the smooth classification is rigid in low dimensions, flexible in the middle dimensions and again computable in the high dimensions by surgery; the manifolds of this article are the witnesses of the flexibility. Their place in the classification of manifolds, and the invariants that distinguish them, are the subject of *Low-Dimensional Topology*, earlier in this category, and of the catalogue *List of Non-Examples in Topology*, which lists them among the non-examples.
+
+---
+
+## Summary
+
+The manifolds of this article are the ones the smooth classification does not reach by homotopy or homeomorphism alone. The Whitehead manifold is a contractible open three-manifold not homeomorphic to $\mathbb{R}^3$, with $W \times \mathbb{R}$ homeomorphic to $\mathbb{R}^4$; the exotic spheres are the smooth manifolds homeomorphic but not diffeomorphic to $S^n$, grouped in the finite abelian groups $\Theta_n$ of *Cobordism and Surgery Theory*, with $\Theta_7$ of order $28$ and $\Theta_n$ trivial for $n \leq 6$; the Alexander horned sphere is a wild embedding of $S^2$ in $S^3$ whose exterior is not simply connected, and it is the counterexample to the Schoenflies theorem in dimension three; and the three categories differ, since there are topological manifolds with no smooth and no piecewise-linear structure and topological manifolds with no triangulation. The horned sphere and the exotic spheres are listed among the non-examples of the catalogues of Part IV, which the article cites rather than duplicates.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $W$ | The Whitehead manifold, contractible open and not homeomorphic to $\mathbb{R}^3$ |
+| $T_0 \supset T_1 \supset \cdots$ | The nested solid tori of the construction of $W$, with $W = S^3 \setminus \bigcap_{i \geq 0} T_i$ |
+| $S^n$ | The $n$-sphere, in the smooth, piecewise-linear or topological category as stated |
+| $\Theta_n$ | The group of $h$-cobordism classes of homotopy $n$-spheres, of *Cobordism and Surgery Theory* |
+| $\Sigma$ | The exotic seven-sphere obtained by $E_8$ plumbing |
+| $(\mathbb{Z}/28, \mathbb{Z}/2, (\mathbb{Z}/2)^2, \mathbb{Z}/6, \mathbb{Z}/992)$ | The values of $\Theta_n$ for $n = 7, 8, 9, 10, 11$ |
+| Alexander horned sphere | A wild embedding of $S^2$ in $S^3$ |
+| $\mathbb{R}^4$ | Euclidean four-space, carrying uncountably many smooth structures |
+| $E_8$ manifold | The topological four-manifold with no smooth structure |
+
+## Further Reading
+
+- M. H. Freedman and F. Quinn, *Topology of 4-Manifolds* (Princeton University Press, 1990), for the topological four-manifolds and the $E_8$ manifold.
+- R. C. Kirby and L. C. Siebenmann, *Foundational Essays on Topological Manifolds, Smoothings, and Triangulations* (Princeton University Press, 1977), for the differences between the topological, piecewise-linear and smooth categories.
+- J. Milnor, *On manifolds homeomorphic to the 7-sphere* (Annals of Mathematics, 1956), for the first exotic spheres and the order of $\Theta_7$.
+- J. Milnor, *Lectures on the $h$-Cobordism Theorem* (Princeton University Press, 1965), for the $h$-cobordism theorem and the surgery computations of the exotic spheres.
+- J. W. Whitehead, *A certain open manifold whose group is unity* (Quarterly Journal of Mathematics, 1935), for the Whitehead manifold.
+

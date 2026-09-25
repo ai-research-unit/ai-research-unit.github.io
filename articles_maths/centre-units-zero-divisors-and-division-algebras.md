@@ -180,7 +180,7 @@ $$
 
 Hence if $N(\tilde{Q}) = 0$ and $\tilde{Q} \neq 0$, then $\bar{\tilde{Q}} \neq 0$ and $\tilde{Q}$ is a zero divisor; and conversely, since $N(\tilde{Q}) \neq 0$ makes $\tilde{Q}$ a unit, every nonzero $\tilde{Q}$ with $N(\tilde{Q}) = 0$ is a zero divisor. The algebra $\mathbb{B}$ is thus partitioned into $\{0\}$, the units $N \neq 0$, and the zero divisors $N = 0$. The explicit pairs are exhibited .
 
-**Example (zero divisors in $\mathbb{H}_{\mathbb{D}}$).** The split quaternions contain the central split complex scalars, and the zero divisors of $\mathbb{D}$ are inherited: with $j$ central and $j^2 = +1$,
+**Example (zero divisors in $\mathbb{H}_{\mathbb{D}}$).** The split biquaternions contain the central split complex scalars, and the zero divisors of $\mathbb{D}$ are inherited: with $j$ central and $j^2 = +1$,
 
 $$
 (1 + j)(1 - j) = 0.
@@ -246,7 +246,7 @@ A unital associative algebra $A$ is a **division algebra** exactly when every no
 | $\mathbb{R}, \mathbb{C}, \mathbb{H}$ | The finite-dimensional division algebras over $\mathbb{R}$ |
 | $\mathbb{D}$ | Split complex numbers, zero divisors $\mathbb{R}(1\pm j)$ |
 | $\mathbb{D}'$ | Dual numbers, zero divisors the maximal ideal $(\varepsilon)$ |
-| $\mathbb{H}_{\mathbb{D}}$ | Split quaternions, zero divisors inherited from $\mathbb{D}$ |
+| $\mathbb{H}_{\mathbb{D}}$ | Split biquaternions, zero divisors inherited from $\mathbb{D}$ |
 | $\mathbb{B}$ | Biquaternions, $N(\tilde{Q}) = \sum_\mu Q_\mu^2$ |
 | $M_n(k)$ | Matrix algebra, centre $k I_n$ |
 

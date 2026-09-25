@@ -197,7 +197,7 @@ $$
 
 **Theorem.** Let $f : [a, b] \to \mathbb{R}$ be Riemann integrable. Then $f$ is Lebesgue measurable and the two integrals agree. A bounded function on a compact interval is Riemann integrable if and only if its set of discontinuities has Lebesgue measure zero.
 
-**Example (an integrable function with no Riemann integral).** On $[0,1]$ the function equal to $1$ on the rationals and $0$ on the irrationals is Lebesgue integrable with integral $0$, since the rationals are null; it is not Riemann integrable. Thus the Lebesgue integral is strictly more general.
+**Example (an integrable function with no Riemann integral).** On $[0,1]$ the function equal to $1$ on the rationals and $0$ on the irrationals is Lebesgue integrable with integral $0$, since the rationals are null; it is not Riemann integrable. Thus the Lebesgue integral is strictly more general. **Volterra's function** is the standard differentiable function whose derivative is bounded and not Riemann integrable, the derivative being discontinuous on a fat Cantor set of positive measure, so that the fundamental theorem of calculus fails for the Riemann integral without the continuity of the derivative.
 
 **Definition.** For $1 \leq p < \infty$ and a measure space $(X, \mathcal{A}, \mu)$, the space $L^p(\mu)$ consists of the measurable $f$ with $\int |f|^p \, d\mu < \infty$, modulo equality a.e., with norm $\|f\|_p = \left(\int |f|^p\right)^{1/p}$. The space $L^\infty(\mu)$ consists of the measurable $f$ bounded outside a null set, with $\|f\|_\infty = \inf\{c : |f| \leq c \text{ a.e.}\}$; the infimum is attained a.e.
 

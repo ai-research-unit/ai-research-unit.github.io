@@ -1,508 +1,203 @@
+
 # __Split-Quaternion Analysis on Subspaces__
 
 ## Introduction
 
-The article on split quaternion analysis defined limits, continuity, and the differential operators on a general four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$. The article on split quaternion integration defined the integral and the Cauchy integral formula on the same general subspace. This article specializes the general theory to the four natural subspaces of the split quaternion algebra: the **split complex subspace** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the **quaternion subspace** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the **Hermitian subspace** $\mathbb{M}_+$, and the **anti-Hermitian subspace** $\mathbb{M}_-$.
+This article develops the analysis of the distinguished subspaces of the split-quaternion algebra. It lists the subspaces cut out by the involutions of the algebra, writes the differential operator carried by each, compares the operators and their types, relates the idempotent decomposition to the subspaces, and describes the role of the zero divisors on each.
 
-The four subspaces are the natural domains for the analysis because they are the four fixed-point sets of the four conjugations, and because they have different algebraic and geometric properties:
+The split-quaternion algebra, its involutions, its idempotents and its subspaces are assumed from *Split-Quaternion Algebra*; the forms on the subspaces from the same article and from *Split-Quaternion Norm and Invertibility*; the zero divisors and the isotropic lines from *Split-Quaternion Zero Divisors*; the metric, the operators and the failure of the naive derivative from *Split-Quaternion Analysis*. The two-dimensional hyperbolic analysis is that of *Split-Complex Integration*, the definite analysis of the plane that of *Several Complex Variables*, and the elliptic operator theory of the definite case that of *Clifford Analysis* and *Dirac Operators*. The skeleton follows the sibling article *Split-Biquaternion Analysis on Subspaces*, named only, which performs the same task for the eight-dimensional algebra; no result of it is used. Nothing physical is invoked.
 
-- On the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, the algebra is commutative, two-dimensional, and contains zero divisors.
-- On the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the algebra is the quaternion algebra, a division algebra, and the norm form is positive-definite.
-- On the Hermitian subspace $\mathbb{M}_+$, the Hermitian form is indefinite of signature $(1, 3)$, the norm form is positive definite, and there are no zero divisors.
-- On the anti-Hermitian subspace $\mathbb{M}_-$, the Hermitian form is indefinite of signature $(3, 1)$, the norm form is positive definite, and there are no zero divisors.
+## The Subspaces and the Involutions
 
-The four subspaces are therefore complementary, and each of them is the natural domain for a different aspect of the theory.
+**Definition.** The subspaces considered here are the following.
 
-The treatment is purely mathematical. The independent variables are real variables, and they are independent of any physical interpretation. The split complex structure of the coefficients and the non-commutative structure of the quaternion units are the only algebraic ingredients.
+| Subspace | Description | Form $N$ restricted | Character |
+|---|---|---|---|
+| $S$ | the scalars, $\operatorname{span}\{1\}$ | $a^2$ | definite |
+| $\mathbb{R}[e_1]$ | $\operatorname{span}\{1, e_1\} \cong \mathbb{C}$ | $a^2 + b^2$ | definite |
+| $\mathbb{D}_2$ | $\operatorname{span}\{1, e_2\} \cong \mathbb{D}$ | $a^2 - c^2$ | indefinite of signature $(1,1)$ |
+| $\mathbb{D}_3$ | $\operatorname{span}\{1, e_3\} \cong \mathbb{D}$ | $a^2 - d^2$ | indefinite of signature $(1,1)$ |
+| $V$ | the vectors, $\operatorname{span}\{e_1,e_2,e_3\}$ | $b^2 - c^2 - d^2$ | indefinite of signature $(2,1)$ |
 
-Every claim is either proved or stated as a definition. Where a computation is long, all steps are shown.
+**Theorem (The Subspaces Cut Out by the Three Involutions).** The conjugation $\bar{\cdot}$, the principal involution $\alpha$ and the reversal $\rho$ of (*Split-Quaternion Algebra*, §*The Conjugation* and §*The Other Two Involutions*) cut the algebra into the following Hermitian and anti-Hermitian parts.
 
-The split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, its conjugations, its four fixed-point subspaces, the Euclidean norm, the split-quaternion gradient $\tilde{\nabla}$, the quaternion conjugate $\bar{\tilde{\nabla}}$, the d'Alembertian $\Box$, the square $\tilde{\nabla}^2$, the convective derivative $\tilde{D}$, the integral, and the Cauchy integral formula are assumed from the preceding articles.
+| Involution | Type | Fixed subspace | Anti-fixed subspace |
+|---|---|---|---|
+| conjugation $\bar{\cdot}\, = \alpha\rho$ | anti-automorphism | $S = \mathbb{R}\cdot 1$ | $V$ |
+| principal involution $\alpha$ | automorphism | $\operatorname{span}\{1, e_3\}$ | $\operatorname{span}\{e_1, e_2\}$ |
+| reversal $\rho$ | anti-automorphism | $\operatorname{span}\{1, e_1, e_2\}$ | $\operatorname{span}\{e_3\}$ |
 
-The idempotents of the split complex algebra are $e_+ = \tfrac{1}{2}(1 + j)$ and $e_- = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split quaternion is
+The three involutions commute, and their common eigenspaces are the four coordinate lines $\mathbb{R}\cdot 1$, $\mathbb{R} e_1$, $\mathbb{R} e_2$, $\mathbb{R} e_3$.
 
-$$
-\tilde{Q} = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
-
-with $\tilde{Q}_\pm = \tilde{Q} e_\pm \in \mathbb{H}$ ordinary quaternions.
-
-## The Split Complex Subspace
-
-### Definition
-
-The **split complex subspace** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of quaternion conjugation:
-
-$$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \bar{\tilde{Q}} = \tilde{Q}\}.
-$$
-
-Explicitly, a split quaternion is in $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ if and only if it has the form
-
-$$
-\tilde{Q} = Q_0 e_0, \qquad Q_0 \in \mathbb{D}.
-$$
-
-The vector part vanishes. The subset $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is a real vector space of dimension 2, and it is a subalgebra of $\mathbb{H}_{\mathbb{D}}$ isomorphic to the split complex algebra $\mathbb{D}$.
-
-### Properties
-
-**Real vector space.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is a real vector space of dimension 2. A basis is $\{e_0, j e_0\}$.
-
-**Subalgebra.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is closed under split quaternion multiplication. If $\tilde{Q}, \tilde{R} \in \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$, then $\tilde{Q} \tilde{R} \in \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$.
-
-**Commutative.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is commutative, because the split complex algebra is commutative.
-
-**Not a division algebra.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ contains zero divisors. The zero divisors are the elements $Q_0 e_0$ with $Q_0$ a nonzero multiple of $1 \pm j$, i.e., the elements $\pm t(1 \mp j) e_0$ with $t \neq 0$. These form the union of the two real lines $\mathbb{R}(1 + j)$ and $\mathbb{R}(1 - j)$ in the two-dimensional real space $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$.
-
-**Identification with $\mathbb{R}^2$.** The elements of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with pairs $(q_0, q'_0)$ of real numbers, where $Q_0 = q_0 + j q'_0$. We use the notation
-
-$$
-\tilde{X} = x_0 e_0 + j x'_0 e_0, \qquad x_0, x'_0 \in \mathbb{R},
-$$
-
-for a general element of $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$. The two real numbers $x_0, x'_0$ are the **coordinates** of $\tilde{X}$ in the split complex subspace.
-
-### Functions on the Split Complex Subspace
-
-A **split-quaternion-valued function on the split complex subspace** is a map
-
-$$
-\tilde{F} : \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \to \mathbb{H}_{\mathbb{D}}, \qquad \tilde{X} \mapsto \tilde{F}(\tilde{X}).
-$$
-
-Writing $\tilde{X} = x_0 e_0 + j x'_0 e_0$, the function $\tilde{F}$ is determined by four split-complex-valued functions $F_\mu$ of the two real variables $x_0, x'_0$:
-
-$$
-\tilde{F}(\tilde{X}) = F_0(x_0, x'_0) e_0 + F_1(x_0, x'_0) e_1 + F_2(x_0, x'_0) e_2 + F_3(x_0, x'_0) e_3.
-$$
-
-The restriction to $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ reduces the number of independent real variables from eight to two.
-
-### Partial Derivatives
-
-For each $\mu = 0, 1$, we define the partial derivative of $\tilde{F}$ with respect to $x_\mu$ (where $x_1$ stands for $x'_0$) by
-
-$$
-\frac{\partial \tilde{F}}{\partial x_\mu} = \sum_{\nu=0}^{3} \frac{\partial F_\nu}{\partial x_\mu} e_\nu.
-$$
-
-The partial derivatives commute: $\partial_\mu \partial_\nu \tilde{F} = \partial_\nu \partial_\mu \tilde{F}$ for all $\mu, \nu$.
-
-### The Differential Operators on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
-
-Since $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is two-dimensional, the four-dimensional gradient is not directly applicable. Instead, the natural differential operator is the **split complex derivative**
-
-$$
-\partial_{\mathbb{D}} = e_0 \partial_0 + j e_0 \partial'_0,
-$$
-
-where $\partial_0 = \partial/\partial x_0$ and $\partial'_0 = \partial/\partial x'_0$. The split complex derivative acts on a function $\tilde{F}$ by
-
-$$
-\partial_{\mathbb{D}} \tilde{F} = (\partial_0 F_0 + j \partial'_0 F_0) e_0 + (\partial_0 F_1 + j \partial'_0 F_1) e_1 + \cdots,
-$$
-
-which is the split complex derivative of each component.
-
-The **split complex conjugate** of the derivative is
-
-$$
-\bar{\partial}_{\mathbb{D}} = e_0 \partial_0 - j e_0 \partial'_0,
-$$
-
-and the **split complex Laplacian** is
-
-$$
-\partial_{\mathbb{D}} \bar{\partial}_{\mathbb{D}} = \bar{\partial}_{\mathbb{D}} \partial_{\mathbb{D}} = (\partial_0^2 - \partial'^2_0) e_0,
-$$
-
-which is the **wave operator** in two dimensions. The operator $\partial_0^2 - \partial'^2_0$ is the d'Alembertian in $1+1$ dimensions.
-
-The **square** of the derivative is
-
-$$
-\partial_{\mathbb{D}}^2 = (\partial_0^2 + \partial'^2_0) e_0 + 2 j \partial_0 \partial'_0 e_0,
-$$
-
-which is a split-complex-valued operator.
-
-### Integration on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$
-
-The integral of a split-quaternion-valued function $\tilde{F}$ over a domain $\Omega \subset \mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is defined component-wise:
-
-$$
-\int_\Omega \tilde{F} \, dV = \sum_{\mu=0}^{3} \left(\int_\Omega F_\mu \, dV\right) e_\mu,
-$$
-
-where each $F_\mu$ is integrated over the two-dimensional domain $\Omega$ with respect to the Lebesgue measure on $\mathbb{R}^2$.
-
-The integration theory on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the two-dimensional analogue of the four-dimensional theory. The fundamental solution of the split complex derivative is the kernel
-
-$$
-\tilde{G}_{\mathbb{D}}(\tilde{X}) = \frac{\bar{\tilde{X}}}{\|\tilde{X}\|_E^2},
-$$
-
-where $\bar{\tilde{X}}$ is the split complex conjugate and $\|\tilde{X}\|_E^2 = x_0^2 + x'^2_0$ is the squared Euclidean norm. The kernel is defined for $\tilde{X} \neq 0$.
-
-The Cauchy integral formula on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ takes the form
-
-$$
-\tilde{F}(\tilde{X}_0) = \frac{1}{2\pi i_{\mathbb{D}}} \int_{\partial \Omega} \tilde{G}_{\mathbb{D}}(\tilde{X} - \tilde{X}_0) \tilde{n} \tilde{F}(\tilde{X}) \, ds(\tilde{X}),
-$$
-
-where $i_{\mathbb{D}}$ is a formal imaginary unit in the split complex algebra (which does not exist as an element of $\mathbb{D}$ but is used as a bookkeeping device), and $ds$ is the arc length on the boundary. The formula is not directly analogous to the complex case, because the split complex algebra has no imaginary unit. The correct form is obtained in the idempotent basis, where it reduces to two copies of the real Cauchy integral formula.
-
-### Comparison with the Complex Subspace
-
-In the biquaternion algebra $\mathbb{B}$, the complex subspace $\mathbb{C}_{\mathbb{B}}$ is the fixed-point set of quaternion conjugation, and it is a copy of the complex field. It is a division algebra, and the analysis on it is the ordinary complex analysis.
-
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the split complex subspace $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of quaternion conjugation, and it is a copy of the split complex algebra. It is **not** a division algebra, and the analysis on it is the split complex analysis, which is different from the complex analysis.
-
-The key differences are:
-
-- The split complex subspace contains zero divisors, while the complex subspace does not.
-- The split complex Laplacian is the wave operator $\partial_0^2 - \partial'^2_0$, while the complex Laplacian is the harmonic operator $\partial_0^2 + \partial'^2_0$.
-- The split complex Cauchy integral formula involves the idempotent decomposition, while the complex Cauchy integral formula is expressed in terms of the imaginary unit.
-
-## The Quaternion Subspace
-
-### Definition
-
-The **quaternion subspace** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of split complex conjugation:
-
-$$
-\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^* = \tilde{Q}\}.
-$$
-
-Explicitly, a split quaternion is in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ if and only if it has the form
-
-$$
-\tilde{Q} = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_0, q_1, q_2, q_3 \in \mathbb{R}.
-$$
-
-All four coefficients are real. The subset $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a real vector space of dimension 4, and it is a subalgebra of $\mathbb{H}_{\mathbb{D}}$ isomorphic to the quaternion algebra $\mathbb{H}$.
-
-### Properties
-
-**Real vector space.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a real vector space of dimension 4. A basis is $\{e_0, e_1, e_2, e_3\}$.
-
-**Subalgebra.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is closed under split quaternion multiplication, and it is isomorphic to the quaternion algebra.
-
-**Division algebra.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is a division algebra. The norm form restricts to the positive-definite quaternion norm:
-
-$$
-N(\tilde{Q}) = \tilde{Q} \bar{\tilde{Q}} = q_0^2 + q_1^2 + q_2^2 + q_3^2.
-$$
-
-This vanishes if and only if all $q_\mu = 0$. So every nonzero element is invertible, and there are no zero divisors.
-
-**Identification with $\mathbb{R}^4$.** The elements of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are in bijection with quadruples $(q_0, q_1, q_2, q_3)$ of real numbers. We use the notation
-
-$$
-\tilde{X} = x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
-$$
-
-for a general element of $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$.
-
-### Functions and Operators
-
-The functions on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace:
-
-$$
-\tilde{\nabla} = e_0 \partial_0 + e_1 \partial_1 + e_2 \partial_2 + e_3 \partial_3,
-$$
-
-$$
-\bar{\tilde{\nabla}} = e_0 \partial_0 - e_1 \partial_1 - e_2 \partial_2 - e_3 \partial_3,
-$$
-
-$$
-\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla} = (\partial_0^2 + \Delta) e_0,
-$$
-
-$$
-\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_{k=1}^{3} e_k \partial_0 \partial_k,
-$$
+**Proof.** The sign patterns and the commutativity are those computed in (*Split-Quaternion Algebra*, §*The Other Two Involutions*), including the four-line decomposition. The Hermitian and anti-Hermitian parts are the $+1$ and $-1$ eigenspaces, and the type of each involution, automorphism or anti-automorphism, is recorded there. $\square$
 
-and the convective derivative $\tilde{D}$.
+**Corollary (Two Meanings of Hermitian).** With respect to the conjugation, the Hermitian part of the algebra is the scalar line and the anti-Hermitian part is the vector subspace; with respect to the reversal, the Hermitian part is the three-dimensional subspace $\operatorname{span}\{1,e_1,e_2\}$ and the anti-Hermitian part is the line $\mathbb{R} e_3$. The two readings give different decompositions and both are used below, with the involution named each time.
 
-The analysis on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the ordinary quaternion analysis, extended to functions with values in the full split quaternion algebra. Since there are no zero divisors in $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, the analysis is clean everywhere.
+**Proof.** Immediate from the table. $\square$
 
-The integral and the Cauchy integral formula are the same as on the general subspace, with the fundamental solution $\tilde{G}(\tilde{X}) = \bar{\tilde{X}}/\|\tilde{X}\|_E^4$.
+## The Operators on the Split-Complex Subspaces
 
-### Comparison with the Quaternion Subspace of the Biquaternion Algebra
+**Definition.** On a two-dimensional subspace with coordinates $(s,t)$ and generators of the form $g$ with $g^2 = \pm 1$, the **conjugate pair of first-order operators** is
 
-In the biquaternion algebra $\mathbb{B}$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ is the fixed-point set of complex conjugation, and it is a copy of the real quaternion algebra. It is a division algebra, and the analysis on it is the ordinary quaternion analysis.
-
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the quaternion subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the fixed-point set of split complex conjugation, and it is also a copy of the real quaternion algebra. It is a division algebra, and the analysis on it is the ordinary quaternion analysis.
-
-The two quaternion subspaces are isomorphic as algebras, and the analysis on them is the same. The only difference is the embedding in the larger algebra, which affects the interpretation of the functions but not the operators.
-
-## The Hermitian Subspace
-
-### Definition
-
-The **Hermitian subspace** $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation:
-
 $$
-\mathbb{M}_+ = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^\dagger = \tilde{Q}\}.
+\partial_s + g\,\partial_t, \qquad \partial_s - g\,\partial_t .
 $$
-
-Explicitly, a split quaternion is in $\mathbb{M}_+$ if and only if it has the form
-
-$$
-\tilde{Q} = q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3, \qquad q_0, q'_1, q'_2, q'_3 \in \mathbb{R}.
-$$
-
-The scalar part is real, and the vector part is purely split-imaginary. The subset $\mathbb{M}_+$ is a real vector space of dimension 4.
-
-### Properties
 
-**Real vector space.** $\mathbb{M}_+$ is a real vector space of dimension 4. A basis is $\{e_0, j e_1, j e_2, j e_3\}$.
+**Theorem (The Definite Plane).** On the plane $\mathbb{R}[e_1] = \operatorname{span}\{1,e_1\} \cong \mathbb{C}$ with the definite form $a^2+b^2$, the conjugate pair is $\partial_a \pm e_1\partial_b$ and
 
-**Not a subalgebra.** $\mathbb{M}_+$ is not closed under split quaternion multiplication.
-
-**Norm form and Hermitian form.** On $\mathbb{M}_+$ the norm form restricts to
-
 $$
-N(\tilde{Q}) = (q'_1)^2 + (q'_2)^2 + (q'_3)^2 + q_0^2,
+(\partial_a + e_1\partial_b)(\partial_a - e_1\partial_b) = \partial_a^2 + \partial_b^2 = \Delta ,
 $$
 
-since $(j q'_k)^2 = +(q'_k)^2$: it is positive definite of signature $(4, 0)$. It therefore vanishes only at the origin, and every nonzero element of $\mathbb{M}_+$ is invertible. The indefinite form of signature $(1, 3)$ associated with $\mathbb{M}_+$ is the scalar part of the **Hermitian** form,
-
-$$
-Q Q^\dagger = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2,
-$$
+the Laplacian of the plane. The operator is elliptic, there are no zero divisors on the plane, and the kernel of $\partial_a + e_1\partial_b$ is the space of holomorphic functions of $z = a + b e_1$, in the sense of *Several Complex Variables*.
 
-whose zero set is the three-dimensional cone $q_0^2 = (q'_1)^2 + (q'_2)^2 + (q'_3)^2$; that form does not detect zero divisors either, as the invertible element $e_0 + j e_1$ on the cone shows.
+**Proof.** The product is computed with $e_1^2 = -1$ and the commutation of the partial derivatives: the cross terms cancel and the diagonal terms add. Ellipticity is the definiteness of the form, and the absence of zero divisors on the plane is (*Split-Quaternion Norm and Invertibility*, §*The Three-Way Classification*). $\square$
 
-**Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_+$ are in bijection with quadruples $(q_0, q'_1, q'_2, q'_3)$ of real numbers. We use the notation
+**Theorem (The Split-Complex Planes).** On the plane $\mathbb{D}_2 = \operatorname{span}\{1,e_2\}$ with the indefinite form $a^2-c^2$, the conjugate pair is $\partial_a \pm e_2\partial_c$ and
 
 $$
-\tilde{X} = x_0 e_0 + j x_1 e_1 + j x_2 e_2 + j x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+(\partial_a + e_2\partial_c)(\partial_a - e_2\partial_c) = \partial_a^2 - \partial_c^2 = \Box_{(1,1)},
 $$
-
-for a general element of $\mathbb{M}_+$.
-
-### Functions and Operators
-
-The functions on $\mathbb{M}_+$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace, with the same formulas. The only difference is the interpretation of the coordinates: the zero divisor set does not meet $\mathbb{M}_+$ away from the origin.
-
-The analysis on $\mathbb{M}_+$ is clean away from the origin, where the only singularity of the fundamental solution lies; the light cone of the Hermitian form is not a locus of zero divisors.
-
-### Comparison with the Hermitian Subspace of the Biquaternion Algebra
-
-In the biquaternion algebra $\mathbb{B}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and it has norm form of signature $(1, 3)$ (or $(3, 1)$, depending on convention), because the extra unit there satisfies $i^2 = -1$. The zero divisors form a three-dimensional cone.
 
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the Hermitian subspace $\mathbb{M}_+$ is the fixed-point set of Hermitian conjugation, and its Hermitian form also has signature $(1, 3)$, but its norm form is positive definite of signature $(4, 0)$, so $\mathbb{M}_+$ contains no zero divisors.
+the one-dimensional wave operator of signature $(1,1)$. The operator is hyperbolic; its characteristic variety is the pair of isotropic lines $\mathbb{R}(1 \pm e_2)$, which is exactly the zero divisor set of the plane. The same statements hold on $\mathbb{D}_3$ with $c$ replaced by $d$.
 
-The two Hermitian subspaces are isomorphic as real vector spaces and carry Hermitian forms of the same signature, but their norm forms differ: on $\mathbb{B}$ the norm form is the indefinite one and has a light cone of zero divisors, while on $\mathbb{H}_{\mathbb{D}}$ it is positive definite and there are none.
+**Proof.** The product is computed with $e_2^2 = +1$; the characteristic variety of the symbol $\xi_a \pm e_2\xi_c$ is $\xi_a^2 - \xi_c^2 = 0$, the two isotropic lines, which are the zero divisors of the plane by *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*. $\square$
 
-## The Anti-Hermitian Subspace
+## The Operators on the Vector Subspace
 
-### Definition
+**Theorem (The Vector Operator).** On the vector subspace with coordinates $(b,c,d)$ and basis $e_1,e_2,e_3$, the operator
 
-The **anti-Hermitian subspace** $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation:
-
 $$
-\mathbb{M}_- = \{\tilde{Q} \in \mathbb{H}_{\mathbb{D}} : \tilde{Q}^\flat = \tilde{Q}\}.
+D = e_1\,\frac{\partial}{\partial b} + e_2\,\frac{\partial}{\partial c} + e_3\,\frac{\partial}{\partial d}
 $$
 
-Explicitly, a split quaternion is in $\mathbb{M}_-$ if and only if it has the form
+satisfies
 
 $$
-\tilde{Q} = j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q'_0, q_1, q_2, q_3 \in \mathbb{R}.
+D^2 = -\frac{\partial^2}{\partial b^2} + \frac{\partial^2}{\partial c^2} + \frac{\partial^2}{\partial d^2} = \Box_{(2,1)},
 $$
-
-The scalar part is purely split-imaginary, and the vector part is real. The subset $\mathbb{M}_-$ is a real vector space of dimension 4.
-
-### Properties
 
-**Real vector space.** $\mathbb{M}_-$ is a real vector space of dimension 4. A basis is $\{j e_0, e_1, e_2, e_3\}$.
+the wave operator of signature $(2,1)$. It is hyperbolic, its characteristic variety is the null cone $b^2-c^2-d^2=0$, which is the zero divisor set of the vector subspace, and there is no elliptic theory on the subspace.
 
-**Not a subalgebra.** $\mathbb{M}_-$ is not closed under split quaternion multiplication.
-
-**Norm form and Hermitian form.** On $\mathbb{M}_-$ the norm form restricts to
-
-$$
-N(\tilde{Q}) = (q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
-$$
+**Proof.** This is (*Split-Quaternion Analysis*, §*The Differential Operators*), where the cancellation of the cross terms and the identification of the characteristic variety are proved. $\square$
 
-since $(j q'_0)^2 = +(q'_0)^2$: it is positive definite of signature $(4, 0)$, it vanishes only at the origin, and every nonzero element of $\mathbb{M}_-$ is invertible. The indefinite form of signature $(3, 1)$ associated with $\mathbb{M}_-$ is the scalar part of the **Hermitian** form,
+**Corollary (The Operators Are of the Forms of the Subspaces).** The type of the operator on a subspace is determined by the signature of the form on that subspace: elliptic when the form is definite, hyperbolic when it is indefinite, and the characteristic variety is the null cone of the form, which is the zero divisor set of the subspace.
 
-$$
-Q Q^\dagger = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2,
-$$
+**Proof.** The symbol of the operator is the linear form on the subspace with values in the Clifford algebra of the form; its square is the quadratic form, so the characteristic variety is the null cone; definiteness makes the operator elliptic by definition, and indefiniteness makes the variety a cone and the operator hyperbolic. $\square$
 
-whose zero set is the three-dimensional cone $(q'_0)^2 = q_1^2 + q_2^2 + q_3^2$; as on $\mathbb{M}_+$, that form does not detect zero divisors.
+## The Operators on the Hermitian and Anti-Hermitian Subspaces
 
-**Identification with $\mathbb{R}^4$.** The elements of $\mathbb{M}_-$ are in bijection with quadruples $(q'_0, q_1, q_2, q_3)$ of real numbers. We use the notation
+**Theorem (The Two Decompositions and Their Operators).** For the conjugation the algebra splits as $S \oplus V$; the operator carried by the Hermitian part $S$ is the single derivative $\partial_a$ and the operator carried by the anti-Hermitian part $V$ is the vector operator $D$. For the reversal the Hermitian part is $\operatorname{span}\{1,e_1,e_2\}$ with the inherited form $a^2+b^2-c^2$ of signature $(2,1)$, and the anti-Hermitian part is the line $\mathbb{R}e_3$ with the negative-definite form $-d^2$; the operators are
 
 $$
-\tilde{X} = j x_0 e_0 + x_1 e_1 + x_2 e_2 + x_3 e_3, \qquad x_0, x_1, x_2, x_3 \in \mathbb{R},
+D^{\rho}_{+} = e_2\partial_a + e_3\partial_b + e_1\partial_c, \qquad D^{\rho}_{-} = e_1\partial_d,
 $$
-
-for a general element of $\mathbb{M}_-$.
-
-### Functions and Operators
-
-The functions on $\mathbb{M}_-$ are split-quaternion-valued functions of four real variables. The differential operators are the same as on the general four-dimensional subspace, with the same formulas.
 
-The analysis on $\mathbb{M}_-$ is clean away from the origin; as on $\mathbb{M}_+$, the light cone of the Hermitian form is not a locus of zero divisors.
+with $(D^{\rho}_+)^2 = \partial_a^2 + \partial_b^2 - \partial_c^2$, the Laplacian of the inherited form, and $(D^{\rho}_-)^2 = -\partial_d^2$, the Laplacian of the negative-definite line.
 
-### Comparison with the Anti-Hermitian Subspace of the Biquaternion Algebra
-
-In the biquaternion algebra $\mathbb{B}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and it has norm form of signature $(3, 1)$, again because the extra unit there satisfies $i^2 = -1$. The zero divisors form a three-dimensional cone.
-
-In the split quaternion algebra $\mathbb{H}_{\mathbb{D}}$, the anti-Hermitian subspace $\mathbb{M}_-$ is the fixed-point set of anti-Hermitian conjugation, and its Hermitian form also has signature $(3, 1)$, but its norm form is positive definite of signature $(4, 0)$, so $\mathbb{M}_-$ contains no zero divisors.
-
-The two anti-Hermitian subspaces are isomorphic as real vector spaces and carry Hermitian forms of the same signature, but their norm forms differ in character, as for $\mathbb{M}_+$. In the biquaternion series, the anti-Hermitian subspace was chosen for the physical applications because the indefinite form of signature $(3, 1)$ is the Lorentzian signature. In the split quaternion case, the Lorentzian signature $(3, 1)$ is carried by the Hermitian form rather than by the norm form, and the anti-Hermitian subspace is natural for the same reason.
-
-## Comparison of the Four Subspaces
-
-The four subspaces are all real vector spaces, but of different dimensions and with different algebraic properties.
-
-| Property | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
-|---|---|---|---|---|
-| Dimension | 2 | 4 | 4 | 4 |
-| Fixed-point set of | $\bar{\cdot}$ | ${}^*$ | $\dagger$ | $\flat$ |
-| Basis | $\{e_0, j e_0\}$ | $\{e_0, e_1, e_2, e_3\}$ | $\{e_0, j e_1, j e_2, j e_3\}$ | $\{j e_0, e_1, e_2, e_3\}$ |
-| Scalar part | Split complex | Real | Real | Purely split-imaginary |
-| Vector part | Zero | Real | Purely split-imaginary | Real |
-| Hermitian form signature | $(1, 1)$ | $(4, 0)$ | $(1, 3)$ | $(3, 1)$ |
-| Zero divisors | Two lines | None | None | None |
-| Subalgebra | Yes | Yes | No | No |
-| Division algebra | No | Yes | No | No |
-
-The key differences are:
-
-**Dimension.** The split complex subspace is two-dimensional, while the other three are four-dimensional.
-
-**Algebraic structure.** The split complex subspace and the quaternion subspace are subalgebras. The Hermitian and anti-Hermitian subspaces are not.
-
-**Zero divisors.** The split complex subspace contains zero divisors (two lines), and the other three subspaces contain none, since the norm form is positive definite on each of them.
-
-**Hermitian form.** The scalar part of the Hermitian form has signature $(1, 1)$ on the split complex subspace, $(4, 0)$ on the quaternion subspace, $(1, 3)$ on the Hermitian subspace, and $(3, 1)$ on the anti-Hermitian subspace. The norm form itself is positive definite of signature $(4, 0)$ on the quaternion, Hermitian and anti-Hermitian subspaces.
-
-## Relation Between the Subspaces
-
-The four subspaces are related by the conjugations of the split quaternion algebra.
-
-**Quaternion conjugation.** The quaternion conjugation $\bar{\cdot}$ fixes $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and preserves $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ (it is the identity only on $\mathbb{R}e_0$), and it preserves $\mathbb{M}_+$ and $\mathbb{M}_-$, negating the vector part in each. It is multiplication by $j$ that exchanges them: $j\mathbb{M}_+ = \mathbb{M}_-$ and $j\mathbb{M}_- = \mathbb{M}_+$.
-
-**Split complex conjugation.** The split complex conjugation ${}^*$ fixes $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{M}_-$ (up to sign) and $\mathbb{M}_+$ (up to sign), and maps $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ to itself.
-
-**Hermitian conjugation.** The Hermitian conjugation $\dagger$ fixes $\mathbb{M}_+$ and $\mathbb{M}_-$, and acts on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ and $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ by the corresponding conjugations.
-
-**Intersections.** The pairwise intersections are:
-
-$$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \mathbb{R} e_0, \qquad \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{R} e_0, \qquad \mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_- = \mathbb{R} j e_0,
-$$
-
-$$
-\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_+ = \mathbb{R} e_0, \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap \mathbb{M}_- = \operatorname{span}_{\mathbb{R}}\{e_1, e_2, e_3\}, \qquad \mathbb{M}_+ \cap \mathbb{M}_- = \{0\}.
-$$
+**Proof.** The decomposition for the conjugation is (*Split-Quaternion Algebra*, §*The Two Eigenspaces*), and the operator on $V$ is the theorem above; for the reversal the eigen-subspaces are those of the table in the first section, and the operators are formed from a Clifford system adapted to the sign pattern of each inherited form, as in the construction of the conjugate pair. $\square$
 
-**Spans.** The pairwise sums are:
+**Corollary (The Idempotents Lie in a Split-Complex Plane).** The idempotents are
 
 $$
-\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} = \operatorname{span}_{\mathbb{R}}\{e_0, j e_0, e_1, e_2, e_3\} \ (\dim 5), \qquad \mathbb{H}_{\mathbb{H}_{\mathbb{D}}} + \mathbb{M}_- = \operatorname{span}_{\mathbb{R}}\{e_0, j e_0, e_1, e_2, e_3\} \ (\dim 5),
+u_{\pm} = \tfrac12(1 \pm e_2) \in \mathbb{D}_2,
 $$
 
-and so on. The full algebra is the sum of the subspaces in various ways.
+and they lie in the split-complex plane, not in the Hermitian part of the conjugation and not in a definite subspace. Their products vanish, $u_+u_- = 0$, and each generates a minimal left ideal.
 
-**Compatibility of the analysis.** The differential and integral operators on the four subspaces are the same operators, with the same formulas. The differences are in the domain and in the algebraic properties of the domain. So the analysis on the four subspaces is compatible: a function defined on a domain that intersects two or more subspaces can be analyzed on each subspace separately, and the results agree on the intersections.
+**Proof.** The formula is (*Split-Quaternion Algebra*, §*The Idempotents*), and the vanishing of the product follows from $e_2^2 = 1$. $\square$
 
 ## The Idempotent Decomposition and the Subspaces
 
-The four subspaces are related to the idempotent decomposition in the following way.
-
-**Split complex subspace.** The split complex subspace is the set of elements of the form $Q_0 e_0$ with $Q_0 \in \mathbb{D}$. In the idempotent basis, this is
+**Theorem (The Peirce Decomposition).** With $u_{\pm} = \tfrac12(1\pm e_2)$, every element decomposes as
 
 $$
-Q_0 e_0 = q_0 e_0 + j q'_0 e_0 = (q_0 + q'_0) e_+ + (q_0 - q'_0) e_-.
+x = u_+ x u_+ + u_+ x u_- + u_- x u_+ + u_- x u_- ,
 $$
 
-So the split complex subspace is the set of elements whose idempotent components are real scalars (i.e., real multiples of the identity in $\mathbb{H}$).
+the four **Peirce components** being one-dimensional real subspaces; the decomposition is the matrix-entry decomposition of *Split-Quaternion Analysis*, §*The Calculus in the Peirce Coordinates*, and the algebra is not the product of the two ideals, because the off-diagonal Peirce components do not vanish.
 
-**Quaternion subspace.** The quaternion subspace is the set of elements with real coefficients. In the idempotent basis, an element with real coefficients has the form
+**Proof.** The decomposition of the identity and the vanishing of $u_+u_-$ give the direct sum; the non-vanishing of the mixed terms $u_+xu_-$ is the statement that $M_2(\mathbb{R})$ is not a product ring, and the identification with the entries is (*Split-Quaternion Matrix Representations*, §*The Image as a Linear Subspace*). $\square$
 
-$$
-q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
+**Corollary (The Subspaces Against the Idempotents).** The Peirce decomposition of the vector subspace is $V = (u_+Vu_+ \oplus u_-Vu_-) \oplus (u_+Vu_- \oplus u_-Vu_+)$, the diagonal part being one-dimensional over each term and the off-diagonal part two-dimensional; the diagonal part lies in the span of the vectors $e_2$ and is aligned with the split-complex plane $\mathbb{D}_2$, while the off-diagonal part involves $e_1$ and $e_3$ and carries the isotropic lines through the idempotents of *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*.
 
-where $\tilde{Q}_\pm = q_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ are the same quaternion in each component. So the quaternion subspace is the diagonal in $\mathbb{H} \oplus \mathbb{H}$: the set of pairs $(\tilde{Q}, \tilde{Q})$ with $\tilde{Q} \in \mathbb{H}$.
+**Proof.** The Peirce components of $V$ are computed from the multiplication table; the minimal ideals $\mathbb{H}_{\mathrm{s}}u_{\pm}$ are the isotropic planes of *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*, and their intersections with $V$ are the isotropic lines. $\square$
 
-**Hermitian subspace.** The Hermitian subspace is the set of elements with real scalar part and purely split-imaginary vector part. In the idempotent basis, such an element has the form
+## The Role of the Zero Divisors on Each Subspace
 
-$$
-q_0 e_0 + j q'_1 e_1 + j q'_2 e_2 + j q'_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
+**Theorem (The Zero Divisors Subspace by Subspace).** The zero divisors and the nilpotents of each subspace are as follows.
 
-where $\tilde{Q}_+ = q_0 + q'_1 e_1 + q'_2 e_2 + q'_3 e_3$ and $\tilde{Q}_- = q_0 - q'_1 e_1 - q'_2 e_2 - q'_3 e_3 = \bar{\tilde{Q}}_+$. So the Hermitian subspace is the set of pairs $(\tilde{Q}, \bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.
-
-**Anti-Hermitian subspace.** The anti-Hermitian subspace is the set of elements with purely split-imaginary scalar part and real vector part. In the idempotent basis, such an element has the form
-
-$$
-j q'_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \tilde{Q}_+ e_+ + \tilde{Q}_- e_-,
-$$
-
-where $\tilde{Q}_+ = q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\tilde{Q}_- = -q'_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = -\overline{\tilde{Q}}_+$. So the anti-Hermitian subspace is the set of pairs $(\tilde{Q}, -\bar{\tilde{Q}})$ with $\tilde{Q} \in \mathbb{H}$.
-
-So the four subspaces correspond to four natural conditions on the pair $(\tilde{Q}_+, \tilde{Q}_-)$:
-
-| Subspace | Condition on $(\tilde{Q}_+, \tilde{Q}_-)$ |
-|---|---|
-| $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Both components are real scalars |
-| $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | $\tilde{Q}_+ = \tilde{Q}_-$ |
-| $\mathbb{M}_+$ | $\tilde{Q}_- = \bar{\tilde{Q}}_+$ |
-| $\mathbb{M}_-$ | $\tilde{Q}_- = -\bar{\tilde{Q}}_+$ |
-
-This is the cleanest characterization of the four subspaces, and it shows how they arise from the idempotent decomposition.
-
-## Summary of the Operators
-
-The following table summarizes the differential operators on the four subspaces. The formulas are identical on the four subspaces (with the appropriate dimension); the table is included for reference.
-
-| Operator | Definition | Result |
+| Subspace | Zero divisors | Nilpotents |
 |---|---|---|
-| $\tilde{\nabla}$ | $\sum_{\mu=0}^{3} e_\mu \partial_\mu$ | Split-quaternion-valued first-order operator |
-| $\bar{\tilde{\nabla}}$ | $e_0 \partial_0 - \sum_{k=1}^{3} e_k \partial_k$ | Quaternion conjugate of $\tilde{\nabla}$ |
-| $\Box = \tilde{\nabla}\bar{\tilde{\nabla}} = \bar{\tilde{\nabla}}\tilde{\nabla}$ | $\partial_0^2 + \Delta$ | Scalar (times $e_0$) second-order operator |
-| $\tilde{\nabla}^2$ | $(\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ | Split-quaternion-valued second-order operator |
-| $\tilde{D} = \bar{\tilde{U}}\tilde{\nabla}$ | $(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}) + \sum_k e_k(u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u})$ | Split-quaternion-valued first-order operator |
-| $\int_\Omega \tilde{F} \, dV$ | $\sum_\mu \left(\int_\Omega F_\mu \, dV\right) e_\mu$ | Split-quaternion-valued integral |
-| $\tilde{G}(\tilde{X})$ | $\bar{\tilde{X}}/\|\tilde{X}\|_E^4$ | Fundamental solution of $\tilde{\nabla}$ |
+| $S$ | none | none |
+| $\mathbb{R}[e_1] \cong \mathbb{C}$ | none | none |
+| $\mathbb{D}_2$ | the two isotropic lines $\mathbb{R}(1 \pm e_2)$ | yes, of the form $p(1 \mp e_2)$ with suitable $p$ |
+| $\mathbb{D}_3$ | the two isotropic lines $\mathbb{R}(1 \pm e_3)$ | yes |
+| $V$ | the light cone $b^2 = c^2+d^2$ | yes, the lightlike vectors |
 
-On the split complex subspace, the operators reduce to the two-dimensional operators $\partial_{\mathbb{D}}$, $\bar{\partial}_{\mathbb{D}}$, and $\partial_{\mathbb{D}} \bar{\partial}_{\mathbb{D}} = \partial_0^2 - \partial'^2_0$.
+The characteristic variety of the operator of a subspace is exactly the zero divisor set of that subspace, so the operator degenerates precisely where the algebra degenerates.
 
-## The Role of the Zero Divisors
+**Proof.** The definite subspaces have no zero divisors by (*Split-Quaternion Norm and Invertibility*, §*The Three-Way Classification*); the split-complex planes and the vector subspace have the null lines and the light cone as their zero divisors by *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra* and §*Nonzero Nilpotents*; the identification with the characteristic varieties is the corollary on the types of the operators. $\square$
 
-The zero divisor set of $\mathbb{H}_{\mathbb{D}}$ is the union of the two four-dimensional linear subspaces $Z_+$ and $Z_-$. The intersection of the zero divisor set with each of the four subspaces is as follows.
+**Corollary (The Definite Subspaces Are the Elliptic Islands).** The only subspaces on which the analysis is elliptic, with a Cauchy–Riemann operator and holomorphic functions, are the definite ones, the scalar line and the complex plane $\mathbb{R}[e_1]$; on every indefinite subspace the analysis is hyperbolic and the operator has the zero divisors as its characteristic directions.
 
-**Split complex subspace.** $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-)$ is the union of the two real lines $\mathbb{R}(1 + j)$ and $\mathbb{R}(1 - j)$. These are the zero divisors of the split complex algebra.
+**Proof.** The operators are elliptic exactly on the definite subspaces by the corollary on the types, and the elliptic theory on the complex plane is the classical one of *Several Complex Variables*. $\square$
 
-**Quaternion subspace.** $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}} \cap (Z_+ \cup Z_-) = \{0\}$. The quaternion subspace contains no zero divisors.
+## The Domains of the Operators
 
-**Hermitian subspace.** $\mathbb{M}_+ \cap (Z_+ \cup Z_-) = \{0\}$. The Hermitian form has an indefinite light cone of signature $(1, 3)$, but the norm form is positive definite on $\mathbb{M}_+$, so the cone contains no zero divisors.
+**Definition.** A hypersurface of the vector subspace or of a coordinate plane is **characteristic** for the operator of that subspace when its normal is null for the inherited form, and **non-characteristic** otherwise.
 
-**Anti-Hermitian subspace.** $\mathbb{M}_- \cap (Z_+ \cup Z_-) = \{0\}$. As on $\mathbb{M}_+$, the Hermitian form has an indefinite light cone of signature $(3, 1)$ but the norm form is positive definite, so the cone contains no zero divisors.
+**Theorem (Non-Characteristic Restrictions).** On a non-characteristic hypersurface the vector operator restricts to an operator of the induced metric: on a sheet of the hyperboloid $N=1$ in $V$ the operator restricts to the Dirac operator of the Riemannian metric $-B$ on the sheet, and on a piece of a non-null plane the operator restricts to the operator of the induced form. On a characteristic hypersurface the induced form is degenerate, there is no induced metric, and the restricted operator loses its principal part.
 
-So the four subspaces have different zero divisor structures, and the analysis on each of them must take this into account.
+**Proof.** The decomposition of the operator along a hypersurface separates the normal derivative, whose symbol is the normal vector, from the tangential part; when the normal is non-null the normal derivative can be eliminated and the tangential part is the operator of the induced form, exactly as in the restriction of the metric in (*Split-Quaternion Geometry*, §*The Unit Hyperboloids and Their Metrics*). When the normal is null the induced form is degenerate by *Split-Quaternion Norm and Invertibility*, §*Isotropy*. $\square$
 
-## Open Questions
+**Corollary (The Cauchy Problem and Its Domains).** The Cauchy problem for the operator of an indefinite subspace is well posed on non-characteristic initial hypersurfaces: for the split-complex plane it is the Cauchy problem for the one-dimensional wave equation, with the two characteristic lines as the boundaries of the domains of determination, and for the vector subspace it is the Cauchy problem for the wave equation of signature $(2,1)$, with the light cone as the characteristic cone. The hyperboloids are non-characteristic and carry initial data; the cone itself is characteristic and carries none.
 
-The following questions are not answered in this article and are left for later work:
+**Proof.** The characteristic hypersurfaces of a first-order operator are those with null normal, by the preceding theorem; the domains of dependence are the usual ones for the wave operator, and the non-characteristic restriction makes the initial-value problem determined. $\square$
 
-1. **The analysis on the split complex subspace.** How does the split complex analysis on $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ relate to the ordinary complex analysis on $\mathbb{C}$? What replaces the complex Cauchy integral formula?
+## Comparison of the Subspaces and Relation Between Them
 
-2. **The analysis on the quaternion subspace.** The analysis on $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ is the ordinary quaternion analysis. How does it relate to the analysis on the biquaternion quaternion subspace $\mathbb{H}_{\mathbb{B}}$?
+### The Summary of the Operators
 
-3. **The analysis on $\mathbb{M}_+$ and $\mathbb{M}_-$.** The analysis on these subspaces differs from the quaternion subspace through the Hermitian form, whose light cone replaces the origin as the natural singular locus of the Euclidean kernel. What is the precise structure of the solutions of $\tilde{\nabla}\tilde{F} = 0$ and $\Box\tilde{F} = 0$ on these subspaces?
+| Subspace | Dimension | Form | Operator | Square or product | Type |
+|---|---|---|---|---|---|
+| $S$ | $1$ | $a^2$ | $\partial_a$ | $\partial_a^2$ | elliptic |
+| $\mathbb{R}[e_1]$ | $2$ | $a^2+b^2$ | $\partial_a \pm e_1\partial_b$ | $\Delta$ | elliptic |
+| $\mathbb{D}_2$ | $2$ | $a^2-c^2$ | $\partial_a \pm e_2\partial_c$ | $\Box_{(1,1)}$ | hyperbolic |
+| $\mathbb{D}_3$ | $2$ | $a^2-d^2$ | $\partial_a \pm e_3\partial_d$ | $\Box_{(1,1)}$ | hyperbolic |
+| $V$ | $3$ | $b^2-c^2-d^2$ | $D$ | $\Box_{(2,1)}$ | hyperbolic |
+| $\operatorname{span}\{1,e_1,e_2\}$ | $3$ | $a^2+b^2-c^2$ | $D^{\rho}_+$ | $\partial_a^2+\partial_b^2-\partial_c^2$ | hyperbolic |
+| $\mathbb{R} e_3$ | $1$ | $-d^2$ | $D^{\rho}_-$ | $-\partial_d^2$ | elliptic |
 
-4. **The interaction between the subspaces.** If a function is defined on two of the subspaces, how do the analyses on the two subspaces interact?
+The relations between the operators are the relations between the forms: each operator on a subspace is the restriction of the ambient operator to the coordinates of the subspace, and the square of the vector operator is the sum of the squares of the operators on the coordinate lines with the signs of the generators, which is the statement that the form of the whole is the orthogonal sum of the forms of the pieces. The idempotent decomposition cuts the algebra in the split-complex direction and is not the same as any of the involutive decompositions; it is the decomposition that makes the algebra a matrix algebra and its analysis an entrywise analysis.
 
-5. **The relation to the biquaternion subspaces.** The biquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, and $\mathbb{M}_-$ have
+## Summary
 
+The subspaces of the split-quaternion algebra are cut out in two ways: by the coordinate subalgebras, the scalar line, the definite complex plane $\mathbb{R}[e_1]$ and the split-complex planes $\mathbb{D}_2$, $\mathbb{D}_3$, together with the vector subspace $V$; and by the three mutually commuting involutions, whose Hermitian and anti-Hermitian parts give the scalar–vector splitting for the conjugation, the $\operatorname{span}\{1,e_3\}$–$\operatorname{span}\{e_1,e_2\}$ splitting for the principal involution, and the $\operatorname{span}\{1,e_1,e_2\}$–$\mathbb{R}e_3$ splitting for the reversal.
+
+On each subspace the analysis is governed by the Clifford operator of the inherited form. On the definite subspaces, the scalar line and the complex plane, the operator pair $\partial_a \pm e_1\partial_b$ multiplies to the Laplacian and the analysis is elliptic, with holomorphic functions. On the indefinite subspaces, the split-complex planes and the vector subspace, the operator pair multiplies to the one-dimensional wave operator and the vector operator squares to the wave operator of signature $(2,1)$, and the analysis is hyperbolic, with the zero divisors as the characteristic directions. The type of the operator is determined by the signature of the form and by nothing else.
+
+The idempotents $u_\pm = \tfrac12(1\pm e_2)$ lie in the split-complex plane $\mathbb{D}_2$ and give the Peirce decomposition, which is the matrix-entry decomposition and not a product decomposition. The subspace of a given signature contains zero divisors exactly when its form is indefinite, and the characteristic variety of its operator is then exactly that zero divisor set. The operators of the definite case are those of *Clifford Analysis*, and the two-dimensional hyperbolic case is that of *Split-Complex Integration*.
+
+Finally, the domain on which each operator is analysed is constrained by its type. The Cauchy problem is posed on non-characteristic hypersurfaces, and for the indefinite subspaces the characteristic hypersurfaces are exactly the level sets of the null cone; the hyperboloids are non-characteristic and carry initial data, and on them the vector operator restricts to the Dirac operator of the induced Riemannian metric. On the characteristic hypersurfaces the induced form degenerates and the restricted operator loses its principal part, which is the analytic face of the presence of the zero divisors.
+
+## Summary of Notation
+
+| Symbol | Meaning | Article |
+|---|---|---|
+| $S$, $V$ | the Hermitian and anti-Hermitian parts for the conjugation | *Split-Quaternion Algebra* |
+| $\alpha$, $\rho$ | the principal involution and the reversal | *Split-Quaternion Algebra* |
+| $\mathbb{R}[e_1] \cong \mathbb{C}$ | the definite plane, with the Laplacian pair | this article |
+| $\mathbb{D}_2$, $\mathbb{D}_3$ | the split-complex planes, with the wave pairs | this article |
+| $\partial_a \pm g\partial_t$ | the conjugate pair on a coordinate plane | this article |
+| $D = e_1\partial_b + e_2\partial_c + e_3\partial_d$ | the vector operator | *Split-Quaternion Analysis* |
+| $\Box_{(1,1)}$, $\Box_{(2,1)}$, $\Delta$ | the wave operators and the Laplacian | this article |
+| $u_\pm$, Peirce components | the idempotents and the matrix-entry decomposition | *Split-Quaternion Analysis* |
+| zero divisors of a subspace | the null cone of the inherited form | *Split-Quaternion Zero Divisors* |
+
+## Further Reading
+
+- Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd ed. (Cambridge University Press, 2001), for the Clifford operators of forms of each signature and the elliptic–hyperbolic dichotomy.
+- John E. Gilbert and Margaret A. M. Murray, *Clifford Algebras and Dirac Operators in Harmonic Analysis* (Cambridge University Press, 1991), for the elliptic case and the functions in its kernel.
+- Gerald B. Folland, *Introduction to Partial Differential Equations*, 2nd ed. (Princeton University Press, 1995), for the wave operator, its factorisation and its characteristic variety.
+- Steven G. Krantz, *Function Theory of Several Complex Variables*, 2nd ed. (American Mathematical Society, 2001), for the holomorphic functions of the definite plane and the Cauchy–Riemann operator in one and several variables.

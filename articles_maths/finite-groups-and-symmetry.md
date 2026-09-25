@@ -3,11 +3,11 @@
 
 ## Introduction
 
-A finite group is a group of transformations: this is Cayley's theorem for the abstract statement, and it is the concrete content of every classification below. This article treats the finite groups that arise as groups of transformations of a small set or of Euclidean space, and the way they are classified. It is the companion of *Group Actions and Structure*, which supplies the class equation, the Sylow theorems and the composition series used throughout, and of *Transformation Groups*, which supplies the action-theoretic frame and the symmetry groups of the regular polygons and solids as examples.
+A finite group is a group of transformations: this is Cayley's theorem for the abstract statement, and it is the concrete content of every classification below. This article treats the finite groups that arise as groups of transformations of a small set, and the way they are classified. It is the companion of *Group Actions and Structure*, which supplies the class equation, the Sylow theorems and the composition series used throughout, and of *Transformation Groups*, which supplies the action-theoretic frame and the principle that a transformation group is determined by what it preserves.
 
-The plan is concrete. The cyclic and dihedral groups are treated first, with their subgroups and conjugacy classes; then the symmetric and alternating groups, with cycles, parity, conjugacy by cycle type and the simplicity of $A_n$ for $n \geq 5$; then the quaternion group $Q_8$ and the dicyclic groups; then the finite groups of rotations of three-dimensional space, which are classified by a counting argument on the sphere into the cyclic, dihedral and three polyhedral families, with the polyhedral families isomorphic to $A_4$, $S_4$ and $A_5$; then the crystallographic point groups and space groups, which are the finite subgroups of $O(n)$ that preserve a lattice and the discrete groups with compact quotient; and finally the classification of the groups of small order.
+The plan is concrete. The cyclic and dihedral groups are treated first, with their subgroups and conjugacy classes; then the symmetric and alternating groups, with cycles, parity, conjugacy by cycle type and the simplicity of $A_n$ for $n \geq 5$; then the quaternion group $Q_8$ and the dicyclic groups; and finally the classification of the groups of small order.
 
-Everything is a statement about groups of transformations of a set or of a Euclidean space. A crystallographic group acts on $\mathbb{R}^n$ by isometries and its quotient is a flat manifold; no physical object is invoked anywhere. Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $F$, $K$ are fields. Finite groups are written multiplicatively with identity $e$; $C_n$ is the cyclic group of order $n$, $D_n$ the dihedral group of order $2n$, $S_n$ and $A_n$ the symmetric and alternating groups, $V_4$ the Klein four group and $Q_8$ the quaternion group, as in the earlier articles of this category.
+Everything is a statement about groups of transformations of a set. The symmetry groups of the regular polygons and of the regular solids, their realisation inside the orthogonal group and the crystallographic refinement are groups of isometries and require a distance, so they belong to Part II, where a form and a distance are available, and they are not used here. No physical object is invoked anywhere. Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $F$, $K$ are fields. Finite groups are written multiplicatively with identity $e$; $C_n$ is the cyclic group of order $n$, $D_n$ the dihedral group of order $2n$, $S_n$ and $A_n$ the symmetric and alternating groups, $V_4$ the Klein four group and $Q_8$ the quaternion group, as in the earlier articles of this category.
 
 ## Cyclic and Dihedral Groups
 
@@ -20,7 +20,7 @@ Everything is a statement about groups of transformations of a set or of a Eucli
 1. For each divisor $d$ of $n$ there is exactly one subgroup of order $d$, namely $\langle g^{n/d} \rangle$, and these are all the subgroups.
 2. The generators of $C_n$ are the elements $g^k$ with $\gcd(k, n) = 1$, so there are $\varphi(n)$ of them, where $\varphi$ is Euler's function.
 3. $\operatorname{Aut}(C_n) \cong (\mathbb{Z}/n\mathbb{Z})^\times$, of order $\varphi(n)$, acting by $g \mapsto g^k$ for $k$ coprime to $n$.
-4. $C_n$ is a lattice of subgroups ordered by divisibility, and it is the rotation subgroup of $D_n$.
+4. $C_n$ is a lattice of subgroups ordered by divisibility.
 
 **Proof.** (1) If $H \leq C_n$ is nontrivial, let $k$ be the least positive integer with $g^k \in H$; division with remainder by $k$ shows every element of $H$ is a power of $g^k$, so $H = \langle g^k \rangle$; and $\langle g^k \rangle$ has order $n/\gcd(n,k)$, so the subgroups correspond to the divisors of $n$. (2) $g^k$ generates exactly when $\gcd(k,n) = 1$, since $\langle g^k \rangle = \langle g^{\gcd(n,k)} \rangle$. (3) An automorphism sends $g$ to a generator and is determined by that image; conversely $g \mapsto g^k$ with $\gcd(k,n)=1$ is an automorphism. (4) is the definition of the subgroup lattice. $\square$
 
@@ -28,21 +28,21 @@ Everything is a statement about groups of transformations of a set or of a Eucli
 
 ### Dihedral Groups
 
-**Definition.** For $n \geq 3$ the **dihedral group** $D_n$ is the symmetry group of the regular $n$-gon, of order $2n$, with presentation
+**Definition.** For $n \geq 3$ the **dihedral group** $D_n$ is the group of order $2n$ with presentation
 
 $$
 D_n = \langle r, s \mid r^n = s^2 = e, \ s r s = r^{-1} \rangle .
 $$
 
-The presentation and the order count are from *Transformation Groups*; here the structure is used. Every element is uniquely $r^i$ or $r^i s$ with $0 \leq i < n$, the rotations $C_n = \langle r \rangle$ form a normal subgroup of index $2$, and $D_n \cong C_n \rtimes C_2$ with the nontrivial element of $C_2$ acting by inversion. For $n = 3$, $D_3 \cong S_3$.
+Every element is uniquely $r^i$ or $r^i s$ with $0 \leq i < n$, the cyclic subgroup $C_n = \langle r \rangle$ is normal of index $2$, and $D_n \cong C_n \rtimes C_2$ with the nontrivial element of $C_2$ acting by inversion. For $n = 3$, $D_3 \cong S_3$. The group is the symmetry group of the regular $n$-gon; that realisation, which needs a distance, belongs to Part II.
 
-**Theorem (conjugacy classes).** In $D_n$ the conjugacy classes are: $\{e\}$; the pairs $\{r^k, r^{-k}\}$ for $1 \leq k < n/2$, together with $\{r^{n/2}\}$ when $n$ is even; and the reflections, which form one class if $n$ is odd and two classes if $n$ is even. Hence the number of conjugacy classes is $(n+3)/2$ for odd $n$ and $(n+6)/2$ for even $n$.
+**Theorem (conjugacy classes).** In $D_n$ the conjugacy classes are: $\{e\}$; the pairs $\{r^k, r^{-k}\}$ for $1 \leq k < n/2$, together with $\{r^{n/2}\}$ when $n$ is even; and the elements outside $\langle r \rangle$, which form one class if $n$ is odd and two classes if $n$ is even. Hence the number of conjugacy classes is $(n+3)/2$ for odd $n$ and $(n+6)/2$ for even $n$.
 
-**Proof.** Conjugation is computed from the relations: $r^j \, r^k \, r^{-j} = r^k$ and $r^j s \, r^k \, s^{-1} r^{-j} = r^{-k}$, so the rotations fall into the pairs $\{r^k, r^{-k}\}$ and the class of $r^{n/2}$ is a singleton when $n$ is even; the number of pairs is $(n-1)/2$ for odd $n$ and $(n-2)/2 + 1$ for even $n$ counting the central $r^{n/2}$. For the reflections, $r^j (r^k s) r^{-j} = r^{k+2j} s$, so the reflections $r^k s$ with $k$ of fixed parity are conjugate; if $n$ is odd every $k$ is reached by $2j$ as $j$ varies, giving one class of $n$ reflections, and if $n$ is even the even and odd $k$ give two classes of $n/2$ each. Summing the class sizes gives $|D_n| = 2n$ in both cases. $\square$
+**Proof.** Conjugation is computed from the relations: $r^j \, r^k \, r^{-j} = r^k$ and $r^j s \, r^k \, s^{-1} r^{-j} = r^{-k}$, so the elements of $\langle r \rangle$ fall into the pairs $\{r^k, r^{-k}\}$ and the class of $r^{n/2}$ is a singleton when $n$ is even; the number of pairs is $(n-1)/2$ for odd $n$ and $(n-2)/2 + 1$ for even $n$ counting the central $r^{n/2}$. For the elements outside $\langle r \rangle$, $r^j (r^k s) r^{-j} = r^{k+2j} s$, so the $r^k s$ with $k$ of fixed parity are conjugate; if $n$ is odd every $k$ is reached by $2j$ as $j$ varies, giving one class of $n$ elements, and if $n$ is even the even and odd $k$ give two classes of $n/2$ each. Summing the class sizes gives $|D_n| = 2n$ in both cases. $\square$
 
 **Example.** $D_4$ has $5$ conjugacy classes, of sizes $1, 1, 2, 2, 2$, and $6$ normal subgroups, of orders $1, 2, 4, 4, 4, 8$; $D_6 \cong D_3 \times C_2$ has $6$ classes of sizes $1, 1, 2, 2, 3, 3$ and $7$ normal subgroups, of orders $1, 2, 3, 6, 6, 6, 12$. The normal subgroups of $D_n$ are: the subgroups of $\langle r \rangle$ (all normal, since $\langle r \rangle$ is abelian and normal and inversion preserves each cyclic subgroup $\langle r^d \rangle$), the subgroups of index $2$, and $D_n$ itself.
 
-**Remark (subgroups of $D_n$).** Every subgroup of $D_n$ is either a subgroup of the rotation subgroup $\langle r \rangle$, hence some $C_d$ with $d \mid n$, or is generated by a rotation and a reflection, $\langle r^d, r^j s \rangle$, of order $2n/d$; in particular all subgroups of odd order are cyclic, and the number of subgroups of order $2$ is $n$ when $n$ is odd and $n + 1$ when $n$ is even (the $n$ reflections together with $\langle r^{n/2} \rangle$). For $D_4$ this gives one subgroup of order $1$, five of order $2$, three of order $4$ (namely $\langle r \rangle$ and the two subgroups $\langle r^2, s\rangle$, $\langle r^2, rs \rangle$), and one of order $8$.
+**Remark (subgroups of $D_n$).** Every subgroup of $D_n$ is either a subgroup of the cyclic subgroup $\langle r \rangle$, hence some $C_d$ with $d \mid n$, or is generated by an element of $\langle r \rangle$ together with one outside it, $\langle r^d, r^j s \rangle$, of order $2n/d$; in particular all subgroups of odd order are cyclic, and the number of subgroups of order $2$ is $n$ when $n$ is odd and $n + 1$ when $n$ is even (the $n$ elements $r^j s$ together with $\langle r^{n/2} \rangle$). For $D_4$ this gives one subgroup of order $1$, five of order $2$, three of order $4$ (namely $\langle r \rangle$ and the two subgroups $\langle r^2, s\rangle$, $\langle r^2, rs \rangle$), and one of order $8$.
 
 ## Symmetric and Alternating Groups
 
@@ -62,13 +62,13 @@ $$
 \frac{n!}{\prod_{k} k^{m_k} m_k!} .
 $$
 
-**Proof.** Conjugation relabels the points, so it preserves the partition into cycles; conversely, given two permutations with the same cycle structure, the bijection matching the cycles in order conjugates one to the other. For the size, the centraliser of the permutation consists of the permutations preserving the cycle decomposition, and its order is $\prod_k k^{m_k} m_k!$: each of the $m_k$ cycles of length $k$ contributes $k$ rotations and the $m_k$ cycles may be permuted. The class size is the index of the centraliser. $\square$
+**Proof.** Conjugation relabels the points, so it preserves the partition into cycles; conversely, given two permutations with the same cycle structure, the bijection matching the cycles in order conjugates one to the other. For the size, the centraliser of the permutation consists of the permutations preserving the cycle decomposition, and its order is $\prod_k k^{m_k} m_k!$: each of the $m_k$ cycles of length $k$ contributes its $k$ powers and the $m_k$ cycles may be permuted. The class size is the index of the centraliser. $\square$
 
 **Example.** In $S_4$ the partitions of $4$ are $1+1+1+1$, $2+1+1$, $2+2$, $3+1$, $4$, giving class sizes $1, 6, 3, 8, 6$, which sum to $24$; in $S_5$ there are $p(5) = 7$ partitions and class sizes $1, 10, 15, 20, 20, 24, 30$, which sum to $120$. The number of conjugacy classes of $S_n$ is the partition number $p(n)$.
 
 **Theorem (classes of $A_n$).** Let $a \in A_n$. The $S_n$-class of $a$ either is contained in $A_n$ and is a single $A_n$-class, or splits into exactly two $A_n$-classes of equal size. It splits if and only if all parts of the cycle type of $a$ are odd and distinct.
 
-**Proof.** The $A_n$-class of $a$ has size $|A_n| / |C_{A_n}(a)|$, where $C_{A_n}(a) = C_{S_n}(a) \cap A_n$ is the centraliser in $A_n$, while the $S_n$-class has size $|S_n|/|C_{S_n}(a)|$. Since $|S_n| = 2|A_n|$, the $A_n$-class has either the same size as the $S_n$-class, when $C_{S_n}(a)$ contains an odd permutation, or half that size in the contrary case, and in the second case the $S_n$-class is the union of two $A_n$-classes of equal size. The centraliser contains an odd permutation exactly when the cycle type fails to consist of distinct odd parts: two equal parts are exchanged by an odd transposition of the two cycles, and a part of even length is an odd permutation commuting with $a$, while if all parts are odd and distinct every permutation commuting with $a$ permutes the cycles of equal length — of which there are none — and acts within cycles by rotations of odd order, all even permutations. $\square$
+**Proof.** The $A_n$-class of $a$ has size $|A_n| / |C_{A_n}(a)|$, where $C_{A_n}(a) = C_{S_n}(a) \cap A_n$ is the centraliser in $A_n$, while the $S_n$-class has size $|S_n|/|C_{S_n}(a)|$. Since $|S_n| = 2|A_n|$, the $A_n$-class has either the same size as the $S_n$-class, when $C_{S_n}(a)$ contains an odd permutation, or half that size in the contrary case, and in the second case the $S_n$-class is the union of two $A_n$-classes of equal size. The centraliser contains an odd permutation exactly when the cycle type fails to consist of distinct odd parts: two equal parts are exchanged by an odd transposition of the two cycles, and a part of even length is an odd permutation commuting with $a$, while if all parts are odd and distinct every permutation commuting with $a$ permutes the cycles of equal length — of which there are none — and acts within cycles by powers of the cycles of odd order, all even permutations. $\square$
 
 **Example.** In $A_4$ the class sizes are $1, 3, 4, 4$. The $S_4$-class of double transpositions has size $3$ and does not split, giving the normal Klein four group $V_4 = \{e\} \cup \{$double transpositions$\}$; the eight $3$-cycles form one $S_4$-class of size $8$ which splits into two $A_4$-classes of size $4$. In $A_5$ the class sizes are $1, 12, 12, 15, 20$: the class of $5$-cycles has size $24$ in $S_5$ and splits, since a $5$-cycle has distinct odd parts, and the class of double transpositions has size $15$ and stays. In both cases the class sizes sum to the group order.
 
@@ -86,13 +86,13 @@ $$
 
 ### The Quaternion Group
 
-**Definition.** The **quaternion group** is the group of units
+**Definition.** The **quaternion group** is
 
 $$
-Q_8 = \{\pm 1, \pm e_1, \pm e_2, \pm e_3\} \subseteq \mathbb{H}^\times ,
+Q_8 = \{\pm 1, \pm e_1, \pm e_2, \pm e_3\} ,
 $$
 
-with the multiplication of the quaternion algebra, so that $e_1^2 = e_2^2 = e_3^2 = -1$ and $e_1 e_2 = e_3$, $e_2 e_3 = e_1$, $e_3 e_1 = e_2$. Equivalently
+with $e_1^2 = e_2^2 = e_3^2 = -1$ and $e_1 e_2 = e_3$, $e_2 e_3 = e_1$, $e_3 e_1 = e_2$. Equivalently
 
 $$
 Q_8 = \langle e_1, e_2 \mid e_1^4 = e, \ e_1^2 = e_2^2, \ e_2 e_1 = e_1^{-1} e_2 \rangle .
@@ -100,11 +100,11 @@ $$
 
 **Theorem.** $|Q_8| = 8$; the centre is $Z(Q_8) = \{\pm 1\}$; the conjugacy classes are $\{1\}$, $\{-1\}$, $\{\pm e_1\}$, $\{\pm e_2\}$, $\{\pm e_3\}$, of sizes $1, 1, 2, 2, 2$; the class equation is $8 = 1 + 1 + 2 + 2 + 2$; every subgroup is normal, namely $\{1\}$, the three subgroups $\langle e_1 \rangle, \langle e_2 \rangle, \langle e_3 \rangle$ of order $4$, the subgroup $\{\pm 1\}$ of order $2$, and $Q_8$; and $Q_8$ is not a semidirect product, not isomorphic to $D_4$, and not abelian.
 
-**Proof.** The multiplication table of the eight listed units is closed by the quaternion relations, and $-1$ is the unique element of order $2$ and is central, so $\{\pm 1\} \subseteq Z(Q_8)$ with equality because $e_1$ does not commute with $e_2$. Conjugation by an element of $Q_8$ fixes $\pm 1$ and sends each $e_k$ to $\pm e_k$: for a unit $u$ of order $4$, $u e_k u^{-1} = u e_k (-u) = -u e_k u = \pm e_k$, the sign being determined by whether $u e_k = \pm e_k u$. Thus conjugation by $e_1$ fixes $e_1$ and inverts $e_2$ and $e_3$, and the other cases are analogous, so direct computation in the multiplication table gives the pairs $\{\pm e_k\}$ as classes. Since every subgroup of order $4$ contains $-1$ and hence the unique involution, and every subgroup containing $-1$ and one of $\pm e_k$ contains the pair, the list of subgroups is complete; the three order-$4$ subgroups are normal because they contain the unique element of order $2$ and are of index $2$. Finally $Q_8$ is not a semidirect product $C_4 \rtimes C_2$ because the unique involution is central, so no complement to a normal $C_4$ exists; and for the same reason $Q_8 \not\cong D_4$, whose involutions are $r^2$ together with the four reflections, of which only $r^2$ is central, whereas $Q_8$ has the single involution $-1$. $\square$
+**Proof.** The multiplication table of the eight listed units is closed by the quaternion relations, and $-1$ is the unique element of order $2$ and is central, so $\{\pm 1\} \subseteq Z(Q_8)$ with equality because $e_1$ does not commute with $e_2$. Conjugation by an element of $Q_8$ fixes $\pm 1$ and sends each $e_k$ to $\pm e_k$: for a unit $u$ of order $4$, $u e_k u^{-1} = u e_k (-u) = -u e_k u = \pm e_k$, the sign being determined by whether $u e_k = \pm e_k u$. Thus conjugation by $e_1$ fixes $e_1$ and inverts $e_2$ and $e_3$, and the other cases are analogous, so direct computation in the multiplication table gives the pairs $\{\pm e_k\}$ as classes. Since every subgroup of order $4$ contains $-1$ and hence the unique involution, and every subgroup containing $-1$ and one of $\pm e_k$ contains the pair, the list of subgroups is complete; the three order-$4$ subgroups are normal because they contain the unique element of order $2$ and are of index $2$. Finally $Q_8$ is not a semidirect product $C_4 \rtimes C_2$ because the unique involution is central, so no complement to a normal $C_4$ exists; and for the same reason $Q_8 \not\cong D_4$, whose involutions are $r^2$ together with the four elements of $D_4$ outside $\langle r \rangle$ that are involutions, of which only $r^2$ is central, whereas $Q_8$ has the single involution $-1$. $\square$
 
 **Remark.** A nonabelian group in which every subgroup is normal is called **Hamiltonian**; $Q_8$ is the smallest, and the Hamiltonian groups are exactly the products $Q_8 \times E \times A$ with $E$ elementary abelian of exponent $2$ and $A$ abelian of odd order, a classical theorem of Dedekind and Baer.
 
-### Dicyclic Groups and the Binary Polyhedral Groups
+### Dicyclic Groups
 
 **Definition.** For $n \geq 2$ the **dicyclic group** of order $4n$ is
 
@@ -119,82 +119,6 @@ so that $Q_8 = \operatorname{Dic}_2$ and the group of order $12$ exhibited in *G
 **Proof.** Every element is $a^k$ or $a^k b$ with $0 \leq k < 2n$, and $b a^k b^{-1} = a^{-k}$, so there are at most $4n$ elements and the presentation supplies exactly that many, since $a$ has order $2n$ and $b \notin \langle a \rangle$. The relation $b^2 = a^n$ shows $b^2$ is central and of order $2$; it is the only involution because $a^k$ has order $2$ only for $k = n$, and $(a^k b)^2 = a^k b a^k b = a^k a^{-k} b^2 = a^n$. $\square$
 
 The dicyclic groups are exactly the finite groups with a unique involution that are not cyclic: the classical theorem of Burnside states that a finite group with exactly one involution is either cyclic of even order or one of the generalized quaternion groups, which are the groups $\operatorname{Dic}_n$ under a different indexing.
-
-## Finite Rotation Groups of Three-Dimensional Space
-
-### The Counting Argument
-
-Let $G \leq SO(3)$ be finite of order $N > 1$, acting on the unit sphere $S^2$. A non-identity rotation fixes exactly two points of the sphere, its two poles; the **poles** of $G$ are the points fixed by some non-identity element, and $G$ permutes them. Let the poles fall into $r$ orbits, and let the stabiliser of a pole in the $i$-th orbit have order $n_i \geq 2$.
-
-**Theorem (the rotation groups).** With the notation above,
-
-$$
-2 - \frac{2}{N} = \sum_{i=1}^{r} \left(1 - \frac{1}{n_i}\right),
-$$
-
-and consequently $r \leq 3$, and the finite subgroups of $SO(3)$ are, up to conjugacy:
-
-| $r$ | $(n_1, n_2, n_3)$ | $N$ | Group |
-|---|---|---|---|
-| $2$ | $(n, n)$ | $n$ | cyclic $C_n$: rotations about one axis |
-| $3$ | $(2, 2, n)$ | $2n$ | dihedral $D_n$, $n \geq 2$ (for $n = 2$ this is $V_4$) |
-| $3$ | $(2, 3, 3)$ | $12$ | tetrahedral $T \cong A_4$ |
-| $3$ | $(2, 3, 4)$ | $24$ | octahedral $O \cong S_4$ |
-| $3$ | $(2, 3, 5)$ | $60$ | icosahedral $I \cong A_5$ |
-
-**Proof.** Count the pairs $(g, p)$ with $g \in G \setminus \{e\}$ and $p$ a pole fixed by $g$. Each non-identity rotation fixes exactly two poles, so the number of pairs is $2(N-1)$. Counting by poles, the $i$-th orbit has $N/n_i$ points and each is fixed by $n_i - 1$ non-identity elements of its stabiliser, so the number of pairs is $\sum_i (N/n_i)(n_i - 1) = N \sum_i (1 - 1/n_i)$. Equating and dividing by $N$ gives the displayed identity. For the classification: if $r = 1$ the identity would read $2 - 2/N = 1 - 1/n_1$, whose right side is less than $1$ while its left side is at least $1$ for $N \geq 2$, so it cannot hold; if $r \geq 4$ then each term is at least $1/2$ and the right side is at least $2$, while the left side is $< 2$; so $r \in \{2, 3\}$. For $r = 2$ the identity reads $2/N = 1/n_1 + 1/n_2$, so $n_1 = n_2 = N$ and $G$ fixes two antipodal poles, hence consists of rotations about one axis and is cyclic. For $r = 3$ one solves $1/n_1 + 1/n_2 + 1/n_3 = 1 + 2/N$ with $2 \leq n_1 \leq n_2 \leq n_3$; the only solutions with the right side of that form are $(2,2,n)$ with $N = 2n$, $(2,3,3)$ with $N = 12$, $(2,3,4)$ with $N = 24$ and $(2,3,5)$ with $N = 60$. The last three groups act on the tetrahedron, the octahedron and the icosahedron respectively, permuting the vertices, the faces and the pairs of opposite vertices, so they are $A_4$, $S_4$ and $A_5$, and the tables of *Transformation Groups* identify them. $\square$
-
-**Example.** For the tetrahedral group $N = 12$ and $2 - 2/12 = 11/6 = (1 - 1/2) + (1 - 1/3) + (1 - 1/3)$. For the octahedral group $2 - 2/24 = 23/12 = (1-1/2)+(1-1/3)+(1-1/4)$. For the icosahedral group $2 - 2/60 = 59/30 = (1-1/2)+(1-1/3)+(1-1/5)$. The three numerical identities are exact.
-
-### The Poles of the Polyhedral Groups
-
-The orbits of poles can be read off the geometry, and this identifies the triples $(n_1, n_2, n_3)$ of the table.
-
-**Example (cyclic and dihedral).** For $C_n$ acting by rotations about one axis, the only poles are the two points where the axis meets the sphere, each fixed by the whole group: two orbits of size $1$ with stabiliser $C_n$, so $r = 2$ and $(n_1, n_2) = (n, n)$. For $D_n$ the two axis poles are interchanged by the half-turns, forming one orbit with stabiliser $C_n$, while the $n$ half-turn axes contribute $2n$ poles with stabiliser $C_2$ and fall into two orbits of $n$ points; hence $r = 3$ and $(n_1, n_2, n_3) = (n, 2, 2)$, in agreement with the identity $2 - 1/n = (1-1/n) + (1-1/2) + (1-1/2)$ obtained from the theorem with $N = 2n$.
-
-**Example (tetrahedral).** For $T \cong A_4$ acting on a tetrahedron the poles are the $4$ vertices, each fixed by a $C_3$ of rotations about the vertex, the $4$ face centres, each fixed by a $C_3$, and the $6$ edge midpoints, each fixed by the half-turn about the axis through the midpoint. The vertices, the faces of the tetrahedron and the edge midpoints form three orbits, of sizes $4, 4, 6$, with stabilisers of orders $3, 3, 2$; so $(n_1, n_2, n_3) = (3, 3, 2)$ and $N = 12$, and $2 - 2/12 = 11/6 = (1 - 1/3) + (1 - 1/3) + (1 - 1/2)$.
-
-**Example (octahedral and icosahedral).** For $O \cong S_4$ acting on a cube the poles are the $6$ face centres, fixed by $C_4$, the $8$ vertices, fixed by $C_3$, and the $12$ edge midpoints, fixed by $C_2$, giving three orbits with $(n_1,n_2,n_3) = (4,3,2)$ and $N = 24$. For $I \cong A_5$ acting on an icosahedron the poles are the $12$ vertices, fixed by $C_5$, the $20$ face centres, fixed by $C_3$, and the $30$ edge midpoints, fixed by $C_2$, giving $(n_1,n_2,n_3) = (5,3,2)$ and $N = 60$. In both cases the identity of the theorem holds exactly.
-
-**Theorem (finite subgroups of $O(2)$ and $O(3)$).** A finite subgroup of $O(2)$ is cyclic $C_n$ or dihedral $D_n$; a finite subgroup of $O(3)$ is either a finite rotation group, or the product of one with $\{\pm I\}$.
-
-**Proof.** The two-dimensional case is in *Transformation Groups*. For the three-dimensional case, intersect $G \leq O(3)$ with $SO(3)$; the determinant homomorphism $G \to \{\pm 1\}$ has kernel the finite rotation group $H$, of index $1$ or $2$ in $G$. If the index is $1$ then $G = H$. If the index is $2$ then $G = H \cup (-I)H$, and since $-I$ has determinant $-1$ in dimension three, $-I \notin H$; being scalar, $-I$ is central, so $G \cong H \times \{\pm I\}$. In both cases $G$ is a rotation group or a rotation group extended by $\{\pm I\}$. $\square$
-
-### The Binary Polyhedral Groups
-
-The two-to-one cover $SU(2) \to SO(3)$ pulls the finite rotation groups back to finite subgroups of $SU(2) = \mathbb{H}^1$.
-
-**Definition.** The **binary polyhedral groups** are the preimages $2T$, $2O$, $2I$ in $\mathbb{H}^1$ of the tetrahedral, octahedral and icosahedral groups, of orders $24$, $48$ and $120$; the preimage of the cyclic and dihedral groups are the cyclic and dicyclic groups.
-
-**Theorem.** $2T \cong Q_8 \rtimes C_3 \cong SL_2(\mathbb{F}_3)$, with $Q_8 \trianglelefteq 2T$ as the Sylow $2$-subgroup and $2T/\{\pm 1\} \cong A_4$; the group $2T$ is exactly the group of the $24$ Hurwitz units of the Hurwitz order in $\mathbb{H}$, and the eight Lipschitz units $\{\pm 1, \pm e_1, \pm e_2, \pm e_3\}$ form $Q_8$.
-
-**Proof.** The Hurwitz units are the $8$ Lipschitz units $\{\pm 1, \pm e_1, \pm e_2, \pm e_3\}$ together with the $16$ elements $\tfrac{1}{2}(\pm 1 \pm e_1 \pm e_2 \pm e_3)$, hence $24$ in all; the set is closed under multiplication and under inversion, and every element has norm $1$, so it is a subgroup of $\mathbb{H}^1$ of order $24$ containing $Q_8 = \{\pm 1, \pm e_1, \pm e_2, \pm e_3\}$, which is a Sylow $2$-subgroup. Computing the conjugation action, the element $u = \tfrac{1}{2}(1 + e_1 + e_2 + e_3)$ has order $6$ with $u^3 = -1$, and its square $w = u^2 = \tfrac{1}{2}(-1 + e_1 + e_2 + e_3)$ has order $3$ and conjugates $e_1 \mapsto e_3 \mapsto e_2 \mapsto e_1$, so $2T = Q_8 \rtimes C_3$ with $C_3 = \langle w \rangle$. The centre is $\{\pm 1\}$, and the quotient by it is $V_4 \rtimes C_3$ with the $C_3$ permuting the three non-identity elements of $V_4$ nontrivially, since it cycles the subgroups $\langle e_k \rangle$; a group of order $12$ with a normal $V_4$ on which the quotient acts nontrivially is $A_4$, whereas the trivial action would give the abelian group $V_4 \times C_3$. Since $Q_8$ is normal of index $3$ and the action by $C_3$ is nontrivial, cycling the three subgroups $\langle e_k \rangle$ of order $4$, the group is the semidirect product $Q_8 \rtimes C_3$ for the nontrivial action; and this semidirect product is unique up to isomorphism because the subgroups of order $3$ inside $\operatorname{Aut}(Q_8) \cong S_4$ form a single conjugacy class. The group $SL_2(\mathbb{F}_3)$ has a normal Sylow $2$-subgroup $Q_8$ with quotient $C_3$ acting nontrivially, so it is that same semidirect product. Hence $2T \cong SL_2(\mathbb{F}_3)$. $\square$
-
-**Example.** $2T$ has conjugacy classes of sizes $1, 1, 4, 4, 4, 4, 6$, centre $\{\pm 1\}$, and normal subgroups of orders $1, 2, 8, 24$; the element orders are $1, 2, 3, 4, 6$ occurring $1, 1, 8, 6, 8$ times. These counts exhibit $2T$ as a central extension of $A_4$ by $C_2$ and show that its Sylow $2$-subgroup is normal, so $2T$ is not simple.
-
-## Crystallographic Point Groups and Space Groups
-
-### Lattices and the Crystallographic Restriction
-
-**Definition.** A **lattice** in $\mathbb{R}^n$ is a subgroup $\Lambda \cong \mathbb{Z}^n$ generated by a basis of $\mathbb{R}^n$. A **crystallographic group**, or **space group**, in $n$ dimensions is a discrete subgroup $\Gamma \leq \operatorname{Isom}(\mathbb{R}^n)$ whose quotient $\mathbb{R}^n/\Gamma$ is compact.
-
-**Theorem (Bieberbach).** Let $\Gamma \leq \operatorname{Isom}(\mathbb{R}^n)$ be crystallographic. Then the translations in $\Gamma$ form a lattice $\Lambda \cong \mathbb{Z}^n$ of finite index in $\Gamma$; the quotient $\Gamma/\Lambda$ is finite and embeds in $O(n)$ as the stabiliser of the origin, its **point group**; and a group isomorphism between crystallographic groups is conjugation by an affine transformation. Consequently there are finitely many crystallographic groups in each dimension, up to affine equivalence.
-
-Thus a crystallographic group is an extension of a lattice by a finite group acting faithfully on it, $\{1\} \to \Lambda \to \Gamma \to P \to 1$ with $P \leq O(n)$ finite, and the point group $P$ of a crystallographic group preserves the lattice in the sense that it is conjugate to a subgroup of $GL_n(\mathbb{Z})$ after a choice of basis of $\Lambda$.
-
-**Theorem (crystallographic restriction).** If a finite-order rotation of the plane preserves a lattice then its order is $1, 2, 3, 4$ or $6$.
-
-**Proof.** In a basis of the lattice the rotation is a matrix $A \in GL_2(\mathbb{Z})$ of finite order $n$. Its eigenvalues are a primitive $n$-th root of unity $\zeta = e^{2\pi i k/n}$ and its inverse $\zeta^{-1}$, with $k$ coprime to $n$, so $\operatorname{tr} A = \zeta + \zeta^{-1} = 2\cos(2\pi k/n)$ is a rational integer, being the trace of an integer matrix. A rational integer of the form $2\cos(2\pi k/n)$ lies in $[-2, 2]$, so it is one of $-2, -1, 0, 1, 2$; for $n \geq 3$ it is not $\pm 2$, and the values $-1, 0, 1$ occur exactly for $n = 3, 4, 6$, since $2\cos(2\pi k/n)$ is irrational for $n = 5$ and for $n \geq 7$. The remaining cases $n = 1, 2$ give the values $2$ and $-2$. $\square$
-
-### The Point Groups and the Space Groups
-
-**Definition.** The **crystallographic point groups** in $n$ dimensions are the finite subgroups of $O(n)$ that preserve some lattice, equivalently the finite subgroups of $GL_n(\mathbb{Z})$ up to conjugacy in $\operatorname{Isom}(\mathbb{R}^n)$.
-
-**Theorem.** In dimension $2$ there are $10$ crystallographic point groups and $17$ crystallographic groups; in dimension $3$ there are $32$ crystallographic point groups and $230$ crystallographic groups, of which $73$ are symmorphic and $157$ nonsymmorphic.
-
-**Proof.** The point groups in dimension $2$ are the cyclic and dihedral groups $C_1, C_2, C_3, C_4, C_6$ and $D_1, D_2, D_3, D_4, D_6$ — with $D_1$ generated by a reflection of order $2$ and $D_2 = V_4$, the two smallest cases of the dihedral notation — by the crystallographic restriction, giving $10$. The classification of the space groups uses the Bieberbach description: a crystallographic group is determined by the lattice, the point group $P \leq O(n)$, and the cohomology class in $H^2(P, \Lambda)$ governing the screw and glide data, and the classification in each dimension is the enumeration of the finitely many possibilities; in dimension $3$ this enumeration gives $230$, the classical count, of which the symmorphic groups, those split as $\Lambda \rtimes P$, number $73$. The count $32$ for the point groups follows from the crystallographic restriction in three dimensions, which leaves the rotation orders $1, 2, 3, 4, 6$ about an axis: grouping by the axial system gives $2$ triclinic, $3$ monoclinic, $3$ orthorhombic, $7$ tetragonal, $5$ trigonal, $7$ hexagonal and $5$ cubic point groups, and $2 + 3 + 3 + 7 + 5 + 7 + 5 = 32$. $\square$
-
-**Remark.** The three-dimensional count is classical: the $32$ point groups were determined with the enumeration of the crystal classes, and the $230$ space groups were obtained independently and their agreement verified. The point group of a crystallographic group is a subgroup of the finite group $O(3)$ that leaves a lattice invariant; the group is a group of affine transformations of $\mathbb{R}^3$, and its quotient is a compact flat three-manifold. In one dimension the point groups are $2$ in number, and the crystallographic groups $2$; the frieze groups in two dimensions, whose translation subgroup is $\mathbb{Z}$ with compact quotient mod the orthogonal direction, number $7$.
 
 ## The Classification of the Small Orders
 
@@ -232,7 +156,7 @@ The dihedral column is the case $n = 4$ of the formula $(n+6)/2$ for even $n$, g
 | $\operatorname{Aut}(G)$ | $(\mathbb{Z}/n\mathbb{Z})^\times$ | $S_3$ | $S_3$ | $D_4$ | $\operatorname{Hol}(C_6)$ | $S_4$ | $S_4$ | $S_4$ |
 | order | $\varphi(n)$ | $6$ | $6$ | $8$ | $12$ | $24$ | $24$ | $24$ |
 
-**Proof.** The cyclic case is the proposition on $C_n$. For $D_n$ with $n \geq 3$ an automorphism is determined by the images of $r$ and $s$: the image of $r$ is a rotation of order $n$, that is, $r^k$ with $\gcd(k,n) = 1$, and once $r \mapsto r^k$ is chosen the image of $s$ is any of the $n$ reflections, giving at most $n\varphi(n)$ automorphisms. Each such assignment preserves the relations, and the automorphisms with $s \mapsto s$ form the group $(\mathbb{Z}/n\mathbb{Z})^\times$ acting on the normal $C_n$, so $\operatorname{Aut}(D_n) = \operatorname{Hol}(C_n)$ of order $n\varphi(n)$; for $n = 3, 4, 6$ this is $6, 8, 12$. Every permutation of the three non-identity elements of $V_4$ is an automorphism, so $\operatorname{Aut}(V_4) \cong S_3$. An automorphism of $Q_8$ permutes the three subgroups $\langle e_k \rangle$ of order $4$, giving a homomorphism $\operatorname{Aut}(Q_8) \to S_3$ which is onto because $e_1 \mapsto e_2$, $e_2 \mapsto e_1$, $e_3 \mapsto -e_3$ realises a transposition, while $e_1 \mapsto e_2$, $e_2 \mapsto e_3$, $e_3 \mapsto e_1$ realises a $3$-cycle; the kernel consists of the maps fixing each $e_k$ up to sign, whose three signs are constrained by $e_1 e_2 = e_3$ and hence amount to $4$ choices. So $|\operatorname{Aut}(Q_8)| = 4 \cdot 6 = 24$, and $\operatorname{Aut}(Q_8) \cong S_4$, with $\operatorname{Inn}(Q_8) \cong Q_8/\{\pm 1\} \cong V_4$ and $\operatorname{Out}(Q_8) \cong S_4/V_4 \cong S_3$. An automorphism of $A_4$ preserves the characteristic subgroup $V_4$ and permutes the four Sylow $3$-subgroups, giving an injective homomorphism $\operatorname{Aut}(A_4) \to S_4$, so $|\operatorname{Aut}(A_4)| \leq 24$; the inner automorphisms already realise $A_4$ of order $12$ in the image, and conjugation by an odd permutation of $S_4$ realises an odd element of the image, so the image has order $24$ and $\operatorname{Aut}(A_4) \cong S_4$, with $\operatorname{Out}(A_4) \cong C_2$. Finally every automorphism of $S_4$ is inner and $\operatorname{Aut}(S_4) \cong S_4$; more generally $\operatorname{Aut}(S_n) \cong S_n$ for $n \neq 2, 6$, the exception being $\operatorname{Out}(S_6) \cong C_2$, the classical exception of Hölder. $\square$
+**Proof.** The cyclic case is the proposition on $C_n$. For $D_n$ with $n \geq 3$ an automorphism is determined by the images of $r$ and $s$: the image of $r$ is an element of order $n$, that is, $r^k$ with $\gcd(k,n) = 1$, and once $r \mapsto r^k$ is chosen the image of $s$ is any element of the coset $s\langle r\rangle$, giving at most $n\varphi(n)$ automorphisms. Each such assignment preserves the relations, and the automorphisms with $s \mapsto s$ form the group $(\mathbb{Z}/n\mathbb{Z})^\times$ acting on the normal $C_n$, so $\operatorname{Aut}(D_n) = \operatorname{Hol}(C_n)$ of order $n\varphi(n)$; for $n = 3, 4, 6$ this is $6, 8, 12$. Every permutation of the three non-identity elements of $V_4$ is an automorphism, so $\operatorname{Aut}(V_4) \cong S_3$. An automorphism of $Q_8$ permutes the three subgroups $\langle e_k \rangle$ of order $4$, giving a homomorphism $\operatorname{Aut}(Q_8) \to S_3$ which is onto because $e_1 \mapsto e_2$, $e_2 \mapsto e_1$, $e_3 \mapsto -e_3$ realises a transposition, while $e_1 \mapsto e_2$, $e_2 \mapsto e_3$, $e_3 \mapsto e_1$ realises a $3$-cycle; the kernel consists of the maps fixing each $e_k$ up to sign, whose three signs are constrained by $e_1 e_2 = e_3$ and hence amount to $4$ choices. So $|\operatorname{Aut}(Q_8)| = 4 \cdot 6 = 24$, and $\operatorname{Aut}(Q_8) \cong S_4$, with $\operatorname{Inn}(Q_8) \cong Q_8/\{\pm 1\} \cong V_4$ and $\operatorname{Out}(Q_8) \cong S_4/V_4 \cong S_3$. An automorphism of $A_4$ preserves the characteristic subgroup $V_4$ and permutes the four Sylow $3$-subgroups, giving an injective homomorphism $\operatorname{Aut}(A_4) \to S_4$, so $|\operatorname{Aut}(A_4)| \leq 24$; the inner automorphisms already realise $A_4$ of order $12$ in the image, and conjugation by an odd permutation of $S_4$ realises an odd element of the image, so the image has order $24$ and $\operatorname{Aut}(A_4) \cong S_4$, with $\operatorname{Out}(A_4) \cong C_2$. Finally every automorphism of $S_4$ is inner and $\operatorname{Aut}(S_4) \cong S_4$; more generally $\operatorname{Aut}(S_n) \cong S_n$ for $n \neq 2, 6$, the exception being $\operatorname{Out}(S_6) \cong C_2$, the classical exception of Hölder. $\square$
 
 **Remark.** The quotient $\operatorname{Out}(G) = \operatorname{Aut}(G)/\operatorname{Inn}(G)$, with $\operatorname{Inn}(G) \cong G/Z(G)$, measures the failure of the automorphisms to be inner. Here $\operatorname{Inn}(D_4) \cong D_4/Z(D_4)$ has order $4$, so $\operatorname{Out}(D_4) \cong C_2$; $\operatorname{Out}(A_4) \cong C_2$; and $\operatorname{Out}(S_4) = 1$. In general $\operatorname{Out}(D_n)$ has order $\varphi(n)/2$ for odd $n$ and $\varphi(n)$ for even $n$, and $\operatorname{Out}(A_n) \cong C_2$ for $n \geq 4$ with $n \neq 6$, the exceptional case $n = 6$ having $\operatorname{Out}(A_6) \cong C_2 \times C_2$. A group with trivial centre all of whose automorphisms are inner is called **complete**; the groups $S_n$ for $n \neq 2, 6$ are complete, while $A_4$ is not, its outer automorphisms expressing the symmetry between the three subgroups of order $2$ in $V_4$.
 
@@ -252,9 +176,9 @@ The Sylow numbers of the small groups are obtained by counting elements of each 
 
 ## Summary
 
-Finite groups are groups of transformations, and the small ones are classified concretely. A cyclic group $C_n$ has exactly one subgroup of each order dividing $n$, $\varphi(n)$ generators and automorphism group $(\mathbb{Z}/n\mathbb{Z})^\times$; the dihedral group $D_n$ of order $2n$ is $C_n \rtimes C_2$ with the inversion action, its conjugacy classes are the pairs $\{r^k, r^{-k}\}$ together with one or two classes of reflections, and every subgroup is cyclic or a rotation-reflection group. The symmetric group $S_n$ has conjugacy classes indexed by the partitions of $n$, with class sizes $n!/(\prod_k k^{m_k} m_k!)$, and the classes of $A_n$ either persist or split in two according as the cycle type fails or succeeds in having distinct odd parts alone; $A_n$ is simple for $n \geq 5$, so $S_n$ is solvable exactly for $n \leq 4$. The quaternion group $Q_8$ is the smallest Hamiltonian group, with centre $\{\pm 1\}$, five classes and six subgroups, all normal, and the dicyclic groups $\operatorname{Dic}_n$ are the finite groups with a unique involution apart from the cyclic groups of even order.
+Finite groups are groups of transformations, and the small ones are classified concretely. A cyclic group $C_n$ has exactly one subgroup of each order dividing $n$, $\varphi(n)$ generators and automorphism group $(\mathbb{Z}/n\mathbb{Z})^\times$; the dihedral group $D_n$ of order $2n$ is $C_n \rtimes C_2$ with the inversion action, its conjugacy classes are the pairs $\{r^k, r^{-k}\}$ together with one or two classes of the elements outside $\langle r \rangle$, and every subgroup is cyclic or dihedral. The symmetric group $S_n$ has conjugacy classes indexed by the partitions of $n$, with class sizes $n!/(\prod_k k^{m_k} m_k!)$, and the classes of $A_n$ either persist or split in two according as the cycle type fails or succeeds in having distinct odd parts alone; $A_n$ is simple for $n \geq 5$, so $S_n$ is solvable exactly for $n \leq 4$. The quaternion group $Q_8$ is the smallest Hamiltonian group, with centre $\{\pm 1\}$, five classes and six subgroups, all normal, and the dicyclic groups $\operatorname{Dic}_n$ are the finite groups with a unique involution apart from the cyclic groups of even order.
 
-The finite groups of rotations of $\mathbb{R}^3$ are classified by counting poles on the sphere: the identity $2 - 2/N = \sum_i (1 - 1/n_i)$ forces $r \leq 3$ orbits and yields the cyclic, dihedral and three polyhedral families, the last being $T \cong A_4$, $O \cong S_4$, $I \cong A_5$ of orders $12, 24, 60$, the rotation groups of the tetrahedron, octahedron and icosahedron. The double cover $SU(2) \to SO(3)$ produces the binary polyhedral groups of orders $24, 48, 120$, and the $24$ Hurwitz units form $2T \cong SL_2(\mathbb{F}_3)$ with the eight Lipschitz units giving $Q_8$. A crystallographic group is a discrete group of isometries of $\mathbb{R}^n$ with compact quotient; by Bieberbach's theorems it has a lattice of translations of finite index, a finite point group preserving the lattice, and the crystallographic restriction confines rotation orders in the plane to $1, 2, 3, 4, 6$. The counts are $10$ point groups and $17$ crystallographic groups in the plane, $32$ point groups and $230$ space groups in three dimensions. Finally the groups of order $n \leq 16$ are counted by $1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1, 5, 1, 2, 1, 14$, the entries for $n \leq 15$ being derived from the structure of $p$-groups, of groups of order $pq$ and of groups of order $2p$. The automorphism groups of the small groups are $(\mathbb{Z}/n\mathbb{Z})^\times$ for $C_n$, the holomorph $\operatorname{Hol}(C_n) = C_n \rtimes (\mathbb{Z}/n\mathbb{Z})^\times$ of order $n\varphi(n)$ for $D_n$, and $S_3, D_4, S_4, S_4, S_4$ for $V_4, D_4, Q_8, A_4, S_4$; the Sylow numbers of the small groups are recovered by counting elements of each order, giving $n_2 = 5, n_3 = 10, n_5 = 6$ for $A_5$ and showing the normality of the Klein four group in $A_4$ that separates the two alternating groups.
+The groups of order $n \leq 16$ are counted by $1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1, 5, 1, 2, 1, 14$, the entries for $n \leq 15$ being derived from the structure of $p$-groups, of groups of order $pq$ and of groups of order $2p$. The automorphism groups of the small groups are $(\mathbb{Z}/n\mathbb{Z})^\times$ for $C_n$, the holomorph $\operatorname{Hol}(C_n) = C_n \rtimes (\mathbb{Z}/n\mathbb{Z})^\times$ of order $n\varphi(n)$ for $D_n$, and $S_3, D_4, S_4, S_4, S_4$ for $V_4, D_4, Q_8, A_4, S_4$; the Sylow numbers of the small groups are recovered by counting elements of each order, giving $n_2 = 5, n_3 = 10, n_5 = 6$ for $A_5$ and showing the normality of the Klein four group in $A_4$ that separates the two alternating groups.
 
 ## Summary of Notation
 
@@ -276,25 +200,12 @@ The finite groups of rotations of $\mathbb{R}^3$ are classified by counting pole
 | $V_4$ | Klein four group $C_2 \times C_2$, normal in $A_4$ |
 | $Q_8$ | Quaternion group $\{\pm 1, \pm e_1, \pm e_2, \pm e_3\}$ |
 | $\operatorname{Dic}_n$ | Dicyclic group of order $4n$; $Q_8 = \operatorname{Dic}_2$ |
-| $e_k$ | Quaternion units, $e_k^2 = -1$, $e_1 e_2 = e_3$ |
-| $\mathbb{H}^1$, $\mathbb{H}^\times$ | Unit quaternions; all nonzero quaternions |
-| $T, O, I$ | Rotation groups of the tetrahedron, octahedron, icosahedron; $\cong A_4, S_4, A_5$ |
-| $2T, 2O, 2I$ | Binary polyhedral groups of orders $24, 48, 120$ |
-| $SL_2(\mathbb{F}_3)$ | Order $24$, $\cong 2T$; Hurwitz units of $\mathbb{H}$ |
-| $\Lambda$ | Lattice $\cong \mathbb{Z}^n$ |
-| $\Gamma$, $P = \Gamma/\Lambda$ | Crystallographic (space) group and its point group |
-| $GL_n(\mathbb{Z})$ | Integral matrices of determinant $\pm 1$ |
-| $O(n)$, $SO(n)$ | Orthogonal and rotation groups; $O(n)$ here has an argument, $O$ alone is the octahedral group above |
-| $H^2(P, \Lambda)$ | Second cohomology, classifying the extensions of $\Lambda$ by $P$ |
-| $\operatorname{Isom}(\mathbb{R}^n)$ | Group of Euclidean isometries |
+| $e_k$ | Generators of $Q_8$; $e_k^2 = -1$, $e_1 e_2 = e_3$ |
 
 
 
 ## Further Reading
 
-- Harold S. M. Coxeter and William O. J. Moser, *Generators and Relations for Discrete Groups* (Springer, 4th ed. 1980), for presentations of the cyclic, dihedral, polyhedral and crystallographic groups.
-- Joseph J. Rotman, *An Introduction to the Theory of Groups* (Springer, 4th ed. 1995), for the classification of the small orders, the counting formula for rotation groups and the simplicity of $A_n$.
-- Ludwig Bieberbach, "Über die Bewegungsgruppen der Euklidischen Räume", *Mathematische Annalen* **70** (1911), 297–336, for the three theorems on crystallographic groups.
-- John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the binary polyhedral groups, the Hurwitz units and the rotation groups.
-- Jean-Pierre Serre, *Cours d'arithmétique* (Presses Universitaires de France, 1970), for the groups with a unique involution and the arithmetic of $SL_2(\mathbb{F}_p)$.
-- Theo Hahn (ed.), *International Tables for Crystallography, Volume A: Space-Group Symmetry* (Springer, 6th ed. 2016), for the complete lists of the $32$ point groups and the $230$ space groups.
+- Harold S. M. Coxeter and William O. J. Moser, *Generators and Relations for Discrete Groups* (Springer, 4th ed. 1980), for presentations of the cyclic and dihedral groups.
+- Joseph J. Rotman, *An Introduction to the Theory of Groups* (Springer, 4th ed. 1995), for the classification of the small orders and the simplicity of $A_n$.
+- Jean-Pierre Serre, *Cours d'arithmétique* (Presses Universitaires de France, 1970), for the groups with a unique involution.

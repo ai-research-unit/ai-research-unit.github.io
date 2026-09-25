@@ -181,13 +181,13 @@ $$
 
 and for $n \leq -2$ by $\hat H^n(G,M) = H_{-n-1}(G,M)$, so that the long exact sequence of a short exact sequence of modules becomes bi-infinite and periodic in signs.
 
-**Theorem (Tate duality).** Let $G$ be finite and let $M$ be a finite $G$-module with dual $M^{\vee} = \operatorname{Hom}(M, \mathbb{Q}/\mathbb{Z})$. For every $n \in \mathbb{Z}$ the cup product
+**Theorem (Tate duality).** Let $G$ be finite, let $M$ be a finite $G$-module, let $D = \bigoplus_p \mathbb{Z}[p^\infty]$ be the direct sum of the Prüfer groups of *Infinite Abelian Groups* over all primes, and let $M^{\vee} = \operatorname{Hom}(M, D)$ be the dual. For every $n \in \mathbb{Z}$ the cup product
 
 $$
-\hat H^n(G,M) \times \hat H^{-n-1}(G,M^{\vee}) \longrightarrow \mathbb{Q}/\mathbb{Z}
+\hat H^n(G,M) \times \hat H^{-n-1}(G,M^{\vee}) \longrightarrow D
 $$
 
-is a perfect pairing, so that cohomology with coefficients in $M$ and cohomology with coefficients in $M^{\vee}$ determine one another.
+is a perfect pairing, so that cohomology with coefficients in $M$ and cohomology with coefficients in $M^{\vee}$ determine one another. The group $D$ is the abstract group of all roots of unity, one Prüfer group for each prime; its standard concrete model is the quotient of the additive group of the fraction field of $\mathbb{Z}$ by $\mathbb{Z}$, introduced in *Localization and the Fraction Field* in the category *Rings and Fields*, and the identification is deferred to that article.
 
 **Theorem (periodic cohomology).** If $G$ is finite and has periodic cohomology of period $d$, then the cup product with a generator of $\hat H^d(G,\mathbb{Z})$ gives isomorphisms $\hat H^n(G,M) \cong \hat H^{n+d}(G,M)$ for all $n \in \mathbb{Z}$ and every $G$-module $M$.
 

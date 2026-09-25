@@ -117,13 +117,13 @@ $$
 
 of real dimension $2 \cdot 4 = 8$. The copy of $\mathbb{C}$ given by $\mathbb{C} \otimes 1$ is the central scalar imaginary $i$ with $i^2 = -1$, and it commutes with the quaternion units $1 \otimes e_k$. This is the definition of $\mathbb{B}$ used in *Biquaternion Algebra ($\mathbb{B}$)*.
 
-**Example (the split quaternions).** With $A = \mathbb{D}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,
+**Example (the split biquaternions).** With $A = \mathbb{D}$ and $B = \mathbb{H}$ over $R = \mathbb{R}$,
 
 $$
 \mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H},
 $$
 
-the split quaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$ act as central idempotents, so the algebra decomposes as a direct sum of two ideals; the details are.
+the split biquaternion algebra, of real dimension $2 \cdot 4 = 8$. The central unit $j \in \mathbb{D}$ has $j^2 = +1$ and commutes with the quaternion units, so the element $1 + j$ is a zero divisor: $(1 + j)(1 - j) = 1 - j^2 = 0$. The two split-complex idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$ act as central idempotents, so the algebra decomposes as a direct sum of two ideals; the details are.
 
 **Example (matrix algebras).** For a commutative ring $R$ and positive integers $m, n$, there is an isomorphism of $R$-algebras
 
@@ -167,7 +167,7 @@ $$
 (a,b)_F = F\langle i,j\rangle\big/\bigl(i^2 - a,\; j^2 - b,\; ij + ji\bigr),
 $$
 
-so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split quaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_k$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes, as the closing section of the article explains.
+so that $k = ij$ satisfies $k^2 = -ab$ and $i,j,k$ anticommute pairwise. The division algebra $\mathbb{H}$ is $(-1,-1)_{\mathbb{R}}$, and the split biquaternions of the example above are the tensor product $\mathbb{D} \otimes_\mathbb{R} \mathbb{H}$, in which $1 \otimes e_k$ play the role of $i, j, k$ over the split complex base. Tensoring two quaternion algebras over $F$ gives a central simple algebra of dimension $16$ over $F$, and its class in the Brauer group is the sum of the two classes, as the closing section of the article explains.
 
 ## Functoriality and Base Change
 
@@ -298,7 +298,7 @@ The principal computations are $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \math
 | $A \otimes_R S$ | Base change along $R \to S$ |
 | $M_n(R)$ | Matrix algebra; $M_m \otimes M_n \cong M_{mn}$ |
 | $\mathbb{B} = \mathbb{C} \otimes_\mathbb{R} \mathbb{H}$ | Biquaternions |
-| $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$ | Split quaternions |
+| $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_\mathbb{R} \mathbb{H}$ | Split biquaternions |
 | $(a,b)_F$ | Quaternion algebra over $F$ |
 | $A^{\mathrm{op}}$ | Opposite algebra |
 | $\mathrm{Br}(F)$ | Brauer group of $F$ |

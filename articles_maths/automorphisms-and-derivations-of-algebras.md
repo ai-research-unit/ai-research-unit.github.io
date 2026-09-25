@@ -111,7 +111,7 @@ $$
 \operatorname{Aut}_{\mathbb{C}}(\mathbb{B}) \cong GL_2(\mathbb{C})/\mathbb{C}^\times = PGL(2,\mathbb{C}) = PSL(2,\mathbb{C}).
 $$
 
-Over $\mathbb{R}$ the group is larger, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, the extra coset supplied by complex conjugation. The two ground fields and the Skolem–Noether theorem behind the first case are worked out in Part IV.
+Over $\mathbb{R}$ the group is larger, $\operatorname{Aut}_{\mathbb{R}}(\mathbb{B}) \cong PGL(2,\mathbb{C}) \rtimes \mathbb{Z}/2$, the extra coset supplied by complex conjugation. The two ground fields and the Skolem–Noether theorem behind the first case are worked out in Part V.
 
 **Matrix algebras.** Let $k$ be a field. Every $k$-algebra automorphism of $M_n(k)$ is inner:
 

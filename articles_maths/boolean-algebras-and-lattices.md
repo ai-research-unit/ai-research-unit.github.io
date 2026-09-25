@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This is the first article of the Boolean system in Part IV, and it occupies the **algebra slot** of that system. The system is the two-element Boolean domain $\mathbf{2} = \{0,1\}$ together with the propositional connectives, and the article develops the equational algebra that the domain generates: the **Boolean algebras**. It is the synthetic counterpart of the general order theory of Part I, and it states for this one system what *Order Theory and Lattices* states for orders in general.
+This is the first article of the Boolean system in Part V, and it occupies the **algebra slot** of that system. The system is the two-element Boolean domain $\mathbf{2} = \{0,1\}$ together with the propositional connectives, and the article develops the equational algebra that the domain generates: the **Boolean algebras**. It is the synthetic counterpart of the general order theory of Part I, and it states for this one system what *Order Theory and Lattices* states for orders in general.
 
 The boundary against the general theory is deliberate. Lattices, distributivity, modularity, Galois connections and the fixed-point theorems belong to *Order Theory and Lattices* and are used here, not re-derived. The topological slot of the Boolean system is a separate article,which supplies the Stone space, the compactness and the total disconnectedness; nothing topological is developed below. Because the Boolean system is finite in a strong sense — every finitely generated Boolean algebra is finite, and the two-element algebra generates the whole variety — the system supports an algebra and no analysis, and the closing section records why.
 

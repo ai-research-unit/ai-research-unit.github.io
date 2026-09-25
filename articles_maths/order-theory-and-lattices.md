@@ -5,7 +5,7 @@
 
 A partial order records when one object is below another, and much of algebra is order in disguise: a subgroup is below another when it is contained in it, and a quotient is often the greatest object of a given kind. This article develops the theory of orders for its own sake: it defines partial, total and well-orders, isolates the two binary operations that an order may support — the least upper bound and the greatest lower bound — and studies the structures, the **lattices**, in which those operations are always defined. It then treats the two results that the corpus uses in its analysis: the **Galois connection**, the order-theoretic form of a closure, and the fixed-point theorem of **Knaster and Tarski**.
 
-The article presupposes the language of *Sets, Functions and Relations* — subsets, ordered pairs, relations, equivalence relations and functions — and the propositional logic of *Logic and Proof*, and it uses the natural numbers as basic. Two boundaries are observed. The **axiom of choice** and Zorn's lemma are not proved or used here; they belong to the foundations, and the article distinguishes the results constructive in the order alone from those that require a choice principle. **Boolean algebra** is developed as a subject in Part IV; the power-set lattice is introduced here as the standard example, and the general theory is deferred.
+The article presupposes the language of *Sets, Functions and Relations* — subsets, ordered pairs, relations, equivalence relations and functions — and the propositional logic of *Logic and Proof*, and it uses the natural numbers as basic. Two boundaries are observed. The **axiom of choice** and Zorn's lemma are not proved or used here; they belong to the foundations, and the article distinguishes the results constructive in the order alone from those that require a choice principle. **Boolean algebra** is developed as a subject in Part V; the power-set lattice is introduced here as the standard example, and the general theory is deferred.
 
 The article treats no topology. The words *complete*, *closed* and *limit* occur below with their order-theoretic meanings — an order-complete lattice, a closed element of a closure system, the supremum of a chain — and in those senses only. Where a result has a richer statement once a distance exists, the statement is given in the language of order and the enrichment is deferred to Part II.
 
@@ -15,7 +15,7 @@ The article treats no topology. The words *complete*, *closed* and *limit* occur
 
 **Definition.** A **partial order** on a set $P$ is a relation $\leq$ that is reflexive, antisymmetric and transitive; the pair $(P, \leq)$ is a **partially ordered set**, or **poset**. A **strict partial order** is an irreflexive transitive relation $<$, and it is related to a partial order by the equivalences $x < y \iff x \leq y$ and $x \neq y$ and $x \leq y \iff x < y$ or $x = y$.
 
-The standard order on $\mathbb{R}$ and the inclusion on the subsets of a set are partial orders, as noted in *Sets, Functions and Relations*. A partial order is a **total order** (or **linear order**) if any two elements are comparable: $x \leq y$ or $y \leq x$ for all $x, y \in P$. A **chain** in a poset is a subset that is totally ordered by the inherited relation; an **antichain** is a subset in which no two distinct elements are comparable. A **well-order** is a total order in which every nonempty subset has a least element; the usual order on $\mathbb{N}$ is the model, and the general theory of well-orders and of transfinite induction on them belongs.
+The standard order on $\mathbb{N}$ and the inclusion on the subsets of a set are partial orders, as noted in *Sets, Functions and Relations*. A partial order is a **total order** (or **linear order**) if any two elements are comparable: $x \leq y$ or $y \leq x$ for all $x, y \in P$. A **chain** in a poset is a subset that is totally ordered by the inherited relation; an **antichain** is a subset in which no two distinct elements are comparable. A **well-order** is a total order in which every nonempty subset has a least element; the usual order on $\mathbb{N}$ is the model, and the general theory of well-orders and of transfinite induction on them belongs.
 
 **Example.** Let $P = \{1, 2, 3, 4, 6, 12\}$ with $x \leq y$ when $x$ divides $y$. This is a partial order that is not total: $2$ and $3$ are incomparable. The divisibility poset is the standard example in which meets and joins are familiar operations.
 
@@ -60,11 +60,11 @@ with $x \vee y = \sup\{x, y\}$ and $x \wedge y = \inf\{x, y\}$ for a two-element
 
 A supremum, when it exists, is unique by antisymmetry: two least upper bounds are each $\leq$ the other. Whether a given subset has a supremum depends on the poset and on the subset; the existence is a fact about $(P, \leq)$ and $S$, not a definitional matter.
 
-**Example.** In $(\mathbb{R}, \leq)$ the subset $(0,1)$ has supremum $1$, which is not in the subset; the subset $\mathbb{Q} \cap (0, \sqrt{2})$ has no supremum in $\mathbb{Q}$ but has one in $\mathbb{R}$. In the divisibility poset of the positive integers the supremum of $\{m, n\}$ is the least common multiple and the infimum is the greatest common divisor.
+**Example.** In $(\mathcal{P}(\mathbb{N}), \subseteq)$ the chain of finite subsets $\{0\} \subseteq \{0,1\} \subseteq \{0,1,2\} \subseteq \cdots$ has supremum $\mathbb{N}$, which is not one of them; and in $(\mathbb{N}, \leq)$ the whole set $\mathbb{N}$ has no supremum, since no element bounds it. In the divisibility poset of the positive integers the supremum of $\{m, n\}$ is the least common multiple and the infimum is the greatest common divisor.
 
 **Definition.** A poset is **order-complete** if every subset has a supremum and an infimum; it is **conditionally complete** if every subset that is bounded above has a supremum and every subset bounded below has an infimum. A poset is a **chain-complete** poset if every chain has a supremum.
 
-Order-completeness is an internal notion of the order and requires no distance; it is distinct from the metric completeness of Part II, which is a statement about a distance and its limits. The two are related for the ordered field $\mathbb{R}$ — the order-completeness of $\mathbb{R}$ and its metric completeness are logically connected — but the relation is a theorem of Part III, and no part of it is presupposed here.
+Order-completeness is an internal notion of the order and requires no distance; it is distinct from the metric completeness of Part II, which is a statement about a distance and its limits. The two are related for the order-complete field of the later category — its order-completeness and its metric completeness are logically connected — but the relation is a theorem of Part III, and no part of it is presupposed here.
 
 ## Lattices
 
@@ -80,7 +80,7 @@ $$
 
 **Example.** The power set $\mathcal{P}(X)$ with $\subseteq$ is a lattice, with $A \vee B = A \cup B$ and $A \wedge B = A \cap B$. This is the lattice of subsets of the next-to-last section.
 
-**Example.** Every total order is a lattice, with $x \vee y = \max(x,y)$ and $x \wedge y = \min(x,y)$. Thus $(\mathbb{R}, \leq)$ and $(\mathbb{N}, \leq)$ are lattices, and so is any chain.
+**Example.** Every total order is a lattice, with $x \vee y = \max(x,y)$ and $x \wedge y = \min(x,y)$. Thus $(\mathbb{N}, \leq)$ is a lattice, and so is any chain.
 
 **Example.** The set of positive divisors of a fixed positive integer, ordered by divisibility, is a lattice with join the least common multiple and meet the greatest common divisor.
 
@@ -128,7 +128,7 @@ Every complete lattice has a least element $\bigvee \emptyset$ and a greatest el
 
 **Example.** The power set $\mathcal{P}(X)$ is complete: the supremum of a family of subsets is its union and the infimum is its intersection, both of which are subsets of $X$. The lattice of partitions of a set is complete, but its *join* is not the union, which makes the completeness a genuine fact.
 
-**Example.** The interval $[0,1] \subseteq \mathbb{R}$ is a complete lattice; the set $(0,1)$ is not, since it fails to have a greatest element and its subsets have no supremum inside it. The rational interval $[0,1] \cap \mathbb{Q}$ is not complete, since $\{q \in \mathbb{Q} : q^2 < 2\}$ has no supremum in it.
+**Example.** $\mathcal{P}(X)$ is a complete lattice, while $\mathbb{N}$ with its usual order is not: it has no greatest element, and the subset $\mathbb{N}$ of itself has no supremum inside it. The finite subsets of $\mathbb{N}$ form a lattice that is not complete, since their supremum in $\mathcal{P}(\mathbb{N})$ is $\mathbb{N}$, which is not finite; completeness of a lattice is therefore not inherited by a sublattice.
 
 **Definition.** A **directed supremum** is the supremum of a subset $D$ that is **directed**: every finite subset of $D$ has an upper bound in $D$. A lattice is **upward directed complete** (a **DCPO**) if every directed subset has a supremum; such orders are the domain of the least-fixed-point theory used in the semantics of recursion, and they are named here so that other articles can use the vocabulary.
 
@@ -174,7 +174,7 @@ $$
 
 and symmetrically $y' = y \wedge y'$, so $y = y'$. The complement is then written $x^{\mathrm{c}}$ or $\neg x$.
 
-**Example.** The power-set lattice $\mathcal{P}(X)$ is a Boolean lattice, with complement the relative complement in $X$ and with $0 = \emptyset$, $1 = X$. This is the first example of a Boolean algebra, introduced in *Sets, Functions and Relations* and studied as a subject in Part IV. The finite Boolean algebras are exactly the power-set lattices of finite sets, and the representation of an arbitrary Boolean algebra is the Stone representation, which needs a topology and belongs to Part II.
+**Example.** The power-set lattice $\mathcal{P}(X)$ is a Boolean lattice, with complement the relative complement in $X$ and with $0 = \emptyset$, $1 = X$. This is the first example of a Boolean algebra, introduced in *Sets, Functions and Relations* and studied as a subject in Part V. The finite Boolean algebras are exactly the power-set lattices of finite sets, and the representation of an arbitrary Boolean algebra is the Stone representation, which needs a topology and belongs to Part II.
 
 ## Galois Connections
 
@@ -255,7 +255,7 @@ The power set of a set, ordered by inclusion, is simultaneously the most importa
 
 ### Subset Lattices and the Boolean Case
 
-A **lattice of sets** is a family $\mathcal{L} \subseteq \mathcal{P}(X)$ closed under the unions and intersections that it contains; the concept is used throughout the corpus, where representation theorems identify an abstract lattice with a lattice of sets. The distributive lattices are exactly the sublattices of power-set lattices, by the representation theorem of Birkhoff, and the finite case is the statement above. The general representation of a Boolean algebra as an algebra of subsets requires a topology, and it is the Stone representation theorem of Part II; the Boolean algebra as an abstract structure is the subject of Part IV.
+A **lattice of sets** is a family $\mathcal{L} \subseteq \mathcal{P}(X)$ closed under the unions and intersections that it contains; the concept is used throughout the corpus, where representation theorems identify an abstract lattice with a lattice of sets. The distributive lattices are exactly the sublattices of power-set lattices, by the representation theorem of Birkhoff, and the finite case is the statement above. The general representation of a Boolean algebra as an algebra of subsets requires a topology, and it is the Stone representation theorem of Part II; the Boolean algebra as an abstract structure is the subject of Part V.
 
 **Remark.** The chain of inclusions
 
