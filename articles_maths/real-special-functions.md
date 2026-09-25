@@ -690,6 +690,14 @@ $$
 
 The Lambert W function solves equations of the form $a e^x + b x + c = 0$. It appears in combinatorics (tree enumeration), in the analysis of delay differential equations, and in the solution of the time-dependent Schrödinger equation for certain potentials.
 
+## Summary
+
+The real special functions are the named functions that recur throughout analysis and in differential equations, and they are the base case from which the special functions of every other system of the corpus are obtained.
+
+The elementary functions come first: the exponential, defined by its series, its inverse the logarithm, the trigonometric functions defined by their series, and the hyperbolic functions defined from the exponential. Integral representations then supply the higher functions: the gamma and beta functions with the functional equation, the error function and its relatives, the incomplete gamma and beta functions, and the Riemann zeta function as a Dirichlet series.
+
+The arithmetic families follow, the Bernoulli and Euler numbers defined by generating functions, and then the classical special functions of analysis and mathematical physics: the orthogonal polynomials, the Bessel functions, the Airy function, the Gauss hypergeometric function, the elliptic integrals, and the Lambert $W$ function as the inverse of $w \mapsto we^w$. Each function is defined precisely, and its elementary properties, its differential equation, its recurrence relations and its relations to the others are recorded.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

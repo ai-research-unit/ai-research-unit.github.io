@@ -442,6 +442,14 @@ Equality holds if and only if $f(x) = c \, e^{-a x^2}$ for some $a > 0$ and $c \
 
 These statements are the qualitative counterparts of the Heisenberg inequality: a function and its transform cannot both be concentrated, in the strong sense of compact or finite-measure support.
 
+## Summary
+
+Harmonic analysis on the real line and on Euclidean space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act. It begins on the circle, where the Fourier coefficients of an $L^1$ function are defined and the Fourier series is developed, and passes to the line, where the Fourier transform $\hat{f}(\xi) = \int_{\mathbb{R}} f(x)e^{-2\pi i\xi x}\,dx$ and its inversion and Plancherel theorems are established, and then to $\mathbb{R}^n$.
+
+Convolution and the approximate identities built from it form the second theme, together with the Schwartz space and its tempered distributions. The theory is then developed in the $L^p$ setting: the Hardy–Littlewood maximal function with its maximal inequality, the Hilbert transform as a principal value integral, and the interpolation results organised by the Riesz–Thorin theorem.
+
+The remaining sections take up the finer structure of the subject: the Littlewood–Paley decomposition, the Sobolev spaces and their role in regularity, and the uncertainty principle in its Heisenberg form, which bounds a function and its transform simultaneously.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

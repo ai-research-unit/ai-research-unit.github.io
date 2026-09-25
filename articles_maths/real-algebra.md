@@ -362,6 +362,14 @@ The completeness axiom, which is the least upper bound property stated as an axi
 
 The **uniqueness** of $\mathbb{R}$ as a complete ordered field is a theorem: if $F$ is any complete ordered field, there is a unique order-isomorphism $F \to \mathbb{R}$. This is why we speak of *the* real numbers.
 
+## Summary
+
+The real algebra is the field $\mathbb{R}$ of real numbers considered as a one-dimensional real vector space equipped with its field multiplication. It is the base case of the ladder: commutative, associative and unital, and a field, so that every nonzero element is invertible. It is the only system of Part V that also carries a total order compatible with its operations.
+
+The only conjugation is the identity. Its fixed-point set is all of $\mathbb{R}$, so the single fixed-point subspace is $\mathbb{R}$ itself. There is no nontrivial conjugate decomposition, because the eigenspace for the eigenvalue $-1$ is zero, and there is no Hermitian or anti-Hermitian subspace, because there is no Hermitian conjugation: the decomposition of the general case collapses to a single summand.
+
+The quadratic objects collapse with it. The norm form is $N(a) = a \cdot a = a^2$, positive definite and multiplicative, and in this one-dimensional case the Hermitian form and the inner product coincide with it. The article closes with the order-theoretic structure, recording how the order interacts with the field operations and with completeness in ways that have no analogue in an unordered field.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

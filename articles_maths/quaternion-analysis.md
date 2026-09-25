@@ -522,6 +522,14 @@ The differences between quaternion analysis and complex analysis are consequence
 
 The complex case is the case $n = 2$ of the general theory, and the quaternion case is the case $n = 4$. The general theory is Clifford analysis, and the pattern is the same: the biquaternionic Cauchy–Riemann operator replaces the classical Cauchy–Riemann operator, the monogenic functions replace the holomorphic functions, and the Cauchy integral formula holds with the appropriate kernel.
 
+## Summary
+
+Quaternion analysis is the study of differentiable functions of a quaternion variable $q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$. The space carries its norm, and with it the convergent sequences and the continuous functions on which the subject is built.
+
+The naive derivative $f'(q_0) = \lim_{h \to 0} (f(q_0 + h) - f(q_0))/h$ exists only for very special functions, because $\mathbb{H}$ is non-commutative and the limit must be independent of the direction of $h$. The correct notion replaces it: a function is monogenic, or regular, when it satisfies the Cauchy–Riemann–Fueter equation, and monogenic functions are the analogues of the holomorphic functions of one complex variable.
+
+The article develops what that notion supports: contour integrals along paths, power series and their radius of convergence, and the classification of the isolated singularities as removable, a pole, or essential. The Cauchy–Riemann operator, classically the Dirac operator, is studied in its own right, and the applications record the harmonicity of monogenic functions and the representation given by the Cauchy integral formula. The final section compares the subject with complex analysis and traces each difference to the non-commutativity of $\mathbb{H}$ and to the higher dimension of the space.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

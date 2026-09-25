@@ -447,6 +447,14 @@ The differences between split complex analysis and complex analysis are conseque
 
 The complex case is rigid: differentiability is a strong condition, and it forces the function to be determined by its boundary values. The split complex case is flexible: differentiability is a weak condition, and the function is determined by two independent real functions.
 
+## Summary
+
+Split complex analysis is the study of differentiable functions of a split complex variable $z = x + jy$ with $j^2 = +1$. The plane carries the Euclidean norm inherited from $\mathbb{R}^2$, and with it the convergent sequences and the continuous functions on which the subject is built.
+
+The derivative is defined as in the complex case, and its behaviour is governed by the idempotents $e_\pm = (1 \pm j)/2$, which satisfy $e_+^2 = e_+$, $e_-^2 = e_-$ and $e_+e_- = 0$. In the idempotent basis the algebra is the direct sum $\mathbb{R} \oplus \mathbb{R}$, and the analysis decomposes with it: the power series and the conditions of differentiability separate into one condition for each component, so the theory is real analysis carried out twice rather than a new rigid theory as in the complex case.
+
+The article develops the subject in that basis: contour integrals along paths, power series, and the classification of the isolated singularities as removable, a pole, or essential. The applications record the wave equation, which the split Cauchy–Riemann equations force on the real and imaginary parts of a differentiable function. The final section compares the subject with complex analysis and traces every difference to the sign in the multiplication rule, $j^2 = +1$ against $i^2 = -1$.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

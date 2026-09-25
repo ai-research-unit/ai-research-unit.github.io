@@ -500,6 +500,14 @@ The classification of the rank-one cases, and the structure of the Clifford alge
 
 ---
 
+## Summary
+
+This article develops the theory of Clifford algebras in finite dimensions over a commutative ring in which $2$ is invertible. The Clifford algebra of a free module with a quadratic form is defined by its universal property, and its multiplication is governed by the fundamental relation $uv + vu = 2B(u, v) \cdot 1$.
+
+The degenerate case is treated first. The radical of the form is a direct summand, and the algebra decomposes as the graded tensor product of the Clifford algebra of the non-degenerate quotient with the exterior algebra on the radical. That decomposition reduces the classification to the non-degenerate case, and with it the article computes the rank, the basis formed by products of generators, the $k$-vectors and multivectors, the volume element, and the center.
+
+The internal structure is then developed: the $\mathbb{Z}/2$-grading into even and odd parts, the even subalgebra and its identification as the Clifford algebra of a form of one dimension less, the reversion and Clifford conjugation anti-involutions with the grade involution between them, and the behaviour of all three on each grade. The article closes with the graded tensor product decomposition for a direct sum of modules, the diagonalisation of the form over a field, and the parity in the graded tensor product.
+
 ## Further Reading
 
 - I. R. Porteous, *Clifford Algebras and the Classical Groups* (Cambridge University Press, 1995).

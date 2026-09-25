@@ -324,6 +324,14 @@ $$
 
 the direct sum of the matrix rings of sizes $p$ and $q$. This is a semisimple ring.
 
+## Summary
+
+A representation of $\mathbb{D}$ is a real vector space $V$ together with a bilinear action of the algebra on it. The classification theorem states that every finite-dimensional real representation is isomorphic to a direct sum of copies of the regular representation, so the representation theory is completely determined by the algebra itself.
+
+The idempotent decomposition gives the theory its shape. In any representation the idempotents act as projection operators $P_+ = \rho(e_+)$ and $P_- = \rho(e_-)$, with $P_+ + P_-$ the identity and $P_+P_- = 0$, so every representation splits as the direct sum of its two idempotent components. This is the mechanism by which the algebra behaves as $\mathbb{R} \oplus \mathbb{R}$, and it is the essential difference from the complex case.
+
+The article also records the representation ring $R(\mathbb{D})$, the indecomposable representations and their relation to the irreducible ones, the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the linear maps intertwining the two actions. The final comparison with the complex case isolates the difference between an algebra with two idempotents and one that is a field.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

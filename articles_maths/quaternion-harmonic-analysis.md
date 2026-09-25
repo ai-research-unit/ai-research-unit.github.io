@@ -442,6 +442,28 @@ The inversion formula reconstructs $f$ from its wavelet transform.
 
 The quaternion wavelet transform is used in quaternion signal processing, where it provides both magnitude and phase information, and in the analysis of quaternion-valued images, where the three imaginary components encode the color channels.
 
+## The Structure Principle
+
+The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case is identical to the real case on $\mathbb{R}^4$. Whenever the analysis involves the algebra structure, the non-commutativity of $\mathbb{H}$ makes the theory richer but more complicated.
+
+**Theorem (Structure Principle for quaternion harmonic analysis).** Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the quaternion analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^4$, stated in quaternion notation. If $\mathcal{T}$ depends on the algebra structure, then the quaternion analogue depends on the choice of the unit pure quaternion $\omega$, and the non-commutativity of $\mathbb{H}$ prevents the simple identities that hold in the commutative case.
+
+**Consequences.**
+
+- The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory on $\mathbb{R}^4$, because they depend only on the additive group and the Euclidean norm.
+- The Fourier transform, the convolution theorem, and the Radon transform depend on the choice of $\omega$, and the non-commutativity of $\mathbb{H}$ makes the identities more complicated than in the complex case.
+- The quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$ tensored with $\mathbb{H}$, and the non-commutativity enters only in the ordering of the factors.
+
+This is the fundamental structural fact about quaternion harmonic analysis: the additive group is $\mathbb{R}^4$, so the analysis is the ordinary analysis on $\mathbb{R}^4$, and the quaternion structure enters only through the algebra of the coefficients.
+
+## Summary
+
+Harmonic analysis on the quaternion space is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the non-commutative structure in an essential role. The space is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^4$, and its characters are the exponentials from which the transform is built.
+
+The quaternion Fourier transform is defined with a kernel built from the quaternion exponential, and it is developed together with convolution, the Schwartz space and its tempered distributions, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along hyperplanes, and the continuous wavelet transform.
+
+The section on the structure principle states what organises the subject: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case agrees with the real case on $\mathbb{R}^4$, and the non-commutativity enters only through the kernel of the transform.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -461,20 +483,6 @@ The quaternion wavelet transform is used in quaternion signal processing, where 
 | $\mathcal{M} f$ | Quaternion Mellin transform |
 | $Rf$ | Quaternion Radon transform |
 | $W_\psi f$ | Quaternion wavelet transform |
-
-## The Structure Principle
-
-The pattern in all the definitions above is the same: whenever the analysis depends only on the additive group structure and the Euclidean norm, the quaternion case is identical to the real case on $\mathbb{R}^4$. Whenever the analysis involves the algebra structure, the non-commutativity of $\mathbb{H}$ makes the theory richer but more complicated.
-
-**Theorem (Structure Principle for quaternion harmonic analysis).** Let $\mathcal{T}$ be a transform or operator defined on functions on $\mathbb{R}^n$ that depends only on the additive group structure and the Euclidean norm. Then the quaternion analogue of $\mathcal{T}$ is identical to $\mathcal{T}$ on $\mathbb{R}^4$, stated in quaternion notation. If $\mathcal{T}$ depends on the algebra structure, then the quaternion analogue depends on the choice of the unit pure quaternion $\omega$, and the non-commutativity of $\mathbb{H}$ prevents the simple identities that hold in the commutative case.
-
-**Consequences.**
-
-- The maximal function, the Calderón–Zygmund theory, and the wavelet transform are identical to the real theory on $\mathbb{R}^4$, because they depend only on the additive group and the Euclidean norm.
-- The Fourier transform, the convolution theorem, and the Radon transform depend on the choice of $\omega$, and the non-commutativity of $\mathbb{H}$ makes the identities more complicated than in the complex case.
-- The quaternion Fourier transform is the ordinary Fourier transform on $\mathbb{R}^4$ tensored with $\mathbb{H}$, and the non-commutativity enters only in the ordering of the factors.
-
-This is the fundamental structural fact about quaternion harmonic analysis: the additive group is $\mathbb{R}^4$, so the analysis is the ordinary analysis on $\mathbb{R}^4$, and the quaternion structure enters only through the algebra of the coefficients.
 
 ## Further Reading
 

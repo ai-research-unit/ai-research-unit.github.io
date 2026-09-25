@@ -119,9 +119,27 @@ the four **Peirce components** being one-dimensional real subspaces; the decompo
 
 **Proof.** The decomposition of the identity and the vanishing of $u_+u_-$ give the direct sum; the non-vanishing of the mixed terms $u_+xu_-$ is the statement that $M_2(\mathbb{R})$ is not a product ring, and the identification with the entries is (*Split-Quaternion Matrix Representations*, §*The Image as a Linear Subspace*). $\square$
 
-**Corollary (The Subspaces Against the Idempotents).** The Peirce decomposition of the vector subspace is $V = (u_+Vu_+ \oplus u_-Vu_-) \oplus (u_+Vu_- \oplus u_-Vu_+)$, the diagonal part being one-dimensional over each term and the off-diagonal part two-dimensional; the diagonal part lies in the span of the vectors $e_2$ and is aligned with the split-complex plane $\mathbb{D}_2$, while the off-diagonal part involves $e_1$ and $e_3$ and carries the isotropic lines through the idempotents of *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*.
+**Corollary (The Subspaces Against the Idempotents).** The individual Peirce projections do not preserve $V$; they map it onto the four lines
 
-**Proof.** The Peirce components of $V$ are computed from the multiplication table; the minimal ideals $\mathbb{H}_{\mathrm{s}}u_{\pm}$ are the isotropic planes of *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*, and their intersections with $V$ are the isotropic lines. $\square$
+$$
+u_+Vu_+ = \mathbb{R} u_+, \qquad u_-Vu_- = \mathbb{R} u_-, \qquad u_+Vu_- = \mathbb{R}(e_1-e_3), \qquad u_-Vu_+ = \mathbb{R}(e_1+e_3),
+$$
+
+and the first two of these are not contained in $V$, because $u_\pm = \tfrac12(1\pm e_2)$ has scalar part $\tfrac12$. The two *sums* $u_+\cdot u_+ + u_-\cdot u_-$ and $u_+\cdot u_- + u_-\cdot u_+$ do preserve $V$, and they give the orthogonal splitting of the vector subspace
+
+$$
+V = \mathbb{R} e_2 \;\perp\; \operatorname{span}\{e_1,e_3\},
+$$
+
+whose first summand is the $e_2$-axis of the split-complex plane $\mathbb{D}_2$, on which the form takes the value $-1$, and whose second summand is the hyperbolic plane of the form $b^2-d^2$, of signature $(1,1)$, carrying the two isotropic lines $\mathbb{R}(e_1\pm e_3)$; these two null lines are exactly the off-diagonal Peirce lines, and they are the traces in $V$ of the isotropic planes of *Split-Quaternion Zero Divisors*, §*The Two Families in the Algebra*.
+
+**Proof.** The Peirce components of a vector $v = be_1 + ce_2 + de_3$ are computed from the multiplication table. For $e_1$: $u_+e_1u_+ = 0$, $u_+e_1u_- = \tfrac12(e_1-e_3)$, $u_-e_1u_+ = \tfrac12(e_1+e_3)$, $u_-e_1u_- = 0$. For $e_3$: $u_+e_3u_+ = 0$, $u_+e_3u_- = \tfrac12(e_3-e_1) = -\tfrac12(e_1-e_3)$, $u_-e_3u_+ = \tfrac12(e_1+e_3)$, $u_-e_3u_- = 0$. For $e_2$: $u_+e_2u_+ = u_+$, $u_+e_2u_- = 0$, $u_-e_2u_+ = 0$, $u_-e_2u_- = -u_-$. Hence
+
+$$
+u_+vu_+ + u_-vu_- = c\,(u_+ - u_-) = c\,e_2, \qquad u_+vu_- + u_-vu_+ = \tfrac{b-d}{2}(e_1-e_3) + \tfrac{b+d}{2}(e_1+e_3) = be_1 + de_3,
+$$
+
+so the two sums return $v$ and the individual projections do not; the lines displayed are read off the same products, and the splitting is orthogonal because $B(e_2,e_1) = B(e_2,e_3) = 0$. The traces are the left ideal $\mathbb{H}_{\mathrm{s}}u_+ = \operatorname{span}\{u_+, \tfrac12(e_1+e_3)\}$ and the right ideal $u_+\mathbb{H}_{\mathrm{s}}$, intersected with $V$: the vector $\tfrac12(e_1+e_3)$ is null, which gives the line $\mathbb{R}(e_1+e_3)$. $\square$
 
 ## The Role of the Zero Divisors on Each Subspace
 

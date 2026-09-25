@@ -420,6 +420,30 @@ which are not monogenic: $D q = -2$ and $D(q^2) = -4 q_0$, neither of which vani
 
 The **monogenic Bessel functions** are the radial monogenic functions, which are the solutions of the Cauchy–Riemann operator in spherical coordinates. They are expressed in terms of the ordinary Bessel functions of the radial variable, with coefficients that depend on the angular variables.
 
+## The Structure Principle
+
+The pattern in all the definitions above is the same: every quaternion special function is defined by a formula that involves the quaternion algebra operations, the quaternion exponential, and the quaternion logarithm. Unlike the complex case, the resulting functions are not determined by a single scalar variable, because $\mathbb{H}$ is four-dimensional and non-commutative. The functions depend on the scalar part and the vector part separately, and the non-commutativity prevents the simple identities that hold in the commutative case.
+
+**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the quaternions defined by the same power series. Then for $q$ with $q_0 \in I$ and $\mathbf{q}$ arbitrary,
+
+$$
+\tilde{F}(q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_0)}{n!} \mathbf{q}^n,
+$$
+
+where the powers $\mathbf{q}^n$ are the quaternion powers of the vector part.
+
+**Proof.** The extension is defined by the same power series, and the series converges because the quaternion norm is submultiplicative. The powers of $q$ decompose into the scalar and vector parts, and the series can be reorganized in terms of the powers of $\mathbf{q}$. $\square$
+
+This theorem is the reason quaternion special functions are richer than real or complex special functions. In the real case, the function is determined by its values on the real line. In the complex case, the function is determined by its values on the real line and the Cauchy–Riemann equations. In the quaternion case, the function depends on the full four-dimensional variable, and the non-commutativity prevents the simple identities that hold in the commutative case.
+
+## Summary
+
+The quaternion special functions are the named functions that arise in quaternion analysis, in Clifford analysis and in the geometry of the quaternion space. Each is obtained by carrying the corresponding real or complex definition to the quaternion variable by means of the quaternion exponential and the quaternion operations.
+
+The exponential is defined by its series, and the trigonometric and hyperbolic functions are built from it, with the scalar-vector decomposition of a quaternion taking the place of the real and imaginary parts of a complex number. Integral representations then supply the gamma and beta functions, the error function, the Airy function as a contour integral, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.
+
+The Cauchy kernel $\bar{q}/\lvert q\rvert^4$, the fundamental solution of the Cauchy–Riemann operator, opens the last family, the monogenic special functions, and the section on the structure principle states what organises the whole collection: every quaternion special function is defined by a formula involving the quaternion algebra operations and the quaternion exponential, and the properties it has are those the non-commutativity of $\mathbb{H}$ permits.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -440,22 +464,6 @@ The **monogenic Bessel functions** are the radial monogenic functions, which are
 | $W(q)$ | Quaternion Lambert W function |
 | $E(q) = q^{-1}/\|q\|^2$ | Cauchy kernel |
 | $D$ | Cauchy–Riemann operator |
-
-## The Structure Principle
-
-The pattern in all the definitions above is the same: every quaternion special function is defined by a formula that involves the quaternion algebra operations, the quaternion exponential, and the quaternion logarithm. Unlike the complex case, the resulting functions are not determined by a single scalar variable, because $\mathbb{H}$ is four-dimensional and non-commutative. The functions depend on the scalar part and the vector part separately, and the non-commutativity prevents the simple identities that hold in the commutative case.
-
-**Theorem (Structure Principle for quaternion special functions).** Let $F$ be a special function of one real variable that is analytic on an interval $I \subseteq \mathbb{R}$, and let $\tilde{F}$ be its extension to the quaternions defined by the same power series. Then for $q$ with $q_0 \in I$ and $\mathbf{q}$ arbitrary,
-
-$$
-\tilde{F}(q) = \sum_{n=0}^\infty \frac{F^{(n)}(q_0)}{n!} \mathbf{q}^n,
-$$
-
-where the powers $\mathbf{q}^n$ are the quaternion powers of the vector part.
-
-**Proof.** The extension is defined by the same power series, and the series converges because the quaternion norm is submultiplicative. The powers of $q$ decompose into the scalar and vector parts, and the series can be reorganized in terms of the powers of $\mathbf{q}$. $\square$
-
-This theorem is the reason quaternion special functions are richer than real or complex special functions. In the real case, the function is determined by its values on the real line. In the complex case, the function is determined by its values on the real line and the Cauchy–Riemann equations. In the quaternion case, the function depends on the full four-dimensional variable, and the non-commutativity prevents the simple identities that hold in the commutative case.
 
 ## Further Reading
 

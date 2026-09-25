@@ -314,6 +314,14 @@ The representation theory of $\mathbb{H}$ differs from that of the complex and s
 
 **Representation rings.** $R(\mathbb{C}) \cong \mathbb{Z}$. $R(\mathbb{H})$ is $\mathbb{Z}$ as a group, with the multiplication $m \cdot n = 4 mn$, which has no identity element. $R(\mathbb{D}) \cong \mathbb{Z} \oplus \mathbb{Z}$. The three are not isomorphic.
 
+## Summary
+
+A representation of $\mathbb{H}$ is a vector space $V$ over a field $F$ together with a bilinear action of the algebra on it, equivalently a unital algebra homomorphism $\mathbb{H} \to \operatorname{End}_F(V)$. The classification rests on the structure of the algebra: $\mathbb{H}$ is simple, having no nontrivial two-sided ideals, and over a field of characteristic not two on which it is a division algebra its representations are completely determined, with a single irreducible representation up to isomorphism.
+
+The category of representations is abelian and semisimple, and the representation ring $R(\mathbb{H})$ is generated as an abelian group by the class of the irreducible representation. The article records the standard constructions — the dual or contragredient representation on $V^*$, the tensor product with its diagonal action, and the homomorphisms, the $F$-linear maps intertwining the two actions — together with the indecomposable representations and their relation to the irreducible ones.
+
+Two further sections complete the theory: the complexification $\mathbb{H}_{\mathbb{C}} = \mathbb{H} \otimes_{\mathbb{R}} \mathbb{C}$, which is no longer a division algebra and whose representation theory therefore differs from that of $\mathbb{H}$, and the comparison with the complex and split complex cases, in which the non-commutativity of $\mathbb{H}$ is the source of every difference.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

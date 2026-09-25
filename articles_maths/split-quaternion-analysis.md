@@ -155,21 +155,35 @@ $$
 
 and the four components $u_\epsilon x u_\eta$ are one-dimensional real subspaces.
 
-**Theorem (The Peirce Coordinates Are the Matrix Entries).** The map
+**Theorem (The Peirce Coordinates Are the Matrix Entries of the Adapted Model).** The map
 
 $$
 x \longmapsto \big(u_+xu_+,\ u_+xu_-,\ u_-xu_+,\ u_-xu_-\big)
 $$
 
-is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with $\mathbb{R}^4$ and identifies with the four entries of the matrix model: it is, up to the fixed basis, the map $\Phi$. Multiplication becomes the row-column rule in these coordinates:
+is a linear isomorphism of $\mathbb{H}_{\mathrm{s}}$ with the four lines, and the components multiply as the matrix units: for any $x, y$,
 
 $$
 (u_\epsilon x u_\eta)(u_{\eta'} y u_{\epsilon'}) = 0 \quad \text{unless } \eta = \eta',
 $$
 
-and, when $\eta = \eta'$, the product is $u_\epsilon (x u_\eta y) u_{\epsilon'}$.
+and, when $\eta = \eta'$, the product is $u_\epsilon (x u_\eta y) u_{\epsilon'}$, which lies in the line $u_\epsilon\mathbb{H}_{\mathrm{s}}u_{\epsilon'}$. The coordinates are therefore a presentation of the algebra as a matrix algebra.
 
-**Proof.** The decomposition of the identity $1 = u_+ + u_-$ with $u_+u_- = u_-u_+ = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $u_\eta u_{\eta'} = 0$ for $\eta \neq \eta'$. The identification with the matrix model is the Peirce decomposition in the basis of $E_{ij}$, as in *Split-Quaternion Matrix Representations*, §*The Image as a Linear Subspace*. $\square$
+Written in the basis $1, e_1, e_2, e_3$, the four components of $x = a + be_1 + ce_2 + de_3$ are
+
+$$
+u_+xu_+ = (a+c)\,u_+, \qquad u_-xu_- = (a-c)\,u_-, \qquad u_+xu_- = \tfrac{b-d}{2}(e_1-e_3), \qquad u_-xu_+ = \tfrac{b+d}{2}(e_1+e_3).
+$$
+
+The resulting matrix model is the one adapted to the idempotents rather than the model $\Phi$ of *Split-Quaternion Matrix Representations*, §*The Image as a Linear Subspace*: with $P = \begin{pmatrix} 1 & 1 \\ 1 & -1\end{pmatrix}$ one has $\Psi = P\Phi P^{-1}$, and
+
+$$
+\Psi(x) = \begin{pmatrix} a+c & b-d \\ -(b+d) & a-c \end{pmatrix},
+$$
+
+whose four entries are the four Peirce coordinates. The two models are conjugate by the fixed involution $P$, and the Peirce coordinates are the fixed linear change $(a,b,c,d) \mapsto (a+c,\ a-c,\ b-d,\ b+d)$ of the coordinates of the standard model; they are not the entries of $\Phi$ itself.
+
+**Proof.** The decomposition of the identity $1 = u_+ + u_-$ with $u_+u_- = u_-u_+ = 0$ gives the direct sum, and the dimension count gives one dimension per Peirce space; the vanishing of the mixed products is $u_\eta u_{\eta'} = 0$ for $\eta \neq \eta'$. The displayed components are read off the multiplication table: $u_+u_+ = u_+$, $u_\pm e_2 u_\pm = \pm u_\pm$, $u_+e_1u_+ = u_+e_3u_+ = u_-e_1u_- = u_-e_3u_- = 0$, $u_+e_1u_- = \tfrac12(e_1-e_3)$, $u_+e_3u_- = -\tfrac12(e_1-e_3)$, $u_-e_1u_+ = u_-e_3u_+ = \tfrac12(e_1+e_3)$. For $\Psi$: the map $x \mapsto P\Phi(x)P^{-1}$ is multiplicative because $\Phi$ is, and on the basis it gives $I$, $-J$, $-D$, $-K$, so it is the algebra isomorphism $\Psi$ displayed; its entries are therefore the four Peirce coordinates, and $\Phi(u_+) = \tfrac12\begin{pmatrix} 1 & 1 \\ 1 & 1\end{pmatrix} \neq E_{11}$ shows that the two models differ. $\square$
 
 **Corollary (Partial Derivatives and Smoothness).** A function $f$ of the split-quaternion variable is smooth in the sense of this article exactly when its four Peirce components are smooth functions of the four Peirce coordinates, that is, when its matrix-model entries are smooth; the partial derivatives with respect to the Peirce coordinates are the entries of the matrix-model derivatives, and every operator of the preceding section is a first-order operator with constant coefficients in these coordinates.
 

@@ -422,6 +422,12 @@ $$
 
 The split complex wavelet transform is used in hyperbolic signal processing, where it provides both magnitude and hyperbolic phase information.
 
+## Summary
+
+Harmonic analysis on the split complex plane $\mathbb{D}$ is the study of the Fourier transform, of convolution, and of the function spaces on which the two act, with the decomposition of the algebra into idempotents in an essential role. The plane is first a locally compact abelian group under addition, isomorphic to $\mathbb{R}^2$, and its characters are the exponentials built from $j$, which are unbounded because $j^2 = +1$.
+
+The split complex Fourier transform is defined with a kernel built from the split complex exponential, and it is developed on the full plane and on a bounded interval, together with the Laplace transform, convolution and the delta distribution, the Hilbert transform, the Hardy–Littlewood maximal function, and the Calderón–Zygmund theory of singular integrals. The transform is then extended to the Mellin transform on the multiplicative half-line, the Radon transform along lines, and the continuous wavelet transform.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

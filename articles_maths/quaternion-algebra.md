@@ -381,6 +381,14 @@ the algebra of $4 \times 4$ real matrices. More generally, the tensor product of
 
 The tensor product decomposition is the algebraic content of the classification of Clifford algebras, and the quaternion algebra is the case $n = 2$ of the classification. The general classification is the subject of the article *Clifford Algebras in Finite Dimensions*.
 
+## Summary
+
+The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, in which $e_0$ is the unit, the three imaginary units square to $-e_0$, and distinct imaginary units anticommute. It is associative with unit, non-commutative, and a division algebra: every nonzero element is invertible, with $q^{-1} = \bar{q}/N(q)$. A general element is written in developed form as $q = q_0 + q_1e_1 + q_2e_2 + q_3e_3$.
+
+The algebra carries three conjugations, and each has its fixed-point subspace; the fundamental one is quaternion conjugation, whose fixed points form the real subspace $\mathbb{R}_{\mathbb{H}}$ and whose anti-fixed points form the vector subspace $\mathbb{R}^3_{\mathbb{H}}$. These are the eigenspaces for the eigenvalues $+1$ and $-1$, and every quaternion decomposes uniquely both as a scalar part plus a vector part and as the sum of the two eigencomponents.
+
+Further structures are attached to the algebra. The norm form $N(q) = q\bar{q} = q_0^2 + q_1^2 + q_2^2 + q_3^2$ is positive definite and multiplicative, and it is the form that controls invertibility; with it come the Hermitian form and the inner product on $\mathbb{H}$ as a real vector space. The commutator $[p,q] = pq - qp$ gives $\mathbb{H}$ a Lie algebra structure, in which the commutator of two pure quaternions is expressed by the vector product on $\mathbb{R}^3$. The article closes with the tensor product decomposition, in which the quaternion algebra of a direct sum is the tensor product of the quaternion algebras of the summands.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

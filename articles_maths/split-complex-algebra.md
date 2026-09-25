@@ -341,6 +341,14 @@ $$
 
 which is the indefinite form, not the Euclidean one. The Euclidean inner product is $\operatorname{Re}(z w)$. So the distinction between the two forms is the distinction between the indefinite and the Euclidean structures on $\mathbb{R}^2$, and it is the source of the difference between split complex analysis and ordinary real analysis in the plane.
 
+## Summary
+
+The split complex algebra $\mathbb{D}$ is the two-dimensional real algebra with basis $e_0 = 1$, $e_1 = j$ and the relation $j^2 = +1$. It is commutative, associative and unital, and it is not a field: the norm form is indefinite and the algebra has zero divisors. A general element is written $z = a + bj$.
+
+Split complex conjugation sends $a + bj$ to $a - bj$. Its fixed points form the real subspace $\mathbb{R}_{\mathbb{D}}$ and its anti-fixed points the imaginary subspace $j\mathbb{R}_{\mathbb{D}}$; these are the eigenspaces for the eigenvalues $+1$ and $-1$, and every split complex number decomposes uniquely as a real part plus an imaginary part. The algebra carries a second natural decomposition, which the complex case does not have: the idempotent decomposition $z = z_+e_+ + z_-e_-$, where $e_\pm = (1 \pm j)/2$ are the two nontrivial idempotents and $z_\pm = a \pm b$. The two components are independent ring homomorphisms, so $\mathbb{D}$ is the direct sum $\mathbb{R} \oplus \mathbb{R}$.
+
+The quadratic objects reflect the change of sign. The norm form $N(z) = z\bar{z} = a^2 - b^2$ is indefinite: it takes both signs and vanishes on the two lines $a = \pm b$, which are exactly the zero divisors. There is therefore no positive-definite Hermitian form on $\mathbb{D}$ analogous to the one on $\mathbb{C}$; the closest substitute is built from the idempotent components, and the inner product $\langle z, w\rangle = ac + bd$ is the ordinary Euclidean inner product on $\mathbb{R}^2$, independent of the multiplicative structure.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

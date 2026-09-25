@@ -418,6 +418,30 @@ defined wherever the denominator is invertible.
 
 The split complex Lambert W function has two real branches, corresponding to the two real branches $W_0$ and $W_{-1}$ of the ordinary Lambert W function. On the region where $z_+ > -1/e$ and $z_- > -1/e$, the principal branch is defined, and it is split complex differentiable.
 
+## The Idempotent Principle
+
+The pattern in all the definitions above is the same: every split complex special function is the pair of ordinary real special functions, one for each idempotent component. This is not a coincidence; it is a theorem.
+
+**Theorem (Idempotent Principle).** Let $F$ be a split complex special function defined by a formula that involves only the split complex algebra operations, the split complex exponential, and the split complex logarithm. Then $F$ decomposes in the idempotent basis as
+
+$$
+F(z) = F_+(z_+) e_+ + F_-(z_-) e_-,
+$$
+
+where $F_+$ and $F_-$ are the corresponding real special functions.
+
+**Proof.** The split complex algebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ via the idempotent decomposition. Every operation in the split complex algebra corresponds to the componentwise operation in $\mathbb{R} \oplus \mathbb{R}$. Every split complex special function is defined by a formula built from these operations, so it decomposes componentwise. $\square$
+
+This theorem is the reason split complex special functions are simpler than complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, because the split complex algebra is a product of two copies of $\mathbb{R}$ and the exponential is injective.
+
+## Summary
+
+The split complex special functions are the named functions that arise in split complex analysis, in hyperbolic geometry and in the theory of the wave equation. Each is obtained by carrying the corresponding real or complex definition to the split complex variable by means of the split complex exponential and the algebra operations.
+
+The exponential is defined by its series, and the hyperbolic functions are built from it, the trigonometric functions being replaced by their hyperbolic analogues because $j^2 = +1$. Integral representations then supply the gamma and beta functions, the error function, the Airy function, the Bessel functions and the Gauss hypergeometric function, together with the Lambert $W$ function as the inverse of $w \mapsto we^w$.
+
+The section on the idempotent principle states what organises the whole collection: every split complex special function is the pair of ordinary real special functions obtained by evaluating it on the two idempotent components, one for $e_+$ and one for $e_-$, so that each definition is a real definition applied twice.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -436,22 +460,6 @@ The split complex Lambert W function has two real branches, corresponding to the
 | $e_+ = (1 + j)/2$ | Positive idempotent |
 | $e_- = (1 - j)/2$ | Negative idempotent |
 | $z = z_+ e_+ + z_- e_-$ | Idempotent decomposition |
-
-## The Idempotent Principle
-
-The pattern in all the definitions above is the same: every split complex special function is the pair of ordinary real special functions, one for each idempotent component. This is not a coincidence; it is a theorem.
-
-**Theorem (Idempotent Principle).** Let $F$ be a split complex special function defined by a formula that involves only the split complex algebra operations, the split complex exponential, and the split complex logarithm. Then $F$ decomposes in the idempotent basis as
-
-$$
-F(z) = F_+(z_+) e_+ + F_-(z_-) e_-,
-$$
-
-where $F_+$ and $F_-$ are the corresponding real special functions.
-
-**Proof.** The split complex algebra is isomorphic to $\mathbb{R} \oplus \mathbb{R}$ via the idempotent decomposition. Every operation in the split complex algebra corresponds to the componentwise operation in $\mathbb{R} \oplus \mathbb{R}$. Every split complex special function is defined by a formula built from these operations, so it decomposes componentwise. $\square$
-
-This theorem is the reason split complex special functions are simpler than complex special functions. In the complex case, the special functions are genuinely new objects, because the complex algebra is a field and the exponential is periodic. In the split complex case, the special functions are pairs of real special functions, because the split complex algebra is a product of two copies of $\mathbb{R}$ and the exponential is injective.
 
 ## Further Reading
 

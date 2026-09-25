@@ -504,6 +504,14 @@ $$
 \int_a^b f \, dg = f(b) g(b) - f(a) g(a) - \int_a^b g \, df.
 $$
 
+## Summary
+
+Real analysis is the study of limits, continuity, differentiation and integration on the real line, and it is the base case on which the analysis of every other system of the corpus is modelled. The line carries the distance $d(a, b) = \lvert a - b\rvert$, and with it the convergent sequences, the convergent series, the limits of functions, the continuous functions and the open sets on which the subject is built.
+
+Differentiation and integration are the two central constructions. The derivative $f'(x_0) = \lim_{h \to 0}(f(x_0 + h) - f(x_0))/h$ is the limit of the difference quotient, and the Riemann integral is defined through the upper and lower sums over the partitions of an interval, with the Riemann–Stieltjes integral generalising the construction by admitting a second function as integrator. The basic properties of both, and the theorems that relate them, are recorded.
+
+The article also passes from sequences of numbers to sequences of functions, where pointwise and uniform convergence are distinguished, and it develops power series with their radius of convergence. The Riemann–Stieltjes integral closes the treatment.
+
 ## Summary of Notation
 
 | Symbol | Meaning |

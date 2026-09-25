@@ -1486,10 +1486,6 @@
 
 # Part IV : Catalogues
 
-A catalogue gathers the objects of one kind that the corpus meets, wherever in Parts I to III they are introduced. A catalogue names an object and points to the article or articles that introduce it; it introduces nothing and it proves nothing. The one condition on what a catalogue may list is that its object has been introduced somewhere in Parts I to III, whether or not an article is devoted to it. The warnings a list carries — the quaternions are a division ring but not a field, the octonions are a division algebra but not a ring, the orthogonal group is not a group-layer object because it is defined by a form — are statements about where each object is introduced, with a reference to that article.
-
-A catalogue lists examples and non-examples side by side. Beside the objects that have the property it gathers, it records the objects that fail it, the failure named and the entry pointed to the article that records it: $\mathbb{Z}[\sqrt{-5}]$ is a domain but not a unique factorisation domain, $\mathbb{Z}[x]$ is a unique factorisation domain but not a principal ideal domain, $M_2(\mathbb{R})$ is a ring but not a division ring, the octonions are a division algebra but not an algebra. The non-examples are what fix a list: they show that each class is a proper subclass of the one above it, and they are recorded with the same care as the examples.
-
 ## Catalogue of Algebra
 
 ### <a href="articles_maths/list-of-algebraic-structures.html">List of Algebraic Structures</a>
@@ -1613,8 +1609,6 @@ A catalogue lists examples and non-examples side by side. Beside the objects tha
 <!-- the objects that fail exactly one axiom: $\mathbb{Z}[\sqrt{-5}]$, which is not a unique factorisation domain; $\mathbb{Z}[x]$, which is not a principal ideal domain; the split-complex numbers and the dual numbers, which are not domains; $M_2(\mathbb{R})$, which is not a division ring; and the octonions, whose multiplication is not associative. -->
 
 ## Catalogue of Topology and Geometry
-
-A catalogue of the spaces, the structures on them, and the groups that act on them: the topological structures (continuity, compactness, homotopy, homology) and the geometric structures (metric, curvature, forms, symmetry), interleaved so that each entry follows from the one before it.
 
 ### <a href="articles_maths/list-of-topological-spaces.html">List of Topological Spaces</a>
 <!-- the spaces met in the corpus, each with its separation, its compactness and its connectedness, and the article that owns it. -->
