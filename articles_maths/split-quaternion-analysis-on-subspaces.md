@@ -27,9 +27,9 @@ The split-quaternion algebra, its involutions, its idempotents and its subspaces
 | principal involution $\alpha$ | automorphism | $\operatorname{span}\{1, e_3\}$ | $\operatorname{span}\{e_1, e_2\}$ |
 | reversal $\rho$ | anti-automorphism | $\operatorname{span}\{1, e_1, e_2\}$ | $\operatorname{span}\{e_3\}$ |
 
-The three involutions commute, and their common eigenspaces are the four coordinate lines $\mathbb{R}\cdot 1$, $\mathbb{R} e_1$, $\mathbb{R} e_2$, $\mathbb{R} e_3$.
+The three involutions commute, and their common eigenspaces are $\mathbb{R}\cdot 1$, $\operatorname{span}\{e_1,e_2\}$ and $\mathbb{R} e_3$; they do not separate $e_1$ from $e_2$, because on $\operatorname{span}\{e_1,e_2\}$ all three act as $-1$.
 
-**Proof.** The sign patterns and the commutativity are those computed in (*Split-Quaternion Algebra*, §*The Other Two Involutions*), including the four-line decomposition. The Hermitian and anti-Hermitian parts are the $+1$ and $-1$ eigenspaces, and the type of each involution, automorphism or anti-automorphism, is recorded there. $\square$
+**Proof.** The sign patterns and the commutativity are computed in (*Split-Quaternion Algebra*, §*The Other Two Involutions*), where it is also recorded that $\alpha$ and $\rho$ agree on $\operatorname{span}\{e_1,e_2\}$ and that this plane is therefore a common eigenspace rather than two. The Hermitian and anti-Hermitian parts are the $+1$ and $-1$ eigenspaces, and the type of each involution, automorphism or anti-automorphism, is recorded there. $\square$
 
 **Corollary (Two Meanings of Hermitian).** With respect to the conjugation, the Hermitian part of the algebra is the scalar line and the anti-Hermitian part is the vector subspace; with respect to the reversal, the Hermitian part is the three-dimensional subspace $\operatorname{span}\{1,e_1,e_2\}$ and the anti-Hermitian part is the line $\mathbb{R} e_3$. The two readings give different decompositions and both are used below, with the involution named each time.
 
